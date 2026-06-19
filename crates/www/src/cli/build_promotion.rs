@@ -263,15 +263,16 @@ pub(super) fn verify_build_manifest_promotion(
 }
 
 pub(super) fn build_manifest_promotion_terminal(report: &DxBuildManifestPromotionReport) -> String {
-    format!(
-        "DX-WWW build promotion\nBuild: {}\nManifest hash: {}\nSigner: {}\nSignature verified: {}\nReady for hosted release: {}\nPassed: {}\n",
-        report.build_dir.display(),
-        report.build_manifest.hash,
-        report.publisher_identity.signer,
-        report.verification.signature_verified,
-        report.verification.ready_for_hosted_release,
-        report.passed
-    )
+    let mut out = format!("DX-WWW build promotion\n\n");
+    out.push_str(&crate::cli::utils::ascii_table_string(&[
+        ("Build", &report.build_dir.display().to_string()),
+        ("Manifest hash", &report.build_manifest.hash),
+        ("Signer", &report.publisher_identity.signer),
+        ("Signature verified", &report.verification.signature_verified.to_string()),
+        ("Ready for hosted release", &report.verification.ready_for_hosted_release.to_string()),
+        ("Passed", &report.passed.to_string()),
+    ]));
+    out
 }
 
 pub(super) fn build_manifest_promotion_markdown(report: &DxBuildManifestPromotionReport) -> String {

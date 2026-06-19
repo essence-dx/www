@@ -43,9 +43,14 @@ pub(super) fn cmd_preview(
         message: format!("Failed to bind to {addr}: {e}"),
     })?;
 
-    eprintln!("Production-contract preview running at http://localhost:{port}");
-    eprintln!("Build output: {}", build_dir.display());
-    eprintln!("Contract: {}", contract_path.display());
+    eprintln!();
+    crate::cli::utils::print_ascii_table(&[
+        ("Action", "Production-contract preview running"),
+        ("Local", &console::style(format!("http://localhost:{port}")).cyan().to_string()),
+        ("Output", &console::style(build_dir.display().to_string()).cyan().to_string()),
+        ("Contract", &console::style(contract_path.display().to_string()).cyan().to_string()),
+    ]);
+    eprintln!();
     eprintln!("Press Ctrl+C to stop");
 
     let preview_cache = Arc::new(

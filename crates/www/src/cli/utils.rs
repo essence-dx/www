@@ -80,7 +80,7 @@ pub fn get_dir_size(path: &Path) -> usize {
     size
 }
 
-pub fn print_ascii_table(rows: &[(&str, &str)]) {
+pub fn ascii_table_string(rows: &[(&str, &str)]) -> String {
     use console::strip_ansi_codes;
     let mut w1 = 0;
     let mut w2 = 0;
@@ -89,20 +89,25 @@ pub fn print_ascii_table(rows: &[(&str, &str)]) {
         w2 = w2.max(strip_ansi_codes(v).len());
     }
     
-    w1 += 1;
-    w2 += 1;
-
-    let border_line = format!("+{}+{}+", "-".repeat(w1 + 1), "-".repeat(w2 + 1));
+    let border_line = format!("+{}+{}+", "-".repeat(w1 + 2), "-".repeat(w2 + 2));
     let border_dim = style(&border_line).dim().to_string();
 
-    println!("{}", border_dim);
+    let mut out = String::new();
+    out.push_str(&border_dim);
+    out.push('\n');
     
     for (k, v) in rows {
         let pad_k = " ".repeat(w1.saturating_sub(strip_ansi_codes(k).len()));
         let pad_v = " ".repeat(w2.saturating_sub(strip_ansi_codes(v).len()));
-        println!("| {}{} | {}{} |", k, pad_k, v, pad_v);
-        println!("{}", border_dim);
+        out.push_str(&format!("| {}{} | {}{} |\n", k, pad_k, v, pad_v));
+        out.push_str(&border_dim);
+        out.push('\n');
     }
+    out
+}
+
+pub fn print_ascii_table(rows: &[(&str, &str)]) {
+    print!("{}", ascii_table_string(rows));
 }
 
 pub fn print_build_summary(

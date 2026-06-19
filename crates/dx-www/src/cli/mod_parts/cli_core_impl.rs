@@ -65,9 +65,65 @@ impl Cli {
                 cli.cmd_rollback(&args[2..])?;
             }
             "build" => {
-                run_build_command(&args[2..], "dx build", |options| {
-                    cli.cmd_build_with_options(options, "dx build")
-                })?;
+                let mut run_js = false;
+                let mut run_www = false;
+                let mut filtered_args = vec![];
+
+                for arg in &args[2..] {
+                    if arg == "--js" {
+                        run_js = true;
+                    } else if arg == "--www" {
+                        run_www = true;
+                    } else {
+                        filtered_args.push(arg.clone());
+                    }
+                }
+
+                let mut is_www = run_www;
+                if !run_js && !run_www {
+                    let dx_path = cli.cwd.join("dx");
+                    if let Ok(content) = std::fs::read_to_string(dx_path) {
+                        if content.contains("dx framework") || content.contains("kind=www-app") || content.contains("www(") {
+                            is_www = true;
+                        }
+                    }
+                }
+
+                if is_www {
+                    run_build_command(&filtered_args, "dx build", |options| {
+                        cli.cmd_build_with_options(options, "dx build")
+                    })?;
+                } else if cli.cwd.join("Cargo.toml").exists() && !run_js {
+                    let status = std::process::Command::new("cargo")
+                        .arg("build")
+                        .args(&filtered_args)
+                        .current_dir(&cli.cwd)
+                        .status()
+                        .map_err(|e| crate::error::DxError::BuildFailed {
+                            message: format!("Failed to run cargo build: {}", e),
+                        })?;
+                    if !status.success() {
+                        return Err(crate::error::DxError::BuildFailed {
+                            message: "cargo build failed".to_string(),
+                        });
+                    }
+                } else {
+                    let runner = if cfg!(windows) { "bun.cmd" } else { "bun" };
+                    let status = std::process::Command::new(runner)
+                        .arg("run")
+                        .arg("build")
+                        .args(&filtered_args)
+                        .current_dir(&cli.cwd)
+                        .status()
+                        .map_err(|e| crate::error::DxError::BuildFailed {
+                            message: format!("Failed to run JS cli build: {}", e),
+                        })?;
+                    if !status.success() {
+                        return Err(crate::error::DxError::BuildFailed {
+                            message: "JS cli build failed".to_string(),
+                        });
+                    }
+                }
             }
             "run" => {
                 run_dx_script(&cli.cwd, &args[2..])?;

@@ -86,8 +86,7 @@ where
 
     eprintln!("{}", style("Starting development server...").cyan().bold());
     eprintln!();
-    eprintln!("🚀 Development server running at http://{}:{}", options.host, port);
-    eprintln!("   Hot reload: {}", if options.hot_reload { "enabled" } else { "disabled" });
+    eprintln!("{} Development server running at http://{}:{}", style("◆").cyan(), options.host, port);
     eprintln!("   Project: {}", config.project.name);
 
     if port != options.port {

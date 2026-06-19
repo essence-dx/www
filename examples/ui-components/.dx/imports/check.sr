@@ -1,0 +1,12 @@
+tool="dx imports"
+command="check"
+passed=true
+source_hash="blake3:6e475aa7ad6e1c71f5a365c137a3d4edb00712161c84134383be8ef46f7a4290"
+stale_barrel=false
+stale_import_map=false
+stale_declarations=false
+stale_sync_receipt=false
+barrel="components/auto-imports.ts"
+import_map=".dx/imports/import-map.json"
+declarations=".dx/imports/imports.d.ts"
+legacy_json=".dx/receipts/imports/check.json"

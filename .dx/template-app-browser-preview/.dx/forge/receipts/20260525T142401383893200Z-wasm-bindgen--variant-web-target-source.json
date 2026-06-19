@@ -1,0 +1,383 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "wasm/bindgen",
+    "upstream_name": "wasm-bindgen",
+    "version": "0.2.121-dx.0",
+    "generator": "dx-forge/wasm-bindgen",
+    "variant": "web-target-source",
+    "last_accepted_update": "2026-05-25T14:24:01.379988700+00:00",
+    "source_kind": "curated-registry",
+    "integrity_hash": "469176308fd4ec37d0564dde8c41f6d70d8fe4e2171ac58defe99ebb42cae1cc",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "wasm-bindgen@0.2.121 local source mirror",
+      "verified": false,
+      "note": "DX inspected the local wasm-bindgen source mirror for the #[wasm_bindgen] prelude, JsValue runtime surface, Closure bridge, cli-support Bindgen builder, CLI targets, and examples before curating this launch loader slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this wasm-bindgen loader slice, but it is not a live advisory feed and does not audit generated Wasm binaries, Rust crates, or JavaScript glue emitted by local builds."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "wasm/forge/variants/web-target-source/bindgen/loader.ts",
+        "logical_path": "js/wasm/bindgen/loader.ts",
+        "hash": "eb14a721eb32d7c6a10985d98ae2ffc80cb2630c5243c9224b66279f469f2183",
+        "bytes": 35724
+      },
+      {
+        "path": "wasm/forge/variants/web-target-source/bindgen/react.tsx",
+        "logical_path": "js/wasm/bindgen/react.tsx",
+        "hash": "d235c0b186ab741d7e8e906b63bcd1fc146a7883699300b2e4be25f8dc004f6e",
+        "bytes": 13040
+      },
+      {
+        "path": "wasm/forge/variants/web-target-source/bindgen/example.tsx",
+        "logical_path": "js/wasm/bindgen/example.tsx",
+        "hash": "ec62722e4b1f8d62ad01c86c4371caae73eb0c1ab7c338dcc8cfe4fe1370dd15",
+        "bytes": 555
+      },
+      {
+        "path": "wasm/forge/variants/web-target-source/bindgen/dashboard-workflow.tsx",
+        "logical_path": "js/wasm/bindgen/dashboard-workflow.tsx",
+        "hash": "c81249888d872e5ba147477e292617a5a2486832bc92d9a9cef31c9641beebf6",
+        "bytes": 3042
+      },
+      {
+        "path": "wasm/forge/variants/web-target-source/bindgen/metadata.ts",
+        "logical_path": "js/wasm/bindgen/metadata.ts",
+        "hash": "2adc72e9aaf80f189d5f1b562e9fa40f73993d0b151a1d14d467206e22a26820",
+        "bytes": 8482
+      },
+      {
+        "path": "wasm/forge/variants/web-target-source/bindgen/README.md",
+        "logical_path": "js/wasm/bindgen/README.md",
+        "hash": "2bf6ffa042ccb0035a1da7096cb389256ef34f3da02dbec885e1fa64ab84fa6e",
+        "bytes": 5327
+      },
+      {
+        "path": "wasm/bindgen/README.md",
+        "logical_path": "js/wasm/bindgen/README.md",
+        "hash": "0deb3dcb768fb442f1c09e72bd768d325473a214eace7970fc99d62a9ae4c9b3",
+        "bytes": 483
+      },
+      {
+        "path": "wasm/bindgen/loader.ts",
+        "logical_path": "js/wasm/bindgen/loader.ts",
+        "hash": "1801cd32755633b2e5f49e0ef25f1bdc308c255c35fc6cc7633fa3229eee6d8a",
+        "bytes": 4319
+      },
+      {
+        "path": "wasm/bindgen/metadata.ts",
+        "logical_path": "js/wasm/bindgen/metadata.ts",
+        "hash": "5e33ec557d45186483d0ef192a511c30fc18a8fe31770f501bc89b46d0e89012",
+        "bytes": 939
+      },
+      {
+        "path": "wasm/bindgen/react.tsx",
+        "logical_path": "js/wasm/bindgen/react.tsx",
+        "hash": "216ffbd4ff98daa3472ac101335c15bc9478d06c743acdb2de955c16455a5ddf",
+        "bytes": 2577
+      },
+      {
+        "path": "wasm/bindgen/readiness.ts",
+        "logical_path": "js/wasm/bindgen/readiness.ts",
+        "hash": "6b2abca422140da347f3bd9e79f85708cc09f976d6d0a7d0194f013f500d0a14",
+        "bytes": 2292
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/loader.ts",
+      "logical_path": "js/wasm/bindgen/loader.ts",
+      "hash": "eb14a721eb32d7c6a10985d98ae2ffc80cb2630c5243c9224b66279f469f2183",
+      "bytes": 35724
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/react.tsx",
+      "logical_path": "js/wasm/bindgen/react.tsx",
+      "hash": "d235c0b186ab741d7e8e906b63bcd1fc146a7883699300b2e4be25f8dc004f6e",
+      "bytes": 13040
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/example.tsx",
+      "logical_path": "js/wasm/bindgen/example.tsx",
+      "hash": "ec62722e4b1f8d62ad01c86c4371caae73eb0c1ab7c338dcc8cfe4fe1370dd15",
+      "bytes": 555
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/dashboard-workflow.tsx",
+      "logical_path": "js/wasm/bindgen/dashboard-workflow.tsx",
+      "hash": "c81249888d872e5ba147477e292617a5a2486832bc92d9a9cef31c9641beebf6",
+      "bytes": 3042
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/metadata.ts",
+      "logical_path": "js/wasm/bindgen/metadata.ts",
+      "hash": "2adc72e9aaf80f189d5f1b562e9fa40f73993d0b151a1d14d467206e22a26820",
+      "bytes": 8482
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/README.md",
+      "logical_path": "js/wasm/bindgen/README.md",
+      "hash": "2bf6ffa042ccb0035a1da7096cb389256ef34f3da02dbec885e1fa64ab84fa6e",
+      "bytes": 5327
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/wasm/bindgen/loader.ts",
+      "materialized_path": "wasm/forge/variants/web-target-source/bindgen/loader.ts",
+      "hash": "eb14a721eb32d7c6a10985d98ae2ffc80cb2630c5243c9224b66279f469f2183",
+      "bytes": 35724
+    },
+    {
+      "logical_path": "js/wasm/bindgen/react.tsx",
+      "materialized_path": "wasm/forge/variants/web-target-source/bindgen/react.tsx",
+      "hash": "d235c0b186ab741d7e8e906b63bcd1fc146a7883699300b2e4be25f8dc004f6e",
+      "bytes": 13040
+    },
+    {
+      "logical_path": "js/wasm/bindgen/example.tsx",
+      "materialized_path": "wasm/forge/variants/web-target-source/bindgen/example.tsx",
+      "hash": "ec62722e4b1f8d62ad01c86c4371caae73eb0c1ab7c338dcc8cfe4fe1370dd15",
+      "bytes": 555
+    },
+    {
+      "logical_path": "js/wasm/bindgen/dashboard-workflow.tsx",
+      "materialized_path": "wasm/forge/variants/web-target-source/bindgen/dashboard-workflow.tsx",
+      "hash": "c81249888d872e5ba147477e292617a5a2486832bc92d9a9cef31c9641beebf6",
+      "bytes": 3042
+    },
+    {
+      "logical_path": "js/wasm/bindgen/metadata.ts",
+      "materialized_path": "wasm/forge/variants/web-target-source/bindgen/metadata.ts",
+      "hash": "2adc72e9aaf80f189d5f1b562e9fa40f73993d0b151a1d14d467206e22a26820",
+      "bytes": 8482
+    },
+    {
+      "logical_path": "js/wasm/bindgen/README.md",
+      "materialized_path": "wasm/forge/variants/web-target-source/bindgen/README.md",
+      "hash": "2bf6ffa042ccb0035a1da7096cb389256ef34f3da02dbec885e1fa64ab84fa6e",
+      "bytes": 5327
+    },
+    {
+      "logical_path": "js/wasm/bindgen/README.md",
+      "materialized_path": "wasm/bindgen/README.md",
+      "hash": "0deb3dcb768fb442f1c09e72bd768d325473a214eace7970fc99d62a9ae4c9b3",
+      "bytes": 483
+    },
+    {
+      "logical_path": "js/wasm/bindgen/loader.ts",
+      "materialized_path": "wasm/bindgen/loader.ts",
+      "hash": "1801cd32755633b2e5f49e0ef25f1bdc308c255c35fc6cc7633fa3229eee6d8a",
+      "bytes": 4319
+    },
+    {
+      "logical_path": "js/wasm/bindgen/metadata.ts",
+      "materialized_path": "wasm/bindgen/metadata.ts",
+      "hash": "5e33ec557d45186483d0ef192a511c30fc18a8fe31770f501bc89b46d0e89012",
+      "bytes": 939
+    },
+    {
+      "logical_path": "js/wasm/bindgen/react.tsx",
+      "materialized_path": "wasm/bindgen/react.tsx",
+      "hash": "216ffbd4ff98daa3472ac101335c15bc9478d06c743acdb2de955c16455a5ddf",
+      "bytes": 2577
+    },
+    {
+      "logical_path": "js/wasm/bindgen/readiness.ts",
+      "materialized_path": "wasm/bindgen/readiness.ts",
+      "hash": "6b2abca422140da347f3bd9e79f85708cc09f976d6d0a7d0194f013f500d0a14",
+      "bytes": 2292
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "wasm/forge/variants/web-target-source/bindgen/loader.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "wasm/forge/variants/web-target-source/bindgen/react.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "wasm/forge/variants/web-target-source/bindgen/example.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "wasm/forge/variants/web-target-source/bindgen/dashboard-workflow.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "wasm/forge/variants/web-target-source/bindgen/metadata.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "wasm/forge/variants/web-target-source/bindgen/README.md would be added to the Forge package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "wasm/bindgen/README.md is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "wasm/bindgen/loader.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "wasm/bindgen/metadata.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "wasm/bindgen/react.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "wasm/bindgen/readiness.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `Shohan` accepted yellow local edits for `wasm/bindgen` variant `web-target-source`: Reviewed after template rename; preserving source-owned local edits and stale tracked local files in Forge receipt state."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/loader.ts",
+      "logical_path": "js/wasm/bindgen/loader.ts",
+      "after_hash": "eb14a721eb32d7c6a10985d98ae2ffc80cb2630c5243c9224b66279f469f2183",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "wasm/forge/variants/web-target-source/bindgen/loader.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/react.tsx",
+      "logical_path": "js/wasm/bindgen/react.tsx",
+      "after_hash": "d235c0b186ab741d7e8e906b63bcd1fc146a7883699300b2e4be25f8dc004f6e",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "wasm/forge/variants/web-target-source/bindgen/react.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/example.tsx",
+      "logical_path": "js/wasm/bindgen/example.tsx",
+      "after_hash": "ec62722e4b1f8d62ad01c86c4371caae73eb0c1ab7c338dcc8cfe4fe1370dd15",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "wasm/forge/variants/web-target-source/bindgen/example.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/dashboard-workflow.tsx",
+      "logical_path": "js/wasm/bindgen/dashboard-workflow.tsx",
+      "after_hash": "c81249888d872e5ba147477e292617a5a2486832bc92d9a9cef31c9641beebf6",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "wasm/forge/variants/web-target-source/bindgen/dashboard-workflow.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/metadata.ts",
+      "logical_path": "js/wasm/bindgen/metadata.ts",
+      "after_hash": "2adc72e9aaf80f189d5f1b562e9fa40f73993d0b151a1d14d467206e22a26820",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "wasm/forge/variants/web-target-source/bindgen/metadata.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "wasm/forge/variants/web-target-source/bindgen/README.md",
+      "logical_path": "js/wasm/bindgen/README.md",
+      "after_hash": "2bf6ffa042ccb0035a1da7096cb389256ef34f3da02dbec885e1fa64ab84fa6e",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "wasm/forge/variants/web-target-source/bindgen/README.md accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "wasm/bindgen/README.md",
+      "logical_path": "js/wasm/bindgen/README.md",
+      "before_hash": "0deb3dcb768fb442f1c09e72bd768d325473a214eace7970fc99d62a9ae4c9b3",
+      "tracked_hash": "ec5f049e3cf0ec324181d4584ada6cb2135790a23ef92d14e183b4ac280d2657",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "wasm/bindgen/README.md is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "wasm/bindgen/loader.ts",
+      "logical_path": "js/wasm/bindgen/loader.ts",
+      "before_hash": "1801cd32755633b2e5f49e0ef25f1bdc308c255c35fc6cc7633fa3229eee6d8a",
+      "tracked_hash": "8f2143c059f1558bfc1f651b3b85513b519dc90eff79421ccf9c40ed9ed3e7be",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "wasm/bindgen/loader.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "wasm/bindgen/metadata.ts",
+      "logical_path": "js/wasm/bindgen/metadata.ts",
+      "before_hash": "5e33ec557d45186483d0ef192a511c30fc18a8fe31770f501bc89b46d0e89012",
+      "tracked_hash": "177b83a1e223b491ac8a13783db19d4352eb24eb76176dee44030c586e48eec2",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "wasm/bindgen/metadata.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "wasm/bindgen/react.tsx",
+      "logical_path": "js/wasm/bindgen/react.tsx",
+      "before_hash": "216ffbd4ff98daa3472ac101335c15bc9478d06c743acdb2de955c16455a5ddf",
+      "tracked_hash": "d312289a68855951ba0bfd10ed6ee36f50fbdd114d1291f29436448434184679",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "wasm/bindgen/react.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "wasm/bindgen/readiness.ts",
+      "logical_path": "js/wasm/bindgen/readiness.ts",
+      "before_hash": "6b2abca422140da347f3bd9e79f85708cc09f976d6d0a7d0194f013f500d0a14",
+      "tracked_hash": "0c503434191627ae5c326f97cce08cd32265c3c9f1cb7753029644508bad6cc2",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "wasm/bindgen/readiness.ts is tracked locally but absent from the latest package."
+    }
+  ],
+  "risk_score": 25,
+  "timestamp": "2026-05-25T14:24:01.379988700+00:00",
+  "signature": null
+}

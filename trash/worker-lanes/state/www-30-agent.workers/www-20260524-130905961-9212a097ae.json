@@ -1,0 +1,11 @@
+﻿{
+    "scope":  "www-30-agent",
+    "workerId":  "www-20260524-130905961-9212a097ae",
+    "agentNumber":  17,
+    "passNumber":  2,
+    "maxLanes":  30,
+    "maxPasses":  3,
+    "agentName":  "",
+    "createdAt":  "2026-05-24T13:09:05.9864932+06:00",
+    "updatedAt":  "2026-05-24T13:15:51.9578849+06:00"
+}

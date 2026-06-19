@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DX Shader documentation</title>
+<meta name="description" content="How to use DX Shader: styles, synth styles, color, motion, share codes, gradient sets and exporting PNG, video or GIF." />
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+<link rel="stylesheet" href="docs.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 20 20" aria-hidden="true">
+      <path d="M10 1 L19 10 L10 19 L1 10 Z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M10 5.5 L14.5 10 L10 14.5 L5.5 10 Z" fill="currentColor"/>
+    </svg>
+    <span class="brand-name">DX Shader</span>
+    <span class="brand-sub">documentation</span>
+  </div>
+  <div class="topbar-actions">
+    <a class="btn btn-primary" href="/">Open the studio</a>
+  </div>
+</header>
+
+<div class="docs-wrap">
+  <div class="docs-hero">
+    <h1>How DX Shader works</h1>
+    <p>DX Shader creates looping abstract shader art in your browser: liquid chrome, silk, soft gradients, halftone fields and more. Everything renders in real time with WebGL2, every animation is a perfect loop, and everything you make can be exported or shared as a code.</p>
+  </div>
+
+  <div class="docs-section">
+    <h2>Styles</h2>
+    <p>Pick one of the 9 base styles in the <strong>Style</strong> section: Chrome, Silk, Bloom, Aura, Rays, Halftone, Glyphs, Reeded and Mosaic. Each one is its own renderer with its own character.</p>
+    <p><strong>Generated styles</strong> go far beyond the base set: <code>New style</code> runs a style synthesizer with 12 genes covering field type, domain geometry, color mapping, shading model and surface overlay. Every gene set is a standalone style that does not exist in the base nine, named by its field archetype: FLUX, RIDGE, WAVE, RING, CELL or FLOW. The big <strong>Randomize</strong> button also discovers new styles some of the time.</p>
+    <p>Found something you love? <code>Save style</code> stores it in your browser. Saved styles appear as chips you can reload with one click, and they survive page reloads.</p>
+  </div>
+
+  <div class="docs-section">
+    <h2>Color</h2>
+    <ul>
+      <li><strong>Presets:</strong> 16 curated palettes tuned for the renderers.</li>
+      <li><strong>Swatches A to D:</strong> the four palette colors every style draws from, plus <strong>BG</strong> for the background.</li>
+      <li><strong>Hue shift, saturation, exposure:</strong> grade the final image without touching the palette.</li>
+      <li>The dice in the section header rolls a new harmonised palette that fits the current style.</li>
+    </ul>
+  </div>
+
+  <div class="docs-section">
+    <h2>Form, lighting, texture, motion</h2>
+    <table class="docs-table">
+      <tr><td>Seed</td><td>Every design is deterministic. Same seed, same image. Type a number or roll a new one.</td></tr>
+      <tr><td>Zoom / Detail</td><td>Size of the forms and the number of noise octaves.</td></tr>
+      <tr><td>Warp / Turbulence</td><td>How much the field folds into itself and how much it churns while moving.</td></tr>
+      <tr><td>Stretch</td><td>Anisotropy. Positive stretches horizontally, negative vertically.</td></tr>
+      <tr><td>Lighting</td><td>Intensity, gloss tightness, light angle, iridescence and bloom glow.</td></tr>
+      <tr><td>Texture</td><td>Film grain, halftone and glyph density, ridge count, chromatic aberration, vignette, softness.</td></tr>
+      <tr><td>Loop length</td><td>Duration of one seamless cycle, 2 to 12 seconds.</td></tr>
+      <tr><td>Travel</td><td>How far the field moves during one loop.</td></tr>
+    </table>
+  </div>
+
+  <div class="docs-section">
+    <h2>Share codes</h2>
+    <p>Every design serializes to a compact code starting with <code>DXS1.</code> It contains the style, all five colors, the seed and every parameter. Legacy <code>LMN1.</code> links still load for compatibility.</p>
+    <ul>
+      <li><strong>Copy design code</strong> puts the code on your clipboard. Anyone can paste it into the Share box to get the exact same design.</li>
+      <li><strong>Copy link</strong> creates a URL with the code in the hash. Opening it loads the design directly.</li>
+    </ul>
+  </div>
+
+  <div class="docs-section">
+    <h2>Gradient sets</h2>
+    <p>The <strong>Set</strong> button generates 4 to 12 variations of your current design that share the style, palette and all settings but use different seeds. They look like one family, which makes them perfect for a website: one for the hero, others for cards or section backgrounds.</p>
+    <p>Click a tile to apply that seed to the editor, or download the whole set as a ZIP of PNGs in one click.</p>
+  </div>
+
+  <div class="docs-section">
+    <h2>Export</h2>
+    <p>Each export button opens a dialog with a live preview and its settings, then downloads on confirm.</p>
+    <table class="docs-table">
+      <tr><td>PNG</td><td>Stills up to 3840 x 2160, rendered offscreen at full quality.</td></tr>
+      <tr><td>WebM video</td><td>Encoded offline with WebCodecs, VP9 or VP8, muxed by a built-in WebM writer. 24, 30 or 60 fps, exact length in loops or seconds.</td></tr>
+      <tr><td>GIF</td><td>Frame-exact seamless loop, encoded in-page with a dependency-free GIF89a encoder. Optional dithering, loop forever or play once.</td></tr>
+    </table>
+    <p>Loops are seamless by construction: the noise field is sampled along a closed circle, so the last frame flows exactly into the first.</p>
+  </div>
+
+  <div class="docs-section">
+    <h2>Shortcuts</h2>
+    <table class="docs-table">
+      <tr><td><span class="kbd">R</span></td><td>Randomize everything</td></tr>
+      <tr><td><span class="kbd">Space</span></td><td>Play or pause</td></tr>
+      <tr><td><span class="kbd">S</span></td><td>Save a PNG with current settings</td></tr>
+    </table>
+  </div>
+
+  <div class="docs-section">
+    <h2>Tech notes</h2>
+    <p>DX Shader is a static DX-branded shader studio adapted from <a class="docs-link" href="https://github.com/Leonxlnx/lumenshaders">Leonxlnx/lumenshaders</a> under the MIT license: one WebGL2 uber-shader, a hand-written GIF encoder, a WebM muxer and a store-only ZIP writer.</p>
+  </div>
+</div>
+
+</body>
+</html>

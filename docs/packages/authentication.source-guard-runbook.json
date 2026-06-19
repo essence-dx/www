@@ -1,0 +1,285 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Authentication",
+    "package_id": "auth/better-auth",
+    "upstream_package": "better-auth",
+    "upstream_version": "1.6.11",
+    "source_mirror": "G:/WWW/inspirations/better-auth",
+    "based_on": "Better Auth public server, client, Next.js integration, session, social sign-in, and account-management APIs"
+  },
+  "guard": {
+    "id": "authentication-package-lane-panel",
+    "routes": ["/"],
+    "guard_file": "benchmarks/authentication-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\authentication-dx-check-package-lane-panel.test.ts",
+    "proves": [
+      "Authentication package-lane panel row",
+      "data-dx-check-package-lane-row=\"auth/better-auth\"",
+      "data-dx-style-surface=\"authentication-account-workflow\"",
+      "data-dx-token-scope=\"auth/better-auth\"",
+      "authentication:receipt-hash-refresh",
+      "data-dx-check-package-lane-hash-refresh-current-file-list",
+      "data-dx-check-package-lane-hash-refresh-stale-file-list",
+      "data-dx-check-package-lane-hash-refresh-missing-file-list",
+      "data-dx-check-package-lane-hash-refresh-stale-mirror-file-list",
+      "data-dx-check-package-lane-hash-refresh-missing-mirror-file-list",
+      "authentication_receipt_hash_refresh_current",
+      "authentication_receipt_hash_refresh_stale",
+      "authentication_receipt_hash_refresh_missing",
+      "docs/packages/authentication.source-guard-runbook.json",
+      "generated public/preview-manifest.json sourceGuardRunbookFixtures metadata",
+      "without claiming live OAuth, deployed cookies, or hosted session runtime proof",
+      "auth/better-auth adapter-boundary Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "authentication-package-lane-panel",
+      "purpose": "The static launch fixture exposes the Authentication package-lane row, upstream provenance, selected source markers, dx-style markers, and receipt-hash helper freshness without live OAuth or hosted session proof.",
+      "evidence_field": "benchmarks/authentication-dx-check-package-lane-panel.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\authentication-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-only Authentication package-lane row, selected source markers, receipt-hash helper freshness markers, and dx-style package scope without live OAuth, cookies, database adapters, or hosted sessions.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture_path": "docs/packages/authentication.source-guard-runbook.json",
+    "route": "/",
+    "guard_id": "authentication-package-lane-panel",
+    "runtime_proof": false,
+    "zed_visibility": "authentication:receipt-hash-refresh"
+  },
+  "dx_check": {
+    "lower_metric_source": "core/src/ecosystem/project_check/authentication_dx_check.rs",
+    "source_only_fixture": "authentication_package_metrics_reports_helper_freshness_from_path_arrays",
+    "command": "cargo test -q -p dx-www-compiler authentication_package_metrics_reports_helper_freshness_from_path_arrays --lib",
+    "helper_freshness_metrics": [
+      "authentication_receipt_hash_refresh_current",
+      "authentication_receipt_hash_refresh_stale",
+      "authentication_receipt_hash_refresh_missing"
+    ],
+    "path_array_policy": "Lower dx-check treats non-empty receipt_hash_refresh.stale_files or stale_mirror_files as stale, and non-empty missing_files or missing_mirror_files as missing, while authentication_hash_mismatch remains byte-derived from selected Authentication source files.",
+    "runtime_proof": false
+  },
+  "upstream_public_apis": [
+    "betterAuth",
+    "createAuthClient",
+    "toNextJsHandler",
+    "nextCookies",
+    "auth.api.getSession",
+    "auth.api.listSessions",
+    "auth.api.revokeSession",
+    "auth.api.revokeSessions",
+    "authClient.signIn.email",
+    "authClient.signUp.email",
+    "authClient.signIn.social",
+    "authClient.linkSocial",
+    "authClient.updateUser",
+    "authClient.changeEmail"
+  ],
+  "inspected_upstream_files": [
+    "G:/WWW/inspirations/better-auth/packages/better-auth/package.json",
+    "G:/WWW/inspirations/better-auth/packages/better-auth/src/index.ts",
+    "G:/WWW/inspirations/better-auth/packages/better-auth/src/client/index.ts",
+    "G:/WWW/inspirations/better-auth/packages/better-auth/src/integrations/next-js.ts",
+    "G:/WWW/inspirations/better-auth/packages/better-auth/src/api/index.ts",
+    "G:/WWW/inspirations/better-auth/packages/better-auth/src/api/routes/session.ts",
+    "G:/WWW/inspirations/better-auth/packages/better-auth/src/api/routes/account.ts",
+    "G:/WWW/inspirations/better-auth/packages/better-auth/src/api/routes/update-user.ts"
+  ],
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-check-package-lane-hash-refresh-current-file-list",
+    "data-dx-check-package-lane-hash-refresh-stale-file-list",
+    "data-dx-check-package-lane-hash-refresh-missing-file-list",
+    "data-dx-check-package-lane-hash-refresh-stale-mirror-file-list",
+    "data-dx-check-package-lane-hash-refresh-missing-mirror-file-list",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package",
+    "data-dx-auth-dashboard-workflow",
+    "data-dx-auth-session-source",
+    "sourceGuardRunbookFixtures"
+  ],
+  "selected_surfaces": [
+    {
+      "id": "authentication-account-workflow",
+      "status": "present",
+      "files": [
+        "examples/template/template-shell.tsx",
+        "tools/launch/runtime-template/pages/index.html",
+        "examples/dashboard/src/components/BetterAuthAccountWorkflow.tsx",
+        "examples/dashboard/src/lib/forge/auth/better-auth/dashboard.ts"
+      ],
+      "markers": [
+        "data-dx-component=\"better-auth-account-dashboard-workflow\"",
+        "data-dx-auth-dashboard-workflow=\"login-session-account\"",
+        "data-dx-style-surface=\"authentication-account-workflow\""
+      ]
+    },
+    {
+      "id": "authentication-session-status",
+      "status": "present",
+      "files": [
+        "examples/template/auth-session-status.tsx"
+      ],
+      "markers": [
+        "data-dx-component=\"better-auth-session-status-panel\"",
+        "data-dx-auth-session-source",
+        "data-dx-style-surface=\"authentication-session-status\""
+      ]
+    },
+    {
+      "id": "authentication-source-guard-runbook",
+      "status": "present",
+      "files": [
+        "docs/packages/authentication.source-guard-runbook.json"
+      ],
+      "markers": [
+        "authentication-package-lane-panel",
+        "authentication:receipt-hash-refresh",
+        "source_guard_runbook_fixture"
+      ]
+    },
+    {
+      "id": "authentication-app-route-handler",
+      "status": "present",
+      "files": [
+        "examples/template/app/api/auth/[...all]/route.ts"
+      ],
+      "markers": [
+        "app/api/auth/[...all]/route.ts",
+        "export const runtime = \"nodejs\"",
+        "export { GET, POST } from \"@/server/auth/better-auth\""
+      ]
+    },
+    {
+      "id": "authentication-readiness-route-handler",
+      "status": "present",
+      "files": [
+        "examples/template/app/api/auth/readiness/route.ts"
+      ],
+      "markers": [
+        "app/api/auth/readiness/route.ts",
+        "export const runtime = \"nodejs\"",
+        "createTemplateBetterAuthReadiness",
+        "adapterBoundaries"
+      ]
+    },
+    {
+      "id": "authentication-app-server-boundary",
+      "status": "present",
+      "files": [
+        "examples/template/server/auth/better-auth.ts"
+      ],
+      "markers": [
+        "server/auth/better-auth.ts",
+        "dxTemplateBetterAuthDatabaseBoundary",
+        "createTemplateBetterAuthReadiness",
+        "createTemplateBetterAuthRouteHandlers",
+        "BetterAuthOptions[\"database\"]"
+      ]
+    },
+    {
+      "id": "authentication-template-readiness-receipt",
+      "status": "present",
+      "files": [
+        "examples/template/.dx/forge/template-readiness/authentication.json"
+      ],
+      "markers": [
+        "dx.forge.template_readiness.package",
+        "\"classification\": \"lock-backed-adapter-boundary\"",
+        "\"runtime_proof\": false",
+        "\"selected_provider_surfaces\": [\"google-oauth\"]"
+      ]
+    },
+    {
+      "id": "authentication-studio-manifest-source",
+      "status": "present",
+      "files": [
+        "dx-www/src/cli/studio_manifest.rs"
+      ],
+      "markers": [
+        "authentication-package-lane-panel",
+        "source_guard_index",
+        "source_guard_runbook_index"
+      ]
+    },
+    {
+      "id": "authentication-preview-manifest-materializer",
+      "status": "present",
+      "files": [
+        "tools/launch/materialize-www-template.ts"
+      ],
+      "markers": [
+        "AUTHENTICATION_SOURCE_GUARD_RUNBOOK_FIXTURE",
+        "sourceGuardRunbookFixtures",
+        "routes[].sourceGuardRunbookFixtures",
+        "preview_manifest_materializer"
+      ]
+    }
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+    "hash_helper": "examples/template/authentication-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/authentication-receipt-hashes.ts --check --json",
+    "zed_visibility": "authentication:receipt-hash-refresh",
+    "source_guard_runbook_fixture": "docs/packages/authentication.source-guard-runbook.json",
+    "studio_manifest_source": "dx-www/src/cli/studio_manifest.rs",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "helper_attribution_fields": [
+      "studio_manifest_source",
+      "tracked_files",
+      "current_files",
+      "stale_files",
+      "missing_files",
+      "stale_mirror_files",
+      "missing_mirror_files",
+      "mirror_problem_count"
+    ],
+    "materializer_only_drift_policy": "A preview-manifest materializer edit is reported in stale_files without marking Authentication account, session, dashboard, Studio manifest source, or runbook fixture files stale.",
+    "studio_manifest_only_drift_policy": "A Studio manifest source edit is reported in stale_files without marking Authentication account, session, dashboard, preview-manifest materializer, or runbook fixture files stale.",
+    "template_readiness_only_drift_policy": "A template-readiness receipt edit is reported in stale_files without marking Authentication account, session, dashboard, Studio manifest source, materializer, or runbook fixture files stale.",
+    "tracked_by_receipt_hash_helper": true,
+    "tracked_file_count": 11
+  },
+  "app_owned_boundaries": [
+    "Better Auth secret rotation and trusted-origin policy",
+    "database adapter, session storage, and migrations",
+    "Google OAuth provider credentials and callback URLs",
+    "email delivery and verification policy",
+    "cookie security policy",
+    "account linking, account deletion, audit logging, and production governance",
+    "browser QA and hosted Authentication runtime proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: it does not claim live OAuth, deployed cookies, database adapters, email delivery, or hosted session runtime proof."
+  ],
+  "honesty_label": "ADAPTER-BOUNDARY",
+  "runtime_proof": false
+}

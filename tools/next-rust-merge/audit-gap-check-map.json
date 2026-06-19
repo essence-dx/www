@@ -1,0 +1,72 @@
+{
+  "source": "source-owned DX-WWW audit gap to coordinator check map",
+  "gapMappings": [
+    {
+      "id": "dx-build-graph-integration",
+      "reason": "Tracks DX-owned build graph integration checks while keeping vendored Turbopack ideas reference-only.",
+      "checkIds": [
+        "turbo-tasks-adapter",
+        "turbopack-core-map",
+        "turbopack-core-graph",
+        "next-custom-transforms"
+      ]
+    },
+    {
+      "id": "giant-cli-mod",
+      "reason": "Tracks the Lane 14 read-only CLI split-risk reporter. A passing reporter confirms the gap is still open until cli/mod.rs is split.",
+      "checkIds": [
+        "giant-cli-mod"
+      ],
+      "confirmsOpenWhenPassed": true
+    },
+    {
+      "id": "dx-style-drift-fixture",
+      "reason": "Tracks the Lane 5 dx-style drift fixture source guard so current style drift failures are visible in the readiness audit comparison.",
+      "checkIds": [
+        "dx-style-drift-fixture"
+      ]
+    },
+    {
+      "id": "missing-app-server-data",
+      "reason": "Tracks the intended Lane 12 App Router server-data build contract check without letting Lane 14 implement the feature.",
+      "checkIds": [
+        "app-router-server-data"
+      ]
+    },
+    {
+      "id": "hmr-polling-only",
+      "reason": "Tracks the Lane 8 hot reload source guard that distinguishes polling/overlay from real HMR.",
+      "checkIds": [
+        "dev-hot-reload-protocol"
+      ]
+    },
+    {
+      "id": "default-www-template",
+      "reason": "Tracks the Lane 13 default WWW template contract so template source ownership drift blocks the merge visibly.",
+      "checkIds": [
+        "default-www-template"
+      ]
+    },
+    {
+      "id": "build-readiness-gate",
+      "reason": "Tracks the Lane 14 build readiness gate so source/product proof drift stays visible instead of becoming scorecard noise.",
+      "checkIds": [
+        "build-readiness-gate"
+      ]
+    },
+    {
+      "id": "docs-status-overclaims",
+      "reason": "Uses the compatibility map as the current source guard for honest Next familiarity limits and no full parity overclaim.",
+      "checkIds": [
+        "next-compatibility-map"
+      ]
+    },
+    {
+      "id": "schema-status-noise",
+      "reason": "Tracks the Lane 14 read-only source guard for public schema suffixes and status overclaims.",
+      "checkIds": [
+        "schema-status-noise"
+      ]
+    }
+  ]
+}

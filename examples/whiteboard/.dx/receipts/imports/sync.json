@@ -1,0 +1,42 @@
+{
+  "tool": "dx imports sync",
+  "version": 2,
+  "generated_at": "2026-06-03T12:15:38.777644100+00:00",
+  "project": "G:/Dx/www/examples/whiteboard",
+  "passed": true,
+  "wrote_files": true,
+  "source_hash": "blake3:25210702b69b6d59ffcc05d6dd281d86a34bed1222637b4a2abca89a419ced2f",
+  "entry_count": 51,
+  "public_barrel_entry_count": 24,
+  "used_symbol_count": 27,
+  "typed_entry_count": 48,
+  "untyped_entry_count": 3,
+  "skipped_entry_count": 0,
+  "scan_roots": [
+    "components",
+    "composables",
+    "utils"
+  ],
+  "used_roots": [
+    "app",
+    "components",
+    "lib",
+    "server",
+    "styles"
+  ],
+  "aliases": [
+    "#components",
+    "#imports"
+  ],
+  "used_only": true,
+  "files": {
+    "barrel": "components/auto-imports.ts",
+    "import_map": ".dx/imports/import-map.json",
+    "declarations": ".dx/imports/imports.d.ts"
+  },
+  "receipts": {
+    "sync_sr": ".dx/imports/sync.sr",
+    "check_sr": ".dx/imports/check.sr",
+    "legacy_json": ".dx/receipts/imports/sync.json"
+  }
+}

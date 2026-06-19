@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-05-15T11:25:38.627Z",
+  "snapshot_status": {
+    "kind": "historical-benchmark-snapshot",
+    "not_current_release_readiness": true,
+    "current_worker_checkpoint_date": "2026-05-24",
+    "current_worker_checkpoint_score": "84/100",
+    "current_worker_checkpoint_blockers": [
+      "62 Rust warnings",
+      "chaotic worktree",
+      "source-guard-heavy evidence",
+      "missing browser screenshot proof",
+      "missing overlay recovery proof",
+      "generated artifact curation",
+      "full cargo test and clippy not rerun after curation"
+    ]
+  },
+  "next_latest_verified_from_npm_registry": "16.2.6",
+  "next_baseline_package": {
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react_dom": "19.2.4"
+  },
+  "live_payloads": {
+    "dx_www": {
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8097/index.html",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/html",
+          "content_length_header": "4841",
+          "decoded_bytes": 4841,
+          "elapsed_ms": 56.831
+        },
+        {
+          "url": "http://127.0.0.1:8097/dx_www_client.wasm",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/wasm",
+          "content_length_header": "1421",
+          "decoded_bytes": 1421,
+          "elapsed_ms": 6.149
+        }
+      ],
+      "resource_count": 2,
+      "total_decoded_bytes": 6262,
+      "compression_estimate": {
+        "raw_bytes": 6262,
+        "gzip_bytes": 2434,
+        "brotli_bytes": 1980
+      },
+      "tiny_wasm_file_bytes": 196
+    },
+    "nextjs": {
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8098/",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/html; charset=utf-8",
+          "content_length_header": null,
+          "decoded_bytes": 11397,
+          "elapsed_ms": 16.322
+        },
+        {
+          "url": "http://127.0.0.1:8098/_next/static/chunks/0-ahv~9imnpdj.css",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/css; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 15726,
+          "elapsed_ms": 15.431
+        },
+        {
+          "url": "http://127.0.0.1:8098/_next/static/chunks/03cnjj9mnzy_p.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 200921,
+          "elapsed_ms": 44.543
+        },
+        {
+          "url": "http://127.0.0.1:8098/_next/static/chunks/03~yq9q893hmn.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 112594,
+          "elapsed_ms": 41.574
+        },
+        {
+          "url": "http://127.0.0.1:8098/_next/static/chunks/046uyb_-r2xr9.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 1394,
+          "elapsed_ms": 36.025
+        },
+        {
+          "url": "http://127.0.0.1:8098/_next/static/chunks/07lhk_q6pmm3r.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 227537,
+          "elapsed_ms": 43.57
+        },
+        {
+          "url": "http://127.0.0.1:8098/_next/static/chunks/0dbhjjzl8qfwv.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 57909,
+          "elapsed_ms": 38.264
+        },
+        {
+          "url": "http://127.0.0.1:8098/_next/static/chunks/0ht900cau6_ur.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 17474,
+          "elapsed_ms": 35.684
+        },
+        {
+          "url": "external-next-bundler-runtime-chunk",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 10547,
+          "elapsed_ms": 34.007,
+          "url_redacted": true,
+          "url_redaction_reason": "external-framework-baseline-runtime-asset"
+        },
+        {
+          "url": "http://127.0.0.1:8098/_next/static/media/797e433ab948586e-s.p.09zddjkbdep5a.woff2",
+          "status": 200,
+          "ok": true,
+          "content_type": "font/woff2",
+          "content_length_header": "29972",
+          "decoded_bytes": 29972,
+          "elapsed_ms": 23.983
+        },
+        {
+          "url": "http://127.0.0.1:8098/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2",
+          "status": 200,
+          "ok": true,
+          "content_type": "font/woff2",
+          "content_length_header": "29288",
+          "decoded_bytes": 29288,
+          "elapsed_ms": 24.951
+        }
+      ],
+      "resource_count": 11,
+      "static_asset_count": 10,
+      "total_decoded_bytes": 714759,
+      "compression_estimate": {
+        "raw_bytes": 714759,
+        "gzip_bytes": 251853,
+        "brotli_bytes": 225721
+      }
+    }
+  },
+  "local_timing": {
+    "note": "Localhost fetch timing is useful for relative sanity checks only; it is not a browser Lighthouse or production edge benchmark.",
+    "dx_index": {
+      "samples": 25,
+      "min_ms": 1.948,
+      "median_ms": 2.563,
+      "mean_ms": 2.715,
+      "p95_ms": 4.85,
+      "max_ms": 5.547
+    },
+    "dx_wasm": {
+      "samples": 25,
+      "min_ms": 1.592,
+      "median_ms": 2.545,
+      "mean_ms": 2.385,
+      "p95_ms": 3.358,
+      "max_ms": 3.545
+    },
+    "next_index": {
+      "samples": 25,
+      "min_ms": 2.594,
+      "median_ms": 3.594,
+      "mean_ms": 3.75,
+      "p95_ms": 5.919,
+      "max_ms": 6.184
+    },
+    "dx_html_plus_wasm_sequential": {
+      "samples": 15,
+      "min_ms": 4.598,
+      "median_ms": 5.918,
+      "mean_ms": 5.771,
+      "p95_ms": 8.14,
+      "max_ms": 8.14
+    },
+    "next_html_plus_static_assets_parallel": {
+      "samples": 10,
+      "min_ms": 19.533,
+      "median_ms": 23.149,
+      "mean_ms": 23.682,
+      "p95_ms": 29.842,
+      "max_ms": 29.842
+    }
+  },
+  "ratios": {
+    "next_vs_dx_raw_payload": 114.14,
+    "next_vs_dx_gzip_estimate": 103.47,
+    "next_vs_dx_brotli_estimate": 114,
+    "next_full_median_vs_dx_full_median": 3.91
+  }
+}

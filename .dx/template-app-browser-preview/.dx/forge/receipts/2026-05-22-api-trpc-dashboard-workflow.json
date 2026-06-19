@@ -1,0 +1,287 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "api/trpc",
+  "official_dx_package_name": "Type-Safe API",
+  "package_name": "Type-Safe API",
+  "upstream_package": "@trpc/server",
+  "upstream_version": "11.17.0",
+  "source_mirror": "G:/WWW/inspirations/trpc",
+  "route": "/",
+  "component": "launch-trpc-api-dashboard-workflow",
+  "workflow": "typed-api-readiness",
+  "product_surface": "account-data-dashboard",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 99,
+  "source_files": [
+    "examples/template/template-shell.tsx",
+    "examples/template/app/page.tsx",
+    "examples/template/trpc-launch-contract.ts",
+    "examples/template/trpc-launch-health.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "examples/template/app/api/trpc/health/route.ts",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/dx-studio-edit-contract.ts",
+    "examples/template/package-catalog.ts",
+    "examples/template/template-route-contract.ts",
+    "dx-www/src/cli/studio_manifest.rs",
+    "dx-www/src/cli/mod.rs",
+    "tools/launch/materialize-www-template.ts",
+    "core/src/ecosystem/forge_trpc.rs",
+    "examples/template/.dx/forge/template-readiness/database-api.json"
+  ],
+  "hash_algorithm": "sha256",
+  "file_hashes": {
+    "core/src/ecosystem/forge_trpc.rs": "c8903e0d04d50a322a7905ce0194c782c395fa4a6c6417da5141e3ab5d4c0da7",
+    "examples/template/trpc-launch-health.tsx": "1cbecc9e689650f49433dd582846f62996618e63e675918f16f4d98bdd1e17d7",
+    "examples/template/trpc-launch-contract.ts": "1a4d7524b0810bd56deafd79d9e798232717235d7811196dd0f368a5b2b307e2",
+    "examples/dashboard/src/components/TrpcDashboardWorkflow.tsx": "d8ef701214c0930b6f61a2b25fc1dea59897ff8b4f6493d03ee0a37300ed48b6",
+    "examples/dashboard/src/lib/trpcDashboardWorkflow.ts": "a8283b66db828336a305c50f543fb3a751e494d87a75bda51635575ae5dd0c55",
+    "docs/packages/api-trpc.source-guard-runbook.json": "73d81a7ebe46cced997404729d05fb1bf711dd3771774baa579a595a2675f20d",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "examples/template/.dx/forge/template-readiness/database-api.json": "02146161daacb4be1ce4751b2c4751429c0181ee8df28b1ac7e7e7b12a55abc6",
+    "examples/template/app/api/trpc/health/route.ts": "68a47698e3f22041eff4b4c7ff00c66a9f64eb985c073d071ed5e6896eeeb3a3",
+    "examples/template/lib/trpc/metadata.ts": "74d7f69b47fdfbd1302c3b829a5be909e2d2189969d048829db48b9d2925bdc5",
+    "examples/template/lib/trpc/README.md": "102ea426713b11dbf0ba0b8df0f94886c53876c2c0bd5f2eaf725065d72fac72"
+  },
+  "materialized_files": [
+    "components/template-app/trpc-launch-contract.ts",
+    "components/template-app/trpc-launch-health.tsx",
+    "components/template-app/template-shell.tsx",
+    "app/page.tsx",
+    "app/api/trpc/health/route.ts",
+    "lib/trpc/context.ts",
+    "lib/trpc/router.ts",
+    "lib/trpc/route-handler.ts",
+    "lib/trpc/provider.tsx",
+    "lib/trpc/dashboard-workflow.ts",
+    "components/dashboard/trpc-dashboard-workflow.tsx",
+    "public/preview-manifest.json",
+    ".dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+    ".dx/forge/template-readiness/database-api.json"
+  ],
+  "upstream_public_apis": [
+    "initTRPC.context().create()",
+    "fetchRequestHandler",
+    "createTRPCClient",
+    "httpBatchLink",
+    "httpBatchStreamLink",
+    "httpSubscriptionLink",
+    "splitLink",
+    "createCallerFactory",
+    "inferRouterInputs",
+    "inferRouterOutputs",
+    "trpc.health.queryOptions()",
+    "trpc.launchEvent.mutationOptions()",
+    "trpc.launchEvents.infiniteQueryOptions()",
+    "trpc.launchFeed.subscriptionOptions()"
+  ],
+  "upstream_source_guard": {
+    "guard": "dx run --test .\\benchmarks\\trpc-dashboard-workflow.test.ts",
+    "source_files": [
+      "packages/server/src/unstable-core-do-not-import/initTRPC.ts",
+      "packages/server/src/adapters/fetch/fetchRequestHandler.ts",
+      "packages/server/src/unstable-core-do-not-import/http/resolveResponse.ts",
+      "packages/client/src/createTRPCClient.ts",
+      "packages/client/src/links/httpBatchLink.ts",
+      "packages/client/src/links/httpBatchStreamLink.ts",
+      "packages/client/src/links/httpSubscriptionLink.ts",
+      "packages/client/src/links/splitLink.ts",
+      "packages/tanstack-react-query/src/internals/createOptionsProxy.ts"
+    ],
+    "asserted_public_apis": [
+      "initTRPC.context()",
+      "initTRPC.create()",
+      "fetchRequestHandler",
+      "resolveResponse",
+      "createTRPCClient",
+      "httpBatchLink",
+      "httpBatchStreamLink",
+      "httpSubscriptionLink",
+      "splitLink",
+      "createTRPCOptionsProxy",
+      "infiniteQueryOptions",
+      "subscriptionOptions"
+    ]
+  },
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "current_status": "present",
+    "status_legend": [
+      {
+        "status": "present",
+        "meaning": "Selected Type-Safe API surfaces and this Forge receipt are present."
+      },
+      {
+        "status": "stale",
+        "meaning": "A selected surface or source hash changed after the last accepted receipt."
+      },
+      {
+        "status": "missing-receipt",
+        "meaning": "The Type-Safe API surface exists but no matching Forge receipt is available."
+      },
+      {
+        "status": "blocked",
+        "meaning": "Runtime dependencies, credentials, or operator approval block live execution."
+      },
+      {
+        "status": "unsupported-surface",
+        "meaning": "The app requested a tRPC surface this selected Forge slice does not materialize."
+      }
+    ],
+    "monitored_surfaces": [
+      {
+        "id": "trpc-launch-dashboard-workflow",
+        "status": "present",
+        "source_file": "core/src/ecosystem/forge_trpc.rs",
+        "materialized_file": "components/template-app/trpc-launch-health.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/trpc-launch-health.tsx": "1cbecc9e689650f49433dd582846f62996618e63e675918f16f4d98bdd1e17d7",
+          "examples/template/trpc-launch-contract.ts": "1a4d7524b0810bd56deafd79d9e798232717235d7811196dd0f368a5b2b307e2"
+        }
+      },
+      {
+        "id": "trpc-starter-dashboard-workflow",
+        "status": "present",
+        "source_file": "core/src/ecosystem/forge_trpc.rs",
+        "materialized_file": "components/dashboard/trpc-dashboard-workflow.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/dashboard/src/components/TrpcDashboardWorkflow.tsx": "d8ef701214c0930b6f61a2b25fc1dea59897ff8b4f6493d03ee0a37300ed48b6",
+          "examples/dashboard/src/lib/trpcDashboardWorkflow.ts": "a8283b66db828336a305c50f543fb3a751e494d87a75bda51635575ae5dd0c55"
+        }
+      },
+      {
+        "id": "trpc-route-handler",
+        "status": "present",
+        "source_file": "core/src/ecosystem/forge_trpc.rs",
+        "materialized_file": "app/api/trpc/[trpc]/route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "core/src/ecosystem/forge_trpc.rs": "c8903e0d04d50a322a7905ce0194c782c395fa4a6c6417da5141e3ab5d4c0da7"
+        }
+      },
+      {
+        "id": "type-safe-api-source-guard-runbook",
+        "status": "present",
+        "source_file": "docs/packages/api-trpc.source-guard-runbook.json",
+        "materialized_file": "docs/packages/api-trpc.source-guard-runbook.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "docs/packages/api-trpc.source-guard-runbook.json": "73d81a7ebe46cced997404729d05fb1bf711dd3771774baa579a595a2675f20d"
+        }
+      },
+      {
+        "id": "type-safe-api-preview-manifest-materializer",
+        "status": "present",
+        "source_file": "tools/launch/materialize-www-template.ts",
+        "materialized_file": "public/preview-manifest.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+        }
+      },
+      {
+        "id": "type-safe-api-template-readiness-receipt",
+        "status": "present",
+        "source_file": "examples/template/.dx/forge/template-readiness/database-api.json",
+        "materialized_file": ".dx/forge/template-readiness/database-api.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/.dx/forge/template-readiness/database-api.json": "02146161daacb4be1ce4751b2c4751429c0181ee8df28b1ac7e7e7b12a55abc6"
+        }
+      },
+      {
+        "id": "type-safe-api-lock-backed-source",
+        "status": "present",
+        "source_file": "examples/template/lib/trpc/metadata.ts",
+        "materialized_file": "app/api/trpc/health/route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/app/api/trpc/health/route.ts": "68a47698e3f22041eff4b4c7ff00c66a9f64eb985c073d071ed5e6896eeeb3a3",
+          "examples/template/lib/trpc/metadata.ts": "74d7f69b47fdfbd1302c3b829a5be909e2d2189969d048829db48b9d2925bdc5",
+          "examples/template/lib/trpc/README.md": "102ea426713b11dbf0ba0b8df0f94886c53876c2c0bd5f2eaf725065d72fac72"
+        }
+      }
+    ],
+    "dx_check_metrics": [
+      "type_safe_api_receipt_present",
+      "type_safe_api_receipt_stale",
+      "type_safe_api_missing_receipt",
+      "type_safe_api_blocked_surface",
+      "type_safe_api_unsupported_surface",
+      "type_safe_api_hash_manifest_present",
+      "type_safe_api_hash_mismatch"
+    ],
+    "runtime_limitations": [
+      "Live route execution remains blocked until app-owned dependencies, routers, auth, persistence, and operator approval are present.",
+      "dx-check can report receipt and selected-surface visibility without claiming hosted runtime proof.",
+      "Hash freshness is byte-derived from selected source-owned files and does not claim live tRPC route execution.",
+      "Template-readiness cache evidence distinguishes package-status current manifests from stale physical cache directories without claiming live backend proof."
+    ]
+  },
+  "local_readiness_interactions": [
+    "check-health",
+    "prepare-launch-event"
+  ],
+  "local_contract_exports": [
+    "trpcLaunchContract",
+    "HealthCheckResult",
+    "LaunchEventResult",
+    "TrpcLaunchWorkflowResult",
+    "createLocalHealthCheck",
+    "createLocalLaunchEvent"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"api/trpc\"",
+    "data-dx-component=\"launch-trpc-api-dashboard-workflow\"",
+    "data-dx-component=\"trpc-launch-health-workflow\"",
+    "data-dx-component=\"trpc-backend-workflow\"",
+    "data-dx-dashboard-card=\"typed-api\"",
+    "data-dx-dashboard-card=\"typed-api-health\"",
+    "data-dx-dashboard-workflow=\"typed-api-readiness\"",
+    "data-dx-trpc-workflow=\"launch-api-readiness\"",
+    "data-dx-trpc-action=\"check-health\"",
+    "data-dx-trpc-action=\"prepare-launch-event\"",
+    "data-dx-trpc-action=\"open-launch-workflow\"",
+    "data-trpc-interaction=\"health-query\"",
+    "data-trpc-interaction=\"local-launch-event-mutation\"",
+    "data-dx-backend-action=\"open-typed-api-dashboard\"",
+    "preview-manifest:launch-runtime-trpc-api-dashboard",
+    "studio-manifest:launch-trpc-api-dashboard-workflow",
+    "removed-standalone-proof-card:trpc-runtime-proof",
+    "removed-route-proof-section:launch-trpc-route-proof",
+    "removed-legacy-backend-button:trpc-action"
+  ],
+  "required_env": [],
+  "app_owned_boundaries": [
+    "runtime dependency installation",
+    "domain router implementation",
+    "authorization and session context",
+    "request limits and request id propagation",
+    "transport, cache, stream, and subscription policy",
+    "audit logging, rate limiting, log redaction, and production observability",
+    "durable event storage and pagination cursor semantics",
+    "physical cache cleanup and stale manifest removal"
+  ],
+  "missing_runtime_features": [
+    "governed browser verification of generated /launch after Friday approval",
+    "installed tRPC runtime dependencies inside a chosen app",
+    "production router, auth, persistence, and observability policy"
+  ],
+  "guards": [
+    "dx run --test .\\benchmarks\\trpc-dx-check-visibility-receipt.test.ts",
+    "dx run --test .\\benchmarks\\trpc-dashboard-workflow.test.ts",
+    "dx run --test .\\benchmarks\\trpc-forge-slice.test.ts",
+    "dx run --test .\\benchmarks\\trpc-launch-runtime-proof.test.ts"
+  ],
+  "node_modules_required": false,
+  "no_runtime_execution": true
+}

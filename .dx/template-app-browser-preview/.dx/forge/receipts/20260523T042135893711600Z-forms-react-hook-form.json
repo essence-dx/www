@@ -1,0 +1,209 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "forms/react-hook-form",
+    "upstream_name": "react-hook-form",
+    "version": "7.75.0-dx.0",
+    "generator": "dx-forge/react-hook-form",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "0c7563153656475715d5e33985061debddf92eb2ef615222ceeb251963cd6ab2",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:react-hook-form@7.75.0",
+      "verified": false,
+      "note": "DX inspected the local React Hook Form source mirror, package export map, useForm(), FormProvider, useFormContext(), Controller, useFieldArray(), useWatch(), resolver contracts, and examples before curating this launch forms slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this React Hook Form launch slice, but it is not a live advisory feed and does not audit submitted data, validation schema quality, accessibility, or application authorization policy."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/forms/react-hook-form/form.tsx",
+        "logical_path": "js/forms/react-hook-form/form.tsx",
+        "hash": "abb499ca7ddba8a63a574f98309ef731c332af834685233822ae110f7854cdf1",
+        "bytes": 2091
+      },
+      {
+        "path": "lib/forms/react-hook-form/fields.tsx",
+        "logical_path": "js/forms/react-hook-form/fields.tsx",
+        "hash": "2bc8847c8ed495bf17b89a25ca759e8b2a2196f78a40e800f8f1a54ca3b6b4a5",
+        "bytes": 6138
+      },
+      {
+        "path": "lib/forms/react-hook-form/dry-run-receipt.ts",
+        "logical_path": "js/forms/react-hook-form/dry-run-receipt.ts",
+        "hash": "40535f2011a1b8a76aa1e754f9d54a60503971fbef9688d8a403e4f25352dc42",
+        "bytes": 1806
+      },
+      {
+        "path": "lib/forms/react-hook-form/resolver.ts",
+        "logical_path": "js/forms/react-hook-form/resolver.ts",
+        "hash": "8c927af879443cbae1a1b6400bcd4bdae6de5a97d1ea53c84e66d61833d64b62",
+        "bytes": 2240
+      },
+      {
+        "path": "lib/forms/react-hook-form/example.tsx",
+        "logical_path": "js/forms/react-hook-form/example.tsx",
+        "hash": "184d9f863cd3f25c3dd9d12402f5b6cc3293d0980e818fdff7121b4272006b49",
+        "bytes": 1015
+      },
+      {
+        "path": "lib/forms/react-hook-form/metadata.ts",
+        "logical_path": "js/forms/react-hook-form/metadata.ts",
+        "hash": "b8b65491015dad6fdeb8424c8e51b800fce22f17d795ab2a74f7ffa03264b03e",
+        "bytes": 2679
+      },
+      {
+        "path": "lib/forms/react-hook-form/README.md",
+        "logical_path": "js/forms/react-hook-form/README.md",
+        "hash": "ef3117bf597ef8d572bf56bc1ee521278b084ad530fec2fd46ae00445a86c64a",
+        "bytes": 2019
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/forms/react-hook-form/form.tsx",
+      "logical_path": "js/forms/react-hook-form/form.tsx",
+      "hash": "abb499ca7ddba8a63a574f98309ef731c332af834685233822ae110f7854cdf1",
+      "bytes": 2091
+    },
+    {
+      "path": "lib/forms/react-hook-form/fields.tsx",
+      "logical_path": "js/forms/react-hook-form/fields.tsx",
+      "hash": "2bc8847c8ed495bf17b89a25ca759e8b2a2196f78a40e800f8f1a54ca3b6b4a5",
+      "bytes": 6138
+    },
+    {
+      "path": "lib/forms/react-hook-form/dry-run-receipt.ts",
+      "logical_path": "js/forms/react-hook-form/dry-run-receipt.ts",
+      "hash": "40535f2011a1b8a76aa1e754f9d54a60503971fbef9688d8a403e4f25352dc42",
+      "bytes": 1806
+    },
+    {
+      "path": "lib/forms/react-hook-form/resolver.ts",
+      "logical_path": "js/forms/react-hook-form/resolver.ts",
+      "hash": "8c927af879443cbae1a1b6400bcd4bdae6de5a97d1ea53c84e66d61833d64b62",
+      "bytes": 2240
+    },
+    {
+      "path": "lib/forms/react-hook-form/example.tsx",
+      "logical_path": "js/forms/react-hook-form/example.tsx",
+      "hash": "184d9f863cd3f25c3dd9d12402f5b6cc3293d0980e818fdff7121b4272006b49",
+      "bytes": 1015
+    },
+    {
+      "path": "lib/forms/react-hook-form/metadata.ts",
+      "logical_path": "js/forms/react-hook-form/metadata.ts",
+      "hash": "b8b65491015dad6fdeb8424c8e51b800fce22f17d795ab2a74f7ffa03264b03e",
+      "bytes": 2679
+    },
+    {
+      "path": "lib/forms/react-hook-form/README.md",
+      "logical_path": "js/forms/react-hook-form/README.md",
+      "hash": "ef3117bf597ef8d572bf56bc1ee521278b084ad530fec2fd46ae00445a86c64a",
+      "bytes": 2019
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/forms/react-hook-form/form.tsx",
+      "materialized_path": "lib/forms/react-hook-form/form.tsx",
+      "hash": "abb499ca7ddba8a63a574f98309ef731c332af834685233822ae110f7854cdf1",
+      "bytes": 2091
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/fields.tsx",
+      "materialized_path": "lib/forms/react-hook-form/fields.tsx",
+      "hash": "2bc8847c8ed495bf17b89a25ca759e8b2a2196f78a40e800f8f1a54ca3b6b4a5",
+      "bytes": 6138
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/dry-run-receipt.ts",
+      "materialized_path": "lib/forms/react-hook-form/dry-run-receipt.ts",
+      "hash": "40535f2011a1b8a76aa1e754f9d54a60503971fbef9688d8a403e4f25352dc42",
+      "bytes": 1806
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/resolver.ts",
+      "materialized_path": "lib/forms/react-hook-form/resolver.ts",
+      "hash": "8c927af879443cbae1a1b6400bcd4bdae6de5a97d1ea53c84e66d61833d64b62",
+      "bytes": 2240
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/example.tsx",
+      "materialized_path": "lib/forms/react-hook-form/example.tsx",
+      "hash": "184d9f863cd3f25c3dd9d12402f5b6cc3293d0980e818fdff7121b4272006b49",
+      "bytes": 1015
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/metadata.ts",
+      "materialized_path": "lib/forms/react-hook-form/metadata.ts",
+      "hash": "b8b65491015dad6fdeb8424c8e51b800fce22f17d795ab2a74f7ffa03264b03e",
+      "bytes": 2679
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/README.md",
+      "materialized_path": "lib/forms/react-hook-form/README.md",
+      "hash": "ef3117bf597ef8d572bf56bc1ee521278b084ad530fec2fd46ae00445a86c64a",
+      "bytes": 2019
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `MIT` with formal review `no`."
+    },
+    {
+      "policy": "react-hook-form-public-api-boundary",
+      "traffic": "green",
+      "message": "forms/react-hook-form materializes adapters around React Hook Form public APIs including useForm(), FormProvider, useFormContext(), Controller, useController(), useFieldArray(), useWatch(), and Resolver."
+    },
+    {
+      "policy": "react-hook-form-shadcn-field-contract",
+      "traffic": "green",
+      "message": "forms/react-hook-form includes a registered input helper that composes the source-owned shadcn/ui input slice while leaving field labels, validation rules, and submit behavior application-owned."
+    },
+    {
+      "policy": "react-hook-form-application-submit-boundary",
+      "traffic": "green",
+      "message": "forms/react-hook-form owns form shell and field helpers, while validation schemas, submit actions, persistence, spam protection, and authorization remain application-owned."
+    },
+    {
+      "policy": "react-hook-form-discovery-metadata",
+      "traffic": "green",
+      "message": "forms/react-hook-form includes metadata.ts so DX CLI, Zed, and launch templates can discover package id, upstream package, required dependencies, and helper names without scanning source text."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-23T04:21:35.893098600+00:00",
+  "signature": null
+}

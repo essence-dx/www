@@ -1,0 +1,524 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "animation/motion",
+  "official_package_name": "Motion & Animation",
+  "package_name": "Motion & Animation",
+  "cli_command": "dx add motion-animation --write",
+  "source_mirror": "G:/WWW/inspirations/motion",
+  "inspected_source_files": [
+    "G:/WWW/inspirations/motion/packages/motion/src/react.ts",
+    "G:/WWW/inspirations/motion/packages/framer-motion/src/index.ts",
+    "G:/WWW/inspirations/motion/packages/framer-motion/src/components/AnimatePresence/index.tsx",
+    "G:/WWW/inspirations/motion/packages/framer-motion/src/components/Reorder/Group.tsx",
+    "G:/WWW/inspirations/motion/packages/framer-motion/src/value/use-scroll.ts"
+  ],
+  "files": [
+    "examples/template/template-shell.tsx",
+    "examples/template/motion-interaction-proof.tsx",
+    "examples/dashboard/src/lib/motionDashboardWorkflow.ts",
+    "examples/dashboard/src/components/MotionDashboardWorkflow.tsx",
+    "docs/packages/motion-animation.source-guard-runbook.json",
+    "examples/template/motion/presets.ts",
+    "examples/template/motion/provider.tsx",
+    "examples/template/motion/controls.tsx",
+    "examples/template/motion/frame.tsx",
+    "examples/template/motion/layout.tsx",
+    "examples/template/motion/lazy.tsx",
+    "examples/template/motion/motion-values.tsx",
+    "examples/template/motion/page-visibility.tsx",
+    "examples/template/motion/presence.tsx",
+    "examples/template/motion/reorder.tsx",
+    "examples/template/motion/reveal.tsx",
+    "examples/template/motion/scoped-animate.tsx",
+    "examples/template/motion/scroll-progress.tsx",
+    "examples/template/motion/will-change.tsx",
+    "examples/template/motion/dashboard-workflow.ts",
+    "examples/template/motion/metadata.ts",
+    "examples/template/motion/README.md"
+  ],
+  "hash_algorithm": "sha256",
+  "file_hashes": {
+    "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+    "examples/template/motion-interaction-proof.tsx": "6663d876b2a34c4f5b6cd66c7d7bdc127a4a7dcac0cd608a9f4a97c53e7a18a6",
+    "examples/dashboard/src/lib/motionDashboardWorkflow.ts": "3740960a93e75fcaef4f5ee36b717d2e56ee3b1d679460963c8c0a8ba41d6295",
+    "examples/dashboard/src/components/MotionDashboardWorkflow.tsx": "570ba6f900b8700c5682424f13496b24a127a5d6cdbb44b7106bc749c79ae0e2",
+    "docs/packages/motion-animation.source-guard-runbook.json": "ada6acf68ea6ee3c3d165178882f9eb6a5e5bbc872cdba2c4e9fa6f69d8b9c12",
+    "examples/template/motion/presets.ts": "8ff770df10a08c23d38f74757ea82e0466529545445c97c4413fe9533837374d",
+    "examples/template/motion/provider.tsx": "410e6f2555af6b20d8cbecf2b7499665493d8855f4033904a345e9d21253b02f",
+    "examples/template/motion/controls.tsx": "3129202d0f2a64ed0a51731a311dd9d4715d78078533774f88e4e661ffcefc56",
+    "examples/template/motion/frame.tsx": "d8c58f5db9e108801b6d2ab9a625ad6f1a798c64e48054a2d525923cfa2f1ff3",
+    "examples/template/motion/layout.tsx": "abd442ac3ccb93eaee80a8690f3d62f1af4364a73855e6d640f1ebf8a42003d3",
+    "examples/template/motion/lazy.tsx": "a730df8dfba3ab0f30b1341098f233612c4749e19e7c4423b5c0f86313ec7873",
+    "examples/template/motion/motion-values.tsx": "670584cb563a7341dca2dc066ffdd52592589cefd8591a2bad261a961f5083e9",
+    "examples/template/motion/page-visibility.tsx": "0a753898d53b11e9534bf36fc8f05e031a252f1307c45f889a99aaaf64cc949e",
+    "examples/template/motion/presence.tsx": "01fc1c27084153452fe00db32304cdf34abd625ebaa02909952b6093d2f10846",
+    "examples/template/motion/reorder.tsx": "3785dff1d098e220bcb265a002f2c7e18a1e49cd4ec2ccad6834744904447ae6",
+    "examples/template/motion/reveal.tsx": "82a606ec371a5152ccbfe439ac0e0b489536768d4a4b8f9021c190bf9aa1f153",
+    "examples/template/motion/scoped-animate.tsx": "d22056a26e61061dffa70c6a9b6b8c9cacfca93b27f3c810602623d8c10b49b9",
+    "examples/template/motion/scroll-progress.tsx": "7ecc278fe75ca69bf4952e03dd2585f4cb92310cede842e522e7cab185a41665",
+    "examples/template/motion/will-change.tsx": "e6490c44706f9f2637328ad3377030b6ce8da71ff8f286a36a46ec3604c2e480",
+    "examples/template/motion/dashboard-workflow.ts": "3aef67846654115347644c33dfdd86227a87409cae0c1fa16fa9db570e94bf84",
+    "examples/template/motion/metadata.ts": "385441dbc865b61be4da52322aefd776321c9b231b804caa40189ceab85e6ead",
+    "examples/template/motion/README.md": "875285828bb352f65fc79f50c08876a09ee9da914c94abd54cbbb50e17877d87"
+  },
+  "selected_surfaces": [
+    {
+      "id": "provider-policy",
+      "files": [
+        "js/motion/provider.tsx",
+        "js/motion/reveal.tsx"
+      ],
+      "upstream_public_apis": [
+        "MotionConfig",
+        "motion",
+        "useInView",
+        "useReducedMotion"
+      ],
+      "app_owned_boundary": "app-wide reduced-motion and route reveal policy"
+    },
+    {
+      "id": "layout-reorder",
+      "files": [
+        "js/motion/layout.tsx",
+        "js/motion/reorder.tsx",
+        "js/motion/presence.tsx"
+      ],
+      "upstream_public_apis": [
+        "LayoutGroup",
+        "Reorder",
+        "AnimatePresence",
+        "useDragControls"
+      ],
+      "app_owned_boundary": "persistent dashboard ordering and route-level choreography"
+    },
+    {
+      "id": "dashboard-workflow",
+      "files": [
+        "js/motion/dashboard-workflow.ts",
+        "components/launch/motion-interaction-proof.tsx"
+      ],
+      "upstream_public_apis": [
+        "useMotionValue",
+        "useScroll",
+        "useSpring",
+        "useAnimate"
+      ],
+      "app_owned_boundary": "governed runtime/browser proof and animation performance budget"
+    },
+    {
+      "id": "source-guard-runbook",
+      "files": [
+        "docs/packages/motion-animation.source-guard-runbook.json"
+      ],
+      "upstream_public_apis": [
+        "motion",
+        "MotionConfig",
+        "useReducedMotion"
+      ],
+      "app_owned_boundary": "source-only Zed/DX Studio runbook metadata; live browser animation proof remains app-owned"
+    }
+  ],
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "package_id": "animation/motion",
+    "official_package_name": "Motion & Animation",
+    "current_status": "present",
+    "statuses": [
+      "present",
+      "stale",
+      "missing-receipt",
+      "blocked",
+      "unsupported-surface"
+    ],
+    "status_legend": [
+      {
+        "status": "present",
+        "meaning": "selected Motion & Animation surfaces, receipt, and source markers are present"
+      },
+      {
+        "status": "stale",
+        "meaning": "materialized Motion & Animation files or hashes no longer match the Forge receipt"
+      },
+      {
+        "status": "missing-receipt",
+        "meaning": "selected Motion & Animation surfaces exist without the dashboard workflow receipt"
+      },
+      {
+        "status": "blocked",
+        "meaning": "runtime proof or app-owned policy approval is required before claiming more"
+      },
+      {
+        "status": "unsupported-surface",
+        "meaning": "a requested Motion & Animation surface is outside the selected upstream-backed set"
+      }
+    ],
+    "monitored_surfaces": [
+      {
+        "id": "motion-dashboard-workflow",
+        "status": "present",
+        "source_file": "examples/template/template-shell.tsx",
+        "materialized_file": "components/template-app/template-shell.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json",
+        "next_action": "Run the Motion source guards after editing the dashboard workflow surface.",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+          "examples/template/motion-interaction-proof.tsx": "6663d876b2a34c4f5b6cd66c7d7bdc127a4a7dcac0cd608a9f4a97c53e7a18a6",
+          "examples/dashboard/src/lib/motionDashboardWorkflow.ts": "3740960a93e75fcaef4f5ee36b717d2e56ee3b1d679460963c8c0a8ba41d6295",
+          "examples/dashboard/src/components/MotionDashboardWorkflow.tsx": "570ba6f900b8700c5682424f13496b24a127a5d6cdbb44b7106bc749c79ae0e2",
+          "docs/packages/motion-animation.source-guard-runbook.json": "ada6acf68ea6ee3c3d165178882f9eb6a5e5bbc872cdba2c4e9fa6f69d8b9c12",
+          "examples/template/motion/presets.ts": "8ff770df10a08c23d38f74757ea82e0466529545445c97c4413fe9533837374d",
+          "examples/template/motion/provider.tsx": "410e6f2555af6b20d8cbecf2b7499665493d8855f4033904a345e9d21253b02f",
+          "examples/template/motion/controls.tsx": "3129202d0f2a64ed0a51731a311dd9d4715d78078533774f88e4e661ffcefc56",
+          "examples/template/motion/frame.tsx": "d8c58f5db9e108801b6d2ab9a625ad6f1a798c64e48054a2d525923cfa2f1ff3",
+          "examples/template/motion/layout.tsx": "abd442ac3ccb93eaee80a8690f3d62f1af4364a73855e6d640f1ebf8a42003d3",
+          "examples/template/motion/lazy.tsx": "a730df8dfba3ab0f30b1341098f233612c4749e19e7c4423b5c0f86313ec7873",
+          "examples/template/motion/motion-values.tsx": "670584cb563a7341dca2dc066ffdd52592589cefd8591a2bad261a961f5083e9",
+          "examples/template/motion/page-visibility.tsx": "0a753898d53b11e9534bf36fc8f05e031a252f1307c45f889a99aaaf64cc949e",
+          "examples/template/motion/presence.tsx": "01fc1c27084153452fe00db32304cdf34abd625ebaa02909952b6093d2f10846",
+          "examples/template/motion/reorder.tsx": "3785dff1d098e220bcb265a002f2c7e18a1e49cd4ec2ccad6834744904447ae6",
+          "examples/template/motion/reveal.tsx": "82a606ec371a5152ccbfe439ac0e0b489536768d4a4b8f9021c190bf9aa1f153",
+          "examples/template/motion/scoped-animate.tsx": "d22056a26e61061dffa70c6a9b6b8c9cacfca93b27f3c810602623d8c10b49b9",
+          "examples/template/motion/scroll-progress.tsx": "7ecc278fe75ca69bf4952e03dd2585f4cb92310cede842e522e7cab185a41665",
+          "examples/template/motion/will-change.tsx": "e6490c44706f9f2637328ad3377030b6ce8da71ff8f286a36a46ec3604c2e480",
+          "examples/template/motion/dashboard-workflow.ts": "3aef67846654115347644c33dfdd86227a87409cae0c1fa16fa9db570e94bf84",
+          "examples/template/motion/metadata.ts": "385441dbc865b61be4da52322aefd776321c9b231b804caa40189ceab85e6ead",
+          "examples/template/motion/README.md": "875285828bb352f65fc79f50c08876a09ee9da914c94abd54cbbb50e17877d87"
+        }
+      },
+      {
+        "id": "motion-interaction-proof",
+        "status": "present",
+        "source_file": "examples/template/motion-interaction-proof.tsx",
+        "materialized_file": "components/launch/motion-interaction-proof.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json",
+        "next_action": "Keep Zed/DX Studio selectors aligned with the visible interaction proof.",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+          "examples/template/motion-interaction-proof.tsx": "6663d876b2a34c4f5b6cd66c7d7bdc127a4a7dcac0cd608a9f4a97c53e7a18a6",
+          "examples/dashboard/src/lib/motionDashboardWorkflow.ts": "3740960a93e75fcaef4f5ee36b717d2e56ee3b1d679460963c8c0a8ba41d6295",
+          "examples/dashboard/src/components/MotionDashboardWorkflow.tsx": "570ba6f900b8700c5682424f13496b24a127a5d6cdbb44b7106bc749c79ae0e2",
+          "docs/packages/motion-animation.source-guard-runbook.json": "ada6acf68ea6ee3c3d165178882f9eb6a5e5bbc872cdba2c4e9fa6f69d8b9c12",
+          "examples/template/motion/presets.ts": "8ff770df10a08c23d38f74757ea82e0466529545445c97c4413fe9533837374d",
+          "examples/template/motion/provider.tsx": "410e6f2555af6b20d8cbecf2b7499665493d8855f4033904a345e9d21253b02f",
+          "examples/template/motion/controls.tsx": "3129202d0f2a64ed0a51731a311dd9d4715d78078533774f88e4e661ffcefc56",
+          "examples/template/motion/frame.tsx": "d8c58f5db9e108801b6d2ab9a625ad6f1a798c64e48054a2d525923cfa2f1ff3",
+          "examples/template/motion/layout.tsx": "abd442ac3ccb93eaee80a8690f3d62f1af4364a73855e6d640f1ebf8a42003d3",
+          "examples/template/motion/lazy.tsx": "a730df8dfba3ab0f30b1341098f233612c4749e19e7c4423b5c0f86313ec7873",
+          "examples/template/motion/motion-values.tsx": "670584cb563a7341dca2dc066ffdd52592589cefd8591a2bad261a961f5083e9",
+          "examples/template/motion/page-visibility.tsx": "0a753898d53b11e9534bf36fc8f05e031a252f1307c45f889a99aaaf64cc949e",
+          "examples/template/motion/presence.tsx": "01fc1c27084153452fe00db32304cdf34abd625ebaa02909952b6093d2f10846",
+          "examples/template/motion/reorder.tsx": "3785dff1d098e220bcb265a002f2c7e18a1e49cd4ec2ccad6834744904447ae6",
+          "examples/template/motion/reveal.tsx": "82a606ec371a5152ccbfe439ac0e0b489536768d4a4b8f9021c190bf9aa1f153",
+          "examples/template/motion/scoped-animate.tsx": "d22056a26e61061dffa70c6a9b6b8c9cacfca93b27f3c810602623d8c10b49b9",
+          "examples/template/motion/scroll-progress.tsx": "7ecc278fe75ca69bf4952e03dd2585f4cb92310cede842e522e7cab185a41665",
+          "examples/template/motion/will-change.tsx": "e6490c44706f9f2637328ad3377030b6ce8da71ff8f286a36a46ec3604c2e480",
+          "examples/template/motion/dashboard-workflow.ts": "3aef67846654115347644c33dfdd86227a87409cae0c1fa16fa9db570e94bf84",
+          "examples/template/motion/metadata.ts": "385441dbc865b61be4da52322aefd776321c9b231b804caa40189ceab85e6ead",
+          "examples/template/motion/README.md": "875285828bb352f65fc79f50c08876a09ee9da914c94abd54cbbb50e17877d87"
+        }
+      },
+      {
+        "id": "motion-source-guard-runbook",
+        "status": "present",
+        "source_file": "docs/packages/motion-animation.source-guard-runbook.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json",
+        "next_action": "Run the Motion receipt helper after editing the package-owned source-guard runbook fixture.",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "docs/packages/motion-animation.source-guard-runbook.json": "ada6acf68ea6ee3c3d165178882f9eb6a5e5bbc872cdba2c4e9fa6f69d8b9c12",
+          "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+          "examples/template/motion-interaction-proof.tsx": "6663d876b2a34c4f5b6cd66c7d7bdc127a4a7dcac0cd608a9f4a97c53e7a18a6",
+          "examples/dashboard/src/lib/motionDashboardWorkflow.ts": "3740960a93e75fcaef4f5ee36b717d2e56ee3b1d679460963c8c0a8ba41d6295",
+          "examples/dashboard/src/components/MotionDashboardWorkflow.tsx": "570ba6f900b8700c5682424f13496b24a127a5d6cdbb44b7106bc749c79ae0e2",
+          "examples/template/motion/presets.ts": "8ff770df10a08c23d38f74757ea82e0466529545445c97c4413fe9533837374d",
+          "examples/template/motion/provider.tsx": "410e6f2555af6b20d8cbecf2b7499665493d8855f4033904a345e9d21253b02f",
+          "examples/template/motion/controls.tsx": "3129202d0f2a64ed0a51731a311dd9d4715d78078533774f88e4e661ffcefc56",
+          "examples/template/motion/frame.tsx": "d8c58f5db9e108801b6d2ab9a625ad6f1a798c64e48054a2d525923cfa2f1ff3",
+          "examples/template/motion/layout.tsx": "abd442ac3ccb93eaee80a8690f3d62f1af4364a73855e6d640f1ebf8a42003d3",
+          "examples/template/motion/lazy.tsx": "a730df8dfba3ab0f30b1341098f233612c4749e19e7c4423b5c0f86313ec7873",
+          "examples/template/motion/motion-values.tsx": "670584cb563a7341dca2dc066ffdd52592589cefd8591a2bad261a961f5083e9",
+          "examples/template/motion/page-visibility.tsx": "0a753898d53b11e9534bf36fc8f05e031a252f1307c45f889a99aaaf64cc949e",
+          "examples/template/motion/presence.tsx": "01fc1c27084153452fe00db32304cdf34abd625ebaa02909952b6093d2f10846",
+          "examples/template/motion/reorder.tsx": "3785dff1d098e220bcb265a002f2c7e18a1e49cd4ec2ccad6834744904447ae6",
+          "examples/template/motion/reveal.tsx": "82a606ec371a5152ccbfe439ac0e0b489536768d4a4b8f9021c190bf9aa1f153",
+          "examples/template/motion/scoped-animate.tsx": "d22056a26e61061dffa70c6a9b6b8c9cacfca93b27f3c810602623d8c10b49b9",
+          "examples/template/motion/scroll-progress.tsx": "7ecc278fe75ca69bf4952e03dd2585f4cb92310cede842e522e7cab185a41665",
+          "examples/template/motion/will-change.tsx": "e6490c44706f9f2637328ad3377030b6ce8da71ff8f286a36a46ec3604c2e480",
+          "examples/template/motion/dashboard-workflow.ts": "3aef67846654115347644c33dfdd86227a87409cae0c1fa16fa9db570e94bf84",
+          "examples/template/motion/metadata.ts": "385441dbc865b61be4da52322aefd776321c9b231b804caa40189ceab85e6ead",
+          "examples/template/motion/README.md": "875285828bb352f65fc79f50c08876a09ee9da914c94abd54cbbb50e17877d87"
+        }
+      },
+      {
+        "id": "motion-source-owned-template-helpers",
+        "status": "present",
+        "source_file": "examples/template/motion/metadata.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json",
+        "next_action": "Run the Motion receipt helper after editing source-owned Motion template helpers.",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/motion/presets.ts": "8ff770df10a08c23d38f74757ea82e0466529545445c97c4413fe9533837374d",
+          "examples/template/motion/provider.tsx": "410e6f2555af6b20d8cbecf2b7499665493d8855f4033904a345e9d21253b02f",
+          "examples/template/motion/controls.tsx": "3129202d0f2a64ed0a51731a311dd9d4715d78078533774f88e4e661ffcefc56",
+          "examples/template/motion/frame.tsx": "d8c58f5db9e108801b6d2ab9a625ad6f1a798c64e48054a2d525923cfa2f1ff3",
+          "examples/template/motion/layout.tsx": "abd442ac3ccb93eaee80a8690f3d62f1af4364a73855e6d640f1ebf8a42003d3",
+          "examples/template/motion/lazy.tsx": "a730df8dfba3ab0f30b1341098f233612c4749e19e7c4423b5c0f86313ec7873",
+          "examples/template/motion/motion-values.tsx": "670584cb563a7341dca2dc066ffdd52592589cefd8591a2bad261a961f5083e9",
+          "examples/template/motion/page-visibility.tsx": "0a753898d53b11e9534bf36fc8f05e031a252f1307c45f889a99aaaf64cc949e",
+          "examples/template/motion/presence.tsx": "01fc1c27084153452fe00db32304cdf34abd625ebaa02909952b6093d2f10846",
+          "examples/template/motion/reorder.tsx": "3785dff1d098e220bcb265a002f2c7e18a1e49cd4ec2ccad6834744904447ae6",
+          "examples/template/motion/reveal.tsx": "82a606ec371a5152ccbfe439ac0e0b489536768d4a4b8f9021c190bf9aa1f153",
+          "examples/template/motion/scoped-animate.tsx": "d22056a26e61061dffa70c6a9b6b8c9cacfca93b27f3c810602623d8c10b49b9",
+          "examples/template/motion/scroll-progress.tsx": "7ecc278fe75ca69bf4952e03dd2585f4cb92310cede842e522e7cab185a41665",
+          "examples/template/motion/will-change.tsx": "e6490c44706f9f2637328ad3377030b6ce8da71ff8f286a36a46ec3604c2e480",
+          "examples/template/motion/dashboard-workflow.ts": "3aef67846654115347644c33dfdd86227a87409cae0c1fa16fa9db570e94bf84",
+          "examples/template/motion/metadata.ts": "385441dbc865b61be4da52322aefd776321c9b231b804caa40189ceab85e6ead",
+          "examples/template/motion/README.md": "875285828bb352f65fc79f50c08876a09ee9da914c94abd54cbbb50e17877d87",
+          "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+          "examples/template/motion-interaction-proof.tsx": "6663d876b2a34c4f5b6cd66c7d7bdc127a4a7dcac0cd608a9f4a97c53e7a18a6",
+          "examples/dashboard/src/lib/motionDashboardWorkflow.ts": "3740960a93e75fcaef4f5ee36b717d2e56ee3b1d679460963c8c0a8ba41d6295",
+          "examples/dashboard/src/components/MotionDashboardWorkflow.tsx": "570ba6f900b8700c5682424f13496b24a127a5d6cdbb44b7106bc749c79ae0e2",
+          "docs/packages/motion-animation.source-guard-runbook.json": "ada6acf68ea6ee3c3d165178882f9eb6a5e5bbc872cdba2c4e9fa6f69d8b9c12"
+        }
+      }
+    ]
+  },
+  "route": "/",
+  "component": {
+    "name": "LaunchMotionDashboardWorkflow",
+    "selector": "[data-dx-component=\"launch-motion-dashboard-workflow\"]",
+    "source_file": "examples/template/template-shell.tsx",
+    "materialized_file": "components/template-app/template-shell.tsx"
+  },
+  "proof_component": {
+    "name": "LaunchMotionInteractionProof",
+    "selector": "[data-dx-component=\"motion-interaction-proof\"]",
+    "source_file": "examples/template/motion-interaction-proof.tsx",
+    "materialized_file": "components/launch/motion-interaction-proof.tsx"
+  },
+  "studio_surfaces": [
+    {
+      "id": "motion-dashboard-workflow",
+      "selector": "[data-dx-component=\"launch-motion-dashboard-workflow\"]",
+      "source_file": "examples/template/template-shell.tsx",
+      "materialized_file": "components/template-app/template-shell.tsx"
+    },
+    {
+      "id": "motion-interaction-proof",
+      "selector": "[data-dx-component=\"motion-interaction-proof\"]",
+      "source_file": "examples/template/motion-interaction-proof.tsx",
+      "materialized_file": "components/launch/motion-interaction-proof.tsx"
+    }
+  ],
+  "runtime_component": {
+    "selector": "[data-dx-component=\"motion-animation-card\"]",
+    "summary_selector": "[data-dx-component=\"launch-motion-dashboard-summary\"]",
+    "source_file": "tools/launch/runtime-template/pages/index.html",
+    "runtime_script": "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "runtime_styles": "examples/template/styles/globals.css"
+  },
+  "workflow": "motion-panel-orchestration",
+  "product_surface": "launch-dashboard",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 99,
+  "reality_audit": {
+    "verdict": "REAL",
+    "upstream_evidence": [
+      "G:/WWW/inspirations/motion/packages/motion/package.json",
+      "G:/WWW/inspirations/motion/packages/framer-motion/src/index.ts"
+    ],
+    "upstream_public_apis": [
+      "motion",
+      "m",
+      "MotionConfig",
+      "LazyMotion",
+      "AnimatePresence",
+      "LayoutGroup",
+      "Reorder",
+      "domAnimation",
+      "domMax",
+      "domMin",
+      "useAnimationControls",
+      "useAnimation",
+      "animationControls",
+      "useAnimationFrame",
+      "useTime",
+      "useCycle",
+      "useWillChange",
+      "WillChangeMotionValue",
+      "usePageInView",
+      "useInstantLayoutTransition",
+      "useInView",
+      "useMotionValue",
+      "useTransform",
+      "useMotionTemplate",
+      "useMotionValueEvent",
+      "useVelocity",
+      "useReducedMotion",
+      "useAnimate",
+      "usePresence",
+      "useIsPresent",
+      "useDragControls",
+      "useScroll",
+      "useSpring",
+      "AnimationPlaybackControlsWithThen",
+      "MotionValue",
+      "Transition",
+      "Variants"
+    ],
+    "forge_package_files": [
+      "core/src/ecosystem/forge_motion.rs",
+      "js/motion/dashboard-workflow.ts",
+      "js/motion/metadata.ts",
+      "docs/packages/animation-motion.md"
+    ],
+    "dashboard_consumers": [
+      "examples/template/template-shell.tsx",
+      "examples/template/motion-interaction-proof.tsx",
+      "examples/dashboard/src/components/MotionDashboardWorkflow.tsx"
+    ],
+    "receipt_manifest_files": [
+      "examples/template/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json",
+      "examples/template/dx-studio-edit-contract.ts",
+      "dx-www/src/cli/studio_manifest.rs"
+    ],
+    "guard_files": [
+      "benchmarks/motion-dashboard-workflow.test.ts",
+      "benchmarks/motion-launch-proof.test.ts",
+      "benchmarks/motion-launch-materialized.test.ts",
+      "benchmarks/motion-runtime-interaction.test.ts",
+      "benchmarks/motion-slice.test.ts"
+    ],
+    "partial_boundaries": [
+      "governed browser QA",
+      "production route transition choreography",
+      "production preference sync beyond local storage",
+      "governed keyboard accessibility QA",
+      "animation performance budget"
+    ]
+  },
+  "exported_files": [
+    "js/motion/provider.tsx",
+    "js/motion/controls.tsx",
+    "js/motion/lazy.tsx",
+    "js/motion/layout.tsx",
+    "js/motion/motion-values.tsx",
+    "js/motion/presence.tsx",
+    "js/motion/reorder.tsx",
+    "js/motion/reveal.tsx",
+    "js/motion/scoped-animate.tsx",
+    "js/motion/scroll-progress.tsx",
+    "js/motion/dashboard-workflow.ts",
+    "components/launch/motion-interaction-proof.tsx"
+  ],
+  "upstream_public_apis": [
+    "motion",
+    "m",
+    "MotionConfig",
+    "LazyMotion",
+    "AnimatePresence",
+    "LayoutGroup",
+    "Reorder",
+    "domAnimation",
+    "domMax",
+    "domMin",
+    "useAnimationControls",
+    "useAnimation",
+    "animationControls",
+    "useAnimationFrame",
+    "useTime",
+    "useCycle",
+    "useWillChange",
+    "WillChangeMotionValue",
+    "usePageInView",
+    "useInstantLayoutTransition",
+    "useInView",
+    "useMotionValue",
+    "useTransform",
+    "useMotionTemplate",
+    "useMotionValueEvent",
+    "useVelocity",
+    "useReducedMotion",
+    "useAnimate",
+    "usePresence",
+    "useIsPresent",
+    "useDragControls",
+    "useScroll",
+    "useSpring",
+    "AnimationPlaybackControlsWithThen",
+    "MotionValue",
+    "Transition",
+    "Variants"
+  ],
+  "interactions": [
+    "advance-stage",
+    "reverse-order",
+    "move-stage-previous",
+    "move-stage-next",
+    "keyboard-reorder",
+    "persist-preference",
+    "reset-proof",
+    "toggle-reduced-motion"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"animation/motion\"",
+    "data-dx-component=\"launch-motion-dashboard-workflow\"",
+    "data-dx-component=\"motion-interaction-proof\"",
+    "data-dx-component=\"launch-motion-dashboard-summary\"",
+    "data-dx-component=\"motion-animation-card\"",
+    "data-dx-dashboard-workflow=\"motion-panel-orchestration\"",
+    "data-dx-motion-interaction=\"advance-stage\"",
+    "data-dx-motion-interaction=\"reverse-order\"",
+    "data-dx-motion-interaction=\"move-stage-previous\"",
+    "data-dx-motion-interaction=\"move-stage-next\"",
+    "data-dx-motion-interaction=\"reset-proof\"",
+    "data-dx-motion-interaction=\"toggle-reduced-motion\"",
+    "data-dx-motion-order-available",
+    "data-dx-motion-preference-storage",
+    "data-dx-motion-storage-key",
+    "data-dx-motion-keyboard-reorder",
+    "data-dx-motion-keyboard-state",
+    "data-dx-motion-reduced"
+  ],
+  "required_env": [],
+  "app_owned_boundaries": [
+    "app-wide reduced-motion policy",
+    "route transition choreography",
+    "production preference sync beyond local storage",
+    "performance budget and governed browser/accessibility QA"
+  ],
+  "missing_runtime_features": [
+    "governed browser QA",
+    "production route transition choreography",
+    "production preference sync beyond local storage"
+  ],
+  "node_modules_required": false,
+  "guards": [
+    "node --test .\\benchmarks\\motion-launch-proof.test.ts",
+    "node --test .\\benchmarks\\motion-launch-materialized.test.ts",
+    "node --test .\\benchmarks\\motion-runtime-interaction.test.ts",
+    "node --test .\\benchmarks\\motion-dashboard-workflow.test.ts"
+  ],
+  "no_runtime_execution": true,
+  "source_files": [
+    "examples/template/motion/presets.ts",
+    "examples/template/motion/provider.tsx",
+    "examples/template/motion/controls.tsx",
+    "examples/template/motion/frame.tsx",
+    "examples/template/motion/layout.tsx",
+    "examples/template/motion/lazy.tsx",
+    "examples/template/motion/motion-values.tsx",
+    "examples/template/motion/page-visibility.tsx",
+    "examples/template/motion/presence.tsx",
+    "examples/template/motion/reorder.tsx",
+    "examples/template/motion/reveal.tsx",
+    "examples/template/motion/scoped-animate.tsx",
+    "examples/template/motion/scroll-progress.tsx",
+    "examples/template/motion/will-change.tsx",
+    "examples/template/motion/dashboard-workflow.ts",
+    "examples/template/motion/metadata.ts",
+    "examples/template/motion/README.md"
+  ]
+}

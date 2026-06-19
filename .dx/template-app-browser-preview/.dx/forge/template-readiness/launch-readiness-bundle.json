@@ -1,0 +1,62 @@
+{
+  "schema": "dx.launch.readiness_bundle",
+  "template_id": "www-template",
+  "route": "/",
+  "status": "source-bundle-runtime-pending",
+  "classification": "source-owned-limited-proof",
+  "package_id": "dx-www/template-shell",
+  "template_readiness_receipt": ".dx/forge/template-readiness/launch-route.json",
+  "package_receipts": {
+    "source_manifest": ".dx/forge/source-manifest.json",
+    "package_status": ".dx/forge/package-status.json",
+    "package_lock": ".dx/forge/package-lock.json"
+  },
+  "companion_documentation_receipts": {
+    "file": ".dx/forge/template-readiness/launch-companion-doc-receipts.json",
+    "required_packages": [
+      "auth/better-auth",
+      "ai/vercel-ai",
+      "validation/zod",
+      "instantdb/react",
+      "i18n/next-intl",
+      "tanstack/query",
+      "wasm/bindgen"
+    ]
+  },
+  "runtime_checklist": ".dx/forge/template-readiness/launch-runtime-checklist.json",
+  "runtime_evidence": ".dx/forge/template-readiness/launch-runtime-evidence.json",
+  "zed_handoff": ".dx/forge/template-readiness/zed-template-handoff.json",
+  "runtime_gate": {
+    "status": "pending-governed-runtime-pass",
+    "requires_explicit_permission": true,
+    "blocked_without_permission": [
+      "production preview start",
+      "browser route proof",
+      "live provider proof",
+      "deploy proof"
+    ]
+  },
+  "source_guards": [
+    {
+      "id": "template-shell",
+      "command": "node --test benchmarks/template-shell.test.ts"
+    },
+    {
+      "id": "package-reality",
+      "command": "node --test benchmarks/www-template-forge-reality.test.ts"
+    },
+    {
+      "id": "template-readiness-receipts",
+      "command": "node --test benchmarks/www-template-template-readiness-receipts.test.ts"
+    }
+  ],
+  "runtime_proof": false,
+  "live_provider_execution": false,
+  "network_calls": false,
+  "secret_values": [],
+  "no_execution": true,
+  "honesty_notes": [
+    "This bundle aggregates source receipts and runtime gates.",
+    "It does not run browser, provider, deploy, or build commands."
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "wasm/bindgen",
+    "official_package_name": "WebAssembly Bridge",
+    "upstream_name": "wasm-bindgen",
+    "version": "0.2.121-dx.0",
+    "generator": "dx-forge/wasm-bindgen",
+    "variant": "web-target-source",
+    "rollback_receipt": "20260523T060000000000000Z-wasm-bindgen.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "81e5828f244e81c03f95321cd3bb51af5be22d436422a045c0c33a5dd11ef767",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "crate:wasm-bindgen@0.2.121; generated web-target JavaScript glue reference",
+      "verified": false,
+      "note": "DX inspected the local wasm-bindgen source mirror, Rust attribute crate metadata, generated web-target JavaScript glue shape, and browser WebAssembly instantiate APIs before curating this source-owned bridge slice; this package records no generated .wasm artifact or live browser execution proof."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-23T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this WebAssembly Bridge source slice, but it is not a live advisory feed and does not audit app-owned Rust crates, generated artifacts, CSP, MIME serving, or browser execution."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration and wasm-bindgen project metadata only; no formal DX legal review is claimed."
+    },
+    "dependency_constraints": [
+      {
+        "name": "wasm-bindgen",
+        "constraint": "0.2.121 upstream source and generated web-target glue shape",
+        "boundary": "Forge owns the editable JavaScript bridge helpers; app-owned Rust compilation and wasm-bindgen CLI output are not executed by this package."
+      },
+      {
+        "name": "WebAssembly browser runtime",
+        "constraint": "browser-provided WebAssembly.instantiate/instantiateStreaming APIs",
+        "boundary": "MIME/CSP policy, performance review, and governed browser execution proof remain application-owned."
+      },
+      {
+        "name": "react",
+        "constraint": "^19 peer runtime supplied by the launch template for the optional hook file",
+        "boundary": "Forge records the React hook source file but does not install React or make node_modules part of DX core."
+      }
+    ],
+    "runtime_proof": false,
+    "generated_wasm_artifact": false,
+    "files": [
+      {
+        "path": "wasm/bindgen/loader.ts",
+        "logical_path": "js/wasm/bindgen/loader.ts",
+        "hash": "8f2143c059f1558bfc1f651b3b85513b519dc90eff79421ccf9c40ed9ed3e7be",
+        "bytes": 4319
+      },
+      {
+        "path": "wasm/bindgen/react.tsx",
+        "logical_path": "js/wasm/bindgen/react.tsx",
+        "hash": "d312289a68855951ba0bfd10ed6ee36f50fbdd114d1291f29436448434184679",
+        "bytes": 2577
+      },
+      {
+        "path": "wasm/bindgen/readiness.ts",
+        "logical_path": "js/wasm/bindgen/readiness.ts",
+        "hash": "0c503434191627ae5c326f97cce08cd32265c3c9f1cb7753029644508bad6cc2",
+        "bytes": 2292
+      },
+      {
+        "path": "wasm/bindgen/metadata.ts",
+        "logical_path": "js/wasm/bindgen/metadata.ts",
+        "hash": "177b83a1e223b491ac8a13783db19d4352eb24eb76176dee44030c586e48eec2",
+        "bytes": 939
+      },
+      {
+        "path": "wasm/bindgen/README.md",
+        "logical_path": "js/wasm/bindgen/README.md",
+        "hash": "ec5f049e3cf0ec324181d4584ada6cb2135790a23ef92d14e183b4ac280d2657",
+        "bytes": 483
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "wasm/bindgen/loader.ts",
+      "logical_path": "js/wasm/bindgen/loader.ts",
+      "hash": "8f2143c059f1558bfc1f651b3b85513b519dc90eff79421ccf9c40ed9ed3e7be",
+      "bytes": 4319
+    },
+    {
+      "path": "wasm/bindgen/react.tsx",
+      "logical_path": "js/wasm/bindgen/react.tsx",
+      "hash": "d312289a68855951ba0bfd10ed6ee36f50fbdd114d1291f29436448434184679",
+      "bytes": 2577
+    },
+    {
+      "path": "wasm/bindgen/readiness.ts",
+      "logical_path": "js/wasm/bindgen/readiness.ts",
+      "hash": "0c503434191627ae5c326f97cce08cd32265c3c9f1cb7753029644508bad6cc2",
+      "bytes": 2292
+    },
+    {
+      "path": "wasm/bindgen/metadata.ts",
+      "logical_path": "js/wasm/bindgen/metadata.ts",
+      "hash": "177b83a1e223b491ac8a13783db19d4352eb24eb76176dee44030c586e48eec2",
+      "bytes": 939
+    },
+    {
+      "path": "wasm/bindgen/README.md",
+      "logical_path": "js/wasm/bindgen/README.md",
+      "hash": "ec5f049e3cf0ec324181d4584ada6cb2135790a23ef92d14e183b4ac280d2657",
+      "bytes": 483
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/wasm/bindgen/loader.ts",
+      "materialized_path": "wasm/bindgen/loader.ts",
+      "hash": "8f2143c059f1558bfc1f651b3b85513b519dc90eff79421ccf9c40ed9ed3e7be",
+      "bytes": 4319
+    },
+    {
+      "logical_path": "js/wasm/bindgen/react.tsx",
+      "materialized_path": "wasm/bindgen/react.tsx",
+      "hash": "d312289a68855951ba0bfd10ed6ee36f50fbdd114d1291f29436448434184679",
+      "bytes": 2577
+    },
+    {
+      "logical_path": "js/wasm/bindgen/readiness.ts",
+      "materialized_path": "wasm/bindgen/readiness.ts",
+      "hash": "0c503434191627ae5c326f97cce08cd32265c3c9f1cb7753029644508bad6cc2",
+      "bytes": 2292
+    },
+    {
+      "logical_path": "js/wasm/bindgen/metadata.ts",
+      "materialized_path": "wasm/bindgen/metadata.ts",
+      "hash": "177b83a1e223b491ac8a13783db19d4352eb24eb76176dee44030c586e48eec2",
+      "bytes": 939
+    },
+    {
+      "logical_path": "js/wasm/bindgen/README.md",
+      "materialized_path": "wasm/bindgen/README.md",
+      "hash": "ec5f049e3cf0ec324181d4584ada6cb2135790a23ef92d14e183b4ac280d2657",
+      "bytes": 483
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run cargo, wasm-bindgen CLI, npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "source-owned-no-generated-wasm",
+      "traffic": "green",
+      "message": "The package materializes editable bridge source only; no generated .wasm artifact or live runtime proof is claimed."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records wasm-bindgen provenance from the curated local source mirror without claiming SLSA or live upstream verification."
+    }
+  ],
+  "risk_score": 72,
+  "runtime_proof": false,
+  "generated_wasm_artifact": false,
+  "timestamp": "2026-05-23T06:00:00.000000000+00:00",
+  "signature": null
+}

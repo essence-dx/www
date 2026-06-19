@@ -1,0 +1,86 @@
+version: 2.1
+
+orbs:
+  win: circleci/windows@5.0
+
+parameters:
+  windows_release_artifacts:
+    type: boolean
+    default: false
+
+jobs:
+  windows-release:
+    executor:
+      name: win/default
+      size: medium
+    steps:
+      - checkout
+      - run:
+          name: Install Rust
+          shell: powershell.exe
+          command: |
+            Invoke-WebRequest -Uri "https://win.rustup.rs/x86_64" -OutFile "rustup-init.exe"
+            .\rustup-init.exe -y --default-toolchain 1.94.0 --profile minimal
+      - run:
+          name: Build Windows artifact for dx-www
+          shell: powershell.exe
+          command: |
+            $env:Path = "$env:USERPROFILE\.cargo\bin;$env:Path"
+            $ErrorActionPreference = "Stop"
+            cargo build --locked --release -p dx-www --bin dx-www
+            New-Item -ItemType Directory -Path dist -Force | Out-Null
+            Copy-Item -LiteralPath "target\release\dx-www.exe" -Destination "dist\dx-www-windows-x86_64.exe"
+            $shortSha = $env:CIRCLE_SHA1.Substring(0, 12)
+            $archive = "dx-www-windows-x86_64-$shortSha.zip"
+            Compress-Archive -Path "dist\*" -DestinationPath "dist\$archive" -Force
+            $hash = Get-FileHash -Algorithm SHA256 -LiteralPath "dist\$archive"
+            "$($hash.Hash.ToLowerInvariant())  $archive" | Set-Content -LiteralPath "dist\SHA256SUMS.txt" -Encoding ASCII
+      - store_artifacts:
+          path: dist
+      - run:
+          name: Upload to GitHub release essence-dx/www
+          shell: powershell.exe
+          command: |
+            choco install gh -y --no-progress --limit-output
+            $tag = "windows"
+            gh release create $tag --repo essence-dx/www --title "Windows build" --notes "CI Windows artifact" --target $env:CIRCLE_SHA1 2>$null || $true
+            gh release upload $tag dist\dx-www-windows-x86_64-*.zip --repo essence-dx/www --clobber
+
+workflows:
+  windows-release:
+    when: << pipeline.parameters.windows_release_artifacts >>
+    jobs:
+      - windows-release
+
+# Linux and macOS jobs - commented out for now.
+# Enable later when we want full cross-platform releases.
+#
+# jobs:
+#   linux-release:
+#     docker:
+#       - image: cimg/rust:1.94.0
+#     steps:
+#       - checkout
+#       - run:
+#           name: Build Linux artifact for dx-www
+#           command: |
+#             cargo build --locked --release -p dx-www --bin dx-www
+#             mkdir -p dist
+#             cp target/release/dx-www dist/dx-www-linux-x86_64
+#             # ... tar, upload etc
+#   macos-release:
+#     macos:
+#       xcode: 26.4.1
+#     steps:
+#       - checkout
+#       - run: ... similar for mac
+#
+# workflows:
+#   linux-release:
+#     when: << pipeline.parameters.linux_release_artifacts >>
+#     jobs:
+#       - linux-release
+#   macos-release:
+#     when: << pipeline.parameters.macos_release_artifacts >>
+#     jobs:
+#       - macos-release

@@ -1,0 +1,600 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "content/fumadocs-next",
+    "upstream_name": "fumadocs",
+    "version": "16.8.12-dx.9",
+    "generator": "dx-forge/fumadocs",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "671c4be9532cbda82955d26801468a98038d3257f89308c19e5f947e5e32a3f5",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:fumadocs-core@16.8.12; npm:fumadocs-ui@16.8.12; npm:fumadocs-mdx@15.0.7; npm:fumadocs-openapi@10.8.6",
+      "verified": false,
+      "note": "DX inspected the local Fumadocs source mirror, package export maps, package metadata, next, next-min, next-static, and openapi examples, MDX config, source loader, source plugin exports, lucideIconsPlugin(), statusBadgesPlugin(), slugsFromData(), breadcrumb/page-tree exports, getBreadcrumbItems(), flattenTree(), findNeighbour(), getPageTreePeers(), getTableOfContents(), TOCItemType, page.data.toc, llms() source export, processed Markdown getText() flow, createOpenAPI(), staticSource(), loaderPlugin(), createProxy(), proxyUrl, createAPIPage(), createCodeUsageGeneratorRegistry(), registerDefault(), defineClientConfig(), createFromSource search route, staticGET search export, useDocsSearch client preset shape, docs layouts, MDX component exports, and starter content flow before curating this launch docs slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Fumadocs launch docs slice, but it is not a live advisory feed and does not audit application content, source plugin taxonomy, navigation policy, slug/canonical URL policy, OpenAPI proxy allowed origins, auth forwarding policy, search UI, multilingual/vector search policy, Next config merges, or deployment policy."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/fumadocs/source.ts",
+        "logical_path": "js/lib/fumadocs/source.ts",
+        "hash": "bc6bf0f63ffcc892426b288bc0728ea5351e1624598832c925e2e6fbade04f54",
+        "bytes": 810
+      },
+      {
+        "path": "lib/fumadocs/source-plugins.tsx",
+        "logical_path": "js/lib/fumadocs/source-plugins.tsx",
+        "hash": "4fb74d44f647eb85201cc4ed1cf1d70617efb5ef7893aa676131e180df441ef8",
+        "bytes": 1408
+      },
+      {
+        "path": "lib/fumadocs/navigation.ts",
+        "logical_path": "js/lib/fumadocs/navigation.ts",
+        "hash": "c553989437484c7cdfd0950128a2870aac055f8e972788f54ac71e5fc6ebc3c2",
+        "bytes": 2409
+      },
+      {
+        "path": "lib/fumadocs/toc.ts",
+        "logical_path": "js/lib/fumadocs/toc.ts",
+        "hash": "99af6dd42b245bc1f89fc2fa45ab81c7a2353a770b86732878c3eea2c9218fce",
+        "bytes": 1935
+      },
+      {
+        "path": "lib/fumadocs/layout.tsx",
+        "logical_path": "js/lib/fumadocs/layout.tsx",
+        "hash": "7964446a920cc1853b692c32eb25628e7d380f6a2adad5297275105d2fb9606e",
+        "bytes": 184
+      },
+      {
+        "path": "lib/fumadocs/llms.ts",
+        "logical_path": "js/lib/fumadocs/llms.ts",
+        "hash": "b54adcea8a77edacf06596d75c91050ad7714ef343cb4af3c17ddeb98d286858",
+        "bytes": 1338
+      },
+      {
+        "path": "lib/fumadocs/openapi.ts",
+        "logical_path": "js/lib/fumadocs/openapi.ts",
+        "hash": "c3deb6fdee989dad9a3493af7be7f50e8be9781481a44784909ff0466363ac4f",
+        "bytes": 1481
+      },
+      {
+        "path": "lib/fumadocs/openapi-code-usage.ts",
+        "logical_path": "js/lib/fumadocs/openapi-code-usage.ts",
+        "hash": "ec7cd6794a291ba0b337bfe0675b290ab2d0d0c10665d7af7dc1ee7897235511",
+        "bytes": 2008
+      },
+      {
+        "path": "lib/fumadocs/search.ts",
+        "logical_path": "js/lib/fumadocs/search.ts",
+        "hash": "547b78728d641da09d830b395ea070448c1b34a0dc464fab05ac2407152f1563",
+        "bytes": 939
+      },
+      {
+        "path": "lib/fumadocs/search-client.ts",
+        "logical_path": "js/lib/fumadocs/search-client.ts",
+        "hash": "fbd631cf30eae5bb66ad80ce9b4ee3bd341258ba3e4bb5ab68400914e19b7620",
+        "bytes": 920
+      },
+      {
+        "path": "lib/fumadocs/dashboard-workflow.ts",
+        "logical_path": "js/lib/fumadocs/dashboard-workflow.ts",
+        "hash": "61ede6ed991b68e928a2ace683186b0568eb3e9f7550fae6d3d38868f5550436",
+        "bytes": 7083
+      },
+      {
+        "path": "lib/fumadocs/metadata.ts",
+        "logical_path": "js/lib/fumadocs/metadata.ts",
+        "hash": "c8374410f4c6951ffefa0cd9a7d8ddebf4d6db089b41696d8c7cde4bcf27aaa5",
+        "bytes": 10076
+      },
+      {
+        "path": "lib/fumadocs/route-contract.ts",
+        "logical_path": "js/lib/fumadocs/route-contract.ts",
+        "hash": "c723c1590d9f2293de0e1894be08743cc1906b99369a5ff67be1cbff73f6ff6f",
+        "bytes": 4100
+      },
+      {
+        "path": "components/mdx.tsx",
+        "logical_path": "js/components/mdx.tsx",
+        "hash": "dce92f92cad4af64ca4b22793e2ba0a011c467492cd3888859b9af0a2be90536",
+        "bytes": 518
+      },
+      {
+        "path": "components/api-page.tsx",
+        "logical_path": "js/components/api-page.tsx",
+        "hash": "bfb30fdd90a789ed13954407413b9128571f4683c75ce2e650b94b621828e176",
+        "bytes": 404
+      },
+      {
+        "path": "components/api-page.client.tsx",
+        "logical_path": "js/components/api-page.client.tsx",
+        "hash": "f6536049c4e12929570b67fa86e5fb6c4505c4853786e025ad877aae18eac807",
+        "bytes": 366
+      },
+      {
+        "path": "components/dashboard/fumadocs-docs-workflow.tsx",
+        "logical_path": "js/components/dashboard/fumadocs-docs-workflow.tsx",
+        "hash": "81a48bc4ac1eb176bebebfa64aa0f7fbb757b10499597e095689d1ca662b0005",
+        "bytes": 5816
+      },
+      {
+        "path": "app/docs/layout.tsx",
+        "logical_path": "js/app/docs/layout.tsx",
+        "hash": "564177b90ff3b21bf9d3bb4cff573ed01f7c8850b290813f64052c0abab38ef6",
+        "bytes": 563
+      },
+      {
+        "path": "app/docs/[[...slug]]/page.tsx",
+        "logical_path": "js/app/docs/[[...slug]]/page.tsx",
+        "hash": "20c674d3fc24e4278b40298f6c188d10a24facd46754fd6bb37d075628d419a0",
+        "bytes": 1767
+      },
+      {
+        "path": "app/llms.txt/route.ts",
+        "logical_path": "js/app/llms.txt/route.ts",
+        "hash": "62261261baa0b97d40d4c9410c6dacf1a9e779c57632025606f6f38dde7286e7",
+        "bytes": 266
+      },
+      {
+        "path": "app/llms-full.txt/route.ts",
+        "logical_path": "js/app/llms-full.txt/route.ts",
+        "hash": "657014072e7663546ae5a662a4bd9ce74a18d6b3d8190038184ebca4f89ab90d",
+        "bytes": 379
+      },
+      {
+        "path": "app/llms.mdx/docs/[[...slug]]/route.ts",
+        "logical_path": "js/app/llms.mdx/docs/[[...slug]]/route.ts",
+        "hash": "8c5213de41f63540ddf3daef0b608e66b8beb33c59f60086a410f7694826fc40",
+        "bytes": 734
+      },
+      {
+        "path": "app/api/search/route.ts",
+        "logical_path": "js/app/api/search/route.ts",
+        "hash": "8697809465b7b26cbf1ceeabb2bc4e4215373b3f9c5877f48d0a13acf5503ea9",
+        "bytes": 150
+      },
+      {
+        "path": "app/api/search-static/route.ts",
+        "logical_path": "js/app/api/search-static/route.ts",
+        "hash": "8d7888becf26e54f9402a7442dfde72010c2302eba71f94c156ee71ba090a1d6",
+        "bytes": 190
+      },
+      {
+        "path": "app/api/openapi/proxy/route.ts",
+        "logical_path": "js/app/api/openapi/proxy/route.ts",
+        "hash": "a539f83d7510b553814873661d60a825f5d247a535e2b60cf65f049a2e3bcbdb",
+        "bytes": 395
+      },
+      {
+        "path": "content/docs/meta.json",
+        "logical_path": "js/content/docs/meta.json",
+        "hash": "18671c5d0b6199d293b5765b5c7cd194e80650ba24a8314269f296bd40c5ce74",
+        "bytes": 54
+      },
+      {
+        "path": "content/docs/index.mdx",
+        "logical_path": "js/content/docs/index.mdx",
+        "hash": "ce552fff41bac10d32fb230889c79dfaf5c44f4c46d73884aa7fa1e50bb21eb0",
+        "bytes": 1368
+      },
+      {
+        "path": "openapi/dx-www.yaml",
+        "logical_path": "js/openapi/dx-www.yaml",
+        "hash": "51ed795360439a1047f7305647606c9868cafd79a70845d075a321bdbb2b9fbf",
+        "bytes": 2507
+      },
+      {
+        "path": "lib/fumadocs/README.md",
+        "logical_path": "js/lib/fumadocs/README.md",
+        "hash": "240ae7721a4a8af13022b16d0cb447673f30cfdf7a71686d5b6fed2f085c699e",
+        "bytes": 4480
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/fumadocs/source.ts",
+      "logical_path": "js/lib/fumadocs/source.ts",
+      "hash": "bc6bf0f63ffcc892426b288bc0728ea5351e1624598832c925e2e6fbade04f54",
+      "bytes": 810
+    },
+    {
+      "path": "lib/fumadocs/source-plugins.tsx",
+      "logical_path": "js/lib/fumadocs/source-plugins.tsx",
+      "hash": "4fb74d44f647eb85201cc4ed1cf1d70617efb5ef7893aa676131e180df441ef8",
+      "bytes": 1408
+    },
+    {
+      "path": "lib/fumadocs/navigation.ts",
+      "logical_path": "js/lib/fumadocs/navigation.ts",
+      "hash": "c553989437484c7cdfd0950128a2870aac055f8e972788f54ac71e5fc6ebc3c2",
+      "bytes": 2409
+    },
+    {
+      "path": "lib/fumadocs/toc.ts",
+      "logical_path": "js/lib/fumadocs/toc.ts",
+      "hash": "99af6dd42b245bc1f89fc2fa45ab81c7a2353a770b86732878c3eea2c9218fce",
+      "bytes": 1935
+    },
+    {
+      "path": "lib/fumadocs/layout.tsx",
+      "logical_path": "js/lib/fumadocs/layout.tsx",
+      "hash": "7964446a920cc1853b692c32eb25628e7d380f6a2adad5297275105d2fb9606e",
+      "bytes": 184
+    },
+    {
+      "path": "lib/fumadocs/llms.ts",
+      "logical_path": "js/lib/fumadocs/llms.ts",
+      "hash": "b54adcea8a77edacf06596d75c91050ad7714ef343cb4af3c17ddeb98d286858",
+      "bytes": 1338
+    },
+    {
+      "path": "lib/fumadocs/openapi.ts",
+      "logical_path": "js/lib/fumadocs/openapi.ts",
+      "hash": "c3deb6fdee989dad9a3493af7be7f50e8be9781481a44784909ff0466363ac4f",
+      "bytes": 1481
+    },
+    {
+      "path": "lib/fumadocs/openapi-code-usage.ts",
+      "logical_path": "js/lib/fumadocs/openapi-code-usage.ts",
+      "hash": "ec7cd6794a291ba0b337bfe0675b290ab2d0d0c10665d7af7dc1ee7897235511",
+      "bytes": 2008
+    },
+    {
+      "path": "lib/fumadocs/search.ts",
+      "logical_path": "js/lib/fumadocs/search.ts",
+      "hash": "547b78728d641da09d830b395ea070448c1b34a0dc464fab05ac2407152f1563",
+      "bytes": 939
+    },
+    {
+      "path": "lib/fumadocs/search-client.ts",
+      "logical_path": "js/lib/fumadocs/search-client.ts",
+      "hash": "fbd631cf30eae5bb66ad80ce9b4ee3bd341258ba3e4bb5ab68400914e19b7620",
+      "bytes": 920
+    },
+    {
+      "path": "lib/fumadocs/dashboard-workflow.ts",
+      "logical_path": "js/lib/fumadocs/dashboard-workflow.ts",
+      "hash": "61ede6ed991b68e928a2ace683186b0568eb3e9f7550fae6d3d38868f5550436",
+      "bytes": 7083
+    },
+    {
+      "path": "lib/fumadocs/metadata.ts",
+      "logical_path": "js/lib/fumadocs/metadata.ts",
+      "hash": "c8374410f4c6951ffefa0cd9a7d8ddebf4d6db089b41696d8c7cde4bcf27aaa5",
+      "bytes": 10076
+    },
+    {
+      "path": "lib/fumadocs/route-contract.ts",
+      "logical_path": "js/lib/fumadocs/route-contract.ts",
+      "hash": "c723c1590d9f2293de0e1894be08743cc1906b99369a5ff67be1cbff73f6ff6f",
+      "bytes": 4100
+    },
+    {
+      "path": "components/mdx.tsx",
+      "logical_path": "js/components/mdx.tsx",
+      "hash": "dce92f92cad4af64ca4b22793e2ba0a011c467492cd3888859b9af0a2be90536",
+      "bytes": 518
+    },
+    {
+      "path": "components/api-page.tsx",
+      "logical_path": "js/components/api-page.tsx",
+      "hash": "bfb30fdd90a789ed13954407413b9128571f4683c75ce2e650b94b621828e176",
+      "bytes": 404
+    },
+    {
+      "path": "components/api-page.client.tsx",
+      "logical_path": "js/components/api-page.client.tsx",
+      "hash": "f6536049c4e12929570b67fa86e5fb6c4505c4853786e025ad877aae18eac807",
+      "bytes": 366
+    },
+    {
+      "path": "components/dashboard/fumadocs-docs-workflow.tsx",
+      "logical_path": "js/components/dashboard/fumadocs-docs-workflow.tsx",
+      "hash": "81a48bc4ac1eb176bebebfa64aa0f7fbb757b10499597e095689d1ca662b0005",
+      "bytes": 5816
+    },
+    {
+      "path": "app/docs/layout.tsx",
+      "logical_path": "js/app/docs/layout.tsx",
+      "hash": "564177b90ff3b21bf9d3bb4cff573ed01f7c8850b290813f64052c0abab38ef6",
+      "bytes": 563
+    },
+    {
+      "path": "app/docs/[[...slug]]/page.tsx",
+      "logical_path": "js/app/docs/[[...slug]]/page.tsx",
+      "hash": "20c674d3fc24e4278b40298f6c188d10a24facd46754fd6bb37d075628d419a0",
+      "bytes": 1767
+    },
+    {
+      "path": "app/llms.txt/route.ts",
+      "logical_path": "js/app/llms.txt/route.ts",
+      "hash": "62261261baa0b97d40d4c9410c6dacf1a9e779c57632025606f6f38dde7286e7",
+      "bytes": 266
+    },
+    {
+      "path": "app/llms-full.txt/route.ts",
+      "logical_path": "js/app/llms-full.txt/route.ts",
+      "hash": "657014072e7663546ae5a662a4bd9ce74a18d6b3d8190038184ebca4f89ab90d",
+      "bytes": 379
+    },
+    {
+      "path": "app/llms.mdx/docs/[[...slug]]/route.ts",
+      "logical_path": "js/app/llms.mdx/docs/[[...slug]]/route.ts",
+      "hash": "8c5213de41f63540ddf3daef0b608e66b8beb33c59f60086a410f7694826fc40",
+      "bytes": 734
+    },
+    {
+      "path": "app/api/search/route.ts",
+      "logical_path": "js/app/api/search/route.ts",
+      "hash": "8697809465b7b26cbf1ceeabb2bc4e4215373b3f9c5877f48d0a13acf5503ea9",
+      "bytes": 150
+    },
+    {
+      "path": "app/api/search-static/route.ts",
+      "logical_path": "js/app/api/search-static/route.ts",
+      "hash": "8d7888becf26e54f9402a7442dfde72010c2302eba71f94c156ee71ba090a1d6",
+      "bytes": 190
+    },
+    {
+      "path": "app/api/openapi/proxy/route.ts",
+      "logical_path": "js/app/api/openapi/proxy/route.ts",
+      "hash": "a539f83d7510b553814873661d60a825f5d247a535e2b60cf65f049a2e3bcbdb",
+      "bytes": 395
+    },
+    {
+      "path": "content/docs/meta.json",
+      "logical_path": "js/content/docs/meta.json",
+      "hash": "18671c5d0b6199d293b5765b5c7cd194e80650ba24a8314269f296bd40c5ce74",
+      "bytes": 54
+    },
+    {
+      "path": "content/docs/index.mdx",
+      "logical_path": "js/content/docs/index.mdx",
+      "hash": "ce552fff41bac10d32fb230889c79dfaf5c44f4c46d73884aa7fa1e50bb21eb0",
+      "bytes": 1368
+    },
+    {
+      "path": "openapi/dx-www.yaml",
+      "logical_path": "js/openapi/dx-www.yaml",
+      "hash": "51ed795360439a1047f7305647606c9868cafd79a70845d075a321bdbb2b9fbf",
+      "bytes": 2507
+    },
+    {
+      "path": "lib/fumadocs/README.md",
+      "logical_path": "js/lib/fumadocs/README.md",
+      "hash": "240ae7721a4a8af13022b16d0cb447673f30cfdf7a71686d5b6fed2f085c699e",
+      "bytes": 4480
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/fumadocs/source.ts",
+      "materialized_path": "lib/fumadocs/source.ts",
+      "hash": "bc6bf0f63ffcc892426b288bc0728ea5351e1624598832c925e2e6fbade04f54",
+      "bytes": 810
+    },
+    {
+      "logical_path": "js/lib/fumadocs/source-plugins.tsx",
+      "materialized_path": "lib/fumadocs/source-plugins.tsx",
+      "hash": "4fb74d44f647eb85201cc4ed1cf1d70617efb5ef7893aa676131e180df441ef8",
+      "bytes": 1408
+    },
+    {
+      "logical_path": "js/lib/fumadocs/navigation.ts",
+      "materialized_path": "lib/fumadocs/navigation.ts",
+      "hash": "c553989437484c7cdfd0950128a2870aac055f8e972788f54ac71e5fc6ebc3c2",
+      "bytes": 2409
+    },
+    {
+      "logical_path": "js/lib/fumadocs/toc.ts",
+      "materialized_path": "lib/fumadocs/toc.ts",
+      "hash": "99af6dd42b245bc1f89fc2fa45ab81c7a2353a770b86732878c3eea2c9218fce",
+      "bytes": 1935
+    },
+    {
+      "logical_path": "js/lib/fumadocs/layout.tsx",
+      "materialized_path": "lib/fumadocs/layout.tsx",
+      "hash": "7964446a920cc1853b692c32eb25628e7d380f6a2adad5297275105d2fb9606e",
+      "bytes": 184
+    },
+    {
+      "logical_path": "js/lib/fumadocs/llms.ts",
+      "materialized_path": "lib/fumadocs/llms.ts",
+      "hash": "b54adcea8a77edacf06596d75c91050ad7714ef343cb4af3c17ddeb98d286858",
+      "bytes": 1338
+    },
+    {
+      "logical_path": "js/lib/fumadocs/openapi.ts",
+      "materialized_path": "lib/fumadocs/openapi.ts",
+      "hash": "c3deb6fdee989dad9a3493af7be7f50e8be9781481a44784909ff0466363ac4f",
+      "bytes": 1481
+    },
+    {
+      "logical_path": "js/lib/fumadocs/openapi-code-usage.ts",
+      "materialized_path": "lib/fumadocs/openapi-code-usage.ts",
+      "hash": "ec7cd6794a291ba0b337bfe0675b290ab2d0d0c10665d7af7dc1ee7897235511",
+      "bytes": 2008
+    },
+    {
+      "logical_path": "js/lib/fumadocs/search.ts",
+      "materialized_path": "lib/fumadocs/search.ts",
+      "hash": "547b78728d641da09d830b395ea070448c1b34a0dc464fab05ac2407152f1563",
+      "bytes": 939
+    },
+    {
+      "logical_path": "js/lib/fumadocs/search-client.ts",
+      "materialized_path": "lib/fumadocs/search-client.ts",
+      "hash": "fbd631cf30eae5bb66ad80ce9b4ee3bd341258ba3e4bb5ab68400914e19b7620",
+      "bytes": 920
+    },
+    {
+      "logical_path": "js/lib/fumadocs/dashboard-workflow.ts",
+      "materialized_path": "lib/fumadocs/dashboard-workflow.ts",
+      "hash": "61ede6ed991b68e928a2ace683186b0568eb3e9f7550fae6d3d38868f5550436",
+      "bytes": 7083
+    },
+    {
+      "logical_path": "js/lib/fumadocs/metadata.ts",
+      "materialized_path": "lib/fumadocs/metadata.ts",
+      "hash": "c8374410f4c6951ffefa0cd9a7d8ddebf4d6db089b41696d8c7cde4bcf27aaa5",
+      "bytes": 10076
+    },
+    {
+      "logical_path": "js/lib/fumadocs/route-contract.ts",
+      "materialized_path": "lib/fumadocs/route-contract.ts",
+      "hash": "c723c1590d9f2293de0e1894be08743cc1906b99369a5ff67be1cbff73f6ff6f",
+      "bytes": 4100
+    },
+    {
+      "logical_path": "js/components/mdx.tsx",
+      "materialized_path": "components/mdx.tsx",
+      "hash": "dce92f92cad4af64ca4b22793e2ba0a011c467492cd3888859b9af0a2be90536",
+      "bytes": 518
+    },
+    {
+      "logical_path": "js/components/api-page.tsx",
+      "materialized_path": "components/api-page.tsx",
+      "hash": "bfb30fdd90a789ed13954407413b9128571f4683c75ce2e650b94b621828e176",
+      "bytes": 404
+    },
+    {
+      "logical_path": "js/components/api-page.client.tsx",
+      "materialized_path": "components/api-page.client.tsx",
+      "hash": "f6536049c4e12929570b67fa86e5fb6c4505c4853786e025ad877aae18eac807",
+      "bytes": 366
+    },
+    {
+      "logical_path": "js/components/dashboard/fumadocs-docs-workflow.tsx",
+      "materialized_path": "components/dashboard/fumadocs-docs-workflow.tsx",
+      "hash": "81a48bc4ac1eb176bebebfa64aa0f7fbb757b10499597e095689d1ca662b0005",
+      "bytes": 5816
+    },
+    {
+      "logical_path": "js/app/docs/layout.tsx",
+      "materialized_path": "app/docs/layout.tsx",
+      "hash": "564177b90ff3b21bf9d3bb4cff573ed01f7c8850b290813f64052c0abab38ef6",
+      "bytes": 563
+    },
+    {
+      "logical_path": "js/app/docs/[[...slug]]/page.tsx",
+      "materialized_path": "app/docs/[[...slug]]/page.tsx",
+      "hash": "20c674d3fc24e4278b40298f6c188d10a24facd46754fd6bb37d075628d419a0",
+      "bytes": 1767
+    },
+    {
+      "logical_path": "js/app/llms.txt/route.ts",
+      "materialized_path": "app/llms.txt/route.ts",
+      "hash": "62261261baa0b97d40d4c9410c6dacf1a9e779c57632025606f6f38dde7286e7",
+      "bytes": 266
+    },
+    {
+      "logical_path": "js/app/llms-full.txt/route.ts",
+      "materialized_path": "app/llms-full.txt/route.ts",
+      "hash": "657014072e7663546ae5a662a4bd9ce74a18d6b3d8190038184ebca4f89ab90d",
+      "bytes": 379
+    },
+    {
+      "logical_path": "js/app/llms.mdx/docs/[[...slug]]/route.ts",
+      "materialized_path": "app/llms.mdx/docs/[[...slug]]/route.ts",
+      "hash": "8c5213de41f63540ddf3daef0b608e66b8beb33c59f60086a410f7694826fc40",
+      "bytes": 734
+    },
+    {
+      "logical_path": "js/app/api/search/route.ts",
+      "materialized_path": "app/api/search/route.ts",
+      "hash": "8697809465b7b26cbf1ceeabb2bc4e4215373b3f9c5877f48d0a13acf5503ea9",
+      "bytes": 150
+    },
+    {
+      "logical_path": "js/app/api/search-static/route.ts",
+      "materialized_path": "app/api/search-static/route.ts",
+      "hash": "8d7888becf26e54f9402a7442dfde72010c2302eba71f94c156ee71ba090a1d6",
+      "bytes": 190
+    },
+    {
+      "logical_path": "js/app/api/openapi/proxy/route.ts",
+      "materialized_path": "app/api/openapi/proxy/route.ts",
+      "hash": "a539f83d7510b553814873661d60a825f5d247a535e2b60cf65f049a2e3bcbdb",
+      "bytes": 395
+    },
+    {
+      "logical_path": "js/content/docs/meta.json",
+      "materialized_path": "content/docs/meta.json",
+      "hash": "18671c5d0b6199d293b5765b5c7cd194e80650ba24a8314269f296bd40c5ce74",
+      "bytes": 54
+    },
+    {
+      "logical_path": "js/content/docs/index.mdx",
+      "materialized_path": "content/docs/index.mdx",
+      "hash": "ce552fff41bac10d32fb230889c79dfaf5c44f4c46d73884aa7fa1e50bb21eb0",
+      "bytes": 1368
+    },
+    {
+      "logical_path": "js/openapi/dx-www.yaml",
+      "materialized_path": "openapi/dx-www.yaml",
+      "hash": "51ed795360439a1047f7305647606c9868cafd79a70845d075a321bdbb2b9fbf",
+      "bytes": 2507
+    },
+    {
+      "logical_path": "js/lib/fumadocs/README.md",
+      "materialized_path": "lib/fumadocs/README.md",
+      "hash": "240ae7721a4a8af13022b16d0cb447673f30cfdf7a71686d5b6fed2f085c699e",
+      "bytes": 4480
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `MIT` with formal review `no`."
+    },
+    {
+      "policy": "fumadocs-public-api-boundary",
+      "traffic": "green",
+      "message": "content/fumadocs-next materializes adapters around Fumadocs public exports including createMDX(), defineDocs(), loader(), lucideIconsPlugin(), statusBadgesPlugin(), slugsFromData(), getBreadcrumbItems(), flattenTree(), findNeighbour(), getPageTreePeers(), getTableOfContents(), TOCItemType, page.data.toc, llms(), processed Markdown getText(), createOpenAPI(), staticSource(), loaderPlugin(), createProxy(), proxyUrl, createAPIPage(), createCodeUsageGeneratorRegistry(), registerDefault(), defineClientConfig(), createFromSource(), staticGET(), useDocsSearch client presets, DocsLayout, DocsPage, and createRelativeLink; it does not copy Fumadocs internals."
+    },
+    {
+      "policy": "fumadocs-app-router-contract",
+      "traffic": "green",
+      "message": "content/fumadocs-next writes editable Next App Router docs files for /docs, source plugin frontmatter/status badge/icon wiring, navigation snapshot helpers, TOC summary helpers, OpenAPI virtual docs under /docs/api, an allowed-origin OpenAPI proxy at /api/openapi/proxy, OpenAPI request code usage generators, Fumadocs llms() routes at /llms.txt, /llms-full.txt, and /llms.mdx/docs, a createFromSource-backed /api/search route, a staticGET-backed /api/search-static route, generated static params, metadata, MDX component merging, and starter content that the application owns after materialization."
+    },
+    {
+      "policy": "fumadocs-discovery-metadata",
+      "traffic": "green",
+      "message": "content/fumadocs-next includes metadata.ts so DX CLI, Zed, and launch templates can discover package id, upstream Fumadocs packages, dependencies, docs/LLMs/OpenAPI/proxy/search/static-search routes, source plugin frontmatter fields, navigation snapshot helpers, TOC summary helpers, OpenAPI code usage registry, client search presets, materialized files, and package boundaries without scanning README text."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-23T04:36:01.478905900+00:00",
+  "signature": null
+}

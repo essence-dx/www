@@ -1,0 +1,2790 @@
+{
+  "generated_at": "2026-05-24T13:25:37.359Z",
+  "report_id": "forge-source-owned-package-review-v1",
+  "source": "benchmarks/measure-forge-source-owned-package-review.ts",
+  "project_dir": "G:\\Dx\\www\\.dx\\adoption-package-review",
+  "review_dir": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\source-owned-review",
+  "score": 100,
+  "passed": true,
+  "no_node_modules": true,
+  "package_count": 30,
+  "packages": [
+    {
+      "package_id": "shadcn/ui/button",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 4,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\shadcn-ui-button.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537588084100Z-shadcn-ui-button.json",
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539912391200Z-shadcn-ui-button.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "shadcn/ui/badge",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 4,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\shadcn-ui-badge.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537604582900Z-shadcn-ui-badge.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "shadcn/ui/card",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 3,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\shadcn-ui-card.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537612391900Z-shadcn-ui-card.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "shadcn/ui/label",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 3,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\shadcn-ui-label.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537620212900Z-shadcn-ui-label.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "shadcn/ui/separator",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 3,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\shadcn-ui-separator.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537730538200Z-shadcn-ui-separator.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "shadcn/ui/field",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 5,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\shadcn-ui-field.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537738483800Z-shadcn-ui-field.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "shadcn/ui/item",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 5,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\shadcn-ui-item.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537747088800Z-shadcn-ui-item.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "shadcn/ui/input",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 2,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\shadcn-ui-input.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537756559400Z-shadcn-ui-input.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "shadcn/ui/textarea",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 2,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\shadcn-ui-textarea.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537765322100Z-shadcn-ui-textarea.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "dx/icon/search",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 3,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\dx-icon-search.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537774113700Z-dx-icon-search.json",
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539927077300Z-dx-icon-search.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "auth/better-auth",
+      "variant": "default",
+      "version": "1.6.11-dx.9",
+      "source_kind": "curated-registry",
+      "file_count": 21,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\auth-better-auth.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537892764000Z-auth-better-auth.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "animation/motion",
+      "variant": "default",
+      "version": "12.38.0-dx.12",
+      "source_kind": "curated-registry",
+      "file_count": 17,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\animation-motion.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132537905779100Z-animation-motion.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "i18n/next-intl",
+      "variant": "default",
+      "version": "4.12.0-dx.0",
+      "source_kind": "curated-registry",
+      "file_count": 40,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\i18n-next-intl.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132538064606800Z-i18n-next-intl.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "tanstack/query",
+      "variant": "default",
+      "version": "5.100.10-dx.0",
+      "source_kind": "curated-registry",
+      "file_count": 38,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\tanstack-query.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132538220873000Z-tanstack-query.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "validation/zod",
+      "variant": "default",
+      "version": "4.4.3-dx.13",
+      "source_kind": "curated-registry",
+      "file_count": 19,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\validation-zod.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132538369553400Z-validation-zod.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "forms/react-hook-form",
+      "variant": "default",
+      "version": "7.75.0-dx.0",
+      "source_kind": "curated-registry",
+      "file_count": 6,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\forms-react-hook-form.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132538385669000Z-forms-react-hook-form.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "payments/stripe-js",
+      "variant": "default",
+      "version": "9.6.0-dx.1",
+      "source_kind": "curated-registry",
+      "file_count": 10,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\payments-stripe-js.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132538518317900Z-payments-stripe-js.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "automations/n8n",
+      "variant": "default",
+      "version": "1.0.0-dx.3",
+      "source_kind": "curated-registry",
+      "file_count": 6,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\automations-n8n.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132538531762900Z-automations-n8n.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "Sustainable Use License"
+    },
+    {
+      "package_id": "state/zustand",
+      "variant": "default",
+      "version": "5.0.13-dx.10",
+      "source_kind": "curated-registry",
+      "file_count": 13,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\state-zustand.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132538672094700Z-state-zustand.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "ai/vercel-ai",
+      "variant": "default",
+      "version": "7.0.0-canary.146-dx.0",
+      "source_kind": "curated-registry",
+      "file_count": 35,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\ai-vercel-ai.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132538822597900Z-ai-vercel-ai.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "Apache-2.0"
+    },
+    {
+      "package_id": "api/trpc",
+      "variant": "default",
+      "version": "11.17.0-dx.10",
+      "source_kind": "curated-registry",
+      "file_count": 28,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\api-trpc.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132538977641400Z-api-trpc.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "content/fumadocs-next",
+      "variant": "default",
+      "version": "16.8.12-dx.11",
+      "source_kind": "curated-registry",
+      "file_count": 31,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\content-fumadocs-next.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539137632600Z-content-fumadocs-next.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "content/react-markdown",
+      "variant": "default",
+      "version": "10.1.0-dx.1",
+      "source_kind": "curated-registry",
+      "file_count": 13,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\content-react-markdown.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539155225000Z-content-react-markdown.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "supabase/client",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 31,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\supabase-client.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539302435200Z-supabase-client.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "Apache-2.0"
+    },
+    {
+      "package_id": "db/drizzle-sqlite",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 18,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\db-drizzle-sqlite.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539443684200Z-db-drizzle-sqlite.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "Apache-2.0"
+    },
+    {
+      "package_id": "instantdb/react",
+      "variant": "default",
+      "version": "0.0.0-dx.0",
+      "source_kind": "curated-registry",
+      "file_count": 28,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\instantdb-react.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539602991700Z-instantdb-react.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "Apache-2.0"
+    },
+    {
+      "package_id": "wasm/bindgen",
+      "variant": "default",
+      "version": "0.2.121-dx.0",
+      "source_kind": "curated-registry",
+      "file_count": 6,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\wasm-bindgen.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539624901600Z-wasm-bindgen.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "3d/launch-scene",
+      "variant": "default",
+      "version": "0.184.0-r3f10-dx.0",
+      "source_kind": "curated-registry",
+      "file_count": 19,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\3d-launch-scene.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539752089500Z-3d-launch-scene.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT"
+    },
+    {
+      "package_id": "migration/static-site",
+      "variant": "default",
+      "version": "0.1.0",
+      "source_kind": "curated-registry",
+      "file_count": 4,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\migration-static-site.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132539773355900Z-migration-static-site.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "placeholder": true
+      },
+      "license": "MIT OR Apache-2.0"
+    },
+    {
+      "package_id": "dx-www/vertical/forge",
+      "variant": "default",
+      "version": "0.0.0-local",
+      "source_kind": "local",
+      "file_count": 1,
+      "docs": {
+        "path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\docs\\dx-www-vertical-forge.md",
+        "exists": true
+      },
+      "receipts": [
+        "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\receipts\\20260524T132540525504300Z-dx-www-vertical-forge.json"
+      ],
+      "rollback": {
+        "receipt": null,
+        "exists": false
+      },
+      "advisory": {
+        "coverage_kind": "missing",
+        "provider": "none",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": null,
+        "placeholder": false
+      },
+      "license": "UNLICENSED"
+    }
+  ],
+  "prepare_result": {
+    "name": "prepare adoption smoke",
+    "passed": true,
+    "exit_code": 0,
+    "duration_ms": 21765,
+    "stdout_tail": "",
+    "stderr_tail": "",
+    "enabled": true,
+    "status": "passed",
+    "output": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\source-owned-review\\forge-adoption-smoke.json"
+  },
+  "commands": {
+    "adoption_report": {
+      "name": "dx forge adoption-report",
+      "passed": true,
+      "exit_code": 0,
+      "duration_ms": 226,
+      "stdout_tail": "",
+      "stderr_tail": "",
+      "output": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx\\forge\\source-owned-review\\forge-adoption-report.json",
+      "parsed": true
+    },
+    "verify_all": {
+      "name": "dx forge verify-package --all",
+      "passed": true,
+      "exit_code": 0,
+      "duration_ms": 4639,
+      "stdout_tail": "\n          \"evidence\": \"migrations/static-site/content.ts; migrations/static-site/sample-wordpress-export.json\"\n        },\n        {\n          \"name\": \"migration-static-site-manual-review\",\n          \"passed\": true,\n          \"traffic\": \"green\",\n          \"score\": 20,\n          \"message\": \"Manual-review warnings are visible in the rendered component, typed content, fixture, and README.\",\n          \"evidence\": \"migrations/static-site/page.tsx; migrations/static-site/README.md\"\n        },\n        {\n          \"name\": \"migration-static-site-source-files\",\n          \"passed\": true,\n          \"traffic\": \"green\",\n          \"score\": 15,\n          \"message\": \"All migration/static-site source files exist and are tracked by the Forge source manifest.\",\n          \"evidence\": \".dx/forge/source-manifest.json\"\n        },\n        {\n          \"name\": \"migration-static-site-no-node-modules\",\n          \"passed\": true,\n          \"traffic\": \"green\",\n          \"score\": 10,\n          \"message\": \"The migration package verification path did not create a node_modules directory.\",\n          \"evidence\": \"node_modules; migrations/static-site/node_modules\"\n        }\n      ]\n    }\n  ],\n  \"missing_packages\": []\n}",
+      "stderr_tail": "",
+      "parsed": true
+    }
+  },
+  "adoption_report": {
+    "version": 1,
+    "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+    "generated_at": "2026-05-24T13:25:59.477654700+00:00",
+    "passed": true,
+    "score": 100,
+    "fail_under": 90,
+    "no_node_modules": true,
+    "package_count": 30,
+    "packages": [
+      {
+        "package_id": "shadcn/ui/button",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 4,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-button.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "shadcn/ui/badge",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 4,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-badge.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "shadcn/ui/card",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 3,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-card.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "shadcn/ui/label",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 3,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-label.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "shadcn/ui/separator",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 3,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-separator.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "shadcn/ui/field",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 5,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-field.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "shadcn/ui/item",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 5,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-item.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "shadcn/ui/input",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 2,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-input.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "shadcn/ui/textarea",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 2,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-textarea.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "dx/icon/search",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 3,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\dx-icon-search.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "auth/better-auth",
+        "variant": "default",
+        "version": "1.6.11-dx.9",
+        "file_count": 21,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\auth-better-auth.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "animation/motion",
+        "variant": "default",
+        "version": "12.38.0-dx.12",
+        "file_count": 17,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\animation-motion.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "i18n/next-intl",
+        "variant": "default",
+        "version": "4.12.0-dx.0",
+        "file_count": 40,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\i18n-next-intl.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "tanstack/query",
+        "variant": "default",
+        "version": "5.100.10-dx.0",
+        "file_count": 38,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\tanstack-query.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "validation/zod",
+        "variant": "default",
+        "version": "4.4.3-dx.13",
+        "file_count": 19,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\validation-zod.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "forms/react-hook-form",
+        "variant": "default",
+        "version": "7.75.0-dx.0",
+        "file_count": 6,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\forms-react-hook-form.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "payments/stripe-js",
+        "variant": "default",
+        "version": "9.6.0-dx.1",
+        "file_count": 10,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\payments-stripe-js.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "automations/n8n",
+        "variant": "default",
+        "version": "1.0.0-dx.3",
+        "file_count": 6,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\automations-n8n.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "state/zustand",
+        "variant": "default",
+        "version": "5.0.13-dx.10",
+        "file_count": 13,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\state-zustand.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "ai/vercel-ai",
+        "variant": "default",
+        "version": "7.0.0-canary.146-dx.0",
+        "file_count": 35,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\ai-vercel-ai.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "api/trpc",
+        "variant": "default",
+        "version": "11.17.0-dx.10",
+        "file_count": 28,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\api-trpc.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "content/fumadocs-next",
+        "variant": "default",
+        "version": "16.8.12-dx.11",
+        "file_count": 31,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\content-fumadocs-next.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "content/react-markdown",
+        "variant": "default",
+        "version": "10.1.0-dx.1",
+        "file_count": 13,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\content-react-markdown.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "supabase/client",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 31,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\supabase-client.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "db/drizzle-sqlite",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 18,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\db-drizzle-sqlite.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "instantdb/react",
+        "variant": "default",
+        "version": "0.0.0-dx.0",
+        "file_count": 28,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\instantdb-react.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "wasm/bindgen",
+        "variant": "default",
+        "version": "0.2.121-dx.0",
+        "file_count": 6,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\wasm-bindgen.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "3d/launch-scene",
+        "variant": "default",
+        "version": "0.184.0-r3f10-dx.0",
+        "file_count": 19,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\3d-launch-scene.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "migration/static-site",
+        "variant": "default",
+        "version": "0.1.0",
+        "file_count": 4,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\migration-static-site.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      },
+      {
+        "package_id": "dx-www/vertical/forge",
+        "variant": "default",
+        "version": "0.0.0-local",
+        "file_count": 1,
+        "docs_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\dx-www-vertical-forge.md",
+        "docs_exists": true,
+        "rollback_receipt": null
+      }
+    ],
+    "receipt_count": 32,
+    "package_docs_present": 30,
+    "package_docs_missing": 0,
+    "project_structure": {
+      "dx_config_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\dx",
+      "dx_config_exists": true,
+      "pages_dir": "G:\\Dx\\www\\.dx\\adoption-package-review\\pages",
+      "pages_dir_exists": true,
+      "components_dir": "G:\\Dx\\www\\.dx\\adoption-package-review\\components",
+      "components_dir_exists": true,
+      "app_route_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\pages/forge-adoption.html",
+      "app_route_exists": true
+    },
+    "source_manifest_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/source-manifest.json",
+    "receipt_dir": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/receipts",
+    "package_docs_dir": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs",
+    "public_dir": "G:\\Dx\\www\\.dx\\adoption-package-review\\public",
+    "public_routes": [
+      {
+        "route": "/forge",
+        "html_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge.html",
+        "clean_index_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/index.html",
+        "packet_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge.dxp",
+        "proof_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge-proof.json",
+        "claims_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge.claims.json",
+        "html_exists": true,
+        "clean_index_exists": true,
+        "packet_exists": true,
+        "proof_exists": true,
+        "passed": true
+      },
+      {
+        "route": "/forge/scorecard",
+        "html_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/scorecard.html",
+        "clean_index_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/scorecard/index.html",
+        "packet_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/scorecard.dxp",
+        "proof_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/scorecard.proof.json",
+        "claims_path": null,
+        "html_exists": true,
+        "clean_index_exists": true,
+        "packet_exists": true,
+        "proof_exists": true,
+        "passed": true
+      },
+      {
+        "route": "/forge/ci",
+        "html_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/ci.html",
+        "clean_index_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/ci/index.html",
+        "packet_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/ci.dxp",
+        "proof_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/ci.proof.json",
+        "claims_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/ci.claims.json",
+        "html_exists": true,
+        "clean_index_exists": true,
+        "packet_exists": true,
+        "proof_exists": true,
+        "passed": true
+      },
+      {
+        "route": "/forge/evidence",
+        "html_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/evidence.html",
+        "clean_index_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/evidence/index.html",
+        "packet_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/evidence.dxp",
+        "proof_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/evidence.proof.json",
+        "claims_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/evidence.claims.json",
+        "html_exists": true,
+        "clean_index_exists": true,
+        "packet_exists": true,
+        "proof_exists": true,
+        "passed": true
+      },
+      {
+        "route": "/forge/releases",
+        "html_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/releases.html",
+        "clean_index_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/releases/index.html",
+        "packet_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/releases.dxp",
+        "proof_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/releases.proof.json",
+        "claims_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/releases.claims.json",
+        "html_exists": true,
+        "clean_index_exists": true,
+        "packet_exists": true,
+        "proof_exists": true,
+        "passed": true
+      },
+      {
+        "route": "/forge/changelog",
+        "html_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/changelog.html",
+        "clean_index_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/changelog/index.html",
+        "packet_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/changelog.dxp",
+        "proof_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/changelog.proof.json",
+        "claims_path": "G:\\Dx\\www\\.dx\\adoption-package-review\\public\\forge/changelog.claims.json",
+        "html_exists": true,
+        "clean_index_exists": true,
+        "packet_exists": true,
+        "proof_exists": true,
+        "passed": true
+      }
+    ],
+    "release_bundle": {
+      "bundle_dir": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/adoption-smoke/release-bundle",
+      "exists": true,
+      "passed": true,
+      "score": 100,
+      "artifact_count": 53,
+      "route_count": 6,
+      "no_node_modules": true,
+      "findings": []
+    },
+    "dx_check": {
+      "score": 66,
+      "release_gate_score": 100,
+      "traffic": "yellow",
+      "strict_forge_passed": true,
+      "section_count": 6,
+      "finding_count": 146
+    },
+    "findings": [],
+    "honest_scope": [
+      "This report summarizes local Forge adoption evidence for one existing project path.",
+      "It proves source-owned package state, receipts, docs, route artifacts, and no direct node_modules creation for the checked path.",
+      "It is not a universal npm replacement claim and not a full framework benchmark."
+    ]
+  },
+  "verify_all": {
+    "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+    "generated_at": "2026-05-24T13:26:04.119745300+00:00",
+    "score": 91,
+    "passed": true,
+    "packages": [
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "shadcn/ui/button",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `shadcn/ui/button` verified 4 files with integrity `c23ca02cdaee2adb2db19bb6f16ef04e73f2727351c7938de25b78bbf2bba39a`.",
+          "evidence": "c23ca02cdaee2adb2db19bb6f16ef04e73f2727351c7938de25b78bbf2bba39a"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-button.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 4 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `shadcn/ui/button` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "shadcn/ui/badge",
+        "variant": "default",
+        "score": 85,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `shadcn/ui/badge` verified 4 files with integrity `6eb2a6a2109c5426cc98ac82cb34df8c2da6164176defcb09f5361c2fb461409`.",
+          "evidence": "6eb2a6a2109c5426cc98ac82cb34df8c2da6164176defcb09f5361c2fb461409"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-badge.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 12,
+          "message": "Update preview is `yellow` with 4 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `shadcn/ui/badge` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "shadcn/ui/card",
+        "variant": "default",
+        "score": 85,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `shadcn/ui/card` verified 3 files with integrity `b60ad0526133f7c42334cf556fd1c4fb4c4e22265bd7562cebf5fa159e52e42b`.",
+          "evidence": "b60ad0526133f7c42334cf556fd1c4fb4c4e22265bd7562cebf5fa159e52e42b"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-card.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 12,
+          "message": "Update preview is `yellow` with 3 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `shadcn/ui/card` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "shadcn/ui/label",
+        "variant": "default",
+        "score": 85,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `shadcn/ui/label` verified 3 files with integrity `80e9d9065b0b8f02fef4a53e0dddc967268923e9e0fa4432eb58e60b27908aa9`.",
+          "evidence": "80e9d9065b0b8f02fef4a53e0dddc967268923e9e0fa4432eb58e60b27908aa9"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-label.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 12,
+          "message": "Update preview is `yellow` with 3 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `shadcn/ui/label` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "shadcn/ui/separator",
+        "variant": "default",
+        "score": 85,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `shadcn/ui/separator` verified 3 files with integrity `b81c66d3c2ad317cd8c8e40db88130423dc20c2b6ccbee2a3aa9cf7ae885de0a`.",
+          "evidence": "b81c66d3c2ad317cd8c8e40db88130423dc20c2b6ccbee2a3aa9cf7ae885de0a"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-separator.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 12,
+          "message": "Update preview is `yellow` with 3 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `shadcn/ui/separator` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "shadcn/ui/field",
+        "variant": "default",
+        "score": 85,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `shadcn/ui/field` verified 5 files with integrity `717a727d469b7318e817951da9e31de0a6b2e118824a47b05f85688a25327127`.",
+          "evidence": "717a727d469b7318e817951da9e31de0a6b2e118824a47b05f85688a25327127"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-field.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 12,
+          "message": "Update preview is `yellow` with 5 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `shadcn/ui/field` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "shadcn/ui/item",
+        "variant": "default",
+        "score": 85,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `shadcn/ui/item` verified 5 files with integrity `f634eaa2e799c7ba92dd283eb22d0c206bacf6b7809222c8754ffaadaaedd450`.",
+          "evidence": "f634eaa2e799c7ba92dd283eb22d0c206bacf6b7809222c8754ffaadaaedd450"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-item.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 12,
+          "message": "Update preview is `yellow` with 5 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `shadcn/ui/item` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "shadcn/ui/input",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `shadcn/ui/input` verified 2 files with integrity `44c2bc3b5688519c7d37c9f79c840539d017f973c3627ef87b737490bac6bc8a`.",
+          "evidence": "44c2bc3b5688519c7d37c9f79c840539d017f973c3627ef87b737490bac6bc8a"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-input.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 2 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `shadcn/ui/input` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "shadcn/ui/textarea",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `shadcn/ui/textarea` verified 2 files with integrity `7e39d790ea3e8152e705817a25866a163f11e525134c8ada432efe0a99e7db2e`.",
+          "evidence": "7e39d790ea3e8152e705817a25866a163f11e525134c8ada432efe0a99e7db2e"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\shadcn-ui-textarea.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 2 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `shadcn/ui/textarea` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "dx/icon/search",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `dx/icon/search` verified 3 files with integrity `0fabc3806db9d0234346fa6ad0d0bc0d2e438452c340f04d71df9eb8b58dc88e`.",
+          "evidence": "0fabc3806db9d0234346fa6ad0d0bc0d2e438452c340f04d71df9eb8b58dc88e"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\dx-icon-search.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 3 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `dx/icon/search` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "auth/better-auth",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `auth/better-auth` verified 21 files with integrity `1d5ff6b7dd159f18f30539ef45c50e1b5ec88e03ce2f715a5859d2ac2792602f`.",
+          "evidence": "1d5ff6b7dd159f18f30539ef45c50e1b5ec88e03ce2f715a5859d2ac2792602f"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\auth-better-auth.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 21 file decisions.",
+          "evidence": "1.6.11-dx.9 -> 1.6.11-dx.9"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `auth/better-auth` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "animation/motion",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `animation/motion` verified 17 files with integrity `c781a521d27f74f2410ceec2c222b127ca5ef96f5cf3b8679619cfe1bebe1dc1`.",
+          "evidence": "c781a521d27f74f2410ceec2c222b127ca5ef96f5cf3b8679619cfe1bebe1dc1"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\animation-motion.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 17 file decisions.",
+          "evidence": "12.38.0-dx.12 -> 12.38.0-dx.12"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `animation/motion` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "i18n/next-intl",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `i18n/next-intl` verified 40 files with integrity `b17409ab084d3dc2499970c2495ba0803feed330d1f7f29db3f0d5748726beaa`.",
+          "evidence": "b17409ab084d3dc2499970c2495ba0803feed330d1f7f29db3f0d5748726beaa"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\i18n-next-intl.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 40 file decisions.",
+          "evidence": "4.12.0-dx.0 -> 4.12.0-dx.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `i18n/next-intl` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "tanstack/query",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `tanstack/query` verified 38 files with integrity `dc18b3e93a1286595771df9ba3ce398ba28a4b13f54878f8f5577102fe4381a9`.",
+          "evidence": "dc18b3e93a1286595771df9ba3ce398ba28a4b13f54878f8f5577102fe4381a9"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\tanstack-query.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 38 file decisions.",
+          "evidence": "5.100.10-dx.0 -> 5.100.10-dx.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `tanstack/query` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "validation/zod",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `validation/zod` verified 19 files with integrity `9d3ad8f6e22145188e94e276afac9c0f5c636e63cfc3de63f43762d158b5a307`.",
+          "evidence": "9d3ad8f6e22145188e94e276afac9c0f5c636e63cfc3de63f43762d158b5a307"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\validation-zod.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 19 file decisions.",
+          "evidence": "4.4.3-dx.13 -> 4.4.3-dx.13"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `validation/zod` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "forms/react-hook-form",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `forms/react-hook-form` verified 6 files with integrity `c2b3db5707febd5488b892ec027fe6fe1dc670e1f212a7502a70badce5e8b8ab`.",
+          "evidence": "c2b3db5707febd5488b892ec027fe6fe1dc670e1f212a7502a70badce5e8b8ab"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\forms-react-hook-form.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 6 file decisions.",
+          "evidence": "7.75.0-dx.0 -> 7.75.0-dx.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `forms/react-hook-form` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "payments/stripe-js",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `payments/stripe-js` verified 10 files with integrity `90e994c6579067661a2e162ab0e40358d2ce463e62742df3b4af12f9ec32579c`.",
+          "evidence": "90e994c6579067661a2e162ab0e40358d2ce463e62742df3b4af12f9ec32579c"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\payments-stripe-js.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 10 file decisions.",
+          "evidence": "9.6.0-dx.1 -> 9.6.0-dx.1"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `payments/stripe-js` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "automations/n8n",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `automations/n8n` verified 6 files with integrity `76f50d1d77d1b860cfaeafee815c1d06bc5c83fe57c652cf2f05a6f0e9109426`.",
+          "evidence": "76f50d1d77d1b860cfaeafee815c1d06bc5c83fe57c652cf2f05a6f0e9109426"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\automations-n8n.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 6 file decisions.",
+          "evidence": "1.0.0-dx.3 -> 1.0.0-dx.3"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `automations/n8n` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "state/zustand",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `state/zustand` verified 13 files with integrity `b43589111e6377039e7ae2e48dc6cdcdb5f14086dfa8bc1b9ed0744a3f3f9dc1`.",
+          "evidence": "b43589111e6377039e7ae2e48dc6cdcdb5f14086dfa8bc1b9ed0744a3f3f9dc1"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\state-zustand.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 13 file decisions.",
+          "evidence": "5.0.13-dx.10 -> 5.0.13-dx.10"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `state/zustand` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "ai/vercel-ai",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `ai/vercel-ai` verified 35 files with integrity `4fa2aefb5569dcb58a211fbd07223fbaff357b234597e61fb7e7a642abb2f02d`.",
+          "evidence": "4fa2aefb5569dcb58a211fbd07223fbaff357b234597e61fb7e7a642abb2f02d"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\ai-vercel-ai.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 35 file decisions.",
+          "evidence": "7.0.0-canary.146-dx.0 -> 7.0.0-canary.146-dx.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `ai/vercel-ai` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "api/trpc",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `api/trpc` verified 28 files with integrity `fc6d3292182b280a8604d12930fe1a04bbbc9a867f793e81eec42a877da4fe89`.",
+          "evidence": "fc6d3292182b280a8604d12930fe1a04bbbc9a867f793e81eec42a877da4fe89"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\api-trpc.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 28 file decisions.",
+          "evidence": "11.17.0-dx.10 -> 11.17.0-dx.10"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `api/trpc` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "content/fumadocs-next",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `content/fumadocs-next` verified 31 files with integrity `a1a7c258aef6b5c08eb9c49b5726fb29d5084e5a078de6a7c7701c972921b4c0`.",
+          "evidence": "a1a7c258aef6b5c08eb9c49b5726fb29d5084e5a078de6a7c7701c972921b4c0"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\content-fumadocs-next.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 31 file decisions.",
+          "evidence": "16.8.12-dx.11 -> 16.8.12-dx.11"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `content/fumadocs-next` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "content/react-markdown",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `content/react-markdown` verified 13 files with integrity `40a6df7d6064f3aa157f19d96eb2736a4b66d9359164f580ffa6c6b8e4c81f39`.",
+          "evidence": "40a6df7d6064f3aa157f19d96eb2736a4b66d9359164f580ffa6c6b8e4c81f39"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\content-react-markdown.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 13 file decisions.",
+          "evidence": "10.1.0-dx.1 -> 10.1.0-dx.1"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `content/react-markdown` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "supabase/client",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `supabase/client` verified 31 files with integrity `08cf02d1a76db4879aa4643c0f0f5d54f403913c8faa7eb222bb95c9ae9c4d79`.",
+          "evidence": "08cf02d1a76db4879aa4643c0f0f5d54f403913c8faa7eb222bb95c9ae9c4d79"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\supabase-client.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 31 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `supabase/client` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "db/drizzle-sqlite",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `db/drizzle-sqlite` verified 18 files with integrity `9283f5ddd3186cecacd04e42d1e70b88f687e1a413f3a42538c6ad69fbfde8a4`.",
+          "evidence": "9283f5ddd3186cecacd04e42d1e70b88f687e1a413f3a42538c6ad69fbfde8a4"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\db-drizzle-sqlite.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 18 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `db/drizzle-sqlite` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "instantdb/react",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `instantdb/react` verified 28 files with integrity `c9ca9f9f74cdce18ef2b592169311d0b6b6eb4d4c2a49abf07153cfe0ec7f674`.",
+          "evidence": "c9ca9f9f74cdce18ef2b592169311d0b6b6eb4d4c2a49abf07153cfe0ec7f674"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\instantdb-react.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 28 file decisions.",
+          "evidence": "0.0.0-dx.0 -> 0.0.0-dx.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `instantdb/react` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "wasm/bindgen",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `wasm/bindgen` verified 6 files with integrity `82ec92f685745a381e7375d135335eb289485e5c16f512bcaa0b6e0b9a4e9b69`.",
+          "evidence": "82ec92f685745a381e7375d135335eb289485e5c16f512bcaa0b6e0b9a4e9b69"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\wasm-bindgen.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 6 file decisions.",
+          "evidence": "0.2.121-dx.0 -> 0.2.121-dx.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `wasm/bindgen` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "3d/launch-scene",
+        "variant": "default",
+        "score": 93,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `3d/launch-scene` verified 19 files with integrity `f5c0d65f609eb7fdb502c70213612d7afc09b32e8190ae482543eb388ec76ca1`.",
+          "evidence": "f5c0d65f609eb7fdb502c70213612d7afc09b32e8190ae482543eb388ec76ca1"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\3d-launch-scene.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 19 file decisions.",
+          "evidence": "0.184.0-r3f10-dx.0 -> 0.184.0-r3f10-dx.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `3d/launch-scene` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        }
+      },
+      {
+        "project": "G:\\Dx\\www\\.dx\\adoption-package-review",
+        "package_id": "migration/static-site",
+        "variant": "default",
+        "score": 96,
+        "passed": true,
+        "registry_integrity": {
+          "name": "registry_integrity",
+          "passed": true,
+          "traffic": "green",
+          "score": 25,
+          "message": "Registry package `migration/static-site` verified 4 files with integrity `d2f8f4acfb7184c6013b3032dcd42a34db5cf80b613d9e744d5276dfcc8a24e8`.",
+          "evidence": "d2f8f4acfb7184c6013b3032dcd42a34db5cf80b613d9e744d5276dfcc8a24e8"
+        },
+        "docs": {
+          "name": "docs",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Package-facing Forge docs are present.",
+          "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\migration-static-site.md"
+        },
+        "update": {
+          "name": "update",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Update preview is `green` with 4 file decisions.",
+          "evidence": "0.1.0 -> 0.1.0"
+        },
+        "rollback": {
+          "name": "rollback",
+          "passed": true,
+          "traffic": "yellow",
+          "score": 8,
+          "message": "No accepted update has been recorded yet, so rollback coverage is not mandatory for this fresh package.",
+          "evidence": null
+        },
+        "scorecard": {
+          "name": "scorecard",
+          "passed": true,
+          "traffic": "green",
+          "score": 20,
+          "message": "Project scorecard includes `migration/static-site` with local package evidence.",
+          "evidence": "scorecard-score=100"
+        },
+        "package_specific_checks": [
+          {
+            "name": "migration-static-site-docs",
+            "passed": true,
+            "traffic": "green",
+            "score": 15,
+            "message": "Forge migration docs and package README state the honest static-only scope.",
+            "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/docs\\migration-static-site.md, G:\\Dx\\www\\.dx\\adoption-package-review\\migrations/static-site/README.md"
+          },
+          {
+            "name": "migration-static-site-receipts",
+            "passed": true,
+            "traffic": "green",
+            "score": 20,
+            "message": "Forge receipts include migration/static-site package metadata, file maps, and no-lifecycle policy evidence.",
+            "evidence": "G:\\Dx\\www\\.dx\\adoption-package-review\\.dx/forge/receipts\\20260524T132539773355900Z-migration-static-site.json"
+          },
+          {
+            "name": "migration-static-site-asset-mapping",
+            "passed": true,
+            "traffic": "green",
+            "score": 20,
+            "message": "The migration seed includes asset source/target mapping notes in source and fixture files.",
+            "evidence": "migrations/static-site/content.ts; migrations/static-site/sample-wordpress-export.json"
+          },
+          {
+            "name": "migration-static-site-manual-review",
+            "passed": true,
+            "traffic": "green",
+            "score": 20,
+            "message": "Manual-review warnings are visible in the rendered component, typed content, fixture, and README.",
+            "evidence": "migrations/static-site/page.tsx; migrations/static-site/README.md"
+          },
+          {
+            "name": "migration-static-site-source-files",
+            "passed": true,
+            "traffic": "green",
+            "score": 15,
+            "message": "All migration/static-site source files exist and are tracked by the Forge source manifest.",
+            "evidence": ".dx/forge/source-manifest.json"
+          },
+          {
+            "name": "migration-static-site-no-node-modules",
+            "passed": true,
+            "traffic": "green",
+            "score": 10,
+            "message": "The migration package verification path did not create a node_modules directory.",
+            "evidence": "node_modules; migrations/static-site/node_modules"
+          }
+        ]
+      }
+    ],
+    "missing_packages": []
+  },
+  "update_rehearsal": {
+    "score": 100,
+    "passed": true,
+    "no_node_modules": true,
+    "scenarios": {
+      "green_update": {
+        "passed": true,
+        "traffic": "green",
+        "evidence": "receipt 20260524T132604637098300Z-shadcn-ui-button.json"
+      },
+      "yellow_default_block": {
+        "passed": true,
+        "traffic": "yellow",
+        "evidence": "DX-WWW error: Internal DX-WWW error Forge update for `shadcn/ui/button` variant `default` "
+      },
+      "yellow_review_accept": {
+        "passed": true,
+        "traffic": "yellow",
+        "evidence": "receipt 20260524T132608725706000Z-shadcn-ui-button.json"
+      },
+      "red_quarantine": {
+        "passed": true,
+        "traffic": "red",
+        "evidence": "DX-WWW error: Internal DX-WWW error Forge update for `shadcn/ui/button` variant `default` "
+      },
+      "rollback_coverage": {
+        "passed": true,
+        "traffic": "n/a",
+        "evidence": "receipt 20260524T132610836627100Z-shadcn-ui-button.json"
+      }
+    }
+  },
+  "review_gates": {
+    "docs": {
+      "name": "docs",
+      "passed": true,
+      "present": 30,
+      "expected": 30,
+      "score": 100
+    },
+    "receipts": {
+      "name": "receipts",
+      "passed": true,
+      "present": 30,
+      "expected": 30,
+      "score": 100
+    },
+    "rollback": {
+      "name": "rollback",
+      "passed": true,
+      "present": 1,
+      "expected": 1,
+      "score": 100,
+      "scenario": "rollback coverage"
+    },
+    "advisory_placeholders": {
+      "name": "advisory placeholders",
+      "passed": true,
+      "present": 29,
+      "expected": 29,
+      "score": 100
+    },
+    "local_edit_yellow": {
+      "name": "local edit yellow review",
+      "passed": true,
+      "present": 2,
+      "expected": 2,
+      "score": 100,
+      "scenarios": [
+        "yellow default block",
+        "yellow review accept"
+      ]
+    },
+    "verify_all": {
+      "name": "verify all packages",
+      "passed": true,
+      "present": 29,
+      "expected": 29,
+      "score": 100
+    },
+    "adoption_report": {
+      "name": "adoption report",
+      "passed": true,
+      "present": 1,
+      "expected": 1,
+      "score": 100
+    },
+    "no_node_modules": {
+      "name": "no node_modules",
+      "passed": true,
+      "present": 1,
+      "expected": 1,
+      "score": 100
+    },
+    "prepare": {
+      "name": "prepare adoption app",
+      "passed": true,
+      "present": 1,
+      "expected": 1,
+      "score": 100
+    }
+  },
+  "findings": [],
+  "honest_scope": [
+    "This joins existing local Forge adoption evidence into one source-owned package review artifact.",
+    "It proves curated package docs, receipts, advisory placeholders, update traffic, local-edit yellow review, rollback, and no node_modules for the example app path.",
+    "It still does not claim arbitrary npm ingestion, live advisory coverage, or production customer adoption."
+  ]
+}

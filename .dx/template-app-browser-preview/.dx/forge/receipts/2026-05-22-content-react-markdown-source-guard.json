@@ -1,0 +1,23 @@
+{
+  "schema": "dx.forge.package_source_guard_receipt",
+  "package_id": "content/react-markdown",
+  "official_package_name": "Markdown & MDX Content",
+  "upstream_package": "react-markdown; @mdx-js/mdx; @mdx-js/react",
+  "upstream_version": "react-markdown@10.1.0; @mdx-js/mdx@3.1.1; @mdx-js/react@3.1.1",
+  "source_mirror": "G:/WWW/inspirations/react-markdown; G:/WWW/inspirations/mdx",
+  "source_guard_id": "markdown-mdx-content-materialized-source-fixture",
+  "source_guard_runbook_fixture": "docs/packages/content-react-markdown.source-guard-runbook.json",
+  "hash_algorithm": "sha256",
+  "file_hashes": {
+    "docs/packages/content-react-markdown.md": "a044dc0609e8bbe8d5b86b292a4680bae1203eb5431f9ba8733639dda342682b",
+    "docs/packages/content-react-markdown.source-guard-runbook.json": "3f66a97bb3a9aa4bcf48065a03a5b59e847756ae55fd379bd19443e5de232437",
+    "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8",
+    "benchmarks/markdown-mdx-content-slice.test.ts": "3968a3399d5e4895806cd48ad285adc5bfe4cf3924e0f97909d7360f8086b2ed"
+  },
+  "runtime_execution": false,
+  "secret_access": false,
+  "runtime_limitations": [
+    "SOURCE-ONLY: this receipt tracks local source-guard/runbook fixture freshness only.",
+    "ADAPTER-BOUNDARY: live Markdown/MDX rendering, sanitization review, dependency installation, and browser proof stay app-owned."
+  ]
+}

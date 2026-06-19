@@ -1,0 +1,68 @@
+{
+  "schema": "dx.www.conversion_manifest",
+  "project": "convex-backend",
+  "source_repo": {
+    "url": "https://github.com/get-convex/convex-backend.git",
+    "local_path": "G:\\WWW\\inspirations\\convex-backend",
+    "commit": "e5026b0d466058eea21084f9561d7ad974e925fc",
+    "license": "FSL-1.1-Apache-2.0",
+    "license_files": [
+      "LICENSE.md",
+      "examples/conversion-proof/notices/convex-backend/LICENSE.md"
+    ]
+  },
+  "source_route_component_files": [
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/functions.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/data.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/logs.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/files.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/schedules/functions.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/schedules/crons.tsx",
+    "npm-packages/dashboard/src/layouts/DeploymentDashboardLayout.tsx",
+    "npm-packages/dashboard/dashboard-deployment-openapi.json",
+    "crates/function_runner/src/lib.rs",
+    "crates/model/src/modules/mod.rs",
+    "crates/model/src/source_packages/mod.rs"
+  ],
+  "converted_dx_www_route_target": "/backend",
+  "source_surface_map": "forge/source-surfaces/convex-backend.json",
+  "visual_audit": "forge/visual-audits/convex-backend.json",
+  "converted_files": [
+    "pages/backend.html",
+    "components/ConversionRouteHeader.tsx",
+    "components/SourceSurfaceTable.tsx",
+    "components/RuntimeBoundaryPanel.tsx",
+    "styles/conversion-proof.css"
+  ],
+  "assets_copied": [
+    {
+      "source_path": "npm-packages/dashboard/public/convex-logo.svg",
+      "target_path": "public/vendor/convex-logo.svg",
+      "license_notice": "FSL-1.1-Apache-2.0 notice copied to notices/convex-backend/LICENSE.md",
+      "purpose": "Source mark in the DX-WWW /backend proof header."
+    }
+  ],
+  "forge_primitives": [
+    "forge/primitives/class-merge.ts",
+    "forge/primitives/theme-provider.ts",
+    "forge/primitives/button.ts",
+    "forge/primitives/badge.ts",
+    "forge/primitives/table.ts",
+    "forge/primitives/tabs.ts",
+    "forge/primitives/dialog.ts",
+    "forge/primitives/dropdown.ts",
+    "forge/primitives/sidebar.ts"
+  ],
+  "launch_shims": [
+    "forge/shims/runtime-boundaries.ts#next-routing",
+    "forge/shims/runtime-boundaries.ts#convex-realtime",
+    "forge/shims/runtime-boundaries.ts#convex-functions"
+  ],
+  "unsupported_runtime_features": [
+    "Realtime sockets are not opened.",
+    "Function execution and deployment writes are not performed.",
+    "OpenAPI clients are not generated or called.",
+    "FSL-sensitive backend runtime reuse is limited to provenance and structural conversion."
+  ],
+  "conversion_status": "real-source-partial-runtime-blocked"
+}

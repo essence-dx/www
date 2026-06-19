@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "file": "styles/theme.css",
+  "sources": [
+    "styles/theme.css"
+  ],
+  "sourcesContent": [
+    ":root {\n  color-scheme: dark;\n  --background: 0 0% 3%;\n  --foreground: 0 0% 96%;\n  --surface: 0 0% 4%;\n  --muted: 0 0% 14%;\n  --muted-foreground: 0 0% 68%;\n  --border: 0 0% 18%;\n  --card: 0 0% 7%;\n  --accent: 0 0% 98%;\n  --accent-foreground: 0 0% 4%;\n  --success: 142 70% 45%;\n  --warning: 38 92% 50%;\n  --danger: 0 84% 60%;\n  --destructive: var(--danger);\n  --primary: 0 0% 98%;\n  --primary-foreground: 0 0% 4%;\n  --ring: 0 0% 83%;\n  --spacing: 0.25rem;\n  --font-mono: \"JetBrains Mono\", \"JetBrains Mono NL\", ui-monospace, SFMono-Regular, Consolas, \"Liberation Mono\", monospace;\n}\n\n@source inline(\"m-0 min-h-screen bg-background text-foreground text-muted-foreground font-mono grid flex block items-end items-center justify-between justify-center place-items-center overflow-hidden border border-t border-border rounded-lg bg-card p-5 px-6 py-10 py-14 md:px-10 gap-2 gap-3 gap-4 gap-5 gap-8 gap-10 max-w-3xl max-w-5xl max-w-6xl w-full mb-5 mt-3 size-5 text-primary text-xs text-sm text-lg text-xl text-6xl md:text-8xl md:text-9xl font-black uppercase leading-6 leading-8 leading-none flex-wrap md:grid-cols-3 animate-slide-up-1s-delay-200ms-both animate-slide-up-1s-delay-700ms-both animate-slide-up-1s-delay-1000ms-both animate-bounce-2s-ease-in-out\");\n"
+  ],
+  "names": [],
+  "mappings": "",
+  "x_dx_css_pipeline": {
+    "owner": "dx-style",
+    "generated_by": "dx-source-css-adapter",
+    "reference": "turbopack-css-source-map-asset",
+    "mapping_status": "source-list-hash-evidence-no-segments",
+    "segment_mapping_available": false,
+    "segment_count": 0,
+    "source_evidence_only": true,
+    "parity_status": "compatibility-evidence-only",
+    "runtime_boundary": "dx-style-owned-no-next-runtime",
+    "requires_node_modules": false,
+    "full_lightning_css_parity": false,
+    "turbopack_public_architecture": false,
+    "source_count": 1,
+    "source_hashes": [
+      {
+        "source": "styles/theme.css",
+        "role": "entry-style",
+        "hash": "48a35ad8bb744f63"
+      }
+    ]
+  }
+}

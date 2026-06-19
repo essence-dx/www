@@ -1,0 +1,3079 @@
+{
+  "schema": "dx.www.deploy.cache_manifest",
+  "schema_revision": 1,
+  "manifest_hash": "blake3:778114897623c8e434a093f37b398c353e1d25579eaf025752307160174914c7",
+  "public_runtime_artifacts": [
+    {
+      "path": "_dx/styles/react-route-fee05bf74d8b6a73.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "_dx/styles/react-route-fee05bf74d8b6a73.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "_dx/styles/react-route-fee05bf74d8b6a73.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "_dx/styles/react-route-fee05bf74d8b6a73.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "_dx/styles/react-route-fee05bf74d8b6a73.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "app/index.dxpk",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/octet-stream",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "app/index.dxpk.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/octet-stream",
+      "content_encoding": "br",
+      "encoded_from": "app/index.dxpk",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/octet-stream"
+      }
+    },
+    {
+      "path": "app/index.dxpk.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/octet-stream",
+      "content_encoding": "gzip",
+      "encoded_from": "app/index.dxpk",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/octet-stream"
+      }
+    },
+    {
+      "path": "app/index.html",
+      "kind": "route-html",
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "text/html; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/dx-landing-runtime-74b4b9f208e8e1f2.js",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/dx-landing-runtime-74b4b9f208e8e1f2.js.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "public/dx-landing-runtime-74b4b9f208e8e1f2.js",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/javascript; charset=utf-8"
+      }
+    },
+    {
+      "path": "public/dx-landing-runtime-74b4b9f208e8e1f2.js.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "public/dx-landing-runtime-74b4b9f208e8e1f2.js",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/javascript; charset=utf-8"
+      }
+    },
+    {
+      "path": "public/dx-landing-runtime.js",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/dx-landing-runtime.js.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "public/dx-landing-runtime.js",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/javascript; charset=utf-8"
+      }
+    },
+    {
+      "path": "public/dx-landing-runtime.js.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "public/dx-landing-runtime.js",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/javascript; charset=utf-8"
+      }
+    },
+    {
+      "path": "public/favicon-94b1a6ce1d9289cf.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/favicon-94b1a6ce1d9289cf.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon-94b1a6ce1d9289cf.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/favicon-94b1a6ce1d9289cf.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon-94b1a6ce1d9289cf.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/favicon.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/favicon.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/favicon.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/android-6179e126fdf2b690.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/android-6179e126fdf2b690.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/android-6179e126fdf2b690.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/android-6179e126fdf2b690.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/android-6179e126fdf2b690.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/android.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/android.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/android.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/android.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/android.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-64608ad998267c26.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-64608ad998267c26.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/apple-64608ad998267c26.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-64608ad998267c26.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/apple-64608ad998267c26.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/apple-dark.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/apple-dark.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/apple.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/apple.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/apple.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/chrome.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/chrome.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/firefox.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/firefox.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/linux.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/linux.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/linux.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/linux.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/linux.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/rust-dark.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/rust-dark.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/rust.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/rust.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/rust.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/vercel-dark.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/vercel-dark.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/vercel.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/vercel.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/windows.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icons/platform-svgl/windows.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/windows.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/windows.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/windows.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/launch-runtime-3ae46d2cd01071b0.js",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/launch-runtime-3ae46d2cd01071b0.js.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "public/launch-runtime-3ae46d2cd01071b0.js",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/javascript; charset=utf-8"
+      }
+    },
+    {
+      "path": "public/launch-runtime-3ae46d2cd01071b0.js.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "public/launch-runtime-3ae46d2cd01071b0.js",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/javascript; charset=utf-8"
+      }
+    },
+    {
+      "path": "public/launch-runtime.js",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/launch-runtime.js.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "public/launch-runtime.js",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/javascript; charset=utf-8"
+      }
+    },
+    {
+      "path": "public/launch-runtime.js.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "public/launch-runtime.js",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "application/javascript; charset=utf-8"
+      }
+    },
+    {
+      "path": "public/thumbnails/amber-fd8517e5453c2145.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/amber.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/blue-2daf5706a85142cf.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/blue.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/cyan-f5830d34ea43ba2a.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/cyan.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/emerald-ac411c3e669be3e2.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/emerald.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/fuchsia-2f08a8ddcbad25fc.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/fuchsia.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/green-4a2f9e787e85969f.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/green-variant-acb7c68d24505294.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/green-variant.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/green.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/indigo-028b20932f970d59.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/indigo.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/lime-2050bbd5f412de7d.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/lime.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/orange-b3e5cd7499323991.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/orange.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/pink-fe1424b02465d707.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/pink.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/purple-8afc4bf4d04f753d.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/purple.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/rainbow-6dcd801922d6c794.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/rainbow.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/red-e02103784760ee62.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/red.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/rose-2700bcddc2e4cf44.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/rose.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/sky-835aeea13aa90224.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/sky.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/teal-00e58884c11c9b79.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/teal.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/variant-1-2c5218548ca63387.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/variant-1.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/variant-2-6126e146834c330a.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/variant-2.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/violet-8c81f7f2d8a3333c.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/violet.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/yellow-8e4949f48aecba7d.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/thumbnails/yellow.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/vendor/convex-logo-b2a1cfa88d831fea.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/vendor/convex-logo-b2a1cfa88d831fea.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/vendor/convex-logo-b2a1cfa88d831fea.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/vendor/convex-logo-b2a1cfa88d831fea.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/vendor/convex-logo-b2a1cfa88d831fea.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/vendor/convex-logo.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/vendor/convex-logo.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/vendor/convex-logo.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/vendor/convex-logo.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/vendor/convex-logo.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/vendor/shadcn-favicon-32x32-73186821201a7eb8.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/vendor/shadcn-favicon-32x32.png",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/vendor/supabase-logo-f0c8a57504f71be9.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/vendor/supabase-logo-f0c8a57504f71be9.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/vendor/supabase-logo-f0c8a57504f71be9.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/vendor/supabase-logo-f0c8a57504f71be9.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/vendor/supabase-logo-f0c8a57504f71be9.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/vendor/supabase-logo.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/vendor/supabase-logo.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/vendor/supabase-logo.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/vendor/supabase-logo.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/vendor/supabase-logo.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "styles/conversion-proof.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "styles/conversion-proof.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/conversion-proof.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/conversion-proof.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/conversion-proof.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/dx-landing.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "styles/dx-landing.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/dx-landing.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/dx-landing.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/dx-landing.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/generated.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "styles/generated.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/generated.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/generated.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/generated.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/globals.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "styles/globals.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/globals.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/globals.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/globals.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/launch-runtime.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "styles/launch-runtime.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/launch-runtime.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/launch-runtime.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/launch-runtime.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/theme.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "styles/theme.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/theme.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/theme.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/theme.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    }
+  ],
+  "html_cache_control": "public, max-age=0, must-revalidate",
+  "immutable_cache_control": "public, max-age=31536000, immutable",
+  "precompressed_encodings": [
+    "br",
+    "gzip"
+  ],
+  "evidence_cache_control": "no-store"
+}

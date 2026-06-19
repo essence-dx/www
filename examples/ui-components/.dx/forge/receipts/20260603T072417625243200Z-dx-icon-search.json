@@ -1,0 +1,140 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "dx/icon/search",
+    "upstream_name": "@dx/forge-icons",
+    "version": "0.1.0",
+    "generator": "dx-forge/selected-icons",
+    "variant": "default",
+    "last_accepted_update": "2026-06-03T07:24:17.624443200+00:00",
+    "rollback_receipt": "20260603T065405690093800Z-dx-icon-search.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "1a4d4da92fc44690e46f310aff5cbd42d6fceb01fb102696defd7ce5b8d13e47",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "dx-forge://packages/dx/icon/search",
+      "verified": false,
+      "note": "Curated DX Forge source metadata is recorded, but this is not SLSA or live upstream provenance yet."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this selected icon package, but it is not a live advisory feed."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/icons.ts",
+        "logical_path": "js/lib/icons.ts",
+        "hash": "d34ad7db752f79ff5c928858b99f048dca4c7222809fb64fa6f071e7a4d46a3e",
+        "bytes": 824
+      },
+      {
+        "path": "components/icons/search.tsx",
+        "logical_path": "js/icons/search.tsx",
+        "hash": "fcca597c047e13aae8bfcb56867d78303704a9bcfcd1332b60650e0f82e0b7a7",
+        "bytes": 496
+      },
+      {
+        "path": "components/icons/README.md",
+        "logical_path": "js/icons/README.md",
+        "hash": "a20e985338e0fa6ae5685a33fc1eb4ceb6b428d25026eb111cbc5120922ab4af",
+        "bytes": 196
+      }
+    ]
+  },
+  "files_written": [],
+  "file_map": [
+    {
+      "logical_path": "js/lib/icons.ts",
+      "materialized_path": "lib/icons.ts",
+      "hash": "d34ad7db752f79ff5c928858b99f048dca4c7222809fb64fa6f071e7a4d46a3e",
+      "bytes": 824
+    },
+    {
+      "logical_path": "js/icons/search.tsx",
+      "materialized_path": "components/icons/search.tsx",
+      "hash": "fcca597c047e13aae8bfcb56867d78303704a9bcfcd1332b60650e0f82e0b7a7",
+      "bytes": 496
+    },
+    {
+      "logical_path": "js/icons/README.md",
+      "materialized_path": "components/icons/README.md",
+      "hash": "a20e985338e0fa6ae5685a33fc1eb4ceb6b428d25026eb111cbc5120922ab4af",
+      "bytes": 196
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/icons.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/icons/search.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/icons/README.md already matches the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "green",
+      "message": "Reviewer `Codex` accepted yellow local edits for `dx/icon/search` variant `default`: Reviewed WWW-native no-npm adaptation for the UI Components source slice"
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/icons.ts",
+      "logical_path": "js/lib/icons.ts",
+      "before_hash": "d34ad7db752f79ff5c928858b99f048dca4c7222809fb64fa6f071e7a4d46a3e",
+      "after_hash": "d34ad7db752f79ff5c928858b99f048dca4c7222809fb64fa6f071e7a4d46a3e",
+      "tracked_hash": "d34ad7db752f79ff5c928858b99f048dca4c7222809fb64fa6f071e7a4d46a3e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/icons.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "components/icons/search.tsx",
+      "logical_path": "js/icons/search.tsx",
+      "before_hash": "fcca597c047e13aae8bfcb56867d78303704a9bcfcd1332b60650e0f82e0b7a7",
+      "after_hash": "fcca597c047e13aae8bfcb56867d78303704a9bcfcd1332b60650e0f82e0b7a7",
+      "tracked_hash": "fcca597c047e13aae8bfcb56867d78303704a9bcfcd1332b60650e0f82e0b7a7",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/icons/search.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/icons/README.md",
+      "logical_path": "js/icons/README.md",
+      "before_hash": "a20e985338e0fa6ae5685a33fc1eb4ceb6b428d25026eb111cbc5120922ab4af",
+      "after_hash": "a20e985338e0fa6ae5685a33fc1eb4ceb6b428d25026eb111cbc5120922ab4af",
+      "tracked_hash": "a20e985338e0fa6ae5685a33fc1eb4ceb6b428d25026eb111cbc5120922ab4af",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/icons/README.md accepted as already matching the latest package."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-06-03T07:24:17.624443200+00:00",
+  "signature": null
+}

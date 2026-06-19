@@ -1,0 +1,260 @@
+{
+  "action": "track-write",
+  "package": {
+    "package_id": "www/minimal-starter",
+    "upstream_name": "dx-www/examples/template",
+    "version": "0.1.0",
+    "generator": "dx-forge/local-source",
+    "variant": "default",
+    "source_kind": "local",
+    "integrity_hash": "2b0f4310482ef4807f5dd2b84c387b7ede8c80372a26d07e47e253566ca02440",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-local-source",
+      "upstream_reference": "dx-www/examples/template",
+      "verified": false,
+      "note": "Local source was tracked by Forge, but no external upstream provenance is claimed."
+    },
+    "advisory_review": {
+      "coverage_kind": "missing",
+      "provider": "none",
+      "live_coverage": false,
+      "finding_count": 0,
+      "note": "Local source packages do not have live advisory coverage attached by Forge yet."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the local package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "app/page.tsx",
+        "hash": "680091d8e63daf0ea482d9427ae3e804d0661c192f3a940de20a9c046b45b1e8",
+        "bytes": 651
+      },
+      {
+        "path": "app/layout.tsx",
+        "hash": "db55d333539d31c2ad3fde13cfb5f807d71a2d67c0bb212b12693820a18cf66e",
+        "bytes": 381
+      },
+      {
+        "path": "styles/theme.css",
+        "hash": "d1f26f0a95c6a89406bb31b5e7412f065ed1099832c9285f5fd6f0f271ca1e16",
+        "bytes": 549
+      },
+      {
+        "path": "styles/generated.css",
+        "hash": "6453847bf4cd52d2ae841337303c85200ac7d2abb9aa281ee9b04477784353a8",
+        "bytes": 7011
+      },
+      {
+        "path": "styles/globals.css",
+        "hash": "57f00f8d0a8b89778edcdbd85f311477bd4ad315071d0dc69d0a0f83d66c57e0",
+        "bytes": 3640
+      },
+      {
+        "path": "components/icons/icon.tsx",
+        "hash": "1a91cff776d4e0b07e2184af991e0ec43214c222fa04f6c00b17df9c541174b4",
+        "bytes": 475
+      },
+      {
+        "path": "lib/utils.ts",
+        "hash": "f53a1ea0634c2cbfbb6275d9cd6f58503bf519d4b7c0ebe06a3c6375b2cf6dec",
+        "bytes": 196
+      },
+      {
+        "path": "public/logo.svg",
+        "hash": "2afe23f6d7f297ab8563ee05015907d2d0f1903344c7e8b1b483835f0d78ca3b",
+        "bytes": 910
+      },
+      {
+        "path": "public/icon.svg",
+        "hash": "32341047d202fbff170eee4493d889a5c3b79eb377ddeb284da8a0956070c2a4",
+        "bytes": 869
+      },
+      {
+        "path": "public/favicon.svg",
+        "hash": "cfb09e06980b21ac4df558fc791be8cef96c7ab79ab0d8b0eb0d8a95f7c1cd76",
+        "bytes": 874
+      },
+      {
+        "path": "vercel.json",
+        "hash": "feecdba5a814293bb225e931057c2f6eb314a3034479f57b7b1a24edfbc3a081",
+        "bytes": 525
+      },
+      {
+        "path": ".gitignore",
+        "hash": "c7bdb645502d81f18e2ceca7fde809eef64d89d87c29fdf3551bc22d14903d2f",
+        "bytes": 30
+      },
+      {
+        "path": "README.md",
+        "hash": "e9186ba3ff2f440ba8a7526bc90b290205e4c4d108a388d3762315ae2989e819",
+        "bytes": 316
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "app/page.tsx",
+      "hash": "680091d8e63daf0ea482d9427ae3e804d0661c192f3a940de20a9c046b45b1e8",
+      "bytes": 651
+    },
+    {
+      "path": "app/layout.tsx",
+      "hash": "db55d333539d31c2ad3fde13cfb5f807d71a2d67c0bb212b12693820a18cf66e",
+      "bytes": 381
+    },
+    {
+      "path": "styles/theme.css",
+      "hash": "d1f26f0a95c6a89406bb31b5e7412f065ed1099832c9285f5fd6f0f271ca1e16",
+      "bytes": 549
+    },
+    {
+      "path": "styles/generated.css",
+      "hash": "6453847bf4cd52d2ae841337303c85200ac7d2abb9aa281ee9b04477784353a8",
+      "bytes": 7011
+    },
+    {
+      "path": "styles/globals.css",
+      "hash": "57f00f8d0a8b89778edcdbd85f311477bd4ad315071d0dc69d0a0f83d66c57e0",
+      "bytes": 3640
+    },
+    {
+      "path": "components/icons/icon.tsx",
+      "hash": "1a91cff776d4e0b07e2184af991e0ec43214c222fa04f6c00b17df9c541174b4",
+      "bytes": 475
+    },
+    {
+      "path": "lib/utils.ts",
+      "hash": "f53a1ea0634c2cbfbb6275d9cd6f58503bf519d4b7c0ebe06a3c6375b2cf6dec",
+      "bytes": 196
+    },
+    {
+      "path": "public/logo.svg",
+      "hash": "2afe23f6d7f297ab8563ee05015907d2d0f1903344c7e8b1b483835f0d78ca3b",
+      "bytes": 910
+    },
+    {
+      "path": "public/icon.svg",
+      "hash": "32341047d202fbff170eee4493d889a5c3b79eb377ddeb284da8a0956070c2a4",
+      "bytes": 869
+    },
+    {
+      "path": "public/favicon.svg",
+      "hash": "cfb09e06980b21ac4df558fc791be8cef96c7ab79ab0d8b0eb0d8a95f7c1cd76",
+      "bytes": 874
+    },
+    {
+      "path": "vercel.json",
+      "hash": "feecdba5a814293bb225e931057c2f6eb314a3034479f57b7b1a24edfbc3a081",
+      "bytes": 525
+    },
+    {
+      "path": ".gitignore",
+      "hash": "c7bdb645502d81f18e2ceca7fde809eef64d89d87c29fdf3551bc22d14903d2f",
+      "bytes": 30
+    },
+    {
+      "path": "README.md",
+      "hash": "e9186ba3ff2f440ba8a7526bc90b290205e4c4d108a388d3762315ae2989e819",
+      "bytes": 316
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "app/page.tsx",
+      "materialized_path": "app/page.tsx",
+      "hash": "680091d8e63daf0ea482d9427ae3e804d0661c192f3a940de20a9c046b45b1e8",
+      "bytes": 651
+    },
+    {
+      "logical_path": "app/layout.tsx",
+      "materialized_path": "app/layout.tsx",
+      "hash": "db55d333539d31c2ad3fde13cfb5f807d71a2d67c0bb212b12693820a18cf66e",
+      "bytes": 381
+    },
+    {
+      "logical_path": "styles/theme.css",
+      "materialized_path": "styles/theme.css",
+      "hash": "d1f26f0a95c6a89406bb31b5e7412f065ed1099832c9285f5fd6f0f271ca1e16",
+      "bytes": 549
+    },
+    {
+      "logical_path": "styles/generated.css",
+      "materialized_path": "styles/generated.css",
+      "hash": "6453847bf4cd52d2ae841337303c85200ac7d2abb9aa281ee9b04477784353a8",
+      "bytes": 7011
+    },
+    {
+      "logical_path": "styles/globals.css",
+      "materialized_path": "styles/globals.css",
+      "hash": "57f00f8d0a8b89778edcdbd85f311477bd4ad315071d0dc69d0a0f83d66c57e0",
+      "bytes": 3640
+    },
+    {
+      "logical_path": "components/icons/icon.tsx",
+      "materialized_path": "components/icons/icon.tsx",
+      "hash": "1a91cff776d4e0b07e2184af991e0ec43214c222fa04f6c00b17df9c541174b4",
+      "bytes": 475
+    },
+    {
+      "logical_path": "lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "f53a1ea0634c2cbfbb6275d9cd6f58503bf519d4b7c0ebe06a3c6375b2cf6dec",
+      "bytes": 196
+    },
+    {
+      "logical_path": "public/logo.svg",
+      "materialized_path": "public/logo.svg",
+      "hash": "2afe23f6d7f297ab8563ee05015907d2d0f1903344c7e8b1b483835f0d78ca3b",
+      "bytes": 910
+    },
+    {
+      "logical_path": "public/icon.svg",
+      "materialized_path": "public/icon.svg",
+      "hash": "32341047d202fbff170eee4493d889a5c3b79eb377ddeb284da8a0956070c2a4",
+      "bytes": 869
+    },
+    {
+      "logical_path": "public/favicon.svg",
+      "materialized_path": "public/favicon.svg",
+      "hash": "cfb09e06980b21ac4df558fc791be8cef96c7ab79ab0d8b0eb0d8a95f7c1cd76",
+      "bytes": 874
+    },
+    {
+      "logical_path": "vercel.json",
+      "materialized_path": "vercel.json",
+      "hash": "feecdba5a814293bb225e931057c2f6eb314a3034479f57b7b1a24edfbc3a081",
+      "bytes": 525
+    },
+    {
+      "logical_path": ".gitignore",
+      "materialized_path": ".gitignore",
+      "hash": "c7bdb645502d81f18e2ceca7fde809eef64d89d87c29fdf3551bc22d14903d2f",
+      "bytes": 30
+    },
+    {
+      "logical_path": "README.md",
+      "materialized_path": "README.md",
+      "hash": "e9186ba3ff2f440ba8a7526bc90b290205e4c4d108a388d3762315ae2989e819",
+      "bytes": 316
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "source-owned-inputs",
+      "traffic": "green",
+      "message": "Forge records existing local source files as editable, reviewable project-owned inputs."
+    },
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge tracking does not run npm install, lifecycle hooks, or upstream scripts."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-06-07T17:48:53.445078900+00:00",
+  "signature": null
+}

@@ -1,0 +1,4 @@
+.dx-launch-panel {
+  background-image: url("/logo.svg");
+  color: var(--dx-foreground);
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "dx.whiteboard.receipt.v1",
+  "generatedAt": "2026-06-03T00:00:00.000Z",
+  "scope": "examples/whiteboard",
+  "claim": "source-level frame membership, deterministic connector routing, local embedded image import, selection/document measurements, minimap viewport navigation, multi-element whiteboard templates, frame presentation navigation, and frame-grouped outline navigation are wired through model metadata, reducer-backed commands, validated embedded data URLs, preview/export markers, persistence, and focused whiteboard regression tests",
+  "features": {
+    "frameMembership": "metadata.frameId",
+    "commands": [
+      "frame.assign",
+      "frame.clear",
+      "element.translate",
+      "element.duplicate",
+      "element.update"
+    ],
+    "connectorRouting": "metadata.connectorRoute",
+    "imageImport": {
+      "source": "local-file",
+      "policy": "embedded-data-url-only",
+      "acceptedMimeTypes": [
+        "image/png",
+        "image/jpeg",
+        "image/webp",
+        "image/svg+xml"
+      ],
+      "maxBytes": 2097152,
+      "insertCommand": "element.add",
+      "shellMarker": "data-dx-whiteboard-image-import"
+    },
+    "minimap": {
+      "source": "canonical-document",
+      "navigationCommand": "viewport.set",
+      "shellMarker": "data-whiteboard-minimap",
+      "viewportMarker": "data-whiteboard-minimap-viewport"
+    },
+    "measurements": {
+      "source": "canonical-document selection-and-content-bounds",
+      "commands": [
+        "viewport.set"
+      ],
+      "shellMarker": "data-whiteboard-measurements",
+      "subjectMarker": "data-whiteboard-measurement-subject",
+      "countMarker": "data-whiteboard-measurement-count"
+    },
+    "templateLibrary": {
+      "source": "library.insert",
+      "templates": [
+        "flowchart-basic",
+        "kanban-board",
+        "retrospective-board",
+        "system-map"
+      ],
+      "metadata": [
+        "sourceOwned",
+        "template",
+        "templateRole",
+        "frameId",
+        "connectorRoute"
+      ],
+      "shellMarker": "data-whiteboard-template"
+    },
+    "presentationNavigator": {
+      "source": "role:frame metadata.frameId",
+      "commands": [
+        "selection.set",
+        "viewport.set"
+      ],
+      "shellMarker": "data-whiteboard-presentation",
+      "slideMarker": "data-whiteboard-presentation-slide-id"
+    },
+    "outlineNavigator": {
+      "source": "canonical-document metadata.frameId",
+      "commands": [
+        "selection.set",
+        "viewport.set"
+      ],
+      "shellMarker": "data-whiteboard-outline",
+      "sectionMarker": "data-whiteboard-outline-section",
+      "itemMarker": "data-whiteboard-outline-item-id"
+    },
+    "shellMarkers": [
+      "data-whiteboard-frame-controls",
+      "data-whiteboard-frame-id",
+      "data-whiteboard-frame-membership",
+      "data-whiteboard-frame-member",
+      "data-whiteboard-frame-container",
+      "data-whiteboard-connector-route",
+      "data-whiteboard-connector-route-controls",
+      "data-whiteboard-connector-route-storage",
+      "data-dx-whiteboard-image-import",
+      "data-whiteboard-measurements",
+      "data-whiteboard-measurement-subject",
+      "data-whiteboard-measurement-item-count",
+      "data-whiteboard-measurement-count",
+      "data-whiteboard-minimap",
+      "data-whiteboard-minimap-viewport",
+      "data-whiteboard-library",
+      "data-whiteboard-library-template-count",
+      "data-whiteboard-preset-category",
+      "data-whiteboard-template",
+      "data-whiteboard-presentation",
+      "data-whiteboard-presentation-slide-id",
+      "data-whiteboard-outline",
+      "data-whiteboard-outline-section",
+      "data-whiteboard-outline-item-id",
+      "data-whiteboard-outline-item-type",
+      "data-whiteboard-outline-item-role"
+    ],
+    "summaryFields": [
+      "frameCount",
+      "framedElementCount"
+    ]
+  },
+  "proof": {
+    "latestFocusedCommand": "bun test ./benchmarks/whiteboard-shell-contract.test.ts ./benchmarks/whiteboard-model-commands-geometry.test.ts ./benchmarks/whiteboard-rich-commands.test.ts ./benchmarks/whiteboard-persistence.test.ts ./benchmarks/whiteboard-file-workflows.test.ts ./benchmarks/whiteboard-export.test.ts ./examples/whiteboard/lib/stores/whiteboard-input-controller.test.ts ./examples/whiteboard/lib/whiteboard/input/input-runtime.test.ts ./examples/whiteboard/lib/whiteboard/input/input-runtime-keyboard.test.ts ./examples/whiteboard/lib/whiteboard/render/renderer.test.ts",
+    "latestFocusedResult": "121 pass, 0 fail",
+    "browserE2E": "not claimed",
+    "visualReceipt": "not claimed"
+  },
+  "boundaries": [
+    "Frame nesting is not claimed.",
+    "Drag-to-nest/autocapture is not claimed.",
+    "Orthogonal routing is deterministic horizontal-first elbow routing only.",
+    "Smart obstacle-avoiding connector layout is not claimed.",
+    "Local image import embeds validated data URLs into source-owned image elements; it does not upload files or create remote media.",
+    "Remote uploads, remote URL image ingestion, CDN/media-library storage, and media-library browsing are not claimed.",
+    "Measurements proof is source-level selection/content bounds, TSX marker, and non-undoable viewport.set command wiring only.",
+    "Minimap/viewport navigator proof is source-level geometry, TSX marker, and viewport.set command wiring only.",
+    "Template-library proof is source-level factory, reducer, TSX marker, metadata, and undo/redo coverage only.",
+    "Presentation navigator proof is source-level frame derivation, TSX marker, viewport-fit, and non-undoable selection.set plus viewport.set command wiring only.",
+    "Outline navigator proof is source-level model grouping, TSX marker, viewport-fit, and non-undoable selection.set plus viewport.set command wiring only.",
+    "Browser-level E2E, CDP/Lighthouse, server-run, pixel-position, and visual receipts are not claimed.",
+    "Browser-level pointer receipts are not claimed."
+  ]
+}

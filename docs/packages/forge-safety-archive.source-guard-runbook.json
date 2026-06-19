@@ -1,0 +1,105 @@
+{
+  "schema": "dx.forge.safety_archive.source_guard_runbook_fixture",
+  "route": "/",
+  "surface": {
+    "id": "forge-safety-archive-status",
+    "status_surface": "safety-archive-status",
+    "zed_surface": "safety-archive-status",
+    "operation_safety_surface": "archive-before-delete",
+    "source_file": "tools/launch/runtime-template/pages/index.html",
+    "materialized_file": "pages/index.html"
+  },
+  "guard": {
+    "id": "forge-safety-archive-rollback-coverage",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "benchmarks/www-forge-package-lock.test.ts",
+    "command": "dx run --test .\\benchmarks\\www-forge-package-lock.test.ts",
+    "proves": [
+      "Forge safety/archive rollback coverage stays receipt-backed",
+      "tracked launch packages expose rollback receipt paths",
+      "safety archive receipts exist under .dx/forge/receipts/safety",
+      "archive receipts name cache files used for restore planning",
+      "package-status safety_archive reports 100% local rollback coverage",
+      "without claiming remote rollback, live restore, browser proof, or object-store writes"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "forge-safety-archive-rollback-coverage",
+      "purpose": "The launch safety/archive row proves archive-before-delete receipts and local rollback coverage for tracked Forge packages without claiming remote rollback or live restore execution.",
+      "evidence_field": "benchmarks/www-forge-package-lock.test.ts",
+      "fixture_path": "docs/packages/forge-safety-archive.source-guard-runbook.json"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\www-forge-package-lock.test.ts",
+      "purpose": "Validate source-owned Forge package lock, archive receipt, rollback receipt, cache-file, and safety_archive status coverage for the launch template.",
+      "fixture_path": "docs/packages/forge-safety-archive.source-guard-runbook.json",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "command_field": "sourceGuardRunbookFixtures[].command",
+    "fixture_path": "docs/packages/forge-safety-archive.source-guard-runbook.json",
+    "route": "/",
+    "runtime_proof": false,
+    "zed_visibility": "forge-safety-archive:rollback-coverage"
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-component=\"forge-safety-archive-status\"",
+    "data-dx-safety-archive-contract",
+    "data-dx-safety-archive-state",
+    "data-dx-safety-archive-safe-delete",
+    "data-dx-safety-archive-package-count",
+    "data-dx-safety-archive-covered-packages",
+    "data-dx-safety-archive-missing-packages",
+    "data-dx-safety-archive-rollback-coverage",
+    "data-dx-safety-archive-receipt-count",
+    "data-dx-safety-archive-directory",
+    "data-dx-safety-archive-boundary",
+    "data-dx-safety-archive-runbook-source",
+    "data-dx-safety-archive-runbook-fixture",
+    "data-dx-safety-archive-runbook-guard",
+    "data-dx-safety-archive-runbook-command",
+    "data-dx-safety-archive-runbook-policy"
+  ],
+  "receipt_surfaces": {
+    "package_status": "examples/template/.dx/forge/package-status.json",
+    "package_lock": "examples/template/.dx/forge/package-lock.json",
+    "archive_directory": "examples/template/.dx/forge/receipts/safety",
+    "dashboard_status_contract": "examples/template/forge-safety-archive-contract.ts",
+    "dashboard_runbook_read_model": "examples/template/forge-safety-archive-runbook.ts",
+    "dashboard_row": "examples/template/forge-safety-archive-panel.tsx"
+  },
+  "app_owned_boundaries": [
+    "live restore execution",
+    "remote object rollback",
+    "cross-provider rollback",
+    "operator review before destructive package operations",
+    "governed browser/runtime proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the rollback coverage source guard and Studio runbook metadata only.",
+    "LOCAL-ONLY: archive receipts prove local cache restore inputs for launch packages; remote rollback and live restore remain app-owned boundaries."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

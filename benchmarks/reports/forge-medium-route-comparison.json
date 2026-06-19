@@ -1,0 +1,188 @@
+{
+  "generated_at": "2026-05-16T22:04:13.346Z",
+  "report_id": "forge-medium-route-comparison-v1",
+  "source": "benchmarks/compare-forge-medium-route.ts",
+  "fixture": {
+    "route": "/forge/medium",
+    "cards": 12,
+    "form_fields": 6,
+    "route_links": 8,
+    "stat_blocks": 4,
+    "static_evidence": true,
+    "content_parity": "Every framework row renders the same medium-page model: repeated cards, route links, stats, and review form fields."
+  },
+  "scope": {
+    "community_excluded": true,
+    "not_full_framework_benchmark": true,
+    "competitor_builds_not_run": true,
+    "no_package_install": true,
+    "no_node_modules_created": true,
+    "browser_timings_not_measured": true,
+    "safe_public_claim": "This medium fixture compares deterministic static route payloads for the same content shape. It does not prove broad framework replacement."
+  },
+  "frameworks": [
+    {
+      "framework": "DX-WWW",
+      "baseline_id": "dx-www-medium-static-route",
+      "baseline_kind": "generated-static-evidence",
+      "runtime_claim": "static first route with DXPK proof artifact, no route runtime",
+      "route_count": 1,
+      "total_decoded_bytes": 5057,
+      "total_brotli_bytes": 1454,
+      "proof_artifact_bytes": 187,
+      "static_evidence": {
+        "route": "/forge/medium",
+        "html_bytes": 5057,
+        "brotli_bytes": 1454,
+        "sha256": "b528891aa195fc7c81ff6659cade63b47f077ead180a303f9ba847f879816fa5",
+        "contains_cards": true,
+        "contains_form": true,
+        "contains_route_links": true
+      },
+      "note": "DX-WWW fixture renders the medium route as source-owned static evidence plus a non-blocking proof packet model."
+    },
+    {
+      "framework": "Astro",
+      "baseline_id": "astro-medium-static-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no island hydration included in this fixture",
+      "route_count": 1,
+      "total_decoded_bytes": 4986,
+      "total_brotli_bytes": 1438,
+      "proof_artifact_bytes": 0,
+      "static_evidence": {
+        "route": "/forge/medium",
+        "html_bytes": 4986,
+        "brotli_bytes": 1438,
+        "sha256": "75bc72bcfc3452c8f9853cdc14226e2411c5b9c0130084879f25cf23b6ef3730",
+        "contains_cards": true,
+        "contains_form": true,
+        "contains_route_links": true
+      },
+      "note": "Generous Astro-style static floor for the same medium content. No astro build was run."
+    },
+    {
+      "framework": "Svelte",
+      "baseline_id": "svelte-medium-prerender-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no Svelte client bundle included in this fixture",
+      "route_count": 1,
+      "total_decoded_bytes": 4985,
+      "total_brotli_bytes": 1441,
+      "proof_artifact_bytes": 0,
+      "static_evidence": {
+        "route": "/forge/medium",
+        "html_bytes": 4985,
+        "brotli_bytes": 1441,
+        "sha256": "303c2cde7dda5854d82063f4de1b148458db53159611930bd4072f44ff50a74b",
+        "contains_cards": true,
+        "contains_form": true,
+        "contains_route_links": true
+      },
+      "note": "Generous Svelte prerender floor for the same medium content. No Vite or SvelteKit build was run."
+    },
+    {
+      "framework": "HTMX",
+      "baseline_id": "htmx-medium-static-floor",
+      "baseline_kind": "static-floor-with-htmx-attributes",
+      "runtime_claim": "HTML carries htmx-style attributes; external htmx runtime bytes are not fetched",
+      "route_count": 1,
+      "total_decoded_bytes": 5660,
+      "total_brotli_bytes": 1511,
+      "proof_artifact_bytes": 0,
+      "static_evidence": {
+        "route": "/forge/medium",
+        "html_bytes": 5660,
+        "brotli_bytes": 1511,
+        "sha256": "2883d64f0036fc4d1f99bb96e01cbc531141396ae7a0fdd865eddd9eb67c6622",
+        "contains_cards": true,
+        "contains_form": true,
+        "contains_route_links": true
+      },
+      "note": "HTMX-shaped static fixture for the same medium content. It does not fetch htmx.org runtime code."
+    },
+    {
+      "framework": "Next.js",
+      "baseline_id": "next-medium-static-export-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no React, RSC, router, font, image, or prefetch runtime included",
+      "route_count": 1,
+      "total_decoded_bytes": 4993,
+      "total_brotli_bytes": 1436,
+      "proof_artifact_bytes": 0,
+      "static_evidence": {
+        "route": "/forge/medium",
+        "html_bytes": 4993,
+        "brotli_bytes": 1436,
+        "sha256": "d2f44aa95b55c347727cf68e9df5fdbc99b41f1c0a0c47a8b9b494211855962f",
+        "contains_cards": true,
+        "contains_form": true,
+        "contains_route_links": true
+      },
+      "note": "Generous Next.js static-export floor for the same medium content. No next build was run."
+    }
+  ],
+  "rankings": {
+    "brotli": [
+      {
+        "rank": 1,
+        "framework": "Next.js",
+        "bytes": 1436
+      },
+      {
+        "rank": 2,
+        "framework": "Astro",
+        "bytes": 1438
+      },
+      {
+        "rank": 3,
+        "framework": "Svelte",
+        "bytes": 1441
+      },
+      {
+        "rank": 4,
+        "framework": "DX-WWW",
+        "bytes": 1454
+      },
+      {
+        "rank": 5,
+        "framework": "HTMX",
+        "bytes": 1511
+      }
+    ],
+    "decoded": [
+      {
+        "rank": 1,
+        "framework": "Svelte",
+        "bytes": 4985
+      },
+      {
+        "rank": 2,
+        "framework": "Astro",
+        "bytes": 4986
+      },
+      {
+        "rank": 3,
+        "framework": "Next.js",
+        "bytes": 4993
+      },
+      {
+        "rank": 4,
+        "framework": "DX-WWW",
+        "bytes": 5057
+      },
+      {
+        "rank": 5,
+        "framework": "HTMX",
+        "bytes": 5660
+      }
+    ]
+  },
+  "honest_findings": [
+    "This is a medium route fixture, not a real Astro/Svelte/HTMX/Next production build.",
+    "The competitor rows are intentionally generous static floors and exclude common framework runtime, router, devtool, image, font, and hydration overhead.",
+    "DX-WWW should use this evidence to find payload direction, not to claim it beats every framework in every scenario.",
+    "A future browser suite must add real framework builds, real route navigation, hydration or interaction tests, and production CDN transfer measurements."
+  ],
+  "conclusion": "DX-WWW now has a reproducible medium-route evidence fixture beyond tiny public pages. The next proof should run real framework builds for the same page model."
+}

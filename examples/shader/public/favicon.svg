@@ -1,0 +1,17 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>DX WWW favicon</title>
+  <desc>A standalone solid D symbol filled with the DX rainbow logo gradient.</desc>
+  <defs>
+    <linearGradient id="dCycle" x1="248" y1="128" x2="888" y2="896" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.14" stop-color="#0A84FF"/>
+      <stop offset="0.28" stop-color="#BF5AF2"/>
+      <stop offset="0.42" stop-color="#FF2D55"/>
+      <stop offset="0.56" stop-color="#FF9500"/>
+      <stop offset="0.7" stop-color="#FFD60A"/>
+      <stop offset="0.84" stop-color="#32D74B"/>
+      <stop offset="1" stop-color="#00E5FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M248 128H514C723.316 128 888 296.517 888 512C888 727.483 723.316 896 514 896H248V128Z" fill="url(#dCycle)"/>
+</svg>

@@ -1,0 +1,367 @@
+{
+  "version": 1,
+  "route": "/",
+  "source_path": "app/page.tsx",
+  "shell": {
+    "fallback": {
+      "html": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" href=\"/public/favicon.svg\" type=\"image/svg+xml\"><link rel=\"apple-touch-icon\" href=\"/public/icon.svg\"><meta name=\"description\" content=\"Orchestrate your code, don't just own it.\"><link rel=\"stylesheet\" href=\"/styles/generated.css\"><link rel=\"stylesheet\" href=\"/styles/globals.css\"><link rel=\"stylesheet\" href=\"/styles/theme.css\"><link rel=\"stylesheet\" href=\"/_dx/styles/react-route-ce40f27a48d53008.css\" data-dx-generated=\"true\"><title>Enhanced Development Experience</title></head><body><main class=\"starter-shell forge-backed-shell\" data-dx-runtime=\"static\" data-dx-output-mode=\"tiny-static\" data-dx-js=\"none\" data-dx-route=\"/\" data-dx-assets=\"/logo.svg\" data-forge-package=\"npm/lodash\"><section class=\"starter-card source-owned-forge-package\" aria-labelledby=\"starter-title\"><img class=\"starter-logo\" src=\"/logo.svg\" alt=\"Dx WWW\"><p class=\"starter-kicker\">Dx WWW</p><h1 id=\"starter-title\">Enhanced Development Experience</h1><p class=\"starter-copy\">Orchestrate your code, don't just own it.</p><p class=\"starter-proof\" data-forge-helper=\"startCase\">Source-owned lodash proof.</p></section></main></body></html>",
+      "bytes": 1255,
+      "crawlable": true,
+      "accessibility_warnings": []
+    },
+    "style_hrefs": [
+      "/_dx/styles/react-route-ce40f27a48d53008.css"
+    ],
+    "streaming_strategy": "static-single-flush",
+    "first_flush_bytes": 0,
+    "runtime_required": false
+  },
+  "graph": {
+    "route_id": "/",
+    "source_path": "app/page.tsx",
+    "root_component_id": "app/layout",
+    "components": {
+      "nodes": [
+        {
+          "id": "app/page",
+          "name": "Page",
+          "package_id": null,
+          "content_hash": "d3203b887a53055da1f9ff35373e98a4d7e5269d3728a3f83b577b449f009256"
+        },
+        {
+          "id": "app/layout",
+          "name": "Layout",
+          "package_id": null,
+          "content_hash": "db55d333539d31c2ad3fde13cfb5f807d71a2d67c0bb212b12693820a18cf66e"
+        }
+      ],
+      "edges": [
+        {
+          "from": "app/layout",
+          "to": "app/page"
+        }
+      ]
+    },
+    "styles": {
+      "tokens": [
+        {
+          "name": "--accent",
+          "value": "0 0% 98%"
+        },
+        {
+          "name": "--background",
+          "value": "0 0% 3%"
+        },
+        {
+          "name": "--border",
+          "value": "0 0% 18%"
+        },
+        {
+          "name": "--card",
+          "value": "0 0% 7%"
+        },
+        {
+          "name": "--danger",
+          "value": "0 84% 60%"
+        },
+        {
+          "name": "--destructive",
+          "value": "var(--danger)"
+        },
+        {
+          "name": "--dx-bg",
+          "value": "hsl(var(--background))"
+        },
+        {
+          "name": "--dx-green",
+          "value": "hsl(var(--success))"
+        },
+        {
+          "name": "--dx-red",
+          "value": "hsl(var(--destructive))"
+        },
+        {
+          "name": "--dx-text",
+          "value": "hsl(var(--foreground))"
+        },
+        {
+          "name": "--font-mono",
+          "value": "\"JetBrains Mono\", \"JetBrains Mono NL\", ui-monospace, SFMono-Regular, Consolas, \"Liberation Mono\", monospace"
+        },
+        {
+          "name": "--foreground",
+          "value": "0 0% 96%"
+        },
+        {
+          "name": "--muted",
+          "value": "0 0% 14%"
+        },
+        {
+          "name": "--muted-foreground",
+          "value": "0 0% 68%"
+        },
+        {
+          "name": "--primary",
+          "value": "0 0% 98%"
+        },
+        {
+          "name": "--primary-foreground",
+          "value": "0 0% 4%"
+        },
+        {
+          "name": "--ring",
+          "value": "0 0% 83%"
+        },
+        {
+          "name": "--spacing",
+          "value": "0.25rem"
+        },
+        {
+          "name": "--success",
+          "value": "142 70% 45%"
+        },
+        {
+          "name": "--surface",
+          "value": "0 0% 4%"
+        },
+        {
+          "name": "--warning",
+          "value": "38 92% 50%"
+        }
+      ],
+      "classes": [
+        {
+          "name": "dx-action",
+          "rule": "display: inline-grid; place-items: center; background: hsl(var(--foreground)); color: hsl(var(--background));",
+          "source_hash": "b2b9d76364390401e56314f9f1df42a46560ba4c9a7e214cda9f85fd375da83f"
+        },
+        {
+          "name": "dx-card",
+          "rule": "width: min(100%, 76rem); border: 1px solid hsl(var(--border)); border-radius: var(--radius); background: hsl(var(--card)); box-shadow: 0 1px 0 hsl(var(--foreground) / 0.04) inset; padding: clamp(1.25rem, 3vw, 2.25rem);",
+          "source_hash": "91d0138c17683893e3bc363ed7f8fb12e59b2c89f6ecd762c2d385cdd0a4eaf6"
+        },
+        {
+          "name": "dx-grid",
+          "rule": "display: grid; grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr)); gap: 1rem;",
+          "source_hash": "f96d7b525f9156e80ffb0d316f1065d61be35860b48d8917983f90c9c7642293"
+        },
+        {
+          "name": "dx-muted",
+          "rule": "color: hsl(var(--muted));",
+          "source_hash": "a091a1a2172cb073b59291dd786e65de874461c058a936c52c2d98f42c8956a7"
+        },
+        {
+          "name": "dx-page-shell",
+          "rule": "align-items: center;",
+          "source_hash": "f9e56510903d3ef90b2754b897c1c550b86c029a6c5840e99fbba077e0100272"
+        },
+        {
+          "name": "dx-secondary-action",
+          "rule": "min-height: 2.65rem; border-radius: var(--radius); border: 1px solid rgba(0, 0, 0, 0); padding: 0.7rem 1rem; font: inherit; font-size: 0.875rem; font-weight: 700; cursor: pointer; transition: transform 0.16s, border-color 0.16s, background 0.16s;",
+          "source_hash": "9c6e4e2de8fe04a7e4645a16ea6a4c7fcbb42379a5d5bd48e6ea7c6f6bca0e89"
+        },
+        {
+          "name": "dx-shell",
+          "rule": "min-height: 100vh; display: grid; place-items: center; padding: clamp(1rem, 3vw, 3rem);",
+          "source_hash": "40fe86b6469ad69af6b4d45031e88739f9bc7aae5c48d610eef98fc4631fb468"
+        },
+        {
+          "name": "dx-stack",
+          "rule": "display: grid; gap: 1rem;",
+          "source_hash": "bc97f1859c0d220b48721cffdfa7cc2b1f4bc1bcaeec43a7cafc13e1994c3b2e"
+        },
+        {
+          "name": "dx-template",
+          "rule": "min-height: 100vh; background: hsl(var(--background)); color: hsl(var(--foreground));",
+          "source_hash": "04932d1405594629afeb611e18cf47404132723ad44904cfe1571b61b34d8c69"
+        },
+        {
+          "name": "starter-action-button",
+          "rule": "min-height: 2.5rem; border: 1px solid hsl(var(--border)); border-radius: 8px; background: hsl(var(--foreground)); color: hsl(var(--background)); font: inherit; font-size: 0.9rem; font-weight: 700; text-decoration: none;",
+          "source_hash": "8574f0187e1da58ba5b63945c8da2e20c0a4dd2bd0d4178d81e35d31f5b86429"
+        },
+        {
+          "name": "starter-actions",
+          "rule": "display: flex; flex-wrap: wrap; justify-content: center; justify-self: center; gap: 10px; width: min(100%, 34rem);",
+          "source_hash": "3db4f7bd6dc93489d5ad8ca05dc81390d9cadf68c56616d11e809a3b1fc249e6"
+        },
+        {
+          "name": "starter-card",
+          "rule": "display: grid; width: min(100%, 640px); justify-items: center; gap: 18px; border: 1px solid hsl(var(--border)); border-radius: 14px; background: hsl(var(--card)); padding: clamp(28px, 5vw, 58px); text-align: center; box-shadow: 0 1px 0 hsl(var(--foreground) / 0.08) inset, 0 28px 80px hsl(var(--background) / 0.45);",
+          "source_hash": "6a6cbdaa77cc655f7b3808bc5f982735130e5d1cce89283106ae835e91bac018"
+        },
+        {
+          "name": "starter-copy",
+          "rule": "max-width: 34rem; margin: 0; color: hsl(var(--muted-foreground)); font-size: clamp(1rem, 2.2vw, 1.125rem); line-height: 1.7;",
+          "source_hash": "0d80c3837e398db3a7234fa1d57752becb544e44cb1dc3b71f41ea0a17de19b9"
+        },
+        {
+          "name": "starter-form",
+          "rule": "display: grid; width: min(100%, 34rem); justify-items: center; gap: 10px;",
+          "source_hash": "75923f5d34ca25f5a112623563597d608a21f9cc708af561b4e36f1044bb37c2"
+        },
+        {
+          "name": "starter-form-label",
+          "rule": "color: hsl(var(--muted-foreground)); font-size: 0.85rem; font-weight: 700;",
+          "source_hash": "901f82a1b8d87065043eca1e1d85351618520c76c7aa0d3f93cf55821ddfee1d"
+        },
+        {
+          "name": "starter-form-panel",
+          "rule": "display: grid; justify-items: center; gap: 10px; width: 100%;",
+          "source_hash": "cad2da0d847e5075041674eb581d8614c809cc10cc2a03b370192713cacaacf2"
+        },
+        {
+          "name": "starter-input",
+          "rule": "display: block; width: 100%; min-width: 0; min-height: 2.5rem; border: 1px solid hsl(var(--border)); border-radius: 8px; background: hsl(var(--surface)); color: hsl(var(--foreground)); font: inherit; padding: 0 0.85rem; text-align: center;",
+          "source_hash": "b848fd267c2d842e91164d0e47baa2ba84fb647b7498caa99bc3918917aa0055"
+        },
+        {
+          "name": "starter-kicker",
+          "rule": "margin: 0 0 -2px; color: hsl(var(--muted-foreground)); font-size: clamp(1.12rem, 2.6vw, 1.45rem); font-weight: 750; letter-spacing: 0.18em; text-transform: uppercase;",
+          "source_hash": "42b0185cbb623bac2e3a1ebbcea067817d9e516608d96dfabfaa0443dcae8b8f"
+        },
+        {
+          "name": "starter-link",
+          "rule": "display: inline-grid; place-items: center; padding: 0 1rem; text-align: center;",
+          "source_hash": "8c9ebfe553361c6822fb35696da62c058206fffa5f07da75caf098aa432b1adb"
+        },
+        {
+          "name": "starter-link-secondary",
+          "rule": "background: hsl(var(--card)); color: hsl(var(--foreground));",
+          "source_hash": "8f6fba3c562d787de2bef48d48002520295e2e7c46eaf48ad5d8f3f96e115ea3"
+        },
+        {
+          "name": "starter-logo",
+          "rule": "width: 40px; height: 40px; object-fit: contain;",
+          "source_hash": "80a7300f39045e9a62d5809fed8dd1cc55f1568c852138dc9be25d5d799235b6"
+        },
+        {
+          "name": "starter-route-links",
+          "rule": "display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;",
+          "source_hash": "2bbc67a6f1802ca57da411e4904d8a55a568b7d95c43ff1ae64d39afba857b60"
+        },
+        {
+          "name": "starter-shell",
+          "rule": "display: grid; width: 100%; min-width: 100%; min-height: 100vh; min-height: 100dvh; place-items: center; padding: clamp(24px, 5vw, 64px);",
+          "source_hash": "85dd11b2415ded6e0a1c112f971b2a40ef932e08a099e4d8e768e014a59f9131"
+        }
+      ],
+      "delivery": "generated-css"
+    },
+    "source_manifest_hash": null
+  },
+  "state": {
+    "default_scope": "local",
+    "global_stores": [],
+    "slots": [],
+    "derived_slots": [],
+    "event_slots": [],
+    "effects": [],
+    "server_actions": []
+  },
+  "packet": {
+    "kind": "route",
+    "bytes": 7127,
+    "payload_bytes": 6875,
+    "section_count": 5,
+    "roundtrip_matches": true
+  },
+  "receipt": {
+    "source_manifest_hash": null,
+    "node_modules_required": false,
+    "client_island_abi": null,
+    "source_paths": [
+      "app/layout.tsx",
+      "app/page.tsx",
+      "styles/generated.css",
+      "styles/globals.css",
+      "styles/theme.css"
+    ],
+    "forge_package_ids": []
+  },
+  "runtime_report": {
+    "selected_mode": "Static",
+    "tiny_static_route_proof": {
+      "selected": true,
+      "output_mode": "tiny-static",
+      "js": "none",
+      "html_bytes": 1255,
+      "css_bytes": 9206,
+      "total_public_bytes": 10461,
+      "script_tag_count": 0,
+      "runtime_required": false,
+      "no_js_capable": true,
+      "meaningful_html": true,
+      "semantic_landmark_present": true,
+      "link_count": 0,
+      "form_count": 0,
+      "seo_title_present": true,
+      "accessibility_signal_count": 4,
+      "browser_api_required": false,
+      "astro_parity_status": "not_yet_claimed"
+    },
+    "candidates": [
+      {
+        "mode": "Static",
+        "estimated_bytes": 10461,
+        "selected": true,
+        "reason": "HTML/CSS shell with no browser runtime"
+      },
+      {
+        "mode": "MicroJs",
+        "estimated_bytes": 10461,
+        "selected": false,
+        "reason": "generated event/state JavaScript for tiny islands"
+      },
+      {
+        "mode": "ServerFragment",
+        "estimated_bytes": 10781,
+        "selected": false,
+        "reason": "server-rendered fragment endpoint path"
+      },
+      {
+        "mode": "WasmCore",
+        "estimated_bytes": 25088,
+        "selected": false,
+        "reason": "DXPK plus shared WASM core runtime"
+      },
+      {
+        "mode": "WasmSplit",
+        "estimated_bytes": 19088,
+        "selected": false,
+        "reason": "DXPK plus split boot runtime"
+      }
+    ],
+    "rejected_modes": [
+      {
+        "mode": "MicroJs",
+        "estimated_bytes": 10461,
+        "reason": "candidate does not satisfy the current interaction contract"
+      },
+      {
+        "mode": "ServerFragment",
+        "estimated_bytes": 10781,
+        "reason": "estimated bytes are higher than the selected route mode"
+      },
+      {
+        "mode": "WasmCore",
+        "estimated_bytes": 25088,
+        "reason": "estimated bytes are higher than the selected route mode"
+      },
+      {
+        "mode": "WasmSplit",
+        "estimated_bytes": 19088,
+        "reason": "estimated bytes are higher than the selected route mode"
+      }
+    ],
+    "reasons": [
+      "selected static from 0 state slot(s), 0 event slot(s), 0 server action edge(s)",
+      "no client state or event slots require browser runtime",
+      "source-only no-JS shell; Astro parity is not claimed by route-unit proof"
+    ],
+    "warnings": [
+      "runtime bytes, DXPK bytes, generated CSS, and shell bytes must be counted together",
+      "tier-0 no-JS proof is source-only; Astro parity requires a separate live payload/paint/throughput receipt"
+    ]
+  }
+}

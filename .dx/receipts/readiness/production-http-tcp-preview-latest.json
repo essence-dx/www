@@ -1,0 +1,108 @@
+{
+  "schema": "dx.www.readiness.production_http_tcp_preview_receipt_contract",
+  "schema_revision": 1,
+  "id": "production-http-tcp-preview",
+  "collector": "dx-source-owned-production-preview-tcp-collector",
+  "generated_at": "2026-05-31T05:44:53.422Z",
+  "project": "G:/Dx/www",
+  "passed": true,
+  "status": "local-production-http-tcp-preview-current",
+  "release_ready": false,
+  "fastest_world_claim": false,
+  "proof_scope": "local-production-preview-tcp-server",
+  "source": "dx-preview-production-contract-tcp",
+  "url": "http://127.0.0.1:57848",
+  "build_dir": "examples\\template\\.dx\\www\\output",
+  "dx_www_bin": "target\\debug\\dx-www.exe",
+  "preview_command": "G:\\Dx\\www\\target\\debug\\dx-www.exe preview --production-contract --build-dir G:\\Dx\\www\\examples\\template\\.dx\\www\\output --port 57848",
+  "asset_probe_path": "_dx/styles/react-route-c647df8504ce3f5d.css",
+  "tcp_preview_server_started": true,
+  "tcp_requests_executed": true,
+  "browser_runtime_executed": false,
+  "provider_bound_cdn_executed": false,
+  "hosted_provider_proof": false,
+  "cleared_external_proof_gap_ids": [
+    "preview-tcp-server-parity"
+  ],
+  "remaining_external_proof_gap_ids": [
+    "browser-js-enabled-runtime-replay",
+    "browser-js-disabled-runtime-replay",
+    "axum-static-responder-parity",
+    "provider-bound-cdn-cache-replay",
+    "hosted-provider-adapter-replay"
+  ],
+  "checks": [
+    {
+      "id": "etag-present",
+      "passed": true
+    },
+    {
+      "id": "if-none-match-304",
+      "passed": true
+    },
+    {
+      "id": "if-modified-since-304",
+      "passed": true
+    },
+    {
+      "id": "head-omits-body",
+      "passed": true
+    },
+    {
+      "id": "range-206",
+      "passed": true
+    },
+    {
+      "id": "range-416",
+      "passed": true
+    },
+    {
+      "id": "if-range-206",
+      "passed": true
+    },
+    {
+      "id": "stale-if-range-falls-back-to-full-body",
+      "passed": true
+    },
+    {
+      "id": "br-negotiation",
+      "passed": true
+    },
+    {
+      "id": "gzip-negotiation",
+      "passed": true
+    },
+    {
+      "id": "plain-asset-vary",
+      "passed": true
+    },
+    {
+      "id": "static-options-204-allow-header",
+      "passed": true
+    },
+    {
+      "id": "static-post-405-allow-header",
+      "passed": true
+    },
+    {
+      "id": "precompressed-decoded-content-type",
+      "passed": true
+    }
+  ],
+  "etag": "\"dx-426f594e1d61438e-1409\"",
+  "last_modified": "Sun, 31 May 2026 05:42:23 GMT",
+  "rule": "Local TCP preview proof clears only the preview-tcp-server-parity sub-gate; browser runtime, Axum parity, CDN, and hosted-provider proof remain separate gates.",
+  "import_source_path": ".dx/receipts/readiness/browser-import-candidates/production-http-tcp-preview-latest.json",
+  "import_source_within_project": true,
+  "imported_by": "www readiness --import-production-http-tcp-preview-receipt",
+  "import_rule": "validated-current-before-canonical-write",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/production-http-tcp-preview-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-production-http-tcp-preview-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "fccc907ae0e650bba12a20ff3c4791080f8c2ac94a36a1e1a8b8f8e835444097",
+    "machine_blake3": "33e02579671be2999ab44b3de915b5176035738b0ec36224935f46b628e591ac"
+  }
+}

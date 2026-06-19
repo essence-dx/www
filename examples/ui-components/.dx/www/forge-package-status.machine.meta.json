@@ -1,0 +1,13 @@
+{
+  "cache_schema": "dx.www.forge_package_status",
+  "cache_version": 2,
+  "cache_kind": 3,
+  "source_path": "G:\\Dx\\www\\examples\\ui-components\\.dx/forge/package-status.json",
+  "source_len": 24316,
+  "source_modified_unix_ms": 1780472539509,
+  "source_blake3": "6214d108cd1232e75c452abac94271c4ef4e74116334bd57be8398e0ec4760ea",
+  "machine_path": "G:\\Dx\\www\\examples\\ui-components\\.dx\\www\\forge-package-status.machine",
+  "machine_payload_len": 21424,
+  "machine_archive_len": 21424,
+  "machine_payload_blake3": "0b8d4055b84534e23d1fbb180b6cd1c14cec3d2df324434fc88f93c0c60ebebf"
+}

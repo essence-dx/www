@@ -1,0 +1,533 @@
+{
+  "schema": "dx.build.zedHandoff",
+  "schema_revision": 1,
+  "status": "source-route-shell-and-module-graph-ready",
+  "project_root": "G:/Dx/www/examples/ui-components",
+  "source_build_manifest": ".dx/www/output/source-build-manifest.json",
+  "source_build_receipt": ".dx/www/output/source-build-receipt.json",
+  "canonical_build_receipt": ".dx/receipts/build/latest.json",
+  "graph_receipt": ".dx/receipts/graph/latest.json",
+  "graph_consumer_snapshot": ".dx/receipts/graph/consumer-snapshot.json",
+  "build_readiness": ".dx/receipts/build/readiness.json",
+  "image_metadata_receipt": ".dx/receipts/build/image-metadata.json",
+  "content_docs_receipt": ".dx/receipts/build/content-docs.json",
+  "installed_binary_smoke_receipt": ".dx/receipts/build/installed-binary-smoke-latest.json",
+  "route_handlers": [],
+  "route_shell_chunks": 4,
+  "source_module_chunks": 66,
+  "style_optimization": {
+    "style_node_count": 3,
+    "original_rule_count": 328,
+    "retained_rule_count": 328,
+    "pruned_rule_count": 0,
+    "minified_style_count": 3,
+    "source_map_count": 3,
+    "source_map_source_count": 5,
+    "source_map_source_hash_count": 5,
+    "source_map_entry_style_source_count": 3,
+    "source_map_flattened_import_source_count": 2,
+    "source_map_retained_import_source_count": 0,
+    "source_map_segment_count": 0,
+    "source_map_exact_segment_map_count": 0,
+    "source_map_evidence_only_count": 3,
+    "source_map_link_count": 3,
+    "source_map_hash_count": 3,
+    "flattened_import_count": 2,
+    "retained_import_count": 0,
+    "asset_reference_count": 0,
+    "entry_style_asset_reference_count": 0,
+    "flattened_import_asset_reference_count": 0,
+    "retained_import_asset_reference_count": 0
+  },
+  "content_pipeline": {
+    "document_count": 0,
+    "mdx_document_count": 0,
+    "hash_manifest": ".dx/receipts/build/content-docs.json#hash_manifest",
+    "consumer_snapshot": ".dx/receipts/build/content-docs.json#consumer_snapshot",
+    "freshness": {
+      "schema": "dx.www.contentDocsFreshnessStatus",
+      "hash_algorithm": "blake3-16",
+      "status": "current-at-build",
+      "comparison": "manifest-self-check",
+      "checked_document_count": 0,
+      "current": true,
+      "stale_paths": [],
+      "missing_paths": [],
+      "unsafe_paths": [],
+      "safe_path_roots": [
+        "docs",
+        "content"
+      ],
+      "unsafe_path_policy": "reject absolute, parent, and non-docs/content receipt paths before hashing source bytes",
+      "runtime_proof": false,
+      "receipt_section": "content-docs.json#freshness_contract",
+      "consumer_action": "compare content-docs hash_manifest.document_hashes against current source bytes and reject unsafe receipt paths before trusting older receipts"
+    },
+    "node_modules_required": false,
+    "runtime_proof": false,
+    "full_mdx_pipeline_parity": false,
+    "status": "source-metadata-only"
+  },
+  "image_pipeline": {
+    "image_asset_count": 3,
+    "metadata_asset_count": 3,
+    "optimized_variant_count": 0,
+    "placeholder_count": 3,
+    "placeholder_artifact_count": 3,
+    "placeholder_artifact_bytes": 515,
+    "placeholder_artifact_outputs": [
+      ".dx/www/output/image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg"
+    ],
+    "route_reference_count": 0,
+    "formats": {
+      "svg": 3
+    },
+    "dimension_sources": {
+      "svg-root-attributes": 3
+    },
+    "status": "metadata-plus-placeholder-artifacts-boundary",
+    "full_pipeline_parity": false
+  },
+  "routes": [
+    {
+      "route": "/docs/components",
+      "source_path": "app/docs/components/page.tsx",
+      "html_output": ".dx/www/output/source-routes/docs-components/index.html",
+      "shell_chunk_output": ".dx/www/output/source-routes/docs-components/route-shell-be665927161af500.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/docs-components/modules/app-docs-components-page-tsx-10edc6734693eb32.mjs",
+      "source_module_chunks": [
+        {
+          "source_path": "app/docs/components/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/app-docs-components-page-tsx-10edc6734693eb32.mjs",
+          "kind": "tsx",
+          "hash": "10edc6734693eb32"
+        },
+        {
+          "source_path": "components/docs/components-index.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/components-docs-components-index-tsx-efc212f4e1674665.mjs",
+          "kind": "tsx",
+          "hash": "efc212f4e1674665"
+        },
+        {
+          "source_path": "components/icons/icon.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/components-icons-icon-tsx-1a91cff776d4e0b0.mjs",
+          "kind": "tsx",
+          "hash": "1a91cff776d4e0b0"
+        },
+        {
+          "source_path": "components/site/site-header.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/components-site-site-header-tsx-f198583ec54e541c.mjs",
+          "kind": "tsx",
+          "hash": "f198583ec54e541c"
+        },
+        {
+          "source_path": "components/site/site-shell.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/components-site-site-shell-tsx-7e6706ef17890bd3.mjs",
+          "kind": "tsx",
+          "hash": "7e6706ef17890bd3"
+        },
+        {
+          "source_path": "components/ui/badge.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/components-ui-badge-tsx-22bc27d898995572.mjs",
+          "kind": "tsx",
+          "hash": "22bc27d898995572"
+        },
+        {
+          "source_path": "components/ui/button.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/components-ui-button-tsx-d968cf4d9dec114b.mjs",
+          "kind": "tsx",
+          "hash": "d968cf4d9dec114b"
+        },
+        {
+          "source_path": "components/ui/card.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/components-ui-card-tsx-6209568eece5a670.mjs",
+          "kind": "tsx",
+          "hash": "6209568eece5a670"
+        },
+        {
+          "source_path": "components/ui/slot.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/components-ui-slot-tsx-d8225e5ab1e57ca7.mjs",
+          "kind": "tsx",
+          "hash": "d8225e5ab1e57ca7"
+        },
+        {
+          "source_path": "lib/ui-components/catalog.ts",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/lib-ui-components-catalog-ts-f4d6821c2dfea410.mjs",
+          "kind": "ts",
+          "hash": "f4d6821c2dfea410"
+        },
+        {
+          "source_path": "lib/ui-components/provenance.ts",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/lib-ui-components-provenance-ts-4d102ff920ffd459.mjs",
+          "kind": "ts",
+          "hash": "4d102ff920ffd459"
+        },
+        {
+          "source_path": "lib/utils.ts",
+          "chunk_output": ".dx/www/output/source-routes/docs-components/modules/lib-utils-ts-597629c1fe30ddda.mjs",
+          "kind": "ts",
+          "hash": "597629c1fe30ddda"
+        }
+      ],
+      "fallback_hash": "be665927161af500"
+    },
+    {
+      "route": "/docs/components/primitives",
+      "source_path": "app/docs/components/primitives/page.tsx",
+      "html_output": ".dx/www/output/source-routes/docs-components-primitives/index.html",
+      "shell_chunk_output": ".dx/www/output/source-routes/docs-components-primitives/route-shell-2391e7c642c1d6a0.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/app-docs-components-primitives-page-tsx-f7c912f1dd3e3d54.mjs",
+      "source_module_chunks": [
+        {
+          "source_path": "app/docs/components/primitives/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/app-docs-components-primitives-page-tsx-f7c912f1dd3e3d54.mjs",
+          "kind": "tsx",
+          "hash": "f7c912f1dd3e3d54"
+        },
+        {
+          "source_path": "components/gallery/primitive-gallery.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-gallery-primitive-gallery-tsx-32867b10047816d2.mjs",
+          "kind": "tsx",
+          "hash": "32867b10047816d2"
+        },
+        {
+          "source_path": "components/gallery/primitive-preview.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-gallery-primitive-preview-tsx-1569058f9a6894ef.mjs",
+          "kind": "tsx",
+          "hash": "1569058f9a6894ef"
+        },
+        {
+          "source_path": "components/icons/icon.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-icons-icon-tsx-1a91cff776d4e0b0.mjs",
+          "kind": "tsx",
+          "hash": "1a91cff776d4e0b0"
+        },
+        {
+          "source_path": "components/site/site-header.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-site-site-header-tsx-f198583ec54e541c.mjs",
+          "kind": "tsx",
+          "hash": "f198583ec54e541c"
+        },
+        {
+          "source_path": "components/site/site-shell.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-site-site-shell-tsx-7e6706ef17890bd3.mjs",
+          "kind": "tsx",
+          "hash": "7e6706ef17890bd3"
+        },
+        {
+          "source_path": "components/ui/badge.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-badge-tsx-22bc27d898995572.mjs",
+          "kind": "tsx",
+          "hash": "22bc27d898995572"
+        },
+        {
+          "source_path": "components/ui/button.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-button-tsx-d968cf4d9dec114b.mjs",
+          "kind": "tsx",
+          "hash": "d968cf4d9dec114b"
+        },
+        {
+          "source_path": "components/ui/card.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-card-tsx-6209568eece5a670.mjs",
+          "kind": "tsx",
+          "hash": "6209568eece5a670"
+        },
+        {
+          "source_path": "components/ui/field.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-field-tsx-98a298604a0755a5.mjs",
+          "kind": "tsx",
+          "hash": "98a298604a0755a5"
+        },
+        {
+          "source_path": "components/ui/input.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-input-tsx-ba6d04c56bf64cc3.mjs",
+          "kind": "tsx",
+          "hash": "ba6d04c56bf64cc3"
+        },
+        {
+          "source_path": "components/ui/item.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-item-tsx-65a5a6d23d262b07.mjs",
+          "kind": "tsx",
+          "hash": "65a5a6d23d262b07"
+        },
+        {
+          "source_path": "components/ui/label.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-label-tsx-ba73cc5b49354477.mjs",
+          "kind": "tsx",
+          "hash": "ba73cc5b49354477"
+        },
+        {
+          "source_path": "components/ui/separator.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-separator-tsx-cbcc0dc0171aabd7.mjs",
+          "kind": "tsx",
+          "hash": "cbcc0dc0171aabd7"
+        },
+        {
+          "source_path": "components/ui/slot.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-slot-tsx-d8225e5ab1e57ca7.mjs",
+          "kind": "tsx",
+          "hash": "d8225e5ab1e57ca7"
+        },
+        {
+          "source_path": "components/ui/textarea.tsx",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/components-ui-textarea-tsx-42dc147a29cbe0ea.mjs",
+          "kind": "tsx",
+          "hash": "42dc147a29cbe0ea"
+        },
+        {
+          "source_path": "lib/ui-components/catalog.ts",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/lib-ui-components-catalog-ts-f4d6821c2dfea410.mjs",
+          "kind": "ts",
+          "hash": "f4d6821c2dfea410"
+        },
+        {
+          "source_path": "lib/ui-components/provenance.ts",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/lib-ui-components-provenance-ts-4d102ff920ffd459.mjs",
+          "kind": "ts",
+          "hash": "4d102ff920ffd459"
+        },
+        {
+          "source_path": "lib/utils.ts",
+          "chunk_output": ".dx/www/output/source-routes/docs-components-primitives/modules/lib-utils-ts-597629c1fe30ddda.mjs",
+          "kind": "ts",
+          "hash": "597629c1fe30ddda"
+        }
+      ],
+      "fallback_hash": "2391e7c642c1d6a0"
+    },
+    {
+      "route": "/",
+      "source_path": "app/page.tsx",
+      "html_output": ".dx/www/output/source-routes/root/index.html",
+      "shell_chunk_output": ".dx/www/output/source-routes/root/route-shell-31556b3dd0a04a78.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-8b4ade7b85aaeae7.mjs",
+      "source_module_chunks": [
+        {
+          "source_path": "app/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-8b4ade7b85aaeae7.mjs",
+          "kind": "tsx",
+          "hash": "8b4ade7b85aaeae7"
+        },
+        {
+          "source_path": "components/gallery/primitive-gallery.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-gallery-primitive-gallery-tsx-32867b10047816d2.mjs",
+          "kind": "tsx",
+          "hash": "32867b10047816d2"
+        },
+        {
+          "source_path": "components/gallery/primitive-preview.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-gallery-primitive-preview-tsx-1569058f9a6894ef.mjs",
+          "kind": "tsx",
+          "hash": "1569058f9a6894ef"
+        },
+        {
+          "source_path": "components/home/ui-components-home.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-home-ui-components-home-tsx-8d0b405c7051ac3d.mjs",
+          "kind": "tsx",
+          "hash": "8d0b405c7051ac3d"
+        },
+        {
+          "source_path": "components/icons/icon.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-icons-icon-tsx-1a91cff776d4e0b0.mjs",
+          "kind": "tsx",
+          "hash": "1a91cff776d4e0b0"
+        },
+        {
+          "source_path": "components/site/dependency-replacement.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-site-dependency-replacement-tsx-44a38031b6c12761.mjs",
+          "kind": "tsx",
+          "hash": "44a38031b6c12761"
+        },
+        {
+          "source_path": "components/site/registry-map.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-site-registry-map-tsx-e857fe46470c6c7d.mjs",
+          "kind": "tsx",
+          "hash": "e857fe46470c6c7d"
+        },
+        {
+          "source_path": "components/site/site-header.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-site-site-header-tsx-f198583ec54e541c.mjs",
+          "kind": "tsx",
+          "hash": "f198583ec54e541c"
+        },
+        {
+          "source_path": "components/site/site-shell.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-site-site-shell-tsx-7e6706ef17890bd3.mjs",
+          "kind": "tsx",
+          "hash": "7e6706ef17890bd3"
+        },
+        {
+          "source_path": "components/ui/badge.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-badge-tsx-22bc27d898995572.mjs",
+          "kind": "tsx",
+          "hash": "22bc27d898995572"
+        },
+        {
+          "source_path": "components/ui/button.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-button-tsx-d968cf4d9dec114b.mjs",
+          "kind": "tsx",
+          "hash": "d968cf4d9dec114b"
+        },
+        {
+          "source_path": "components/ui/card.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-card-tsx-6209568eece5a670.mjs",
+          "kind": "tsx",
+          "hash": "6209568eece5a670"
+        },
+        {
+          "source_path": "components/ui/field.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-field-tsx-98a298604a0755a5.mjs",
+          "kind": "tsx",
+          "hash": "98a298604a0755a5"
+        },
+        {
+          "source_path": "components/ui/input.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-input-tsx-ba6d04c56bf64cc3.mjs",
+          "kind": "tsx",
+          "hash": "ba6d04c56bf64cc3"
+        },
+        {
+          "source_path": "components/ui/item.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-item-tsx-65a5a6d23d262b07.mjs",
+          "kind": "tsx",
+          "hash": "65a5a6d23d262b07"
+        },
+        {
+          "source_path": "components/ui/label.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-label-tsx-ba73cc5b49354477.mjs",
+          "kind": "tsx",
+          "hash": "ba73cc5b49354477"
+        },
+        {
+          "source_path": "components/ui/separator.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-separator-tsx-cbcc0dc0171aabd7.mjs",
+          "kind": "tsx",
+          "hash": "cbcc0dc0171aabd7"
+        },
+        {
+          "source_path": "components/ui/slot.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-slot-tsx-d8225e5ab1e57ca7.mjs",
+          "kind": "tsx",
+          "hash": "d8225e5ab1e57ca7"
+        },
+        {
+          "source_path": "components/ui/textarea.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-ui-textarea-tsx-42dc147a29cbe0ea.mjs",
+          "kind": "tsx",
+          "hash": "42dc147a29cbe0ea"
+        },
+        {
+          "source_path": "lib/ui-components/catalog.ts",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/lib-ui-components-catalog-ts-f4d6821c2dfea410.mjs",
+          "kind": "ts",
+          "hash": "f4d6821c2dfea410"
+        },
+        {
+          "source_path": "lib/ui-components/provenance.ts",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/lib-ui-components-provenance-ts-4d102ff920ffd459.mjs",
+          "kind": "ts",
+          "hash": "4d102ff920ffd459"
+        },
+        {
+          "source_path": "lib/utils.ts",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/lib-utils-ts-597629c1fe30ddda.mjs",
+          "kind": "ts",
+          "hash": "597629c1fe30ddda"
+        }
+      ],
+      "fallback_hash": "31556b3dd0a04a78"
+    },
+    {
+      "route": "/registry",
+      "source_path": "app/registry/page.tsx",
+      "html_output": ".dx/www/output/source-routes/registry/index.html",
+      "shell_chunk_output": ".dx/www/output/source-routes/registry/route-shell-698c1b5d679b61b5.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/registry/modules/app-registry-page-tsx-ef2f268801d6b8ab.mjs",
+      "source_module_chunks": [
+        {
+          "source_path": "app/registry/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/app-registry-page-tsx-ef2f268801d6b8ab.mjs",
+          "kind": "tsx",
+          "hash": "ef2f268801d6b8ab"
+        },
+        {
+          "source_path": "components/icons/icon.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/components-icons-icon-tsx-1a91cff776d4e0b0.mjs",
+          "kind": "tsx",
+          "hash": "1a91cff776d4e0b0"
+        },
+        {
+          "source_path": "components/site/dependency-replacement.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/components-site-dependency-replacement-tsx-44a38031b6c12761.mjs",
+          "kind": "tsx",
+          "hash": "44a38031b6c12761"
+        },
+        {
+          "source_path": "components/site/registry-map.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/components-site-registry-map-tsx-e857fe46470c6c7d.mjs",
+          "kind": "tsx",
+          "hash": "e857fe46470c6c7d"
+        },
+        {
+          "source_path": "components/site/site-header.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/components-site-site-header-tsx-f198583ec54e541c.mjs",
+          "kind": "tsx",
+          "hash": "f198583ec54e541c"
+        },
+        {
+          "source_path": "components/site/site-shell.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/components-site-site-shell-tsx-7e6706ef17890bd3.mjs",
+          "kind": "tsx",
+          "hash": "7e6706ef17890bd3"
+        },
+        {
+          "source_path": "components/ui/badge.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/components-ui-badge-tsx-22bc27d898995572.mjs",
+          "kind": "tsx",
+          "hash": "22bc27d898995572"
+        },
+        {
+          "source_path": "components/ui/button.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/components-ui-button-tsx-d968cf4d9dec114b.mjs",
+          "kind": "tsx",
+          "hash": "d968cf4d9dec114b"
+        },
+        {
+          "source_path": "components/ui/card.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/components-ui-card-tsx-6209568eece5a670.mjs",
+          "kind": "tsx",
+          "hash": "6209568eece5a670"
+        },
+        {
+          "source_path": "components/ui/slot.tsx",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/components-ui-slot-tsx-d8225e5ab1e57ca7.mjs",
+          "kind": "tsx",
+          "hash": "d8225e5ab1e57ca7"
+        },
+        {
+          "source_path": "lib/ui-components/catalog.ts",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/lib-ui-components-catalog-ts-f4d6821c2dfea410.mjs",
+          "kind": "ts",
+          "hash": "f4d6821c2dfea410"
+        },
+        {
+          "source_path": "lib/ui-components/provenance.ts",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/lib-ui-components-provenance-ts-4d102ff920ffd459.mjs",
+          "kind": "ts",
+          "hash": "4d102ff920ffd459"
+        },
+        {
+          "source_path": "lib/utils.ts",
+          "chunk_output": ".dx/www/output/source-routes/registry/modules/lib-utils-ts-597629c1fe30ddda.mjs",
+          "kind": "ts",
+          "hash": "597629c1fe30ddda"
+        }
+      ],
+      "fallback_hash": "698c1b5d679b61b5"
+    }
+  ],
+  "node_modules_required": false,
+  "next_action": "Wire linked source-module chunks into governed preview/runtime validation before claiming full React hydration."
+}

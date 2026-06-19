@@ -1,0 +1,219 @@
+{
+  "schema": "dx.www.readiness.primitive_proof_receipt_contract",
+  "schema_revision": 1,
+  "id": "primitive-proof",
+  "primitive_proof_schema": "dx.www.readiness.primitive_proof",
+  "passed": true,
+  "status": "source-owned-primitive-foundation-current",
+  "source_root": "G:\\Dx\\www",
+  "source_owned": true,
+  "primitive_count": 4,
+  "primitive_current_count": 4,
+  "primitives": [
+    {
+      "id": "image",
+      "passed": true,
+      "source_owned": true,
+      "implemented": [
+        "static-safe next/image lowers to <img>",
+        "data-dx-framework-component and data-dx-image-boundary markers"
+      ],
+      "not_yet_claimed": [
+        "hosted optimizer service",
+        "remote image loader parity",
+        "responsive srcset generation for every loader"
+      ],
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render.rs",
+          "present": true,
+          "required_markers": [
+            "next_image_component_names",
+            "next-image-static-img"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render_parts/static_markup.rs",
+          "present": true,
+          "required_markers": [
+            "apply_next_image_static_attributes",
+            "data-dx-framework-component"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render_parts/static_expression.rs",
+          "present": true,
+          "required_markers": [
+            "data-dx-image-boundary",
+            "next-image-static-optimized-metadata"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "font",
+      "passed": true,
+      "source_owned": true,
+      "implemented": [
+        "module-scope font loader detection",
+        "CSS variable/class metadata receipts",
+        "static fallback font-family attributes without remote font requests"
+      ],
+      "not_yet_claimed": [
+        "font binary downloading",
+        "full Next font manifest parity",
+        "cross-provider hosted font cache proof"
+      ],
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/next_custom_transforms/font_loaders.rs",
+          "present": true,
+          "required_markers": [
+            "collect_font_loader_detections",
+            "css_variable_receipt",
+            "generated_css_import"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render_parts/static_markup.rs",
+          "present": true,
+          "required_markers": [
+            "apply_next_font_static_attributes"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render_parts/static_expression.rs",
+          "present": true,
+          "required_markers": [
+            "data-dx-next-font",
+            "next_font_binding_for_expression"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "script",
+      "passed": true,
+      "source_owned": true,
+      "implemented": [
+        "static-safe next/script lowers to <script>",
+        "strategy is converted to data-dx-next-script-strategy instead of invalid HTML",
+        "afterInteractive/lazyOnload default to defer when async/defer is absent"
+      ],
+      "not_yet_claimed": [
+        "full Next script lifecycle ordering",
+        "worker strategy runtime",
+        "onReady/onLoad callback execution without a client runtime"
+      ],
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render.rs",
+          "present": true,
+          "required_markers": [
+            "next_script_component_names",
+            "next-script-static-script"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render_parts/static_markup.rs",
+          "present": true,
+          "required_markers": [
+            "apply_next_script_static_attributes"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render_parts/static_expression.rs",
+          "present": true,
+          "required_markers": [
+            "data-dx-next-script-strategy",
+            "next-script-static-script-metadata"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "wasm",
+      "passed": true,
+      "source_owned": true,
+      "implemented": [
+        ".wasm and .wasm.gz are immutable runtime assets",
+        "precompressed wasm metadata carries Content-Encoding, encoded_from, and decoded application/wasm content type",
+        "wasm/bindgen source-guard receipts expose app-owned generated-Wasm boundaries"
+      ],
+      "not_yet_claimed": [
+        "automatic Rust-to-wasm app build pipeline",
+        "generated wasm-bindgen glue execution for arbitrary apps",
+        "browser proof for app-owned wasm modules"
+      ],
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/deploy_adapter_contract.rs",
+          "present": true,
+          "required_markers": [
+            "chunks/app.wasm.gz",
+            "content_encoding",
+            "encoded_from"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "dx-www/src/cli/preview_contract.rs",
+          "present": true,
+          "required_markers": [
+            "application/wasm",
+            "production_contract_content_type"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "dx-www/src/cli/mod_parts/next_familiar_template.rs",
+          "present": true,
+          "required_markers": [
+            "wasm/bindgen",
+            "useWasmBindgenModule",
+            "WasmBindgenFactory"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "release_ready": false,
+  "fastest_world_claim": false,
+  "browser_runtime_executed": false,
+  "hosted_provider_proof": false,
+  "live_browser_executed": false,
+  "proof_scope": "local-source-owned-primitive-foundation",
+  "next_proof": "hosted Image optimizer, hosted Font cache, Script lifecycle browser matrix, and app-owned Wasm browser execution receipts",
+  "rule": "This receipt validates source-owned primitive lowering code paths only; it does not run a browser, execute generated Wasm, fetch remote fonts, optimize remote images, or claim hosted provider parity.",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/primitive-proof-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-primitive-proof-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "6feb4a035fd7fc84d15d26d26cc036c6e67168c3c1341647487a7aec0a93236a",
+    "machine_blake3": "c6e353c797141ac5e9ebce066b289f158b8957ed1acba47dc00836b2a0abdd4b"
+  }
+}

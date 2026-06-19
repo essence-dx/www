@@ -1,0 +1,222 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "reactive/store",
+    "upstream_name": "@tanstack/store",
+    "version": "0.11.0-dx.1",
+    "generator": "dx-forge/reactive-store",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "a51155c4d3ec27f9a7caf22f8a50d7ba90a187181f8691d6ec0f83cf8536c1d9",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:@tanstack/store@0.11.0; npm:@tanstack/react-store@0.11.0",
+      "verified": false,
+      "note": "DX inspected the local Reactive Store upstream mirror for Store, ReadonlyStore, createStore(), createAtom(), createAsyncAtom(), batch(), shallow(), useSelector(), useAtom(), useStore(), and createStoreContext() before curating this source-owned Reactive Store slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Reactive Store slice, but it is not a live advisory feed and does not audit application state shape, mutation policy, persistence, render granularity, or sensitive state handling."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/forge/state/reactive-store/index.ts",
+        "logical_path": "js/state/reactive-store/index.ts",
+        "hash": "9e33fbd5d00b97d3ab243ef20e10a525b72d8f803b5a229adf559902ea5cbe5c",
+        "bytes": 181
+      },
+      {
+        "path": "lib/forge/state/reactive-store/types.ts",
+        "logical_path": "js/state/reactive-store/types.ts",
+        "hash": "a63cfab9268ceae2f21fb4d048aae84de834676001ff984c7653c74bb6dc88f2",
+        "bytes": 770
+      },
+      {
+        "path": "lib/forge/state/reactive-store/atom.ts",
+        "logical_path": "js/state/reactive-store/atom.ts",
+        "hash": "c0a932d70d88017e8b5c8ac0c76082b7e983f08f81a486de2179a3b0b42885a7",
+        "bytes": 4902
+      },
+      {
+        "path": "lib/forge/state/reactive-store/store.ts",
+        "logical_path": "js/state/reactive-store/store.ts",
+        "hash": "3729b3649c09236ca81da532a8082ee2df6bb552aa082b9fe1f489f07ad9fd4f",
+        "bytes": 2752
+      },
+      {
+        "path": "lib/forge/state/reactive-store/shallow.ts",
+        "logical_path": "js/state/reactive-store/shallow.ts",
+        "hash": "911f9828f73c2e44e52a0d919e681c0ebf9798a6539e2faf14a3e0a981c0ab8d",
+        "bytes": 1275
+      },
+      {
+        "path": "lib/forge/state/reactive-store/react.ts",
+        "logical_path": "js/state/reactive-store/react.ts",
+        "hash": "f7f0320a27d53826a93a50913882f24ae8930676e5e57d6656209aeb9c302da3",
+        "bytes": 2489
+      },
+      {
+        "path": "lib/forge/state/reactive-store/context.tsx",
+        "logical_path": "js/state/reactive-store/context.tsx",
+        "hash": "d1794edb8894681bf535ba50e2a1ef348744c8ce8baabe0a460397064fc8f2a4",
+        "bytes": 843
+      },
+      {
+        "path": "lib/forge/state/reactive-store/metadata.ts",
+        "logical_path": "js/state/reactive-store/metadata.ts",
+        "hash": "73b0d9769a125124ebd245cda80e4c0762301a2529e3ad30032117a18cfba326",
+        "bytes": 4307
+      },
+      {
+        "path": "lib/forge/state/reactive-store/README.md",
+        "logical_path": "js/state/reactive-store/README.md",
+        "hash": "b4b7417c1f68e7967c757cf56f1838e2c875cb3cc17f34b99af27d523d6ae533",
+        "bytes": 3515
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/forge/state/reactive-store/index.ts",
+      "logical_path": "js/state/reactive-store/index.ts",
+      "hash": "9e33fbd5d00b97d3ab243ef20e10a525b72d8f803b5a229adf559902ea5cbe5c",
+      "bytes": 181
+    },
+    {
+      "path": "lib/forge/state/reactive-store/types.ts",
+      "logical_path": "js/state/reactive-store/types.ts",
+      "hash": "a63cfab9268ceae2f21fb4d048aae84de834676001ff984c7653c74bb6dc88f2",
+      "bytes": 770
+    },
+    {
+      "path": "lib/forge/state/reactive-store/atom.ts",
+      "logical_path": "js/state/reactive-store/atom.ts",
+      "hash": "c0a932d70d88017e8b5c8ac0c76082b7e983f08f81a486de2179a3b0b42885a7",
+      "bytes": 4902
+    },
+    {
+      "path": "lib/forge/state/reactive-store/store.ts",
+      "logical_path": "js/state/reactive-store/store.ts",
+      "hash": "3729b3649c09236ca81da532a8082ee2df6bb552aa082b9fe1f489f07ad9fd4f",
+      "bytes": 2752
+    },
+    {
+      "path": "lib/forge/state/reactive-store/shallow.ts",
+      "logical_path": "js/state/reactive-store/shallow.ts",
+      "hash": "911f9828f73c2e44e52a0d919e681c0ebf9798a6539e2faf14a3e0a981c0ab8d",
+      "bytes": 1275
+    },
+    {
+      "path": "lib/forge/state/reactive-store/react.ts",
+      "logical_path": "js/state/reactive-store/react.ts",
+      "hash": "f7f0320a27d53826a93a50913882f24ae8930676e5e57d6656209aeb9c302da3",
+      "bytes": 2489
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/state/reactive-store/index.ts",
+      "materialized_path": "lib/forge/state/reactive-store/index.ts",
+      "hash": "9e33fbd5d00b97d3ab243ef20e10a525b72d8f803b5a229adf559902ea5cbe5c",
+      "bytes": 181
+    },
+    {
+      "logical_path": "js/state/reactive-store/types.ts",
+      "materialized_path": "lib/forge/state/reactive-store/types.ts",
+      "hash": "a63cfab9268ceae2f21fb4d048aae84de834676001ff984c7653c74bb6dc88f2",
+      "bytes": 770
+    },
+    {
+      "logical_path": "js/state/reactive-store/atom.ts",
+      "materialized_path": "lib/forge/state/reactive-store/atom.ts",
+      "hash": "c0a932d70d88017e8b5c8ac0c76082b7e983f08f81a486de2179a3b0b42885a7",
+      "bytes": 4902
+    },
+    {
+      "logical_path": "js/state/reactive-store/store.ts",
+      "materialized_path": "lib/forge/state/reactive-store/store.ts",
+      "hash": "3729b3649c09236ca81da532a8082ee2df6bb552aa082b9fe1f489f07ad9fd4f",
+      "bytes": 2752
+    },
+    {
+      "logical_path": "js/state/reactive-store/shallow.ts",
+      "materialized_path": "lib/forge/state/reactive-store/shallow.ts",
+      "hash": "911f9828f73c2e44e52a0d919e681c0ebf9798a6539e2faf14a3e0a981c0ab8d",
+      "bytes": 1275
+    },
+    {
+      "logical_path": "js/state/reactive-store/react.ts",
+      "materialized_path": "lib/forge/state/reactive-store/react.ts",
+      "hash": "f7f0320a27d53826a93a50913882f24ae8930676e5e57d6656209aeb9c302da3",
+      "bytes": 2489
+    },
+    {
+      "logical_path": "js/state/reactive-store/context.tsx",
+      "materialized_path": "lib/forge/state/reactive-store/context.tsx",
+      "hash": "d1794edb8894681bf535ba50e2a1ef348744c8ce8baabe0a460397064fc8f2a4",
+      "bytes": 843
+    },
+    {
+      "logical_path": "js/state/reactive-store/metadata.ts",
+      "materialized_path": "lib/forge/state/reactive-store/metadata.ts",
+      "hash": "73b0d9769a125124ebd245cda80e4c0762301a2529e3ad30032117a18cfba326",
+      "bytes": 4307
+    },
+    {
+      "logical_path": "js/state/reactive-store/README.md",
+      "materialized_path": "lib/forge/state/reactive-store/README.md",
+      "hash": "b4b7417c1f68e7967c757cf56f1838e2c875cb3cc17f34b99af27d523d6ae533",
+      "bytes": 3515
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `MIT` with formal review `no`."
+    },
+    {
+      "policy": "existing-file",
+      "traffic": "green",
+      "message": "lib/forge/state/reactive-store/context.tsx already matches the curated source."
+    },
+    {
+      "policy": "preserve-local-edit",
+      "traffic": "yellow",
+      "message": "lib/forge/state/reactive-store/metadata.ts differs locally and was not overwritten."
+    },
+    {
+      "policy": "preserve-local-edit",
+      "traffic": "yellow",
+      "message": "lib/forge/state/reactive-store/README.md differs locally and was not overwritten."
+    }
+  ],
+  "risk_score": 85,
+  "timestamp": "2026-05-23T04:33:03.912989500+00:00",
+  "signature": null
+}

@@ -1,0 +1,509 @@
+{
+  "tool": "dx imports",
+  "version": 2,
+  "generated_by": "dx imports sync",
+  "project": "G:/Dx/www/examples/conversion-proof",
+  "source_hash": "blake3:ae3918644a00411ba4946b55075170d8670040f4d0dd06c6349b3c1547a05f7e",
+  "policy": "generated-import-maps-no-runtime-magic",
+  "used_only": true,
+  "scan_roots": [
+    "components",
+    "lib"
+  ],
+  "used_roots": [
+    "app",
+    "components",
+    "lib",
+    "styles"
+  ],
+  "aliases": [
+    "#components",
+    "#imports"
+  ],
+  "files": {
+    "barrel": "components/auto-imports.ts",
+    "import_map": ".dx/imports/import-map.json",
+    "declarations": ".dx/imports/imports.d.ts"
+  },
+  "entry_count": 14,
+  "used_symbol_count": 3,
+  "typed_entry_count": 12,
+  "untyped_entry_count": 2,
+  "entries": [
+    {
+      "kind": "component",
+      "name": "ConversionRouteHeader",
+      "source": "components/ConversionRouteHeader.tsx",
+      "import_path": "@/components/ConversionRouteHeader",
+      "barrel_export": null,
+      "exports": [
+        "ConversionRouteHeader",
+        "ConversionRouteHeaderProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ConversionRouteHeader",
+        "ConversionRouteHeaderProps"
+      ],
+      "type_exports": [
+        "ConversionRouteHeaderProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "RuntimeBoundaryPanel",
+      "source": "components/RuntimeBoundaryPanel.tsx",
+      "import_path": "@/components/RuntimeBoundaryPanel",
+      "barrel_export": null,
+      "exports": [
+        "RuntimeBoundaryPanel",
+        "RuntimeBoundaryPanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "RuntimeBoundaryPanel",
+        "RuntimeBoundaryPanelProps"
+      ],
+      "type_exports": [
+        "RuntimeBoundaryPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "SourceSurfaceTable",
+      "source": "components/SourceSurfaceTable.tsx",
+      "import_path": "@/components/SourceSurfaceTable",
+      "barrel_export": null,
+      "exports": [
+        "SourceSurfaceTable",
+        "SourceSurfaceTableProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "SourceSurfaceTable",
+        "SourceSurfaceTableProps"
+      ],
+      "type_exports": [
+        "SourceSurfaceTableProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "import_path": "@/components/icons/icon",
+      "barrel_export": "./icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unused_exports": [],
+      "type_exports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackMotionIcon",
+      "source": "components/icons/pack-motion.tsx",
+      "import_path": "@/components/icons/pack-motion",
+      "barrel_export": null,
+      "exports": [
+        "PackMotionIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackMotionIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackPlayIcon",
+      "source": "components/icons/pack-play.tsx",
+      "import_path": "@/components/icons/pack-play",
+      "barrel_export": null,
+      "exports": [
+        "PackPlayIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackPlayIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackStateIcon",
+      "source": "components/icons/pack-state.tsx",
+      "import_path": "@/components/icons/pack-state",
+      "barrel_export": null,
+      "exports": [
+        "PackStateIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackStateIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackThreeSceneIcon",
+      "source": "components/icons/pack-three-scene.tsx",
+      "import_path": "@/components/icons/pack-three-scene",
+      "barrel_export": null,
+      "exports": [
+        "PackThreeSceneIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackThreeSceneIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackUiComponentsIcon",
+      "source": "components/icons/pack-ui-components.tsx",
+      "import_path": "@/components/icons/pack-ui-components",
+      "barrel_export": null,
+      "exports": [
+        "PackUiComponentsIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackUiComponentsIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackWorkspaceIcon",
+      "source": "components/icons/pack-workspace.tsx",
+      "import_path": "@/components/icons/pack-workspace",
+      "barrel_export": null,
+      "exports": [
+        "PackWorkspaceIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackWorkspaceIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "generated.css",
+      "source": "styles/generated.css",
+      "import_path": "@/styles/generated.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "theme.css",
+      "source": "styles/theme.css",
+      "import_path": "@/styles/theme.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "utility",
+      "name": "LandingIdentityFooter",
+      "source": "lib/forge/www/landing-identity.tsx",
+      "import_path": "@/lib/forge/www/landing-identity",
+      "barrel_export": null,
+      "exports": [
+        "LandingIdentityFooter",
+        "LandingProofGrid"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "LandingIdentityFooter",
+        "LandingProofGrid"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "utility",
+      "name": "LandingPageContent",
+      "source": "lib/forge/www/landing-page.tsx",
+      "import_path": "@/lib/forge/www/landing-page",
+      "barrel_export": "../lib/forge/www/landing-page",
+      "exports": [
+        "LandingPageContent"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "LandingPageContent"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    }
+  ],
+  "public_barrel_entries": [
+    "components/icons/icon.tsx",
+    "lib/forge/www/landing-page.tsx"
+  ],
+  "unused_entries": [
+    "components/ConversionRouteHeader.tsx",
+    "components/RuntimeBoundaryPanel.tsx",
+    "components/SourceSurfaceTable.tsx",
+    "components/icons/pack-motion.tsx",
+    "components/icons/pack-play.tsx",
+    "components/icons/pack-state.tsx",
+    "components/icons/pack-three-scene.tsx",
+    "components/icons/pack-ui-components.tsx",
+    "components/icons/pack-workspace.tsx",
+    "lib/forge/www/landing-identity.tsx"
+  ],
+  "skipped_entries": [],
+  "component_exports": [
+    "./icons/icon",
+    "../lib/forge/www/landing-page"
+  ],
+  "components": [
+    {
+      "kind": "component",
+      "name": "ConversionRouteHeader",
+      "source": "components/ConversionRouteHeader.tsx",
+      "importPath": "@/components/ConversionRouteHeader",
+      "barrelExport": null,
+      "exports": [
+        "ConversionRouteHeader",
+        "ConversionRouteHeaderProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ConversionRouteHeader",
+        "ConversionRouteHeaderProps"
+      ],
+      "typeExports": [
+        "ConversionRouteHeaderProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "RuntimeBoundaryPanel",
+      "source": "components/RuntimeBoundaryPanel.tsx",
+      "importPath": "@/components/RuntimeBoundaryPanel",
+      "barrelExport": null,
+      "exports": [
+        "RuntimeBoundaryPanel",
+        "RuntimeBoundaryPanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "RuntimeBoundaryPanel",
+        "RuntimeBoundaryPanelProps"
+      ],
+      "typeExports": [
+        "RuntimeBoundaryPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "SourceSurfaceTable",
+      "source": "components/SourceSurfaceTable.tsx",
+      "importPath": "@/components/SourceSurfaceTable",
+      "barrelExport": null,
+      "exports": [
+        "SourceSurfaceTable",
+        "SourceSurfaceTableProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "SourceSurfaceTable",
+        "SourceSurfaceTableProps"
+      ],
+      "typeExports": [
+        "SourceSurfaceTableProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "importPath": "@/components/icons/icon",
+      "barrelExport": "./icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unusedExports": [],
+      "typeExports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackMotionIcon",
+      "source": "components/icons/pack-motion.tsx",
+      "importPath": "@/components/icons/pack-motion",
+      "barrelExport": null,
+      "exports": [
+        "PackMotionIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackMotionIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackPlayIcon",
+      "source": "components/icons/pack-play.tsx",
+      "importPath": "@/components/icons/pack-play",
+      "barrelExport": null,
+      "exports": [
+        "PackPlayIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackPlayIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackStateIcon",
+      "source": "components/icons/pack-state.tsx",
+      "importPath": "@/components/icons/pack-state",
+      "barrelExport": null,
+      "exports": [
+        "PackStateIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackStateIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackThreeSceneIcon",
+      "source": "components/icons/pack-three-scene.tsx",
+      "importPath": "@/components/icons/pack-three-scene",
+      "barrelExport": null,
+      "exports": [
+        "PackThreeSceneIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackThreeSceneIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackUiComponentsIcon",
+      "source": "components/icons/pack-ui-components.tsx",
+      "importPath": "@/components/icons/pack-ui-components",
+      "barrelExport": null,
+      "exports": [
+        "PackUiComponentsIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackUiComponentsIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackWorkspaceIcon",
+      "source": "components/icons/pack-workspace.tsx",
+      "importPath": "@/components/icons/pack-workspace",
+      "barrelExport": null,
+      "exports": [
+        "PackWorkspaceIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackWorkspaceIcon"
+      ],
+      "typeExports": []
+    }
+  ],
+  "composables": [],
+  "utilities": [
+    {
+      "kind": "utility",
+      "name": "LandingIdentityFooter",
+      "source": "lib/forge/www/landing-identity.tsx",
+      "importPath": "@/lib/forge/www/landing-identity",
+      "barrelExport": null,
+      "exports": [
+        "LandingIdentityFooter",
+        "LandingProofGrid"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "LandingIdentityFooter",
+        "LandingProofGrid"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "utility",
+      "name": "LandingPageContent",
+      "source": "lib/forge/www/landing-page.tsx",
+      "importPath": "@/lib/forge/www/landing-page",
+      "barrelExport": "../lib/forge/www/landing-page",
+      "exports": [
+        "LandingPageContent"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "LandingPageContent"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    }
+  ],
+  "forge_packages": [],
+  "style_helpers": [
+    "styles/generated.css",
+    "styles/theme.css"
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "generated_at": "2026-05-17T08:21:45.439Z",
+  "fixture": "generated:forge-adoption",
+  "fixture_mode": "forge-adoption",
+  "delivery": {
+    "route_mode": "static",
+    "packet_artifact_written": true,
+    "runtime_asset_written": false
+  },
+  "proof": {
+    "route": "/forge/adoption",
+    "fallback": {
+      "optimized_bytes": 8465,
+      "saved_bytes": 82,
+      "script_count": 0,
+      "style_count": 0,
+      "repeated_node_count": 21,
+      "delivery_mode": "static"
+    },
+    "packet": {
+      "format": "dxob-v1",
+      "bytes": 12041,
+      "decoded_name": "adoption",
+      "template_count": 95,
+      "string_count": 62,
+      "binding_count": 0,
+      "event_count": 0,
+      "css_class_count": 40,
+      "roundtrip_matches": true
+    },
+    "browser_packet": {
+      "format": "dxp-v1",
+      "bytes": 7505,
+      "decoded_kind": "Route",
+      "section_count": 3,
+      "payload_bytes": 7333,
+      "roundtrip_matches": true,
+      "sections": [
+        {
+          "kind": "FallbackHtmlRef",
+          "encoding": "Json",
+          "bytes": 166,
+          "content_hash": "cce9be469f0775e176a5527cd95fc76a65361ee3d46401af6cd6304c67e3fe32"
+        },
+        {
+          "kind": "TemplateSlots",
+          "encoding": "CanonicalBinary",
+          "bytes": 7025,
+          "content_hash": "2e55cee3024be530d37bc32160e94729b93b56c8364fd9c711b02ea6f4706e8d"
+        },
+        {
+          "kind": "SourceManifest",
+          "encoding": "Json",
+          "bytes": 142,
+          "content_hash": "63d3152333b1b7e58e59c4b3ad55d6e352bbce729f67adfc2cce8fddfd94af69"
+        }
+      ]
+    },
+    "interaction": null,
+    "forge": {
+      "package_id": "dx-www/vertical/forge-adoption",
+      "action": "TrackWrite",
+      "risk_score": 100,
+      "traffic": "green",
+      "files_tracked": 1
+    },
+    "forge_packages": []
+  },
+  "http": {
+    "route_url": "http://127.0.0.1:54695/forge/adoption",
+    "route_path": "/forge/adoption",
+    "resource_count": 1,
+    "total_decoded_bytes": 8465,
+    "content_length_bytes": 8465,
+    "compression_estimate": {
+      "raw_bytes": 8465,
+      "gzip_bytes": 1578,
+      "brotli_bytes": 1270
+    },
+    "route_timing_ms": {
+      "samples": 12,
+      "min": 1.469,
+      "median": 2.815,
+      "mean": 3.127,
+      "p95": 6.476,
+      "max": 6.476
+    },
+    "resources": [
+      {
+        "path": "/forge/adoption",
+        "status": 200,
+        "ok": true,
+        "decoded_bytes": 8465,
+        "elapsed_ms": 63.085,
+        "content_length": 8465
+      }
+    ]
+  },
+  "chrome": {
+    "enabled": true,
+    "samples": 5,
+    "warmup_excluded": true,
+    "title": "DX-WWW /forge/adoption",
+    "dom_nodes": 101,
+    "scripts": 0,
+    "buttons": 0,
+    "nav_duration_ms": 21.1,
+    "dom_content_loaded_ms": 20.3,
+    "load_event_ms": 21.1,
+    "transfer_size": 8765,
+    "encoded_body_size": 8465,
+    "decoded_body_size": 8465,
+    "dx_packet_status": null,
+    "dx_packet_sections": 0,
+    "dx_packet_payload_bytes": 0,
+    "dx_packet_template_count": 0,
+    "dx_packet_route": null,
+    "dx_packet_applied": false,
+    "counter_click_update_ms": 0,
+    "interaction_works": false,
+    "warmup": {
+      "title": "DX-WWW /forge/adoption",
+      "dom_nodes": 101,
+      "scripts": 0,
+      "buttons": 0,
+      "nav_duration_ms": 2025.5,
+      "dom_content_loaded_ms": 2024.8,
+      "load_event_ms": 2025.5,
+      "transfer_size": 8765,
+      "encoded_body_size": 8465,
+      "decoded_body_size": 8465,
+      "resource_count": 1,
+      "dx_packet_status": null,
+      "dx_packet_sections": 0,
+      "dx_packet_payload_bytes": 0,
+      "dx_packet_template_count": 0,
+      "dx_packet_route": null,
+      "dx_packet_applied": false,
+      "counter_before": null,
+      "counter_after": null,
+      "counter_click_update_ms": 0,
+      "interaction_works": false
+    },
+    "raw_samples": [
+      {
+        "title": "DX-WWW /forge/adoption",
+        "dom_nodes": 101,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 12.9,
+        "dom_content_loaded_ms": 12.4,
+        "load_event_ms": 12.9,
+        "transfer_size": 8765,
+        "encoded_body_size": 8465,
+        "decoded_body_size": 8465,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/adoption",
+        "dom_nodes": 101,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 21.1,
+        "dom_content_loaded_ms": 20.3,
+        "load_event_ms": 21.1,
+        "transfer_size": 9074,
+        "encoded_body_size": 8474,
+        "decoded_body_size": 8474,
+        "resource_count": 2,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/adoption",
+        "dom_nodes": 101,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 34.7,
+        "dom_content_loaded_ms": 33.9,
+        "load_event_ms": 34.7,
+        "transfer_size": 8765,
+        "encoded_body_size": 8465,
+        "decoded_body_size": 8465,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/adoption",
+        "dom_nodes": 101,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 10.6,
+        "dom_content_loaded_ms": 9.8,
+        "load_event_ms": 10.6,
+        "transfer_size": 8765,
+        "encoded_body_size": 8465,
+        "decoded_body_size": 8465,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/adoption",
+        "dom_nodes": 101,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 630.9,
+        "dom_content_loaded_ms": 629.9,
+        "load_event_ms": 630.9,
+        "transfer_size": 8765,
+        "encoded_body_size": 8465,
+        "decoded_body_size": 8465,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      }
+    ]
+  },
+  "budget": {
+    "profile": "compact-forge-adoption",
+    "config_path": null,
+    "enforced": false,
+    "passed": true,
+    "checks": [
+      {
+        "metric": "decoded bytes",
+        "value": 8465,
+        "max": 30000,
+        "unit": " B",
+        "passed": true
+      },
+      {
+        "metric": "Brotli estimate",
+        "value": 1270,
+        "max": 5500,
+        "unit": " B",
+        "passed": true
+      },
+      {
+        "metric": "HTTP route median",
+        "value": 2.815,
+        "max": 5,
+        "unit": " ms",
+        "passed": true
+      },
+      {
+        "metric": "Chrome load event median",
+        "value": 21.1,
+        "max": 75,
+        "unit": " ms",
+        "passed": true
+      }
+    ]
+  },
+  "comparison": {
+    "previous_generated_at": "2026-05-16T20:45:43.886Z",
+    "previous_fixture_mode": "forge-changelog",
+    "current_fixture_mode": "forge-adoption",
+    "previous_forge_packages": 0,
+    "current_forge_packages": 0,
+    "delta_forge_packages": 0,
+    "previous_decoded_bytes": 4539,
+    "current_decoded_bytes": 8465,
+    "delta_decoded_bytes": 3926,
+    "previous_brotli_bytes": 911,
+    "current_brotli_bytes": 1270,
+    "delta_brotli_bytes": 359,
+    "previous_http_route_median_ms": 2.993,
+    "current_http_route_median_ms": 2.815,
+    "delta_http_route_median_ms": -0.17799999999999994,
+    "previous_chrome_load_event_ms": 11.6,
+    "current_chrome_load_event_ms": 21.1,
+    "delta_chrome_load_event_ms": 9.500000000000002
+  },
+  "snapshot": {
+    "json": "vertical-proof-history/20260517T082145Z-forge-adoption.json",
+    "markdown": "vertical-proof-history/20260517T082145Z-forge-adoption.md",
+    "index_json": "vertical-proof-history/index.json",
+    "index_markdown": "vertical-proof-history/index.md"
+  }
+}

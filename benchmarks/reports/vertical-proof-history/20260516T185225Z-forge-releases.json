@@ -1,0 +1,324 @@
+{
+  "generated_at": "2026-05-16T18:52:25.011Z",
+  "fixture": "generated:forge-releases",
+  "fixture_mode": "forge-releases",
+  "delivery": {
+    "route_mode": "static",
+    "packet_artifact_written": true,
+    "runtime_asset_written": false
+  },
+  "proof": {
+    "route": "/forge/releases",
+    "fallback": {
+      "optimized_bytes": 4563,
+      "saved_bytes": 106,
+      "script_count": 0,
+      "style_count": 0,
+      "repeated_node_count": 10,
+      "delivery_mode": "static"
+    },
+    "packet": {
+      "format": "dxob-v1",
+      "bytes": 6655,
+      "decoded_name": "releases",
+      "template_count": 55,
+      "string_count": 38,
+      "binding_count": 0,
+      "event_count": 0,
+      "css_class_count": 36,
+      "roundtrip_matches": true
+    },
+    "browser_packet": {
+      "format": "dxp-v1",
+      "bytes": 4837,
+      "decoded_kind": "Route",
+      "section_count": 3,
+      "payload_bytes": 4665,
+      "roundtrip_matches": true,
+      "sections": [
+        {
+          "kind": "FallbackHtmlRef",
+          "encoding": "Json",
+          "bytes": 166,
+          "content_hash": "4e86b6a558042534c542f5252f8fbd1e244eb9c47195d3b35184bf8773d5f46e"
+        },
+        {
+          "kind": "TemplateSlots",
+          "encoding": "CanonicalBinary",
+          "bytes": 4357,
+          "content_hash": "5f0ca07965f59544c43190ddfe1c942ce873ea88165ac85567b1fa96d4c87c69"
+        },
+        {
+          "kind": "SourceManifest",
+          "encoding": "Json",
+          "bytes": 142,
+          "content_hash": "c7a2b198b3f7efad090e093d7bb0ccb22db95ad4b8f4dd99bce6c640cb3e8ef6"
+        }
+      ]
+    },
+    "interaction": null,
+    "forge": {
+      "package_id": "dx-www/vertical/forge-releases",
+      "action": "TrackWrite",
+      "risk_score": 100,
+      "traffic": "green",
+      "files_tracked": 1
+    },
+    "forge_packages": []
+  },
+  "http": {
+    "route_url": "http://127.0.0.1:59532/forge/releases",
+    "route_path": "/forge/releases",
+    "resource_count": 1,
+    "total_decoded_bytes": 4563,
+    "content_length_bytes": 4563,
+    "compression_estimate": {
+      "raw_bytes": 4563,
+      "gzip_bytes": 1100,
+      "brotli_bytes": 855
+    },
+    "route_timing_ms": {
+      "samples": 12,
+      "min": 1.098,
+      "median": 1.763,
+      "mean": 2.352,
+      "p95": 5.064,
+      "max": 5.064
+    },
+    "resources": [
+      {
+        "path": "/forge/releases",
+        "status": 200,
+        "ok": true,
+        "decoded_bytes": 4563,
+        "elapsed_ms": 38.929,
+        "content_length": 4563
+      }
+    ]
+  },
+  "chrome": {
+    "enabled": true,
+    "samples": 5,
+    "warmup_excluded": true,
+    "title": "DX-WWW /forge/releases",
+    "dom_nodes": 61,
+    "scripts": 0,
+    "buttons": 0,
+    "nav_duration_ms": 11.3,
+    "dom_content_loaded_ms": 10.6,
+    "load_event_ms": 11.3,
+    "transfer_size": 4863,
+    "encoded_body_size": 4563,
+    "decoded_body_size": 4563,
+    "dx_packet_status": null,
+    "dx_packet_sections": 0,
+    "dx_packet_payload_bytes": 0,
+    "dx_packet_template_count": 0,
+    "dx_packet_route": null,
+    "dx_packet_applied": false,
+    "counter_click_update_ms": 0,
+    "interaction_works": false,
+    "warmup": {
+      "title": "DX-WWW /forge/releases",
+      "dom_nodes": 61,
+      "scripts": 0,
+      "buttons": 0,
+      "nav_duration_ms": 9.6,
+      "dom_content_loaded_ms": 8.7,
+      "load_event_ms": 9.6,
+      "transfer_size": 5172,
+      "encoded_body_size": 4572,
+      "decoded_body_size": 4572,
+      "resource_count": 2,
+      "dx_packet_status": null,
+      "dx_packet_sections": 0,
+      "dx_packet_payload_bytes": 0,
+      "dx_packet_template_count": 0,
+      "dx_packet_route": null,
+      "dx_packet_applied": false,
+      "counter_before": null,
+      "counter_after": null,
+      "counter_click_update_ms": 0,
+      "interaction_works": false
+    },
+    "raw_samples": [
+      {
+        "title": "DX-WWW /forge/releases",
+        "dom_nodes": 61,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 10.7,
+        "dom_content_loaded_ms": 9.9,
+        "load_event_ms": 10.7,
+        "transfer_size": 4863,
+        "encoded_body_size": 4563,
+        "decoded_body_size": 4563,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/releases",
+        "dom_nodes": 61,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 11.7,
+        "dom_content_loaded_ms": 10.9,
+        "load_event_ms": 11.7,
+        "transfer_size": 4863,
+        "encoded_body_size": 4563,
+        "decoded_body_size": 4563,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/releases",
+        "dom_nodes": 61,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 11.3,
+        "dom_content_loaded_ms": 10.6,
+        "load_event_ms": 11.3,
+        "transfer_size": 4863,
+        "encoded_body_size": 4563,
+        "decoded_body_size": 4563,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/releases",
+        "dom_nodes": 61,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 10.9,
+        "dom_content_loaded_ms": 10,
+        "load_event_ms": 10.9,
+        "transfer_size": 4863,
+        "encoded_body_size": 4563,
+        "decoded_body_size": 4563,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/releases",
+        "dom_nodes": 61,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 13.6,
+        "dom_content_loaded_ms": 12.8,
+        "load_event_ms": 13.6,
+        "transfer_size": 4863,
+        "encoded_body_size": 4563,
+        "decoded_body_size": 4563,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      }
+    ]
+  },
+  "budget": {
+    "profile": "compact-forge-releases",
+    "config_path": null,
+    "enforced": true,
+    "passed": true,
+    "checks": [
+      {
+        "metric": "decoded bytes",
+        "value": 4563,
+        "max": 18000,
+        "unit": " B",
+        "passed": true
+      },
+      {
+        "metric": "Brotli estimate",
+        "value": 855,
+        "max": 3000,
+        "unit": " B",
+        "passed": true
+      },
+      {
+        "metric": "HTTP route median",
+        "value": 1.763,
+        "max": 5,
+        "unit": " ms",
+        "passed": true
+      },
+      {
+        "metric": "Chrome load event median",
+        "value": 11.3,
+        "max": 75,
+        "unit": " ms",
+        "passed": true
+      }
+    ]
+  },
+  "comparison": {
+    "previous_generated_at": "2026-05-16T17:58:42.949Z",
+    "previous_fixture_mode": "forge-evidence",
+    "current_fixture_mode": "forge-releases",
+    "previous_forge_packages": 0,
+    "current_forge_packages": 0,
+    "delta_forge_packages": 0,
+    "previous_decoded_bytes": 6988,
+    "current_decoded_bytes": 4563,
+    "delta_decoded_bytes": -2425,
+    "previous_brotli_bytes": 1106,
+    "current_brotli_bytes": 855,
+    "delta_brotli_bytes": -251,
+    "previous_http_route_median_ms": 0.939,
+    "current_http_route_median_ms": 1.763,
+    "delta_http_route_median_ms": 0.824,
+    "previous_chrome_load_event_ms": 8.3,
+    "current_chrome_load_event_ms": 11.3,
+    "delta_chrome_load_event_ms": 3
+  },
+  "snapshot": {
+    "json": "vertical-proof-history/20260516T185225Z-forge-releases.json",
+    "markdown": "vertical-proof-history/20260516T185225Z-forge-releases.md",
+    "index_json": "vertical-proof-history/index.json",
+    "index_markdown": "vertical-proof-history/index.md"
+  }
+}

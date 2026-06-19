@@ -1,0 +1,8 @@
+@import "./theme.css";
+@import "./generated.css";
+@import "./dx-landing.css";
+
+html,
+body {
+  font-family: var(--font-mono);
+}

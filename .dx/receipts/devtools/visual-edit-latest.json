@@ -1,0 +1,83 @@
+{
+  "schema": "dx.www.readiness.visual_edit_workbench_receipt_contract",
+  "schema_revision": 1,
+  "passed": true,
+  "browser_runtime_executed": true,
+  "visual_replay_attempted": true,
+  "visual_replay_status": "current",
+  "visual_replay_reason": "source-owned-devtools-replay-completed",
+  "devtools_global_present": true,
+  "browser_workbench_replay": "current",
+  "proof_scope": "local-in-app-browser-visual-edit-workbench-replay",
+  "source_root": "G:/Dx/www/examples/template",
+  "source_root_source": "/_dx/devtools/session",
+  "workbench_phases": [
+    "inspect",
+    "cascade",
+    "preview",
+    "apply",
+    "undo",
+    "receipt"
+  ],
+  "missing_workbench_phases": [],
+  "inspected_element_present": true,
+  "cascade_inspected": true,
+  "preview_source_mutated": false,
+  "apply_source_mutated": true,
+  "undo_source_restored": true,
+  "safe_local_source_target_known": true,
+  "apply_receipt_written": true,
+  "undo_receipt_written": true,
+  "receipt_durability": "json-sr-machine-written",
+  "page_url": "http://127.0.0.1:3000/state-runtime",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/148.0.7778.96 Safari/537.36",
+  "viewport": {
+    "width": 1280,
+    "height": 720,
+    "device_pixel_ratio": 1
+  },
+  "inspected_selector": "section:nth-child(1)",
+  "inspected_element_fingerprint": "section|section:nth-child(1)|section:nth-child(1)",
+  "style_property": "--ring",
+  "style_value": "0 0% 84%",
+  "computed_style_before": {
+    "property": "--ring",
+    "value": "0 0% 83%"
+  },
+  "computed_style_after_preview": {
+    "property": "--ring",
+    "value": "0 0% 84%"
+  },
+  "computed_style_after_undo": {
+    "property": "--ring",
+    "value": "0 0% 83%"
+  },
+  "source_target": {
+    "relativePath": "styles/theme.css",
+    "kind": "authored-css",
+    "range": {
+      "startByte": 381,
+      "endByte": 400,
+      "expectedText": "  --ring: 0 0% 83%;"
+    }
+  },
+  "browser_snapshot_hash": "sha256:6854db254486f4a7704f7e7ae296369ace5ffd9012bdd5dcf08f86c83414eb12",
+  "receipt_source": "dx.www.readiness.browser_receipt_page_snapshot.v1",
+  "release_ready": false,
+  "fastest_world_claim": false,
+  "import_source_path": ".dx/receipts/readiness/browser-import-candidates/visual-edit-browser-workbench-latest.json",
+  "import_source_within_project": true,
+  "imported_by": "www readiness --import-visual-edit-browser-receipt",
+  "import_rule": "validated-current-before-canonical-write",
+  "import_expectation": "real-browser-json-receipt-current-before-canonical-json-sr-machine-write",
+  "import_replay_boundary": "local-browser-proof-only-hosted-provider-proof-still-required",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/devtools/visual-edit-latest.sr",
+    "machine_path": ".dx/serializer/receipts-devtools-visual-edit-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "6865959ffd826e26010a60cf72c9182f4eda018d483bb44774dd47659b716853",
+    "machine_blake3": "e24bb7d05fb9de30175ec784c12db48da6c3e58ef307e591e019643c74a27d58"
+  }
+}

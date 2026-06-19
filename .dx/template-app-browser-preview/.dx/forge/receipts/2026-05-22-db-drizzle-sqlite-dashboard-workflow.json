@@ -1,0 +1,273 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "db/drizzle-sqlite",
+  "package_name": "Database ORM",
+  "official_package_name": "Database ORM",
+  "upstream_package": "drizzle-orm",
+  "upstream_version": "0.45.3",
+  "source_mirror": "G:/WWW/inspirations/drizzle-orm",
+  "honesty_label": "SOURCE-ONLY",
+  "route": "/",
+  "component": "launch-drizzle-data-workflow",
+  "workflow": "sqlite-read-model",
+  "product_surface": "launch-data-dashboard",
+  "mission_control_target": "mission-control-database",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 98,
+  "source_files": [
+    "examples/template/drizzle-query-proof.tsx",
+    "examples/template/data-status.tsx",
+    "examples/template/template-shell.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/package-catalog.ts",
+    "core/src/ecosystem/forge_drizzle.rs",
+    "docs/packages/database-orm.source-guard-runbook.json",
+    "tools/launch/materialize-www-template.ts"
+  ],
+  "files": [
+    "core/src/ecosystem/forge_drizzle.rs",
+    "examples/template/drizzle-query-proof.tsx",
+    "examples/template/data-status.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "docs/packages/database-orm.source-guard-runbook.json",
+    "tools/launch/materialize-www-template.ts"
+  ],
+  "hash_algorithm": "sha256",
+  "file_hashes": {
+    "core/src/ecosystem/forge_drizzle.rs": "a5f191fcfef43b7309d5e92d8978f83ea538a5d987a55ea151ed79ed0f8482ee",
+    "examples/template/drizzle-query-proof.tsx": "9e23bf321f9f115649d300472861f668a095f8d1536631d44ce155ce261dc8e3",
+    "examples/template/data-status.tsx": "19d36491049ff3ddaf48aa8b968a9f3a5b96ef8ebd07dc2a40e8c44dfbfc1dbb",
+    "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+    "docs/packages/database-orm.source-guard-runbook.json": "7ccc116c04fc5deb9dd3a37b2ea4d3e5dec51ce6ef5bb93693395a4daafeea29",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c",
+    "examples/template/db/drizzle/schema.ts": "0fe0c563a3f6cccaddfeb7129e4f4f8b64f072bb7137c87da36013a76fb79088",
+    "examples/template/db/drizzle/metadata.ts": "87b5ae4c640d59bb888f3101cd06a5e1a9fb736cfeb512be2e4c2498c8fb1d8f",
+    "examples/template/db/drizzle/README.md": "60299448c0d2e728aa89974b52ea4ccb66487e02a4ec210ae332abea2c58c171",
+    "examples/template/server/database-orm/readiness.ts": "a19f7745ea3c92c7b4e957030d608ea4735037e43798f4776e3c3b6df6e910f4",
+    "examples/template/app/api/database-orm/readiness/route.ts": "ec1d0c23c76be4d17b98cec4e009816ad438468ac302cdc8ea9e357a5307c40f"
+  },
+  "materialized_files": [
+    "db/drizzle/client.ts",
+    "db/drizzle/schema.ts",
+    "db/drizzle/analytics.ts",
+    "db/drizzle/joins.ts",
+    "db/drizzle/cte-queries.ts",
+    "db/drizzle/replicas.ts",
+    "db/drizzle/dashboard-workflow.ts",
+    "db/drizzle/metadata.ts",
+    "components/launch/drizzle-query-proof.tsx"
+  ],
+  "upstream_public_apis": [
+    "drizzle",
+    "migrate",
+    "sqliteTable",
+    "sqliteView",
+    "relations",
+    "select().from().leftJoin()",
+    "innerJoin",
+    "db.$with",
+    "db.with",
+    "count",
+    "countDistinct",
+    "avg",
+    "sql",
+    "toSQL",
+    "withReplicas",
+    "selectDistinct",
+    "$count"
+  ],
+  "forge_public_apis": [
+    "createDxDrizzleReplicaSet",
+    "readDxDrizzleReplicaReadiness",
+    "readDrizzleDashboardOverview",
+    "readDrizzleDashboardQueryPlan",
+    "getDrizzleDashboardQueryPlan",
+    "readDrizzleDashboardQueryPlanById"
+  ],
+  "local_readiness_interactions": [
+    "select-read-model",
+    "preview-query-plan",
+    "apply-read-model",
+    "update-mission-control-database-card"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"db/drizzle-sqlite\"",
+    "data-dx-component=\"launch-drizzle-data-workflow\"",
+    "data-dx-style-surface=\"database-orm\"",
+    "data-dx-dashboard-workflow=\"sqlite-read-model\"",
+    "data-dx-product-surface=\"launch-data-dashboard\"",
+    "data-dx-dashboard-target=\"mission-control-database\"",
+    "data-dx-source=\"examples/template/drizzle-query-proof.tsx\"",
+    "data-dx-drizzle-mission-control=\"database\"",
+    "data-dx-drizzle-action=\"select-read-model\"",
+    "data-dx-drizzle-action=\"preview-query-plan\"",
+    "data-dx-drizzle-action=\"apply-read-model\"",
+    "data-dx-drizzle-query-plan-id",
+    "data-dx-drizzle-sql-preview",
+    "data-dx-drizzle-fixture-row",
+    "data-dx-drizzle-receipt-path",
+    "data-dx-drizzle-receipt-state",
+    "data-dx-drizzle-runtime-dependencies",
+    "data-dx-backend-status",
+    "data-dx-backend-detail"
+  ],
+  "required_env": [],
+  "app_owned_boundaries": [
+    "runtime dependency installation",
+    "better-sqlite3 driver governance",
+    "database file path or DATABASE_URL",
+    "migration SQL generation and rollout",
+    "dashboard authorization",
+    "tenant boundaries",
+    "audit logging",
+    "backups and retention",
+    "SQL logging and redaction",
+    "read-replica topology, replica health, routing policy, and write-after-read consistency",
+    "governed browser proof"
+  ],
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "current_status": "present",
+    "status_legend": [
+      {
+        "status": "present",
+        "meaning": "selected Database ORM surfaces, receipt, and source markers are present"
+      },
+      {
+        "status": "stale",
+        "meaning": "materialized Database ORM files or hashes no longer match the Forge receipt"
+      },
+      {
+        "status": "missing-receipt",
+        "meaning": "selected Database ORM surfaces exist without this dashboard workflow receipt"
+      },
+      {
+        "status": "blocked",
+        "meaning": "live database execution, migration rollout, or replica policy approval is required before claiming runtime proof"
+      },
+      {
+        "status": "unsupported-surface",
+        "meaning": "a requested Database ORM surface is outside the selected upstream-backed SQLite set"
+      }
+    ],
+    "monitored_surfaces": [
+      {
+        "id": "drizzle-replica-routing",
+        "status": "present",
+        "source_file": "core/src/ecosystem/forge_drizzle.rs",
+        "materialized_file": "db/drizzle/replicas.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "core/src/ecosystem/forge_drizzle.rs": "a5f191fcfef43b7309d5e92d8978f83ea538a5d987a55ea151ed79ed0f8482ee"
+        },
+        "next_action": "Keep upstream withReplicas, selectDistinct, and $count coverage in the Database ORM source guard.",
+        "files": []
+      },
+      {
+        "id": "drizzle-launch-dashboard-workflow",
+        "status": "present",
+        "source_file": "examples/template/drizzle-query-proof.tsx",
+        "materialized_file": "components/launch/drizzle-query-proof.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/drizzle-query-proof.tsx": "9e23bf321f9f115649d300472861f668a095f8d1536631d44ce155ce261dc8e3",
+          "examples/template/data-status.tsx": "19d36491049ff3ddaf48aa8b968a9f3a5b96ef8ebd07dc2a40e8c44dfbfc1dbb",
+          "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+          "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c"
+        },
+        "next_action": "Keep Zed/DX Studio data-dx markers aligned with the visible Database ORM workflow.",
+        "files": []
+      },
+      {
+        "id": "database-orm-source-guard-runbook",
+        "status": "present",
+        "source_file": "docs/packages/database-orm.source-guard-runbook.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "docs/packages/database-orm.source-guard-runbook.json": "7ccc116c04fc5deb9dd3a37b2ea4d3e5dec51ce6ef5bb93693395a4daafeea29"
+        },
+        "source_markers": [
+          "source_guard_runbook_index",
+          "database-orm-lower-dx-check-helper-freshness",
+          "database-orm:receipt-hash-refresh"
+        ],
+        "next_action": "Keep the Database ORM source-guard runbook fixture hash-backed in receipt freshness.",
+        "files": []
+      },
+      {
+        "id": "database-orm-preview-manifest-materializer",
+        "status": "present",
+        "source_file": "tools/launch/materialize-www-template.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+        },
+        "source_markers": [
+          "DATABASE_ORM_SOURCE_GUARD_RUNBOOK_FIXTURE",
+          "sourceGuardRunbookFixtures",
+          "docs/packages/database-orm.source-guard-runbook.json",
+          "database-orm:receipt-hash-refresh"
+        ],
+        "next_action": "Keep generated preview-manifest Database ORM runbook fixture emission hash-backed.",
+        "files": []
+      },
+      {
+        "id": "database-orm-lock-backed-source",
+        "status": "present",
+        "source_file": "examples/template/db/drizzle/metadata.ts",
+        "materialized_file": "app/api/database-orm/readiness/route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/db/drizzle/schema.ts": "0fe0c563a3f6cccaddfeb7129e4f4f8b64f072bb7137c87da36013a76fb79088",
+          "examples/template/db/drizzle/metadata.ts": "87b5ae4c640d59bb888f3101cd06a5e1a9fb736cfeb512be2e4c2498c8fb1d8f",
+          "examples/template/db/drizzle/README.md": "60299448c0d2e728aa89974b52ea4ccb66487e02a4ec210ae332abea2c58c171",
+          "examples/template/server/database-orm/readiness.ts": "a19f7745ea3c92c7b4e957030d608ea4735037e43798f4776e3c3b6df6e910f4",
+          "examples/template/app/api/database-orm/readiness/route.ts": "ec1d0c23c76be4d17b98cec4e009816ad438468ac302cdc8ea9e357a5307c40f"
+        }
+      }
+    ]
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "examples/template/styles/globals.css",
+    "generated_css": "examples/template/styles/globals.css",
+    "visible_surfaces": [
+      "launch-drizzle-data-workflow"
+    ],
+    "source_files": [
+      "examples/template/drizzle-query-proof.tsx",
+      "examples/template/styles/globals.css"
+    ],
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "source-only dx-style token compatibility; no browser visual proof is claimed",
+      "live SQLite data rendering remains app-owned",
+      "theme token review remains app-owned"
+    ]
+  },
+  "missing_runtime_features": [
+    "live SQLite file read",
+    "production migration execution",
+    "app-owned query authorization",
+    "governed browser QA"
+  ],
+  "guards": [
+    "node --test .\\benchmarks\\drizzle-dashboard-workflow.test.ts",
+    "node --test .\\benchmarks\\drizzle-sqlite-replica-routing-slice.test.ts",
+    "node --test .\\benchmarks\\drizzle-dx-check-visibility-receipt.test.ts",
+    "node --test .\\benchmarks\\drizzle-launch-proof.test.ts",
+    "node --test .\\benchmarks\\drizzle-receipt-hash-refresh.test.ts"
+  ],
+  "node_modules_required": false,
+  "no_runtime_execution": true
+}

@@ -1,0 +1,236 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Markdown & MDX Content",
+    "package_id": "content/react-markdown",
+    "aliases": [
+      "markdown-mdx-content",
+      "markdown/mdx",
+      "mdx/content",
+      "markdown/react"
+    ],
+    "upstream_package": "react-markdown; @mdx-js/mdx; @mdx-js/react",
+    "upstream_version": "react-markdown@10.1.0; @mdx-js/mdx@3.1.1; @mdx-js/react@3.1.1",
+    "source_mirrors": [
+      "G:/WWW/inspirations/react-markdown",
+      "G:/WWW/inspirations/mdx"
+    ],
+    "based_on": "react-markdown renderer APIs plus MDX compiler and React provider entrypoints"
+  },
+  "guard": {
+    "id": "markdown-mdx-content-materialized-source-fixture",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/dx_check_receipt.rs",
+    "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_markdown_mdx_content_package_lane_materialized_source_row --lib",
+    "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+    "proves": [
+      "Markdown & MDX Content materialized-source fixture",
+      "content/react-markdown source-only Studio discovery",
+      "markdown_mdx_content_materialized_source_present",
+      "markdown_mdx_content_materialized_source_missing",
+      "docs/packages/content-react-markdown.source-guard-runbook.json",
+      "no live Markdown/MDX renderer proof"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "helper_freshness_guard": {
+    "id": "markdown-mdx-content-check-panel-helper-freshness",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/dx_check_receipt.rs",
+    "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_markdown_mdx_content_package_lane_hash_refresh_row --lib",
+    "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+    "proves": [
+      "Markdown & MDX Content check-panel helper freshness fixture",
+      "content/react-markdown source-only Studio discovery",
+      "markdown_mdx_content_receipt_hash_refresh_current",
+      "markdown_mdx_content_receipt_hash_refresh_stale",
+      "markdown_mdx_content_receipt_hash_refresh_missing",
+      "markdown_mdx_content_hash_mismatch",
+      "markdown_mdx_content_hash_mismatch stays byte-derived",
+      "docs/packages/content-react-markdown.source-guard-runbook.json",
+      "without claiming live Markdown/MDX renderer proof"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "source_guard_runbook_index": {
+    "index_field": "source_guard_runbook_index",
+    "route": "/",
+    "fixture_paths": [
+      {
+        "source_guard_id": "markdown-mdx-content-materialized-source-fixture",
+        "package_id": "content/react-markdown",
+        "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+        "schema": "dx.forge.package.source_guard_runbook_fixture"
+      },
+      {
+        "source_guard_id": "markdown-mdx-content-check-panel-helper-freshness",
+        "package_id": "content/react-markdown",
+        "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+        "schema": "dx.forge.package.source_guard_runbook_fixture"
+      }
+    ],
+    "source_guard_ids": [
+      "studio-preview-manifest",
+      "diff-whitespace-hygiene",
+      "conflict-marker-scan",
+      "template-shell-package-slices",
+      "internationalization-launch-package-lane-template",
+      "state-management-generated-starter-materialization",
+      "data-fetching-cache-generated-starter-materialization",
+      "ui-components-generated-starter-materialization",
+      "payments-generated-starter-materialization",
+      "forms-generated-starter-materialization",
+      "webassembly-bridge-generated-starter-materialization",
+      "motion-animation-generated-starter-materialization",
+      "markdown-mdx-content-materialized-source-fixture",
+      "markdown-mdx-content-check-panel-helper-freshness",
+      "reactive-store-lower-dx-check-helper-freshness"
+    ],
+    "contract": {
+      "id": "markdown-mdx-content-materialized-source-fixture",
+      "purpose": "The check-panel row proves Markdown & MDX Content materialized-source present/missing metrics from package-status evidence without live renderer proof.",
+      "evidence_field": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_markdown_mdx_content_package_lane_materialized_source_row --lib",
+      "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+      "scope": "source-only",
+      "reads_runtime_artifacts": false,
+      "writes_files": false,
+      "node_modules_required": false
+    },
+    "contracts": [
+      {
+        "id": "markdown-mdx-content-materialized-source-fixture",
+        "purpose": "The check-panel row proves Markdown & MDX Content materialized-source present/missing metrics from package-status evidence without live renderer proof.",
+        "evidence_field": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_markdown_mdx_content_package_lane_materialized_source_row --lib",
+        "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+        "scope": "source-only",
+        "reads_runtime_artifacts": false,
+        "writes_files": false,
+        "node_modules_required": false
+      },
+      {
+        "id": "markdown-mdx-content-check-panel-helper-freshness",
+        "purpose": "The check-panel row proves Markdown & MDX Content receipt-helper freshness metrics while keeping markdown_mdx_content_hash_mismatch byte-derived from selected source files.",
+        "evidence_field": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_markdown_mdx_content_package_lane_hash_refresh_row --lib",
+        "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+        "scope": "source-only",
+        "reads_runtime_artifacts": false,
+        "writes_files": false,
+        "node_modules_required": false
+      }
+    ],
+    "command": {
+      "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_markdown_mdx_content_package_lane_materialized_source_row --lib",
+      "purpose": "Validate the source-only Markdown & MDX Content materialized-source check-panel metrics without live renderer proof.",
+      "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    },
+    "commands": [
+      {
+        "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_markdown_mdx_content_package_lane_materialized_source_row --lib",
+        "purpose": "Validate the source-only Markdown & MDX Content materialized-source check-panel metrics without live renderer proof.",
+        "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+        "scope": "source-only",
+        "starts_server": false,
+        "runs_package_install": false,
+        "runs_full_build": false,
+        "writes_files": false,
+        "node_modules_required": false
+      },
+      {
+        "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_markdown_mdx_content_package_lane_hash_refresh_row --lib",
+        "purpose": "Validate the source-only Markdown & MDX Content helper-freshness check-panel metrics without live renderer proof.",
+        "fixture_path": "docs/packages/content-react-markdown.source-guard-runbook.json",
+        "scope": "source-only",
+        "starts_server": false,
+        "runs_package_install": false,
+        "runs_full_build": false,
+        "writes_files": false,
+        "node_modules_required": false
+      }
+    ],
+    "execution_policy": "source-only",
+    "requires_server": false,
+    "requires_package_install": false,
+    "requires_full_build": false,
+    "writes_files": false,
+    "node_modules_required": false
+  },
+  "provenance": {
+    "inspected_source_files": [
+      "G:/WWW/inspirations/react-markdown/index.js",
+      "G:/WWW/inspirations/react-markdown/package.json",
+      "G:/WWW/inspirations/mdx/packages/mdx/index.js",
+      "G:/WWW/inspirations/mdx/packages/mdx/package.json",
+      "G:/WWW/inspirations/mdx/packages/react/index.js",
+      "G:/WWW/inspirations/mdx/packages/react/package.json"
+    ],
+    "upstream_public_apis": [
+      "Markdown",
+      "MarkdownAsync",
+      "MarkdownHooks",
+      "defaultUrlTransform",
+      "compile",
+      "compileSync",
+      "createProcessor",
+      "nodeTypes",
+      "MDXProvider",
+      "useMDXComponents"
+    ]
+  },
+  "dx_check_metrics": [
+    "markdown_mdx_content_receipt_hash_refresh_current",
+    "markdown_mdx_content_receipt_hash_refresh_stale",
+    "markdown_mdx_content_receipt_hash_refresh_missing",
+    "markdown_mdx_content_hash_mismatch",
+    "markdown_mdx_content_materialized_source_present",
+    "markdown_mdx_content_materialized_source_missing",
+    "markdown_mdx_content_dx_style_compatibility_present",
+    "markdown_mdx_content_dx_style_compatibility_missing"
+  ],
+  "zed_dx_studio_markers": [
+    "data-dx-package=\"content/react-markdown\"",
+    "data-dx-package-name=\"Markdown & MDX Content\"",
+    "data-dx-component=\"dx-mdx-provider\"",
+    "data-dx-style-surface=\"markdown-mdx-content\"",
+    "data-dx-zed-surface=\"content-mdx-provider\""
+  ],
+  "receipt": {
+    "path": ".dx/forge/receipts/packages/content-react-markdown.json",
+    "schema": "dx.forge.markdown_mdx_content_receipt",
+    "materialized_source_schema": "dx.forge.package.materialized_source",
+    "dx_style_schema": "dx.forge.package.dx_style_compatibility"
+  },
+  "app_owned_boundaries": [
+    "runtime dependency installation",
+    "remark and rehype plugin selection",
+    "raw HTML policy and sanitizer review",
+    "trusted MDX execution decisions",
+    "live renderer and browser verification"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors package-owned Studio source guard and source_guard_runbook_index metadata only.",
+    "ADAPTER-BOUNDARY: live Markdown/MDX renderer proof, dependency installation, content trust, sanitizer policy, and trusted MDX execution stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

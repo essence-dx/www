@@ -1,0 +1,153 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "shadcn/ui/separator",
+    "upstream_name": "shadcn-ui",
+    "version": "0.1.0",
+    "generator": "dx-forge/shadcn-ui",
+    "variant": "default",
+    "last_accepted_update": "2026-06-03T07:24:11.494099400+00:00",
+    "rollback_receipt": "20260603T065405319871200Z-shadcn-ui-separator.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "899bbe356abe5a5924d4f288d0263756d0b7cf96013a4b219aac482593c617d5",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "shadcn-ui://apps/v4/registry/bases/radix/ui/separator.tsx",
+      "verified": false,
+      "note": "DX inspected the local shadcn-ui v4 registry entry and Radix Separator primitive for the official UI Components Separator surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn separator launch slice, but it is not a live advisory feed and does not audit application information hierarchy or decorative-versus-semantic divider policy."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/utils.ts",
+        "logical_path": "js/lib/utils.ts",
+        "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+        "bytes": 119
+      },
+      {
+        "path": "components/ui/separator.tsx",
+        "logical_path": "js/ui/separator.tsx",
+        "hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+        "bytes": 809
+      },
+      {
+        "path": "components/ui/README.md",
+        "logical_path": "js/ui/README.md",
+        "hash": "d817dd403cb0e4016814ea81dc44a8ce41803692ca58f8bdb7c5151082c34a15",
+        "bytes": 481
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "components/ui/separator.tsx",
+      "logical_path": "js/ui/separator.tsx",
+      "hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+      "bytes": 809
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "hash": "d817dd403cb0e4016814ea81dc44a8ce41803692ca58f8bdb7c5151082c34a15",
+      "bytes": 481
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "bytes": 119
+    },
+    {
+      "logical_path": "js/ui/separator.tsx",
+      "materialized_path": "components/ui/separator.tsx",
+      "hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+      "bytes": 809
+    },
+    {
+      "logical_path": "js/ui/README.md",
+      "materialized_path": "components/ui/README.md",
+      "hash": "d817dd403cb0e4016814ea81dc44a8ce41803692ca58f8bdb7c5151082c34a15",
+      "bytes": 481
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/utils.ts already matches the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "components/ui/separator.tsx would be updated from the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "components/ui/README.md would be updated from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "green",
+      "message": "Reviewer `Codex` accepted yellow local edits for `shadcn/ui/separator` variant `default`: Reviewed WWW-native no-npm adaptation for the UI Components source slice"
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/utils.ts",
+      "logical_path": "js/lib/utils.ts",
+      "before_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "after_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "tracked_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/utils.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "components/ui/separator.tsx",
+      "logical_path": "js/ui/separator.tsx",
+      "before_hash": "cbcc0dc0171aabd7727d7ec1278c6d5823f040a20a21a5b5c41d5bc236f3f73a",
+      "after_hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+      "tracked_hash": "cbcc0dc0171aabd7727d7ec1278c6d5823f040a20a21a5b5c41d5bc236f3f73a",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/separator.tsx accepted and updated from the latest package."
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "before_hash": "ef45f584deebf0954c58d583c5617648c15cdc8bd6286e627742fa6be2f50a01",
+      "after_hash": "d817dd403cb0e4016814ea81dc44a8ce41803692ca58f8bdb7c5151082c34a15",
+      "tracked_hash": "ef45f584deebf0954c58d583c5617648c15cdc8bd6286e627742fa6be2f50a01",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/README.md accepted and updated from the latest package."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-06-03T07:24:11.494099400+00:00",
+  "signature": null
+}

@@ -1,0 +1,973 @@
+{
+  "boundary": {
+    "compile": "source-metadata-only-no-mdx-compile-evaluate-or-react-runtime",
+    "full_mdx_pipeline_parity": false,
+    "node_modules_required": false,
+    "owner": "DX-WWW source engine",
+    "react_required": false,
+    "reference": "turbopack-mdx",
+    "rsc_required": false,
+    "runtime_proof": false
+  },
+  "consumer_snapshot": {
+    "document_count": 53,
+    "document_hashes": {
+      "docs/DX_WWW_FRAMEWORK_STRUCTURE.md": "723f84d2ea22f311",
+      "docs/DX_WWW_MANAGER_HANDOFF.md": "58502ca456891e39",
+      "docs/NEXTJS_COMPATIBILITY_MAP.md": "a075a9df8af10e6c",
+      "docs/SECURITY.md": "4e64adac04d31b81",
+      "docs/api/README.md": "47f9a30964c3c0e9",
+      "docs/api/versioning.md": "250a4e260deabb2b",
+      "docs/architecture.md": "340a463cc9c4a401",
+      "docs/benchmarks.md": "da19aa2d47274e81",
+      "docs/build-graph-model.md": "a134dfeaff010740",
+      "docs/deployment/docker.md": "d0a9343a21c701c5",
+      "docs/deployment/environment.md": "6211a645eda4cf7e",
+      "docs/deployment/monitoring.md": "29e204e670f8a7b7",
+      "docs/deployment/nginx.md": "1a81f8abbf920a41",
+      "docs/deployment/systemd.md": "4f7884d7246db19c",
+      "docs/deployment/troubleshooting.md": "5024d4bb80eb2bae",
+      "docs/dx-www-developer-contract.md": "4872f45a7664797a",
+      "docs/dx-www-route-state-standard.md": "b3bf5cd8d5a44150",
+      "docs/forge-adoption-launch-checklist.md": "d8e6c0f88d35177a",
+      "docs/forge-ci-smoke.md": "2b1bbec3715b2885",
+      "docs/forge-launch-limitations.md": "738582fb15ab31b0",
+      "docs/forge-public-beta-quickstart.md": "349ed86d8b5da53f",
+      "docs/forge-public-launch-checklist.md": "41135cd7ed5fcb79",
+      "docs/forge-public-launch-handoff.md": "6df6e20e0c2ac542",
+      "docs/forge-real-project-adoption.md": "6f8af14279acf192",
+      "docs/forge-shadcn-migration.md": "f6fe1259e5006796",
+      "docs/getting-started.md": "e8370967745209f6",
+      "docs/migration/v0-to-v1.md": "630576dee6059113",
+      "docs/next-rust-merge-checkpoint.md": "5f57a37a24986cb3",
+      "docs/packages/3d-scene-system.md": "a462f9783092efac",
+      "docs/packages/ai-vercel-ai.md": "82223e7991d21ae5",
+      "docs/packages/animation-motion.md": "d28c8e43caeafd24",
+      "docs/packages/api-trpc.md": "788e1928a2203487",
+      "docs/packages/authentication.md": "612f1762ef57100d",
+      "docs/packages/automations-n8n.md": "5c7b71f489867ba2",
+      "docs/packages/content-fumadocs-next.md": "a3b81e71bd03605b",
+      "docs/packages/content-react-markdown.md": "b3598eaecd8d6f19",
+      "docs/packages/db-drizzle-sqlite.md": "122b28801f7662aa",
+      "docs/packages/forms-react-hook-form.md": "dc1303a5644dd1f5",
+      "docs/packages/instantdb-react.md": "5b61bd2d29f6be0a",
+      "docs/packages/next-intl.md": "9a2ce1bd819bd98d",
+      "docs/packages/payments-stripe-js.md": "1f50d9b4f553b8fd",
+      "docs/packages/reactive-store.md": "04d1fcdddfa91b8c",
+      "docs/packages/state-zustand.md": "5e59702e9136ee96",
+      "docs/packages/supabase-client.md": "d5cc279103027e7e",
+      "docs/packages/tanstack-query.md": "8185a963456206c0",
+      "docs/packages/ui-components.md": "8dc4932152fc7b6e",
+      "docs/packages/validation-zod.md": "8964265743f66a7b",
+      "docs/packages/wasm-bindgen.md": "d5d51494c1643bee",
+      "docs/root-workspace-readme.md": "1771a6c6fb406c71",
+      "docs/root-workspace-status.md": "b4372a64c9629100",
+      "docs/root-workspace-todo.md": "07148784aa12fe85",
+      "docs/superpowers/plans/2026-05-22-dx-build-source-engine-completion.md": "67b6dbdfed6630d7",
+      "docs/wire-format-audit.md": "3c8e72d9bddb5b12"
+    },
+    "full_mdx_pipeline_parity": false,
+    "hash_algorithm": "blake3-16",
+    "mdx_document_count": 0,
+    "node_modules_required": false,
+    "runtime_proof": false,
+    "schema": "dx.www.contentDocsConsumerSnapshot",
+    "source_receipt": ".dx/receipts/build/content-docs.json"
+  },
+  "documents": [
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 48482,
+      "code_block_count": 3,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "723f84d2ea22f311",
+      "heading_count": 13,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/DX_WWW_FRAMEWORK_STRUCTURE.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 28254,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "58502ca456891e39",
+      "heading_count": 38,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/DX_WWW_MANAGER_HANDOFF.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 10624,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "a075a9df8af10e6c",
+      "heading_count": 7,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/NEXTJS_COMPATIBILITY_MAP.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 6542,
+      "code_block_count": 4,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "4e64adac04d31b81",
+      "heading_count": 20,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/SECURITY.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 4189,
+      "code_block_count": 8,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "47f9a30964c3c0e9",
+      "heading_count": 17,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/api/README.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 3633,
+      "code_block_count": 3,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "250a4e260deabb2b",
+      "heading_count": 18,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/api/versioning.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 1764,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "340a463cc9c4a401",
+      "heading_count": 11,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/architecture.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 3981,
+      "code_block_count": 3,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "da19aa2d47274e81",
+      "heading_count": 30,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/benchmarks.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 14585,
+      "code_block_count": 2,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "a134dfeaff010740",
+      "heading_count": 11,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/build-graph-model.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 4857,
+      "code_block_count": 3,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "d0a9343a21c701c5",
+      "heading_count": 33,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/deployment/docker.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 3870,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "6211a645eda4cf7e",
+      "heading_count": 21,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/deployment/environment.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 5312,
+      "code_block_count": 4,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "29e204e670f8a7b7",
+      "heading_count": 20,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/deployment/monitoring.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 6024,
+      "code_block_count": 7,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "1a81f8abbf920a41",
+      "heading_count": 44,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/deployment/nginx.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 4227,
+      "code_block_count": 8,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "4f7884d7246db19c",
+      "heading_count": 34,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/deployment/systemd.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 5941,
+      "code_block_count": 8,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "5024d4bb80eb2bae",
+      "heading_count": 54,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/deployment/troubleshooting.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 7022,
+      "code_block_count": 3,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "4872f45a7664797a",
+      "heading_count": 10,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/dx-www-developer-contract.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 2700,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "b3bf5cd8d5a44150",
+      "heading_count": 5,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/dx-www-route-state-standard.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 10473,
+      "code_block_count": 13,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "d8e6c0f88d35177a",
+      "heading_count": 12,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/forge-adoption-launch-checklist.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 27479,
+      "code_block_count": 29,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "2b1bbec3715b2885",
+      "heading_count": 10,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/forge-ci-smoke.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 3553,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "738582fb15ab31b0",
+      "heading_count": 6,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/forge-launch-limitations.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 22070,
+      "code_block_count": 39,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "349ed86d8b5da53f",
+      "heading_count": 14,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/forge-public-beta-quickstart.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 19314,
+      "code_block_count": 14,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "41135cd7ed5fcb79",
+      "heading_count": 12,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/forge-public-launch-checklist.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 12707,
+      "code_block_count": 4,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "6df6e20e0c2ac542",
+      "heading_count": 11,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/forge-public-launch-handoff.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 8821,
+      "code_block_count": 10,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "6f8af14279acf192",
+      "heading_count": 16,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/forge-real-project-adoption.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 8163,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "f6fe1259e5006796",
+      "heading_count": 5,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/forge-shadcn-migration.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 3742,
+      "code_block_count": 10,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "e8370967745209f6",
+      "heading_count": 26,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/getting-started.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 4407,
+      "code_block_count": 9,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "630576dee6059113",
+      "heading_count": 19,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/migration/v0-to-v1.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 1420,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "5f57a37a24986cb3",
+      "heading_count": 1,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/next-rust-merge-checkpoint.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 16693,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "a462f9783092efac",
+      "heading_count": 12,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/3d-scene-system.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 15676,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "82223e7991d21ae5",
+      "heading_count": 8,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/ai-vercel-ai.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 16363,
+      "code_block_count": 2,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "d28c8e43caeafd24",
+      "heading_count": 9,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/animation-motion.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 20135,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "788e1928a2203487",
+      "heading_count": 11,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/api-trpc.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 16418,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "612f1762ef57100d",
+      "heading_count": 11,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/authentication.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 17345,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "5c7b71f489867ba2",
+      "heading_count": 9,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/automations-n8n.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 21082,
+      "code_block_count": 3,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "a3b81e71bd03605b",
+      "heading_count": 14,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/content-fumadocs-next.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 14921,
+      "code_block_count": 4,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "b3598eaecd8d6f19",
+      "heading_count": 13,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/content-react-markdown.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 21774,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "122b28801f7662aa",
+      "heading_count": 11,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/db-drizzle-sqlite.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 14635,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "dc1303a5644dd1f5",
+      "heading_count": 12,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/forms-react-hook-form.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 16615,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "5b61bd2d29f6be0a",
+      "heading_count": 10,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/instantdb-react.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 15865,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "9a2ce1bd819bd98d",
+      "heading_count": 13,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/next-intl.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 18313,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "1f50d9b4f553b8fd",
+      "heading_count": 17,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/payments-stripe-js.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 11629,
+      "code_block_count": 2,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "04d1fcdddfa91b8c",
+      "heading_count": 11,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/reactive-store.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 12757,
+      "code_block_count": 2,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "5e59702e9136ee96",
+      "heading_count": 7,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/state-zustand.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 19878,
+      "code_block_count": 4,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "d5cc279103027e7e",
+      "heading_count": 16,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/supabase-client.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 15836,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "8185a963456206c0",
+      "heading_count": 12,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/tanstack-query.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 13947,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "8dc4932152fc7b6e",
+      "heading_count": 10,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/ui-components.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 16963,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "8964265743f66a7b",
+      "heading_count": 9,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/validation-zod.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 17480,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "d5d51494c1643bee",
+      "heading_count": 11,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/packages/wasm-bindgen.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 3710,
+      "code_block_count": 1,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "1771a6c6fb406c71",
+      "heading_count": 7,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/root-workspace-readme.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 57790,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "b4372a64c9629100",
+      "heading_count": 5,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/root-workspace-status.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 67867,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "07148784aa12fe85",
+      "heading_count": 18,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/root-workspace-todo.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 12861,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "67b6dbdfed6630d7",
+      "heading_count": 8,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/superpowers/plans/2026-05-22-dx-build-source-engine-completion.md",
+      "runtime_proof": false
+    },
+    {
+      "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+      "bytes": 9519,
+      "code_block_count": 0,
+      "frontmatter": {
+        "present": false
+      },
+      "hash": "3c8e72d9bddb5b12",
+      "heading_count": 7,
+      "kind": "markdown",
+      "mdx_options": null,
+      "node_modules_required": false,
+      "path": "docs/wire-format-audit.md",
+      "runtime_proof": false
+    }
+  ],
+  "freshness_contract": {
+    "evaluator": "evaluate_content_docs_hashes",
+    "hash_algorithm": "blake3-16",
+    "receipt_evaluator": "evaluate_content_docs_receipt_freshness",
+    "runtime_proof": false,
+    "safe_path_roots": [
+      "docs",
+      "content"
+    ],
+    "schema": "dx.www.contentDocsFreshnessStatus",
+    "status_fields": [
+      "current",
+      "stale_paths",
+      "missing_paths",
+      "unsafe_paths"
+    ],
+    "unsafe_path_policy": "reject absolute, parent, and non-docs/content receipt paths before hashing source bytes"
+  },
+  "generatedAt": "2026-05-25T06:08:11.997858700+00:00",
+  "hash_manifest": {
+    "document_hashes": {
+      "docs/DX_WWW_FRAMEWORK_STRUCTURE.md": "723f84d2ea22f311",
+      "docs/DX_WWW_MANAGER_HANDOFF.md": "58502ca456891e39",
+      "docs/NEXTJS_COMPATIBILITY_MAP.md": "a075a9df8af10e6c",
+      "docs/SECURITY.md": "4e64adac04d31b81",
+      "docs/api/README.md": "47f9a30964c3c0e9",
+      "docs/api/versioning.md": "250a4e260deabb2b",
+      "docs/architecture.md": "340a463cc9c4a401",
+      "docs/benchmarks.md": "da19aa2d47274e81",
+      "docs/build-graph-model.md": "a134dfeaff010740",
+      "docs/deployment/docker.md": "d0a9343a21c701c5",
+      "docs/deployment/environment.md": "6211a645eda4cf7e",
+      "docs/deployment/monitoring.md": "29e204e670f8a7b7",
+      "docs/deployment/nginx.md": "1a81f8abbf920a41",
+      "docs/deployment/systemd.md": "4f7884d7246db19c",
+      "docs/deployment/troubleshooting.md": "5024d4bb80eb2bae",
+      "docs/dx-www-developer-contract.md": "4872f45a7664797a",
+      "docs/dx-www-route-state-standard.md": "b3bf5cd8d5a44150",
+      "docs/forge-adoption-launch-checklist.md": "d8e6c0f88d35177a",
+      "docs/forge-ci-smoke.md": "2b1bbec3715b2885",
+      "docs/forge-launch-limitations.md": "738582fb15ab31b0",
+      "docs/forge-public-beta-quickstart.md": "349ed86d8b5da53f",
+      "docs/forge-public-launch-checklist.md": "41135cd7ed5fcb79",
+      "docs/forge-public-launch-handoff.md": "6df6e20e0c2ac542",
+      "docs/forge-real-project-adoption.md": "6f8af14279acf192",
+      "docs/forge-shadcn-migration.md": "f6fe1259e5006796",
+      "docs/getting-started.md": "e8370967745209f6",
+      "docs/migration/v0-to-v1.md": "630576dee6059113",
+      "docs/next-rust-merge-checkpoint.md": "5f57a37a24986cb3",
+      "docs/packages/3d-scene-system.md": "a462f9783092efac",
+      "docs/packages/ai-vercel-ai.md": "82223e7991d21ae5",
+      "docs/packages/animation-motion.md": "d28c8e43caeafd24",
+      "docs/packages/api-trpc.md": "788e1928a2203487",
+      "docs/packages/authentication.md": "612f1762ef57100d",
+      "docs/packages/automations-n8n.md": "5c7b71f489867ba2",
+      "docs/packages/content-fumadocs-next.md": "a3b81e71bd03605b",
+      "docs/packages/content-react-markdown.md": "b3598eaecd8d6f19",
+      "docs/packages/db-drizzle-sqlite.md": "122b28801f7662aa",
+      "docs/packages/forms-react-hook-form.md": "dc1303a5644dd1f5",
+      "docs/packages/instantdb-react.md": "5b61bd2d29f6be0a",
+      "docs/packages/next-intl.md": "9a2ce1bd819bd98d",
+      "docs/packages/payments-stripe-js.md": "1f50d9b4f553b8fd",
+      "docs/packages/reactive-store.md": "04d1fcdddfa91b8c",
+      "docs/packages/state-zustand.md": "5e59702e9136ee96",
+      "docs/packages/supabase-client.md": "d5cc279103027e7e",
+      "docs/packages/tanstack-query.md": "8185a963456206c0",
+      "docs/packages/ui-components.md": "8dc4932152fc7b6e",
+      "docs/packages/validation-zod.md": "8964265743f66a7b",
+      "docs/packages/wasm-bindgen.md": "d5d51494c1643bee",
+      "docs/root-workspace-readme.md": "1771a6c6fb406c71",
+      "docs/root-workspace-status.md": "b4372a64c9629100",
+      "docs/root-workspace-todo.md": "07148784aa12fe85",
+      "docs/superpowers/plans/2026-05-22-dx-build-source-engine-completion.md": "67b6dbdfed6630d7",
+      "docs/wire-format-audit.md": "3c8e72d9bddb5b12"
+    },
+    "hash_algorithm": "blake3-16",
+    "stale_receipt_policy": "content-docs consumers compare document_hashes against source bytes before trusting docs navigation or MDX compatibility metadata"
+  },
+  "projectRoot": "G:/Dx/www",
+  "receiptPath": ".dx/receipts/build/content-docs.json",
+  "schema": "dx.www.contentDocsReceipt",
+  "schema_revision": 1,
+  "summary": {
+    "code_block_count": 211,
+    "document_count": 53,
+    "frontmatter_document_count": 0,
+    "gfm_document_count": 0,
+    "heading_count": 789,
+    "mdx_document_count": 0,
+    "node_modules_required": false,
+    "runtime_proof": false
+  },
+  "upstream_reference": {
+    "crate": "turbopack-mdx",
+    "inspected_files": [
+      "vendor/next-rust/turbopack/crates/turbopack-mdx/src/lib.rs"
+    ],
+    "name": "Turbopack MDX"
+  }
+}

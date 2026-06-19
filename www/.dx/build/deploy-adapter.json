@@ -1,0 +1,105 @@
+{
+  "schema_version": "dx.deploy.vercel_dry_run.v1",
+  "generated_at_unix_ms": 1779464538451,
+  "provider": "vercel",
+  "command": "dx deploy vercel --dry-run",
+  "status": "blocked",
+  "deploy_ready": false,
+  "dry_run": true,
+  "deploy_ran": false,
+  "check_receipt_path": null,
+  "receipt_path": "G:\\Dx\\www\\.dx\\receipts\\deploy\\deploy-vercel-latest.json",
+  "snapshot_path": "G:\\Dx\\www\\.dx\\receipts\\deploy\\deploy-vercel-1779464538451.json",
+  "dashboard_handoff_path": "G:\\Dx\\www\\www\\.dx\\build\\deploy-adapter.json",
+  "source_ready": {
+    "schema_version": "dx.check.approval.v1",
+    "kind": "source_ready",
+    "status": "blocked",
+    "approved": false,
+    "evidence": [],
+    "blockers": [
+      "dx-check receipt is missing"
+    ],
+    "warnings": [],
+    "next_action": "Run `dx check --json` with the current dx-check engine."
+  },
+  "runtime_approved": {
+    "schema_version": "dx.check.approval.v1",
+    "kind": "runtime_approved",
+    "status": "blocked",
+    "approved": false,
+    "evidence": [],
+    "blockers": [
+      "dx-check runtime proof is missing"
+    ],
+    "warnings": [],
+    "next_action": "Run `dx check --json` with the current dx-check engine."
+  },
+  "launch_approved": {
+    "schema_version": "dx.check.approval.v1",
+    "kind": "launch_approved",
+    "status": "blocked",
+    "approved": false,
+    "evidence": [],
+    "blockers": [
+      "dx-check launch approval is missing"
+    ],
+    "warnings": [],
+    "next_action": "Run `dx check --json` with the current dx-check engine."
+  },
+  "blockers": [
+    "latest dx-check receipt could not be read: read G:\\Dx\\www\\.dx\\receipts\\check\\check-latest.json"
+  ],
+  "warnings": [],
+  "next_actions": [
+    "Run `dx check --json` before reviewing `dx deploy vercel --dry-run`."
+  ],
+  "zed": {
+    "schema_version": "dx.deploy.zed_handoff.v1",
+    "panel_kind": "deploy-gate",
+    "status": "blocked",
+    "title": "Vercel deploy dry-run",
+    "summary": "Deploy promotion is blocked until dx-check launch approval is ready.",
+    "receipt_path": "G:\\Dx\\www\\.dx\\receipts\\deploy\\deploy-vercel-latest.json",
+    "command": "dx deploy vercel --dry-run",
+    "deploy_ran": false,
+    "rows": [
+      {
+        "id": "source_ready",
+        "label": "Source ready",
+        "status": "blocked",
+        "detail": "dx-check receipt is missing"
+      },
+      {
+        "id": "runtime_approved",
+        "label": "Runtime approved",
+        "status": "blocked",
+        "detail": "dx-check runtime proof is missing"
+      },
+      {
+        "id": "launch_approved",
+        "label": "Launch approved",
+        "status": "blocked",
+        "detail": "dx-check launch approval is missing"
+      }
+    ],
+    "quick_fixes": [
+      {
+        "id": "refresh-check",
+        "label": "Refresh dx-check receipt",
+        "command": "dx check --json",
+        "risk_level": "safe",
+        "requires_user_approval": false,
+        "writes_receipts": true
+      },
+      {
+        "id": "runtime-proof",
+        "label": "Run governed runtime proof",
+        "command": "dx check web --url <url> --https-probe --json",
+        "risk_level": "network",
+        "requires_user_approval": true,
+        "writes_receipts": true
+      }
+    ]
+  }
+}

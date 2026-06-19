@@ -1,0 +1,30 @@
+:root {
+  color-scheme: dark;
+  --background: 0 0% 0%;
+  --foreground: 0 0% 98%;
+  --muted: 0 0% 63.9%;
+  --muted-surface: 0 0% 7%;
+  --border: 0 0% 14.9%;
+  --card: 0 0% 3.9%;
+  --accent: 0 0% 98%;
+  --accent-foreground: 0 0% 9%;
+  --success: 142 70% 45%;
+  --warning: 38 92% 50%;
+  --danger: 0 84% 60%;
+  --ring: 0 0% 83.1%;
+  --radius: 8px;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.light {
+  color-scheme: light;
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --muted: 0 0% 45.1%;
+  --muted-surface: 0 0% 96.1%;
+  --border: 0 0% 89.8%;
+  --card: 0 0% 100%;
+  --accent: 0 0% 9%;
+  --accent-foreground: 0 0% 98%;
+  --ring: 0 0% 40%;
+}

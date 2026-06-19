@@ -1,0 +1,24 @@
+{
+  "schema": "dx.www.deploy.route_handler_conformance_matrix",
+  "schema_revision": 1,
+  "manifest_hash": "blake3:3aa54e392a16464e92b1d80f787a775632fd9102867e521ddc2239a707f9fe7f",
+  "path": "route-handler-conformance-matrix.json",
+  "release_ready": false,
+  "hosted_provider_proof": false,
+  "matrix_status": "local-route-handler-conformance-foundation",
+  "coverage": {
+    "route_handlers": 0,
+    "health_checks": 0,
+    "get_head_preview_checks": 0,
+    "automatic_options_cases": 0,
+    "method_not_allowed_cases": 0
+  },
+  "routes": [],
+  "not_yet_proven": [
+    "provider-hosted GET/HEAD/OPTIONS/405 matrix",
+    "provider-hosted streaming body transport",
+    "multi-provider route-handler conformance replay",
+    "signed manifest promotion before hosted release"
+  ],
+  "rule": "This matrix is local deploy-contract and source-owned runtime evidence only; it is not hosted provider conformance proof."
+}

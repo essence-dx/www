@@ -1,0 +1,228 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "ai/vercel-ai",
+  "package_name": "AI SDK",
+  "official_dx_package_name": "AI SDK",
+  "upstream_package": "ai",
+  "upstream_version": "7.0.0-canary.146",
+  "based_on": "Vercel AI SDK",
+  "source_mirror": "G:/WWW/inspirations/vercel-ai",
+  "honesty_label": "ADAPTER-BOUNDARY",
+  "hash_algorithm": "sha256",
+  "route": "/",
+  "component": "launch-ai-assistant-dashboard-workflow",
+  "workflow": "prompt-action-provider-readiness",
+  "product_surface": "launch-assistant",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 99,
+  "source_files": [
+    "examples/template/ai-chat-status.tsx",
+    "examples/template/template-shell.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/package-catalog.ts",
+    "examples/template/template-route-contract.ts",
+    "dx-www/src/cli/mod.rs",
+    "dx-www/src/cli/studio_manifest.rs",
+    "core/src/ecosystem/forge_vercel_ai.rs",
+    "tools/launch/materialize-www-template.ts"
+  ],
+  "materialized_files": [
+    "components/launch/ai-chat-status.tsx",
+    "lib/ai/dashboard-readiness.ts",
+    "components/ai/ai-launch-assistant.tsx",
+    "lib/ai/client-chat.tsx",
+    "lib/ai/chat-route.ts",
+    "lib/ai/provider-freedom.ts",
+    "lib/ai/metadata.ts"
+  ],
+  "upstream_public_apis": [
+    "streamText",
+    "convertToModelMessages",
+    "DefaultChatTransport",
+    "tool",
+    "gateway",
+    "createGateway",
+    "createProviderRegistry"
+  ],
+  "local_readiness_interactions": [
+    "select-ai-provider",
+    "edit-launch-prompt",
+    "preview-ai-route-contract",
+    "show-missing-provider-config-receipt"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"ai/vercel-ai\"",
+    "data-dx-component=\"launch-ai-assistant-dashboard-workflow\"",
+    "data-dx-component=\"launch-ai-dashboard-workflow\"",
+    "data-dx-dashboard-workflow=\"prompt-action-provider-readiness\"",
+    "data-dx-dashboard-workflow=\"launch-ai-assistant\"",
+    "data-dx-style-surface=\"ai-sdk\"",
+    "data-dx-token-scope=\"ai/vercel-ai\"",
+    "data-dx-ai-route-contract=\"/api/ai/chat\"",
+    "data-dx-ai-action=\"safe-stream-contract-preview\"",
+    "data-dx-ai-action-state",
+    "data-dx-ai-config-state=\"missing-config\"",
+    "data-dx-ai-local-response",
+    "data-dx-ai-prompt-state",
+    "data-dx-ai-request-id",
+    "data-dx-node-modules=\"forbidden\""
+  ],
+  "required_env": [
+    "AI_PROVIDER_API_KEY"
+  ],
+  "optional_env": [
+    "AI_GATEWAY_API_KEY"
+  ],
+  "app_owned_boundaries": [
+    "Provider package installation",
+    "Provider API keys",
+    "AI Gateway routing policy",
+    "Model safety and moderation policy",
+    "Prompt and response persistence",
+    "Rate limits and billing controls",
+    "Credential-backed streaming runtime validation"
+  ],
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "current_status": "present",
+    "status_legend": [
+      {
+        "status": "present",
+        "meaning": "selected AI SDK surfaces, receipt, and source markers are present"
+      },
+      {
+        "status": "stale",
+        "meaning": "source-owned AI SDK files or inspected upstream source hashes no longer match this receipt"
+      },
+      {
+        "status": "missing-receipt",
+        "meaning": "selected AI SDK surfaces exist without the dashboard workflow receipt"
+      },
+      {
+        "status": "blocked",
+        "meaning": "credential-backed model streaming, provider registry policy, or governed browser proof is required before claiming runtime proof"
+      },
+      {
+        "status": "unsupported-surface",
+        "meaning": "a requested AI SDK surface is outside the selected upstream-backed chat/provider-readiness set"
+      }
+    ],
+    "tracked_hash_files": [
+      "core/src/ecosystem/forge_vercel_ai.rs",
+      "examples/template/ai-chat-status.tsx",
+      "docs/packages/ai-vercel-ai.md",
+      "docs/packages/ai-sdk.source-guard-runbook.json",
+      "tools/launch/materialize-www-template.ts",
+      "upstream:packages/ai/src/generate-text/stream-text.ts",
+      "upstream:packages/ai/src/ui/default-chat-transport.ts"
+    ],
+    "monitored_surfaces": [
+      {
+        "id": "ai-chat-route",
+        "status": "present",
+        "source_file": "core/src/ecosystem/forge_vercel_ai.rs",
+        "materialized_file": "lib/ai/chat-route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-ai-vercel-ai-launch-assistant.json",
+        "next_action": "Keep streamText, convertToModelMessages, tool, and toUIMessageStreamResponse coverage in the AI SDK source guard."
+      },
+      {
+        "id": "ai-dashboard-readiness",
+        "status": "present",
+        "source_file": "core/src/ecosystem/forge_vercel_ai.rs",
+        "materialized_file": "lib/ai/dashboard-readiness.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-ai-vercel-ai-launch-assistant.json",
+        "next_action": "Keep provider env gates and missing-config receipt semantics aligned with app-owned credential boundaries."
+      },
+      {
+        "id": "ai-dashboard-assistant-component",
+        "status": "present",
+        "source_file": "core/src/ecosystem/forge_vercel_ai.rs",
+        "materialized_file": "components/ai/ai-launch-assistant.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-ai-vercel-ai-launch-assistant.json",
+        "next_action": "Keep tokenized dx-style classes and data-dx provider/prompt/action markers visible for DX Studio."
+      },
+      {
+        "id": "ai-launch-assistant-dashboard-workflow",
+        "status": "present",
+        "source_file": "examples/template/ai-chat-status.tsx",
+        "materialized_file": "components/launch/ai-chat-status.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-ai-vercel-ai-launch-assistant.json",
+        "next_action": "Wire this receipt into shared dx-check/Zed package-status stale detection."
+      }
+    ]
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "styles/globals.css",
+    "generated_css": "styles/globals.css",
+    "visible_surfaces": [
+      "dashboard-ai-launch-assistant",
+      "launch-ai-assistant-dashboard-workflow"
+    ],
+    "source_files": [
+      "core/src/ecosystem/forge_vercel_ai.rs",
+      "examples/template/ai-chat-status.tsx",
+      "tools/launch/runtime-template/pages/index.html",
+      "styles/globals.css",
+      "styles/globals.css"
+    ],
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-ai-vercel-ai-launch-assistant.json",
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "SOURCE-ONLY: dx-style compatibility is source and receipt evidence; no live model streaming or browser visual proof is claimed.",
+      "ADAPTER-BOUNDARY: provider-specific theme review, accessibility QA, and credential-backed runtime validation remain app-owned."
+    ],
+    "data_dx_markers": [
+      "data-dx-style-surface=\"ai-sdk\"",
+      "data-dx-token-scope=\"ai/vercel-ai\""
+    ],
+    "style_boundaries": [
+      "no inline style objects",
+      "no package-owned hardcoded colors",
+      "theme tokens from styles/globals.css"
+    ]
+  },
+  "source_hashes": {
+    "core/src/ecosystem/forge_vercel_ai.rs": "e94d2b0a430713cf61d77d17370cc7597e91c56cd4db55aeec6ec8761380ddb9",
+    "examples/template/ai-chat-status.tsx": "2ea38a352523ad02473635cf98ca60d6e9f846a02b66af4db4b98c1ee88d91ce",
+    "docs/packages/ai-vercel-ai.md": "2cedfb3cd26ab2939cbe25e077b60a44aa1135a5cde113830b639b8b7768080d",
+    "docs/packages/ai-sdk.source-guard-runbook.json": "f59a94e314142e3bb0eae2e81d12a1d10ee4df113492ab3f3ff04ea7f8096f2d",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "upstream:packages/ai/src/generate-text/stream-text.ts": "3937219ae357c580f253d5faceeb756a1dec91513af0b888e26983e55daf45dc",
+    "upstream:packages/ai/src/ui/default-chat-transport.ts": "1abf1580c6de99cae3497b08fed1c3a0bc781daf93081c1b2339330a9142f793"
+  },
+  "missing_runtime_features": [
+    "governed browser proof",
+    "credential-backed model streaming",
+    "production provider registry policy",
+    "live persistence and resume policy"
+  ],
+  "missing_config_route_contract": {
+    "route": "/api/ai/chat",
+    "status": 503,
+    "credentials_configured": false,
+    "request_id_echo": true,
+    "required_env": "AI_PROVIDER_API_KEY"
+  },
+  "guards": [
+    "dx run --test .\\benchmarks\\vercel-ai-dx-check-visibility-receipt.test.ts",
+    "dx run --test .\\benchmarks\\vercel-ai-dx-style-compatibility.test.ts",
+    "dx run --test .\\benchmarks\\vercel-ai-rust-hash-helper.test.ts",
+    "dx run --test .\\benchmarks\\vercel-ai-launch-visible-proof.test.ts",
+    "dx run --test .\\benchmarks\\vercel-ai-dashboard-workflow.test.ts",
+    "dx run --test .\\benchmarks\\vercel-ai-provider-freedom-slice.test.ts",
+    "dx run --test .\\benchmarks\\vercel-ai-text-stream-slice.test.ts"
+  ],
+  "no_runtime_execution": true,
+  "file_hashes": {
+    "core/src/ecosystem/forge_vercel_ai.rs": "e94d2b0a430713cf61d77d17370cc7597e91c56cd4db55aeec6ec8761380ddb9",
+    "examples/template/ai-chat-status.tsx": "2ea38a352523ad02473635cf98ca60d6e9f846a02b66af4db4b98c1ee88d91ce",
+    "docs/packages/ai-vercel-ai.md": "2cedfb3cd26ab2939cbe25e077b60a44aa1135a5cde113830b639b8b7768080d",
+    "docs/packages/ai-sdk.source-guard-runbook.json": "f59a94e314142e3bb0eae2e81d12a1d10ee4df113492ab3f3ff04ea7f8096f2d",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "upstream:packages/ai/src/generate-text/stream-text.ts": "3937219ae357c580f253d5faceeb756a1dec91513af0b888e26983e55daf45dc",
+    "upstream:packages/ai/src/ui/default-chat-transport.ts": "1abf1580c6de99cae3497b08fed1c3a0bc781daf93081c1b2339330a9142f793"
+  }
+}

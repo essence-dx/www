@@ -1,0 +1,75 @@
+@media (max-width: 980px) {
+  .native-companion-shell {
+    padding: 24px 18px;
+  }
+
+  .companion-stage {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "hero"
+      "pairing"
+      "chat"
+      "status";
+  }
+
+  .companion-hero {
+    min-height: auto;
+  }
+
+  .companion-heading h1 {
+    max-width: 11ch;
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .dx-mobile-pairing-form {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .companion-field-wide,
+  .companion-actions,
+  .companion-message-field {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .native-companion-shell {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 14px 10px;
+  }
+
+  .companion-stage {
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+  }
+
+  .companion-hero,
+  .companion-pairing-panel,
+  .companion-chat-shell,
+  .companion-status-panel {
+    padding: 14px;
+  }
+
+  .companion-heading h1 {
+    font-size: 2.58rem;
+  }
+
+  .companion-heading p {
+    font-size: 0.9rem;
+  }
+
+  .companion-panel-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .companion-actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dx-mobile-transcript {
+    max-height: 260px;
+  }
+}

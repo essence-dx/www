@@ -1,0 +1,656 @@
+{
+  "account_bound": false,
+  "adapter_kind": "account-free-preview",
+  "build": {
+    "dir": ".dx/build",
+    "immutable_asset_count": 26,
+    "manifest_hash": "blake3:4097cfee2f6a737e80f6b1158dc0531dd6e79ad5c0ccea5766b3fbb58b8aa1d8",
+    "observability_path": "observability.json",
+    "route_count": 0,
+    "server_action_count": 0
+  },
+  "bundle": {
+    "artifact_count": 42,
+    "artifacts": [
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "deploy-contract",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "deploy-adapter.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "forge-hosting-manifest",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "forge-hosting-manifest.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "forge-receipt",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "forge/receipts/2026-05-21-convex-to-backend.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "forge-receipt",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "forge/receipts/2026-05-21-dx-landing-to-index.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "forge-receipt",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "forge/receipts/2026-05-21-shadcn-ui-to-ui.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "forge-receipt",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "forge/receipts/2026-05-21-supabase-to-database.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "forge-source-manifest",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "forge/source-manifest.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "hosted-preview-contract",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "hosted-preview.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "import-resolution",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "import-resolution.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "build-manifest",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "manifest.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "production-observability",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "observability.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "provider-adapter",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "provider-adapter.dx-cloud.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/amber.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/blue.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/cyan.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/emerald.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/fuchsia.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/green-variant.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/green.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/indigo.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/lime.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/orange.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/pink.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/purple.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/rainbow.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/red.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/rose.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/sky.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/teal.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/variant-1.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/variant-2.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/violet.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/thumbnails/yellow.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/vendor/convex-logo.svg"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/vendor/shadcn-favicon-32x32.png"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "public/vendor/supabase-logo.svg"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "rollback-metadata",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "rollback.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "server-action-protocols",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "server-action-protocols.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "server-action-runtime",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "server-action-runtime.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "no-store",
+        "kind": "server-contracts",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "server-contracts.json"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "styles/conversion-proof.css"
+      },
+      {
+        "account_required": false,
+        "cache_control": "public, max-age=31536000, immutable",
+        "kind": "immutable-asset",
+        "lifecycle_scripts_executed": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "path": "styles/dx-landing.css"
+      }
+    ],
+    "format": "directory-manifest",
+    "root": ".dx/build"
+  },
+  "deploy_adapter": {
+    "adapter": "dx-www-static-hosting",
+    "cache_headers": [
+      {
+        "cache_control": "public, max-age=0, must-revalidate",
+        "glob": "**/*.html"
+      },
+      {
+        "cache_control": "public, max-age=31536000, immutable",
+        "glob": "**/*.dxpk"
+      },
+      {
+        "cache_control": "public, max-age=31536000, immutable",
+        "glob": "public/**/*"
+      }
+    ],
+    "no_node_modules_required": true,
+    "path": "deploy-adapter.json"
+  },
+  "deployment_kind": "dx-www-hosted-preview-bundle",
+  "forge": {
+    "lifecycle_scripts_executed": false,
+    "package_count": 0,
+    "package_installs_executed": false,
+    "receipt_count": 4,
+    "receipts": [
+      {
+        "action": "unknown",
+        "bundle_path": "forge/receipts/2026-05-21-convex-to-backend.json",
+        "file_count": 0,
+        "hash": "blake3:73923dd6dfc8cb270f84447e65e1df40c3e30abc8b06f9a4bc7c88eaf788e48e",
+        "kind": "forge-receipt",
+        "lifecycle_scripts_executed": false,
+        "package_id": "unknown",
+        "package_installs_executed": false,
+        "path": ".dx/forge/receipts/2026-05-21-convex-to-backend.json",
+        "risk_score": 0,
+        "source_owned": true,
+        "variant": "default"
+      },
+      {
+        "action": "unknown",
+        "bundle_path": "forge/receipts/2026-05-21-dx-landing-to-index.json",
+        "file_count": 0,
+        "hash": "blake3:9eabd80f7cf175b5dddfe11604d2915e9af8fe05bc4b4722bb9ab23295d8200f",
+        "kind": "forge-receipt",
+        "lifecycle_scripts_executed": false,
+        "package_id": "unknown",
+        "package_installs_executed": false,
+        "path": ".dx/forge/receipts/2026-05-21-dx-landing-to-index.json",
+        "risk_score": 0,
+        "source_owned": true,
+        "variant": "default"
+      },
+      {
+        "action": "unknown",
+        "bundle_path": "forge/receipts/2026-05-21-shadcn-ui-to-ui.json",
+        "file_count": 0,
+        "hash": "blake3:6f1fbb6f924916f98d8adb1f39274b19106b4c20df87282de1bb2c3c66fc06fb",
+        "kind": "forge-receipt",
+        "lifecycle_scripts_executed": false,
+        "package_id": "unknown",
+        "package_installs_executed": false,
+        "path": ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json",
+        "risk_score": 0,
+        "source_owned": true,
+        "variant": "default"
+      },
+      {
+        "action": "unknown",
+        "bundle_path": "forge/receipts/2026-05-21-supabase-to-database.json",
+        "file_count": 0,
+        "hash": "blake3:1bc99133b9ef9db90e3a8ed216623f03b2ed0e2dae9d46ce96e6e6eaa37499c7",
+        "kind": "forge-receipt",
+        "lifecycle_scripts_executed": false,
+        "package_id": "unknown",
+        "package_installs_executed": false,
+        "path": ".dx/forge/receipts/2026-05-21-supabase-to-database.json",
+        "risk_score": 0,
+        "source_owned": true,
+        "variant": "default"
+      }
+    ],
+    "receipts_copied": true,
+    "root": "forge",
+    "source_manifest": {
+      "bundle_path": "forge/source-manifest.json",
+      "hash": "blake3:39d626d832e7be0a8d3ded86ddb1e5673a1e48c75d9c770f60cfd01bd0cfe651",
+      "kind": "forge-source-manifest",
+      "lifecycle_scripts_executed": false,
+      "package_installs_executed": false,
+      "path": ".dx/forge/source-manifest.json",
+      "source_owned": true
+    },
+    "source_owned": true,
+    "template_manifest": null
+  },
+  "forge_hosting_manifest": {
+    "account_free_preview_ready": true,
+    "cache_header_count": 3,
+    "coverage_score": 100,
+    "hosted_release_ready": false,
+    "manifest_kind": "dx-www-forge-hosting-release-gate",
+    "observability_metadata_path": "observability.json",
+    "path": "forge-hosting-manifest.json",
+    "provider_portability": true,
+    "rollback_metadata_path": "rollback.json"
+  },
+  "generated": "2026-05-21T15:36:33.411234+00:00",
+  "health_checks": [],
+  "immutable_assets": [
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/amber.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/blue.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/cyan.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/emerald.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/fuchsia.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/green-variant.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/green.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/indigo.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/lime.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/orange.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/pink.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/purple.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/rainbow.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/red.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/rose.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/sky.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/teal.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/variant-1.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/variant-2.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/violet.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/yellow.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/vendor/convex-logo.svg"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/vendor/shadcn-favicon-32x32.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/vendor/supabase-logo.svg"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "styles/conversion-proof.css"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "styles/dx-landing.css"
+    }
+  ],
+  "lifecycle_scripts_executed": false,
+  "network_required": false,
+  "next_commands": [
+    "dx preview --production-contract",
+    "dx promote --key <private-key.json>",
+    "dx rollback verify --previous-build <path> --current-build .dx/build"
+  ],
+  "node_modules_required": false,
+  "observability": {
+    "cache_control": "no-store",
+    "collects_request_headers": false,
+    "collects_request_payloads": false,
+    "collects_secrets": false,
+    "metadata_path": "observability.json",
+    "metrics_path": "/.dx/observability",
+    "ready_path": "/.dx/ready"
+  },
+  "package_installs_executed": false,
+  "provider": "dx-www-cloud-local",
+  "provider_adapter": {
+    "network_required": false,
+    "path": "provider-adapter.dx-cloud.json",
+    "provider": "dx-www-cloud-local",
+    "requires_provider_account": false
+  },
+  "release_gate": {
+    "account_free_preview_ready": true,
+    "forge_receipts_copied": true,
+    "hosted_release_ready": false,
+    "manifest_signature_required": true,
+    "manifest_signed": false,
+    "no_node_modules": true,
+    "rollback_metadata_required": true
+  },
+  "requires_provider_account": false,
+  "rollback": {
+    "metadata_path": "rollback.json",
+    "strategy": "manifest-pinned-asset-rollback"
+  },
+  "routes": [],
+  "secrets_required": false,
+  "server_actions": [],
+  "version": 1
+}

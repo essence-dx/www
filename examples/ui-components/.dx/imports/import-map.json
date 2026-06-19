@@ -1,0 +1,2540 @@
+{
+  "tool": "dx imports",
+  "version": 2,
+  "generated_by": "dx imports sync",
+  "project": "G:/Dx/www/examples/ui-components",
+  "source_hash": "blake3:6e475aa7ad6e1c71f5a365c137a3d4edb00712161c84134383be8ef46f7a4290",
+  "policy": "generated-import-maps-no-runtime-magic",
+  "used_only": true,
+  "scan_roots": [
+    "components",
+    "composables",
+    "utils"
+  ],
+  "used_roots": [
+    "app",
+    "components",
+    "lib",
+    "server",
+    "styles"
+  ],
+  "aliases": [
+    "#components",
+    "#imports"
+  ],
+  "files": {
+    "barrel": "components/auto-imports.ts",
+    "import_map": ".dx/imports/import-map.json",
+    "declarations": ".dx/imports/imports.d.ts"
+  },
+  "entry_count": 71,
+  "used_symbol_count": 41,
+  "typed_entry_count": 58,
+  "untyped_entry_count": 13,
+  "entries": [
+    {
+      "kind": "component",
+      "name": "ComponentsIndex",
+      "source": "components/docs/components-index.tsx",
+      "import_path": "@/components/docs/components-index",
+      "barrel_export": "./docs/components-index",
+      "exports": [
+        "ComponentsIndex"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ComponentsIndex"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "ComponentGallery",
+      "source": "components/gallery/primitive-gallery.tsx",
+      "import_path": "@/components/gallery/primitive-gallery",
+      "barrel_export": "./gallery/primitive-gallery",
+      "exports": [
+        "ComponentGallery"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ComponentGallery"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "PrimitivePreview",
+      "source": "components/gallery/primitive-preview.tsx",
+      "import_path": "@/components/gallery/primitive-preview",
+      "barrel_export": "./gallery/primitive-preview",
+      "exports": [
+        "PrimitivePreview"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "PrimitivePreview"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "UiComponentsHome",
+      "source": "components/home/ui-components-home.tsx",
+      "import_path": "@/components/home/ui-components-home",
+      "barrel_export": "./home/ui-components-home",
+      "exports": [
+        "UiComponentsHome"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "UiComponentsHome"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "DependencyReplacement",
+      "source": "components/site/dependency-replacement.tsx",
+      "import_path": "@/components/site/dependency-replacement",
+      "barrel_export": "./site/dependency-replacement",
+      "exports": [
+        "DependencyReplacement"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "DependencyReplacement"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "RegistryMap",
+      "source": "components/site/registry-map.tsx",
+      "import_path": "@/components/site/registry-map",
+      "barrel_export": "./site/registry-map",
+      "exports": [
+        "RegistryMap"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "RegistryMap"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "SiteHeader",
+      "source": "components/site/site-header.tsx",
+      "import_path": "@/components/site/site-header",
+      "barrel_export": "./site/site-header",
+      "exports": [
+        "SiteHeader"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "SiteHeader"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "SiteShell",
+      "source": "components/site/site-shell.tsx",
+      "import_path": "@/components/site/site-shell",
+      "barrel_export": "./site/site-shell",
+      "exports": [
+        "SiteShell"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "SiteShell"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Accordion",
+      "source": "components/ui/accordion.tsx",
+      "import_path": "@/components/ui/accordion",
+      "barrel_export": "./ui/accordion",
+      "exports": [
+        "Accordion",
+        "AccordionContent",
+        "AccordionItem",
+        "AccordionTrigger"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Accordion"
+      ],
+      "unused_exports": [
+        "AccordionContent",
+        "AccordionItem",
+        "AccordionTrigger"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "AdapterBoundary",
+      "source": "components/ui/adapter-boundary.tsx",
+      "import_path": "@/components/ui/adapter-boundary",
+      "barrel_export": null,
+      "exports": [
+        "AdapterBoundary",
+        "AdapterBoundaryProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "AdapterBoundary",
+        "AdapterBoundaryProps"
+      ],
+      "type_exports": [
+        "AdapterBoundaryProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Alert",
+      "source": "components/ui/alert.tsx",
+      "import_path": "@/components/ui/alert",
+      "barrel_export": "./ui/alert",
+      "exports": [
+        "Alert",
+        "AlertDescription",
+        "AlertTitle"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Alert"
+      ],
+      "unused_exports": [
+        "AlertDescription",
+        "AlertTitle"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "AspectRatio",
+      "source": "components/ui/aspect-ratio.tsx",
+      "import_path": "@/components/ui/aspect-ratio",
+      "barrel_export": null,
+      "exports": [
+        "AspectRatio"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "AspectRatio"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Badge",
+      "source": "components/ui/badge.tsx",
+      "import_path": "@/components/ui/badge",
+      "barrel_export": "./ui/badge",
+      "exports": [
+        "Badge",
+        "BadgeProps",
+        "badgeVariants"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Badge"
+      ],
+      "unused_exports": [
+        "BadgeProps",
+        "badgeVariants"
+      ],
+      "type_exports": [
+        "BadgeProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Button",
+      "source": "components/ui/button.tsx",
+      "import_path": "@/components/ui/button",
+      "barrel_export": "./ui/button",
+      "exports": [
+        "Button",
+        "ButtonProps",
+        "buttonVariants"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Button",
+        "ButtonProps",
+        "buttonVariants"
+      ],
+      "unused_exports": [],
+      "type_exports": [
+        "ButtonProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Calendar",
+      "source": "components/ui/calendar.tsx",
+      "import_path": "@/components/ui/calendar",
+      "barrel_export": "./ui/calendar",
+      "exports": [
+        "Calendar",
+        "CalendarDayButton"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Calendar"
+      ],
+      "unused_exports": [
+        "CalendarDayButton"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Carousel",
+      "source": "components/ui/carousel.tsx",
+      "import_path": "@/components/ui/carousel",
+      "barrel_export": "./ui/carousel",
+      "exports": [
+        "Carousel",
+        "CarouselApi",
+        "CarouselContent",
+        "CarouselItem",
+        "CarouselNext",
+        "CarouselPrevious"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Carousel"
+      ],
+      "unused_exports": [
+        "CarouselApi",
+        "CarouselContent",
+        "CarouselItem",
+        "CarouselNext",
+        "CarouselPrevious"
+      ],
+      "type_exports": [
+        "CarouselApi"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Checkbox",
+      "source": "components/ui/checkbox.tsx",
+      "import_path": "@/components/ui/checkbox",
+      "barrel_export": "./ui/checkbox",
+      "exports": [
+        "Checkbox"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Checkbox"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Collapsible",
+      "source": "components/ui/collapsible.tsx",
+      "import_path": "@/components/ui/collapsible",
+      "barrel_export": "./ui/collapsible",
+      "exports": [
+        "Collapsible",
+        "CollapsibleContent",
+        "CollapsibleTrigger"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Collapsible"
+      ],
+      "unused_exports": [
+        "CollapsibleContent",
+        "CollapsibleTrigger"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "DirectionProvider",
+      "source": "components/ui/direction.tsx",
+      "import_path": "@/components/ui/direction",
+      "barrel_export": null,
+      "exports": [
+        "DirectionProvider",
+        "useDirection"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "DirectionProvider",
+        "useDirection"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "FieldOrientation",
+      "source": "components/ui/field.tsx",
+      "import_path": "@/components/ui/field",
+      "barrel_export": null,
+      "exports": [
+        "FieldOrientation",
+        "FieldVariantOptions"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "FieldOrientation",
+        "FieldVariantOptions"
+      ],
+      "type_exports": [
+        "FieldOrientation",
+        "FieldVariantOptions"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "HoverCard",
+      "source": "components/ui/hover-card.tsx",
+      "import_path": "@/components/ui/hover-card",
+      "barrel_export": null,
+      "exports": [
+        "HoverCard",
+        "HoverCardContent",
+        "HoverCardTrigger"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "HoverCard",
+        "HoverCardContent",
+        "HoverCardTrigger"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "InputOTP",
+      "source": "components/ui/input-otp.tsx",
+      "import_path": "@/components/ui/input-otp",
+      "barrel_export": null,
+      "exports": [
+        "InputOTP",
+        "InputOTPGroup",
+        "InputOTPSeparator",
+        "InputOTPSlot"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "InputOTP",
+        "InputOTPGroup",
+        "InputOTPSeparator",
+        "InputOTPSlot"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Input",
+      "source": "components/ui/input.tsx",
+      "import_path": "@/components/ui/input",
+      "barrel_export": "./ui/input",
+      "exports": [
+        "Input"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Input"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Kbd",
+      "source": "components/ui/kbd.tsx",
+      "import_path": "@/components/ui/kbd",
+      "barrel_export": "./ui/kbd",
+      "exports": [
+        "Kbd",
+        "KbdGroup"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Kbd"
+      ],
+      "unused_exports": [
+        "KbdGroup"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Label",
+      "source": "components/ui/label.tsx",
+      "import_path": "@/components/ui/label",
+      "barrel_export": "./ui/label",
+      "exports": [
+        "Label",
+        "LabelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Label",
+        "LabelProps"
+      ],
+      "unused_exports": [],
+      "type_exports": [
+        "LabelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "NativeSelect",
+      "source": "components/ui/native-select.tsx",
+      "import_path": "@/components/ui/native-select",
+      "barrel_export": null,
+      "exports": [
+        "NativeSelect",
+        "NativeSelectOptGroup",
+        "NativeSelectOption"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "NativeSelect",
+        "NativeSelectOptGroup",
+        "NativeSelectOption"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Progress",
+      "source": "components/ui/progress.tsx",
+      "import_path": "@/components/ui/progress",
+      "barrel_export": "./ui/progress",
+      "exports": [
+        "Progress"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Progress"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "RadioGroup",
+      "source": "components/ui/radio-group.tsx",
+      "import_path": "@/components/ui/radio-group",
+      "barrel_export": null,
+      "exports": [
+        "RadioGroup",
+        "RadioGroupItem"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "RadioGroup",
+        "RadioGroupItem"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "ResizableHandle",
+      "source": "components/ui/resizable.tsx",
+      "import_path": "@/components/ui/resizable",
+      "barrel_export": null,
+      "exports": [
+        "ResizableHandle",
+        "ResizablePanel",
+        "ResizablePanelGroup"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ResizableHandle",
+        "ResizablePanel",
+        "ResizablePanelGroup"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "ScrollArea",
+      "source": "components/ui/scroll-area.tsx",
+      "import_path": "@/components/ui/scroll-area",
+      "barrel_export": null,
+      "exports": [
+        "ScrollArea",
+        "ScrollBar"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ScrollArea",
+        "ScrollBar"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Separator",
+      "source": "components/ui/separator.tsx",
+      "import_path": "@/components/ui/separator",
+      "barrel_export": "./ui/separator",
+      "exports": [
+        "Separator",
+        "SeparatorOrientation",
+        "SeparatorProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Separator",
+        "SeparatorProps"
+      ],
+      "unused_exports": [
+        "SeparatorOrientation"
+      ],
+      "type_exports": [
+        "SeparatorOrientation",
+        "SeparatorProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Skeleton",
+      "source": "components/ui/skeleton.tsx",
+      "import_path": "@/components/ui/skeleton",
+      "barrel_export": "./ui/skeleton",
+      "exports": [
+        "Skeleton"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Skeleton"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Slider",
+      "source": "components/ui/slider.tsx",
+      "import_path": "@/components/ui/slider",
+      "barrel_export": "./ui/slider",
+      "exports": [
+        "Slider"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Slider"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Slot",
+      "source": "components/ui/slot.tsx",
+      "import_path": "@/components/ui/slot",
+      "barrel_export": "./ui/slot",
+      "exports": [
+        "Slot",
+        "SlotProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Slot"
+      ],
+      "unused_exports": [
+        "SlotProps"
+      ],
+      "type_exports": [
+        "SlotProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Toaster",
+      "source": "components/ui/sonner.tsx",
+      "import_path": "@/components/ui/sonner",
+      "barrel_export": "./ui/sonner",
+      "exports": [
+        "Toaster"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Toaster"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Spinner",
+      "source": "components/ui/spinner.tsx",
+      "import_path": "@/components/ui/spinner",
+      "barrel_export": "./ui/spinner",
+      "exports": [
+        "Spinner"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Spinner"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Switch",
+      "source": "components/ui/switch.tsx",
+      "import_path": "@/components/ui/switch",
+      "barrel_export": "./ui/switch",
+      "exports": [
+        "Switch"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Switch"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Tabs",
+      "source": "components/ui/tabs.tsx",
+      "import_path": "@/components/ui/tabs",
+      "barrel_export": "./ui/tabs",
+      "exports": [
+        "Tabs",
+        "TabsContent",
+        "TabsList",
+        "TabsTrigger",
+        "tabsListVariants"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Tabs"
+      ],
+      "unused_exports": [
+        "TabsContent",
+        "TabsList",
+        "TabsTrigger",
+        "tabsListVariants"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Textarea",
+      "source": "components/ui/textarea.tsx",
+      "import_path": "@/components/ui/textarea",
+      "barrel_export": "./ui/textarea",
+      "exports": [
+        "Textarea"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Textarea"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "ToggleGroup",
+      "source": "components/ui/toggle-group.tsx",
+      "import_path": "@/components/ui/toggle-group",
+      "barrel_export": null,
+      "exports": [
+        "ToggleGroup",
+        "ToggleGroupItem"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ToggleGroup",
+        "ToggleGroupItem"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "Toggle",
+      "source": "components/ui/toggle.tsx",
+      "import_path": "@/components/ui/toggle",
+      "barrel_export": "./ui/toggle",
+      "exports": [
+        "Toggle",
+        "ToggleProps",
+        "toggleVariants"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Toggle",
+        "ToggleProps"
+      ],
+      "unused_exports": [
+        "toggleVariants"
+      ],
+      "type_exports": [
+        "ToggleProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Tooltip",
+      "source": "components/ui/tooltip.tsx",
+      "import_path": "@/components/ui/tooltip",
+      "barrel_export": "./ui/tooltip",
+      "exports": [
+        "Tooltip",
+        "TooltipContent",
+        "TooltipProvider",
+        "TooltipTrigger"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Tooltip"
+      ],
+      "unused_exports": [
+        "TooltipContent",
+        "TooltipProvider",
+        "TooltipTrigger"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "DxElementProps",
+      "source": "components/ui/types.ts",
+      "import_path": "@/components/ui/types",
+      "barrel_export": "./ui/types",
+      "exports": [
+        "DxElementProps",
+        "DxInputProps",
+        "DxTextareaProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "DxElementProps",
+        "DxInputProps",
+        "DxTextareaProps"
+      ],
+      "unused_exports": [],
+      "type_exports": [
+        "DxElementProps",
+        "DxInputProps",
+        "DxTextareaProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "import_path": "@/components/icons/icon",
+      "barrel_export": "./icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unused_exports": [],
+      "type_exports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackArrowLeftIcon",
+      "source": "components/icons/pack-arrow-left.tsx",
+      "import_path": "@/components/icons/pack-arrow-left",
+      "barrel_export": null,
+      "exports": [
+        "PackArrowLeftIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackArrowLeftIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackArrowRightIcon",
+      "source": "components/icons/pack-arrow-right.tsx",
+      "import_path": "@/components/icons/pack-arrow-right",
+      "barrel_export": null,
+      "exports": [
+        "PackArrowRightIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackArrowRightIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackCheckIcon",
+      "source": "components/icons/pack-check.tsx",
+      "import_path": "@/components/icons/pack-check",
+      "barrel_export": null,
+      "exports": [
+        "PackCheckIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackCheckIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackChevronDownIcon",
+      "source": "components/icons/pack-chevron-down.tsx",
+      "import_path": "@/components/icons/pack-chevron-down",
+      "barrel_export": null,
+      "exports": [
+        "PackChevronDownIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackChevronDownIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackChevronLeftIcon",
+      "source": "components/icons/pack-chevron-left.tsx",
+      "import_path": "@/components/icons/pack-chevron-left",
+      "barrel_export": null,
+      "exports": [
+        "PackChevronLeftIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackChevronLeftIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackChevronRightIcon",
+      "source": "components/icons/pack-chevron-right.tsx",
+      "import_path": "@/components/icons/pack-chevron-right",
+      "barrel_export": null,
+      "exports": [
+        "PackChevronRightIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackChevronRightIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackChevronUpIcon",
+      "source": "components/icons/pack-chevron-up.tsx",
+      "import_path": "@/components/icons/pack-chevron-up",
+      "barrel_export": null,
+      "exports": [
+        "PackChevronUpIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackChevronUpIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackGripVerticalIcon",
+      "source": "components/icons/pack-grip-vertical.tsx",
+      "import_path": "@/components/icons/pack-grip-vertical",
+      "barrel_export": null,
+      "exports": [
+        "PackGripVerticalIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackGripVerticalIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackLoaderIcon",
+      "source": "components/icons/pack-loader.tsx",
+      "import_path": "@/components/icons/pack-loader",
+      "barrel_export": null,
+      "exports": [
+        "PackLoaderIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackLoaderIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackMoreHorizontalIcon",
+      "source": "components/icons/pack-more-horizontal.tsx",
+      "import_path": "@/components/icons/pack-more-horizontal",
+      "barrel_export": null,
+      "exports": [
+        "PackMoreHorizontalIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackMoreHorizontalIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackPanelLeftIcon",
+      "source": "components/icons/pack-panel-left.tsx",
+      "import_path": "@/components/icons/pack-panel-left",
+      "barrel_export": null,
+      "exports": [
+        "PackPanelLeftIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackPanelLeftIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackSearchIcon",
+      "source": "components/icons/pack-search.tsx",
+      "import_path": "@/components/icons/pack-search",
+      "barrel_export": null,
+      "exports": [
+        "PackSearchIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackSearchIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackXIcon",
+      "source": "components/icons/pack-x.tsx",
+      "import_path": "@/components/icons/pack-x",
+      "barrel_export": null,
+      "exports": [
+        "PackXIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackXIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "SearchIcon",
+      "source": "components/icons/search.tsx",
+      "import_path": "@/components/icons/search",
+      "barrel_export": null,
+      "exports": [
+        "SearchIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "SearchIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "dx/icon/search",
+      "source": "forge/dx/icon/search",
+      "import_path": "@/forge/dx/icon/search",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "shadcn/ui/badge",
+      "source": "forge/shadcn/ui/badge",
+      "import_path": "@/forge/shadcn/ui/badge",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "shadcn/ui/button",
+      "source": "forge/shadcn/ui/button",
+      "import_path": "@/forge/shadcn/ui/button",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "shadcn/ui/card",
+      "source": "forge/shadcn/ui/card",
+      "import_path": "@/forge/shadcn/ui/card",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "shadcn/ui/field",
+      "source": "forge/shadcn/ui/field",
+      "import_path": "@/forge/shadcn/ui/field",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "shadcn/ui/input",
+      "source": "forge/shadcn/ui/input",
+      "import_path": "@/forge/shadcn/ui/input",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "shadcn/ui/item",
+      "source": "forge/shadcn/ui/item",
+      "import_path": "@/forge/shadcn/ui/item",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "shadcn/ui/label",
+      "source": "forge/shadcn/ui/label",
+      "import_path": "@/forge/shadcn/ui/label",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "shadcn/ui/separator",
+      "source": "forge/shadcn/ui/separator",
+      "import_path": "@/forge/shadcn/ui/separator",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "shadcn/ui/textarea",
+      "source": "forge/shadcn/ui/textarea",
+      "import_path": "@/forge/shadcn/ui/textarea",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "www/minimal-starter",
+      "source": "forge/www/minimal-starter",
+      "import_path": "@/forge/www/minimal-starter",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "generated.css",
+      "source": "styles/generated.css",
+      "import_path": "@/styles/generated.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "theme.css",
+      "source": "styles/theme.css",
+      "import_path": "@/styles/theme.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    }
+  ],
+  "public_barrel_entries": [
+    "components/docs/components-index.tsx",
+    "components/gallery/primitive-gallery.tsx",
+    "components/gallery/primitive-preview.tsx",
+    "components/home/ui-components-home.tsx",
+    "components/site/dependency-replacement.tsx",
+    "components/site/registry-map.tsx",
+    "components/site/site-header.tsx",
+    "components/site/site-shell.tsx",
+    "components/ui/accordion.tsx",
+    "components/ui/alert.tsx",
+    "components/ui/badge.tsx",
+    "components/ui/button.tsx",
+    "components/ui/calendar.tsx",
+    "components/ui/carousel.tsx",
+    "components/ui/checkbox.tsx",
+    "components/ui/collapsible.tsx",
+    "components/ui/input.tsx",
+    "components/ui/kbd.tsx",
+    "components/ui/label.tsx",
+    "components/ui/progress.tsx",
+    "components/ui/separator.tsx",
+    "components/ui/skeleton.tsx",
+    "components/ui/slider.tsx",
+    "components/ui/slot.tsx",
+    "components/ui/sonner.tsx",
+    "components/ui/spinner.tsx",
+    "components/ui/switch.tsx",
+    "components/ui/tabs.tsx",
+    "components/ui/textarea.tsx",
+    "components/ui/toggle.tsx",
+    "components/ui/tooltip.tsx",
+    "components/ui/types.ts",
+    "components/icons/icon.tsx"
+  ],
+  "unused_entries": [
+    "components/ui/adapter-boundary.tsx",
+    "components/ui/aspect-ratio.tsx",
+    "components/ui/direction.tsx",
+    "components/ui/field.tsx",
+    "components/ui/hover-card.tsx",
+    "components/ui/input-otp.tsx",
+    "components/ui/native-select.tsx",
+    "components/ui/radio-group.tsx",
+    "components/ui/resizable.tsx",
+    "components/ui/scroll-area.tsx",
+    "components/ui/toggle-group.tsx",
+    "components/icons/pack-arrow-left.tsx",
+    "components/icons/pack-arrow-right.tsx",
+    "components/icons/pack-check.tsx",
+    "components/icons/pack-chevron-down.tsx",
+    "components/icons/pack-chevron-left.tsx",
+    "components/icons/pack-chevron-right.tsx",
+    "components/icons/pack-chevron-up.tsx",
+    "components/icons/pack-grip-vertical.tsx",
+    "components/icons/pack-loader.tsx",
+    "components/icons/pack-more-horizontal.tsx",
+    "components/icons/pack-panel-left.tsx",
+    "components/icons/pack-search.tsx",
+    "components/icons/pack-x.tsx",
+    "components/icons/search.tsx"
+  ],
+  "skipped_entries": [
+    {
+      "source": "components/ui/alert-dialog.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/avatar.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/breadcrumb.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/button-group.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/card.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/chart.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/combobox.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/command.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/context-menu.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/dialog.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/drawer.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/dropdown-menu.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/empty.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/form.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/index.ts",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/input-group.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/item.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/menubar.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/navigation-menu.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/pagination.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/popover.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/select.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/sheet.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/sidebar.tsx",
+      "reason": "no public exports found"
+    },
+    {
+      "source": "components/ui/table.tsx",
+      "reason": "no public exports found"
+    }
+  ],
+  "component_exports": [
+    "./docs/components-index",
+    "./gallery/primitive-gallery",
+    "./gallery/primitive-preview",
+    "./home/ui-components-home",
+    "./site/dependency-replacement",
+    "./site/registry-map",
+    "./site/site-header",
+    "./site/site-shell",
+    "./ui/accordion",
+    "./ui/alert",
+    "./ui/badge",
+    "./ui/button",
+    "./ui/calendar",
+    "./ui/carousel",
+    "./ui/checkbox",
+    "./ui/collapsible",
+    "./ui/input",
+    "./ui/kbd",
+    "./ui/label",
+    "./ui/progress",
+    "./ui/separator",
+    "./ui/skeleton",
+    "./ui/slider",
+    "./ui/slot",
+    "./ui/sonner",
+    "./ui/spinner",
+    "./ui/switch",
+    "./ui/tabs",
+    "./ui/textarea",
+    "./ui/toggle",
+    "./ui/tooltip",
+    "./ui/types",
+    "./icons/icon"
+  ],
+  "components": [
+    {
+      "kind": "component",
+      "name": "ComponentsIndex",
+      "source": "components/docs/components-index.tsx",
+      "importPath": "@/components/docs/components-index",
+      "barrelExport": "./docs/components-index",
+      "exports": [
+        "ComponentsIndex"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ComponentsIndex"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "ComponentGallery",
+      "source": "components/gallery/primitive-gallery.tsx",
+      "importPath": "@/components/gallery/primitive-gallery",
+      "barrelExport": "./gallery/primitive-gallery",
+      "exports": [
+        "ComponentGallery"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ComponentGallery"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "PrimitivePreview",
+      "source": "components/gallery/primitive-preview.tsx",
+      "importPath": "@/components/gallery/primitive-preview",
+      "barrelExport": "./gallery/primitive-preview",
+      "exports": [
+        "PrimitivePreview"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "PrimitivePreview"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "UiComponentsHome",
+      "source": "components/home/ui-components-home.tsx",
+      "importPath": "@/components/home/ui-components-home",
+      "barrelExport": "./home/ui-components-home",
+      "exports": [
+        "UiComponentsHome"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "UiComponentsHome"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "DependencyReplacement",
+      "source": "components/site/dependency-replacement.tsx",
+      "importPath": "@/components/site/dependency-replacement",
+      "barrelExport": "./site/dependency-replacement",
+      "exports": [
+        "DependencyReplacement"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "DependencyReplacement"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "RegistryMap",
+      "source": "components/site/registry-map.tsx",
+      "importPath": "@/components/site/registry-map",
+      "barrelExport": "./site/registry-map",
+      "exports": [
+        "RegistryMap"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "RegistryMap"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "SiteHeader",
+      "source": "components/site/site-header.tsx",
+      "importPath": "@/components/site/site-header",
+      "barrelExport": "./site/site-header",
+      "exports": [
+        "SiteHeader"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "SiteHeader"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "SiteShell",
+      "source": "components/site/site-shell.tsx",
+      "importPath": "@/components/site/site-shell",
+      "barrelExport": "./site/site-shell",
+      "exports": [
+        "SiteShell"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "SiteShell"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Accordion",
+      "source": "components/ui/accordion.tsx",
+      "importPath": "@/components/ui/accordion",
+      "barrelExport": "./ui/accordion",
+      "exports": [
+        "Accordion",
+        "AccordionContent",
+        "AccordionItem",
+        "AccordionTrigger"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Accordion"
+      ],
+      "unusedExports": [
+        "AccordionContent",
+        "AccordionItem",
+        "AccordionTrigger"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "AdapterBoundary",
+      "source": "components/ui/adapter-boundary.tsx",
+      "importPath": "@/components/ui/adapter-boundary",
+      "barrelExport": null,
+      "exports": [
+        "AdapterBoundary",
+        "AdapterBoundaryProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "AdapterBoundary",
+        "AdapterBoundaryProps"
+      ],
+      "typeExports": [
+        "AdapterBoundaryProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Alert",
+      "source": "components/ui/alert.tsx",
+      "importPath": "@/components/ui/alert",
+      "barrelExport": "./ui/alert",
+      "exports": [
+        "Alert",
+        "AlertDescription",
+        "AlertTitle"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Alert"
+      ],
+      "unusedExports": [
+        "AlertDescription",
+        "AlertTitle"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "AspectRatio",
+      "source": "components/ui/aspect-ratio.tsx",
+      "importPath": "@/components/ui/aspect-ratio",
+      "barrelExport": null,
+      "exports": [
+        "AspectRatio"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "AspectRatio"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Badge",
+      "source": "components/ui/badge.tsx",
+      "importPath": "@/components/ui/badge",
+      "barrelExport": "./ui/badge",
+      "exports": [
+        "Badge",
+        "BadgeProps",
+        "badgeVariants"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Badge"
+      ],
+      "unusedExports": [
+        "BadgeProps",
+        "badgeVariants"
+      ],
+      "typeExports": [
+        "BadgeProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Button",
+      "source": "components/ui/button.tsx",
+      "importPath": "@/components/ui/button",
+      "barrelExport": "./ui/button",
+      "exports": [
+        "Button",
+        "ButtonProps",
+        "buttonVariants"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Button",
+        "ButtonProps",
+        "buttonVariants"
+      ],
+      "unusedExports": [],
+      "typeExports": [
+        "ButtonProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Calendar",
+      "source": "components/ui/calendar.tsx",
+      "importPath": "@/components/ui/calendar",
+      "barrelExport": "./ui/calendar",
+      "exports": [
+        "Calendar",
+        "CalendarDayButton"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Calendar"
+      ],
+      "unusedExports": [
+        "CalendarDayButton"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Carousel",
+      "source": "components/ui/carousel.tsx",
+      "importPath": "@/components/ui/carousel",
+      "barrelExport": "./ui/carousel",
+      "exports": [
+        "Carousel",
+        "CarouselApi",
+        "CarouselContent",
+        "CarouselItem",
+        "CarouselNext",
+        "CarouselPrevious"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Carousel"
+      ],
+      "unusedExports": [
+        "CarouselApi",
+        "CarouselContent",
+        "CarouselItem",
+        "CarouselNext",
+        "CarouselPrevious"
+      ],
+      "typeExports": [
+        "CarouselApi"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Checkbox",
+      "source": "components/ui/checkbox.tsx",
+      "importPath": "@/components/ui/checkbox",
+      "barrelExport": "./ui/checkbox",
+      "exports": [
+        "Checkbox"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Checkbox"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Collapsible",
+      "source": "components/ui/collapsible.tsx",
+      "importPath": "@/components/ui/collapsible",
+      "barrelExport": "./ui/collapsible",
+      "exports": [
+        "Collapsible",
+        "CollapsibleContent",
+        "CollapsibleTrigger"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Collapsible"
+      ],
+      "unusedExports": [
+        "CollapsibleContent",
+        "CollapsibleTrigger"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "DirectionProvider",
+      "source": "components/ui/direction.tsx",
+      "importPath": "@/components/ui/direction",
+      "barrelExport": null,
+      "exports": [
+        "DirectionProvider",
+        "useDirection"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "DirectionProvider",
+        "useDirection"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "FieldOrientation",
+      "source": "components/ui/field.tsx",
+      "importPath": "@/components/ui/field",
+      "barrelExport": null,
+      "exports": [
+        "FieldOrientation",
+        "FieldVariantOptions"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "FieldOrientation",
+        "FieldVariantOptions"
+      ],
+      "typeExports": [
+        "FieldOrientation",
+        "FieldVariantOptions"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "HoverCard",
+      "source": "components/ui/hover-card.tsx",
+      "importPath": "@/components/ui/hover-card",
+      "barrelExport": null,
+      "exports": [
+        "HoverCard",
+        "HoverCardContent",
+        "HoverCardTrigger"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "HoverCard",
+        "HoverCardContent",
+        "HoverCardTrigger"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "InputOTP",
+      "source": "components/ui/input-otp.tsx",
+      "importPath": "@/components/ui/input-otp",
+      "barrelExport": null,
+      "exports": [
+        "InputOTP",
+        "InputOTPGroup",
+        "InputOTPSeparator",
+        "InputOTPSlot"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "InputOTP",
+        "InputOTPGroup",
+        "InputOTPSeparator",
+        "InputOTPSlot"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Input",
+      "source": "components/ui/input.tsx",
+      "importPath": "@/components/ui/input",
+      "barrelExport": "./ui/input",
+      "exports": [
+        "Input"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Input"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Kbd",
+      "source": "components/ui/kbd.tsx",
+      "importPath": "@/components/ui/kbd",
+      "barrelExport": "./ui/kbd",
+      "exports": [
+        "Kbd",
+        "KbdGroup"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Kbd"
+      ],
+      "unusedExports": [
+        "KbdGroup"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Label",
+      "source": "components/ui/label.tsx",
+      "importPath": "@/components/ui/label",
+      "barrelExport": "./ui/label",
+      "exports": [
+        "Label",
+        "LabelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Label",
+        "LabelProps"
+      ],
+      "unusedExports": [],
+      "typeExports": [
+        "LabelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "NativeSelect",
+      "source": "components/ui/native-select.tsx",
+      "importPath": "@/components/ui/native-select",
+      "barrelExport": null,
+      "exports": [
+        "NativeSelect",
+        "NativeSelectOptGroup",
+        "NativeSelectOption"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "NativeSelect",
+        "NativeSelectOptGroup",
+        "NativeSelectOption"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Progress",
+      "source": "components/ui/progress.tsx",
+      "importPath": "@/components/ui/progress",
+      "barrelExport": "./ui/progress",
+      "exports": [
+        "Progress"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Progress"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "RadioGroup",
+      "source": "components/ui/radio-group.tsx",
+      "importPath": "@/components/ui/radio-group",
+      "barrelExport": null,
+      "exports": [
+        "RadioGroup",
+        "RadioGroupItem"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "RadioGroup",
+        "RadioGroupItem"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "ResizableHandle",
+      "source": "components/ui/resizable.tsx",
+      "importPath": "@/components/ui/resizable",
+      "barrelExport": null,
+      "exports": [
+        "ResizableHandle",
+        "ResizablePanel",
+        "ResizablePanelGroup"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ResizableHandle",
+        "ResizablePanel",
+        "ResizablePanelGroup"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "ScrollArea",
+      "source": "components/ui/scroll-area.tsx",
+      "importPath": "@/components/ui/scroll-area",
+      "barrelExport": null,
+      "exports": [
+        "ScrollArea",
+        "ScrollBar"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ScrollArea",
+        "ScrollBar"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Separator",
+      "source": "components/ui/separator.tsx",
+      "importPath": "@/components/ui/separator",
+      "barrelExport": "./ui/separator",
+      "exports": [
+        "Separator",
+        "SeparatorOrientation",
+        "SeparatorProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Separator",
+        "SeparatorProps"
+      ],
+      "unusedExports": [
+        "SeparatorOrientation"
+      ],
+      "typeExports": [
+        "SeparatorOrientation",
+        "SeparatorProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Skeleton",
+      "source": "components/ui/skeleton.tsx",
+      "importPath": "@/components/ui/skeleton",
+      "barrelExport": "./ui/skeleton",
+      "exports": [
+        "Skeleton"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Skeleton"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Slider",
+      "source": "components/ui/slider.tsx",
+      "importPath": "@/components/ui/slider",
+      "barrelExport": "./ui/slider",
+      "exports": [
+        "Slider"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Slider"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Slot",
+      "source": "components/ui/slot.tsx",
+      "importPath": "@/components/ui/slot",
+      "barrelExport": "./ui/slot",
+      "exports": [
+        "Slot",
+        "SlotProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Slot"
+      ],
+      "unusedExports": [
+        "SlotProps"
+      ],
+      "typeExports": [
+        "SlotProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Toaster",
+      "source": "components/ui/sonner.tsx",
+      "importPath": "@/components/ui/sonner",
+      "barrelExport": "./ui/sonner",
+      "exports": [
+        "Toaster"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Toaster"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Spinner",
+      "source": "components/ui/spinner.tsx",
+      "importPath": "@/components/ui/spinner",
+      "barrelExport": "./ui/spinner",
+      "exports": [
+        "Spinner"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Spinner"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Switch",
+      "source": "components/ui/switch.tsx",
+      "importPath": "@/components/ui/switch",
+      "barrelExport": "./ui/switch",
+      "exports": [
+        "Switch"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Switch"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Tabs",
+      "source": "components/ui/tabs.tsx",
+      "importPath": "@/components/ui/tabs",
+      "barrelExport": "./ui/tabs",
+      "exports": [
+        "Tabs",
+        "TabsContent",
+        "TabsList",
+        "TabsTrigger",
+        "tabsListVariants"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Tabs"
+      ],
+      "unusedExports": [
+        "TabsContent",
+        "TabsList",
+        "TabsTrigger",
+        "tabsListVariants"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Textarea",
+      "source": "components/ui/textarea.tsx",
+      "importPath": "@/components/ui/textarea",
+      "barrelExport": "./ui/textarea",
+      "exports": [
+        "Textarea"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Textarea"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "ToggleGroup",
+      "source": "components/ui/toggle-group.tsx",
+      "importPath": "@/components/ui/toggle-group",
+      "barrelExport": null,
+      "exports": [
+        "ToggleGroup",
+        "ToggleGroupItem"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ToggleGroup",
+        "ToggleGroupItem"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "Toggle",
+      "source": "components/ui/toggle.tsx",
+      "importPath": "@/components/ui/toggle",
+      "barrelExport": "./ui/toggle",
+      "exports": [
+        "Toggle",
+        "ToggleProps",
+        "toggleVariants"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Toggle",
+        "ToggleProps"
+      ],
+      "unusedExports": [
+        "toggleVariants"
+      ],
+      "typeExports": [
+        "ToggleProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Tooltip",
+      "source": "components/ui/tooltip.tsx",
+      "importPath": "@/components/ui/tooltip",
+      "barrelExport": "./ui/tooltip",
+      "exports": [
+        "Tooltip",
+        "TooltipContent",
+        "TooltipProvider",
+        "TooltipTrigger"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Tooltip"
+      ],
+      "unusedExports": [
+        "TooltipContent",
+        "TooltipProvider",
+        "TooltipTrigger"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "DxElementProps",
+      "source": "components/ui/types.ts",
+      "importPath": "@/components/ui/types",
+      "barrelExport": "./ui/types",
+      "exports": [
+        "DxElementProps",
+        "DxInputProps",
+        "DxTextareaProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "DxElementProps",
+        "DxInputProps",
+        "DxTextareaProps"
+      ],
+      "unusedExports": [],
+      "typeExports": [
+        "DxElementProps",
+        "DxInputProps",
+        "DxTextareaProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "importPath": "@/components/icons/icon",
+      "barrelExport": "./icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unusedExports": [],
+      "typeExports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackArrowLeftIcon",
+      "source": "components/icons/pack-arrow-left.tsx",
+      "importPath": "@/components/icons/pack-arrow-left",
+      "barrelExport": null,
+      "exports": [
+        "PackArrowLeftIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackArrowLeftIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackArrowRightIcon",
+      "source": "components/icons/pack-arrow-right.tsx",
+      "importPath": "@/components/icons/pack-arrow-right",
+      "barrelExport": null,
+      "exports": [
+        "PackArrowRightIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackArrowRightIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackCheckIcon",
+      "source": "components/icons/pack-check.tsx",
+      "importPath": "@/components/icons/pack-check",
+      "barrelExport": null,
+      "exports": [
+        "PackCheckIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackCheckIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackChevronDownIcon",
+      "source": "components/icons/pack-chevron-down.tsx",
+      "importPath": "@/components/icons/pack-chevron-down",
+      "barrelExport": null,
+      "exports": [
+        "PackChevronDownIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackChevronDownIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackChevronLeftIcon",
+      "source": "components/icons/pack-chevron-left.tsx",
+      "importPath": "@/components/icons/pack-chevron-left",
+      "barrelExport": null,
+      "exports": [
+        "PackChevronLeftIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackChevronLeftIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackChevronRightIcon",
+      "source": "components/icons/pack-chevron-right.tsx",
+      "importPath": "@/components/icons/pack-chevron-right",
+      "barrelExport": null,
+      "exports": [
+        "PackChevronRightIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackChevronRightIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackChevronUpIcon",
+      "source": "components/icons/pack-chevron-up.tsx",
+      "importPath": "@/components/icons/pack-chevron-up",
+      "barrelExport": null,
+      "exports": [
+        "PackChevronUpIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackChevronUpIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackGripVerticalIcon",
+      "source": "components/icons/pack-grip-vertical.tsx",
+      "importPath": "@/components/icons/pack-grip-vertical",
+      "barrelExport": null,
+      "exports": [
+        "PackGripVerticalIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackGripVerticalIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackLoaderIcon",
+      "source": "components/icons/pack-loader.tsx",
+      "importPath": "@/components/icons/pack-loader",
+      "barrelExport": null,
+      "exports": [
+        "PackLoaderIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackLoaderIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackMoreHorizontalIcon",
+      "source": "components/icons/pack-more-horizontal.tsx",
+      "importPath": "@/components/icons/pack-more-horizontal",
+      "barrelExport": null,
+      "exports": [
+        "PackMoreHorizontalIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackMoreHorizontalIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackPanelLeftIcon",
+      "source": "components/icons/pack-panel-left.tsx",
+      "importPath": "@/components/icons/pack-panel-left",
+      "barrelExport": null,
+      "exports": [
+        "PackPanelLeftIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackPanelLeftIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackSearchIcon",
+      "source": "components/icons/pack-search.tsx",
+      "importPath": "@/components/icons/pack-search",
+      "barrelExport": null,
+      "exports": [
+        "PackSearchIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackSearchIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackXIcon",
+      "source": "components/icons/pack-x.tsx",
+      "importPath": "@/components/icons/pack-x",
+      "barrelExport": null,
+      "exports": [
+        "PackXIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackXIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "SearchIcon",
+      "source": "components/icons/search.tsx",
+      "importPath": "@/components/icons/search",
+      "barrelExport": null,
+      "exports": [
+        "SearchIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "SearchIcon"
+      ],
+      "typeExports": []
+    }
+  ],
+  "composables": [],
+  "utilities": [],
+  "forge_packages": [
+    "dx/icon/search",
+    "shadcn/ui/badge",
+    "shadcn/ui/button",
+    "shadcn/ui/card",
+    "shadcn/ui/field",
+    "shadcn/ui/input",
+    "shadcn/ui/item",
+    "shadcn/ui/label",
+    "shadcn/ui/separator",
+    "shadcn/ui/textarea",
+    "www/minimal-starter"
+  ],
+  "style_helpers": [
+    "styles/generated.css",
+    "styles/theme.css"
+  ]
+}

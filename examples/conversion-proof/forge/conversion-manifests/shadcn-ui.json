@@ -1,0 +1,70 @@
+{
+  "schema": "dx.www.conversion_manifest",
+  "project": "shadcn-ui",
+  "source_repo": {
+    "url": "https://github.com/shadcn-ui/ui.git",
+    "local_path": "G:\\WWW\\inspirations\\shadcn-ui",
+    "commit": "36139f6200d9c2684ef7695fce5f3d9787378e26",
+    "license": "MIT",
+    "license_files": [
+      "LICENSE.md",
+      "examples/conversion-proof/notices/shadcn-ui/LICENSE.md"
+    ]
+  },
+  "source_route_component_files": [
+    "apps/v4/registry/__index__.tsx",
+    "apps/v4/registry/styles.tsx",
+    "apps/v4/registry/themes.ts",
+    "apps/v4/registry/bases/base/blocks/dashboard-01/page.tsx",
+    "apps/v4/registry/bases/base/blocks/dashboard-01/components/app-sidebar.tsx",
+    "apps/v4/registry/bases/base/blocks/dashboard-01/components/data-table.tsx",
+    "apps/v4/registry/bases/base/blocks/dashboard-01/components/site-header.tsx",
+    "apps/v4/styles/radix-vega/ui/button.tsx",
+    "apps/v4/styles/radix-vega/ui/table.tsx",
+    "apps/v4/styles/radix-vega/ui/sidebar.tsx",
+    "apps/v4/styles/radix-vega/ui/command.tsx"
+  ],
+  "converted_dx_www_route_target": "/ui",
+  "source_surface_map": "forge/source-surfaces/shadcn-ui.json",
+  "visual_audit": "forge/visual-audits/shadcn-ui.json",
+  "converted_files": [
+    "pages/ui.html",
+    "components/ConversionRouteHeader.tsx",
+    "components/SourceSurfaceTable.tsx",
+    "components/RuntimeBoundaryPanel.tsx",
+    "styles/conversion-proof.css"
+  ],
+  "assets_copied": [
+    {
+      "source_path": "apps/v4/public/favicon-32x32.png",
+      "target_path": "public/vendor/shadcn-favicon-32x32.png",
+      "license_notice": "MIT notice copied to notices/shadcn-ui/LICENSE.md",
+      "purpose": "Source mark in the DX-WWW /ui proof header."
+    }
+  ],
+  "forge_primitives": [
+    "forge/primitives/class-merge.ts",
+    "forge/primitives/slot.ts",
+    "forge/primitives/theme-provider.ts",
+    "forge/primitives/button.ts",
+    "forge/primitives/badge.ts",
+    "forge/primitives/card.ts",
+    "forge/primitives/table.ts",
+    "forge/primitives/tabs.ts",
+    "forge/primitives/dialog.ts",
+    "forge/primitives/dropdown.ts",
+    "forge/primitives/sidebar.ts"
+  ],
+  "launch_shims": [
+    "forge/shims/runtime-boundaries.ts#next-routing",
+    "forge/shims/runtime-boundaries.ts#react-hydration",
+    "forge/shims/runtime-boundaries.ts#radix-state-machines"
+  ],
+  "unsupported_runtime_features": [
+    "React live previews and registry preview hydration are not executed.",
+    "Registry script generation and package-manager installs are not run.",
+    "Next.js App Router pages are not used as launch routing.",
+    "Interactive component sandbox state is represented structurally only."
+  ],
+  "conversion_status": "real-source-partial-runtime"
+}

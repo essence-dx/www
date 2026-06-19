@@ -1,0 +1,274 @@
+{
+  "artifact_count": 22,
+  "check_count": 16,
+  "passed": true,
+  "score": 100,
+  "artifacts": [
+    {
+      "name": "forge-readiness-badge.json",
+      "valid_json": true,
+      "passed": true
+    },
+    {
+      "name": "forge/ci.html",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/ci/index.html",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/ci.claims.json",
+      "valid_json": true,
+      "passed": true
+    },
+    {
+      "name": "forge/ci.dxp",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/ci.proof.json",
+      "valid_json": true,
+      "passed": true
+    },
+    {
+      "name": "forge/releases.html",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/releases/index.html",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/releases.claims.json",
+      "valid_json": true,
+      "passed": true
+    },
+    {
+      "name": "forge/releases.dxp",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/releases.proof.json",
+      "valid_json": true,
+      "passed": true
+    },
+    {
+      "name": "forge/changelog.html",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/changelog/index.html",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/changelog.claims.json",
+      "valid_json": true,
+      "passed": true
+    },
+    {
+      "name": "forge/changelog.dxp",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/changelog.proof.json",
+      "valid_json": true,
+      "passed": true
+    },
+    {
+      "name": "forge/adoption.html",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/adoption/index.html",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/adoption.claims.json",
+      "valid_json": true,
+      "passed": true
+    },
+    {
+      "name": "forge/adoption.dxp",
+      "valid_json": null,
+      "passed": true
+    },
+    {
+      "name": "forge/adoption.proof.json",
+      "valid_json": true,
+      "passed": true
+    },
+    {
+      "name": "proof.json",
+      "valid_json": true,
+      "passed": true
+    }
+  ],
+  "checks": [
+    {
+      "route": "readiness badge",
+      "artifacts": [
+        "forge-readiness-badge.json"
+      ],
+      "passed": true,
+      "message": "badge reports passed and no node_modules"
+    },
+    {
+      "route": "/forge/ci claims",
+      "artifacts": [
+        "forge/ci.claims.json"
+      ],
+      "passed": true,
+      "message": "claims manifest targets /forge/ci and has reviewable statuses"
+    },
+    {
+      "route": "/forge/ci proof",
+      "artifacts": [
+        "forge/ci.proof.json"
+      ],
+      "passed": true,
+      "message": "proof summary targets /forge/ci and references HTML plus DXPK"
+    },
+    {
+      "route": "/forge/ci legacy proof",
+      "artifacts": [
+        "proof.json"
+      ],
+      "passed": true,
+      "message": "legacy proof.json still targets /forge/ci"
+    },
+    {
+      "route": "/forge/ci clean route",
+      "artifacts": [
+        "forge/ci.html",
+        "forge/ci/index.html"
+      ],
+      "passed": true,
+      "message": "clean-route index matches forge/ci.html"
+    },
+    {
+      "route": "/forge/releases claims",
+      "artifacts": [
+        "forge/releases.claims.json"
+      ],
+      "passed": true,
+      "message": "claims manifest targets /forge/releases and has reviewable statuses"
+    },
+    {
+      "route": "/forge/releases proof",
+      "artifacts": [
+        "forge/releases.proof.json"
+      ],
+      "passed": true,
+      "message": "proof summary targets /forge/releases and references HTML plus DXPK"
+    },
+    {
+      "route": "/forge/releases clean route",
+      "artifacts": [
+        "forge/releases.html",
+        "forge/releases/index.html"
+      ],
+      "passed": true,
+      "message": "clean-route index matches forge/releases.html"
+    },
+    {
+      "route": "/forge/changelog claims",
+      "artifacts": [
+        "forge/changelog.claims.json"
+      ],
+      "passed": true,
+      "message": "claims manifest targets /forge/changelog and has reviewable statuses"
+    },
+    {
+      "route": "/forge/changelog proof",
+      "artifacts": [
+        "forge/changelog.proof.json"
+      ],
+      "passed": true,
+      "message": "proof summary targets /forge/changelog and references HTML plus DXPK"
+    },
+    {
+      "route": "/forge/changelog clean route",
+      "artifacts": [
+        "forge/changelog.html",
+        "forge/changelog/index.html"
+      ],
+      "passed": true,
+      "message": "clean-route index matches forge/changelog.html"
+    },
+    {
+      "route": "/forge/adoption claims",
+      "artifacts": [
+        "forge/adoption.claims.json"
+      ],
+      "passed": true,
+      "message": "claims manifest targets /forge/adoption and has reviewable statuses"
+    },
+    {
+      "route": "/forge/adoption proof",
+      "artifacts": [
+        "forge/adoption.proof.json"
+      ],
+      "passed": true,
+      "message": "proof summary targets /forge/adoption and references HTML plus DXPK"
+    },
+    {
+      "route": "/forge/adoption clean route",
+      "artifacts": [
+        "forge/adoption.html",
+        "forge/adoption/index.html"
+      ],
+      "passed": true,
+      "message": "clean-route index matches forge/adoption.html"
+    },
+    {
+      "route": "publish bundle dependency boundary",
+      "artifacts": [
+        "node_modules"
+      ],
+      "passed": true,
+      "message": "no node_modules directory in publish bundle"
+    },
+    {
+      "route": "secret-free public bundle",
+      "artifacts": [
+        "forge-readiness-badge.json",
+        "forge/ci.html",
+        "forge/ci/index.html",
+        "forge/ci.claims.json",
+        "forge/ci.dxp",
+        "forge/ci.proof.json",
+        "forge/releases.html",
+        "forge/releases/index.html",
+        "forge/releases.claims.json",
+        "forge/releases.dxp",
+        "forge/releases.proof.json",
+        "forge/changelog.html",
+        "forge/changelog/index.html",
+        "forge/changelog.claims.json",
+        "forge/changelog.dxp",
+        "forge/changelog.proof.json",
+        "forge/adoption.html",
+        "forge/adoption/index.html",
+        "forge/adoption.claims.json",
+        "forge/adoption.dxp",
+        "forge/adoption.proof.json",
+        "proof.json"
+      ],
+      "passed": true,
+      "message": "no secret markers found"
+    }
+  ],
+  "findings": []
+}

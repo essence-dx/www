@@ -1,0 +1,69 @@
+{
+  "schema": "dx.www.contentDocsReceipt",
+  "schema_revision": 1,
+  "generatedAt": "2026-06-07T22:11:42.825477900+00:00",
+  "projectRoot": "G:/Dx/www-and-forge",
+  "receiptPath": ".dx/receipts/build/content-docs.json",
+  "summary": {
+    "document_count": 0,
+    "mdx_document_count": 0,
+    "frontmatter_document_count": 0,
+    "gfm_document_count": 0,
+    "heading_count": 0,
+    "code_block_count": 0,
+    "node_modules_required": false,
+    "runtime_proof": false
+  },
+  "hash_manifest": {
+    "hash_algorithm": "blake3-16",
+    "document_hashes": {},
+    "stale_receipt_policy": "content-docs consumers compare document_hashes against source bytes before trusting docs navigation or MDX compatibility metadata"
+  },
+  "consumer_snapshot": {
+    "schema": "dx.www.contentDocsConsumerSnapshot",
+    "source_receipt": ".dx/receipts/build/content-docs.json",
+    "document_count": 0,
+    "mdx_document_count": 0,
+    "hash_algorithm": "blake3-16",
+    "document_hashes": {},
+    "node_modules_required": false,
+    "runtime_proof": false,
+    "full_mdx_pipeline_parity": false
+  },
+  "freshness_contract": {
+    "schema": "dx.www.contentDocsFreshnessStatus",
+    "hash_algorithm": "blake3-16",
+    "evaluator": "evaluate_content_docs_hashes",
+    "receipt_evaluator": "evaluate_content_docs_receipt_freshness",
+    "status_fields": [
+      "current",
+      "stale_paths",
+      "missing_paths",
+      "unsafe_paths"
+    ],
+    "safe_path_roots": [
+      "docs",
+      "content"
+    ],
+    "unsafe_path_policy": "reject absolute, parent, and non-docs/content receipt paths before hashing source bytes",
+    "runtime_proof": false
+  },
+  "boundary": {
+    "owner": "DX-WWW source engine",
+    "reference": "turbopack-mdx",
+    "compile": "source-metadata-only-no-mdx-compile-evaluate-or-react-runtime",
+    "react_required": false,
+    "rsc_required": false,
+    "node_modules_required": false,
+    "runtime_proof": false,
+    "full_mdx_pipeline_parity": false
+  },
+  "upstream_reference": {
+    "name": "Turbopack MDX",
+    "crate": "turbopack-mdx",
+    "inspected_files": [
+      "vendor/next-rust/turbopack/crates/turbopack-mdx/src/lib.rs"
+    ]
+  },
+  "documents": []
+}

@@ -1,0 +1,783 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "i18n/next-intl",
+    "upstream_name": "next-intl",
+    "version": "4.12.0-dx.0",
+    "generator": "dx-forge/next-intl",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "e77177ba25e7a2131888854cd5a441ed36e2af07f21d27f6b31c7763812015e7",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:next-intl@4.12.0",
+      "verified": false,
+      "note": "DX inspected the local next-intl source mirror, package export map, App Router examples, defineRouting(), createNavigation(), getRequestConfig(), createMiddleware(), NextIntlClientProvider, useTranslations(), and getTranslations() before curating this launch i18n slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this next-intl launch slice, but it is not a live advisory feed and does not audit translated message quality, locale strategy, or deployed routing policy."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "i18n/routing.ts",
+        "logical_path": "js/i18n/routing.ts",
+        "hash": "e82becf2d0370471b600c464d91ea6b51c11edf12f78cf079495cb15a399e19d",
+        "bytes": 668
+      },
+      {
+        "path": "i18n/route-types.ts",
+        "logical_path": "js/i18n/route-types.ts",
+        "hash": "5d398eee7eb4386e26a48d8116a931a003c2c6d85087734d92e1c88d75c90139",
+        "bytes": 926
+      },
+      {
+        "path": "i18n/routing-policy.ts",
+        "logical_path": "js/i18n/routing-policy.ts",
+        "hash": "b9e7321d9468a0b2f2c0add9082f574444c1891c99623dad11cfb0b19f113df4",
+        "bytes": 1031
+      },
+      {
+        "path": "i18n/domain-routing.ts",
+        "logical_path": "js/i18n/domain-routing.ts",
+        "hash": "7da247314d076e89766b4f5c6619610306da265c759b42eab35d78f3635536b7",
+        "bytes": 918
+      },
+      {
+        "path": "i18n/navigation.ts",
+        "logical_path": "js/i18n/navigation.ts",
+        "hash": "2472aa177f2630eac713adc94dc8e2b661930e3b9fc63d936b5b52390059408a",
+        "bytes": 226
+      },
+      {
+        "path": "i18n/navigation-actions.ts",
+        "logical_path": "js/i18n/navigation-actions.ts",
+        "hash": "bff7c8c053f97f24036392880d4b67cd5cd85dde284a20075eb4323f0bb7eda0",
+        "bytes": 766
+      },
+      {
+        "path": "i18n/navigation-client.tsx",
+        "logical_path": "js/i18n/navigation-client.tsx",
+        "hash": "2f7c330d50fb9dfca39d693e351d936061ece25e645da7f6b186a97659919095",
+        "bytes": 1806
+      },
+      {
+        "path": "i18n/request.ts",
+        "logical_path": "js/i18n/request.ts",
+        "hash": "fdce9bb4f963a52f63513d43ef8d705ccecb4f1166819354f02c14cca9da022d",
+        "bytes": 1067
+      },
+      {
+        "path": "i18n/request-config.ts",
+        "logical_path": "js/i18n/request-config.ts",
+        "hash": "65428fb59b8030bce3a3c668d734db8f5259d771d297f5b5695b5d65bc62ad65",
+        "bytes": 1023
+      },
+      {
+        "path": "i18n/request-runtime.ts",
+        "logical_path": "js/i18n/request-runtime.ts",
+        "hash": "ce674428dc06fff79b069268dfa1d4e441f7357ccbd922dc6e22b8acf7a6909e",
+        "bytes": 767
+      },
+      {
+        "path": "i18n/app-config.ts",
+        "logical_path": "js/i18n/app-config.ts",
+        "hash": "7ad74db931a2ddd7ea3a9b80a72ad4745a5fea8c6046dc8b6b798bb41379b5a3",
+        "bytes": 758
+      },
+      {
+        "path": "i18n/locale-guard.ts",
+        "logical_path": "js/i18n/locale-guard.ts",
+        "hash": "866a0565d797dc89d2796085b9a4298c6cbdd1bf114d3f4eea13437563729807",
+        "bytes": 413
+      },
+      {
+        "path": "i18n/server-context.ts",
+        "logical_path": "js/i18n/server-context.ts",
+        "hash": "d9f3b7e59343c4b00572edeb390a524f7f7271435ea7d18b015f168282e466a9",
+        "bytes": 576
+      },
+      {
+        "path": "i18n/route-boundary.ts",
+        "logical_path": "js/i18n/route-boundary.ts",
+        "hash": "b5b80861320d2adbab605eefb51e92e926f8d1af48f4e35c4e481b54f4cef288",
+        "bytes": 859
+      },
+      {
+        "path": "i18n/middleware.ts",
+        "logical_path": "js/i18n/middleware.ts",
+        "hash": "c5a5445fca335bbda613645db18ea7daf9d409fbb7a29ebed14ea59504aeb646",
+        "bytes": 507
+      },
+      {
+        "path": "i18n/formats.ts",
+        "logical_path": "js/i18n/formats.ts",
+        "hash": "1b8e4a2d83c5276f15010c6664a1cd21ec6ad617edaa1d346e694895788e81cf",
+        "bytes": 465
+      },
+      {
+        "path": "i18n/format-options.ts",
+        "logical_path": "js/i18n/format-options.ts",
+        "hash": "ed454f74909cac5c6e8ba409234d46b8b2b7bc5f0e744629331cbac5f882d2ce",
+        "bytes": 814
+      },
+      {
+        "path": "i18n/formatter-cache.ts",
+        "logical_path": "js/i18n/formatter-cache.ts",
+        "hash": "2fd926e9161c1d64ff9ce8cad1d047a16f29ea989c4d620780960f7f17eea5b5",
+        "bytes": 1191
+      },
+      {
+        "path": "i18n/server-provider.tsx",
+        "logical_path": "js/i18n/server-provider.tsx",
+        "hash": "b8ee0293b2ec1874c0e833e7fda5965d6aa1df18caff798ce15c08e247c46011",
+        "bytes": 1117
+      },
+      {
+        "path": "i18n/provider.tsx",
+        "logical_path": "js/i18n/provider.tsx",
+        "hash": "3d5623183b8ad0da63baf093a6b3cb912aefabc7998870a88eb0c35ab430c228",
+        "bytes": 956
+      },
+      {
+        "path": "i18n/formatting.tsx",
+        "logical_path": "js/i18n/formatting.tsx",
+        "hash": "3b58f2f55f44f5df932ede1a8880095fef096819a0f51a760e53ed1f1b14386e",
+        "bytes": 1712
+      },
+      {
+        "path": "i18n/runtime-core.ts",
+        "logical_path": "js/i18n/runtime-core.ts",
+        "hash": "ec3a6c4fd993c50559f9804047e2c7c023108208ca90c0059ccc3f2d6b536106",
+        "bytes": 915
+      },
+      {
+        "path": "i18n/rich-copy.tsx",
+        "logical_path": "js/i18n/rich-copy.tsx",
+        "hash": "cdd5024242f283a450344e3aff550993ccf9b24b85c8613681167d3803911973",
+        "bytes": 701
+      },
+      {
+        "path": "i18n/extracted-copy.tsx",
+        "logical_path": "js/i18n/extracted-copy.tsx",
+        "hash": "5f30f79ceb4410836859aff64cbe2903fff81041a5de74e4bcd7d9a55d93549a",
+        "bytes": 1133
+      },
+      {
+        "path": "i18n/server-extracted.ts",
+        "logical_path": "js/i18n/server-extracted.ts",
+        "hash": "984962068ee3dc083afc98a7d93f95467b30c016cd38a27d7145197a0328d2e6",
+        "bytes": 834
+      },
+      {
+        "path": "i18n/type-contracts.ts",
+        "logical_path": "js/i18n/type-contracts.ts",
+        "hash": "4715ea649893829ecf9a6d58f76a8fab057c5001c0db050abe1f79600695c51e",
+        "bytes": 1622
+      },
+      {
+        "path": "i18n/message-arguments.ts",
+        "logical_path": "js/i18n/message-arguments.ts",
+        "hash": "fc2fa4697d6571b017ca1becd0beffa6dc07c8987f48cfca1dbd728191278bed",
+        "bytes": 1099
+      },
+      {
+        "path": "i18n/next-config.ts",
+        "logical_path": "js/i18n/next-config.ts",
+        "hash": "45195de616afb8870b17f38ca3797fae61d65552b6a2e1ffaa584a638080cfc1",
+        "bytes": 637
+      },
+      {
+        "path": "i18n/extraction.ts",
+        "logical_path": "js/i18n/extraction.ts",
+        "hash": "2432d9e8c01ea8106685007a1334b84d9cd0c44edd3574bbc8d4e925e48fad7f",
+        "bytes": 1537
+      },
+      {
+        "path": "i18n/extraction-runner.ts",
+        "logical_path": "js/i18n/extraction-runner.ts",
+        "hash": "217a55a7c2ed78d8d7377a30e96ef52d0e6576d3bce8dcea989bbcecf7060bbb",
+        "bytes": 1311
+      },
+      {
+        "path": "i18n/locale-links.tsx",
+        "logical_path": "js/i18n/locale-links.tsx",
+        "hash": "77b6cdf8f1199052208ca6c1dceb5218d1c96496728f38dbe5619d8360019e2e",
+        "bytes": 1473
+      },
+      {
+        "path": "i18n/context-status.tsx",
+        "logical_path": "js/i18n/context-status.tsx",
+        "hash": "f0a83acfdcd91d0e763882cf750b3510fea4db52373f1e655ce28424957b251d",
+        "bytes": 1126
+      },
+      {
+        "path": "i18n/error-policy.ts",
+        "logical_path": "js/i18n/error-policy.ts",
+        "hash": "89c54465b045b0f863bced47b6d603f26362e6ae296a6de21a66a52f03e039bd",
+        "bytes": 1077
+      },
+      {
+        "path": "i18n/catalog-validation.ts",
+        "logical_path": "js/i18n/catalog-validation.ts",
+        "hash": "22dc2f5fe7627571b439077e41f6e85c728c9acaaf50253f4d609d4dfc78e6ab",
+        "bytes": 1243
+      },
+      {
+        "path": "i18n/dashboard-copy.ts",
+        "logical_path": "js/i18n/dashboard-copy.ts",
+        "hash": "6b1fc0cb226cf7b8350980ecdc0d8d1e1b25e27d6150e39ff10a6fbfe93a71f4",
+        "bytes": 6765
+      },
+      {
+        "path": "i18n/dashboard-locale-workflow.tsx",
+        "logical_path": "js/i18n/dashboard-locale-workflow.tsx",
+        "hash": "bd70742d4fab9fecce82170afa059f6eff95f211496dcbbdc8aa573d4c057ed3",
+        "bytes": 7864
+      },
+      {
+        "path": "i18n/messages/en.json",
+        "logical_path": "js/i18n/messages/en.json",
+        "hash": "c1ba1e564d50ca731d436c313e3effacfc71b6ab0a7b56fac392a94e7dcc1dfa",
+        "bytes": 1332
+      },
+      {
+        "path": "i18n/messages/bn.json",
+        "logical_path": "js/i18n/messages/bn.json",
+        "hash": "c1ba1e564d50ca731d436c313e3effacfc71b6ab0a7b56fac392a94e7dcc1dfa",
+        "bytes": 1332
+      },
+      {
+        "path": "i18n/metadata.ts",
+        "logical_path": "js/i18n/metadata.ts",
+        "hash": "22a0044dd12ada1860e5961f3e1c6a29017df5fa1a7804fc8c84293f746aa3e4",
+        "bytes": 7234
+      },
+      {
+        "path": "i18n/README.md",
+        "logical_path": "js/i18n/README.md",
+        "hash": "0e8ff017368ca8fa97219e36f1ad189c505e3bc8a96ca4050a76ad4a107a1c8a",
+        "bytes": 8387
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "i18n/routing.ts",
+      "logical_path": "js/i18n/routing.ts",
+      "hash": "e82becf2d0370471b600c464d91ea6b51c11edf12f78cf079495cb15a399e19d",
+      "bytes": 668
+    },
+    {
+      "path": "i18n/route-types.ts",
+      "logical_path": "js/i18n/route-types.ts",
+      "hash": "5d398eee7eb4386e26a48d8116a931a003c2c6d85087734d92e1c88d75c90139",
+      "bytes": 926
+    },
+    {
+      "path": "i18n/routing-policy.ts",
+      "logical_path": "js/i18n/routing-policy.ts",
+      "hash": "b9e7321d9468a0b2f2c0add9082f574444c1891c99623dad11cfb0b19f113df4",
+      "bytes": 1031
+    },
+    {
+      "path": "i18n/domain-routing.ts",
+      "logical_path": "js/i18n/domain-routing.ts",
+      "hash": "7da247314d076e89766b4f5c6619610306da265c759b42eab35d78f3635536b7",
+      "bytes": 918
+    },
+    {
+      "path": "i18n/navigation.ts",
+      "logical_path": "js/i18n/navigation.ts",
+      "hash": "2472aa177f2630eac713adc94dc8e2b661930e3b9fc63d936b5b52390059408a",
+      "bytes": 226
+    },
+    {
+      "path": "i18n/navigation-actions.ts",
+      "logical_path": "js/i18n/navigation-actions.ts",
+      "hash": "bff7c8c053f97f24036392880d4b67cd5cd85dde284a20075eb4323f0bb7eda0",
+      "bytes": 766
+    },
+    {
+      "path": "i18n/navigation-client.tsx",
+      "logical_path": "js/i18n/navigation-client.tsx",
+      "hash": "2f7c330d50fb9dfca39d693e351d936061ece25e645da7f6b186a97659919095",
+      "bytes": 1806
+    },
+    {
+      "path": "i18n/request.ts",
+      "logical_path": "js/i18n/request.ts",
+      "hash": "fdce9bb4f963a52f63513d43ef8d705ccecb4f1166819354f02c14cca9da022d",
+      "bytes": 1067
+    },
+    {
+      "path": "i18n/request-config.ts",
+      "logical_path": "js/i18n/request-config.ts",
+      "hash": "65428fb59b8030bce3a3c668d734db8f5259d771d297f5b5695b5d65bc62ad65",
+      "bytes": 1023
+    },
+    {
+      "path": "i18n/request-runtime.ts",
+      "logical_path": "js/i18n/request-runtime.ts",
+      "hash": "ce674428dc06fff79b069268dfa1d4e441f7357ccbd922dc6e22b8acf7a6909e",
+      "bytes": 767
+    },
+    {
+      "path": "i18n/app-config.ts",
+      "logical_path": "js/i18n/app-config.ts",
+      "hash": "7ad74db931a2ddd7ea3a9b80a72ad4745a5fea8c6046dc8b6b798bb41379b5a3",
+      "bytes": 758
+    },
+    {
+      "path": "i18n/locale-guard.ts",
+      "logical_path": "js/i18n/locale-guard.ts",
+      "hash": "866a0565d797dc89d2796085b9a4298c6cbdd1bf114d3f4eea13437563729807",
+      "bytes": 413
+    },
+    {
+      "path": "i18n/server-context.ts",
+      "logical_path": "js/i18n/server-context.ts",
+      "hash": "d9f3b7e59343c4b00572edeb390a524f7f7271435ea7d18b015f168282e466a9",
+      "bytes": 576
+    },
+    {
+      "path": "i18n/route-boundary.ts",
+      "logical_path": "js/i18n/route-boundary.ts",
+      "hash": "b5b80861320d2adbab605eefb51e92e926f8d1af48f4e35c4e481b54f4cef288",
+      "bytes": 859
+    },
+    {
+      "path": "i18n/middleware.ts",
+      "logical_path": "js/i18n/middleware.ts",
+      "hash": "c5a5445fca335bbda613645db18ea7daf9d409fbb7a29ebed14ea59504aeb646",
+      "bytes": 507
+    },
+    {
+      "path": "i18n/formats.ts",
+      "logical_path": "js/i18n/formats.ts",
+      "hash": "1b8e4a2d83c5276f15010c6664a1cd21ec6ad617edaa1d346e694895788e81cf",
+      "bytes": 465
+    },
+    {
+      "path": "i18n/format-options.ts",
+      "logical_path": "js/i18n/format-options.ts",
+      "hash": "ed454f74909cac5c6e8ba409234d46b8b2b7bc5f0e744629331cbac5f882d2ce",
+      "bytes": 814
+    },
+    {
+      "path": "i18n/formatter-cache.ts",
+      "logical_path": "js/i18n/formatter-cache.ts",
+      "hash": "2fd926e9161c1d64ff9ce8cad1d047a16f29ea989c4d620780960f7f17eea5b5",
+      "bytes": 1191
+    },
+    {
+      "path": "i18n/server-provider.tsx",
+      "logical_path": "js/i18n/server-provider.tsx",
+      "hash": "b8ee0293b2ec1874c0e833e7fda5965d6aa1df18caff798ce15c08e247c46011",
+      "bytes": 1117
+    },
+    {
+      "path": "i18n/provider.tsx",
+      "logical_path": "js/i18n/provider.tsx",
+      "hash": "3d5623183b8ad0da63baf093a6b3cb912aefabc7998870a88eb0c35ab430c228",
+      "bytes": 956
+    },
+    {
+      "path": "i18n/formatting.tsx",
+      "logical_path": "js/i18n/formatting.tsx",
+      "hash": "3b58f2f55f44f5df932ede1a8880095fef096819a0f51a760e53ed1f1b14386e",
+      "bytes": 1712
+    },
+    {
+      "path": "i18n/runtime-core.ts",
+      "logical_path": "js/i18n/runtime-core.ts",
+      "hash": "ec3a6c4fd993c50559f9804047e2c7c023108208ca90c0059ccc3f2d6b536106",
+      "bytes": 915
+    },
+    {
+      "path": "i18n/rich-copy.tsx",
+      "logical_path": "js/i18n/rich-copy.tsx",
+      "hash": "cdd5024242f283a450344e3aff550993ccf9b24b85c8613681167d3803911973",
+      "bytes": 701
+    },
+    {
+      "path": "i18n/extracted-copy.tsx",
+      "logical_path": "js/i18n/extracted-copy.tsx",
+      "hash": "5f30f79ceb4410836859aff64cbe2903fff81041a5de74e4bcd7d9a55d93549a",
+      "bytes": 1133
+    },
+    {
+      "path": "i18n/server-extracted.ts",
+      "logical_path": "js/i18n/server-extracted.ts",
+      "hash": "984962068ee3dc083afc98a7d93f95467b30c016cd38a27d7145197a0328d2e6",
+      "bytes": 834
+    },
+    {
+      "path": "i18n/type-contracts.ts",
+      "logical_path": "js/i18n/type-contracts.ts",
+      "hash": "4715ea649893829ecf9a6d58f76a8fab057c5001c0db050abe1f79600695c51e",
+      "bytes": 1622
+    },
+    {
+      "path": "i18n/message-arguments.ts",
+      "logical_path": "js/i18n/message-arguments.ts",
+      "hash": "fc2fa4697d6571b017ca1becd0beffa6dc07c8987f48cfca1dbd728191278bed",
+      "bytes": 1099
+    },
+    {
+      "path": "i18n/next-config.ts",
+      "logical_path": "js/i18n/next-config.ts",
+      "hash": "45195de616afb8870b17f38ca3797fae61d65552b6a2e1ffaa584a638080cfc1",
+      "bytes": 637
+    },
+    {
+      "path": "i18n/extraction.ts",
+      "logical_path": "js/i18n/extraction.ts",
+      "hash": "2432d9e8c01ea8106685007a1334b84d9cd0c44edd3574bbc8d4e925e48fad7f",
+      "bytes": 1537
+    },
+    {
+      "path": "i18n/extraction-runner.ts",
+      "logical_path": "js/i18n/extraction-runner.ts",
+      "hash": "217a55a7c2ed78d8d7377a30e96ef52d0e6576d3bce8dcea989bbcecf7060bbb",
+      "bytes": 1311
+    },
+    {
+      "path": "i18n/locale-links.tsx",
+      "logical_path": "js/i18n/locale-links.tsx",
+      "hash": "77b6cdf8f1199052208ca6c1dceb5218d1c96496728f38dbe5619d8360019e2e",
+      "bytes": 1473
+    },
+    {
+      "path": "i18n/context-status.tsx",
+      "logical_path": "js/i18n/context-status.tsx",
+      "hash": "f0a83acfdcd91d0e763882cf750b3510fea4db52373f1e655ce28424957b251d",
+      "bytes": 1126
+    },
+    {
+      "path": "i18n/error-policy.ts",
+      "logical_path": "js/i18n/error-policy.ts",
+      "hash": "89c54465b045b0f863bced47b6d603f26362e6ae296a6de21a66a52f03e039bd",
+      "bytes": 1077
+    },
+    {
+      "path": "i18n/catalog-validation.ts",
+      "logical_path": "js/i18n/catalog-validation.ts",
+      "hash": "22dc2f5fe7627571b439077e41f6e85c728c9acaaf50253f4d609d4dfc78e6ab",
+      "bytes": 1243
+    },
+    {
+      "path": "i18n/dashboard-copy.ts",
+      "logical_path": "js/i18n/dashboard-copy.ts",
+      "hash": "6b1fc0cb226cf7b8350980ecdc0d8d1e1b25e27d6150e39ff10a6fbfe93a71f4",
+      "bytes": 6765
+    },
+    {
+      "path": "i18n/dashboard-locale-workflow.tsx",
+      "logical_path": "js/i18n/dashboard-locale-workflow.tsx",
+      "hash": "bd70742d4fab9fecce82170afa059f6eff95f211496dcbbdc8aa573d4c057ed3",
+      "bytes": 7864
+    },
+    {
+      "path": "i18n/messages/en.json",
+      "logical_path": "js/i18n/messages/en.json",
+      "hash": "c1ba1e564d50ca731d436c313e3effacfc71b6ab0a7b56fac392a94e7dcc1dfa",
+      "bytes": 1332
+    },
+    {
+      "path": "i18n/messages/bn.json",
+      "logical_path": "js/i18n/messages/bn.json",
+      "hash": "c1ba1e564d50ca731d436c313e3effacfc71b6ab0a7b56fac392a94e7dcc1dfa",
+      "bytes": 1332
+    },
+    {
+      "path": "i18n/metadata.ts",
+      "logical_path": "js/i18n/metadata.ts",
+      "hash": "22a0044dd12ada1860e5961f3e1c6a29017df5fa1a7804fc8c84293f746aa3e4",
+      "bytes": 7234
+    },
+    {
+      "path": "i18n/README.md",
+      "logical_path": "js/i18n/README.md",
+      "hash": "0e8ff017368ca8fa97219e36f1ad189c505e3bc8a96ca4050a76ad4a107a1c8a",
+      "bytes": 8387
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/i18n/routing.ts",
+      "materialized_path": "i18n/routing.ts",
+      "hash": "e82becf2d0370471b600c464d91ea6b51c11edf12f78cf079495cb15a399e19d",
+      "bytes": 668
+    },
+    {
+      "logical_path": "js/i18n/route-types.ts",
+      "materialized_path": "i18n/route-types.ts",
+      "hash": "5d398eee7eb4386e26a48d8116a931a003c2c6d85087734d92e1c88d75c90139",
+      "bytes": 926
+    },
+    {
+      "logical_path": "js/i18n/routing-policy.ts",
+      "materialized_path": "i18n/routing-policy.ts",
+      "hash": "b9e7321d9468a0b2f2c0add9082f574444c1891c99623dad11cfb0b19f113df4",
+      "bytes": 1031
+    },
+    {
+      "logical_path": "js/i18n/domain-routing.ts",
+      "materialized_path": "i18n/domain-routing.ts",
+      "hash": "7da247314d076e89766b4f5c6619610306da265c759b42eab35d78f3635536b7",
+      "bytes": 918
+    },
+    {
+      "logical_path": "js/i18n/navigation.ts",
+      "materialized_path": "i18n/navigation.ts",
+      "hash": "2472aa177f2630eac713adc94dc8e2b661930e3b9fc63d936b5b52390059408a",
+      "bytes": 226
+    },
+    {
+      "logical_path": "js/i18n/navigation-actions.ts",
+      "materialized_path": "i18n/navigation-actions.ts",
+      "hash": "bff7c8c053f97f24036392880d4b67cd5cd85dde284a20075eb4323f0bb7eda0",
+      "bytes": 766
+    },
+    {
+      "logical_path": "js/i18n/navigation-client.tsx",
+      "materialized_path": "i18n/navigation-client.tsx",
+      "hash": "2f7c330d50fb9dfca39d693e351d936061ece25e645da7f6b186a97659919095",
+      "bytes": 1806
+    },
+    {
+      "logical_path": "js/i18n/request.ts",
+      "materialized_path": "i18n/request.ts",
+      "hash": "fdce9bb4f963a52f63513d43ef8d705ccecb4f1166819354f02c14cca9da022d",
+      "bytes": 1067
+    },
+    {
+      "logical_path": "js/i18n/request-config.ts",
+      "materialized_path": "i18n/request-config.ts",
+      "hash": "65428fb59b8030bce3a3c668d734db8f5259d771d297f5b5695b5d65bc62ad65",
+      "bytes": 1023
+    },
+    {
+      "logical_path": "js/i18n/request-runtime.ts",
+      "materialized_path": "i18n/request-runtime.ts",
+      "hash": "ce674428dc06fff79b069268dfa1d4e441f7357ccbd922dc6e22b8acf7a6909e",
+      "bytes": 767
+    },
+    {
+      "logical_path": "js/i18n/app-config.ts",
+      "materialized_path": "i18n/app-config.ts",
+      "hash": "7ad74db931a2ddd7ea3a9b80a72ad4745a5fea8c6046dc8b6b798bb41379b5a3",
+      "bytes": 758
+    },
+    {
+      "logical_path": "js/i18n/locale-guard.ts",
+      "materialized_path": "i18n/locale-guard.ts",
+      "hash": "866a0565d797dc89d2796085b9a4298c6cbdd1bf114d3f4eea13437563729807",
+      "bytes": 413
+    },
+    {
+      "logical_path": "js/i18n/server-context.ts",
+      "materialized_path": "i18n/server-context.ts",
+      "hash": "d9f3b7e59343c4b00572edeb390a524f7f7271435ea7d18b015f168282e466a9",
+      "bytes": 576
+    },
+    {
+      "logical_path": "js/i18n/route-boundary.ts",
+      "materialized_path": "i18n/route-boundary.ts",
+      "hash": "b5b80861320d2adbab605eefb51e92e926f8d1af48f4e35c4e481b54f4cef288",
+      "bytes": 859
+    },
+    {
+      "logical_path": "js/i18n/middleware.ts",
+      "materialized_path": "i18n/middleware.ts",
+      "hash": "c5a5445fca335bbda613645db18ea7daf9d409fbb7a29ebed14ea59504aeb646",
+      "bytes": 507
+    },
+    {
+      "logical_path": "js/i18n/formats.ts",
+      "materialized_path": "i18n/formats.ts",
+      "hash": "1b8e4a2d83c5276f15010c6664a1cd21ec6ad617edaa1d346e694895788e81cf",
+      "bytes": 465
+    },
+    {
+      "logical_path": "js/i18n/format-options.ts",
+      "materialized_path": "i18n/format-options.ts",
+      "hash": "ed454f74909cac5c6e8ba409234d46b8b2b7bc5f0e744629331cbac5f882d2ce",
+      "bytes": 814
+    },
+    {
+      "logical_path": "js/i18n/formatter-cache.ts",
+      "materialized_path": "i18n/formatter-cache.ts",
+      "hash": "2fd926e9161c1d64ff9ce8cad1d047a16f29ea989c4d620780960f7f17eea5b5",
+      "bytes": 1191
+    },
+    {
+      "logical_path": "js/i18n/server-provider.tsx",
+      "materialized_path": "i18n/server-provider.tsx",
+      "hash": "b8ee0293b2ec1874c0e833e7fda5965d6aa1df18caff798ce15c08e247c46011",
+      "bytes": 1117
+    },
+    {
+      "logical_path": "js/i18n/provider.tsx",
+      "materialized_path": "i18n/provider.tsx",
+      "hash": "3d5623183b8ad0da63baf093a6b3cb912aefabc7998870a88eb0c35ab430c228",
+      "bytes": 956
+    },
+    {
+      "logical_path": "js/i18n/formatting.tsx",
+      "materialized_path": "i18n/formatting.tsx",
+      "hash": "3b58f2f55f44f5df932ede1a8880095fef096819a0f51a760e53ed1f1b14386e",
+      "bytes": 1712
+    },
+    {
+      "logical_path": "js/i18n/runtime-core.ts",
+      "materialized_path": "i18n/runtime-core.ts",
+      "hash": "ec3a6c4fd993c50559f9804047e2c7c023108208ca90c0059ccc3f2d6b536106",
+      "bytes": 915
+    },
+    {
+      "logical_path": "js/i18n/rich-copy.tsx",
+      "materialized_path": "i18n/rich-copy.tsx",
+      "hash": "cdd5024242f283a450344e3aff550993ccf9b24b85c8613681167d3803911973",
+      "bytes": 701
+    },
+    {
+      "logical_path": "js/i18n/extracted-copy.tsx",
+      "materialized_path": "i18n/extracted-copy.tsx",
+      "hash": "5f30f79ceb4410836859aff64cbe2903fff81041a5de74e4bcd7d9a55d93549a",
+      "bytes": 1133
+    },
+    {
+      "logical_path": "js/i18n/server-extracted.ts",
+      "materialized_path": "i18n/server-extracted.ts",
+      "hash": "984962068ee3dc083afc98a7d93f95467b30c016cd38a27d7145197a0328d2e6",
+      "bytes": 834
+    },
+    {
+      "logical_path": "js/i18n/type-contracts.ts",
+      "materialized_path": "i18n/type-contracts.ts",
+      "hash": "4715ea649893829ecf9a6d58f76a8fab057c5001c0db050abe1f79600695c51e",
+      "bytes": 1622
+    },
+    {
+      "logical_path": "js/i18n/message-arguments.ts",
+      "materialized_path": "i18n/message-arguments.ts",
+      "hash": "fc2fa4697d6571b017ca1becd0beffa6dc07c8987f48cfca1dbd728191278bed",
+      "bytes": 1099
+    },
+    {
+      "logical_path": "js/i18n/next-config.ts",
+      "materialized_path": "i18n/next-config.ts",
+      "hash": "45195de616afb8870b17f38ca3797fae61d65552b6a2e1ffaa584a638080cfc1",
+      "bytes": 637
+    },
+    {
+      "logical_path": "js/i18n/extraction.ts",
+      "materialized_path": "i18n/extraction.ts",
+      "hash": "2432d9e8c01ea8106685007a1334b84d9cd0c44edd3574bbc8d4e925e48fad7f",
+      "bytes": 1537
+    },
+    {
+      "logical_path": "js/i18n/extraction-runner.ts",
+      "materialized_path": "i18n/extraction-runner.ts",
+      "hash": "217a55a7c2ed78d8d7377a30e96ef52d0e6576d3bce8dcea989bbcecf7060bbb",
+      "bytes": 1311
+    },
+    {
+      "logical_path": "js/i18n/locale-links.tsx",
+      "materialized_path": "i18n/locale-links.tsx",
+      "hash": "77b6cdf8f1199052208ca6c1dceb5218d1c96496728f38dbe5619d8360019e2e",
+      "bytes": 1473
+    },
+    {
+      "logical_path": "js/i18n/context-status.tsx",
+      "materialized_path": "i18n/context-status.tsx",
+      "hash": "f0a83acfdcd91d0e763882cf750b3510fea4db52373f1e655ce28424957b251d",
+      "bytes": 1126
+    },
+    {
+      "logical_path": "js/i18n/error-policy.ts",
+      "materialized_path": "i18n/error-policy.ts",
+      "hash": "89c54465b045b0f863bced47b6d603f26362e6ae296a6de21a66a52f03e039bd",
+      "bytes": 1077
+    },
+    {
+      "logical_path": "js/i18n/catalog-validation.ts",
+      "materialized_path": "i18n/catalog-validation.ts",
+      "hash": "22dc2f5fe7627571b439077e41f6e85c728c9acaaf50253f4d609d4dfc78e6ab",
+      "bytes": 1243
+    },
+    {
+      "logical_path": "js/i18n/dashboard-copy.ts",
+      "materialized_path": "i18n/dashboard-copy.ts",
+      "hash": "6b1fc0cb226cf7b8350980ecdc0d8d1e1b25e27d6150e39ff10a6fbfe93a71f4",
+      "bytes": 6765
+    },
+    {
+      "logical_path": "js/i18n/dashboard-locale-workflow.tsx",
+      "materialized_path": "i18n/dashboard-locale-workflow.tsx",
+      "hash": "bd70742d4fab9fecce82170afa059f6eff95f211496dcbbdc8aa573d4c057ed3",
+      "bytes": 7864
+    },
+    {
+      "logical_path": "js/i18n/messages/en.json",
+      "materialized_path": "i18n/messages/en.json",
+      "hash": "c1ba1e564d50ca731d436c313e3effacfc71b6ab0a7b56fac392a94e7dcc1dfa",
+      "bytes": 1332
+    },
+    {
+      "logical_path": "js/i18n/messages/bn.json",
+      "materialized_path": "i18n/messages/bn.json",
+      "hash": "c1ba1e564d50ca731d436c313e3effacfc71b6ab0a7b56fac392a94e7dcc1dfa",
+      "bytes": 1332
+    },
+    {
+      "logical_path": "js/i18n/metadata.ts",
+      "materialized_path": "i18n/metadata.ts",
+      "hash": "22a0044dd12ada1860e5961f3e1c6a29017df5fa1a7804fc8c84293f746aa3e4",
+      "bytes": 7234
+    },
+    {
+      "logical_path": "js/i18n/README.md",
+      "materialized_path": "i18n/README.md",
+      "hash": "0e8ff017368ca8fa97219e36f1ad189c505e3bc8a96ca4050a76ad4a107a1c8a",
+      "bytes": 8387
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `MIT` with formal review `no`."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-23T04:36:07.235941+00:00",
+  "signature": null
+}

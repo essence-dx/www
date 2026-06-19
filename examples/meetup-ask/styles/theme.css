@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light;
+  --meetup-background: #fdf6f0;
+  --meetup-card: #ffffff;
+  --meetup-text: #2a1a1f;
+  --meetup-muted: #6f3f4a;
+  --meetup-accent: #a72f4b;
+  --meetup-accent-strong: #852238;
+  --meetup-soft: #fff0f3;
+  --meetup-zone: #fff6f8;
+  --meetup-border: #f2c2cc;
+  --meetup-divider: #f2b8c2;
+}

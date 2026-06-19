@@ -1,0 +1,276 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Automation Connectors",
+    "package_id": "automations/n8n",
+    "upstream_package": "n8n-nodes-base",
+    "upstream_version": "2.22.0",
+    "source_mirror": "G:/WWW/inspirations/n8n/packages/nodes-base",
+    "based_on": "n8n-nodes-base Manual Trigger, Slack, Webhook, Notion, and credential public node APIs"
+  },
+  "guard": {
+    "id": "automation-connectors-package-lane-panel",
+    "routes": ["/"],
+    "guard_file": "benchmarks/automations-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\automations-dx-check-package-lane-panel.test.ts",
+    "proves": [
+      "Automation Connectors package-lane panel row",
+      "data-dx-check-package-lane-row=\"automations/n8n\"",
+      "data-dx-style-surface=\"automation-connectors\"",
+      "data-dx-token-scope=\"automations/n8n\"",
+      "automation-connectors:receipt-hash-refresh",
+      "automation_connectors_receipt_hash_refresh_current",
+      "automation_connectors_receipt_hash_refresh_stale",
+      "automation_connectors_receipt_hash_refresh_missing",
+      "core/src/ecosystem/project_check/automation_connectors_dx_check.rs",
+      "automation-connectors-check-panel-source",
+      "check_panel_source",
+      "core/src/ecosystem/dx_check_receipt.rs",
+      "dx_check_latest_panel_exposes_automation_connectors_package_lane_hash_refresh_row",
+      "automation_connectors_upstream_runtime_boundary_present",
+      "automation_connectors_upstream_runtime_boundary_missing",
+      "docs/packages/automation-connectors.source-guard-runbook.json",
+      "without claiming live n8n workflow execution, provider credentials, webhook registration, or browser visual proof",
+      "Automation Connectors adapter-boundary Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "fixture_paths": [
+      {
+        "source_guard_id": "automation-connectors-package-lane-panel",
+        "package_id": "automations/n8n",
+        "fixture_path": "docs/packages/automation-connectors.source-guard-runbook.json",
+        "schema": "dx.forge.package.source_guard_runbook_fixture"
+      }
+    ],
+    "contract": {
+      "id": "automation-connectors-package-lane-panel",
+      "purpose": "The static launch fixture exposes the Automation Connectors package-lane row, upstream n8n provenance, selected source markers, dx-style markers, and receipt-hash helper freshness without live provider execution.",
+      "evidence_field": "benchmarks/automations-dx-check-package-lane-panel.test.ts",
+      "fixture_path": "docs/packages/automation-connectors.source-guard-runbook.json"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\automations-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-only Automation Connectors package-lane row, selected source markers, receipt-hash helper freshness markers, dx-style package scope, and upstream runtime-boundary metrics.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false,
+      "fixture_path": "docs/packages/automation-connectors.source-guard-runbook.json"
+    }
+  },
+  "upstream_public_apis": [
+    "VersionedNodeType",
+    "INodeType",
+    "INodeTypeDescription",
+    "ITriggerFunctions",
+    "IExecuteFunctions",
+    "IWebhookFunctions",
+    "ICredentialType",
+    "IAuthenticateGeneric",
+    "ICredentialTestRequest"
+  ],
+  "inspected_upstream_files": [
+    "G:/WWW/inspirations/n8n/packages/nodes-base/package.json",
+    "G:/WWW/inspirations/n8n/packages/nodes-base/nodes/ManualTrigger/ManualTrigger.node.ts",
+    "G:/WWW/inspirations/n8n/packages/nodes-base/nodes/Slack/Slack.node.ts",
+    "G:/WWW/inspirations/n8n/packages/nodes-base/nodes/Slack/V2/SlackV2.node.ts",
+    "G:/WWW/inspirations/n8n/packages/nodes-base/nodes/Webhook/Webhook.node.ts",
+    "G:/WWW/inspirations/n8n/packages/nodes-base/nodes/Notion/Notion.node.ts",
+    "G:/WWW/inspirations/n8n/packages/nodes-base/credentials/SlackApi.credentials.ts",
+    "G:/WWW/inspirations/n8n/packages/nodes-base/credentials/SlackOAuth2Api.credentials.ts",
+    "G:/WWW/inspirations/n8n/packages/nodes-base/credentials/NotionApi.credentials.ts"
+  ],
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package",
+    "data-dx-component=\"launch-automation-dashboard-workflow\"",
+    "data-dx-dashboard-workflow=\"automation-release-receipt\"",
+    "data-dx-automation-workflow=\"connector-readiness\"",
+    "data-dx-automation-safe-action=\"prepare-zed-run-handoff\""
+  ],
+  "selected_surfaces": [
+    {
+      "id": "automation-launch-dashboard-workflow",
+      "status": "present",
+      "files": [
+        "examples/template/automations-status.tsx",
+        "examples/template/automation-mission-summary.tsx",
+        "tools/launch/runtime-template/pages/index.html",
+        "tools/launch/runtime-template/assets/launch-runtime.ts"
+      ],
+      "markers": [
+        "data-dx-component=\"launch-automation-dashboard-workflow\"",
+        "data-dx-dashboard-workflow=\"automation-release-receipt\"",
+        "data-dx-style-surface=\"automation-connectors\""
+      ]
+    },
+    {
+      "id": "automation-zed-run-handoff",
+      "status": "present",
+      "files": [
+        "examples/template/automations-status.tsx",
+        "tools/launch/runtime-template/pages/index.html"
+      ],
+      "markers": [
+        "data-dx-automation-safe-action=\"prepare-zed-run-handoff\"",
+        "data-dx-automation-handoff=\"zed-run-receipt\""
+      ]
+    },
+    {
+      "id": "automation-connectors-source-guard-runbook",
+      "status": "present",
+      "files": [
+        "docs/packages/automation-connectors.source-guard-runbook.json"
+      ],
+      "markers": [
+        "automation-connectors-package-lane-panel",
+        "automation-connectors:receipt-hash-refresh",
+        "source_guard_runbook_fixture"
+      ]
+    },
+    {
+      "id": "automation-connectors-lower-dx-check-source",
+      "status": "present",
+      "files": [
+        "core/src/ecosystem/project_check/automation_connectors_dx_check.rs"
+      ],
+      "markers": [
+        "forge_automation_connectors_package_metrics",
+        "automation_connectors_receipt_hash_refresh_current",
+        "automation_connectors_receipt_hash_refresh_stale",
+        "automation_connectors_receipt_hash_refresh_missing",
+        "stale_mirror_files",
+        "missing_mirror_files"
+      ]
+    },
+    {
+      "id": "automation-connectors-check-panel-source",
+      "status": "present",
+      "files": [
+        "core/src/ecosystem/dx_check_receipt.rs"
+      ],
+      "markers": [
+        "automation_connectors_package_lane_row",
+        "automation_connectors_receipt_hash_refresh_current",
+        "receipt_hash_refresh_counts",
+        "check_panel.view_model.package_lane_rows"
+      ]
+    }
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-automation-connectors-launch-workflow.json",
+    "hash_helper": "examples/template/automation-connectors-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/automation-connectors-receipt-hashes.ts --check --json",
+    "zed_visibility": "automation-connectors:receipt-hash-refresh",
+    "source_guard_runbook_fixture": "docs/packages/automation-connectors.source-guard-runbook.json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "studio_manifest_source": "dx-www/src/cli/studio_manifest.rs",
+    "lower_dx_check_source": "core/src/ecosystem/project_check/automation_connectors_dx_check.rs",
+    "check_panel_source": "core/src/ecosystem/dx_check_receipt.rs",
+    "tracked_by_receipt_hash_helper": true,
+    "tracked_file_count": 14,
+    "attribution_fields": [
+      "tracked_files",
+      "current_files",
+      "stale_files",
+      "missing_files",
+      "stale_mirror_files",
+      "missing_mirror_files"
+    ]
+  },
+  "lower_dx_check": {
+    "source": "core/src/ecosystem/project_check/automation_connectors_dx_check.rs",
+    "tracked_by_receipt_hash_helper": true,
+    "metrics": [
+      "automation_connectors_receipt_hash_refresh_current",
+      "automation_connectors_receipt_hash_refresh_stale",
+      "automation_connectors_receipt_hash_refresh_missing",
+      "automation_connectors_hash_mismatch"
+    ],
+    "path_arrays": [
+      "stale_files",
+      "stale_mirror_files",
+      "missing_files",
+      "missing_mirror_files"
+    ],
+    "runtime_proof": false
+  },
+  "check_panel": {
+    "source": "core/src/ecosystem/dx_check_receipt.rs",
+    "fixture": "dx_check_latest_panel_exposes_automation_connectors_package_lane_hash_refresh_row",
+    "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_automation_connectors_package_lane_hash_refresh_row --lib",
+    "metrics": [
+      "automation_connectors_receipt_hash_refresh_current",
+      "automation_connectors_receipt_hash_refresh_stale",
+      "automation_connectors_receipt_hash_refresh_missing",
+      "automation_connectors_hash_mismatch",
+      "automation_connectors_dx_style_compatibility_present",
+      "automation_connectors_dx_style_compatibility_missing",
+      "automation_connectors_upstream_runtime_boundary_present",
+      "automation_connectors_upstream_runtime_boundary_missing"
+    ],
+    "path_arrays": [
+      "current_files",
+      "stale_files",
+      "missing_files",
+      "stale_mirror_files",
+      "missing_mirror_files"
+    ],
+    "metadata_fields": [
+      "source_guard_runbook_fixture",
+      "preview_manifest_materializer",
+      "studio_manifest_source",
+      "lower_dx_check_source",
+      "zed_visibility"
+    ],
+    "runtime_proof": false
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "root_field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture": "docs/packages/automation-connectors.source-guard-runbook.json",
+    "tracked_by_receipt_hash_helper": true,
+    "runtime_proof": false
+  },
+  "studio_manifest": {
+    "source_guard_entry": "source_guard_index[].fixture_path",
+    "runbook_fixture_paths": "source_guard_runbook_index[].fixture_paths[]",
+    "contract_entry": "source_guard_runbook_index[].contracts[].fixture_path",
+    "command_entry": "source_guard_runbook_index[].commands[].fixture_path",
+    "fixture_path": "docs/packages/automation-connectors.source-guard-runbook.json",
+    "tracked_by_receipt_hash_helper": true
+  },
+  "app_owned_boundaries": [
+    "credential storage, encryption, rotation, and OAuth callback handling",
+    "operator approval for live workflow execution",
+    "provider account onboarding and workspace-specific permission scopes",
+    "receipt retention and Rust/Zed handoff persistence",
+    "live n8n worker runtime and provider network execution",
+    "browser visual proof and provider webhook registration"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors package-owned Automation Connectors Studio source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: it does not claim live n8n workflow execution, provider credentials, webhook registration, or browser visual proof."
+  ],
+  "honesty_label": "ADAPTER-BOUNDARY",
+  "runtime_proof": false
+}

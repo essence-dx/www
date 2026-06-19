@@ -1,0 +1,189 @@
+{
+  "schema": "dx.www.rendered_proof_evidence_authoring_guide",
+  "purpose": "Source-only guide for runtime lanes that will collect real rendered-proof evidence for the converted DX-WWW routes.",
+  "guidance_state": "source-only",
+  "no_source_proof_mutation": true,
+  "writes_runtime_evidence": false,
+  "receipt_schema": "forge/acceptance/rendered-proof-evidence.schema.json",
+  "approval_request": "forge/acceptance/rendered-proof-runtime-approval-request.json",
+  "approval_tool": "forge/acceptance/request-rendered-proof-runtime-approval.ts",
+  "import_plan": "forge/acceptance/rendered-proof-import-plan.json",
+  "import_tool": "forge/acceptance/prepare-rendered-proof-import.ts",
+  "review_tool": "forge/acceptance/review-rendered-proof-completeness.ts",
+  "validator": "forge/acceptance/validate-rendered-proof-evidence.ts",
+  "forbidden_fake_artifacts": [
+    "synthetic_screenshot",
+    "placeholder_hash",
+    "generated_success_status",
+    "unapproved_runtime_write"
+  ],
+  "routes": [
+    {
+      "route": "/ui",
+      "source_project": "shadcn-ui",
+      "target_receipt": ".dx/forge/runtime-evidence/conversion-proof/ui.rendered-proof.json",
+      "output_intent": "authoring-guide-only",
+      "approval_required": true,
+      "source_files": [
+        "pages/ui.html",
+        "forge/source-surfaces/shadcn-ui.json",
+        "forge/visual-audits/shadcn-ui.json",
+        "forge/conversion-manifests/shadcn-ui.json",
+        ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json"
+      ],
+      "required_artifacts": [
+        "renderer_snapshot",
+        "asset_rendering",
+        "responsive_review",
+        "accessibility_review"
+      ],
+      "required_checks": [
+        "interaction_boundary_review",
+        "provenance_review"
+      ],
+      "disallowed_artifacts": [
+        "fake-renderer-snapshot",
+        "placeholder-sha256",
+        "unapproved-browser-output",
+        "source-lane-runtime-receipt"
+      ],
+      "capture_fields": [
+        {
+          "field": "renderer_snapshot.path",
+          "value": null,
+          "required_after_approval": true
+        },
+        {
+          "field": "asset_rendering.sha256",
+          "value": null,
+          "required_after_approval": true
+        },
+        {
+          "field": "responsive_review.path",
+          "value": null,
+          "required_after_approval": true
+        },
+        {
+          "field": "accessibility_review.path",
+          "value": null,
+          "required_after_approval": true
+        }
+      ]
+    },
+    {
+      "route": "/database",
+      "source_project": "supabase",
+      "target_receipt": ".dx/forge/runtime-evidence/conversion-proof/database.rendered-proof.json",
+      "output_intent": "authoring-guide-only",
+      "approval_required": true,
+      "source_files": [
+        "pages/database.html",
+        "forge/source-surfaces/supabase.json",
+        "forge/visual-audits/supabase.json",
+        "forge/conversion-manifests/supabase.json",
+        ".dx/forge/receipts/2026-05-21-supabase-to-database.json"
+      ],
+      "required_artifacts": [
+        "renderer_snapshot",
+        "asset_rendering",
+        "responsive_review",
+        "accessibility_review"
+      ],
+      "required_checks": [
+        "interaction_boundary_review",
+        "provenance_review"
+      ],
+      "disallowed_artifacts": [
+        "fake-renderer-snapshot",
+        "placeholder-sha256",
+        "unapproved-browser-output",
+        "source-lane-runtime-receipt"
+      ],
+      "capture_fields": [
+        {
+          "field": "renderer_snapshot.path",
+          "value": null,
+          "required_after_approval": true
+        },
+        {
+          "field": "asset_rendering.sha256",
+          "value": null,
+          "required_after_approval": true
+        },
+        {
+          "field": "responsive_review.path",
+          "value": null,
+          "required_after_approval": true
+        },
+        {
+          "field": "accessibility_review.path",
+          "value": null,
+          "required_after_approval": true
+        }
+      ]
+    },
+    {
+      "route": "/backend",
+      "source_project": "convex-backend",
+      "target_receipt": ".dx/forge/runtime-evidence/conversion-proof/backend.rendered-proof.json",
+      "output_intent": "authoring-guide-only",
+      "approval_required": true,
+      "source_files": [
+        "pages/backend.html",
+        "forge/source-surfaces/convex-backend.json",
+        "forge/visual-audits/convex-backend.json",
+        "forge/conversion-manifests/convex-backend.json",
+        ".dx/forge/receipts/2026-05-21-convex-to-backend.json"
+      ],
+      "required_artifacts": [
+        "renderer_snapshot",
+        "asset_rendering",
+        "responsive_review",
+        "accessibility_review"
+      ],
+      "required_checks": [
+        "interaction_boundary_review",
+        "provenance_review"
+      ],
+      "disallowed_artifacts": [
+        "fake-renderer-snapshot",
+        "placeholder-sha256",
+        "unapproved-browser-output",
+        "source-lane-runtime-receipt"
+      ],
+      "capture_fields": [
+        {
+          "field": "renderer_snapshot.path",
+          "value": null,
+          "required_after_approval": true
+        },
+        {
+          "field": "asset_rendering.sha256",
+          "value": null,
+          "required_after_approval": true
+        },
+        {
+          "field": "responsive_review.path",
+          "value": null,
+          "required_after_approval": true
+        },
+        {
+          "field": "accessibility_review.path",
+          "value": null,
+          "required_after_approval": true
+        }
+      ]
+    }
+  ],
+  "status": {
+    "score_out_of_100": 99,
+    "real": [
+      "Every converted route has route-specific source files, required artifacts, required checks, and final receipt target.",
+      "Capture fields are intentionally null until explicit runtime approval and real rendered evidence exist.",
+      "Forbidden fake artifacts are named so runtime lanes do not promote placeholders as proof."
+    ],
+    "blocked": [
+      "Renderer snapshots, asset hashes, responsive evidence, and accessibility evidence remain runtime-approval gated."
+    ]
+  }
+}

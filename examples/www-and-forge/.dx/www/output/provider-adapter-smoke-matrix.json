@@ -1,0 +1,68 @@
+{
+  "schema": "dx.www.deploy.provider_adapter_smoke_matrix",
+  "schema_revision": 1,
+  "manifest_hash": "blake3:3aa54e392a16464e92b1d80f787a775632fd9102867e521ddc2239a707f9fe7f",
+  "release_ready": false,
+  "hosted_provider_proof": false,
+  "provider_adapter_path": "provider-adapter.dx-cloud.json",
+  "deploy_adapter_path": "deploy-adapter.json",
+  "account_required": false,
+  "network_required": false,
+  "matrix_status": "local-proof-and-upload-plan-only",
+  "coverage": {
+    "routes": 2,
+    "route_handlers": 0,
+    "server_actions": 0,
+    "health_checks": 0,
+    "immutable_assets": 39,
+    "public_runtime_artifacts": 41,
+    "evidence_artifacts": 40
+  },
+  "matrix": [
+    {
+      "surface": "production-preview-contract",
+      "status": "local-replay-passing-foundation",
+      "proof": "dx_preview_production_contract_serves_only_deploy_adapter_outputs",
+      "hosted_provider": false
+    },
+    {
+      "surface": "static-preview-method-contract",
+      "status": "local-static-method-contract-foundation",
+      "proof": "GET/HEAD/OPTIONS/405 static preview method guard",
+      "hosted_provider": false
+    },
+    {
+      "surface": "dx-www-cloud-local",
+      "status": "account-free-fixture",
+      "proof": "provider-adapter.dx-cloud.json",
+      "hosted_provider": false
+    },
+    {
+      "surface": "static-cdn-upload-plan",
+      "status": "upload-plan-only",
+      "proof": "cache-manifest.json plus provider upload_plan CDN Content-Encoding/Content-Type headers",
+      "hosted_provider": false
+    },
+    {
+      "surface": "route-handler-provider-conformance",
+      "status": "local-route-handler-conformance-foundation",
+      "proof": "route-handler-conformance-matrix.json",
+      "hosted_provider": false
+    },
+    {
+      "surface": "server-action-provider-runtime",
+      "status": "local-preview-hash-ledger-foundation",
+      "proof": "server-action-replay-ledger.json",
+      "hosted_provider": false
+    }
+  ],
+  "not_yet_proven": [
+    "provider-hosted GET/HEAD/OPTIONS/405 matrix",
+    "distributed server-action replay store",
+    "provider-hosted CSRF/session integration",
+    "CDN purge or surrogate-key execution",
+    "multi-provider deployed smoke proof",
+    "signed manifest promotion"
+  ],
+  "rule": "This matrix is evidence for local replay and upload planning only; it must not be used as hosted provider proof."
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign in | DX Template</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <script src="/public/launch-runtime.js" defer></script>
+  </head>
+  <body
+    class="template-app-body"
+    data-dx-scroll-root="document"
+    data-dx-scroll-system="native"
+  >
+    <main
+      class="template-app auth-page"
+      data-dx-route="/login"
+      data-dx-hot-reload-target="route:/login"
+      data-dx-source="tools/launch/runtime-template/pages/login.html"
+      data-dx-component="template-login-page"
+      data-dx-package="auth/better-auth forms/react-hook-form validation/zod shadcn/ui/button shadcn/ui/input"
+      data-dx-style-surface="template-auth"
+      data-dx-check-surface="template-auth"
+      data-dx-auth-state="missing-config"
+      data-dx-auth-config="missing-config"
+      data-dx-auth-session-source="missing-config"
+      data-dx-auth-provider="google"
+      data-dx-auth-missing-config="BETTER_AUTH_SECRET,BETTER_AUTH_URL,GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET"
+      data-dx-node-modules="forbidden"
+      data-dx-native-scroll="page"
+      data-dx-scroll-surface="document"
+      data-dx-scroll-lock="none"
+      data-dx-scroll-proof="document-flow-no-lock"
+      data-dx-wheel-scroll="native"
+      data-dx-scroll-content="viewport-plus"
+    >
+      <div class="dx-icon-runtime-markers" data-dx-component="dx-icon-runtime-markers" data-dx-icon-proof="runtime-markers" aria-hidden="true">
+        <span data-dx-icon="pack:auth" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:payments" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:database" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:fumadocs" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:wasm-bindgen" data-icon-source="dx-icons"></span>
+      </div>
+
+      <header class="template-header">
+        <a class="template-brand" href="/" aria-label="DX Template home">
+          <span class="template-brand-mark" aria-hidden="true">dx</span>
+          <span>DX Template</span>
+        </a>
+        <nav class="template-nav" aria-label="Account navigation">
+          <a href="/">Home</a>
+          <a href="/dashboard">Dashboard</a>
+        </nav>
+      </header>
+
+      <section class="auth-layout">
+        <div class="auth-copy">
+          <h1>Sign in to www</h1>
+          <p>Review the source-owned auth flow without creating a hosted session.</p>
+        </div>
+        <form
+          id="app-login-form"
+          class="template-card auth-card"
+          data-dx-component="template-login-form"
+          data-dx-auth-action="sign-in"
+          data-dx-auth-provider="google"
+          data-dx-auth-config="missing-config"
+          data-dx-form-validation="idle"
+          data-dx-form-package="forms/react-hook-form"
+          data-dx-rhf-boundary="runtime-safe-form"
+          data-dx-zod-schema="templateLoginSchema"
+        >
+          <label>
+            Email
+            <input id="app-login-email" name="email" type="email" value="ops@example.com" autocomplete="email" aria-describedby="app-login-email-error" />
+          </label>
+          <span id="app-login-email-error" class="template-field-error" data-template-field-error="email" hidden></span>
+          <label>
+            Password
+            <input id="app-login-password" name="password" type="password" value="workspace-ready" autocomplete="current-password" aria-describedby="app-login-password-error" />
+          </label>
+          <span id="app-login-password-error" class="template-field-error" data-template-field-error="password" hidden></span>
+          <button class="template-button template-button-primary" type="submit">Review sign-in</button>
+          <p id="app-login-status" class="template-status" role="status" aria-live="polite">
+            Review sign-in readiness without creating a hosted session.
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

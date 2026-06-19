@@ -1,0 +1,16 @@
+{
+  "schema": "dx.forge.sourceGraph",
+  "packages": [
+    {
+      "package_id": "ui/launch-panel",
+      "surface": "dashboard",
+      "files": [
+        "components/LaunchPanel.tsx",
+        "styles/globals.css"
+      ],
+      "receipt_paths": [
+        ".dx/receipts/check/latest.json"
+      ]
+    }
+  ]
+}

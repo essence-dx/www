@@ -1,0 +1,86 @@
+{
+  "schema": "dx.www.readiness.island_browser_receipt_contract",
+  "schema_revision": 1,
+  "passed": true,
+  "status": "source-owned-island-browser-replay-current",
+  "browser_runtime_executed": true,
+  "route": "/islands",
+  "canonical_route": "/islands",
+  "proof_target": {
+    "kind": "source-owned-client-islands",
+    "route": "/islands",
+    "proof_boundary": "local-browser-only",
+    "hosted_provider_proof": false,
+    "provider_adapter_executed": false,
+    "selector": "[data-dx-client-island-bridge]",
+    "event_selector": "[data-dx-event-id][data-dx-event]"
+  },
+  "bridge_present": true,
+  "source_owned_bridge": true,
+  "bridge_abi_style": "camelCase",
+  "abi_schema": "dx.react.clientIsland.abi",
+  "directive_style": "camelCase-jsx-props",
+  "no_js_fallback_preserved": true,
+  "island_count": 3,
+  "source_owned_island_count": 3,
+  "directives_seen": [
+    "clientIdle",
+    "clientLoad",
+    "clientOnly",
+    "clientVisible"
+  ],
+  "missing_core_directives": [],
+  "hydration_strategies": [
+    "only"
+  ],
+  "event_node_count": 1,
+  "client_island_event_count": 1,
+  "event_replay_results": [
+    {
+      "event": "input",
+      "event_id": "event-6947aa169872-2",
+      "replayed": true
+    }
+  ],
+  "missed_event_replay_count": 0,
+  "client_only_adapter_values": [
+    "dx"
+  ],
+  "provider_adapter_values": [
+    "not-executed"
+  ],
+  "browser_runtime_proof_values": [
+    "source-owned-dev-runtime"
+  ],
+  "full_react_hydration": false,
+  "node_modules_required": false,
+  "react_synthetic_events": false,
+  "provider_adapter_executed": false,
+  "browser_snapshot_hash": "sha256:db3a2799f141e1eb6b89aeae2e5e52529cb199edf53ffbfd99550a84f959e977",
+  "proof_scope": "local-in-app-browser-source-owned-island-replay",
+  "receipt_source": "dx.www.readiness.browser_receipt_page_snapshot.v1",
+  "page_url": "http://127.0.0.1:3000/islands",
+  "hosted_provider_proof": false,
+  "release_ready": false,
+  "fastest_world_claim": false,
+  "import_source_path": ".dx/receipts/readiness/browser-import-candidates/island-browser-latest.json",
+  "import_source_within_project": true,
+  "imported_by": "www readiness --import-island-browser-receipt",
+  "import_rule": "validated-current-before-canonical-write",
+  "import_expectation": "real-browser-json-receipt-current-before-canonical-json-sr-machine-write",
+  "import_replay_boundary": "local-browser-proof-only-hosted-provider-proof-still-required",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/island-browser-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-island-browser-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "c87eace79adccd3b4144c27b463be269a1d8a1d4115c1aeb7eff6f487e9431c8",
+    "machine_blake3": "c0af6cac3460763117d73f5cc44f04a8bd0fd7ea2293f3d6e146490fbf063da5"
+  },
+  "canonical_starter_route": "/islands",
+  "canonical_proof_target_route": "/islands",
+  "canonical_starter_source": "examples/template/app/islands/page.tsx",
+  "canonical_local_dev_url": "http://127.0.0.1:3000/islands",
+  "browser_runtime_executed_by_readiness": false
+}

@@ -1,0 +1,131 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Forms",
+    "package_id": "forms/react-hook-form",
+    "upstream_package": "react-hook-form",
+    "upstream_version": "7.75.0",
+    "source_mirror": "G:/WWW/inspirations/react-hook-form",
+    "based_on": "React Hook Form public form state APIs"
+  },
+  "guard": {
+    "id": "forms-generated-starter-materialization",
+    "routes": ["/"],
+    "guard_file": "benchmarks/forms-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\forms-dx-check-package-lane-panel.test.ts",
+    "proves": [
+      "Forms generated-starter materialization guard",
+      "data-dx-check-package-lane-row=\"forms/react-hook-form\"",
+      "data-dx-token-scope=\"forms/react-hook-form\"",
+      "forms:receipt-hash-refresh",
+      "data-dx-check-package-lane-hash-refresh-stale-file-list",
+      "data-dx-check-package-lane-hash-refresh-missing-file-list",
+      "docs/packages/forms.source-guard-runbook.json",
+      "without claiming browser submission proof",
+      "forms/react-hook-form source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "forms-generated-starter-materialization",
+      "purpose": "The generated starter preserves the Forms package-lane row, helper freshness markers, and package-scoped dx-check panel without browser submission proof.",
+      "evidence_field": "benchmarks/forms-dx-check-package-lane-panel.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\forms-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-only Forms package-lane row, generated starter materialization, helper freshness markers, and dx-check panel package scope without browser submission proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-check-package-lane-hash-refresh-stale-file-list",
+    "data-dx-check-package-lane-hash-refresh-missing-file-list",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-forms-dashboard-workflow.json",
+    "hash_helper": "examples/template/forms-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/forms-receipt-hashes.ts --check --json",
+    "zed_visibility": "forms:receipt-hash-refresh",
+    "source_guard_runbook_fixture": "docs/packages/forms.source-guard-runbook.json",
+    "tracked_by_receipt_hash_helper": true,
+    "tracked_file_count": 7,
+    "attribution_fields": [
+      "tracked_files",
+      "current_files",
+      "stale_files",
+      "missing_files",
+      "stale_mirror_files",
+      "missing_mirror_files"
+    ],
+    "dx_check_path_attribution_policy": "Non-empty stale_files or stale_mirror_files mark Forms helper freshness stale; non-empty missing_files or missing_mirror_files mark it missing.",
+    "lower_dx_check_helper_freshness_guard": {
+      "id": "forms-package-metrics-helper-freshness-path-arrays",
+      "source_file": "core/src/ecosystem/project_check/forms_dx_check.rs",
+      "selected_surface_id": "forms-lower-dx-check",
+      "tracked_by_receipt_hash_helper": true,
+      "fixture": "forms_package_metrics_reports_helper_freshness_from_path_arrays",
+      "command": "cargo test -q -p dx-www-compiler forms_package_metrics_reports_helper_freshness_from_path_arrays --lib",
+      "proves": [
+        "forms_receipt_hash_refresh_current",
+        "forms_receipt_hash_refresh_stale",
+        "forms_receipt_hash_refresh_missing",
+        "forms_hash_mismatch stays byte-derived",
+        "without claiming browser submission proof"
+      ],
+      "execution_policy": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "runtime_proof": false
+    }
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "root_field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture": "docs/packages/forms.source-guard-runbook.json",
+    "runtime_proof": false
+  },
+  "studio_manifest": {
+    "source_guard_entry": "source_guard_index[].fixture_path",
+    "runbook_fixture_paths": "source_guard_runbook_index[].fixture_paths[]",
+    "contract_entry": "source_guard_runbook_index[].contracts[].fixture_path",
+    "command_entry": "source_guard_runbook_index[].commands[].fixture_path",
+    "fixture_path": "docs/packages/forms.source-guard-runbook.json"
+  },
+  "app_owned_boundaries": [
+    "submit handler implementation",
+    "spam protection",
+    "persistence and authorization",
+    "final accessibility review",
+    "governed browser submission proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "browser submission proof, dependency installation, submit handlers, persistence, spam protection, and final accessibility review stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

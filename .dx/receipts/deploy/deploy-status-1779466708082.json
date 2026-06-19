@@ -1,0 +1,199 @@
+{
+  "schema_version": "dx.deploy.status",
+  "generated_at_unix_ms": 1779466708082,
+  "command": "dx deploy status",
+  "status": "ready",
+  "latest_plan_status": "ready",
+  "dry_run": true,
+  "deploy_ran": false,
+  "project_root": "G:\\Dx\\www",
+  "receipt_path": "G:\\Dx\\www\\.dx\\receipts\\deploy\\deploy-status-latest.json",
+  "snapshot_path": "G:\\Dx\\www\\.dx\\receipts\\deploy\\deploy-status-1779466708082.json",
+  "latest_plan_path": "G:\\Dx\\www\\.dx\\receipts\\deploy\\deploy-plan-latest.json",
+  "provider_count": 6,
+  "ready_plan_count": 6,
+  "blocked_plan_count": 0,
+  "providers": [
+    {
+      "id": "local-static",
+      "name": "Local static dry-run",
+      "target_kinds": [
+        "static_site"
+      ],
+      "current_support": "ready-dry-run",
+      "dry_run": true,
+      "write_support": "not-applicable",
+      "needs_credentials": [],
+      "dx_can_do_now": [
+        "discover an existing static output directory",
+        "inventory files and bytes without writing cloud objects",
+        "write source-owned dry-run receipts"
+      ],
+      "app_owned_boundaries": [
+        "actual hosting, DNS, CDN cache invalidation, and rollback remain provider-owned"
+      ],
+      "official_sources": [
+        "DX local fixture planner"
+      ]
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "target_kinds": [
+        "static_site",
+        "serverless_functions",
+        "app_routes"
+      ],
+      "current_support": "dry-run-receipt",
+      "dry_run": true,
+      "write_support": "planned-explicit-approval",
+      "needs_credentials": [
+        "VERCEL_TOKEN for live CLI/API deploys"
+      ],
+      "dx_can_do_now": [
+        "read dx-check gates",
+        "write Vercel dry-run promotion receipts",
+        "map static output and app route boundaries"
+      ],
+      "app_owned_boundaries": [
+        "framework build output",
+        "environment variables",
+        "domain promotion",
+        "serverless function runtime behavior"
+      ],
+      "official_sources": [
+        "https://vercel.com/docs/cli/deploy",
+        "https://github.com/vercel/vercel"
+      ]
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase Hosting",
+      "target_kinds": [
+        "static_site",
+        "firestore_rules_indexes",
+        "serverless_functions"
+      ],
+      "current_support": "dry-run-matrix",
+      "dry_run": true,
+      "write_support": "planned-explicit-approval",
+      "needs_credentials": [
+        "Firebase login or CI token for live deploys"
+      ],
+      "dx_can_do_now": [
+        "plan Firebase Hosting static asset deployment",
+        "separate Firestore rules/indexes from static Hosting deploys",
+        "record app-owned Firebase configuration boundaries"
+      ],
+      "app_owned_boundaries": [
+        "firebase.json",
+        "Firestore security rules and indexes",
+        "Cloud Functions/App Hosting runtime behavior"
+      ],
+      "official_sources": [
+        "https://firebase.google.com/docs/cli",
+        "https://firebase.google.com/docs/hosting/api-deploy",
+        "https://github.com/firebase/firebase-tools"
+      ]
+    },
+    {
+      "id": "cloudflare-workers",
+      "name": "Cloudflare Workers and Wrangler",
+      "target_kinds": [
+        "workers",
+        "static_assets",
+        "object_storage"
+      ],
+      "current_support": "dry-run-matrix",
+      "dry_run": true,
+      "write_support": "planned-explicit-approval",
+      "needs_credentials": [
+        "CLOUDFLARE_API_TOKEN and account id for live Workers/R2 operations"
+      ],
+      "dx_can_do_now": [
+        "plan Worker entrypoint and static asset boundaries",
+        "surface Wrangler dry-run/readiness requirements",
+        "keep secrets and dashboard-side bindings app-owned"
+      ],
+      "app_owned_boundaries": [
+        "wrangler.toml/json/jsonc",
+        "Worker secrets and bindings",
+        "routes, custom domains, and gradual deployments"
+      ],
+      "official_sources": [
+        "https://developers.cloudflare.com/workers/wrangler/commands/workers/",
+        "https://github.com/cloudflare/workers-sdk"
+      ]
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "target_kinds": [
+        "static_site",
+        "functions",
+        "edge_functions"
+      ],
+      "current_support": "dry-run-matrix",
+      "dry_run": true,
+      "write_support": "planned-explicit-approval",
+      "needs_credentials": [
+        "NETLIFY_AUTH_TOKEN and site id for live deploys"
+      ],
+      "dx_can_do_now": [
+        "plan static directory deploys",
+        "record functions and edge-functions as explicit boundaries",
+        "avoid Netlify build execution unless approved"
+      ],
+      "app_owned_boundaries": [
+        "netlify.toml",
+        "redirects and headers",
+        "Netlify Functions and Edge Functions",
+        "site/team selection"
+      ],
+      "official_sources": [
+        "https://cli.netlify.com/commands/deploy/",
+        "https://github.com/netlify/cli"
+      ]
+    },
+    {
+      "id": "s3-r2",
+      "name": "S3/R2 object storage",
+      "target_kinds": [
+        "object_storage",
+        "static_site"
+      ],
+      "current_support": "dry-run-object-plan",
+      "dry_run": true,
+      "write_support": "planned-explicit-approval",
+      "needs_credentials": [
+        "AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY or R2 S3 credentials",
+        "bucket and endpoint configuration for live object writes"
+      ],
+      "dx_can_do_now": [
+        "plan object keys from static files",
+        "keep bucket, endpoint, and public URL values redacted",
+        "align with existing Forge R2/S3 dry-run object planning"
+      ],
+      "app_owned_boundaries": [
+        "bucket policy/public access",
+        "CDN/cache invalidation",
+        "object delete behavior and rollback",
+        "credential storage"
+      ],
+      "official_sources": [
+        "https://developers.cloudflare.com/r2/get-started/s3/",
+        "https://developers.cloudflare.com/r2/api/s3/api/",
+        "https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html"
+      ]
+    }
+  ],
+  "blockers": [],
+  "warnings": [
+    "Cloud providers are planned as dry-run only; no credentials were read and no remote writes ran."
+  ],
+  "next_actions": [
+    "Review provider capability rows before choosing a target.",
+    "Use `dx deploy <provider> --write` only after explicit operator approval and credentials are configured.",
+    "Keep app-owned build, env, routes, functions, and rollback behavior out of the DX dry-run receipt until live writes are approved."
+  ]
+}

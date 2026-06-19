@@ -1,0 +1,42 @@
+{
+  "tool": "dx imports sync",
+  "version": 2,
+  "generated_at": "2026-06-11T14:28:23.932583600+00:00",
+  "project": "G:/Dx/www/examples/shader",
+  "passed": true,
+  "wrote_files": true,
+  "source_hash": "blake3:e98e856c6bb3fca6ad157790055bb7a5730a76433cffb0eaef055fdde5ab52d4",
+  "entry_count": 4,
+  "public_barrel_entry_count": 0,
+  "used_symbol_count": 0,
+  "typed_entry_count": 1,
+  "untyped_entry_count": 3,
+  "skipped_entry_count": 0,
+  "scan_roots": [
+    "components",
+    "composables",
+    "utils"
+  ],
+  "used_roots": [
+    "app",
+    "components",
+    "lib",
+    "server",
+    "styles"
+  ],
+  "aliases": [
+    "#components",
+    "#imports"
+  ],
+  "used_only": true,
+  "files": {
+    "barrel": "components/auto-imports.ts",
+    "import_map": ".dx/imports/import-map.json",
+    "declarations": ".dx/imports/imports.d.ts"
+  },
+  "receipts": {
+    "sync_sr": ".dx/imports/sync.sr",
+    "check_sr": ".dx/imports/check.sr",
+    "legacy_json": ".dx/receipts/imports/sync.json"
+  }
+}

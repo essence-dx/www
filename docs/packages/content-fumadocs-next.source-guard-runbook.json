@@ -1,0 +1,181 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Documentation System",
+    "package_id": "content/fumadocs-next",
+    "aliases": [
+      "documentation-system",
+      "fumadocs",
+      "fumadocs-next",
+      "docs"
+    ],
+    "upstream_package": "fumadocs",
+    "upstream_version": "fumadocs-core@16.8.12",
+    "source_mirror": "G:/WWW/inspirations/fumadocs",
+    "based_on": "Fumadocs Core source loader, LLM export, search, and OpenAPI server public APIs"
+  },
+  "selected_surfaces": [
+    "docs-help-changelog-workflow",
+    "generated-starter-materialization",
+    "preview-manifest-materializer",
+    "runtime-readiness-route",
+    "receipt-hash-refresh",
+    "dx-style-compatibility"
+  ],
+  "upstream_public_apis": [
+    "loader",
+    "iconPlugin",
+    "llms",
+    "createFromSource",
+    "useDocsSearch",
+    "createOpenAPI",
+    "loaderPlugin",
+    "proxyUrl"
+  ],
+  "inspected_upstream_files": [
+    "packages/core/package.json",
+    "packages/core/src/source/loader.ts",
+    "packages/core/src/source/plugins/icon.ts",
+    "packages/core/src/source/llms.ts",
+    "packages/core/src/search/orama/create-server.ts",
+    "packages/core/src/search/client.ts",
+    "packages/openapi/src/server/index.tsx"
+  ],
+  "guard": {
+    "id": "documentation-system-generated-starter-materialization",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "benchmarks/fumadocs-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\fumadocs-dx-check-package-lane-panel.test.ts",
+    "fixture_path": "docs/packages/content-fumadocs-next.source-guard-runbook.json",
+    "proves": [
+      "Documentation System generated-starter materialization guard",
+      "data-dx-check-package-lane-row=\"content/fumadocs-next\"",
+      "data-dx-token-scope=\"content/fumadocs-next\"",
+      "documentation-system:receipt-hash-refresh",
+      "docs/packages/content-fumadocs-next.source-guard-runbook.json",
+      "examples/template/documentation-system-receipt-hashes.ts",
+      "node tools/launch/run-template-receipt-helper.js examples/template/documentation-system-receipt-hashes.ts --check --json",
+      "app/docs/readiness/route.ts",
+      "dx.fumadocs.runtime_readiness",
+      "data-dx-docs-readiness",
+      "without claiming live Fumadocs renderer runtime proof",
+      "content/fumadocs-next source-only Studio discovery",
+      "DX Icon page-tree source plugin without an external icon package surface"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "documentation-system-generated-starter-materialization",
+      "purpose": "The generated starter preserves the Documentation System package-lane row, scoped receipt hash helper, dx-style markers, and package-scoped dx-check panel without live Fumadocs renderer runtime proof.",
+      "evidence_field": "benchmarks/fumadocs-dx-check-package-lane-panel.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\fumadocs-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-only Documentation System package-lane row, generated starter materialization, scoped helper freshness markers, dx-style markers, and dx-check panel package scope without live Fumadocs renderer runtime proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    },
+    "helper_command": {
+      "command": "node tools/launch/run-template-receipt-helper.js examples/template/documentation-system-receipt-hashes.ts --check --json",
+      "purpose": "Check the source-only Documentation System receipt-hash helper payload without live Fumadocs rendering, hosted search, or OpenAPI proxy proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "dx_check_metrics": [
+    "documentation_system_hash_manifest_present",
+    "documentation_system_hash_mismatch",
+    "documentation_system_receipt_hash_refresh_current",
+    "documentation_system_receipt_hash_refresh_stale",
+    "documentation_system_receipt_hash_refresh_missing",
+    "documentation_system_dx_style_compatibility_present",
+    "documentation_system_dx_style_compatibility_missing"
+  ],
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-template",
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-name",
+    "data-dx-check-package-lane-upstream-package",
+    "data-dx-check-package-lane-source-mirror",
+    "data-dx-check-package-lane-dx-style-status",
+    "data-dx-check-package-lane-hash-refresh-status",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-check-package-lane-hash-refresh-current-metric",
+    "data-dx-check-package-lane-hash-refresh-stale-metric",
+    "data-dx-check-package-lane-hash-refresh-missing-metric",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json",
+    "hash_helper": "examples/template/documentation-system-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/documentation-system-receipt-hashes.ts --check --json",
+    "source_guard_runbook_fixture": "docs/packages/content-fumadocs-next.source-guard-runbook.json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "tracked_by_receipt_hash_helper": true,
+    "helper_attribution_fields": [
+      "current_files",
+      "stale_files",
+      "missing_files",
+      "stale_mirror_files",
+      "missing_mirror_files",
+      "mirror_problem_count"
+    ],
+    "hash_tracked_files": [
+      "docs/packages/content-fumadocs-next.source-guard-runbook.json",
+      "tools/launch/materialize-www-template.ts"
+    ],
+    "zed_visibility": "documentation-system:receipt-hash-refresh"
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "root_field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture": "docs/packages/content-fumadocs-next.source-guard-runbook.json",
+    "tracked_by_receipt_hash_helper": true,
+    "materializer_only_stale_guard": "benchmarks/fumadocs-receipt-hash-refresh.test.ts",
+    "route": "/",
+    "runtime_proof": false,
+    "zed_visibility": "documentation-system:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "runtime dependency installation",
+    "existing Next config merge review",
+    "docs publication and private-content policy",
+    "OpenAPI proxy allowed-origin and auth policy",
+    "source-owned /docs/readiness route is local contract proof only",
+    "hosted search indexing",
+    "AI indexing and private content exclusion",
+    "live Fumadocs renderer proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "SOURCE-READY: /docs/readiness returns local source contract readiness without executing the live renderer.",
+    "ADAPTER-BOUNDARY: live Fumadocs renderer proof, hosted search, OpenAPI proxy execution, dependency installation, content governance, and browser verification stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

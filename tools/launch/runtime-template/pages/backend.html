@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DX Backend</title>
+    <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <script src="/public/launch-runtime.js" defer></script>
+  </head>
+  <body>
+    <main
+      class="route-shell"
+      data-dx-route="/backend"
+      data-dx-source="tools/launch/runtime-template/pages/backend.html"
+      data-dx-package="api/trpc,ai/vercel-ai"
+      data-dx-hot-reload-target="route:/backend"
+    >
+      <div class="dx-icon-runtime-markers" data-dx-component="dx-icon-runtime-markers" data-dx-icon-proof="runtime-markers" aria-hidden="true">
+        <span data-dx-icon="pack:auth" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:payments" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:database" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:fumadocs" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:wasm-bindgen" data-icon-source="dx-icons"></span>
+      </div>
+
+      <header class="topbar">
+        <a class="brand" href="/"><span class="logo">d</span><span>DX WWW</span></a>
+        <nav class="nav" aria-label="WWW routes">
+          <a href="/">Home</a>
+          <a href="/automations">Automations</a>
+          <a href="/ui">UI</a>
+          <a href="/database">Database</a>
+        </nav>
+      </header>
+      <section class="route-hero card" data-dx-editable-section="backend-hero">
+        <p class="eyebrow">Backend routes</p>
+        <h1>Typed API routes without lifecycle script trust.</h1>
+        <p class="lead">
+          tRPC and AI readiness surfaces are lock-backed. Function-like
+          backend experiments stay app-owned until package status locks them.
+        </p>
+      </section>
+      <section class="proof-grid" data-dx-section="backend-workflows">
+        <article
+          class="card"
+          data-dx-component="trpc-backend-workflow"
+          data-dx-dashboard-workflow="typed-api-readiness"
+          data-dx-package="api/trpc"
+          data-dx-trpc-workflow="launch-api-readiness"
+        >
+          <h2>tRPC typed API</h2>
+          <p class="copy">
+            The backend route points to the same health query and launchEvent
+            workflow owned by the launch dashboard instead of duplicating an
+            inert route card.
+          </p>
+          <a
+            class="primary-action"
+            href="/#mission-trpc"
+            data-dx-backend-action="open-typed-api-dashboard"
+            data-dx-trpc-action="open-launch-workflow"
+          >
+            Open typed API workflow
+          </a>
+        </article>
+        <article class="card" data-dx-component="vercel-ai-backend-proof" data-dx-package="ai/vercel-ai">
+          <h2>AI route</h2>
+          <button id="ai-action" type="button" data-dx-action="ai-chat">Check AI adapter</button>
+          <p id="ai-status" class="notice" data-state="ready">AI adapter idle.</p>
+        </article>
+        <article class="card wide" data-dx-component="app-owned-backend-boundary" data-dx-package-boundary="app-owned">
+          <h2>App-owned backend boundary</h2>
+          <p class="copy">
+            DX WWW can expose function-like routes, schema ownership, and
+            realtime boundaries here without counting them as a Forge package
+            until a lock-backed package row exists.
+          </p>
+          <span class="pill">not counted as a Forge package</span>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

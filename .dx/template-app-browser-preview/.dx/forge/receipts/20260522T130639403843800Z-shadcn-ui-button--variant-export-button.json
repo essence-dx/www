@@ -1,0 +1,142 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "shadcn/ui/button",
+    "upstream_name": "DX Forge www-template button package",
+    "version": "0.1.0",
+    "generator": "dx-forge/local-registry",
+    "variant": "export-button",
+    "last_accepted_update": "2026-05-22T13:06:39.402890200+00:00",
+    "rollback_receipt": "20260522T130626134038800Z-shadcn-ui-button--variant-export-button.json",
+    "source_kind": "local",
+    "integrity_hash": "3f733482aced32edc17f907bd9289369992e2046d3a018c07e20ece7c5a1dcb5",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "root-dx-package-manifest",
+      "upstream_reference": "G:\\Dx\\www\\examples\\template\\.",
+      "verified": false,
+      "note": "Package files were published from the project's root dx manifest; external provenance verification is not claimed."
+    },
+    "advisory_review": {
+      "coverage_kind": "missing",
+      "provider": "none",
+      "live_coverage": false,
+      "finding_count": 0,
+      "note": "Root dx local registry packages do not have live advisory coverage attached yet."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the root dx package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/utils.ts",
+        "logical_path": "lib/utils.ts",
+        "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+        "bytes": 119
+      },
+      {
+        "path": "components/ui/slot.tsx",
+        "logical_path": "components/ui/slot.tsx",
+        "hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+        "bytes": 642
+      },
+      {
+        "path": "components/ui/button.tsx",
+        "logical_path": "components/ui/button.tsx",
+        "hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+        "bytes": 1976
+      }
+    ]
+  },
+  "selected_exports": [
+    "button"
+  ],
+  "files_written": [],
+  "file_map": [
+    {
+      "logical_path": "lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "bytes": 119
+    },
+    {
+      "logical_path": "components/ui/slot.tsx",
+      "materialized_path": "components/ui/slot.tsx",
+      "hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "bytes": 642
+    },
+    {
+      "logical_path": "components/ui/button.tsx",
+      "materialized_path": "components/ui/button.tsx",
+      "hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+      "bytes": 1976
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/utils.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/ui/slot.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/ui/button.tsx already matches the latest package."
+    },
+    {
+      "policy": "local-registry-selected-exports",
+      "traffic": "green",
+      "message": "Forge update selected exports `button` from the local registry package."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/utils.ts",
+      "logical_path": "lib/utils.ts",
+      "before_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "after_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "tracked_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/utils.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "components/ui/slot.tsx",
+      "logical_path": "components/ui/slot.tsx",
+      "before_hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "after_hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "tracked_hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/slot.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "logical_path": "components/ui/button.tsx",
+      "before_hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+      "after_hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+      "tracked_hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/button.tsx accepted as already matching the latest package."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-22T13:06:39.402890200+00:00",
+  "signature": null
+}

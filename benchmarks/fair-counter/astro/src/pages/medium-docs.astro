@@ -1,0 +1,30 @@
+---
+import { docSections } from "../bench-data.js";
+import BenchmarkLayout from "../components/BenchmarkLayout.astro";
+
+const sections = docSections();
+---
+
+<BenchmarkLayout title="Astro Medium Docs Benchmark">
+  <main class="bench-shell">
+    <header class="bench-hero">
+      <div>
+        <div class="eyebrow">Medium route</div>
+        <h1>Framework documentation system</h1>
+      </div>
+      <div class="metric-row">
+        <div class="metric"><span>Sections</span><b>{sections.length}</b></div>
+        <div class="metric"><span>Runtime</span><b>Astro</b></div>
+      </div>
+    </header>
+    <section class="doc-grid">
+      {sections.map((section) => (
+        <article class="doc-section">
+          <h2>Binary web principle {section.number}</h2>
+          <p>{section.copy}</p>
+          <span class="tag">{section.principle}</span>
+        </article>
+      ))}
+    </section>
+  </main>
+</BenchmarkLayout>

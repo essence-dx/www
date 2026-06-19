@@ -1,0 +1,162 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Internationalization",
+    "package_id": "i18n/next-intl",
+    "upstream_package": "next-intl",
+    "upstream_version": "4.12.0",
+    "source_mirror": "G:/WWW/inspirations/next-intl",
+    "based_on": "next-intl App Router public APIs",
+    "aliases": [
+      "internationalization",
+      "next-intl",
+      "intl",
+      "i18n/next"
+    ]
+  },
+  "selected_surfaces": [
+    "launch-package-lane-template",
+    "dashboard-locale-workflow",
+    "receipt-hash-refresh",
+    "internationalization-source-guard-runbook"
+  ],
+  "upstream_public_apis": [
+    "NextIntlClientProvider",
+    "useTranslations",
+    "useLocale",
+    "useFormatter",
+    "defineRouting",
+    "createNavigation",
+    "getRequestConfig",
+    "createMiddleware"
+  ],
+  "inspected_upstream_files": [
+    "packages/next-intl/package.json",
+    "packages/next-intl/src/shared/NextIntlClientProvider.tsx",
+    "packages/use-intl/src/react/index.tsx",
+    "packages/next-intl/src/routing/defineRouting.tsx",
+    "packages/next-intl/src/navigation/react-client/createNavigation.tsx",
+    "packages/next-intl/src/server/react-server/getRequestConfig.tsx",
+    "packages/next-intl/src/middleware/middleware.tsx"
+  ],
+  "guard": {
+    "id": "internationalization-launch-package-lane-template",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "benchmarks/next-intl-launch-package-lane-template.test.ts",
+    "command": "dx run --test .\\benchmarks\\next-intl-launch-package-lane-template.test.ts",
+    "proves": [
+      "Internationalization www-template package-lane template",
+      "data-dx-check-package-lane-template=\"i18n/next-intl\"",
+      "data-dx-style-surface=\"internationalization\"",
+      "internationalization:receipt-hash-refresh",
+      "internationalization_receipt_hash_refresh_current",
+      "docs/packages/next-intl.source-guard-runbook.json",
+      "i18n/next-intl source-only Studio discovery",
+      "without claiming live locale routing proof"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "internationalization-launch-package-lane-template",
+      "purpose": "The static dx-check panel exposes the Internationalization package-lane template with official naming, upstream provenance, dx-style markers, and helper freshness markers before a receipt is loaded.",
+      "evidence_field": "benchmarks/next-intl-launch-package-lane-template.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\next-intl-launch-package-lane-template.test.ts",
+      "purpose": "Validate the source-only Internationalization package-lane template, provenance, dx-style markers, helper freshness markers, and generated-starter materialization.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    },
+    "helper_command": {
+      "command": "node tools/launch/run-template-receipt-helper.js examples/template/internationalization-receipt-hashes.ts --check --json",
+      "purpose": "Check the source-only Internationalization receipt-hash helper payload without browser locale routing proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture_path": "docs/packages/next-intl.source-guard-runbook.json",
+    "route": "/",
+    "runtime_proof": false,
+    "zed_visibility": "internationalization:receipt-hash-refresh"
+  },
+  "dx_check_metrics": [
+    "internationalization_receipt_hash_refresh_current",
+    "internationalization_receipt_hash_refresh_stale",
+    "internationalization_receipt_hash_refresh_missing",
+    "internationalization_hash_manifest_present",
+    "internationalization_hash_mismatch",
+    "internationalization_dx_style_compatibility_present",
+    "internationalization_dx_style_compatibility_missing"
+  ],
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-template",
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-name",
+    "data-dx-check-package-lane-upstream-package",
+    "data-dx-check-package-lane-source-mirror",
+    "data-dx-check-package-lane-dx-style-status",
+    "data-dx-check-package-lane-hash-refresh-status",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-check-package-lane-hash-refresh-current-metric",
+    "data-dx-check-package-lane-hash-refresh-stale-metric",
+    "data-dx-check-package-lane-hash-refresh-missing-metric",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-intl-dashboard-workflow"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json",
+    "hash_helper": "examples/template/internationalization-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/internationalization-receipt-hashes.ts --check --json",
+    "source_guard_runbook_fixture": "docs/packages/next-intl.source-guard-runbook.json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "tracked_files": [
+      "examples/template/next-intl-dashboard-locale-contract.ts",
+      "examples/template/next-intl-dashboard-locale.tsx",
+      "core/src/ecosystem/forge_next_intl.rs",
+      "docs/packages/next-intl.source-guard-runbook.json",
+      "tools/launch/materialize-www-template.ts"
+    ],
+    "zed_visibility": "internationalization:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "translation quality",
+    "locale routing policy",
+    "middleware placement",
+    "SEO alternate-link review",
+    "runtime dependency installation",
+    "browser runtime proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: locale routing, translation quality, SEO alternates, middleware placement, dependency installation, and browser runtime proof stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

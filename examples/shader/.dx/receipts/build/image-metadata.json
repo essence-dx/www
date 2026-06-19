@@ -1,0 +1,286 @@
+{
+  "schema": "dx.www.imageMetadataReceipt",
+  "schema_revision": 1,
+  "generatedAt": "2026-06-13T12:00:35.274644500+00:00",
+  "projectRoot": "G:/Dx/www/examples/shader",
+  "receiptPath": ".dx/receipts/build/image-metadata.json",
+  "summary": {
+    "image_assets": 6,
+    "metadata_assets": 6,
+    "optimized_variants_emitted": 0,
+    "placeholders_emitted": 6,
+    "route_references": 6,
+    "style_references": 2,
+    "formats": {
+      "png": 2,
+      "svg": 4
+    },
+    "dimension_sources": {
+      "png-ihdr": 2,
+      "svg-root-attributes": 3,
+      "svg-viewbox": 1
+    },
+    "node_modules_required": false
+  },
+  "boundary": {
+    "owner": "DX-WWW source engine",
+    "reference": "turbopack-image",
+    "optimization": "metadata-plus-placeholder-artifacts-no-resize-or-encoding",
+    "placeholder_generation": "svg-artifact-placeholders-when-dimensions-known",
+    "full_pipeline_parity": false
+  },
+  "upstream_reference": {
+    "name": "Turbopack Image",
+    "crate": "turbopack-image",
+    "inspected_files": [
+      "vendor/next-rust/turbopack/crates/turbopack-image/src/process/mod.rs",
+      "vendor/next-rust/turbopack/crates/turbopack-image/src/process/svg.rs"
+    ]
+  },
+  "assets": [
+    {
+      "path": "public/dx-shader/assets/apple-touch-icon.png",
+      "output": ".dx/www/output/public/dx-shader/assets/apple-touch-icon-5b757a6d04d4be18.png",
+      "hash": "5b757a6d04d4be18",
+      "bytes": 57536,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 180,
+        "height": 180,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%20viewBox%3D%220%200%20180%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 180,
+            "height": 180,
+            "bytes": 290,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/dx-shader/assets/apple-touch-icon-653d1ed174ed39da.placeholder.svg",
+            "hash": "653d1ed174ed39da",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/dx-shader/assets/favicon.png",
+      "output": ".dx/www/output/public/dx-shader/assets/favicon-6bdf81e333572f09.png",
+      "hash": "6bdf81e333572f09",
+      "bytes": 9285,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 64,
+        "height": 64,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 64,
+            "height": 64,
+            "bytes": 286,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/dx-shader/assets/favicon-95cdf2c6b75c0830.placeholder.svg",
+            "hash": "95cdf2c6b75c0830",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/dx-shader/assets/favicon.svg",
+      "output": ".dx/www/output/public/dx-shader/assets/favicon-8dd92749742067ed.svg",
+      "hash": "8dd92749742067ed",
+      "bytes": 254,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 64,
+        "height": 64,
+        "dimension_source": "svg-viewbox",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 64,
+            "height": 64,
+            "bytes": 286,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/dx-shader/assets/favicon-95cdf2c6b75c0830.placeholder.svg",
+            "hash": "95cdf2c6b75c0830",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/favicon.svg",
+      "output": ".dx/www/output/public/favicon-cfb09e06980b21ac.svg",
+      "hash": "cfb09e06980b21ac",
+      "bytes": 874,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icon.svg",
+      "output": ".dx/www/output/public/icon-32341047d202fbff.svg",
+      "hash": "32341047d202fbff",
+      "bytes": 869,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 180,
+        "height": 180,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%20viewBox%3D%220%200%20180%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 180,
+            "height": 180,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+            "hash": "653d1ed174ed39da",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/logo.svg",
+      "output": ".dx/www/output/public/logo-2afe23f6d7f297ab.svg",
+      "hash": "2afe23f6d7f297ab",
+      "bytes": 910,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    }
+  ]
+}

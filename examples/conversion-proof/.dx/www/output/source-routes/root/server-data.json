@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "route": "/",
+  "route_source_path": "app/page.tsx",
+  "node_modules_required": false,
+  "lifecycle_scripts_executed": false,
+  "entries": [],
+  "schema": "dx.appRouter.serverData",
+  "format": 1,
+  "schema_revision": 1,
+  "status": "no-loader-bindings",
+  "entry_count": 0,
+  "execution_model": "not-required",
+  "source_owned_contract": true,
+  "external_runtime_required": false,
+  "external_runtime_executed": false,
+  "limits": [
+    "Records DX-owned safe loader data only.",
+    "Does not execute arbitrary JavaScript, React Server Components, Node APIs, package lifecycle scripts, or Next.js runtime loaders."
+  ],
+  "entry_source_paths": [],
+  "request": {
+    "mode": "static-route-contract-inputs",
+    "route_params": {},
+    "search_params": {},
+    "build_time_contract_inputs": true,
+    "runtime_request_values": false,
+    "source_owned_contract": true,
+    "external_runtime_request_values": false
+  },
+  "build_time_request_props": {
+    "mode": "static-route-contract-inputs",
+    "route_params": {},
+    "search_params": {},
+    "build_time_contract_inputs": true,
+    "runtime_request_values": false,
+    "source_owned_contract": true,
+    "external_runtime_request_values": false
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "db/drizzle-sqlite",
+    "upstream_name": "drizzle-orm",
+    "version": "0.1.0",
+    "generator": "dx-forge/drizzle",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "8a8c87cd517b1478a75888ff12e2e8558de72ebf1f885c59ecb2dca45f64a2a0",
+    "license": "Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:drizzle-orm@0.45.3",
+      "verified": false,
+      "note": "DX inspected the local Drizzle ORM source mirror, package metadata, sqlite-core README, root exports, relations, SQL helpers, and better-sqlite3 driver shape; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Drizzle SQLite launch slice, but it is not a live advisory feed and does not audit deployed database files, migration policy, or application query access control."
+    },
+    "license_review": {
+      "declared_license": "Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "db/drizzle/client.ts",
+        "logical_path": "js/db/drizzle/client.ts",
+        "hash": "c73f78b94440e0727b30ee4f8c5f742dd04b0e761357b00f90760d23140bb317",
+        "bytes": 549
+      },
+      {
+        "path": "db/drizzle/schema.ts",
+        "logical_path": "js/db/drizzle/schema.ts",
+        "hash": "8c437706b7423c123d7b6b13d00f1bd157fe378f8e7b7fd7607d4ae2b1425646",
+        "bytes": 2120
+      },
+      {
+        "path": "db/drizzle/views.ts",
+        "logical_path": "js/db/drizzle/views.ts",
+        "hash": "d729e47ab1d0cd84c6e036dd2b89db82ee2853081a4056b5ed3c816c84a81008",
+        "bytes": 1399
+      },
+      {
+        "path": "db/drizzle/queries.ts",
+        "logical_path": "js/db/drizzle/queries.ts",
+        "hash": "05f204c60a02c77b0749f7be2fb815b7b986b10bbe077e9eed1acbaf6af4477b",
+        "bytes": 1839
+      },
+      {
+        "path": "db/drizzle/migrations.ts",
+        "logical_path": "js/db/drizzle/migrations.ts",
+        "hash": "b4123296bb60d2967fc140bff9464ca45f36054eb1053acb7019f725bb1d73b6",
+        "bytes": 1133
+      },
+      {
+        "path": "db/drizzle/relational-queries.ts",
+        "logical_path": "js/db/drizzle/relational-queries.ts",
+        "hash": "96b4551c49d0cbd923fe2a25ae3a9110ac4c17e73be0ec901e4f5935fc93440f",
+        "bytes": 689
+      },
+      {
+        "path": "db/drizzle/joins.ts",
+        "logical_path": "js/db/drizzle/joins.ts",
+        "hash": "1b01845665941d180e35d457abd5520c4781bef25856be3351a770a274d01e9f",
+        "bytes": 1426
+      },
+      {
+        "path": "db/drizzle/set-operations.ts",
+        "logical_path": "js/db/drizzle/set-operations.ts",
+        "hash": "56551c2c6101172ec8cf1ac6242eeca9342f012380cbb81f7102567f5f607c73",
+        "bytes": 3744
+      },
+      {
+        "path": "db/drizzle/cte-queries.ts",
+        "logical_path": "js/db/drizzle/cte-queries.ts",
+        "hash": "d367e7b54e6c94903ced9028c62e86ebdf090aad387f9870b12fbeb8fc4b5351",
+        "bytes": 1780
+      },
+      {
+        "path": "db/drizzle/transactions.ts",
+        "logical_path": "js/db/drizzle/transactions.ts",
+        "hash": "bd52b69e4311bcbac453f4489a33c4d2c74a5ac8644bea77b7361c4fc0b1e51d",
+        "bytes": 706
+      },
+      {
+        "path": "db/drizzle/prepared-queries.ts",
+        "logical_path": "js/db/drizzle/prepared-queries.ts",
+        "hash": "c58550330913dcf22adf50c23a260acf57f8a4189a4a662be8f3a4c14b0a184f",
+        "bytes": 1328
+      },
+      {
+        "path": "db/drizzle/upserts.ts",
+        "logical_path": "js/db/drizzle/upserts.ts",
+        "hash": "0c8ab1680ceb14fd9c3d7a3a9b5a4cbab8e40d3562c188d494e19ad619ae82d9",
+        "bytes": 1403
+      },
+      {
+        "path": "db/drizzle/mutations.ts",
+        "logical_path": "js/db/drizzle/mutations.ts",
+        "hash": "56e05539045119c6c62e4953dbe044a3016ff930902edda22ccf2b24fae237be",
+        "bytes": 1034
+      },
+      {
+        "path": "db/drizzle/analytics.ts",
+        "logical_path": "js/db/drizzle/analytics.ts",
+        "hash": "9949ebe45f501576e5f21c8992632c7e3f173bb8a88e81c31701dd29cb55f25a",
+        "bytes": 1424
+      },
+      {
+        "path": "db/drizzle/replicas.ts",
+        "logical_path": "js/db/drizzle/replicas.ts",
+        "hash": "8ac04023b76c72a555127c7efdf216fa1ed1d7ca166c897849c00ebab5340a3d",
+        "bytes": 1885
+      },
+      {
+        "path": "db/drizzle/dashboard-workflow.ts",
+        "logical_path": "js/db/drizzle/dashboard-workflow.ts",
+        "hash": "8bcd1ce79d551703e22ffa351816faf7d954c41e417986823304691619c5ac17",
+        "bytes": 4500
+      },
+      {
+        "path": "db/drizzle/metadata.ts",
+        "logical_path": "js/db/drizzle/metadata.ts",
+        "hash": "5129a9ad89a538ba2837a2f9537fae782f2749d4494762e73442186e5bad6a53",
+        "bytes": 11994
+      },
+      {
+        "path": "db/drizzle/README.md",
+        "logical_path": "js/db/drizzle/README.md",
+        "hash": "f55ea6293dfec07b0871e93b5b16b2240474f82d611e2adf269fe9ef6e0dfaf7",
+        "bytes": 7778
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "db/drizzle/client.ts",
+      "logical_path": "js/db/drizzle/client.ts",
+      "hash": "c73f78b94440e0727b30ee4f8c5f742dd04b0e761357b00f90760d23140bb317",
+      "bytes": 549
+    },
+    {
+      "path": "db/drizzle/schema.ts",
+      "logical_path": "js/db/drizzle/schema.ts",
+      "hash": "8c437706b7423c123d7b6b13d00f1bd157fe378f8e7b7fd7607d4ae2b1425646",
+      "bytes": 2120
+    },
+    {
+      "path": "db/drizzle/views.ts",
+      "logical_path": "js/db/drizzle/views.ts",
+      "hash": "d729e47ab1d0cd84c6e036dd2b89db82ee2853081a4056b5ed3c816c84a81008",
+      "bytes": 1399
+    },
+    {
+      "path": "db/drizzle/queries.ts",
+      "logical_path": "js/db/drizzle/queries.ts",
+      "hash": "05f204c60a02c77b0749f7be2fb815b7b986b10bbe077e9eed1acbaf6af4477b",
+      "bytes": 1839
+    },
+    {
+      "path": "db/drizzle/migrations.ts",
+      "logical_path": "js/db/drizzle/migrations.ts",
+      "hash": "b4123296bb60d2967fc140bff9464ca45f36054eb1053acb7019f725bb1d73b6",
+      "bytes": 1133
+    },
+    {
+      "path": "db/drizzle/relational-queries.ts",
+      "logical_path": "js/db/drizzle/relational-queries.ts",
+      "hash": "96b4551c49d0cbd923fe2a25ae3a9110ac4c17e73be0ec901e4f5935fc93440f",
+      "bytes": 689
+    },
+    {
+      "path": "db/drizzle/joins.ts",
+      "logical_path": "js/db/drizzle/joins.ts",
+      "hash": "1b01845665941d180e35d457abd5520c4781bef25856be3351a770a274d01e9f",
+      "bytes": 1426
+    },
+    {
+      "path": "db/drizzle/set-operations.ts",
+      "logical_path": "js/db/drizzle/set-operations.ts",
+      "hash": "56551c2c6101172ec8cf1ac6242eeca9342f012380cbb81f7102567f5f607c73",
+      "bytes": 3744
+    },
+    {
+      "path": "db/drizzle/cte-queries.ts",
+      "logical_path": "js/db/drizzle/cte-queries.ts",
+      "hash": "d367e7b54e6c94903ced9028c62e86ebdf090aad387f9870b12fbeb8fc4b5351",
+      "bytes": 1780
+    },
+    {
+      "path": "db/drizzle/transactions.ts",
+      "logical_path": "js/db/drizzle/transactions.ts",
+      "hash": "bd52b69e4311bcbac453f4489a33c4d2c74a5ac8644bea77b7361c4fc0b1e51d",
+      "bytes": 706
+    },
+    {
+      "path": "db/drizzle/prepared-queries.ts",
+      "logical_path": "js/db/drizzle/prepared-queries.ts",
+      "hash": "c58550330913dcf22adf50c23a260acf57f8a4189a4a662be8f3a4c14b0a184f",
+      "bytes": 1328
+    },
+    {
+      "path": "db/drizzle/upserts.ts",
+      "logical_path": "js/db/drizzle/upserts.ts",
+      "hash": "0c8ab1680ceb14fd9c3d7a3a9b5a4cbab8e40d3562c188d494e19ad619ae82d9",
+      "bytes": 1403
+    },
+    {
+      "path": "db/drizzle/mutations.ts",
+      "logical_path": "js/db/drizzle/mutations.ts",
+      "hash": "56e05539045119c6c62e4953dbe044a3016ff930902edda22ccf2b24fae237be",
+      "bytes": 1034
+    },
+    {
+      "path": "db/drizzle/analytics.ts",
+      "logical_path": "js/db/drizzle/analytics.ts",
+      "hash": "9949ebe45f501576e5f21c8992632c7e3f173bb8a88e81c31701dd29cb55f25a",
+      "bytes": 1424
+    },
+    {
+      "path": "db/drizzle/replicas.ts",
+      "logical_path": "js/db/drizzle/replicas.ts",
+      "hash": "8ac04023b76c72a555127c7efdf216fa1ed1d7ca166c897849c00ebab5340a3d",
+      "bytes": 1885
+    },
+    {
+      "path": "db/drizzle/dashboard-workflow.ts",
+      "logical_path": "js/db/drizzle/dashboard-workflow.ts",
+      "hash": "8bcd1ce79d551703e22ffa351816faf7d954c41e417986823304691619c5ac17",
+      "bytes": 4500
+    },
+    {
+      "path": "db/drizzle/metadata.ts",
+      "logical_path": "js/db/drizzle/metadata.ts",
+      "hash": "5129a9ad89a538ba2837a2f9537fae782f2749d4494762e73442186e5bad6a53",
+      "bytes": 11994
+    },
+    {
+      "path": "db/drizzle/README.md",
+      "logical_path": "js/db/drizzle/README.md",
+      "hash": "f55ea6293dfec07b0871e93b5b16b2240474f82d611e2adf269fe9ef6e0dfaf7",
+      "bytes": 7778
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/db/drizzle/client.ts",
+      "materialized_path": "db/drizzle/client.ts",
+      "hash": "c73f78b94440e0727b30ee4f8c5f742dd04b0e761357b00f90760d23140bb317",
+      "bytes": 549
+    },
+    {
+      "logical_path": "js/db/drizzle/schema.ts",
+      "materialized_path": "db/drizzle/schema.ts",
+      "hash": "8c437706b7423c123d7b6b13d00f1bd157fe378f8e7b7fd7607d4ae2b1425646",
+      "bytes": 2120
+    },
+    {
+      "logical_path": "js/db/drizzle/views.ts",
+      "materialized_path": "db/drizzle/views.ts",
+      "hash": "d729e47ab1d0cd84c6e036dd2b89db82ee2853081a4056b5ed3c816c84a81008",
+      "bytes": 1399
+    },
+    {
+      "logical_path": "js/db/drizzle/queries.ts",
+      "materialized_path": "db/drizzle/queries.ts",
+      "hash": "05f204c60a02c77b0749f7be2fb815b7b986b10bbe077e9eed1acbaf6af4477b",
+      "bytes": 1839
+    },
+    {
+      "logical_path": "js/db/drizzle/migrations.ts",
+      "materialized_path": "db/drizzle/migrations.ts",
+      "hash": "b4123296bb60d2967fc140bff9464ca45f36054eb1053acb7019f725bb1d73b6",
+      "bytes": 1133
+    },
+    {
+      "logical_path": "js/db/drizzle/relational-queries.ts",
+      "materialized_path": "db/drizzle/relational-queries.ts",
+      "hash": "96b4551c49d0cbd923fe2a25ae3a9110ac4c17e73be0ec901e4f5935fc93440f",
+      "bytes": 689
+    },
+    {
+      "logical_path": "js/db/drizzle/joins.ts",
+      "materialized_path": "db/drizzle/joins.ts",
+      "hash": "1b01845665941d180e35d457abd5520c4781bef25856be3351a770a274d01e9f",
+      "bytes": 1426
+    },
+    {
+      "logical_path": "js/db/drizzle/set-operations.ts",
+      "materialized_path": "db/drizzle/set-operations.ts",
+      "hash": "56551c2c6101172ec8cf1ac6242eeca9342f012380cbb81f7102567f5f607c73",
+      "bytes": 3744
+    },
+    {
+      "logical_path": "js/db/drizzle/cte-queries.ts",
+      "materialized_path": "db/drizzle/cte-queries.ts",
+      "hash": "d367e7b54e6c94903ced9028c62e86ebdf090aad387f9870b12fbeb8fc4b5351",
+      "bytes": 1780
+    },
+    {
+      "logical_path": "js/db/drizzle/transactions.ts",
+      "materialized_path": "db/drizzle/transactions.ts",
+      "hash": "bd52b69e4311bcbac453f4489a33c4d2c74a5ac8644bea77b7361c4fc0b1e51d",
+      "bytes": 706
+    },
+    {
+      "logical_path": "js/db/drizzle/prepared-queries.ts",
+      "materialized_path": "db/drizzle/prepared-queries.ts",
+      "hash": "c58550330913dcf22adf50c23a260acf57f8a4189a4a662be8f3a4c14b0a184f",
+      "bytes": 1328
+    },
+    {
+      "logical_path": "js/db/drizzle/upserts.ts",
+      "materialized_path": "db/drizzle/upserts.ts",
+      "hash": "0c8ab1680ceb14fd9c3d7a3a9b5a4cbab8e40d3562c188d494e19ad619ae82d9",
+      "bytes": 1403
+    },
+    {
+      "logical_path": "js/db/drizzle/mutations.ts",
+      "materialized_path": "db/drizzle/mutations.ts",
+      "hash": "56e05539045119c6c62e4953dbe044a3016ff930902edda22ccf2b24fae237be",
+      "bytes": 1034
+    },
+    {
+      "logical_path": "js/db/drizzle/analytics.ts",
+      "materialized_path": "db/drizzle/analytics.ts",
+      "hash": "9949ebe45f501576e5f21c8992632c7e3f173bb8a88e81c31701dd29cb55f25a",
+      "bytes": 1424
+    },
+    {
+      "logical_path": "js/db/drizzle/replicas.ts",
+      "materialized_path": "db/drizzle/replicas.ts",
+      "hash": "8ac04023b76c72a555127c7efdf216fa1ed1d7ca166c897849c00ebab5340a3d",
+      "bytes": 1885
+    },
+    {
+      "logical_path": "js/db/drizzle/dashboard-workflow.ts",
+      "materialized_path": "db/drizzle/dashboard-workflow.ts",
+      "hash": "8bcd1ce79d551703e22ffa351816faf7d954c41e417986823304691619c5ac17",
+      "bytes": 4500
+    },
+    {
+      "logical_path": "js/db/drizzle/metadata.ts",
+      "materialized_path": "db/drizzle/metadata.ts",
+      "hash": "5129a9ad89a538ba2837a2f9537fae782f2749d4494762e73442186e5bad6a53",
+      "bytes": 11994
+    },
+    {
+      "logical_path": "js/db/drizzle/README.md",
+      "materialized_path": "db/drizzle/README.md",
+      "hash": "f55ea6293dfec07b0871e93b5b16b2240474f82d611e2adf269fe9ef6e0dfaf7",
+      "bytes": 7778
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `Apache-2.0` with formal review `no`."
+    },
+    {
+      "policy": "drizzle-sqlite-public-api-contract",
+      "traffic": "green",
+      "message": "db/drizzle-sqlite uses Drizzle ORM public SQLite APIs for schema, views, relations, typed models, SQL helpers, typed joins, set operations, CTE/subquery helpers, conflict writes, update/delete mutations, analytics aggregates, and the better-sqlite3 driver; it does not vendor or rewrite upstream internals."
+    },
+    {
+      "policy": "drizzle-sqlite-application-boundary",
+      "traffic": "green",
+      "message": "db/drizzle-sqlite materializes editable source for a local SQLite launch slice while database path and migrations stay application-owned. View SQL definitions, migration lifecycle, and compatibility with existing database views stay application-owned; join shape, null-handling, and cross-table authorization stay application-owned; set operation operand order, duplicate policy, result ordering, and pagination stay application-owned; CTE names, SQL aliases, aggregation semantics, and subquery pagination stay application-owned; conflict targets and merge policy, mutation authorization, audit trail, soft-delete policy, analytics definitions, and business KPI definitions stay application-owned; backups, permissions, and deployed data policy also stay application-owned."
+    },
+    {
+      "policy": "drizzle-sqlite-discovery-metadata",
+      "traffic": "green",
+      "message": "db/drizzle-sqlite includes metadata.ts so DX CLI, Zed, and launch templates can discover package id, upstream package, dependencies, driver, and primary helper names without scanning README text."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-23T04:35:35.516579100+00:00",
+  "signature": null
+}

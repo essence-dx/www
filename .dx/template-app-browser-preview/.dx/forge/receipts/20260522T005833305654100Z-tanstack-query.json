@@ -1,0 +1,762 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "tanstack/query",
+    "upstream_name": "@tanstack/react-query",
+    "version": "5.100.10-dx.0",
+    "generator": "dx-forge/tanstack-query",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "2bcb1f70be3970147ee72f96383f3e465f94679522dbd8734dd1f40188d5cf3a",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:@tanstack/react-query@5.100.10",
+      "verified": false,
+      "note": "DX inspected the local TanStack Query source mirror for QueryClient, QueryClientProvider, useQuery, queryOptions, prefetchQuery, dehydrate, HydrationBoundary, Query, Mutation, QueryState, MutationState, status types, and Updater before curating this launch query slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this TanStack Query launch slice, but it is not a live advisory feed and does not audit application query functions, endpoints, or cached payload contents."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/query/client.ts",
+        "logical_path": "js/query/client.ts",
+        "hash": "cb01b72bb7e89500568726a4692abdd7edc67ae9cf85c9eeecf22c6103afbbf1",
+        "bytes": 1567
+      },
+      {
+        "path": "lib/query/client-lifecycle.ts",
+        "logical_path": "js/query/client-lifecycle.ts",
+        "hash": "bce0a9fedbb934a69c42557550509aec82c65c955db68145e4e6bef0c4bfd872",
+        "bytes": 1762
+      },
+      {
+        "path": "lib/query/defaults.ts",
+        "logical_path": "js/query/defaults.ts",
+        "hash": "6d036f7a1f92945f9cea2708f0a0cb1a3e95d5076073ee5dc76f9636b9cf26ae",
+        "bytes": 3214
+      },
+      {
+        "path": "lib/query/dashboard-workflow.ts",
+        "logical_path": "js/query/dashboard-workflow.ts",
+        "hash": "402f8fbe92fd298710ae5d5547e0fe94f694c79828709f6759bb930388dbf8f5",
+        "bytes": 5925
+      },
+      {
+        "path": "lib/query/provider.tsx",
+        "logical_path": "js/query/provider.tsx",
+        "hash": "d3482c5232ee34aa39e47a6b9bc998196a9266fa5eac257d875508d1a3e1a906",
+        "bytes": 845
+      },
+      {
+        "path": "lib/query/react-context.tsx",
+        "logical_path": "js/query/react-context.tsx",
+        "hash": "c348a00f51ca69236f535937ee1e07ab2b341db14db0857dd623246f5be52cf3",
+        "bytes": 3953
+      },
+      {
+        "path": "lib/query/restoring.tsx",
+        "logical_path": "js/query/restoring.tsx",
+        "hash": "6f8774185ff981216771670eb4a20ed589cce29a2d9a785382342d8551a05fdc",
+        "bytes": 1407
+      },
+      {
+        "path": "lib/query/persist.tsx",
+        "logical_path": "js/query/persist.tsx",
+        "hash": "b6a324e69f1d0258b5a733b6e5600c5427904f6e52b4bf9e9fbc9e7ed4e19ba6",
+        "bytes": 5243
+      },
+      {
+        "path": "lib/query/sync-persist.ts",
+        "logical_path": "js/query/sync-persist.ts",
+        "hash": "c50a49d286263e355e0aaeefb0f81fb870ea647528f908e1d3b0150ca8dab9f2",
+        "bytes": 3048
+      },
+      {
+        "path": "lib/query/devtools.tsx",
+        "logical_path": "js/query/devtools.tsx",
+        "hash": "e969904ca6902244601358314a6564ec11abc54bd7c3fbc52706b63d85139b71",
+        "bytes": 1971
+      },
+      {
+        "path": "lib/query/broadcast.ts",
+        "logical_path": "js/query/broadcast.ts",
+        "hash": "b386f97e2effbfc3feb71ed22c9625ef43c99cc2e5c0e53b29a694836e5564e7",
+        "bytes": 2334
+      },
+      {
+        "path": "lib/query/next-streaming.tsx",
+        "logical_path": "js/query/next-streaming.tsx",
+        "hash": "52eb5dd241438b0456f04248177d6360ce2e4035eef00aed7abe9c3038f80450",
+        "bytes": 2195
+      },
+      {
+        "path": "lib/query/fetch.ts",
+        "logical_path": "js/query/fetch.ts",
+        "hash": "1ebf5f684238cad46ba2db3c165131c8302b87080d73183f2eaa12136865200f",
+        "bytes": 3949
+      },
+      {
+        "path": "lib/query/prefetch.tsx",
+        "logical_path": "js/query/prefetch.tsx",
+        "hash": "363b239f6e23a33d16940cb531db72fc6aa41ee4cda4802aa1766f5fb91d41c9",
+        "bytes": 1264
+      },
+      {
+        "path": "lib/query/hydration.ts",
+        "logical_path": "js/query/hydration.ts",
+        "hash": "53ce63bb15813202c18f7450dca97e8c4cbcbbc0edddd0cad2d1b3ae79bab0a5",
+        "bytes": 2492
+      },
+      {
+        "path": "lib/query/mutation.ts",
+        "logical_path": "js/query/mutation.ts",
+        "hash": "0154dc722fd5efc24bcbe5ed8dc18963a4dbf5b4a4ad50386cdf649ded8e77ee",
+        "bytes": 1417
+      },
+      {
+        "path": "lib/query/mutation-result.ts",
+        "logical_path": "js/query/mutation-result.ts",
+        "hash": "db68baa619c10ffd251c3eb90138480331d7cb2127d9d83f5ed6c7a3675a5e56",
+        "bytes": 3855
+      },
+      {
+        "path": "lib/query/query-result.ts",
+        "logical_path": "js/query/query-result.ts",
+        "hash": "be3ca1e6d2e06d2b561a9dfc8ba7f1984952db3758343e74a04ded408393ef49",
+        "bytes": 4312
+      },
+      {
+        "path": "lib/query/disabled.ts",
+        "logical_path": "js/query/disabled.ts",
+        "hash": "44cec595dc6bc486b0153a96f7db7c95d479630bd7c30f185d9332ac497c0227",
+        "bytes": 1341
+      },
+      {
+        "path": "lib/query/placeholder.ts",
+        "logical_path": "js/query/placeholder.ts",
+        "hash": "2f4cbcc8ad698dde46e1bfef9d32935494ff098adc3bf2f71703ba98564d97a8",
+        "bytes": 1482
+      },
+      {
+        "path": "lib/query/keys.ts",
+        "logical_path": "js/query/keys.ts",
+        "hash": "e774cf09a276efcf344eb0496b4748335f9d3d7bf91ab927717b43c0a0c82d0e",
+        "bytes": 709
+      },
+      {
+        "path": "lib/query/state.ts",
+        "logical_path": "js/query/state.ts",
+        "hash": "6ddf94b52601b0735c69a6c7813378d42f6b9dce744114b02ee31472ac36be71",
+        "bytes": 4046
+      },
+      {
+        "path": "lib/query/infinite.ts",
+        "logical_path": "js/query/infinite.ts",
+        "hash": "3455d3b3b63770619660d08ac7b64c5b2b0147ecf93fbd8e4c26e7a0f12b8016",
+        "bytes": 2089
+      },
+      {
+        "path": "lib/query/activity.tsx",
+        "logical_path": "js/query/activity.tsx",
+        "hash": "69bd08d04249be380c3b22e80a2c9885e8ad2a656b89ab01d2957ca01924b8be",
+        "bytes": 2509
+      },
+      {
+        "path": "lib/query/observers.ts",
+        "logical_path": "js/query/observers.ts",
+        "hash": "347c0f918a282faf6a9f5697aa8f8712feb560df3edee7373d0ad4bd7d884a33",
+        "bytes": 3786
+      },
+      {
+        "path": "lib/query/cache.ts",
+        "logical_path": "js/query/cache.ts",
+        "hash": "2709be7dff3d52507ac2a3fdb020b75d6957f6fd7c05f89bbd903a4febbbae50",
+        "bytes": 3729
+      },
+      {
+        "path": "lib/query/cache-events.ts",
+        "logical_path": "js/query/cache-events.ts",
+        "hash": "54440880dbd6b7c530ad2d861376fd47a3234c4f7235724a6ff426fbc1141b62",
+        "bytes": 3473
+      },
+      {
+        "path": "lib/query/matches.ts",
+        "logical_path": "js/query/matches.ts",
+        "hash": "f329371091f94cbc496df7ac5d58313ec6f9f7ed3e5a7fe37d57cd9bcdec8e00",
+        "bytes": 1944
+      },
+      {
+        "path": "lib/query/queries.tsx",
+        "logical_path": "js/query/queries.tsx",
+        "hash": "595fd93d92c6a0bb9e06f4d85286aea6f60cee554008709512030d16644811a4",
+        "bytes": 3471
+      },
+      {
+        "path": "lib/query/lifecycle.tsx",
+        "logical_path": "js/query/lifecycle.tsx",
+        "hash": "c9b9b17f0cdcc9de882cfd788d2ca81d29c8f7a1b236436fc58af0d6ea0eef00",
+        "bytes": 2833
+      },
+      {
+        "path": "lib/query/runtime.ts",
+        "logical_path": "js/query/runtime.ts",
+        "hash": "78537c9c7d53c0b4e9a720f8603b7f401aa713c4aab0f3300e72fbfad6fd7068",
+        "bytes": 1970
+      },
+      {
+        "path": "lib/query/stream.ts",
+        "logical_path": "js/query/stream.ts",
+        "hash": "ed2797b936a4403d47f928b0f655cf26ba20e35ed19dd9793413c242ee60ff14",
+        "bytes": 2204
+      },
+      {
+        "path": "lib/query/suspense.tsx",
+        "logical_path": "js/query/suspense.tsx",
+        "hash": "878b8af3d36d18ff22a566dac2b00afedbdecc7a54ccc63bd51680559da4cb2d",
+        "bytes": 2476
+      },
+      {
+        "path": "lib/query/prefetch-hooks.tsx",
+        "logical_path": "js/query/prefetch-hooks.tsx",
+        "hash": "64fc5672719e5c07795a062564c80b0b8c53bf2ab2502074f286ea3f4f72b004",
+        "bytes": 1910
+      },
+      {
+        "path": "lib/query/errors.ts",
+        "logical_path": "js/query/errors.ts",
+        "hash": "58eb592300489d95adfdce8d55b365f66b05f770d20a8a29b25437b44bda3a7d",
+        "bytes": 1974
+      },
+      {
+        "path": "lib/query/error-boundary.tsx",
+        "logical_path": "js/query/error-boundary.tsx",
+        "hash": "34ccf2413eb0f710b4edf03b386e50f76a063756c193566ed31e0ae073dd6525",
+        "bytes": 1954
+      },
+      {
+        "path": "lib/query/metadata.ts",
+        "logical_path": "js/query/metadata.ts",
+        "hash": "4c57d9d929a2dbc3a89ec46eba3770a3904351c889323ca3768478247d75876a",
+        "bytes": 10665
+      },
+      {
+        "path": "lib/query/README.md",
+        "logical_path": "js/query/README.md",
+        "hash": "c118b1a04230bf0141a998d4ec92895628a047e62db60f1da26e7148a5a55a9a",
+        "bytes": 10121
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/query/client.ts",
+      "logical_path": "js/query/client.ts",
+      "hash": "cb01b72bb7e89500568726a4692abdd7edc67ae9cf85c9eeecf22c6103afbbf1",
+      "bytes": 1567
+    },
+    {
+      "path": "lib/query/client-lifecycle.ts",
+      "logical_path": "js/query/client-lifecycle.ts",
+      "hash": "bce0a9fedbb934a69c42557550509aec82c65c955db68145e4e6bef0c4bfd872",
+      "bytes": 1762
+    },
+    {
+      "path": "lib/query/defaults.ts",
+      "logical_path": "js/query/defaults.ts",
+      "hash": "6d036f7a1f92945f9cea2708f0a0cb1a3e95d5076073ee5dc76f9636b9cf26ae",
+      "bytes": 3214
+    },
+    {
+      "path": "lib/query/dashboard-workflow.ts",
+      "logical_path": "js/query/dashboard-workflow.ts",
+      "hash": "402f8fbe92fd298710ae5d5547e0fe94f694c79828709f6759bb930388dbf8f5",
+      "bytes": 5925
+    },
+    {
+      "path": "lib/query/provider.tsx",
+      "logical_path": "js/query/provider.tsx",
+      "hash": "d3482c5232ee34aa39e47a6b9bc998196a9266fa5eac257d875508d1a3e1a906",
+      "bytes": 845
+    },
+    {
+      "path": "lib/query/react-context.tsx",
+      "logical_path": "js/query/react-context.tsx",
+      "hash": "c348a00f51ca69236f535937ee1e07ab2b341db14db0857dd623246f5be52cf3",
+      "bytes": 3953
+    },
+    {
+      "path": "lib/query/restoring.tsx",
+      "logical_path": "js/query/restoring.tsx",
+      "hash": "6f8774185ff981216771670eb4a20ed589cce29a2d9a785382342d8551a05fdc",
+      "bytes": 1407
+    },
+    {
+      "path": "lib/query/persist.tsx",
+      "logical_path": "js/query/persist.tsx",
+      "hash": "b6a324e69f1d0258b5a733b6e5600c5427904f6e52b4bf9e9fbc9e7ed4e19ba6",
+      "bytes": 5243
+    },
+    {
+      "path": "lib/query/sync-persist.ts",
+      "logical_path": "js/query/sync-persist.ts",
+      "hash": "c50a49d286263e355e0aaeefb0f81fb870ea647528f908e1d3b0150ca8dab9f2",
+      "bytes": 3048
+    },
+    {
+      "path": "lib/query/devtools.tsx",
+      "logical_path": "js/query/devtools.tsx",
+      "hash": "e969904ca6902244601358314a6564ec11abc54bd7c3fbc52706b63d85139b71",
+      "bytes": 1971
+    },
+    {
+      "path": "lib/query/broadcast.ts",
+      "logical_path": "js/query/broadcast.ts",
+      "hash": "b386f97e2effbfc3feb71ed22c9625ef43c99cc2e5c0e53b29a694836e5564e7",
+      "bytes": 2334
+    },
+    {
+      "path": "lib/query/next-streaming.tsx",
+      "logical_path": "js/query/next-streaming.tsx",
+      "hash": "52eb5dd241438b0456f04248177d6360ce2e4035eef00aed7abe9c3038f80450",
+      "bytes": 2195
+    },
+    {
+      "path": "lib/query/fetch.ts",
+      "logical_path": "js/query/fetch.ts",
+      "hash": "1ebf5f684238cad46ba2db3c165131c8302b87080d73183f2eaa12136865200f",
+      "bytes": 3949
+    },
+    {
+      "path": "lib/query/prefetch.tsx",
+      "logical_path": "js/query/prefetch.tsx",
+      "hash": "363b239f6e23a33d16940cb531db72fc6aa41ee4cda4802aa1766f5fb91d41c9",
+      "bytes": 1264
+    },
+    {
+      "path": "lib/query/hydration.ts",
+      "logical_path": "js/query/hydration.ts",
+      "hash": "53ce63bb15813202c18f7450dca97e8c4cbcbbc0edddd0cad2d1b3ae79bab0a5",
+      "bytes": 2492
+    },
+    {
+      "path": "lib/query/mutation.ts",
+      "logical_path": "js/query/mutation.ts",
+      "hash": "0154dc722fd5efc24bcbe5ed8dc18963a4dbf5b4a4ad50386cdf649ded8e77ee",
+      "bytes": 1417
+    },
+    {
+      "path": "lib/query/mutation-result.ts",
+      "logical_path": "js/query/mutation-result.ts",
+      "hash": "db68baa619c10ffd251c3eb90138480331d7cb2127d9d83f5ed6c7a3675a5e56",
+      "bytes": 3855
+    },
+    {
+      "path": "lib/query/query-result.ts",
+      "logical_path": "js/query/query-result.ts",
+      "hash": "be3ca1e6d2e06d2b561a9dfc8ba7f1984952db3758343e74a04ded408393ef49",
+      "bytes": 4312
+    },
+    {
+      "path": "lib/query/disabled.ts",
+      "logical_path": "js/query/disabled.ts",
+      "hash": "44cec595dc6bc486b0153a96f7db7c95d479630bd7c30f185d9332ac497c0227",
+      "bytes": 1341
+    },
+    {
+      "path": "lib/query/placeholder.ts",
+      "logical_path": "js/query/placeholder.ts",
+      "hash": "2f4cbcc8ad698dde46e1bfef9d32935494ff098adc3bf2f71703ba98564d97a8",
+      "bytes": 1482
+    },
+    {
+      "path": "lib/query/keys.ts",
+      "logical_path": "js/query/keys.ts",
+      "hash": "e774cf09a276efcf344eb0496b4748335f9d3d7bf91ab927717b43c0a0c82d0e",
+      "bytes": 709
+    },
+    {
+      "path": "lib/query/state.ts",
+      "logical_path": "js/query/state.ts",
+      "hash": "6ddf94b52601b0735c69a6c7813378d42f6b9dce744114b02ee31472ac36be71",
+      "bytes": 4046
+    },
+    {
+      "path": "lib/query/infinite.ts",
+      "logical_path": "js/query/infinite.ts",
+      "hash": "3455d3b3b63770619660d08ac7b64c5b2b0147ecf93fbd8e4c26e7a0f12b8016",
+      "bytes": 2089
+    },
+    {
+      "path": "lib/query/activity.tsx",
+      "logical_path": "js/query/activity.tsx",
+      "hash": "69bd08d04249be380c3b22e80a2c9885e8ad2a656b89ab01d2957ca01924b8be",
+      "bytes": 2509
+    },
+    {
+      "path": "lib/query/observers.ts",
+      "logical_path": "js/query/observers.ts",
+      "hash": "347c0f918a282faf6a9f5697aa8f8712feb560df3edee7373d0ad4bd7d884a33",
+      "bytes": 3786
+    },
+    {
+      "path": "lib/query/cache.ts",
+      "logical_path": "js/query/cache.ts",
+      "hash": "2709be7dff3d52507ac2a3fdb020b75d6957f6fd7c05f89bbd903a4febbbae50",
+      "bytes": 3729
+    },
+    {
+      "path": "lib/query/cache-events.ts",
+      "logical_path": "js/query/cache-events.ts",
+      "hash": "54440880dbd6b7c530ad2d861376fd47a3234c4f7235724a6ff426fbc1141b62",
+      "bytes": 3473
+    },
+    {
+      "path": "lib/query/matches.ts",
+      "logical_path": "js/query/matches.ts",
+      "hash": "f329371091f94cbc496df7ac5d58313ec6f9f7ed3e5a7fe37d57cd9bcdec8e00",
+      "bytes": 1944
+    },
+    {
+      "path": "lib/query/queries.tsx",
+      "logical_path": "js/query/queries.tsx",
+      "hash": "595fd93d92c6a0bb9e06f4d85286aea6f60cee554008709512030d16644811a4",
+      "bytes": 3471
+    },
+    {
+      "path": "lib/query/lifecycle.tsx",
+      "logical_path": "js/query/lifecycle.tsx",
+      "hash": "c9b9b17f0cdcc9de882cfd788d2ca81d29c8f7a1b236436fc58af0d6ea0eef00",
+      "bytes": 2833
+    },
+    {
+      "path": "lib/query/runtime.ts",
+      "logical_path": "js/query/runtime.ts",
+      "hash": "78537c9c7d53c0b4e9a720f8603b7f401aa713c4aab0f3300e72fbfad6fd7068",
+      "bytes": 1970
+    },
+    {
+      "path": "lib/query/stream.ts",
+      "logical_path": "js/query/stream.ts",
+      "hash": "ed2797b936a4403d47f928b0f655cf26ba20e35ed19dd9793413c242ee60ff14",
+      "bytes": 2204
+    },
+    {
+      "path": "lib/query/suspense.tsx",
+      "logical_path": "js/query/suspense.tsx",
+      "hash": "878b8af3d36d18ff22a566dac2b00afedbdecc7a54ccc63bd51680559da4cb2d",
+      "bytes": 2476
+    },
+    {
+      "path": "lib/query/prefetch-hooks.tsx",
+      "logical_path": "js/query/prefetch-hooks.tsx",
+      "hash": "64fc5672719e5c07795a062564c80b0b8c53bf2ab2502074f286ea3f4f72b004",
+      "bytes": 1910
+    },
+    {
+      "path": "lib/query/errors.ts",
+      "logical_path": "js/query/errors.ts",
+      "hash": "58eb592300489d95adfdce8d55b365f66b05f770d20a8a29b25437b44bda3a7d",
+      "bytes": 1974
+    },
+    {
+      "path": "lib/query/error-boundary.tsx",
+      "logical_path": "js/query/error-boundary.tsx",
+      "hash": "34ccf2413eb0f710b4edf03b386e50f76a063756c193566ed31e0ae073dd6525",
+      "bytes": 1954
+    },
+    {
+      "path": "lib/query/metadata.ts",
+      "logical_path": "js/query/metadata.ts",
+      "hash": "4c57d9d929a2dbc3a89ec46eba3770a3904351c889323ca3768478247d75876a",
+      "bytes": 10665
+    },
+    {
+      "path": "lib/query/README.md",
+      "logical_path": "js/query/README.md",
+      "hash": "c118b1a04230bf0141a998d4ec92895628a047e62db60f1da26e7148a5a55a9a",
+      "bytes": 10121
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/query/client.ts",
+      "materialized_path": "lib/query/client.ts",
+      "hash": "cb01b72bb7e89500568726a4692abdd7edc67ae9cf85c9eeecf22c6103afbbf1",
+      "bytes": 1567
+    },
+    {
+      "logical_path": "js/query/client-lifecycle.ts",
+      "materialized_path": "lib/query/client-lifecycle.ts",
+      "hash": "bce0a9fedbb934a69c42557550509aec82c65c955db68145e4e6bef0c4bfd872",
+      "bytes": 1762
+    },
+    {
+      "logical_path": "js/query/defaults.ts",
+      "materialized_path": "lib/query/defaults.ts",
+      "hash": "6d036f7a1f92945f9cea2708f0a0cb1a3e95d5076073ee5dc76f9636b9cf26ae",
+      "bytes": 3214
+    },
+    {
+      "logical_path": "js/query/dashboard-workflow.ts",
+      "materialized_path": "lib/query/dashboard-workflow.ts",
+      "hash": "402f8fbe92fd298710ae5d5547e0fe94f694c79828709f6759bb930388dbf8f5",
+      "bytes": 5925
+    },
+    {
+      "logical_path": "js/query/provider.tsx",
+      "materialized_path": "lib/query/provider.tsx",
+      "hash": "d3482c5232ee34aa39e47a6b9bc998196a9266fa5eac257d875508d1a3e1a906",
+      "bytes": 845
+    },
+    {
+      "logical_path": "js/query/react-context.tsx",
+      "materialized_path": "lib/query/react-context.tsx",
+      "hash": "c348a00f51ca69236f535937ee1e07ab2b341db14db0857dd623246f5be52cf3",
+      "bytes": 3953
+    },
+    {
+      "logical_path": "js/query/restoring.tsx",
+      "materialized_path": "lib/query/restoring.tsx",
+      "hash": "6f8774185ff981216771670eb4a20ed589cce29a2d9a785382342d8551a05fdc",
+      "bytes": 1407
+    },
+    {
+      "logical_path": "js/query/persist.tsx",
+      "materialized_path": "lib/query/persist.tsx",
+      "hash": "b6a324e69f1d0258b5a733b6e5600c5427904f6e52b4bf9e9fbc9e7ed4e19ba6",
+      "bytes": 5243
+    },
+    {
+      "logical_path": "js/query/sync-persist.ts",
+      "materialized_path": "lib/query/sync-persist.ts",
+      "hash": "c50a49d286263e355e0aaeefb0f81fb870ea647528f908e1d3b0150ca8dab9f2",
+      "bytes": 3048
+    },
+    {
+      "logical_path": "js/query/devtools.tsx",
+      "materialized_path": "lib/query/devtools.tsx",
+      "hash": "e969904ca6902244601358314a6564ec11abc54bd7c3fbc52706b63d85139b71",
+      "bytes": 1971
+    },
+    {
+      "logical_path": "js/query/broadcast.ts",
+      "materialized_path": "lib/query/broadcast.ts",
+      "hash": "b386f97e2effbfc3feb71ed22c9625ef43c99cc2e5c0e53b29a694836e5564e7",
+      "bytes": 2334
+    },
+    {
+      "logical_path": "js/query/next-streaming.tsx",
+      "materialized_path": "lib/query/next-streaming.tsx",
+      "hash": "52eb5dd241438b0456f04248177d6360ce2e4035eef00aed7abe9c3038f80450",
+      "bytes": 2195
+    },
+    {
+      "logical_path": "js/query/fetch.ts",
+      "materialized_path": "lib/query/fetch.ts",
+      "hash": "1ebf5f684238cad46ba2db3c165131c8302b87080d73183f2eaa12136865200f",
+      "bytes": 3949
+    },
+    {
+      "logical_path": "js/query/prefetch.tsx",
+      "materialized_path": "lib/query/prefetch.tsx",
+      "hash": "363b239f6e23a33d16940cb531db72fc6aa41ee4cda4802aa1766f5fb91d41c9",
+      "bytes": 1264
+    },
+    {
+      "logical_path": "js/query/hydration.ts",
+      "materialized_path": "lib/query/hydration.ts",
+      "hash": "53ce63bb15813202c18f7450dca97e8c4cbcbbc0edddd0cad2d1b3ae79bab0a5",
+      "bytes": 2492
+    },
+    {
+      "logical_path": "js/query/mutation.ts",
+      "materialized_path": "lib/query/mutation.ts",
+      "hash": "0154dc722fd5efc24bcbe5ed8dc18963a4dbf5b4a4ad50386cdf649ded8e77ee",
+      "bytes": 1417
+    },
+    {
+      "logical_path": "js/query/mutation-result.ts",
+      "materialized_path": "lib/query/mutation-result.ts",
+      "hash": "db68baa619c10ffd251c3eb90138480331d7cb2127d9d83f5ed6c7a3675a5e56",
+      "bytes": 3855
+    },
+    {
+      "logical_path": "js/query/query-result.ts",
+      "materialized_path": "lib/query/query-result.ts",
+      "hash": "be3ca1e6d2e06d2b561a9dfc8ba7f1984952db3758343e74a04ded408393ef49",
+      "bytes": 4312
+    },
+    {
+      "logical_path": "js/query/disabled.ts",
+      "materialized_path": "lib/query/disabled.ts",
+      "hash": "44cec595dc6bc486b0153a96f7db7c95d479630bd7c30f185d9332ac497c0227",
+      "bytes": 1341
+    },
+    {
+      "logical_path": "js/query/placeholder.ts",
+      "materialized_path": "lib/query/placeholder.ts",
+      "hash": "2f4cbcc8ad698dde46e1bfef9d32935494ff098adc3bf2f71703ba98564d97a8",
+      "bytes": 1482
+    },
+    {
+      "logical_path": "js/query/keys.ts",
+      "materialized_path": "lib/query/keys.ts",
+      "hash": "e774cf09a276efcf344eb0496b4748335f9d3d7bf91ab927717b43c0a0c82d0e",
+      "bytes": 709
+    },
+    {
+      "logical_path": "js/query/state.ts",
+      "materialized_path": "lib/query/state.ts",
+      "hash": "6ddf94b52601b0735c69a6c7813378d42f6b9dce744114b02ee31472ac36be71",
+      "bytes": 4046
+    },
+    {
+      "logical_path": "js/query/infinite.ts",
+      "materialized_path": "lib/query/infinite.ts",
+      "hash": "3455d3b3b63770619660d08ac7b64c5b2b0147ecf93fbd8e4c26e7a0f12b8016",
+      "bytes": 2089
+    },
+    {
+      "logical_path": "js/query/activity.tsx",
+      "materialized_path": "lib/query/activity.tsx",
+      "hash": "69bd08d04249be380c3b22e80a2c9885e8ad2a656b89ab01d2957ca01924b8be",
+      "bytes": 2509
+    },
+    {
+      "logical_path": "js/query/observers.ts",
+      "materialized_path": "lib/query/observers.ts",
+      "hash": "347c0f918a282faf6a9f5697aa8f8712feb560df3edee7373d0ad4bd7d884a33",
+      "bytes": 3786
+    },
+    {
+      "logical_path": "js/query/cache.ts",
+      "materialized_path": "lib/query/cache.ts",
+      "hash": "2709be7dff3d52507ac2a3fdb020b75d6957f6fd7c05f89bbd903a4febbbae50",
+      "bytes": 3729
+    },
+    {
+      "logical_path": "js/query/cache-events.ts",
+      "materialized_path": "lib/query/cache-events.ts",
+      "hash": "54440880dbd6b7c530ad2d861376fd47a3234c4f7235724a6ff426fbc1141b62",
+      "bytes": 3473
+    },
+    {
+      "logical_path": "js/query/matches.ts",
+      "materialized_path": "lib/query/matches.ts",
+      "hash": "f329371091f94cbc496df7ac5d58313ec6f9f7ed3e5a7fe37d57cd9bcdec8e00",
+      "bytes": 1944
+    },
+    {
+      "logical_path": "js/query/queries.tsx",
+      "materialized_path": "lib/query/queries.tsx",
+      "hash": "595fd93d92c6a0bb9e06f4d85286aea6f60cee554008709512030d16644811a4",
+      "bytes": 3471
+    },
+    {
+      "logical_path": "js/query/lifecycle.tsx",
+      "materialized_path": "lib/query/lifecycle.tsx",
+      "hash": "c9b9b17f0cdcc9de882cfd788d2ca81d29c8f7a1b236436fc58af0d6ea0eef00",
+      "bytes": 2833
+    },
+    {
+      "logical_path": "js/query/runtime.ts",
+      "materialized_path": "lib/query/runtime.ts",
+      "hash": "78537c9c7d53c0b4e9a720f8603b7f401aa713c4aab0f3300e72fbfad6fd7068",
+      "bytes": 1970
+    },
+    {
+      "logical_path": "js/query/stream.ts",
+      "materialized_path": "lib/query/stream.ts",
+      "hash": "ed2797b936a4403d47f928b0f655cf26ba20e35ed19dd9793413c242ee60ff14",
+      "bytes": 2204
+    },
+    {
+      "logical_path": "js/query/suspense.tsx",
+      "materialized_path": "lib/query/suspense.tsx",
+      "hash": "878b8af3d36d18ff22a566dac2b00afedbdecc7a54ccc63bd51680559da4cb2d",
+      "bytes": 2476
+    },
+    {
+      "logical_path": "js/query/prefetch-hooks.tsx",
+      "materialized_path": "lib/query/prefetch-hooks.tsx",
+      "hash": "64fc5672719e5c07795a062564c80b0b8c53bf2ab2502074f286ea3f4f72b004",
+      "bytes": 1910
+    },
+    {
+      "logical_path": "js/query/errors.ts",
+      "materialized_path": "lib/query/errors.ts",
+      "hash": "58eb592300489d95adfdce8d55b365f66b05f770d20a8a29b25437b44bda3a7d",
+      "bytes": 1974
+    },
+    {
+      "logical_path": "js/query/error-boundary.tsx",
+      "materialized_path": "lib/query/error-boundary.tsx",
+      "hash": "34ccf2413eb0f710b4edf03b386e50f76a063756c193566ed31e0ae073dd6525",
+      "bytes": 1954
+    },
+    {
+      "logical_path": "js/query/metadata.ts",
+      "materialized_path": "lib/query/metadata.ts",
+      "hash": "4c57d9d929a2dbc3a89ec46eba3770a3904351c889323ca3768478247d75876a",
+      "bytes": 10665
+    },
+    {
+      "logical_path": "js/query/README.md",
+      "materialized_path": "lib/query/README.md",
+      "hash": "c118b1a04230bf0141a998d4ec92895628a047e62db60f1da26e7148a5a55a9a",
+      "bytes": 10121
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `MIT` with formal review `no`."
+    },
+    {
+      "policy": "tanstack-query-public-api-boundary",
+      "traffic": "green",
+      "message": "tanstack/query materializes adapters around @tanstack/react-query public APIs instead of copying private observers, caches, or package internals."
+    },
+    {
+      "policy": "tanstack-query-hydration-contract",
+      "traffic": "green",
+      "message": "tanstack/query includes a server prefetch helper around prefetchQuery(), dehydrate(), and HydrationBoundary so launch templates can wire real cached data paths."
+    },
+    {
+      "policy": "tanstack-query-discovery-metadata",
+      "traffic": "green",
+      "message": "tanstack/query includes metadata.ts so DX CLI, Zed, and launch templates can discover package id, upstream package, required dependencies, and supported helper names without scanning source text."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-22T00:58:33.304900200+00:00",
+  "signature": null
+}

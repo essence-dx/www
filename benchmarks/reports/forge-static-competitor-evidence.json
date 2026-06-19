@@ -1,0 +1,823 @@
+{
+  "generated_at": "2026-05-18T08:46:13.165Z",
+  "source_route_comparison": "benchmarks/reports/forge-public-route-comparison.json",
+  "scope": {
+    "community_excluded": true,
+    "not_full_framework_benchmark": true,
+    "competitor_builds_not_run": true,
+    "no_package_install": true,
+    "no_node_modules_created": true,
+    "content_parity": "Competitor rows are summary-level static floors for the same public route roles, not byte-identical recreations of the full DX-WWW evidence pages.",
+    "safe_public_claim": "This fixture checks whether DX-WWW public Forge routes stay reasonably small against generous static HTML floors. It does not prove broad framework replacement."
+  },
+  "required_routes": [
+    "/forge",
+    "/forge/scorecard",
+    "/forge/ci",
+    "/forge/evidence",
+    "/forge/releases",
+    "/forge/changelog",
+    "/forge/adoption"
+  ],
+  "frameworks": [
+    {
+      "framework": "DX-WWW",
+      "baseline_id": "measured-forge-public-routes",
+      "baseline_kind": "measured-static-routes",
+      "route_count": 7,
+      "total_decoded_bytes": 37196,
+      "total_brotli_bytes": 7284,
+      "routes": [
+        {
+          "route": "/forge",
+          "role": "Launch evidence",
+          "fixture_mode": "forge-site",
+          "delivery": "static",
+          "decoded_bytes": 5143,
+          "brotli_bytes": 1240,
+          "http_route_median_ms": 1.914,
+          "chrome_load_event_ms": 10.2,
+          "budget_passed": true
+        },
+        {
+          "route": "/forge/scorecard",
+          "role": "Package scorecard",
+          "fixture_mode": "forge-scorecard",
+          "delivery": "static",
+          "decoded_bytes": 4189,
+          "brotli_bytes": 1040,
+          "http_route_median_ms": 2.195,
+          "chrome_load_event_ms": 8.4,
+          "budget_passed": true
+        },
+        {
+          "route": "/forge/ci",
+          "role": "CI evidence",
+          "fixture_mode": "forge-ci",
+          "delivery": "static",
+          "decoded_bytes": 3309,
+          "brotli_bytes": 862,
+          "http_route_median_ms": 1.767,
+          "chrome_load_event_ms": 8.9,
+          "budget_passed": true
+        },
+        {
+          "route": "/forge/evidence",
+          "role": "Evidence index",
+          "fixture_mode": "forge-evidence",
+          "delivery": "static",
+          "decoded_bytes": 6988,
+          "brotli_bytes": 1106,
+          "http_route_median_ms": 0.939,
+          "chrome_load_event_ms": 8.3,
+          "budget_passed": true
+        },
+        {
+          "route": "/forge/releases",
+          "role": "Release history",
+          "fixture_mode": "forge-releases",
+          "delivery": "static",
+          "decoded_bytes": 4563,
+          "brotli_bytes": 855,
+          "http_route_median_ms": 1.763,
+          "chrome_load_event_ms": 11.3,
+          "budget_passed": true
+        },
+        {
+          "route": "/forge/changelog",
+          "role": "Launch changelog",
+          "fixture_mode": "forge-changelog",
+          "delivery": "static",
+          "decoded_bytes": 4539,
+          "brotli_bytes": 911,
+          "http_route_median_ms": 2.993,
+          "chrome_load_event_ms": 11.6,
+          "budget_passed": true
+        },
+        {
+          "route": "/forge/adoption",
+          "role": "Adoption evidence",
+          "fixture_mode": "forge-adoption",
+          "delivery": "static",
+          "decoded_bytes": 8465,
+          "brotli_bytes": 1270,
+          "http_route_median_ms": 2.815,
+          "chrome_load_event_ms": 21.1,
+          "budget_passed": true
+        }
+      ],
+      "note": "Measured public Forge compiler output from forge-public-route-comparison.json. It includes real launch evidence, claims, proof links, and route-specific content."
+    },
+    {
+      "framework": "Astro",
+      "baseline_id": "astro-static-html-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no hydrated runtime in this fixture",
+      "route_count": 7,
+      "total_decoded_bytes": 6459,
+      "total_brotli_bytes": 2711,
+      "routes": [
+        {
+          "route": "/forge",
+          "role": "Launch evidence",
+          "fixture_mode": "forge-site",
+          "decoded_bytes": 906,
+          "brotli_bytes": 383,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/scorecard",
+          "role": "Package scorecard",
+          "fixture_mode": "forge-scorecard",
+          "decoded_bytes": 933,
+          "brotli_bytes": 386,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/ci",
+          "role": "CI evidence",
+          "fixture_mode": "forge-ci",
+          "decoded_bytes": 905,
+          "brotli_bytes": 385,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/evidence",
+          "role": "Evidence index",
+          "fixture_mode": "forge-evidence",
+          "decoded_bytes": 927,
+          "brotli_bytes": 391,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/releases",
+          "role": "Release history",
+          "fixture_mode": "forge-releases",
+          "decoded_bytes": 927,
+          "brotli_bytes": 385,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/changelog",
+          "role": "Launch changelog",
+          "fixture_mode": "forge-changelog",
+          "decoded_bytes": 931,
+          "brotli_bytes": 388,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/adoption",
+          "role": "Adoption evidence",
+          "fixture_mode": "forge-adoption",
+          "decoded_bytes": 930,
+          "brotli_bytes": 393,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        }
+      ],
+      "note": "A generous Astro-style static HTML floor. This does not run astro build and should not be presented as an Astro framework benchmark."
+    },
+    {
+      "framework": "Svelte",
+      "baseline_id": "svelte-prerendered-static-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no hydrated runtime in this fixture",
+      "route_count": 7,
+      "total_decoded_bytes": 6473,
+      "total_brotli_bytes": 2729,
+      "routes": [
+        {
+          "route": "/forge",
+          "role": "Launch evidence",
+          "fixture_mode": "forge-site",
+          "decoded_bytes": 908,
+          "brotli_bytes": 384,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/scorecard",
+          "role": "Package scorecard",
+          "fixture_mode": "forge-scorecard",
+          "decoded_bytes": 935,
+          "brotli_bytes": 390,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/ci",
+          "role": "CI evidence",
+          "fixture_mode": "forge-ci",
+          "decoded_bytes": 907,
+          "brotli_bytes": 388,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/evidence",
+          "role": "Evidence index",
+          "fixture_mode": "forge-evidence",
+          "decoded_bytes": 929,
+          "brotli_bytes": 393,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/releases",
+          "role": "Release history",
+          "fixture_mode": "forge-releases",
+          "decoded_bytes": 929,
+          "brotli_bytes": 389,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/changelog",
+          "role": "Launch changelog",
+          "fixture_mode": "forge-changelog",
+          "decoded_bytes": 933,
+          "brotli_bytes": 389,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/adoption",
+          "role": "Adoption evidence",
+          "fixture_mode": "forge-adoption",
+          "decoded_bytes": 932,
+          "brotli_bytes": 396,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        }
+      ],
+      "note": "A generous Svelte prerender/static floor. This excludes the normal Vite/Svelte client bundle and is not a SvelteKit or CSR measurement."
+    },
+    {
+      "framework": "HTMX",
+      "baseline_id": "htmx-static-html-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no htmx runtime in this fixture",
+      "route_count": 7,
+      "total_decoded_bytes": 6445,
+      "total_brotli_bytes": 2725,
+      "routes": [
+        {
+          "route": "/forge",
+          "role": "Launch evidence",
+          "fixture_mode": "forge-site",
+          "decoded_bytes": 904,
+          "brotli_bytes": 385,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/scorecard",
+          "role": "Package scorecard",
+          "fixture_mode": "forge-scorecard",
+          "decoded_bytes": 931,
+          "brotli_bytes": 389,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/ci",
+          "role": "CI evidence",
+          "fixture_mode": "forge-ci",
+          "decoded_bytes": 903,
+          "brotli_bytes": 387,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/evidence",
+          "role": "Evidence index",
+          "fixture_mode": "forge-evidence",
+          "decoded_bytes": 925,
+          "brotli_bytes": 393,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/releases",
+          "role": "Release history",
+          "fixture_mode": "forge-releases",
+          "decoded_bytes": 925,
+          "brotli_bytes": 388,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/changelog",
+          "role": "Launch changelog",
+          "fixture_mode": "forge-changelog",
+          "decoded_bytes": 929,
+          "brotli_bytes": 390,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/adoption",
+          "role": "Adoption evidence",
+          "fixture_mode": "forge-adoption",
+          "decoded_bytes": 928,
+          "brotli_bytes": 393,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        }
+      ],
+      "note": "A generous HTMX-style static HTML floor. This excludes htmx.js and server behavior, so it is not a production HTMX app benchmark."
+    },
+    {
+      "framework": "Next.js",
+      "baseline_id": "next-static-export-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no React, RSC, or router runtime in this fixture",
+      "route_count": 7,
+      "total_decoded_bytes": 6487,
+      "total_brotli_bytes": 2727,
+      "routes": [
+        {
+          "route": "/forge",
+          "role": "Launch evidence",
+          "fixture_mode": "forge-site",
+          "decoded_bytes": 910,
+          "brotli_bytes": 383,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/scorecard",
+          "role": "Package scorecard",
+          "fixture_mode": "forge-scorecard",
+          "decoded_bytes": 937,
+          "brotli_bytes": 387,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/ci",
+          "role": "CI evidence",
+          "fixture_mode": "forge-ci",
+          "decoded_bytes": 909,
+          "brotli_bytes": 386,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/evidence",
+          "role": "Evidence index",
+          "fixture_mode": "forge-evidence",
+          "decoded_bytes": 931,
+          "brotli_bytes": 391,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/releases",
+          "role": "Release history",
+          "fixture_mode": "forge-releases",
+          "decoded_bytes": 931,
+          "brotli_bytes": 394,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/changelog",
+          "role": "Launch changelog",
+          "fixture_mode": "forge-changelog",
+          "decoded_bytes": 935,
+          "brotli_bytes": 392,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        },
+        {
+          "route": "/forge/adoption",
+          "role": "Adoption evidence",
+          "fixture_mode": "forge-adoption",
+          "decoded_bytes": 934,
+          "brotli_bytes": 394,
+          "resource_count": 1,
+          "delivery": "static",
+          "runtime_asset_written": false,
+          "content_parity": "summary-level route-role fixture"
+        }
+      ],
+      "note": "A generous Next.js static-export floor. This excludes next start, React, RSC, image/font/runtime assets, and is not a production Next.js app benchmark."
+    }
+  ],
+  "route_comparisons": [
+    {
+      "route": "/forge",
+      "role": "Launch evidence",
+      "dxwww_brotli_bytes": 1240,
+      "winner": {
+        "framework": "Astro",
+        "brotli_bytes": 383
+      },
+      "competitors": [
+        {
+          "framework": "Astro",
+          "decoded_bytes": 906,
+          "brotli_bytes": 383,
+          "brotli_vs_dxwww_bytes": -857,
+          "brotli_vs_dxwww_percent": -69.1
+        },
+        {
+          "framework": "Svelte",
+          "decoded_bytes": 908,
+          "brotli_bytes": 384,
+          "brotli_vs_dxwww_bytes": -856,
+          "brotli_vs_dxwww_percent": -69
+        },
+        {
+          "framework": "HTMX",
+          "decoded_bytes": 904,
+          "brotli_bytes": 385,
+          "brotli_vs_dxwww_bytes": -855,
+          "brotli_vs_dxwww_percent": -69
+        },
+        {
+          "framework": "Next.js",
+          "decoded_bytes": 910,
+          "brotli_bytes": 383,
+          "brotli_vs_dxwww_bytes": -857,
+          "brotli_vs_dxwww_percent": -69.1
+        }
+      ],
+      "caveat": "Winner only applies to this static-floor fixture. It is not a claim about framework completeness, routing, data loading, hydration, auth, ecosystem, or production DX."
+    },
+    {
+      "route": "/forge/scorecard",
+      "role": "Package scorecard",
+      "dxwww_brotli_bytes": 1040,
+      "winner": {
+        "framework": "Astro",
+        "brotli_bytes": 386
+      },
+      "competitors": [
+        {
+          "framework": "Astro",
+          "decoded_bytes": 933,
+          "brotli_bytes": 386,
+          "brotli_vs_dxwww_bytes": -654,
+          "brotli_vs_dxwww_percent": -62.9
+        },
+        {
+          "framework": "Svelte",
+          "decoded_bytes": 935,
+          "brotli_bytes": 390,
+          "brotli_vs_dxwww_bytes": -650,
+          "brotli_vs_dxwww_percent": -62.5
+        },
+        {
+          "framework": "HTMX",
+          "decoded_bytes": 931,
+          "brotli_bytes": 389,
+          "brotli_vs_dxwww_bytes": -651,
+          "brotli_vs_dxwww_percent": -62.6
+        },
+        {
+          "framework": "Next.js",
+          "decoded_bytes": 937,
+          "brotli_bytes": 387,
+          "brotli_vs_dxwww_bytes": -653,
+          "brotli_vs_dxwww_percent": -62.8
+        }
+      ],
+      "caveat": "Winner only applies to this static-floor fixture. It is not a claim about framework completeness, routing, data loading, hydration, auth, ecosystem, or production DX."
+    },
+    {
+      "route": "/forge/ci",
+      "role": "CI evidence",
+      "dxwww_brotli_bytes": 862,
+      "winner": {
+        "framework": "Astro",
+        "brotli_bytes": 385
+      },
+      "competitors": [
+        {
+          "framework": "Astro",
+          "decoded_bytes": 905,
+          "brotli_bytes": 385,
+          "brotli_vs_dxwww_bytes": -477,
+          "brotli_vs_dxwww_percent": -55.3
+        },
+        {
+          "framework": "Svelte",
+          "decoded_bytes": 907,
+          "brotli_bytes": 388,
+          "brotli_vs_dxwww_bytes": -474,
+          "brotli_vs_dxwww_percent": -55
+        },
+        {
+          "framework": "HTMX",
+          "decoded_bytes": 903,
+          "brotli_bytes": 387,
+          "brotli_vs_dxwww_bytes": -475,
+          "brotli_vs_dxwww_percent": -55.1
+        },
+        {
+          "framework": "Next.js",
+          "decoded_bytes": 909,
+          "brotli_bytes": 386,
+          "brotli_vs_dxwww_bytes": -476,
+          "brotli_vs_dxwww_percent": -55.2
+        }
+      ],
+      "caveat": "Winner only applies to this static-floor fixture. It is not a claim about framework completeness, routing, data loading, hydration, auth, ecosystem, or production DX."
+    },
+    {
+      "route": "/forge/evidence",
+      "role": "Evidence index",
+      "dxwww_brotli_bytes": 1106,
+      "winner": {
+        "framework": "Astro",
+        "brotli_bytes": 391
+      },
+      "competitors": [
+        {
+          "framework": "Astro",
+          "decoded_bytes": 927,
+          "brotli_bytes": 391,
+          "brotli_vs_dxwww_bytes": -715,
+          "brotli_vs_dxwww_percent": -64.6
+        },
+        {
+          "framework": "Svelte",
+          "decoded_bytes": 929,
+          "brotli_bytes": 393,
+          "brotli_vs_dxwww_bytes": -713,
+          "brotli_vs_dxwww_percent": -64.5
+        },
+        {
+          "framework": "HTMX",
+          "decoded_bytes": 925,
+          "brotli_bytes": 393,
+          "brotli_vs_dxwww_bytes": -713,
+          "brotli_vs_dxwww_percent": -64.5
+        },
+        {
+          "framework": "Next.js",
+          "decoded_bytes": 931,
+          "brotli_bytes": 391,
+          "brotli_vs_dxwww_bytes": -715,
+          "brotli_vs_dxwww_percent": -64.6
+        }
+      ],
+      "caveat": "Winner only applies to this static-floor fixture. It is not a claim about framework completeness, routing, data loading, hydration, auth, ecosystem, or production DX."
+    },
+    {
+      "route": "/forge/releases",
+      "role": "Release history",
+      "dxwww_brotli_bytes": 855,
+      "winner": {
+        "framework": "Astro",
+        "brotli_bytes": 385
+      },
+      "competitors": [
+        {
+          "framework": "Astro",
+          "decoded_bytes": 927,
+          "brotli_bytes": 385,
+          "brotli_vs_dxwww_bytes": -470,
+          "brotli_vs_dxwww_percent": -55
+        },
+        {
+          "framework": "Svelte",
+          "decoded_bytes": 929,
+          "brotli_bytes": 389,
+          "brotli_vs_dxwww_bytes": -466,
+          "brotli_vs_dxwww_percent": -54.5
+        },
+        {
+          "framework": "HTMX",
+          "decoded_bytes": 925,
+          "brotli_bytes": 388,
+          "brotli_vs_dxwww_bytes": -467,
+          "brotli_vs_dxwww_percent": -54.6
+        },
+        {
+          "framework": "Next.js",
+          "decoded_bytes": 931,
+          "brotli_bytes": 394,
+          "brotli_vs_dxwww_bytes": -461,
+          "brotli_vs_dxwww_percent": -53.9
+        }
+      ],
+      "caveat": "Winner only applies to this static-floor fixture. It is not a claim about framework completeness, routing, data loading, hydration, auth, ecosystem, or production DX."
+    },
+    {
+      "route": "/forge/changelog",
+      "role": "Launch changelog",
+      "dxwww_brotli_bytes": 911,
+      "winner": {
+        "framework": "Astro",
+        "brotli_bytes": 388
+      },
+      "competitors": [
+        {
+          "framework": "Astro",
+          "decoded_bytes": 931,
+          "brotli_bytes": 388,
+          "brotli_vs_dxwww_bytes": -523,
+          "brotli_vs_dxwww_percent": -57.4
+        },
+        {
+          "framework": "Svelte",
+          "decoded_bytes": 933,
+          "brotli_bytes": 389,
+          "brotli_vs_dxwww_bytes": -522,
+          "brotli_vs_dxwww_percent": -57.3
+        },
+        {
+          "framework": "HTMX",
+          "decoded_bytes": 929,
+          "brotli_bytes": 390,
+          "brotli_vs_dxwww_bytes": -521,
+          "brotli_vs_dxwww_percent": -57.2
+        },
+        {
+          "framework": "Next.js",
+          "decoded_bytes": 935,
+          "brotli_bytes": 392,
+          "brotli_vs_dxwww_bytes": -519,
+          "brotli_vs_dxwww_percent": -57
+        }
+      ],
+      "caveat": "Winner only applies to this static-floor fixture. It is not a claim about framework completeness, routing, data loading, hydration, auth, ecosystem, or production DX."
+    },
+    {
+      "route": "/forge/adoption",
+      "role": "Adoption evidence",
+      "dxwww_brotli_bytes": 1270,
+      "winner": {
+        "framework": "Astro",
+        "brotli_bytes": 393
+      },
+      "competitors": [
+        {
+          "framework": "Astro",
+          "decoded_bytes": 930,
+          "brotli_bytes": 393,
+          "brotli_vs_dxwww_bytes": -877,
+          "brotli_vs_dxwww_percent": -69.1
+        },
+        {
+          "framework": "Svelte",
+          "decoded_bytes": 932,
+          "brotli_bytes": 396,
+          "brotli_vs_dxwww_bytes": -874,
+          "brotli_vs_dxwww_percent": -68.8
+        },
+        {
+          "framework": "HTMX",
+          "decoded_bytes": 928,
+          "brotli_bytes": 393,
+          "brotli_vs_dxwww_bytes": -877,
+          "brotli_vs_dxwww_percent": -69.1
+        },
+        {
+          "framework": "Next.js",
+          "decoded_bytes": 934,
+          "brotli_bytes": 394,
+          "brotli_vs_dxwww_bytes": -876,
+          "brotli_vs_dxwww_percent": -69
+        }
+      ],
+      "caveat": "Winner only applies to this static-floor fixture. It is not a claim about framework completeness, routing, data loading, hydration, auth, ecosystem, or production DX."
+    }
+  ],
+  "adoption_route_browser_benchmark": {
+    "route": "/forge/adoption",
+    "source_route_comparison": "benchmarks/reports/forge-public-route-comparison.json",
+    "no_package_install": true,
+    "competitor_builds_run": false,
+    "browser_scope": "DX-WWW browser timing comes from the measured /forge/adoption route; competitor rows are deterministic static-floor payload fixtures and do not run package installs.",
+    "dxwww": {
+      "decoded_bytes": 8465,
+      "brotli_bytes": 1270,
+      "http_route_median_ms": 2.815,
+      "chrome_load_event_ms": 21.1,
+      "delivery": "static",
+      "budget_passed": true
+    },
+    "static_floors": [
+      {
+        "framework": "Astro",
+        "baseline_id": "astro-static-html-floor",
+        "decoded_bytes": 930,
+        "brotli_bytes": 393,
+        "resource_count": 1,
+        "delivery": "static",
+        "runtime_asset_written": false,
+        "chrome_load_event_ms": null,
+        "browser_timing_source": "not-run deterministic static-floor fixture"
+      },
+      {
+        "framework": "Svelte",
+        "baseline_id": "svelte-prerendered-static-floor",
+        "decoded_bytes": 932,
+        "brotli_bytes": 396,
+        "resource_count": 1,
+        "delivery": "static",
+        "runtime_asset_written": false,
+        "chrome_load_event_ms": null,
+        "browser_timing_source": "not-run deterministic static-floor fixture"
+      },
+      {
+        "framework": "HTMX",
+        "baseline_id": "htmx-static-html-floor",
+        "decoded_bytes": 928,
+        "brotli_bytes": 393,
+        "resource_count": 1,
+        "delivery": "static",
+        "runtime_asset_written": false,
+        "chrome_load_event_ms": null,
+        "browser_timing_source": "not-run deterministic static-floor fixture"
+      },
+      {
+        "framework": "Next.js",
+        "baseline_id": "next-static-export-floor",
+        "decoded_bytes": 934,
+        "brotli_bytes": 394,
+        "resource_count": 1,
+        "delivery": "static",
+        "runtime_asset_written": false,
+        "chrome_load_event_ms": null,
+        "browser_timing_source": "not-run deterministic static-floor fixture"
+      }
+    ],
+    "winner_by_brotli": {
+      "framework": "Astro",
+      "brotli_bytes": 393
+    },
+    "caveat": "Static floors can be smaller because they omit adoption report copy, claims manifests, DXPK proof artifacts, source-owned package evidence, and reviewer context."
+  },
+  "honest_findings": [
+    "Minimal static HTML floors can be smaller than DX-WWW when they omit Forge evidence, claims, receipts, proof metadata, and generated public review copy.",
+    "Astro, Svelte, HTMX, and Next.js rows in this report are deliberately generous static floors; they are not live framework builds, dev-server timings, or production app measurements.",
+    "DX-WWW should only claim this public surface is static, measured, source-owned, and no-runtime; broader framework wins require separate real app suites.",
+    "Use real-route and framework scorecard reports for broader comparisons, and keep this fixture scoped to public Forge launch evidence routes."
+  ],
+  "conclusion": "DX-WWW public Forge routes are verified static/no-runtime compiler outputs. This fixture adds an intentionally conservative competitor floor so launch copy stays honest when a plain static page could be smaller."
+}

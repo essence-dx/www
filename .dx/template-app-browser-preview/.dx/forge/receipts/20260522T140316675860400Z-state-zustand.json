@@ -1,0 +1,420 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "state/zustand",
+    "upstream_name": "zustand",
+    "version": "5.0.13-dx.10",
+    "generator": "dx-forge/zustand",
+    "variant": "default",
+    "last_accepted_update": "2026-05-22T14:03:16.675102200+00:00",
+    "rollback_receipt": "20260522T003036137384500Z-state-zustand.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "8d0ec15d2e60e411f4967747c4819567809b21887629ce4b4a21a2197575f341",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:zustand@5.0.13",
+      "verified": false,
+      "note": "DX inspected the local Zustand source mirror, package export map, vanilla store, React hook, subscribeWithSelector, combine, persist, immer middleware, and shallow helpers before curating this launch state slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Zustand-compatible launch state slice, but it is not a live advisory feed and does not audit application persistence keys, browser storage policy, optional Immer dependency review, draft mutation conventions, or sensitive state handling."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/forge/state/zustand/index.ts",
+        "logical_path": "js/state/zustand/index.ts",
+        "hash": "5818ee9ecf59cd4ab149d4ddf18f2691290a602b80a769134f63992c5ca5bbd1",
+        "bytes": 248
+      },
+      {
+        "path": "lib/forge/state/zustand/vanilla.ts",
+        "logical_path": "js/state/zustand/vanilla.ts",
+        "hash": "05efb3fd47acdba0252adf1f5135895fe97d75d2b59301158fd0f4009d27aafb",
+        "bytes": 3319
+      },
+      {
+        "path": "lib/forge/state/zustand/react.ts",
+        "logical_path": "js/state/zustand/react.ts",
+        "hash": "adab8fd89808248e48f6f48607784a4ad6bed1b99d3fe13ad28fccb3d9d3090c",
+        "bytes": 2177
+      },
+      {
+        "path": "lib/forge/state/zustand/traditional.ts",
+        "logical_path": "js/state/zustand/traditional.ts",
+        "hash": "fcfab94761dbe278a4d01af1c86cf4c3cf25394548acec0d9533e7a8e304c23f",
+        "bytes": 3493
+      },
+      {
+        "path": "lib/forge/state/zustand/middleware.ts",
+        "logical_path": "js/state/zustand/middleware.ts",
+        "hash": "e0697210819526df9b4b6d02d3c41628c2b91ba5f1045e524d8b556685f6137e",
+        "bytes": 3467
+      },
+      {
+        "path": "lib/forge/state/zustand/devtools.ts",
+        "logical_path": "js/state/zustand/devtools.ts",
+        "hash": "1267deb1c0aea44dbb3f0c11029e5a1e21def0b6c710c4b117587b31e18a9bf3",
+        "bytes": 4550
+      },
+      {
+        "path": "lib/forge/state/zustand/immer.ts",
+        "logical_path": "js/state/zustand/immer.ts",
+        "hash": "c1637bd6dc277d5b1ab249488f260aac727eee8c29633ceaf61018d051562a1e",
+        "bytes": 1689
+      },
+      {
+        "path": "lib/forge/state/zustand/redux.ts",
+        "logical_path": "js/state/zustand/redux.ts",
+        "hash": "f431f2ec707874d0936b21ddf1b79759353a93f58ba8cff06c5026603c7b5f41",
+        "bytes": 1079
+      },
+      {
+        "path": "lib/forge/state/zustand/ssr-safe.ts",
+        "logical_path": "js/state/zustand/ssr-safe.ts",
+        "hash": "58d7eb27f737bd4456f8ffc0d8a3e9f05aaec35f443a8af6954d978214bf58d7",
+        "bytes": 570
+      },
+      {
+        "path": "lib/forge/state/zustand/shallow.ts",
+        "logical_path": "js/state/zustand/shallow.ts",
+        "hash": "088cde223d05215bcb9035579c22f4912f5d0d72ac56048b3bd702e8bdbe41b4",
+        "bytes": 1356
+      },
+      {
+        "path": "lib/forge/state/zustand/persist.ts",
+        "logical_path": "js/state/zustand/persist.ts",
+        "hash": "e09b7f2bae1694b4d34ab7cc3088f30e5696dea50f59f3425e808aa67d54e3d2",
+        "bytes": 6754
+      },
+      {
+        "path": "lib/forge/state/zustand/metadata.ts",
+        "logical_path": "js/state/zustand/metadata.ts",
+        "hash": "129b008c6d98c91325e1f2126020a90c9a7396c32120a05bd36fca82e682a40b",
+        "bytes": 6234
+      },
+      {
+        "path": "lib/forge/state/zustand/README.md",
+        "logical_path": "js/state/zustand/README.md",
+        "hash": "f7a0d50b9c2e2623157adf1234d0236cf79aa953dc82cb9b00e058995a402a5d",
+        "bytes": 8169
+      }
+    ]
+  },
+  "files_written": [],
+  "file_map": [
+    {
+      "logical_path": "js/state/zustand/index.ts",
+      "materialized_path": "lib/forge/state/zustand/index.ts",
+      "hash": "5818ee9ecf59cd4ab149d4ddf18f2691290a602b80a769134f63992c5ca5bbd1",
+      "bytes": 248
+    },
+    {
+      "logical_path": "js/state/zustand/vanilla.ts",
+      "materialized_path": "lib/forge/state/zustand/vanilla.ts",
+      "hash": "05efb3fd47acdba0252adf1f5135895fe97d75d2b59301158fd0f4009d27aafb",
+      "bytes": 3319
+    },
+    {
+      "logical_path": "js/state/zustand/react.ts",
+      "materialized_path": "lib/forge/state/zustand/react.ts",
+      "hash": "adab8fd89808248e48f6f48607784a4ad6bed1b99d3fe13ad28fccb3d9d3090c",
+      "bytes": 2177
+    },
+    {
+      "logical_path": "js/state/zustand/traditional.ts",
+      "materialized_path": "lib/forge/state/zustand/traditional.ts",
+      "hash": "fcfab94761dbe278a4d01af1c86cf4c3cf25394548acec0d9533e7a8e304c23f",
+      "bytes": 3493
+    },
+    {
+      "logical_path": "js/state/zustand/middleware.ts",
+      "materialized_path": "lib/forge/state/zustand/middleware.ts",
+      "hash": "e0697210819526df9b4b6d02d3c41628c2b91ba5f1045e524d8b556685f6137e",
+      "bytes": 3467
+    },
+    {
+      "logical_path": "js/state/zustand/devtools.ts",
+      "materialized_path": "lib/forge/state/zustand/devtools.ts",
+      "hash": "1267deb1c0aea44dbb3f0c11029e5a1e21def0b6c710c4b117587b31e18a9bf3",
+      "bytes": 4550
+    },
+    {
+      "logical_path": "js/state/zustand/immer.ts",
+      "materialized_path": "lib/forge/state/zustand/immer.ts",
+      "hash": "c1637bd6dc277d5b1ab249488f260aac727eee8c29633ceaf61018d051562a1e",
+      "bytes": 1689
+    },
+    {
+      "logical_path": "js/state/zustand/redux.ts",
+      "materialized_path": "lib/forge/state/zustand/redux.ts",
+      "hash": "f431f2ec707874d0936b21ddf1b79759353a93f58ba8cff06c5026603c7b5f41",
+      "bytes": 1079
+    },
+    {
+      "logical_path": "js/state/zustand/ssr-safe.ts",
+      "materialized_path": "lib/forge/state/zustand/ssr-safe.ts",
+      "hash": "58d7eb27f737bd4456f8ffc0d8a3e9f05aaec35f443a8af6954d978214bf58d7",
+      "bytes": 570
+    },
+    {
+      "logical_path": "js/state/zustand/shallow.ts",
+      "materialized_path": "lib/forge/state/zustand/shallow.ts",
+      "hash": "088cde223d05215bcb9035579c22f4912f5d0d72ac56048b3bd702e8bdbe41b4",
+      "bytes": 1356
+    },
+    {
+      "logical_path": "js/state/zustand/persist.ts",
+      "materialized_path": "lib/forge/state/zustand/persist.ts",
+      "hash": "e09b7f2bae1694b4d34ab7cc3088f30e5696dea50f59f3425e808aa67d54e3d2",
+      "bytes": 6754
+    },
+    {
+      "logical_path": "js/state/zustand/metadata.ts",
+      "materialized_path": "lib/forge/state/zustand/metadata.ts",
+      "hash": "129b008c6d98c91325e1f2126020a90c9a7396c32120a05bd36fca82e682a40b",
+      "bytes": 6234
+    },
+    {
+      "logical_path": "js/state/zustand/README.md",
+      "materialized_path": "lib/forge/state/zustand/README.md",
+      "hash": "f7a0d50b9c2e2623157adf1234d0236cf79aa953dc82cb9b00e058995a402a5d",
+      "bytes": 8169
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/index.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/vanilla.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/react.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/traditional.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/middleware.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/devtools.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/immer.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/redux.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/ssr-safe.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/shallow.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forge/state/zustand/persist.ts already matches the latest package."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/forge/state/zustand/metadata.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/forge/state/zustand/README.md has local state that must be resolved before update."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `essencefromexistence` accepted yellow local edits for `state/zustand` variant `default`: Accepted current www-template Zustand source-owned local edits after Forge dry-run review."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/forge/state/zustand/index.ts",
+      "logical_path": "js/state/zustand/index.ts",
+      "before_hash": "5818ee9ecf59cd4ab149d4ddf18f2691290a602b80a769134f63992c5ca5bbd1",
+      "after_hash": "5818ee9ecf59cd4ab149d4ddf18f2691290a602b80a769134f63992c5ca5bbd1",
+      "tracked_hash": "5818ee9ecf59cd4ab149d4ddf18f2691290a602b80a769134f63992c5ca5bbd1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/index.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/vanilla.ts",
+      "logical_path": "js/state/zustand/vanilla.ts",
+      "before_hash": "05efb3fd47acdba0252adf1f5135895fe97d75d2b59301158fd0f4009d27aafb",
+      "after_hash": "05efb3fd47acdba0252adf1f5135895fe97d75d2b59301158fd0f4009d27aafb",
+      "tracked_hash": "05efb3fd47acdba0252adf1f5135895fe97d75d2b59301158fd0f4009d27aafb",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/vanilla.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/react.ts",
+      "logical_path": "js/state/zustand/react.ts",
+      "before_hash": "adab8fd89808248e48f6f48607784a4ad6bed1b99d3fe13ad28fccb3d9d3090c",
+      "after_hash": "adab8fd89808248e48f6f48607784a4ad6bed1b99d3fe13ad28fccb3d9d3090c",
+      "tracked_hash": "adab8fd89808248e48f6f48607784a4ad6bed1b99d3fe13ad28fccb3d9d3090c",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/react.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/traditional.ts",
+      "logical_path": "js/state/zustand/traditional.ts",
+      "before_hash": "fcfab94761dbe278a4d01af1c86cf4c3cf25394548acec0d9533e7a8e304c23f",
+      "after_hash": "fcfab94761dbe278a4d01af1c86cf4c3cf25394548acec0d9533e7a8e304c23f",
+      "tracked_hash": "fcfab94761dbe278a4d01af1c86cf4c3cf25394548acec0d9533e7a8e304c23f",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/traditional.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/middleware.ts",
+      "logical_path": "js/state/zustand/middleware.ts",
+      "before_hash": "e0697210819526df9b4b6d02d3c41628c2b91ba5f1045e524d8b556685f6137e",
+      "after_hash": "e0697210819526df9b4b6d02d3c41628c2b91ba5f1045e524d8b556685f6137e",
+      "tracked_hash": "e0697210819526df9b4b6d02d3c41628c2b91ba5f1045e524d8b556685f6137e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/middleware.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/devtools.ts",
+      "logical_path": "js/state/zustand/devtools.ts",
+      "before_hash": "1267deb1c0aea44dbb3f0c11029e5a1e21def0b6c710c4b117587b31e18a9bf3",
+      "after_hash": "1267deb1c0aea44dbb3f0c11029e5a1e21def0b6c710c4b117587b31e18a9bf3",
+      "tracked_hash": "1267deb1c0aea44dbb3f0c11029e5a1e21def0b6c710c4b117587b31e18a9bf3",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/devtools.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/immer.ts",
+      "logical_path": "js/state/zustand/immer.ts",
+      "before_hash": "c1637bd6dc277d5b1ab249488f260aac727eee8c29633ceaf61018d051562a1e",
+      "after_hash": "c1637bd6dc277d5b1ab249488f260aac727eee8c29633ceaf61018d051562a1e",
+      "tracked_hash": "c1637bd6dc277d5b1ab249488f260aac727eee8c29633ceaf61018d051562a1e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/immer.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/redux.ts",
+      "logical_path": "js/state/zustand/redux.ts",
+      "before_hash": "f431f2ec707874d0936b21ddf1b79759353a93f58ba8cff06c5026603c7b5f41",
+      "after_hash": "f431f2ec707874d0936b21ddf1b79759353a93f58ba8cff06c5026603c7b5f41",
+      "tracked_hash": "f431f2ec707874d0936b21ddf1b79759353a93f58ba8cff06c5026603c7b5f41",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/redux.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/ssr-safe.ts",
+      "logical_path": "js/state/zustand/ssr-safe.ts",
+      "before_hash": "58d7eb27f737bd4456f8ffc0d8a3e9f05aaec35f443a8af6954d978214bf58d7",
+      "after_hash": "58d7eb27f737bd4456f8ffc0d8a3e9f05aaec35f443a8af6954d978214bf58d7",
+      "tracked_hash": "58d7eb27f737bd4456f8ffc0d8a3e9f05aaec35f443a8af6954d978214bf58d7",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/ssr-safe.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/shallow.ts",
+      "logical_path": "js/state/zustand/shallow.ts",
+      "before_hash": "088cde223d05215bcb9035579c22f4912f5d0d72ac56048b3bd702e8bdbe41b4",
+      "after_hash": "088cde223d05215bcb9035579c22f4912f5d0d72ac56048b3bd702e8bdbe41b4",
+      "tracked_hash": "088cde223d05215bcb9035579c22f4912f5d0d72ac56048b3bd702e8bdbe41b4",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/shallow.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/persist.ts",
+      "logical_path": "js/state/zustand/persist.ts",
+      "before_hash": "e09b7f2bae1694b4d34ab7cc3088f30e5696dea50f59f3425e808aa67d54e3d2",
+      "after_hash": "e09b7f2bae1694b4d34ab7cc3088f30e5696dea50f59f3425e808aa67d54e3d2",
+      "tracked_hash": "e09b7f2bae1694b4d34ab7cc3088f30e5696dea50f59f3425e808aa67d54e3d2",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/persist.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forge/state/zustand/metadata.ts",
+      "logical_path": "js/state/zustand/metadata.ts",
+      "before_hash": "129b008c6d98c91325e1f2126020a90c9a7396c32120a05bd36fca82e682a40b",
+      "after_hash": "129b008c6d98c91325e1f2126020a90c9a7396c32120a05bd36fca82e682a40b",
+      "tracked_hash": "cab4aa59b0746742235c8ebe379a29fbcd5a09a0eb5d03c3384105e06bb5d64c",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/metadata.ts accepted by `essencefromexistence` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "lib/forge/state/zustand/README.md",
+      "logical_path": "js/state/zustand/README.md",
+      "before_hash": "f7a0d50b9c2e2623157adf1234d0236cf79aa953dc82cb9b00e058995a402a5d",
+      "after_hash": "f7a0d50b9c2e2623157adf1234d0236cf79aa953dc82cb9b00e058995a402a5d",
+      "tracked_hash": "d2fd27859f3d37305970eb423222491030f31b4b029f830efd1622a34414ce14",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/forge/state/zustand/README.md accepted by `essencefromexistence` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    }
+  ],
+  "risk_score": 70,
+  "timestamp": "2026-05-22T14:03:16.675102200+00:00",
+  "signature": null
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "dx.www.conversion_manifest",
+  "source_project": "dx-website-startpage",
+  "source_local_path": "G:\\Dx\\website",
+  "source_files": [
+    "src/components/startpage.tsx",
+    "src/components/platform-download-cards.tsx",
+    "src/components/dx-ai-face.tsx",
+    "public/thumbnails/*.png"
+  ],
+  "target_route": "/",
+  "target_files": [
+    "pages/index.html",
+    "styles/dx-landing.css",
+    "public/thumbnails/*.png",
+    "forge/source-surfaces/dx-landing.json",
+    "forge/visual-audits/dx-landing.json"
+  ],
+  "routing": {
+    "canonical": "dx-www",
+    "route_file_kind": "dx-www .html",
+    "no_next_router": true,
+    "no_react_runtime": true
+  },
+  "section_policy": "Preserve every launch section from the correct DX landing, but express it through DX-WWW HTML/CSS rather than React component loops.",
+  "runtime_policy": "Source proof only; no server, full build, node_modules install, or hosted provider execution required."
+}

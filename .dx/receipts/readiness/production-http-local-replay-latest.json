@@ -1,0 +1,95 @@
+{
+  "schema": "dx.www.readiness.production_http_local_replay_receipt_contract",
+  "schema_revision": 1,
+  "id": "production-http-local-replay",
+  "passed": true,
+  "status": "local-production-http-wire-replay-current",
+  "release_ready": false,
+  "fastest_world_claim": false,
+  "fixture_path": ".dx/receipts/readiness/production-http-local-replay-fixture",
+  "fixture_within_project": true,
+  "proof_scope": "local-production-contract-wire-replay",
+  "wire_responder": "production_contract_wire_response",
+  "tcp_preview_server_started": false,
+  "browser_runtime_executed": false,
+  "hosted_provider_proof": false,
+  "provider_bound_cdn_executed": false,
+  "external_proof_gap_ids": [
+    "browser-js-enabled-runtime-replay",
+    "browser-js-disabled-runtime-replay",
+    "preview-tcp-server-parity",
+    "axum-static-responder-parity",
+    "provider-bound-cdn-cache-replay",
+    "hosted-provider-adapter-replay"
+  ],
+  "checks": [
+    {
+      "id": "etag-present",
+      "passed": true
+    },
+    {
+      "id": "if-none-match-304",
+      "passed": true
+    },
+    {
+      "id": "if-modified-since-304",
+      "passed": true
+    },
+    {
+      "id": "head-omits-body",
+      "passed": true
+    },
+    {
+      "id": "range-206",
+      "passed": true
+    },
+    {
+      "id": "range-416",
+      "passed": true
+    },
+    {
+      "id": "if-range-206",
+      "passed": true
+    },
+    {
+      "id": "stale-if-range-falls-back-to-full-body",
+      "passed": true
+    },
+    {
+      "id": "br-negotiation",
+      "passed": true
+    },
+    {
+      "id": "gzip-negotiation",
+      "passed": true
+    },
+    {
+      "id": "plain-asset-vary",
+      "passed": true
+    },
+    {
+      "id": "static-options-204-allow-header",
+      "passed": true
+    },
+    {
+      "id": "static-post-405-allow-header",
+      "passed": true
+    },
+    {
+      "id": "precompressed-decoded-content-type",
+      "passed": true
+    }
+  ],
+  "etag": "\"dx-b34b56076712fd7f-6\"",
+  "last_modified": "Sun, 31 May 2026 10:54:00 GMT",
+  "rule": "This receipt executes the local production-contract wire responder against a fixture deploy-adapter only; it is not Browser, TCP preview server, Axum, CDN, or hosted-provider proof.",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/production-http-local-replay-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-production-http-local-replay-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "fc7735f85c447fb4f3c17ae0d8c68d6a66a53d4de4fef272bc1f98c1bb580541",
+    "machine_blake3": "aa233334711d46ec0af248c33813d297c6c5865332599802ef88978bf137080b"
+  }
+}

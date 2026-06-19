@@ -1,0 +1,14 @@
+{
+  "schema_version": "dx.check.runner.v1",
+  "id": "typecheck",
+  "status": "blocked",
+  "command": "npm run typecheck",
+  "command_identity": "package.json:scripts.typecheck",
+  "configured_from": "package.json",
+  "runs_by_default": false,
+  "duration_ms": 0,
+  "blocked_reason": "`package.json` does not define an approved `typecheck` script",
+  "receipt_path": "G:\\Dx\\www\\examples\\whiteboard\\.dx\\receipts\\check\\runners\\typecheck-latest.json",
+  "snapshot_path": "G:\\Dx\\www\\examples\\whiteboard\\.dx\\receipts\\check\\runners\\typecheck-1780421597329.json",
+  "next_action": "Add `scripts.typecheck` to package.json or configure a future dx-check runner command."
+}

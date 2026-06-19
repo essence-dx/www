@@ -1,0 +1,706 @@
+{
+  "schema": "dx.www.template.forge_package_status",
+  "status": "present",
+  "source": "dx new",
+  "package_policy": "forge-first-no-node-modules",
+  "no_node_modules_required": true,
+  "package_count": 11,
+  "locked_package_count": 11,
+  "locked_package_names": [
+    "www/minimal-starter",
+    "shadcn/ui/button",
+    "shadcn/ui/badge",
+    "shadcn/ui/card",
+    "shadcn/ui/label",
+    "shadcn/ui/separator",
+    "shadcn/ui/field",
+    "shadcn/ui/item",
+    "shadcn/ui/input",
+    "shadcn/ui/textarea",
+    "dx/icon/search"
+  ],
+  "package_lane_visibility": [
+    {
+      "official_package_name": "Forge Package",
+      "package_id": "www/minimal-starter",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T065224919575900Z-www-minimal-starter.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "www/minimal-starter"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T065224919575900Z-www-minimal-starter.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T065224919575900Z-www-minimal-starter.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "UI Components",
+      "package_id": "shadcn/ui/button",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072406131389900Z-shadcn-ui-button.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "shadcn/ui/button"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072406131389900Z-shadcn-ui-button.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072406131389900Z-shadcn-ui-button.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "UI Badge",
+      "package_id": "shadcn/ui/badge",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072407374109300Z-shadcn-ui-badge.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "shadcn/ui/badge"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072407374109300Z-shadcn-ui-badge.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072407374109300Z-shadcn-ui-badge.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "UI Card",
+      "package_id": "shadcn/ui/card",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072408722929300Z-shadcn-ui-card.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "shadcn/ui/card"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072408722929300Z-shadcn-ui-card.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072408722929300Z-shadcn-ui-card.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "UI Label",
+      "package_id": "shadcn/ui/label",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072410147902200Z-shadcn-ui-label.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "shadcn/ui/label"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072410147902200Z-shadcn-ui-label.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072410147902200Z-shadcn-ui-label.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "UI Separator",
+      "package_id": "shadcn/ui/separator",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072411495161500Z-shadcn-ui-separator.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "shadcn/ui/separator"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072411495161500Z-shadcn-ui-separator.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072411495161500Z-shadcn-ui-separator.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "UI Field",
+      "package_id": "shadcn/ui/field",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072412728707500Z-shadcn-ui-field.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "shadcn/ui/field"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072412728707500Z-shadcn-ui-field.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072412728707500Z-shadcn-ui-field.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "UI Item",
+      "package_id": "shadcn/ui/item",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072413939842100Z-shadcn-ui-item.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "shadcn/ui/item"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072413939842100Z-shadcn-ui-item.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072413939842100Z-shadcn-ui-item.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "UI Input",
+      "package_id": "shadcn/ui/input",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072415327061200Z-shadcn-ui-input.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "shadcn/ui/input"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072415327061200Z-shadcn-ui-input.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072415327061200Z-shadcn-ui-input.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "UI Textarea",
+      "package_id": "shadcn/ui/textarea",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072416463675900Z-shadcn-ui-textarea.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "shadcn/ui/textarea"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072416463675900Z-shadcn-ui-textarea.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072416463675900Z-shadcn-ui-textarea.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    },
+    {
+      "official_package_name": "DX Icons",
+      "package_id": "dx/icon/search",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072417625243200Z-dx-icon-search.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "dx/icon/search"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T072417625243200Z-dx-icon-search.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T072417625243200Z-dx-icon-search.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    }
+  ],
+  "packages": [
+    {
+      "name": "www/minimal-starter",
+      "package_id": "www/minimal-starter",
+      "official_name": "Forge Package",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "local",
+      "package_receipt_path": ".dx/forge/receipts/20260603T065224919575900Z-www-minimal-starter.json",
+      "file_count": 13
+    },
+    {
+      "name": "shadcn/ui/button",
+      "package_id": "shadcn/ui/button",
+      "official_name": "UI Components",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072406131389900Z-shadcn-ui-button.json",
+      "file_count": 4
+    },
+    {
+      "name": "shadcn/ui/badge",
+      "package_id": "shadcn/ui/badge",
+      "official_name": "UI Badge",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072407374109300Z-shadcn-ui-badge.json",
+      "file_count": 4
+    },
+    {
+      "name": "shadcn/ui/card",
+      "package_id": "shadcn/ui/card",
+      "official_name": "UI Card",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072408722929300Z-shadcn-ui-card.json",
+      "file_count": 3
+    },
+    {
+      "name": "shadcn/ui/label",
+      "package_id": "shadcn/ui/label",
+      "official_name": "UI Label",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072410147902200Z-shadcn-ui-label.json",
+      "file_count": 3
+    },
+    {
+      "name": "shadcn/ui/separator",
+      "package_id": "shadcn/ui/separator",
+      "official_name": "UI Separator",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072411495161500Z-shadcn-ui-separator.json",
+      "file_count": 3
+    },
+    {
+      "name": "shadcn/ui/field",
+      "package_id": "shadcn/ui/field",
+      "official_name": "UI Field",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072412728707500Z-shadcn-ui-field.json",
+      "file_count": 5
+    },
+    {
+      "name": "shadcn/ui/item",
+      "package_id": "shadcn/ui/item",
+      "official_name": "UI Item",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072413939842100Z-shadcn-ui-item.json",
+      "file_count": 5
+    },
+    {
+      "name": "shadcn/ui/input",
+      "package_id": "shadcn/ui/input",
+      "official_name": "UI Input",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072415327061200Z-shadcn-ui-input.json",
+      "file_count": 2
+    },
+    {
+      "name": "shadcn/ui/textarea",
+      "package_id": "shadcn/ui/textarea",
+      "official_name": "UI Textarea",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072416463675900Z-shadcn-ui-textarea.json",
+      "file_count": 2
+    },
+    {
+      "name": "dx/icon/search",
+      "package_id": "dx/icon/search",
+      "official_name": "DX Icons",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "package_receipt_path": ".dx/forge/receipts/20260603T072417625243200Z-dx-icon-search.json",
+      "file_count": 3
+    }
+  ],
+  "dx_check_metrics": [
+    "package-status-generated",
+    "receipt-hash-refresh-current",
+    "dx-style-compatibility-present"
+  ],
+  "zed_receipt_surfaces": [
+    "package-status",
+    "dx-new-forge-receipts"
+  ]
+}

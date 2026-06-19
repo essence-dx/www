@@ -1,0 +1,16 @@
+schema="dx.www.readiness.bundle_partition_receipt_contract"
+id="bundle-partition"
+passed=true
+status="local-public-evidence-partition-current"
+release_ready=false
+hosted_provider_proof=false
+deploy_adapter_path="examples/template/.dx/www/output/deploy-adapter.json"
+provider_adapter_path="examples/template/.dx/www/output/provider-adapter.dx-cloud.json"
+public_runtime_artifact_count=44
+evidence_artifact_count=23
+public_runtime_evidence_path_count=0
+precompressed_evidence_artifact_count=0
+precompressed_evidence_public_leak_count=0
+precompressed_evidence_paths_no_store=true
+evidence_artifacts_no_store=true
+rule="This receipt validates local deploy/provider adapter partition output only; hosted multi-provider upload replay remains required before release readiness."

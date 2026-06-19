@@ -1,0 +1,44 @@
+@import "./theme.css";
+@import "./generated.css";
+@import "./whiteboard.css";
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: hsl(var(--background));
+  color-scheme: dark;
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-mono);
+  line-height: 1.5;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}

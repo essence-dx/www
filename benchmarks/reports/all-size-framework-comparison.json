@@ -1,0 +1,292 @@
+{
+  "generated_at": "2026-05-18T08:46:42.492Z",
+  "method": {
+    "actual_framework_test": "fair-counter-comparison.json measures equivalent production tiny counter routes for current local Next.js, Svelte, Astro, HTMX, and DX-WWW demo.",
+    "all_size_test": "binary-web-lab.json measures payload encodings for generated page graphs and update packets. It is compiler evidence, not a full browser framework build.",
+    "fairness_note": "Rows labelled compiler packet lab prove payload shape and encode/access cost. They do not prove hydration, DOM apply cost, routing, dev server quality, ecosystem support, or CDN behavior yet."
+  },
+  "latest_versions_checked_from_npm": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "svelte": "5.55.7",
+    "astro": "6.3.3",
+    "htmx": "2.0.10"
+  },
+  "local_versions": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "svelte": "5.55.7",
+    "vite": "8.0.13",
+    "astro": "6.3.3",
+    "htmx": "2.0.10"
+  },
+  "rows": [
+    {
+      "scenario": "Tiny interactive counter, actual browser route",
+      "current_best": {
+        "name": "Astro",
+        "raw_bytes": 2722,
+        "gzip_bytes": 1007,
+        "brotli_bytes": 729,
+        "median_ms": 1.465,
+        "source": "measured production tiny counter"
+      },
+      "dx_current": {
+        "name": "DX-WWW",
+        "raw_bytes": 1867,
+        "gzip_bytes": 919,
+        "brotli_bytes": 657,
+        "median_ms": 0.63,
+        "source": "measured production tiny counter"
+      },
+      "dx_adaptive": {
+        "name": "dx-template-data",
+        "raw_bytes": 43,
+        "gzip_bytes": 57,
+        "brotli_bytes": 47,
+        "access_median_ns": 15,
+        "source": "compiler packet lab"
+      },
+      "winner": "DX-WWW current micro route",
+      "verdict": "DX-WWW is 9.9% smaller than Astro on Brotli and ships no WASM for this tiny interaction; DX packet lab is 15.51x smaller than Astro but is not yet the shipped route."
+    },
+    {
+      "scenario": "Tiny interactive counter, React framework baseline",
+      "current_best": {
+        "name": "Next.js",
+        "raw_bytes": 636239,
+        "gzip_bytes": 187903,
+        "brotli_bytes": 162325,
+        "median_ms": 20.361,
+        "source": "measured production tiny counter"
+      },
+      "dx_current": {
+        "name": "DX-WWW",
+        "raw_bytes": 1867,
+        "gzip_bytes": 919,
+        "brotli_bytes": 657,
+        "median_ms": 0.63,
+        "source": "measured production tiny counter"
+      },
+      "dx_adaptive": {
+        "name": "dx-template-data",
+        "raw_bytes": 43,
+        "gzip_bytes": 57,
+        "brotli_bytes": 47,
+        "access_median_ns": 15,
+        "source": "compiler packet lab"
+      },
+      "winner": "DX-WWW current demo",
+      "verdict": "Current DX-WWW demo is 247.07x smaller than Next.js on Brotli."
+    },
+    {
+      "scenario": "Tiny interactive counter, compiled JS baseline",
+      "current_best": {
+        "name": "Svelte",
+        "raw_bytes": 47774,
+        "gzip_bytes": 18437,
+        "brotli_bytes": 16439,
+        "median_ms": 3.491,
+        "source": "measured production tiny counter"
+      },
+      "dx_current": {
+        "name": "DX-WWW",
+        "raw_bytes": 1867,
+        "gzip_bytes": 919,
+        "brotli_bytes": 657,
+        "median_ms": 0.63,
+        "source": "measured production tiny counter"
+      },
+      "dx_adaptive": {
+        "name": "dx-template-data",
+        "raw_bytes": 43,
+        "gzip_bytes": 57,
+        "brotli_bytes": 47,
+        "access_median_ns": 15,
+        "source": "compiler packet lab"
+      },
+      "winner": "DX-WWW current demo",
+      "verdict": "Current DX-WWW demo is 25.02x smaller than Svelte on Brotli."
+    },
+    {
+      "scenario": "Static/repeated docs, 160 sections",
+      "current_best": {
+        "name": "html-string",
+        "raw_bytes": 36349,
+        "gzip_bytes": 786,
+        "brotli_bytes": 463,
+        "access_median_ns": 17420,
+        "source": "compiler packet lab"
+      },
+      "dx_current": {
+        "name": "dx-template-data",
+        "raw_bytes": 21991,
+        "gzip_bytes": 620,
+        "brotli_bytes": 391,
+        "access_median_ns": 930,
+        "source": "compiler packet lab"
+      },
+      "dx_adaptive": {
+        "name": "dx-template-data",
+        "raw_bytes": 21991,
+        "gzip_bytes": 620,
+        "brotli_bytes": 391,
+        "access_median_ns": 930,
+        "source": "compiler packet lab"
+      },
+      "winner": "DX-WWW adaptive template/data",
+      "verdict": "DX-WWW smaller by 15.6% Brotli"
+    },
+    {
+      "scenario": "Repeated marketing cards, 180 cards",
+      "current_best": {
+        "name": "html-string",
+        "raw_bytes": 40617,
+        "gzip_bytes": 876,
+        "brotli_bytes": 527,
+        "access_median_ns": 19335,
+        "source": "compiler packet lab"
+      },
+      "dx_current": {
+        "name": "dx-template-data",
+        "raw_bytes": 18271,
+        "gzip_bytes": 597,
+        "brotli_bytes": 433,
+        "access_median_ns": 1505,
+        "source": "compiler packet lab"
+      },
+      "dx_adaptive": {
+        "name": "dx-template-data",
+        "raw_bytes": 18271,
+        "gzip_bytes": 597,
+        "brotli_bytes": 433,
+        "access_median_ns": 1505,
+        "source": "compiler packet lab"
+      },
+      "winner": "DX-WWW adaptive template/data",
+      "verdict": "DX-WWW smaller by 17.8% Brotli"
+    },
+    {
+      "scenario": "Large dashboard, full 1200-row data",
+      "current_best": {
+        "name": "html-string",
+        "raw_bytes": 203444,
+        "gzip_bytes": 7876,
+        "brotli_bytes": 3912,
+        "access_median_ns": 93285,
+        "source": "compiler packet lab"
+      },
+      "dx_current": {
+        "name": "dx-template-data",
+        "raw_bytes": 43628,
+        "gzip_bytes": 6256,
+        "brotli_bytes": 2675,
+        "access_median_ns": 13280,
+        "source": "compiler packet lab"
+      },
+      "dx_adaptive": {
+        "name": "dx-columnar-slots",
+        "raw_bytes": 21655,
+        "gzip_bytes": 6175,
+        "brotli_bytes": 3544,
+        "access_median_ns": 7210,
+        "source": "compiler packet lab"
+      },
+      "winner": "DX-WWW template/data on Brotli; columnar wins raw/access",
+      "verdict": "DX-WWW smaller by 31.6% Brotli; columnar is 89.4% smaller raw but worse than template on Brotli for this synthetic data."
+    },
+    {
+      "scenario": "Large dashboard, initial 40-row viewport",
+      "current_best": {
+        "name": "html-string",
+        "raw_bytes": 203444,
+        "gzip_bytes": 7876,
+        "brotli_bytes": 3912,
+        "access_median_ns": 93285,
+        "source": "compiler packet lab"
+      },
+      "dx_current": {
+        "name": "dx-viewport-40",
+        "raw_bytes": 638,
+        "gzip_bytes": 267,
+        "brotli_bytes": 199,
+        "access_median_ns": 182,
+        "source": "compiler packet lab"
+      },
+      "dx_adaptive": {
+        "name": "dx-viewport-40",
+        "raw_bytes": 638,
+        "gzip_bytes": 267,
+        "brotli_bytes": 199,
+        "access_median_ns": 182,
+        "source": "compiler packet lab"
+      },
+      "winner": "DX-WWW viewport packet",
+      "verdict": "DX-WWW smaller by 94.9% Brotli"
+    },
+    {
+      "scenario": "12-row live update",
+      "current_best": {
+        "name": "html-row-fragments",
+        "raw_bytes": 1187,
+        "gzip_bytes": 187,
+        "brotli_bytes": 147,
+        "access_median_ns": 457,
+        "source": "compiler packet lab"
+      },
+      "dx_current": {
+        "name": "dx-cell-patch",
+        "raw_bytes": 145,
+        "gzip_bytes": 153,
+        "brotli_bytes": 134,
+        "access_median_ns": 85,
+        "source": "compiler packet lab"
+      },
+      "dx_adaptive": {
+        "name": "dx-cell-patch",
+        "raw_bytes": 145,
+        "gzip_bytes": 153,
+        "brotli_bytes": 134,
+        "access_median_ns": 85,
+        "source": "compiler packet lab"
+      },
+      "winner": "DX-WWW patch stream, but only slightly after Brotli",
+      "verdict": "DX-WWW smaller by 8.8% Brotli"
+    },
+    {
+      "scenario": "600-row bulk update",
+      "current_best": {
+        "name": "json-range-op",
+        "raw_bytes": 74,
+        "gzip_bytes": 90,
+        "brotli_bytes": 66,
+        "access_median_ns": 560,
+        "source": "compiler packet lab"
+      },
+      "dx_current": {
+        "name": "dx-range-op",
+        "raw_bytes": 10,
+        "gzip_bytes": 30,
+        "brotli_bytes": 14,
+        "access_median_ns": 5,
+        "source": "compiler packet lab"
+      },
+      "dx_adaptive": {
+        "name": "dx-range-op",
+        "raw_bytes": 10,
+        "gzip_bytes": 30,
+        "brotli_bytes": 14,
+        "access_median_ns": 5,
+        "source": "compiler packet lab"
+      },
+      "winner": "DX-WWW range op",
+      "verdict": "DX-WWW smaller by 78.8% Brotli"
+    }
+  ],
+  "honest_verdict": {
+    "today": "Current DX-WWW now beats Astro, Next.js, Svelte, and HTMX on the tiny measured route by using the micro-JS/no-WASM path.",
+    "after_new_compiler_is_runtime_wired": "The adaptive compiler direction is genuinely strong for repeated UI, dashboards, partial updates, source-owned package registries, and framework hosting, but it must keep static/micro-JS/no-WASM paths automatic for tiny pages.",
+    "non_tech_sellability": "Non-technical buyers will care if this becomes cheaper hosting, faster dashboards, smaller websites, safer editable packages, and easier maintenance. They will not care about binary packets by name.",
+    "biggest_flaw": "The compiler packet wins are not yet the complete product. The missing layer is production runtime selection, DOM apply benchmarking, DX registry/versioning workflow, framework-compatible integrations, and proof on real websites."
+  }
+}

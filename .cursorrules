@@ -1,0 +1,53 @@
+# Cursor Rules For DX WWW
+
+Read AGENTS.md first. It is the canonical instruction file for this repository.
+Read README.md second for the public framework overview and benchmark results.
+
+Core rules:
+- Keep WWW source-owned and Next-familiar, not Next-internal.
+- Public route authoring belongs in app/.
+- Official WWW starters must not depend on template-local node_modules; package
+  provenance belongs in Forge/source-owned lanes.
+- Forge is Forge-first and no-node_modules by default. Do not run
+  package-manager installs, create template-local node_modules, or add
+  template-local package dependencies for Forge/package lanes; dependency
+  installation is app-owned.
+- Forge import is a materialization/scoring gate, not a fake package manager.
+  Accepted snapshots under lib/forge/<ecosystem>/<package>/ may resolve from
+  clean package-name imports only when .dx/forge/source-manifest.json tracks the
+  reviewed source files.
+- Do not present pages/ or .dxob as current WWW app surfaces.
+- Devtools and hot reload are dev-only and must not ship in dx build output.
+- Keep benchmark claims tied to evidence. WWW can be described as leading the
+  controlled fair-counter benchmark only when fresh size/RPS receipts prove it.
+- Production preview is deploy-adapter driven: built routes must resolve,
+  devtools must be absent, and public assets such as /logo.svg must work from
+  root aliases.
+- next/image and next/font support is static-safe/source-owned foundation work,
+  not full Next optimizer or hosted font parity.
+- Framework-owned state uses state, derived, effect, action, and store;
+  global stores live under lib/stores when app-wide state is needed.
+- State Management is the professional package lane name for upstream Zustand
+  provenance. Keep that separate from WWW-native store() global stores.
+- React-style events are first-class: quoted values are interaction-class
+  commands; braced values are logic that must lower safely or produce a
+  diagnostic.
+- Motion uses DX Style-backed motion/dxMotion metadata and named animation
+  generation, not a hidden Framer/React runtime.
+- DX Style owns Tailwind-like className authoring, event-class strings,
+  motion class strings, grouped tokens such as hover:(bg-accent
+  text-accent-foreground), and the atomic/custom CSS balance.
+- Use first-party DX Icon for WWW icons: <Icon name="pack:check" /> through the
+  icons(...) config, not npm icon-package imports in starters.
+- Public docs should use launch-grade wording such as Verified Results,
+  Performance Leadership, Framework Capabilities, and Benchmark Governance.
+  Do not reintroduce casual or internal status headings.
+- Use domain capability names, not filler names. Avoid labels such as ai-slop,
+  v1, temp, final, final2, demo, or new unless part of a real public versioned
+  contract.
+- Prefer focused tests and git diff --check before broad builds.
+- Use dx check <project> --json as the stable project-health proof after
+  coherent WWW edits.
+- Do not patch scores or receipts by hand; regenerate through the owning command.
+
+If this file and AGENTS.md disagree, AGENTS.md wins.

@@ -1,0 +1,1367 @@
+{
+  "consumers": {
+    "dxCli": "dx build and future dx graph --json",
+    "dxWww": ".dx/receipts/build/latest.json",
+    "zedPreview": "read graph nodes, route shell chunks, and receipt paths without executing node_modules"
+  },
+  "coreConceptMap": [
+    {
+      "boundary": "adapter-boundary: graph concepts inform DX receipts; Turbopack is not the public architecture",
+      "dxContracts": [
+        "dx.build.graph",
+        "dx.www.moduleGraph"
+      ],
+      "dxEdgeKinds": [
+        "compiled-from-source",
+        "imports",
+        "imports-source-module",
+        "links-entry-module"
+      ],
+      "dxNodeKinds": [
+        "route-shell-chunk",
+        "source-module",
+        "source-module-chunk",
+        "tsx-component",
+        "tsx-route"
+      ],
+      "dxReceiptFields": [
+        "graph.nodes",
+        "graph.edges",
+        "invalidation"
+      ],
+      "nodeModulesRequired": false,
+      "upstreamConcept": "ModuleGraph",
+      "vendorPaths": [
+        "turbopack/crates/turbopack-core/src/module_graph/mod.rs"
+      ]
+    },
+    {
+      "boundary": "source-owned modules and emitted chunks stay DX runtime metadata, not React/RSC modules",
+      "dxContracts": [
+        "dx.www.moduleGraph"
+      ],
+      "dxEdgeKinds": [
+        "compiled-from-source",
+        "imports-source-module"
+      ],
+      "dxNodeKinds": [
+        "source-module",
+        "source-module-chunk",
+        "tsx-component",
+        "tsx-route"
+      ],
+      "dxReceiptFields": [
+        "graph.nodes",
+        "route_outputs[].source_module_chunks"
+      ],
+      "nodeModulesRequired": false,
+      "upstreamConcept": "Module",
+      "vendorPaths": [
+        "turbopack/crates/turbopack-core/src/module.rs"
+      ]
+    },
+    {
+      "boundary": "DX resolver and Forge source rules decide references; Node resolution is compatibility-only",
+      "dxContracts": [
+        "dx.build.graph",
+        "dx.www.moduleGraph"
+      ],
+      "dxEdgeKinds": [
+        "imports",
+        "imports-source-module",
+        "links-entry-module"
+      ],
+      "dxNodeKinds": [],
+      "dxReceiptFields": [
+        "graph.edges",
+        "source_module_chunks[].dependencies"
+      ],
+      "nodeModulesRequired": false,
+      "upstreamConcept": "ModuleReference",
+      "vendorPaths": [
+        "turbopack/crates/turbopack-core/src/reference/mod.rs"
+      ]
+    },
+    {
+      "boundary": "dx-style and hashed public assets stay source-owned receipt nodes",
+      "dxContracts": [
+        "dx.build.graph"
+      ],
+      "dxEdgeKinds": [
+        "imports"
+      ],
+      "dxNodeKinds": [
+        "dx-style-css",
+        "public-asset"
+      ],
+      "dxReceiptFields": [
+        "styles",
+        "assets"
+      ],
+      "nodeModulesRequired": false,
+      "upstreamConcept": "Asset",
+      "vendorPaths": [
+        "turbopack/crates/turbopack-core/src/asset.rs"
+      ]
+    },
+    {
+      "boundary": "route shells and deploy outputs remain DX-owned outputs, not Next runtime assets",
+      "dxContracts": [
+        "dx.build.graph",
+        "dx.www.moduleGraph"
+      ],
+      "dxEdgeKinds": [
+        "emits",
+        "emitted-from",
+        "links-entry-module"
+      ],
+      "dxNodeKinds": [
+        "deploy-output",
+        "route-shell-chunk"
+      ],
+      "dxReceiptFields": [
+        "route_outputs",
+        "graph.nodes"
+      ],
+      "nodeModulesRequired": false,
+      "upstreamConcept": "OutputAsset",
+      "vendorPaths": [
+        "turbopack/crates/turbopack-core/src/output.rs"
+      ]
+    },
+    {
+      "boundary": "DX emits browser-executable metadata chunks without adopting Turbopack chunk runtime",
+      "dxContracts": [
+        "dx.www.moduleGraph"
+      ],
+      "dxEdgeKinds": [
+        "links-entry-module",
+        "imports-source-module"
+      ],
+      "dxNodeKinds": [
+        "route-shell-chunk",
+        "source-module-chunk"
+      ],
+      "dxReceiptFields": [
+        "route_outputs[].shell_chunk_output",
+        "route_outputs[].source_module_chunks"
+      ],
+      "nodeModulesRequired": false,
+      "upstreamConcept": "ChunkingContext",
+      "vendorPaths": [
+        "turbopack/crates/turbopack-core/src/chunk/mod.rs"
+      ]
+    },
+    {
+      "boundary": "DX source-map lookups stay source-owned and feed diagnostics without executing Turbopack",
+      "dxContracts": [
+        "dx.diagnostics.code_frame",
+        "dx.www.sourceMapAdapter"
+      ],
+      "dxEdgeKinds": [
+        "maps-generated-to-source"
+      ],
+      "dxNodeKinds": [
+        "route-shell-chunk",
+        "source-module-chunk"
+      ],
+      "dxReceiptFields": [
+        "source_maps[].segments",
+        "diagnostics[].generated_position",
+        "diagnostics[].source_position"
+      ],
+      "nodeModulesRequired": false,
+      "upstreamConcept": "SourceMap",
+      "vendorPaths": [
+        "turbopack/crates/turbopack-core/src/source_map/mod.rs",
+        "turbopack/crates/turbopack-core/src/source_map/source_map_asset.rs"
+      ]
+    },
+    {
+      "boundary": "DX invalidation walks receipt edges and does not expose turbo-tasks as architecture",
+      "dxContracts": [
+        "dx.build.graph"
+      ],
+      "dxEdgeKinds": [
+        "checks"
+      ],
+      "dxNodeKinds": [
+        "dx-check-receipt"
+      ],
+      "dxReceiptFields": [
+        "invalidation.changedNodeIds",
+        "invalidation.affectedNodeIds",
+        "invalidation.rebuildNodeIds"
+      ],
+      "nodeModulesRequired": false,
+      "upstreamConcept": "SourceOwnedInvalidation",
+      "vendorPaths": [
+        "turbopack/crates/turbopack-core/src/module_graph/mod.rs"
+      ]
+    },
+    {
+      "boundary": "Forge package ownership is a DX source model; Turbopack has no authority over it",
+      "dxContracts": [
+        "dx.forge.sourceGraph"
+      ],
+      "dxEdgeKinds": [
+        "expects-receipt",
+        "owns-source"
+      ],
+      "dxNodeKinds": [
+        "forge-surface"
+      ],
+      "dxReceiptFields": [
+        ".dx/forge/source-manifest.json"
+      ],
+      "nodeModulesRequired": false,
+      "upstreamConcept": "ForgeSourceSurface",
+      "vendorPaths": [
+        "turbopack/crates/turbopack-core/src/module_graph/mod.rs"
+      ]
+    }
+  ],
+  "format": 1,
+  "generatedAt": "2026-05-25T06:08:12.003182800+00:00",
+  "graph": {
+    "edges": [
+      {
+        "external_runtime_executed": false,
+        "external_runtime_required": false,
+        "from": "dx-style-css:styles/app.generated.css",
+        "kind": "emits-css-source-map",
+        "lifecycle_scripts_executed": false,
+        "node_modules_required": false,
+        "output": ".dx/build/styles/app.generated.css.map",
+        "source_map_hash": "dfbee35c9b94670c",
+        "source_map_linked": true,
+        "source_owned_contract": true,
+        "source_path": "styles/app.generated.css",
+        "to": "dx-style-source-map:.dx/build/styles/app.generated.css.map"
+      },
+      {
+        "external_runtime_executed": false,
+        "external_runtime_required": false,
+        "from": "dx-style-css:styles/theme.dx.css",
+        "kind": "emits-css-source-map",
+        "lifecycle_scripts_executed": false,
+        "node_modules_required": false,
+        "output": ".dx/build/styles/theme.dx.css.map",
+        "source_map_hash": "6977d7092e8edfd1",
+        "source_map_linked": true,
+        "source_owned_contract": true,
+        "source_path": "styles/theme.dx.css",
+        "to": "dx-style-source-map:.dx/build/styles/theme.dx.css.map"
+      }
+    ],
+    "nodes": [
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 48482,
+        "code_block_count": 3,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "723f84d2ea22f311",
+        "heading_count": 13,
+        "id": "dx-content-document:docs/DX_WWW_FRAMEWORK_STRUCTURE.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/DX_WWW_FRAMEWORK_STRUCTURE.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 28254,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "58502ca456891e39",
+        "heading_count": 38,
+        "id": "dx-content-document:docs/DX_WWW_MANAGER_HANDOFF.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/DX_WWW_MANAGER_HANDOFF.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 10624,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "a075a9df8af10e6c",
+        "heading_count": 7,
+        "id": "dx-content-document:docs/NEXTJS_COMPATIBILITY_MAP.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/NEXTJS_COMPATIBILITY_MAP.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 6542,
+        "code_block_count": 4,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "4e64adac04d31b81",
+        "heading_count": 20,
+        "id": "dx-content-document:docs/SECURITY.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/SECURITY.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 4189,
+        "code_block_count": 8,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "47f9a30964c3c0e9",
+        "heading_count": 17,
+        "id": "dx-content-document:docs/api/README.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/api/README.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 3633,
+        "code_block_count": 3,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "250a4e260deabb2b",
+        "heading_count": 18,
+        "id": "dx-content-document:docs/api/versioning.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/api/versioning.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 1764,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "340a463cc9c4a401",
+        "heading_count": 11,
+        "id": "dx-content-document:docs/architecture.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/architecture.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 3981,
+        "code_block_count": 3,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "da19aa2d47274e81",
+        "heading_count": 30,
+        "id": "dx-content-document:docs/benchmarks.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/benchmarks.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 14585,
+        "code_block_count": 2,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "a134dfeaff010740",
+        "heading_count": 11,
+        "id": "dx-content-document:docs/build-graph-model.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/build-graph-model.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 4857,
+        "code_block_count": 3,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "d0a9343a21c701c5",
+        "heading_count": 33,
+        "id": "dx-content-document:docs/deployment/docker.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/deployment/docker.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 3870,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "6211a645eda4cf7e",
+        "heading_count": 21,
+        "id": "dx-content-document:docs/deployment/environment.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/deployment/environment.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 5312,
+        "code_block_count": 4,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "29e204e670f8a7b7",
+        "heading_count": 20,
+        "id": "dx-content-document:docs/deployment/monitoring.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/deployment/monitoring.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 6024,
+        "code_block_count": 7,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "1a81f8abbf920a41",
+        "heading_count": 44,
+        "id": "dx-content-document:docs/deployment/nginx.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/deployment/nginx.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 4227,
+        "code_block_count": 8,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "4f7884d7246db19c",
+        "heading_count": 34,
+        "id": "dx-content-document:docs/deployment/systemd.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/deployment/systemd.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 5941,
+        "code_block_count": 8,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "5024d4bb80eb2bae",
+        "heading_count": 54,
+        "id": "dx-content-document:docs/deployment/troubleshooting.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/deployment/troubleshooting.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 7022,
+        "code_block_count": 3,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "4872f45a7664797a",
+        "heading_count": 10,
+        "id": "dx-content-document:docs/dx-www-developer-contract.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/dx-www-developer-contract.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 2700,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "b3bf5cd8d5a44150",
+        "heading_count": 5,
+        "id": "dx-content-document:docs/dx-www-route-state-standard.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/dx-www-route-state-standard.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 10473,
+        "code_block_count": 13,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "d8e6c0f88d35177a",
+        "heading_count": 12,
+        "id": "dx-content-document:docs/forge-adoption-launch-checklist.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/forge-adoption-launch-checklist.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 27479,
+        "code_block_count": 29,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "2b1bbec3715b2885",
+        "heading_count": 10,
+        "id": "dx-content-document:docs/forge-ci-smoke.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/forge-ci-smoke.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 3553,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "738582fb15ab31b0",
+        "heading_count": 6,
+        "id": "dx-content-document:docs/forge-launch-limitations.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/forge-launch-limitations.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 22070,
+        "code_block_count": 39,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "349ed86d8b5da53f",
+        "heading_count": 14,
+        "id": "dx-content-document:docs/forge-public-beta-quickstart.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/forge-public-beta-quickstart.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 19314,
+        "code_block_count": 14,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "41135cd7ed5fcb79",
+        "heading_count": 12,
+        "id": "dx-content-document:docs/forge-public-launch-checklist.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/forge-public-launch-checklist.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 12707,
+        "code_block_count": 4,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "6df6e20e0c2ac542",
+        "heading_count": 11,
+        "id": "dx-content-document:docs/forge-public-launch-handoff.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/forge-public-launch-handoff.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 8821,
+        "code_block_count": 10,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "6f8af14279acf192",
+        "heading_count": 16,
+        "id": "dx-content-document:docs/forge-real-project-adoption.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/forge-real-project-adoption.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 8163,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "f6fe1259e5006796",
+        "heading_count": 5,
+        "id": "dx-content-document:docs/forge-shadcn-migration.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/forge-shadcn-migration.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 3742,
+        "code_block_count": 10,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "e8370967745209f6",
+        "heading_count": 26,
+        "id": "dx-content-document:docs/getting-started.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/getting-started.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 4407,
+        "code_block_count": 9,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "630576dee6059113",
+        "heading_count": 19,
+        "id": "dx-content-document:docs/migration/v0-to-v1.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/migration/v0-to-v1.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 1420,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "5f57a37a24986cb3",
+        "heading_count": 1,
+        "id": "dx-content-document:docs/next-rust-merge-checkpoint.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/next-rust-merge-checkpoint.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 16693,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "a462f9783092efac",
+        "heading_count": 12,
+        "id": "dx-content-document:docs/packages/3d-scene-system.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/3d-scene-system.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 15676,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "82223e7991d21ae5",
+        "heading_count": 8,
+        "id": "dx-content-document:docs/packages/ai-vercel-ai.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/ai-vercel-ai.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 16363,
+        "code_block_count": 2,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "d28c8e43caeafd24",
+        "heading_count": 9,
+        "id": "dx-content-document:docs/packages/animation-motion.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/animation-motion.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 20135,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "788e1928a2203487",
+        "heading_count": 11,
+        "id": "dx-content-document:docs/packages/api-trpc.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/api-trpc.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 16418,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "612f1762ef57100d",
+        "heading_count": 11,
+        "id": "dx-content-document:docs/packages/authentication.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/authentication.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 17345,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "5c7b71f489867ba2",
+        "heading_count": 9,
+        "id": "dx-content-document:docs/packages/automations-n8n.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/automations-n8n.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 21082,
+        "code_block_count": 3,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "a3b81e71bd03605b",
+        "heading_count": 14,
+        "id": "dx-content-document:docs/packages/content-fumadocs-next.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/content-fumadocs-next.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 14921,
+        "code_block_count": 4,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "b3598eaecd8d6f19",
+        "heading_count": 13,
+        "id": "dx-content-document:docs/packages/content-react-markdown.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/content-react-markdown.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 21774,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "122b28801f7662aa",
+        "heading_count": 11,
+        "id": "dx-content-document:docs/packages/db-drizzle-sqlite.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/db-drizzle-sqlite.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 14635,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "dc1303a5644dd1f5",
+        "heading_count": 12,
+        "id": "dx-content-document:docs/packages/forms-react-hook-form.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/forms-react-hook-form.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 16615,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "5b61bd2d29f6be0a",
+        "heading_count": 10,
+        "id": "dx-content-document:docs/packages/instantdb-react.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/instantdb-react.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 15865,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "9a2ce1bd819bd98d",
+        "heading_count": 13,
+        "id": "dx-content-document:docs/packages/next-intl.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/next-intl.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 18313,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "1f50d9b4f553b8fd",
+        "heading_count": 17,
+        "id": "dx-content-document:docs/packages/payments-stripe-js.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/payments-stripe-js.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 11629,
+        "code_block_count": 2,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "04d1fcdddfa91b8c",
+        "heading_count": 11,
+        "id": "dx-content-document:docs/packages/reactive-store.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/reactive-store.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 12757,
+        "code_block_count": 2,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "5e59702e9136ee96",
+        "heading_count": 7,
+        "id": "dx-content-document:docs/packages/state-zustand.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/state-zustand.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 19878,
+        "code_block_count": 4,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "d5cc279103027e7e",
+        "heading_count": 16,
+        "id": "dx-content-document:docs/packages/supabase-client.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/supabase-client.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 15836,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "8185a963456206c0",
+        "heading_count": 12,
+        "id": "dx-content-document:docs/packages/tanstack-query.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/tanstack-query.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 13947,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "8dc4932152fc7b6e",
+        "heading_count": 10,
+        "id": "dx-content-document:docs/packages/ui-components.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/ui-components.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 16963,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "8964265743f66a7b",
+        "heading_count": 9,
+        "id": "dx-content-document:docs/packages/validation-zod.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/validation-zod.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 17480,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "d5d51494c1643bee",
+        "heading_count": 11,
+        "id": "dx-content-document:docs/packages/wasm-bindgen.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/packages/wasm-bindgen.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 3710,
+        "code_block_count": 1,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "1771a6c6fb406c71",
+        "heading_count": 7,
+        "id": "dx-content-document:docs/root-workspace-readme.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/root-workspace-readme.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 57790,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "b4372a64c9629100",
+        "heading_count": 5,
+        "id": "dx-content-document:docs/root-workspace-status.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/root-workspace-status.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 67867,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "07148784aa12fe85",
+        "heading_count": 18,
+        "id": "dx-content-document:docs/root-workspace-todo.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/root-workspace-todo.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 12861,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "67b6dbdfed6630d7",
+        "heading_count": 8,
+        "id": "dx-content-document:docs/superpowers/plans/2026-05-22-dx-build-source-engine-completion.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/superpowers/plans/2026-05-22-dx-build-source-engine-completion.md",
+        "runtime_proof": false
+      },
+      {
+        "adapter_boundary": "source-receipt-only-no-mdx-compile-evaluate-or-react-runtime",
+        "bytes": 9519,
+        "code_block_count": 0,
+        "content_kind": "markdown",
+        "contract": "dx.forge.sourceGraph",
+        "frontmatter": {
+          "present": false
+        },
+        "hash": "3c8e72d9bddb5b12",
+        "heading_count": 7,
+        "id": "dx-content-document:docs/wire-format-audit.md",
+        "kind": "dx-content-document",
+        "mdx_options": null,
+        "node_modules_required": false,
+        "path": "docs/wire-format-audit.md",
+        "runtime_proof": false
+      },
+      {
+        "asset_reference_count": 0,
+        "asset_references": [],
+        "contract": "dx.build.graph",
+        "external_runtime_executed": false,
+        "external_runtime_required": false,
+        "flattened_import_count": 0,
+        "flattened_imports": [],
+        "hash": "101241f3a507b600",
+        "id": "dx-style-css:styles/app.generated.css",
+        "kind": "dx-style-css",
+        "lifecycle_scripts_executed": false,
+        "minified": true,
+        "node_modules_required": false,
+        "original_rule_count": 21,
+        "output": ".dx/build/styles/app.generated.css",
+        "path": "styles/app.generated.css",
+        "pruned_rule_count": 0,
+        "retained_import_count": 0,
+        "retained_imports": [],
+        "retained_rule_count": 21,
+        "source_map_entry_style_source_count": 1,
+        "source_map_evidence_only": true,
+        "source_map_exact_segment_mapping": false,
+        "source_map_flattened_import_source_count": 0,
+        "source_map_hash": "dfbee35c9b94670c",
+        "source_map_linked": true,
+        "source_map_output": ".dx/build/styles/app.generated.css.map",
+        "source_map_retained_import_source_count": 0,
+        "source_map_segment_count": 0,
+        "source_map_source_count": 1,
+        "source_map_source_hash_count": 1,
+        "source_owned_contract": true
+      },
+      {
+        "asset_reference_count": 0,
+        "asset_references": [],
+        "contract": "dx.build.graph",
+        "external_runtime_executed": false,
+        "external_runtime_required": false,
+        "flattened_import_count": 0,
+        "flattened_imports": [],
+        "hash": "d4e1e72781b6f47f",
+        "id": "dx-style-css:styles/theme.dx.css",
+        "kind": "dx-style-css",
+        "lifecycle_scripts_executed": false,
+        "minified": true,
+        "node_modules_required": false,
+        "original_rule_count": 2,
+        "output": ".dx/build/styles/theme.dx.css",
+        "path": "styles/theme.dx.css",
+        "pruned_rule_count": 0,
+        "retained_import_count": 0,
+        "retained_imports": [],
+        "retained_rule_count": 2,
+        "source_map_entry_style_source_count": 1,
+        "source_map_evidence_only": true,
+        "source_map_exact_segment_mapping": false,
+        "source_map_flattened_import_source_count": 0,
+        "source_map_hash": "6977d7092e8edfd1",
+        "source_map_linked": true,
+        "source_map_output": ".dx/build/styles/theme.dx.css.map",
+        "source_map_retained_import_source_count": 0,
+        "source_map_segment_count": 0,
+        "source_map_source_count": 1,
+        "source_map_source_hash_count": 1,
+        "source_owned_contract": true
+      },
+      {
+        "contract": "dx.build.graph",
+        "external_runtime_executed": false,
+        "external_runtime_required": false,
+        "id": "dx-style-source-map:.dx/build/styles/app.generated.css.map",
+        "kind": "dx-style-source-map",
+        "lifecycle_scripts_executed": false,
+        "node_modules_required": false,
+        "output": ".dx/build/styles/app.generated.css.map",
+        "path": ".dx/build/styles/app.generated.css.map",
+        "source_map_entry_style_source_count": 1,
+        "source_map_evidence_only": true,
+        "source_map_exact_segment_mapping": false,
+        "source_map_flattened_import_source_count": 0,
+        "source_map_hash": "dfbee35c9b94670c",
+        "source_map_linked": true,
+        "source_map_retained_import_source_count": 0,
+        "source_map_segment_count": 0,
+        "source_map_source_count": 1,
+        "source_map_source_hash_count": 1,
+        "source_owned_contract": true,
+        "style_path": "styles/app.generated.css"
+      },
+      {
+        "contract": "dx.build.graph",
+        "external_runtime_executed": false,
+        "external_runtime_required": false,
+        "id": "dx-style-source-map:.dx/build/styles/theme.dx.css.map",
+        "kind": "dx-style-source-map",
+        "lifecycle_scripts_executed": false,
+        "node_modules_required": false,
+        "output": ".dx/build/styles/theme.dx.css.map",
+        "path": ".dx/build/styles/theme.dx.css.map",
+        "source_map_entry_style_source_count": 1,
+        "source_map_evidence_only": true,
+        "source_map_exact_segment_mapping": false,
+        "source_map_flattened_import_source_count": 0,
+        "source_map_hash": "6977d7092e8edfd1",
+        "source_map_linked": true,
+        "source_map_retained_import_source_count": 0,
+        "source_map_segment_count": 0,
+        "source_map_source_count": 1,
+        "source_map_source_hash_count": 1,
+        "source_owned_contract": true,
+        "style_path": "styles/theme.dx.css"
+      }
+    ]
+  },
+  "invalidation": {
+    "affectedNodeIds": [],
+    "affectedRoutes": [],
+    "changedNodeIds": [],
+    "changedRoutes": [],
+    "emittedOutputArtifacts": [],
+    "emittedOutputNodeIds": [],
+    "rebuildNodeIds": [],
+    "rebuildRoutes": []
+  },
+  "names": {
+    "buildGraph": "dx.build.graph",
+    "forgeSourceGraph": "dx.forge.sourceGraph",
+    "wwwModuleGraph": "dx.www.moduleGraph"
+  },
+  "positioning": {
+    "dxSourceOwnedBuildEngine": true,
+    "nodeModulesRequired": false,
+    "rolldownPublicDependency": false,
+    "turbopackCoreAdapterBoundary": true,
+    "turbopackPublicDependency": false
+  },
+  "projectRoot": "G:/Dx/www",
+  "provenance": [
+    {
+      "copiedCode": false,
+      "license": "MIT",
+      "name": "Rolldown source study",
+      "upstream": "rolldown/rolldown"
+    },
+    {
+      "copiedCode": false,
+      "license": "MIT",
+      "name": "Oxc parser boundary",
+      "upstream": "oxc-project/oxc"
+    }
+  ],
+  "receiptPath": "G:/Dx/www/.dx/receipts/graph/latest.json",
+  "schema": "dx.build.graph"
+}

@@ -1,0 +1,988 @@
+{
+  "tool": "dx imports",
+  "version": 2,
+  "generated_by": "dx imports sync",
+  "project": "G:/Dx/www/examples/charts",
+  "source_hash": "blake3:bd4051e82a5a32e6dab445ce00f47b5a15b2f9e04afd9b53d633ceb39b4953dc",
+  "policy": "generated-import-maps-no-runtime-magic",
+  "used_only": true,
+  "scan_roots": [
+    "components",
+    "composables",
+    "utils"
+  ],
+  "used_roots": [
+    "app",
+    "components",
+    "lib",
+    "server",
+    "styles"
+  ],
+  "aliases": [
+    "#components",
+    "#imports"
+  ],
+  "files": {
+    "barrel": ".dx/imports/auto-imports.ts",
+    "import_map": ".dx/imports/import-map.json",
+    "declarations": ".dx/imports/imports.d.ts"
+  },
+  "entry_count": 28,
+  "used_symbol_count": 14,
+  "typed_entry_count": 25,
+  "untyped_entry_count": 3,
+  "entries": [
+    {
+      "kind": "component",
+      "name": "ChartFrame",
+      "source": "components/charts/chart-frame.tsx",
+      "import_path": "@/components/charts/chart-frame",
+      "barrel_export": "../../components/charts/chart-frame",
+      "exports": [
+        "ChartFrame",
+        "ChartFrameProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ChartFrame"
+      ],
+      "unused_exports": [
+        "ChartFrameProps"
+      ],
+      "type_exports": [
+        "ChartFrameProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "ChartGallery",
+      "source": "components/charts/chart-gallery.tsx",
+      "import_path": "@/components/charts/chart-gallery",
+      "barrel_export": "../../components/charts/chart-gallery",
+      "exports": [
+        "ChartGallery"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ChartGallery"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "ChartHome",
+      "source": "components/charts/chart-home.tsx",
+      "import_path": "@/components/charts/chart-home",
+      "barrel_export": "../../components/charts/chart-home",
+      "exports": [
+        "ChartHome"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ChartHome"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "ChartSiteShell",
+      "source": "components/charts/chart-site-shell.tsx",
+      "import_path": "@/components/charts/chart-site-shell",
+      "barrel_export": "../../components/charts/chart-site-shell",
+      "exports": [
+        "ChartSiteShell",
+        "ChartSiteShellProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ChartSiteShell"
+      ],
+      "unused_exports": [
+        "ChartSiteShellProps"
+      ],
+      "type_exports": [
+        "ChartSiteShellProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "DocsOverview",
+      "source": "components/charts/docs-overview.tsx",
+      "import_path": "@/components/charts/docs-overview",
+      "barrel_export": "../../components/charts/docs-overview",
+      "exports": [
+        "DocsOverview"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "DocsOverview"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "EcosystemOverview",
+      "source": "components/charts/ecosystem-overview.tsx",
+      "import_path": "@/components/charts/ecosystem-overview",
+      "barrel_export": "../../components/charts/ecosystem-overview",
+      "exports": [
+        "EcosystemOverview"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "EcosystemOverview"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "ExamplesOverview",
+      "source": "components/charts/examples-overview.tsx",
+      "import_path": "@/components/charts/examples-overview",
+      "barrel_export": "../../components/charts/examples-overview",
+      "exports": [
+        "ExamplesOverview"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ExamplesOverview"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "PlaygroundPreview",
+      "source": "components/charts/playground-preview.tsx",
+      "import_path": "@/components/charts/playground-preview",
+      "barrel_export": "../../components/charts/playground-preview",
+      "exports": [
+        "PlaygroundPreview"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "PlaygroundPreview"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "ChartRouteBoundary",
+      "source": "components/charts/route-boundary.tsx",
+      "import_path": "@/components/charts/route-boundary",
+      "barrel_export": "../../components/charts/route-boundary",
+      "exports": [
+        "ChartRouteBoundary",
+        "ChartRouteBoundaryKind"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ChartRouteBoundary"
+      ],
+      "unused_exports": [
+        "ChartRouteBoundaryKind"
+      ],
+      "type_exports": [
+        "ChartRouteBoundaryKind"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "ThemeOverview",
+      "source": "components/charts/theme-overview.tsx",
+      "import_path": "@/components/charts/theme-overview",
+      "barrel_export": "../../components/charts/theme-overview",
+      "exports": [
+        "ThemeOverview"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ThemeOverview"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "IslandRuntimeProbe",
+      "source": "components/island-runtime-probe.tsx",
+      "import_path": "@/components/island-runtime-probe",
+      "barrel_export": "../../components/island-runtime-probe",
+      "exports": [
+        "IslandRuntimeProbe"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "IslandRuntimeProbe"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "FrameworkCompletenessItem",
+      "source": "components/launch/framework-completeness.ts",
+      "import_path": "@/components/launch/framework-completeness",
+      "barrel_export": null,
+      "exports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus",
+        "dxChartsFrameworkCompleteness",
+        "dxChartsFrameworkCompletenessSummary",
+        "frameworkCompletenessContract"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus",
+        "dxChartsFrameworkCompleteness",
+        "dxChartsFrameworkCompletenessSummary",
+        "frameworkCompletenessContract"
+      ],
+      "type_exports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "StateRuntimeProbe",
+      "source": "components/state-runtime-probe.tsx",
+      "import_path": "@/components/state-runtime-probe",
+      "barrel_export": "../../components/state-runtime-probe",
+      "exports": [
+        "StateRuntimeProbe"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "StateRuntimeProbe"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsActivityIcon",
+      "source": "components/icons/charts-activity.tsx",
+      "import_path": "@/components/icons/charts-activity",
+      "barrel_export": null,
+      "exports": [
+        "ChartsActivityIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsActivityIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsBarIcon",
+      "source": "components/icons/charts-bar.tsx",
+      "import_path": "@/components/icons/charts-bar",
+      "barrel_export": null,
+      "exports": [
+        "ChartsBarIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsBarIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsBookIcon",
+      "source": "components/icons/charts-book.tsx",
+      "import_path": "@/components/icons/charts-book",
+      "barrel_export": null,
+      "exports": [
+        "ChartsBookIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsBookIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsCheckIcon",
+      "source": "components/icons/charts-check.tsx",
+      "import_path": "@/components/icons/charts-check",
+      "barrel_export": null,
+      "exports": [
+        "ChartsCheckIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsCheckIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsLayersIcon",
+      "source": "components/icons/charts-layers.tsx",
+      "import_path": "@/components/icons/charts-layers",
+      "barrel_export": null,
+      "exports": [
+        "ChartsLayersIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsLayersIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsNetworkIcon",
+      "source": "components/icons/charts-network.tsx",
+      "import_path": "@/components/icons/charts-network",
+      "barrel_export": null,
+      "exports": [
+        "ChartsNetworkIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsNetworkIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsPackageIcon",
+      "source": "components/icons/charts-package.tsx",
+      "import_path": "@/components/icons/charts-package",
+      "barrel_export": null,
+      "exports": [
+        "ChartsPackageIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsPackageIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsPaletteIcon",
+      "source": "components/icons/charts-palette.tsx",
+      "import_path": "@/components/icons/charts-palette",
+      "barrel_export": null,
+      "exports": [
+        "ChartsPaletteIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsPaletteIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsSparklineIcon",
+      "source": "components/icons/charts-sparkline.tsx",
+      "import_path": "@/components/icons/charts-sparkline",
+      "barrel_export": null,
+      "exports": [
+        "ChartsSparklineIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsSparklineIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsTargetIcon",
+      "source": "components/icons/charts-target.tsx",
+      "import_path": "@/components/icons/charts-target",
+      "barrel_export": null,
+      "exports": [
+        "ChartsTargetIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsTargetIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsTerminalIcon",
+      "source": "components/icons/charts-terminal.tsx",
+      "import_path": "@/components/icons/charts-terminal",
+      "barrel_export": null,
+      "exports": [
+        "ChartsTerminalIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "ChartsTerminalIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "import_path": "@/components/icons/icon",
+      "barrel_export": "../../components/icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unused_exports": [],
+      "type_exports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "forge-package",
+      "name": "www/minimal-starter",
+      "source": "forge/www/minimal-starter",
+      "import_path": "@/forge/www/minimal-starter",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "generated.css",
+      "source": "styles/generated.css",
+      "import_path": "@/styles/generated.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "theme.css",
+      "source": "styles/theme.css",
+      "import_path": "@/styles/theme.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    }
+  ],
+  "public_barrel_entries": [
+    "components/charts/chart-frame.tsx",
+    "components/charts/chart-gallery.tsx",
+    "components/charts/chart-home.tsx",
+    "components/charts/chart-site-shell.tsx",
+    "components/charts/docs-overview.tsx",
+    "components/charts/ecosystem-overview.tsx",
+    "components/charts/examples-overview.tsx",
+    "components/charts/playground-preview.tsx",
+    "components/charts/route-boundary.tsx",
+    "components/charts/theme-overview.tsx",
+    "components/island-runtime-probe.tsx",
+    "components/state-runtime-probe.tsx",
+    "components/icons/icon.tsx"
+  ],
+  "unused_entries": [
+    "components/launch/framework-completeness.ts",
+    "components/icons/charts-activity.tsx",
+    "components/icons/charts-bar.tsx",
+    "components/icons/charts-book.tsx",
+    "components/icons/charts-check.tsx",
+    "components/icons/charts-layers.tsx",
+    "components/icons/charts-network.tsx",
+    "components/icons/charts-package.tsx",
+    "components/icons/charts-palette.tsx",
+    "components/icons/charts-sparkline.tsx",
+    "components/icons/charts-target.tsx",
+    "components/icons/charts-terminal.tsx"
+  ],
+  "skipped_entries": [],
+  "component_exports": [
+    "../../components/charts/chart-frame",
+    "../../components/charts/chart-gallery",
+    "../../components/charts/chart-home",
+    "../../components/charts/chart-site-shell",
+    "../../components/charts/docs-overview",
+    "../../components/charts/ecosystem-overview",
+    "../../components/charts/examples-overview",
+    "../../components/charts/playground-preview",
+    "../../components/charts/route-boundary",
+    "../../components/charts/theme-overview",
+    "../../components/island-runtime-probe",
+    "../../components/state-runtime-probe",
+    "../../components/icons/icon"
+  ],
+  "components": [
+    {
+      "kind": "component",
+      "name": "ChartFrame",
+      "source": "components/charts/chart-frame.tsx",
+      "importPath": "@/components/charts/chart-frame",
+      "barrelExport": "../../components/charts/chart-frame",
+      "exports": [
+        "ChartFrame",
+        "ChartFrameProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ChartFrame"
+      ],
+      "unusedExports": [
+        "ChartFrameProps"
+      ],
+      "typeExports": [
+        "ChartFrameProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "ChartGallery",
+      "source": "components/charts/chart-gallery.tsx",
+      "importPath": "@/components/charts/chart-gallery",
+      "barrelExport": "../../components/charts/chart-gallery",
+      "exports": [
+        "ChartGallery"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ChartGallery"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "ChartHome",
+      "source": "components/charts/chart-home.tsx",
+      "importPath": "@/components/charts/chart-home",
+      "barrelExport": "../../components/charts/chart-home",
+      "exports": [
+        "ChartHome"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ChartHome"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "ChartSiteShell",
+      "source": "components/charts/chart-site-shell.tsx",
+      "importPath": "@/components/charts/chart-site-shell",
+      "barrelExport": "../../components/charts/chart-site-shell",
+      "exports": [
+        "ChartSiteShell",
+        "ChartSiteShellProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ChartSiteShell"
+      ],
+      "unusedExports": [
+        "ChartSiteShellProps"
+      ],
+      "typeExports": [
+        "ChartSiteShellProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "DocsOverview",
+      "source": "components/charts/docs-overview.tsx",
+      "importPath": "@/components/charts/docs-overview",
+      "barrelExport": "../../components/charts/docs-overview",
+      "exports": [
+        "DocsOverview"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "DocsOverview"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "EcosystemOverview",
+      "source": "components/charts/ecosystem-overview.tsx",
+      "importPath": "@/components/charts/ecosystem-overview",
+      "barrelExport": "../../components/charts/ecosystem-overview",
+      "exports": [
+        "EcosystemOverview"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "EcosystemOverview"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "ExamplesOverview",
+      "source": "components/charts/examples-overview.tsx",
+      "importPath": "@/components/charts/examples-overview",
+      "barrelExport": "../../components/charts/examples-overview",
+      "exports": [
+        "ExamplesOverview"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ExamplesOverview"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "PlaygroundPreview",
+      "source": "components/charts/playground-preview.tsx",
+      "importPath": "@/components/charts/playground-preview",
+      "barrelExport": "../../components/charts/playground-preview",
+      "exports": [
+        "PlaygroundPreview"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "PlaygroundPreview"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "ChartRouteBoundary",
+      "source": "components/charts/route-boundary.tsx",
+      "importPath": "@/components/charts/route-boundary",
+      "barrelExport": "../../components/charts/route-boundary",
+      "exports": [
+        "ChartRouteBoundary",
+        "ChartRouteBoundaryKind"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ChartRouteBoundary"
+      ],
+      "unusedExports": [
+        "ChartRouteBoundaryKind"
+      ],
+      "typeExports": [
+        "ChartRouteBoundaryKind"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "ThemeOverview",
+      "source": "components/charts/theme-overview.tsx",
+      "importPath": "@/components/charts/theme-overview",
+      "barrelExport": "../../components/charts/theme-overview",
+      "exports": [
+        "ThemeOverview"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ThemeOverview"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "IslandRuntimeProbe",
+      "source": "components/island-runtime-probe.tsx",
+      "importPath": "@/components/island-runtime-probe",
+      "barrelExport": "../../components/island-runtime-probe",
+      "exports": [
+        "IslandRuntimeProbe"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "IslandRuntimeProbe"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "FrameworkCompletenessItem",
+      "source": "components/launch/framework-completeness.ts",
+      "importPath": "@/components/launch/framework-completeness",
+      "barrelExport": null,
+      "exports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus",
+        "dxChartsFrameworkCompleteness",
+        "dxChartsFrameworkCompletenessSummary",
+        "frameworkCompletenessContract"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus",
+        "dxChartsFrameworkCompleteness",
+        "dxChartsFrameworkCompletenessSummary",
+        "frameworkCompletenessContract"
+      ],
+      "typeExports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "StateRuntimeProbe",
+      "source": "components/state-runtime-probe.tsx",
+      "importPath": "@/components/state-runtime-probe",
+      "barrelExport": "../../components/state-runtime-probe",
+      "exports": [
+        "StateRuntimeProbe"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "StateRuntimeProbe"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsActivityIcon",
+      "source": "components/icons/charts-activity.tsx",
+      "importPath": "@/components/icons/charts-activity",
+      "barrelExport": null,
+      "exports": [
+        "ChartsActivityIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsActivityIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsBarIcon",
+      "source": "components/icons/charts-bar.tsx",
+      "importPath": "@/components/icons/charts-bar",
+      "barrelExport": null,
+      "exports": [
+        "ChartsBarIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsBarIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsBookIcon",
+      "source": "components/icons/charts-book.tsx",
+      "importPath": "@/components/icons/charts-book",
+      "barrelExport": null,
+      "exports": [
+        "ChartsBookIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsBookIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsCheckIcon",
+      "source": "components/icons/charts-check.tsx",
+      "importPath": "@/components/icons/charts-check",
+      "barrelExport": null,
+      "exports": [
+        "ChartsCheckIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsCheckIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsLayersIcon",
+      "source": "components/icons/charts-layers.tsx",
+      "importPath": "@/components/icons/charts-layers",
+      "barrelExport": null,
+      "exports": [
+        "ChartsLayersIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsLayersIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsNetworkIcon",
+      "source": "components/icons/charts-network.tsx",
+      "importPath": "@/components/icons/charts-network",
+      "barrelExport": null,
+      "exports": [
+        "ChartsNetworkIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsNetworkIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsPackageIcon",
+      "source": "components/icons/charts-package.tsx",
+      "importPath": "@/components/icons/charts-package",
+      "barrelExport": null,
+      "exports": [
+        "ChartsPackageIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsPackageIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsPaletteIcon",
+      "source": "components/icons/charts-palette.tsx",
+      "importPath": "@/components/icons/charts-palette",
+      "barrelExport": null,
+      "exports": [
+        "ChartsPaletteIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsPaletteIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsSparklineIcon",
+      "source": "components/icons/charts-sparkline.tsx",
+      "importPath": "@/components/icons/charts-sparkline",
+      "barrelExport": null,
+      "exports": [
+        "ChartsSparklineIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsSparklineIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsTargetIcon",
+      "source": "components/icons/charts-target.tsx",
+      "importPath": "@/components/icons/charts-target",
+      "barrelExport": null,
+      "exports": [
+        "ChartsTargetIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsTargetIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "ChartsTerminalIcon",
+      "source": "components/icons/charts-terminal.tsx",
+      "importPath": "@/components/icons/charts-terminal",
+      "barrelExport": null,
+      "exports": [
+        "ChartsTerminalIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "ChartsTerminalIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "importPath": "@/components/icons/icon",
+      "barrelExport": "../../components/icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unusedExports": [],
+      "typeExports": [
+        "IconProps"
+      ]
+    }
+  ],
+  "composables": [],
+  "utilities": [],
+  "forge_packages": [
+    "www/minimal-starter"
+  ],
+  "style_helpers": [
+    "styles/generated.css",
+    "styles/theme.css"
+  ]
+}

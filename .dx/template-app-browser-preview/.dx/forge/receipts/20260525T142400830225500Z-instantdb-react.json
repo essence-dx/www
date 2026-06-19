@@ -1,0 +1,907 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "instantdb/react",
+    "upstream_name": "@instantdb/react",
+    "version": "0.0.0-dx.0",
+    "generator": "dx-forge/instantdb",
+    "variant": "default",
+    "last_accepted_update": "2026-05-25T14:24:00.826904600+00:00",
+    "rollback_receipt": "20260523T043543113033500Z-instantdb-react.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "a1c4a84bacb6723b15a868a4b32fb63678d1af4564bc3472d94d10ecc1f330d8",
+    "license": "Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "instantdb/instant client/packages/react and examples/next-js-app-dir",
+      "verified": false,
+      "note": "DX inspected the local InstantDB source mirror, @instantdb/react export map, init(), schema builder, db.useQuery(), db.transact(), db.tx, room presence, and the Next.js app-dir example; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this InstantDB React launch slice, but it is not a live advisory feed and does not audit dashboard rules, app ids, auth policy, or deployed data access."
+    },
+    "license_review": {
+      "declared_license": "Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/instant/env.ts",
+        "logical_path": "js/instant/env.ts",
+        "hash": "65dea4d73c94332ece435f1a2f1f456cd5b515759e6ea96b355b1ff771697179",
+        "bytes": 2912
+      },
+      {
+        "path": "lib/instant/schema.ts",
+        "logical_path": "js/instant/schema.ts",
+        "hash": "7c12b6b43e8a1ca6a2b4cb48eccb6195c2ff2d9c7883ef76b7784eb438635acd",
+        "bytes": 1039
+      },
+      {
+        "path": "lib/instant/client.ts",
+        "logical_path": "js/instant/client.ts",
+        "hash": "bc8639308c0f8a4d27a53851585acb772a148564f96a0bede1c7a2768f1524cc",
+        "bytes": 664
+      },
+      {
+        "path": "lib/instant/next-client.tsx",
+        "logical_path": "js/instant/next-client.tsx",
+        "hash": "6ac89d6cf816b0bd8a718fe7a246b4adc83b8f42632741a717ccb2e48bf0d34b",
+        "bytes": 973
+      },
+      {
+        "path": "lib/instant/next-server.ts",
+        "logical_path": "js/instant/next-server.ts",
+        "hash": "ec7f63e19ccd6929a19e99127ffbcf7fc4d049170f3ba2137581a6944308ea18",
+        "bytes": 302
+      },
+      {
+        "path": "lib/instant/queries.ts",
+        "logical_path": "js/instant/queries.ts",
+        "hash": "4cf1c267cc1232cd824443b71d492831f686159ea7f04c09bc67303c1df58f44",
+        "bytes": 312
+      },
+      {
+        "path": "lib/instant/status.ts",
+        "logical_path": "js/instant/status.ts",
+        "hash": "dff76aaf6232845959dc61100b496aeba2939e7b138885a61462a113a9eea5b0",
+        "bytes": 214
+      },
+      {
+        "path": "lib/instant/subscriptions.ts",
+        "logical_path": "js/instant/subscriptions.ts",
+        "hash": "eac5292f56f3ee7f03477a1b32ac156480fbadcda7df2e6d333da90675cb3172",
+        "bytes": 876
+      },
+      {
+        "path": "lib/instant/pagination.ts",
+        "logical_path": "js/instant/pagination.ts",
+        "hash": "fea7d0f752f9e845513dc18e9ecdcb23993a8257db8b9ac88711622c60d6ece1",
+        "bytes": 623
+      },
+      {
+        "path": "lib/instant/diagnostics.ts",
+        "logical_path": "js/instant/diagnostics.ts",
+        "hash": "d4ae763aa9a6c654ddc4609a3f63b47b53505c3426019a84761ec050a84ca1cc",
+        "bytes": 787
+      },
+      {
+        "path": "lib/instant/mutations.ts",
+        "logical_path": "js/instant/mutations.ts",
+        "hash": "410da9a3b816e706a3eb5c4136eda2fb6b7252d5d93ef8f00e7e2b2c7deb97a6",
+        "bytes": 2070
+      },
+      {
+        "path": "lib/instant/rules.ts",
+        "logical_path": "js/instant/rules.ts",
+        "hash": "90a14a264d420639f663c16bd6c423403ade1b054a2c0a8274908f8ff9cde070",
+        "bytes": 852
+      },
+      {
+        "path": "lib/instant/perms.ts",
+        "logical_path": "js/instant/perms.ts",
+        "hash": "b0ffa95969541dc70e09415e18fe39f70ba2006cf05b789528a85259c13e7119",
+        "bytes": 442
+      },
+      {
+        "path": "lib/instant/auth.ts",
+        "logical_path": "js/instant/auth.ts",
+        "hash": "9b354713cc23cd172c3aa4783302aed52acf10992a5b66686d101fbe2f37472e",
+        "bytes": 1301
+      },
+      {
+        "path": "lib/instant/oauth.ts",
+        "logical_path": "js/instant/oauth.ts",
+        "hash": "fe9112369f13b63a2aef02602c1b67c0364482232be62aba2f87555cf6f2183a",
+        "bytes": 916
+      },
+      {
+        "path": "lib/instant/storage.ts",
+        "logical_path": "js/instant/storage.ts",
+        "hash": "59e06e645098900b7c61b98b027fcd68cbc59fd35164f841558652263bda6631",
+        "bytes": 1972
+      },
+      {
+        "path": "lib/instant/streams.ts",
+        "logical_path": "js/instant/streams.ts",
+        "hash": "dd1ee0f9f9ad15c552f703dad2be856a5521a39a63c8ced46bde1406f96db8ee",
+        "bytes": 741
+      },
+      {
+        "path": "lib/instant/sync-table.ts",
+        "logical_path": "js/instant/sync-table.ts",
+        "hash": "8481f8ea132f5f1059523b156af0e1cb8fbfe67c026d1f96564b93d042720191",
+        "bytes": 1955
+      },
+      {
+        "path": "lib/instant/dashboard-workflow.ts",
+        "logical_path": "js/instant/dashboard-workflow.ts",
+        "hash": "022fbb32d7e0359649f1f36bcbe579dccd7a4764f04090ac7eb320fe4f9e0c4f",
+        "bytes": 8255
+      },
+      {
+        "path": "lib/instant/route.ts",
+        "logical_path": "js/instant/route.ts",
+        "hash": "4d6fabac5fd1c7bc4f1b00616d6922fa79efcf3be7325efb06e494be76e4c067",
+        "bytes": 286
+      },
+      {
+        "path": "lib/instant/metadata.ts",
+        "logical_path": "js/instant/metadata.ts",
+        "hash": "9377f844572ba0ac3e11865edf2e4deb4d09b06993ab8953129f82f7dc38b94f",
+        "bytes": 9805
+      },
+      {
+        "path": "components/instant/instant-todos.tsx",
+        "logical_path": "js/components/instant/instant-todos.tsx",
+        "hash": "25ebe5a013c008edf4e86aeb4143fdead43ceab4e467f6a4983cec86786cb4b8",
+        "bytes": 7185
+      },
+      {
+        "path": "components/instant/instant-cursors.tsx",
+        "logical_path": "js/components/instant/instant-cursors.tsx",
+        "hash": "e06b3f56fd0cd45c7fc674745eb91c0dc9974ae28738851430a772b3241d81b6",
+        "bytes": 733
+      },
+      {
+        "path": "components/instant/instant-auth-boundary.tsx",
+        "logical_path": "js/components/instant/instant-auth-boundary.tsx",
+        "hash": "23fbdf3f6656f1fcc73b2a6f9a430071f02dbb37f9e35378e6b86e2b95ac370c",
+        "bytes": 1368
+      },
+      {
+        "path": "components/dashboard/instantdb-dashboard-workflow.tsx",
+        "logical_path": "js/components/dashboard/instantdb-dashboard-workflow.tsx",
+        "hash": "1bfcadb2888d19be74291b38e80dd46ed2e2047f30117f47a31548caa7bb3d39",
+        "bytes": 5186
+      },
+      {
+        "path": "app/api/instant/route.ts",
+        "logical_path": "js/app/api/instant/route.ts",
+        "hash": "f6d7cda0a2ad19bd159edf6072f2245263f8b11d2f0321c0e7473829a6d0c4ac",
+        "bytes": 125
+      },
+      {
+        "path": "app/instant/page.tsx",
+        "logical_path": "js/app/instant/page.tsx",
+        "hash": "50467d0038148f95b53f6c96ef76acc9e093a9fc10fbfba269af93ceec591920",
+        "bytes": 256
+      },
+      {
+        "path": "lib/instant/README.md",
+        "logical_path": "js/instant/README.md",
+        "hash": "a7e0f648e4024a665a4da4e2409943907c051b60f24503b53884cf57d7a7b2d2",
+        "bytes": 7067
+      },
+      {
+        "path": "app/api/instant/readiness/route.ts",
+        "logical_path": "js/app/api/instant/readiness/route.ts",
+        "hash": "3b056093d67dba9354c1178f747bf6f2413a76fefc3866ff7e318a063589af27",
+        "bytes": 201
+      },
+      {
+        "path": "server/instant/readiness.ts",
+        "logical_path": "js/server/instant/readiness.ts",
+        "hash": "98a04400587b128be9046dd9f7471fa5177eef322138cd7a1e413b1b13d3888e",
+        "bytes": 3045
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/instant/route.ts",
+      "logical_path": "js/instant/route.ts",
+      "hash": "4d6fabac5fd1c7bc4f1b00616d6922fa79efcf3be7325efb06e494be76e4c067",
+      "bytes": 286
+    },
+    {
+      "path": "app/api/instant/route.ts",
+      "logical_path": "js/app/api/instant/route.ts",
+      "hash": "f6d7cda0a2ad19bd159edf6072f2245263f8b11d2f0321c0e7473829a6d0c4ac",
+      "bytes": 125
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/instant/env.ts",
+      "materialized_path": "lib/instant/env.ts",
+      "hash": "65dea4d73c94332ece435f1a2f1f456cd5b515759e6ea96b355b1ff771697179",
+      "bytes": 2912
+    },
+    {
+      "logical_path": "js/instant/schema.ts",
+      "materialized_path": "lib/instant/schema.ts",
+      "hash": "7c12b6b43e8a1ca6a2b4cb48eccb6195c2ff2d9c7883ef76b7784eb438635acd",
+      "bytes": 1039
+    },
+    {
+      "logical_path": "js/instant/client.ts",
+      "materialized_path": "lib/instant/client.ts",
+      "hash": "bc8639308c0f8a4d27a53851585acb772a148564f96a0bede1c7a2768f1524cc",
+      "bytes": 664
+    },
+    {
+      "logical_path": "js/instant/next-client.tsx",
+      "materialized_path": "lib/instant/next-client.tsx",
+      "hash": "6ac89d6cf816b0bd8a718fe7a246b4adc83b8f42632741a717ccb2e48bf0d34b",
+      "bytes": 973
+    },
+    {
+      "logical_path": "js/instant/next-server.ts",
+      "materialized_path": "lib/instant/next-server.ts",
+      "hash": "ec7f63e19ccd6929a19e99127ffbcf7fc4d049170f3ba2137581a6944308ea18",
+      "bytes": 302
+    },
+    {
+      "logical_path": "js/instant/queries.ts",
+      "materialized_path": "lib/instant/queries.ts",
+      "hash": "4cf1c267cc1232cd824443b71d492831f686159ea7f04c09bc67303c1df58f44",
+      "bytes": 312
+    },
+    {
+      "logical_path": "js/instant/status.ts",
+      "materialized_path": "lib/instant/status.ts",
+      "hash": "dff76aaf6232845959dc61100b496aeba2939e7b138885a61462a113a9eea5b0",
+      "bytes": 214
+    },
+    {
+      "logical_path": "js/instant/subscriptions.ts",
+      "materialized_path": "lib/instant/subscriptions.ts",
+      "hash": "eac5292f56f3ee7f03477a1b32ac156480fbadcda7df2e6d333da90675cb3172",
+      "bytes": 876
+    },
+    {
+      "logical_path": "js/instant/pagination.ts",
+      "materialized_path": "lib/instant/pagination.ts",
+      "hash": "fea7d0f752f9e845513dc18e9ecdcb23993a8257db8b9ac88711622c60d6ece1",
+      "bytes": 623
+    },
+    {
+      "logical_path": "js/instant/diagnostics.ts",
+      "materialized_path": "lib/instant/diagnostics.ts",
+      "hash": "d4ae763aa9a6c654ddc4609a3f63b47b53505c3426019a84761ec050a84ca1cc",
+      "bytes": 787
+    },
+    {
+      "logical_path": "js/instant/mutations.ts",
+      "materialized_path": "lib/instant/mutations.ts",
+      "hash": "410da9a3b816e706a3eb5c4136eda2fb6b7252d5d93ef8f00e7e2b2c7deb97a6",
+      "bytes": 2070
+    },
+    {
+      "logical_path": "js/instant/rules.ts",
+      "materialized_path": "lib/instant/rules.ts",
+      "hash": "90a14a264d420639f663c16bd6c423403ade1b054a2c0a8274908f8ff9cde070",
+      "bytes": 852
+    },
+    {
+      "logical_path": "js/instant/perms.ts",
+      "materialized_path": "lib/instant/perms.ts",
+      "hash": "b0ffa95969541dc70e09415e18fe39f70ba2006cf05b789528a85259c13e7119",
+      "bytes": 442
+    },
+    {
+      "logical_path": "js/instant/auth.ts",
+      "materialized_path": "lib/instant/auth.ts",
+      "hash": "9b354713cc23cd172c3aa4783302aed52acf10992a5b66686d101fbe2f37472e",
+      "bytes": 1301
+    },
+    {
+      "logical_path": "js/instant/oauth.ts",
+      "materialized_path": "lib/instant/oauth.ts",
+      "hash": "fe9112369f13b63a2aef02602c1b67c0364482232be62aba2f87555cf6f2183a",
+      "bytes": 916
+    },
+    {
+      "logical_path": "js/instant/storage.ts",
+      "materialized_path": "lib/instant/storage.ts",
+      "hash": "59e06e645098900b7c61b98b027fcd68cbc59fd35164f841558652263bda6631",
+      "bytes": 1972
+    },
+    {
+      "logical_path": "js/instant/streams.ts",
+      "materialized_path": "lib/instant/streams.ts",
+      "hash": "dd1ee0f9f9ad15c552f703dad2be856a5521a39a63c8ced46bde1406f96db8ee",
+      "bytes": 741
+    },
+    {
+      "logical_path": "js/instant/sync-table.ts",
+      "materialized_path": "lib/instant/sync-table.ts",
+      "hash": "8481f8ea132f5f1059523b156af0e1cb8fbfe67c026d1f96564b93d042720191",
+      "bytes": 1955
+    },
+    {
+      "logical_path": "js/instant/dashboard-workflow.ts",
+      "materialized_path": "lib/instant/dashboard-workflow.ts",
+      "hash": "022fbb32d7e0359649f1f36bcbe579dccd7a4764f04090ac7eb320fe4f9e0c4f",
+      "bytes": 8255
+    },
+    {
+      "logical_path": "js/instant/route.ts",
+      "materialized_path": "lib/instant/route.ts",
+      "hash": "4d6fabac5fd1c7bc4f1b00616d6922fa79efcf3be7325efb06e494be76e4c067",
+      "bytes": 286
+    },
+    {
+      "logical_path": "js/instant/metadata.ts",
+      "materialized_path": "lib/instant/metadata.ts",
+      "hash": "9377f844572ba0ac3e11865edf2e4deb4d09b06993ab8953129f82f7dc38b94f",
+      "bytes": 9805
+    },
+    {
+      "logical_path": "js/components/instant/instant-todos.tsx",
+      "materialized_path": "components/instant/instant-todos.tsx",
+      "hash": "25ebe5a013c008edf4e86aeb4143fdead43ceab4e467f6a4983cec86786cb4b8",
+      "bytes": 7185
+    },
+    {
+      "logical_path": "js/components/instant/instant-cursors.tsx",
+      "materialized_path": "components/instant/instant-cursors.tsx",
+      "hash": "e06b3f56fd0cd45c7fc674745eb91c0dc9974ae28738851430a772b3241d81b6",
+      "bytes": 733
+    },
+    {
+      "logical_path": "js/components/instant/instant-auth-boundary.tsx",
+      "materialized_path": "components/instant/instant-auth-boundary.tsx",
+      "hash": "23fbdf3f6656f1fcc73b2a6f9a430071f02dbb37f9e35378e6b86e2b95ac370c",
+      "bytes": 1368
+    },
+    {
+      "logical_path": "js/components/dashboard/instantdb-dashboard-workflow.tsx",
+      "materialized_path": "components/dashboard/instantdb-dashboard-workflow.tsx",
+      "hash": "1bfcadb2888d19be74291b38e80dd46ed2e2047f30117f47a31548caa7bb3d39",
+      "bytes": 5186
+    },
+    {
+      "logical_path": "js/app/api/instant/route.ts",
+      "materialized_path": "app/api/instant/route.ts",
+      "hash": "f6d7cda0a2ad19bd159edf6072f2245263f8b11d2f0321c0e7473829a6d0c4ac",
+      "bytes": 125
+    },
+    {
+      "logical_path": "js/app/instant/page.tsx",
+      "materialized_path": "app/instant/page.tsx",
+      "hash": "50467d0038148f95b53f6c96ef76acc9e093a9fc10fbfba269af93ceec591920",
+      "bytes": 256
+    },
+    {
+      "logical_path": "js/instant/README.md",
+      "materialized_path": "lib/instant/README.md",
+      "hash": "a7e0f648e4024a665a4da4e2409943907c051b60f24503b53884cf57d7a7b2d2",
+      "bytes": 7067
+    },
+    {
+      "logical_path": "js/app/api/instant/readiness/route.ts",
+      "materialized_path": "app/api/instant/readiness/route.ts",
+      "hash": "3b056093d67dba9354c1178f747bf6f2413a76fefc3866ff7e318a063589af27",
+      "bytes": 201
+    },
+    {
+      "logical_path": "js/server/instant/readiness.ts",
+      "materialized_path": "server/instant/readiness.ts",
+      "hash": "98a04400587b128be9046dd9f7471fa5177eef322138cd7a1e413b1b13d3888e",
+      "bytes": 3045
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/env.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/schema.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/client.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/next-client.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/next-server.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/queries.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/status.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/subscriptions.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/pagination.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/diagnostics.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/mutations.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/rules.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/perms.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/auth.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/oauth.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/storage.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/streams.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/instant/sync-table.ts already matches the latest package."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/instant/dashboard-workflow.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "lib/instant/route.ts would be updated from the latest package."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/instant/metadata.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/instant/instant-todos.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/instant/instant-cursors.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/instant/instant-auth-boundary.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/dashboard/instantdb-dashboard-workflow.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "app/api/instant/route.ts would be updated from the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "app/instant/page.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/instant/README.md has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "app/api/instant/readiness/route.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "server/instant/readiness.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `Shohan` accepted yellow local edits for `instantdb/react` variant `default`: Reviewed after template rename; preserving source-owned local edits and stale tracked local files in Forge receipt state."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/instant/env.ts",
+      "logical_path": "js/instant/env.ts",
+      "before_hash": "65dea4d73c94332ece435f1a2f1f456cd5b515759e6ea96b355b1ff771697179",
+      "after_hash": "65dea4d73c94332ece435f1a2f1f456cd5b515759e6ea96b355b1ff771697179",
+      "tracked_hash": "65dea4d73c94332ece435f1a2f1f456cd5b515759e6ea96b355b1ff771697179",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/env.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/schema.ts",
+      "logical_path": "js/instant/schema.ts",
+      "before_hash": "7c12b6b43e8a1ca6a2b4cb48eccb6195c2ff2d9c7883ef76b7784eb438635acd",
+      "after_hash": "7c12b6b43e8a1ca6a2b4cb48eccb6195c2ff2d9c7883ef76b7784eb438635acd",
+      "tracked_hash": "7c12b6b43e8a1ca6a2b4cb48eccb6195c2ff2d9c7883ef76b7784eb438635acd",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/schema.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/client.ts",
+      "logical_path": "js/instant/client.ts",
+      "before_hash": "bc8639308c0f8a4d27a53851585acb772a148564f96a0bede1c7a2768f1524cc",
+      "after_hash": "bc8639308c0f8a4d27a53851585acb772a148564f96a0bede1c7a2768f1524cc",
+      "tracked_hash": "bc8639308c0f8a4d27a53851585acb772a148564f96a0bede1c7a2768f1524cc",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/client.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/next-client.tsx",
+      "logical_path": "js/instant/next-client.tsx",
+      "before_hash": "6ac89d6cf816b0bd8a718fe7a246b4adc83b8f42632741a717ccb2e48bf0d34b",
+      "after_hash": "6ac89d6cf816b0bd8a718fe7a246b4adc83b8f42632741a717ccb2e48bf0d34b",
+      "tracked_hash": "6ac89d6cf816b0bd8a718fe7a246b4adc83b8f42632741a717ccb2e48bf0d34b",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/next-client.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/next-server.ts",
+      "logical_path": "js/instant/next-server.ts",
+      "before_hash": "ec7f63e19ccd6929a19e99127ffbcf7fc4d049170f3ba2137581a6944308ea18",
+      "after_hash": "ec7f63e19ccd6929a19e99127ffbcf7fc4d049170f3ba2137581a6944308ea18",
+      "tracked_hash": "ec7f63e19ccd6929a19e99127ffbcf7fc4d049170f3ba2137581a6944308ea18",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/next-server.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/queries.ts",
+      "logical_path": "js/instant/queries.ts",
+      "before_hash": "4cf1c267cc1232cd824443b71d492831f686159ea7f04c09bc67303c1df58f44",
+      "after_hash": "4cf1c267cc1232cd824443b71d492831f686159ea7f04c09bc67303c1df58f44",
+      "tracked_hash": "4cf1c267cc1232cd824443b71d492831f686159ea7f04c09bc67303c1df58f44",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/queries.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/status.ts",
+      "logical_path": "js/instant/status.ts",
+      "before_hash": "dff76aaf6232845959dc61100b496aeba2939e7b138885a61462a113a9eea5b0",
+      "after_hash": "dff76aaf6232845959dc61100b496aeba2939e7b138885a61462a113a9eea5b0",
+      "tracked_hash": "dff76aaf6232845959dc61100b496aeba2939e7b138885a61462a113a9eea5b0",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/status.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/subscriptions.ts",
+      "logical_path": "js/instant/subscriptions.ts",
+      "before_hash": "eac5292f56f3ee7f03477a1b32ac156480fbadcda7df2e6d333da90675cb3172",
+      "after_hash": "eac5292f56f3ee7f03477a1b32ac156480fbadcda7df2e6d333da90675cb3172",
+      "tracked_hash": "eac5292f56f3ee7f03477a1b32ac156480fbadcda7df2e6d333da90675cb3172",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/subscriptions.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/pagination.ts",
+      "logical_path": "js/instant/pagination.ts",
+      "before_hash": "fea7d0f752f9e845513dc18e9ecdcb23993a8257db8b9ac88711622c60d6ece1",
+      "after_hash": "fea7d0f752f9e845513dc18e9ecdcb23993a8257db8b9ac88711622c60d6ece1",
+      "tracked_hash": "fea7d0f752f9e845513dc18e9ecdcb23993a8257db8b9ac88711622c60d6ece1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/pagination.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/diagnostics.ts",
+      "logical_path": "js/instant/diagnostics.ts",
+      "before_hash": "d4ae763aa9a6c654ddc4609a3f63b47b53505c3426019a84761ec050a84ca1cc",
+      "after_hash": "d4ae763aa9a6c654ddc4609a3f63b47b53505c3426019a84761ec050a84ca1cc",
+      "tracked_hash": "d4ae763aa9a6c654ddc4609a3f63b47b53505c3426019a84761ec050a84ca1cc",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/diagnostics.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/mutations.ts",
+      "logical_path": "js/instant/mutations.ts",
+      "before_hash": "410da9a3b816e706a3eb5c4136eda2fb6b7252d5d93ef8f00e7e2b2c7deb97a6",
+      "after_hash": "410da9a3b816e706a3eb5c4136eda2fb6b7252d5d93ef8f00e7e2b2c7deb97a6",
+      "tracked_hash": "410da9a3b816e706a3eb5c4136eda2fb6b7252d5d93ef8f00e7e2b2c7deb97a6",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/mutations.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/rules.ts",
+      "logical_path": "js/instant/rules.ts",
+      "before_hash": "90a14a264d420639f663c16bd6c423403ade1b054a2c0a8274908f8ff9cde070",
+      "after_hash": "90a14a264d420639f663c16bd6c423403ade1b054a2c0a8274908f8ff9cde070",
+      "tracked_hash": "90a14a264d420639f663c16bd6c423403ade1b054a2c0a8274908f8ff9cde070",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/rules.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/perms.ts",
+      "logical_path": "js/instant/perms.ts",
+      "before_hash": "b0ffa95969541dc70e09415e18fe39f70ba2006cf05b789528a85259c13e7119",
+      "after_hash": "b0ffa95969541dc70e09415e18fe39f70ba2006cf05b789528a85259c13e7119",
+      "tracked_hash": "b0ffa95969541dc70e09415e18fe39f70ba2006cf05b789528a85259c13e7119",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/perms.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/auth.ts",
+      "logical_path": "js/instant/auth.ts",
+      "before_hash": "9b354713cc23cd172c3aa4783302aed52acf10992a5b66686d101fbe2f37472e",
+      "after_hash": "9b354713cc23cd172c3aa4783302aed52acf10992a5b66686d101fbe2f37472e",
+      "tracked_hash": "9b354713cc23cd172c3aa4783302aed52acf10992a5b66686d101fbe2f37472e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/auth.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/oauth.ts",
+      "logical_path": "js/instant/oauth.ts",
+      "before_hash": "fe9112369f13b63a2aef02602c1b67c0364482232be62aba2f87555cf6f2183a",
+      "after_hash": "fe9112369f13b63a2aef02602c1b67c0364482232be62aba2f87555cf6f2183a",
+      "tracked_hash": "fe9112369f13b63a2aef02602c1b67c0364482232be62aba2f87555cf6f2183a",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/oauth.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/storage.ts",
+      "logical_path": "js/instant/storage.ts",
+      "before_hash": "59e06e645098900b7c61b98b027fcd68cbc59fd35164f841558652263bda6631",
+      "after_hash": "59e06e645098900b7c61b98b027fcd68cbc59fd35164f841558652263bda6631",
+      "tracked_hash": "59e06e645098900b7c61b98b027fcd68cbc59fd35164f841558652263bda6631",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/storage.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/streams.ts",
+      "logical_path": "js/instant/streams.ts",
+      "before_hash": "dd1ee0f9f9ad15c552f703dad2be856a5521a39a63c8ced46bde1406f96db8ee",
+      "after_hash": "dd1ee0f9f9ad15c552f703dad2be856a5521a39a63c8ced46bde1406f96db8ee",
+      "tracked_hash": "dd1ee0f9f9ad15c552f703dad2be856a5521a39a63c8ced46bde1406f96db8ee",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/streams.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/sync-table.ts",
+      "logical_path": "js/instant/sync-table.ts",
+      "before_hash": "8481f8ea132f5f1059523b156af0e1cb8fbfe67c026d1f96564b93d042720191",
+      "after_hash": "8481f8ea132f5f1059523b156af0e1cb8fbfe67c026d1f96564b93d042720191",
+      "tracked_hash": "8481f8ea132f5f1059523b156af0e1cb8fbfe67c026d1f96564b93d042720191",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/sync-table.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/dashboard-workflow.ts",
+      "logical_path": "js/instant/dashboard-workflow.ts",
+      "before_hash": "022fbb32d7e0359649f1f36bcbe579dccd7a4764f04090ac7eb320fe4f9e0c4f",
+      "after_hash": "022fbb32d7e0359649f1f36bcbe579dccd7a4764f04090ac7eb320fe4f9e0c4f",
+      "tracked_hash": "6dd974decf82a40d213b0ea169d80f9b55af30d44dfc054624031cd17d3d326f",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/instant/dashboard-workflow.ts accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "lib/instant/route.ts",
+      "logical_path": "js/instant/route.ts",
+      "before_hash": "dca607f9b45c107f400c68f7b527ff7b5bfd9897bbd33894ddbc5c4aaa7d3094",
+      "after_hash": "4d6fabac5fd1c7bc4f1b00616d6922fa79efcf3be7325efb06e494be76e4c067",
+      "tracked_hash": "dca607f9b45c107f400c68f7b527ff7b5bfd9897bbd33894ddbc5c4aaa7d3094",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/instant/route.ts accepted and updated from the latest package."
+    },
+    {
+      "path": "lib/instant/metadata.ts",
+      "logical_path": "js/instant/metadata.ts",
+      "before_hash": "9377f844572ba0ac3e11865edf2e4deb4d09b06993ab8953129f82f7dc38b94f",
+      "after_hash": "9377f844572ba0ac3e11865edf2e4deb4d09b06993ab8953129f82f7dc38b94f",
+      "tracked_hash": "cfb71a06aae2517ce2418160f3e9e299c4fb76eb267223e74202116cd952bc75",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/instant/metadata.ts accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "components/instant/instant-todos.tsx",
+      "logical_path": "js/components/instant/instant-todos.tsx",
+      "before_hash": "25ebe5a013c008edf4e86aeb4143fdead43ceab4e467f6a4983cec86786cb4b8",
+      "after_hash": "25ebe5a013c008edf4e86aeb4143fdead43ceab4e467f6a4983cec86786cb4b8",
+      "tracked_hash": "25ebe5a013c008edf4e86aeb4143fdead43ceab4e467f6a4983cec86786cb4b8",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/instant/instant-todos.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/instant/instant-cursors.tsx",
+      "logical_path": "js/components/instant/instant-cursors.tsx",
+      "before_hash": "e06b3f56fd0cd45c7fc674745eb91c0dc9974ae28738851430a772b3241d81b6",
+      "after_hash": "e06b3f56fd0cd45c7fc674745eb91c0dc9974ae28738851430a772b3241d81b6",
+      "tracked_hash": "e06b3f56fd0cd45c7fc674745eb91c0dc9974ae28738851430a772b3241d81b6",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/instant/instant-cursors.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/instant/instant-auth-boundary.tsx",
+      "logical_path": "js/components/instant/instant-auth-boundary.tsx",
+      "before_hash": "23fbdf3f6656f1fcc73b2a6f9a430071f02dbb37f9e35378e6b86e2b95ac370c",
+      "after_hash": "23fbdf3f6656f1fcc73b2a6f9a430071f02dbb37f9e35378e6b86e2b95ac370c",
+      "tracked_hash": "23fbdf3f6656f1fcc73b2a6f9a430071f02dbb37f9e35378e6b86e2b95ac370c",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/instant/instant-auth-boundary.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/dashboard/instantdb-dashboard-workflow.tsx",
+      "logical_path": "js/components/dashboard/instantdb-dashboard-workflow.tsx",
+      "before_hash": "1bfcadb2888d19be74291b38e80dd46ed2e2047f30117f47a31548caa7bb3d39",
+      "after_hash": "1bfcadb2888d19be74291b38e80dd46ed2e2047f30117f47a31548caa7bb3d39",
+      "tracked_hash": "1bfcadb2888d19be74291b38e80dd46ed2e2047f30117f47a31548caa7bb3d39",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/dashboard/instantdb-dashboard-workflow.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "app/api/instant/route.ts",
+      "logical_path": "js/app/api/instant/route.ts",
+      "before_hash": "b60763a6d25169ed58d0e0dfcb4597678e77d02c1fc5d201ec0422da3014417b",
+      "after_hash": "f6d7cda0a2ad19bd159edf6072f2245263f8b11d2f0321c0e7473829a6d0c4ac",
+      "tracked_hash": "b60763a6d25169ed58d0e0dfcb4597678e77d02c1fc5d201ec0422da3014417b",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "app/api/instant/route.ts accepted and updated from the latest package."
+    },
+    {
+      "path": "app/instant/page.tsx",
+      "logical_path": "js/app/instant/page.tsx",
+      "before_hash": "50467d0038148f95b53f6c96ef76acc9e093a9fc10fbfba269af93ceec591920",
+      "after_hash": "50467d0038148f95b53f6c96ef76acc9e093a9fc10fbfba269af93ceec591920",
+      "tracked_hash": "50467d0038148f95b53f6c96ef76acc9e093a9fc10fbfba269af93ceec591920",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "app/instant/page.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/instant/README.md",
+      "logical_path": "js/instant/README.md",
+      "before_hash": "a7e0f648e4024a665a4da4e2409943907c051b60f24503b53884cf57d7a7b2d2",
+      "after_hash": "a7e0f648e4024a665a4da4e2409943907c051b60f24503b53884cf57d7a7b2d2",
+      "tracked_hash": "72c661d4a94b5eaa2cea80b269d1656dbe3a1f3d24614b5d0c60db2830b9ed31",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/instant/README.md accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "app/api/instant/readiness/route.ts",
+      "logical_path": "js/app/api/instant/readiness/route.ts",
+      "before_hash": "3b056093d67dba9354c1178f747bf6f2413a76fefc3866ff7e318a063589af27",
+      "tracked_hash": "3b056093d67dba9354c1178f747bf6f2413a76fefc3866ff7e318a063589af27",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "app/api/instant/readiness/route.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "server/instant/readiness.ts",
+      "logical_path": "js/server/instant/readiness.ts",
+      "before_hash": "98a04400587b128be9046dd9f7471fa5177eef322138cd7a1e413b1b13d3888e",
+      "tracked_hash": "98a04400587b128be9046dd9f7471fa5177eef322138cd7a1e413b1b13d3888e",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "server/instant/readiness.ts is tracked locally but absent from the latest package."
+    }
+  ],
+  "risk_score": 25,
+  "timestamp": "2026-05-25T14:24:00.826904600+00:00",
+  "signature": null
+}

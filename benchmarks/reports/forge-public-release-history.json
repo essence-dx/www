@@ -1,0 +1,200 @@
+{
+  "updated_at": "2026-05-16T18:56:27.813540700+00:00",
+  "records": [
+    {
+      "generated_at": "2026-05-16T18:56:27.813540700+00:00",
+      "source_dashboard": ".dx/ci/forge-release-dashboard.json",
+      "source_route_comparison": "benchmarks/reports/forge-public-route-comparison.json",
+      "dashboard": {
+        "generated_at": "2026-05-16T18:01:56.828874+00:00",
+        "score": 93,
+        "fail_under": 90,
+        "passed": true,
+        "no_node_modules": true,
+        "public_evidence_links": 9,
+        "findings": [],
+        "checks": {
+          "ci_artifacts": {
+            "passed": true,
+            "score": 100,
+            "message": "13 CI artifacts and 6 route checks verified."
+          },
+          "pages_bundle": {
+            "passed": true,
+            "score": 100,
+            "message": "6 Pages artifacts and 6 publish checks verified."
+          },
+          "public_evidence": {
+            "passed": true,
+            "score": 100,
+            "message": "9 public evidence links checked for route `/forge/evidence`."
+          },
+          "release_notes": {
+            "passed": true,
+            "score": 93,
+            "message": "Release notes status `passing` with 3 source-owned packages."
+          },
+          "route_comparison": {
+            "passed": true,
+            "score": 100,
+            "message": "4 public routes measured, 4248 Brotli bytes total."
+          }
+        }
+      },
+      "route_comparison": {
+        "generated_at": "2026-05-16T18:52:30.103Z",
+        "route_count": 5,
+        "total_decoded_bytes": 24192,
+        "total_brotli_bytes": 5103,
+        "lowest_brotli_route": "/forge/releases",
+        "routes": [
+          {
+            "route": "/forge",
+            "fixture_mode": "forge-site",
+            "delivery": "static",
+            "decoded_bytes": 5143,
+            "brotli_bytes": 1240,
+            "http_route_median_ms": 1.914,
+            "chrome_load_event_ms": 10.2,
+            "budget_passed": true
+          },
+          {
+            "route": "/forge/scorecard",
+            "fixture_mode": "forge-scorecard",
+            "delivery": "static",
+            "decoded_bytes": 4189,
+            "brotli_bytes": 1040,
+            "http_route_median_ms": 2.195,
+            "chrome_load_event_ms": 8.4,
+            "budget_passed": true
+          },
+          {
+            "route": "/forge/ci",
+            "fixture_mode": "forge-ci",
+            "delivery": "static",
+            "decoded_bytes": 3309,
+            "brotli_bytes": 862,
+            "http_route_median_ms": 1.767,
+            "chrome_load_event_ms": 8.9,
+            "budget_passed": true
+          },
+          {
+            "route": "/forge/evidence",
+            "fixture_mode": "forge-evidence",
+            "delivery": "static",
+            "decoded_bytes": 6988,
+            "brotli_bytes": 1106,
+            "http_route_median_ms": 0.939,
+            "chrome_load_event_ms": 8.3,
+            "budget_passed": true
+          },
+          {
+            "route": "/forge/releases",
+            "fixture_mode": "forge-releases",
+            "delivery": "static",
+            "decoded_bytes": 4563,
+            "brotli_bytes": 855,
+            "http_route_median_ms": 1.763,
+            "chrome_load_event_ms": 11.3,
+            "budget_passed": true
+          }
+        ]
+      },
+      "regression_findings": [
+        "Total decoded public payload grew from 19629 B to 24192 B.",
+        "Total Brotli public payload grew from 4248 B to 5103 B."
+      ]
+    },
+    {
+      "generated_at": "2026-05-16T18:28:57.583123600+00:00",
+      "source_dashboard": ".dx/ci/forge-release-dashboard.json",
+      "source_route_comparison": "benchmarks/reports/forge-public-route-comparison.json",
+      "dashboard": {
+        "generated_at": "2026-05-16T18:01:56.828874+00:00",
+        "score": 93,
+        "fail_under": 90,
+        "passed": true,
+        "no_node_modules": true,
+        "public_evidence_links": 9,
+        "findings": [],
+        "checks": {
+          "ci_artifacts": {
+            "passed": true,
+            "score": 100,
+            "message": "13 CI artifacts and 6 route checks verified."
+          },
+          "pages_bundle": {
+            "passed": true,
+            "score": 100,
+            "message": "6 Pages artifacts and 6 publish checks verified."
+          },
+          "public_evidence": {
+            "passed": true,
+            "score": 100,
+            "message": "9 public evidence links checked for route `/forge/evidence`."
+          },
+          "release_notes": {
+            "passed": true,
+            "score": 93,
+            "message": "Release notes status `passing` with 3 source-owned packages."
+          },
+          "route_comparison": {
+            "passed": true,
+            "score": 100,
+            "message": "4 public routes measured, 4248 Brotli bytes total."
+          }
+        }
+      },
+      "route_comparison": {
+        "generated_at": "2026-05-16T17:58:43.155Z",
+        "route_count": 4,
+        "total_decoded_bytes": 19629,
+        "total_brotli_bytes": 4248,
+        "lowest_brotli_route": "/forge/ci",
+        "routes": [
+          {
+            "route": "/forge",
+            "fixture_mode": "forge-site",
+            "delivery": "static",
+            "decoded_bytes": 5143,
+            "brotli_bytes": 1240,
+            "http_route_median_ms": 1.914,
+            "chrome_load_event_ms": 10.2,
+            "budget_passed": true
+          },
+          {
+            "route": "/forge/scorecard",
+            "fixture_mode": "forge-scorecard",
+            "delivery": "static",
+            "decoded_bytes": 4189,
+            "brotli_bytes": 1040,
+            "http_route_median_ms": 2.195,
+            "chrome_load_event_ms": 8.4,
+            "budget_passed": true
+          },
+          {
+            "route": "/forge/ci",
+            "fixture_mode": "forge-ci",
+            "delivery": "static",
+            "decoded_bytes": 3309,
+            "brotli_bytes": 862,
+            "http_route_median_ms": 1.767,
+            "chrome_load_event_ms": 8.9,
+            "budget_passed": true
+          },
+          {
+            "route": "/forge/evidence",
+            "fixture_mode": "forge-evidence",
+            "delivery": "static",
+            "decoded_bytes": 6988,
+            "brotli_bytes": 1106,
+            "http_route_median_ms": 0.939,
+            "chrome_load_event_ms": 8.3,
+            "budget_passed": true
+          }
+        ]
+      },
+      "regression_findings": []
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "generated_at": "2026-05-16T09:31:29.807Z",
+  "fixture": "generated:forge-combo",
+  "fixture_mode": "forge-combo",
+  "proof": {
+    "route": "/",
+    "fallback": {
+      "optimized_bytes": 2051,
+      "saved_bytes": 134,
+      "script_count": 1,
+      "style_count": 0,
+      "repeated_node_count": 0,
+      "delivery_mode": "micro-js"
+    },
+    "packet": {
+      "format": "dxob-v1",
+      "bytes": 2219,
+      "decoded_name": "index",
+      "template_count": 16,
+      "string_count": 9,
+      "binding_count": 1,
+      "event_count": 1,
+      "css_class_count": 32,
+      "roundtrip_matches": true
+    },
+    "browser_packet": {
+      "format": "dxp-v1",
+      "bytes": 1748,
+      "decoded_kind": "Route",
+      "section_count": 3,
+      "payload_bytes": 1576,
+      "roundtrip_matches": true,
+      "sections": [
+        {
+          "kind": "FallbackHtmlRef",
+          "encoding": "Json",
+          "bytes": 154,
+          "content_hash": "f212768c114d9ce4f7e52f3b0c5424b5ea8e932b06692d61e87dedd5f2459b59"
+        },
+        {
+          "kind": "TemplateSlots",
+          "encoding": "CanonicalBinary",
+          "bytes": 1298,
+          "content_hash": "7395d976f021df626dda5c74852d931bf4db1e9124c97c0ebbe2146c76bd3648"
+        },
+        {
+          "kind": "SourceManifest",
+          "encoding": "Json",
+          "bytes": 124,
+          "content_hash": "78b18705be0de2cb2aad409e918379260e23706e1478923b8839c845dd65e57e"
+        }
+      ]
+    },
+    "interaction": {
+      "delivery_mode": "micro-js",
+      "state_name": "count",
+      "target_id": "dx-state-count",
+      "action_count": 1,
+      "script_bytes": 172,
+      "warnings": [
+        "Phase 1 interaction proof supports simple numeric counter state and click handlers only."
+      ]
+    },
+    "forge": {
+      "package_id": "dx-www/vertical/index",
+      "action": "TrackWrite",
+      "risk_score": 100,
+      "traffic": "green",
+      "files_tracked": 1
+    },
+    "forge_packages": [
+      {
+        "package_id": "shadcn/ui/button",
+        "action": "AddWrite",
+        "risk_score": 100,
+        "traffic": "green",
+        "files_tracked": 4,
+        "manifest_path": "G:\\Temp\\UserTemp\\dx-www-vertical-proof-BiAm1y\\.dx/forge/source-manifest.json",
+        "receipt_path": "G:\\Temp\\UserTemp\\dx-www-vertical-proof-BiAm1y\\.dx/forge/receipts\\20260516T093128303246700Z-shadcn-ui-button.json"
+      },
+      {
+        "package_id": "dx/icon/search",
+        "action": "AddWrite",
+        "risk_score": 100,
+        "traffic": "green",
+        "files_tracked": 3,
+        "manifest_path": "G:\\Temp\\UserTemp\\dx-www-vertical-proof-BiAm1y\\.dx/forge/source-manifest.json",
+        "receipt_path": "G:\\Temp\\UserTemp\\dx-www-vertical-proof-BiAm1y\\.dx/forge/receipts\\20260516T093128311945400Z-dx-icon-search.json"
+      }
+    ]
+  },
+  "http": {
+    "resource_count": 3,
+    "total_decoded_bytes": 10867,
+    "content_length_bytes": 10867,
+    "compression_estimate": {
+      "raw_bytes": 10867,
+      "gzip_bytes": 3708,
+      "brotli_bytes": 3105
+    },
+    "route_timing_ms": {
+      "samples": 12,
+      "min": 1.652,
+      "median": 2.139,
+      "mean": 2.711,
+      "p95": 5.664,
+      "max": 5.664
+    },
+    "resources": [
+      {
+        "path": "/",
+        "status": 200,
+        "ok": true,
+        "decoded_bytes": 2206,
+        "elapsed_ms": 44.629,
+        "content_length": 2206
+      },
+      {
+        "path": "/index.dxp",
+        "status": 200,
+        "ok": true,
+        "decoded_bytes": 1748,
+        "elapsed_ms": 8.99,
+        "content_length": 1748
+      },
+      {
+        "path": "/index.dxp.js",
+        "status": 200,
+        "ok": true,
+        "decoded_bytes": 6913,
+        "elapsed_ms": 9.814,
+        "content_length": 6913
+      }
+    ]
+  },
+  "chrome": {
+    "enabled": true,
+    "samples": 5,
+    "warmup_excluded": true,
+    "title": "DX-WWW /",
+    "dom_nodes": 29,
+    "scripts": 2,
+    "buttons": 2,
+    "nav_duration_ms": 17,
+    "dom_content_loaded_ms": 16.1,
+    "load_event_ms": 17,
+    "transfer_size": 11767,
+    "encoded_body_size": 10867,
+    "decoded_body_size": 10867,
+    "dx_packet_status": "applied",
+    "dx_packet_sections": 3,
+    "dx_packet_payload_bytes": 1576,
+    "dx_packet_template_count": 16,
+    "dx_packet_route": "/",
+    "dx_packet_applied": true,
+    "counter_click_update_ms": 0.2,
+    "interaction_works": true,
+    "warmup": {
+      "title": "DX-WWW /",
+      "dom_nodes": 29,
+      "scripts": 2,
+      "buttons": 2,
+      "nav_duration_ms": 52.4,
+      "dom_content_loaded_ms": 52.2,
+      "load_event_ms": 52.4,
+      "transfer_size": 12076,
+      "encoded_body_size": 10876,
+      "decoded_body_size": 10876,
+      "resource_count": 4,
+      "dx_packet_status": "applied",
+      "dx_packet_sections": 3,
+      "dx_packet_payload_bytes": 1576,
+      "dx_packet_template_count": 16,
+      "dx_packet_route": "/",
+      "dx_packet_applied": true,
+      "counter_before": "0",
+      "counter_after": "1",
+      "counter_click_update_ms": 0.2,
+      "interaction_works": true
+    },
+    "raw_samples": [
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 17.4,
+        "dom_content_loaded_ms": 16.7,
+        "load_event_ms": 17.4,
+        "transfer_size": 11767,
+        "encoded_body_size": 10867,
+        "decoded_body_size": 10867,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1576,
+        "dx_packet_template_count": 16,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.3,
+        "interaction_works": true
+      },
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 16.6,
+        "dom_content_loaded_ms": 15.6,
+        "load_event_ms": 16.6,
+        "transfer_size": 11767,
+        "encoded_body_size": 10867,
+        "decoded_body_size": 10867,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1576,
+        "dx_packet_template_count": 16,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.2,
+        "interaction_works": true
+      },
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 17,
+        "dom_content_loaded_ms": 16.1,
+        "load_event_ms": 17,
+        "transfer_size": 11767,
+        "encoded_body_size": 10867,
+        "decoded_body_size": 10867,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1576,
+        "dx_packet_template_count": 16,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.3,
+        "interaction_works": true
+      },
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 15.9,
+        "dom_content_loaded_ms": 14.9,
+        "load_event_ms": 15.9,
+        "transfer_size": 11767,
+        "encoded_body_size": 10867,
+        "decoded_body_size": 10867,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1576,
+        "dx_packet_template_count": 16,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.2,
+        "interaction_works": true
+      },
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 40.6,
+        "dom_content_loaded_ms": 40.4,
+        "load_event_ms": 40.6,
+        "transfer_size": 11767,
+        "encoded_body_size": 10867,
+        "decoded_body_size": 10867,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1576,
+        "dx_packet_template_count": 16,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.1,
+        "interaction_works": true
+      }
+    ]
+  },
+  "comparison": {
+    "previous_generated_at": "2026-05-16T08:30:32.021Z",
+    "previous_fixture_mode": "forge-icon",
+    "current_fixture_mode": "forge-combo",
+    "previous_forge_packages": 1,
+    "current_forge_packages": 2,
+    "delta_forge_packages": 1,
+    "previous_decoded_bytes": 11008,
+    "current_decoded_bytes": 10867,
+    "delta_decoded_bytes": -141,
+    "previous_brotli_bytes": 3125,
+    "current_brotli_bytes": 3105,
+    "delta_brotli_bytes": -20,
+    "previous_http_route_median_ms": 4.244,
+    "current_http_route_median_ms": 2.139,
+    "delta_http_route_median_ms": -2.105,
+    "previous_chrome_load_event_ms": 48,
+    "current_chrome_load_event_ms": 17,
+    "delta_chrome_load_event_ms": -31
+  },
+  "snapshot": {
+    "json": "vertical-proof-history/20260516T093129Z-forge-combo.json",
+    "markdown": "vertical-proof-history/20260516T093129Z-forge-combo.md",
+    "index_json": "vertical-proof-history/index.json",
+    "index_markdown": "vertical-proof-history/index.md"
+  }
+}

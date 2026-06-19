@@ -1,0 +1,10 @@
+tool="dx style"
+command="build"
+generated_css="styles/generated.css"
+app_import="styles/globals.css"
+source_hash="blake3:82582a6c77701476df66e40148081ece2efb4169ba8619c64dbbef194bcd2d33"
+scanned_files=10
+generated_class_count=15
+generated_css_bytes=7551
+pruned_candidate_class_count=0
+legacy_json=".dx/receipts/style/build.json"

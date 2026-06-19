@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "packages": [
+    {
+      "package_id": "shadcn/ui/button",
+      "upstream_name": "shadcn-ui",
+      "version": "0.1.0",
+      "generator": "dx-forge/shadcn-ui",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "integrity_hash": "bf24547506e6428511a139f2968d21f6ea1cb4d094b441c062f49cdf132d6b6e",
+      "license": "MIT OR Apache-2.0",
+      "provenance": {
+        "source": "dx-forge-curated-registry",
+        "upstream_reference": "shadcn-ui://apps/v4/registry/bases/radix/ui/button.tsx",
+        "verified": false,
+        "note": "DX inspected the local shadcn-ui v4 registry entry and Radix Slot primitive for the official UI Components Button surface; this is curated launch metadata, not SLSA or live upstream provenance."
+      },
+      "advisory_review": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "note": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn-style button package, but it is not a live advisory feed."
+      },
+      "license_review": {
+        "declared_license": "MIT OR Apache-2.0",
+        "reviewed": false,
+        "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+      },
+      "files": [
+        {
+          "path": "lib/utils.ts",
+          "logical_path": "js/lib/utils.ts",
+          "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+          "bytes": 119
+        },
+        {
+          "path": "components/ui/slot.tsx",
+          "logical_path": "js/ui/slot.tsx",
+          "hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+          "bytes": 642
+        },
+        {
+          "path": "components/ui/button.tsx",
+          "logical_path": "js/ui/button.tsx",
+          "hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+          "bytes": 1976
+        },
+        {
+          "path": "components/ui/README.md",
+          "logical_path": "js/ui/README.md",
+          "hash": "6a5633e2163aff242dff4dfbe3f2feb8dd906c4ac848464662de7e22a13e02ba",
+          "bytes": 183
+        }
+      ]
+    },
+    {
+      "package_id": "dx/icon/search",
+      "upstream_name": "@dx/forge-icons",
+      "version": "0.1.0",
+      "generator": "dx-forge/selected-icons",
+      "variant": "default",
+      "source_kind": "curated-registry",
+      "integrity_hash": "1a4d4da92fc44690e46f310aff5cbd42d6fceb01fb102696defd7ce5b8d13e47",
+      "license": "MIT OR Apache-2.0",
+      "provenance": {
+        "source": "dx-forge-curated-registry",
+        "upstream_reference": "dx-forge://packages/dx/icon/search",
+        "verified": false,
+        "note": "Curated DX Forge source metadata is recorded, but this is not SLSA or live upstream provenance yet."
+      },
+      "advisory_review": {
+        "coverage_kind": "curated-fixture",
+        "provider": "dx-forge-curated-advisory-fixture",
+        "live_coverage": false,
+        "finding_count": 0,
+        "reviewed_at": "2026-05-17T00:00:00Z",
+        "note": "Curated DX Forge advisory fixture records no known advisory findings for this selected icon package, but it is not a live advisory feed."
+      },
+      "license_review": {
+        "declared_license": "MIT OR Apache-2.0",
+        "reviewed": false,
+        "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+      },
+      "files": [
+        {
+          "path": "lib/icons.ts",
+          "logical_path": "js/lib/icons.ts",
+          "hash": "d34ad7db752f79ff5c928858b99f048dca4c7222809fb64fa6f071e7a4d46a3e",
+          "bytes": 824
+        },
+        {
+          "path": "components/icons/search.tsx",
+          "logical_path": "js/icons/search.tsx",
+          "hash": "fcca597c047e13aae8bfcb56867d78303704a9bcfcd1332b60650e0f82e0b7a7",
+          "bytes": 496
+        },
+        {
+          "path": "components/icons/README.md",
+          "logical_path": "js/icons/README.md",
+          "hash": "a20e985338e0fa6ae5685a33fc1eb4ceb6b428d25026eb111cbc5120922ab4af",
+          "bytes": 196
+        }
+      ]
+    },
+    {
+      "package_id": "dx-www/vertical/forge",
+      "upstream_name": "local:dx-www/vertical",
+      "version": "0.0.0-local",
+      "generator": "dx-forge/local-source",
+      "variant": "default",
+      "source_kind": "local",
+      "integrity_hash": "71f3ced189182e2f6c01cf52edc478f690d60ff8a0a3737afe48e3655c24ccc7",
+      "license": "UNLICENSED",
+      "provenance": {
+        "source": "dx-forge-local-source",
+        "upstream_reference": "local:dx-www/vertical",
+        "verified": false,
+        "note": "Local source was tracked by Forge, but no external upstream provenance is claimed."
+      },
+      "advisory_review": {
+        "coverage_kind": "missing",
+        "provider": "none",
+        "live_coverage": false,
+        "finding_count": 0,
+        "note": "Local source packages do not have live advisory coverage attached by Forge yet."
+      },
+      "license_review": {
+        "declared_license": "UNLICENSED",
+        "reviewed": false,
+        "note": "License is recorded from the local package declaration only; no formal DX legal review is claimed."
+      },
+      "files": [
+        {
+          "path": "pages/forge.html",
+          "hash": "76362449df1d32978e95aba2a35a6167b1ba88556c5a4c0297de3d60430dca3f",
+          "bytes": 22332
+        }
+      ]
+    }
+  ],
+  "receipts": [
+    "20260525T234626025501500Z-shadcn-ui-button.json",
+    "20260525T234626035689100Z-dx-icon-search.json",
+    "20260525T234645803579500Z-dx-www-vertical-forge.json"
+  ]
+}

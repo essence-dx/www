@@ -1,0 +1,258 @@
+{
+  "adapter": "dx-www-static-hosting",
+  "build_manifest": {
+    "hash": "blake3:4097cfee2f6a737e80f6b1158dc0531dd6e79ad5c0ccea5766b3fbb58b8aa1d8",
+    "path": "manifest.json",
+    "signature_policy": "sign manifest before hosted promotion",
+    "signature_required_for_release": true,
+    "signed": false
+  },
+  "cache_headers": [
+    {
+      "cache_control": "public, max-age=0, must-revalidate",
+      "glob": "**/*.html"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "glob": "**/*.dxpk"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "glob": "public/**/*"
+    }
+  ],
+  "forge_hosting_manifest": {
+    "account_free_preview_ready": true,
+    "cache_header_count": 3,
+    "coverage_score": 100,
+    "hosted_release_ready": false,
+    "manifest_kind": "dx-www-forge-hosting-release-gate",
+    "observability_metadata_path": "observability.json",
+    "path": "forge-hosting-manifest.json",
+    "provider_portability": true,
+    "rollback_metadata_path": "rollback.json"
+  },
+  "health_checks": [],
+  "hosted_preview": {
+    "account_free_preview_ready": true,
+    "artifact_count": 42,
+    "deployment_kind": "dx-www-hosted-preview-bundle",
+    "forge": {
+      "lifecycle_scripts_executed": false,
+      "package_count": 0,
+      "package_installs_executed": false,
+      "receipt_count": 4,
+      "receipts": [
+        {
+          "action": "unknown",
+          "bundle_path": "forge/receipts/2026-05-21-convex-to-backend.json",
+          "file_count": 0,
+          "hash": "blake3:73923dd6dfc8cb270f84447e65e1df40c3e30abc8b06f9a4bc7c88eaf788e48e",
+          "kind": "forge-receipt",
+          "lifecycle_scripts_executed": false,
+          "package_id": "unknown",
+          "package_installs_executed": false,
+          "path": ".dx/forge/receipts/2026-05-21-convex-to-backend.json",
+          "risk_score": 0,
+          "source_owned": true,
+          "variant": "default"
+        },
+        {
+          "action": "unknown",
+          "bundle_path": "forge/receipts/2026-05-21-dx-landing-to-index.json",
+          "file_count": 0,
+          "hash": "blake3:9eabd80f7cf175b5dddfe11604d2915e9af8fe05bc4b4722bb9ab23295d8200f",
+          "kind": "forge-receipt",
+          "lifecycle_scripts_executed": false,
+          "package_id": "unknown",
+          "package_installs_executed": false,
+          "path": ".dx/forge/receipts/2026-05-21-dx-landing-to-index.json",
+          "risk_score": 0,
+          "source_owned": true,
+          "variant": "default"
+        },
+        {
+          "action": "unknown",
+          "bundle_path": "forge/receipts/2026-05-21-shadcn-ui-to-ui.json",
+          "file_count": 0,
+          "hash": "blake3:6f1fbb6f924916f98d8adb1f39274b19106b4c20df87282de1bb2c3c66fc06fb",
+          "kind": "forge-receipt",
+          "lifecycle_scripts_executed": false,
+          "package_id": "unknown",
+          "package_installs_executed": false,
+          "path": ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json",
+          "risk_score": 0,
+          "source_owned": true,
+          "variant": "default"
+        },
+        {
+          "action": "unknown",
+          "bundle_path": "forge/receipts/2026-05-21-supabase-to-database.json",
+          "file_count": 0,
+          "hash": "blake3:1bc99133b9ef9db90e3a8ed216623f03b2ed0e2dae9d46ce96e6e6eaa37499c7",
+          "kind": "forge-receipt",
+          "lifecycle_scripts_executed": false,
+          "package_id": "unknown",
+          "package_installs_executed": false,
+          "path": ".dx/forge/receipts/2026-05-21-supabase-to-database.json",
+          "risk_score": 0,
+          "source_owned": true,
+          "variant": "default"
+        }
+      ],
+      "receipts_copied": true,
+      "root": "forge",
+      "source_manifest": {
+        "bundle_path": "forge/source-manifest.json",
+        "hash": "blake3:39d626d832e7be0a8d3ded86ddb1e5673a1e48c75d9c770f60cfd01bd0cfe651",
+        "kind": "forge-source-manifest",
+        "lifecycle_scripts_executed": false,
+        "package_installs_executed": false,
+        "path": ".dx/forge/source-manifest.json",
+        "source_owned": true
+      },
+      "source_owned": true,
+      "template_manifest": null
+    },
+    "forge_receipt_count": 4,
+    "hosted_release_ready": false,
+    "network_required": false,
+    "node_modules_required": false,
+    "path": "hosted-preview.json",
+    "requires_provider_account": false
+  },
+  "immutable_assets": [
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/amber.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/blue.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/cyan.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/emerald.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/fuchsia.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/green-variant.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/green.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/indigo.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/lime.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/orange.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/pink.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/purple.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/rainbow.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/red.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/rose.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/sky.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/teal.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/variant-1.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/variant-2.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/violet.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/thumbnails/yellow.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/vendor/convex-logo.svg"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/vendor/shadcn-favicon-32x32.png"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "public/vendor/supabase-logo.svg"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "styles/conversion-proof.css"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "path": "styles/dx-landing.css"
+    }
+  ],
+  "next_adapter_fixtures": null,
+  "next_migration": null,
+  "next_parity_evidence": null,
+  "next_parity_fixtures": null,
+  "no_node_modules_required": true,
+  "observability": {
+    "cache_control": "no-store",
+    "collects_request_headers": false,
+    "collects_request_payloads": false,
+    "collects_secrets": false,
+    "metadata_path": "observability.json",
+    "metrics_path": "/.dx/observability",
+    "ready_path": "/.dx/ready"
+  },
+  "provider_adapter": {
+    "account_bound": false,
+    "network_required": false,
+    "path": "provider-adapter.dx-cloud.json",
+    "provider": "dx-www-cloud-local",
+    "requires_provider_account": false
+  },
+  "rollback": {
+    "metadata_path": "rollback.json",
+    "strategy": "manifest-pinned-asset-rollback"
+  },
+  "routes": [],
+  "server_actions": [],
+  "version": 1
+}

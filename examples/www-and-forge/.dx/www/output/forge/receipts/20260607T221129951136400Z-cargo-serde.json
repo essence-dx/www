@@ -1,0 +1,73 @@
+{
+  "action": "track-write",
+  "package": {
+    "package_id": "cargo/serde",
+    "upstream_name": "cargo:serde",
+    "version": "source-dir-snapshot",
+    "generator": "dx-forge/cargo-external-source-snapshot",
+    "variant": "default",
+    "source_kind": "external-snapshot",
+    "integrity_hash": "31929f8a37329db617f8f15571fa290a1f4dda8b9a6971d646aab5790056f974",
+    "license": "unreviewed",
+    "provenance": {
+      "source": "dx-forge-cargo-external-source-snapshot",
+      "upstream_reference": "cargo:serde",
+      "verified": false,
+      "note": "External ecosystem source was materialized into Forge-owned files without running package-manager install or lifecycle commands."
+    },
+    "advisory_review": {
+      "coverage_kind": "missing",
+      "provider": "none",
+      "live_coverage": false,
+      "finding_count": 0,
+      "note": "External source snapshots do not have live advisory coverage attached by Forge yet."
+    },
+    "license_review": {
+      "declared_license": "unreviewed",
+      "reviewed": false,
+      "note": "License is recorded from inspected package metadata only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/forge/cargo/serde/lib.rs",
+        "hash": "2e3929b4783b966821b3ed9c1c4eaaa5fc2101b729af16634aff9db17261f6f5",
+        "bytes": 63
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/forge/cargo/serde/lib.rs",
+      "hash": "2e3929b4783b966821b3ed9c1c4eaaa5fc2101b729af16634aff9db17261f6f5",
+      "bytes": 63
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "lib/forge/cargo/serde/lib.rs",
+      "materialized_path": "lib/forge/cargo/serde/lib.rs",
+      "hash": "2e3929b4783b966821b3ed9c1c4eaaa5fc2101b729af16634aff9db17261f6f5",
+      "bytes": 63
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "external-source-snapshot",
+      "traffic": "green",
+      "message": "Forge records this package as a source-owned external ecosystem snapshot, not as a package-manager install."
+    },
+    {
+      "policy": "no-package-install",
+      "traffic": "green",
+      "message": "Forge did not run npm, pip, cargo, go, or any package-manager install command."
+    },
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge did not run lifecycle hooks, build scripts, setup hooks, or upstream generated install artifacts."
+    }
+  ],
+  "risk_score": 90,
+  "timestamp": "2026-06-07T22:11:29.950705800+00:00",
+  "signature": null
+}

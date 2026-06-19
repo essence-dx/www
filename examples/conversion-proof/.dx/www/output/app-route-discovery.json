@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "format": 1,
+  "schema": "dx.app-router.route-discovery",
+  "routes": [
+    {
+      "source_path": "app/page.tsx",
+      "route_path": "/",
+      "route_shape": "/",
+      "root_index": 0,
+      "non_path_segment_count": 0,
+      "specificity": {
+        "segment_kinds": [],
+        "static_segment_count": 0,
+        "dynamic_segment_count": 0,
+        "catch_all_segment_count": 0,
+        "optional_catch_all_segment_count": 0,
+        "visible_segment_count": 0,
+        "precedence_score": 0
+      },
+      "segment_files": [
+        {
+          "kind": "Layout",
+          "source_path": "app/layout.tsx",
+          "route_path": "/",
+          "depth": 0,
+          "non_path_segment_count": 0
+        }
+      ],
+      "shadowed_source_paths": [],
+      "shape_collision_source_paths": []
+    }
+  ],
+  "route_count": 1,
+  "skipped_routes": [],
+  "skipped_route_count": 0
+}

@@ -1,0 +1,53 @@
+---
+import { dashboardRows } from "../bench-data.js";
+import BenchmarkLayout from "../components/BenchmarkLayout.astro";
+
+const rows = dashboardRows();
+---
+
+<BenchmarkLayout title="Astro Big Dashboard Benchmark">
+  <main class="bench-shell">
+    <header class="bench-hero">
+      <div>
+        <div class="eyebrow">Big interactive route</div>
+        <h1>Revenue operations dashboard</h1>
+      </div>
+      <div class="metric-row">
+        <div class="metric"><span>Rows</span><b>{rows.length}</b></div>
+        <div class="metric"><span>Runtime</span><b>Astro</b></div>
+      </div>
+    </header>
+    <div class="toolbar">
+      <input id="row-filter" type="search" placeholder="Filter customers or status" aria-label="Filter dashboard rows" />
+    </div>
+    <section class="panel">
+      <table>
+        <thead>
+          <tr><th>Account</th><th>Plan</th><th>Region</th><th>Status</th><th>MRR</th><th>Risk</th></tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr data-search={row.search}>
+              <td>{row.account}</td>
+              <td>{row.plan}</td>
+              <td>{row.region}</td>
+              <td class={row.status === "Review" ? "status-risk" : "status-ok"}>{row.status}</td>
+              <td>${row.mrr}</td>
+              <td>{row.risk}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script>
+    const rowInput = document.getElementById("row-filter");
+    const rows = [...document.querySelectorAll("tbody tr")];
+    rowInput.addEventListener("input", () => {
+      const query = rowInput.value.toLowerCase();
+      for (const row of rows) {
+        row.hidden = !row.dataset.search.includes(query);
+      }
+    });
+  </script>
+</BenchmarkLayout>

@@ -1,0 +1,200 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "State Management",
+    "package_id": "state/zustand",
+    "upstream_package": "zustand",
+    "upstream_version": "5.0.13",
+    "source_mirror": "G:/WWW/inspirations/zustand",
+    "based_on": "Zustand vanilla store, React hook, persistence, and selector subscription public APIs",
+    "aliases": [
+      "state-management",
+      "zustand",
+      "npm/zustand",
+      "pmndrs/zustand",
+      "state/zustand-react"
+    ]
+  },
+  "selected_surfaces": [
+    "launch-dashboard-state-workflow",
+    "launch-dashboard-state-shell",
+    "generated-starter-materialization",
+    "check-panel-stale-helper-attribution",
+    "receipt-hash-refresh",
+    "studio-manifest-source"
+  ],
+  "upstream_public_apis": [
+    "createStore",
+    "create",
+    "useStore",
+    "persist",
+    "createJSONStorage",
+    "onHydrate",
+    "onFinishHydration",
+    "subscribeWithSelector"
+  ],
+  "inspected_upstream_files": [
+    "package.json",
+    "src/vanilla.ts",
+    "src/react.ts",
+    "src/middleware/persist.ts",
+    "src/middleware/subscribeWithSelector.ts"
+  ],
+  "guard": {
+    "id": "state-management-generated-starter-materialization",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "benchmarks/zustand-launch-materialized.test.ts",
+    "command": "dx run --test .\\benchmarks\\zustand-launch-materialized.test.ts",
+    "proves": [
+      "State Management generated-starter materialization guard",
+      "data-dx-check-package-lane-row=\"state/zustand\"",
+      "data-dx-token-scope=\"state/zustand\"",
+      "state-management:receipt-hash-refresh",
+      "docs/packages/state-zustand.source-guard-runbook.json",
+      "without claiming browser storage or visual runtime proof",
+      "state/zustand source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "state-management-generated-starter-materialization",
+      "purpose": "The generated starter preserves the State Management package-lane row, helper freshness markers, and package-scoped dx-check panel without browser storage or visual runtime proof.",
+      "evidence_field": "benchmarks/zustand-launch-materialized.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\zustand-launch-materialized.test.ts",
+      "purpose": "Validate the source-only State Management package-lane row, generated starter materialization, helper freshness markers, and dx-check panel package scope without browser storage or visual runtime proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "helper_freshness_guards": [
+    {
+      "id": "state-management-check-panel-stale-helper-attribution",
+      "routes": [
+        "/"
+      ],
+      "guard_file": "core/src/ecosystem/dx_check_receipt.rs",
+      "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_state_management_stale_helper_file_attribution --lib",
+      "fixture_path": "docs/packages/state-zustand.source-guard-runbook.json",
+      "proves": [
+        "State Management check-panel stale helper attribution guard",
+        "receipt_hash_refresh.stale_files carries tools/launch/materialize-www-template.ts",
+        "selected State Management source files remain in receipt_hash_refresh.current_files",
+        "state_management_receipt_hash_refresh_stale",
+        "state_management_receipt_stale",
+        "docs/packages/state-zustand.source-guard-runbook.json",
+        "without claiming browser storage or visual runtime proof",
+        "state/zustand source-only Studio discovery"
+      ],
+      "execution_policy": "source-only",
+      "writes_files": false,
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "node_modules_required": false
+    }
+  ],
+  "source_guard_fixture_paths": [
+    {
+      "source_guard_id": "state-management-check-panel-stale-helper-attribution",
+      "package_id": "state/zustand",
+      "fixture_path": "docs/packages/state-zustand.source-guard-runbook.json",
+      "schema": "dx.forge.package.source_guard_runbook_fixture"
+    }
+  ],
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture_path": "docs/packages/state-zustand.source-guard-runbook.json",
+    "route": "/",
+    "runtime_proof": false,
+    "zed_visibility": "state-management:receipt-hash-refresh",
+    "hash_backed_by": "examples/template/state-management-receipt-hashes.ts",
+    "hash_backed_files": [
+      "tools/launch/materialize-www-template.ts"
+    ]
+  },
+  "studio_manifest": {
+    "source_file": "dx-www/src/cli/studio_manifest.rs",
+    "field": "source_guard_index",
+    "route_field": "source_guard_runbook_index",
+    "published_source_guards": [
+      "state-management-generated-starter-materialization",
+      "state-management-check-panel-stale-helper-attribution"
+    ],
+    "hash_backed_by": "examples/template/state-management-receipt-hashes.ts",
+    "hash_backed_files": [
+      "dx-www/src/cli/studio_manifest.rs"
+    ],
+    "runtime_proof": false,
+    "zed_visibility": "state-management:receipt-hash-refresh"
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-check-package-lane-hash-refresh-stale-file-list",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-state-zustand-dashboard-workflow.json",
+    "hash_helper": "examples/template/state-management-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/state-management-receipt-hashes.ts --check --json",
+    "studio_manifest_source": "dx-www/src/cli/studio_manifest.rs",
+    "hash_helper_report_fields": [
+      "current_files",
+      "stale_files",
+      "missing_files",
+      "stale_mirror_files",
+      "missing_mirror_files",
+      "studio_manifest_source",
+      "preview_manifest_materializer"
+    ],
+    "stale_helper_attribution": {
+      "source_guard_id": "state-management-check-panel-stale-helper-attribution",
+      "rust_fixture": "dx_check_latest_panel_exposes_state_management_stale_helper_file_attribution",
+      "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_state_management_stale_helper_file_attribution --lib",
+      "proves": [
+        "receipt_hash_refresh.stale_files carries tools/launch/materialize-www-template.ts",
+        "selected State Management source files remain in receipt_hash_refresh.current_files",
+        "state_management_receipt_hash_refresh_stale flips without marking runtime proof complete"
+      ]
+    },
+    "zed_visibility": "state-management:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "selector granularity and equality policy",
+    "persisted-state sensitivity review",
+    "browser storage durability policy",
+    "optional Immer dependency approval",
+    "DevTools availability",
+    "hydration and visual runtime proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: browser storage, DevTools, hydration, optional Immer, and visual runtime proof stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

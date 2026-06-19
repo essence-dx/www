@@ -1,0 +1,41 @@
+{
+  "schema": "dx.www.rendered_proof_evidence",
+  "fixture_kind": "blocked-rendered-proof-sample",
+  "route": "/ui",
+  "source_project": "shadcn-ui",
+  "approval": {
+    "status": "not-approved",
+    "approved_by": null,
+    "approved_at": null,
+    "approval_reference": "Source-only conversion lane; runtime preview approval has not been granted."
+  },
+  "blocked_reason": "Runtime approval has not been granted, so no renderer snapshot, asset rendering capture, responsive review, or accessibility review exists yet.",
+  "missing_artifacts": [
+    "renderer_snapshot",
+    "asset_rendering",
+    "responsive_review",
+    "accessibility_review"
+  ],
+  "checks": {
+    "interaction_boundary_review": {
+      "status": "blocked",
+      "reviewed_at": "2026-05-21T00:00:00Z",
+      "notes": "Radix behavior, React hydration, and registry preview interactions remain launch shims until an approved DX-WWW renderer pass exists."
+    },
+    "provenance_review": {
+      "status": "pass",
+      "reviewed_at": "2026-05-21T00:00:00Z",
+      "notes": "The sample points to the source manifest, route discovery, acceptance checklist, visual audit, conversion manifest, and Forge receipt."
+    }
+  },
+  "provenance_snapshot": {
+    "route_discovery": "forge/route-discovery/conversion-routes.json",
+    "acceptance_checklist": "forge/acceptance/no-runtime-route-acceptance.json",
+    "source_manifest": ".dx/forge/source-manifest.json",
+    "visual_audit": "forge/visual-audits/shadcn-ui.json",
+    "conversion_manifest": "forge/conversion-manifests/shadcn-ui.json",
+    "receipt": ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json"
+  },
+  "result": "blocked",
+  "no_source_proof_mutation": true
+}

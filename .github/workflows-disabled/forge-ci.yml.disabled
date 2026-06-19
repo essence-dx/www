@@ -1,0 +1,81 @@
+# DX GitHub Actions temporarily disabled.
+# Controlled deactivation requested by essencefromexistence to preserve limited GitHub Actions minutes.
+# Keep this workflow disabled until essencefromexistence explicitly re-enables GitHub Actions for this repository.
+name: DX Forge CI
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+  workflow_dispatch:
+    inputs:
+      publish_pages:
+        description: Publish the Forge readiness badge and public evidence routes to GitHub Pages
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dx-www-forge-ci-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  forge-smoke:
+    name: Secret-free Forge smoke
+    runs-on: windows-latest
+    timeout-minutes: 30
+
+    env:
+      CARGO_TERM_COLOR: always
+      RUST_BACKTRACE: "1"
+
+    defaults:
+      run:
+        working-directory: dx-www
+
+    steps:
+      - name: Check out dx-www
+        uses: actions/checkout@v4
+        with:
+          path: dx-www
+
+      - name: Check out serializer dependency
+        uses: actions/checkout@v4
+        with:
+          repository: millercarla211-ctrl/dx-serializer
+          token: ${{ secrets.DX_CI_REPOSITORY_TOKEN }}
+          ref: dev
+          path: serializer
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Cargo registry and target
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            dx-www/target
+          key: ${{ runner.os }}-cargo-forge-${{ hashFiles('dx-www/Cargo.lock', 'dx-www/**/Cargo.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-forge-
+
+      - name: Run DX Forge CI
+        shell: pwsh
+        run: ./scripts/ci/forge-ci.ps1 -ArtifactDir .dx/ci -PagesDir .dx/forge-pages -FailUnder 90
+
+      - name: Upload Forge CI evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: forge-ci-evidence-${{ github.sha }}
+          path: |
+            dx-www/.dx/ci
+            dx-www/.dx/forge-pages
+          if-no-files-found: warn
+          retention-days: 14

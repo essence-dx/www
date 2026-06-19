@@ -1,0 +1,41 @@
+/* Authored public tokens for the DX WWW template. */
+
+:root {
+  --background: 210 24% 6%;
+  --foreground: 210 22% 96%;
+  --muted: 215 18% 18%;
+  --muted-foreground: 214 13% 66%;
+  --border: 214 18% 22%;
+  --card: 214 22% 10%;
+  --accent: 188 92% 44%;
+  --success: 145 62% 45%;
+  --warning: 39 92% 55%;
+  --danger: 356 74% 58%;
+  --destructive: var(--danger);
+  --primary: 188 92% 44%;
+  --primary-foreground: 210 24% 6%;
+  --secondary: 214 18% 16%;
+  --secondary-foreground: 210 22% 92%;
+  --ring: 188 92% 48%;
+  --radius: 0.5rem;
+  --font-mono: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root[data-theme="light"] {
+  --background: 210 38% 98%;
+  --foreground: 216 28% 9%;
+  --muted: 214 32% 91%;
+  --muted-foreground: 216 10% 42%;
+  --border: 214 22% 84%;
+  --card: 0 0% 100%;
+  --accent: 190 92% 36%;
+  --success: 145 56% 36%;
+  --warning: 36 92% 44%;
+  --danger: 356 68% 50%;
+  --destructive: var(--danger);
+  --primary: 190 92% 36%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 214 34% 94%;
+  --secondary-foreground: 216 22% 16%;
+  --ring: 190 92% 36%;
+}

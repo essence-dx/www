@@ -1,0 +1,11 @@
+{
+  "schema": "dx.deploy.output",
+  "provider": "vercel",
+  "outputs": [
+    "out/index.html"
+  ],
+  "sources": [
+    "app/page.tsx",
+    "public/logo.svg"
+  ]
+}

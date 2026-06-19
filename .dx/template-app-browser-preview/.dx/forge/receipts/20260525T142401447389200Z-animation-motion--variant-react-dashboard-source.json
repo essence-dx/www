@@ -1,0 +1,1059 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "animation/motion",
+    "upstream_name": "motion",
+    "version": "12.38.0-dx.12",
+    "generator": "dx-forge/motion",
+    "variant": "react-dashboard-source",
+    "last_accepted_update": "2026-05-25T14:24:01.442412100+00:00",
+    "source_kind": "curated-registry",
+    "integrity_hash": "76532b9ad450c69bb4708d5338f9a55d09e4545f0d96c4a3eebfa17cff8a5959",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:motion@12.38.0",
+      "verified": false,
+      "note": "DX inspected the local Motion source mirror, package export map, motion/react re-export, DOM API, React hooks, and examples before curating this launch animation slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Motion launch slice, but it is not a live advisory feed and does not audit application animation performance or accessibility choices."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "motion/forge/variants/react-dashboard-source/presets.ts",
+        "logical_path": "js/motion/presets.ts",
+        "hash": "d9d1f615584d342e5d5bc242cac59b4de4385c30a5ee53fdf17353b1e65ca881",
+        "bytes": 1062
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/controls.tsx",
+        "logical_path": "js/motion/controls.tsx",
+        "hash": "56d37d3d7b7a0bb38615d225d997e33f21d6b5e34a1d331a33da8fbea2b350a9",
+        "bytes": 3884
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/frame.tsx",
+        "logical_path": "js/motion/frame.tsx",
+        "hash": "7e25eebbde026cf08dbbb9253f73bf5cf1d534ecb61186072aeb56a25a8f5490",
+        "bytes": 3470
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/layout.tsx",
+        "logical_path": "js/motion/layout.tsx",
+        "hash": "cab8c35e34d52f677159430b5371769b842a0db88c03db83ec6627732b9cafdc",
+        "bytes": 2582
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/lazy.tsx",
+        "logical_path": "js/motion/lazy.tsx",
+        "hash": "d64d813b82f4ab61016b118a2a3cd2e69edcbcf38b9e075b76f43afe8ab35098",
+        "bytes": 1461
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/motion-values.tsx",
+        "logical_path": "js/motion/motion-values.tsx",
+        "hash": "224d4323dbef36967c5e3d7f234edf7c02d90dca6988840367e47ff1b959e65b",
+        "bytes": 3918
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/page-visibility.tsx",
+        "logical_path": "js/motion/page-visibility.tsx",
+        "hash": "435cb184d2de383cc8fe3204a6804bace3b649875d606da79c7b2cc1fdd391d4",
+        "bytes": 1588
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/provider.tsx",
+        "logical_path": "js/motion/provider.tsx",
+        "hash": "faa816c4edd3bf5b9e710c9cdaac1f5fcb32148090725f2c9b836a8c25e8781b",
+        "bytes": 859
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/presence.tsx",
+        "logical_path": "js/motion/presence.tsx",
+        "hash": "d2a58e57b5b36391b70c9189bd8dab9acf470883c85be5f76fcbbc150d12128f",
+        "bytes": 2841
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/reorder.tsx",
+        "logical_path": "js/motion/reorder.tsx",
+        "hash": "54e25d14c7ad7977f23db9ab1a8774601f38788f90aceafef4fd69fdc775964a",
+        "bytes": 2980
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/reveal.tsx",
+        "logical_path": "js/motion/reveal.tsx",
+        "hash": "3306e43d9f7d6f3a3f357bd5e27177b88490979e3ed9895155da80f552ef4e82",
+        "bytes": 1444
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/scoped-animate.tsx",
+        "logical_path": "js/motion/scoped-animate.tsx",
+        "hash": "8fbd3403ec7e31b5e95672d3b908a2d63fe218db9a63fcb141774d10d38bb5e7",
+        "bytes": 1984
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/scroll-progress.tsx",
+        "logical_path": "js/motion/scroll-progress.tsx",
+        "hash": "9db740511fbcd7333706b00f4b173d915e548a9a3bf6b2572891d5f7b5336382",
+        "bytes": 1753
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/will-change.tsx",
+        "logical_path": "js/motion/will-change.tsx",
+        "hash": "29de61f8f48bca43838ad6f56a0179bd4033a7c078e4916d0131d9d98b77d6b7",
+        "bytes": 2275
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/dashboard-workflow.ts",
+        "logical_path": "js/motion/dashboard-workflow.ts",
+        "hash": "b0c6fd1f0f4631b00f6dedd21c2fe54aaf4a63786437205618d0783726e723a5",
+        "bytes": 13482
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/metadata.ts",
+        "logical_path": "js/motion/metadata.ts",
+        "hash": "ee340aca3e683891cffd49370882ff3408e209a83db0dfcfb3822449d0f43312",
+        "bytes": 6983
+      },
+      {
+        "path": "motion/forge/variants/react-dashboard-source/README.md",
+        "logical_path": "js/motion/README.md",
+        "hash": "8739ad56601a2f1146d8348620974f15d1de30906450442b4571def9caacf938",
+        "bytes": 11999
+      },
+      {
+        "path": "motion/README.md",
+        "logical_path": "js/motion/README.md",
+        "hash": "cf1e578bd2ccad272fca63ceabcd70de79b87fc248cd1b87118ad5cb91ba24ad",
+        "bytes": 12008
+      },
+      {
+        "path": "motion/controls.tsx",
+        "logical_path": "js/motion/controls.tsx",
+        "hash": "56d37d3d7b7a0bb38615d225d997e33f21d6b5e34a1d331a33da8fbea2b350a9",
+        "bytes": 3884
+      },
+      {
+        "path": "motion/dashboard-workflow.ts",
+        "logical_path": "js/motion/dashboard-workflow.ts",
+        "hash": "b0c6fd1f0f4631b00f6dedd21c2fe54aaf4a63786437205618d0783726e723a5",
+        "bytes": 13482
+      },
+      {
+        "path": "motion/frame.tsx",
+        "logical_path": "js/motion/frame.tsx",
+        "hash": "7e25eebbde026cf08dbbb9253f73bf5cf1d534ecb61186072aeb56a25a8f5490",
+        "bytes": 3470
+      },
+      {
+        "path": "motion/layout.tsx",
+        "logical_path": "js/motion/layout.tsx",
+        "hash": "cab8c35e34d52f677159430b5371769b842a0db88c03db83ec6627732b9cafdc",
+        "bytes": 2582
+      },
+      {
+        "path": "motion/lazy.tsx",
+        "logical_path": "js/motion/lazy.tsx",
+        "hash": "d64d813b82f4ab61016b118a2a3cd2e69edcbcf38b9e075b76f43afe8ab35098",
+        "bytes": 1461
+      },
+      {
+        "path": "motion/metadata.ts",
+        "logical_path": "js/motion/metadata.ts",
+        "hash": "ee340aca3e683891cffd49370882ff3408e209a83db0dfcfb3822449d0f43312",
+        "bytes": 6983
+      },
+      {
+        "path": "motion/motion-values.tsx",
+        "logical_path": "js/motion/motion-values.tsx",
+        "hash": "224d4323dbef36967c5e3d7f234edf7c02d90dca6988840367e47ff1b959e65b",
+        "bytes": 3918
+      },
+      {
+        "path": "motion/page-visibility.tsx",
+        "logical_path": "js/motion/page-visibility.tsx",
+        "hash": "435cb184d2de383cc8fe3204a6804bace3b649875d606da79c7b2cc1fdd391d4",
+        "bytes": 1588
+      },
+      {
+        "path": "motion/presence.tsx",
+        "logical_path": "js/motion/presence.tsx",
+        "hash": "d2a58e57b5b36391b70c9189bd8dab9acf470883c85be5f76fcbbc150d12128f",
+        "bytes": 2841
+      },
+      {
+        "path": "motion/presets.ts",
+        "logical_path": "js/motion/presets.ts",
+        "hash": "d9d1f615584d342e5d5bc242cac59b4de4385c30a5ee53fdf17353b1e65ca881",
+        "bytes": 1062
+      },
+      {
+        "path": "motion/provider.tsx",
+        "logical_path": "js/motion/provider.tsx",
+        "hash": "faa816c4edd3bf5b9e710c9cdaac1f5fcb32148090725f2c9b836a8c25e8781b",
+        "bytes": 859
+      },
+      {
+        "path": "motion/reorder.tsx",
+        "logical_path": "js/motion/reorder.tsx",
+        "hash": "54e25d14c7ad7977f23db9ab1a8774601f38788f90aceafef4fd69fdc775964a",
+        "bytes": 2980
+      },
+      {
+        "path": "motion/reveal.tsx",
+        "logical_path": "js/motion/reveal.tsx",
+        "hash": "3306e43d9f7d6f3a3f357bd5e27177b88490979e3ed9895155da80f552ef4e82",
+        "bytes": 1444
+      },
+      {
+        "path": "motion/scoped-animate.tsx",
+        "logical_path": "js/motion/scoped-animate.tsx",
+        "hash": "8fbd3403ec7e31b5e95672d3b908a2d63fe218db9a63fcb141774d10d38bb5e7",
+        "bytes": 1984
+      },
+      {
+        "path": "motion/scroll-progress.tsx",
+        "logical_path": "js/motion/scroll-progress.tsx",
+        "hash": "9db740511fbcd7333706b00f4b173d915e548a9a3bf6b2572891d5f7b5336382",
+        "bytes": 1753
+      },
+      {
+        "path": "motion/will-change.tsx",
+        "logical_path": "js/motion/will-change.tsx",
+        "hash": "29de61f8f48bca43838ad6f56a0179bd4033a7c078e4916d0131d9d98b77d6b7",
+        "bytes": 2275
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "motion/forge/variants/react-dashboard-source/presets.ts",
+      "logical_path": "js/motion/presets.ts",
+      "hash": "d9d1f615584d342e5d5bc242cac59b4de4385c30a5ee53fdf17353b1e65ca881",
+      "bytes": 1062
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/controls.tsx",
+      "logical_path": "js/motion/controls.tsx",
+      "hash": "56d37d3d7b7a0bb38615d225d997e33f21d6b5e34a1d331a33da8fbea2b350a9",
+      "bytes": 3884
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/frame.tsx",
+      "logical_path": "js/motion/frame.tsx",
+      "hash": "7e25eebbde026cf08dbbb9253f73bf5cf1d534ecb61186072aeb56a25a8f5490",
+      "bytes": 3470
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/layout.tsx",
+      "logical_path": "js/motion/layout.tsx",
+      "hash": "cab8c35e34d52f677159430b5371769b842a0db88c03db83ec6627732b9cafdc",
+      "bytes": 2582
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/lazy.tsx",
+      "logical_path": "js/motion/lazy.tsx",
+      "hash": "d64d813b82f4ab61016b118a2a3cd2e69edcbcf38b9e075b76f43afe8ab35098",
+      "bytes": 1461
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/motion-values.tsx",
+      "logical_path": "js/motion/motion-values.tsx",
+      "hash": "224d4323dbef36967c5e3d7f234edf7c02d90dca6988840367e47ff1b959e65b",
+      "bytes": 3918
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/page-visibility.tsx",
+      "logical_path": "js/motion/page-visibility.tsx",
+      "hash": "435cb184d2de383cc8fe3204a6804bace3b649875d606da79c7b2cc1fdd391d4",
+      "bytes": 1588
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/provider.tsx",
+      "logical_path": "js/motion/provider.tsx",
+      "hash": "faa816c4edd3bf5b9e710c9cdaac1f5fcb32148090725f2c9b836a8c25e8781b",
+      "bytes": 859
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/presence.tsx",
+      "logical_path": "js/motion/presence.tsx",
+      "hash": "d2a58e57b5b36391b70c9189bd8dab9acf470883c85be5f76fcbbc150d12128f",
+      "bytes": 2841
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/reorder.tsx",
+      "logical_path": "js/motion/reorder.tsx",
+      "hash": "54e25d14c7ad7977f23db9ab1a8774601f38788f90aceafef4fd69fdc775964a",
+      "bytes": 2980
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/reveal.tsx",
+      "logical_path": "js/motion/reveal.tsx",
+      "hash": "3306e43d9f7d6f3a3f357bd5e27177b88490979e3ed9895155da80f552ef4e82",
+      "bytes": 1444
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/scoped-animate.tsx",
+      "logical_path": "js/motion/scoped-animate.tsx",
+      "hash": "8fbd3403ec7e31b5e95672d3b908a2d63fe218db9a63fcb141774d10d38bb5e7",
+      "bytes": 1984
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/scroll-progress.tsx",
+      "logical_path": "js/motion/scroll-progress.tsx",
+      "hash": "9db740511fbcd7333706b00f4b173d915e548a9a3bf6b2572891d5f7b5336382",
+      "bytes": 1753
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/will-change.tsx",
+      "logical_path": "js/motion/will-change.tsx",
+      "hash": "29de61f8f48bca43838ad6f56a0179bd4033a7c078e4916d0131d9d98b77d6b7",
+      "bytes": 2275
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/dashboard-workflow.ts",
+      "logical_path": "js/motion/dashboard-workflow.ts",
+      "hash": "b0c6fd1f0f4631b00f6dedd21c2fe54aaf4a63786437205618d0783726e723a5",
+      "bytes": 13482
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/metadata.ts",
+      "logical_path": "js/motion/metadata.ts",
+      "hash": "ee340aca3e683891cffd49370882ff3408e209a83db0dfcfb3822449d0f43312",
+      "bytes": 6983
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/README.md",
+      "logical_path": "js/motion/README.md",
+      "hash": "8739ad56601a2f1146d8348620974f15d1de30906450442b4571def9caacf938",
+      "bytes": 11999
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/motion/presets.ts",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/presets.ts",
+      "hash": "d9d1f615584d342e5d5bc242cac59b4de4385c30a5ee53fdf17353b1e65ca881",
+      "bytes": 1062
+    },
+    {
+      "logical_path": "js/motion/controls.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/controls.tsx",
+      "hash": "56d37d3d7b7a0bb38615d225d997e33f21d6b5e34a1d331a33da8fbea2b350a9",
+      "bytes": 3884
+    },
+    {
+      "logical_path": "js/motion/frame.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/frame.tsx",
+      "hash": "7e25eebbde026cf08dbbb9253f73bf5cf1d534ecb61186072aeb56a25a8f5490",
+      "bytes": 3470
+    },
+    {
+      "logical_path": "js/motion/layout.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/layout.tsx",
+      "hash": "cab8c35e34d52f677159430b5371769b842a0db88c03db83ec6627732b9cafdc",
+      "bytes": 2582
+    },
+    {
+      "logical_path": "js/motion/lazy.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/lazy.tsx",
+      "hash": "d64d813b82f4ab61016b118a2a3cd2e69edcbcf38b9e075b76f43afe8ab35098",
+      "bytes": 1461
+    },
+    {
+      "logical_path": "js/motion/motion-values.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/motion-values.tsx",
+      "hash": "224d4323dbef36967c5e3d7f234edf7c02d90dca6988840367e47ff1b959e65b",
+      "bytes": 3918
+    },
+    {
+      "logical_path": "js/motion/page-visibility.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/page-visibility.tsx",
+      "hash": "435cb184d2de383cc8fe3204a6804bace3b649875d606da79c7b2cc1fdd391d4",
+      "bytes": 1588
+    },
+    {
+      "logical_path": "js/motion/provider.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/provider.tsx",
+      "hash": "faa816c4edd3bf5b9e710c9cdaac1f5fcb32148090725f2c9b836a8c25e8781b",
+      "bytes": 859
+    },
+    {
+      "logical_path": "js/motion/presence.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/presence.tsx",
+      "hash": "d2a58e57b5b36391b70c9189bd8dab9acf470883c85be5f76fcbbc150d12128f",
+      "bytes": 2841
+    },
+    {
+      "logical_path": "js/motion/reorder.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/reorder.tsx",
+      "hash": "54e25d14c7ad7977f23db9ab1a8774601f38788f90aceafef4fd69fdc775964a",
+      "bytes": 2980
+    },
+    {
+      "logical_path": "js/motion/reveal.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/reveal.tsx",
+      "hash": "3306e43d9f7d6f3a3f357bd5e27177b88490979e3ed9895155da80f552ef4e82",
+      "bytes": 1444
+    },
+    {
+      "logical_path": "js/motion/scoped-animate.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/scoped-animate.tsx",
+      "hash": "8fbd3403ec7e31b5e95672d3b908a2d63fe218db9a63fcb141774d10d38bb5e7",
+      "bytes": 1984
+    },
+    {
+      "logical_path": "js/motion/scroll-progress.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/scroll-progress.tsx",
+      "hash": "9db740511fbcd7333706b00f4b173d915e548a9a3bf6b2572891d5f7b5336382",
+      "bytes": 1753
+    },
+    {
+      "logical_path": "js/motion/will-change.tsx",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/will-change.tsx",
+      "hash": "29de61f8f48bca43838ad6f56a0179bd4033a7c078e4916d0131d9d98b77d6b7",
+      "bytes": 2275
+    },
+    {
+      "logical_path": "js/motion/dashboard-workflow.ts",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/dashboard-workflow.ts",
+      "hash": "b0c6fd1f0f4631b00f6dedd21c2fe54aaf4a63786437205618d0783726e723a5",
+      "bytes": 13482
+    },
+    {
+      "logical_path": "js/motion/metadata.ts",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/metadata.ts",
+      "hash": "ee340aca3e683891cffd49370882ff3408e209a83db0dfcfb3822449d0f43312",
+      "bytes": 6983
+    },
+    {
+      "logical_path": "js/motion/README.md",
+      "materialized_path": "motion/forge/variants/react-dashboard-source/README.md",
+      "hash": "8739ad56601a2f1146d8348620974f15d1de30906450442b4571def9caacf938",
+      "bytes": 11999
+    },
+    {
+      "logical_path": "js/motion/README.md",
+      "materialized_path": "motion/README.md",
+      "hash": "cf1e578bd2ccad272fca63ceabcd70de79b87fc248cd1b87118ad5cb91ba24ad",
+      "bytes": 12008
+    },
+    {
+      "logical_path": "js/motion/controls.tsx",
+      "materialized_path": "motion/controls.tsx",
+      "hash": "56d37d3d7b7a0bb38615d225d997e33f21d6b5e34a1d331a33da8fbea2b350a9",
+      "bytes": 3884
+    },
+    {
+      "logical_path": "js/motion/dashboard-workflow.ts",
+      "materialized_path": "motion/dashboard-workflow.ts",
+      "hash": "b0c6fd1f0f4631b00f6dedd21c2fe54aaf4a63786437205618d0783726e723a5",
+      "bytes": 13482
+    },
+    {
+      "logical_path": "js/motion/frame.tsx",
+      "materialized_path": "motion/frame.tsx",
+      "hash": "7e25eebbde026cf08dbbb9253f73bf5cf1d534ecb61186072aeb56a25a8f5490",
+      "bytes": 3470
+    },
+    {
+      "logical_path": "js/motion/layout.tsx",
+      "materialized_path": "motion/layout.tsx",
+      "hash": "cab8c35e34d52f677159430b5371769b842a0db88c03db83ec6627732b9cafdc",
+      "bytes": 2582
+    },
+    {
+      "logical_path": "js/motion/lazy.tsx",
+      "materialized_path": "motion/lazy.tsx",
+      "hash": "d64d813b82f4ab61016b118a2a3cd2e69edcbcf38b9e075b76f43afe8ab35098",
+      "bytes": 1461
+    },
+    {
+      "logical_path": "js/motion/metadata.ts",
+      "materialized_path": "motion/metadata.ts",
+      "hash": "ee340aca3e683891cffd49370882ff3408e209a83db0dfcfb3822449d0f43312",
+      "bytes": 6983
+    },
+    {
+      "logical_path": "js/motion/motion-values.tsx",
+      "materialized_path": "motion/motion-values.tsx",
+      "hash": "224d4323dbef36967c5e3d7f234edf7c02d90dca6988840367e47ff1b959e65b",
+      "bytes": 3918
+    },
+    {
+      "logical_path": "js/motion/page-visibility.tsx",
+      "materialized_path": "motion/page-visibility.tsx",
+      "hash": "435cb184d2de383cc8fe3204a6804bace3b649875d606da79c7b2cc1fdd391d4",
+      "bytes": 1588
+    },
+    {
+      "logical_path": "js/motion/presence.tsx",
+      "materialized_path": "motion/presence.tsx",
+      "hash": "d2a58e57b5b36391b70c9189bd8dab9acf470883c85be5f76fcbbc150d12128f",
+      "bytes": 2841
+    },
+    {
+      "logical_path": "js/motion/presets.ts",
+      "materialized_path": "motion/presets.ts",
+      "hash": "d9d1f615584d342e5d5bc242cac59b4de4385c30a5ee53fdf17353b1e65ca881",
+      "bytes": 1062
+    },
+    {
+      "logical_path": "js/motion/provider.tsx",
+      "materialized_path": "motion/provider.tsx",
+      "hash": "faa816c4edd3bf5b9e710c9cdaac1f5fcb32148090725f2c9b836a8c25e8781b",
+      "bytes": 859
+    },
+    {
+      "logical_path": "js/motion/reorder.tsx",
+      "materialized_path": "motion/reorder.tsx",
+      "hash": "54e25d14c7ad7977f23db9ab1a8774601f38788f90aceafef4fd69fdc775964a",
+      "bytes": 2980
+    },
+    {
+      "logical_path": "js/motion/reveal.tsx",
+      "materialized_path": "motion/reveal.tsx",
+      "hash": "3306e43d9f7d6f3a3f357bd5e27177b88490979e3ed9895155da80f552ef4e82",
+      "bytes": 1444
+    },
+    {
+      "logical_path": "js/motion/scoped-animate.tsx",
+      "materialized_path": "motion/scoped-animate.tsx",
+      "hash": "8fbd3403ec7e31b5e95672d3b908a2d63fe218db9a63fcb141774d10d38bb5e7",
+      "bytes": 1984
+    },
+    {
+      "logical_path": "js/motion/scroll-progress.tsx",
+      "materialized_path": "motion/scroll-progress.tsx",
+      "hash": "9db740511fbcd7333706b00f4b173d915e548a9a3bf6b2572891d5f7b5336382",
+      "bytes": 1753
+    },
+    {
+      "logical_path": "js/motion/will-change.tsx",
+      "materialized_path": "motion/will-change.tsx",
+      "hash": "29de61f8f48bca43838ad6f56a0179bd4033a7c078e4916d0131d9d98b77d6b7",
+      "bytes": 2275
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/presets.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/controls.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/frame.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/layout.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/lazy.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/motion-values.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/page-visibility.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/provider.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/presence.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/reorder.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/reveal.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/scoped-animate.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/scroll-progress.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/will-change.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/dashboard-workflow.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/metadata.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "motion/forge/variants/react-dashboard-source/README.md would be added to the Forge package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/README.md is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/controls.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/dashboard-workflow.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/frame.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/layout.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/lazy.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/metadata.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/motion-values.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/page-visibility.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/presence.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/presets.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/provider.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/reorder.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/reveal.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/scoped-animate.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/scroll-progress.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "motion/will-change.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `Shohan` accepted yellow local edits for `animation/motion` variant `react-dashboard-source`: Reviewed after template rename; preserving source-owned local edits and stale tracked local files in Forge receipt state."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "motion/forge/variants/react-dashboard-source/presets.ts",
+      "logical_path": "js/motion/presets.ts",
+      "after_hash": "d9d1f615584d342e5d5bc242cac59b4de4385c30a5ee53fdf17353b1e65ca881",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/presets.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/controls.tsx",
+      "logical_path": "js/motion/controls.tsx",
+      "after_hash": "56d37d3d7b7a0bb38615d225d997e33f21d6b5e34a1d331a33da8fbea2b350a9",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/controls.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/frame.tsx",
+      "logical_path": "js/motion/frame.tsx",
+      "after_hash": "7e25eebbde026cf08dbbb9253f73bf5cf1d534ecb61186072aeb56a25a8f5490",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/frame.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/layout.tsx",
+      "logical_path": "js/motion/layout.tsx",
+      "after_hash": "cab8c35e34d52f677159430b5371769b842a0db88c03db83ec6627732b9cafdc",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/layout.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/lazy.tsx",
+      "logical_path": "js/motion/lazy.tsx",
+      "after_hash": "d64d813b82f4ab61016b118a2a3cd2e69edcbcf38b9e075b76f43afe8ab35098",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/lazy.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/motion-values.tsx",
+      "logical_path": "js/motion/motion-values.tsx",
+      "after_hash": "224d4323dbef36967c5e3d7f234edf7c02d90dca6988840367e47ff1b959e65b",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/motion-values.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/page-visibility.tsx",
+      "logical_path": "js/motion/page-visibility.tsx",
+      "after_hash": "435cb184d2de383cc8fe3204a6804bace3b649875d606da79c7b2cc1fdd391d4",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/page-visibility.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/provider.tsx",
+      "logical_path": "js/motion/provider.tsx",
+      "after_hash": "faa816c4edd3bf5b9e710c9cdaac1f5fcb32148090725f2c9b836a8c25e8781b",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/provider.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/presence.tsx",
+      "logical_path": "js/motion/presence.tsx",
+      "after_hash": "d2a58e57b5b36391b70c9189bd8dab9acf470883c85be5f76fcbbc150d12128f",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/presence.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/reorder.tsx",
+      "logical_path": "js/motion/reorder.tsx",
+      "after_hash": "54e25d14c7ad7977f23db9ab1a8774601f38788f90aceafef4fd69fdc775964a",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/reorder.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/reveal.tsx",
+      "logical_path": "js/motion/reveal.tsx",
+      "after_hash": "3306e43d9f7d6f3a3f357bd5e27177b88490979e3ed9895155da80f552ef4e82",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/reveal.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/scoped-animate.tsx",
+      "logical_path": "js/motion/scoped-animate.tsx",
+      "after_hash": "8fbd3403ec7e31b5e95672d3b908a2d63fe218db9a63fcb141774d10d38bb5e7",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/scoped-animate.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/scroll-progress.tsx",
+      "logical_path": "js/motion/scroll-progress.tsx",
+      "after_hash": "9db740511fbcd7333706b00f4b173d915e548a9a3bf6b2572891d5f7b5336382",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/scroll-progress.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/will-change.tsx",
+      "logical_path": "js/motion/will-change.tsx",
+      "after_hash": "29de61f8f48bca43838ad6f56a0179bd4033a7c078e4916d0131d9d98b77d6b7",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/will-change.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/dashboard-workflow.ts",
+      "logical_path": "js/motion/dashboard-workflow.ts",
+      "after_hash": "b0c6fd1f0f4631b00f6dedd21c2fe54aaf4a63786437205618d0783726e723a5",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/dashboard-workflow.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/metadata.ts",
+      "logical_path": "js/motion/metadata.ts",
+      "after_hash": "ee340aca3e683891cffd49370882ff3408e209a83db0dfcfb3822449d0f43312",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/metadata.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/forge/variants/react-dashboard-source/README.md",
+      "logical_path": "js/motion/README.md",
+      "after_hash": "8739ad56601a2f1146d8348620974f15d1de30906450442b4571def9caacf938",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "motion/forge/variants/react-dashboard-source/README.md accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "motion/README.md",
+      "logical_path": "js/motion/README.md",
+      "before_hash": "cf1e578bd2ccad272fca63ceabcd70de79b87fc248cd1b87118ad5cb91ba24ad",
+      "tracked_hash": "8a8f15e2f70b865b63cf52c42c2c1e1b4f8ae44d53d345e6f7f7f78857a603e9",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/README.md is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/controls.tsx",
+      "logical_path": "js/motion/controls.tsx",
+      "before_hash": "56d37d3d7b7a0bb38615d225d997e33f21d6b5e34a1d331a33da8fbea2b350a9",
+      "tracked_hash": "3129202d0f2a64ed0a51731a311dd9d4715d78078533774f88e4e661ffcefc56",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/controls.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/dashboard-workflow.ts",
+      "logical_path": "js/motion/dashboard-workflow.ts",
+      "before_hash": "b0c6fd1f0f4631b00f6dedd21c2fe54aaf4a63786437205618d0783726e723a5",
+      "tracked_hash": "b3f1ecd743cb23e7d252832e5ba151eaf80dc10479445030ee414285f5138bcf",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/dashboard-workflow.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/frame.tsx",
+      "logical_path": "js/motion/frame.tsx",
+      "before_hash": "7e25eebbde026cf08dbbb9253f73bf5cf1d534ecb61186072aeb56a25a8f5490",
+      "tracked_hash": "d8c58f5db9e108801b6d2ab9a625ad6f1a798c64e48054a2d525923cfa2f1ff3",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/frame.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/layout.tsx",
+      "logical_path": "js/motion/layout.tsx",
+      "before_hash": "cab8c35e34d52f677159430b5371769b842a0db88c03db83ec6627732b9cafdc",
+      "tracked_hash": "abd442ac3ccb93eaee80a8690f3d62f1af4364a73855e6d640f1ebf8a42003d3",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/layout.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/lazy.tsx",
+      "logical_path": "js/motion/lazy.tsx",
+      "before_hash": "d64d813b82f4ab61016b118a2a3cd2e69edcbcf38b9e075b76f43afe8ab35098",
+      "tracked_hash": "a730df8dfba3ab0f30b1341098f233612c4749e19e7c4423b5c0f86313ec7873",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/lazy.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/metadata.ts",
+      "logical_path": "js/motion/metadata.ts",
+      "before_hash": "ee340aca3e683891cffd49370882ff3408e209a83db0dfcfb3822449d0f43312",
+      "tracked_hash": "7d7f21442aca02023eb0417f7a3bc7a44f4d295160e518f5bab70874ebc333e7",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/metadata.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/motion-values.tsx",
+      "logical_path": "js/motion/motion-values.tsx",
+      "before_hash": "224d4323dbef36967c5e3d7f234edf7c02d90dca6988840367e47ff1b959e65b",
+      "tracked_hash": "670584cb563a7341dca2dc066ffdd52592589cefd8591a2bad261a961f5083e9",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/motion-values.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/page-visibility.tsx",
+      "logical_path": "js/motion/page-visibility.tsx",
+      "before_hash": "435cb184d2de383cc8fe3204a6804bace3b649875d606da79c7b2cc1fdd391d4",
+      "tracked_hash": "0a753898d53b11e9534bf36fc8f05e031a252f1307c45f889a99aaaf64cc949e",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/page-visibility.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/presence.tsx",
+      "logical_path": "js/motion/presence.tsx",
+      "before_hash": "d2a58e57b5b36391b70c9189bd8dab9acf470883c85be5f76fcbbc150d12128f",
+      "tracked_hash": "01fc1c27084153452fe00db32304cdf34abd625ebaa02909952b6093d2f10846",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/presence.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/presets.ts",
+      "logical_path": "js/motion/presets.ts",
+      "before_hash": "d9d1f615584d342e5d5bc242cac59b4de4385c30a5ee53fdf17353b1e65ca881",
+      "tracked_hash": "8ff770df10a08c23d38f74757ea82e0466529545445c97c4413fe9533837374d",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/presets.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/provider.tsx",
+      "logical_path": "js/motion/provider.tsx",
+      "before_hash": "faa816c4edd3bf5b9e710c9cdaac1f5fcb32148090725f2c9b836a8c25e8781b",
+      "tracked_hash": "410e6f2555af6b20d8cbecf2b7499665493d8855f4033904a345e9d21253b02f",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/provider.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/reorder.tsx",
+      "logical_path": "js/motion/reorder.tsx",
+      "before_hash": "54e25d14c7ad7977f23db9ab1a8774601f38788f90aceafef4fd69fdc775964a",
+      "tracked_hash": "3785dff1d098e220bcb265a002f2c7e18a1e49cd4ec2ccad6834744904447ae6",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/reorder.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/reveal.tsx",
+      "logical_path": "js/motion/reveal.tsx",
+      "before_hash": "3306e43d9f7d6f3a3f357bd5e27177b88490979e3ed9895155da80f552ef4e82",
+      "tracked_hash": "82a606ec371a5152ccbfe439ac0e0b489536768d4a4b8f9021c190bf9aa1f153",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/reveal.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/scoped-animate.tsx",
+      "logical_path": "js/motion/scoped-animate.tsx",
+      "before_hash": "8fbd3403ec7e31b5e95672d3b908a2d63fe218db9a63fcb141774d10d38bb5e7",
+      "tracked_hash": "d22056a26e61061dffa70c6a9b6b8c9cacfca93b27f3c810602623d8c10b49b9",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/scoped-animate.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/scroll-progress.tsx",
+      "logical_path": "js/motion/scroll-progress.tsx",
+      "before_hash": "9db740511fbcd7333706b00f4b173d915e548a9a3bf6b2572891d5f7b5336382",
+      "tracked_hash": "7ecc278fe75ca69bf4952e03dd2585f4cb92310cede842e522e7cab185a41665",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/scroll-progress.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "motion/will-change.tsx",
+      "logical_path": "js/motion/will-change.tsx",
+      "before_hash": "29de61f8f48bca43838ad6f56a0179bd4033a7c078e4916d0131d9d98b77d6b7",
+      "tracked_hash": "e6490c44706f9f2637328ad3377030b6ce8da71ff8f286a36a46ec3604c2e480",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "motion/will-change.tsx is tracked locally but absent from the latest package."
+    }
+  ],
+  "risk_score": 0,
+  "timestamp": "2026-05-25T14:24:01.442412100+00:00",
+  "signature": null
+}

@@ -1,0 +1,20 @@
+:root {
+  color-scheme: dark;
+  --background: 0 0% 3%;
+  --foreground: 0 0% 96%;
+  --surface: 0 0% 5%;
+  --surface-raised: 0 0% 8%;
+  --muted: 0 0% 13%;
+  --muted-foreground: 0 0% 68%;
+  --border: 0 0% 19%;
+  --card: 0 0% 7%;
+  --accent: 0 0% 96%;
+  --success: 142 70% 45%;
+  --warning: 38 92% 50%;
+  --info: 204 88% 55%;
+  --danger: 0 84% 60%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 4%;
+  --ring: 0 0% 83%;
+  --font-mono: "JetBrains Mono", "JetBrains Mono NL", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}

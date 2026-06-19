@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "#imports": ["./components/auto-imports.ts"],
+      "#components": ["./components/auto-imports.ts"]
+    },
+    "jsx": "preserve",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "strict": true,
+    "skipLibCheck": true,
+    "allowJs": false
+  },
+  "include": ["app/**/*.tsx", "components/**/*.tsx", "lib/**/*.ts", "server/**/*.ts"]
+}

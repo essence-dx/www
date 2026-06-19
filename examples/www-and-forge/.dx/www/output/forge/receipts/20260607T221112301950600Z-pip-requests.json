@@ -1,0 +1,73 @@
+{
+  "action": "track-write",
+  "package": {
+    "package_id": "pip/requests",
+    "upstream_name": "pip:requests",
+    "version": "source-dir-snapshot",
+    "generator": "dx-forge/pip-external-source-snapshot",
+    "variant": "default",
+    "source_kind": "external-snapshot",
+    "integrity_hash": "997beb76cefb8f31da1d274fd9ced957843dc7cc1ce2740ddebb8099b8fcb35e",
+    "license": "unreviewed",
+    "provenance": {
+      "source": "dx-forge-pip-external-source-snapshot",
+      "upstream_reference": "pip:requests",
+      "verified": false,
+      "note": "External ecosystem source was materialized into Forge-owned files without running package-manager install or lifecycle commands."
+    },
+    "advisory_review": {
+      "coverage_kind": "missing",
+      "provider": "none",
+      "live_coverage": false,
+      "finding_count": 0,
+      "note": "External source snapshots do not have live advisory coverage attached by Forge yet."
+    },
+    "license_review": {
+      "declared_license": "unreviewed",
+      "reviewed": false,
+      "note": "License is recorded from inspected package metadata only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/forge/pip/requests/__init__.py",
+        "hash": "c28218c36762c676349c7b49c8e5ef4c3a9db6ac268ae1d55593baf61910cc40",
+        "bytes": 40
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/forge/pip/requests/__init__.py",
+      "hash": "c28218c36762c676349c7b49c8e5ef4c3a9db6ac268ae1d55593baf61910cc40",
+      "bytes": 40
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "lib/forge/pip/requests/__init__.py",
+      "materialized_path": "lib/forge/pip/requests/__init__.py",
+      "hash": "c28218c36762c676349c7b49c8e5ef4c3a9db6ac268ae1d55593baf61910cc40",
+      "bytes": 40
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "external-source-snapshot",
+      "traffic": "green",
+      "message": "Forge records this package as a source-owned external ecosystem snapshot, not as a package-manager install."
+    },
+    {
+      "policy": "no-package-install",
+      "traffic": "green",
+      "message": "Forge did not run npm, pip, cargo, go, or any package-manager install command."
+    },
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge did not run lifecycle hooks, build scripts, setup hooks, or upstream generated install artifacts."
+    }
+  ],
+  "risk_score": 90,
+  "timestamp": "2026-06-07T22:11:12.301501100+00:00",
+  "signature": null
+}

@@ -1,0 +1,99 @@
+{
+  "schema": "dx.www.rendered_proof_import_plan",
+  "purpose": "Dry-run import handoff for approved runtime-verification lanes that have collected real rendered-proof receipts outside this source-only conversion lane.",
+  "import_tool": "forge/acceptance/prepare-rendered-proof-import.ts",
+  "validator": "forge/acceptance/validate-rendered-proof-evidence.ts",
+  "receipt_schema": "forge/acceptance/rendered-proof-evidence.schema.json",
+  "acceptance_checklist": "forge/acceptance/no-runtime-route-acceptance.json",
+  "blocked_fixture": "forge/acceptance/fixtures/blocked-rendered-proof.sample.json",
+  "input_root": "external-runtime-evidence/conversion-proof",
+  "target_root": ".dx/forge/runtime-evidence/conversion-proof",
+  "no_source_proof_mutation": true,
+  "policy": {
+    "dry_run_default": true,
+    "no_write_without_approval": true,
+    "no_fake_artifacts": true,
+    "no_local_server": true,
+    "no_build": true,
+    "no_node_modules": true,
+    "requires_receipt_schema_validation": true,
+    "requires_artifact_hash_review": true,
+    "requires_provenance_snapshot_review": true
+  },
+  "routes": [
+    {
+      "route": "/ui",
+      "source_project": "shadcn-ui",
+      "input_receipt": "external-runtime-evidence/conversion-proof/ui.rendered-proof.json",
+      "target_receipt": ".dx/forge/runtime-evidence/conversion-proof/ui.rendered-proof.json",
+      "approval_required": true,
+      "required_source_files": [
+        "pages/ui.html",
+        "forge/source-surfaces/shadcn-ui.json",
+        "forge/visual-audits/shadcn-ui.json",
+        "forge/conversion-manifests/shadcn-ui.json",
+        ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json"
+      ],
+      "import_checks": [
+        "receipt-schema-validation",
+        "artifact-hash-review",
+        "provenance-snapshot-review",
+        "no-source-proof-mutation"
+      ]
+    },
+    {
+      "route": "/database",
+      "source_project": "supabase",
+      "input_receipt": "external-runtime-evidence/conversion-proof/database.rendered-proof.json",
+      "target_receipt": ".dx/forge/runtime-evidence/conversion-proof/database.rendered-proof.json",
+      "approval_required": true,
+      "required_source_files": [
+        "pages/database.html",
+        "forge/source-surfaces/supabase.json",
+        "forge/visual-audits/supabase.json",
+        "forge/conversion-manifests/supabase.json",
+        ".dx/forge/receipts/2026-05-21-supabase-to-database.json"
+      ],
+      "import_checks": [
+        "receipt-schema-validation",
+        "artifact-hash-review",
+        "provenance-snapshot-review",
+        "no-source-proof-mutation"
+      ]
+    },
+    {
+      "route": "/backend",
+      "source_project": "convex-backend",
+      "input_receipt": "external-runtime-evidence/conversion-proof/backend.rendered-proof.json",
+      "target_receipt": ".dx/forge/runtime-evidence/conversion-proof/backend.rendered-proof.json",
+      "approval_required": true,
+      "required_source_files": [
+        "pages/backend.html",
+        "forge/source-surfaces/convex-backend.json",
+        "forge/visual-audits/convex-backend.json",
+        "forge/conversion-manifests/convex-backend.json",
+        ".dx/forge/receipts/2026-05-21-convex-to-backend.json"
+      ],
+      "import_checks": [
+        "receipt-schema-validation",
+        "artifact-hash-review",
+        "provenance-snapshot-review",
+        "no-source-proof-mutation"
+      ]
+    }
+  ],
+  "status": {
+    "score_out_of_100": 99,
+    "real": [
+      "The plan maps all three converted routes to external approved receipt inputs and governed runtime-evidence targets.",
+      "The plan requires schema validation, artifact hash review, provenance review, and no source-proof mutation.",
+      "The import tool defaults to dry-run reporting and does not write files in this lane."
+    ],
+    "partial": [
+      "The plan defines the handoff only; no external runtime receipts are present in this source-only lane."
+    ],
+    "blocked": [
+      "Actual receipt promotion requires explicit runtime approval plus real renderer, responsive, accessibility, and asset artifacts."
+    ]
+  }
+}

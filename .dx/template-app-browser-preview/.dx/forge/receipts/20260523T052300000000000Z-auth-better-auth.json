@@ -1,0 +1,139 @@
+{
+  "schema": "forge.package_rollback_receipt",
+  "package_id": "auth/better-auth",
+  "version": "1.6.11-dx.9",
+  "upstream_package": "better-auth",
+  "source_manifest_path": ".dx/forge/source-manifest.json",
+  "cache_path": ".dx/forge/cache/auth-better-auth/1.6.11-dx.9",
+  "rollback_state": "covered",
+  "provider_surface": "google-oauth",
+  "files": [
+    {
+      "path": "auth/better-auth/options.ts",
+      "bytes": 2015,
+      "content_hash": "bc99aeafb7601d8dd5dabf5e1a3b7cb22d5176f012cc0e48944455d50e4f69a8",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/server.ts",
+      "bytes": 877,
+      "content_hash": "d9cd2f916e2f8ed815a095522d8d2417fa20043129f121bc9d36e25838153c1d",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/client.ts",
+      "bytes": 646,
+      "content_hash": "bf85532ac7b3895ec3751b317b9b27560da6a762b7fb62cda8196481d6460355",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/email-password.ts",
+      "bytes": 560,
+      "content_hash": "f8defcefc5199ed1d0a4c410fc765f34064a6cee194983a22b4cf71723aea4f7",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/social.ts",
+      "bytes": 586,
+      "content_hash": "a0c405d57a3cae6f107028e4a8564ce176baec8a02155355341b6e52b50c1634",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/accounts.ts",
+      "bytes": 590,
+      "content_hash": "8fd36f5aec51aa4bbff02873eac700f0964a5b0b5b1eb3a48058832f14eb65d2",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/profile.ts",
+      "bytes": 477,
+      "content_hash": "5e904c68f4051f440797716d5fb494254cf7620d1363956e10ea2490f9b8c9a0",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/account-deletion.ts",
+      "bytes": 493,
+      "content_hash": "6eae82aa1f414914348ae15ce1cd8dc36f91fd601d9e0267cb1268608c7da3ff",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/account-security.ts",
+      "bytes": 557,
+      "content_hash": "5f562b8c18ed80acd00fadef4c9d1905e6fc2cdc7b2a5ae74783544500486b32",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/route.ts",
+      "bytes": 1160,
+      "content_hash": "69c284d26cd214fa0bb2bf28c23fbca28442bb062444d290fb8b7f55131f4972",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/session.ts",
+      "bytes": 454,
+      "content_hash": "b15ab43d317da6dd6dd1560be18430e9ad700e95c9b141d8852a0d4353bf9ccd",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/session-management.ts",
+      "bytes": 344,
+      "content_hash": "b324ed33a4cfcb48917b9d245efb7d433f514506379cbf7f10a96f389acaf01b",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/dashboard.ts",
+      "bytes": 1265,
+      "content_hash": "e76b25b53f7b43dab99dc9fdd170ff4ec56ea73cd8af7d440247f1dab55dd63b",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/metadata.ts",
+      "bytes": 1488,
+      "content_hash": "8a4bb5e76354825f59ff55afe8004cc74df642b8defe88580f07b04d2797c12d",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/.env.example",
+      "bytes": 166,
+      "content_hash": "d0e3aecb9ea29d5bb6ed17c5f67485a0a530d875a32c5049faedb6dfb2b7c3d7",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/README.md",
+      "bytes": 663,
+      "content_hash": "55bed34dec13f94649d9305c859dc00a32f776b1ded50c94c334384c4d09581a",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/providers/google/config.ts",
+      "bytes": 659,
+      "content_hash": "bc74b0bb44612d8a6aa73525c68cd70630d4c6bbfffd767a2f4e33f8286ffd11",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/providers/google/route.ts",
+      "bytes": 443,
+      "content_hash": "cd0906d1380ba0e498abf78189213a1f3b1538271d0909c8e6bd8a7f7aa34206",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/providers/google/callback.ts",
+      "bytes": 357,
+      "content_hash": "4dafcf7d4a53a673b04880c04e3bb2ea77a58ecc7019e7154d3df0d8727f191f",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/providers/google/.env.example",
+      "bytes": 40,
+      "content_hash": "3fc25d33ace57a43140e8b9e5bbbdb33327bb43e09f9865d6a04ad95028f9526",
+      "hash_algorithm": "blake3"
+    },
+    {
+      "path": "auth/better-auth/providers/google/README.md",
+      "bytes": 365,
+      "content_hash": "ccd4f7e4016ef0f03cad2479d7f26d4e2f1f375d79ca5e8a9ae6fbb651b2d014",
+      "hash_algorithm": "blake3"
+    }
+  ],
+  "boundary": "Rollback restores the source-owned Authentication slice from the local Forge cache after review; it does not restore live provider credentials."
+}

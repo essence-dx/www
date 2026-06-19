@@ -1,0 +1,40 @@
+{
+  "schema": "dx.www.readiness.server_action_replay_ledger_receipt_contract",
+  "schema_revision": 1,
+  "id": "server-action-replay-ledger",
+  "passed": true,
+  "status": "local-replay-ledger-current-provider-proof-needed",
+  "release_ready": false,
+  "fastest_world_claim": false,
+  "ledger_path": "examples/template/.dx/www/output/server-action-replay-ledger.json",
+  "ledger_present": true,
+  "ledger_schema": "dx.www.server_action.replay_ledger",
+  "ledger_release_ready": false,
+  "distributed": false,
+  "provider_hosted": false,
+  "hosted_provider_proof": false,
+  "provider_proof_status": "not-run-local-preview-only",
+  "production_proof_scope": "local-production-preview-only",
+  "provider_hosted_replay_required": true,
+  "provider_proof_gap_ids": [
+    "distributed-idempotency-store",
+    "provider-hosted-csrf-session-integration",
+    "cross-process-replay-consistency",
+    "durable-provider-kv-sql-replay-retention",
+    "provider-request-cancellation-replay"
+  ],
+  "entry_count": 0,
+  "conflict_count": 0,
+  "duplicate_replay_count": 0,
+  "privacy": "hash-only action/session/idempotency/payload/response receipts; raw payload, session, csrf, and idempotency values are not persisted",
+  "rule": "This release-readiness receipt validates the local production-preview server-action replay ledger only; distributed idempotency, hosted CSRF/session integration, and provider replay storage remain unproven.",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/server-action-replay-ledger-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-server-action-replay-ledger-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "5cfebb52c54445e0eae7935be5ce150ff29ecf73bd8f9058601bc6a6f3b9869c",
+    "machine_blake3": "e56cf58892de2a266445a870aa325c875761f9222434d2f9e4fdefacce371203"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DX Database</title>
+    <link rel="stylesheet" href="/styles/launch-runtime.css" />
+  </head>
+  <body>
+    <main
+      class="route-shell"
+      data-dx-route="/database"
+      data-dx-source="supabase"
+      data-dx-source-file="examples/template/runtime-pages/database.html"
+      data-dx-forge="website-conversion-supabase"
+      data-dx-package="supabase/client"
+      data-dx-package-set="supabase/client,db/drizzle-sqlite,instantdb/react"
+      data-surface-map="forge/source-surfaces/supabase.json"
+      data-visual-audit="forge/visual-audits/supabase.json"
+      data-dx-hot-reload-target="route:/database"
+    >
+      <header class="topbar">
+        <a class="brand" href="/launch"><span class="logo">d</span><span>DX WWW</span></a>
+        <nav class="nav" aria-label="Launch routes">
+          <a href="/launch">Launch</a>
+          <a href="/automations">Automations</a>
+          <a href="/ui">UI</a>
+          <a href="/backend">Backend</a>
+        </nav>
+      </header>
+      <section class="route-hero card" data-dx-editable-section="database-hero">
+        <p class="eyebrow">Data adapters</p>
+        <h1>Database proof with explicit ownership.</h1>
+        <p class="lead">
+          DX WWW shows each data boundary clearly: credentials, schema, sync model,
+          and source files are owned by the app.
+        </p>
+      </section>
+      <section class="grid" data-dx-section="database-adapters">
+        <article class="route-card" data-dx-database="supabase" data-dx-package="supabase/client">
+          <h2>Supabase</h2>
+          <p>Client boundary waits for URL and anon key env values. No key is bundled into the template.</p>
+          <span class="pill">env contract visible</span>
+        </article>
+        <article class="route-card" data-dx-database="drizzle" data-dx-package="db/drizzle-sqlite">
+          <h2>Drizzle SQLite</h2>
+          <p>Typed schema and query adapter are source-owned, ready for migrations after credentials are chosen.</p>
+          <span class="pill">schema first</span>
+        </article>
+        <article class="route-card" data-dx-database="instantdb" data-dx-package="instantdb/react">
+          <h2>InstantDB</h2>
+          <p>Realtime sync surface is ready with app-owned auth and room contracts.</p>
+          <span class="pill">realtime boundary</span>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

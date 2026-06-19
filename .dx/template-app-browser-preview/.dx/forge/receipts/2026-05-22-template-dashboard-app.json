@@ -1,0 +1,25 @@
+{
+  "schema": "dx.forge.receipt",
+  "receiptId": "2026-05-22-template-dashboard-app",
+  "surface": "template-dashboard-page",
+  "sourceFile": "pages/dashboard.html",
+  "packages": [
+    "auth/better-auth",
+    "state/zustand",
+    "forms/react-hook-form",
+    "validation/zod",
+    "shadcn/ui/button",
+    "shadcn/ui/card",
+    "shadcn/ui/input",
+    "dx/icon/search"
+  ],
+  "noNodeModulesRequired": true,
+  "states": [
+    "sign-in-session",
+    "sign-out-session",
+    "saved-dashboard-settings",
+    "project-filter",
+    "responsive-sidebar"
+  ],
+  "status": "ready"
+}

@@ -1,0 +1,293 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "instantdb/react",
+  "package_name": "Realtime App Database",
+  "upstream_package": "@instantdb/react",
+  "upstream_version": "0.0.0",
+  "source_mirror": "G:/WWW/inspirations/instantdb",
+  "honesty_label": "ADAPTER-BOUNDARY",
+  "route": "/",
+  "component": "instantdb-runtime-dashboard-workflow",
+  "workflow": "realtime-data-readiness",
+  "product_surface": "launch-realtime-data",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 99,
+  "source_files": [
+    "examples/template/instantdb-status.tsx",
+    "examples/template/template-shell.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/template-route-contract.ts",
+    "examples/template/package-catalog.ts",
+    "examples/dashboard/src/lib/instantdbDashboard.ts",
+    "examples/dashboard/src/components/InstantDbDashboardWorkflow.tsx",
+    "core/src/ecosystem/forge_instantdb.rs",
+    "docs/packages/instantdb-react.md",
+    "docs/packages/instantdb-react.source-guard-runbook.json",
+    "benchmarks/instantdb-sync-table-slice.test.ts"
+  ],
+  "files": [
+    "core/src/ecosystem/forge_instantdb.rs",
+    "examples/template/instantdb-status.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/dashboard/src/lib/instantdbDashboard.ts",
+    "examples/dashboard/src/components/InstantDbDashboardWorkflow.tsx",
+    "docs/packages/instantdb-react.source-guard-runbook.json"
+  ],
+  "hash_algorithm": "sha256",
+  "file_hashes": {
+    "core/src/ecosystem/forge_instantdb.rs": "691e1579898276bcd00929bbd85cbcba05e6e8668d9e5e5a76562258fcdf0240",
+    "examples/template/instantdb-status.tsx": "7499dfca44d58845d5583af081ef951ec2c568ebf6244d044d9f8a7db40f349f",
+    "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+    "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c",
+    "examples/dashboard/src/lib/instantdbDashboard.ts": "aaa75e8d6dbbf5dd15fe164bc37b0090bf4fe4ca473eb85c83be15aba671bd97",
+    "examples/dashboard/src/components/InstantDbDashboardWorkflow.tsx": "1d46fe5ece80fe33f1a8f99dddbcf28470c5e4a5bb5052022e0a0a9f921e7ca2",
+    "docs/packages/instantdb-react.source-guard-runbook.json": "7e51afe94a79bea6241d143af2f3e4abc883d60258c7d2a2a697c031bd30874c"
+  },
+  "hash_exclusions": [
+    "Shared launch shell, route contract, package catalog, package handoff docs, and benchmark files are provenance or shared integration surfaces; they stay listed as source_files but are not part of this Realtime App Database selected-surface freshness manifest."
+  ],
+  "materialized_files": [
+    "lib/instant/env.ts",
+    "lib/instant/schema.ts",
+    "components/launch/instantdb-status.tsx",
+    "lib/instant/client.ts",
+    "lib/instant/next-client.tsx",
+    "lib/instant/next-server.ts",
+    "lib/instant/queries.ts",
+    "lib/instant/status.ts",
+    "lib/instant/subscriptions.ts",
+    "lib/instant/pagination.ts",
+    "lib/instant/diagnostics.ts",
+    "lib/instant/mutations.ts",
+    "lib/instant/rules.ts",
+    "lib/instant/perms.ts",
+    "lib/instant/auth.ts",
+    "lib/instant/oauth.ts",
+    "lib/instant/storage.ts",
+    "lib/instant/streams.ts",
+    "lib/instant/sync-table.ts",
+    "lib/instant/route.ts",
+    "lib/instant/metadata.ts",
+    "lib/instant/dashboard-workflow.ts",
+    "components/dashboard/instantdb-dashboard-workflow.tsx",
+    "components/instant/instant-todos.tsx",
+    "components/instant/instant-cursors.tsx",
+    "components/instant/instant-auth-boundary.tsx",
+    "app/api/instant/route.ts",
+    "app/instant/page.tsx"
+  ],
+  "upstream_public_apis": [
+    "init",
+    "i.schema",
+    "id",
+    "lookup",
+    "db.useQuery",
+    "db.transact",
+    "db.tx",
+    "db.rooms.usePresence",
+    "db.rooms.useSyncPresence",
+    "db.rooms.useTypingIndicator",
+    "db.rooms.useTopicEffect",
+    "db.rooms.usePublishTopic",
+    "db.useAuth",
+    "db.storage.uploadFile",
+    "db.storage.delete",
+    "db.storage.getDownloadUrl",
+    "db.streams.createWriteStream",
+    "db.streams.createReadStream",
+    "SyncTableCallbackEventType",
+    "SyncTableCallbackEvent",
+    "StoreInterfaceStoreName",
+    "db.core._syncTableExperimental",
+    "createInstantRouteHandler"
+  ],
+  "local_readiness_interactions": [
+    "prepare-local-schema-receipt",
+    "show-missing-instant-app-id",
+    "surface-realtime-todos-presence-typing-files-streams"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"instantdb/react\"",
+    "data-dx-component=\"launch-instantdb-dashboard-workflow\"",
+    "data-dx-component=\"launch-instantdb-runtime-dashboard-workflow\"",
+    "data-dx-component=\"instantdb-runtime-dashboard-workflow\"",
+    "data-dx-dashboard-workflow=\"realtime-data-readiness\"",
+    "data-dx-instant-readiness=\"runtime-dashboard-readiness\"",
+    "data-dx-instant-action=\"prepare-local-schema-receipt\"",
+    "data-dx-instant-required-env=\"NEXT_PUBLIC_INSTANT_APP_ID\"",
+    "data-dx-style-surface=\"realtime-app-database\"",
+    "data-dx-instant-local-receipt",
+    "data-dx-node-modules=\"forbidden\""
+  ],
+  "required_env": [
+    "NEXT_PUBLIC_INSTANT_APP_ID"
+  ],
+  "app_owned_boundaries": [
+    "Instant app provisioning",
+    "Production schema and unique indexes",
+    "Rules and auth policy",
+    "OAuth providers and redirect policy",
+    "Room naming and presence privacy",
+    "Storage bucket policy and file access rules",
+    "Stream lifecycle and topic payload policy",
+    "Experimental Sync Table subscriptions and local store retention",
+    "Hosted runtime validation"
+  ],
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "official_package_name": "Realtime App Database",
+    "package_id": "instantdb/react",
+    "upstream_package": "@instantdb/react",
+    "upstream_version": "0.0.0",
+    "source_mirror": "G:/WWW/inspirations/instantdb",
+    "current_status": "present",
+    "receipt_status": "present",
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json",
+    "status_vocabulary": [
+      "present",
+      "stale",
+      "missing-receipt",
+      "blocked",
+      "unsupported-surface"
+    ],
+    "selected_surfaces": [
+      {
+        "surface_id": "instantdb-runtime-dashboard-workflow",
+        "official_package_name": "Realtime App Database",
+        "status": "present",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json",
+        "files": [
+          "tools/launch/runtime-template/pages/index.html",
+          "tools/launch/runtime-template/assets/launch-runtime.ts"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+          "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c"
+        },
+        "source_markers": [
+          "data-dx-package=\"instantdb/react\"",
+          "data-dx-component=\"instantdb-runtime-dashboard-workflow\"",
+          "data-dx-instant-action=\"prepare-local-schema-receipt\"",
+          "data-dx-style-surface=\"realtime-app-database\""
+        ]
+      },
+      {
+        "surface_id": "dashboard-instantdb-workflow",
+        "official_package_name": "Realtime App Database",
+        "status": "present",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json",
+        "files": [
+          "examples/dashboard/src/lib/instantdbDashboard.ts",
+          "examples/dashboard/src/components/InstantDbDashboardWorkflow.tsx",
+          "components/dashboard/instantdb-dashboard-workflow.tsx"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/dashboard/src/lib/instantdbDashboard.ts": "aaa75e8d6dbbf5dd15fe164bc37b0090bf4fe4ca473eb85c83be15aba671bd97",
+          "examples/dashboard/src/components/InstantDbDashboardWorkflow.tsx": "1d46fe5ece80fe33f1a8f99dddbcf28470c5e4a5bb5052022e0a0a9f921e7ca2"
+        },
+        "source_markers": [
+          "data-dx-package=\"instantdb/react\"",
+          "data-dx-component=\"dashboard-instantdb-workflow\"",
+          "data-dx-instant-dashboard-workflow=\"realtime-boundary\"",
+          "data-dx-style-surface=\"realtime-app-database\""
+        ]
+      },
+      {
+        "surface_id": "sync-table-events",
+        "official_package_name": "Realtime App Database",
+        "status": "present",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json",
+        "files": [
+          "lib/instant/sync-table.ts"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "core/src/ecosystem/forge_instantdb.rs": "691e1579898276bcd00929bbd85cbcba05e6e8668d9e5e5a76562258fcdf0240",
+          "examples/template/instantdb-status.tsx": "7499dfca44d58845d5583af081ef951ec2c568ebf6244d044d9f8a7db40f349f"
+        },
+        "source_markers": [
+          "SyncTableCallbackEventType",
+          "StoreInterfaceStoreName",
+          "db.core._syncTableExperimental"
+        ]
+      },
+      {
+        "surface_id": "realtime-app-database-source-guard-runbook",
+        "official_package_name": "Realtime App Database",
+        "status": "present",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json",
+        "files": [
+          "docs/packages/instantdb-react.source-guard-runbook.json"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "docs/packages/instantdb-react.source-guard-runbook.json": "7e51afe94a79bea6241d143af2f3e4abc883d60258c7d2a2a697c031bd30874c"
+        },
+        "source_markers": [
+          "realtime-app-database-check-panel-helper-freshness",
+          "source_guard_runbook_index",
+          "docs/packages/instantdb-react.source-guard-runbook.json",
+          "realtime-app-database:receipt-hash-refresh"
+        ]
+      }
+    ],
+    "blocked_surfaces": [],
+    "unsupported_surfaces": [],
+    "dx_check_metrics": [
+      "realtime_app_database_receipt_present",
+      "realtime_app_database_receipt_stale",
+      "realtime_app_database_missing_receipt",
+      "realtime_app_database_blocked_surface",
+      "realtime_app_database_unsupported_surface",
+      "realtime_app_database_hash_manifest_present",
+      "realtime_app_database_hash_mismatch",
+      "realtime_app_database_dx_style_compatibility_present",
+      "realtime_app_database_dx_style_compatibility_missing"
+    ]
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "examples/template/styles/globals.css",
+    "generated_css": "examples/template/styles/globals.css",
+    "visible_surfaces": [
+      "instantdb-runtime-dashboard-workflow",
+      "dashboard-instantdb-workflow"
+    ],
+    "source_files": [
+      "examples/template/instantdb-status.tsx",
+      "tools/launch/runtime-template/pages/index.html",
+      "examples/dashboard/src/components/InstantDbDashboardWorkflow.tsx"
+    ],
+    "data_dx_markers": [
+      "data-dx-style-surface=\"realtime-app-database\""
+    ],
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "SOURCE-ONLY: Realtime App Database style evidence is source-visible and token-compatible. No live browser style proof was run.",
+      "ADAPTER-BOUNDARY: hosted Instant runtime configuration remains app-owned."
+    ]
+  },
+  "runtime_limitations": [
+    "ADAPTER-BOUNDARY: hosted realtime reads, writes, auth, storage, streams, and first-party route behavior require app-owned Instant configuration.",
+    "SOURCE-ONLY: Sync Table event helpers are generated from upstream source, but hosted Sync Table runtime proof is deferred."
+  ],
+  "missing_runtime_features": [
+    "governed browser proof",
+    "hosted realtime query subscription",
+    "credential-backed auth route",
+    "production storage and stream policy",
+    "hosted Sync Table runtime validation"
+  ],
+  "guards": [
+    "node --test .\\benchmarks\\instantdb-dashboard-workflow.test.ts",
+    "node --test .\\benchmarks\\instantdb-sync-table-slice.test.ts",
+    "node --test .\\benchmarks\\launch-runtime-materializer.test.ts",
+    "node --test .\\benchmarks\\template-shell.test.ts"
+  ],
+  "no_runtime_execution": true
+}

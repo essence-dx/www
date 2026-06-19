@@ -1,0 +1,26 @@
+[
+  {
+    "importer_path": "app/forge-proof/page.tsx",
+    "specifier": "lodash",
+    "kind": "reviewed-adapter",
+    "resolved_path": "lib/forge/npm/lodash/index.ts",
+    "package_id": "npm/lodash",
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "app/layout.tsx",
+    "specifier": "../styles/globals.css",
+    "kind": "relative-local",
+    "resolved_path": "styles/globals.css",
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "app/page.tsx",
+    "specifier": "lodash",
+    "kind": "reviewed-adapter",
+    "resolved_path": "lib/forge/npm/lodash/index.ts",
+    "package_id": "npm/lodash",
+    "requires_node_modules": false
+  }
+]

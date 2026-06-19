@@ -1,0 +1,436 @@
+{
+  "generated_at": "2026-05-17T07:27:17.685Z",
+  "report_id": "forge-adoption-browser-smoke-v1",
+  "source": "benchmarks/measure-forge-adoption-browser-smoke.ts",
+  "project_dir": "G:\\WWW\\dx-www-binary-web\\.dx\\adoption-browser-smoke",
+  "public_dir": "G:\\WWW\\dx-www-binary-web\\.dx\\adoption-browser-smoke\\public",
+  "score": 100,
+  "passed": true,
+  "no_node_modules": true,
+  "prepare_result": {
+    "enabled": true,
+    "status": "passed",
+    "duration_ms": 17669,
+    "output": "G:\\WWW\\dx-www-binary-web\\.dx\\adoption-browser-smoke\\.dx\\forge\\adoption-smoke\\forge-smoke.json",
+    "exit_code": 0,
+    "stdout_tail": "",
+    "stderr_tail": "Finished `dev` profile [unoptimized + debuginfo] target(s) in 15.37s\n     Running `www\\target\\debug\\dx-www.exe forge adoption-smoke --project G:\\WWW\\dx-www-binary-web\\.dx\\adoption-browser-smoke --format json --output G:\\WWW\\dx-www-binary-web\\.dx\\adoption-browser-smoke\\.dx\\forge\\adoption-smoke\\forge-smoke.json --fail-under 90 --quiet`"
+  },
+  "route_count": 6,
+  "routes": [
+    {
+      "route": "/forge",
+      "html": ".dx\\adoption-browser-smoke\\public\\forge.html",
+      "clean_html": ".dx\\adoption-browser-smoke\\public\\forge\\index.html",
+      "html_exists": true,
+      "clean_html_exists": true,
+      "decoded_bytes": 5223,
+      "heading_counts": {
+        "h1_count": 1,
+        "h2_count": 8,
+        "h3_count": 0,
+        "h4_count": 0,
+        "h5_count": 0,
+        "h6_count": 0
+      },
+      "link_count": 0,
+      "unsafe_link_count": 0,
+      "scripts": 0,
+      "runtime_asset": "forge.dxp.js",
+      "runtime_asset_exists": false,
+      "static_no_runtime": true,
+      "artifacts": [
+        {
+          "path": "forge.dxp",
+          "exists": true,
+          "bytes": 4492
+        },
+        {
+          "path": "forge-proof.json",
+          "exists": true,
+          "bytes": 3212
+        },
+        {
+          "path": "forge.claims.json",
+          "exists": true,
+          "bytes": 9320
+        },
+        {
+          "path": "forge.evidence.json",
+          "exists": true,
+          "bytes": 4832
+        }
+      ],
+      "passed": true
+    },
+    {
+      "route": "/forge/scorecard",
+      "html": ".dx\\adoption-browser-smoke\\public\\forge\\scorecard.html",
+      "clean_html": ".dx\\adoption-browser-smoke\\public\\forge\\scorecard\\index.html",
+      "html_exists": true,
+      "clean_html_exists": true,
+      "decoded_bytes": 4276,
+      "heading_counts": {
+        "h1_count": 1,
+        "h2_count": 4,
+        "h3_count": 0,
+        "h4_count": 0,
+        "h5_count": 0,
+        "h6_count": 0
+      },
+      "link_count": 0,
+      "unsafe_link_count": 0,
+      "scripts": 0,
+      "runtime_asset": "forge/scorecard.dxp.js",
+      "runtime_asset_exists": false,
+      "static_no_runtime": true,
+      "artifacts": [
+        {
+          "path": "forge/scorecard.dxp",
+          "exists": true,
+          "bytes": 3291
+        },
+        {
+          "path": "forge/scorecard.proof.json",
+          "exists": true,
+          "bytes": 2331
+        }
+      ],
+      "passed": true
+    },
+    {
+      "route": "/forge/ci",
+      "html": ".dx\\adoption-browser-smoke\\public\\forge\\ci.html",
+      "clean_html": ".dx\\adoption-browser-smoke\\public\\forge\\ci\\index.html",
+      "html_exists": true,
+      "clean_html_exists": true,
+      "decoded_bytes": 3309,
+      "heading_counts": {
+        "h1_count": 1,
+        "h2_count": 5,
+        "h3_count": 0,
+        "h4_count": 0,
+        "h5_count": 0,
+        "h6_count": 0
+      },
+      "link_count": 0,
+      "unsafe_link_count": 0,
+      "scripts": 0,
+      "runtime_asset": "forge/ci.dxp.js",
+      "runtime_asset_exists": false,
+      "static_no_runtime": true,
+      "artifacts": [
+        {
+          "path": "forge/ci.dxp",
+          "exists": true,
+          "bytes": 3806
+        },
+        {
+          "path": "forge/ci.proof.json",
+          "exists": true,
+          "bytes": 2421
+        },
+        {
+          "path": "forge/ci.claims.json",
+          "exists": true,
+          "bytes": 1928
+        }
+      ],
+      "passed": true
+    },
+    {
+      "route": "/forge/evidence",
+      "html": ".dx\\adoption-browser-smoke\\public\\forge\\evidence.html",
+      "clean_html": ".dx\\adoption-browser-smoke\\public\\forge\\evidence\\index.html",
+      "html_exists": true,
+      "clean_html_exists": true,
+      "decoded_bytes": 6941,
+      "heading_counts": {
+        "h1_count": 1,
+        "h2_count": 12,
+        "h3_count": 0,
+        "h4_count": 0,
+        "h5_count": 0,
+        "h6_count": 0
+      },
+      "link_count": 9,
+      "unsafe_link_count": 0,
+      "scripts": 0,
+      "runtime_asset": "forge/evidence.dxp.js",
+      "runtime_asset_exists": false,
+      "static_no_runtime": true,
+      "artifacts": [
+        {
+          "path": "forge/evidence.dxp",
+          "exists": true,
+          "bytes": 6952
+        },
+        {
+          "path": "forge/evidence.proof.json",
+          "exists": true,
+          "bytes": 2481
+        },
+        {
+          "path": "forge/evidence.claims.json",
+          "exists": true,
+          "bytes": 1523
+        }
+      ],
+      "passed": true
+    },
+    {
+      "route": "/forge/releases",
+      "html": ".dx\\adoption-browser-smoke\\public\\forge\\releases.html",
+      "clean_html": ".dx\\adoption-browser-smoke\\public\\forge\\releases\\index.html",
+      "html_exists": true,
+      "clean_html_exists": true,
+      "decoded_bytes": 5307,
+      "heading_counts": {
+        "h1_count": 1,
+        "h2_count": 12,
+        "h3_count": 0,
+        "h4_count": 0,
+        "h5_count": 0,
+        "h6_count": 0
+      },
+      "link_count": 0,
+      "unsafe_link_count": 0,
+      "scripts": 0,
+      "runtime_asset": "forge/releases.dxp.js",
+      "runtime_asset_exists": false,
+      "static_no_runtime": true,
+      "artifacts": [
+        {
+          "path": "forge/releases.dxp",
+          "exists": true,
+          "bytes": 5611
+        },
+        {
+          "path": "forge/releases.proof.json",
+          "exists": true,
+          "bytes": 2482
+        },
+        {
+          "path": "forge/releases.claims.json",
+          "exists": true,
+          "bytes": 1496
+        }
+      ],
+      "passed": true
+    },
+    {
+      "route": "/forge/changelog",
+      "html": ".dx\\adoption-browser-smoke\\public\\forge\\changelog.html",
+      "clean_html": ".dx\\adoption-browser-smoke\\public\\forge\\changelog\\index.html",
+      "html_exists": true,
+      "clean_html_exists": true,
+      "decoded_bytes": 4464,
+      "heading_counts": {
+        "h1_count": 1,
+        "h2_count": 9,
+        "h3_count": 0,
+        "h4_count": 0,
+        "h5_count": 0,
+        "h6_count": 0
+      },
+      "link_count": 0,
+      "unsafe_link_count": 0,
+      "scripts": 0,
+      "runtime_asset": "forge/changelog.dxp.js",
+      "runtime_asset_exists": false,
+      "static_no_runtime": true,
+      "artifacts": [
+        {
+          "path": "forge/changelog.dxp",
+          "exists": true,
+          "bytes": 4576
+        },
+        {
+          "path": "forge/changelog.proof.json",
+          "exists": true,
+          "bytes": 2491
+        },
+        {
+          "path": "forge/changelog.claims.json",
+          "exists": true,
+          "bytes": 1602
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "http": {
+    "enabled": true,
+    "samples": 3,
+    "routes": [
+      {
+        "route": "/forge",
+        "status": 200,
+        "decoded_bytes": 5223,
+        "timing_ms": {
+          "samples": 3,
+          "min": 5.823,
+          "median": 11.146,
+          "mean": 50.143,
+          "p95": 133.462,
+          "max": 133.462
+        }
+      },
+      {
+        "route": "/forge/scorecard",
+        "status": 200,
+        "decoded_bytes": 4276,
+        "timing_ms": {
+          "samples": 3,
+          "min": 4.833,
+          "median": 5.143,
+          "mean": 5.103,
+          "p95": 5.331,
+          "max": 5.331
+        }
+      },
+      {
+        "route": "/forge/ci",
+        "status": 200,
+        "decoded_bytes": 3309,
+        "timing_ms": {
+          "samples": 3,
+          "min": 2.903,
+          "median": 3.693,
+          "mean": 4.069,
+          "p95": 5.611,
+          "max": 5.611
+        }
+      },
+      {
+        "route": "/forge/evidence",
+        "status": 200,
+        "decoded_bytes": 6941,
+        "timing_ms": {
+          "samples": 3,
+          "min": 2.988,
+          "median": 7.265,
+          "mean": 5.942,
+          "p95": 7.572,
+          "max": 7.572
+        }
+      },
+      {
+        "route": "/forge/releases",
+        "status": 200,
+        "decoded_bytes": 5307,
+        "timing_ms": {
+          "samples": 3,
+          "min": 4.524,
+          "median": 4.681,
+          "mean": 5.228,
+          "p95": 6.478,
+          "max": 6.478
+        }
+      },
+      {
+        "route": "/forge/changelog",
+        "status": 200,
+        "decoded_bytes": 4464,
+        "timing_ms": {
+          "samples": 3,
+          "min": 2.689,
+          "median": 2.839,
+          "mean": 2.811,
+          "p95": 2.906,
+          "max": 2.906
+        }
+      }
+    ]
+  },
+  "browser": {
+    "enabled": true,
+    "routes": [
+      {
+        "route": "/forge",
+        "title": "DX-WWW /forge",
+        "h1_count": 1,
+        "link_count": 0,
+        "script_count": 0,
+        "resource_count": 1,
+        "dom_nodes": 61,
+        "load_event_ms": 24.7,
+        "dom_content_loaded_ms": 23.5,
+        "transfer_size": 5523,
+        "decoded_body_size": 5223
+      },
+      {
+        "route": "/forge/scorecard",
+        "title": "DX-WWW /forge/scorecard",
+        "h1_count": 1,
+        "link_count": 0,
+        "script_count": 0,
+        "resource_count": 1,
+        "dom_nodes": 42,
+        "load_event_ms": 13.2,
+        "dom_content_loaded_ms": 12.5,
+        "transfer_size": 4576,
+        "decoded_body_size": 4276
+      },
+      {
+        "route": "/forge/ci",
+        "title": "DX-WWW /forge/ci",
+        "h1_count": 1,
+        "link_count": 0,
+        "script_count": 0,
+        "resource_count": 1,
+        "dom_nodes": 62,
+        "load_event_ms": 18,
+        "dom_content_loaded_ms": 17.2,
+        "transfer_size": 3609,
+        "decoded_body_size": 3309
+      },
+      {
+        "route": "/forge/evidence",
+        "title": "DX-WWW /forge/evidence",
+        "h1_count": 1,
+        "link_count": 9,
+        "script_count": 0,
+        "resource_count": 1,
+        "dom_nodes": 81,
+        "load_event_ms": 14,
+        "dom_content_loaded_ms": 13.3,
+        "transfer_size": 7241,
+        "decoded_body_size": 6941
+      },
+      {
+        "route": "/forge/releases",
+        "title": "DX-WWW /forge/releases",
+        "h1_count": 1,
+        "link_count": 0,
+        "script_count": 0,
+        "resource_count": 1,
+        "dom_nodes": 71,
+        "load_event_ms": 33.7,
+        "dom_content_loaded_ms": 32.6,
+        "transfer_size": 5607,
+        "decoded_body_size": 5307
+      },
+      {
+        "route": "/forge/changelog",
+        "title": "DX-WWW /forge/changelog",
+        "h1_count": 1,
+        "link_count": 0,
+        "script_count": 0,
+        "resource_count": 1,
+        "dom_nodes": 57,
+        "load_event_ms": 20.3,
+        "dom_content_loaded_ms": 19.4,
+        "transfer_size": 4764,
+        "decoded_body_size": 4464
+      }
+    ]
+  },
+  "findings": [],
+  "honest_scope": [
+    "This is local browser smoke evidence for the generated Forge adoption app routes.",
+    "It does not claim live customer traffic, CDN performance, or broad framework replacement.",
+    "The harness never runs package installs and treats node_modules as a release-risk finding.",
+    "Chrome timing is collected only when a local Chrome or Edge executable is available."
+  ]
+}

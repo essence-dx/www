@@ -1,0 +1,153 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "shadcn/ui/card",
+    "upstream_name": "shadcn-ui",
+    "version": "0.1.0",
+    "generator": "dx-forge/shadcn-ui",
+    "variant": "default",
+    "last_accepted_update": "2026-06-03T07:24:08.721842+00:00",
+    "rollback_receipt": "20260603T065405193059200Z-shadcn-ui-card.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "8437d343d49c055a69a75510174d019d93dd80deaec785f1baf8549b14dfbb9e",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "shadcn-ui://apps/v4/registry/bases/radix/ui/card.tsx",
+      "verified": false,
+      "note": "DX inspected the local shadcn-ui v4 registry entry for the official UI Components Card surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn-style card package, but it is not a live advisory feed."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/utils.ts",
+        "logical_path": "js/lib/utils.ts",
+        "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+        "bytes": 119
+      },
+      {
+        "path": "components/ui/card.tsx",
+        "logical_path": "js/ui/card.tsx",
+        "hash": "e90ea53ded9c97f14c4cb02bffbdbcece25cce723dbeac705c6227a4edd246df",
+        "bytes": 2057
+      },
+      {
+        "path": "components/ui/README.md",
+        "logical_path": "js/ui/README.md",
+        "hash": "06b1bd6f7e8e2966d46cb815a4191fe2f41806bd201b9932d2e13db2057040c9",
+        "bytes": 243
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "components/ui/card.tsx",
+      "logical_path": "js/ui/card.tsx",
+      "hash": "e90ea53ded9c97f14c4cb02bffbdbcece25cce723dbeac705c6227a4edd246df",
+      "bytes": 2057
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "hash": "06b1bd6f7e8e2966d46cb815a4191fe2f41806bd201b9932d2e13db2057040c9",
+      "bytes": 243
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "bytes": 119
+    },
+    {
+      "logical_path": "js/ui/card.tsx",
+      "materialized_path": "components/ui/card.tsx",
+      "hash": "e90ea53ded9c97f14c4cb02bffbdbcece25cce723dbeac705c6227a4edd246df",
+      "bytes": 2057
+    },
+    {
+      "logical_path": "js/ui/README.md",
+      "materialized_path": "components/ui/README.md",
+      "hash": "06b1bd6f7e8e2966d46cb815a4191fe2f41806bd201b9932d2e13db2057040c9",
+      "bytes": 243
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/utils.ts already matches the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "components/ui/card.tsx would be updated from the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "components/ui/README.md would be updated from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "green",
+      "message": "Reviewer `Codex` accepted yellow local edits for `shadcn/ui/card` variant `default`: Reviewed WWW-native no-npm adaptation for the UI Components source slice"
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/utils.ts",
+      "logical_path": "js/lib/utils.ts",
+      "before_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "after_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "tracked_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/utils.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "components/ui/card.tsx",
+      "logical_path": "js/ui/card.tsx",
+      "before_hash": "67c9522b864d21edd008394e638d73c513a2edc23502b4628ba4d1ff37ee17de",
+      "after_hash": "e90ea53ded9c97f14c4cb02bffbdbcece25cce723dbeac705c6227a4edd246df",
+      "tracked_hash": "67c9522b864d21edd008394e638d73c513a2edc23502b4628ba4d1ff37ee17de",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/card.tsx accepted and updated from the latest package."
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "before_hash": "f45104611f2dadb25f83f6c043fdc9709090e485afe4bfec2f6f914536139db1",
+      "after_hash": "06b1bd6f7e8e2966d46cb815a4191fe2f41806bd201b9932d2e13db2057040c9",
+      "tracked_hash": "f45104611f2dadb25f83f6c043fdc9709090e485afe4bfec2f6f914536139db1",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/README.md accepted and updated from the latest package."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-06-03T07:24:08.721842+00:00",
+  "signature": null
+}

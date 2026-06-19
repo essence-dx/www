@@ -1,0 +1,476 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "content/fumadocs-next",
+  "official_dx_package_name": "Documentation System",
+  "package_name": "Documentation System",
+  "upstream_package": "fumadocs",
+  "based_on": "G:/WWW/inspirations/fumadocs",
+  "source_mirror": "G:/WWW/inspirations/fumadocs",
+  "route": "/",
+  "component": "launch-fumadocs-docs-workflow",
+  "workflow": "docs-help-changelog",
+  "product_surface": "dashboard-help-content",
+  "runtime_identity": "docs-workflow",
+  "runtime_manifest_selector": "[data-dx-component=\"launch-fumadocs-docs-workflow\"]",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 98,
+  "reality_audit": {
+    "verdict": "REAL",
+    "classification_scope": "source-owned Forge package, dashboard workflow, generated /launch materialization, and Studio discovery",
+    "partial_scope": "governed browser QA, live Fumadocs renderer/search/OpenAPI proxy execution, and app-owned runtime dependencies",
+    "upstream_source": {
+      "mirror": "G:/WWW/inspirations/fumadocs",
+      "evidence_files": [
+        "packages/mdx/src/config/index.ts",
+        "packages/core/src/source/loader.ts",
+        "packages/core/src/source/llms.ts",
+        "packages/core/src/search/orama/create-server.ts",
+        "packages/core/src/search/client.ts",
+        "packages/openapi/src/server/index.tsx",
+        "packages/openapi/src/server/proxy.ts",
+        "packages/openapi/src/ui/index.tsx"
+      ],
+      "public_apis": [
+        "dx config boundary",
+        "defineDocs",
+        "loader",
+        "llms",
+        "createFromSource",
+        "useDocsSearch",
+        "createOpenAPI",
+        "createProxy",
+        "createAPIPage"
+      ]
+    },
+    "forge_package_files": [
+      "core/src/ecosystem/forge_fumadocs.rs",
+      "docs/packages/content-fumadocs-next.md"
+    ],
+    "dashboard_consumers": [
+      "examples/dashboard/src/components/FumadocsDocsWorkflow.tsx",
+      "examples/template/docs-status.tsx"
+    ],
+    "receipt_manifest_files": [
+      "examples/template/.dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json",
+      "examples/template/template-surface-registry.ts",
+      "examples/template/dx-studio-edit-contract.ts",
+      "tools/launch/materialize-www-template.ts"
+    ],
+    "guard_files": [
+      "benchmarks/fumadocs-dashboard-workflow.test.ts",
+      "benchmarks/fumadocs-navigation-slice.test.ts",
+      "benchmarks/fumadocs-search-slice.test.ts"
+    ],
+    "visible_workflow_proof": [
+      "select-docs-route",
+      "preview-local-route-receipt",
+      "sync-docs-route-to-mission-control",
+      "inspect-openapi-missing-config"
+    ]
+  },
+  "source_files": [
+    "examples/template/docs-status.tsx",
+    "examples/template/template-shell.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/dx-studio-edit-contract.ts",
+    "examples/template/template-surface-registry.ts",
+    "core/src/ecosystem/forge_fumadocs.rs"
+  ],
+  "materialized_files": [
+    "components/launch/docs-status.tsx",
+    ".dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json",
+    "lib/fumadocs/source.ts",
+    "lib/fumadocs/source-plugins.tsx",
+    "lib/fumadocs/layout.tsx",
+    "lib/fumadocs/dashboard-workflow.ts",
+    "lib/fumadocs/navigation.ts",
+    "lib/fumadocs/toc.ts",
+    "lib/fumadocs/llms.ts",
+    "lib/fumadocs/openapi.ts",
+    "lib/fumadocs/openapi-code-usage.ts",
+    "lib/fumadocs/search.ts",
+    "lib/fumadocs/search-client.ts",
+    "lib/fumadocs/metadata.ts",
+    "lib/fumadocs/route-contract.ts",
+    "components/dashboard/fumadocs-docs-workflow.tsx",
+    "components/mdx.tsx",
+    "components/api-page.tsx",
+    "components/api-page.client.tsx",
+    "app/docs/layout.tsx",
+    "app/docs/[[...slug]]/page.tsx",
+    "app/llms.txt/route.ts",
+    "app/llms-full.txt/route.ts",
+    "app/llms.mdx/docs/[[...slug]]/route.ts",
+    "app/api/search/route.ts",
+    "app/api/search-static/route.ts",
+    "app/api/openapi/proxy/route.ts",
+    "content/docs/meta.json",
+    "content/docs/index.mdx",
+    "openapi/dx-www.yaml",
+    "lib/fumadocs/README.md"
+  ],
+  "selected_surfaces": [
+    {
+      "id": "docs-app-router",
+      "label": "App Router docs route",
+      "source_files": [
+        "lib/fumadocs/source.ts",
+        "lib/fumadocs/source-plugins.tsx",
+        "lib/fumadocs/layout.tsx",
+        "components/mdx.tsx",
+        "app/docs/layout.tsx",
+        "app/docs/[[...slug]]/page.tsx",
+        "content/docs/meta.json",
+        "content/docs/index.mdx"
+      ],
+      "upstream_public_apis": [
+        "dx config boundary",
+        "defineDocs",
+        "defineConfig",
+        "loader",
+        "lucideIconsPlugin",
+        "statusBadgesPlugin",
+        "slugsFromData",
+        "DocsLayout",
+        "RootProvider",
+        "DocsPage",
+        "createRelativeLink",
+        "defaultMdxComponents"
+      ],
+      "runtime_limitations": [
+        "runtime dependency installation",
+        "live Fumadocs renderer proof"
+      ]
+    },
+    {
+      "id": "dashboard-help-workflow",
+      "label": "Dashboard help and changelog workflow",
+      "source_files": [
+        "components/launch/docs-status.tsx",
+        "lib/fumadocs/dashboard-workflow.ts",
+        "components/dashboard/fumadocs-docs-workflow.tsx"
+      ],
+      "upstream_public_apis": [
+        "getBreadcrumbItems",
+        "flattenTree",
+        "findNeighbour",
+        "getPageTreePeers",
+        "getTableOfContents"
+      ],
+      "runtime_limitations": [
+        "governed browser QA"
+      ]
+    },
+    {
+      "id": "llm-export",
+      "label": "LLM export routes",
+      "source_files": [
+        "lib/fumadocs/llms.ts",
+        "app/llms.txt/route.ts",
+        "app/llms-full.txt/route.ts",
+        "app/llms.mdx/docs/[[...slug]]/route.ts"
+      ],
+      "upstream_public_apis": [
+        "llms",
+        "page.data.getText(\"processed\")"
+      ],
+      "runtime_limitations": [
+        "private content exclusion",
+        "AI indexing policy"
+      ]
+    },
+    {
+      "id": "openapi-reference",
+      "label": "OpenAPI docs and proxy",
+      "source_files": [
+        "lib/fumadocs/openapi.ts",
+        "lib/fumadocs/openapi-code-usage.ts",
+        "components/api-page.tsx",
+        "components/api-page.client.tsx",
+        "app/api/openapi/proxy/route.ts",
+        "openapi/dx-www.yaml"
+      ],
+      "upstream_public_apis": [
+        "createOpenAPI",
+        "staticSource",
+        "loaderPlugin",
+        "createProxy",
+        "proxyUrl",
+        "createAPIPage",
+        "createCodeUsageGeneratorRegistry",
+        "registerDefault",
+        "defineClientConfig"
+      ],
+      "runtime_limitations": [
+        "OpenAPI allowed origins",
+        "production OpenAPI proxy execution"
+      ]
+    },
+    {
+      "id": "search-index",
+      "label": "Dynamic and static search",
+      "source_files": [
+        "lib/fumadocs/search.ts",
+        "lib/fumadocs/search-client.ts",
+        "app/api/search/route.ts",
+        "app/api/search-static/route.ts"
+      ],
+      "upstream_public_apis": [
+        "createFromSource",
+        "staticGET",
+        "useDocsSearch"
+      ],
+      "runtime_limitations": [
+        "hosted search indexing",
+        "static index budget"
+      ]
+    }
+  ],
+  "source_hashes": {
+    "algorithm": "sha256",
+    "scope": "source-owned surfaces used by the Documentation System docs-help-changelog workflow",
+    "stale_receipt_policy": "dx-check should mark this receipt stale when any listed source-surface hash changes without a refreshed receipt.",
+    "files": [
+      {
+        "path": "core/src/ecosystem/forge_fumadocs.rs",
+        "sha256": "ae855bc521eb5ecfa0b2b72125f84ff8c3975884a14d5a8afd5714a624db7a94"
+      },
+      {
+        "path": "examples/template/package-catalog.ts",
+        "sha256": "09dccd3de0803634dd765444b3aa5176f3d2fbb36a2520467400156588f13f50"
+      },
+      {
+        "path": "examples/template/docs-status.tsx",
+        "sha256": "03fbfb69ce140fd70155021369d46ecb90767fc3eb6577d69fca4dc8662886f8"
+      },
+      {
+        "path": "examples/dashboard/src/lib/fumadocsDocsWorkflow.ts",
+        "sha256": "b251c3e14dd88cd81cb65c2b3ab904bdebd1ae344b76dd5e499ec42400607624"
+      },
+      {
+        "path": "examples/dashboard/src/components/FumadocsDocsWorkflow.tsx",
+        "sha256": "1c50a9a1ec685bdb1b1632e9a540bb0516d3bd965febc82aeaf8936d422f2c83"
+      },
+      {
+        "path": "docs/packages/content-fumadocs-next.md",
+        "sha256": "8986da4a7611c1163372f75ace17c4ad8fadc0c608feb8088239a5c468ce03de"
+      },
+      {
+        "path": "docs/packages/content-fumadocs-next.source-guard-runbook.json",
+        "sha256": "046108f02a7935cb48c143592308f02ffbff3acc5325a85585d4819bfde2bb88"
+      },
+      {
+        "path": "tools/launch/materialize-www-template.ts",
+        "sha256": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+      }
+    ]
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "token_source": "styles/globals.css",
+    "generated_css": "styles/globals.css",
+    "visible_surfaces": [
+      "dashboard-help-workflow",
+      "docs-app-router",
+      "openapi-reference"
+    ],
+    "source_files": [
+      "examples/template/docs-status.tsx",
+      "examples/dashboard/src/components/FumadocsDocsWorkflow.tsx",
+      "core/src/ecosystem/forge_fumadocs.rs"
+    ],
+    "data_dx_markers": [
+      "data-dx-style-surface=\"documentation-system\"",
+      "data-dx-component=\"launch-fumadocs-docs-workflow\"",
+      "data-dx-component=\"dashboard-fumadocs-docs-workflow\""
+    ],
+    "style_boundaries": [
+      "no inline style objects",
+      "no hardcoded hex colors in visible workflow source",
+      "theme token classes remain app-owned"
+    ],
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "governed browser QA",
+      "live Fumadocs renderer proof",
+      "existing app theme token review"
+    ]
+  },
+  "upstream_public_apis": [
+    "dx config boundary",
+    "defineDocs",
+    "defineConfig",
+    "loader",
+    "lucideIconsPlugin",
+    "statusBadgesPlugin",
+    "slugsFromData",
+    "DocsLayout",
+    "RootProvider",
+    "DocsPage",
+    "DocsBody",
+    "DocsTitle",
+    "DocsDescription",
+    "createRelativeLink",
+    "defaultMdxComponents",
+    "getBreadcrumbItems",
+    "flattenTree",
+    "findNeighbour",
+    "getPageTreePeers",
+    "getTableOfContents",
+    "TOCItemType",
+    "llms",
+    "page.data.getText(\"processed\")",
+    "createOpenAPI",
+    "staticSource",
+    "loaderPlugin",
+    "createProxy",
+    "proxyUrl",
+    "createAPIPage",
+    "createCodeUsageGeneratorRegistry",
+    "registerDefault",
+    "defineClientConfig",
+    "createFromSource",
+    "staticGET",
+    "useDocsSearch"
+  ],
+  "local_readiness_interactions": [
+    "select-docs-route",
+    "sync-docs-route-to-mission-control",
+    "preview-local-route-receipt",
+    "inspect-openapi-missing-config",
+    "read-dashboard-changelog"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"content/fumadocs-next\"",
+    "data-dx-component=\"launch-fumadocs-docs-workflow\"",
+    "data-dx-dashboard-workflow=\"docs-help-changelog\"",
+    "data-dx-dashboard-card=\"docs-help\"",
+    "data-dx-product-surface=\"dashboard-help-content\"",
+    "data-dx-fumadocs-dashboard-target=\"mission-control-docs\"",
+    "data-dx-dashboard-metric=\"docs-help\"",
+    "data-dx-fumadocs-interaction=\"page-tree-selector\"",
+    "data-dx-fumadocs-action=\"safe-local-route-preview\"",
+    "data-dx-fumadocs-page-option",
+    "data-dx-fumadocs-rendered-markdown",
+    "data-dx-fumadocs-changelog",
+    "data-dx-fumadocs-rendered-route",
+    "data-dx-fumadocs-selected-page",
+    "data-dx-fumadocs-toc-count",
+    "data-dx-fumadocs-local-response",
+    "data-dx-fumadocs-receipt-route",
+    "data-dx-fumadocs-missing-config",
+    "data-dx-docs-openapi-code-usage",
+    "data-dx-docs-openapi-proxy"
+  ],
+  "template_surface_registry": {
+    "file": "examples/template/template-surface-registry.ts",
+    "surface_id": "content-docs",
+    "component_selector": "[data-dx-component=\"launch-fumadocs-docs-workflow\"]",
+    "source_guard": "dx run --test .\\benchmarks\\fumadocs-dashboard-workflow.test.ts"
+  },
+  "studio_edit_contract": {
+    "file": "examples/template/dx-studio-edit-contract.ts",
+    "surface_id": "docs-help-changelog-workflow",
+    "component_selector": "[data-dx-component=\"launch-fumadocs-docs-workflow\"]",
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json",
+    "interaction_selectors": [
+      "[data-dx-fumadocs-action=\"safe-local-route-preview\"]",
+      "[data-dx-fumadocs-page-option]",
+      "[data-dx-fumadocs-rendered-markdown=\"active-page\"]",
+      "[data-dx-fumadocs-changelog=\"launch-docs\"]"
+    ],
+    "state_markers": [
+      "data-dx-fumadocs-selected-page",
+      "data-dx-fumadocs-rendered-route",
+      "data-dx-fumadocs-local-response",
+      "data-dx-fumadocs-receipt-route",
+      "data-dx-fumadocs-toc-count",
+      "data-dx-fumadocs-missing-config",
+      "data-dx-docs-openapi-code-usage",
+      "data-dx-docs-openapi-proxy"
+    ]
+  },
+  "runtime_preview_manifest": {
+    "generator": "tools/launch/materialize-www-template.ts",
+    "file": "public/preview-manifest.json",
+    "surface_id": "launch-runtime-docs",
+    "component_selector": "[data-dx-component=\"launch-fumadocs-docs-workflow\"]",
+    "interaction_selectors": [
+      "[data-dx-fumadocs-interaction=\"page-tree-selector\"]",
+      "[data-dx-fumadocs-action=\"safe-local-route-preview\"]",
+      "[data-dx-fumadocs-page-option]",
+      "[data-dx-fumadocs-rendered-markdown=\"active-page\"]",
+      "[data-dx-fumadocs-changelog=\"launch-docs\"]",
+      "[data-dx-dashboard-workflow=\"docs-help-changelog\"]"
+    ],
+    "state_markers": [
+      "data-dx-fumadocs-rendered-route",
+      "data-dx-fumadocs-selected-page",
+      "data-dx-fumadocs-toc-count",
+      "data-dx-fumadocs-local-response",
+      "data-dx-fumadocs-receipt-route",
+      "data-dx-fumadocs-missing-config",
+      "data-dx-docs-openapi-code-usage",
+      "data-dx-docs-openapi-proxy"
+    ]
+  },
+  "zed_studio_manifest": {
+    "file": "dx-www/src/cli/studio_manifest.rs",
+    "package_surface": "content/fumadocs-next",
+    "dashboard_workflow": "docs-help-changelog",
+    "interaction_selectors": [
+      "[data-dx-fumadocs-interaction=\"page-tree-selector\"]",
+      "[data-dx-fumadocs-action=\"safe-local-route-preview\"]",
+      "[data-dx-fumadocs-page-option]",
+      "[data-dx-fumadocs-rendered-markdown=\"active-page\"]",
+      "[data-dx-fumadocs-changelog=\"launch-docs\"]"
+    ],
+    "data_dx_markers": [
+      "data-dx-fumadocs-interaction",
+      "data-dx-fumadocs-action",
+      "data-dx-fumadocs-page-option",
+      "data-dx-fumadocs-rendered-markdown",
+      "data-dx-fumadocs-changelog",
+      "data-dx-fumadocs-rendered-route",
+      "data-dx-fumadocs-selected-page",
+      "data-dx-fumadocs-toc-count",
+      "data-dx-fumadocs-local-response",
+      "data-dx-fumadocs-receipt-route",
+      "data-dx-fumadocs-missing-config",
+      "data-dx-docs-openapi-code-usage",
+      "data-dx-docs-openapi-proxy"
+    ]
+  },
+  "accessibility_contract": {
+    "page_tree_buttons": "aria-pressed mirrors data-dx-fumadocs-page-selected",
+    "local_receipt": "role=status and aria-live=polite announce safe local route receipt updates"
+  },
+  "required_env": [
+    "DX_FUMADOCS_OPENAPI_ALLOWED_ORIGINS"
+  ],
+  "app_owned_boundaries": [
+    "runtime dependency installation",
+    "extensionless dx config owns WWW/Fumadocs adapter settings",
+    "dx config review policy",
+    "content governance",
+    "private docs exclusion",
+    "OpenAPI allowed origins",
+    "OpenAPI auth and cookie forwarding",
+    "search index budget",
+    "LLM export privacy policy",
+    "governed browser proof"
+  ],
+  "missing_runtime_features": [
+    "live Fumadocs renderer proof",
+    "hosted search indexing",
+    "production OpenAPI proxy execution",
+    "governed browser QA"
+  ],
+  "guards": [
+    "node --test .\\benchmarks\\fumadocs-dashboard-workflow.test.ts",
+    "node --test .\\benchmarks\\fumadocs-navigation-slice.test.ts",
+    "node --test .\\benchmarks\\fumadocs-search-slice.test.ts"
+  ],
+  "no_runtime_execution": true
+}

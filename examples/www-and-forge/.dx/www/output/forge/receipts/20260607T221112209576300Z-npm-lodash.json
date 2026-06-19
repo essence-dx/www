@@ -1,0 +1,73 @@
+{
+  "action": "track-write",
+  "package": {
+    "package_id": "npm/lodash",
+    "upstream_name": "npm:lodash",
+    "version": "source-dir-snapshot",
+    "generator": "dx-forge/npm-external-source-snapshot",
+    "variant": "default",
+    "source_kind": "npm-snapshot",
+    "integrity_hash": "5d72a4d37223281c1722d7182431ac6af3da368c95b0ab14e178b14acfc5ed7d",
+    "license": "unreviewed",
+    "provenance": {
+      "source": "dx-forge-npm-external-source-snapshot",
+      "upstream_reference": "npm:lodash",
+      "verified": false,
+      "note": "External ecosystem source was materialized into Forge-owned files without running package-manager install or lifecycle commands."
+    },
+    "advisory_review": {
+      "coverage_kind": "missing",
+      "provider": "none",
+      "live_coverage": false,
+      "finding_count": 0,
+      "note": "External source snapshots do not have live advisory coverage attached by Forge yet."
+    },
+    "license_review": {
+      "declared_license": "unreviewed",
+      "reviewed": false,
+      "note": "License is recorded from inspected package metadata only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/forge/npm/lodash/index.ts",
+        "hash": "565fbc5df64ee42526986dada1cbdff50eb8b2d9584f579cb83246f568e77a61",
+        "bytes": 266
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/forge/npm/lodash/index.ts",
+      "hash": "565fbc5df64ee42526986dada1cbdff50eb8b2d9584f579cb83246f568e77a61",
+      "bytes": 266
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "lib/forge/npm/lodash/index.ts",
+      "materialized_path": "lib/forge/npm/lodash/index.ts",
+      "hash": "565fbc5df64ee42526986dada1cbdff50eb8b2d9584f579cb83246f568e77a61",
+      "bytes": 266
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "external-source-snapshot",
+      "traffic": "green",
+      "message": "Forge records this package as a source-owned external ecosystem snapshot, not as a package-manager install."
+    },
+    {
+      "policy": "no-package-install",
+      "traffic": "green",
+      "message": "Forge did not run npm, pip, cargo, go, or any package-manager install command."
+    },
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge did not run lifecycle hooks, build scripts, setup hooks, or upstream generated install artifacts."
+    }
+  ],
+  "risk_score": 90,
+  "timestamp": "2026-06-07T22:11:12.209037300+00:00",
+  "signature": null
+}

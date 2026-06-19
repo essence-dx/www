@@ -1,0 +1,199 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "validation/zod",
+  "official_dx_package_name": "Validation & Schemas",
+  "package_name": "Validation & Schemas",
+  "surface_name": "Dashboard Settings Validation",
+  "upstream_package": "zod",
+  "upstream_version": "4.4.3",
+  "source_mirror": "G:/WWW/inspirations/zod",
+  "route": "/",
+  "component": "launch-settings-validation-summary",
+  "workflow": "settings-validation",
+  "product_surface": "account-settings",
+  "status": "source-coded-runtime-pending",
+  "honesty_label": "SOURCE-ONLY",
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-validation-zod-dashboard-settings.json",
+    "current_status": "present",
+    "statuses": [
+      "present",
+      "stale",
+      "missing receipt",
+      "blocked",
+      "unsupported surface"
+    ],
+    "monitored_surfaces": [
+      "dashboard-settings-validation",
+      "template-forms-validation",
+      "launch-package-catalog",
+      "starter-dashboard-settings-validator",
+      "generated-starter-materialization",
+      "validation-schemas-source-guard-runbook"
+    ],
+    "blocked_reason": "Runtime proof requires explicit approval before browser or build verification.",
+    "unsupported_surface_policy": "Only selected Validation & Schemas dashboard, template forms, catalog, JSON Schema, codec, coerce, file, metadata, refinement, transform, parse, and error surfaces are materialized."
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "styles/globals.css",
+    "generated_css": "styles/globals.css",
+    "visible_surfaces": [
+      "launch-settings-validation-summary",
+      "zod-dashboard-settings-form",
+      "dashboard-zod-settings-validator"
+    ],
+    "source_files": [
+      "examples/template/zod-dashboard-settings.tsx",
+      "examples/dashboard/src/components/ZodSettingsValidator.tsx",
+      "tools/launch/runtime-template/pages/index.html",
+      "styles/globals.css",
+      "styles/globals.css"
+    ],
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-validation-zod-dashboard-settings.json",
+    "data_dx_markers": [
+      "data-dx-style-surface=\"validation-schemas\"",
+      "data-dx-token-scope=\"validation/zod\""
+    ],
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "SOURCE-ONLY: token/class compatibility is source-marker evidence only.",
+      "ADAPTER-BOUNDARY: No browser style proof was run; governed visual checks stay app-owned."
+    ]
+  },
+  "hash_algorithm": "sha256",
+  "files": [
+    "examples/template/zod-dashboard-settings.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/lib/validation/zod/template-forms.ts",
+    "examples/template/components/template-app/forms.tsx",
+    "examples/dashboard/src/lib/forge/validation/zod/dashboard-settings.ts",
+    "examples/dashboard/src/lib/zodDashboardSettings.ts",
+    "examples/dashboard/src/components/ZodSettingsValidator.tsx",
+    "examples/template/package-catalog.ts",
+    "core/src/ecosystem/forge_zod.rs",
+    "core/src/ecosystem/project_check/validation_schemas_dx_check.rs",
+    "tools/launch/materialize-www-template.ts",
+    "docs/packages/validation-zod.md",
+    "docs/packages/validation-schemas.source-guard-runbook.json"
+  ],
+  "file_hashes": {
+    "examples/template/zod-dashboard-settings.tsx": "dc64764e45637f03e61854b0a8de97f26232f30c2f655c6f67044d0016d7e4db",
+    "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+    "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c",
+    "examples/dashboard/src/lib/forge/validation/zod/dashboard-settings.ts": "28b8896675b39091b44e4abca79cf877a0a795488d988f8f0c2a0ec4f3a5b5d8",
+    "examples/dashboard/src/lib/zodDashboardSettings.ts": "82a7ee2909abd942be267e6f4ea43e9cba82d77f672defe448482242c84eb905",
+    "examples/dashboard/src/components/ZodSettingsValidator.tsx": "4aa39cb51c7d5dce1e413fa35a7fa89cefc7502e92216668b56c2f5e3afd367b",
+    "examples/template/package-catalog.ts": "09dccd3de0803634dd765444b3aa5176f3d2fbb36a2520467400156588f13f50",
+    "core/src/ecosystem/forge_zod.rs": "83620c34e53d8141c9ebebfdd16a6dee95edaa81ccee06654401b38d2be37d28",
+    "core/src/ecosystem/project_check/validation_schemas_dx_check.rs": "e4d96b53cd8dae7420aaf0de27638e23ad183041c3d95613ff667795405d45e3",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "docs/packages/validation-zod.md": "a17fd2c80ce3d620b14248bc2af4429ed281b1eaecdab96adb35326ef688df7c",
+    "docs/packages/validation-schemas.source-guard-runbook.json": "823867e6da0a055e4cd315f8b3f6b18f5dc7013f162ee181bcb345e6ba5bafcf",
+    "examples/template/lib/validation/zod/template-forms.ts": "1e000dd21c7ee69f0d3a0312b9a0236c422da63c237edd33f1805df62541e59a",
+    "examples/template/components/template-app/forms.tsx": "6340b23bb9bf35ff4a9df2c552a5bd8354c0cd4b773bd3eaa80e1743b120dabb"
+  },
+  "hash_exclusions": [
+    "DX.md",
+    "TODO.md",
+    "CHANGELOG.md",
+    "full runtime output and governed browser proof"
+  ],
+  "coding_score": 99,
+  "source_files": [
+    "examples/template/zod-dashboard-settings.tsx",
+    "examples/template/template-shell.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/lib/validation/zod/template-forms.ts",
+    "examples/template/components/template-app/forms.tsx",
+    "examples/template/package-catalog.ts",
+    "examples/template/template-surface-registry.ts",
+    "examples/template/dx-studio-edit-contract.ts",
+    "examples/dashboard/src/lib/forge/validation/zod/dashboard-settings.ts",
+    "examples/dashboard/src/lib/zodDashboardSettings.ts",
+    "examples/dashboard/src/components/ZodSettingsValidator.tsx",
+    "examples/template/validation-schemas-receipt-hashes.ts",
+    "docs/packages/validation-zod.md",
+    "docs/packages/validation-schemas.source-guard-runbook.json",
+    "core/src/ecosystem/forge_zod.rs",
+    "tools/launch/materialize-www-template.ts"
+  ],
+  "materialized_files": [
+    "lib/validation/zod/dashboard-settings.ts",
+    "components/launch/zod-dashboard-settings.tsx",
+    "components/template-app/template-shell.tsx",
+    "pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "public/preview-manifest.json"
+  ],
+  "upstream_public_apis": [
+    "z.strictObject",
+    "safeParse",
+    "z.flattenError",
+    "z.treeifyError",
+    "z.prettifyError",
+    "z.meta",
+    "z.readonly",
+    "z.coerce.number",
+    "z.email"
+  ],
+  "local_readiness_interactions": [
+    "load-invalid-settings",
+    "load-valid-settings",
+    "validate-settings-form",
+    "edit-dashboard-settings",
+    "render-field-errors",
+    "render-settings-receipt",
+    "render-createDxDashboardSettingsReceipt"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"validation/zod\"",
+    "data-dx-form-package=\"forms/react-hook-form\"",
+    "data-dx-section=\"forms-validation\"",
+    "data-dx-component=\"launch-settings-validation-summary\"",
+    "data-dx-component=\"dashboard-zod-settings-validator\"",
+    "data-dx-component=\"zod-dashboard-settings-form\"",
+    "data-dx-style-surface=\"validation-schemas\"",
+    "data-dx-token-scope=\"validation/zod\"",
+    "data-dx-dashboard-workflow=\"settings-validation\"",
+    "data-dx-product-surface=\"account-settings\"",
+    "data-dx-zod-dashboard-fieldset=\"editable-settings\"",
+    "data-dx-zod-dashboard-action=\"load-invalid-settings\"",
+    "data-dx-zod-dashboard-action=\"load-valid-settings\"",
+    "data-dx-zod-settings-action=\"validate\"",
+    "data-dx-zod-dashboard-receipt-api=\"createDxDashboardSettingsReceipt\"",
+    "data-dx-zod-dashboard-receipt-json=\"idle\"",
+    "data-dx-zod-dashboard-field-state",
+    "data-dx-zod-dashboard-field-error",
+    "data-dx-zod-field-errors-api=\"z.flattenError\"",
+    "data-dx-rhf-boundary=\"runtime-safe-form\""
+  ],
+  "required_env": [],
+  "app_owned_boundaries": [
+    "accepted schema design",
+    "settings persistence target",
+    "authorization before account changes",
+    "final validation copy and locale policy",
+    "external JSON Schema trust policy",
+    "runtime dependency installation",
+    "downstream database writes and audit trail",
+    "governed browser proof"
+  ],
+  "missing_runtime_features": [
+    "Friday-governed browser runtime verification",
+    "app-owned settings persistence",
+    "account authorization policy"
+  ],
+  "guards": [
+    "dx run --test .\\benchmarks\\zod-dashboard-settings-workflow.test.ts",
+    "dx run --test .\\benchmarks\\zod-launch-visible-proof.test.ts",
+    "dx run --test .\\benchmarks\\zod-dx-style-compatibility.test.ts",
+    "dx run --test .\\benchmarks\\zod-receipt-hash-refresh.test.ts"
+  ],
+  "node_modules_required": false,
+  "no_runtime_execution": true
+}

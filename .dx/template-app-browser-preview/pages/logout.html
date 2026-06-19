@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clear sign-in review | DX Template</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <script src="/public/launch-runtime.js" defer></script>
+  </head>
+  <body
+    class="template-app-body"
+    data-dx-scroll-root="document"
+    data-dx-scroll-system="native"
+  >
+    <main
+      class="template-app auth-page"
+      data-dx-route="/logout"
+      data-dx-hot-reload-target="route:/logout"
+      data-dx-source="tools/launch/runtime-template/pages/logout.html"
+      data-dx-component="template-logout-page"
+      data-dx-package="auth/better-auth shadcn/ui/button shadcn/ui/card"
+      data-dx-style-surface="template-auth"
+      data-dx-check-surface="template-auth"
+      data-dx-auth-state="unknown"
+      data-dx-node-modules="forbidden"
+      data-dx-native-scroll="page"
+      data-dx-scroll-surface="document"
+      data-dx-scroll-lock="none"
+      data-dx-scroll-proof="document-flow-no-lock"
+      data-dx-wheel-scroll="native"
+      data-dx-scroll-content="viewport-plus"
+    >
+      <div class="dx-icon-runtime-markers" data-dx-component="dx-icon-runtime-markers" data-dx-icon-proof="runtime-markers" aria-hidden="true">
+        <span data-dx-icon="pack:auth" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:payments" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:database" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:fumadocs" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:wasm-bindgen" data-icon-source="dx-icons"></span>
+      </div>
+
+      <header class="template-header">
+        <a class="template-brand" href="/" aria-label="DX Template home">
+          <span class="template-brand-mark" aria-hidden="true">dx</span>
+          <span>DX Template</span>
+        </a>
+        <nav class="template-nav" aria-label="Account navigation">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/login">Sign in</a>
+        </nav>
+      </header>
+
+      <section class="auth-layout auth-layout-centered">
+        <article
+          class="template-card auth-card"
+          data-dx-component="template-logout-card"
+          data-dx-auth-action="clear-boundary-review"
+        >
+          <h1>Clear sign-in review?</h1>
+          <p data-app-session-email>No hosted session exists in this template.</p>
+          <div class="template-actions">
+            <button id="app-logout-action" class="template-button template-button-primary" type="button">
+              Clear review
+            </button>
+            <a class="template-button" href="/dashboard">Return to dashboard</a>
+          </div>
+          <p id="app-logout-status" class="template-status" role="status" aria-live="polite">
+            Clear the local sign-in review marker.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

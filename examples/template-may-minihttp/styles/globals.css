@@ -1,0 +1,13 @@
+@import "./theme.css";
+@import "./generated.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--dx-background);
+  color: var(--dx-foreground);
+  font-family: var(--dx-font-sans);
+}

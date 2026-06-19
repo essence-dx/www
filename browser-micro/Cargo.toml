@@ -1,0 +1,20 @@
+[package]
+name = "dx-www-browser-micro"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Micro browser WASM runtime for dx-www - NO_STD Integer DOM (< 2 KB)"
+keywords = ["wasm", "web", "no-std", "dx", "micro"]
+categories = ["wasm", "no-std"]
+
+[lib]
+crate-type = ["cdylib"]
+# Disable tests for this crate - it only runs in WASM environment
+# Tests for browser WASM runtime functionality are in the tests/ crate with mock host functions
+test = false
+doctest = false
+
+[dependencies]
+# ZERO dependencies - pure NO_STD

@@ -1,0 +1,213 @@
+{
+  "schema": "dx.forge.package_dashboard_receipt",
+  "packageId": "state/zustand",
+  "packageName": "State Management",
+  "officialPackageName": "State Management",
+  "upstreamPackage": "zustand",
+  "upstreamVersion": "5.0.13",
+  "sourceMirror": "G:/WWW/inspirations/zustand",
+  "hash_algorithm": "sha256",
+  "file_hashes": {
+    "examples/template/state-zustand-dashboard.tsx": "6693180f847db497d3c484013f02b4281aec2c7573e3d33358d0bc9734ac020e",
+    "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+    "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+    "docs/packages/state-zustand.md": "814eb1e8a5d1a13d9313ee4d1c15dd96e3d47fff237703e6fd06ba48cd16f0fe",
+    "docs/packages/state-zustand.source-guard-runbook.json": "3cda03af8cb23db155ced88340e70e37e92f45e8a8047b23f9ad86da3eb3bd82",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8",
+    "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c"
+  },
+  "route": "/",
+  "dashboardWorkflow": "ui-state-persistence",
+  "visibleComponent": "LaunchDashboardStateControl",
+  "sourceFiles": [
+    "examples/template/state-zustand-dashboard.tsx",
+    "examples/template/template-shell.tsx",
+    "examples/template/shadcn-dashboard-controls.tsx",
+    "examples/template/template-route-contract.ts",
+    "dx-www/src/cli/mod.rs",
+    "dx-www/src/cli/studio_manifest.rs",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "tools/launch/materialize-www-template.ts",
+    "docs/packages/state-zustand.md",
+    "docs/packages/state-zustand.source-guard-runbook.json"
+  ],
+  "materializedFiles": [
+    "components/launch/state-zustand-dashboard.tsx",
+    "components/template-app/template-shell.tsx",
+    "components/launch/shadcn-dashboard-controls.tsx",
+    "pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "styles/launch-runtime.css",
+    "public/preview-manifest.json"
+  ],
+  "persistKey": "dx-launch-dashboard-settings",
+  "realApis": [
+    "createWithEqualityFn",
+    "persist",
+    "rehydrate",
+    "onHydrate",
+    "onFinishHydration",
+    "shallow"
+  ],
+  "interactions": [
+    "set-dashboard-density",
+    "select-dashboard-focus",
+    "toggle-command-hints",
+    "preview-dashboard-receipt",
+    "save-dashboard-settings",
+    "reset-dashboard-settings",
+    "rehydrate-dashboard-settings"
+  ],
+  "markers": [
+    "data-dx-package=\"state/zustand\"",
+    "data-dx-component=\"launch-dashboard-state-shell\"",
+    "data-dx-component=\"launch-dashboard-state-workflow\"",
+    "data-dx-component=\"launch-dashboard-state-summary\"",
+    "data-dx-component=\"shadcn-dashboard-controls\"",
+    "data-dx-dashboard-workflow=\"ui-state-persistence\"",
+    "data-dx-dashboard-workflow=\"ui-state-persistence-shell\"",
+    "data-dx-style-surface=\"state-management\"",
+    "data-dx-zustand-store=\"launch-dashboard-settings\"",
+    "data-dx-zustand-persist-key=\"dx-launch-dashboard-settings\"",
+    "data-dx-zustand-action",
+    "data-dx-zustand-action=\"rehydrate-dashboard-settings\"",
+    "data-dx-zustand-hydration-event",
+    "data-dx-zustand-rehydrate-state"
+  ],
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "styles/globals.css",
+    "generated_css": "styles/globals.css",
+    "visible_surfaces": [
+      "launch-dashboard-state-workflow",
+      "launch-dashboard-state-shell"
+    ],
+    "source_files": [
+      "examples/template/state-zustand-dashboard.tsx",
+      "examples/template/template-shell.tsx",
+      "tools/launch/runtime-template/pages/index.html",
+      "styles/globals.css",
+      "styles/globals.css"
+    ],
+    "data_dx_markers": [
+      "data-dx-style-surface=\"state-management\"",
+      "data-dx-component=\"launch-dashboard-state-workflow\"",
+      "data-dx-component=\"launch-dashboard-state-shell\""
+    ],
+    "receipt_path": ".dx/forge/receipts/2026-05-22-state-zustand-dashboard-workflow.json",
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "SOURCE-ONLY: dx-style compatibility is source and receipt evidence; no browser visual proof is claimed.",
+      "ADAPTER-BOUNDARY: final theme token review, accessibility, and persisted-state UX remain app-owned."
+    ]
+  },
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "status": "present",
+    "receipt_status": "present",
+    "status_vocabulary": [
+      "present",
+      "stale",
+      "missing-receipt",
+      "blocked",
+      "unsupported-surface"
+    ],
+    "selected_surfaces": [
+      "launch-dashboard-state-workflow",
+      "launch-dashboard-state-shell",
+      "state-management-studio-manifest-source"
+    ],
+    "source_hashes": {
+      "algorithm": "sha256",
+      "files": {
+        "examples/template/state-zustand-dashboard.tsx": "6693180f847db497d3c484013f02b4281aec2c7573e3d33358d0bc9734ac020e",
+        "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+        "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+        "docs/packages/state-zustand.md": "814eb1e8a5d1a13d9313ee4d1c15dd96e3d47fff237703e6fd06ba48cd16f0fe",
+        "docs/packages/state-zustand.source-guard-runbook.json": "3cda03af8cb23db155ced88340e70e37e92f45e8a8047b23f9ad86da3eb3bd82",
+        "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+        "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8",
+        "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c"
+      },
+      "stale_receipt_policy": "dx-check marks State Management stale when a selected hash-backed state workflow file is missing or differs from this receipt manifest."
+    },
+    "monitored_surfaces": [
+      {
+        "id": "launch-dashboard-state-workflow",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/state-zustand-dashboard.tsx": "6693180f847db497d3c484013f02b4281aec2c7573e3d33358d0bc9734ac020e",
+          "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+          "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c"
+        }
+      },
+      {
+        "id": "launch-dashboard-state-shell",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a"
+        }
+      },
+      {
+        "id": "state-management-package-doc",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "docs/packages/state-zustand.md": "814eb1e8a5d1a13d9313ee4d1c15dd96e3d47fff237703e6fd06ba48cd16f0fe"
+        }
+      },
+      {
+        "id": "state-management-source-guard-runbook",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "docs/packages/state-zustand.source-guard-runbook.json": "3cda03af8cb23db155ced88340e70e37e92f45e8a8047b23f9ad86da3eb3bd82"
+        }
+      },
+      {
+        "id": "state-management-preview-manifest-materializer",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+        }
+      },
+      {
+        "id": "state-management-studio-manifest-source",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8"
+        }
+      }
+    ],
+    "dx_check_metrics": [
+      "state_management_receipt_present",
+      "state_management_receipt_stale",
+      "state_management_missing_receipt",
+      "state_management_blocked_surface",
+      "state_management_unsupported_surface",
+      "state_management_dx_style_compatibility_present",
+      "state_management_dx_style_compatibility_missing"
+    ],
+    "runtime_limitations": [
+      "SOURCE-ONLY: package-lane visibility is receipt, source-marker, and hash evidence; no browser storage runtime proof is claimed.",
+      "ADAPTER-BOUNDARY: persisted-state sensitivity, browser storage durability, optional Immer, and DevTools stay app-owned."
+    ]
+  },
+  "appOwnedBoundaries": [
+    "Selector granularity",
+    "Sensitive-state policy",
+    "Durable storage policy",
+    "Browser persistence review"
+  ],
+  "deferred": [
+    "Friday-governed browser runtime evidence",
+    "Cross-tab or server durable persistence"
+  ],
+  "guards": [
+    "node --test .\\benchmarks\\zustand-slice.test.ts",
+    "node --test .\\benchmarks\\zustand-launch-materialized.test.ts",
+    "node --test .\\benchmarks\\dx-studio-preview-manifest.test.ts"
+  ],
+  "nodeModulesRequired": false
+}

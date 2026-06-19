@@ -1,0 +1,1177 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "3d/launch-scene",
+    "upstream_name": "three",
+    "version": "0.184.0-r3f10-dx.0",
+    "generator": "dx-forge/three-scene",
+    "variant": "source-owned-renderer-boundary",
+    "last_accepted_update": "2026-05-25T14:24:01.540862600+00:00",
+    "source_kind": "curated-registry",
+    "integrity_hash": "b5b82ac5b13c97f08048124e150d71f370aaf202cf3fb605a2fbfb7ee0979424",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "three@0.184.0; @react-three/fiber@9.6.1; @react-three/drei local mirror",
+      "verified": false,
+      "note": "DX inspected the local Three, React Three Fiber, and Drei mirrors for WebGL engine shape, Canvas/root rendering, frame hooks, Stage, Environment, PresentationControls, Text, and MIT license boundaries before curating this source-owned Web Preview scene slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this 3D launch scene slice, but it is not a live advisory feed and does not audit application WebGL shaders, GPU performance, external 3D assets, or optional Three/R3F/Drei dependencies."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "components/forge/variants/source-owned-renderer-boundary/scene/launch-scene.tsx",
+        "logical_path": "js/components/scene/launch-scene.tsx",
+        "hash": "d38f097a4832f9dfd081ab87faf395c180365e38224d5b53ee799807255e2fe4",
+        "bytes": 23224
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/index.ts",
+        "logical_path": "js/scene/index.ts",
+        "hash": "271c2161903b4a0820517af878914faecf9bdb2e7e690a035031e02e2f8a460d",
+        "bytes": 4710
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/types.ts",
+        "logical_path": "js/scene/types.ts",
+        "hash": "c768c79b049c416ee997cac666db3058ee8ab762e3303041e15d5550978c556c",
+        "bytes": 9108
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/preset.ts",
+        "logical_path": "js/scene/preset.ts",
+        "hash": "f3e37dce4cdaf3a8c9f15538ab839b14a1aed91fda47b24899aa75cfed5c202e",
+        "bytes": 4132
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/interaction.ts",
+        "logical_path": "js/scene/interaction.ts",
+        "hash": "572d8b4fc7c70255977faa5ac96d9b9cc8787ce711db35ff29f6584c68f1bcf8",
+        "bytes": 5719
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-workflow.ts",
+        "logical_path": "js/scene/dashboard-workflow.ts",
+        "hash": "c360d505281e6e96260fce8de832906def57d5b5c6b7316a1aabd5f8f699c458",
+        "bytes": 6741
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-controls.ts",
+        "logical_path": "js/scene/dashboard-controls.ts",
+        "hash": "34ccfa77a5f0a4af57d8c820d7da9fdcdf732ffa142541861d79c00a350ecb6a",
+        "bytes": 1339
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/frame-sample.ts",
+        "logical_path": "js/scene/frame-sample.ts",
+        "hash": "69da51daba5af57894d0e553da978e2a295eeb3500ef1d21b672d718589f7f9d",
+        "bytes": 2955
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/capability-report.ts",
+        "logical_path": "js/scene/capability-report.ts",
+        "hash": "816c8f004dc09b98ce71de492aeccd1d65e1a03dd9500c450319ef9301c73a11",
+        "bytes": 3623
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/viewport-report.ts",
+        "logical_path": "js/scene/viewport-report.ts",
+        "hash": "5ce992180c89271e55575aabb79e9dc602758661e3fed17113013643cfcefc6c",
+        "bytes": 3907
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/bounds-report.ts",
+        "logical_path": "js/scene/bounds-report.ts",
+        "hash": "cf19d64a30bf48410f775c68838982efbe836d684759a9f2834476783161179b",
+        "bytes": 5163
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/raycast-report.ts",
+        "logical_path": "js/scene/raycast-report.ts",
+        "hash": "ffe2176c109218f3d46e4de754be8cc031b45d65be840f5692fa99500f86dc52",
+        "bytes": 3061
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/preview-readiness.ts",
+        "logical_path": "js/scene/preview-readiness.ts",
+        "hash": "733688af1ac03863a396f5929c8cdd1b86bb11491c2adf38a14c75f79b24a9f3",
+        "bytes": 3920
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/performance-monitor.ts",
+        "logical_path": "js/scene/performance-monitor.ts",
+        "hash": "a2b2d7a5e44f608c8d3e121b21a7148f993f83ad789df32661a9b1ee5ef1eed6",
+        "bytes": 3554
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/renderer-handoff.ts",
+        "logical_path": "js/scene/renderer-handoff.ts",
+        "hash": "e36defc2d4e127220e1fcb9da183af1df154b199d446411308de6b31ffe3759a",
+        "bytes": 1357
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/r3f-renderer-adapter.ts",
+        "logical_path": "js/scene/r3f-renderer-adapter.ts",
+        "hash": "3c30db620bf8e6df7ce082acab9b02db54db245c1db8d086ff978015d1d811ac",
+        "bytes": 4490
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/webgl-runtime.ts",
+        "logical_path": "js/scene/webgl-runtime.ts",
+        "hash": "e5992598b078c24a14a3924c575f16fa7de9d2b1d3a11b581d22de641be5f77a",
+        "bytes": 25356
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/metadata.ts",
+        "logical_path": "js/scene/metadata.ts",
+        "hash": "7551692d39fd53ed0eb5ec63e86585b01dec7582219acb675d545685d25281b3",
+        "bytes": 8867
+      },
+      {
+        "path": "lib/scene/forge/variants/source-owned-renderer-boundary/README.md",
+        "logical_path": "js/scene/README.md",
+        "hash": "c21db414af303b8ca1817c9a132e5691060a71d3238f34acb489f4aad04d4158",
+        "bytes": 14296
+      },
+      {
+        "path": "components/scene/launch-scene.tsx",
+        "logical_path": "js/components/scene/launch-scene.tsx",
+        "hash": "d38f097a4832f9dfd081ab87faf395c180365e38224d5b53ee799807255e2fe4",
+        "bytes": 23224
+      },
+      {
+        "path": "lib/scene/README.md",
+        "logical_path": "js/lib/scene/README.md",
+        "hash": "c21db414af303b8ca1817c9a132e5691060a71d3238f34acb489f4aad04d4158",
+        "bytes": 14296
+      },
+      {
+        "path": "lib/scene/bounds-report.ts",
+        "logical_path": "js/lib/scene/bounds-report.ts",
+        "hash": "cf19d64a30bf48410f775c68838982efbe836d684759a9f2834476783161179b",
+        "bytes": 5163
+      },
+      {
+        "path": "lib/scene/capability-report.ts",
+        "logical_path": "js/lib/scene/capability-report.ts",
+        "hash": "816c8f004dc09b98ce71de492aeccd1d65e1a03dd9500c450319ef9301c73a11",
+        "bytes": 3623
+      },
+      {
+        "path": "lib/scene/dashboard-controls.ts",
+        "logical_path": "js/lib/scene/dashboard-controls.ts",
+        "hash": "34ccfa77a5f0a4af57d8c820d7da9fdcdf732ffa142541861d79c00a350ecb6a",
+        "bytes": 1339
+      },
+      {
+        "path": "lib/scene/dashboard-workflow.ts",
+        "logical_path": "js/lib/scene/dashboard-workflow.ts",
+        "hash": "c360d505281e6e96260fce8de832906def57d5b5c6b7316a1aabd5f8f699c458",
+        "bytes": 6741
+      },
+      {
+        "path": "lib/scene/frame-sample.ts",
+        "logical_path": "js/lib/scene/frame-sample.ts",
+        "hash": "69da51daba5af57894d0e553da978e2a295eeb3500ef1d21b672d718589f7f9d",
+        "bytes": 2955
+      },
+      {
+        "path": "lib/scene/index.ts",
+        "logical_path": "js/lib/scene/index.ts",
+        "hash": "271c2161903b4a0820517af878914faecf9bdb2e7e690a035031e02e2f8a460d",
+        "bytes": 4710
+      },
+      {
+        "path": "lib/scene/interaction.ts",
+        "logical_path": "js/lib/scene/interaction.ts",
+        "hash": "572d8b4fc7c70255977faa5ac96d9b9cc8787ce711db35ff29f6584c68f1bcf8",
+        "bytes": 5719
+      },
+      {
+        "path": "lib/scene/metadata.ts",
+        "logical_path": "js/lib/scene/metadata.ts",
+        "hash": "7a179424d15049c0d906c239761ff5b3050586882ea0e98bb27ed4f8e602ff8c",
+        "bytes": 8855
+      },
+      {
+        "path": "lib/scene/performance-monitor.ts",
+        "logical_path": "js/lib/scene/performance-monitor.ts",
+        "hash": "a2b2d7a5e44f608c8d3e121b21a7148f993f83ad789df32661a9b1ee5ef1eed6",
+        "bytes": 3554
+      },
+      {
+        "path": "lib/scene/preset.ts",
+        "logical_path": "js/lib/scene/preset.ts",
+        "hash": "f3e37dce4cdaf3a8c9f15538ab839b14a1aed91fda47b24899aa75cfed5c202e",
+        "bytes": 4132
+      },
+      {
+        "path": "lib/scene/preview-readiness.ts",
+        "logical_path": "js/lib/scene/preview-readiness.ts",
+        "hash": "733688af1ac03863a396f5929c8cdd1b86bb11491c2adf38a14c75f79b24a9f3",
+        "bytes": 3920
+      },
+      {
+        "path": "lib/scene/r3f-renderer-adapter.ts",
+        "logical_path": "js/lib/scene/r3f-renderer-adapter.ts",
+        "hash": "3c30db620bf8e6df7ce082acab9b02db54db245c1db8d086ff978015d1d811ac",
+        "bytes": 4490
+      },
+      {
+        "path": "lib/scene/raycast-report.ts",
+        "logical_path": "js/lib/scene/raycast-report.ts",
+        "hash": "ffe2176c109218f3d46e4de754be8cc031b45d65be840f5692fa99500f86dc52",
+        "bytes": 3061
+      },
+      {
+        "path": "lib/scene/renderer-handoff.ts",
+        "logical_path": "js/lib/scene/renderer-handoff.ts",
+        "hash": "e36defc2d4e127220e1fcb9da183af1df154b199d446411308de6b31ffe3759a",
+        "bytes": 1357
+      },
+      {
+        "path": "lib/scene/types.ts",
+        "logical_path": "js/lib/scene/types.ts",
+        "hash": "c768c79b049c416ee997cac666db3058ee8ab762e3303041e15d5550978c556c",
+        "bytes": 9108
+      },
+      {
+        "path": "lib/scene/viewport-report.ts",
+        "logical_path": "js/lib/scene/viewport-report.ts",
+        "hash": "5ce992180c89271e55575aabb79e9dc602758661e3fed17113013643cfcefc6c",
+        "bytes": 3907
+      },
+      {
+        "path": "lib/scene/webgl-runtime.ts",
+        "logical_path": "js/lib/scene/webgl-runtime.ts",
+        "hash": "e5992598b078c24a14a3924c575f16fa7de9d2b1d3a11b581d22de641be5f77a",
+        "bytes": 25356
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "components/forge/variants/source-owned-renderer-boundary/scene/launch-scene.tsx",
+      "logical_path": "js/components/scene/launch-scene.tsx",
+      "hash": "d38f097a4832f9dfd081ab87faf395c180365e38224d5b53ee799807255e2fe4",
+      "bytes": 23224
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/index.ts",
+      "logical_path": "js/scene/index.ts",
+      "hash": "271c2161903b4a0820517af878914faecf9bdb2e7e690a035031e02e2f8a460d",
+      "bytes": 4710
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/types.ts",
+      "logical_path": "js/scene/types.ts",
+      "hash": "c768c79b049c416ee997cac666db3058ee8ab762e3303041e15d5550978c556c",
+      "bytes": 9108
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/preset.ts",
+      "logical_path": "js/scene/preset.ts",
+      "hash": "f3e37dce4cdaf3a8c9f15538ab839b14a1aed91fda47b24899aa75cfed5c202e",
+      "bytes": 4132
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/interaction.ts",
+      "logical_path": "js/scene/interaction.ts",
+      "hash": "572d8b4fc7c70255977faa5ac96d9b9cc8787ce711db35ff29f6584c68f1bcf8",
+      "bytes": 5719
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-workflow.ts",
+      "logical_path": "js/scene/dashboard-workflow.ts",
+      "hash": "c360d505281e6e96260fce8de832906def57d5b5c6b7316a1aabd5f8f699c458",
+      "bytes": 6741
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-controls.ts",
+      "logical_path": "js/scene/dashboard-controls.ts",
+      "hash": "34ccfa77a5f0a4af57d8c820d7da9fdcdf732ffa142541861d79c00a350ecb6a",
+      "bytes": 1339
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/frame-sample.ts",
+      "logical_path": "js/scene/frame-sample.ts",
+      "hash": "69da51daba5af57894d0e553da978e2a295eeb3500ef1d21b672d718589f7f9d",
+      "bytes": 2955
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/capability-report.ts",
+      "logical_path": "js/scene/capability-report.ts",
+      "hash": "816c8f004dc09b98ce71de492aeccd1d65e1a03dd9500c450319ef9301c73a11",
+      "bytes": 3623
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/viewport-report.ts",
+      "logical_path": "js/scene/viewport-report.ts",
+      "hash": "5ce992180c89271e55575aabb79e9dc602758661e3fed17113013643cfcefc6c",
+      "bytes": 3907
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/bounds-report.ts",
+      "logical_path": "js/scene/bounds-report.ts",
+      "hash": "cf19d64a30bf48410f775c68838982efbe836d684759a9f2834476783161179b",
+      "bytes": 5163
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/raycast-report.ts",
+      "logical_path": "js/scene/raycast-report.ts",
+      "hash": "ffe2176c109218f3d46e4de754be8cc031b45d65be840f5692fa99500f86dc52",
+      "bytes": 3061
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/preview-readiness.ts",
+      "logical_path": "js/scene/preview-readiness.ts",
+      "hash": "733688af1ac03863a396f5929c8cdd1b86bb11491c2adf38a14c75f79b24a9f3",
+      "bytes": 3920
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/performance-monitor.ts",
+      "logical_path": "js/scene/performance-monitor.ts",
+      "hash": "a2b2d7a5e44f608c8d3e121b21a7148f993f83ad789df32661a9b1ee5ef1eed6",
+      "bytes": 3554
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/renderer-handoff.ts",
+      "logical_path": "js/scene/renderer-handoff.ts",
+      "hash": "e36defc2d4e127220e1fcb9da183af1df154b199d446411308de6b31ffe3759a",
+      "bytes": 1357
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/r3f-renderer-adapter.ts",
+      "logical_path": "js/scene/r3f-renderer-adapter.ts",
+      "hash": "3c30db620bf8e6df7ce082acab9b02db54db245c1db8d086ff978015d1d811ac",
+      "bytes": 4490
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/webgl-runtime.ts",
+      "logical_path": "js/scene/webgl-runtime.ts",
+      "hash": "e5992598b078c24a14a3924c575f16fa7de9d2b1d3a11b581d22de641be5f77a",
+      "bytes": 25356
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/metadata.ts",
+      "logical_path": "js/scene/metadata.ts",
+      "hash": "7551692d39fd53ed0eb5ec63e86585b01dec7582219acb675d545685d25281b3",
+      "bytes": 8867
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/README.md",
+      "logical_path": "js/scene/README.md",
+      "hash": "c21db414af303b8ca1817c9a132e5691060a71d3238f34acb489f4aad04d4158",
+      "bytes": 14296
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/components/scene/launch-scene.tsx",
+      "materialized_path": "components/forge/variants/source-owned-renderer-boundary/scene/launch-scene.tsx",
+      "hash": "d38f097a4832f9dfd081ab87faf395c180365e38224d5b53ee799807255e2fe4",
+      "bytes": 23224
+    },
+    {
+      "logical_path": "js/scene/index.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/index.ts",
+      "hash": "271c2161903b4a0820517af878914faecf9bdb2e7e690a035031e02e2f8a460d",
+      "bytes": 4710
+    },
+    {
+      "logical_path": "js/scene/types.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/types.ts",
+      "hash": "c768c79b049c416ee997cac666db3058ee8ab762e3303041e15d5550978c556c",
+      "bytes": 9108
+    },
+    {
+      "logical_path": "js/scene/preset.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/preset.ts",
+      "hash": "f3e37dce4cdaf3a8c9f15538ab839b14a1aed91fda47b24899aa75cfed5c202e",
+      "bytes": 4132
+    },
+    {
+      "logical_path": "js/scene/interaction.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/interaction.ts",
+      "hash": "572d8b4fc7c70255977faa5ac96d9b9cc8787ce711db35ff29f6584c68f1bcf8",
+      "bytes": 5719
+    },
+    {
+      "logical_path": "js/scene/dashboard-workflow.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-workflow.ts",
+      "hash": "c360d505281e6e96260fce8de832906def57d5b5c6b7316a1aabd5f8f699c458",
+      "bytes": 6741
+    },
+    {
+      "logical_path": "js/scene/dashboard-controls.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-controls.ts",
+      "hash": "34ccfa77a5f0a4af57d8c820d7da9fdcdf732ffa142541861d79c00a350ecb6a",
+      "bytes": 1339
+    },
+    {
+      "logical_path": "js/scene/frame-sample.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/frame-sample.ts",
+      "hash": "69da51daba5af57894d0e553da978e2a295eeb3500ef1d21b672d718589f7f9d",
+      "bytes": 2955
+    },
+    {
+      "logical_path": "js/scene/capability-report.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/capability-report.ts",
+      "hash": "816c8f004dc09b98ce71de492aeccd1d65e1a03dd9500c450319ef9301c73a11",
+      "bytes": 3623
+    },
+    {
+      "logical_path": "js/scene/viewport-report.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/viewport-report.ts",
+      "hash": "5ce992180c89271e55575aabb79e9dc602758661e3fed17113013643cfcefc6c",
+      "bytes": 3907
+    },
+    {
+      "logical_path": "js/scene/bounds-report.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/bounds-report.ts",
+      "hash": "cf19d64a30bf48410f775c68838982efbe836d684759a9f2834476783161179b",
+      "bytes": 5163
+    },
+    {
+      "logical_path": "js/scene/raycast-report.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/raycast-report.ts",
+      "hash": "ffe2176c109218f3d46e4de754be8cc031b45d65be840f5692fa99500f86dc52",
+      "bytes": 3061
+    },
+    {
+      "logical_path": "js/scene/preview-readiness.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/preview-readiness.ts",
+      "hash": "733688af1ac03863a396f5929c8cdd1b86bb11491c2adf38a14c75f79b24a9f3",
+      "bytes": 3920
+    },
+    {
+      "logical_path": "js/scene/performance-monitor.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/performance-monitor.ts",
+      "hash": "a2b2d7a5e44f608c8d3e121b21a7148f993f83ad789df32661a9b1ee5ef1eed6",
+      "bytes": 3554
+    },
+    {
+      "logical_path": "js/scene/renderer-handoff.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/renderer-handoff.ts",
+      "hash": "e36defc2d4e127220e1fcb9da183af1df154b199d446411308de6b31ffe3759a",
+      "bytes": 1357
+    },
+    {
+      "logical_path": "js/scene/r3f-renderer-adapter.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/r3f-renderer-adapter.ts",
+      "hash": "3c30db620bf8e6df7ce082acab9b02db54db245c1db8d086ff978015d1d811ac",
+      "bytes": 4490
+    },
+    {
+      "logical_path": "js/scene/webgl-runtime.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/webgl-runtime.ts",
+      "hash": "e5992598b078c24a14a3924c575f16fa7de9d2b1d3a11b581d22de641be5f77a",
+      "bytes": 25356
+    },
+    {
+      "logical_path": "js/scene/metadata.ts",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/metadata.ts",
+      "hash": "7551692d39fd53ed0eb5ec63e86585b01dec7582219acb675d545685d25281b3",
+      "bytes": 8867
+    },
+    {
+      "logical_path": "js/scene/README.md",
+      "materialized_path": "lib/scene/forge/variants/source-owned-renderer-boundary/README.md",
+      "hash": "c21db414af303b8ca1817c9a132e5691060a71d3238f34acb489f4aad04d4158",
+      "bytes": 14296
+    },
+    {
+      "logical_path": "js/components/scene/launch-scene.tsx",
+      "materialized_path": "components/scene/launch-scene.tsx",
+      "hash": "d38f097a4832f9dfd081ab87faf395c180365e38224d5b53ee799807255e2fe4",
+      "bytes": 23224
+    },
+    {
+      "logical_path": "js/lib/scene/README.md",
+      "materialized_path": "lib/scene/README.md",
+      "hash": "c21db414af303b8ca1817c9a132e5691060a71d3238f34acb489f4aad04d4158",
+      "bytes": 14296
+    },
+    {
+      "logical_path": "js/lib/scene/bounds-report.ts",
+      "materialized_path": "lib/scene/bounds-report.ts",
+      "hash": "cf19d64a30bf48410f775c68838982efbe836d684759a9f2834476783161179b",
+      "bytes": 5163
+    },
+    {
+      "logical_path": "js/lib/scene/capability-report.ts",
+      "materialized_path": "lib/scene/capability-report.ts",
+      "hash": "816c8f004dc09b98ce71de492aeccd1d65e1a03dd9500c450319ef9301c73a11",
+      "bytes": 3623
+    },
+    {
+      "logical_path": "js/lib/scene/dashboard-controls.ts",
+      "materialized_path": "lib/scene/dashboard-controls.ts",
+      "hash": "34ccfa77a5f0a4af57d8c820d7da9fdcdf732ffa142541861d79c00a350ecb6a",
+      "bytes": 1339
+    },
+    {
+      "logical_path": "js/lib/scene/dashboard-workflow.ts",
+      "materialized_path": "lib/scene/dashboard-workflow.ts",
+      "hash": "c360d505281e6e96260fce8de832906def57d5b5c6b7316a1aabd5f8f699c458",
+      "bytes": 6741
+    },
+    {
+      "logical_path": "js/lib/scene/frame-sample.ts",
+      "materialized_path": "lib/scene/frame-sample.ts",
+      "hash": "69da51daba5af57894d0e553da978e2a295eeb3500ef1d21b672d718589f7f9d",
+      "bytes": 2955
+    },
+    {
+      "logical_path": "js/lib/scene/index.ts",
+      "materialized_path": "lib/scene/index.ts",
+      "hash": "271c2161903b4a0820517af878914faecf9bdb2e7e690a035031e02e2f8a460d",
+      "bytes": 4710
+    },
+    {
+      "logical_path": "js/lib/scene/interaction.ts",
+      "materialized_path": "lib/scene/interaction.ts",
+      "hash": "572d8b4fc7c70255977faa5ac96d9b9cc8787ce711db35ff29f6584c68f1bcf8",
+      "bytes": 5719
+    },
+    {
+      "logical_path": "js/lib/scene/metadata.ts",
+      "materialized_path": "lib/scene/metadata.ts",
+      "hash": "7a179424d15049c0d906c239761ff5b3050586882ea0e98bb27ed4f8e602ff8c",
+      "bytes": 8855
+    },
+    {
+      "logical_path": "js/lib/scene/performance-monitor.ts",
+      "materialized_path": "lib/scene/performance-monitor.ts",
+      "hash": "a2b2d7a5e44f608c8d3e121b21a7148f993f83ad789df32661a9b1ee5ef1eed6",
+      "bytes": 3554
+    },
+    {
+      "logical_path": "js/lib/scene/preset.ts",
+      "materialized_path": "lib/scene/preset.ts",
+      "hash": "f3e37dce4cdaf3a8c9f15538ab839b14a1aed91fda47b24899aa75cfed5c202e",
+      "bytes": 4132
+    },
+    {
+      "logical_path": "js/lib/scene/preview-readiness.ts",
+      "materialized_path": "lib/scene/preview-readiness.ts",
+      "hash": "733688af1ac03863a396f5929c8cdd1b86bb11491c2adf38a14c75f79b24a9f3",
+      "bytes": 3920
+    },
+    {
+      "logical_path": "js/lib/scene/r3f-renderer-adapter.ts",
+      "materialized_path": "lib/scene/r3f-renderer-adapter.ts",
+      "hash": "3c30db620bf8e6df7ce082acab9b02db54db245c1db8d086ff978015d1d811ac",
+      "bytes": 4490
+    },
+    {
+      "logical_path": "js/lib/scene/raycast-report.ts",
+      "materialized_path": "lib/scene/raycast-report.ts",
+      "hash": "ffe2176c109218f3d46e4de754be8cc031b45d65be840f5692fa99500f86dc52",
+      "bytes": 3061
+    },
+    {
+      "logical_path": "js/lib/scene/renderer-handoff.ts",
+      "materialized_path": "lib/scene/renderer-handoff.ts",
+      "hash": "e36defc2d4e127220e1fcb9da183af1df154b199d446411308de6b31ffe3759a",
+      "bytes": 1357
+    },
+    {
+      "logical_path": "js/lib/scene/types.ts",
+      "materialized_path": "lib/scene/types.ts",
+      "hash": "c768c79b049c416ee997cac666db3058ee8ab762e3303041e15d5550978c556c",
+      "bytes": 9108
+    },
+    {
+      "logical_path": "js/lib/scene/viewport-report.ts",
+      "materialized_path": "lib/scene/viewport-report.ts",
+      "hash": "5ce992180c89271e55575aabb79e9dc602758661e3fed17113013643cfcefc6c",
+      "bytes": 3907
+    },
+    {
+      "logical_path": "js/lib/scene/webgl-runtime.ts",
+      "materialized_path": "lib/scene/webgl-runtime.ts",
+      "hash": "e5992598b078c24a14a3924c575f16fa7de9d2b1d3a11b581d22de641be5f77a",
+      "bytes": 25356
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "components/forge/variants/source-owned-renderer-boundary/scene/launch-scene.tsx would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/index.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/types.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/preset.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/interaction.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-workflow.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-controls.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/frame-sample.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/capability-report.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/viewport-report.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/bounds-report.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/raycast-report.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/preview-readiness.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/performance-monitor.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/renderer-handoff.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/r3f-renderer-adapter.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/webgl-runtime.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/metadata.ts would be added to the Forge package."
+    },
+    {
+      "policy": "update-add",
+      "traffic": "green",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/README.md would be added to the Forge package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "components/scene/launch-scene.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/README.md is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/bounds-report.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/capability-report.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/dashboard-controls.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/dashboard-workflow.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/frame-sample.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/index.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/interaction.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/metadata.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/performance-monitor.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/preset.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/preview-readiness.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/r3f-renderer-adapter.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/raycast-report.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/renderer-handoff.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/types.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/viewport-report.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/scene/webgl-runtime.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `Shohan` accepted yellow local edits for `3d/launch-scene` variant `source-owned-renderer-boundary`: Reviewed after template rename; preserving source-owned local edits and stale tracked local files in Forge receipt state."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "components/forge/variants/source-owned-renderer-boundary/scene/launch-scene.tsx",
+      "logical_path": "js/components/scene/launch-scene.tsx",
+      "after_hash": "d38f097a4832f9dfd081ab87faf395c180365e38224d5b53ee799807255e2fe4",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/forge/variants/source-owned-renderer-boundary/scene/launch-scene.tsx accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/index.ts",
+      "logical_path": "js/scene/index.ts",
+      "after_hash": "271c2161903b4a0820517af878914faecf9bdb2e7e690a035031e02e2f8a460d",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/index.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/types.ts",
+      "logical_path": "js/scene/types.ts",
+      "after_hash": "c768c79b049c416ee997cac666db3058ee8ab762e3303041e15d5550978c556c",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/types.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/preset.ts",
+      "logical_path": "js/scene/preset.ts",
+      "after_hash": "f3e37dce4cdaf3a8c9f15538ab839b14a1aed91fda47b24899aa75cfed5c202e",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/preset.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/interaction.ts",
+      "logical_path": "js/scene/interaction.ts",
+      "after_hash": "572d8b4fc7c70255977faa5ac96d9b9cc8787ce711db35ff29f6584c68f1bcf8",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/interaction.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-workflow.ts",
+      "logical_path": "js/scene/dashboard-workflow.ts",
+      "after_hash": "c360d505281e6e96260fce8de832906def57d5b5c6b7316a1aabd5f8f699c458",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-workflow.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-controls.ts",
+      "logical_path": "js/scene/dashboard-controls.ts",
+      "after_hash": "34ccfa77a5f0a4af57d8c820d7da9fdcdf732ffa142541861d79c00a350ecb6a",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/dashboard-controls.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/frame-sample.ts",
+      "logical_path": "js/scene/frame-sample.ts",
+      "after_hash": "69da51daba5af57894d0e553da978e2a295eeb3500ef1d21b672d718589f7f9d",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/frame-sample.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/capability-report.ts",
+      "logical_path": "js/scene/capability-report.ts",
+      "after_hash": "816c8f004dc09b98ce71de492aeccd1d65e1a03dd9500c450319ef9301c73a11",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/capability-report.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/viewport-report.ts",
+      "logical_path": "js/scene/viewport-report.ts",
+      "after_hash": "5ce992180c89271e55575aabb79e9dc602758661e3fed17113013643cfcefc6c",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/viewport-report.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/bounds-report.ts",
+      "logical_path": "js/scene/bounds-report.ts",
+      "after_hash": "cf19d64a30bf48410f775c68838982efbe836d684759a9f2834476783161179b",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/bounds-report.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/raycast-report.ts",
+      "logical_path": "js/scene/raycast-report.ts",
+      "after_hash": "ffe2176c109218f3d46e4de754be8cc031b45d65be840f5692fa99500f86dc52",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/raycast-report.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/preview-readiness.ts",
+      "logical_path": "js/scene/preview-readiness.ts",
+      "after_hash": "733688af1ac03863a396f5929c8cdd1b86bb11491c2adf38a14c75f79b24a9f3",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/preview-readiness.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/performance-monitor.ts",
+      "logical_path": "js/scene/performance-monitor.ts",
+      "after_hash": "a2b2d7a5e44f608c8d3e121b21a7148f993f83ad789df32661a9b1ee5ef1eed6",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/performance-monitor.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/renderer-handoff.ts",
+      "logical_path": "js/scene/renderer-handoff.ts",
+      "after_hash": "e36defc2d4e127220e1fcb9da183af1df154b199d446411308de6b31ffe3759a",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/renderer-handoff.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/r3f-renderer-adapter.ts",
+      "logical_path": "js/scene/r3f-renderer-adapter.ts",
+      "after_hash": "3c30db620bf8e6df7ce082acab9b02db54db245c1db8d086ff978015d1d811ac",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/r3f-renderer-adapter.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/webgl-runtime.ts",
+      "logical_path": "js/scene/webgl-runtime.ts",
+      "after_hash": "e5992598b078c24a14a3924c575f16fa7de9d2b1d3a11b581d22de641be5f77a",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/webgl-runtime.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/metadata.ts",
+      "logical_path": "js/scene/metadata.ts",
+      "after_hash": "7551692d39fd53ed0eb5ec63e86585b01dec7582219acb675d545685d25281b3",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/metadata.ts accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "lib/scene/forge/variants/source-owned-renderer-boundary/README.md",
+      "logical_path": "js/scene/README.md",
+      "after_hash": "c21db414af303b8ca1817c9a132e5691060a71d3238f34acb489f4aad04d4158",
+      "change": "add",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/scene/forge/variants/source-owned-renderer-boundary/README.md accepted and written as a new Forge-owned file."
+    },
+    {
+      "path": "components/scene/launch-scene.tsx",
+      "logical_path": "js/components/scene/launch-scene.tsx",
+      "before_hash": "d38f097a4832f9dfd081ab87faf395c180365e38224d5b53ee799807255e2fe4",
+      "tracked_hash": "a29df79f1af7ee7dc0a9d2ddc0e2d7bedd7f3cf1750e0c38de9e6d33e97717fb",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "components/scene/launch-scene.tsx is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/README.md",
+      "logical_path": "js/lib/scene/README.md",
+      "before_hash": "c21db414af303b8ca1817c9a132e5691060a71d3238f34acb489f4aad04d4158",
+      "tracked_hash": "e6be95996809a6b5f92b470ea5a7d8c3256823ae1ed4cac264306dff32423080",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/README.md is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/bounds-report.ts",
+      "logical_path": "js/lib/scene/bounds-report.ts",
+      "before_hash": "cf19d64a30bf48410f775c68838982efbe836d684759a9f2834476783161179b",
+      "tracked_hash": "c8f3ca94cfb2f0b6722ac59f6cec3444f9cc519d66f88bb84a7d4c34c735eccd",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/bounds-report.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/capability-report.ts",
+      "logical_path": "js/lib/scene/capability-report.ts",
+      "before_hash": "816c8f004dc09b98ce71de492aeccd1d65e1a03dd9500c450319ef9301c73a11",
+      "tracked_hash": "f738c78e27e6a45693efe8d0a10b7e4a7e7e6dc49c73cad4942c2a7471b94711",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/capability-report.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/dashboard-controls.ts",
+      "logical_path": "js/lib/scene/dashboard-controls.ts",
+      "before_hash": "34ccfa77a5f0a4af57d8c820d7da9fdcdf732ffa142541861d79c00a350ecb6a",
+      "tracked_hash": "14eb36c18b781fbfe784690941387ed34e464f6019cfa284cae668c27963e865",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/dashboard-controls.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/dashboard-workflow.ts",
+      "logical_path": "js/lib/scene/dashboard-workflow.ts",
+      "before_hash": "c360d505281e6e96260fce8de832906def57d5b5c6b7316a1aabd5f8f699c458",
+      "tracked_hash": "1b5dd46979bc3aa214581bb8153dccc9cfe580cf31505c56ad93745e8dc94c5b",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/dashboard-workflow.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/frame-sample.ts",
+      "logical_path": "js/lib/scene/frame-sample.ts",
+      "before_hash": "69da51daba5af57894d0e553da978e2a295eeb3500ef1d21b672d718589f7f9d",
+      "tracked_hash": "5313cd1f62f0942f3def5c1a17da0d714d7fecc53c34ef395ff576b28d971961",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/frame-sample.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/index.ts",
+      "logical_path": "js/lib/scene/index.ts",
+      "before_hash": "271c2161903b4a0820517af878914faecf9bdb2e7e690a035031e02e2f8a460d",
+      "tracked_hash": "aba6d0b1e302fdc74cb01b05f158f92ee9738263f6844181556cd268e1561fd2",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/index.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/interaction.ts",
+      "logical_path": "js/lib/scene/interaction.ts",
+      "before_hash": "572d8b4fc7c70255977faa5ac96d9b9cc8787ce711db35ff29f6584c68f1bcf8",
+      "tracked_hash": "2a0f1adcea1d449b344f92186dc4dbc9c62ec5e99991afec880515506835edc9",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/interaction.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/metadata.ts",
+      "logical_path": "js/lib/scene/metadata.ts",
+      "before_hash": "7a179424d15049c0d906c239761ff5b3050586882ea0e98bb27ed4f8e602ff8c",
+      "tracked_hash": "a58a6d3521ec6b292a5122dca1ab04c7353fc52da2d46231c5836cbaab01c795",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/metadata.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/performance-monitor.ts",
+      "logical_path": "js/lib/scene/performance-monitor.ts",
+      "before_hash": "a2b2d7a5e44f608c8d3e121b21a7148f993f83ad789df32661a9b1ee5ef1eed6",
+      "tracked_hash": "ea08afd5d4af554407575cf8f037aa3442107d086a18dbea4d133b9be460ce1c",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/performance-monitor.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/preset.ts",
+      "logical_path": "js/lib/scene/preset.ts",
+      "before_hash": "f3e37dce4cdaf3a8c9f15538ab839b14a1aed91fda47b24899aa75cfed5c202e",
+      "tracked_hash": "3f039904be1e67d9402e2bc345acc22e7b16ef676705dd0da283f6902e67339b",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/preset.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/preview-readiness.ts",
+      "logical_path": "js/lib/scene/preview-readiness.ts",
+      "before_hash": "733688af1ac03863a396f5929c8cdd1b86bb11491c2adf38a14c75f79b24a9f3",
+      "tracked_hash": "b772aaf6c530ab8e17c66d3c0be7fbd42c11983f7daf1065cc17b44aebb94d1c",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/preview-readiness.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/r3f-renderer-adapter.ts",
+      "logical_path": "js/lib/scene/r3f-renderer-adapter.ts",
+      "before_hash": "3c30db620bf8e6df7ce082acab9b02db54db245c1db8d086ff978015d1d811ac",
+      "tracked_hash": "22f251074586e44714ec0320c4ba25402d1b5086388b419e83271e6154f8b919",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/r3f-renderer-adapter.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/raycast-report.ts",
+      "logical_path": "js/lib/scene/raycast-report.ts",
+      "before_hash": "ffe2176c109218f3d46e4de754be8cc031b45d65be840f5692fa99500f86dc52",
+      "tracked_hash": "c4653d6c93f82b25df9ab9711dcacafbb83fb452adc878b593f1443bb652f1e6",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/raycast-report.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/renderer-handoff.ts",
+      "logical_path": "js/lib/scene/renderer-handoff.ts",
+      "before_hash": "e36defc2d4e127220e1fcb9da183af1df154b199d446411308de6b31ffe3759a",
+      "tracked_hash": "28e37459fd584b34d4e2ce77bbe05a8a030e52efcb97467d43c4fbc2ae6eea42",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/renderer-handoff.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/types.ts",
+      "logical_path": "js/lib/scene/types.ts",
+      "before_hash": "c768c79b049c416ee997cac666db3058ee8ab762e3303041e15d5550978c556c",
+      "tracked_hash": "ef812e2ba01d8bcbe6b4b091514da099464a6a8d9ce357b8b522ace79af78e16",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/types.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/viewport-report.ts",
+      "logical_path": "js/lib/scene/viewport-report.ts",
+      "before_hash": "5ce992180c89271e55575aabb79e9dc602758661e3fed17113013643cfcefc6c",
+      "tracked_hash": "90fcc500d93a916c9c94a2b36c52a87060bd044c0b32270982070eba04c82e54",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/viewport-report.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "lib/scene/webgl-runtime.ts",
+      "logical_path": "js/lib/scene/webgl-runtime.ts",
+      "before_hash": "e5992598b078c24a14a3924c575f16fa7de9d2b1d3a11b581d22de641be5f77a",
+      "tracked_hash": "3b463ba3e0b827d78279dd8b17892c16645d784cd381da0372e8dbaea1ecf0a1",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/scene/webgl-runtime.ts is tracked locally but absent from the latest package."
+    }
+  ],
+  "risk_score": 0,
+  "timestamp": "2026-05-25T14:24:01.540862600+00:00",
+  "signature": null
+}

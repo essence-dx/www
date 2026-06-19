@@ -1,0 +1,221 @@
+{
+  "schema": "dx.www.readiness.native_event_browser_binder_receipt_contract",
+  "schema_revision": 1,
+  "passed": true,
+  "browser_runtime_executed": true,
+  "binder_global_present": true,
+  "unsupported_listener_attached": false,
+  "supported_event_count": 321,
+  "catalog_hash": "blake3:e3c9ade97c3511850b0c8cf320dea87fcb526ac9d77ee524a37d9c307ec36339",
+  "expected_catalog_count": 321,
+  "expected_catalog_hash": "blake3:e3c9ade97c3511850b0c8cf320dea87fcb526ac9d77ee524a37d9c307ec36339",
+  "catalog_contract_current": true,
+  "catalog_contract_source": ".dx/receipts/readiness/native-events-latest.json",
+  "catalog_contract_stale_reason": null,
+  "required_events": [
+    "click",
+    "pointermove",
+    "input"
+  ],
+  "listener_events": [
+    "click",
+    "input",
+    "pointermove"
+  ],
+  "missing_listener_events": [],
+  "missing_contract_events": [],
+  "missing_replay_events": [],
+  "browser_event_constructors": {
+    "click": "MouseEvent",
+    "pointermove": "PointerEvent",
+    "input": "InputEvent",
+    "dxunsupportedreadinessevent": "Event"
+  },
+  "browser_event_replay_results": [
+    {
+      "event": "click",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "click",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "click",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "click",
+      "tag": "input",
+      "previewed": false
+    },
+    {
+      "event": "click",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "click",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "click",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "click",
+      "tag": "input",
+      "previewed": false
+    },
+    {
+      "event": "pointermove",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "pointermove",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "pointermove",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "pointermove",
+      "tag": "input",
+      "previewed": false
+    },
+    {
+      "event": "pointermove",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "pointermove",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "pointermove",
+      "tag": "button",
+      "previewed": true
+    },
+    {
+      "event": "pointermove",
+      "tag": "input",
+      "previewed": false
+    },
+    {
+      "event": "input",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "input",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "input",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "input",
+      "tag": "input",
+      "previewed": true
+    },
+    {
+      "event": "input",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "input",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "input",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "input",
+      "tag": "input",
+      "previewed": true
+    },
+    {
+      "event": "dxunsupportedreadinessevent",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "dxunsupportedreadinessevent",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "dxunsupportedreadinessevent",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "dxunsupportedreadinessevent",
+      "tag": "input",
+      "previewed": false
+    },
+    {
+      "event": "dxunsupportedreadinessevent",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "dxunsupportedreadinessevent",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "dxunsupportedreadinessevent",
+      "tag": "button",
+      "previewed": false
+    },
+    {
+      "event": "dxunsupportedreadinessevent",
+      "tag": "input",
+      "previewed": false
+    }
+  ],
+  "preview_event_count": 38,
+  "state_dispatch_count": 38,
+  "react_synthetic_events": false,
+  "full_react_event_parity": false,
+  "browser_snapshot_hash": "sha256:d16968c7159a338d1baf353853e46363290f622ecf32d12348a9c73a41d6351b",
+  "proof_scope": "local-in-app-browser-native-event-binder-replay",
+  "receipt_source": "dx.www.readiness.browser_receipt_page_snapshot.v1",
+  "page_url": "http://127.0.0.1:3000/state-runtime",
+  "release_ready": false,
+  "fastest_world_claim": false,
+  "import_source_path": ".dx/receipts/readiness/browser-import-candidates/native-event-browser-binder-latest.json",
+  "import_source_within_project": true,
+  "imported_by": "www readiness --import-native-event-browser-binder-receipt",
+  "import_rule": "validated-current-before-canonical-write",
+  "import_expectation": "real-browser-json-receipt-current-before-canonical-json-sr-machine-write",
+  "import_replay_boundary": "local-browser-proof-only-hosted-provider-proof-still-required",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/native-event-browser-binder-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-native-event-browser-binder-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "40fb987710c28a46e5eae1fc7051700978fdef0a3eb6affab91bf9813d863924",
+    "machine_blake3": "cc69cff0e4316c8fc5c11bf58dc27c0a64ac26bb552dce170ac81544588a6bca"
+  }
+}

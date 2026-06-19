@@ -1,0 +1,64 @@
+{
+  "schema": "dx.forge.conversion_receipt",
+  "source_project": "supabase",
+  "source_repo": "https://github.com/supabase/supabase.git",
+  "source_commit": "fdeaaec098e6151a199ff84b55b030547afe7eee",
+  "source_local_path": "G:\\WWW\\inspirations\\supabase",
+  "license": "Apache-2.0",
+  "license_notice_preserved": true,
+  "license_files_preserved": [
+    "notices/supabase/LICENSE"
+  ],
+  "converted_route": "/database",
+  "source_surface_map": "forge/source-surfaces/supabase.json",
+  "visual_audit": "forge/visual-audits/supabase.json",
+  "converted_source_files": [
+    "apps/studio/pages/project/[ref]/editor/index.tsx",
+    "apps/studio/pages/project/[ref]/auth/users.tsx",
+    "apps/studio/pages/project/[ref]/storage/files/index.tsx",
+    "apps/studio/data/database/table-definition-query.ts",
+    "apps/studio/data/database/table-columns-query.ts",
+    "apps/studio/data/auth/users-infinite-query.ts",
+    "apps/studio/data/auth/auth-config-query.ts",
+    "apps/studio/data/storage/buckets-query.ts"
+  ],
+  "converted_files": [
+    "pages/database.html",
+    "components/ConversionRouteHeader.tsx",
+    "components/SourceSurfaceTable.tsx",
+    "components/RuntimeBoundaryPanel.tsx",
+    "styles/conversion-proof.css"
+  ],
+  "copied_assets": [
+    {
+      "source_path": "apps/studio/public/supabase-logo.svg",
+      "target_path": "public/vendor/supabase-logo.svg"
+    }
+  ],
+  "forge_primitives": [
+    "cn",
+    "theme-provider",
+    "button",
+    "input",
+    "badge",
+    "table",
+    "tabs",
+    "dropdown",
+    "sidebar"
+  ],
+  "launch_shims": [
+    "next-routing",
+    "tanstack-query",
+    "supabase-auth-storage"
+  ],
+  "unsupported_runtime_features": [
+    "Hosted project credentials are not loaded.",
+    "Postgres, auth, and storage mutations are not executed.",
+    "TanStack Query runtime behavior is represented structurally."
+  ],
+  "source_inspection_commands": [
+    "rg --files | rg \"pages\\\\project\\\\[ref]\"",
+    "git rev-parse HEAD"
+  ],
+  "no_runtime_execution": true
+}

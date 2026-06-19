@@ -1,0 +1,195 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Payments",
+    "package_id": "payments/stripe-js",
+    "upstream_package": "@stripe/stripe-js",
+    "upstream_version": "9.6.0",
+    "source_mirrors": [
+      "G:/WWW/inspirations/stripe-js"
+    ],
+    "based_on": "Stripe.js browser loader plus server-owned Checkout and webhook boundaries"
+  },
+  "inspected_upstream_files": [
+    "package.json",
+    "src/pure.ts",
+    "src/shared.ts",
+    "types/shared.d.ts",
+    "types/stripe-js/stripe.d.ts",
+    "types/stripe-js/embedded-checkout.d.ts",
+    "types/stripe-js/checkout.d.ts"
+  ],
+  "upstream_public_apis": [
+    "loadStripe",
+    "loadStripe.setLoadParameters",
+    "stripe.confirmPayment",
+    "stripe.retrievePaymentIntent",
+    "stripe.createEmbeddedCheckoutPage",
+    "StripeEmbeddedCheckoutOptions.fetchClientSecret"
+  ],
+  "guard": {
+    "id": "payments-generated-starter-materialization",
+    "routes": [
+      "/",
+      "/api/payments/stripe-js/readiness"
+    ],
+    "guard_file": "benchmarks/payments-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\payments-dx-check-package-lane-panel.test.ts",
+    "proves": [
+      "Payments generated-starter materialization guard",
+      "data-dx-check-package-lane-row=\"payments/stripe-js\"",
+      "data-dx-token-scope=\"payments/stripe-js\"",
+      "payments:receipt-hash-refresh",
+      "payments-readiness-route",
+      "app/api/payments/stripe-js/readiness/route.ts",
+      "runtimeExecution: false and stripeLiveExecution: false readiness proof",
+      "docs/packages/payments.source-guard-runbook.json",
+      "without claiming live Stripe Checkout or webhook runtime proof",
+      "payments/stripe-js source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "payments-generated-starter-materialization",
+      "purpose": "The generated starter preserves the Payments package-lane row, helper freshness markers, readiness route, and package-scoped dx-check panel without live Stripe Checkout or webhook runtime proof.",
+      "evidence_field": "benchmarks/payments-dx-check-package-lane-panel.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\payments-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-only Payments package-lane row, generated starter materialization, helper freshness markers, readiness route, and dx-check panel package scope without live Stripe Checkout or webhook runtime proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "helper_freshness_guards": [
+    {
+      "id": "payments-lower-dx-check-helper-freshness",
+      "routes": [
+        "/"
+      ],
+      "guard_file": "core/src/ecosystem/project_check/payments_dx_check.rs",
+      "command": "cargo test -q -p dx-www-compiler payments_hash_refresh_stale_helper_keeps_source_hash_clean --lib",
+      "proves": [
+        "Payments lower-level dx-check helper freshness fixture",
+        "payments_receipt_hash_refresh_current",
+        "payments_receipt_hash_refresh_stale",
+        "payments_receipt_hash_refresh_missing",
+        "payments_hash_mismatch stays byte-derived",
+        "payments-readiness-route",
+        "docs/packages/payments.source-guard-runbook.json",
+        "without claiming live Stripe Checkout or webhook runtime proof",
+        "payments/stripe-js source-only Studio discovery"
+      ],
+      "execution_policy": "source-only",
+      "writes_files": false,
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "node_modules_required": false
+    },
+    {
+      "id": "payments-check-panel-helper-freshness",
+      "routes": [
+        "/"
+      ],
+      "guard_file": "core/src/ecosystem/dx_check_receipt.rs",
+      "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_payments_stale_helper_without_source_hash_drift --lib",
+      "proves": [
+        "Payments DX Studio/check-panel helper freshness fixture",
+        "payments_receipt_hash_refresh_current",
+        "payments_receipt_hash_refresh_stale",
+        "payments_receipt_hash_refresh_missing",
+        "payments_hash_mismatch stays byte-derived",
+        "payments-readiness-route",
+        "docs/packages/payments.source-guard-runbook.json",
+        "without claiming live Stripe Checkout or webhook runtime proof",
+        "payments/stripe-js source-only Studio discovery"
+      ],
+      "execution_policy": "source-only",
+      "writes_files": false,
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "node_modules_required": false
+    }
+  ],
+  "source_guard_fixture_paths": [
+    {
+      "source_guard_id": "payments-lower-dx-check-helper-freshness",
+      "package_id": "payments/stripe-js",
+      "fixture_path": "docs/packages/payments.source-guard-runbook.json",
+      "schema": "dx.forge.package.source_guard_runbook_fixture"
+    },
+    {
+      "source_guard_id": "payments-check-panel-helper-freshness",
+      "package_id": "payments/stripe-js",
+      "fixture_path": "docs/packages/payments.source-guard-runbook.json",
+      "schema": "dx.forge.package.source_guard_runbook_fixture"
+    }
+  ],
+  "dx_check_metrics": [
+    "payments_receipt_hash_refresh_current",
+    "payments_receipt_hash_refresh_stale",
+    "payments_receipt_hash_refresh_missing",
+    "payments_hash_mismatch",
+    "payments-readiness-route",
+    "stripeLiveExecution: false"
+  ],
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture_path": "docs/packages/payments.source-guard-runbook.json",
+    "route": "/",
+    "runtime_proof": false,
+    "zed_visibility": "payments:receipt-hash-refresh"
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package",
+    "payments_receipt_hash_refresh_current",
+    "payments_receipt_hash_refresh_stale",
+    "payments_receipt_hash_refresh_missing",
+    "payments_hash_mismatch"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json",
+    "hash_helper": "examples/template/payments-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/payments-receipt-hashes.ts --check --json",
+    "studio_manifest_source": "dx-www/src/cli/studio_manifest.rs",
+    "zed_visibility": "payments:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "Stripe account setup",
+    "product catalog and Price IDs",
+    "Checkout redirect handling",
+    "webhook delivery and idempotent fulfillment",
+    "tax, fraud, disputes, refunds, and compliance policy",
+    "runtime dependency installation"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: live Stripe Checkout redirects, webhook delivery, fulfillment, billing policy, and provider credentials stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

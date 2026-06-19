@@ -1,0 +1,57 @@
+{
+  "schema": "dx.forge.template_readiness.package",
+  "lane_number": 5,
+  "lane_name": "Payments + AI + Automations",
+  "package_id": "automations/n8n",
+  "official_package_name": "Automation Connectors",
+  "upstream_package": "n8n-nodes-base",
+  "upstream_version": "2.22.0",
+  "dx_version": "2.22.0-dx.0",
+  "classification": "provider-gated",
+  "runtime_proof": false,
+  "live_provider_execution": false,
+  "live_workflow_execution": false,
+  "webhook_registration": false,
+  "secret_access": false,
+  "readiness_route": "/api/automations/n8n/dry-run",
+  "app_route_handler": "app/api/automations/n8n/dry-run/route.ts",
+  "required_env": [
+    "SLACK_BOT_TOKEN",
+    "SLACK_CLIENT_ID",
+    "SLACK_CLIENT_SECRET",
+    "NOTION_API_KEY",
+    "NOTION_CLIENT_ID",
+    "NOTION_CLIENT_SECRET"
+  ],
+  "selected_provider_surfaces": [
+    "Slack release note",
+    "Notion launch log"
+  ],
+  "source_owned_surfaces": [
+    "lib/automations/n8n/catalog.ts",
+    "lib/automations/n8n/readiness.ts",
+    "lib/automations/n8n/receipt.ts",
+    "lib/automations/n8n/metadata.ts",
+    "app/api/automations/n8n/dry-run/route.ts",
+    "components/template-app/package-reality-panel.tsx"
+  ],
+  "template_usage": [
+    "dry-run route lists selected connector readiness without secrets",
+    "dry-run POST drafts local DX/Zed run receipts",
+    "dashboard provider card links the dry-run endpoint and receipt",
+    "run mode remains blocked when selected connector credentials are missing"
+  ],
+  "blocked_until_configured": [
+    "Slack token or OAuth client credentials",
+    "Notion API key or OAuth client credentials",
+    "workspace approval for webhook exposure",
+    "n8n runtime or compatible workflow executor",
+    "production retry, idempotency, and audit policy",
+    "provider-specific rate limit handling"
+  ],
+  "honesty_notes": [
+    "This receipt is not live n8n execution, webhook registration, Slack delivery, or Notion write proof.",
+    "The template owns editable connector metadata, readiness checks, and local run receipts only.",
+    "No secret values are read into this receipt."
+  ]
+}

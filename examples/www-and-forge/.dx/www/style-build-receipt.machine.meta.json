@@ -1,0 +1,13 @@
+{
+  "cache_schema": "dx.www.json_receipt",
+  "cache_version": 2,
+  "cache_kind": 3,
+  "source_path": "G:\\Dx\\www-and-forge\\.dx/receipts/style/build.json",
+  "source_len": 215712,
+  "source_modified_unix_ms": 1780854533419,
+  "source_blake3": "7c5c01e961612d4a8ecd9422f19c2208c002f1a7d2f23d7171db448f0a1089a8",
+  "machine_path": "G:\\Dx\\www-and-forge\\.dx\\www\\style-build-receipt.machine",
+  "machine_payload_len": 231012,
+  "machine_archive_len": 231012,
+  "machine_payload_blake3": "833290d13b7164d9bc237f90dad69934da84eef0e2171f6f0bb573149224cdc8"
+}

@@ -1,0 +1,4781 @@
+{
+  "version": 1,
+  "deployment_kind": "dx-www-hosted-preview-bundle",
+  "provider": "dx-www-cloud-local",
+  "adapter_kind": "account-free-preview",
+  "generated": "2026-06-10T03:50:08.916499100+00:00",
+  "requires_provider_account": false,
+  "account_bound": false,
+  "network_required": false,
+  "secrets_required": false,
+  "node_modules_required": false,
+  "package_installs_executed": false,
+  "lifecycle_scripts_executed": false,
+  "build": {
+    "dir": ".dx/build",
+    "manifest_hash": "blake3:778114897623c8e434a093f37b398c353e1d25579eaf025752307160174914c7",
+    "route_count": 1,
+    "immutable_asset_count": 272,
+    "server_action_count": 0,
+    "observability_path": "observability.json"
+  },
+  "deploy_adapter": {
+    "path": "deploy-adapter.json",
+    "adapter": "dx-www-static-hosting",
+    "no_node_modules_required": true,
+    "cache_headers": [
+      {
+        "glob": "**/*.html",
+        "cache_control": "public, max-age=0, must-revalidate"
+      },
+      {
+        "glob": "**/*.dxpk",
+        "cache_control": "public, max-age=31536000, immutable"
+      },
+      {
+        "glob": "public/**/*",
+        "cache_control": "public, max-age=31536000, immutable"
+      }
+    ]
+  },
+  "provider_adapter": {
+    "path": "provider-adapter.dx-cloud.json",
+    "provider": "dx-www-cloud-local",
+    "requires_provider_account": false,
+    "network_required": false
+  },
+  "forge": {
+    "root": "forge",
+    "source_manifest": {
+      "path": ".dx/forge/source-manifest.json",
+      "bundle_path": "forge/source-manifest.json",
+      "kind": "forge-source-manifest",
+      "hash": "blake3:fc1fe2d538ba46525226e6155a69ef855c9fb9e00fd98b95e769ac821079ad3a",
+      "source_owned": true,
+      "package_installs_executed": false,
+      "lifecycle_scripts_executed": false
+    },
+    "template_manifest": null,
+    "package_count": 0,
+    "receipt_count": 4,
+    "receipts_copied": true,
+    "receipts": [
+      {
+        "path": ".dx/forge/receipts/2026-05-21-convex-to-backend.json",
+        "bundle_path": "forge/receipts/2026-05-21-convex-to-backend.json",
+        "kind": "forge-receipt",
+        "package_id": "unknown",
+        "variant": "default",
+        "action": "unknown",
+        "file_count": 0,
+        "risk_score": 0,
+        "hash": "blake3:a3fd18f03f68ef9400559184bc784a648feeb0c93419ab791d933cdcbeff2026",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/2026-05-21-dx-landing-to-index.json",
+        "bundle_path": "forge/receipts/2026-05-21-dx-landing-to-index.json",
+        "kind": "forge-receipt",
+        "package_id": "unknown",
+        "variant": "default",
+        "action": "unknown",
+        "file_count": 0,
+        "risk_score": 0,
+        "hash": "blake3:b4a0ca9b3ef07afb7b42eb7a80d5160e70b1d061c32c72de0d66fadbf750d70f",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json",
+        "bundle_path": "forge/receipts/2026-05-21-shadcn-ui-to-ui.json",
+        "kind": "forge-receipt",
+        "package_id": "unknown",
+        "variant": "default",
+        "action": "unknown",
+        "file_count": 0,
+        "risk_score": 0,
+        "hash": "blake3:f4a9f7d89e344acd216a95312f59ec7f03b8582b9fc6dfe524cbf3d5928c6740",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/2026-05-21-supabase-to-database.json",
+        "bundle_path": "forge/receipts/2026-05-21-supabase-to-database.json",
+        "kind": "forge-receipt",
+        "package_id": "unknown",
+        "variant": "default",
+        "action": "unknown",
+        "file_count": 0,
+        "risk_score": 0,
+        "hash": "blake3:763c27a43079a5adca2d09e14a7d35b2eb0e2e9c000f4f9d7730f45d5e296d7e",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      }
+    ],
+    "source_owned": true,
+    "package_installs_executed": false,
+    "lifecycle_scripts_executed": false
+  },
+  "routes": [
+    {
+      "path": "/",
+      "html": "app/index.html",
+      "execution_contract": "app/app-router-execution.json"
+    }
+  ],
+  "server_actions": [],
+  "health_checks": [
+    {
+      "path": "/api/auth/session",
+      "method": "GET",
+      "source_method": "GET",
+      "implicit_method": false,
+      "allowed_methods": [
+        "GET",
+        "HEAD",
+        "OPTIONS"
+      ],
+      "declared_methods": [
+        "GET"
+      ],
+      "source_path": "app/api/auth/session/route.ts",
+      "receipt": "route-handler-receipts.json"
+    },
+    {
+      "path": "/api/auth/session",
+      "method": "HEAD",
+      "source_method": "GET",
+      "implicit_method": true,
+      "allowed_methods": [
+        "GET",
+        "HEAD",
+        "OPTIONS"
+      ],
+      "declared_methods": [
+        "GET"
+      ],
+      "source_path": "app/api/auth/session/route.ts",
+      "receipt": "route-handler-receipts.json"
+    },
+    {
+      "path": "/api/trpc/health",
+      "method": "GET",
+      "source_method": "GET",
+      "implicit_method": false,
+      "allowed_methods": [
+        "GET",
+        "HEAD",
+        "POST",
+        "OPTIONS"
+      ],
+      "declared_methods": [
+        "GET",
+        "POST"
+      ],
+      "source_path": "app/api/trpc/health/route.ts",
+      "receipt": "route-handler-receipts.json"
+    },
+    {
+      "path": "/api/trpc/health",
+      "method": "HEAD",
+      "source_method": "GET",
+      "implicit_method": true,
+      "allowed_methods": [
+        "GET",
+        "HEAD",
+        "POST",
+        "OPTIONS"
+      ],
+      "declared_methods": [
+        "GET",
+        "POST"
+      ],
+      "source_path": "app/api/trpc/health/route.ts",
+      "receipt": "route-handler-receipts.json"
+    }
+  ],
+  "immutable_assets": [
+    {
+      "path": "_dx/styles/react-route-fee05bf74d8b6a73.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "_dx/styles/react-route-fee05bf74d8b6a73.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "_dx/styles/react-route-fee05bf74d8b6a73.css"
+    },
+    {
+      "path": "_dx/styles/react-route-fee05bf74d8b6a73.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "_dx/styles/react-route-fee05bf74d8b6a73.css"
+    },
+    {
+      "path": "app/index.dxpk",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/octet-stream",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "app/index.dxpk.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/octet-stream",
+      "content_encoding": "br",
+      "encoded_from": "app/index.dxpk"
+    },
+    {
+      "path": "app/index.dxpk.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/octet-stream",
+      "content_encoding": "gzip",
+      "encoded_from": "app/index.dxpk"
+    },
+    {
+      "path": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg"
+    },
+    {
+      "path": "public/dx-landing-runtime-74b4b9f208e8e1f2.js",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/dx-landing-runtime-74b4b9f208e8e1f2.js.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "public/dx-landing-runtime-74b4b9f208e8e1f2.js"
+    },
+    {
+      "path": "public/dx-landing-runtime-74b4b9f208e8e1f2.js.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "public/dx-landing-runtime-74b4b9f208e8e1f2.js"
+    },
+    {
+      "path": "public/dx-landing-runtime.js",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/dx-landing-runtime.js.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "public/dx-landing-runtime.js"
+    },
+    {
+      "path": "public/dx-landing-runtime.js.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "public/dx-landing-runtime.js"
+    },
+    {
+      "path": "public/favicon-94b1a6ce1d9289cf.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/favicon-94b1a6ce1d9289cf.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon-94b1a6ce1d9289cf.svg"
+    },
+    {
+      "path": "public/favicon-94b1a6ce1d9289cf.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon-94b1a6ce1d9289cf.svg"
+    },
+    {
+      "path": "public/favicon.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/favicon.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon.svg"
+    },
+    {
+      "path": "public/favicon.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/android-6179e126fdf2b690.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/android-6179e126fdf2b690.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/android-6179e126fdf2b690.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/android-6179e126fdf2b690.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/android-6179e126fdf2b690.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/android.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/android.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/android.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/android.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/android.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-64608ad998267c26.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-64608ad998267c26.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/apple-64608ad998267c26.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-64608ad998267c26.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/apple-64608ad998267c26.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/apple-dark.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/apple-dark.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/apple.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/apple.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/apple.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/apple.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/apple.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/chrome.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/chrome.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/firefox.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/firefox.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/linux.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/linux.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/linux.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/linux.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/linux.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/rust-dark.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/rust-dark.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/rust.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/rust.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/rust.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/rust.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/rust.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/vercel-dark.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/vercel-dark.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/vercel.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/vercel.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/windows.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icons/platform-svgl/windows.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icons/platform-svgl/windows.svg"
+    },
+    {
+      "path": "public/icons/platform-svgl/windows.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icons/platform-svgl/windows.svg"
+    },
+    {
+      "path": "public/launch-runtime-3ae46d2cd01071b0.js",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/launch-runtime-3ae46d2cd01071b0.js.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "public/launch-runtime-3ae46d2cd01071b0.js"
+    },
+    {
+      "path": "public/launch-runtime-3ae46d2cd01071b0.js.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "public/launch-runtime-3ae46d2cd01071b0.js"
+    },
+    {
+      "path": "public/launch-runtime.js",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/launch-runtime.js.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "public/launch-runtime.js"
+    },
+    {
+      "path": "public/launch-runtime.js.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "application/javascript; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "public/launch-runtime.js"
+    },
+    {
+      "path": "public/thumbnails/amber-fd8517e5453c2145.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/amber.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/blue-2daf5706a85142cf.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/blue.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/cyan-f5830d34ea43ba2a.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/cyan.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/emerald-ac411c3e669be3e2.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/emerald.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/fuchsia-2f08a8ddcbad25fc.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/fuchsia.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/green-4a2f9e787e85969f.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/green-variant-acb7c68d24505294.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/green-variant.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/green.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/indigo-028b20932f970d59.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/indigo.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/lime-2050bbd5f412de7d.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/lime.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/orange-b3e5cd7499323991.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/orange.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/pink-fe1424b02465d707.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/pink.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/purple-8afc4bf4d04f753d.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/purple.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/rainbow-6dcd801922d6c794.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/rainbow.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/red-e02103784760ee62.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/red.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/rose-2700bcddc2e4cf44.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/rose.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/sky-835aeea13aa90224.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/sky.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/teal-00e58884c11c9b79.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/teal.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/variant-1-2c5218548ca63387.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/variant-1.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/variant-2-6126e146834c330a.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/variant-2.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/violet-8c81f7f2d8a3333c.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/violet.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/yellow-8e4949f48aecba7d.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/thumbnails/yellow.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/vendor/convex-logo-b2a1cfa88d831fea.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/vendor/convex-logo-b2a1cfa88d831fea.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/vendor/convex-logo-b2a1cfa88d831fea.svg"
+    },
+    {
+      "path": "public/vendor/convex-logo-b2a1cfa88d831fea.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/vendor/convex-logo-b2a1cfa88d831fea.svg"
+    },
+    {
+      "path": "public/vendor/convex-logo.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/vendor/convex-logo.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/vendor/convex-logo.svg"
+    },
+    {
+      "path": "public/vendor/convex-logo.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/vendor/convex-logo.svg"
+    },
+    {
+      "path": "public/vendor/shadcn-favicon-32x32-73186821201a7eb8.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/vendor/shadcn-favicon-32x32.png",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/png",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/vendor/supabase-logo-f0c8a57504f71be9.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/vendor/supabase-logo-f0c8a57504f71be9.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/vendor/supabase-logo-f0c8a57504f71be9.svg"
+    },
+    {
+      "path": "public/vendor/supabase-logo-f0c8a57504f71be9.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/vendor/supabase-logo-f0c8a57504f71be9.svg"
+    },
+    {
+      "path": "public/vendor/supabase-logo.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/vendor/supabase-logo.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/vendor/supabase-logo.svg"
+    },
+    {
+      "path": "public/vendor/supabase-logo.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/vendor/supabase-logo.svg"
+    },
+    {
+      "path": "styles/conversion-proof.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/conversion-proof.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/conversion-proof.css"
+    },
+    {
+      "path": "styles/conversion-proof.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/conversion-proof.css"
+    },
+    {
+      "path": "styles/dx-landing.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/dx-landing.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/dx-landing.css"
+    },
+    {
+      "path": "styles/dx-landing.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/dx-landing.css"
+    },
+    {
+      "path": "styles/generated.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/generated.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/generated.css"
+    },
+    {
+      "path": "styles/generated.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/generated.css"
+    },
+    {
+      "path": "styles/globals.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/globals.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/globals.css"
+    },
+    {
+      "path": "styles/globals.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/globals.css"
+    },
+    {
+      "path": "styles/launch-runtime.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/launch-runtime.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/launch-runtime.css"
+    },
+    {
+      "path": "styles/launch-runtime.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/launch-runtime.css"
+    },
+    {
+      "path": "styles/theme.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/theme.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/theme.css"
+    },
+    {
+      "path": "styles/theme.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/theme.css"
+    }
+  ],
+  "rollback": {
+    "metadata_path": "rollback.json",
+    "strategy": "manifest-pinned-asset-rollback"
+  },
+  "observability": {
+    "metadata_path": "observability.json",
+    "ready_path": "/.dx/ready",
+    "metrics_path": "/.dx/observability",
+    "collects_secrets": false,
+    "collects_request_headers": false,
+    "collects_request_payloads": false,
+    "cache_control": "no-store"
+  },
+  "forge_hosting_manifest": {
+    "path": "forge-hosting-manifest.json",
+    "manifest_kind": "dx-www-forge-hosting-release-gate",
+    "coverage_score": 100,
+    "account_free_preview_ready": true,
+    "hosted_release_ready": false,
+    "provider_portability": true,
+    "cache_header_count": 3,
+    "observability_metadata_path": "observability.json",
+    "rollback_metadata_path": "rollback.json"
+  },
+  "bundle": {
+    "format": "directory-manifest",
+    "root": ".dx/build",
+    "artifact_count": 292,
+    "artifacts": [
+      {
+        "path": "_dx/styles/react-route-fee05bf74d8b6a73.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "_dx/styles/react-route-fee05bf74d8b6a73.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "_dx/styles/react-route-fee05bf74d8b6a73.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "app/app-router-execution.json",
+        "kind": "app-router-execution",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "app/index.dxpk",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "app/index.dxpk.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "app/index.dxpk.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "app/index.html",
+        "kind": "route-html",
+        "cache_control": "public, max-age=0, must-revalidate",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "deploy-adapter.json",
+        "kind": "deploy-contract",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge-hosting-manifest.json",
+        "kind": "forge-hosting-manifest",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/2026-05-21-convex-to-backend.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/2026-05-21-dx-landing-to-index.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/2026-05-21-shadcn-ui-to-ui.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/2026-05-21-supabase-to-database.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/source-manifest.json",
+        "kind": "forge-source-manifest",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "hosted-preview.json",
+        "kind": "hosted-preview-contract",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "import-resolution.json",
+        "kind": "import-resolution",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "manifest.json",
+        "kind": "build-manifest",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "observability.json",
+        "kind": "production-observability",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "provider-adapter.dx-cloud.json",
+        "kind": "provider-adapter",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/dx-landing-runtime-74b4b9f208e8e1f2.js",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/dx-landing-runtime-74b4b9f208e8e1f2.js.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/dx-landing-runtime-74b4b9f208e8e1f2.js.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/dx-landing-runtime.js",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/dx-landing-runtime.js.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/dx-landing-runtime.js.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon-94b1a6ce1d9289cf.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon-94b1a6ce1d9289cf.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon-94b1a6ce1d9289cf.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/android-6179e126fdf2b690.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/android-6179e126fdf2b690.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/android-6179e126fdf2b690.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/android.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/android.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/android.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple-64608ad998267c26.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple-64608ad998267c26.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple-64608ad998267c26.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple-dark.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple-dark.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple-dark.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/apple.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/chrome-47847e68e6911c51.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/chrome.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/chrome.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/chrome.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/firefox.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/firefox.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/firefox.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/linux.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/linux.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/linux.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust-dark.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust-dark.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust-dark.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/rust.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel-dark.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel-dark.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel-dark.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/vercel.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/windows.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/windows.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icons/platform-svgl/windows.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/launch-runtime-3ae46d2cd01071b0.js",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/launch-runtime-3ae46d2cd01071b0.js.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/launch-runtime-3ae46d2cd01071b0.js.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/launch-runtime.js",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/launch-runtime.js.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/launch-runtime.js.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/amber-fd8517e5453c2145.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/amber.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/blue-2daf5706a85142cf.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/blue.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/cyan-f5830d34ea43ba2a.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/cyan.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/emerald-ac411c3e669be3e2.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/emerald.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/fuchsia-2f08a8ddcbad25fc.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/fuchsia.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/green-4a2f9e787e85969f.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/green-variant-acb7c68d24505294.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/green-variant.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/green.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/indigo-028b20932f970d59.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/indigo.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/lime-2050bbd5f412de7d.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/lime.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/orange-b3e5cd7499323991.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/orange.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/pink-fe1424b02465d707.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/pink.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/purple-8afc4bf4d04f753d.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/purple.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/rainbow-6dcd801922d6c794.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/rainbow.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/red-e02103784760ee62.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/red.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/rose-2700bcddc2e4cf44.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/rose.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/sky-835aeea13aa90224.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/sky.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/teal-00e58884c11c9b79.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/teal.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/variant-1-2c5218548ca63387.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/variant-1.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/variant-2-6126e146834c330a.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/variant-2.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/violet-8c81f7f2d8a3333c.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/violet.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/yellow-8e4949f48aecba7d.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/thumbnails/yellow.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/convex-logo-b2a1cfa88d831fea.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/convex-logo-b2a1cfa88d831fea.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/convex-logo-b2a1cfa88d831fea.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/convex-logo.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/convex-logo.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/convex-logo.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/shadcn-favicon-32x32-73186821201a7eb8.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/shadcn-favicon-32x32.png",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/supabase-logo-f0c8a57504f71be9.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/supabase-logo-f0c8a57504f71be9.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/supabase-logo-f0c8a57504f71be9.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/supabase-logo.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/supabase-logo.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/vendor/supabase-logo.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "rollback.json",
+        "kind": "rollback-metadata",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "server-action-protocols.json",
+        "kind": "server-action-protocols",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "server-action-runtime.json",
+        "kind": "server-action-runtime",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "server-contracts.json",
+        "kind": "server-contracts",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "source-build-manifest.json",
+        "kind": "source-build-manifest",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "source-build-receipt.json",
+        "kind": "source-build-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/conversion-proof.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/conversion-proof.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/conversion-proof.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/dx-landing.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/dx-landing.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/dx-landing.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/generated.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/generated.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/generated.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/globals.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/globals.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/globals.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/launch-runtime.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/launch-runtime.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/launch-runtime.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/theme.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/theme.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/theme.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      }
+    ]
+  },
+  "release_gate": {
+    "account_free_preview_ready": true,
+    "hosted_release_ready": false,
+    "manifest_signature_required": true,
+    "manifest_signed": false,
+    "rollback_metadata_required": true,
+    "forge_receipts_copied": true,
+    "no_node_modules": true
+  },
+  "next_commands": [
+    "dx preview --production-contract",
+    "dx promote --key <private-key.json>",
+    "dx rollback verify --previous-build <path> --current-build .dx/build"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schema": "dx.www.rendered_proof_runtime_approval_request",
+  "purpose": "Explicit approval packet for collecting rendered-proof evidence after the source-only conversion proof is ready.",
+  "status": {
+    "score_out_of_100": 99,
+    "source_readiness": "pass",
+    "runtime_readiness": "approval-required"
+  },
+  "approval_state": "approval_required",
+  "requested_scope": "runtime-rendered-proof-capture",
+  "no_source_proof_mutation": true,
+  "request_tool": "forge/acceptance/request-rendered-proof-runtime-approval.ts",
+  "acceptance_checklist": "forge/acceptance/no-runtime-route-acceptance.json",
+  "receipt_schema": "forge/acceptance/rendered-proof-evidence.schema.json",
+  "import_plan": "forge/acceptance/rendered-proof-import-plan.json",
+  "import_tool": "forge/acceptance/prepare-rendered-proof-import.ts",
+  "review_tool": "forge/acceptance/review-rendered-proof-completeness.ts",
+  "validator": "forge/acceptance/validate-rendered-proof-evidence.ts",
+  "authoring_guide": "forge/acceptance/rendered-proof-evidence-authoring-guide.json",
+  "authoring_tool": "forge/acceptance/summarize-rendered-proof-evidence-requirements.ts",
+  "policy": {
+    "no_local_server_without_approval": true,
+    "no_build_without_approval": true,
+    "no_live_credentials_without_approval": true,
+    "no_write_before_approval": true,
+    "no_fake_artifacts": true
+  },
+  "routes": [
+    {
+      "route": "/ui",
+      "source_project": "shadcn-ui",
+      "page": "pages/ui.html",
+      "visual_audit": "forge/visual-audits/shadcn-ui.json",
+      "target_receipt": ".dx/forge/runtime-evidence/conversion-proof/ui.rendered-proof.json",
+      "approval_required": true,
+      "required_runtime_actions": [
+        "renderer-snapshot",
+        "asset-rendering",
+        "responsive-review",
+        "accessibility-review",
+        "artifact-hash-review",
+        "interaction-boundary-review",
+        "provenance-review"
+      ],
+      "required_artifacts": [
+        "renderer_snapshot",
+        "asset_rendering",
+        "responsive_review",
+        "accessibility_review"
+      ],
+      "approval_question": "Approve runtime rendered-proof capture for /ui using the DX-WWW renderer, copied vendor assets, responsive review, accessibility review, and provenance checks?"
+    },
+    {
+      "route": "/database",
+      "source_project": "supabase",
+      "page": "pages/database.html",
+      "visual_audit": "forge/visual-audits/supabase.json",
+      "target_receipt": ".dx/forge/runtime-evidence/conversion-proof/database.rendered-proof.json",
+      "approval_required": true,
+      "required_runtime_actions": [
+        "renderer-snapshot",
+        "asset-rendering",
+        "responsive-review",
+        "accessibility-review",
+        "artifact-hash-review",
+        "interaction-boundary-review",
+        "provenance-review"
+      ],
+      "required_artifacts": [
+        "renderer_snapshot",
+        "asset_rendering",
+        "responsive_review",
+        "accessibility_review"
+      ],
+      "approval_question": "Approve runtime rendered-proof capture for /database using the DX-WWW renderer, copied vendor assets, responsive review, accessibility review, and provenance checks without live Supabase credentials?"
+    },
+    {
+      "route": "/backend",
+      "source_project": "convex-backend",
+      "page": "pages/backend.html",
+      "visual_audit": "forge/visual-audits/convex-backend.json",
+      "target_receipt": ".dx/forge/runtime-evidence/conversion-proof/backend.rendered-proof.json",
+      "approval_required": true,
+      "required_runtime_actions": [
+        "renderer-snapshot",
+        "asset-rendering",
+        "responsive-review",
+        "accessibility-review",
+        "artifact-hash-review",
+        "interaction-boundary-review",
+        "provenance-review"
+      ],
+      "required_artifacts": [
+        "renderer_snapshot",
+        "asset_rendering",
+        "responsive_review",
+        "accessibility_review"
+      ],
+      "approval_question": "Approve runtime rendered-proof capture for /backend using the DX-WWW renderer, copied vendor assets, responsive review, accessibility review, and provenance checks without Convex runtime execution?"
+    }
+  ],
+  "post_approval_commands": [
+    "node .\\forge/acceptance/summarize-rendered-proof-evidence-requirements.ts --json",
+    "node .\\forge/acceptance/prepare-rendered-proof-import.ts --json --approval <approval-reference>",
+    "node .\\forge/acceptance/review-rendered-proof-completeness.ts --json",
+    "node .\\forge/acceptance/validate-rendered-proof-evidence.ts --json"
+  ]
+}

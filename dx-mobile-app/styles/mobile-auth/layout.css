@@ -1,0 +1,118 @@
+.native-auth-shell {
+  display: grid;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  place-items: center;
+  padding: 40px 24px;
+}
+
+.native-auth-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  grid-template-areas:
+    "copy form"
+    "panel form";
+  align-items: center;
+  gap: 24px 56px;
+  width: min(100%, var(--mobile-auth-max));
+}
+
+.native-auth-copy {
+  grid-area: copy;
+  display: grid;
+  gap: 28px;
+  align-content: center;
+}
+
+.native-auth-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+}
+
+.native-auth-brand img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.native-auth-brand strong,
+.native-auth-brand small,
+.native-auth-panel-label {
+  display: block;
+}
+
+.native-auth-brand strong {
+  font-size: 0.96rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.native-auth-brand small,
+.native-auth-panel-label {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.native-auth-heading {
+  display: grid;
+  gap: 18px;
+}
+
+.native-auth-heading h1 {
+  max-width: 12ch;
+  margin: 0;
+  color: hsl(var(--foreground));
+  font-size: 4.6rem;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.native-auth-heading p,
+.auth-form-heading p {
+  max-width: 48rem;
+  margin: 0;
+  color: hsl(var(--muted-foreground));
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.native-auth-panel,
+.auth-form {
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--card) / 0.82);
+  box-shadow: 0 1px 0 hsl(var(--foreground) / 0.08) inset;
+}
+
+.native-auth-panel {
+  grid-area: panel;
+  display: grid;
+  gap: 16px;
+  width: min(100%, 560px);
+  padding: 18px;
+}
+
+.native-auth-panel strong {
+  display: block;
+  margin-top: 6px;
+  color: hsl(var(--foreground));
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.native-auth-panel-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

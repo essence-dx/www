@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DX Database</title>
+    <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+  </head>
+  <body>
+    <main
+      class="route-shell"
+      data-dx-route="/database"
+      data-dx-source="tools/launch/runtime-template/pages/database.html"
+      data-dx-package="supabase/client,db/drizzle-sqlite,instantdb/react"
+      data-dx-hot-reload-target="route:/database"
+    >
+      <div class="dx-icon-runtime-markers" data-dx-component="dx-icon-runtime-markers" data-dx-icon-proof="runtime-markers" aria-hidden="true">
+        <span data-dx-icon="pack:auth" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:payments" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:database" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:fumadocs" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:wasm-bindgen" data-icon-source="dx-icons"></span>
+      </div>
+
+      <header class="topbar">
+        <a class="brand" href="/"><span class="logo">d</span><span>DX WWW</span></a>
+        <nav class="nav" aria-label="WWW routes">
+          <a href="/">Home</a>
+          <a href="/automations">Automations</a>
+          <a href="/ui">UI</a>
+          <a href="/backend">Backend</a>
+        </nav>
+      </header>
+      <section class="route-hero card" data-dx-editable-section="database-hero">
+        <p class="eyebrow">Data adapters</p>
+        <h1>Database proof with explicit ownership.</h1>
+        <p class="lead">
+          DX WWW shows each data boundary clearly: credentials, schema, sync model,
+          and source files are owned by the app.
+        </p>
+      </section>
+      <section class="grid" data-dx-section="database-adapters">
+        <article class="route-card" data-dx-database="supabase" data-dx-package="supabase/client">
+          <h2>Supabase</h2>
+          <p>Client boundary waits for URL and anon key env values. No key is bundled into the template.</p>
+          <span class="pill">env contract visible</span>
+        </article>
+        <article class="route-card" data-dx-database="drizzle" data-dx-package="db/drizzle-sqlite">
+          <h2>Drizzle SQLite</h2>
+          <p>Typed schema and query adapter are source-owned, ready for migrations after credentials are chosen.</p>
+          <span class="pill">schema first</span>
+        </article>
+        <article class="route-card" data-dx-database="instantdb" data-dx-package="instantdb/react">
+          <h2>InstantDB</h2>
+          <p>Realtime sync surface is ready with app-owned auth and room contracts.</p>
+          <span class="pill">realtime boundary</span>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

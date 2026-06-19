@@ -1,0 +1,159 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "animation/motion",
+    "official_package_name": "Motion & Animation",
+    "upstream_name": "motion",
+    "version": "12.38.0-dx.12",
+    "generator": "dx-forge/motion",
+    "variant": "react-dashboard-source",
+    "rollback_receipt": "20260523T061500000000000Z-animation-motion.json",
+    "source_kind": "curated-registry",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:motion@12.38.0; npm:framer-motion public React API compatibility surface",
+      "verified": false,
+      "note": "DX inspected the local Motion source mirror, Motion React public APIs, Framer Motion compatibility exports, LazyMotion feature bundles, layout/reorder/presence APIs, motion value hooks, and reduced-motion hooks before curating this source-owned Motion & Animation slice; this package records no live browser animation proof or route choreography approval."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-23T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Motion & Animation source slice, but it is not a live advisory feed and does not audit app choreography, accessibility QA, animation budgets, or browser runtime execution."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration and Motion project metadata only; no formal DX legal review is claimed."
+    },
+    "dependency_constraints": [
+      {
+        "name": "motion",
+        "constraint": "12.38.0 upstream public React animation APIs",
+        "boundary": "Forge owns editable helper source; app-owned runtime supplies the Motion package when live browser animation is enabled."
+      },
+      {
+        "name": "motion/react",
+        "constraint": "React API adapter for MotionConfig, LazyMotion, LayoutGroup, AnimatePresence, Reorder, and hooks",
+        "boundary": "Route choreography, reduced-motion policy, accessibility QA, and animation budgets remain application-owned."
+      },
+      {
+        "name": "react",
+        "constraint": "^18 || ^19 peer runtime supplied by the launch template",
+        "boundary": "Forge records React component source files but does not install React or make node_modules part of DX core."
+      }
+    ],
+    "runtime_proof": false,
+    "files": [
+      {
+        "path": "motion/presets.ts",
+        "logical_path": "js/motion/presets.ts",
+        "hash": "8ff770df10a08c23d38f74757ea82e0466529545445c97c4413fe9533837374d",
+        "bytes": 1062
+      },
+      {
+        "path": "motion/provider.tsx",
+        "logical_path": "js/motion/provider.tsx",
+        "hash": "410e6f2555af6b20d8cbecf2b7499665493d8855f4033904a345e9d21253b02f",
+        "bytes": 859
+      },
+      {
+        "path": "motion/controls.tsx",
+        "logical_path": "js/motion/controls.tsx",
+        "hash": "3129202d0f2a64ed0a51731a311dd9d4715d78078533774f88e4e661ffcefc56",
+        "bytes": 3884
+      },
+      {
+        "path": "motion/frame.tsx",
+        "logical_path": "js/motion/frame.tsx",
+        "hash": "d8c58f5db9e108801b6d2ab9a625ad6f1a798c64e48054a2d525923cfa2f1ff3",
+        "bytes": 3470
+      },
+      {
+        "path": "motion/layout.tsx",
+        "logical_path": "js/motion/layout.tsx",
+        "hash": "abd442ac3ccb93eaee80a8690f3d62f1af4364a73855e6d640f1ebf8a42003d3",
+        "bytes": 2582
+      },
+      {
+        "path": "motion/lazy.tsx",
+        "logical_path": "js/motion/lazy.tsx",
+        "hash": "a730df8dfba3ab0f30b1341098f233612c4749e19e7c4423b5c0f86313ec7873",
+        "bytes": 1461
+      },
+      {
+        "path": "motion/motion-values.tsx",
+        "logical_path": "js/motion/motion-values.tsx",
+        "hash": "670584cb563a7341dca2dc066ffdd52592589cefd8591a2bad261a961f5083e9",
+        "bytes": 3918
+      },
+      {
+        "path": "motion/page-visibility.tsx",
+        "logical_path": "js/motion/page-visibility.tsx",
+        "hash": "0a753898d53b11e9534bf36fc8f05e031a252f1307c45f889a99aaaf64cc949e",
+        "bytes": 1588
+      },
+      {
+        "path": "motion/presence.tsx",
+        "logical_path": "js/motion/presence.tsx",
+        "hash": "01fc1c27084153452fe00db32304cdf34abd625ebaa02909952b6093d2f10846",
+        "bytes": 2841
+      },
+      {
+        "path": "motion/reorder.tsx",
+        "logical_path": "js/motion/reorder.tsx",
+        "hash": "3785dff1d098e220bcb265a002f2c7e18a1e49cd4ec2ccad6834744904447ae6",
+        "bytes": 2980
+      },
+      {
+        "path": "motion/reveal.tsx",
+        "logical_path": "js/motion/reveal.tsx",
+        "hash": "82a606ec371a5152ccbfe439ac0e0b489536768d4a4b8f9021c190bf9aa1f153",
+        "bytes": 1444
+      },
+      {
+        "path": "motion/scoped-animate.tsx",
+        "logical_path": "js/motion/scoped-animate.tsx",
+        "hash": "d22056a26e61061dffa70c6a9b6b8c9cacfca93b27f3c810602623d8c10b49b9",
+        "bytes": 1984
+      },
+      {
+        "path": "motion/scroll-progress.tsx",
+        "logical_path": "js/motion/scroll-progress.tsx",
+        "hash": "7ecc278fe75ca69bf4952e03dd2585f4cb92310cede842e522e7cab185a41665",
+        "bytes": 1753
+      },
+      {
+        "path": "motion/will-change.tsx",
+        "logical_path": "js/motion/will-change.tsx",
+        "hash": "e6490c44706f9f2637328ad3377030b6ce8da71ff8f286a36a46ec3604c2e480",
+        "bytes": 2275
+      },
+      {
+        "path": "motion/dashboard-workflow.ts",
+        "logical_path": "js/motion/dashboard-workflow.ts",
+        "hash": "b3f1ecd743cb23e7d252832e5ba151eaf80dc10479445030ee414285f5138bcf",
+        "bytes": 13517
+      },
+      {
+        "path": "motion/metadata.ts",
+        "logical_path": "js/motion/metadata.ts",
+        "hash": "7d7f21442aca02023eb0417f7a3bc7a44f4d295160e518f5bab70874ebc333e7",
+        "bytes": 7033
+      },
+      {
+        "path": "motion/README.md",
+        "logical_path": "js/motion/README.md",
+        "hash": "8a8f15e2f70b865b63cf52c42c2c1e1b4f8ae44d53d345e6f7f7f78857a603e9",
+        "bytes": 12014
+      }
+    ],
+    "integrity_hash": "7d6356d19768dae2e95b9978daba6a891d9bdb156f7c25f25e7253bc8d5ea306"
+  },
+  "generated_at": "2026-05-23T06:15:00Z",
+  "source": "dx-forge-curated-registry",
+  "boundary": "Rollback receipt for source-owned Motion & Animation helpers only; live browser animation execution remains app-owned."
+}

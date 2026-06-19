@@ -1,0 +1,169 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "fixture_path": "docs/packages/instantdb-react.source-guard-runbook.json",
+  "route": "/",
+  "package": {
+    "official_package_name": "Realtime App Database",
+    "package_id": "instantdb/react",
+    "upstream_package": "@instantdb/react",
+    "upstream_version": "0.0.0",
+    "source_mirror": "G:/WWW/inspirations/instantdb",
+    "based_on": "InstantDB React, Core, React Common, Next route handler, storage, stream, room, and Sync Table public APIs",
+    "aliases": [
+      "realtime-app-database",
+      "@instantdb/react",
+      "instantdb",
+      "db/instantdb"
+    ]
+  },
+  "selected_surfaces": [
+    "instantdb-runtime-dashboard-workflow",
+    "dashboard-instantdb-workflow",
+    "sync-table-events",
+    "check-panel-helper-freshness",
+    "provider-gated-readiness-route",
+    "realtime-app-database-source-guard-runbook",
+    "receipt-hash-refresh"
+  ],
+  "template_readiness": {
+    "schema": "dx.forge.package.template_readiness_surface",
+    "route": "/api/instant/readiness",
+    "route_handler": "examples/template/app/api/instant/readiness/route.ts",
+    "server_file": "examples/template/server/instant/readiness.ts",
+    "package_id": "instantdb/react",
+    "official_package_name": "Realtime App Database",
+    "readiness_kind": "provider-gated",
+    "runtime_proof": false,
+    "network_calls": false,
+    "hosted_credentials": false,
+    "required_env": [
+      "NEXT_PUBLIC_INSTANT_APP_ID"
+    ],
+    "boundary": "This route performs local InstantDB configuration validation only; it does not create a hosted route handler, connect to realtime transport, or claim hosted auth, storage, stream, or subscription proof."
+  },
+  "upstream_public_apis": [
+    "init",
+    "i.schema",
+    "id",
+    "lookup",
+    "db.useQuery",
+    "db.transact",
+    "db.tx",
+    "db.room",
+    "db.rooms.usePresence",
+    "db.rooms.useSyncPresence",
+    "db.rooms.useTopicEffect",
+    "db.rooms.usePublishTopic",
+    "db.rooms.useTypingIndicator",
+    "db.storage.uploadFile",
+    "db.streams.createWriteStream",
+    "_syncTableExperimental",
+    "SyncTableCallbackEventType",
+    "StoreInterfaceStoreName",
+    "createInstantRouteHandler"
+  ],
+  "inspected_upstream_files": [
+    "client/packages/react/package.json",
+    "client/packages/react/src/index.ts",
+    "client/packages/core/src/index.ts",
+    "client/packages/react-common/src/InstantReactAbstractDatabase.tsx",
+    "client/sandbox/react-nextjs/pages/play/sync-table.tsx"
+  ],
+  "guard": {
+    "id": "realtime-app-database-check-panel-helper-freshness",
+    "fixture_path": "docs/packages/instantdb-react.source-guard-runbook.json",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/dx_check_receipt.rs",
+    "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_realtime_app_database_package_lane_hash_refresh_row --lib",
+    "proves": [
+      "DX Studio/check-panel Realtime App Database package row",
+      "realtime_app_database_receipt_hash_refresh_current",
+      "realtime_app_database_receipt_hash_refresh_stale",
+      "realtime_app_database_receipt_hash_refresh_missing",
+      "realtime_app_database_hash_mismatch stays byte-derived",
+      "realtime-app-database:receipt-hash-refresh",
+      "without claiming hosted Instant runtime proof"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "fixture_paths": [
+      {
+        "source_guard_id": "realtime-app-database-check-panel-helper-freshness",
+        "package_id": "instantdb/react",
+        "fixture_path": "docs/packages/instantdb-react.source-guard-runbook.json",
+        "schema": "dx.forge.package.source_guard_runbook_fixture"
+      }
+    ],
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "realtime-app-database-check-panel-helper-freshness",
+      "fixture_path": "docs/packages/instantdb-react.source-guard-runbook.json",
+      "purpose": "The shared check-panel Realtime App Database row reports receipt-hash helper freshness metrics while keeping selected source hash mismatch byte-derived and hosted Instant runtime proof app-owned.",
+      "evidence_field": "core/src/ecosystem/dx_check_receipt.rs"
+    },
+    "command": {
+      "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_realtime_app_database_package_lane_hash_refresh_row --lib",
+      "fixture_path": "docs/packages/instantdb-react.source-guard-runbook.json",
+      "purpose": "Validate the source-only Realtime App Database check-panel helper-freshness metrics without hosted Instant credentials, browser proof, dependency installation, or live subscriptions.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "studio_manifest": {
+    "file": "dx-www/src/cli/studio_manifest.rs",
+    "source_guard_index_id": "realtime-app-database-check-panel-helper-freshness",
+    "source_guard_runbook_index_fixture_path": "docs/packages/instantdb-react.source-guard-runbook.json",
+    "route": "/"
+  },
+  "source_guard_fixture_paths": [
+    {
+      "source_guard_id": "realtime-app-database-check-panel-helper-freshness",
+      "package_id": "instantdb/react",
+      "fixture_path": "docs/packages/instantdb-react.source-guard-runbook.json",
+      "schema": "dx.forge.package.source_guard_runbook_fixture"
+    }
+  ],
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json",
+    "hash_helper": "examples/template/realtime-app-database-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/realtime-app-database-receipt-hashes.ts --check --json",
+    "zed_visibility": "realtime-app-database:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "Instant app provisioning and NEXT_PUBLIC_INSTANT_APP_ID",
+    "schema, unique indexes, rules, permissions, and auth policy",
+    "OAuth providers, redirects, tokens, and authenticated route design",
+    "room naming, presence privacy, topic payload policy, and event retention",
+    "storage bucket policy, upload limits, file access rules, and retention",
+    "stream payload shape, backpressure, lifecycle, and observability",
+    "experimental Sync Table local store retention, unsubscribe behavior, and runtime validation"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: hosted InstantDB app setup, credentials, rules, storage, streams, presence, and Sync Table runtime proof stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "dx.check.receipt",
+  "status": "ready",
+  "checked_files": [
+    "app/page.tsx",
+    "components/LaunchPanel.tsx"
+  ]
+}

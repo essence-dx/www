@@ -1,0 +1,669 @@
+{
+  "schema": "dx.www.sourceBuildManifest",
+  "schema_revision": 1,
+  "project_root": "G:/Dx/www-and-forge",
+  "routes": [
+    {
+      "route": "/forge-proof",
+      "path": "app/forge-proof/page.tsx",
+      "output": ".dx/www/output/source/app/forge-proof/page.tsx",
+      "hash": "4e475f34b66c9e1f",
+      "imports": [
+        {
+          "specifier": "lodash",
+          "side_effect_only": false,
+          "type_only": false
+        }
+      ],
+      "parser_backend": "oxc-parser",
+      "diagnostics": 0,
+      "ecmascript_analysis": {
+        "schema": "dx.ecmascript.analysis",
+        "schema_revision": 1,
+        "source_path": "app/forge-proof/page.tsx",
+        "source_kind": "tsx",
+        "parser_backend": "oxc-parser",
+        "diagnostics": 0,
+        "compatibility_reference": {
+          "upstream_crates": [
+            "turbopack-ecmascript"
+          ],
+          "reference_only": true,
+          "runtime_build_adoption": false,
+          "public_runtime_dependency": false,
+          "vendor_root": "vendor/next-rust",
+          "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+          "next_transform_references": [
+            "next-custom-transforms::track_dynamic_imports",
+            "next-custom-transforms::react_server_components"
+          ],
+          "copied_code": false
+        },
+        "output_model": {
+          "contract": "dx.www.moduleGraph",
+          "compiler_owns_output": true,
+          "public_architecture": "DX-owned source graph analysis"
+        },
+        "runtime_boundaries": {
+          "next_runtime_required": false,
+          "react_runtime_required": false,
+          "rsc_required": false,
+          "node_modules_required": false
+        },
+        "directives": [],
+        "static_imports": [
+          {
+            "specifier": "lodash",
+            "side_effect_only": false,
+            "type_only": false
+          }
+        ],
+        "dynamic_imports": [],
+        "unresolved_dynamic_imports": [],
+        "unsupported_dynamic_imports": [],
+        "dynamic_import_analysis": {
+          "status": "none-observed",
+          "static_count": 0,
+          "unresolved_count": 0,
+          "unsupported_count": 0,
+          "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+        },
+        "export_names": [
+          "ForgeProofPage",
+          "metadata"
+        ],
+        "jsx": true,
+        "top_level_await": false,
+        "full_nextjs_parity": false,
+        "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+      }
+    },
+    {
+      "route": "/",
+      "path": "app/page.tsx",
+      "output": ".dx/www/output/source/app/page.tsx",
+      "hash": "d3203b887a53055d",
+      "imports": [
+        {
+          "specifier": "lodash",
+          "side_effect_only": false,
+          "type_only": false
+        }
+      ],
+      "parser_backend": "oxc-parser",
+      "diagnostics": 0,
+      "ecmascript_analysis": {
+        "schema": "dx.ecmascript.analysis",
+        "schema_revision": 1,
+        "source_path": "app/page.tsx",
+        "source_kind": "tsx",
+        "parser_backend": "oxc-parser",
+        "diagnostics": 0,
+        "compatibility_reference": {
+          "upstream_crates": [
+            "turbopack-ecmascript"
+          ],
+          "reference_only": true,
+          "runtime_build_adoption": false,
+          "public_runtime_dependency": false,
+          "vendor_root": "vendor/next-rust",
+          "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+          "next_transform_references": [
+            "next-custom-transforms::track_dynamic_imports",
+            "next-custom-transforms::react_server_components"
+          ],
+          "copied_code": false
+        },
+        "output_model": {
+          "contract": "dx.www.moduleGraph",
+          "compiler_owns_output": true,
+          "public_architecture": "DX-owned source graph analysis"
+        },
+        "runtime_boundaries": {
+          "next_runtime_required": false,
+          "react_runtime_required": false,
+          "rsc_required": false,
+          "node_modules_required": false
+        },
+        "directives": [],
+        "static_imports": [
+          {
+            "specifier": "lodash",
+            "side_effect_only": false,
+            "type_only": false
+          }
+        ],
+        "dynamic_imports": [],
+        "unresolved_dynamic_imports": [],
+        "unsupported_dynamic_imports": [],
+        "dynamic_import_analysis": {
+          "status": "none-observed",
+          "static_count": 0,
+          "unresolved_count": 0,
+          "unsupported_count": 0,
+          "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+        },
+        "export_names": [
+          "HomePage",
+          "metadata"
+        ],
+        "jsx": true,
+        "top_level_await": false,
+        "full_nextjs_parity": false,
+        "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+      }
+    }
+  ],
+  "route_handlers": [],
+  "route_handler_receipts": {
+    "output": ".dx/www/output/route-handler-receipts.json",
+    "receipt_count": 0,
+    "skipped_count": 0,
+    "node_modules_required": false,
+    "lifecycle_scripts_executed": false
+  },
+  "route_outputs": [
+    {
+      "route": "/forge-proof",
+      "source_path": "app/forge-proof/page.tsx",
+      "html_output": ".dx/www/output/source-routes/forge-proof/index.html",
+      "packet_output": ".dx/www/output/source-routes/forge-proof/index.dxpk",
+      "page_graph_output": ".dx/www/output/source-routes/forge-proof/page-graph.json",
+      "route_unit_output": ".dx/www/output/source-routes/forge-proof/route-unit.json",
+      "shell_chunk_output": ".dx/www/output/source-routes/forge-proof/route-shell-7b728e851b8e17b8.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/forge-proof/modules/app-forge-proof-page-tsx-4e475f34b66c9e1f.mjs",
+      "server_data_output": ".dx/www/output/source-routes/forge-proof/server-data.json",
+      "source_module_chunks": [
+        {
+          "source_path": "app/forge-proof/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/forge-proof/modules/app-forge-proof-page-tsx-4e475f34b66c9e1f.mjs",
+          "kind": "tsx",
+          "hash": "4e475f34b66c9e1f",
+          "dependencies": [
+            {
+              "specifier": "lodash",
+              "resolved_path": null,
+              "chunk_output": null,
+              "kind": "external-package-adapter-boundary",
+              "resolver_source": "external-package-boundary",
+              "resolver_detail": "external-package-adapter-boundary",
+              "node_modules_required": false
+            }
+          ],
+          "browser_executable": true,
+          "source_transformed": false,
+          "transform_kind": "metadata-only",
+          "runtime_exports": [],
+          "ecmascript_analysis": {
+            "schema": "dx.ecmascript.analysis",
+            "schema_revision": 1,
+            "source_path": "app/forge-proof/page.tsx",
+            "source_kind": "tsx",
+            "parser_backend": "oxc-parser",
+            "diagnostics": 0,
+            "compatibility_reference": {
+              "upstream_crates": [
+                "turbopack-ecmascript"
+              ],
+              "reference_only": true,
+              "runtime_build_adoption": false,
+              "public_runtime_dependency": false,
+              "vendor_root": "vendor/next-rust",
+              "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+              "next_transform_references": [
+                "next-custom-transforms::track_dynamic_imports",
+                "next-custom-transforms::react_server_components"
+              ],
+              "copied_code": false
+            },
+            "output_model": {
+              "contract": "dx.www.moduleGraph",
+              "compiler_owns_output": true,
+              "public_architecture": "DX-owned source graph analysis"
+            },
+            "runtime_boundaries": {
+              "next_runtime_required": false,
+              "react_runtime_required": false,
+              "rsc_required": false,
+              "node_modules_required": false
+            },
+            "directives": [],
+            "static_imports": [
+              {
+                "specifier": "lodash",
+                "side_effect_only": false,
+                "type_only": false
+              }
+            ],
+            "dynamic_imports": [],
+            "unresolved_dynamic_imports": [],
+            "unsupported_dynamic_imports": [],
+            "dynamic_import_analysis": {
+              "status": "none-observed",
+              "static_count": 0,
+              "unresolved_count": 0,
+              "unsupported_count": 0,
+              "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+            },
+            "export_names": [
+              "ForgeProofPage",
+              "metadata"
+            ],
+            "jsx": true,
+            "top_level_await": false,
+            "full_nextjs_parity": false,
+            "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+          },
+          "node_modules_required": false
+        }
+      ],
+      "fallback_hash": "7b728e851b8e17b8",
+      "fallback_bytes": 1203,
+      "packet_bytes": 7150,
+      "node_modules_required": false
+    },
+    {
+      "route": "/",
+      "source_path": "app/page.tsx",
+      "html_output": ".dx/www/output/source-routes/root/index.html",
+      "packet_output": ".dx/www/output/source-routes/root/index.dxpk",
+      "page_graph_output": ".dx/www/output/source-routes/root/page-graph.json",
+      "route_unit_output": ".dx/www/output/source-routes/root/route-unit.json",
+      "shell_chunk_output": ".dx/www/output/source-routes/root/route-shell-7055611253a5f5db.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-d3203b887a53055d.mjs",
+      "server_data_output": ".dx/www/output/source-routes/root/server-data.json",
+      "source_module_chunks": [
+        {
+          "source_path": "app/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-d3203b887a53055d.mjs",
+          "kind": "tsx",
+          "hash": "d3203b887a53055d",
+          "dependencies": [
+            {
+              "specifier": "lodash",
+              "resolved_path": null,
+              "chunk_output": null,
+              "kind": "external-package-adapter-boundary",
+              "resolver_source": "external-package-boundary",
+              "resolver_detail": "external-package-adapter-boundary",
+              "node_modules_required": false
+            }
+          ],
+          "browser_executable": true,
+          "source_transformed": false,
+          "transform_kind": "metadata-only",
+          "runtime_exports": [],
+          "ecmascript_analysis": {
+            "schema": "dx.ecmascript.analysis",
+            "schema_revision": 1,
+            "source_path": "app/page.tsx",
+            "source_kind": "tsx",
+            "parser_backend": "oxc-parser",
+            "diagnostics": 0,
+            "compatibility_reference": {
+              "upstream_crates": [
+                "turbopack-ecmascript"
+              ],
+              "reference_only": true,
+              "runtime_build_adoption": false,
+              "public_runtime_dependency": false,
+              "vendor_root": "vendor/next-rust",
+              "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+              "next_transform_references": [
+                "next-custom-transforms::track_dynamic_imports",
+                "next-custom-transforms::react_server_components"
+              ],
+              "copied_code": false
+            },
+            "output_model": {
+              "contract": "dx.www.moduleGraph",
+              "compiler_owns_output": true,
+              "public_architecture": "DX-owned source graph analysis"
+            },
+            "runtime_boundaries": {
+              "next_runtime_required": false,
+              "react_runtime_required": false,
+              "rsc_required": false,
+              "node_modules_required": false
+            },
+            "directives": [],
+            "static_imports": [
+              {
+                "specifier": "lodash",
+                "side_effect_only": false,
+                "type_only": false
+              }
+            ],
+            "dynamic_imports": [],
+            "unresolved_dynamic_imports": [],
+            "unsupported_dynamic_imports": [],
+            "dynamic_import_analysis": {
+              "status": "none-observed",
+              "static_count": 0,
+              "unresolved_count": 0,
+              "unsupported_count": 0,
+              "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+            },
+            "export_names": [
+              "HomePage",
+              "metadata"
+            ],
+            "jsx": true,
+            "top_level_await": false,
+            "full_nextjs_parity": false,
+            "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+          },
+          "node_modules_required": false
+        }
+      ],
+      "fallback_hash": "7055611253a5f5db",
+      "fallback_bytes": 1255,
+      "packet_bytes": 7127,
+      "node_modules_required": false
+    }
+  ],
+  "server_data_routes": [
+    {
+      "route": "/",
+      "route_source_path": "app/page.tsx",
+      "output": ".dx/www/output/source-routes/root/server-data.json",
+      "status": "no-loader-bindings",
+      "entry_count": 0,
+      "entry_source_paths": [],
+      "request": {
+        "mode": "static-route-contract-inputs",
+        "route_params": {},
+        "search_params": {},
+        "build_time_contract_inputs": true,
+        "runtime_request_values": false,
+        "source_owned_contract": true,
+        "external_runtime_request_values": false
+      },
+      "execution_model": "not-required",
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false
+    },
+    {
+      "route": "/forge-proof",
+      "route_source_path": "app/forge-proof/page.tsx",
+      "output": ".dx/www/output/source-routes/forge-proof/server-data.json",
+      "status": "no-loader-bindings",
+      "entry_count": 0,
+      "entry_source_paths": [],
+      "request": {
+        "mode": "static-route-contract-inputs",
+        "route_params": {},
+        "search_params": {},
+        "build_time_contract_inputs": true,
+        "runtime_request_values": false,
+        "source_owned_contract": true,
+        "external_runtime_request_values": false
+      },
+      "execution_model": "not-required",
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false
+    }
+  ],
+  "server_data_route_manifest": {
+    "source_build_routes": 2,
+    "manifest_routes": 2,
+    "source_build_entries": 0,
+    "manifest_entries": 0,
+    "routes_with_route_params": 0,
+    "routes_with_search_params": 0,
+    "route_param_keys": [],
+    "search_param_keys": [],
+    "manifest_includes_source_build_routes": true,
+    "missing_source_build_routes": []
+  },
+  "styles": [
+    {
+      "path": "styles/generated.css",
+      "output": ".dx/www/output/styles/generated.css",
+      "source_map_output": ".dx/www/output/styles/generated.css.map",
+      "source_map_source_count": 1,
+      "source_map_source_hash_count": 1,
+      "source_map_entry_style_source_count": 1,
+      "source_map_flattened_import_source_count": 0,
+      "source_map_retained_import_source_count": 0,
+      "source_map_segment_count": 0,
+      "source_map_exact_segment_mapping": false,
+      "source_map_evidence_only": true,
+      "source_map_linked": true,
+      "source_map_hash": "ec0d33d01209c00b",
+      "hash": "d04c869ed1a80aeb",
+      "rule_count": 14,
+      "original_rule_count": 14,
+      "retained_rule_count": 14,
+      "pruned_rule_count": 0,
+      "minified": true,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "import_count": 0,
+      "flattened_imports": [],
+      "retained_imports": [],
+      "asset_references": []
+    },
+    {
+      "path": "styles/globals.css",
+      "output": ".dx/www/output/styles/globals.css",
+      "source_map_output": ".dx/www/output/styles/globals.css.map",
+      "source_map_source_count": 3,
+      "source_map_source_hash_count": 3,
+      "source_map_entry_style_source_count": 1,
+      "source_map_flattened_import_source_count": 2,
+      "source_map_retained_import_source_count": 0,
+      "source_map_segment_count": 0,
+      "source_map_exact_segment_mapping": false,
+      "source_map_evidence_only": true,
+      "source_map_linked": true,
+      "source_map_hash": "d0dc18b72aaeca3f",
+      "hash": "d6c990656ca2447c",
+      "rule_count": 38,
+      "original_rule_count": 38,
+      "retained_rule_count": 38,
+      "pruned_rule_count": 0,
+      "minified": true,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "import_count": 0,
+      "flattened_imports": [
+        {
+          "specifier": "./theme.css",
+          "path": "styles/theme.css",
+          "inlined": true
+        },
+        {
+          "specifier": "./generated.css",
+          "path": "styles/generated.css",
+          "inlined": true
+        }
+      ],
+      "retained_imports": [],
+      "asset_references": []
+    },
+    {
+      "path": "styles/theme.css",
+      "output": ".dx/www/output/styles/theme.css",
+      "source_map_output": ".dx/www/output/styles/theme.css.map",
+      "source_map_source_count": 1,
+      "source_map_source_hash_count": 1,
+      "source_map_entry_style_source_count": 1,
+      "source_map_flattened_import_source_count": 0,
+      "source_map_retained_import_source_count": 0,
+      "source_map_segment_count": 0,
+      "source_map_exact_segment_mapping": false,
+      "source_map_evidence_only": true,
+      "source_map_linked": true,
+      "source_map_hash": "680f8231e64ed77f",
+      "hash": "7f613a7ba8ef31a4",
+      "rule_count": 1,
+      "original_rule_count": 1,
+      "retained_rule_count": 1,
+      "pruned_rule_count": 0,
+      "minified": true,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "import_count": 0,
+      "flattened_imports": [],
+      "retained_imports": [],
+      "asset_references": []
+    }
+  ],
+  "content_documents": [],
+  "assets": [
+    {
+      "path": "public/favicon.svg",
+      "output": ".dx/www/output/public/favicon-cfb09e06980b21ac.svg",
+      "hash": "cfb09e06980b21ac",
+      "size": 874,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icon.svg",
+      "output": ".dx/www/output/public/icon-32341047d202fbff.svg",
+      "hash": "32341047d202fbff",
+      "size": 869,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 180,
+        "height": 180,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%20viewBox%3D%220%200%20180%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 180,
+            "height": 180,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+            "hash": "653d1ed174ed39da",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/logo.svg",
+      "output": ".dx/www/output/public/logo-2afe23f6d7f297ab.svg",
+      "hash": "2afe23f6d7f297ab",
+      "size": 910,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [
+        {
+          "route": "/",
+          "source_path": "app/page.tsx",
+          "specifier": "/logo.svg",
+          "kind": "static-image-url"
+        }
+      ]
+    }
+  ],
+  "node_modules_required": false
+}

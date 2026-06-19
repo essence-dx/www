@@ -1,0 +1,67 @@
+---
+description: DX WWW framework agent rules
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# DX WWW Cursor Rule
+
+Read `AGENTS.md` first. It is the canonical agent contract for this repository.
+Read `README.md` second for current public truth.
+
+Use this summary while editing:
+
+- WWW is source-owned, Rust-backed, React/Next-familiar authoring.
+- Public app routes live under `app/`.
+- Official WWW starters must not depend on template-local `node_modules`;
+  package provenance belongs in Forge/source-owned lanes.
+- Forge is Forge-first and no-node_modules by default. Do not run
+  package-manager installs, create template-local `node_modules`, or add
+  template-local package dependencies for Forge/package lanes; dependency
+  installation is app-owned.
+- Forge import is a materialization/scoring gate, not a fake package manager.
+  Accepted snapshots under `lib/forge/<ecosystem>/<package>/` may resolve from
+  clean package-name imports only when `.dx/forge/source-manifest.json` tracks
+  the reviewed source files.
+- Do not revive `pages/`, `.dxob`, or old launch-runtime language as current
+  public framework guidance.
+- Keep `dx` config human-facing and `.dx/*` generated/evidence-facing.
+- Devtools and hot reload are dev-only.
+- Benchmark claims stay local and receipt-backed. WWW can be called the
+  fair-counter winner only when fresh bytes/RPS receipts prove it.
+- Production preview is `deploy-adapter.json` driven: built routes must resolve,
+  devtools must be absent, and public assets such as `/logo.svg` must work from
+  root aliases.
+- `next/image` lowers static-safe `<Image />` to source-owned `<img>` output.
+- `next/font/google` and `next/font/local` are source-owned font-loader
+  foundations, not full hosted font optimization parity.
+- Framework-owned state uses `state`, `derived`, `effect`, `action`, and
+  `store`; global store modules usually live in `lib/stores/`.
+- State Management is the professional package lane name for upstream Zustand
+  provenance. Keep that separate from WWW-native `store()` global stores.
+- React-style events are direct WWW syntax. Quoted event values such as
+  `onClick="scale-up bg-accent"` are interaction-class commands; braced event
+  values are logic that must lower safely or produce a diagnostic.
+- Motion uses DX Style-backed `motion` / `dxMotion` metadata and named
+  animation generation. Do not imply a hidden Framer/React runtime.
+- DX Style owns Tailwind-like `className` authoring, event-class strings,
+  motion class strings, grouped tokens such as `hover:(bg-accent
+  text-accent-foreground)`, and the atomic/custom CSS balance.
+- Use first-party DX Icon for WWW icons: `<Icon name="pack:check" />` through
+  the `icons(...)` config, not npm icon-package imports in starters.
+- Public docs should use launch-grade wording such as `Verified Results`,
+  `Performance Leadership`, `Framework Capabilities`, and `Benchmark
+  Governance`. Do not reintroduce casual or internal status headings.
+- Use domain capability names, not filler names. Avoid labels such as `ai-slop`,
+  `v1`, `temp`, `final`, `final2`, `demo`, or `new` unless part of a real
+  public versioned contract.
+- Use `.ts` for Node tests, scripts, and framework logic, and `.tsx` for UI
+  source. Do not add hand-authored `.js`, `.mjs`, or `.cjs` source unless the
+  file is an explicitly documented generated/runtime artifact or compatibility
+  shim.
+- Run focused tests first; use broad builds only when the task needs them.
+- Use `dx check <project> --json` as the stable project-health proof after
+  coherent WWW edits.
+
+If this Cursor rule and `AGENTS.md` disagree, `AGENTS.md` wins.

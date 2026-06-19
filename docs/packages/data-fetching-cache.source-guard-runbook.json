@@ -1,0 +1,139 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Data Fetching & Cache",
+    "package_id": "tanstack/query",
+    "upstream_package": "@tanstack/react-query",
+    "upstream_version": "5.100.10",
+    "source_mirrors": [
+      "G:/WWW/inspirations/tanstack-query"
+    ],
+    "based_on": "@tanstack/react-query plus @tanstack/query-core",
+    "aliases": [
+      "data-fetching-cache",
+      "tanstack-query",
+      "@tanstack/react-query",
+      "@tanstack/query-core"
+    ]
+  },
+  "selected_surfaces": [
+    "query-dashboard-workflow",
+    "starter-dashboard-workflow",
+    "template-dashboard-cache-readiness",
+    "app-router-cache-readiness-route",
+    "receipt-hash-refresh"
+  ],
+  "upstream_public_apis": [
+    "QueryClient",
+    "QueryClientProvider",
+    "useQueryClient",
+    "useQuery",
+    "useMutation",
+    "setQueryDefaults",
+    "getQueryDefaults",
+    "invalidateQueries",
+    "ensureQueryData",
+    "prefetchQuery",
+    "cancelQueries"
+  ],
+  "inspected_upstream_files": [
+    "packages/react-query/package.json",
+    "packages/react-query/src/index.ts",
+    "packages/react-query/src/QueryClientProvider.tsx",
+    "packages/react-query/src/useQuery.ts",
+    "packages/react-query/src/useMutation.ts",
+    "packages/query-core/src/queryClient.ts"
+  ],
+  "guard": {
+    "id": "data-fetching-cache-generated-starter-materialization",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "benchmarks/tanstack-query-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\tanstack-query-dx-check-package-lane-panel.test.ts",
+    "proves": [
+      "Data Fetching & Cache generated-starter materialization guard",
+      "data-dx-check-package-lane-row=\"tanstack/query\"",
+      "data-dx-token-scope=\"tanstack/query\"",
+      "data-fetching-cache:receipt-hash-refresh",
+      "examples/template/components/template-app/dashboard-query-cache.ts",
+      "examples/template/server/query-cache/readiness.ts",
+      "examples/template/app/api/query-cache/readiness/route.ts",
+      "data-dx-query-cache-runtime=\"source-owned-template-cache\"",
+      "data-dx-query-cache-readiness-route=\"/api/query-cache/readiness\"",
+      "docs/packages/data-fetching-cache.source-guard-runbook.json",
+      "without live QueryClient execution proof",
+      "tanstack/query source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "data-fetching-cache-generated-starter-materialization",
+      "purpose": "The generated starter preserves the Data Fetching & Cache package-lane row, source-owned template cache readiness model, App Router readiness route, helper freshness markers, and package-scoped dx-check panel without claiming live QueryClient execution proof.",
+      "evidence_field": "benchmarks/tanstack-query-dx-check-package-lane-panel.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\tanstack-query-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-owned Data Fetching & Cache template cache model, App Router readiness route, package-lane row, generated starter materialization, helper freshness markers, and dx-check panel package scope without claiming live QueryClient execution proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "root_field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "route": "/",
+    "fixture_path": "docs/packages/data-fetching-cache.source-guard-runbook.json",
+    "guard_id": "data-fetching-cache-generated-starter-materialization",
+    "honesty_label": "SOURCE-ONLY",
+    "runtime_proof": false
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json",
+    "hash_helper": "examples/template/data-fetching-cache-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/data-fetching-cache-receipt-hashes.ts --check --json",
+    "source_guard_runbook_fixture": "docs/packages/data-fetching-cache.source-guard-runbook.json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "zed_visibility": "data-fetching-cache:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "query keys and fetchers",
+    "retry and cache-retention policy",
+    "persistence storage",
+    "broadcast channel naming",
+    "production network execution",
+    "runtime dependency installation",
+    "browser runtime proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-OWNED TEMPLATE CACHE: the default dashboard cache-readiness model executes from template source without node_modules.",
+    "SOURCE-OWNED ROUTE: the App Router readiness route executes the template cache model without node_modules or network calls.",
+    "ADAPTER-BOUNDARY: live QueryClient execution, production fetchers, persistence, broadcast sync, dependency installation, and browser proof stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

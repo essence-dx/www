@@ -1,0 +1,118 @@
+[workspace]
+resolver = "2"
+members = [
+    "a11y",
+    "auth",
+    "benchmarks",
+    "binary",
+    "build",
+    "cache",
+    "browser",
+    "browser-micro",
+    "core",
+    "db",
+    "db-teleport",
+    "demo",
+    "dom",
+    "dx-www",
+    "error",
+    "fallback",
+    "form",
+    "framework-core",
+    "guard",
+    "interaction",
+    "morph",
+    "observability",
+    "offline",
+    "packet",
+    "print",
+    "query",
+    "reactor",
+    "router",
+    "rtl",
+    "sched",
+    "server",
+    "state",
+    "sync",
+    "tests",
+    "related-crates/markdown",
+    "related-crates/media-icon",
+    "related-crates/security",
+    "related-crates/style",
+]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2024"
+authors = ["DX Team <team@dx-www.dev>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/dx-www/dx-www"
+homepage = "https://dx-www.dev"
+documentation = "https://docs.dx-www.dev"
+rust-version = "1.85"
+
+[workspace.dependencies]
+dx-www-binary = { path = "binary" }
+dx-www-compiler = { path = "core" }
+dx-www-core = { path = "framework-core" }
+dx-www-dom = { path = "dom" }
+dx-www-error = { path = "error" }
+dx-www-morph = { path = "morph" }
+dx-www-packet = { path = "packet" }
+dx-www-server = { path = "server" }
+dx-security = { path = "related-crates/security" }
+dx-serializer = { path = "../serializer" }
+markdown = { path = "related-crates/markdown" }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rkyv = { version = "0.8", features = ["bytecheck"] }
+
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+
+# Cryptography
+ed25519-dalek = { version = "2.1", features = ["rand_core", "serde"] }
+blake3 = "1.8"
+argon2 = "0.5"
+
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# Testing
+proptest = "1.4"
+criterion = { version = "0.5", features = ["html_reports"] }
+
+# WASM
+wasm-bindgen = "0.2"
+js-sys = "0.3"
+web-sys = { version = "0.3", features = ["Window", "Document", "DocumentFragment", "Element", "HtmlElement", "HtmlTemplateElement", "Node", "Text", "console"] }
+bytemuck = { version = "1.14", features = ["derive"] }
+once_cell = "1.19"
+console_error_panic_hook = "0.1"
+memmap2 = "0.9"
+
+# OXC Parser
+oxc_allocator = "0.56"
+oxc_parser = "0.56"
+oxc_ast = "0.56"
+oxc_span = "0.56"
+
+[workspace.lints.rust]
+unsafe_code = "warn"
+missing_docs = "warn"
+
+[workspace.lints.clippy]
+all = "warn"
+pedantic = "warn"
+nursery = "warn"
+unwrap_used = "warn"
+expect_used = "warn"
+
+[profile.dev]
+panic = "unwind"
+
+[profile.release]
+panic = "abort"

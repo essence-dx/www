@@ -1,0 +1,164 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "3D Scene System",
+    "package_id": "3d/launch-scene",
+    "upstream_package": "three + @react-three/fiber + @react-three/drei",
+    "upstream_version": "three 0.184.0; @react-three/fiber 9.6.1; @react-three/drei local mirror",
+    "source_mirrors": [
+      "G:/WWW/inspirations/three.js",
+      "G:/WWW/inspirations/react-three-fiber",
+      "G:/WWW/inspirations/drei"
+    ],
+    "based_on": "Three WebGLRenderer, Raycaster, and Box3 APIs; React Three Fiber createRoot/root-state/raycaster APIs; Drei keyboard, bounds, performance, adaptive DPR, and mesh bounds helpers",
+    "aliases": [
+      "three-scene",
+      "three/r3f/drei",
+      "@react-three/fiber",
+      "@react-three/drei",
+      "spline-like-scene"
+    ]
+  },
+  "selected_surfaces": [
+    "launch-scene-dashboard-workflow",
+    "dx-style-compatible-launch-scene",
+    "generated-starter-materialization",
+    "receipt-hash-refresh",
+    "three-scene-system-source-guard-runbook",
+    "three-scene-system-preview-manifest-materializer"
+  ],
+  "upstream_public_apis": [
+    "WebGLRenderer",
+    "WebGLRenderer.setPixelRatio",
+    "WebGLRenderer.readRenderTargetPixels",
+    "Raycaster",
+    "Raycaster.setFromCamera",
+    "Raycaster.intersectObjects",
+    "Box3",
+    "Box3.setFromObject",
+    "createRoot",
+    "RootState",
+    "RootState.raycaster",
+    "RootState.setDpr",
+    "frameloop",
+    "KeyboardControls",
+    "Bounds.fit",
+    "PerformanceMonitor",
+    "AdaptiveDpr",
+    "meshBounds"
+  ],
+  "inspected_upstream_files": [
+    "three.js/package.json",
+    "three.js/src/renderers/WebGLRenderer.js",
+    "three.js/src/core/Raycaster.js",
+    "three.js/src/math/Box3.js",
+    "react-three-fiber/packages/fiber/package.json",
+    "react-three-fiber/packages/fiber/src/core/renderer.tsx",
+    "react-three-fiber/packages/fiber/src/core/store.ts",
+    "drei/package.json",
+    "drei/src/web/KeyboardControls.tsx",
+    "drei/src/core/Bounds.tsx",
+    "drei/src/core/PerformanceMonitor.tsx",
+    "drei/src/core/AdaptiveDpr.tsx",
+    "drei/src/core/meshBounds.tsx"
+  ],
+  "guard": {
+    "id": "three-scene-system-lower-dx-check-helper-freshness",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/project_check/three_scene_system_dx_check.rs",
+    "command": "cargo test -q -p dx-www-compiler three_scene_system_hash_refresh_stale_helper_keeps_source_hash_clean --lib",
+    "proves": [
+      "3D Scene System lower-level dx-check helper freshness fixture",
+      "three_scene_system_receipt_hash_refresh_stale",
+      "three_scene_system_hash_mismatch stays byte-derived",
+      "docs/packages/3d-scene-system.source-guard-runbook.json",
+      "3d/launch-scene lock-backed source-owned Studio discovery",
+      "without claiming live browser/WebGL proof"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "three-scene-system-lower-dx-check-helper-freshness",
+      "purpose": "The lower-level 3D Scene System dx-check producer reports three_scene_system_receipt_hash_refresh_stale while keeping three_scene_system_hash_mismatch byte-derived from selected source files.",
+      "evidence_field": "core/src/ecosystem/project_check/three_scene_system_dx_check.rs"
+    },
+    "command": {
+      "command": "cargo test -q -p dx-www-compiler three_scene_system_hash_refresh_stale_helper_keeps_source_hash_clean --lib",
+      "purpose": "Validate the lock-backed source-owned 3D Scene System helper-freshness metric proof without running a browser, opening WebGL, installing dependencies, or claiming screenshot proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "dx_check_metrics": [
+    "three_scene_system_receipt_hash_refresh_current",
+    "three_scene_system_receipt_hash_refresh_stale",
+    "three_scene_system_receipt_hash_refresh_missing",
+    "three_scene_system_hash_mismatch",
+    "three_scene_system_dx_style_compatibility_present",
+    "three_scene_system_dx_style_compatibility_missing"
+  ],
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-name",
+    "data-dx-check-package-lane-status",
+    "data-dx-check-package-lane-receipt-status",
+    "data-dx-check-package-lane-upstream-package",
+    "data-dx-check-package-lane-source-mirror",
+    "data-dx-check-package-lane-dx-style-status",
+    "data-dx-style-surface",
+    "data-dx-token-scope"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/3d-launch-scene-dashboard-workflow.json",
+    "hash_helper": "examples/template/3d-scene-system-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/3d-scene-system-receipt-hashes.ts --check --json",
+    "zed_visibility": "3d-scene-system:receipt-hash-refresh",
+    "source_guard_runbook_fixture": "docs/packages/3d-scene-system.source-guard-runbook.json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "tracked_by_receipt_hash_helper": true
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "hash_backed_by": "examples/template/3d-scene-system-receipt-hashes.ts",
+    "hash_backed_files": [
+      "tools/launch/materialize-www-template.ts"
+    ],
+    "selected_surface": "three-scene-system-preview-manifest-materializer",
+    "root_field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture": "docs/packages/3d-scene-system.source-guard-runbook.json",
+    "guard_id": "three-scene-system-lower-dx-check-helper-freshness",
+    "route": "/",
+    "runtime_proof": false,
+    "zed_visibility": "3d-scene-system:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "Production Three, React Three Fiber, and Drei dependency installation",
+    "3D asset licensing, mesh composition, textures, shaders, and postprocessing",
+    "WebGL, WebGPU, and WebXR device capability and permission review",
+    "Browser performance budgets, reduced-motion policy, accessibility semantics, and screenshot QA",
+    "Renderer swaps, external scene authoring tools, camera behavior, and controls"
+  ],
+  "runtime_limitations": [
+    "LOCK-BACKED SOURCE-OWNED: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: browser/WebGL execution, renderer dependency installation, asset licensing, shader review, WebXR permissions, screenshot QA, and production performance proof stay app-owned."
+  ],
+  "honesty_label": "LOCK-BACKED SOURCE-OWNED",
+  "runtime_proof": false
+}

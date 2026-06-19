@@ -1,0 +1,409 @@
+{
+  "schema": "dx.studio.preview_manifest",
+  "generatedBy": "tools/launch/materialize-live-runtime-pages.cjs",
+  "noNodeModulesRequired": true,
+  "routes": [
+    {
+      "route": "/launch",
+      "sourceFile": "pages/launch.html",
+      "forgePackages": [
+        "shadcn/ui/button",
+        "shadcn/ui/badge",
+        "shadcn/ui/card",
+        "shadcn/ui/field",
+        "shadcn/ui/input",
+        "shadcn/ui/textarea",
+        "shadcn/ui/item",
+        "shadcn/ui/separator",
+        "auth/better-auth",
+        "payments/stripe-js",
+        "validation/zod",
+        "forms/react-hook-form",
+        "state/zustand",
+        "tanstack/query",
+        "animation/motion",
+        "3d/launch-scene",
+        "content/react-markdown",
+        "content/fumadocs-next",
+        "automations/n8n",
+        "supabase/client",
+        "db/drizzle-sqlite",
+        "instantdb/react",
+        "api/trpc",
+        "ai/vercel-ai",
+        "wasm/bindgen"
+      ],
+      "hotReloadTarget": "route:/launch",
+      "dataDxMarkers": [
+        "data-dx-route",
+        "data-dx-component",
+        "data-dx-package",
+        "data-dx-editable-section",
+        "data-dx-operation"
+      ]
+    },
+    {
+      "route": "/automations",
+      "sourceFile": "pages/automations.html",
+      "forgePackages": [
+        "automations/n8n"
+      ],
+      "hotReloadTarget": "route:/automations"
+    },
+    {
+      "route": "/ui",
+      "sourceFile": "pages/ui.html",
+      "forgePackages": [
+        "shadcn/ui/card",
+        "shadcn/ui/button",
+        "shadcn/ui/input",
+        "dx/icon/search"
+      ],
+      "hotReloadTarget": "route:/ui"
+    },
+    {
+      "route": "/database",
+      "sourceFile": "pages/database.html",
+      "forgePackages": [
+        "supabase/client",
+        "db/drizzle-sqlite",
+        "instantdb/react"
+      ],
+      "hotReloadTarget": "route:/database"
+    },
+    {
+      "route": "/backend",
+      "sourceFile": "pages/backend.html",
+      "forgePackages": [
+        "api/trpc",
+        "ai/vercel-ai",
+        "supabase/client"
+      ],
+      "hotReloadTarget": "route:/backend"
+    }
+  ],
+  "editableOperations": [
+    "insert_component",
+    "move_reorder_section",
+    "update_design_token",
+    "update_text_content",
+    "insert_icon_media"
+  ],
+  "editContract": {
+    "schema": "dx.studio.launch_edit_contract",
+    "route": "/launch",
+    "sourceManifestFile": "public/preview-manifest.json",
+    "sourceOwned": true,
+    "noNodeModulesRequired": true,
+    "layoutPolicy": "responsive-design-system-grid",
+    "absolutePositioning": false,
+    "tokenScopeMarker": "data-dx-token-scope",
+    "operations": [
+      {
+        "operation": "insert_component",
+        "label": "Insert a Forge-backed component into a declared responsive slot",
+        "selector": "[data-dx-editable-section=\"launch-package-proof-grid\"]",
+        "sourceFile": "pages/launch.html",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      },
+      {
+        "operation": "move_reorder_section",
+        "label": "Move or reorder declared route sections",
+        "selector": "[data-dx-section]",
+        "sourceFile": "pages/launch.html",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      },
+      {
+        "operation": "update_design_token",
+        "label": "Update route-level design tokens",
+        "selector": "[data-dx-token-scope=\"launch-runtime\"]",
+        "sourceFile": "styles/launch-runtime.css",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      },
+      {
+        "operation": "update_text_content",
+        "label": "Update text or markdown-backed content",
+        "selector": "[data-dx-editable-section], [data-dx-component]",
+        "sourceFile": "pages/launch.html",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      },
+      {
+        "operation": "insert_icon_media",
+        "label": "Insert source-owned icon or media assets",
+        "selector": "[data-dx-media-slot]",
+        "sourceFile": "pages/launch.html",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      }
+    ],
+    "editableSurfaces": [
+      {
+        "id": "launch-runtime-hero",
+        "selector": "[data-dx-editable-section=\"launch-hero\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "dx-www/template-shell",
+          "3d/launch-scene"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-proof-grid",
+        "selector": "[data-dx-editable-section=\"launch-package-proof-grid\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "auth/better-auth",
+          "payments/stripe-js",
+          "validation/zod",
+          "forms/react-hook-form",
+          "state/zustand",
+          "tanstack/query",
+          "api/trpc",
+          "animation/motion",
+          "content/fumadocs-next",
+          "content/react-markdown",
+          "automations/n8n",
+          "db/drizzle-sqlite"
+        ],
+        "operations": [
+          "insert_component",
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-scene",
+        "selector": "[data-dx-media-slot=\"launch-scene\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "3d/launch-scene",
+          "animation/motion"
+        ],
+        "operations": [
+          "update_design_token",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-docs",
+        "selector": "[data-dx-component=\"fumadocs-docs-navigation-proof\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "content/fumadocs-next",
+          "content/react-markdown"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-automations",
+        "selector": "[data-dx-component=\"automations-n8n-readiness-workflow\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "automations/n8n"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-database-backend",
+        "selector": "[data-dx-component=\"database-backend-card\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "supabase/client",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "api/trpc"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      }
+    ],
+    "surfaces": [
+      {
+        "id": "launch-runtime-hero",
+        "selector": "[data-dx-editable-section=\"launch-hero\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "dx-www/template-shell",
+          "3d/launch-scene"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-proof-grid",
+        "selector": "[data-dx-editable-section=\"launch-package-proof-grid\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "auth/better-auth",
+          "payments/stripe-js",
+          "validation/zod",
+          "forms/react-hook-form",
+          "state/zustand",
+          "tanstack/query",
+          "api/trpc",
+          "animation/motion",
+          "content/fumadocs-next",
+          "content/react-markdown",
+          "automations/n8n",
+          "db/drizzle-sqlite"
+        ],
+        "operations": [
+          "insert_component",
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-scene",
+        "selector": "[data-dx-media-slot=\"launch-scene\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "3d/launch-scene",
+          "animation/motion"
+        ],
+        "operations": [
+          "update_design_token",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-docs",
+        "selector": "[data-dx-component=\"fumadocs-docs-navigation-proof\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "content/fumadocs-next",
+          "content/react-markdown"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-automations",
+        "selector": "[data-dx-component=\"automations-n8n-readiness-workflow\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "automations/n8n"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-database-backend",
+        "selector": "[data-dx-component=\"database-backend-card\"]",
+        "sourceFile": "pages/launch.html",
+        "materializedFile": "pages/launch.html",
+        "packageIds": [
+          "supabase/client",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "api/trpc"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      }
+    ]
+  },
+  "files": [
+    "pages/_layout.html",
+    "pages/launch.html",
+    "pages/automations.html",
+    "pages/ui.html",
+    "pages/database.html",
+    "pages/backend.html",
+    "styles/launch-runtime.css",
+    "public/launch-runtime.js",
+    "app/api/auth/session/route.ts",
+    "app/api/checkout/route.ts",
+    "app/api/ai/chat/route.ts",
+    "app/api/trpc/health/route.ts"
+  ]
+}

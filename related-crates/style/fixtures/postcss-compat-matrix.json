@@ -1,0 +1,214 @@
+{
+  "schema": "dx.style.postcssCompatibilityMatrix",
+  "schemaVersion": 1,
+  "mode": "PostCSS replacement for DX starters",
+  "postcssRuntimeDependencyRequired": false,
+  "localPostcssConfigRequired": false,
+  "dxStarterReplacementScore": 100,
+  "dxStarterReplacementStatus": "complete-for-official-dx-starters",
+  "fullPostcssPluginParity": false,
+  "postcssPluginParityStatus": "not-claimed",
+  "defaultTarget": "modern",
+  "optionalTargets": ["legacy"],
+  "autoprefixerParityStatus": "partial",
+  "features": [
+    {
+      "feature": "css-import-flattening",
+      "inputCss": "@import \"./tokens.css\";\n.button { color: var(--fg); }",
+      "expectedOutputCss": ":root { --fg: black; }\n.button { color: var(--fg); }",
+      "status": "supported"
+    },
+    {
+      "feature": "nesting-transform",
+      "inputCss": ".card { & .title { color: red; } }",
+      "expectedOutputCss": ".card .title { color: red; }",
+      "status": "supported"
+    },
+    {
+      "feature": "nested-at-rule-transform",
+      "inputCss": ".card { @media (width >= 48rem) { color: blue; & .title { color: green; } } @supports (display: grid) { display: grid; } }",
+      "expectedOutputCss": "@media (min-width: 48rem) { .card { color: blue; } .card .title { color: green; } }\n@supports (display: grid) { .card { display: grid; } }",
+      "status": "supported"
+    },
+    {
+      "feature": "nest-at-rule-transform",
+      "inputCss": ".card { @nest .theme & { color: blue; } }",
+      "expectedOutputCss": ".theme .card { color: blue; }",
+      "status": "supported"
+    },
+    {
+      "feature": "custom-media",
+      "inputCss": "@custom-media --narrow (width <= 40rem);\n@media (--narrow) { .card { display: block; } }",
+      "expectedOutputCss": "@media (max-width: 40rem) { .card { display: block; } }",
+      "status": "supported"
+    },
+    {
+      "feature": "compound-custom-media",
+      "inputCss": "@custom-media --wide (width >= 64rem);\n@media screen and (--wide) { .hero { display: grid; } }",
+      "expectedOutputCss": "@media screen and (min-width: 64rem) { .hero { display: grid; } }",
+      "status": "supported"
+    },
+    {
+      "feature": "media-min-max-syntax",
+      "inputCss": "@media (width >= 48rem) { .card { display: grid; } }",
+      "expectedOutputCss": "@media (min-width: 48rem) { .card { display: grid; } }",
+      "status": "supported"
+    },
+    {
+      "feature": "strict-media-range-syntax",
+      "inputCss": "@media (width > 48rem) { .card { display: block; } }\n@media (height < 40rem) { .card { display: none; } }",
+      "expectedOutputCss": "@media (min-width: calc(48rem + 0.02px)) { .card { display: block; } }\n@media (max-height: calc(40rem - 0.02px)) { .card { display: none; } }",
+      "status": "supported"
+    },
+    {
+      "feature": "mixed-media-range-syntax",
+      "inputCss": "@media (48rem < width <= 72rem) { .card { display: block; } }\n@media (30rem <= height < 50rem) { .card { display: none; } }",
+      "expectedOutputCss": "@media (min-width: calc(48rem + 0.02px)) and (max-width: 72rem) { .card { display: block; } }\n@media (min-height: 30rem) and (max-height: calc(50rem - 0.02px)) { .card { display: none; } }",
+      "status": "supported"
+    },
+    {
+      "feature": "custom-selectors-safe",
+      "inputCss": "@custom-selector :--control button, .button;\n.card { & :--control { color: red; } }",
+      "expectedOutputCss": ".card button, .card .button { color: red; }",
+      "status": "supported"
+    },
+    {
+      "feature": "logical-property-fallbacks",
+      "inputCss": ".card { margin-inline: 1rem; }",
+      "expectedOutputCss": ".card { margin-left: 1rem; margin-right: 1rem; margin-inline: 1rem; }",
+      "status": "partial"
+    },
+    {
+      "feature": "logical-directional-fallbacks",
+      "inputCss": ".logical { margin-inline-start: 1rem; padding-inline-end: 2rem; border-inline-start: 1px solid red; text-align: start; }",
+      "expectedOutputCss": ".logical { margin-left: 1rem; margin-inline-start: 1rem; padding-right: 2rem; padding-inline-end: 2rem; border-left: 1px solid red; border-inline-start: 1px solid red; text-align: left; text-align: start; }",
+      "status": "partial"
+    },
+    {
+      "feature": "autoprefixer-style-prefixing",
+      "inputCss": ".button { user-select: none; appearance: none; }",
+      "expectedOutputCss": ".button { -webkit-user-select: none; user-select: none; -webkit-appearance: none; appearance: none; }",
+      "status": "partial"
+    },
+    {
+      "feature": "expanded-prefix-families",
+      "inputCss": ".panel { display: inline-flex; hyphens: auto; text-size-adjust: 100%; mask-image: linear-gradient(black, transparent); }",
+      "expectedOutputCss": ".panel { display: -webkit-inline-box; display: -ms-inline-flexbox; -webkit-hyphens: auto; -webkit-text-size-adjust: 100%; -webkit-mask-image: linear-gradient(black, transparent); }",
+      "status": "partial"
+    },
+    {
+      "feature": "preset-env-future-css",
+      "inputCss": ".card { color: rgb(255 0 0 / 50%); }",
+      "expectedOutputCss": ".card { color: rgba(255, 0, 0, 0.5); color: rgb(255 0 0 / 50%); }",
+      "status": "partial"
+    },
+    {
+      "feature": "place-property-fallbacks",
+      "inputCss": ".hero { place-items: center start; place-content: space-between center; place-self: stretch end; }",
+      "expectedOutputCss": ".hero { align-items: center; justify-items: start; place-items: center start; align-content: space-between; justify-content: center; place-content: space-between center; align-self: stretch; justify-self: end; place-self: stretch end; }",
+      "status": "supported"
+    },
+    {
+      "feature": "image-set-prefix-fallback",
+      "inputCss": ".hero { background-image: image-set(url(\"hero.avif\") type(\"image/avif\") 1x, url(\"hero.png\") type(\"image/png\") 1x); }",
+      "expectedOutputCss": ".hero { background-image: -webkit-image-set(url(\"hero.avif\") type(\"image/avif\") 1x, url(\"hero.png\") type(\"image/png\") 1x); background-image: image-set(url(\"hero.avif\") type(\"image/avif\") 1x, url(\"hero.png\") type(\"image/png\") 1x); }",
+      "status": "supported"
+    },
+    {
+      "feature": "custom-property-env-fallbacks",
+      "inputCss": ":root { --brand: #1d4ed8; }\n.card { color: var(--brand); padding-top: env(safe-area-inset-top, 1rem); }",
+      "expectedOutputCss": ".card { color: #1d4ed8; color: var(--brand); padding-top: 1rem; padding-top: env(safe-area-inset-top, 1rem); }",
+      "status": "supported"
+    },
+    {
+      "feature": "custom-property-var-fallbacks",
+      "inputCss": ":root { --brand: #1d4ed8; }\n.card { color: var(--missing-fg, #111827); border: 1px solid var(--brand); padding: var(--space, calc(1rem + 2px)); }",
+      "expectedOutputCss": ".card { color: #111827; color: var(--missing-fg, #111827); border: 1px solid #1d4ed8; border: 1px solid var(--brand); padding: calc(1rem + 2px); padding: var(--space, calc(1rem + 2px)); }",
+      "status": "supported"
+    },
+    {
+      "feature": "simple-selector-list-lowering",
+      "inputCss": ".button:is(.primary, .secondary) { color: red; }\n.button:where(:focus, :focus-visible) { outline: 2px solid red; }",
+      "expectedOutputCss": ".button.primary, .button.secondary { color: red; }\n.button:focus, .button:focus-visible { outline: 2px solid red; }",
+      "status": "supported"
+    },
+    {
+      "feature": "not-selector-list-lowering",
+      "inputCss": ".button:not(.disabled, [aria-disabled=\"true\"]) { opacity: 1; }",
+      "expectedOutputCss": ".button:not(.disabled):not([aria-disabled=\"true\"]) { opacity: 1; }",
+      "status": "supported"
+    },
+    {
+      "feature": "color-mix-fallbacks",
+      "inputCss": ".button { background-color: color-mix(in srgb, #000000 25%, #ffffff); }",
+      "expectedOutputCss": ".button { background-color: rgb(191, 191, 191); background-color: color-mix(in srgb, #000000 25%, #ffffff); }",
+      "status": "partial"
+    },
+    {
+      "feature": "hwb-color-fallbacks",
+      "inputCss": ".swatch { color: hwb(210 20% 30% / 75%); }",
+      "expectedOutputCss": ".swatch { color: rgba(51, 115, 179, 0.75); color: hwb(210 20% 30% / 75%); }",
+      "status": "partial"
+    },
+    {
+      "feature": "gradient-transparent-stop-fix",
+      "inputCss": ".button { background-image: linear-gradient(to right, red, transparent); }",
+      "expectedOutputCss": ".button { background-image: linear-gradient(to right, red, rgba(255, 0, 0, 0)); background-image: linear-gradient(to right, red, transparent); }",
+      "status": "partial"
+    },
+    {
+      "feature": "grid-template-prefix-evidence",
+      "inputCss": ".layout { display: grid; grid-template-columns: 12rem 1fr; grid-template-rows: auto 1fr; }",
+      "expectedOutputCss": ".layout { display: -ms-grid; display: grid; -ms-grid-columns: 12rem 1fr; grid-template-columns: 12rem 1fr; -ms-grid-rows: auto 1fr; grid-template-rows: auto 1fr; }",
+      "status": "partial"
+    },
+    {
+      "feature": "selector-compat-diagnostics",
+      "inputCss": ".card:has(img) { display: block; }",
+      "expectedOutputCss": ".card:has(img) { display: block; }",
+      "status": "partial"
+    },
+    {
+      "feature": "color-function-fallbacks",
+      "inputCss": ".card { color: oklch(62% 0.2 25); }",
+      "expectedOutputCss": ".card { color: oklch(62% 0.2 25); }",
+      "status": "partial"
+    },
+    {
+      "feature": "gradient-transparency-compat",
+      "inputCss": ".card { background: linear-gradient(to right, red, transparent); }",
+      "expectedOutputCss": ".card { background: linear-gradient(to right, red, transparent); }",
+      "status": "partial"
+    },
+    {
+      "feature": "page-break-fallbacks",
+      "inputCss": ".print { break-before: page; break-inside: avoid; }",
+      "expectedOutputCss": ".print { page-break-before: always; break-before: page; page-break-inside: avoid; break-inside: avoid; }",
+      "status": "supported"
+    },
+    {
+      "feature": "flex-grid-prefix-evidence",
+      "inputCss": ".flex { display: flex; }\n.grid { display: grid; }",
+      "expectedOutputCss": ".flex { display: -webkit-box; display: -ms-flexbox; display: flex; }\n.grid { display: grid; }",
+      "status": "partial"
+    },
+    {
+      "feature": "sourcemap-source-origin",
+      "inputCss": "@import \"./tokens.css\";\n.card { color: var(--fg); }",
+      "expectedOutputCss": "receipt.source_origins + receipt.source_map.sources",
+      "status": "supported"
+    },
+    {
+      "feature": "minification",
+      "inputCss": ".card { color: red; }",
+      "expectedOutputCss": ".card { color: red; }",
+      "status": "intentionally-different"
+    }
+  ],
+  "limitations": [
+    "Official DX starter replacement score is 100 for the governed compatibility matrix.",
+    "This is still not full arbitrary PostCSS plugin parity.",
+    "Autoprefixer parity remains partial until broader equal-output target-browser tests prove generated CSS.",
+    "Grid legacy prefixing emits safe display/track canaries but remains partial until placement synthesis is implemented."
+  ]
+}

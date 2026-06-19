@@ -1,0 +1,65 @@
+export type LaunchRuntimeBoundaryStatus = "shim" | "blocked" | "missing-runtime";
+
+export interface LaunchRuntimeBoundary {
+  id: string;
+  source: string;
+  status: LaunchRuntimeBoundaryStatus;
+  reason: string;
+  future_work: string;
+}
+
+export const launchRuntimeBoundaries: LaunchRuntimeBoundary[] = [
+  {
+    id: "next-routing",
+    source: "Next.js App Router and page layouts",
+    status: "shim",
+    reason: "DX-WWW route files are canonical for launch.",
+    future_work: "Map any promoted route loader behavior into DX-WWW route metadata.",
+  },
+  {
+    id: "react-hydration",
+    source: "React component runtime",
+    status: "shim",
+    reason: "Converted pages are static DX-WWW source proof.",
+    future_work: "Add governed hydration only after the framework interaction path is approved.",
+  },
+  {
+    id: "tanstack-query",
+    source: "Supabase Studio query hooks",
+    status: "missing-runtime",
+    reason: "No hosted project credentials or query client are available in this proof.",
+    future_work: "Create a real DX-WWW data adapter with explicit credential boundaries.",
+  },
+  {
+    id: "supabase-auth-storage",
+    source: "Supabase auth and storage APIs",
+    status: "missing-runtime",
+    reason: "Auth and storage writes require credentials and runtime permission.",
+    future_work: "Gate write operations behind a Forge receipt and operator approval.",
+  },
+  {
+    id: "convex-realtime",
+    source: "Convex realtime sockets",
+    status: "blocked",
+    reason: "Realtime sockets are outside no-server launch proof rules.",
+    future_work: "Add a license-reviewed realtime adapter when runtime verification is allowed.",
+  },
+  {
+    id: "convex-functions",
+    source: "Convex function execution and deployment writes",
+    status: "blocked",
+    reason: "Function execution is license-sensitive and requires a heavier integration plan.",
+    future_work: "Review FSL limits and create a non-competing Forge backend adapter.",
+  },
+  {
+    id: "radix-state-machines",
+    source: "Radix tabs, dialog, dropdown, and slot interactions",
+    status: "shim",
+    reason: "Source-owned primitive recipes keep the UI visible without importing Radix.",
+    future_work: "Implement keyboard and focus state machines as DX-WWW-owned runtime primitives.",
+  }
+];
+
+export function findLaunchRuntimeBoundary(id: string): LaunchRuntimeBoundary | undefined {
+  return launchRuntimeBoundaries.find((boundary) => boundary.id === id);
+}

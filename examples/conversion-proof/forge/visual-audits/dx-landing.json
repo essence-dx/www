@@ -1,0 +1,30 @@
+{
+  "schema": "dx.www.visual_audit",
+  "route": "/",
+  "status": "source-owned recreated landing, runtime pending",
+  "layout": {
+    "hero": "Centered DX face, headline, platform download cards, CTAs, proof cards, and stats.",
+    "sections": "Full-width dark bands with max-width content, feature banners with real thumbnail assets, data tables, cards, and CTA.",
+    "responsive": "Cards collapse from multi-column grids to one or two columns under tablet and mobile breakpoints."
+  },
+  "visual_assets": [
+    "public/thumbnails/amber.png",
+    "public/thumbnails/blue.png",
+    "public/thumbnails/cyan.png",
+    "public/thumbnails/emerald.png",
+    "public/thumbnails/fuchsia.png",
+    "public/thumbnails/green.png"
+  ],
+  "accessibility_notes": [
+    "Platform cards are links with visible text labels.",
+    "Feature images include descriptive alt text.",
+    "Tables use thead/th structure.",
+    "Decorative DX face is aria-hidden."
+  ],
+  "honest_gaps": [
+    "The DX face is a CSS recreation, not the animated React/GSAP face.",
+    "Hover cards are simplified into direct visible platform cards.",
+    "GSAP/Motion animations are not ported because this route is intentionally no-runtime DX-WWW source proof.",
+    "Runtime screenshot and performance proof still require an approved preview run."
+  ]
+}

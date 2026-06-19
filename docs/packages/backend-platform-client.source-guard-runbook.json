@@ -1,0 +1,153 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Backend Platform Client",
+    "package_id": "supabase/client",
+    "upstream_package": "@supabase/ssr + @supabase/supabase-js",
+    "upstream_version": "@supabase/ssr latest; @supabase/supabase-js ^2",
+    "source_mirror": "G:/WWW/inspirations/supabase",
+    "based_on": "Supabase user-management profile workflow plus SSR client helpers",
+    "inspected_source_files": [
+      "G:/WWW/inspirations/supabase/examples/user-management/nextjs-user-management/app/account/account-form.tsx",
+      "G:/WWW/inspirations/supabase/examples/user-management/nextjs-user-management/lib/supabase/client.ts",
+      "G:/WWW/inspirations/supabase/examples/user-management/nextjs-user-management/lib/supabase/server.ts",
+      "G:/WWW/inspirations/supabase/apps/ui-library/registry/default/clients/nextjs/registry-item.json",
+      "G:/WWW/inspirations/supabase/apps/ui-library/registry/default/clients/nextjs/lib/supabase/client.ts",
+      "G:/WWW/inspirations/supabase/apps/ui-library/registry/default/clients/nextjs/lib/supabase/server.ts"
+    ],
+    "upstream_public_apis": [
+      "createBrowserClient",
+      "createServerClient",
+      "auth.getUser",
+      "from('profiles').select",
+      "from('profiles').upsert"
+    ]
+  },
+  "guard": {
+    "id": "backend-platform-client-dx-style-rust-check-output",
+    "routes": ["/"],
+    "guard_file": "core/src/ecosystem/project_check/backend_platform_client_dx_check.rs",
+    "command": "cargo test -q -p dx-www-compiler backend_platform_client_dx_style_missing_metric_and_finding_flip --lib",
+    "lightweight_guard_file": "benchmarks/supabase-dx-check-output.test.ts",
+    "lightweight_command": "dx run --test .\\benchmarks\\supabase-dx-check-output.test.ts",
+    "proves": [
+      "Backend Platform Client Rust dx-style check output",
+      "backend_platform_client_dx_style_compatibility_present",
+      "backend_platform_client_dx_style_compatibility_missing",
+      "backend-platform-client-missing-dx-style-compatibility",
+      "docs/packages/backend-platform-client.source-guard-runbook.json",
+      "without claiming hosted Supabase runtime proof",
+      "supabase/client source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "backend-platform-client-dx-style-rust-check-output",
+      "purpose": "The lower-level Backend Platform Client dx-check producer reports dx-style compatibility present and missing metrics with a missing-metadata finding flip, without claiming hosted Supabase runtime proof.",
+      "evidence_field": "cargo test -q -p dx-www-compiler backend_platform_client_dx_style_missing_metric_and_finding_flip --lib"
+    },
+    "command": {
+      "command": "cargo test -q -p dx-www-compiler backend_platform_client_dx_style_missing_metric_and_finding_flip --lib",
+      "purpose": "Validate the source-only Backend Platform Client dx-style metric and missing-metadata finding flip without hosted Supabase runtime proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    },
+    "lightweight_command": {
+      "command": "dx run --test .\\benchmarks\\supabase-dx-check-output.test.ts",
+      "purpose": "Validate the Backend Platform Client Rust dx-check output contract with the lightweight package-owned Node guard.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "helper_freshness_guard": {
+    "id": "backend-platform-client-lower-dx-check-helper-freshness",
+    "routes": ["/"],
+    "guard_file": "core/src/ecosystem/project_check/backend_platform_client_dx_check.rs",
+    "command": "cargo test -q -p dx-www-compiler backend_platform_client_hash_refresh_stale_helper_keeps_source_hash_clean --lib",
+    "lightweight_guard_file": "benchmarks/supabase-dx-check-output.test.ts",
+    "lightweight_command": "dx run --test .\\benchmarks\\supabase-dx-check-output.test.ts",
+    "proves": [
+      "Backend Platform Client lower-level dx-check helper freshness fixture",
+      "backend_platform_client_receipt_hash_refresh_stale",
+      "backend_platform_client_receipt_stale",
+      "backend_platform_client_hash_mismatch stays byte-derived",
+      "backend-platform-client-stale-receipt",
+      "docs/packages/backend-platform-client.source-guard-runbook.json",
+      "without claiming hosted Supabase runtime proof",
+      "supabase/client source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "source_guard_fixture_paths": [
+    {
+      "source_guard_id": "backend-platform-client-lower-dx-check-helper-freshness",
+      "package_id": "supabase/client",
+      "fixture_path": "docs/packages/backend-platform-client.source-guard-runbook.json",
+      "schema": "dx.forge.package.source_guard_runbook_fixture"
+    }
+  ],
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "root_field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "route": "/",
+    "fixture_path": "docs/packages/backend-platform-client.source-guard-runbook.json",
+    "guard_id": "backend-platform-client-lower-dx-check-helper-freshness",
+    "honesty_label": "SOURCE-ONLY",
+    "runtime_proof": false
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package",
+    "backend_platform_client_dx_style_compatibility_present",
+    "backend_platform_client_dx_style_compatibility_missing",
+    "backend_platform_client_receipt_hash_refresh_current",
+    "backend_platform_client_receipt_hash_refresh_stale",
+    "backend_platform_client_receipt_hash_refresh_missing",
+    "backend-platform-client:dx-style-compatibility",
+    "backend-platform-client:receipt-hash-refresh"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json",
+    "hash_helper": "examples/template/backend-platform-client-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/backend-platform-client-receipt-hashes.ts --check --json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "zed_visibility": "backend-platform-client:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "Supabase project provisioning",
+    "public env configuration",
+    "profile table and RLS policy",
+    "auth redirect and provider credentials",
+    "hosted reads, writes, realtime subscriptions, storage, RPC, and Edge Functions"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned dx-check source guard and Studio runbook metadata only.",
+    "hosted Supabase runtime proof, project credentials, Auth/database behavior, Storage, Realtime, RPC, Edge Functions, accessibility review, and browser visual QA stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

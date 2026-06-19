@@ -1,0 +1,117 @@
+{
+  "template": "minimal-www-starter",
+  "project": "ui-components",
+  "entrypoint": "app/page.tsx",
+  "app_router_first": true,
+  "compatibility_pages_fallback": false,
+  "node_modules_required": false,
+  "package_policy": "forge-first-no-node-modules",
+  "run_command": "dx dev",
+  "app_router_files": [
+    "app/layout.tsx",
+    "app/page.tsx"
+  ],
+  "local_source": [
+    "app/page.tsx",
+    "app/layout.tsx",
+    "styles/theme.css",
+    "styles/generated.css",
+    "styles/globals.css",
+    "components/icons/icon.tsx",
+    "lib/utils.ts",
+    "public/logo.svg",
+    "public/icon.svg",
+    "public/favicon.svg",
+    "vercel.json",
+    ".gitignore",
+    "README.md"
+  ],
+  "tooling": [
+    "dx-style",
+    "dx-imports",
+    "dx-check",
+    "serializer"
+  ],
+  "tooling_config_source": "dx",
+  "source_package": {
+    "package_id": "www/minimal-starter",
+    "variant": "default",
+    "source": "examples/template"
+  },
+  "generated_files": [
+    {
+      "kind": "minimal-www-home-page",
+      "source_file": "examples/template/app/page.tsx",
+      "materialized_file": "app/page.tsx"
+    },
+    {
+      "kind": "minimal-www-root-layout",
+      "source_file": "examples/template/app/layout.tsx",
+      "materialized_file": "app/layout.tsx"
+    },
+    {
+      "kind": "minimal-www-theme-tokens",
+      "source_file": "examples/template/styles/theme.css",
+      "materialized_file": "styles/theme.css"
+    },
+    {
+      "kind": "minimal-www-generated-css",
+      "source_file": "examples/template/styles/generated.css",
+      "materialized_file": "styles/generated.css"
+    },
+    {
+      "kind": "minimal-www-global-css",
+      "source_file": "examples/template/styles/globals.css",
+      "materialized_file": "styles/globals.css"
+    },
+    {
+      "kind": "minimal-www-source-owned-icon-component",
+      "source_file": "examples/template/components/icons/icon.tsx",
+      "materialized_file": "components/icons/icon.tsx"
+    },
+    {
+      "kind": "minimal-www-source-owned-utility-helpers",
+      "source_file": "examples/template/lib/utils.ts",
+      "materialized_file": "lib/utils.ts"
+    },
+    {
+      "kind": "minimal-www-logo-asset",
+      "source_file": "examples/template/public/logo.svg",
+      "materialized_file": "public/logo.svg"
+    },
+    {
+      "kind": "minimal-www-icon-asset",
+      "source_file": "examples/template/public/icon.svg",
+      "materialized_file": "public/icon.svg"
+    },
+    {
+      "kind": "minimal-www-favicon-asset",
+      "source_file": "examples/template/public/favicon.svg",
+      "materialized_file": "public/favicon.svg"
+    },
+    {
+      "kind": "minimal-www-vercel-deploy-policy",
+      "source_file": "examples/template/vercel.json",
+      "materialized_file": "vercel.json"
+    },
+    {
+      "kind": "minimal-www-gitignore-policy",
+      "source_file": "examples/template/.gitignore",
+      "materialized_file": ".gitignore"
+    },
+    {
+      "kind": "minimal-www-readme",
+      "source_file": "examples/template/README.md",
+      "materialized_file": "README.md"
+    }
+  ],
+  "forge_artifacts": [
+    ".dx/forge/source-manifest.json",
+    ".dx/forge/template-core-sources.json"
+  ],
+  "compiler_owned_intrinsics": [
+    "jsx",
+    "app-router",
+    "static-assets"
+  ]
+}

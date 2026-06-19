@@ -1,0 +1,75 @@
+{
+  "schema": "dx.www.route_visual_audit",
+  "source_project": "convex-backend",
+  "converted_route": "/backend",
+  "source_surface_map": "forge/source-surfaces/convex-backend.json",
+  "score_out_of_100": 91,
+  "no_fake_cards": true,
+  "route_sections": [
+    {
+      "kind": "brand-header",
+      "label": "Convex backend source mark and route headline",
+      "source_files": ["npm-packages/dashboard/public/convex-logo.svg"],
+      "converted_files": ["pages/backend.html"],
+      "launch_value": "Makes backend provenance visible before runtime topology details."
+    },
+    {
+      "kind": "route-navigation",
+      "label": "DX-WWW conversion route switcher",
+      "source_files": ["npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/functions.tsx"],
+      "converted_files": ["pages/backend.html"],
+      "launch_value": "Keeps backend proof linked with UI and database conversion routes."
+    },
+    {
+      "kind": "primary-source-surface",
+      "label": "Functions and realtime source table",
+      "source_files": ["npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/functions.tsx", "crates/function_runner"],
+      "converted_files": ["pages/backend.html"],
+      "launch_value": "Shows the actual backend source areas without executing functions."
+    },
+    {
+      "kind": "dashboard-workflow",
+      "label": "Data, logs, files, and schedule lanes",
+      "source_files": ["npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/data.tsx", "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/logs.tsx"],
+      "converted_files": ["pages/backend.html"],
+      "launch_value": "Preserves operations workflows as readable DX-WWW route sections."
+    },
+    {
+      "kind": "runtime-boundary",
+      "label": "Function execution and deployment boundary",
+      "source_files": ["crates/model", "crates/function_runner"],
+      "converted_files": ["pages/backend.html"],
+      "launch_value": "Keeps realtime sockets, function execution, and deployment writes blocked until reviewed."
+    },
+    {
+      "kind": "responsive-layout",
+      "label": "Backend operations split surface",
+      "source_files": ["npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/functions.tsx"],
+      "converted_files": ["pages/backend.html"],
+      "launch_value": "Keeps backend inventory, runtime notes, and source tables readable in Web Preview."
+    }
+  ],
+  "visual_assets": ["public/vendor/convex-logo.svg"],
+  "responsive_constraints": [
+    "Backend operation lanes stack cleanly in narrow Zed preview.",
+    "Runtime blockers remain adjacent to the source sections they constrain.",
+    "Navigation stays visible before long topology notes."
+  ],
+  "accessibility_notes": [
+    "Convex logo has descriptive alt text.",
+    "Blocked runtime work is listed as visible text.",
+    "Active route state is visible in route navigation."
+  ],
+  "launch_state": {
+    "real": [
+      "Functions, data, logs, files, and runtime topology source paths are recorded.",
+      "Copied logo and FSL notice are preserved."
+    ],
+    "partial": [
+      "Realtime and function surfaces are represented structurally until reviewed runtime adapters exist."
+    ],
+    "blocked": [
+      "No realtime socket, function execution, deployment write, or license-sensitive server reuse was performed."
+    ]
+  }
+}

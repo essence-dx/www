@@ -1,0 +1,51 @@
+{
+  "schema": "dx.forge.template_readiness.package",
+  "lane_number": 5,
+  "lane_name": "Payments + AI + Automations",
+  "package_id": "ai/vercel-ai",
+  "official_package_name": "AI SDK",
+  "upstream_package": "ai",
+  "upstream_version": "7.0.0-canary.146",
+  "dx_version": "7.0.0-canary.146-dx.0",
+  "classification": "provider-gated",
+  "runtime_proof": false,
+  "live_provider_execution": false,
+  "model_streaming": false,
+  "secret_access": false,
+  "readiness_route": "/api/ai/chat",
+  "app_route_handler": "app/api/ai/chat/route.ts",
+  "provider_boundary": "lib/ai/provider-boundary.ts",
+  "required_env": [
+    "AI_PROVIDER_API_KEY"
+  ],
+  "optional_env": [
+    "AI_GATEWAY_API_KEY"
+  ],
+  "source_owned_surfaces": [
+    "lib/ai/chat-route.ts",
+    "lib/ai/client-chat.tsx",
+    "lib/ai/dashboard-readiness.ts",
+    "lib/ai/provider-boundary.ts",
+    "app/api/ai/chat/route.ts",
+    "components/ai/*",
+    "components/template-app/package-reality-panel.tsx"
+  ],
+  "template_usage": [
+    "chat route returns a 501 provider-boundary response when AI_PROVIDER_API_KEY is missing",
+    "dashboard provider card names the provider boundary and receipt",
+    "AI surfaces keep model output disabled until app-owned credentials exist"
+  ],
+  "blocked_until_configured": [
+    "AI provider API key",
+    "model routing policy",
+    "prompt safety and moderation policy",
+    "usage limits and billing controls",
+    "persistent conversation storage if the app enables it",
+    "observability for production model calls"
+  ],
+  "honesty_notes": [
+    "This receipt is not live model streaming, model quality, billing, safety, or persistence proof.",
+    "The template owns editable AI route and client source, but provider credentials and model policy remain app-owned.",
+    "No secret values are read into this receipt."
+  ]
+}

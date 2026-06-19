@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/public/fonts/JetBrainsMono.woff2") format("woff2");
+}
+
+:root {
+  color-scheme: dark;
+  --background: 0 0% 3%;
+  --foreground: 0 0% 96%;
+  --surface: 0 0% 4%;
+  --muted: 0 0% 14%;
+  --muted-foreground: 0 0% 68%;
+  --border: 0 0% 18%;
+  --color-border: hsl(var(--border));
+  --card: 0 0% 7%;
+  --accent: 0 0% 98%;
+  --accent-foreground: 0 0% 4%;
+  --success: 142 70% 45%;
+  --warning: 38 92% 50%;
+  --danger: 0 84% 60%;
+  --destructive: var(--danger);
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 4%;
+  --ring: 0 0% 83%;
+  --spacing: 0.25rem;
+  --font-mono: "JetBrains Mono", "JetBrains Mono NL", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+@source inline("m-0 min-h-screen bg-background text-foreground text-muted-foreground font-mono grid flex block items-end items-center justify-between justify-center place-items-center overflow-hidden border border-t border-border rounded-lg bg-card p-5 px-6 py-10 py-14 md:px-10 gap-2 gap-3 gap-4 gap-5 gap-8 gap-10 max-w-3xl max-w-5xl max-w-6xl w-full mb-5 mt-3 size-5 text-primary text-xs text-sm text-lg text-xl text-6xl md:text-8xl md:text-9xl font-black uppercase leading-6 leading-8 leading-none flex-wrap md:grid-cols-3 animate-slide-up-1s-delay-200ms-both animate-slide-up-1s-delay-700ms-both animate-slide-up-1s-delay-1000ms-both animate-bounce-2s-ease-in-out");

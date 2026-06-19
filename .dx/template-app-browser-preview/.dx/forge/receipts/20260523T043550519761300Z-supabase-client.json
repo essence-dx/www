@@ -1,0 +1,636 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "supabase/client",
+    "upstream_name": "@dx/forge-supabase",
+    "version": "0.1.0",
+    "generator": "dx-forge/supabase",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "7bf5417805c90750e18c7b6c20ffb63710afebb3c5758677f4b903bb4f8bbc70",
+    "license": "Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "supabase/supabase examples/auth/nextjs and examples/user-management/nextjs-user-management",
+      "verified": false,
+      "note": "DX inspected the local Supabase monorepo examples and package metadata for @supabase/ssr, @supabase/supabase-js, createBrowserClient(), createServerClient(), auth actions, and the profiles RLS seed; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Supabase client slice, but it is not a live advisory feed and does not audit deployed RLS policy, Auth redirect configuration, or project secrets."
+    },
+    "license_review": {
+      "declared_license": "Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/supabase/env.ts",
+        "logical_path": "js/supabase/env.ts",
+        "hash": "1e6466888a94967341b8f43631bb6b7a05434f7f27ea9cc1878284727dc7b436",
+        "bytes": 1771
+      },
+      {
+        "path": "lib/supabase/browser.ts",
+        "logical_path": "js/supabase/browser.ts",
+        "hash": "69322b80355a3fef234b2e77a84c851973dfd9c9310afac2e2487468af6cc2e0",
+        "bytes": 642
+      },
+      {
+        "path": "lib/supabase/avatar-storage.ts",
+        "logical_path": "js/supabase/avatar-storage.ts",
+        "hash": "330f61327c9994355ac8cad8e962367773bd7ab88a215fad0e75a40e59ccef1d",
+        "bytes": 4318
+      },
+      {
+        "path": "lib/supabase/signed-storage.ts",
+        "logical_path": "js/supabase/signed-storage.ts",
+        "hash": "2bcc8ba3c4790a3144e25fbbbfb641339399050706ffaa783afedc34b2251d0e",
+        "bytes": 6197
+      },
+      {
+        "path": "lib/supabase/storage-objects.ts",
+        "logical_path": "js/supabase/storage-objects.ts",
+        "hash": "8acf0440201e5c841bdf026e25f1e5a2185f3bacaee9807379005ab1971ab1b2",
+        "bytes": 6563
+      },
+      {
+        "path": "lib/supabase/database-rows.ts",
+        "logical_path": "js/supabase/database-rows.ts",
+        "hash": "a2e7ba073fe6dfe7820f91af4033319045351149f668474e3d5fda02bd6ec0db",
+        "bytes": 13721
+      },
+      {
+        "path": "lib/supabase/rpc.ts",
+        "logical_path": "js/supabase/rpc.ts",
+        "hash": "fff99accb62fdca3b1ca37b7ae7b79b063d1a05f2682067d260cba9a02a01b2a",
+        "bytes": 1611
+      },
+      {
+        "path": "lib/supabase/server.ts",
+        "logical_path": "js/supabase/server.ts",
+        "hash": "c835e010825ed62b025d7d43fa762555788918185e2edf79c34be327994ff626",
+        "bytes": 1109
+      },
+      {
+        "path": "lib/supabase/auth-guard.ts",
+        "logical_path": "js/supabase/auth-guard.ts",
+        "hash": "cb9401e2c36ca7e4d9e10070af798a5dbef8df077c7194a950a8b6151941b1d5",
+        "bytes": 2137
+      },
+      {
+        "path": "lib/supabase/proxy.ts",
+        "logical_path": "js/supabase/proxy.ts",
+        "hash": "7e79533d1aac350387e660c1f683cbac1ccba08bd59c63c843900a67bfc3d505",
+        "bytes": 1497
+      },
+      {
+        "path": "lib/supabase/auth-actions.ts",
+        "logical_path": "js/supabase/auth-actions.ts",
+        "hash": "881e39bce514a59fb5c32d2674ade3a138d35d8ee318fe5a62b447d7b2f48853",
+        "bytes": 3183
+      },
+      {
+        "path": "lib/supabase/auth-callback.ts",
+        "logical_path": "js/supabase/auth-callback.ts",
+        "hash": "f77e05ba987c20997a6f2d5724557dc1dd2a258798e4c191d851620ff86e5e2b",
+        "bytes": 2617
+      },
+      {
+        "path": "lib/supabase/auth-confirm.ts",
+        "logical_path": "js/supabase/auth-confirm.ts",
+        "hash": "0e4fd8f114f5ee9d03d60dc8d2dc58e12f2fda4785ee320604538cf0f5359c5c",
+        "bytes": 3242
+      },
+      {
+        "path": "lib/supabase/auth-otp.ts",
+        "logical_path": "js/supabase/auth-otp.ts",
+        "hash": "6158a5b677f088a4995e1b9cf4649834ebc4172b4ce506253385fb011a2cd614",
+        "bytes": 2316
+      },
+      {
+        "path": "lib/supabase/auth-mfa.ts",
+        "logical_path": "js/supabase/auth-mfa.ts",
+        "hash": "a55ede6bc99ba4383c85af2aecd028918604c9eea3c5c4bd766205f180abba33",
+        "bytes": 5433
+      },
+      {
+        "path": "lib/supabase/realtime-postgres.ts",
+        "logical_path": "js/supabase/realtime-postgres.ts",
+        "hash": "833404ccc7327885d51fa28fe065fae2d58c8aeae8f3cb7de3f193fde39080ae",
+        "bytes": 2278
+      },
+      {
+        "path": "lib/supabase/realtime-broadcast.ts",
+        "logical_path": "js/supabase/realtime-broadcast.ts",
+        "hash": "d46dc5dcb5228b42a3b369b2146176cba204819eddd91b525cd05e4a1962c264",
+        "bytes": 3053
+      },
+      {
+        "path": "lib/supabase/realtime-presence.ts",
+        "logical_path": "js/supabase/realtime-presence.ts",
+        "hash": "0eced3518249a26d85b64d2439e1c741674c220e9fa3332954cefe011076eee5",
+        "bytes": 3619
+      },
+      {
+        "path": "lib/supabase/realtime-auth.ts",
+        "logical_path": "js/supabase/realtime-auth.ts",
+        "hash": "749f5dc775ed1a1b35150a6d7ff5b8f13bfa9821bdf050b1bddd16fadbf2b1ad",
+        "bytes": 3233
+      },
+      {
+        "path": "lib/supabase/edge-functions.ts",
+        "logical_path": "js/supabase/edge-functions.ts",
+        "hash": "4db111a45515a1249303ab620740c9f19caf538c4340bf1110a807722c5a64dd",
+        "bytes": 3228
+      },
+      {
+        "path": "lib/supabase/auth-oauth.ts",
+        "logical_path": "js/supabase/auth-oauth.ts",
+        "hash": "c0826b953f0f26d6d13d19c3e5681a1aaabb7c04bf48dfca00bdf2edceb5a575",
+        "bytes": 2172
+      },
+      {
+        "path": "lib/supabase/auth-identities.ts",
+        "logical_path": "js/supabase/auth-identities.ts",
+        "hash": "e6cb31d2c43f34c940a9093707cbfc9e3d840b6b85a4c82c778c1db873318591",
+        "bytes": 5390
+      },
+      {
+        "path": "lib/supabase/auth-session.ts",
+        "logical_path": "js/supabase/auth-session.ts",
+        "hash": "0e81fd8a914aad3cc1e2ce69c1e375dffb67f894f30e143ca91bd411cc1e8feb",
+        "bytes": 3007
+      },
+      {
+        "path": "lib/supabase/auth-anonymous.ts",
+        "logical_path": "js/supabase/auth-anonymous.ts",
+        "hash": "a8ee88ed0ae91ffe808f450087c424542fa58a1c153e00cd469087fe0175ccaa",
+        "bytes": 5136
+      },
+      {
+        "path": "lib/supabase/password-recovery.ts",
+        "logical_path": "js/supabase/password-recovery.ts",
+        "hash": "d7bd23f575e7a6402b8bcababdb0f31c73533e5d6b739779384385ec3adeacda",
+        "bytes": 2836
+      },
+      {
+        "path": "lib/supabase/profiles.ts",
+        "logical_path": "js/supabase/profiles.ts",
+        "hash": "5f56e4b27ed520489c57295127d53937c433d595487c00514e6d8d684734ed50",
+        "bytes": 4272
+      },
+      {
+        "path": "lib/supabase/profile-workflow.ts",
+        "logical_path": "js/supabase/profile-workflow.ts",
+        "hash": "d6beabd05fa442c54dc667bbd2f05213d02e203e16d669b9d60b27db7566e839",
+        "bytes": 4639
+      },
+      {
+        "path": "lib/supabase/metadata.ts",
+        "logical_path": "js/supabase/metadata.ts",
+        "hash": "f09a906616d70d0d7345dacc359870307bbabbe5b9ea1072b17a8f77a65d7c29",
+        "bytes": 11576
+      },
+      {
+        "path": "lib/supabase/schema.sql",
+        "logical_path": "js/supabase/schema.sql",
+        "hash": "5ef0e1e19cb0027a1ca014a7f10e346104a3457e451ee546914a35b0f0f6f059",
+        "bytes": 1167
+      },
+      {
+        "path": "lib/supabase/.env.example",
+        "logical_path": "js/supabase/.env.example",
+        "hash": "bcce59dc4bc4416129b8b9b9e24335f0ad5b9db8a628b3df9b0d2a52cd7b51aa",
+        "bytes": 154
+      },
+      {
+        "path": "lib/supabase/README.md",
+        "logical_path": "js/supabase/README.md",
+        "hash": "b6f3d35a0ff6d5b5a22c2fd322e9421e3f3811f706b0576fda5dd20efd2f26c2",
+        "bytes": 13481
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/supabase/env.ts",
+      "logical_path": "js/supabase/env.ts",
+      "hash": "1e6466888a94967341b8f43631bb6b7a05434f7f27ea9cc1878284727dc7b436",
+      "bytes": 1771
+    },
+    {
+      "path": "lib/supabase/browser.ts",
+      "logical_path": "js/supabase/browser.ts",
+      "hash": "69322b80355a3fef234b2e77a84c851973dfd9c9310afac2e2487468af6cc2e0",
+      "bytes": 642
+    },
+    {
+      "path": "lib/supabase/avatar-storage.ts",
+      "logical_path": "js/supabase/avatar-storage.ts",
+      "hash": "330f61327c9994355ac8cad8e962367773bd7ab88a215fad0e75a40e59ccef1d",
+      "bytes": 4318
+    },
+    {
+      "path": "lib/supabase/signed-storage.ts",
+      "logical_path": "js/supabase/signed-storage.ts",
+      "hash": "2bcc8ba3c4790a3144e25fbbbfb641339399050706ffaa783afedc34b2251d0e",
+      "bytes": 6197
+    },
+    {
+      "path": "lib/supabase/storage-objects.ts",
+      "logical_path": "js/supabase/storage-objects.ts",
+      "hash": "8acf0440201e5c841bdf026e25f1e5a2185f3bacaee9807379005ab1971ab1b2",
+      "bytes": 6563
+    },
+    {
+      "path": "lib/supabase/database-rows.ts",
+      "logical_path": "js/supabase/database-rows.ts",
+      "hash": "a2e7ba073fe6dfe7820f91af4033319045351149f668474e3d5fda02bd6ec0db",
+      "bytes": 13721
+    },
+    {
+      "path": "lib/supabase/rpc.ts",
+      "logical_path": "js/supabase/rpc.ts",
+      "hash": "fff99accb62fdca3b1ca37b7ae7b79b063d1a05f2682067d260cba9a02a01b2a",
+      "bytes": 1611
+    },
+    {
+      "path": "lib/supabase/server.ts",
+      "logical_path": "js/supabase/server.ts",
+      "hash": "c835e010825ed62b025d7d43fa762555788918185e2edf79c34be327994ff626",
+      "bytes": 1109
+    },
+    {
+      "path": "lib/supabase/auth-guard.ts",
+      "logical_path": "js/supabase/auth-guard.ts",
+      "hash": "cb9401e2c36ca7e4d9e10070af798a5dbef8df077c7194a950a8b6151941b1d5",
+      "bytes": 2137
+    },
+    {
+      "path": "lib/supabase/proxy.ts",
+      "logical_path": "js/supabase/proxy.ts",
+      "hash": "7e79533d1aac350387e660c1f683cbac1ccba08bd59c63c843900a67bfc3d505",
+      "bytes": 1497
+    },
+    {
+      "path": "lib/supabase/auth-actions.ts",
+      "logical_path": "js/supabase/auth-actions.ts",
+      "hash": "881e39bce514a59fb5c32d2674ade3a138d35d8ee318fe5a62b447d7b2f48853",
+      "bytes": 3183
+    },
+    {
+      "path": "lib/supabase/auth-callback.ts",
+      "logical_path": "js/supabase/auth-callback.ts",
+      "hash": "f77e05ba987c20997a6f2d5724557dc1dd2a258798e4c191d851620ff86e5e2b",
+      "bytes": 2617
+    },
+    {
+      "path": "lib/supabase/auth-confirm.ts",
+      "logical_path": "js/supabase/auth-confirm.ts",
+      "hash": "0e4fd8f114f5ee9d03d60dc8d2dc58e12f2fda4785ee320604538cf0f5359c5c",
+      "bytes": 3242
+    },
+    {
+      "path": "lib/supabase/auth-otp.ts",
+      "logical_path": "js/supabase/auth-otp.ts",
+      "hash": "6158a5b677f088a4995e1b9cf4649834ebc4172b4ce506253385fb011a2cd614",
+      "bytes": 2316
+    },
+    {
+      "path": "lib/supabase/auth-mfa.ts",
+      "logical_path": "js/supabase/auth-mfa.ts",
+      "hash": "a55ede6bc99ba4383c85af2aecd028918604c9eea3c5c4bd766205f180abba33",
+      "bytes": 5433
+    },
+    {
+      "path": "lib/supabase/realtime-postgres.ts",
+      "logical_path": "js/supabase/realtime-postgres.ts",
+      "hash": "833404ccc7327885d51fa28fe065fae2d58c8aeae8f3cb7de3f193fde39080ae",
+      "bytes": 2278
+    },
+    {
+      "path": "lib/supabase/realtime-broadcast.ts",
+      "logical_path": "js/supabase/realtime-broadcast.ts",
+      "hash": "d46dc5dcb5228b42a3b369b2146176cba204819eddd91b525cd05e4a1962c264",
+      "bytes": 3053
+    },
+    {
+      "path": "lib/supabase/realtime-presence.ts",
+      "logical_path": "js/supabase/realtime-presence.ts",
+      "hash": "0eced3518249a26d85b64d2439e1c741674c220e9fa3332954cefe011076eee5",
+      "bytes": 3619
+    },
+    {
+      "path": "lib/supabase/realtime-auth.ts",
+      "logical_path": "js/supabase/realtime-auth.ts",
+      "hash": "749f5dc775ed1a1b35150a6d7ff5b8f13bfa9821bdf050b1bddd16fadbf2b1ad",
+      "bytes": 3233
+    },
+    {
+      "path": "lib/supabase/edge-functions.ts",
+      "logical_path": "js/supabase/edge-functions.ts",
+      "hash": "4db111a45515a1249303ab620740c9f19caf538c4340bf1110a807722c5a64dd",
+      "bytes": 3228
+    },
+    {
+      "path": "lib/supabase/auth-oauth.ts",
+      "logical_path": "js/supabase/auth-oauth.ts",
+      "hash": "c0826b953f0f26d6d13d19c3e5681a1aaabb7c04bf48dfca00bdf2edceb5a575",
+      "bytes": 2172
+    },
+    {
+      "path": "lib/supabase/auth-identities.ts",
+      "logical_path": "js/supabase/auth-identities.ts",
+      "hash": "e6cb31d2c43f34c940a9093707cbfc9e3d840b6b85a4c82c778c1db873318591",
+      "bytes": 5390
+    },
+    {
+      "path": "lib/supabase/auth-session.ts",
+      "logical_path": "js/supabase/auth-session.ts",
+      "hash": "0e81fd8a914aad3cc1e2ce69c1e375dffb67f894f30e143ca91bd411cc1e8feb",
+      "bytes": 3007
+    },
+    {
+      "path": "lib/supabase/auth-anonymous.ts",
+      "logical_path": "js/supabase/auth-anonymous.ts",
+      "hash": "a8ee88ed0ae91ffe808f450087c424542fa58a1c153e00cd469087fe0175ccaa",
+      "bytes": 5136
+    },
+    {
+      "path": "lib/supabase/password-recovery.ts",
+      "logical_path": "js/supabase/password-recovery.ts",
+      "hash": "d7bd23f575e7a6402b8bcababdb0f31c73533e5d6b739779384385ec3adeacda",
+      "bytes": 2836
+    },
+    {
+      "path": "lib/supabase/profiles.ts",
+      "logical_path": "js/supabase/profiles.ts",
+      "hash": "5f56e4b27ed520489c57295127d53937c433d595487c00514e6d8d684734ed50",
+      "bytes": 4272
+    },
+    {
+      "path": "lib/supabase/profile-workflow.ts",
+      "logical_path": "js/supabase/profile-workflow.ts",
+      "hash": "d6beabd05fa442c54dc667bbd2f05213d02e203e16d669b9d60b27db7566e839",
+      "bytes": 4639
+    },
+    {
+      "path": "lib/supabase/metadata.ts",
+      "logical_path": "js/supabase/metadata.ts",
+      "hash": "f09a906616d70d0d7345dacc359870307bbabbe5b9ea1072b17a8f77a65d7c29",
+      "bytes": 11576
+    },
+    {
+      "path": "lib/supabase/schema.sql",
+      "logical_path": "js/supabase/schema.sql",
+      "hash": "5ef0e1e19cb0027a1ca014a7f10e346104a3457e451ee546914a35b0f0f6f059",
+      "bytes": 1167
+    },
+    {
+      "path": "lib/supabase/.env.example",
+      "logical_path": "js/supabase/.env.example",
+      "hash": "bcce59dc4bc4416129b8b9b9e24335f0ad5b9db8a628b3df9b0d2a52cd7b51aa",
+      "bytes": 154
+    },
+    {
+      "path": "lib/supabase/README.md",
+      "logical_path": "js/supabase/README.md",
+      "hash": "b6f3d35a0ff6d5b5a22c2fd322e9421e3f3811f706b0576fda5dd20efd2f26c2",
+      "bytes": 13481
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/supabase/env.ts",
+      "materialized_path": "lib/supabase/env.ts",
+      "hash": "1e6466888a94967341b8f43631bb6b7a05434f7f27ea9cc1878284727dc7b436",
+      "bytes": 1771
+    },
+    {
+      "logical_path": "js/supabase/browser.ts",
+      "materialized_path": "lib/supabase/browser.ts",
+      "hash": "69322b80355a3fef234b2e77a84c851973dfd9c9310afac2e2487468af6cc2e0",
+      "bytes": 642
+    },
+    {
+      "logical_path": "js/supabase/avatar-storage.ts",
+      "materialized_path": "lib/supabase/avatar-storage.ts",
+      "hash": "330f61327c9994355ac8cad8e962367773bd7ab88a215fad0e75a40e59ccef1d",
+      "bytes": 4318
+    },
+    {
+      "logical_path": "js/supabase/signed-storage.ts",
+      "materialized_path": "lib/supabase/signed-storage.ts",
+      "hash": "2bcc8ba3c4790a3144e25fbbbfb641339399050706ffaa783afedc34b2251d0e",
+      "bytes": 6197
+    },
+    {
+      "logical_path": "js/supabase/storage-objects.ts",
+      "materialized_path": "lib/supabase/storage-objects.ts",
+      "hash": "8acf0440201e5c841bdf026e25f1e5a2185f3bacaee9807379005ab1971ab1b2",
+      "bytes": 6563
+    },
+    {
+      "logical_path": "js/supabase/database-rows.ts",
+      "materialized_path": "lib/supabase/database-rows.ts",
+      "hash": "a2e7ba073fe6dfe7820f91af4033319045351149f668474e3d5fda02bd6ec0db",
+      "bytes": 13721
+    },
+    {
+      "logical_path": "js/supabase/rpc.ts",
+      "materialized_path": "lib/supabase/rpc.ts",
+      "hash": "fff99accb62fdca3b1ca37b7ae7b79b063d1a05f2682067d260cba9a02a01b2a",
+      "bytes": 1611
+    },
+    {
+      "logical_path": "js/supabase/server.ts",
+      "materialized_path": "lib/supabase/server.ts",
+      "hash": "c835e010825ed62b025d7d43fa762555788918185e2edf79c34be327994ff626",
+      "bytes": 1109
+    },
+    {
+      "logical_path": "js/supabase/auth-guard.ts",
+      "materialized_path": "lib/supabase/auth-guard.ts",
+      "hash": "cb9401e2c36ca7e4d9e10070af798a5dbef8df077c7194a950a8b6151941b1d5",
+      "bytes": 2137
+    },
+    {
+      "logical_path": "js/supabase/proxy.ts",
+      "materialized_path": "lib/supabase/proxy.ts",
+      "hash": "7e79533d1aac350387e660c1f683cbac1ccba08bd59c63c843900a67bfc3d505",
+      "bytes": 1497
+    },
+    {
+      "logical_path": "js/supabase/auth-actions.ts",
+      "materialized_path": "lib/supabase/auth-actions.ts",
+      "hash": "881e39bce514a59fb5c32d2674ade3a138d35d8ee318fe5a62b447d7b2f48853",
+      "bytes": 3183
+    },
+    {
+      "logical_path": "js/supabase/auth-callback.ts",
+      "materialized_path": "lib/supabase/auth-callback.ts",
+      "hash": "f77e05ba987c20997a6f2d5724557dc1dd2a258798e4c191d851620ff86e5e2b",
+      "bytes": 2617
+    },
+    {
+      "logical_path": "js/supabase/auth-confirm.ts",
+      "materialized_path": "lib/supabase/auth-confirm.ts",
+      "hash": "0e4fd8f114f5ee9d03d60dc8d2dc58e12f2fda4785ee320604538cf0f5359c5c",
+      "bytes": 3242
+    },
+    {
+      "logical_path": "js/supabase/auth-otp.ts",
+      "materialized_path": "lib/supabase/auth-otp.ts",
+      "hash": "6158a5b677f088a4995e1b9cf4649834ebc4172b4ce506253385fb011a2cd614",
+      "bytes": 2316
+    },
+    {
+      "logical_path": "js/supabase/auth-mfa.ts",
+      "materialized_path": "lib/supabase/auth-mfa.ts",
+      "hash": "a55ede6bc99ba4383c85af2aecd028918604c9eea3c5c4bd766205f180abba33",
+      "bytes": 5433
+    },
+    {
+      "logical_path": "js/supabase/realtime-postgres.ts",
+      "materialized_path": "lib/supabase/realtime-postgres.ts",
+      "hash": "833404ccc7327885d51fa28fe065fae2d58c8aeae8f3cb7de3f193fde39080ae",
+      "bytes": 2278
+    },
+    {
+      "logical_path": "js/supabase/realtime-broadcast.ts",
+      "materialized_path": "lib/supabase/realtime-broadcast.ts",
+      "hash": "d46dc5dcb5228b42a3b369b2146176cba204819eddd91b525cd05e4a1962c264",
+      "bytes": 3053
+    },
+    {
+      "logical_path": "js/supabase/realtime-presence.ts",
+      "materialized_path": "lib/supabase/realtime-presence.ts",
+      "hash": "0eced3518249a26d85b64d2439e1c741674c220e9fa3332954cefe011076eee5",
+      "bytes": 3619
+    },
+    {
+      "logical_path": "js/supabase/realtime-auth.ts",
+      "materialized_path": "lib/supabase/realtime-auth.ts",
+      "hash": "749f5dc775ed1a1b35150a6d7ff5b8f13bfa9821bdf050b1bddd16fadbf2b1ad",
+      "bytes": 3233
+    },
+    {
+      "logical_path": "js/supabase/edge-functions.ts",
+      "materialized_path": "lib/supabase/edge-functions.ts",
+      "hash": "4db111a45515a1249303ab620740c9f19caf538c4340bf1110a807722c5a64dd",
+      "bytes": 3228
+    },
+    {
+      "logical_path": "js/supabase/auth-oauth.ts",
+      "materialized_path": "lib/supabase/auth-oauth.ts",
+      "hash": "c0826b953f0f26d6d13d19c3e5681a1aaabb7c04bf48dfca00bdf2edceb5a575",
+      "bytes": 2172
+    },
+    {
+      "logical_path": "js/supabase/auth-identities.ts",
+      "materialized_path": "lib/supabase/auth-identities.ts",
+      "hash": "e6cb31d2c43f34c940a9093707cbfc9e3d840b6b85a4c82c778c1db873318591",
+      "bytes": 5390
+    },
+    {
+      "logical_path": "js/supabase/auth-session.ts",
+      "materialized_path": "lib/supabase/auth-session.ts",
+      "hash": "0e81fd8a914aad3cc1e2ce69c1e375dffb67f894f30e143ca91bd411cc1e8feb",
+      "bytes": 3007
+    },
+    {
+      "logical_path": "js/supabase/auth-anonymous.ts",
+      "materialized_path": "lib/supabase/auth-anonymous.ts",
+      "hash": "a8ee88ed0ae91ffe808f450087c424542fa58a1c153e00cd469087fe0175ccaa",
+      "bytes": 5136
+    },
+    {
+      "logical_path": "js/supabase/password-recovery.ts",
+      "materialized_path": "lib/supabase/password-recovery.ts",
+      "hash": "d7bd23f575e7a6402b8bcababdb0f31c73533e5d6b739779384385ec3adeacda",
+      "bytes": 2836
+    },
+    {
+      "logical_path": "js/supabase/profiles.ts",
+      "materialized_path": "lib/supabase/profiles.ts",
+      "hash": "5f56e4b27ed520489c57295127d53937c433d595487c00514e6d8d684734ed50",
+      "bytes": 4272
+    },
+    {
+      "logical_path": "js/supabase/profile-workflow.ts",
+      "materialized_path": "lib/supabase/profile-workflow.ts",
+      "hash": "d6beabd05fa442c54dc667bbd2f05213d02e203e16d669b9d60b27db7566e839",
+      "bytes": 4639
+    },
+    {
+      "logical_path": "js/supabase/metadata.ts",
+      "materialized_path": "lib/supabase/metadata.ts",
+      "hash": "f09a906616d70d0d7345dacc359870307bbabbe5b9ea1072b17a8f77a65d7c29",
+      "bytes": 11576
+    },
+    {
+      "logical_path": "js/supabase/schema.sql",
+      "materialized_path": "lib/supabase/schema.sql",
+      "hash": "5ef0e1e19cb0027a1ca014a7f10e346104a3457e451ee546914a35b0f0f6f059",
+      "bytes": 1167
+    },
+    {
+      "logical_path": "js/supabase/.env.example",
+      "materialized_path": "lib/supabase/.env.example",
+      "hash": "bcce59dc4bc4416129b8b9b9e24335f0ad5b9db8a628b3df9b0d2a52cd7b51aa",
+      "bytes": 154
+    },
+    {
+      "logical_path": "js/supabase/README.md",
+      "materialized_path": "lib/supabase/README.md",
+      "hash": "b6f3d35a0ff6d5b5a22c2fd322e9421e3f3811f706b0576fda5dd20efd2f26c2",
+      "bytes": 13481
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `Apache-2.0` with formal review `no`."
+    },
+    {
+      "policy": "supabase-client-env-contract",
+      "traffic": "green",
+      "message": "supabase/client materializes `.env.example` for NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY; service-role secrets are intentionally excluded from the package."
+    },
+    {
+      "policy": "supabase-client-ssr-contract",
+      "traffic": "green",
+      "message": "supabase/client uses @supabase/ssr createBrowserClient and createServerClient adapters with Next cookies so browser and server clients stay explicit application source."
+    },
+    {
+      "policy": "supabase-client-source-ownership",
+      "traffic": "green",
+      "message": "Forge owns the adapter files, password auth actions, discovery metadata, env example, README, and profiles RLS seed; the application owns Supabase project configuration, Auth redirects, dependency versions, and database policy review."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-23T04:35:50.519041500+00:00",
+  "signature": null
+}

@@ -1,0 +1,34 @@
+{
+  "assets": [],
+  "boundary": {
+    "full_pipeline_parity": false,
+    "optimization": "metadata-only-no-resize-encoding-or-placeholder-generation",
+    "owner": "DX-WWW source engine",
+    "placeholder_generation": "svg-artifact-placeholders-when-dimensions-known",
+    "reference": "turbopack-image"
+  },
+  "generatedAt": "2026-05-25T06:08:11.996413500+00:00",
+  "projectRoot": "G:/Dx/www",
+  "receiptPath": ".dx/receipts/build/image-metadata.json",
+  "schema": "dx.www.imageMetadataReceipt",
+  "schema_revision": 1,
+  "summary": {
+    "dimension_sources": {},
+    "formats": {},
+    "image_assets": 0,
+    "metadata_assets": 0,
+    "node_modules_required": false,
+    "optimized_variants_emitted": 0,
+    "placeholders_emitted": 0,
+    "route_references": 0,
+    "style_references": 0
+  },
+  "upstream_reference": {
+    "crate": "turbopack-image",
+    "inspected_files": [
+      "vendor/next-rust/turbopack/crates/turbopack-image/src/process/mod.rs",
+      "vendor/next-rust/turbopack/crates/turbopack-image/src/process/svg.rs"
+    ],
+    "name": "Turbopack Image"
+  }
+}

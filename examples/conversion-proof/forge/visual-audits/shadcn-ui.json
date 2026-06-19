@@ -1,0 +1,75 @@
+{
+  "schema": "dx.www.route_visual_audit",
+  "source_project": "shadcn-ui",
+  "converted_route": "/ui",
+  "source_surface_map": "forge/source-surfaces/shadcn-ui.json",
+  "score_out_of_100": 91,
+  "no_fake_cards": true,
+  "route_sections": [
+    {
+      "kind": "brand-header",
+      "label": "shadcn-ui source mark and route headline",
+      "source_files": ["apps/v4/public/favicon-32x32.png"],
+      "converted_files": ["pages/ui.html"],
+      "launch_value": "Shows the upstream UI source clearly before any gallery detail."
+    },
+    {
+      "kind": "route-navigation",
+      "label": "DX-WWW conversion route switcher",
+      "source_files": ["apps/v4/registry/__index__.tsx"],
+      "converted_files": ["pages/ui.html"],
+      "launch_value": "Lets Zed and users jump between UI, database, and backend conversion proofs."
+    },
+    {
+      "kind": "primary-source-surface",
+      "label": "Registry intake table",
+      "source_files": ["apps/v4/registry/__index__.tsx", "apps/v4/registry/styles.tsx"],
+      "converted_files": ["pages/ui.html"],
+      "launch_value": "Maps real registry files into source-owned DX-WWW route rows."
+    },
+    {
+      "kind": "dashboard-workflow",
+      "label": "Dashboard block inventory",
+      "source_files": ["apps/v4/registry/bases/base/blocks/dashboard-01/page.tsx"],
+      "converted_files": ["pages/ui.html"],
+      "launch_value": "Preserves dashboard shell, sidebar, table, and command structure as route proof."
+    },
+    {
+      "kind": "runtime-boundary",
+      "label": "Unsupported React preview boundary",
+      "source_files": ["apps/v4/styles/radix-vega/ui/button.tsx"],
+      "converted_files": ["pages/ui.html"],
+      "launch_value": "Separates real source conversion from runtime behavior still owned by future DX-WWW widgets."
+    },
+    {
+      "kind": "responsive-layout",
+      "label": "Split source and docs panels",
+      "source_files": ["apps/v4/registry/bases/base/blocks/dashboard-01/components/app-sidebar.tsx"],
+      "converted_files": ["pages/ui.html"],
+      "launch_value": "Keeps the route scannable in Zed Web Preview without nested decorative card spam."
+    }
+  ],
+  "visual_assets": ["public/vendor/shadcn-favicon-32x32.png"],
+  "responsive_constraints": [
+    "Route header wraps navigation without hiding the source logo.",
+    "Source tables stay readable in the constrained preview column.",
+    "Runtime boundary panels remain below the primary source surface on narrow screens."
+  ],
+  "accessibility_notes": [
+    "Route navigation uses a named aria-label.",
+    "Source logo has descriptive alt text.",
+    "Unsupported runtime notes are visible text, not hidden tooltips."
+  ],
+  "launch_state": {
+    "real": [
+      "Registry, style, theme, and dashboard source paths are recorded.",
+      "Copied visual asset and MIT notice are preserved."
+    ],
+    "partial": [
+      "Interactive React previews are represented structurally until DX-WWW owns equivalent widgets."
+    ],
+    "blocked": [
+      "No package-manager registry generation or React preview runtime was executed."
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "dx.next.appRouteHandlerBuildReceipts",
+  "format": 1,
+  "receipt_count": 2,
+  "skipped_count": 3,
+  "node_modules_required": false,
+  "node_modules_present": false,
+  "lifecycle_scripts_executed": false,
+  "receipts": [
+    {
+      "schema": "dx.next.appRouteHandlerReceipt",
+      "format": 1,
+      "source_path": "app/api/auth/session/route.ts",
+      "method": "GET",
+      "request_path": "/api/auth/session",
+      "route_params": {},
+      "search_params": {},
+      "route_param_count": 0,
+      "search_param_count": 0,
+      "response": {
+        "status": 200,
+        "content_type": "application/json; charset=utf-8",
+        "header_count": 1
+      },
+      "response_header_count": 1,
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false,
+      "node_modules_present": false,
+      "runtime_boundary": {
+        "source_owned": true,
+        "external_runtime_required": false,
+        "external_runtime_executed": false
+      },
+      "adapter_boundary": [
+        "Does not import Next.js Route Handler runtime.",
+        "Does not require React/RSC, Node/NAPI, npm, or node_modules.",
+        "Does not claim unbounded NextRequest, streaming bodies, or middleware handoff coverage."
+      ]
+    },
+    {
+      "schema": "dx.next.appRouteHandlerReceipt",
+      "format": 1,
+      "source_path": "app/api/trpc/health/route.ts",
+      "method": "GET",
+      "request_path": "/api/trpc/health",
+      "route_params": {},
+      "search_params": {},
+      "route_param_count": 0,
+      "search_param_count": 0,
+      "response": {
+        "status": 200,
+        "content_type": "application/json; charset=utf-8",
+        "header_count": 1
+      },
+      "response_header_count": 1,
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false,
+      "node_modules_present": false,
+      "runtime_boundary": {
+        "source_owned": true,
+        "external_runtime_required": false,
+        "external_runtime_executed": false
+      },
+      "adapter_boundary": [
+        "Does not import Next.js Route Handler runtime.",
+        "Does not require React/RSC, Node/NAPI, npm, or node_modules.",
+        "Does not claim unbounded NextRequest, streaming bodies, or middleware handoff coverage."
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "source_path": "app/api/ai/chat/route.ts",
+      "method": "POST",
+      "request_path": "/api/ai/chat",
+      "reason": "build receipts execute only safe requestless GET/HEAD route handlers"
+    },
+    {
+      "source_path": "app/api/checkout/route.ts",
+      "method": "POST",
+      "request_path": "/api/checkout",
+      "reason": "build receipts execute only safe requestless GET/HEAD route handlers"
+    },
+    {
+      "source_path": "app/api/trpc/health/route.ts",
+      "method": "POST",
+      "request_path": "/api/trpc/health",
+      "reason": "build receipts execute only safe requestless GET/HEAD route handlers"
+    }
+  ]
+}

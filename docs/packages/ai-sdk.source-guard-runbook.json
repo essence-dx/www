@@ -1,0 +1,189 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "AI SDK",
+    "package_id": "ai/vercel-ai",
+    "aliases": [
+      "ai-sdk",
+      "vercel-ai",
+      "@vercel/ai",
+      "ai"
+    ],
+    "upstream_package": "ai",
+    "upstream_version": "7.0.0-canary.146",
+    "source_mirrors": [
+      "G:/WWW/inspirations/vercel-ai"
+    ],
+    "based_on": "Vercel AI SDK public streaming, UI transport, tool, gateway, and provider registry APIs"
+  },
+  "selected_surfaces": [
+    "launch-assistant-dashboard-workflow",
+    "receipt-hash-refresh",
+    "check-panel-helper-freshness"
+  ],
+  "inspected_upstream_files": [
+    "packages/ai/package.json",
+    "packages/ai/src/index.ts",
+    "packages/ai/src/generate-text/stream-text.ts",
+    "packages/ai/src/ui/default-chat-transport.ts",
+    "packages/ai/src/registry/provider-registry.ts"
+  ],
+  "upstream_public_apis": [
+    "streamText",
+    "convertToModelMessages",
+    "DefaultChatTransport",
+    "tool",
+    "gateway",
+    "createGateway",
+    "createProviderRegistry"
+  ],
+  "guard": {
+    "id": "ai-sdk-check-panel-helper-freshness",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/dx_check_receipt.rs",
+    "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_ai_sdk_package_lane_hash_refresh_row --lib",
+    "fixture_path": "docs/packages/ai-sdk.source-guard-runbook.json",
+    "proves": [
+      "AI SDK check-panel helper freshness fixture",
+      "ai/vercel-ai source-only Studio discovery",
+      "docs/packages/ai-sdk.source-guard-runbook.json",
+      "ai_sdk_receipt_hash_refresh_stale",
+      "ai_sdk_hash_mismatch stays byte-derived",
+      "without claiming live model streaming proof"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "route": "/",
+    "fixture_paths": [
+      {
+        "source_guard_id": "ai-sdk-check-panel-helper-freshness",
+        "package_id": "ai/vercel-ai",
+        "fixture_path": "docs/packages/ai-sdk.source-guard-runbook.json",
+        "schema": "dx.forge.package.source_guard_runbook_fixture"
+      }
+    ],
+    "source_guard_ids": [
+      "studio-preview-manifest",
+      "diff-whitespace-hygiene",
+      "conflict-marker-scan",
+      "template-shell-package-slices",
+      "internationalization-launch-package-lane-template",
+      "state-management-generated-starter-materialization",
+      "data-fetching-cache-generated-starter-materialization",
+      "backend-platform-client-dx-style-rust-check-output",
+      "ui-components-generated-starter-materialization",
+      "payments-generated-starter-materialization",
+      "forms-generated-starter-materialization",
+      "webassembly-bridge-generated-starter-materialization",
+      "motion-animation-generated-starter-materialization",
+      "validation-schemas-generated-starter-materialization",
+      "documentation-system-generated-starter-materialization",
+      "markdown-mdx-content-materialized-source-fixture",
+      "reactive-store-lower-dx-check-helper-freshness",
+      "database-orm-lower-dx-check-helper-freshness",
+      "ai-sdk-check-panel-helper-freshness"
+    ],
+    "contract": {
+      "id": "ai-sdk-check-panel-helper-freshness",
+      "purpose": "The shared check-panel AI SDK row reports ai_sdk_receipt_hash_refresh_stale while keeping ai_sdk_hash_mismatch byte-derived from selected app files.",
+      "evidence_field": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_ai_sdk_package_lane_hash_refresh_row --lib",
+      "fixture_path": "docs/packages/ai-sdk.source-guard-runbook.json",
+      "scope": "source-only",
+      "reads_runtime_artifacts": false,
+      "writes_files": false,
+      "node_modules_required": false
+    },
+    "command": {
+      "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_ai_sdk_package_lane_hash_refresh_row --lib",
+      "purpose": "Validate the source-only AI SDK check-panel helper-freshness metrics without running providers, installing dependencies, reading secrets, or claiming model streaming proof.",
+      "fixture_path": "docs/packages/ai-sdk.source-guard-runbook.json",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    },
+    "execution_policy": "source-only",
+    "requires_server": false,
+    "requires_package_install": false,
+    "requires_full_build": false,
+    "writes_files": false,
+    "node_modules_required": false
+  },
+  "dx_check_metrics": [
+    "ai_sdk_receipt_hash_refresh_current",
+    "ai_sdk_receipt_hash_refresh_stale",
+    "ai_sdk_receipt_hash_refresh_missing",
+    "ai_sdk_hash_mismatch",
+    "ai_sdk_dx_style_compatibility_present"
+  ],
+  "zed_dx_studio_markers": [
+    "check_panel.view_model.package_lane_rows",
+    "data-dx-check-package-lane-row=\"ai/vercel-ai\"",
+    "data-dx-check-package-lane-name=\"AI SDK\"",
+    "data-dx-check-package-lane-status",
+    "data-dx-check-package-lane-receipt-status",
+    "data-dx-check-package-lane-upstream-package=\"ai\"",
+    "data-dx-check-package-lane-source-mirror=\"G:/WWW/inspirations/vercel-ai\"",
+    "data-dx-style-surface=\"ai-sdk\"",
+    "data-dx-token-scope=\"ai/vercel-ai\"",
+    "ai-sdk:receipt-hash-refresh"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-ai-vercel-ai-launch-assistant.json",
+    "hash_helper": "examples/template/ai-sdk-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/ai-sdk-receipt-hashes.ts --check --json",
+    "zed_visibility": "ai-sdk:receipt-hash-refresh",
+    "source_guard_runbook_fixture": "docs/packages/ai-sdk.source-guard-runbook.json",
+    "tracked_by_receipt_hash_helper": true,
+    "tracked_file_count": 7,
+    "attribution_fields": [
+      "tracked_files",
+      "current_files",
+      "stale_files",
+      "missing_files",
+      "stale_mirror_files",
+      "missing_mirror_files",
+      "mirror_problem_count"
+    ],
+    "materializer_only_stale_fixture": "benchmarks/vercel-ai-receipt-hash-refresh.test.ts",
+    "runtime_limitations_field": "runtime_limitations"
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "root_field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture": "docs/packages/ai-sdk.source-guard-runbook.json",
+    "tracked_by_receipt_hash_helper": true,
+    "materializer_only_stale_fixture": "benchmarks/vercel-ai-receipt-hash-refresh.test.ts",
+    "runtime_proof": false
+  },
+  "app_owned_boundaries": [
+    "provider credentials",
+    "model selection",
+    "gateway routing",
+    "prompt policy and moderation",
+    "token limits and billing controls",
+    "persistence and observability",
+    "browser visual proof",
+    "live model streaming runtime proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors package-owned Studio source guard and source_guard_runbook_index metadata only.",
+    "ADAPTER-BOUNDARY: provider credentials, gateway routing, prompt policy, persistence, rate limits, billing controls, browser proof, and live model streaming proof stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

@@ -1,0 +1,9 @@
+/node_modules/
+/dist/
+/build/
+/.vercel/
+/.dx/www/output/
+/.dx/performance/
+/.dx/receipts/build/
+/.dx/receipts/graph/
+/.dx/serializer/

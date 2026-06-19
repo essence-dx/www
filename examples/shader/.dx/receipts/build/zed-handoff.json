@@ -1,0 +1,119 @@
+{
+  "schema": "dx.build.zedHandoff",
+  "schema_revision": 1,
+  "status": "source-route-shell-and-module-graph-ready",
+  "project_root": "G:/Dx/www/examples/shader",
+  "source_build_manifest": ".dx/www/output/source-build-manifest.json",
+  "source_build_receipt": ".dx/www/output/source-build-receipt.json",
+  "canonical_build_receipt": ".dx/receipts/build/latest.json",
+  "graph_receipt": ".dx/receipts/graph/latest.json",
+  "graph_consumer_snapshot": ".dx/receipts/graph/consumer-snapshot.json",
+  "build_readiness": ".dx/receipts/build/readiness.json",
+  "image_metadata_receipt": ".dx/receipts/build/image-metadata.json",
+  "content_docs_receipt": ".dx/receipts/build/content-docs.json",
+  "installed_binary_smoke_receipt": ".dx/receipts/build/installed-binary-smoke-latest.json",
+  "route_handlers": [],
+  "route_shell_chunks": 1,
+  "source_module_chunks": 1,
+  "style_optimization": {
+    "style_node_count": 4,
+    "original_rule_count": 238,
+    "retained_rule_count": 238,
+    "pruned_rule_count": 0,
+    "minified_style_count": 4,
+    "source_map_count": 4,
+    "source_map_source_count": 4,
+    "source_map_source_hash_count": 4,
+    "source_map_entry_style_source_count": 4,
+    "source_map_flattened_import_source_count": 0,
+    "source_map_retained_import_source_count": 0,
+    "source_map_segment_count": 0,
+    "source_map_exact_segment_map_count": 0,
+    "source_map_evidence_only_count": 4,
+    "source_map_link_count": 4,
+    "source_map_hash_count": 4,
+    "flattened_import_count": 0,
+    "retained_import_count": 0,
+    "asset_reference_count": 2,
+    "entry_style_asset_reference_count": 0,
+    "flattened_import_asset_reference_count": 0,
+    "retained_import_asset_reference_count": 0
+  },
+  "content_pipeline": {
+    "document_count": 0,
+    "mdx_document_count": 0,
+    "hash_manifest": ".dx/receipts/build/content-docs.json#hash_manifest",
+    "consumer_snapshot": ".dx/receipts/build/content-docs.json#consumer_snapshot",
+    "freshness": {
+      "schema": "dx.www.contentDocsFreshnessStatus",
+      "hash_algorithm": "blake3-16",
+      "status": "current-at-build",
+      "comparison": "manifest-self-check",
+      "checked_document_count": 0,
+      "current": true,
+      "stale_paths": [],
+      "missing_paths": [],
+      "unsafe_paths": [],
+      "safe_path_roots": [
+        "docs",
+        "content"
+      ],
+      "unsafe_path_policy": "reject absolute, parent, and non-docs/content receipt paths before hashing source bytes",
+      "runtime_proof": false,
+      "receipt_section": "content-docs.json#freshness_contract",
+      "consumer_action": "compare content-docs hash_manifest.document_hashes against current source bytes and reject unsafe receipt paths before trusting older receipts"
+    },
+    "node_modules_required": false,
+    "runtime_proof": false,
+    "full_mdx_pipeline_parity": false,
+    "status": "source-metadata-only"
+  },
+  "image_pipeline": {
+    "image_asset_count": 6,
+    "metadata_asset_count": 6,
+    "optimized_variant_count": 0,
+    "placeholder_count": 6,
+    "placeholder_artifact_count": 6,
+    "placeholder_artifact_bytes": 1014,
+    "placeholder_artifact_outputs": [
+      ".dx/www/output/image-placeholders/public/dx-shader/assets/apple-touch-icon-653d1ed174ed39da.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/dx-shader/assets/favicon-95cdf2c6b75c0830.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/dx-shader/assets/favicon-95cdf2c6b75c0830.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg"
+    ],
+    "route_reference_count": 6,
+    "formats": {
+      "png": 2,
+      "svg": 4
+    },
+    "dimension_sources": {
+      "png-ihdr": 2,
+      "svg-root-attributes": 3,
+      "svg-viewbox": 1
+    },
+    "status": "metadata-plus-placeholder-artifacts-boundary",
+    "full_pipeline_parity": false
+  },
+  "routes": [
+    {
+      "route": "/",
+      "source_path": "app/page.tsx",
+      "html_output": ".dx/www/output/source-routes/root/index.html",
+      "shell_chunk_output": ".dx/www/output/source-routes/root/route-shell-43c652459ac8a579.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-5d813a2c4643ccd7.mjs",
+      "source_module_chunks": [
+        {
+          "source_path": "app/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-5d813a2c4643ccd7.mjs",
+          "kind": "tsx",
+          "hash": "5d813a2c4643ccd7"
+        }
+      ],
+      "fallback_hash": "43c652459ac8a579"
+    }
+  ],
+  "node_modules_required": false,
+  "next_action": "Wire linked source-module chunks into governed preview/runtime validation before claiming full React hydration."
+}

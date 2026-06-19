@@ -1,0 +1,334 @@
+{
+  "version": 1,
+  "passed": true,
+  "score": 100,
+  "fail_under": 90,
+  "no_node_modules": true,
+  "package_count": 30,
+  "receipt_count_covers_packages": true,
+  "package_docs_present": 30,
+  "package_docs_missing": 0,
+  "packages": [
+    {
+      "package_id": "shadcn/ui/button",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 4,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "shadcn/ui/badge",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 4,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "shadcn/ui/card",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 3,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "shadcn/ui/label",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 3,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "shadcn/ui/separator",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 3,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "shadcn/ui/field",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 5,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "shadcn/ui/item",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 5,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "shadcn/ui/input",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 2,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "shadcn/ui/textarea",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 2,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "dx/icon/search",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 3,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "auth/better-auth",
+      "variant": "default",
+      "version": "1.6.11-dx.9",
+      "file_count": 21,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "animation/motion",
+      "variant": "default",
+      "version": "12.38.0-dx.12",
+      "file_count": 17,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "i18n/next-intl",
+      "variant": "default",
+      "version": "4.12.0-dx.0",
+      "file_count": 40,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "tanstack/query",
+      "variant": "default",
+      "version": "5.100.10-dx.0",
+      "file_count": 38,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "validation/zod",
+      "variant": "default",
+      "version": "4.4.3-dx.13",
+      "file_count": 19,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "forms/react-hook-form",
+      "variant": "default",
+      "version": "7.75.0-dx.0",
+      "file_count": 6,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "payments/stripe-js",
+      "variant": "default",
+      "version": "9.6.0-dx.1",
+      "file_count": 10,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "automations/n8n",
+      "variant": "default",
+      "version": "1.0.0-dx.3",
+      "file_count": 6,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "state/zustand",
+      "variant": "default",
+      "version": "5.0.13-dx.10",
+      "file_count": 13,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "ai/vercel-ai",
+      "variant": "default",
+      "version": "7.0.0-canary.146-dx.0",
+      "file_count": 35,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "api/trpc",
+      "variant": "default",
+      "version": "11.17.0-dx.10",
+      "file_count": 28,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "content/fumadocs-next",
+      "variant": "default",
+      "version": "16.8.12-dx.11",
+      "file_count": 31,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "content/react-markdown",
+      "variant": "default",
+      "version": "10.1.0-dx.1",
+      "file_count": 13,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "supabase/client",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 31,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "db/drizzle-sqlite",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 18,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "instantdb/react",
+      "variant": "default",
+      "version": "0.0.0-dx.0",
+      "file_count": 28,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "wasm/bindgen",
+      "variant": "default",
+      "version": "0.2.121-dx.0",
+      "file_count": 6,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "3d/launch-scene",
+      "variant": "default",
+      "version": "0.184.0-r3f10-dx.0",
+      "file_count": 19,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "migration/static-site",
+      "variant": "default",
+      "version": "0.1.0",
+      "file_count": 4,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    },
+    {
+      "package_id": "dx-www/vertical/forge",
+      "variant": "default",
+      "version": "0.0.0-local",
+      "file_count": 1,
+      "docs_exists": true,
+      "has_rollback_receipt": false
+    }
+  ],
+  "project_structure": {
+    "dx_config_exists": true,
+    "pages_dir_exists": true,
+    "components_dir_exists": true,
+    "app_route_exists": true,
+    "app_route_path_is_adoption_fixture": true
+  },
+  "public_routes": [
+    {
+      "route": "/forge",
+      "html_exists": true,
+      "clean_index_exists": true,
+      "packet_exists": true,
+      "proof_exists": true,
+      "has_claims_path": true,
+      "passed": true
+    },
+    {
+      "route": "/forge/scorecard",
+      "html_exists": true,
+      "clean_index_exists": true,
+      "packet_exists": true,
+      "proof_exists": true,
+      "has_claims_path": false,
+      "passed": true
+    },
+    {
+      "route": "/forge/ci",
+      "html_exists": true,
+      "clean_index_exists": true,
+      "packet_exists": true,
+      "proof_exists": true,
+      "has_claims_path": true,
+      "passed": true
+    },
+    {
+      "route": "/forge/evidence",
+      "html_exists": true,
+      "clean_index_exists": true,
+      "packet_exists": true,
+      "proof_exists": true,
+      "has_claims_path": true,
+      "passed": true
+    },
+    {
+      "route": "/forge/releases",
+      "html_exists": true,
+      "clean_index_exists": true,
+      "packet_exists": true,
+      "proof_exists": true,
+      "has_claims_path": true,
+      "passed": true
+    },
+    {
+      "route": "/forge/changelog",
+      "html_exists": true,
+      "clean_index_exists": true,
+      "packet_exists": true,
+      "proof_exists": true,
+      "has_claims_path": true,
+      "passed": true
+    }
+  ],
+  "release_bundle": {
+    "exists": true,
+    "passed": true,
+    "score": 100,
+    "route_count": 6,
+    "no_node_modules": true,
+    "finding_count": 0
+  },
+  "dx_check": {
+    "score": 96,
+    "release_gate_score": 100,
+    "traffic": "yellow",
+    "strict_forge_passed": true,
+    "section_count": 6,
+    "finding_count": 145
+  },
+  "finding_count": 0,
+  "honest_scope_count": 3
+}

@@ -1,0 +1,226 @@
+{
+  "schema": "dx.www.no_runtime_route_acceptance",
+  "purpose": "Source-owned checklist for moving converted DX-WWW routes from source proof to rendered proof without running servers or builds in this lane.",
+  "consumers": [
+    "studio",
+    "zed",
+    "dx-cli",
+    "dx-www"
+  ],
+  "approval_gate": "Rendered proof requires explicit runtime approval before any local server, browser preview, hosted backend call, or long build is run.",
+  "rendered_proof_receipt_schema": "forge/acceptance/rendered-proof-evidence.schema.json",
+  "rendered_proof_validator": "forge/acceptance/validate-rendered-proof-evidence.ts",
+  "blocked_rendered_proof_fixture": "forge/acceptance/fixtures/blocked-rendered-proof.sample.json",
+  "rendered_proof_import_plan": "forge/acceptance/rendered-proof-import-plan.json",
+  "rendered_proof_import_tool": "forge/acceptance/prepare-rendered-proof-import.ts",
+  "rendered_proof_review_tool": "forge/acceptance/review-rendered-proof-completeness.ts",
+  "rendered_proof_runtime_approval_request": "forge/acceptance/rendered-proof-runtime-approval-request.json",
+  "rendered_proof_runtime_approval_tool": "forge/acceptance/request-rendered-proof-runtime-approval.ts",
+  "rendered_proof_authoring_guide": "forge/acceptance/rendered-proof-evidence-authoring-guide.json",
+  "rendered_proof_authoring_tool": "forge/acceptance/summarize-rendered-proof-evidence-requirements.ts",
+  "rendered_proof_receipt_output": ".dx/forge/runtime-evidence/conversion-proof/{route}.rendered-proof.json",
+  "policy": {
+    "no_local_server": true,
+    "no_build": true,
+    "no_node_modules": true,
+    "no_live_credentials": true,
+    "no_backend_mutations": true,
+    "no_realtime_connections": true
+  },
+  "routes": [
+    {
+      "route": "/ui",
+      "source_project": "shadcn-ui",
+      "page": "pages/ui.html",
+      "route_discovery": "forge/route-discovery/conversion-routes.json",
+      "visual_audit": "forge/visual-audits/shadcn-ui.json",
+      "rendered_proof_receipt_schema": "forge/acceptance/rendered-proof-evidence.schema.json",
+      "rendered_proof_receipt_target": ".dx/forge/runtime-evidence/conversion-proof/ui.rendered-proof.json",
+      "studio_preview_selector": "[data-dx-route=\"/ui\"]",
+      "current_state": "source-proof-ready",
+      "target_state": "rendered-proof-ready",
+      "blocked_until": "DX-WWW renderer snapshot approval is granted.",
+      "open_files": [
+        "pages/ui.html",
+        "forge/source-surfaces/shadcn-ui.json",
+        "forge/visual-audits/shadcn-ui.json",
+        "forge/conversion-manifests/shadcn-ui.json",
+        ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json"
+      ],
+      "required_evidence": [
+        {
+          "id": "renderer-snapshot",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Capture the /ui route through the approved DX-WWW renderer and attach the screenshot or artifact path."
+        },
+        {
+          "id": "asset-rendering",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Verify the shadcn favicon and copied vendor assets resolve from public/vendor without using upstream Next assets."
+        },
+        {
+          "id": "responsive-review",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Record desktop and mobile layout checks for registry, gallery, docs, and boundary panels."
+        },
+        {
+          "id": "accessibility-review",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Confirm headings, route nav, table labels, and contrast remain readable in the rendered route."
+        },
+        {
+          "id": "interaction-boundary-review",
+          "status": "blocked",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Confirm Radix and React preview interactions stay marked as launch shims until implemented by DX-WWW."
+        },
+        {
+          "id": "provenance-review",
+          "status": "pending",
+          "owner": "conversion-proof-lane",
+          "acceptance_note": "Confirm source manifest, route discovery, visual audit, conversion manifest, receipt, and license notice remain linked."
+        }
+      ]
+    },
+    {
+      "route": "/database",
+      "source_project": "supabase",
+      "page": "pages/database.html",
+      "route_discovery": "forge/route-discovery/conversion-routes.json",
+      "visual_audit": "forge/visual-audits/supabase.json",
+      "rendered_proof_receipt_schema": "forge/acceptance/rendered-proof-evidence.schema.json",
+      "rendered_proof_receipt_target": ".dx/forge/runtime-evidence/conversion-proof/database.rendered-proof.json",
+      "studio_preview_selector": "[data-dx-route=\"/database\"]",
+      "current_state": "source-proof-ready",
+      "target_state": "rendered-proof-ready",
+      "blocked_until": "Runtime preview and Supabase credential approval are granted.",
+      "open_files": [
+        "pages/database.html",
+        "forge/source-surfaces/supabase.json",
+        "forge/visual-audits/supabase.json",
+        "forge/conversion-manifests/supabase.json",
+        ".dx/forge/receipts/2026-05-21-supabase-to-database.json"
+      ],
+      "required_evidence": [
+        {
+          "id": "renderer-snapshot",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Capture the /database route through the approved DX-WWW renderer and attach the screenshot or artifact path."
+        },
+        {
+          "id": "asset-rendering",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Verify the Supabase logo and copied vendor assets resolve from public/vendor without hosted Studio assets."
+        },
+        {
+          "id": "responsive-review",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Record desktop and mobile layout checks for database, auth, storage, and runtime boundary panels."
+        },
+        {
+          "id": "accessibility-review",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Confirm headings, route nav, source tables, and administrative labels remain readable in the rendered route."
+        },
+        {
+          "id": "interaction-boundary-review",
+          "status": "blocked",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Confirm hosted auth, storage writes, Postgres mutations, and TanStack Query behavior stay marked as launch shims."
+        },
+        {
+          "id": "provenance-review",
+          "status": "pending",
+          "owner": "conversion-proof-lane",
+          "acceptance_note": "Confirm source manifest, route discovery, visual audit, conversion manifest, receipt, and Apache-2.0 notice remain linked."
+        }
+      ]
+    },
+    {
+      "route": "/backend",
+      "source_project": "convex-backend",
+      "page": "pages/backend.html",
+      "route_discovery": "forge/route-discovery/conversion-routes.json",
+      "visual_audit": "forge/visual-audits/convex-backend.json",
+      "rendered_proof_receipt_schema": "forge/acceptance/rendered-proof-evidence.schema.json",
+      "rendered_proof_receipt_target": ".dx/forge/runtime-evidence/conversion-proof/backend.rendered-proof.json",
+      "studio_preview_selector": "[data-dx-route=\"/backend\"]",
+      "current_state": "source-proof-ready",
+      "target_state": "rendered-proof-ready",
+      "blocked_until": "Runtime preview approval and license-sensitive Convex backend review are granted.",
+      "open_files": [
+        "pages/backend.html",
+        "forge/source-surfaces/convex-backend.json",
+        "forge/visual-audits/convex-backend.json",
+        "forge/conversion-manifests/convex-backend.json",
+        ".dx/forge/receipts/2026-05-21-convex-to-backend.json"
+      ],
+      "required_evidence": [
+        {
+          "id": "renderer-snapshot",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Capture the /backend route through the approved DX-WWW renderer and attach the screenshot or artifact path."
+        },
+        {
+          "id": "asset-rendering",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Verify the Convex logo and copied vendor assets resolve from public/vendor without hosted dashboard assets."
+        },
+        {
+          "id": "responsive-review",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Record desktop and mobile layout checks for functions, data, logs, files, and runtime boundary panels."
+        },
+        {
+          "id": "accessibility-review",
+          "status": "pending",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Confirm headings, route nav, source tables, and backend operation labels remain readable in the rendered route."
+        },
+        {
+          "id": "interaction-boundary-review",
+          "status": "blocked",
+          "owner": "runtime-verification-lane",
+          "acceptance_note": "Confirm realtime sockets, function execution, OpenAPI clients, and deployment writes stay blocked until approved."
+        },
+        {
+          "id": "provenance-review",
+          "status": "pending",
+          "owner": "conversion-proof-lane",
+          "acceptance_note": "Confirm source manifest, route discovery, visual audit, conversion manifest, receipt, and FSL-1.1-Apache-2.0 notice remain linked."
+        }
+      ]
+    }
+  ],
+  "status": {
+    "score_out_of_100": 99,
+    "real": [
+      "Every converted route has a source-owned checklist for the evidence needed before rendered proof.",
+      "Studio and Zed can open the route page, source surface map, visual audit, manifest, and receipt from one checklist.",
+      "Runtime-verification lanes have an output target and schema for rendered-proof receipts.",
+      "A source-only validator reports missing runtime receipts as pending evidence while keeping source readiness green.",
+      "A blocked rendered-proof sample receipt shows the exact not-approved shape without fake screenshot or accessibility artifacts.",
+      "A rendered-proof import plan maps approved external receipts into their governed runtime-evidence targets without writing files in this lane.",
+      "A rendered-proof completeness reviewer summarizes the remaining 100/100 blockers without creating runtime proof.",
+      "A rendered-proof runtime approval request names the exact runtime capture scope before any server, build, credentialed backend, or evidence write is allowed.",
+      "A rendered-proof evidence authoring guide records required artifact fields while keeping every capture value null until runtime approval."
+    ],
+    "partial": [
+      "The checklist and rendered-proof schema are source evidence only; no screenshot, accessibility scan, or responsive capture has been collected in this lane."
+    ],
+    "blocked": [
+      "Renderer snapshots, backend credentials, realtime execution, and long verification remain approval-gated."
+    ]
+  }
+}

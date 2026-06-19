@@ -1,0 +1,342 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "receipt_id": "2026-05-22-supabase-client-dashboard-workflow",
+  "package_id": "supabase/client",
+  "package_name": "Backend Platform Client",
+  "official_dx_package_name": "Backend Platform Client",
+  "upstream_package": "@supabase/ssr + @supabase/supabase-js",
+  "upstream_version": "@supabase/ssr latest; @supabase/supabase-js ^2",
+  "source_mirror": "G:/WWW/inspirations/supabase",
+  "route": "/",
+  "component": "supabase-profile-workflow",
+  "secondary_component": "supabase-schema-query-workflow",
+  "workflow": "account-profile-settings",
+  "secondary_workflow": "supabase-schema-query",
+  "product_surface": "launch-account-data-dashboard",
+  "mission_control_target": "mission-control-database",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 100,
+  "surface": "backend-platform-client-dashboard-workflow",
+  "hash_algorithm": "sha256",
+  "hash_scope": "selected Backend Platform Client dashboard files and docs; shared CLI/catalog files remain provenance-only",
+  "files": [
+    "docs/packages/supabase-client.md",
+    "docs/packages/backend-platform-client.source-guard-runbook.json",
+    "core/src/ecosystem/forge_supabase.rs",
+    "examples/template/supabase-profile-workflow-state.ts",
+    "examples/template/supabase-profile-workflow.tsx",
+    "examples/template/data-status.tsx",
+    "tools/launch/materialize-www-template.ts",
+    "examples/template/lib/supabase/metadata.ts",
+    "examples/template/lib/supabase/README.md",
+    "examples/template/lib/supabase/schema.sql",
+    "examples/template/server/supabase/readiness.ts",
+    "examples/template/app/api/supabase/readiness/route.ts"
+  ],
+  "file_hashes": {
+    "docs/packages/supabase-client.md": "23626afbb4fc4d417a9386effc749caa81af1cf6b95ad821cdb0c8afa79c04c4",
+    "docs/packages/backend-platform-client.source-guard-runbook.json": "f45456089fe36e34c1287766d59d99dd444783dab6df58590bac3364b4689941",
+    "core/src/ecosystem/forge_supabase.rs": "7a16ab44d19d412870956d3d8ca6f438cda721d38c8e04d5cb9248f86262a49a",
+    "examples/template/supabase-profile-workflow-state.ts": "0043ddb2a1a316978a5a8dc267bb8461003e8a7841086bdfc23096678ed72065",
+    "examples/template/supabase-profile-workflow.tsx": "ecffceee24af27dec4b2d80dd94cc5634ffc9af44912dd11492a0d9bee782b0e",
+    "examples/template/data-status.tsx": "19d36491049ff3ddaf48aa8b968a9f3a5b96ef8ebd07dc2a40e8c44dfbfc1dbb",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "examples/template/lib/supabase/metadata.ts": "f36f6ad26d3386d21a56215ffa08105c41f9c3e33db2213fecd3bce8447bcfdd",
+    "examples/template/lib/supabase/README.md": "ff2835265ae91896761bddb3db0ff903b7deae22556917376cd5ce2bc7cb8b99",
+    "examples/template/lib/supabase/schema.sql": "227f5164f1704395bedf992ece6603ff318753edea0924e40d2512d99186e947",
+    "examples/template/server/supabase/readiness.ts": "a2b68c668bc57ed08adf128a9f8575e2746f0ea5eec4ab5b0f94da6a6c6d3bfd",
+    "examples/template/app/api/supabase/readiness/route.ts": "d3e11db2d9b32066e0196455588a2ac97a224605934a1396aa773a11812ece9d"
+  },
+  "hash_exclusions": [
+    {
+      "file": "dx-www/src/cli/mod.rs",
+      "reason": "shared CLI package discovery changes for other lanes should not mark Backend Platform Client stale"
+    },
+    {
+      "file": "examples/template/package-catalog.ts",
+      "reason": "shared launch catalog changes for other lanes should not mark Backend Platform Client stale"
+    }
+  ],
+  "reality_audit": {
+    "verdict": "REAL",
+    "classification_scope": "source-owned Forge package, dashboard workflow, generated /launch materialization, and Studio discovery",
+    "partial_scope": "hosted Supabase credentials, hosted reads and writes, realtime subscriptions, RLS migration rollout, and governed browser QA",
+    "upstream_source": {
+      "mirror": "G:/WWW/inspirations/supabase",
+      "evidence_files": [
+        "examples/user-management/nextjs-user-management/lib/supabase/client.ts",
+        "examples/user-management/nextjs-user-management/lib/supabase/server.ts",
+        "examples/user-management/nextjs-user-management/app/account/account-form.tsx",
+        "apps/studio/components/interfaces/ProjectAPIDocs/ProjectAPIDocs.constants.ts"
+      ],
+      "public_apis": [
+        "createBrowserClient",
+        "createServerClient",
+        "auth.getUser",
+        "from('profiles').select",
+        "from('profiles').upsert",
+        "channel().on('postgres_changes')"
+      ]
+    },
+    "forge_package_files": [
+      "core/src/ecosystem/forge_supabase.rs",
+      "dx-www/src/cli/mod.rs",
+      "examples/template/supabase-profile-workflow-state.ts",
+      "examples/template/supabase-profile-workflow.tsx"
+    ],
+    "dashboard_consumers": [
+      "examples/template/template-shell.tsx",
+      "examples/template/supabase-profile-workflow.tsx",
+      "examples/template/data-status.tsx",
+      "tools/launch/runtime-template/pages/index.html",
+      "tools/launch/runtime-template/assets/launch-runtime.ts"
+    ],
+    "receipt_manifest_files": [
+      "examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json",
+      "examples/template/package-catalog.ts",
+      "examples/template/dx-studio-edit-contract.ts",
+      "dx-www/src/cli/studio_manifest.rs",
+      "docs/packages/supabase-client.md"
+    ],
+    "guard_files": [
+      "benchmarks/supabase-dashboard-workflow.test.ts",
+      "benchmarks/supabase-launch-visible-proof.test.ts",
+      "benchmarks/supabase-env-boundary.test.ts"
+    ],
+    "visible_workflow_proof": [
+      "load-profile-fixture",
+      "prepare-profile-upsert",
+      "run-local-schema-query",
+      "data-dx-component=\"supabase-profile-workflow\"",
+      "data-dx-component=\"supabase-schema-query-workflow\"",
+      "data-dx-supabase-query-operation"
+    ]
+  },
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "package_id": "supabase/client",
+    "official_package_name": "Backend Platform Client",
+    "current_status": "present",
+    "status_legend": [
+      {
+        "status": "present",
+        "meaning": "selected Backend Platform Client surfaces, receipt, and source markers are present"
+      },
+      {
+        "status": "stale",
+        "meaning": "materialized Backend Platform Client files or hashes no longer match the Forge receipt"
+      },
+      {
+        "status": "missing-receipt",
+        "meaning": "selected Backend Platform Client surfaces exist without the dashboard workflow receipt"
+      },
+      {
+        "status": "blocked",
+        "meaning": "hosted Supabase credentials, project policy, or governed runtime proof is required before claiming more"
+      },
+      {
+        "status": "unsupported-surface",
+        "meaning": "a requested Backend Platform Client surface is outside the selected upstream-backed Supabase set"
+      }
+    ],
+    "monitored_surfaces": [
+      {
+        "id": "supabase-profile-workflow",
+        "status": "present",
+        "source_file": "examples/template/supabase-profile-workflow.tsx",
+        "materialized_file": "components/launch/supabase-profile-workflow.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json",
+        "next_action": "Run the Backend Platform Client source guard after editing the profile workflow."
+      },
+      {
+        "id": "supabase-schema-query-workflow",
+        "status": "present",
+        "source_file": "examples/template/data-status.tsx",
+        "materialized_file": "components/launch/data-status.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json",
+        "next_action": "Keep the local profiles read-model markers aligned with the dashboard receipt."
+      },
+      {
+        "id": "backend-platform-client-preview-manifest-materializer",
+        "status": "present",
+        "source_file": "tools/launch/materialize-www-template.ts",
+        "generated_file": "public/preview-manifest.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json",
+        "source_markers": [
+          "BACKEND_PLATFORM_CLIENT_SOURCE_GUARD_RUNBOOK_FIXTURE",
+          "sourceGuardRunbookFixtures",
+          "routes[].sourceGuardRunbookFixtures"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+        },
+        "next_action": "Keep generated Backend Platform Client preview-manifest fixture emission hash-backed without claiming hosted Supabase runtime proof."
+      },
+      {
+        "id": "backend-platform-client-lock-backed-source",
+        "status": "present",
+        "source_file": "examples/template/lib/supabase/metadata.ts",
+        "materialized_file": "app/api/supabase/readiness/route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json",
+        "source_markers": [
+          "dx.www.template.supabase_readiness",
+          "runtimeProof: false",
+          "networkCalls: false",
+          "hostedCredentials: false",
+          "readBackendPlatformClientReadiness",
+          "createBackendPlatformClientReadinessResponse"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/lib/supabase/metadata.ts": "f36f6ad26d3386d21a56215ffa08105c41f9c3e33db2213fecd3bce8447bcfdd",
+          "examples/template/lib/supabase/README.md": "ff2835265ae91896761bddb3db0ff903b7deae22556917376cd5ce2bc7cb8b99",
+          "examples/template/lib/supabase/schema.sql": "227f5164f1704395bedf992ece6603ff318753edea0924e40d2512d99186e947",
+          "examples/template/server/supabase/readiness.ts": "a2b68c668bc57ed08adf128a9f8575e2746f0ea5eec4ab5b0f94da6a6c6d3bfd",
+          "examples/template/app/api/supabase/readiness/route.ts": "d3e11db2d9b32066e0196455588a2ac97a224605934a1396aa773a11812ece9d"
+        },
+        "runtime_proof": false,
+        "next_action": "Keep Backend Platform Client readiness source hash-backed without claiming hosted Supabase runtime proof."
+      }
+    ]
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "examples/template/styles/globals.css",
+    "generated_css": "examples/template/styles/globals.css",
+    "visible_surfaces": [
+      "supabase-profile-workflow",
+      "supabase-schema-query-workflow"
+    ],
+    "source_files": [
+      "examples/template/supabase-profile-workflow.tsx",
+      "examples/template/data-status.tsx",
+      "examples/template/styles/globals.css"
+    ],
+    "data_dx_markers": [
+      "data-dx-style-surface=\"backend-platform-client\"",
+      "data-dx-token-scope=\"supabase/client\""
+    ],
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json",
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "SOURCE-ONLY: dx-style compatibility verifies selected Backend Platform Client source markers and generated CSS references with no browser visual proof claimed.",
+      "ADAPTER-BOUNDARY: hosted Supabase credentials, Auth, database, Storage, Realtime, Edge Functions, RLS rollout, accessibility review, and visual QA stay app-owned."
+    ]
+  },
+  "source_files": [
+    "examples/template/supabase-profile-workflow-state.ts",
+    "examples/template/supabase-profile-workflow.tsx",
+    "examples/template/data-status.tsx",
+    "examples/template/template-shell.tsx",
+    "examples/template/dx-studio-edit-contract.ts",
+    "examples/template/package-catalog.ts",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "core/src/ecosystem/forge_supabase.rs",
+    "dx-www/src/cli/studio_manifest.rs",
+    "tools/launch/materialize-www-template.ts",
+    "docs/packages/supabase-client.md",
+    "docs/packages/backend-platform-client.source-guard-runbook.json",
+    "examples/template/lib/supabase/metadata.ts",
+    "examples/template/lib/supabase/README.md",
+    "examples/template/lib/supabase/schema.sql",
+    "examples/template/server/supabase/readiness.ts",
+    "examples/template/app/api/supabase/readiness/route.ts"
+  ],
+  "materialized_files": [
+    "lib/supabase/env.ts",
+    "lib/supabase/browser.ts",
+    "lib/supabase/server.ts",
+    "lib/supabase/profiles.ts",
+    "lib/supabase/profile-workflow.ts",
+    "lib/supabase/metadata.ts",
+    "components/launch/supabase-profile-workflow.tsx",
+    "components/launch/data-status.tsx",
+    ".dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json"
+  ],
+  "upstream_public_apis": [
+    "createBrowserClient",
+    "createServerClient",
+    "auth.getUser",
+    "from('profiles').select",
+    "from('profiles').upsert",
+    "channel().on('postgres_changes')"
+  ],
+  "dashboard_public_apis": [
+    "readSupabasePublicConfig",
+    "getDxSupabaseCurrentProfile",
+    "upsertDxSupabaseProfile",
+    "readDxSupabaseProfileConfigStatus",
+    "readDxSupabaseProfilesReadModel",
+    "createDxSupabaseProfilePreview",
+    "updateDxSupabaseProfileDraft",
+    "createDxSupabaseProfileUpsertReceipt",
+    "LaunchSupabaseProfileWorkflow"
+  ],
+  "local_readiness_interactions": [
+    "load-profile-fixture",
+    "prepare-profile-upsert",
+    "run-local-schema-query"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"supabase/client\"",
+    "data-dx-style-surface=\"backend-platform-client\"",
+    "data-dx-token-scope=\"supabase/client\"",
+    "data-dx-section=\"account-data-dashboard\"",
+    "data-dx-component=\"supabase-profile-workflow\"",
+    "data-dx-component=\"supabase-schema-query-workflow\"",
+    "data-dx-dashboard-workflow=\"account-profile-settings\"",
+    "data-dx-dashboard-workflow=\"supabase-schema-query\"",
+    "data-dx-dashboard-card=\"account-profile\"",
+    "data-dx-dashboard-card=\"database-supabase-client\"",
+    "data-dx-supabase-workflow=\"profile-settings\"",
+    "data-dx-supabase-action=\"load-profile-fixture\"",
+    "data-dx-supabase-action=\"prepare-profile-upsert\"",
+    "data-dx-supabase-action=\"run-local-schema-query\"",
+    "data-dx-supabase-profile-field=\"fullName\"",
+    "data-dx-supabase-profile-field=\"username\"",
+    "data-dx-supabase-profile-field=\"website\"",
+    "data-dx-supabase-profile-label",
+    "data-dx-supabase-config-status",
+    "data-dx-supabase-query-state",
+    "data-dx-supabase-query-operation",
+    "data-dx-supabase-receipt-path=\"examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json\""
+  ],
+  "required_env": [
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY"
+  ],
+  "credential_state": "missing-config",
+  "secret_values": [],
+  "safe_local_interaction": {
+    "kind": "profile-and-schema-readiness",
+    "result": "local profile fixture, draft preview, upsert receipt, and profiles read-model receipt only"
+  },
+  "app_owned_boundaries": [
+    "Supabase project provisioning",
+    "dependency installation and version selection",
+    "Auth redirect allow-list",
+    "profile table and RLS policy",
+    "provider credentials and consent screens",
+    "realtime authorization policy",
+    "service-role secret handling",
+    "hosted database runtime verification"
+  ],
+  "missing_runtime_features": [
+    "hosted Supabase read",
+    "hosted Supabase profile upsert",
+    "OAuth/provider sign-in",
+    "realtime postgres_changes subscription",
+    "governed browser QA with credentials"
+  ],
+  "guards": [
+    "node --test .\\benchmarks\\supabase-dashboard-workflow.test.ts",
+    "node --test .\\benchmarks\\supabase-launch-visible-proof.test.ts",
+    "node --test .\\benchmarks\\supabase-env-boundary.test.ts"
+  ],
+  "node_modules_required": false,
+  "no_runtime_execution": true,
+  "notes": "This receipt proves the source-owned /launch Supabase account-data and local profiles read-model workflows. It is not hosted Supabase runtime evidence."
+}

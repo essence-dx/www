@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-05-16T08:24:08.940Z",
+  "source": "benchmarks/measure-vertical-proof.ts",
+  "runs": [
+    {
+      "fixture_mode": "forge-package",
+      "forge_packages": 1,
+      "forge_files_tracked": 4,
+      "decoded_bytes": 10669,
+      "brotli_bytes": 3026,
+      "http_route_median_ms": 1.997,
+      "chrome_load_event_ms": 27.8,
+      "dx_packet_applied": true,
+      "interaction_works": true
+    },
+    {
+      "fixture_mode": "forge-icon",
+      "forge_packages": 1,
+      "forge_files_tracked": 3,
+      "decoded_bytes": 11008,
+      "brotli_bytes": 3125,
+      "http_route_median_ms": 2.987,
+      "chrome_load_event_ms": 44.0,
+      "dx_packet_applied": true,
+      "interaction_works": true
+    },
+    {
+      "fixture_mode": "forge-combo",
+      "forge_packages": 2,
+      "forge_files_tracked": 7,
+      "decoded_bytes": 10867,
+      "brotli_bytes": 3105,
+      "http_route_median_ms": 3.314,
+      "chrome_load_event_ms": 59.1,
+      "dx_packet_applied": true,
+      "interaction_works": true
+    }
+  ],
+  "deltas": {
+    "forge_icon_vs_forge_package": {
+      "forge_packages": 0,
+      "forge_files_tracked": -1,
+      "decoded_bytes": 339,
+      "brotli_bytes": 99,
+      "http_route_median_ms": 0.99,
+      "chrome_load_event_ms": 16.2
+    },
+    "forge_combo_vs_forge_icon": {
+      "forge_packages": 1,
+      "forge_files_tracked": 4,
+      "decoded_bytes": -141,
+      "brotli_bytes": -20,
+      "http_route_median_ms": 0.327,
+      "chrome_load_event_ms": 15.1
+    }
+  }
+}

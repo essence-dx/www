@@ -1,0 +1,129 @@
+{
+  "schema": "dx.forge.package.receipt_hash_refresh.mirror_drift_fixture",
+  "fixture_kind": "mirror-only-drift",
+  "generated_by": "examples/template/database-orm-receipt-hashes.ts",
+  "generated_command": "node tools/launch/run-template-receipt-helper.js examples/template/database-orm-receipt-hashes.ts --write-mirror-drift-fixture --mirror-drift-fixture docs/packages/database-orm.mirror-drift.fixture.json",
+  "package": {
+    "package_id": "db/drizzle-sqlite",
+    "official_package_name": "Database ORM",
+    "upstream_package": "drizzle-orm",
+    "upstream_version": "0.45.3",
+    "source_mirror": "G:/WWW/inspirations/drizzle-orm"
+  },
+  "selected_source_hashes_clean": true,
+  "receipt_hash_refresh": {
+    "schema": "dx.forge.package.receipt_hash_refresh",
+    "package_id": "db/drizzle-sqlite",
+    "official_package_name": "Database ORM",
+    "upstream_package": "drizzle-orm",
+    "upstream_version": "0.45.3",
+    "source_mirror": "G:/WWW/inspirations/drizzle-orm",
+    "status": "stale",
+    "helper_path": "examples/template/database-orm-receipt-hashes.ts",
+    "check_command": "node tools/launch/run-template-receipt-helper.js examples/template/database-orm-receipt-hashes.ts --check",
+    "write_command": "node tools/launch/run-template-receipt-helper.js examples/template/database-orm-receipt-hashes.ts --write",
+    "json_check_command": "node tools/launch/run-template-receipt-helper.js examples/template/database-orm-receipt-hashes.ts --check --json",
+    "source_guard_runbook_fixture": "docs/packages/database-orm.source-guard-runbook.json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "commands": {
+      "check": "node tools/launch/run-template-receipt-helper.js examples/template/database-orm-receipt-hashes.ts --check",
+      "write": "node tools/launch/run-template-receipt-helper.js examples/template/database-orm-receipt-hashes.ts --write",
+      "json": "node tools/launch/run-template-receipt-helper.js examples/template/database-orm-receipt-hashes.ts --check --json"
+    },
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
+    "package_status_path": "examples/template/.dx/forge/package-status.json",
+    "read_model_path": "examples/template/forge-package-status-read-model.ts",
+    "hash_algorithm": "sha256",
+    "tracked_file_count": 12,
+    "stale_file_count": 3,
+    "missing_file_count": 0,
+    "tracked_count": 12,
+    "stale_count": 3,
+    "missing_count": 0,
+    "tracked_files": [
+      "core/src/ecosystem/forge_drizzle.rs",
+      "examples/template/drizzle-query-proof.tsx",
+      "examples/template/data-status.tsx",
+      "tools/launch/runtime-template/pages/index.html",
+      "docs/packages/database-orm.source-guard-runbook.json",
+      "tools/launch/materialize-www-template.ts",
+      "tools/launch/runtime-template/assets/launch-runtime.ts",
+      "examples/template/db/drizzle/schema.ts",
+      "examples/template/db/drizzle/metadata.ts",
+      "examples/template/db/drizzle/README.md",
+      "examples/template/server/database-orm/readiness.ts",
+      "examples/template/app/api/database-orm/readiness/route.ts"
+    ],
+    "current_files": [
+      "core/src/ecosystem/forge_drizzle.rs",
+      "examples/template/drizzle-query-proof.tsx",
+      "examples/template/data-status.tsx",
+      "tools/launch/runtime-template/pages/index.html",
+      "docs/packages/database-orm.source-guard-runbook.json",
+      "tools/launch/materialize-www-template.ts",
+      "tools/launch/runtime-template/assets/launch-runtime.ts",
+      "examples/template/db/drizzle/schema.ts",
+      "examples/template/db/drizzle/metadata.ts",
+      "examples/template/db/drizzle/README.md",
+      "examples/template/server/database-orm/readiness.ts",
+      "examples/template/app/api/database-orm/readiness/route.ts"
+    ],
+    "stale_files": [],
+    "missing_files": [],
+    "stale_mirror_files": [
+      "tools/launch/materialize-www-template.ts"
+    ],
+    "missing_mirror_files": [],
+    "mirror_problem_count": 3,
+    "runtime_execution": false,
+    "secret_access": false,
+    "no_runtime_proof": true,
+    "reads_secrets": false,
+    "runs_package_install": false,
+    "zed_visibility": "database-orm:receipt-hash-refresh",
+    "zed_receipt_surface": "database-orm:receipt-hash-refresh",
+    "runtime_limitations": [
+      "SOURCE-ONLY: this helper checks local Database ORM receipt hash freshness only.",
+      "ADAPTER-BOUNDARY: SQLite files, better-sqlite3 runtime installation, migration rollout, authorization, and replica health stay app-owned."
+    ],
+    "mirror_problem_details": [
+      {
+        "relative_path": "tools/launch/materialize-www-template.ts",
+        "status": "stale-receipt-visibility-hash",
+        "owner": "dashboard workflow receipt"
+      },
+      {
+        "relative_path": "tools/launch/materialize-www-template.ts",
+        "status": "stale-package-status-hash",
+        "owner": "package-status selected surface"
+      },
+      {
+        "relative_path": "tools/launch/materialize-www-template.ts",
+        "status": "stale-read-model-hash",
+        "owner": "typed package-status read model"
+      }
+    ]
+  },
+  "check_panel_expectations": {
+    "row_status": "stale",
+    "receipt_status": "stale",
+    "metrics": {
+      "database_orm_hash_mismatch": 0,
+      "database_orm_receipt_hash_refresh_current": 0,
+      "database_orm_receipt_hash_refresh_stale": 1,
+      "database_orm_receipt_hash_refresh_missing": 0
+    },
+    "stale_mirror_files": [
+      "tools/launch/materialize-www-template.ts"
+    ],
+    "stale_source_files": [],
+    "mirror_problem_count": 3
+  },
+  "zed_visibility": "database-orm:receipt-hash-refresh",
+  "runtime_proof": false,
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_limitations": [
+    "SOURCE-ONLY: this helper checks local Database ORM receipt hash freshness only.",
+    "ADAPTER-BOUNDARY: SQLite files, better-sqlite3 runtime installation, migration rollout, authorization, and replica health stay app-owned."
+  ]
+}

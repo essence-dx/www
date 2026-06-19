@@ -1,0 +1,160 @@
+{
+  "schema": "dx.www.readiness.docs_onboarding_receipt_contract",
+  "schema_revision": 1,
+  "id": "docs-onboarding-doctor",
+  "docs_onboarding_schema": "dx.www.readiness.docs_onboarding",
+  "docs_doctor_schema": "dx.www.docs_doctor",
+  "passed": true,
+  "status": "source-owned-docs-onboarding-foundation-current",
+  "source_root": "G:\\Dx\\www",
+  "source_owned": true,
+  "docs_doctor_command": "dx www docs-doctor --json",
+  "docs_doctor_report_evaluated": true,
+  "docs_doctor_runtime_executed": false,
+  "docs_doctor_error_count": 0,
+  "docs_doctor_warning_count": 0,
+  "public_docs_source_guarded": true,
+  "compatibility_surfaces_warning_only": true,
+  "generated_archived_warning_surfaces_clean": true,
+  "generated_archived_warning_surfaces_promoted": false,
+  "generated_archived_warning_finding_count": 0,
+  "generated_archived_warning_finding_ids": [],
+  "generated_archived_warning_sample_paths": [],
+  "release_ready": false,
+  "readiness_release_ready": false,
+  "fastest_world_claim": false,
+  "proof_scope": "local-source-owned-docs-onboarding-foundation",
+  "source_check_count": 5,
+  "source_check_current_count": 5,
+  "source_checks": [
+    {
+      "id": "docs-doctor-command-contract",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/docs_doctor.rs",
+          "present": true,
+          "required_markers": [
+            "dx.www.docs_doctor",
+            "dx www docs-doctor --json",
+            "MONITORED_PUBLIC_DOCS",
+            "MONITORED_COMPATIBILITY_SURFACES",
+            "MONITORED_GENERATED_ARCHIVED_CLAIM_ROOTS",
+            "DOCS_DOCTOR_CONFIG_SNIPPET_MARKERS",
+            "DOCS_DOCTOR_UNRESOLVED_DOC_MACROS",
+            "DOCS_DOCTOR_ALLOWLISTS",
+            "READINESS_REQUIRED_RECEIPTS",
+            "STARTER_CHECK_RECEIPT_PATH",
+            "docs_doctor_required_receipt_findings",
+            "docs_doctor_config_snippet_findings",
+            "docs_doctor_unresolved_doc_macro_findings",
+            "generated_archived_claim_surface_policy",
+            "generated-archived-stale-claim"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "getting-started-current-workflow",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "docs/getting-started.md",
+          "present": true,
+          "required_markers": [
+            "dx new",
+            "dx dev",
+            "dx build",
+            "dx check",
+            "dx www readiness --json --full",
+            "dx www agent-context --json --full",
+            "dx www docs-doctor --json",
+            ".dx/www/output",
+            "not full React or Next.js runtime parity"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "dx-www-readme-config-contract",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/README.md",
+          "present": true,
+          "required_markers": [
+            "project(name=dx-www-template",
+            "www(",
+            "output_dir=.dx/www/output",
+            "dev(host=127.0.0.1 port=3000 hot_reload=true devtools=true)",
+            "imports(",
+            "aliases=#imports,#components",
+            "check(score_scale=500 lighthouse=true)"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "docs-doctor-source-tests",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "benchmarks/dx-www-docs-doctor.test.ts",
+          "present": true,
+          "required_markers": [
+            "public WWW docs stay on the current app router and proof workflow",
+            "docs doctor separates public-doc failures from compatibility-surface warnings",
+            "docs doctor proves public starter score and inventory claims against current artifacts",
+            "docs doctor rejects stale config snippets and unresolved architecture placeholders",
+            "node --test benchmarks/dx-www-docs-doctor.test.ts"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "developer-contract-current-model",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "docs/dx-www-developer-contract.md",
+          "present": true,
+          "required_markers": [
+            "www should feel familiar to React and Next.js developers",
+            "app/",
+            "components/",
+            "styles/",
+            "Strict apps should keep hand-authored and forge-owned source",
+            "Generated caches, opaque dependency folders, and install artifacts are not part of the strict contract.",
+            "This is not a universal npm replacement claim."
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "next_proof": "docs-doctor command replay, public docs freshness receipt, and generated/archived warning cleanup or ownership promotion",
+  "rule": "This receipt validates the source-owned docs/onboarding guardrail and evaluates the docs-doctor report for generated/archive warning cleanup; it does not execute an external docs-doctor command or claim release readiness.",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/docs-onboarding-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-docs-onboarding-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "3d27eb7f57656f94f24c446301df97f4bf7521c7e94a1e616123f05b7f33eb72",
+    "machine_blake3": "5fabe73aba71bfe4f2d689971eeba95a1dd57e9d9f7a15fcf29ce23b6037d68b"
+  }
+}

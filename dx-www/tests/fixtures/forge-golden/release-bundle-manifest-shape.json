@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "artifact_count": 50,
+  "hash_algorithm": "blake3",
+  "integrity": {
+    "scheme": "dx-forge-release-manifest-v1",
+    "signed": false,
+    "signature": null,
+    "message": "Unsigned review manifest: BLAKE3 artifact hashes are verified locally before publish."
+  },
+  "artifact_integrity": {
+    "scheme": "dx-forge-release-artifact-integrity-v1",
+    "hash_algorithm": "blake3",
+    "artifact_count": 50,
+    "verified_locally": true,
+    "message": "Local BLAKE3 artifact integrity covers every release-bundle file before publish."
+  },
+  "publisher_identity": {
+    "scheme": "dx-forge-release-publisher-identity-v1",
+    "status": "unsigned",
+    "signer": null,
+    "key_id": null,
+    "algorithm": null,
+    "public_key": null,
+    "signature": null,
+    "signed_at": null,
+    "message": "Publisher identity is not attached yet; this manifest records BLAKE3 artifact integrity only."
+  },
+  "artifacts": [
+    {
+      "path": "forge-benchmark-history.json",
+      "artifact_type": "json-report",
+      "route": null
+    },
+    {
+      "path": "forge-evidence.json",
+      "artifact_type": "evidence",
+      "route": null
+    },
+    {
+      "path": "forge-page.html",
+      "artifact_type": "route-html",
+      "route": null
+    },
+    {
+      "path": "forge-proof.json",
+      "artifact_type": "proof",
+      "route": "/forge"
+    },
+    {
+      "path": "forge-public-launch-changelog.json",
+      "artifact_type": "launch-changelog",
+      "route": null
+    },
+    {
+      "path": "forge-public-launch-changelog.md",
+      "artifact_type": "launch-changelog",
+      "route": null
+    },
+    {
+      "path": "forge-public-release-history.json",
+      "artifact_type": "release-history",
+      "route": null
+    },
+    {
+      "path": "forge-public-release-history.md",
+      "artifact_type": "release-history",
+      "route": null
+    },
+    {
+      "path": "forge-public-route-comparison.json",
+      "artifact_type": "route-comparison",
+      "route": null
+    },
+    {
+      "path": "forge-public-route-comparison.md",
+      "artifact_type": "route-comparison",
+      "route": null
+    },
+    {
+      "path": "forge-readiness-badge.json",
+      "artifact_type": "json-report",
+      "route": null
+    },
+    {
+      "path": "forge-scorecard.json",
+      "artifact_type": "json-report",
+      "route": null
+    },
+    {
+      "path": "forge-smoke.json",
+      "artifact_type": "json-report",
+      "route": null
+    },
+    {
+      "path": "forge-smoke.md",
+      "artifact_type": "markdown-report",
+      "route": null
+    },
+    {
+      "path": "forge-triage.md",
+      "artifact_type": "markdown-report",
+      "route": null
+    },
+    {
+      "path": "forge.claims.json",
+      "artifact_type": "claims",
+      "route": "/forge"
+    },
+    {
+      "path": "forge.dxp",
+      "artifact_type": "dxpk-packet",
+      "route": "/forge"
+    },
+    {
+      "path": "forge.evidence.json",
+      "artifact_type": "evidence",
+      "route": "/forge"
+    },
+    {
+      "path": "forge.html",
+      "artifact_type": "route-html",
+      "route": "/forge"
+    },
+    {
+      "path": "forge/changelog.claims.json",
+      "artifact_type": "claims",
+      "route": "/forge/changelog"
+    },
+    {
+      "path": "forge/changelog.dxp",
+      "artifact_type": "dxpk-packet",
+      "route": "/forge/changelog"
+    },
+    {
+      "path": "forge/changelog.html",
+      "artifact_type": "route-html",
+      "route": "/forge/changelog"
+    },
+    {
+      "path": "forge/changelog.proof.json",
+      "artifact_type": "proof",
+      "route": "/forge/changelog"
+    },
+    {
+      "path": "forge/changelog/index.html",
+      "artifact_type": "route-html",
+      "route": "/forge/changelog"
+    },
+    {
+      "path": "forge/ci.claims.json",
+      "artifact_type": "claims",
+      "route": "/forge/ci"
+    },
+    {
+      "path": "forge/ci.dxp",
+      "artifact_type": "dxpk-packet",
+      "route": "/forge/ci"
+    },
+    {
+      "path": "forge/ci.html",
+      "artifact_type": "route-html",
+      "route": "/forge/ci"
+    },
+    {
+      "path": "forge/ci.proof.json",
+      "artifact_type": "proof",
+      "route": "/forge/ci"
+    },
+    {
+      "path": "forge/ci/index.html",
+      "artifact_type": "route-html",
+      "route": "/forge/ci"
+    },
+    {
+      "path": "forge/evidence.claims.json",
+      "artifact_type": "claims",
+      "route": "/forge/evidence"
+    },
+    {
+      "path": "forge/evidence.dxp",
+      "artifact_type": "dxpk-packet",
+      "route": "/forge/evidence"
+    },
+    {
+      "path": "forge/evidence.html",
+      "artifact_type": "evidence",
+      "route": "/forge/evidence"
+    },
+    {
+      "path": "forge/evidence.proof.json",
+      "artifact_type": "evidence",
+      "route": "/forge/evidence"
+    },
+    {
+      "path": "forge/evidence/index.html",
+      "artifact_type": "evidence",
+      "route": "/forge/evidence"
+    },
+    {
+      "path": "forge/index.html",
+      "artifact_type": "route-html",
+      "route": "/forge"
+    },
+    {
+      "path": "forge/migration-gallery.json",
+      "artifact_type": "migration-gallery",
+      "route": "/forge/migration-gallery/"
+    },
+    {
+      "path": "forge/migration-gallery.md",
+      "artifact_type": "migration-gallery",
+      "route": "/forge/migration-gallery/"
+    },
+    {
+      "path": "forge/migration-gallery/index.html",
+      "artifact_type": "migration-gallery",
+      "route": "/forge/migration-gallery/"
+    },
+    {
+      "path": "forge/package-gallery.json",
+      "artifact_type": "package-gallery",
+      "route": "/forge/package-gallery/"
+    },
+    {
+      "path": "forge/package-gallery.md",
+      "artifact_type": "package-gallery",
+      "route": "/forge/package-gallery/"
+    },
+    {
+      "path": "forge/package-gallery/index.html",
+      "artifact_type": "package-gallery",
+      "route": "/forge/package-gallery/"
+    },
+    {
+      "path": "forge/releases.claims.json",
+      "artifact_type": "claims",
+      "route": "/forge/releases"
+    },
+    {
+      "path": "forge/releases.dxp",
+      "artifact_type": "dxpk-packet",
+      "route": "/forge/releases"
+    },
+    {
+      "path": "forge/releases.html",
+      "artifact_type": "route-html",
+      "route": "/forge/releases"
+    },
+    {
+      "path": "forge/releases.proof.json",
+      "artifact_type": "proof",
+      "route": "/forge/releases"
+    },
+    {
+      "path": "forge/releases/index.html",
+      "artifact_type": "route-html",
+      "route": "/forge/releases"
+    },
+    {
+      "path": "forge/scorecard.dxp",
+      "artifact_type": "dxpk-packet",
+      "route": "/forge/scorecard"
+    },
+    {
+      "path": "forge/scorecard.html",
+      "artifact_type": "route-html",
+      "route": "/forge/scorecard"
+    },
+    {
+      "path": "forge/scorecard.proof.json",
+      "artifact_type": "proof",
+      "route": "/forge/scorecard"
+    },
+    {
+      "path": "forge/scorecard/index.html",
+      "artifact_type": "route-html",
+      "route": "/forge/scorecard"
+    }
+  ]
+}

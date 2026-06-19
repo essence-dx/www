@@ -1,0 +1,427 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "content/react-markdown",
+    "upstream_name": "react-markdown",
+    "version": "10.1.0-dx.1",
+    "generator": "dx-forge/react-markdown",
+    "variant": "default",
+    "last_accepted_update": "2026-05-25T14:24:00.992806100+00:00",
+    "rollback_receipt": "20260525T142027528811400Z-content-react-markdown.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "5533af434b08e7c542f27d0ad62eeea98a1d1b4d3745137be539cb4ce810dc63",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:react-markdown@10.1.0; npm:@mdx-js/mdx@3.1.1; npm:@mdx-js/react@3.1.1",
+      "verified": false,
+      "note": "DX inspected the local Markdown & MDX Content source mirrors for react-markdown Markdown/MarkdownAsync/MarkdownHooks/defaultUrlTransform, @mdx-js/mdx compile/compileSync/createProcessor/nodeTypes/providerImportSource, and @mdx-js/react MDXProvider/useMDXComponents before curating this launch content slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this react-markdown launch slice, but it is not a live advisory feed and does not audit user-generated content, plugin policy, raw HTML, or link sanitization."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "components/content/markdown.tsx",
+        "logical_path": "js/components/content/markdown.tsx",
+        "hash": "af511743d887adffcf7152f0b485bc880a851d4aa485b73086bc27118808aa21",
+        "bytes": 2642
+      },
+      {
+        "path": "components/content/markdown-components.tsx",
+        "logical_path": "js/components/content/markdown-components.tsx",
+        "hash": "ab81197742bd6aaa7709ca55541fd7392e97686ae968845b1ba427bd95334400",
+        "bytes": 926
+      },
+      {
+        "path": "components/content/markdown-metadata.ts",
+        "logical_path": "js/components/content/markdown-metadata.ts",
+        "hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+        "bytes": 4287
+      },
+      {
+        "path": "components/content/mdx-provider.tsx",
+        "logical_path": "js/components/content/mdx-provider.tsx",
+        "hash": "0a5950bf19ddb0b9b106f8c31239facbdd3ed5024b4aedfd609e3264caccca0c",
+        "bytes": 1941
+      },
+      {
+        "path": "components/content/README.md",
+        "logical_path": "js/components/content/README.md",
+        "hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+        "bytes": 455
+      },
+      {
+        "path": "server/content/mdx.ts",
+        "logical_path": "js/server/content/mdx.ts",
+        "hash": "eea41efb73e566af7ba1047c019ff86f520c77f1453e55303e84c3af5d4ca2e7",
+        "bytes": 1630
+      },
+      {
+        "path": "components/markdown.tsx",
+        "logical_path": "js/components/markdown.tsx",
+        "hash": "8076cc228be2a8c4eea288df6e25cfbfb613c05c6f858121048498c62ad9f2ed",
+        "bytes": 1519
+      },
+      {
+        "path": "components/markdown-client.tsx",
+        "logical_path": "js/components/markdown-client.tsx",
+        "hash": "6ebfc1334f018b64f6d188e5f110521e909220bd393ee5afa60998d76edc1c7e",
+        "bytes": 1056
+      },
+      {
+        "path": "lib/react-markdown/metadata.ts",
+        "logical_path": "js/lib/react-markdown/metadata.ts",
+        "hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+        "bytes": 4287
+      },
+      {
+        "path": "lib/react-markdown/README.md",
+        "logical_path": "js/lib/react-markdown/README.md",
+        "hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+        "bytes": 455
+      },
+      {
+        "path": "lib/mdx/metadata.ts",
+        "logical_path": "js/lib/mdx/metadata.ts",
+        "hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+        "bytes": 4287
+      },
+      {
+        "path": "lib/mdx/README.md",
+        "logical_path": "js/lib/mdx/README.md",
+        "hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+        "bytes": 455
+      },
+      {
+        "path": "lib/markdown-mdx-content/receipt.ts",
+        "logical_path": "js/lib/markdown-mdx-content/receipt.ts",
+        "hash": "487d84c12583d232c1665dac1f4531a8d70b3e24192134dc823de968fcf6f2bb",
+        "bytes": 7746
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "components/content/markdown.tsx",
+      "logical_path": "js/components/content/markdown.tsx",
+      "hash": "af511743d887adffcf7152f0b485bc880a851d4aa485b73086bc27118808aa21",
+      "bytes": 2642
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/components/content/markdown.tsx",
+      "materialized_path": "components/content/markdown.tsx",
+      "hash": "af511743d887adffcf7152f0b485bc880a851d4aa485b73086bc27118808aa21",
+      "bytes": 2642
+    },
+    {
+      "logical_path": "js/components/content/markdown-components.tsx",
+      "materialized_path": "components/content/markdown-components.tsx",
+      "hash": "ab81197742bd6aaa7709ca55541fd7392e97686ae968845b1ba427bd95334400",
+      "bytes": 926
+    },
+    {
+      "logical_path": "js/components/content/markdown-metadata.ts",
+      "materialized_path": "components/content/markdown-metadata.ts",
+      "hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "bytes": 4287
+    },
+    {
+      "logical_path": "js/components/content/mdx-provider.tsx",
+      "materialized_path": "components/content/mdx-provider.tsx",
+      "hash": "0a5950bf19ddb0b9b106f8c31239facbdd3ed5024b4aedfd609e3264caccca0c",
+      "bytes": 1941
+    },
+    {
+      "logical_path": "js/components/content/README.md",
+      "materialized_path": "components/content/README.md",
+      "hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "bytes": 455
+    },
+    {
+      "logical_path": "js/server/content/mdx.ts",
+      "materialized_path": "server/content/mdx.ts",
+      "hash": "eea41efb73e566af7ba1047c019ff86f520c77f1453e55303e84c3af5d4ca2e7",
+      "bytes": 1630
+    },
+    {
+      "logical_path": "js/components/markdown.tsx",
+      "materialized_path": "components/markdown.tsx",
+      "hash": "8076cc228be2a8c4eea288df6e25cfbfb613c05c6f858121048498c62ad9f2ed",
+      "bytes": 1519
+    },
+    {
+      "logical_path": "js/components/markdown-client.tsx",
+      "materialized_path": "components/markdown-client.tsx",
+      "hash": "6ebfc1334f018b64f6d188e5f110521e909220bd393ee5afa60998d76edc1c7e",
+      "bytes": 1056
+    },
+    {
+      "logical_path": "js/lib/react-markdown/metadata.ts",
+      "materialized_path": "lib/react-markdown/metadata.ts",
+      "hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "bytes": 4287
+    },
+    {
+      "logical_path": "js/lib/react-markdown/README.md",
+      "materialized_path": "lib/react-markdown/README.md",
+      "hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "bytes": 455
+    },
+    {
+      "logical_path": "js/lib/mdx/metadata.ts",
+      "materialized_path": "lib/mdx/metadata.ts",
+      "hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "bytes": 4287
+    },
+    {
+      "logical_path": "js/lib/mdx/README.md",
+      "materialized_path": "lib/mdx/README.md",
+      "hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "bytes": 455
+    },
+    {
+      "logical_path": "js/lib/markdown-mdx-content/receipt.ts",
+      "materialized_path": "lib/markdown-mdx-content/receipt.ts",
+      "hash": "487d84c12583d232c1665dac1f4531a8d70b3e24192134dc823de968fcf6f2bb",
+      "bytes": 7746
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "components/content/markdown.tsx would be updated from the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/content/markdown-components.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/content/markdown-metadata.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/content/mdx-provider.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/content/README.md already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "server/content/mdx.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/markdown.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/markdown-client.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/react-markdown/metadata.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/react-markdown/README.md already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/mdx/metadata.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/mdx/README.md already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/markdown-mdx-content/receipt.ts already matches the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "green",
+      "message": "Reviewer `Shohan` accepted yellow local edits for `content/react-markdown` variant `default`: Reviewed after template rename; preserving source-owned local edits and stale tracked local files in Forge receipt state."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "components/content/markdown.tsx",
+      "logical_path": "js/components/content/markdown.tsx",
+      "before_hash": "52b942fcfeef4e3b76d905d0aa8db949580849219796d8e84263d32fe262c165",
+      "after_hash": "af511743d887adffcf7152f0b485bc880a851d4aa485b73086bc27118808aa21",
+      "tracked_hash": "52b942fcfeef4e3b76d905d0aa8db949580849219796d8e84263d32fe262c165",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/content/markdown.tsx accepted and updated from the latest package."
+    },
+    {
+      "path": "components/content/markdown-components.tsx",
+      "logical_path": "js/components/content/markdown-components.tsx",
+      "before_hash": "ab81197742bd6aaa7709ca55541fd7392e97686ae968845b1ba427bd95334400",
+      "after_hash": "ab81197742bd6aaa7709ca55541fd7392e97686ae968845b1ba427bd95334400",
+      "tracked_hash": "ab81197742bd6aaa7709ca55541fd7392e97686ae968845b1ba427bd95334400",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/content/markdown-components.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/content/markdown-metadata.ts",
+      "logical_path": "js/components/content/markdown-metadata.ts",
+      "before_hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "after_hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "tracked_hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/content/markdown-metadata.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "components/content/mdx-provider.tsx",
+      "logical_path": "js/components/content/mdx-provider.tsx",
+      "before_hash": "0a5950bf19ddb0b9b106f8c31239facbdd3ed5024b4aedfd609e3264caccca0c",
+      "after_hash": "0a5950bf19ddb0b9b106f8c31239facbdd3ed5024b4aedfd609e3264caccca0c",
+      "tracked_hash": "0a5950bf19ddb0b9b106f8c31239facbdd3ed5024b4aedfd609e3264caccca0c",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/content/mdx-provider.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/content/README.md",
+      "logical_path": "js/components/content/README.md",
+      "before_hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "after_hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "tracked_hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/content/README.md accepted as already matching the latest package."
+    },
+    {
+      "path": "server/content/mdx.ts",
+      "logical_path": "js/server/content/mdx.ts",
+      "before_hash": "eea41efb73e566af7ba1047c019ff86f520c77f1453e55303e84c3af5d4ca2e7",
+      "after_hash": "eea41efb73e566af7ba1047c019ff86f520c77f1453e55303e84c3af5d4ca2e7",
+      "tracked_hash": "eea41efb73e566af7ba1047c019ff86f520c77f1453e55303e84c3af5d4ca2e7",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "server/content/mdx.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "components/markdown.tsx",
+      "logical_path": "js/components/markdown.tsx",
+      "before_hash": "8076cc228be2a8c4eea288df6e25cfbfb613c05c6f858121048498c62ad9f2ed",
+      "after_hash": "8076cc228be2a8c4eea288df6e25cfbfb613c05c6f858121048498c62ad9f2ed",
+      "tracked_hash": "8076cc228be2a8c4eea288df6e25cfbfb613c05c6f858121048498c62ad9f2ed",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/markdown.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/markdown-client.tsx",
+      "logical_path": "js/components/markdown-client.tsx",
+      "before_hash": "6ebfc1334f018b64f6d188e5f110521e909220bd393ee5afa60998d76edc1c7e",
+      "after_hash": "6ebfc1334f018b64f6d188e5f110521e909220bd393ee5afa60998d76edc1c7e",
+      "tracked_hash": "6ebfc1334f018b64f6d188e5f110521e909220bd393ee5afa60998d76edc1c7e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/markdown-client.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/react-markdown/metadata.ts",
+      "logical_path": "js/lib/react-markdown/metadata.ts",
+      "before_hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "after_hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "tracked_hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/react-markdown/metadata.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/react-markdown/README.md",
+      "logical_path": "js/lib/react-markdown/README.md",
+      "before_hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "after_hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "tracked_hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/react-markdown/README.md accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/mdx/metadata.ts",
+      "logical_path": "js/lib/mdx/metadata.ts",
+      "before_hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "after_hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "tracked_hash": "a024901feb7e78107b8c8139a3754a0967771adbec399fc49e5bfa964083e5fd",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/mdx/metadata.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/mdx/README.md",
+      "logical_path": "js/lib/mdx/README.md",
+      "before_hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "after_hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "tracked_hash": "6fe2a5d8c0c26d43bb2c724961650076abe50e849835c3273b29ec8923b8e025",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/mdx/README.md accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/markdown-mdx-content/receipt.ts",
+      "logical_path": "js/lib/markdown-mdx-content/receipt.ts",
+      "before_hash": "487d84c12583d232c1665dac1f4531a8d70b3e24192134dc823de968fcf6f2bb",
+      "after_hash": "487d84c12583d232c1665dac1f4531a8d70b3e24192134dc823de968fcf6f2bb",
+      "tracked_hash": "487d84c12583d232c1665dac1f4531a8d70b3e24192134dc823de968fcf6f2bb",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/markdown-mdx-content/receipt.ts accepted as already matching the latest package."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-25T14:24:00.992806100+00:00",
+  "signature": null
+}

@@ -1,0 +1,174 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "automations/n8n",
+    "upstream_name": "n8n-nodes-base",
+    "version": "2.22.0-dx.0",
+    "generator": "dx-forge/n8n-automation-connectors",
+    "variant": "default",
+    "rollback_receipt": "20260523T044826575Z-automations-n8n.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "74fb04f236b8d8f1e907e0657f7fd3559de8cd7f6814e3db41a3c643749a8833",
+    "license": "Sustainable Use License",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:n8n-nodes-base@2.22.0; source mirror packages/nodes-base",
+      "verified": false,
+      "note": "DX inspected the local n8n nodes-base source mirror for node descriptions, credential declarations, trigger/tool readiness, and webhook-facing public surfaces before curating this Automation Connectors slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Automation Connectors slice, but it is not a live advisory feed and does not audit external connector credentials, webhook exposure, or hosted workflow execution."
+    },
+    "license_review": {
+      "declared_license": "Sustainable Use License",
+      "reviewed": false,
+      "note": "License is recorded from the upstream repository declaration only; no formal DX legal review is claimed."
+    },
+    "dependency_constraints": [
+      {
+        "name": "n8n-nodes-base",
+        "constraint": "metadata/provenance source only; live n8n runtime is app-owned",
+        "boundary": "Forge materializes connector readiness and local run receipts without vendoring executable n8n nodes into DX core."
+      }
+    ],
+    "files": [
+      {
+        "path": "lib/automations/n8n/catalog.ts",
+        "logical_path": "js/lib/automations/n8n/catalog.ts",
+        "hash": "0d7025648988d65824fb40b3369b9f6f8a5d7ddb4a2a0615673b13ba261706f9",
+        "bytes": 3094
+      },
+      {
+        "path": "lib/automations/n8n/readiness.ts",
+        "logical_path": "js/lib/automations/n8n/readiness.ts",
+        "hash": "dc997d2ad016558d7114588609536b760df03844a9fcebc0e268b96dc47854ea",
+        "bytes": 1998
+      },
+      {
+        "path": "lib/automations/n8n/receipt.ts",
+        "logical_path": "js/lib/automations/n8n/receipt.ts",
+        "hash": "1856b7fc0e30372f49d47d81e8df2c1ac223e94534054effd98447f00ba7fce2",
+        "bytes": 2668
+      },
+      {
+        "path": "lib/automations/n8n/metadata.ts",
+        "logical_path": "js/lib/automations/n8n/metadata.ts",
+        "hash": "2134747cca2eecab69d7537f95a00c462617de8815968a79a8958af7f0fd5586",
+        "bytes": 803
+      },
+      {
+        "path": "lib/automations/n8n/README.md",
+        "logical_path": "js/lib/automations/n8n/README.md",
+        "hash": "03c85071450170cd17dfc9fc66ff201562d9cd4619057ad76e14ef3e3c84754f",
+        "bytes": 443
+      },
+      {
+        "path": "app/api/automations/n8n/dry-run/route.ts",
+        "logical_path": "js/app/api/automations/n8n/dry-run/route.ts",
+        "hash": "4966af773098d9333560004d30242b1bf022dd58b1b64f91c207511b3d90d989",
+        "bytes": 5599
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/automations/n8n/catalog.ts",
+      "logical_path": "js/lib/automations/n8n/catalog.ts",
+      "hash": "0d7025648988d65824fb40b3369b9f6f8a5d7ddb4a2a0615673b13ba261706f9",
+      "bytes": 3094
+    },
+    {
+      "path": "lib/automations/n8n/readiness.ts",
+      "logical_path": "js/lib/automations/n8n/readiness.ts",
+      "hash": "dc997d2ad016558d7114588609536b760df03844a9fcebc0e268b96dc47854ea",
+      "bytes": 1998
+    },
+    {
+      "path": "lib/automations/n8n/receipt.ts",
+      "logical_path": "js/lib/automations/n8n/receipt.ts",
+      "hash": "1856b7fc0e30372f49d47d81e8df2c1ac223e94534054effd98447f00ba7fce2",
+      "bytes": 2668
+    },
+    {
+      "path": "lib/automations/n8n/metadata.ts",
+      "logical_path": "js/lib/automations/n8n/metadata.ts",
+      "hash": "2134747cca2eecab69d7537f95a00c462617de8815968a79a8958af7f0fd5586",
+      "bytes": 803
+    },
+    {
+      "path": "lib/automations/n8n/README.md",
+      "logical_path": "js/lib/automations/n8n/README.md",
+      "hash": "03c85071450170cd17dfc9fc66ff201562d9cd4619057ad76e14ef3e3c84754f",
+      "bytes": 443
+    },
+    {
+      "path": "app/api/automations/n8n/dry-run/route.ts",
+      "logical_path": "js/app/api/automations/n8n/dry-run/route.ts",
+      "hash": "4966af773098d9333560004d30242b1bf022dd58b1b64f91c207511b3d90d989",
+      "bytes": 5599
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/automations/n8n/catalog.ts",
+      "materialized_path": "lib/automations/n8n/catalog.ts",
+      "hash": "0d7025648988d65824fb40b3369b9f6f8a5d7ddb4a2a0615673b13ba261706f9",
+      "bytes": 3094
+    },
+    {
+      "logical_path": "js/lib/automations/n8n/readiness.ts",
+      "materialized_path": "lib/automations/n8n/readiness.ts",
+      "hash": "dc997d2ad016558d7114588609536b760df03844a9fcebc0e268b96dc47854ea",
+      "bytes": 1998
+    },
+    {
+      "logical_path": "js/lib/automations/n8n/receipt.ts",
+      "materialized_path": "lib/automations/n8n/receipt.ts",
+      "hash": "1856b7fc0e30372f49d47d81e8df2c1ac223e94534054effd98447f00ba7fce2",
+      "bytes": 2668
+    },
+    {
+      "logical_path": "js/lib/automations/n8n/metadata.ts",
+      "materialized_path": "lib/automations/n8n/metadata.ts",
+      "hash": "2134747cca2eecab69d7537f95a00c462617de8815968a79a8958af7f0fd5586",
+      "bytes": 803
+    },
+    {
+      "logical_path": "js/lib/automations/n8n/README.md",
+      "materialized_path": "lib/automations/n8n/README.md",
+      "hash": "03c85071450170cd17dfc9fc66ff201562d9cd4619057ad76e14ef3e3c84754f",
+      "bytes": 443
+    },
+    {
+      "logical_path": "js/app/api/automations/n8n/dry-run/route.ts",
+      "materialized_path": "app/api/automations/n8n/dry-run/route.ts",
+      "hash": "4966af773098d9333560004d30242b1bf022dd58b1b64f91c207511b3d90d989",
+      "bytes": 5599
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records n8n-nodes-base provenance from G:/WWW/inspirations/n8n/packages/nodes-base without claiming external provenance verification."
+    },
+    {
+      "policy": "provider-boundary-honest",
+      "traffic": "green",
+      "message": "Automation Connectors exposes source-owned helpers and readiness gates while live provider credentials remain application-owned."
+    }
+  ],
+  "risk_score": 82,
+  "timestamp": "2026-05-23T04:48:26.575Z",
+  "signature": null
+}

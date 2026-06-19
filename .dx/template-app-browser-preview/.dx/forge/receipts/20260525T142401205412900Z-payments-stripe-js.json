@@ -1,0 +1,370 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "payments/stripe-js",
+    "upstream_name": "@stripe/stripe-js",
+    "version": "9.6.0-dx.1",
+    "generator": "dx-forge/stripe-js",
+    "variant": "default",
+    "last_accepted_update": "2026-05-25T14:24:01.202960900+00:00",
+    "rollback_receipt": "20260523T044826575Z-payments-stripe-js.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "6d03aa802dac4f0add359e2688c7f35b0b700c890e695dd3ab041a8311c8e7f8",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:@stripe/stripe-js@9.6.0",
+      "verified": false,
+      "note": "DX inspected the local Stripe.js source mirror, package metadata, README, pure loadStripe export, Stripe type declarations, Elements options, and confirmPayment contracts before curating this launch payment slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Stripe.js launch client slice, but it is not a live advisory feed and does not audit server-side payment creation, webhook verification, fulfillment, fraud policy, or PCI posture."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/payments/stripe-js/config.ts",
+        "logical_path": "js/payments/stripe-js/config.ts",
+        "hash": "d12b3344069f437b56a19677a9a02b7cc949749c7c95b2d28784626b9f52f356",
+        "bytes": 4005
+      },
+      {
+        "path": "lib/payments/stripe-js/client.ts",
+        "logical_path": "js/payments/stripe-js/client.ts",
+        "hash": "d42492583020f22bb1121f007af73408cad759af93e52dc9eec74476188e9d9e",
+        "bytes": 1433
+      },
+      {
+        "path": "lib/payments/stripe-js/payment.ts",
+        "logical_path": "js/payments/stripe-js/payment.ts",
+        "hash": "7af16770397aca666a2e4cb514687f6e2f53d2e682ea26af0bf64c08e209c357",
+        "bytes": 3163
+      },
+      {
+        "path": "lib/payments/stripe-js/checkout.ts",
+        "logical_path": "js/payments/stripe-js/checkout.ts",
+        "hash": "5fccc008d6343efe1da5341145a5f178440b80322ab95ca5ead9713117f637d5",
+        "bytes": 13303
+      },
+      {
+        "path": "lib/payments/stripe-js/dashboard-checkout.ts",
+        "logical_path": "js/payments/stripe-js/dashboard-checkout.ts",
+        "hash": "03c9903af48b0e846860abeee40c63f073edc68e9be4e33857f5393a294b31f9",
+        "bytes": 4034
+      },
+      {
+        "path": "lib/payments/stripe-js/server.ts",
+        "logical_path": "js/payments/stripe-js/server.ts",
+        "hash": "b71b05508d8116f9620d4dd9e5767de4c224d1a6ffbc7b08a48c87e0c398c748",
+        "bytes": 17143
+      },
+      {
+        "path": "app/api/checkout/route.ts",
+        "logical_path": "js/app/api/checkout/route.ts",
+        "hash": "ca6b5f803af0e1c8faf2b041eee640fc0d3eebcad0c0a1c50b36747ddfc91f02",
+        "bytes": 6759
+      },
+      {
+        "path": "app/api/stripe/webhook/route.ts",
+        "logical_path": "js/app/api/stripe/webhook/route.ts",
+        "hash": "549883999f58e18d0c4c463cbb5125ffe612256dece3944e5a019955d7ad888c",
+        "bytes": 4106
+      },
+      {
+        "path": "lib/payments/stripe-js/metadata.ts",
+        "logical_path": "js/payments/stripe-js/metadata.ts",
+        "hash": "382c3c6c2e7e62b01085e2fdeced0f2bda51ba9532c21379114aec9885c01650",
+        "bytes": 9585
+      },
+      {
+        "path": "lib/payments/stripe-js/README.md",
+        "logical_path": "js/payments/stripe-js/README.md",
+        "hash": "fb14907602e5c6a3e32115832ecc9c71bc315bb24345b44ad376a37ea3697baf",
+        "bytes": 9368
+      },
+      {
+        "path": "app/api/payments/stripe-js/readiness/route.ts",
+        "logical_path": "js/app/api/payments/stripe-js/readiness/route.ts",
+        "hash": "da717492bfa5125c3e79e972ac6cad9f0c6bea1f1f1d2ff32a2cfb3040bd3928",
+        "bytes": 6043
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "app/api/checkout/route.ts",
+      "logical_path": "js/app/api/checkout/route.ts",
+      "hash": "ca6b5f803af0e1c8faf2b041eee640fc0d3eebcad0c0a1c50b36747ddfc91f02",
+      "bytes": 6759
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/payments/stripe-js/config.ts",
+      "materialized_path": "lib/payments/stripe-js/config.ts",
+      "hash": "d12b3344069f437b56a19677a9a02b7cc949749c7c95b2d28784626b9f52f356",
+      "bytes": 4005
+    },
+    {
+      "logical_path": "js/payments/stripe-js/client.ts",
+      "materialized_path": "lib/payments/stripe-js/client.ts",
+      "hash": "d42492583020f22bb1121f007af73408cad759af93e52dc9eec74476188e9d9e",
+      "bytes": 1433
+    },
+    {
+      "logical_path": "js/payments/stripe-js/payment.ts",
+      "materialized_path": "lib/payments/stripe-js/payment.ts",
+      "hash": "7af16770397aca666a2e4cb514687f6e2f53d2e682ea26af0bf64c08e209c357",
+      "bytes": 3163
+    },
+    {
+      "logical_path": "js/payments/stripe-js/checkout.ts",
+      "materialized_path": "lib/payments/stripe-js/checkout.ts",
+      "hash": "5fccc008d6343efe1da5341145a5f178440b80322ab95ca5ead9713117f637d5",
+      "bytes": 13303
+    },
+    {
+      "logical_path": "js/payments/stripe-js/dashboard-checkout.ts",
+      "materialized_path": "lib/payments/stripe-js/dashboard-checkout.ts",
+      "hash": "03c9903af48b0e846860abeee40c63f073edc68e9be4e33857f5393a294b31f9",
+      "bytes": 4034
+    },
+    {
+      "logical_path": "js/payments/stripe-js/server.ts",
+      "materialized_path": "lib/payments/stripe-js/server.ts",
+      "hash": "b71b05508d8116f9620d4dd9e5767de4c224d1a6ffbc7b08a48c87e0c398c748",
+      "bytes": 17143
+    },
+    {
+      "logical_path": "js/app/api/checkout/route.ts",
+      "materialized_path": "app/api/checkout/route.ts",
+      "hash": "ca6b5f803af0e1c8faf2b041eee640fc0d3eebcad0c0a1c50b36747ddfc91f02",
+      "bytes": 6759
+    },
+    {
+      "logical_path": "js/app/api/stripe/webhook/route.ts",
+      "materialized_path": "app/api/stripe/webhook/route.ts",
+      "hash": "549883999f58e18d0c4c463cbb5125ffe612256dece3944e5a019955d7ad888c",
+      "bytes": 4106
+    },
+    {
+      "logical_path": "js/payments/stripe-js/metadata.ts",
+      "materialized_path": "lib/payments/stripe-js/metadata.ts",
+      "hash": "382c3c6c2e7e62b01085e2fdeced0f2bda51ba9532c21379114aec9885c01650",
+      "bytes": 9585
+    },
+    {
+      "logical_path": "js/payments/stripe-js/README.md",
+      "materialized_path": "lib/payments/stripe-js/README.md",
+      "hash": "fb14907602e5c6a3e32115832ecc9c71bc315bb24345b44ad376a37ea3697baf",
+      "bytes": 9368
+    },
+    {
+      "logical_path": "js/app/api/payments/stripe-js/readiness/route.ts",
+      "materialized_path": "app/api/payments/stripe-js/readiness/route.ts",
+      "hash": "da717492bfa5125c3e79e972ac6cad9f0c6bea1f1f1d2ff32a2cfb3040bd3928",
+      "bytes": 6043
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/payments/stripe-js/config.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/payments/stripe-js/client.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/payments/stripe-js/payment.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/payments/stripe-js/checkout.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/payments/stripe-js/dashboard-checkout.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/payments/stripe-js/server.ts already matches the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "app/api/checkout/route.ts would be updated from the latest package."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "app/api/stripe/webhook/route.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/payments/stripe-js/metadata.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/payments/stripe-js/README.md has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "app/api/payments/stripe-js/readiness/route.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `Shohan` accepted yellow local edits for `payments/stripe-js` variant `default`: Reviewed after template rename; preserving source-owned local edits and stale tracked local files in Forge receipt state."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/payments/stripe-js/config.ts",
+      "logical_path": "js/payments/stripe-js/config.ts",
+      "before_hash": "d12b3344069f437b56a19677a9a02b7cc949749c7c95b2d28784626b9f52f356",
+      "after_hash": "d12b3344069f437b56a19677a9a02b7cc949749c7c95b2d28784626b9f52f356",
+      "tracked_hash": "d12b3344069f437b56a19677a9a02b7cc949749c7c95b2d28784626b9f52f356",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/payments/stripe-js/config.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/payments/stripe-js/client.ts",
+      "logical_path": "js/payments/stripe-js/client.ts",
+      "before_hash": "d42492583020f22bb1121f007af73408cad759af93e52dc9eec74476188e9d9e",
+      "after_hash": "d42492583020f22bb1121f007af73408cad759af93e52dc9eec74476188e9d9e",
+      "tracked_hash": "d42492583020f22bb1121f007af73408cad759af93e52dc9eec74476188e9d9e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/payments/stripe-js/client.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/payments/stripe-js/payment.ts",
+      "logical_path": "js/payments/stripe-js/payment.ts",
+      "before_hash": "7af16770397aca666a2e4cb514687f6e2f53d2e682ea26af0bf64c08e209c357",
+      "after_hash": "7af16770397aca666a2e4cb514687f6e2f53d2e682ea26af0bf64c08e209c357",
+      "tracked_hash": "7af16770397aca666a2e4cb514687f6e2f53d2e682ea26af0bf64c08e209c357",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/payments/stripe-js/payment.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/payments/stripe-js/checkout.ts",
+      "logical_path": "js/payments/stripe-js/checkout.ts",
+      "before_hash": "5fccc008d6343efe1da5341145a5f178440b80322ab95ca5ead9713117f637d5",
+      "after_hash": "5fccc008d6343efe1da5341145a5f178440b80322ab95ca5ead9713117f637d5",
+      "tracked_hash": "5fccc008d6343efe1da5341145a5f178440b80322ab95ca5ead9713117f637d5",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/payments/stripe-js/checkout.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/payments/stripe-js/dashboard-checkout.ts",
+      "logical_path": "js/payments/stripe-js/dashboard-checkout.ts",
+      "before_hash": "03c9903af48b0e846860abeee40c63f073edc68e9be4e33857f5393a294b31f9",
+      "after_hash": "03c9903af48b0e846860abeee40c63f073edc68e9be4e33857f5393a294b31f9",
+      "tracked_hash": "03c9903af48b0e846860abeee40c63f073edc68e9be4e33857f5393a294b31f9",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/payments/stripe-js/dashboard-checkout.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/payments/stripe-js/server.ts",
+      "logical_path": "js/payments/stripe-js/server.ts",
+      "before_hash": "b71b05508d8116f9620d4dd9e5767de4c224d1a6ffbc7b08a48c87e0c398c748",
+      "after_hash": "b71b05508d8116f9620d4dd9e5767de4c224d1a6ffbc7b08a48c87e0c398c748",
+      "tracked_hash": "b71b05508d8116f9620d4dd9e5767de4c224d1a6ffbc7b08a48c87e0c398c748",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/payments/stripe-js/server.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "app/api/checkout/route.ts",
+      "logical_path": "js/app/api/checkout/route.ts",
+      "before_hash": "a956b95e0e70229ca32d30811bcb6378b537a832ae5b432614e36bb53a7c959b",
+      "after_hash": "ca6b5f803af0e1c8faf2b041eee640fc0d3eebcad0c0a1c50b36747ddfc91f02",
+      "tracked_hash": "a956b95e0e70229ca32d30811bcb6378b537a832ae5b432614e36bb53a7c959b",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "app/api/checkout/route.ts accepted and updated from the latest package."
+    },
+    {
+      "path": "app/api/stripe/webhook/route.ts",
+      "logical_path": "js/app/api/stripe/webhook/route.ts",
+      "before_hash": "549883999f58e18d0c4c463cbb5125ffe612256dece3944e5a019955d7ad888c",
+      "after_hash": "549883999f58e18d0c4c463cbb5125ffe612256dece3944e5a019955d7ad888c",
+      "tracked_hash": "108e17a10fc44ab6cf1c038570ad5043df5d03bd29204fbc6bd551cea140f255",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "app/api/stripe/webhook/route.ts accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "lib/payments/stripe-js/metadata.ts",
+      "logical_path": "js/payments/stripe-js/metadata.ts",
+      "before_hash": "382c3c6c2e7e62b01085e2fdeced0f2bda51ba9532c21379114aec9885c01650",
+      "after_hash": "382c3c6c2e7e62b01085e2fdeced0f2bda51ba9532c21379114aec9885c01650",
+      "tracked_hash": "dd97b48257962967453681dab9adb6459ae673278f816dea5d29b69dd39dd9dd",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/payments/stripe-js/metadata.ts accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "lib/payments/stripe-js/README.md",
+      "logical_path": "js/payments/stripe-js/README.md",
+      "before_hash": "fb14907602e5c6a3e32115832ecc9c71bc315bb24345b44ad376a37ea3697baf",
+      "after_hash": "fb14907602e5c6a3e32115832ecc9c71bc315bb24345b44ad376a37ea3697baf",
+      "tracked_hash": "98633c1c3aeeda4a2e93c83010a69b3d98c676712f69ff8e238d8a7f9b822ce8",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/payments/stripe-js/README.md accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "app/api/payments/stripe-js/readiness/route.ts",
+      "logical_path": "js/app/api/payments/stripe-js/readiness/route.ts",
+      "before_hash": "da717492bfa5125c3e79e972ac6cad9f0c6bea1f1f1d2ff32a2cfb3040bd3928",
+      "tracked_hash": "da717492bfa5125c3e79e972ac6cad9f0c6bea1f1f1d2ff32a2cfb3040bd3928",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "app/api/payments/stripe-js/readiness/route.ts is tracked locally but absent from the latest package."
+    }
+  ],
+  "risk_score": 40,
+  "timestamp": "2026-05-25T14:24:01.202960900+00:00",
+  "signature": null
+}

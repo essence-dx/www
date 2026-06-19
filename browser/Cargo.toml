@@ -1,0 +1,28 @@
+[package]
+name = "dx-www-browser"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Sub-20KB browser WASM runtime for dx-www - pure FFI, no wasm-bindgen"
+keywords = ["wasm", "web", "browser", "dx", "runtime"]
+categories = ["wasm", "web-programming"]
+
+[lib]
+crate-type = ["cdylib"]
+# Disable tests for this crate - it only runs in WASM environment
+# Tests for browser WASM runtime functionality are in the tests/ crate with mock host functions
+test = false
+doctest = false
+
+[dependencies]
+# Core runtime - zero external deps for minimal size
+# Ecosystem features (conditional compilation)
+dx-www-error = { path = "../error", optional = true }
+
+[features]
+default = []
+dev = ["dx-www-error"]
+dx-debug = []
+dx-www-debug = []

@@ -1,0 +1,143 @@
+{
+  "schema": "dx.forge.receipt",
+  "receipt_id": "2026-05-22-forms-dashboard-workflow",
+  "package_name": "Forms",
+  "package_id": "forms/react-hook-form",
+  "upstream_package": "react-hook-form",
+  "upstream_version": "7.75.0",
+  "source_mirror": "G:/WWW/inspirations/react-hook-form",
+  "cli_command": "dx add forms --write",
+  "aliases": [
+    "react-hook-form",
+    "rhf",
+    "forms/rhf"
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "route": "/",
+  "component": "template-lead-form",
+  "dashboard_workflow": "forms-launch-lead",
+  "status": "source-coded-runtime-pending",
+  "selected_surfaces": [
+    "form-provider",
+    "registered-fields",
+    "controlled-fields",
+    "field-arrays",
+    "zod-style-resolver",
+    "template-lead-form",
+    "source-guard-runbook",
+    "studio-manifest-source-guard",
+    "lower-dx-check-helper-freshness"
+  ],
+  "files": [
+    "examples/template/template-lead-form.tsx",
+    "examples/template/template-route-contract.ts",
+    "examples/template/package-catalog.ts",
+    "docs/packages/forms-react-hook-form.md",
+    "docs/packages/forms.source-guard-runbook.json",
+    "core/src/ecosystem/forge_react_hook_form.rs",
+    "core/src/ecosystem/forge_registry.rs",
+    "core/src/ecosystem/project_check/forms_dx_check.rs",
+    "dx-www/src/cli/studio_manifest.rs",
+    "dx-www/src/cli/mod.rs",
+    "benchmarks/forms-react-hook-form-package-doc.test.ts"
+  ],
+  "hash_algorithm": "sha256",
+  "file_hashes": [
+    {
+      "path": "examples/template/template-lead-form.tsx",
+      "sha256": "2c432d0716e13a85bd96aae7aaf08445efae7b6ca953813ede630a23ff900877"
+    },
+    {
+      "path": "examples/template/template-route-contract.ts",
+      "sha256": "12fa78599c5d94d9f19baec62fc245c4879f3d10af15a8a05e557f879152e7be"
+    },
+    {
+      "path": "docs/packages/forms-react-hook-form.md",
+      "sha256": "2a8d33f61ea007b2d3ace346f290436006e48c38f345416edccac91406794635"
+    },
+    {
+      "path": "docs/packages/forms.source-guard-runbook.json",
+      "sha256": "38ddace55c7257980748f265cd698b2548b6b4f94e266a656615163aa31457d0"
+    },
+    {
+      "path": "core/src/ecosystem/forge_react_hook_form.rs",
+      "sha256": "4cd729f48a4b4319653c422dc7fdc9e95fbcb72dbe6e56d11daf51cb758670e6"
+    },
+    {
+      "path": "core/src/ecosystem/project_check/forms_dx_check.rs",
+      "sha256": "c85e5520635c051d8330cfceebb14fce16d1e7197dca677262ac7b9e18273e7c"
+    },
+    {
+      "path": "dx-www/src/cli/studio_manifest.rs",
+      "sha256": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8"
+    }
+  ],
+  "provenance": {
+    "license": "MIT",
+    "source_mirror": "G:/WWW/inspirations/react-hook-form",
+    "inspected_source_files": [
+      "package.json",
+      "LICENSE",
+      "src/index.ts",
+      "src/useForm.ts",
+      "src/useFormContext.tsx",
+      "src/controller.tsx",
+      "src/useController.ts",
+      "src/useFieldArray.ts",
+      "src/types/form.ts"
+    ],
+    "upstream_public_apis": [
+      "useForm",
+      "FormProvider",
+      "useFormContext",
+      "register",
+      "handleSubmit",
+      "Controller",
+      "useController",
+      "useFieldArray",
+      "useWatch",
+      "Resolver",
+      "FieldErrors"
+    ]
+  },
+  "stable_markers": [
+    "data-dx-package=\"forms/react-hook-form\"",
+    "data-dx-component=\"template-lead-form\"",
+    "data-dx-component=\"launch-lead-fields\"",
+    "data-dx-edit-id=\"launch.lead-form\"",
+    "data-dx-edit-kind=\"form\"",
+    "data-dx-editable=\"form-fields\"",
+    "data-dx-insert-slot=\"template-lead-form\""
+  ],
+  "dx_check_visibility": [
+    "present",
+    "stale",
+    "missing receipt",
+    "blocked",
+    "unsupported surface"
+  ],
+  "required_env": [],
+  "app_owned_boundaries": [
+    "Dependency installation",
+    "Validation rules and copy",
+    "Accessibility review",
+    "Submit handlers",
+    "Spam protection",
+    "Persistence",
+    "Authorization",
+    "Governed browser runtime proof"
+  ],
+  "guards": [
+    "node --test .\\benchmarks\\forms-react-hook-form-package-doc.test.ts",
+    "node --test .\\benchmarks\\template-shell.test.ts",
+    "node --test .\\benchmarks\\launch-package-slices.test.ts"
+  ],
+  "runtime_execution": false,
+  "node_modules_policy": "no-template-local-node_modules",
+  "limitations": [
+    "Source/materialization proof only",
+    "No package install was run",
+    "No local server, browser automation, or full build was run",
+    "Live form submission remains app-owned"
+  ]
+}

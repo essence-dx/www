@@ -1,0 +1,62 @@
+{
+  "format": "dx-style-demo-manifest-v2",
+  "theme": "dark-vercel-shadcn",
+  "font": "JetBrains Mono local stack",
+  "defaultDelivery": "generated-css",
+  "defaultStylesheet": "/dx-style.generated.css",
+  "fallbackCss": "/site.css",
+  "binarySidecar": {
+    "path": "/dx-style.dxbd",
+    "status": "experimental-sidecar",
+    "reason": "Native generated CSS is the launch browser path until the binary decoder has a measured route-level win."
+  },
+  "source": "www/demo/site/LaunchPage.dx.jsx",
+  "generatedStylesheet": "www/demo/site/site.css",
+  "tokens": {
+    "color.background": "#030303",
+    "color.foreground": "#fafafa",
+    "color.panel": "#09090b",
+    "color.panelRaised": "#0d0d10",
+    "color.border": "#27272a",
+    "color.borderStrong": "#3f3f46",
+    "color.muted": "#a1a1aa",
+    "color.mutedForeground": "#71717a",
+    "color.accentBlue": "#60a5fa",
+    "color.accentGreen": "#34d399",
+    "color.accentAmber": "#fbbf24",
+    "color.accentViolet": "#a78bfa",
+    "radius.panel": "8px",
+    "radius.control": "6px",
+    "shadow.panel": "0 24px 80px rgba(0, 0, 0, 0.38)"
+  },
+  "recipes": [
+    {
+      "name": "hero-copy",
+      "purpose": "launch positioning surface"
+    },
+    {
+      "name": "proof-console",
+      "purpose": "route compiler and payload inspector"
+    },
+    {
+      "name": "scenario-tabs",
+      "purpose": "runtime scenario selection"
+    },
+    {
+      "name": "comparison-table",
+      "purpose": "framework benchmark evidence"
+    },
+    {
+      "name": "architecture-item",
+      "purpose": "runtime policy explanation"
+    },
+    {
+      "name": "style-panel",
+      "purpose": "generated CSS manifest status"
+    },
+    {
+      "name": "launch-list",
+      "purpose": "market sequencing"
+    }
+  ]
+}

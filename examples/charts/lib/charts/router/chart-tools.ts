@@ -1,0 +1,21 @@
+import type { ChartToolSpec } from "../spec";
+
+export const GPT_VIS_CHART_TOOLS: ChartToolSpec[] = [
+  { id: "gptvis-line", label: "Line", chartType: "line", mark: "line", family: "GPTVis", tasks: ["trend"], requiredRoles: ["measure"], preferredRoles: ["time"], aliases: ["line", "trend", "timeline", "over time"], supported: true },
+  { id: "gptvis-area", label: "Area", chartType: "area", mark: "area", family: "GPTVis", tasks: ["trend", "composition"], requiredRoles: ["measure"], preferredRoles: ["time"], aliases: ["area", "stack", "volume"], supported: true },
+  { id: "gptvis-column", label: "Column", chartType: "column", mark: "bar", family: "GPTVis", tasks: ["comparison", "composition"], requiredRoles: ["dimension", "measure"], aliases: ["column", "compare", "rank"], supported: true },
+  { id: "gptvis-bar", label: "Bar", chartType: "bar", mark: "bar", family: "GPTVis", tasks: ["comparison"], requiredRoles: ["dimension", "measure"], aliases: ["bar", "long label", "ranking"], supported: true },
+  { id: "gptvis-pie", label: "Pie", chartType: "pie", mark: "pie", family: "GPTVis", tasks: ["proportion"], requiredRoles: ["dimension", "measure"], aliases: ["pie", "share", "ratio", "part to whole"], supported: true },
+  { id: "gptvis-scatter", label: "Scatter", chartType: "scatter", mark: "point", family: "GPTVis", tasks: ["relation", "distribution"], requiredRoles: ["measure", "measure"], aliases: ["scatter", "correlation", "relationship"], supported: true },
+  { id: "gptvis-histogram", label: "Histogram", chartType: "histogram", mark: "bar", family: "GPTVis", tasks: ["distribution"], requiredRoles: ["measure"], aliases: ["histogram", "distribution", "spread"], supported: true },
+  { id: "gptvis-boxplot", label: "Boxplot", chartType: "boxplot", mark: "boxplot", family: "GPTVis", tasks: ["distribution"], requiredRoles: ["dimension", "measure"], aliases: ["boxplot", "box plot", "outlier", "quartile"], supported: true },
+  { id: "gptvis-radar", label: "Radar", chartType: "radar", mark: "radar", family: "GPTVis", tasks: ["comparison"], requiredRoles: ["dimension", "measure"], aliases: ["radar", "capability", "profile"], supported: true },
+  { id: "gptvis-funnel", label: "Funnel", chartType: "funnel", mark: "funnel", family: "GPTVis", tasks: ["flow"], requiredRoles: ["dimension", "measure"], aliases: ["funnel", "conversion", "stage"], supported: true },
+  { id: "gptvis-waterfall", label: "Waterfall", chartType: "waterfall", mark: "waterfall", family: "GPTVis", tasks: ["flow", "composition"], requiredRoles: ["dimension", "measure"], aliases: ["waterfall", "delta", "increase", "decrease"], supported: true },
+  { id: "gptvis-treemap", label: "Treemap", chartType: "treemap", mark: "treemap", family: "GPTVis", tasks: ["composition", "proportion"], requiredRoles: ["dimension", "measure"], preferredRoles: ["hierarchy"], aliases: ["treemap", "hierarchy", "nested"], supported: true },
+  { id: "gptvis-chord", label: "Chord", chartType: "chord", mark: "chord", family: "GPTVis", tasks: ["relation", "flow"], requiredRoles: ["dimension", "dimension", "measure"], preferredRoles: ["network"], aliases: ["chord", "bidirectional", "source", "target", "relationship"], supported: true },
+  { id: "gptvis-sankey", label: "Sankey", chartType: "sankey", mark: "sankey", family: "GPTVis", tasks: ["flow", "relation"], requiredRoles: ["dimension", "dimension", "measure"], preferredRoles: ["network"], aliases: ["sankey", "flow", "source", "target"], supported: true },
+  { id: "gptvis-network-graph", label: "Network graph", chartType: "network-graph", mark: "graph", family: "GPTVis", tasks: ["relation"], requiredRoles: ["dimension", "dimension"], preferredRoles: ["network"], aliases: ["network", "graph", "dependency"], supported: true },
+  { id: "gptvis-table", label: "Table", chartType: "table", mark: "pivot", family: "GPTVis", tasks: ["table"], requiredRoles: ["dimension", "measure"], aliases: ["table", "pivot", "matrix", "detail"], supported: true },
+  { id: "gptvis-word-cloud", label: "Word cloud", chartType: "word-cloud", mark: "wordcloud", family: "GPTVis", tasks: ["distribution"], requiredRoles: ["dimension", "measure"], aliases: ["word cloud", "terms", "keywords"], supported: true },
+];

@@ -1,0 +1,129 @@
+{
+  "tool": "dx imports",
+  "version": 2,
+  "generated_by": "dx imports sync",
+  "project": "G:/Dx/www/examples/shader",
+  "source_hash": "blake3:e98e856c6bb3fca6ad157790055bb7a5730a76433cffb0eaef055fdde5ab52d4",
+  "policy": "generated-import-maps-no-runtime-magic",
+  "used_only": true,
+  "scan_roots": [
+    "components",
+    "composables",
+    "utils"
+  ],
+  "used_roots": [
+    "app",
+    "components",
+    "lib",
+    "server",
+    "styles"
+  ],
+  "aliases": [
+    "#components",
+    "#imports"
+  ],
+  "files": {
+    "barrel": "components/auto-imports.ts",
+    "import_map": ".dx/imports/import-map.json",
+    "declarations": ".dx/imports/imports.d.ts"
+  },
+  "entry_count": 4,
+  "used_symbol_count": 0,
+  "typed_entry_count": 1,
+  "untyped_entry_count": 3,
+  "entries": [
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "import_path": "@/components/icons/icon",
+      "barrel_export": null,
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "type_exports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "forge-package",
+      "name": "www/minimal-starter",
+      "source": "forge/www/minimal-starter",
+      "import_path": "@/forge/www/minimal-starter",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "generated.css",
+      "source": "styles/generated.css",
+      "import_path": "@/styles/generated.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "theme.css",
+      "source": "styles/theme.css",
+      "import_path": "@/styles/theme.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    }
+  ],
+  "public_barrel_entries": [],
+  "unused_entries": [
+    "components/icons/icon.tsx"
+  ],
+  "skipped_entries": [],
+  "component_exports": [],
+  "components": [
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "importPath": "@/components/icons/icon",
+      "barrelExport": null,
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "Icon",
+        "IconProps"
+      ],
+      "typeExports": [
+        "IconProps"
+      ]
+    }
+  ],
+  "composables": [],
+  "utilities": [],
+  "forge_packages": [
+    "www/minimal-starter"
+  ],
+  "style_helpers": [
+    "styles/generated.css",
+    "styles/theme.css"
+  ]
+}

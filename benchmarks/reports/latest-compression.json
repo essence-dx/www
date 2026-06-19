@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-05-15T11:25:38.627Z",
+  "snapshot_status": {
+    "kind": "historical-benchmark-snapshot",
+    "not_current_release_readiness": true,
+    "current_worker_checkpoint_date": "2026-05-24",
+    "current_worker_checkpoint_score": "84/100",
+    "current_worker_checkpoint_blockers": [
+      "62 Rust warnings",
+      "chaotic worktree",
+      "source-guard-heavy evidence",
+      "missing browser screenshot proof",
+      "missing overlay recovery proof",
+      "generated artifact curation",
+      "full cargo test and clippy not rerun after curation"
+    ]
+  },
+  "dx_www": {
+    "raw_bytes": 6262,
+    "gzip_bytes": 2434,
+    "brotli_bytes": 1980
+  },
+  "nextjs": {
+    "raw_bytes": 714759,
+    "gzip_bytes": 251853,
+    "brotli_bytes": 225721
+  },
+  "ratios": {
+    "next_vs_dx_raw_payload": 114.14,
+    "next_vs_dx_gzip_estimate": 103.47,
+    "next_vs_dx_brotli_estimate": 114,
+    "next_full_median_vs_dx_full_median": 3.91
+  }
+}

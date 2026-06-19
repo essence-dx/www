@@ -1,0 +1,833 @@
+{
+  "action": "update-dry-run",
+  "package": {
+    "package_id": "api/trpc",
+    "upstream_name": "@trpc/server",
+    "version": "11.17.0-dx.10",
+    "generator": "dx-forge/trpc",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "12510f8e2e85b54729aa833b61fc4c3ccb6b577508297ec87822e136ac976f72",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:@trpc/server@11.17.0; npm:@trpc/client@11.17.0; npm:@trpc/tanstack-react-query@11.17.0",
+      "verified": false,
+      "note": "DX inspected the local tRPC source mirror, package export maps, fetch adapter, initTRPC root builder, errorFormatter, TRPCErrorFormatter, TRPCErrorShape, inferRouterError, getHTTPStatusCodeFromError, responseMeta, ResponseMeta, ResponseMetaFn, TRPCCombinedDataTransformer, TRPCDataTransformer, createCallerFactory server caller usage, typed router inference, typed client proxy, HTTPBatchLinkOptions, HTTPHeaders, TRPCFetch, headers, maxItems, maxURLLength, methodOverride, link transformer options, httpBatchLink, httpBatchStreamLink, loggerLink, httpSubscriptionLink, splitLink, tracked subscriptions, TanStack React Query query/mutation/infinite-query/subscription options, and Next App Router examples before curating this launch API slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this tRPC launch slice, but it is not a live advisory feed and does not audit application procedures, authorization policy, request limits, request id propagation, auth token source, cross-origin header policy, proxy URL limits, fetch runtime selection, persistence, audit logging, pagination cursor semantics, serializer dependency selection, custom type registration, cache taxonomy, CDN/proxy behavior, deployed header verification, log redaction policy, JSONL/proxy compatibility, error redaction policy, public error copy, subscription fan-out, stream pacing, EventSource policy, or deployed route configuration."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/trpc/context.ts",
+        "logical_path": "js/lib/trpc/context.ts",
+        "hash": "4d1a6259bccd07a4f21b3ac3180dfc09af41fbeb7124fc30959c168b1393ca30",
+        "bytes": 829
+      },
+      {
+        "path": "lib/trpc/transformer.ts",
+        "logical_path": "js/lib/trpc/transformer.ts",
+        "hash": "8a4db6a1027661f67d744265e327f10cd9617cb7d2eb5690aca3f0cdfb84d424",
+        "bytes": 975
+      },
+      {
+        "path": "lib/trpc/server.ts",
+        "logical_path": "js/lib/trpc/server.ts",
+        "hash": "f3281953893017c9d477606d7c09a802f23c76674f3852ef35a9a4210f8a862e",
+        "bytes": 754
+      },
+      {
+        "path": "lib/trpc/errors.ts",
+        "logical_path": "js/lib/trpc/errors.ts",
+        "hash": "7f0dfb79c4568539f2a7575fa82c9dfe0a68010c938e8a9586c8aebfbfc23eb1",
+        "bytes": 1740
+      },
+      {
+        "path": "lib/trpc/response-meta.ts",
+        "logical_path": "js/lib/trpc/response-meta.ts",
+        "hash": "9b2024651c9f1a1f1df98171483a6d6225b00391e978c58ead144293fd524f6e",
+        "bytes": 2176
+      },
+      {
+        "path": "lib/trpc/router.ts",
+        "logical_path": "js/lib/trpc/router.ts",
+        "hash": "60ad6c6f53d96f75c1d3bed487a8311d774bfb3416327324431fae07ae37bfb4",
+        "bytes": 3939
+      },
+      {
+        "path": "lib/trpc/route-handler.ts",
+        "logical_path": "js/lib/trpc/route-handler.ts",
+        "hash": "ab3f8d6d1b03cbb9f4b84f01dcbf7bfd852cde9ce3106771cb2c67ad731323bc",
+        "bytes": 1572
+      },
+      {
+        "path": "lib/trpc/server-caller.ts",
+        "logical_path": "js/lib/trpc/server-caller.ts",
+        "hash": "450843b0341e9948f9cae22c351fc4b7b97936272bbb3a5350c1760467f83d4e",
+        "bytes": 1088
+      },
+      {
+        "path": "app/api/trpc/[trpc]/route.ts",
+        "logical_path": "js/app/api/trpc/[trpc]/route.ts",
+        "hash": "090d729e2d92166cfb4797a74d5c50e8def20bfc12feb8ed0016773627b55ab2",
+        "bytes": 153
+      },
+      {
+        "path": "lib/trpc/http.ts",
+        "logical_path": "js/lib/trpc/http.ts",
+        "hash": "27d9e399c2c8e28bdd12022ee2cf5d88710c1d3263203fe96e9f505cff226e38",
+        "bytes": 2590
+      },
+      {
+        "path": "lib/trpc/client.ts",
+        "logical_path": "js/lib/trpc/client.ts",
+        "hash": "db43041de9a934f80dd70a34fd9e7224dbb15d932565f5e3609c89c81efca4d1",
+        "bytes": 1293
+      },
+      {
+        "path": "lib/trpc/subscriptions.ts",
+        "logical_path": "js/lib/trpc/subscriptions.ts",
+        "hash": "0e0f312fcff260e06c7ce2f797f871ed355a92df5e18fb74ff00e5f0293b7e36",
+        "bytes": 1878
+      },
+      {
+        "path": "lib/trpc/streaming-client.ts",
+        "logical_path": "js/lib/trpc/streaming-client.ts",
+        "hash": "dd60aaa944939ca3fbec13bf1d1b87bf7f16dc7fc140cfb72aef9d6119fdea31",
+        "bytes": 3423
+      },
+      {
+        "path": "lib/trpc/provider.tsx",
+        "logical_path": "js/lib/trpc/provider.tsx",
+        "hash": "cbbe405bf7acb394ff8f198055a8ec9b95b1119b8300c39ec232944a197903c9",
+        "bytes": 2823
+      },
+      {
+        "path": "lib/trpc/dashboard-workflow.ts",
+        "logical_path": "js/lib/trpc/dashboard-workflow.ts",
+        "hash": "d14e4d6c982b5e14ac3dbd5d635580043a9a72719c6acc53dfa90abc91d00fea",
+        "bytes": 5637
+      },
+      {
+        "path": "components/dashboard/trpc-dashboard-workflow.tsx",
+        "logical_path": "js/components/dashboard/trpc-dashboard-workflow.tsx",
+        "hash": "3e93f0acbeff41af9bb59faa9ba76f2241776fb4f4b97391dc97d206cb7f60e3",
+        "bytes": 5087
+      },
+      {
+        "path": "lib/trpc/metadata.ts",
+        "logical_path": "js/lib/trpc/metadata.ts",
+        "hash": "1d96ca80edc3ae7f7e28cc74be0a9fd87224ff4127374db235fe997ad683b23b",
+        "bytes": 8958
+      },
+      {
+        "path": "examples/template/trpc-launch-contract.ts",
+        "logical_path": "js/examples/template/trpc-launch-contract.ts",
+        "hash": "ada513d6d36f8c834bfc286520599a2b41184a4acd01f7bde124c3d0cc072d8d",
+        "bytes": 1627
+      },
+      {
+        "path": "examples/template/trpc-launch-health.tsx",
+        "logical_path": "js/examples/template/trpc-launch-health.tsx",
+        "hash": "fa42998a30dfed1322dd3e569cb78be66d4885d4547d7b20a3aaed5427da7122",
+        "bytes": 5579
+      },
+      {
+        "path": "examples/template/trpc-server-readiness.ts",
+        "logical_path": "js/examples/template/trpc-server-readiness.ts",
+        "hash": "1fbc80722235e1397b35c73d63c52664194fc655111e830c3d5ddb6e1717dc7f",
+        "bytes": 393
+      },
+      {
+        "path": "examples/template/trpc-subscription-status.tsx",
+        "logical_path": "js/examples/template/trpc-subscription-status.tsx",
+        "hash": "25189a716a9c8ff16e1b1180bda541f19cf8b5496d50876f9e9dc99a09484d8f",
+        "bytes": 1492
+      },
+      {
+        "path": "examples/template/trpc-error-status.tsx",
+        "logical_path": "js/examples/template/trpc-error-status.tsx",
+        "hash": "c7442120f9068c4eb5fffcd94149493bd62828a4442532d259dbde95ae0e07f7",
+        "bytes": 736
+      },
+      {
+        "path": "examples/template/trpc-streaming-client-status.tsx",
+        "logical_path": "js/examples/template/trpc-streaming-client-status.tsx",
+        "hash": "93b2ed7442a4a9581b2401bf51cdcfcb2d59dbf13a410d7eabb594d1220a1205",
+        "bytes": 517
+      },
+      {
+        "path": "examples/template/trpc-response-meta.ts",
+        "logical_path": "js/examples/template/trpc-response-meta.ts",
+        "hash": "260bda33f2723018be37f52e15a8691d5688278fd565db34f110d0a4549e5ff9",
+        "bytes": 678
+      },
+      {
+        "path": "examples/template/trpc-infinite-feed.tsx",
+        "logical_path": "js/examples/template/trpc-infinite-feed.tsx",
+        "hash": "dc0e58420cc4d5bcd4792e24acf608c230b6b6c9f42a1da65e3ae1cb64e42b8f",
+        "bytes": 1776
+      },
+      {
+        "path": "examples/template/trpc-transformer-status.ts",
+        "logical_path": "js/examples/template/trpc-transformer-status.ts",
+        "hash": "e4d1a2eaa457163b3f88de9447f74b83c1c45dd31e3227e72134f4800fb12db9",
+        "bytes": 498
+      },
+      {
+        "path": "examples/template/trpc-request-policy.ts",
+        "logical_path": "js/examples/template/trpc-request-policy.ts",
+        "hash": "14a6ebbd965f6712f77d270aeb2db9155abbee6176bb42e20b2d24735dac1c95",
+        "bytes": 910
+      },
+      {
+        "path": "lib/trpc/README.md",
+        "logical_path": "js/lib/trpc/README.md",
+        "hash": "1eed4c14955ae7dd28a9f8ed997d2acb6f14db7b302b2d21b057da6a7145c969",
+        "bytes": 9853
+      }
+    ]
+  },
+  "files_written": [],
+  "file_map": [
+    {
+      "logical_path": "js/lib/trpc/context.ts",
+      "materialized_path": "lib/trpc/context.ts",
+      "hash": "4d1a6259bccd07a4f21b3ac3180dfc09af41fbeb7124fc30959c168b1393ca30",
+      "bytes": 829
+    },
+    {
+      "logical_path": "js/lib/trpc/transformer.ts",
+      "materialized_path": "lib/trpc/transformer.ts",
+      "hash": "8a4db6a1027661f67d744265e327f10cd9617cb7d2eb5690aca3f0cdfb84d424",
+      "bytes": 975
+    },
+    {
+      "logical_path": "js/lib/trpc/server.ts",
+      "materialized_path": "lib/trpc/server.ts",
+      "hash": "f3281953893017c9d477606d7c09a802f23c76674f3852ef35a9a4210f8a862e",
+      "bytes": 754
+    },
+    {
+      "logical_path": "js/lib/trpc/errors.ts",
+      "materialized_path": "lib/trpc/errors.ts",
+      "hash": "7f0dfb79c4568539f2a7575fa82c9dfe0a68010c938e8a9586c8aebfbfc23eb1",
+      "bytes": 1740
+    },
+    {
+      "logical_path": "js/lib/trpc/response-meta.ts",
+      "materialized_path": "lib/trpc/response-meta.ts",
+      "hash": "9b2024651c9f1a1f1df98171483a6d6225b00391e978c58ead144293fd524f6e",
+      "bytes": 2176
+    },
+    {
+      "logical_path": "js/lib/trpc/router.ts",
+      "materialized_path": "lib/trpc/router.ts",
+      "hash": "60ad6c6f53d96f75c1d3bed487a8311d774bfb3416327324431fae07ae37bfb4",
+      "bytes": 3939
+    },
+    {
+      "logical_path": "js/lib/trpc/route-handler.ts",
+      "materialized_path": "lib/trpc/route-handler.ts",
+      "hash": "ab3f8d6d1b03cbb9f4b84f01dcbf7bfd852cde9ce3106771cb2c67ad731323bc",
+      "bytes": 1572
+    },
+    {
+      "logical_path": "js/lib/trpc/server-caller.ts",
+      "materialized_path": "lib/trpc/server-caller.ts",
+      "hash": "450843b0341e9948f9cae22c351fc4b7b97936272bbb3a5350c1760467f83d4e",
+      "bytes": 1088
+    },
+    {
+      "logical_path": "js/app/api/trpc/[trpc]/route.ts",
+      "materialized_path": "app/api/trpc/[trpc]/route.ts",
+      "hash": "090d729e2d92166cfb4797a74d5c50e8def20bfc12feb8ed0016773627b55ab2",
+      "bytes": 153
+    },
+    {
+      "logical_path": "js/lib/trpc/http.ts",
+      "materialized_path": "lib/trpc/http.ts",
+      "hash": "27d9e399c2c8e28bdd12022ee2cf5d88710c1d3263203fe96e9f505cff226e38",
+      "bytes": 2590
+    },
+    {
+      "logical_path": "js/lib/trpc/client.ts",
+      "materialized_path": "lib/trpc/client.ts",
+      "hash": "db43041de9a934f80dd70a34fd9e7224dbb15d932565f5e3609c89c81efca4d1",
+      "bytes": 1293
+    },
+    {
+      "logical_path": "js/lib/trpc/subscriptions.ts",
+      "materialized_path": "lib/trpc/subscriptions.ts",
+      "hash": "0e0f312fcff260e06c7ce2f797f871ed355a92df5e18fb74ff00e5f0293b7e36",
+      "bytes": 1878
+    },
+    {
+      "logical_path": "js/lib/trpc/streaming-client.ts",
+      "materialized_path": "lib/trpc/streaming-client.ts",
+      "hash": "dd60aaa944939ca3fbec13bf1d1b87bf7f16dc7fc140cfb72aef9d6119fdea31",
+      "bytes": 3423
+    },
+    {
+      "logical_path": "js/lib/trpc/provider.tsx",
+      "materialized_path": "lib/trpc/provider.tsx",
+      "hash": "cbbe405bf7acb394ff8f198055a8ec9b95b1119b8300c39ec232944a197903c9",
+      "bytes": 2823
+    },
+    {
+      "logical_path": "js/lib/trpc/dashboard-workflow.ts",
+      "materialized_path": "lib/trpc/dashboard-workflow.ts",
+      "hash": "d14e4d6c982b5e14ac3dbd5d635580043a9a72719c6acc53dfa90abc91d00fea",
+      "bytes": 5637
+    },
+    {
+      "logical_path": "js/components/dashboard/trpc-dashboard-workflow.tsx",
+      "materialized_path": "components/dashboard/trpc-dashboard-workflow.tsx",
+      "hash": "3e93f0acbeff41af9bb59faa9ba76f2241776fb4f4b97391dc97d206cb7f60e3",
+      "bytes": 5087
+    },
+    {
+      "logical_path": "js/lib/trpc/metadata.ts",
+      "materialized_path": "lib/trpc/metadata.ts",
+      "hash": "1d96ca80edc3ae7f7e28cc74be0a9fd87224ff4127374db235fe997ad683b23b",
+      "bytes": 8958
+    },
+    {
+      "logical_path": "js/examples/template/trpc-launch-contract.ts",
+      "materialized_path": "examples/template/trpc-launch-contract.ts",
+      "hash": "ada513d6d36f8c834bfc286520599a2b41184a4acd01f7bde124c3d0cc072d8d",
+      "bytes": 1627
+    },
+    {
+      "logical_path": "js/examples/template/trpc-launch-health.tsx",
+      "materialized_path": "examples/template/trpc-launch-health.tsx",
+      "hash": "fa42998a30dfed1322dd3e569cb78be66d4885d4547d7b20a3aaed5427da7122",
+      "bytes": 5579
+    },
+    {
+      "logical_path": "js/examples/template/trpc-server-readiness.ts",
+      "materialized_path": "examples/template/trpc-server-readiness.ts",
+      "hash": "1fbc80722235e1397b35c73d63c52664194fc655111e830c3d5ddb6e1717dc7f",
+      "bytes": 393
+    },
+    {
+      "logical_path": "js/examples/template/trpc-subscription-status.tsx",
+      "materialized_path": "examples/template/trpc-subscription-status.tsx",
+      "hash": "25189a716a9c8ff16e1b1180bda541f19cf8b5496d50876f9e9dc99a09484d8f",
+      "bytes": 1492
+    },
+    {
+      "logical_path": "js/examples/template/trpc-error-status.tsx",
+      "materialized_path": "examples/template/trpc-error-status.tsx",
+      "hash": "c7442120f9068c4eb5fffcd94149493bd62828a4442532d259dbde95ae0e07f7",
+      "bytes": 736
+    },
+    {
+      "logical_path": "js/examples/template/trpc-streaming-client-status.tsx",
+      "materialized_path": "examples/template/trpc-streaming-client-status.tsx",
+      "hash": "93b2ed7442a4a9581b2401bf51cdcfcb2d59dbf13a410d7eabb594d1220a1205",
+      "bytes": 517
+    },
+    {
+      "logical_path": "js/examples/template/trpc-response-meta.ts",
+      "materialized_path": "examples/template/trpc-response-meta.ts",
+      "hash": "260bda33f2723018be37f52e15a8691d5688278fd565db34f110d0a4549e5ff9",
+      "bytes": 678
+    },
+    {
+      "logical_path": "js/examples/template/trpc-infinite-feed.tsx",
+      "materialized_path": "examples/template/trpc-infinite-feed.tsx",
+      "hash": "dc0e58420cc4d5bcd4792e24acf608c230b6b6c9f42a1da65e3ae1cb64e42b8f",
+      "bytes": 1776
+    },
+    {
+      "logical_path": "js/examples/template/trpc-transformer-status.ts",
+      "materialized_path": "examples/template/trpc-transformer-status.ts",
+      "hash": "e4d1a2eaa457163b3f88de9447f74b83c1c45dd31e3227e72134f4800fb12db9",
+      "bytes": 498
+    },
+    {
+      "logical_path": "js/examples/template/trpc-request-policy.ts",
+      "materialized_path": "examples/template/trpc-request-policy.ts",
+      "hash": "14a6ebbd965f6712f77d270aeb2db9155abbee6176bb42e20b2d24735dac1c95",
+      "bytes": 910
+    },
+    {
+      "logical_path": "js/lib/trpc/README.md",
+      "materialized_path": "lib/trpc/README.md",
+      "hash": "1eed4c14955ae7dd28a9f8ed997d2acb6f14db7b302b2d21b057da6a7145c969",
+      "bytes": 9853
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "dry-run-only",
+      "traffic": "green",
+      "message": "Forge update preview does not write files or run package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/context.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/transformer.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/server.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/errors.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/response-meta.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/router.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/route-handler.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/server-caller.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "app/api/trpc/[trpc]/route.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/http.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/client.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/subscriptions.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/streaming-client.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/provider.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/dashboard-workflow.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/dashboard/trpc-dashboard-workflow.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/metadata.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-launch-contract.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-launch-health.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-server-readiness.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-subscription-status.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-error-status.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-streaming-client-status.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-response-meta.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-infinite-feed.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-transformer-status.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "examples/template/trpc-request-policy.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/trpc/README.md already matches the latest package."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/trpc/context.ts",
+      "logical_path": "js/lib/trpc/context.ts",
+      "before_hash": "4d1a6259bccd07a4f21b3ac3180dfc09af41fbeb7124fc30959c168b1393ca30",
+      "after_hash": "4d1a6259bccd07a4f21b3ac3180dfc09af41fbeb7124fc30959c168b1393ca30",
+      "tracked_hash": "4d1a6259bccd07a4f21b3ac3180dfc09af41fbeb7124fc30959c168b1393ca30",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/context.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/transformer.ts",
+      "logical_path": "js/lib/trpc/transformer.ts",
+      "before_hash": "8a4db6a1027661f67d744265e327f10cd9617cb7d2eb5690aca3f0cdfb84d424",
+      "after_hash": "8a4db6a1027661f67d744265e327f10cd9617cb7d2eb5690aca3f0cdfb84d424",
+      "tracked_hash": "8a4db6a1027661f67d744265e327f10cd9617cb7d2eb5690aca3f0cdfb84d424",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/transformer.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/server.ts",
+      "logical_path": "js/lib/trpc/server.ts",
+      "before_hash": "f3281953893017c9d477606d7c09a802f23c76674f3852ef35a9a4210f8a862e",
+      "after_hash": "f3281953893017c9d477606d7c09a802f23c76674f3852ef35a9a4210f8a862e",
+      "tracked_hash": "f3281953893017c9d477606d7c09a802f23c76674f3852ef35a9a4210f8a862e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/server.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/errors.ts",
+      "logical_path": "js/lib/trpc/errors.ts",
+      "before_hash": "7f0dfb79c4568539f2a7575fa82c9dfe0a68010c938e8a9586c8aebfbfc23eb1",
+      "after_hash": "7f0dfb79c4568539f2a7575fa82c9dfe0a68010c938e8a9586c8aebfbfc23eb1",
+      "tracked_hash": "7f0dfb79c4568539f2a7575fa82c9dfe0a68010c938e8a9586c8aebfbfc23eb1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/errors.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/response-meta.ts",
+      "logical_path": "js/lib/trpc/response-meta.ts",
+      "before_hash": "9b2024651c9f1a1f1df98171483a6d6225b00391e978c58ead144293fd524f6e",
+      "after_hash": "9b2024651c9f1a1f1df98171483a6d6225b00391e978c58ead144293fd524f6e",
+      "tracked_hash": "9b2024651c9f1a1f1df98171483a6d6225b00391e978c58ead144293fd524f6e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/response-meta.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/router.ts",
+      "logical_path": "js/lib/trpc/router.ts",
+      "before_hash": "60ad6c6f53d96f75c1d3bed487a8311d774bfb3416327324431fae07ae37bfb4",
+      "after_hash": "60ad6c6f53d96f75c1d3bed487a8311d774bfb3416327324431fae07ae37bfb4",
+      "tracked_hash": "60ad6c6f53d96f75c1d3bed487a8311d774bfb3416327324431fae07ae37bfb4",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/router.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/route-handler.ts",
+      "logical_path": "js/lib/trpc/route-handler.ts",
+      "before_hash": "ab3f8d6d1b03cbb9f4b84f01dcbf7bfd852cde9ce3106771cb2c67ad731323bc",
+      "after_hash": "ab3f8d6d1b03cbb9f4b84f01dcbf7bfd852cde9ce3106771cb2c67ad731323bc",
+      "tracked_hash": "ab3f8d6d1b03cbb9f4b84f01dcbf7bfd852cde9ce3106771cb2c67ad731323bc",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/route-handler.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/server-caller.ts",
+      "logical_path": "js/lib/trpc/server-caller.ts",
+      "before_hash": "450843b0341e9948f9cae22c351fc4b7b97936272bbb3a5350c1760467f83d4e",
+      "after_hash": "450843b0341e9948f9cae22c351fc4b7b97936272bbb3a5350c1760467f83d4e",
+      "tracked_hash": "450843b0341e9948f9cae22c351fc4b7b97936272bbb3a5350c1760467f83d4e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/server-caller.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "app/api/trpc/[trpc]/route.ts",
+      "logical_path": "js/app/api/trpc/[trpc]/route.ts",
+      "before_hash": "090d729e2d92166cfb4797a74d5c50e8def20bfc12feb8ed0016773627b55ab2",
+      "after_hash": "090d729e2d92166cfb4797a74d5c50e8def20bfc12feb8ed0016773627b55ab2",
+      "tracked_hash": "090d729e2d92166cfb4797a74d5c50e8def20bfc12feb8ed0016773627b55ab2",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "app/api/trpc/[trpc]/route.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/http.ts",
+      "logical_path": "js/lib/trpc/http.ts",
+      "before_hash": "27d9e399c2c8e28bdd12022ee2cf5d88710c1d3263203fe96e9f505cff226e38",
+      "after_hash": "27d9e399c2c8e28bdd12022ee2cf5d88710c1d3263203fe96e9f505cff226e38",
+      "tracked_hash": "27d9e399c2c8e28bdd12022ee2cf5d88710c1d3263203fe96e9f505cff226e38",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/http.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/client.ts",
+      "logical_path": "js/lib/trpc/client.ts",
+      "before_hash": "db43041de9a934f80dd70a34fd9e7224dbb15d932565f5e3609c89c81efca4d1",
+      "after_hash": "db43041de9a934f80dd70a34fd9e7224dbb15d932565f5e3609c89c81efca4d1",
+      "tracked_hash": "db43041de9a934f80dd70a34fd9e7224dbb15d932565f5e3609c89c81efca4d1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/client.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/subscriptions.ts",
+      "logical_path": "js/lib/trpc/subscriptions.ts",
+      "before_hash": "0e0f312fcff260e06c7ce2f797f871ed355a92df5e18fb74ff00e5f0293b7e36",
+      "after_hash": "0e0f312fcff260e06c7ce2f797f871ed355a92df5e18fb74ff00e5f0293b7e36",
+      "tracked_hash": "0e0f312fcff260e06c7ce2f797f871ed355a92df5e18fb74ff00e5f0293b7e36",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/subscriptions.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/streaming-client.ts",
+      "logical_path": "js/lib/trpc/streaming-client.ts",
+      "before_hash": "dd60aaa944939ca3fbec13bf1d1b87bf7f16dc7fc140cfb72aef9d6119fdea31",
+      "after_hash": "dd60aaa944939ca3fbec13bf1d1b87bf7f16dc7fc140cfb72aef9d6119fdea31",
+      "tracked_hash": "dd60aaa944939ca3fbec13bf1d1b87bf7f16dc7fc140cfb72aef9d6119fdea31",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/streaming-client.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/provider.tsx",
+      "logical_path": "js/lib/trpc/provider.tsx",
+      "before_hash": "cbbe405bf7acb394ff8f198055a8ec9b95b1119b8300c39ec232944a197903c9",
+      "after_hash": "cbbe405bf7acb394ff8f198055a8ec9b95b1119b8300c39ec232944a197903c9",
+      "tracked_hash": "cbbe405bf7acb394ff8f198055a8ec9b95b1119b8300c39ec232944a197903c9",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/provider.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/dashboard-workflow.ts",
+      "logical_path": "js/lib/trpc/dashboard-workflow.ts",
+      "before_hash": "d14e4d6c982b5e14ac3dbd5d635580043a9a72719c6acc53dfa90abc91d00fea",
+      "after_hash": "d14e4d6c982b5e14ac3dbd5d635580043a9a72719c6acc53dfa90abc91d00fea",
+      "tracked_hash": "d14e4d6c982b5e14ac3dbd5d635580043a9a72719c6acc53dfa90abc91d00fea",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/dashboard-workflow.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "components/dashboard/trpc-dashboard-workflow.tsx",
+      "logical_path": "js/components/dashboard/trpc-dashboard-workflow.tsx",
+      "before_hash": "3e93f0acbeff41af9bb59faa9ba76f2241776fb4f4b97391dc97d206cb7f60e3",
+      "after_hash": "3e93f0acbeff41af9bb59faa9ba76f2241776fb4f4b97391dc97d206cb7f60e3",
+      "tracked_hash": "3e93f0acbeff41af9bb59faa9ba76f2241776fb4f4b97391dc97d206cb7f60e3",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/dashboard/trpc-dashboard-workflow.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/metadata.ts",
+      "logical_path": "js/lib/trpc/metadata.ts",
+      "before_hash": "1d96ca80edc3ae7f7e28cc74be0a9fd87224ff4127374db235fe997ad683b23b",
+      "after_hash": "1d96ca80edc3ae7f7e28cc74be0a9fd87224ff4127374db235fe997ad683b23b",
+      "tracked_hash": "1d96ca80edc3ae7f7e28cc74be0a9fd87224ff4127374db235fe997ad683b23b",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/metadata.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-launch-contract.ts",
+      "logical_path": "js/examples/template/trpc-launch-contract.ts",
+      "before_hash": "ada513d6d36f8c834bfc286520599a2b41184a4acd01f7bde124c3d0cc072d8d",
+      "after_hash": "ada513d6d36f8c834bfc286520599a2b41184a4acd01f7bde124c3d0cc072d8d",
+      "tracked_hash": "ada513d6d36f8c834bfc286520599a2b41184a4acd01f7bde124c3d0cc072d8d",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-launch-contract.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-launch-health.tsx",
+      "logical_path": "js/examples/template/trpc-launch-health.tsx",
+      "before_hash": "fa42998a30dfed1322dd3e569cb78be66d4885d4547d7b20a3aaed5427da7122",
+      "after_hash": "fa42998a30dfed1322dd3e569cb78be66d4885d4547d7b20a3aaed5427da7122",
+      "tracked_hash": "fa42998a30dfed1322dd3e569cb78be66d4885d4547d7b20a3aaed5427da7122",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-launch-health.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-server-readiness.ts",
+      "logical_path": "js/examples/template/trpc-server-readiness.ts",
+      "before_hash": "1fbc80722235e1397b35c73d63c52664194fc655111e830c3d5ddb6e1717dc7f",
+      "after_hash": "1fbc80722235e1397b35c73d63c52664194fc655111e830c3d5ddb6e1717dc7f",
+      "tracked_hash": "1fbc80722235e1397b35c73d63c52664194fc655111e830c3d5ddb6e1717dc7f",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-server-readiness.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-subscription-status.tsx",
+      "logical_path": "js/examples/template/trpc-subscription-status.tsx",
+      "before_hash": "25189a716a9c8ff16e1b1180bda541f19cf8b5496d50876f9e9dc99a09484d8f",
+      "after_hash": "25189a716a9c8ff16e1b1180bda541f19cf8b5496d50876f9e9dc99a09484d8f",
+      "tracked_hash": "25189a716a9c8ff16e1b1180bda541f19cf8b5496d50876f9e9dc99a09484d8f",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-subscription-status.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-error-status.tsx",
+      "logical_path": "js/examples/template/trpc-error-status.tsx",
+      "before_hash": "c7442120f9068c4eb5fffcd94149493bd62828a4442532d259dbde95ae0e07f7",
+      "after_hash": "c7442120f9068c4eb5fffcd94149493bd62828a4442532d259dbde95ae0e07f7",
+      "tracked_hash": "c7442120f9068c4eb5fffcd94149493bd62828a4442532d259dbde95ae0e07f7",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-error-status.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-streaming-client-status.tsx",
+      "logical_path": "js/examples/template/trpc-streaming-client-status.tsx",
+      "before_hash": "93b2ed7442a4a9581b2401bf51cdcfcb2d59dbf13a410d7eabb594d1220a1205",
+      "after_hash": "93b2ed7442a4a9581b2401bf51cdcfcb2d59dbf13a410d7eabb594d1220a1205",
+      "tracked_hash": "93b2ed7442a4a9581b2401bf51cdcfcb2d59dbf13a410d7eabb594d1220a1205",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-streaming-client-status.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-response-meta.ts",
+      "logical_path": "js/examples/template/trpc-response-meta.ts",
+      "before_hash": "260bda33f2723018be37f52e15a8691d5688278fd565db34f110d0a4549e5ff9",
+      "after_hash": "260bda33f2723018be37f52e15a8691d5688278fd565db34f110d0a4549e5ff9",
+      "tracked_hash": "260bda33f2723018be37f52e15a8691d5688278fd565db34f110d0a4549e5ff9",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-response-meta.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-infinite-feed.tsx",
+      "logical_path": "js/examples/template/trpc-infinite-feed.tsx",
+      "before_hash": "dc0e58420cc4d5bcd4792e24acf608c230b6b6c9f42a1da65e3ae1cb64e42b8f",
+      "after_hash": "dc0e58420cc4d5bcd4792e24acf608c230b6b6c9f42a1da65e3ae1cb64e42b8f",
+      "tracked_hash": "dc0e58420cc4d5bcd4792e24acf608c230b6b6c9f42a1da65e3ae1cb64e42b8f",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-infinite-feed.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-transformer-status.ts",
+      "logical_path": "js/examples/template/trpc-transformer-status.ts",
+      "before_hash": "e4d1a2eaa457163b3f88de9447f74b83c1c45dd31e3227e72134f4800fb12db9",
+      "after_hash": "e4d1a2eaa457163b3f88de9447f74b83c1c45dd31e3227e72134f4800fb12db9",
+      "tracked_hash": "e4d1a2eaa457163b3f88de9447f74b83c1c45dd31e3227e72134f4800fb12db9",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-transformer-status.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "examples/template/trpc-request-policy.ts",
+      "logical_path": "js/examples/template/trpc-request-policy.ts",
+      "before_hash": "14a6ebbd965f6712f77d270aeb2db9155abbee6176bb42e20b2d24735dac1c95",
+      "after_hash": "14a6ebbd965f6712f77d270aeb2db9155abbee6176bb42e20b2d24735dac1c95",
+      "tracked_hash": "14a6ebbd965f6712f77d270aeb2db9155abbee6176bb42e20b2d24735dac1c95",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "examples/template/trpc-request-policy.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/trpc/README.md",
+      "logical_path": "js/lib/trpc/README.md",
+      "before_hash": "1eed4c14955ae7dd28a9f8ed997d2acb6f14db7b302b2d21b057da6a7145c969",
+      "after_hash": "1eed4c14955ae7dd28a9f8ed997d2acb6f14db7b302b2d21b057da6a7145c969",
+      "tracked_hash": "1eed4c14955ae7dd28a9f8ed997d2acb6f14db7b302b2d21b057da6a7145c969",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/trpc/README.md accepted as already matching the latest package."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-23T06:49:56.924505300+00:00",
+  "signature": null
+}

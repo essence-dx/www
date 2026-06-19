@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-05-24T13:22:32.407Z",
+  "report_id": "forge-package-update-rehearsal-v1",
+  "source": "benchmarks/measure-forge-package-update-rehearsal.ts",
+  "project_dir": "G:\\Dx\\www\\.dx\\adoption-package-review",
+  "scenario_root": "G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6",
+  "package": "shadcn/ui/button",
+  "score": 100,
+  "passed": true,
+  "no_node_modules": true,
+  "prepare_result": {
+    "enabled": false,
+    "status": "skipped",
+    "reason": "prepare disabled"
+  },
+  "scenarios": {
+    "green_update": {
+      "name": "green update",
+      "project_dir": "G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\green",
+      "passed": true,
+      "no_node_modules": true,
+      "update": {
+        "name": "dx update ui/button --write",
+        "passed": true,
+        "exit_code": 0,
+        "duration_ms": 560,
+        "stdout_tail": "# DX Forge Update\n\n- Package: `shadcn/ui/button`\n- Variant: `default`\n- Score: `100`\n- Traffic: `green`\n- Action: `UpdateWrite`\n- Current version: `0.1.0`\n- Latest version: `0.1.0`\n- Planned writes: `0`\n- Manifest: `G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\green\\.dx/forge/source-manifest.json`\n- Receipt: `G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\green\\.dx/forge/receipts\\20260524T132235747351000Z-shadcn-ui-button.json`\n\n| Traffic | Change | Path | Note |\n| --- | --- | --- | --- |\n| green | Unchanged | `lib/utils.ts` | lib/utils.ts already matches the latest package. |\n| green | Unchanged | `components/ui/slot.tsx` | components/ui/slot.tsx already matches the latest package. |\n| green | Unchanged | `components/ui/button.tsx` | components/ui/button.tsx already matches the latest package. |\n| green | Unchanged | `components/ui/README.md` | components/ui/README.md already matches the latest package. |",
+        "stderr_tail": ""
+      },
+      "check": {
+        "name": "dx forge verify-package shadcn/ui/button",
+        "passed": true,
+        "exit_code": 0,
+        "duration_ms": 1205,
+        "stdout_tail": "erified 4 files with integrity `c23ca02cdaee2adb2db19bb6f16ef04e73f2727351c7938de25b78bbf2bba39a`.\",\n    \"evidence\": \"c23ca02cdaee2adb2db19bb6f16ef04e73f2727351c7938de25b78bbf2bba39a\"\n  },\n  \"docs\": {\n    \"name\": \"docs\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 20,\n    \"message\": \"Package-facing Forge docs are present.\",\n    \"evidence\": \"G:\\\\Temp\\\\UserTemp\\\\dx-forge-update-rehearsal-zM2vN6\\\\green\\\\.dx/forge/docs\\\\shadcn-ui-button.md\"\n  },\n  \"update\": {\n    \"name\": \"update\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 20,\n    \"message\": \"Update preview is `green` with 4 file decisions.\",\n    \"evidence\": \"0.1.0 -> 0.1.0\"\n  },\n  \"rollback\": {\n    \"name\": \"rollback\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 15,\n    \"message\": \"Rollback receipt is present.\",\n    \"evidence\": \"G:\\\\Temp\\\\UserTemp\\\\dx-forge-update-rehearsal-zM2vN6\\\\green\\\\.dx/forge/receipts\\\\20260524T132129713500600Z-shadcn-ui-button.json\"\n  },\n  \"scorecard\": {\n    \"name\": \"scorecard\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 20,\n    \"message\": \"Project scorecard includes `shadcn/ui/button` with local package evidence.\",\n    \"evidence\": \"scorecard-score=100\"\n  }\n}",
+        "stderr_tail": ""
+      },
+      "traffic": "green",
+      "receipt": "G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\green\\.dx\\forge\\receipts\\20260524T132235747351000Z-shadcn-ui-button.json"
+    },
+    "yellow_default_block": {
+      "name": "yellow default block",
+      "project_dir": "G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\yellow-block",
+      "passed": true,
+      "no_node_modules": true,
+      "update": {
+        "name": "dx update ui/button --write",
+        "passed": true,
+        "exit_code": 1,
+        "duration_ms": 37,
+        "stdout_tail": "",
+        "stderr_tail": "DX-WWW error: Internal DX-WWW error\nForge update for `shadcn/ui/button` variant `default` is yellow; pass explicit review approval to accept local edits\ncode: dx.internal\nnext action: Capture the command output and report this as a DX-WWW bug.\nhint: Capture the command output and report this as a DX-WWW bug."
+      },
+      "traffic": "yellow",
+      "local_edit_preserved": true
+    },
+    "yellow_review_accept": {
+      "name": "yellow review accept",
+      "project_dir": "G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\yellow-review",
+      "passed": true,
+      "no_node_modules": true,
+      "update": {
+        "name": "dx update ui/button --write --accept-yellow",
+        "passed": true,
+        "exit_code": 0,
+        "duration_ms": 49,
+        "stdout_tail": "hearsal-zM2vN6\\yellow-review\\.dx/forge/source-manifest.json`\n- Receipt: `G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\yellow-review\\.dx/forge/receipts\\20260524T132242577557900Z-shadcn-ui-button.json`\n\n| Traffic | Change | Path | Note |\n| --- | --- | --- | --- |\n| green | Unchanged | `lib/utils.ts` | lib/utils.ts already matches the latest package. |\n| green | Unchanged | `components/ui/slot.tsx` | components/ui/slot.tsx already matches the latest package. |\n| yellow | LocalEdit | `components/ui/button.tsx` | components/ui/button.tsx has local state that must be resolved before update. |\n| green | Unchanged | `components/ui/README.md` | components/ui/README.md already matches the latest package. |\n\n## Review Plan\n\n- `yellow` human-review-required: `shadcn/ui/button` update is yellow. Forge will not write until every file is green or a future explicit review command records accepted decisions.\n- `yellow` review-local-edit `components/ui/button.tsx`: Review the local edit and accept it through a Forge update receipt before auto-apply.\n\n## Findings\n\n- Medium `forge-owned-file-edited`: Forge-owned file `components/ui/button.tsx` from `shadcn/ui/button` differs from its receipt hash",
+        "stderr_tail": ""
+      },
+      "review_state_check": {
+        "name": "dx forge verify-package shadcn/ui/button after reviewed local edit",
+        "passed": true,
+        "exit_code": 0,
+        "duration_ms": 1042,
+        "stdout_tail": "with integrity `c23ca02cdaee2adb2db19bb6f16ef04e73f2727351c7938de25b78bbf2bba39a`.\",\n    \"evidence\": \"c23ca02cdaee2adb2db19bb6f16ef04e73f2727351c7938de25b78bbf2bba39a\"\n  },\n  \"docs\": {\n    \"name\": \"docs\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 20,\n    \"message\": \"Package-facing Forge docs are present.\",\n    \"evidence\": \"G:\\\\Temp\\\\UserTemp\\\\dx-forge-update-rehearsal-zM2vN6\\\\yellow-review\\\\.dx/forge/docs\\\\shadcn-ui-button.md\"\n  },\n  \"update\": {\n    \"name\": \"update\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 20,\n    \"message\": \"Update preview is `green` with 4 file decisions.\",\n    \"evidence\": \"0.1.0 -> 0.1.0\"\n  },\n  \"rollback\": {\n    \"name\": \"rollback\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 15,\n    \"message\": \"Rollback receipt is present.\",\n    \"evidence\": \"G:\\\\Temp\\\\UserTemp\\\\dx-forge-update-rehearsal-zM2vN6\\\\yellow-review\\\\.dx/forge/receipts\\\\20260524T132129713500600Z-shadcn-ui-button.json\"\n  },\n  \"scorecard\": {\n    \"name\": \"scorecard\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 20,\n    \"message\": \"Project scorecard includes `shadcn/ui/button` with local package evidence.\",\n    \"evidence\": \"scorecard-score=100\"\n  }\n}",
+        "stderr_tail": ""
+      },
+      "traffic": "yellow",
+      "local_edit_preserved": true,
+      "receipt": "G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\yellow-review\\.dx\\forge\\receipts\\20260524T132242577557900Z-shadcn-ui-button.json",
+      "note": "Reviewed yellow edits are accepted into a receipt; strict launch gates can still require human review before release."
+    },
+    "red_quarantine": {
+      "name": "red quarantine",
+      "project_dir": "G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\red",
+      "passed": true,
+      "no_node_modules": true,
+      "update": {
+        "name": "dx update ui/button --write",
+        "passed": true,
+        "exit_code": 1,
+        "duration_ms": 36,
+        "stdout_tail": "",
+        "stderr_tail": "DX-WWW error: Internal DX-WWW error\nForge update for `shadcn/ui/button` variant `default` is red; only green updates can be written without explicit review\ncode: dx.internal\nnext action: Capture the command output and report this as a DX-WWW bug.\nhint: Capture the command output and report this as a DX-WWW bug."
+      },
+      "traffic": "red",
+      "source_still_quarantined": true
+    },
+    "rollback_coverage": {
+      "name": "rollback coverage",
+      "project_dir": "G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\rollback",
+      "passed": true,
+      "no_node_modules": true,
+      "update": {
+        "name": "dx update ui/button --write",
+        "passed": true,
+        "exit_code": 0,
+        "duration_ms": 46,
+        "stdout_tail": "# DX Forge Update\n\n- Package: `shadcn/ui/button`\n- Variant: `default`\n- Score: `100`\n- Traffic: `green`\n- Action: `UpdateWrite`\n- Current version: `0.1.0`\n- Latest version: `0.1.0`\n- Planned writes: `0`\n- Manifest: `G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\rollback\\.dx/forge/source-manifest.json`\n- Receipt: `G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\rollback\\.dx/forge/receipts\\20260524T132249219025000Z-shadcn-ui-button.json`\n\n| Traffic | Change | Path | Note |\n| --- | --- | --- | --- |\n| green | Unchanged | `lib/utils.ts` | lib/utils.ts already matches the latest package. |\n| green | Unchanged | `components/ui/slot.tsx` | components/ui/slot.tsx already matches the latest package. |\n| green | Unchanged | `components/ui/button.tsx` | components/ui/button.tsx already matches the latest package. |\n| green | Unchanged | `components/ui/README.md` | components/ui/README.md already matches the latest package. |",
+        "stderr_tail": ""
+      },
+      "rollback": {
+        "name": "dx forge rollback --write",
+        "passed": true,
+        "exit_code": 0,
+        "duration_ms": 32,
+        "stdout_tail": "# DX Forge Rollback\n\n- Package: `shadcn/ui/button`\n- Variant: `default`\n- Score: `100`\n- Traffic: `green`\n- Action: `RollbackWrite`\n- Source receipt: `G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\rollback\\.dx\\forge\\receipts\\20260524T132249219025000Z-shadcn-ui-button.json`\n- Planned writes: `1`\n- Manifest: `G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\rollback\\.dx/forge/source-manifest.json`\n- Receipt: `G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\rollback\\.dx/forge/receipts\\20260524T132249251735500Z-shadcn-ui-button.json`\n\n| Traffic | Write | Path | Note |\n| --- | --- | --- | --- |\n| green | false | `lib/utils.ts` | Already matches the rollback receipt. |\n| green | false | `components/ui/slot.tsx` | Already matches the rollback receipt. |\n| green | true | `components/ui/button.tsx` | Will restore content matching the rollback receipt. |\n| green | false | `components/ui/README.md` | Already matches the rollback receipt. |",
+        "stderr_tail": ""
+      },
+      "check": {
+        "name": "dx forge verify-package shadcn/ui/button",
+        "passed": true,
+        "exit_code": 0,
+        "duration_ms": 935,
+        "stdout_tail": "d 4 files with integrity `c23ca02cdaee2adb2db19bb6f16ef04e73f2727351c7938de25b78bbf2bba39a`.\",\n    \"evidence\": \"c23ca02cdaee2adb2db19bb6f16ef04e73f2727351c7938de25b78bbf2bba39a\"\n  },\n  \"docs\": {\n    \"name\": \"docs\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 20,\n    \"message\": \"Package-facing Forge docs are present.\",\n    \"evidence\": \"G:\\\\Temp\\\\UserTemp\\\\dx-forge-update-rehearsal-zM2vN6\\\\rollback\\\\.dx/forge/docs\\\\shadcn-ui-button.md\"\n  },\n  \"update\": {\n    \"name\": \"update\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 20,\n    \"message\": \"Update preview is `green` with 4 file decisions.\",\n    \"evidence\": \"0.1.0 -> 0.1.0\"\n  },\n  \"rollback\": {\n    \"name\": \"rollback\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 15,\n    \"message\": \"Rollback receipt is present.\",\n    \"evidence\": \"G:\\\\Temp\\\\UserTemp\\\\dx-forge-update-rehearsal-zM2vN6\\\\rollback\\\\.dx/forge/receipts\\\\20260524T132129713500600Z-shadcn-ui-button.json\"\n  },\n  \"scorecard\": {\n    \"name\": \"scorecard\",\n    \"passed\": true,\n    \"traffic\": \"green\",\n    \"score\": 20,\n    \"message\": \"Project scorecard includes `shadcn/ui/button` with local package evidence.\",\n    \"evidence\": \"scorecard-score=100\"\n  }\n}",
+        "stderr_tail": ""
+      },
+      "receipt": "G:\\Temp\\UserTemp\\dx-forge-update-rehearsal-zM2vN6\\rollback\\.dx\\forge\\receipts\\20260524T132249219025000Z-shadcn-ui-button.json",
+      "restored": true
+    }
+  },
+  "findings": [],
+  "honest_scope": [
+    "This is a local package-update rehearsal for the generated Forge adoption app.",
+    "It proves Forge update traffic behavior for the curated shadcn/ui/button package, not arbitrary npm ingestion.",
+    "The harness never runs package installs and treats node_modules as a release-risk finding.",
+    "Rollback coverage is checked through Forge receipts, not by deleting user work or resetting git state."
+  ]
+}

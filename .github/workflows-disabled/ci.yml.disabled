@@ -1,0 +1,71 @@
+# DX GitHub Actions temporarily disabled.
+# Controlled deactivation requested by essencefromexistence to preserve limited GitHub Actions minutes.
+# Keep this workflow disabled until essencefromexistence explicitly re-enables GitHub Actions for this repository.
+name: CI
+
+on:
+  push:
+    branches: [main, develop, dev]
+  pull_request:
+    branches: [main, develop, dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dx-www-ci-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_INCREMENTAL: "0"
+  CARGO_NET_RETRY: "3"
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: "1"
+
+defaults:
+  run:
+    working-directory: dx-www
+
+jobs:
+  compiler:
+    name: Compiler Package
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out dx-www
+        uses: actions/checkout@v4
+        with:
+          path: dx-www
+
+      - name: Check out serializer dependency
+        uses: actions/checkout@v4
+        with:
+          repository: millercarla211-ctrl/dx-serializer
+          token: ${{ secrets.DX_CI_REPOSITORY_TOKEN }}
+          ref: dev
+          path: serializer
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Cache Rust build outputs
+        uses: Swatinem/rust-cache@v2
+        with:
+          cache-on-failure: true
+
+      - name: Report formatting status
+        continue-on-error: true
+        run: cargo fmt --all -- --check
+
+      - name: Check compiler package
+        run: cargo check -p dx-www-compiler --lib -j1 --color always
+
+      - name: Report compiler lint status
+        continue-on-error: true
+        run: cargo clippy -p dx-www-compiler --lib -j1 --color always -- -D warnings
+
+      - name: Test compiler package
+        run: cargo test -p dx-www-compiler --lib -j1 --color always

@@ -1,0 +1,280 @@
+{
+    "schema":  "dx.forge.package_status",
+    "status":  "root-visibility-only",
+    "generated_at":  "2026-05-26T00:20:42.2821873+00:00",
+    "package_policy":  "forge-first-no-node-modules",
+    "no_node_modules_required":  true,
+    "package_count":  5,
+    "package_lane_visibility":  [
+                                    {
+                                        "official_package_name":  "Backend Platform Client",
+                                        "package_id":  "supabase/client",
+                                        "status":  "present",
+                                        "receipt_status":  "present",
+                                        "package_receipt_path":  ".dx/forge/receipts/root-supabase-client-visibility.json",
+                                        "receipt_hash_refresh":  {
+                                                                     "schema":  "dx.forge.package.receipt_hash_refresh",
+                                                                     "status":  "current",
+                                                                     "helper_path":  "",
+                                                                     "hash_algorithm":  "sha256",
+                                                                     "tracked_file_count":  0,
+                                                                     "tracked_files":  [
+
+                                                                                       ],
+                                                                     "current_files":  [
+
+                                                                                       ],
+                                                                     "stale_file_count":  0,
+                                                                     "stale_files":  [
+
+                                                                                     ],
+                                                                     "missing_file_count":  0,
+                                                                     "missing_files":  [
+
+                                                                                       ],
+                                                                     "runtime_execution":  false,
+                                                                     "secret_access":  false,
+                                                                     "runtime_limitations":  [
+                                                                                                 "Root visibility receipt only; full package source proofs stay in examples/template and package-specific receipts."
+                                                                                             ]
+                                                                 },
+                                        "selected_surfaces":  [
+
+                                                              ],
+                                        "blocked_surfaces":  [
+
+                                                             ],
+                                        "unsupported_surfaces":  [
+
+                                                                 ],
+                                        "dx_style_compatibility":  {
+                                                                       "schema":  "dx.forge.package.dx_style_compatibility",
+                                                                       "status":  "present",
+                                                                       "source":  "root-visibility-only",
+                                                                       "data_dx_style_surface_count":  0,
+                                                                       "runtime_limitations":  [
+                                                                                                   "No browser/runtime style proof is claimed by this root visibility row."
+                                                                                               ]
+                                                                   },
+                                        "runtime_limitations":  [
+                                                                    "Visibility-only root row; not a substitute for package-specific runtime or provider proof."
+                                                                ]
+                                    },
+                                    {
+                                        "official_package_name":  "Documentation System",
+                                        "package_id":  "content/fumadocs-next",
+                                        "status":  "present",
+                                        "receipt_status":  "present",
+                                        "package_receipt_path":  ".dx/forge/receipts/root-content-fumadocs-next-visibility.json",
+                                        "receipt_hash_refresh":  {
+                                                                     "schema":  "dx.forge.package.receipt_hash_refresh",
+                                                                     "status":  "current",
+                                                                     "helper_path":  "",
+                                                                     "hash_algorithm":  "sha256",
+                                                                     "tracked_file_count":  0,
+                                                                     "tracked_files":  [
+
+                                                                                       ],
+                                                                     "current_files":  [
+
+                                                                                       ],
+                                                                     "stale_file_count":  0,
+                                                                     "stale_files":  [
+
+                                                                                     ],
+                                                                     "missing_file_count":  0,
+                                                                     "missing_files":  [
+
+                                                                                       ],
+                                                                     "runtime_execution":  false,
+                                                                     "secret_access":  false,
+                                                                     "runtime_limitations":  [
+                                                                                                 "Root visibility receipt only; full package source proofs stay in examples/template and package-specific receipts."
+                                                                                             ]
+                                                                 },
+                                        "selected_surfaces":  [
+
+                                                              ],
+                                        "blocked_surfaces":  [
+
+                                                             ],
+                                        "unsupported_surfaces":  [
+
+                                                                 ],
+                                        "dx_style_compatibility":  {
+                                                                       "schema":  "dx.forge.package.dx_style_compatibility",
+                                                                       "status":  "present",
+                                                                       "source":  "root-visibility-only",
+                                                                       "data_dx_style_surface_count":  0,
+                                                                       "runtime_limitations":  [
+                                                                                                   "No browser/runtime style proof is claimed by this root visibility row."
+                                                                                               ]
+                                                                   },
+                                        "runtime_limitations":  [
+                                                                    "Visibility-only root row; not a substitute for package-specific runtime or provider proof."
+                                                                ]
+                                    },
+                                    {
+                                        "official_package_name":  "Payments",
+                                        "package_id":  "payments/stripe-js",
+                                        "status":  "present",
+                                        "receipt_status":  "present",
+                                        "package_receipt_path":  ".dx/forge/receipts/root-payments-stripe-js-visibility.json",
+                                        "receipt_hash_refresh":  {
+                                                                     "schema":  "dx.forge.package.receipt_hash_refresh",
+                                                                     "status":  "current",
+                                                                     "helper_path":  "",
+                                                                     "hash_algorithm":  "sha256",
+                                                                     "tracked_file_count":  0,
+                                                                     "tracked_files":  [
+
+                                                                                       ],
+                                                                     "current_files":  [
+
+                                                                                       ],
+                                                                     "stale_file_count":  0,
+                                                                     "stale_files":  [
+
+                                                                                     ],
+                                                                     "missing_file_count":  0,
+                                                                     "missing_files":  [
+
+                                                                                       ],
+                                                                     "runtime_execution":  false,
+                                                                     "secret_access":  false,
+                                                                     "runtime_limitations":  [
+                                                                                                 "Root visibility receipt only; full package source proofs stay in examples/template and package-specific receipts."
+                                                                                             ]
+                                                                 },
+                                        "selected_surfaces":  [
+
+                                                              ],
+                                        "blocked_surfaces":  [
+
+                                                             ],
+                                        "unsupported_surfaces":  [
+
+                                                                 ],
+                                        "dx_style_compatibility":  {
+                                                                       "schema":  "dx.forge.package.dx_style_compatibility",
+                                                                       "status":  "present",
+                                                                       "source":  "root-visibility-only",
+                                                                       "data_dx_style_surface_count":  0,
+                                                                       "runtime_limitations":  [
+                                                                                                   "No browser/runtime style proof is claimed by this root visibility row."
+                                                                                               ]
+                                                                   },
+                                        "runtime_limitations":  [
+                                                                    "Visibility-only root row; not a substitute for package-specific runtime or provider proof."
+                                                                ]
+                                    },
+                                    {
+                                        "official_package_name":  "Motion \u0026 Animation",
+                                        "package_id":  "animation/motion",
+                                        "status":  "present",
+                                        "receipt_status":  "present",
+                                        "package_receipt_path":  ".dx/forge/receipts/root-animation-motion-visibility.json",
+                                        "receipt_hash_refresh":  {
+                                                                     "schema":  "dx.forge.package.receipt_hash_refresh",
+                                                                     "status":  "current",
+                                                                     "helper_path":  "",
+                                                                     "hash_algorithm":  "sha256",
+                                                                     "tracked_file_count":  0,
+                                                                     "tracked_files":  [
+
+                                                                                       ],
+                                                                     "current_files":  [
+
+                                                                                       ],
+                                                                     "stale_file_count":  0,
+                                                                     "stale_files":  [
+
+                                                                                     ],
+                                                                     "missing_file_count":  0,
+                                                                     "missing_files":  [
+
+                                                                                       ],
+                                                                     "runtime_execution":  false,
+                                                                     "secret_access":  false,
+                                                                     "runtime_limitations":  [
+                                                                                                 "Root visibility receipt only; full package source proofs stay in examples/template and package-specific receipts."
+                                                                                             ]
+                                                                 },
+                                        "selected_surfaces":  [
+
+                                                              ],
+                                        "blocked_surfaces":  [
+
+                                                             ],
+                                        "unsupported_surfaces":  [
+
+                                                                 ],
+                                        "dx_style_compatibility":  {
+                                                                       "schema":  "dx.forge.package.dx_style_compatibility",
+                                                                       "status":  "present",
+                                                                       "source":  "root-visibility-only",
+                                                                       "data_dx_style_surface_count":  0,
+                                                                       "runtime_limitations":  [
+                                                                                                   "No browser/runtime style proof is claimed by this root visibility row."
+                                                                                               ]
+                                                                   },
+                                        "runtime_limitations":  [
+                                                                    "Visibility-only root row; not a substitute for package-specific runtime or provider proof."
+                                                                ]
+                                    },
+                                    {
+                                        "official_package_name":  "UI Components",
+                                        "package_id":  "shadcn/ui/button",
+                                        "status":  "present",
+                                        "receipt_status":  "present",
+                                        "package_receipt_path":  ".dx/forge/receipts/20260525T234626025501500Z-shadcn-ui-button.json",
+                                        "receipt_hash_refresh":  {
+                                                                     "schema":  "dx.forge.package.receipt_hash_refresh",
+                                                                     "status":  "current",
+                                                                     "helper_path":  "",
+                                                                     "hash_algorithm":  "sha256",
+                                                                     "tracked_file_count":  0,
+                                                                     "tracked_files":  [
+
+                                                                                       ],
+                                                                     "current_files":  [
+
+                                                                                       ],
+                                                                     "stale_file_count":  0,
+                                                                     "stale_files":  [
+
+                                                                                     ],
+                                                                     "missing_file_count":  0,
+                                                                     "missing_files":  [
+
+                                                                                       ],
+                                                                     "runtime_execution":  false,
+                                                                     "secret_access":  false,
+                                                                     "runtime_limitations":  [
+                                                                                                 "Root visibility receipt only; full package source proofs stay in examples/template and package-specific receipts."
+                                                                                             ]
+                                                                 },
+                                        "selected_surfaces":  [
+
+                                                              ],
+                                        "blocked_surfaces":  [
+
+                                                             ],
+                                        "unsupported_surfaces":  [
+
+                                                                 ],
+                                        "dx_style_compatibility":  {
+                                                                       "schema":  "dx.forge.package.dx_style_compatibility",
+                                                                       "status":  "present",
+                                                                       "source":  "root-visibility-only",
+                                                                       "data_dx_style_surface_count":  0,
+                                                                       "runtime_limitations":  [
+                                                                                                   "No browser/runtime style proof is claimed by this root visibility row."
+                                                                                               ]
+                                                                   },
+                                        "runtime_limitations":  [
+                                                                    "Visibility-only root row; not a substitute for package-specific runtime or provider proof."
+                                                                ]
+                                    }
+                                ]
+}

@@ -1,0 +1,244 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "shadcn/ui/button",
+  "official_package_name": "UI Components",
+  "package_name": "UI Components dashboard controls",
+  "upstream_package": "shadcn-ui",
+  "upstream_version": "0.0.1",
+  "upstream_packages": [
+    "shadcn-ui@0.0.1",
+    "@radix-ui/react-slot@1.2.4",
+    "@radix-ui/react-label@2.1.8",
+    "@radix-ui/react-separator@1.1.8"
+  ],
+  "source_mirror": "G:/WWW/inspirations/shadcn-ui",
+  "source_mirrors": [
+    "G:/WWW/inspirations/shadcn-ui",
+    "G:/WWW/inspirations/radix-primitives"
+  ],
+  "based_on": "shadcn-ui v4 registry plus Radix Primitives",
+  "inspected_source_files": [
+    "G:/WWW/inspirations/shadcn-ui/package.json",
+    "G:/WWW/inspirations/shadcn-ui/apps/v4/registry/new-york-v4/ui/button.tsx",
+    "G:/WWW/inspirations/shadcn-ui/apps/v4/registry/new-york-v4/ui/badge.tsx",
+    "G:/WWW/inspirations/shadcn-ui/apps/v4/registry/new-york-v4/ui/card.tsx",
+    "G:/WWW/inspirations/shadcn-ui/apps/v4/registry/new-york-v4/ui/field.tsx",
+    "G:/WWW/inspirations/shadcn-ui/apps/v4/registry/new-york-v4/ui/input.tsx",
+    "G:/WWW/inspirations/shadcn-ui/apps/v4/registry/new-york-v4/ui/item.tsx",
+    "G:/WWW/inspirations/shadcn-ui/apps/v4/registry/new-york-v4/ui/label.tsx",
+    "G:/WWW/inspirations/shadcn-ui/apps/v4/registry/new-york-v4/ui/separator.tsx",
+    "G:/WWW/inspirations/shadcn-ui/apps/v4/registry/new-york-v4/ui/textarea.tsx",
+    "G:/WWW/inspirations/radix-primitives/package.json",
+    "G:/WWW/inspirations/radix-primitives/packages/react/slot/src/slot.tsx",
+    "G:/WWW/inspirations/radix-primitives/packages/react/label/src/label.tsx",
+    "G:/WWW/inspirations/radix-primitives/packages/react/separator/src/separator.tsx"
+  ],
+  "route": "/",
+  "component": {
+    "name": "LaunchShadcnDashboardControls",
+    "selector": "[data-dx-component=\"shadcn-dashboard-controls\"]",
+    "source_file": "examples/template/shadcn-dashboard-controls.tsx",
+    "materialized_file": "components/launch/shadcn-dashboard-controls.tsx"
+  },
+  "contract": {
+    "source_file": "examples/template/shadcn-dashboard-controls-contract.tsx",
+    "materialized_file": "components/launch/shadcn-dashboard-controls-contract.tsx",
+    "exports": [
+      "shadcnLaunchDashboardMetadata",
+      "shadcnDashboardDensityOptions",
+      "shadcnDashboardQueueOptions",
+      "createShadcnLaunchDashboardReceipt"
+    ]
+  },
+  "runtime_component": {
+    "selector": "[data-dx-component=\"shadcn-dashboard-controls-runtime\"]",
+    "source_file": "tools/launch/runtime-template/pages/index.html"
+  },
+  "workflow": "operator-controls",
+  "product_surface": "launch-dashboard",
+  "status": "source-coded-runtime-guarded",
+  "honesty_label": "SOURCE-ONLY",
+  "coding_score": 98,
+  "files": [
+    "examples/template/components/ui/button.tsx",
+    "examples/template/components/ui/slot.tsx",
+    "examples/template/shadcn-dashboard-controls-contract.tsx",
+    "examples/template/shadcn-dashboard-controls.tsx",
+    "docs/packages/ui-components.source-guard-runbook.json",
+    "tools/launch/materialize-www-template.ts"
+  ],
+  "hash_algorithm": "sha256",
+  "file_hashes": [
+    {
+      "path": "examples/template/components/ui/button.tsx",
+      "sha256": "ecaf8274b46c4156f8fbee32703fbda77c4d1bfbadf031b6c3bfaf1236512844"
+    },
+    {
+      "path": "examples/template/components/ui/slot.tsx",
+      "sha256": "f24da0d236a99dbd21aab1bfe8ae154fc870a26057db81a8ee5ddf4bdec86a9d"
+    },
+    {
+      "path": "examples/template/shadcn-dashboard-controls-contract.tsx",
+      "sha256": "a91ccf34494a0984f04d86cda0dd7a2eef468b67b8ce08ef5fc60fd4b761c7dd"
+    },
+    {
+      "path": "examples/template/shadcn-dashboard-controls.tsx",
+      "sha256": "82db14402bc9c15c33341cbbc333fdf091b20d03539a1e719defdc2d97d9d24a"
+    },
+    {
+      "path": "docs/packages/ui-components.source-guard-runbook.json",
+      "sha256": "2bd7980f3c962943bcbe64fa3cfcaf25f82a4c14074f41e820aeaee07146091f"
+    },
+    {
+      "path": "tools/launch/materialize-www-template.ts",
+      "sha256": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+    }
+  ],
+  "exported_files": [
+    "components/launch/shadcn-dashboard-controls-contract.tsx",
+    "components/launch/shadcn-dashboard-controls.tsx",
+    "examples/template/shadcn-dashboard-controls-contract.tsx",
+    "examples/template/shadcn-dashboard-controls.tsx",
+    "components/ui/button.tsx",
+    "components/ui/badge.tsx",
+    "components/ui/card.tsx",
+    "components/ui/field.tsx",
+    "components/ui/input.tsx",
+    "components/ui/label.tsx",
+    "components/ui/textarea.tsx",
+    "components/ui/item.tsx",
+    "components/ui/separator.tsx"
+  ],
+  "upstream_public_apis": [
+    "Button",
+    "buttonVariants",
+    "Badge",
+    "badgeVariants",
+    "Card",
+    "CardHeader",
+    "CardTitle",
+    "CardDescription",
+    "CardContent",
+    "Field",
+    "FieldGroup",
+    "FieldLabel",
+    "FieldDescription",
+    "Input",
+    "Label",
+    "Textarea",
+    "Item",
+    "ItemGroup",
+    "ItemContent",
+    "ItemTitle",
+    "ItemDescription",
+    "ItemActions",
+    "Separator"
+  ],
+  "selected_surfaces": [
+    "button",
+    "badge",
+    "card",
+    "label",
+    "separator",
+    "field",
+    "item",
+    "input",
+    "textarea"
+  ],
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "current_status": "present",
+    "statuses": [
+      "present",
+      "stale",
+      "missing receipt",
+      "blocked",
+      "unsupported surface"
+    ],
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-shadcn-dashboard-controls.json",
+    "monitored_surfaces": [
+      "components/ui/button.tsx",
+      "components/ui/badge.tsx",
+      "components/ui/card.tsx",
+      "components/ui/field.tsx",
+      "components/ui/input.tsx",
+      "components/ui/item.tsx",
+      "components/ui/label.tsx",
+      "components/ui/separator.tsx",
+      "components/ui/textarea.tsx",
+      "components/launch/shadcn-dashboard-controls.tsx",
+      "docs/packages/ui-components.source-guard-runbook.json",
+      "tools/launch/materialize-www-template.ts"
+    ],
+    "hash_algorithm": "sha256",
+    "stale_receipt_policy": "dx-check compares selected UI Components file_hashes before claiming source freshness.",
+    "file_hashes": {
+      "examples/template/components/ui/button.tsx": "ecaf8274b46c4156f8fbee32703fbda77c4d1bfbadf031b6c3bfaf1236512844",
+      "examples/template/components/ui/slot.tsx": "f24da0d236a99dbd21aab1bfe8ae154fc870a26057db81a8ee5ddf4bdec86a9d",
+      "examples/template/shadcn-dashboard-controls-contract.tsx": "a91ccf34494a0984f04d86cda0dd7a2eef468b67b8ce08ef5fc60fd4b761c7dd",
+      "examples/template/shadcn-dashboard-controls.tsx": "82db14402bc9c15c33341cbbc333fdf091b20d03539a1e719defdc2d97d9d24a",
+      "docs/packages/ui-components.source-guard-runbook.json": "2bd7980f3c962943bcbe64fa3cfcaf25f82a4c14074f41e820aeaee07146091f",
+      "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+    }
+  },
+  "interactions": [
+    "set-density",
+    "select-queue",
+    "keyboard-navigate-queue",
+    "focus-target-card",
+    "preview-dashboard-receipt"
+  ],
+  "controlled_targets": [
+    "mission-session-status",
+    "mission-payment-status",
+    "mission-database-status",
+    "mission-dashboard-status"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"shadcn/ui/button\"",
+    "data-dx-package=\"shadcn/ui/button\" on visible button interactions",
+    "data-dx-component=\"shadcn-dashboard-controls\"",
+    "data-dx-component=\"shadcn-dashboard-controls-runtime\"",
+    "data-dx-dashboard-workflow=\"operator-controls\"",
+    "data-dx-shadcn-dashboard-action=\"set-density\"",
+    "data-dx-shadcn-dashboard-action=\"select-queue\"",
+    "data-dx-shadcn-dashboard-keyboard=\"arrow-roving-focus\"",
+    "data-dx-shadcn-dashboard-action=\"focus-target-card\"",
+    "data-dx-shadcn-dashboard-focus-target",
+    "data-dx-shadcn-dashboard-action=\"preview-dashboard-receipt\"",
+    "data-dx-shadcn-dashboard-controls-target",
+    "data-slot=\"button\"",
+    "data-slot=\"item\"",
+    "data-slot=\"field\"",
+    "data-slot=\"input\"",
+    "data-slot=\"textarea\""
+  ],
+  "retired_visible_proof_cards": [
+    "data-dx-component=\"shadcn-ui-proof-card\"",
+    "data-dx-component=\"shadcn-ui-runtime-proof\""
+  ],
+  "retired_source_files": [
+    "examples/template/shadcn-ui-proof.tsx"
+  ],
+  "required_env": [],
+  "app_owned_boundaries": [
+    "dashboard persistence target",
+    "final operator copy",
+    "final accessibility review",
+    "full shadcn registry synchronization",
+    "governed browser proof"
+  ],
+  "node_modules_required": false,
+  "guards": [
+    "node --test .\\benchmarks\\shadcn-launch-dashboard-workflow.test.ts",
+    "node --test .\\benchmarks\\shadcn-dashboard-workflow.test.ts",
+    "node --test .\\benchmarks\\ui-components-package-doc.test.ts",
+    "node examples/template/ui-components-receipt-hashes.ts --check"
+  ],
+  "runtime_limitations": [
+    "governed browser proof deferred",
+    "full upstream registry synchronization deferred",
+    "application persistence and final accessibility review remain app-owned"
+  ],
+  "no_runtime_execution": true
+}

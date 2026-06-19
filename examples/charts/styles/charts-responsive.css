@@ -1,0 +1,44 @@
+@media (max-width: 1020px) {
+  .charts-topbar,
+  .charts-hero,
+  .charts-theme-layout,
+  .charts-playground-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .charts-nav {
+    justify-content: flex-start;
+  }
+
+  .charts-preview-grid,
+  .charts-gallery-grid,
+  .charts-doc-grid,
+  .charts-ecosystem-grid,
+  .charts-task-grid,
+  .charts-metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .charts-site-shell {
+    padding: 12px;
+  }
+
+  .charts-preview-grid,
+  .charts-gallery-grid,
+  .charts-doc-grid,
+  .charts-ecosystem-grid,
+  .charts-task-grid,
+  .charts-metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .charts-nav-link span {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+}

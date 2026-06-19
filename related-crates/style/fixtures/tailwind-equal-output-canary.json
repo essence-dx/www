@@ -1,0 +1,550 @@
+{
+  "schema": "dx.style.tailwindEqualOutputCanary",
+  "schemaVersion": 1,
+  "baseline": "tailwindcss-4.3.0-supported-subset-reference",
+  "comparisonScope": "generated-css-declaration-equality",
+  "runPolicy": "checked-in migration/compatibility input fixture for lightweight DX launch passes only; no package install, server, build, broad suite, or Tailwind execution is required to read it",
+  "migrationInputOnly": true,
+  "liveTailwindExecution": false,
+  "fullTailwindParity": false,
+  "fairSpeedBenchmark": false,
+  "classes": [
+    {
+      "className": "block",
+      "area": "layout",
+      "tailwindRequiredDeclarations": ["display: block"],
+      "dxStyleRequiredDeclarations": ["display: block"],
+      "status": "supported"
+    },
+    {
+      "className": "flex",
+      "area": "layout",
+      "tailwindRequiredDeclarations": ["display: flex"],
+      "dxStyleRequiredDeclarations": ["display: flex"],
+      "status": "supported"
+    },
+    {
+      "className": "grid",
+      "area": "layout",
+      "tailwindRequiredDeclarations": ["display: grid"],
+      "dxStyleRequiredDeclarations": ["display: grid"],
+      "status": "supported"
+    },
+    {
+      "className": "p-4",
+      "area": "spacing",
+      "tailwindRequiredDeclarations": ["padding: 1rem"],
+      "dxStyleRequiredDeclarations": ["padding: 1rem"],
+      "status": "supported"
+    },
+    {
+      "className": "mt-2",
+      "area": "spacing",
+      "tailwindRequiredDeclarations": ["margin-top: 0.5rem"],
+      "dxStyleRequiredDeclarations": ["margin-top: 0.5rem"],
+      "status": "supported"
+    },
+    {
+      "className": "opacity-50",
+      "area": "effects",
+      "tailwindRequiredDeclarations": ["opacity: 50%"],
+      "dxStyleRequiredDeclarations": ["opacity: 50%"],
+      "status": "supported"
+    },
+    {
+      "className": "ps-4",
+      "area": "logical-spacing",
+      "tailwindRequiredDeclarations": ["padding-inline-start: 1rem"],
+      "dxStyleRequiredDeclarations": ["padding-inline-start: 1rem"],
+      "status": "supported"
+    },
+    {
+      "className": "-ms-2",
+      "area": "logical-spacing",
+      "tailwindRequiredDeclarations": ["margin-inline-start: -0.5rem"],
+      "dxStyleRequiredDeclarations": ["margin-inline-start: -0.5rem"],
+      "status": "supported"
+    },
+    {
+      "className": "start-0",
+      "area": "logical-inset",
+      "tailwindRequiredDeclarations": ["inset-inline-start: 0px"],
+      "dxStyleRequiredDeclarations": ["inset-inline-start: 0px"],
+      "status": "supported"
+    },
+    {
+      "className": "bg-card/50",
+      "area": "theme-color-opacity",
+      "tailwindRequiredDeclarations": [
+        "background-color: color-mix(in oklab, var(--color-card) 50%, transparent)"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "background-color: color-mix(in oklab, var(--color-card) 50%, transparent)"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "md:hover:bg-card/40",
+      "area": "variant-theme-color-opacity",
+      "tailwindRequiredDeclarations": [
+        "background-color: color-mix(in oklab, var(--color-card) 40%, transparent)"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "background-color: color-mix(in oklab, var(--color-card) 40%, transparent)"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "size-8",
+      "area": "sizing",
+      "tailwindRequiredDeclarations": ["width: 2rem", "height: 2rem"],
+      "dxStyleRequiredDeclarations": ["width: 2rem", "height: 2rem"],
+      "status": "supported"
+    },
+    {
+      "className": "border-s-2",
+      "area": "logical-border",
+      "tailwindRequiredDeclarations": ["border-inline-start-width: 2px"],
+      "dxStyleRequiredDeclarations": ["border-inline-start-width: 2px"],
+      "status": "supported"
+    },
+    {
+      "className": "rounded-ee-xl",
+      "area": "logical-radius",
+      "tailwindRequiredDeclarations": ["border-end-end-radius: var(--radius-xl)"],
+      "dxStyleRequiredDeclarations": ["border-end-end-radius: var(--radius-xl)"],
+      "status": "supported"
+    },
+    {
+      "className": "object-[25%_75%]",
+      "area": "object-position",
+      "tailwindRequiredDeclarations": ["object-position: 25% 75%"],
+      "dxStyleRequiredDeclarations": ["object-position: 25% 75%"],
+      "status": "supported"
+    },
+    {
+      "className": "origin-top-left",
+      "area": "transform-origin",
+      "tailwindRequiredDeclarations": ["transform-origin: top left"],
+      "dxStyleRequiredDeclarations": ["transform-origin: top left"],
+      "status": "supported"
+    },
+    {
+      "className": "flex-[2_1_0%]",
+      "area": "flex",
+      "tailwindRequiredDeclarations": ["flex: 2 1 0%"],
+      "dxStyleRequiredDeclarations": ["flex: 2 1 0%"],
+      "status": "supported"
+    },
+    {
+      "className": "grid-cols-(--dx-grid-cols)",
+      "area": "grid",
+      "tailwindRequiredDeclarations": [
+        "grid-template-columns: var(--dx-grid-cols)"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "grid-template-columns: var(--dx-grid-cols)"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "drop-shadow-md",
+      "area": "filter",
+      "tailwindRequiredDeclarations": ["--tw-drop-shadow: drop-shadow("],
+      "dxStyleRequiredDeclarations": ["--tw-drop-shadow: drop-shadow("],
+      "status": "supported"
+    },
+    {
+      "className": "backdrop-opacity-50",
+      "area": "backdrop-filter",
+      "tailwindRequiredDeclarations": ["--tw-backdrop-opacity: opacity(50%)"],
+      "dxStyleRequiredDeclarations": ["--tw-backdrop-opacity: opacity(50%)"],
+      "status": "supported"
+    },
+    {
+      "className": "table-auto",
+      "area": "table",
+      "tailwindRequiredDeclarations": ["table-layout: auto"],
+      "dxStyleRequiredDeclarations": ["table-layout: auto"],
+      "status": "supported"
+    },
+    {
+      "className": "caption-bottom",
+      "area": "table",
+      "tailwindRequiredDeclarations": ["caption-side: bottom"],
+      "dxStyleRequiredDeclarations": ["caption-side: bottom"],
+      "status": "supported"
+    },
+    {
+      "className": "border-spacing-2",
+      "area": "table",
+      "tailwindRequiredDeclarations": ["border-spacing: 0.5rem"],
+      "dxStyleRequiredDeclarations": ["border-spacing: 0.5rem"],
+      "status": "supported"
+    },
+    {
+      "className": "transform-3d",
+      "area": "transform-3d",
+      "tailwindRequiredDeclarations": ["transform-style: preserve-3d"],
+      "dxStyleRequiredDeclarations": ["transform-style: preserve-3d"],
+      "status": "supported"
+    },
+    {
+      "className": "perspective-[750px]",
+      "area": "perspective",
+      "tailwindRequiredDeclarations": ["perspective: 750px"],
+      "dxStyleRequiredDeclarations": ["perspective: 750px"],
+      "status": "supported"
+    },
+    {
+      "className": "perspective-origin-top-right",
+      "area": "perspective",
+      "tailwindRequiredDeclarations": ["perspective-origin: top right"],
+      "dxStyleRequiredDeclarations": ["perspective-origin: top right"],
+      "status": "supported"
+    },
+    {
+      "className": "rotate-x-45",
+      "area": "transform-3d",
+      "tailwindRequiredDeclarations": ["--tw-rotate-x: rotateX(45deg)"],
+      "dxStyleRequiredDeclarations": ["--tw-rotate-x: rotateX(45deg)"],
+      "status": "supported"
+    },
+    {
+      "className": "translate-z-4",
+      "area": "transform-3d",
+      "tailwindRequiredDeclarations": ["--tw-translate-z: calc(var(--spacing) * 4)"],
+      "dxStyleRequiredDeclarations": ["--tw-translate-z: calc(var(--spacing) * 4)"],
+      "status": "supported"
+    },
+    {
+      "className": "scale-z-125",
+      "area": "transform-3d",
+      "tailwindRequiredDeclarations": ["--tw-scale-z: 125%"],
+      "dxStyleRequiredDeclarations": ["--tw-scale-z: 125%"],
+      "status": "supported"
+    },
+    {
+      "className": "shadow-(--dx-shadow)",
+      "area": "shadow",
+      "tailwindRequiredDeclarations": ["box-shadow: var(--dx-shadow)"],
+      "dxStyleRequiredDeclarations": ["box-shadow: var(--dx-shadow)"],
+      "status": "supported"
+    },
+    {
+      "className": "box-border",
+      "area": "box-sizing",
+      "tailwindRequiredDeclarations": ["box-sizing: border-box"],
+      "dxStyleRequiredDeclarations": ["box-sizing: border-box"],
+      "status": "supported"
+    },
+    {
+      "className": "box-content",
+      "area": "box-sizing",
+      "tailwindRequiredDeclarations": ["box-sizing: content-box"],
+      "dxStyleRequiredDeclarations": ["box-sizing: content-box"],
+      "status": "supported"
+    },
+    {
+      "className": "bg-[#1d4ed8]/50",
+      "area": "arbitrary-color-opacity",
+      "tailwindRequiredDeclarations": [
+        "background-color: color-mix(in oklab, #1d4ed8 50%, transparent)"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "background-color: color-mix(in oklab, #1d4ed8 50%, transparent)"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "bg-(--dx-background)",
+      "area": "custom-property-color",
+      "tailwindRequiredDeclarations": [
+        "background-color: var(--dx-background)"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "background-color: var(--dx-background)"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "border-(--dx-border)",
+      "area": "custom-property-color",
+      "tailwindRequiredDeclarations": ["border-color: var(--dx-border)"],
+      "dxStyleRequiredDeclarations": ["border-color: var(--dx-border)"],
+      "status": "supported"
+    },
+    {
+      "className": "fill-[#0f172a]/80",
+      "area": "arbitrary-color-opacity",
+      "tailwindRequiredDeclarations": [
+        "fill: color-mix(in oklab, #0f172a 80%, transparent)"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "fill: color-mix(in oklab, #0f172a 80%, transparent)"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "text-[color:var(--dx-foreground)]",
+      "area": "typed-arbitrary-color",
+      "tailwindRequiredDeclarations": ["color: var(--dx-foreground)"],
+      "dxStyleRequiredDeclarations": ["color: var(--dx-foreground)"],
+      "status": "supported"
+    },
+    {
+      "className": "stroke-[color:var(--dx-stroke)]",
+      "area": "typed-arbitrary-color",
+      "tailwindRequiredDeclarations": ["stroke: var(--dx-stroke)"],
+      "dxStyleRequiredDeclarations": ["stroke: var(--dx-stroke)"],
+      "status": "supported"
+    },
+    {
+      "className": "rounded-(--dx-radius)",
+      "area": "custom-property-alias",
+      "tailwindRequiredDeclarations": ["border-radius: var(--dx-radius)"],
+      "dxStyleRequiredDeclarations": ["border-radius: var(--dx-radius)"],
+      "status": "supported"
+    },
+    {
+      "className": "aspect-(--dx-aspect)",
+      "area": "custom-property-alias",
+      "tailwindRequiredDeclarations": ["aspect-ratio: var(--dx-aspect)"],
+      "dxStyleRequiredDeclarations": ["aspect-ratio: var(--dx-aspect)"],
+      "status": "supported"
+    },
+    {
+      "className": "leading-(--dx-leading)",
+      "area": "custom-property-alias",
+      "tailwindRequiredDeclarations": ["line-height: var(--dx-leading)"],
+      "dxStyleRequiredDeclarations": ["line-height: var(--dx-leading)"],
+      "status": "supported"
+    },
+    {
+      "className": "tracking-(--dx-tracking)",
+      "area": "custom-property-alias",
+      "tailwindRequiredDeclarations": ["letter-spacing: var(--dx-tracking)"],
+      "dxStyleRequiredDeclarations": ["letter-spacing: var(--dx-tracking)"],
+      "status": "supported"
+    },
+    {
+      "className": "items-baseline-last",
+      "area": "alignment",
+      "tailwindRequiredDeclarations": ["align-items: last baseline"],
+      "dxStyleRequiredDeclarations": ["align-items: last baseline"],
+      "status": "supported"
+    },
+    {
+      "className": "self-baseline",
+      "area": "alignment",
+      "tailwindRequiredDeclarations": ["align-self: baseline"],
+      "dxStyleRequiredDeclarations": ["align-self: baseline"],
+      "status": "supported"
+    },
+    {
+      "className": "place-items-baseline",
+      "area": "alignment",
+      "tailwindRequiredDeclarations": ["place-items: baseline"],
+      "dxStyleRequiredDeclarations": ["place-items: baseline"],
+      "status": "supported"
+    },
+    {
+      "className": "justify-items-center",
+      "area": "alignment",
+      "tailwindRequiredDeclarations": ["justify-items: center"],
+      "dxStyleRequiredDeclarations": ["justify-items: center"],
+      "status": "supported"
+    },
+    {
+      "className": "justify-self-end",
+      "area": "alignment",
+      "tailwindRequiredDeclarations": ["justify-self: end"],
+      "dxStyleRequiredDeclarations": ["justify-self: end"],
+      "status": "supported"
+    },
+    {
+      "className": "content-normal",
+      "area": "alignment",
+      "tailwindRequiredDeclarations": ["align-content: normal"],
+      "dxStyleRequiredDeclarations": ["align-content: normal"],
+      "status": "supported"
+    },
+    {
+      "className": "from-10%",
+      "area": "gradient-stop-position",
+      "tailwindRequiredDeclarations": ["--tw-gradient-from-position: 10%"],
+      "dxStyleRequiredDeclarations": ["--tw-gradient-from-position: 10%"],
+      "status": "supported"
+    },
+    {
+      "className": "via-30%",
+      "area": "gradient-stop-position",
+      "tailwindRequiredDeclarations": ["--tw-gradient-via-position: 30%"],
+      "dxStyleRequiredDeclarations": ["--tw-gradient-via-position: 30%"],
+      "status": "supported"
+    },
+    {
+      "className": "to-90%",
+      "area": "gradient-stop-position",
+      "tailwindRequiredDeclarations": ["--tw-gradient-to-position: 90%"],
+      "dxStyleRequiredDeclarations": ["--tw-gradient-to-position: 90%"],
+      "status": "supported"
+    },
+    {
+      "className": "from-(--dx-gradient-from-position)",
+      "area": "gradient-stop-position",
+      "tailwindRequiredDeclarations": [
+        "--tw-gradient-from-position: var(--dx-gradient-from-position)"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "--tw-gradient-from-position: var(--dx-gradient-from-position)"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "ring-[#2563eb]/50",
+      "area": "arbitrary-color-opacity",
+      "tailwindRequiredDeclarations": ["--tw-ring-color: rgb(37 99 235 / 0.5)"],
+      "dxStyleRequiredDeclarations": ["--tw-ring-color: rgb(37 99 235 / 0.5)"],
+      "status": "supported"
+    },
+    {
+      "className": "divide-(--dx-border)",
+      "area": "custom-property-color",
+      "tailwindRequiredDeclarations": ["border-color: var(--dx-border)"],
+      "dxStyleRequiredDeclarations": ["border-color: var(--dx-border)"],
+      "status": "supported"
+    },
+    {
+      "className": "p-(--dx-pad)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": ["padding: var(--dx-pad)"],
+      "dxStyleRequiredDeclarations": ["padding: var(--dx-pad)"],
+      "status": "supported"
+    },
+    {
+      "className": "scroll-mt-(--dx-scroll-mt)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": ["scroll-margin-top: var(--dx-scroll-mt)"],
+      "dxStyleRequiredDeclarations": ["scroll-margin-top: var(--dx-scroll-mt)"],
+      "status": "supported"
+    },
+    {
+      "className": "opacity-(--dx-opacity)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": ["opacity: var(--dx-opacity)"],
+      "dxStyleRequiredDeclarations": ["opacity: var(--dx-opacity)"],
+      "status": "supported"
+    },
+    {
+      "className": "z-(--dx-layer)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": ["z-index: var(--dx-layer)"],
+      "dxStyleRequiredDeclarations": ["z-index: var(--dx-layer)"],
+      "status": "supported"
+    },
+    {
+      "className": "order-(--dx-order)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": ["order: var(--dx-order)"],
+      "dxStyleRequiredDeclarations": ["order: var(--dx-order)"],
+      "status": "supported"
+    },
+    {
+      "className": "blur-(--dx-blur)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": ["--tw-blur: blur(var(--dx-blur))"],
+      "dxStyleRequiredDeclarations": ["--tw-blur: blur(var(--dx-blur))"],
+      "status": "supported"
+    },
+    {
+      "className": "brightness-(--dx-brightness)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": [
+        "--tw-brightness: brightness(var(--dx-brightness))"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "--tw-brightness: brightness(var(--dx-brightness))"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "hue-rotate-(--dx-hue-rotate)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": [
+        "--tw-hue-rotate: hue-rotate(var(--dx-hue-rotate))"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "--tw-hue-rotate: hue-rotate(var(--dx-hue-rotate))"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "backdrop-opacity-(--dx-backdrop-opacity)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": [
+        "--tw-backdrop-opacity: opacity(var(--dx-backdrop-opacity))"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "--tw-backdrop-opacity: opacity(var(--dx-backdrop-opacity))"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "backdrop-blur-(--dx-backdrop-blur)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": [
+        "--tw-backdrop-blur: blur(var(--dx-backdrop-blur))"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "--tw-backdrop-blur: blur(var(--dx-backdrop-blur))"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "outline-offset-(--dx-outline-offset)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": [
+        "outline-offset: var(--dx-outline-offset)"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "outline-offset: var(--dx-outline-offset)"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "outline-[3px]",
+      "area": "arbitrary-length-routing",
+      "tailwindRequiredDeclarations": ["outline-width: 3px"],
+      "dxStyleRequiredDeclarations": ["outline-width: 3px"],
+      "status": "supported"
+    },
+    {
+      "className": "ring-[3px]",
+      "area": "arbitrary-length-routing",
+      "tailwindRequiredDeclarations": [
+        "calc(3px + var(--tw-ring-offset-width, 0px))"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "calc(3px + var(--tw-ring-offset-width, 0px))"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "ring-offset-(--dx-ring-offset-width)",
+      "area": "custom-property-shorthand",
+      "tailwindRequiredDeclarations": [
+        "--tw-ring-offset-width: var(--dx-ring-offset-width)"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "--tw-ring-offset-width: var(--dx-ring-offset-width)"
+      ],
+      "status": "supported"
+    }
+  ],
+  "limitations": [
+    "This fixture proves declaration-fragment equality for a tiny supported class list only.",
+    "It is not live Tailwind execution and not a fair speed benchmark.",
+    "Full Tailwind parity remains unproven until equal-output fixtures cover the full utility and variant grammar with a governed Tailwind run."
+  ]
+}

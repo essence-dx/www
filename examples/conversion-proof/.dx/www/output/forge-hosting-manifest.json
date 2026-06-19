@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "manifest_kind": "dx-www-forge-hosting-release-gate",
+  "generated": "2026-06-10T03:50:08.896829200+00:00",
+  "node_modules_required": false,
+  "package_installs_executed": false,
+  "lifecycle_scripts_executed": false,
+  "manifest_hash": "blake3:778114897623c8e434a093f37b398c353e1d25579eaf025752307160174914c7",
+  "cache_headers": [
+    {
+      "glob": "**/*.html",
+      "cache_control": "public, max-age=0, must-revalidate"
+    },
+    {
+      "glob": "**/*.dxpk",
+      "cache_control": "public, max-age=31536000, immutable"
+    },
+    {
+      "glob": "public/**/*",
+      "cache_control": "public, max-age=31536000, immutable"
+    }
+  ],
+  "rollback_inputs": {
+    "metadata_path": "rollback.json",
+    "strategy": "manifest-pinned-asset-rollback",
+    "previous_release_required": true,
+    "restore_order": [
+      "immutable_assets",
+      "manifest.json",
+      "deploy-adapter.json"
+    ],
+    "immutable_asset_count": 272,
+    "inputs": [
+      {
+        "path": "rollback.json",
+        "kind": "rollback-metadata",
+        "required": true
+      },
+      {
+        "path": "manifest.json",
+        "kind": "build-manifest",
+        "required": true
+      },
+      {
+        "path": "deploy-adapter.json",
+        "kind": "deploy-contract",
+        "required": true
+      }
+    ]
+  },
+  "signed_manifest": {
+    "path": "manifest.json",
+    "hash": "blake3:778114897623c8e434a093f37b398c353e1d25579eaf025752307160174914c7",
+    "signed": false,
+    "signature_required_for_release": true,
+    "signature_policy": "sign manifest before hosted promotion",
+    "promotion_path": "build-promotion.json",
+    "promotion_command": "dx promote --key <private-key.json>"
+  },
+  "observability_endpoints": {
+    "metadata_path": "observability.json",
+    "ready_path": "/.dx/ready",
+    "metrics_path": "/.dx/observability",
+    "health_checks": [
+      {
+        "path": "/api/auth/session",
+        "method": "GET",
+        "source_method": "GET",
+        "implicit_method": false,
+        "allowed_methods": [
+          "GET",
+          "HEAD",
+          "OPTIONS"
+        ],
+        "declared_methods": [
+          "GET"
+        ],
+        "source_path": "app/api/auth/session/route.ts",
+        "receipt": "route-handler-receipts.json"
+      },
+      {
+        "path": "/api/auth/session",
+        "method": "HEAD",
+        "source_method": "GET",
+        "implicit_method": true,
+        "allowed_methods": [
+          "GET",
+          "HEAD",
+          "OPTIONS"
+        ],
+        "declared_methods": [
+          "GET"
+        ],
+        "source_path": "app/api/auth/session/route.ts",
+        "receipt": "route-handler-receipts.json"
+      },
+      {
+        "path": "/api/trpc/health",
+        "method": "GET",
+        "source_method": "GET",
+        "implicit_method": false,
+        "allowed_methods": [
+          "GET",
+          "HEAD",
+          "POST",
+          "OPTIONS"
+        ],
+        "declared_methods": [
+          "GET",
+          "POST"
+        ],
+        "source_path": "app/api/trpc/health/route.ts",
+        "receipt": "route-handler-receipts.json"
+      },
+      {
+        "path": "/api/trpc/health",
+        "method": "HEAD",
+        "source_method": "GET",
+        "implicit_method": true,
+        "allowed_methods": [
+          "GET",
+          "HEAD",
+          "POST",
+          "OPTIONS"
+        ],
+        "declared_methods": [
+          "GET",
+          "POST"
+        ],
+        "source_path": "app/api/trpc/health/route.ts",
+        "receipt": "route-handler-receipts.json"
+      }
+    ],
+    "collects_secrets": false,
+    "collects_request_headers": false,
+    "collects_request_payloads": false,
+    "cache_control": "no-store"
+  },
+  "provider_portability": {
+    "portable": true,
+    "primary": "dx-www-cloud-local",
+    "required_artifacts": [
+      "app/app-router-execution.json",
+      "app/index.html",
+      "deploy-adapter.json",
+      "forge-hosting-manifest.json",
+      "hosted-preview.json",
+      "manifest.json",
+      "observability.json",
+      "provider-adapter.dx-cloud.json",
+      "rollback.json",
+      "source-build-manifest.json",
+      "source-build-receipt.json"
+    ],
+    "providers": [
+      {
+        "provider": "dx-www-cloud-local",
+        "adapter_kind": "account-free-fixture",
+        "account_required": false,
+        "network_required": false,
+        "supports_static_assets": true,
+        "supports_source_owned_actions": true,
+        "notes": "Local account-free preview and release review path."
+      },
+      {
+        "provider": "static-hosting",
+        "adapter_kind": "portable-static-output",
+        "account_required": false,
+        "network_required": false,
+        "supports_static_assets": true,
+        "supports_source_owned_actions": false,
+        "notes": "Pure static output can ship without server actions."
+      },
+      {
+        "provider": "vercel-static-output",
+        "adapter_kind": "portable-hosted-output",
+        "account_required": true,
+        "network_required": true,
+        "supports_static_assets": true,
+        "supports_source_owned_actions": true,
+        "notes": "Requires explicit provider binding after manifest signature."
+      },
+      {
+        "provider": "cloudflare-pages",
+        "adapter_kind": "portable-hosted-output",
+        "account_required": true,
+        "network_required": true,
+        "supports_static_assets": true,
+        "supports_source_owned_actions": true,
+        "notes": "Requires explicit provider binding after manifest signature."
+      }
+    ]
+  },
+  "release_gate": {
+    "coverage_score": 100,
+    "account_free_preview_ready": true,
+    "hosted_release_ready": false,
+    "manifest_signature_required": true,
+    "manifest_signed": false,
+    "no_node_modules": true,
+    "provider_portable": true,
+    "required_artifacts": [
+      "app/app-router-execution.json",
+      "app/index.html",
+      "deploy-adapter.json",
+      "forge-hosting-manifest.json",
+      "hosted-preview.json",
+      "manifest.json",
+      "observability.json",
+      "provider-adapter.dx-cloud.json",
+      "rollback.json",
+      "source-build-manifest.json",
+      "source-build-receipt.json"
+    ],
+    "blockers": [
+      "build-manifest-signature-required"
+    ],
+    "review_before_release": [
+      "Sign manifest.json with dx promote before hosted traffic.",
+      "Keep Forge package files source-owned and reviewable.",
+      "Verify rollback.json against the previous build before promotion."
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "action": "track-write",
+  "package": {
+    "package_id": "dx-www/vertical/forge",
+    "upstream_name": "local:dx-www/vertical",
+    "version": "0.0.0-local",
+    "generator": "dx-forge/local-source",
+    "variant": "default",
+    "source_kind": "local",
+    "integrity_hash": "71f3ced189182e2f6c01cf52edc478f690d60ff8a0a3737afe48e3655c24ccc7",
+    "license": "UNLICENSED",
+    "provenance": {
+      "source": "dx-forge-local-source",
+      "upstream_reference": "local:dx-www/vertical",
+      "verified": false,
+      "note": "Local source was tracked by Forge, but no external upstream provenance is claimed."
+    },
+    "advisory_review": {
+      "coverage_kind": "missing",
+      "provider": "none",
+      "live_coverage": false,
+      "finding_count": 0,
+      "note": "Local source packages do not have live advisory coverage attached by Forge yet."
+    },
+    "license_review": {
+      "declared_license": "UNLICENSED",
+      "reviewed": false,
+      "note": "License is recorded from the local package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "pages/forge.html",
+        "hash": "76362449df1d32978e95aba2a35a6167b1ba88556c5a4c0297de3d60430dca3f",
+        "bytes": 22332
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "pages/forge.html",
+      "hash": "76362449df1d32978e95aba2a35a6167b1ba88556c5a4c0297de3d60430dca3f",
+      "bytes": 22332
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "pages/forge.html",
+      "materialized_path": "pages/forge.html",
+      "hash": "76362449df1d32978e95aba2a35a6167b1ba88556c5a4c0297de3d60430dca3f",
+      "bytes": 22332
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "source-owned-inputs",
+      "traffic": "green",
+      "message": "Forge records existing local source files as editable, reviewable project-owned inputs."
+    },
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge tracking does not run npm install, lifecycle hooks, or upstream scripts."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-25T23:46:45.803174600+00:00",
+  "signature": null
+}

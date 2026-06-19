@@ -1,0 +1,615 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "validation/zod",
+    "upstream_name": "zod",
+    "version": "4.4.3-dx.13",
+    "generator": "dx-forge/zod",
+    "variant": "default",
+    "last_accepted_update": "2026-05-25T14:24:00.589036800+00:00",
+    "rollback_receipt": "20260523T040605313883900Z-validation-zod.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "a8c06772b9e895b4be0de764688fcceb39fe84d08c3f24f190f283d208e62011",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:zod@4.4.3",
+      "verified": false,
+      "note": "DX inspected the local Zod source mirror, package export map, v4 classic external exports, schema constructors, safeParse helpers, error formatters, and JSON Schema conversion before curating this launch validation slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Zod validation launch slice, but it is not a live advisory feed and does not audit application schemas, accepted inputs, or downstream authorization policy."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/validation/zod/schemas.ts",
+        "logical_path": "js/validation/zod/schemas.ts",
+        "hash": "85314af57f2b1de7445705f444e46d2884230c55c95888a9f67f0564180c5a0d",
+        "bytes": 1275
+      },
+      {
+        "path": "lib/validation/zod/objects.ts",
+        "logical_path": "js/validation/zod/objects.ts",
+        "hash": "6033962b0eff6b0739261634b07e2afb5a585a58a56eea2a12aa04ffc7e04441",
+        "bytes": 1491
+      },
+      {
+        "path": "lib/validation/zod/parse.ts",
+        "logical_path": "js/validation/zod/parse.ts",
+        "hash": "acc9b87a0c03ef38652eb62224ec32b3b5b25e78b0819ba8c62482a526903795",
+        "bytes": 1593
+      },
+      {
+        "path": "lib/validation/zod/errors.ts",
+        "logical_path": "js/validation/zod/errors.ts",
+        "hash": "ece35a0984fbcbb229be97ecc02e552b6e3a3ceca073c40f4523689d842a5966",
+        "bytes": 1249
+      },
+      {
+        "path": "lib/validation/zod/json-schema.ts",
+        "logical_path": "js/validation/zod/json-schema.ts",
+        "hash": "a2e6fc8642fbf0de3d972cd93a80686ed1749641d17bdd80aad720a1cba834d7",
+        "bytes": 689
+      },
+      {
+        "path": "lib/validation/zod/json-schema-import.ts",
+        "logical_path": "js/validation/zod/json-schema-import.ts",
+        "hash": "a6e695aecd953fdf7dc49346d949e86c97edf2f79ee975be15c2e2240e7e33b9",
+        "bytes": 1319
+      },
+      {
+        "path": "lib/validation/zod/codecs.ts",
+        "logical_path": "js/validation/zod/codecs.ts",
+        "hash": "4d727a6827ef4b62cc890ce911101d781f9c3d0a0191ac76f219814c35c3cec8",
+        "bytes": 1261
+      },
+      {
+        "path": "lib/validation/zod/coerce.ts",
+        "logical_path": "js/validation/zod/coerce.ts",
+        "hash": "d3f46556b0968f9008e4ed17439dc78f7cf6a95b68a19a7e140bb84b44556b4e",
+        "bytes": 1304
+      },
+      {
+        "path": "lib/validation/zod/env.ts",
+        "logical_path": "js/validation/zod/env.ts",
+        "hash": "8081da8e92a23d97757a33f335f67de5f8349ca0bb71e52674e1e833c62da6e7",
+        "bytes": 1337
+      },
+      {
+        "path": "lib/validation/zod/files.ts",
+        "logical_path": "js/validation/zod/files.ts",
+        "hash": "0df2666b163932694e2a70eadcf320e3f4d215e67a92f87fe1ec24d0c8dd00f9",
+        "bytes": 1591
+      },
+      {
+        "path": "lib/validation/zod/transforms.ts",
+        "logical_path": "js/validation/zod/transforms.ts",
+        "hash": "d4aa7979bafdd3da07cc47c53f1a58b239c6caff1fa979e86d0439cb4ba55cf3",
+        "bytes": 971
+      },
+      {
+        "path": "lib/validation/zod/catalog.ts",
+        "logical_path": "js/validation/zod/catalog.ts",
+        "hash": "61c0cedde54a0c60cd00f125a83a7861fd736bbca915acf1b47a1e9cbb7f01dc",
+        "bytes": 4302
+      },
+      {
+        "path": "lib/validation/zod/dashboard-settings.ts",
+        "logical_path": "js/validation/zod/dashboard-settings.ts",
+        "hash": "8a18d613409c28406fd7c979c171f2dd975bff0a20e8c351186aad39b4d7f5e6",
+        "bytes": 3601
+      },
+      {
+        "path": "lib/validation/zod/refinements.ts",
+        "logical_path": "js/validation/zod/refinements.ts",
+        "hash": "95059c44bd3ee73c0a0633901288c5fc08e709d05129d428637b32de466bae64",
+        "bytes": 2213
+      },
+      {
+        "path": "lib/validation/zod/patterns.ts",
+        "logical_path": "js/validation/zod/patterns.ts",
+        "hash": "25682279fbe90497d331fc20c8d829a722b298da4f4a5bbc980b0aec6b14c728",
+        "bytes": 998
+      },
+      {
+        "path": "lib/validation/zod/registry.ts",
+        "logical_path": "js/validation/zod/registry.ts",
+        "hash": "2dec073ed89f1ffb17720ce71cfa6584e435c72d46192ba2df035894ac1c7691",
+        "bytes": 3212
+      },
+      {
+        "path": "lib/validation/zod/example.ts",
+        "logical_path": "js/validation/zod/example.ts",
+        "hash": "fa4a85203825b02a316f9fb02c4e473b27c33018cd21c273752ebc86237117a2",
+        "bytes": 4533
+      },
+      {
+        "path": "lib/validation/zod/metadata.ts",
+        "logical_path": "js/validation/zod/metadata.ts",
+        "hash": "15ac3129c45418195d0c71895045c657dbd15450971a97f42f65f94d855c7853",
+        "bytes": 9062
+      },
+      {
+        "path": "lib/validation/zod/README.md",
+        "logical_path": "js/validation/zod/README.md",
+        "hash": "f3382f22a37f7b1d35847f328d9205417c265e6d5d70f2f028e00227bb8cc295",
+        "bytes": 10153
+      },
+      {
+        "path": "lib/validation/zod/template-forms.ts",
+        "logical_path": "js/validation/zod/template-forms.ts",
+        "hash": "52233691dbe0e76d4c19f39783465c38fac24ecd5677930d95a381927999c2bf",
+        "bytes": 3099
+      }
+    ]
+  },
+  "files_written": [],
+  "file_map": [
+    {
+      "logical_path": "js/validation/zod/schemas.ts",
+      "materialized_path": "lib/validation/zod/schemas.ts",
+      "hash": "85314af57f2b1de7445705f444e46d2884230c55c95888a9f67f0564180c5a0d",
+      "bytes": 1275
+    },
+    {
+      "logical_path": "js/validation/zod/objects.ts",
+      "materialized_path": "lib/validation/zod/objects.ts",
+      "hash": "6033962b0eff6b0739261634b07e2afb5a585a58a56eea2a12aa04ffc7e04441",
+      "bytes": 1491
+    },
+    {
+      "logical_path": "js/validation/zod/parse.ts",
+      "materialized_path": "lib/validation/zod/parse.ts",
+      "hash": "acc9b87a0c03ef38652eb62224ec32b3b5b25e78b0819ba8c62482a526903795",
+      "bytes": 1593
+    },
+    {
+      "logical_path": "js/validation/zod/errors.ts",
+      "materialized_path": "lib/validation/zod/errors.ts",
+      "hash": "ece35a0984fbcbb229be97ecc02e552b6e3a3ceca073c40f4523689d842a5966",
+      "bytes": 1249
+    },
+    {
+      "logical_path": "js/validation/zod/json-schema.ts",
+      "materialized_path": "lib/validation/zod/json-schema.ts",
+      "hash": "a2e6fc8642fbf0de3d972cd93a80686ed1749641d17bdd80aad720a1cba834d7",
+      "bytes": 689
+    },
+    {
+      "logical_path": "js/validation/zod/json-schema-import.ts",
+      "materialized_path": "lib/validation/zod/json-schema-import.ts",
+      "hash": "a6e695aecd953fdf7dc49346d949e86c97edf2f79ee975be15c2e2240e7e33b9",
+      "bytes": 1319
+    },
+    {
+      "logical_path": "js/validation/zod/codecs.ts",
+      "materialized_path": "lib/validation/zod/codecs.ts",
+      "hash": "4d727a6827ef4b62cc890ce911101d781f9c3d0a0191ac76f219814c35c3cec8",
+      "bytes": 1261
+    },
+    {
+      "logical_path": "js/validation/zod/coerce.ts",
+      "materialized_path": "lib/validation/zod/coerce.ts",
+      "hash": "d3f46556b0968f9008e4ed17439dc78f7cf6a95b68a19a7e140bb84b44556b4e",
+      "bytes": 1304
+    },
+    {
+      "logical_path": "js/validation/zod/env.ts",
+      "materialized_path": "lib/validation/zod/env.ts",
+      "hash": "8081da8e92a23d97757a33f335f67de5f8349ca0bb71e52674e1e833c62da6e7",
+      "bytes": 1337
+    },
+    {
+      "logical_path": "js/validation/zod/files.ts",
+      "materialized_path": "lib/validation/zod/files.ts",
+      "hash": "0df2666b163932694e2a70eadcf320e3f4d215e67a92f87fe1ec24d0c8dd00f9",
+      "bytes": 1591
+    },
+    {
+      "logical_path": "js/validation/zod/transforms.ts",
+      "materialized_path": "lib/validation/zod/transforms.ts",
+      "hash": "d4aa7979bafdd3da07cc47c53f1a58b239c6caff1fa979e86d0439cb4ba55cf3",
+      "bytes": 971
+    },
+    {
+      "logical_path": "js/validation/zod/catalog.ts",
+      "materialized_path": "lib/validation/zod/catalog.ts",
+      "hash": "61c0cedde54a0c60cd00f125a83a7861fd736bbca915acf1b47a1e9cbb7f01dc",
+      "bytes": 4302
+    },
+    {
+      "logical_path": "js/validation/zod/dashboard-settings.ts",
+      "materialized_path": "lib/validation/zod/dashboard-settings.ts",
+      "hash": "8a18d613409c28406fd7c979c171f2dd975bff0a20e8c351186aad39b4d7f5e6",
+      "bytes": 3601
+    },
+    {
+      "logical_path": "js/validation/zod/refinements.ts",
+      "materialized_path": "lib/validation/zod/refinements.ts",
+      "hash": "95059c44bd3ee73c0a0633901288c5fc08e709d05129d428637b32de466bae64",
+      "bytes": 2213
+    },
+    {
+      "logical_path": "js/validation/zod/patterns.ts",
+      "materialized_path": "lib/validation/zod/patterns.ts",
+      "hash": "25682279fbe90497d331fc20c8d829a722b298da4f4a5bbc980b0aec6b14c728",
+      "bytes": 998
+    },
+    {
+      "logical_path": "js/validation/zod/registry.ts",
+      "materialized_path": "lib/validation/zod/registry.ts",
+      "hash": "2dec073ed89f1ffb17720ce71cfa6584e435c72d46192ba2df035894ac1c7691",
+      "bytes": 3212
+    },
+    {
+      "logical_path": "js/validation/zod/example.ts",
+      "materialized_path": "lib/validation/zod/example.ts",
+      "hash": "fa4a85203825b02a316f9fb02c4e473b27c33018cd21c273752ebc86237117a2",
+      "bytes": 4533
+    },
+    {
+      "logical_path": "js/validation/zod/metadata.ts",
+      "materialized_path": "lib/validation/zod/metadata.ts",
+      "hash": "15ac3129c45418195d0c71895045c657dbd15450971a97f42f65f94d855c7853",
+      "bytes": 9062
+    },
+    {
+      "logical_path": "js/validation/zod/README.md",
+      "materialized_path": "lib/validation/zod/README.md",
+      "hash": "f3382f22a37f7b1d35847f328d9205417c265e6d5d70f2f028e00227bb8cc295",
+      "bytes": 10153
+    },
+    {
+      "logical_path": "js/validation/zod/template-forms.ts",
+      "materialized_path": "lib/validation/zod/template-forms.ts",
+      "hash": "52233691dbe0e76d4c19f39783465c38fac24ecd5677930d95a381927999c2bf",
+      "bytes": 3099
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/schemas.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/objects.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/parse.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/errors.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/json-schema.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/json-schema-import.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/codecs.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/coerce.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/env.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/files.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/transforms.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/catalog.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/dashboard-settings.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/refinements.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/patterns.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/validation/zod/registry.ts already matches the latest package."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/validation/zod/example.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/validation/zod/metadata.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/validation/zod/README.md has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/validation/zod/template-forms.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `Shohan` accepted yellow local edits for `validation/zod` variant `default`: Reviewed after template rename; preserving source-owned local edits and stale tracked local files in Forge receipt state."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/validation/zod/schemas.ts",
+      "logical_path": "js/validation/zod/schemas.ts",
+      "before_hash": "85314af57f2b1de7445705f444e46d2884230c55c95888a9f67f0564180c5a0d",
+      "after_hash": "85314af57f2b1de7445705f444e46d2884230c55c95888a9f67f0564180c5a0d",
+      "tracked_hash": "85314af57f2b1de7445705f444e46d2884230c55c95888a9f67f0564180c5a0d",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/schemas.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/objects.ts",
+      "logical_path": "js/validation/zod/objects.ts",
+      "before_hash": "6033962b0eff6b0739261634b07e2afb5a585a58a56eea2a12aa04ffc7e04441",
+      "after_hash": "6033962b0eff6b0739261634b07e2afb5a585a58a56eea2a12aa04ffc7e04441",
+      "tracked_hash": "6033962b0eff6b0739261634b07e2afb5a585a58a56eea2a12aa04ffc7e04441",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/objects.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/parse.ts",
+      "logical_path": "js/validation/zod/parse.ts",
+      "before_hash": "acc9b87a0c03ef38652eb62224ec32b3b5b25e78b0819ba8c62482a526903795",
+      "after_hash": "acc9b87a0c03ef38652eb62224ec32b3b5b25e78b0819ba8c62482a526903795",
+      "tracked_hash": "acc9b87a0c03ef38652eb62224ec32b3b5b25e78b0819ba8c62482a526903795",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/parse.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/errors.ts",
+      "logical_path": "js/validation/zod/errors.ts",
+      "before_hash": "ece35a0984fbcbb229be97ecc02e552b6e3a3ceca073c40f4523689d842a5966",
+      "after_hash": "ece35a0984fbcbb229be97ecc02e552b6e3a3ceca073c40f4523689d842a5966",
+      "tracked_hash": "ece35a0984fbcbb229be97ecc02e552b6e3a3ceca073c40f4523689d842a5966",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/errors.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/json-schema.ts",
+      "logical_path": "js/validation/zod/json-schema.ts",
+      "before_hash": "a2e6fc8642fbf0de3d972cd93a80686ed1749641d17bdd80aad720a1cba834d7",
+      "after_hash": "a2e6fc8642fbf0de3d972cd93a80686ed1749641d17bdd80aad720a1cba834d7",
+      "tracked_hash": "a2e6fc8642fbf0de3d972cd93a80686ed1749641d17bdd80aad720a1cba834d7",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/json-schema.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/json-schema-import.ts",
+      "logical_path": "js/validation/zod/json-schema-import.ts",
+      "before_hash": "a6e695aecd953fdf7dc49346d949e86c97edf2f79ee975be15c2e2240e7e33b9",
+      "after_hash": "a6e695aecd953fdf7dc49346d949e86c97edf2f79ee975be15c2e2240e7e33b9",
+      "tracked_hash": "a6e695aecd953fdf7dc49346d949e86c97edf2f79ee975be15c2e2240e7e33b9",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/json-schema-import.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/codecs.ts",
+      "logical_path": "js/validation/zod/codecs.ts",
+      "before_hash": "4d727a6827ef4b62cc890ce911101d781f9c3d0a0191ac76f219814c35c3cec8",
+      "after_hash": "4d727a6827ef4b62cc890ce911101d781f9c3d0a0191ac76f219814c35c3cec8",
+      "tracked_hash": "4d727a6827ef4b62cc890ce911101d781f9c3d0a0191ac76f219814c35c3cec8",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/codecs.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/coerce.ts",
+      "logical_path": "js/validation/zod/coerce.ts",
+      "before_hash": "d3f46556b0968f9008e4ed17439dc78f7cf6a95b68a19a7e140bb84b44556b4e",
+      "after_hash": "d3f46556b0968f9008e4ed17439dc78f7cf6a95b68a19a7e140bb84b44556b4e",
+      "tracked_hash": "d3f46556b0968f9008e4ed17439dc78f7cf6a95b68a19a7e140bb84b44556b4e",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/coerce.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/env.ts",
+      "logical_path": "js/validation/zod/env.ts",
+      "before_hash": "8081da8e92a23d97757a33f335f67de5f8349ca0bb71e52674e1e833c62da6e7",
+      "after_hash": "8081da8e92a23d97757a33f335f67de5f8349ca0bb71e52674e1e833c62da6e7",
+      "tracked_hash": "8081da8e92a23d97757a33f335f67de5f8349ca0bb71e52674e1e833c62da6e7",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/env.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/files.ts",
+      "logical_path": "js/validation/zod/files.ts",
+      "before_hash": "0df2666b163932694e2a70eadcf320e3f4d215e67a92f87fe1ec24d0c8dd00f9",
+      "after_hash": "0df2666b163932694e2a70eadcf320e3f4d215e67a92f87fe1ec24d0c8dd00f9",
+      "tracked_hash": "0df2666b163932694e2a70eadcf320e3f4d215e67a92f87fe1ec24d0c8dd00f9",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/files.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/transforms.ts",
+      "logical_path": "js/validation/zod/transforms.ts",
+      "before_hash": "d4aa7979bafdd3da07cc47c53f1a58b239c6caff1fa979e86d0439cb4ba55cf3",
+      "after_hash": "d4aa7979bafdd3da07cc47c53f1a58b239c6caff1fa979e86d0439cb4ba55cf3",
+      "tracked_hash": "d4aa7979bafdd3da07cc47c53f1a58b239c6caff1fa979e86d0439cb4ba55cf3",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/transforms.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/catalog.ts",
+      "logical_path": "js/validation/zod/catalog.ts",
+      "before_hash": "61c0cedde54a0c60cd00f125a83a7861fd736bbca915acf1b47a1e9cbb7f01dc",
+      "after_hash": "61c0cedde54a0c60cd00f125a83a7861fd736bbca915acf1b47a1e9cbb7f01dc",
+      "tracked_hash": "61c0cedde54a0c60cd00f125a83a7861fd736bbca915acf1b47a1e9cbb7f01dc",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/catalog.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/dashboard-settings.ts",
+      "logical_path": "js/validation/zod/dashboard-settings.ts",
+      "before_hash": "8a18d613409c28406fd7c979c171f2dd975bff0a20e8c351186aad39b4d7f5e6",
+      "after_hash": "8a18d613409c28406fd7c979c171f2dd975bff0a20e8c351186aad39b4d7f5e6",
+      "tracked_hash": "8a18d613409c28406fd7c979c171f2dd975bff0a20e8c351186aad39b4d7f5e6",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/dashboard-settings.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/refinements.ts",
+      "logical_path": "js/validation/zod/refinements.ts",
+      "before_hash": "95059c44bd3ee73c0a0633901288c5fc08e709d05129d428637b32de466bae64",
+      "after_hash": "95059c44bd3ee73c0a0633901288c5fc08e709d05129d428637b32de466bae64",
+      "tracked_hash": "95059c44bd3ee73c0a0633901288c5fc08e709d05129d428637b32de466bae64",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/refinements.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/patterns.ts",
+      "logical_path": "js/validation/zod/patterns.ts",
+      "before_hash": "25682279fbe90497d331fc20c8d829a722b298da4f4a5bbc980b0aec6b14c728",
+      "after_hash": "25682279fbe90497d331fc20c8d829a722b298da4f4a5bbc980b0aec6b14c728",
+      "tracked_hash": "25682279fbe90497d331fc20c8d829a722b298da4f4a5bbc980b0aec6b14c728",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/patterns.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/registry.ts",
+      "logical_path": "js/validation/zod/registry.ts",
+      "before_hash": "2dec073ed89f1ffb17720ce71cfa6584e435c72d46192ba2df035894ac1c7691",
+      "after_hash": "2dec073ed89f1ffb17720ce71cfa6584e435c72d46192ba2df035894ac1c7691",
+      "tracked_hash": "2dec073ed89f1ffb17720ce71cfa6584e435c72d46192ba2df035894ac1c7691",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/validation/zod/registry.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/validation/zod/example.ts",
+      "logical_path": "js/validation/zod/example.ts",
+      "before_hash": "fa4a85203825b02a316f9fb02c4e473b27c33018cd21c273752ebc86237117a2",
+      "after_hash": "fa4a85203825b02a316f9fb02c4e473b27c33018cd21c273752ebc86237117a2",
+      "tracked_hash": "b7dc38baa41b8baa3955a97b636127b65c224b70a747869c180e2897462cb23f",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/validation/zod/example.ts accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "lib/validation/zod/metadata.ts",
+      "logical_path": "js/validation/zod/metadata.ts",
+      "before_hash": "15ac3129c45418195d0c71895045c657dbd15450971a97f42f65f94d855c7853",
+      "after_hash": "15ac3129c45418195d0c71895045c657dbd15450971a97f42f65f94d855c7853",
+      "tracked_hash": "bc639bb2267e1c81e470393dd0061c58837e749dcedd5db69c077dd2ee9e8fab",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/validation/zod/metadata.ts accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "lib/validation/zod/README.md",
+      "logical_path": "js/validation/zod/README.md",
+      "before_hash": "f3382f22a37f7b1d35847f328d9205417c265e6d5d70f2f028e00227bb8cc295",
+      "after_hash": "f3382f22a37f7b1d35847f328d9205417c265e6d5d70f2f028e00227bb8cc295",
+      "tracked_hash": "2105a06284deda65e5f3584b8ffa5167f1b38b712174a342426cfc7ddaf5d74f",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/validation/zod/README.md accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "lib/validation/zod/template-forms.ts",
+      "logical_path": "js/validation/zod/template-forms.ts",
+      "before_hash": "52233691dbe0e76d4c19f39783465c38fac24ecd5677930d95a381927999c2bf",
+      "tracked_hash": "1bfb1a31f1ca00fea2550c1114ffab599bafdf1056f1e96706e3a45d22cc97d9",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/validation/zod/template-forms.ts is tracked locally but absent from the latest package."
+    }
+  ],
+  "risk_score": 40,
+  "timestamp": "2026-05-25T14:24:00.589036800+00:00",
+  "signature": null
+}

@@ -1,0 +1,614 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "db/drizzle-sqlite",
+    "upstream_name": "drizzle-orm",
+    "version": "0.1.0",
+    "generator": "dx-forge/drizzle",
+    "variant": "default",
+    "last_accepted_update": "2026-05-25T14:24:00.758378100+00:00",
+    "rollback_receipt": "20260523T043535517142400Z-db-drizzle-sqlite.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "38bfb356243f9dfa442c0756f3fa07a3ddd92d41888c7cc699b6eba02bf022f9",
+    "license": "Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:drizzle-orm@0.45.3",
+      "verified": false,
+      "note": "DX inspected the local Drizzle ORM source mirror, package metadata, sqlite-core README, root exports, relations, SQL helpers, and better-sqlite3 driver shape; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Drizzle SQLite launch slice, but it is not a live advisory feed and does not audit deployed database files, migration policy, or application query access control."
+    },
+    "license_review": {
+      "declared_license": "Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "db/drizzle/client.ts",
+        "logical_path": "js/db/drizzle/client.ts",
+        "hash": "c73f78b94440e0727b30ee4f8c5f742dd04b0e761357b00f90760d23140bb317",
+        "bytes": 549
+      },
+      {
+        "path": "db/drizzle/schema.ts",
+        "logical_path": "js/db/drizzle/schema.ts",
+        "hash": "8c437706b7423c123d7b6b13d00f1bd157fe378f8e7b7fd7607d4ae2b1425646",
+        "bytes": 2120
+      },
+      {
+        "path": "db/drizzle/views.ts",
+        "logical_path": "js/db/drizzle/views.ts",
+        "hash": "d729e47ab1d0cd84c6e036dd2b89db82ee2853081a4056b5ed3c816c84a81008",
+        "bytes": 1399
+      },
+      {
+        "path": "db/drizzle/queries.ts",
+        "logical_path": "js/db/drizzle/queries.ts",
+        "hash": "05f204c60a02c77b0749f7be2fb815b7b986b10bbe077e9eed1acbaf6af4477b",
+        "bytes": 1839
+      },
+      {
+        "path": "db/drizzle/migrations.ts",
+        "logical_path": "js/db/drizzle/migrations.ts",
+        "hash": "b4123296bb60d2967fc140bff9464ca45f36054eb1053acb7019f725bb1d73b6",
+        "bytes": 1133
+      },
+      {
+        "path": "db/drizzle/relational-queries.ts",
+        "logical_path": "js/db/drizzle/relational-queries.ts",
+        "hash": "96b4551c49d0cbd923fe2a25ae3a9110ac4c17e73be0ec901e4f5935fc93440f",
+        "bytes": 689
+      },
+      {
+        "path": "db/drizzle/joins.ts",
+        "logical_path": "js/db/drizzle/joins.ts",
+        "hash": "1b01845665941d180e35d457abd5520c4781bef25856be3351a770a274d01e9f",
+        "bytes": 1426
+      },
+      {
+        "path": "db/drizzle/set-operations.ts",
+        "logical_path": "js/db/drizzle/set-operations.ts",
+        "hash": "56551c2c6101172ec8cf1ac6242eeca9342f012380cbb81f7102567f5f607c73",
+        "bytes": 3744
+      },
+      {
+        "path": "db/drizzle/cte-queries.ts",
+        "logical_path": "js/db/drizzle/cte-queries.ts",
+        "hash": "d367e7b54e6c94903ced9028c62e86ebdf090aad387f9870b12fbeb8fc4b5351",
+        "bytes": 1780
+      },
+      {
+        "path": "db/drizzle/transactions.ts",
+        "logical_path": "js/db/drizzle/transactions.ts",
+        "hash": "bd52b69e4311bcbac453f4489a33c4d2c74a5ac8644bea77b7361c4fc0b1e51d",
+        "bytes": 706
+      },
+      {
+        "path": "db/drizzle/prepared-queries.ts",
+        "logical_path": "js/db/drizzle/prepared-queries.ts",
+        "hash": "c58550330913dcf22adf50c23a260acf57f8a4189a4a662be8f3a4c14b0a184f",
+        "bytes": 1328
+      },
+      {
+        "path": "db/drizzle/upserts.ts",
+        "logical_path": "js/db/drizzle/upserts.ts",
+        "hash": "0c8ab1680ceb14fd9c3d7a3a9b5a4cbab8e40d3562c188d494e19ad619ae82d9",
+        "bytes": 1403
+      },
+      {
+        "path": "db/drizzle/mutations.ts",
+        "logical_path": "js/db/drizzle/mutations.ts",
+        "hash": "56e05539045119c6c62e4953dbe044a3016ff930902edda22ccf2b24fae237be",
+        "bytes": 1034
+      },
+      {
+        "path": "db/drizzle/analytics.ts",
+        "logical_path": "js/db/drizzle/analytics.ts",
+        "hash": "9949ebe45f501576e5f21c8992632c7e3f173bb8a88e81c31701dd29cb55f25a",
+        "bytes": 1424
+      },
+      {
+        "path": "db/drizzle/replicas.ts",
+        "logical_path": "js/db/drizzle/replicas.ts",
+        "hash": "8ac04023b76c72a555127c7efdf216fa1ed1d7ca166c897849c00ebab5340a3d",
+        "bytes": 1885
+      },
+      {
+        "path": "db/drizzle/dashboard-workflow.ts",
+        "logical_path": "js/db/drizzle/dashboard-workflow.ts",
+        "hash": "8bcd1ce79d551703e22ffa351816faf7d954c41e417986823304691619c5ac17",
+        "bytes": 4500
+      },
+      {
+        "path": "db/drizzle/metadata.ts",
+        "logical_path": "js/db/drizzle/metadata.ts",
+        "hash": "864a50b50f2b302f8f75edd74098a178931ebfbe9f107d420417aa27cc19f979",
+        "bytes": 12206
+      },
+      {
+        "path": "db/drizzle/README.md",
+        "logical_path": "js/db/drizzle/README.md",
+        "hash": "4461241ad9860c33f090380e4271e88d3cb7dc3ccebe9a581a0c932392aeb8f0",
+        "bytes": 8013
+      },
+      {
+        "path": "app/api/database-orm/readiness/route.ts",
+        "logical_path": "js/app/api/database-orm/readiness/route.ts",
+        "hash": "89979b84e5e18a83c13062dfe7d4927fd3e0f5a2874866d4edff6a64f25c533c",
+        "bytes": 214
+      },
+      {
+        "path": "server/database-orm/readiness.ts",
+        "logical_path": "js/server/database-orm/readiness.ts",
+        "hash": "a30b1384e99d67f8047f23c16cbcab320a8975c7fe097a330335ec6136c5d4de",
+        "bytes": 4146
+      }
+    ]
+  },
+  "files_written": [],
+  "file_map": [
+    {
+      "logical_path": "js/db/drizzle/client.ts",
+      "materialized_path": "db/drizzle/client.ts",
+      "hash": "c73f78b94440e0727b30ee4f8c5f742dd04b0e761357b00f90760d23140bb317",
+      "bytes": 549
+    },
+    {
+      "logical_path": "js/db/drizzle/schema.ts",
+      "materialized_path": "db/drizzle/schema.ts",
+      "hash": "8c437706b7423c123d7b6b13d00f1bd157fe378f8e7b7fd7607d4ae2b1425646",
+      "bytes": 2120
+    },
+    {
+      "logical_path": "js/db/drizzle/views.ts",
+      "materialized_path": "db/drizzle/views.ts",
+      "hash": "d729e47ab1d0cd84c6e036dd2b89db82ee2853081a4056b5ed3c816c84a81008",
+      "bytes": 1399
+    },
+    {
+      "logical_path": "js/db/drizzle/queries.ts",
+      "materialized_path": "db/drizzle/queries.ts",
+      "hash": "05f204c60a02c77b0749f7be2fb815b7b986b10bbe077e9eed1acbaf6af4477b",
+      "bytes": 1839
+    },
+    {
+      "logical_path": "js/db/drizzle/migrations.ts",
+      "materialized_path": "db/drizzle/migrations.ts",
+      "hash": "b4123296bb60d2967fc140bff9464ca45f36054eb1053acb7019f725bb1d73b6",
+      "bytes": 1133
+    },
+    {
+      "logical_path": "js/db/drizzle/relational-queries.ts",
+      "materialized_path": "db/drizzle/relational-queries.ts",
+      "hash": "96b4551c49d0cbd923fe2a25ae3a9110ac4c17e73be0ec901e4f5935fc93440f",
+      "bytes": 689
+    },
+    {
+      "logical_path": "js/db/drizzle/joins.ts",
+      "materialized_path": "db/drizzle/joins.ts",
+      "hash": "1b01845665941d180e35d457abd5520c4781bef25856be3351a770a274d01e9f",
+      "bytes": 1426
+    },
+    {
+      "logical_path": "js/db/drizzle/set-operations.ts",
+      "materialized_path": "db/drizzle/set-operations.ts",
+      "hash": "56551c2c6101172ec8cf1ac6242eeca9342f012380cbb81f7102567f5f607c73",
+      "bytes": 3744
+    },
+    {
+      "logical_path": "js/db/drizzle/cte-queries.ts",
+      "materialized_path": "db/drizzle/cte-queries.ts",
+      "hash": "d367e7b54e6c94903ced9028c62e86ebdf090aad387f9870b12fbeb8fc4b5351",
+      "bytes": 1780
+    },
+    {
+      "logical_path": "js/db/drizzle/transactions.ts",
+      "materialized_path": "db/drizzle/transactions.ts",
+      "hash": "bd52b69e4311bcbac453f4489a33c4d2c74a5ac8644bea77b7361c4fc0b1e51d",
+      "bytes": 706
+    },
+    {
+      "logical_path": "js/db/drizzle/prepared-queries.ts",
+      "materialized_path": "db/drizzle/prepared-queries.ts",
+      "hash": "c58550330913dcf22adf50c23a260acf57f8a4189a4a662be8f3a4c14b0a184f",
+      "bytes": 1328
+    },
+    {
+      "logical_path": "js/db/drizzle/upserts.ts",
+      "materialized_path": "db/drizzle/upserts.ts",
+      "hash": "0c8ab1680ceb14fd9c3d7a3a9b5a4cbab8e40d3562c188d494e19ad619ae82d9",
+      "bytes": 1403
+    },
+    {
+      "logical_path": "js/db/drizzle/mutations.ts",
+      "materialized_path": "db/drizzle/mutations.ts",
+      "hash": "56e05539045119c6c62e4953dbe044a3016ff930902edda22ccf2b24fae237be",
+      "bytes": 1034
+    },
+    {
+      "logical_path": "js/db/drizzle/analytics.ts",
+      "materialized_path": "db/drizzle/analytics.ts",
+      "hash": "9949ebe45f501576e5f21c8992632c7e3f173bb8a88e81c31701dd29cb55f25a",
+      "bytes": 1424
+    },
+    {
+      "logical_path": "js/db/drizzle/replicas.ts",
+      "materialized_path": "db/drizzle/replicas.ts",
+      "hash": "8ac04023b76c72a555127c7efdf216fa1ed1d7ca166c897849c00ebab5340a3d",
+      "bytes": 1885
+    },
+    {
+      "logical_path": "js/db/drizzle/dashboard-workflow.ts",
+      "materialized_path": "db/drizzle/dashboard-workflow.ts",
+      "hash": "8bcd1ce79d551703e22ffa351816faf7d954c41e417986823304691619c5ac17",
+      "bytes": 4500
+    },
+    {
+      "logical_path": "js/db/drizzle/metadata.ts",
+      "materialized_path": "db/drizzle/metadata.ts",
+      "hash": "864a50b50f2b302f8f75edd74098a178931ebfbe9f107d420417aa27cc19f979",
+      "bytes": 12206
+    },
+    {
+      "logical_path": "js/db/drizzle/README.md",
+      "materialized_path": "db/drizzle/README.md",
+      "hash": "4461241ad9860c33f090380e4271e88d3cb7dc3ccebe9a581a0c932392aeb8f0",
+      "bytes": 8013
+    },
+    {
+      "logical_path": "js/app/api/database-orm/readiness/route.ts",
+      "materialized_path": "app/api/database-orm/readiness/route.ts",
+      "hash": "89979b84e5e18a83c13062dfe7d4927fd3e0f5a2874866d4edff6a64f25c533c",
+      "bytes": 214
+    },
+    {
+      "logical_path": "js/server/database-orm/readiness.ts",
+      "materialized_path": "server/database-orm/readiness.ts",
+      "hash": "a30b1384e99d67f8047f23c16cbcab320a8975c7fe097a330335ec6136c5d4de",
+      "bytes": 4146
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/client.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/schema.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/views.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/queries.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/migrations.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/relational-queries.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/joins.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/set-operations.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/cte-queries.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/transactions.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/prepared-queries.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/upserts.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/mutations.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/analytics.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/replicas.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "db/drizzle/dashboard-workflow.ts already matches the latest package."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "db/drizzle/metadata.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "db/drizzle/README.md has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "app/api/database-orm/readiness/route.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "server/database-orm/readiness.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `Shohan` accepted yellow local edits for `db/drizzle-sqlite` variant `default`: Reviewed after template rename; preserving source-owned local edits and stale tracked local files in Forge receipt state."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "db/drizzle/client.ts",
+      "logical_path": "js/db/drizzle/client.ts",
+      "before_hash": "c73f78b94440e0727b30ee4f8c5f742dd04b0e761357b00f90760d23140bb317",
+      "after_hash": "c73f78b94440e0727b30ee4f8c5f742dd04b0e761357b00f90760d23140bb317",
+      "tracked_hash": "c73f78b94440e0727b30ee4f8c5f742dd04b0e761357b00f90760d23140bb317",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/client.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/schema.ts",
+      "logical_path": "js/db/drizzle/schema.ts",
+      "before_hash": "8c437706b7423c123d7b6b13d00f1bd157fe378f8e7b7fd7607d4ae2b1425646",
+      "after_hash": "8c437706b7423c123d7b6b13d00f1bd157fe378f8e7b7fd7607d4ae2b1425646",
+      "tracked_hash": "8c437706b7423c123d7b6b13d00f1bd157fe378f8e7b7fd7607d4ae2b1425646",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/schema.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/views.ts",
+      "logical_path": "js/db/drizzle/views.ts",
+      "before_hash": "d729e47ab1d0cd84c6e036dd2b89db82ee2853081a4056b5ed3c816c84a81008",
+      "after_hash": "d729e47ab1d0cd84c6e036dd2b89db82ee2853081a4056b5ed3c816c84a81008",
+      "tracked_hash": "d729e47ab1d0cd84c6e036dd2b89db82ee2853081a4056b5ed3c816c84a81008",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/views.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/queries.ts",
+      "logical_path": "js/db/drizzle/queries.ts",
+      "before_hash": "05f204c60a02c77b0749f7be2fb815b7b986b10bbe077e9eed1acbaf6af4477b",
+      "after_hash": "05f204c60a02c77b0749f7be2fb815b7b986b10bbe077e9eed1acbaf6af4477b",
+      "tracked_hash": "05f204c60a02c77b0749f7be2fb815b7b986b10bbe077e9eed1acbaf6af4477b",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/queries.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/migrations.ts",
+      "logical_path": "js/db/drizzle/migrations.ts",
+      "before_hash": "b4123296bb60d2967fc140bff9464ca45f36054eb1053acb7019f725bb1d73b6",
+      "after_hash": "b4123296bb60d2967fc140bff9464ca45f36054eb1053acb7019f725bb1d73b6",
+      "tracked_hash": "b4123296bb60d2967fc140bff9464ca45f36054eb1053acb7019f725bb1d73b6",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/migrations.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/relational-queries.ts",
+      "logical_path": "js/db/drizzle/relational-queries.ts",
+      "before_hash": "96b4551c49d0cbd923fe2a25ae3a9110ac4c17e73be0ec901e4f5935fc93440f",
+      "after_hash": "96b4551c49d0cbd923fe2a25ae3a9110ac4c17e73be0ec901e4f5935fc93440f",
+      "tracked_hash": "96b4551c49d0cbd923fe2a25ae3a9110ac4c17e73be0ec901e4f5935fc93440f",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/relational-queries.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/joins.ts",
+      "logical_path": "js/db/drizzle/joins.ts",
+      "before_hash": "1b01845665941d180e35d457abd5520c4781bef25856be3351a770a274d01e9f",
+      "after_hash": "1b01845665941d180e35d457abd5520c4781bef25856be3351a770a274d01e9f",
+      "tracked_hash": "1b01845665941d180e35d457abd5520c4781bef25856be3351a770a274d01e9f",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/joins.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/set-operations.ts",
+      "logical_path": "js/db/drizzle/set-operations.ts",
+      "before_hash": "56551c2c6101172ec8cf1ac6242eeca9342f012380cbb81f7102567f5f607c73",
+      "after_hash": "56551c2c6101172ec8cf1ac6242eeca9342f012380cbb81f7102567f5f607c73",
+      "tracked_hash": "56551c2c6101172ec8cf1ac6242eeca9342f012380cbb81f7102567f5f607c73",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/set-operations.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/cte-queries.ts",
+      "logical_path": "js/db/drizzle/cte-queries.ts",
+      "before_hash": "d367e7b54e6c94903ced9028c62e86ebdf090aad387f9870b12fbeb8fc4b5351",
+      "after_hash": "d367e7b54e6c94903ced9028c62e86ebdf090aad387f9870b12fbeb8fc4b5351",
+      "tracked_hash": "d367e7b54e6c94903ced9028c62e86ebdf090aad387f9870b12fbeb8fc4b5351",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/cte-queries.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/transactions.ts",
+      "logical_path": "js/db/drizzle/transactions.ts",
+      "before_hash": "bd52b69e4311bcbac453f4489a33c4d2c74a5ac8644bea77b7361c4fc0b1e51d",
+      "after_hash": "bd52b69e4311bcbac453f4489a33c4d2c74a5ac8644bea77b7361c4fc0b1e51d",
+      "tracked_hash": "bd52b69e4311bcbac453f4489a33c4d2c74a5ac8644bea77b7361c4fc0b1e51d",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/transactions.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/prepared-queries.ts",
+      "logical_path": "js/db/drizzle/prepared-queries.ts",
+      "before_hash": "c58550330913dcf22adf50c23a260acf57f8a4189a4a662be8f3a4c14b0a184f",
+      "after_hash": "c58550330913dcf22adf50c23a260acf57f8a4189a4a662be8f3a4c14b0a184f",
+      "tracked_hash": "c58550330913dcf22adf50c23a260acf57f8a4189a4a662be8f3a4c14b0a184f",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/prepared-queries.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/upserts.ts",
+      "logical_path": "js/db/drizzle/upserts.ts",
+      "before_hash": "0c8ab1680ceb14fd9c3d7a3a9b5a4cbab8e40d3562c188d494e19ad619ae82d9",
+      "after_hash": "0c8ab1680ceb14fd9c3d7a3a9b5a4cbab8e40d3562c188d494e19ad619ae82d9",
+      "tracked_hash": "0c8ab1680ceb14fd9c3d7a3a9b5a4cbab8e40d3562c188d494e19ad619ae82d9",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/upserts.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/mutations.ts",
+      "logical_path": "js/db/drizzle/mutations.ts",
+      "before_hash": "56e05539045119c6c62e4953dbe044a3016ff930902edda22ccf2b24fae237be",
+      "after_hash": "56e05539045119c6c62e4953dbe044a3016ff930902edda22ccf2b24fae237be",
+      "tracked_hash": "56e05539045119c6c62e4953dbe044a3016ff930902edda22ccf2b24fae237be",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/mutations.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/analytics.ts",
+      "logical_path": "js/db/drizzle/analytics.ts",
+      "before_hash": "9949ebe45f501576e5f21c8992632c7e3f173bb8a88e81c31701dd29cb55f25a",
+      "after_hash": "9949ebe45f501576e5f21c8992632c7e3f173bb8a88e81c31701dd29cb55f25a",
+      "tracked_hash": "9949ebe45f501576e5f21c8992632c7e3f173bb8a88e81c31701dd29cb55f25a",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/analytics.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/replicas.ts",
+      "logical_path": "js/db/drizzle/replicas.ts",
+      "before_hash": "8ac04023b76c72a555127c7efdf216fa1ed1d7ca166c897849c00ebab5340a3d",
+      "after_hash": "8ac04023b76c72a555127c7efdf216fa1ed1d7ca166c897849c00ebab5340a3d",
+      "tracked_hash": "8ac04023b76c72a555127c7efdf216fa1ed1d7ca166c897849c00ebab5340a3d",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/replicas.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/dashboard-workflow.ts",
+      "logical_path": "js/db/drizzle/dashboard-workflow.ts",
+      "before_hash": "8bcd1ce79d551703e22ffa351816faf7d954c41e417986823304691619c5ac17",
+      "after_hash": "8bcd1ce79d551703e22ffa351816faf7d954c41e417986823304691619c5ac17",
+      "tracked_hash": "8bcd1ce79d551703e22ffa351816faf7d954c41e417986823304691619c5ac17",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "db/drizzle/dashboard-workflow.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "db/drizzle/metadata.ts",
+      "logical_path": "js/db/drizzle/metadata.ts",
+      "before_hash": "864a50b50f2b302f8f75edd74098a178931ebfbe9f107d420417aa27cc19f979",
+      "after_hash": "864a50b50f2b302f8f75edd74098a178931ebfbe9f107d420417aa27cc19f979",
+      "tracked_hash": "0ace6adb2acb66d29e3163a7316a22e2681c18f091e27e81bcaf02a3d01455ed",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "db/drizzle/metadata.ts accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "db/drizzle/README.md",
+      "logical_path": "js/db/drizzle/README.md",
+      "before_hash": "4461241ad9860c33f090380e4271e88d3cb7dc3ccebe9a581a0c932392aeb8f0",
+      "after_hash": "4461241ad9860c33f090380e4271e88d3cb7dc3ccebe9a581a0c932392aeb8f0",
+      "tracked_hash": "f55ea6293dfec07b0871e93b5b16b2240474f82d611e2adf269fe9ef6e0dfaf7",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "db/drizzle/README.md accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "app/api/database-orm/readiness/route.ts",
+      "logical_path": "js/app/api/database-orm/readiness/route.ts",
+      "before_hash": "89979b84e5e18a83c13062dfe7d4927fd3e0f5a2874866d4edff6a64f25c533c",
+      "tracked_hash": "89979b84e5e18a83c13062dfe7d4927fd3e0f5a2874866d4edff6a64f25c533c",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "app/api/database-orm/readiness/route.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "path": "server/database-orm/readiness.ts",
+      "logical_path": "js/server/database-orm/readiness.ts",
+      "before_hash": "a30b1384e99d67f8047f23c16cbcab320a8975c7fe097a330335ec6136c5d4de",
+      "tracked_hash": "a30b1384e99d67f8047f23c16cbcab320a8975c7fe097a330335ec6136c5d4de",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "server/database-orm/readiness.ts is tracked locally but absent from the latest package."
+    }
+  ],
+  "risk_score": 40,
+  "timestamp": "2026-05-25T14:24:00.758378100+00:00",
+  "signature": null
+}

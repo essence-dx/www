@@ -1,0 +1,11 @@
+{
+  "name": "dx-www-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "dx dev",
+    "build": "dx build",
+    "check": "dx check"
+  }
+}

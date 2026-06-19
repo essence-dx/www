@@ -1,0 +1,487 @@
+{
+  "schema": "dx.www.deploy.cache_manifest",
+  "schema_revision": 1,
+  "manifest_hash": "blake3:3aa54e392a16464e92b1d80f787a775632fd9102867e521ddc2239a707f9fe7f",
+  "public_runtime_artifacts": [
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "app/forge-proof/index.html",
+      "kind": "route-html",
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "text/html; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "app/index.html",
+      "kind": "route-html",
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "text/html; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon-cfb09e06980b21ac.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon-cfb09e06980b21ac.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/favicon.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/favicon.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/favicon.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icon-32341047d202fbff.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icon-32341047d202fbff.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icon.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/icon.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/icon.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/logo-2afe23f6d7f297ab.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/logo-2afe23f6d7f297ab.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/logo.svg",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "public/logo.svg.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/logo.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "public/logo.svg.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/logo.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      }
+    },
+    {
+      "path": "styles/generated.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "styles/generated.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/generated.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/generated.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/generated.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/globals.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "styles/globals.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/globals.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/globals.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/globals.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/theme.css",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {}
+    },
+    {
+      "path": "styles/theme.css.br",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/theme.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    },
+    {
+      "path": "styles/theme.css.gz",
+      "kind": "immutable-asset",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/theme.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      }
+    }
+  ],
+  "html_cache_control": "public, max-age=0, must-revalidate",
+  "immutable_cache_control": "public, max-age=31536000, immutable",
+  "precompressed_encodings": [
+    "br",
+    "gzip"
+  ],
+  "evidence_cache_control": "no-store"
+}

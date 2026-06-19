@@ -1,0 +1,153 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "shadcn/ui/label",
+    "upstream_name": "shadcn-ui",
+    "version": "0.1.0",
+    "generator": "dx-forge/shadcn-ui",
+    "variant": "default",
+    "last_accepted_update": "2026-06-03T07:24:10.146806+00:00",
+    "rollback_receipt": "20260603T065405265337100Z-shadcn-ui-label.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "45b9ea76f02040183c2056d08e1b2842f14d5424de4904aa277db07d1795e3a4",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "shadcn-ui://apps/v4/registry/bases/radix/ui/label.tsx",
+      "verified": false,
+      "note": "DX inspected the local shadcn-ui v4 registry entry and Radix Label primitive for the official UI Components Label surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn label launch slice, but it is not a live advisory feed and does not audit application form copy, accessible names, or validation relationships."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/utils.ts",
+        "logical_path": "js/lib/utils.ts",
+        "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+        "bytes": 119
+      },
+      {
+        "path": "components/ui/label.tsx",
+        "logical_path": "js/ui/label.tsx",
+        "hash": "159b0a0f2182491257a052818159734b53add410a74eed7a0c8f990da0ff9ac8",
+        "bytes": 458
+      },
+      {
+        "path": "components/ui/README.md",
+        "logical_path": "js/ui/README.md",
+        "hash": "ef45f584deebf0954c58d583c5617648c15cdc8bd6286e627742fa6be2f50a01",
+        "bytes": 439
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "components/ui/label.tsx",
+      "logical_path": "js/ui/label.tsx",
+      "hash": "159b0a0f2182491257a052818159734b53add410a74eed7a0c8f990da0ff9ac8",
+      "bytes": 458
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "hash": "ef45f584deebf0954c58d583c5617648c15cdc8bd6286e627742fa6be2f50a01",
+      "bytes": 439
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "bytes": 119
+    },
+    {
+      "logical_path": "js/ui/label.tsx",
+      "materialized_path": "components/ui/label.tsx",
+      "hash": "159b0a0f2182491257a052818159734b53add410a74eed7a0c8f990da0ff9ac8",
+      "bytes": 458
+    },
+    {
+      "logical_path": "js/ui/README.md",
+      "materialized_path": "components/ui/README.md",
+      "hash": "ef45f584deebf0954c58d583c5617648c15cdc8bd6286e627742fa6be2f50a01",
+      "bytes": 439
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/utils.ts already matches the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "components/ui/label.tsx would be updated from the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "components/ui/README.md would be updated from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "green",
+      "message": "Reviewer `Codex` accepted yellow local edits for `shadcn/ui/label` variant `default`: Reviewed WWW-native no-npm adaptation for the UI Components source slice"
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/utils.ts",
+      "logical_path": "js/lib/utils.ts",
+      "before_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "after_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "tracked_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/utils.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "components/ui/label.tsx",
+      "logical_path": "js/ui/label.tsx",
+      "before_hash": "27ef4104b9d33d399031f74b11402b932e87f408ad8073fd4e7cb93d653f08b9",
+      "after_hash": "159b0a0f2182491257a052818159734b53add410a74eed7a0c8f990da0ff9ac8",
+      "tracked_hash": "27ef4104b9d33d399031f74b11402b932e87f408ad8073fd4e7cb93d653f08b9",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/label.tsx accepted and updated from the latest package."
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "before_hash": "06b1bd6f7e8e2966d46cb815a4191fe2f41806bd201b9932d2e13db2057040c9",
+      "after_hash": "ef45f584deebf0954c58d583c5617648c15cdc8bd6286e627742fa6be2f50a01",
+      "tracked_hash": "06b1bd6f7e8e2966d46cb815a4191fe2f41806bd201b9932d2e13db2057040c9",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/README.md accepted and updated from the latest package."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-06-03T07:24:10.146806+00:00",
+  "signature": null
+}

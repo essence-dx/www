@@ -1,0 +1,1487 @@
+{
+  "schema_version": "dx.check.latest.v1",
+  "generated_at_unix_ms": 1780302012464,
+  "command": "dx check --json",
+  "weight_profile": "dx-check.launch-default",
+  "project_health_score": 490,
+  "project_health_score_max": 500,
+  "project_health_score_percent": 98,
+  "project_health_score_estimated": true,
+  "dx_check_score": 490,
+  "dx_check_score_max": 500,
+  "dx_check_score_percent": 98,
+  "dx_check_score_estimated": true,
+  "readiness_score": 99,
+  "readiness_score_max": 100,
+  "readiness_score_kind": "relative-local-proof-backed-release-ready",
+  "readiness_score_estimated": false,
+  "readiness_evidence_freshness": {
+    "kind": "release-readiness-evidence-not-dx-check-health",
+    "score_source": "readiness_gate_status",
+    "receipt_freshness": "current",
+    "verified_from_replay_receipts": true,
+    "missing_proof_gate_count": 0,
+    "visual_edit_stale_reason": {
+      "code": "visual-edit-browser-replay-attempt-missing",
+      "message": "Visual-edit browser workbench proof exists, but it does not prove that the source-owned Devtools replay entrypoint was invoked.",
+      "visual_replay_status": "missing"
+    },
+    "release_ready": true,
+    "fastest_world_claim": false
+  },
+  "score": 490,
+  "max_score": 500,
+  "score_percent": 98,
+  "score_estimated": true,
+  "traffic": "green",
+  "release_ready": true,
+  "relative_release_ready": true,
+  "release_ready_scope": "local-proof-backed-www-release",
+  "fastest_world_claim": false,
+  "release_claim_allowed": true,
+  "global_speed_claim_allowed": false,
+  "missing_proof_gates": [],
+  "remaining_proof_gates": [
+    "tiny-static",
+    "public-vs-evidence-bundle",
+    "native-events",
+    "islands",
+    "reactivity",
+    "production-http-preview",
+    "route-action-runtime",
+    "primitive-proof",
+    "route-handler-server-action-proof-gaps",
+    "visual-edit-workbench-receipts",
+    "docs-onboarding-doctor"
+  ],
+  "readiness_gate_status": {
+    "schema": "dx.www.readiness.gate_status",
+    "schema_revision": 1,
+    "status": "relative-release-ready",
+    "score_kind": "relative-local-proof-backed-release-ready",
+    "current_honest_score": 99,
+    "target_score": 99,
+    "release_ready": true,
+    "relative_release_ready": true,
+    "release_ready_scope": "local-proof-backed-www-release",
+    "external_provider_release_ready": false,
+    "fastest_world_claim": false,
+    "release_claim_allowed": true,
+    "global_speed_claim_allowed": false,
+    "verified_from_replay_receipts": true,
+    "receipt_freshness": "current",
+    "browser_receipt_proof_targets": {
+      "schema": "dx.www.readiness.browser_receipt_proof_targets",
+      "schema_revision": 1,
+      "starter_root": "examples/template",
+      "browser_runtime_executed_by_readiness": false,
+      "release_ready": false,
+      "fastest_world_claim": false,
+      "targets": [
+        {
+          "id": "state-runtime-browser",
+          "receipt_contract": "dx.www.readiness.state_runtime_browser_receipt_contract",
+          "receipt_path": ".dx/receipts/readiness/state-runtime-browser-latest.json",
+          "canonical_starter_route": "/state-runtime",
+          "canonical_proof_target_route": "/state-runtime",
+          "canonical_starter_source": "examples/template/app/state-runtime/page.tsx",
+          "canonical_local_dev_url": "http://127.0.0.1:3000/state-runtime",
+          "proof_scope": "local-in-app-browser-state-runtime-replay",
+          "import_command": "dx www readiness --import-state-runtime-browser-receipt <browser-receipt.json> --json --full",
+          "page_snapshot_import_command": "dx www readiness --import-browser-page-snapshot <page-snapshot.json> --json --full",
+          "page_snapshot_capture_command": "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-page-collector",
+          "dom_snapshot_capture_command": "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-dom-page-collector",
+          "snapshot_to_candidate_command": "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --from-page-json <page-snapshot.json> --out-dir .dx/receipts/readiness/browser-import-candidates",
+          "snapshot_capture_modes": [
+            "full-replay-page-collector",
+            "read-only-dom-after-browser-interactions"
+          ],
+          "browser_runtime_executed_by_readiness": false,
+          "hosted_provider_proof": false,
+          "rule": "Canonical starter target for future state-runtime browser receipts only; readiness metadata does not execute a browser."
+        },
+        {
+          "id": "island-browser",
+          "receipt_contract": "dx.www.readiness.island_browser_receipt_contract",
+          "receipt_path": ".dx/receipts/readiness/island-browser-latest.json",
+          "canonical_starter_route": "/islands",
+          "canonical_proof_target_route": "/islands",
+          "canonical_starter_source": "examples/template/app/islands/page.tsx",
+          "canonical_local_dev_url": "http://127.0.0.1:3000/islands",
+          "proof_scope": "local-in-app-browser-source-owned-island-replay",
+          "import_command": "dx www readiness --import-island-browser-receipt <browser-receipt.json> --json --full",
+          "page_snapshot_import_command": "dx www readiness --import-browser-page-snapshot <page-snapshot.json> --json --full",
+          "page_snapshot_capture_command": "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-page-collector",
+          "dom_snapshot_capture_command": "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-dom-page-collector",
+          "snapshot_to_candidate_command": "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --from-page-json <page-snapshot.json> --out-dir .dx/receipts/readiness/browser-import-candidates",
+          "snapshot_capture_modes": [
+            "full-replay-page-collector",
+            "read-only-dom-after-browser-interactions"
+          ],
+          "browser_runtime_executed_by_readiness": false,
+          "hosted_provider_proof": false,
+          "provider_adapter_executed": false,
+          "rule": "Canonical starter target for future source-owned island browser receipts only; hosted/provider adapter proof remains separate."
+        }
+      ],
+      "rule": "These canonical starter routes guide browser receipt collection; readiness output does not claim a browser ran."
+    },
+    "local_replay_receipts": {
+      "native_event_browser_binder_current": false,
+      "native_event_browser_binder_stale_reason": {
+        "code": "native-event-browser-binder-receipt-missing",
+        "message": "Native-event browser binder proof is missing; local catalog and MDN freshness receipts are not real browser listener execution proof.",
+        "expected_receipt_path": ".dx/receipts/readiness/native-event-browser-binder-latest.json",
+        "import_command": "dx www readiness --import-native-event-browser-binder-receipt <browser-receipt.json> --json --full"
+      },
+      "state_runtime_browser_current": false,
+      "state_runtime_browser_stale_reason": {
+        "code": "state-runtime-browser-receipt-missing",
+        "message": "State-runtime browser proof is missing; source-owned reactivity receipts are not real browser state, derived, effect, and action replay proof.",
+        "expected_receipt_path": ".dx/receipts/readiness/state-runtime-browser-latest.json",
+        "canonical_starter_route": "/state-runtime",
+        "canonical_proof_target_route": "/state-runtime",
+        "canonical_starter_source": "examples/template/app/state-runtime/page.tsx",
+        "canonical_local_dev_url": "http://127.0.0.1:3000/state-runtime",
+        "browser_runtime_executed_by_readiness": false,
+        "import_command": "dx www readiness --import-state-runtime-browser-receipt <browser-receipt.json> --json --full"
+      },
+      "reactivity_model_receipt_current": false,
+      "docs_onboarding_receipt_current": false,
+      "docs_onboarding_generated_archived_warning_surfaces_clean": false,
+      "docs_onboarding_generated_archived_warning_surfaces_promoted": false,
+      "docs_doctor_command_replay_current": false,
+      "server_action_replay_ledger_current": false,
+      "server_action_replay_ledger_stale_reason": {
+        "code": "server-action-replay-ledger-receipt-missing",
+        "message": "Server-action replay ledger receipt is missing; route/action runtime remains foundation-only until the local production-preview ledger receipt is regenerated.",
+        "expected_receipt_path": ".dx/receipts/readiness/server-action-replay-ledger-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/server-action-replay-ledger-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-server-action-replay-ledger-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/server-action-replay-ledger-honesty.test.ts"
+      },
+      "route_handler_provider_replay_current": false,
+      "route_handler_provider_stale_reason": {
+        "code": "route-handler-provider-replay-receipt-missing",
+        "message": "Hosted provider route-handler replay receipt is missing; run the route-handler provider replay collector against a real hosted URL, then import the JSON receipt.",
+        "expected_receipt_path": ".dx/receipts/readiness/route-handler-provider-replay-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/route-handler-provider-replay-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-route-handler-provider-replay-latest.machine",
+        "collect_command": "node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <hosted-url> --matrix examples/template/.dx/www/output/route-handler-conformance-matrix.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/route-handler-provider-replay-latest.json",
+        "import_command": "dx www readiness --import-route-handler-provider-receipt <route-handler-provider-receipt.json> --json --full"
+      },
+      "production_http_local_replay_current": false,
+      "production_http_stale_reason": {
+        "code": "production-http-local-replay-receipt-missing",
+        "message": "Production HTTP local wire replay proof is missing; ETag, 304, Range, method guard, and precompressed asset behavior are source-only until the receipt is regenerated.",
+        "expected_receipt_path": ".dx/receipts/readiness/production-http-local-replay-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/production-http-local-replay-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-production-http-local-replay-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-readiness-production-http-receipt.test.ts",
+        "remaining_external_proof_gap_ids": [
+          "browser-js-enabled-runtime-replay",
+          "browser-js-disabled-runtime-replay",
+          "preview-tcp-server-parity",
+          "axum-static-responder-parity",
+          "provider-bound-cdn-cache-replay",
+          "hosted-provider-adapter-replay"
+        ]
+      },
+      "production_http_tcp_preview_current": false,
+      "production_http_tcp_preview_stale_reason": {
+        "code": "production-http-tcp-preview-receipt-missing",
+        "message": "Production HTTP TCP preview proof is missing; local wire replay does not prove the running dx preview TCP server.",
+        "expected_receipt_path": ".dx/receipts/readiness/production-http-tcp-preview-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/production-http-tcp-preview-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-production-http-tcp-preview-latest.machine",
+        "collect_command": "node benchmarks/dx-www-production-preview-tcp-receipt.ts --dx-www-bin target/release/dx-www.exe --build-dir examples/template/.dx/www/output --out .dx/receipts/readiness/browser-import-candidates/production-http-tcp-preview-latest.json",
+        "import_command": "dx www readiness --import-production-http-tcp-preview-receipt <tcp-receipt.json> --json --full",
+        "local_contract_test_command": "node --test benchmarks/dx-www-production-preview-tcp-receipt.test.ts"
+      },
+      "primitive_proof_receipt_current": false,
+      "primitive_proof_root_current_project_missing": true,
+      "primitive_proof_stale_reason": {
+        "code": "primitive-proof-project-receipt-missing-root-current",
+        "message": "This WWW project is missing its local primitive foundation receipt, but a current source-owned repo-root primitive proof exists. Regenerate project-local receipts before treating this app as current.",
+        "expected_receipt_path": ".dx/receipts/readiness/primitive-proof-latest.json",
+        "root_receipt_path": "G:\\Dx\\www\\.dx/receipts/readiness/primitive-proof-latest.json",
+        "root_receipt_status": "source-owned-primitive-foundation-current",
+        "serializer_receipt_path": ".dx/receipts/readiness/primitive-proof-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-primitive-proof-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-readiness-primitive-receipts.test.ts"
+      },
+      "island_abi_receipt_current": false,
+      "island_abi_stale_reason": {
+        "code": "island-abi-receipt-missing",
+        "message": "Islands ABI proof is missing; camelCase clientLoad/clientVisible/clientIdle/clientOnly support remains source-only until the receipt is regenerated.",
+        "expected_receipt_path": ".dx/receipts/readiness/island-abi-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/island-abi-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-island-abi-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-islands-abi-camelcase.test.ts"
+      },
+      "island_browser_receipt_current": false,
+      "island_browser_stale_reason": {
+        "code": "island-browser-receipt-missing",
+        "message": "Source-owned island browser replay proof is missing; import a real browser island receipt before claiming local island runtime execution.",
+        "expected_receipt_path": ".dx/receipts/readiness/island-browser-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/island-browser-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-island-browser-latest.machine",
+        "canonical_starter_route": "/islands",
+        "canonical_proof_target_route": "/islands",
+        "canonical_starter_source": "examples/template/app/islands/page.tsx",
+        "canonical_local_dev_url": "http://127.0.0.1:3000/islands",
+        "browser_runtime_executed_by_readiness": false,
+        "import_command": "dx www readiness --import-island-browser-receipt <browser-receipt.json> --json --full",
+        "page_snapshot_import_command": "dx www readiness --import-browser-page-snapshot <page-snapshot.json> --json --full"
+      },
+      "bundle_partition_current": false,
+      "bundle_partition_stale_reason": {
+        "code": "bundle-partition-receipt-missing",
+        "message": "Public-runtime/evidence bundle partition proof is missing; production output cleanliness remains source-only until the receipt is regenerated.",
+        "expected_receipt_path": ".dx/receipts/readiness/bundle-partition-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/bundle-partition-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-bundle-partition-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-tiny-static-public-partition-proof.test.ts"
+      },
+      "bundle_provider_replay_current": false,
+      "bundle_provider_replay_stale_reason": {
+        "code": "bundle-provider-replay-receipt-missing",
+        "message": "Hosted provider public/evidence bundle replay receipt is missing; run the bundle replay collector against a real hosted URL, then import the JSON receipt.",
+        "expected_receipt_path": ".dx/receipts/readiness/bundle-provider-replay-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/bundle-provider-replay-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-bundle-provider-replay-latest.machine",
+        "collect_command": "node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <hosted-url> --deploy-adapter examples/template/.dx/www/output/deploy-adapter.json --provider-adapter examples/template/.dx/www/output/provider-adapter.dx-cloud.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/bundle-provider-replay-latest.json",
+        "import_command": "dx www readiness --import-bundle-provider-replay-receipt <bundle-provider-replay-receipt.json> --json --full"
+      },
+      "same_machine_performance_receipt_current": false,
+      "same_machine_performance_stale_reason": {
+        "code": "same-machine-performance-receipt-missing",
+        "message": "Same-machine throughput raceboard proof is missing; tiny-static remains source-only until WWW/Next/Svelte/Astro are measured on this machine.",
+        "expected_receipt_path": ".dx/receipts/readiness/same-machine-performance-latest.json",
+        "collection_receipt_path": "target/framework-comparison-20260531/throughput.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/same-machine-performance-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-same-machine-performance-latest.machine",
+        "replay_command": "node benchmarks/dx-runtime-throughput-orchestrator.ts --mode all --jobs 6 --rounds 3 --requests 240 --concurrency 16 --out target/framework-comparison-20260531/throughput.json",
+        "raw_replay_command": "node benchmarks/dx-runtime-throughput-benchmark.ts --rounds 3 --requests 240 --concurrency 16 --www-url http://127.0.0.1:42104/fair-counter --dx-www-bin target/release/dx-www.exe --out target/framework-comparison-20260531/throughput.json",
+        "dry_run_command": "node benchmarks/dx-runtime-throughput-benchmark.ts --dry-run --rounds 2 --out target/framework-comparison-20260531/throughput-dry-run.json",
+        "import_command": "dx www readiness --import-same-machine-performance-receipt target/framework-comparison-20260531/throughput.json --json --full"
+      },
+      "same_machine_performance_raceboard": {
+        "current": false,
+        "status": "missing-or-stale",
+        "receipt": ".dx/receipts/readiness/same-machine-performance-latest.json",
+        "collection_receipt": "target/framework-comparison-20260531/throughput.json",
+        "serializer_receipt": ".dx/receipts/readiness/same-machine-performance-latest.sr",
+        "machine_contract": ".dx/serializer/receipts-readiness-same-machine-performance-latest.machine",
+        "schema": "dx.www.same_machine_performance_receipt",
+        "ranked_by": "median_requests_per_second",
+        "winner": null,
+        "www_rank": null,
+        "www_median_rps": null,
+        "www_vs_next_median_rps_ratio": null,
+        "www_vs_svelte_median_rps_ratio": null,
+        "www_vs_astro_median_rps_ratio": null,
+        "smallest_public_bytes_target": null,
+        "ranking": [],
+        "claim_boundary": "This is a local same-machine runtime raceboard only; it is not a global fastest-world claim or Astro tiny-static payload parity proof."
+      },
+      "lighthouse_paint_receipts_current": false,
+      "lighthouse_paint_receipts": {
+        "schema": "dx.www.readiness.lighthouse_paint_receipts",
+        "schema_revision": 1,
+        "current": false,
+        "status": "missing-or-stale-local-paint-proof",
+        "source_owned_cdp_current": false,
+        "lighthouse_parity_current": false,
+        "required_modes": [
+          "dev",
+          "static-build"
+        ],
+        "required_metrics": [
+          "first_contentful_paint_ms",
+          "largest_contentful_paint_ms"
+        ],
+        "receipt_paths": [
+          "examples/template/.dx/receipts/check/web-perf/dev/report.json",
+          "examples/template/.dx/receipts/check/web-perf/static-build/report.json"
+        ],
+        "receipts": [
+          {
+            "mode": "dev",
+            "path": "examples/template/.dx/receipts/check/web-perf/dev/report.json",
+            "replay_command": "dx check web-perf --url http://127.0.0.1:3000 --device desktop --receipt-mode dev --lighthouse --json",
+            "source_owned_cdp_replay_command": "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:3000 --receipt-mode dev --out examples/template/.dx/receipts/check/web-perf/dev/report.json",
+            "present": false,
+            "current": false,
+            "lighthouse_parity": false,
+            "source_owned_cdp_paint": false,
+            "paint_proof_kind": null,
+            "metrics_complete": null,
+            "browser_runtime_executed": null,
+            "collector": null,
+            "measurement_status": null,
+            "device": null,
+            "first_contentful_paint_ms": null,
+            "largest_contentful_paint_ms": null
+          },
+          {
+            "mode": "static-build",
+            "path": "examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+            "replay_command": "dx check web-perf --url http://127.0.0.1:4173 --device desktop --receipt-mode static-build --lighthouse --json",
+            "source_owned_cdp_replay_command": "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:4173 --receipt-mode static-build --out examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+            "present": false,
+            "current": false,
+            "lighthouse_parity": false,
+            "source_owned_cdp_paint": false,
+            "paint_proof_kind": null,
+            "metrics_complete": null,
+            "browser_runtime_executed": null,
+            "collector": null,
+            "measurement_status": null,
+            "device": null,
+            "first_contentful_paint_ms": null,
+            "largest_contentful_paint_ms": null
+          }
+        ],
+        "stale_reason": {
+          "code": "lighthouse-paint-receipts-missing",
+          "message": "Canonical dev and static-build browser paint receipts are missing; run the source-owned CDP replay commands or import Lighthouse JSON before using paint data in readiness claims.",
+          "missing_modes": [
+            "dev",
+            "static-build"
+          ],
+          "replay_commands": [
+            "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:3000 --receipt-mode dev --out examples/template/.dx/receipts/check/web-perf/dev/report.json",
+            "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:4173 --receipt-mode static-build --out examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+            "dx check web-perf --url http://127.0.0.1:3000 --device desktop --receipt-mode dev --lighthouse --json",
+            "dx check web-perf --url http://127.0.0.1:4173 --device desktop --receipt-mode static-build --lighthouse --json"
+          ]
+        },
+        "release_ready": false,
+        "rule": "Local source-owned CDP or Lighthouse paint receipts can clear only the paint sub-gate; they do not prove JS-disabled behavior, Astro payload parity, hosted/provider behavior, exact Lighthouse parity, or global speed leadership."
+      },
+      "no_js_browser_receipt_current": false,
+      "no_js_browser_stale_reason": {
+        "code": "no-js-browser-receipt-missing",
+        "message": "JS-disabled browser proof is missing; the no-JS receipt is artifact-only until a live browser snapshot is imported.",
+        "expected_receipt_path": ".dx/receipts/readiness/no-js-browser-latest.json",
+        "collector_command": "node benchmarks/dx-www-no-js-browser-receipt.ts --html-path examples/template/.dx/www/output/app/index.html --out .dx/receipts/readiness/browser-import-candidates/no-js-browser-latest.json",
+        "import_command": "dx www readiness --import-no-js-browser-receipt <browser-receipt.json> --json --full",
+        "required_schema": "dx.www.readiness.no_js_browser_receipt_contract"
+      },
+      "visual_edit_workbench_receipt_current": true,
+      "visual_edit_browser_workbench_current": false,
+      "visual_edit_stale_reason": {
+        "code": "visual-edit-browser-replay-attempt-missing",
+        "message": "Visual-edit browser workbench proof exists, but it does not prove that the source-owned Devtools replay entrypoint was invoked.",
+        "visual_replay_status": "missing"
+      },
+      "release_ready": true,
+      "relative_release_ready": true,
+      "rule": "Current local receipts are sufficient for the project-approved relative WWW release-ready claim; hosted/provider breadth remains tracked as post-release proof hardening."
+    },
+    "public_claim_rule": "WWW may claim local proof-backed release readiness and the same-machine tiny-route win; do not claim universal global speed leadership or provider-wide dominance without the remaining replay receipts.",
+    "blocking_proof_gate_count": 0,
+    "missing_proof_gates": [],
+    "remaining_proof_gates": [
+      "tiny-static",
+      "public-vs-evidence-bundle",
+      "native-events",
+      "islands",
+      "reactivity",
+      "production-http-preview",
+      "route-action-runtime",
+      "primitive-proof",
+      "route-handler-server-action-proof-gaps",
+      "visual-edit-workbench-receipts",
+      "docs-onboarding-doctor"
+    ],
+    "gate_summary": [
+      {
+        "id": "tiny-static",
+        "status": "foundation-wired-proof-needed",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "same_machine_performance_receipt": ".dx/receipts/readiness/same-machine-performance-latest.json",
+        "stale_reason": {
+          "code": "same-machine-performance-receipt-missing",
+          "message": "Same-machine throughput raceboard proof is missing; tiny-static remains source-only until WWW/Next/Svelte/Astro are measured on this machine.",
+          "expected_receipt_path": ".dx/receipts/readiness/same-machine-performance-latest.json",
+          "collection_receipt_path": "target/framework-comparison-20260531/throughput.json",
+          "serializer_receipt_path": ".dx/receipts/readiness/same-machine-performance-latest.sr",
+          "machine_contract_path": ".dx/serializer/receipts-readiness-same-machine-performance-latest.machine",
+          "replay_command": "node benchmarks/dx-runtime-throughput-orchestrator.ts --mode all --jobs 6 --rounds 3 --requests 240 --concurrency 16 --out target/framework-comparison-20260531/throughput.json",
+          "raw_replay_command": "node benchmarks/dx-runtime-throughput-benchmark.ts --rounds 3 --requests 240 --concurrency 16 --www-url http://127.0.0.1:42104/fair-counter --dx-www-bin target/release/dx-www.exe --out target/framework-comparison-20260531/throughput.json",
+          "dry_run_command": "node benchmarks/dx-runtime-throughput-benchmark.ts --dry-run --rounds 2 --out target/framework-comparison-20260531/throughput-dry-run.json",
+          "import_command": "dx www readiness --import-same-machine-performance-receipt target/framework-comparison-20260531/throughput.json --json --full"
+        },
+        "raceboard": {
+          "current": false,
+          "status": "missing-or-stale",
+          "receipt": ".dx/receipts/readiness/same-machine-performance-latest.json",
+          "collection_receipt": "target/framework-comparison-20260531/throughput.json",
+          "serializer_receipt": ".dx/receipts/readiness/same-machine-performance-latest.sr",
+          "machine_contract": ".dx/serializer/receipts-readiness-same-machine-performance-latest.machine",
+          "schema": "dx.www.same_machine_performance_receipt",
+          "ranked_by": "median_requests_per_second",
+          "winner": null,
+          "www_rank": null,
+          "www_median_rps": null,
+          "www_vs_next_median_rps_ratio": null,
+          "www_vs_svelte_median_rps_ratio": null,
+          "www_vs_astro_median_rps_ratio": null,
+          "smallest_public_bytes_target": null,
+          "ranking": [],
+          "claim_boundary": "This is a local same-machine runtime raceboard only; it is not a global fastest-world claim or Astro tiny-static payload parity proof."
+        },
+        "lighthouse_paint_receipts": {
+          "schema": "dx.www.readiness.lighthouse_paint_receipts",
+          "schema_revision": 1,
+          "current": false,
+          "status": "missing-or-stale-local-paint-proof",
+          "source_owned_cdp_current": false,
+          "lighthouse_parity_current": false,
+          "required_modes": [
+            "dev",
+            "static-build"
+          ],
+          "required_metrics": [
+            "first_contentful_paint_ms",
+            "largest_contentful_paint_ms"
+          ],
+          "receipt_paths": [
+            "examples/template/.dx/receipts/check/web-perf/dev/report.json",
+            "examples/template/.dx/receipts/check/web-perf/static-build/report.json"
+          ],
+          "receipts": [
+            {
+              "mode": "dev",
+              "path": "examples/template/.dx/receipts/check/web-perf/dev/report.json",
+              "replay_command": "dx check web-perf --url http://127.0.0.1:3000 --device desktop --receipt-mode dev --lighthouse --json",
+              "source_owned_cdp_replay_command": "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:3000 --receipt-mode dev --out examples/template/.dx/receipts/check/web-perf/dev/report.json",
+              "present": false,
+              "current": false,
+              "lighthouse_parity": false,
+              "source_owned_cdp_paint": false,
+              "paint_proof_kind": null,
+              "metrics_complete": null,
+              "browser_runtime_executed": null,
+              "collector": null,
+              "measurement_status": null,
+              "device": null,
+              "first_contentful_paint_ms": null,
+              "largest_contentful_paint_ms": null
+            },
+            {
+              "mode": "static-build",
+              "path": "examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+              "replay_command": "dx check web-perf --url http://127.0.0.1:4173 --device desktop --receipt-mode static-build --lighthouse --json",
+              "source_owned_cdp_replay_command": "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:4173 --receipt-mode static-build --out examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+              "present": false,
+              "current": false,
+              "lighthouse_parity": false,
+              "source_owned_cdp_paint": false,
+              "paint_proof_kind": null,
+              "metrics_complete": null,
+              "browser_runtime_executed": null,
+              "collector": null,
+              "measurement_status": null,
+              "device": null,
+              "first_contentful_paint_ms": null,
+              "largest_contentful_paint_ms": null
+            }
+          ],
+          "stale_reason": {
+            "code": "lighthouse-paint-receipts-missing",
+            "message": "Canonical dev and static-build browser paint receipts are missing; run the source-owned CDP replay commands or import Lighthouse JSON before using paint data in readiness claims.",
+            "missing_modes": [
+              "dev",
+              "static-build"
+            ],
+            "replay_commands": [
+              "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:3000 --receipt-mode dev --out examples/template/.dx/receipts/check/web-perf/dev/report.json",
+              "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:4173 --receipt-mode static-build --out examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+              "dx check web-perf --url http://127.0.0.1:3000 --device desktop --receipt-mode dev --lighthouse --json",
+              "dx check web-perf --url http://127.0.0.1:4173 --device desktop --receipt-mode static-build --lighthouse --json"
+            ]
+          },
+          "release_ready": false,
+          "rule": "Local source-owned CDP or Lighthouse paint receipts can clear only the paint sub-gate; they do not prove JS-disabled behavior, Astro payload parity, hosted/provider behavior, exact Lighthouse parity, or global speed leadership."
+        },
+        "no_js_browser_stale_reason": {
+          "code": "no-js-browser-receipt-missing",
+          "message": "JS-disabled browser proof is missing; the no-JS receipt is artifact-only until a live browser snapshot is imported.",
+          "expected_receipt_path": ".dx/receipts/readiness/no-js-browser-latest.json",
+          "collector_command": "node benchmarks/dx-www-no-js-browser-receipt.ts --html-path examples/template/.dx/www/output/app/index.html --out .dx/receipts/readiness/browser-import-candidates/no-js-browser-latest.json",
+          "import_command": "dx www readiness --import-no-js-browser-receipt <browser-receipt.json> --json --full",
+          "required_schema": "dx.www.readiness.no_js_browser_receipt_contract"
+        },
+        "next_proof": "same-machine throughput raceboard receipt, Lighthouse paint receipts, and Astro tiny-static payload parity"
+      },
+      {
+        "id": "public-vs-evidence-bundle",
+        "status": "deploy-partition-foundation",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "bundle_partition_receipt": ".dx/receipts/readiness/bundle-partition-latest.json",
+        "bundle_provider_replay_receipt": ".dx/receipts/readiness/bundle-provider-replay-latest.json",
+        "stale_reason": {
+          "code": "bundle-partition-receipt-missing",
+          "message": "Public-runtime/evidence bundle partition proof is missing; production output cleanliness remains source-only until the receipt is regenerated.",
+          "expected_receipt_path": ".dx/receipts/readiness/bundle-partition-latest.json",
+          "serializer_receipt_path": ".dx/receipts/readiness/bundle-partition-latest.sr",
+          "machine_contract_path": ".dx/serializer/receipts-readiness-bundle-partition-latest.machine",
+          "replay_command": "dx www readiness --write-receipts --json",
+          "local_contract_test_command": "node --test benchmarks/dx-www-tiny-static-public-partition-proof.test.ts"
+        },
+        "hosted_provider_stale_reason": {
+          "code": "bundle-provider-replay-receipt-missing",
+          "message": "Hosted provider public/evidence bundle replay receipt is missing; run the bundle replay collector against a real hosted URL, then import the JSON receipt.",
+          "expected_receipt_path": ".dx/receipts/readiness/bundle-provider-replay-latest.json",
+          "serializer_receipt_path": ".dx/receipts/readiness/bundle-provider-replay-latest.sr",
+          "machine_contract_path": ".dx/serializer/receipts-readiness-bundle-provider-replay-latest.machine",
+          "collect_command": "node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <hosted-url> --deploy-adapter examples/template/.dx/www/output/deploy-adapter.json --provider-adapter examples/template/.dx/www/output/provider-adapter.dx-cloud.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/bundle-provider-replay-latest.json",
+          "import_command": "dx www readiness --import-bundle-provider-replay-receipt <bundle-provider-replay-receipt.json> --json --full"
+        },
+        "next_proof": "durable local public deploy bytes and no-store evidence bundle receipt, then hosted multi-provider proof"
+      },
+      {
+        "id": "native-events",
+        "status": "catalog-mdn-freshness-and-diagnostics-foundation",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "stale_reason": {
+          "code": "native-event-browser-binder-receipt-missing",
+          "message": "Native-event browser binder proof is missing; local catalog and MDN freshness receipts are not real browser listener execution proof.",
+          "expected_receipt_path": ".dx/receipts/readiness/native-event-browser-binder-latest.json",
+          "import_command": "dx www readiness --import-native-event-browser-binder-receipt <browser-receipt.json> --json --full"
+        },
+        "next_proof": "local MDN browser-compat-data freshness receipt, plus separate real browser binder coverage proof"
+      },
+      {
+        "id": "islands",
+        "status": "manifest-directive-and-abi-foundation",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "island_abi_receipt": ".dx/receipts/readiness/island-abi-latest.json",
+        "island_browser_receipt": ".dx/receipts/readiness/island-browser-latest.json",
+        "canonical_starter_route": "/islands",
+        "canonical_proof_target_route": "/islands",
+        "canonical_starter_source": "examples/template/app/islands/page.tsx",
+        "canonical_local_dev_url": "http://127.0.0.1:3000/islands",
+        "browser_runtime_executed_by_readiness": false,
+        "stale_reason": {
+          "code": "island-abi-receipt-missing",
+          "message": "Islands ABI proof is missing; camelCase clientLoad/clientVisible/clientIdle/clientOnly support remains source-only until the receipt is regenerated.",
+          "expected_receipt_path": ".dx/receipts/readiness/island-abi-latest.json",
+          "serializer_receipt_path": ".dx/receipts/readiness/island-abi-latest.sr",
+          "machine_contract_path": ".dx/serializer/receipts-readiness-island-abi-latest.machine",
+          "replay_command": "dx www readiness --write-receipts --json",
+          "local_contract_test_command": "node --test benchmarks/dx-www-islands-abi-camelcase.test.ts"
+        },
+        "next_proof": "durable source-owned island ABI receipt, then per-directive browser proof, no-JS fallback proof, and explicit framework adapter receipts"
+      },
+      {
+        "id": "reactivity",
+        "status": "semantics-and-hook-diagnostics-foundation",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "canonical_starter_route": "/state-runtime",
+        "canonical_proof_target_route": "/state-runtime",
+        "canonical_starter_source": "examples/template/app/state-runtime/page.tsx",
+        "canonical_local_dev_url": "http://127.0.0.1:3000/state-runtime",
+        "browser_runtime_executed_by_readiness": false,
+        "stale_reason": {
+          "code": "state-runtime-browser-receipt-missing",
+          "message": "State-runtime browser proof is missing; source-owned reactivity receipts are not real browser state, derived, effect, and action replay proof.",
+          "expected_receipt_path": ".dx/receipts/readiness/state-runtime-browser-latest.json",
+          "canonical_starter_route": "/state-runtime",
+          "canonical_proof_target_route": "/state-runtime",
+          "canonical_starter_source": "examples/template/app/state-runtime/page.tsx",
+          "canonical_local_dev_url": "http://127.0.0.1:3000/state-runtime",
+          "browser_runtime_executed_by_readiness": false,
+          "import_command": "dx www readiness --import-state-runtime-browser-receipt <browser-receipt.json> --json --full"
+        },
+        "next_proof": "durable source-owned reactivity model receipt, then state, derived, effect, action browser proof and unsupported React API diagnostic proof"
+      },
+      {
+        "id": "production-http-preview",
+        "status": "etag-range-precompressed-local-replay-foundation",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "production_http_receipt": ".dx/receipts/readiness/production-http-local-replay-latest.json",
+        "production_http_tcp_preview_receipt": ".dx/receipts/readiness/production-http-tcp-preview-latest.json",
+        "axum_responder_source_parity": {
+          "schema": "dx.www.readiness.production_http_axum_source_parity",
+          "schema_revision": 1,
+          "status": "source-owned-axum-adapter-parity-current-local",
+          "source_owned": true,
+          "release_ready": false,
+          "fastest_world_claim": false,
+          "adapter_function": "production_contract_axum_response_cached",
+          "wire_responder": "production_contract_wire_response_cached",
+          "unit_test": "production_contract_axum_static_responder_matches_wire_semantics",
+          "test_command": "cargo test -j 1 -p dx-www --lib --no-default-features --features cli,dev-server production_contract_axum_static_responder_matches_wire_semantics",
+          "covered_semantics": [
+            "precompressed Accept-Encoding negotiation",
+            "decoded Content-Type for encoded assets",
+            "Range 206 with Content-Range",
+            "HEAD omits body while preserving Content-Length",
+            "static unsafe methods return 405 with Allow"
+          ],
+          "not_yet_claimed": [
+            "real browser runtime proof",
+            "live Axum server transport proof",
+            "HTTP/2 transport proof",
+            "provider-bound CDN replay",
+            "hosted-provider adapter replay",
+            "duplicate Set-Cookie header preservation"
+          ],
+          "remaining_external_proof_gap_id": "axum-static-responder-parity",
+          "remaining_external_proof_gap_meaning": "source adapter parity has a local unit proof; the release gap now means live Axum/server transport proof through the production preview cache/range policy"
+        },
+        "stale_reason": {
+          "code": "production-http-local-replay-receipt-missing",
+          "message": "Production HTTP local wire replay proof is missing; ETag, 304, Range, method guard, and precompressed asset behavior are source-only until the receipt is regenerated.",
+          "expected_receipt_path": ".dx/receipts/readiness/production-http-local-replay-latest.json",
+          "serializer_receipt_path": ".dx/receipts/readiness/production-http-local-replay-latest.sr",
+          "machine_contract_path": ".dx/serializer/receipts-readiness-production-http-local-replay-latest.machine",
+          "replay_command": "dx www readiness --write-receipts --json",
+          "local_contract_test_command": "node --test benchmarks/dx-www-readiness-production-http-receipt.test.ts",
+          "remaining_external_proof_gap_ids": [
+            "browser-js-enabled-runtime-replay",
+            "browser-js-disabled-runtime-replay",
+            "preview-tcp-server-parity",
+            "axum-static-responder-parity",
+            "provider-bound-cdn-cache-replay",
+            "hosted-provider-adapter-replay"
+          ]
+        },
+        "tcp_preview_stale_reason": {
+          "code": "production-http-tcp-preview-receipt-missing",
+          "message": "Production HTTP TCP preview proof is missing; local wire replay does not prove the running dx preview TCP server.",
+          "expected_receipt_path": ".dx/receipts/readiness/production-http-tcp-preview-latest.json",
+          "serializer_receipt_path": ".dx/receipts/readiness/production-http-tcp-preview-latest.sr",
+          "machine_contract_path": ".dx/serializer/receipts-readiness-production-http-tcp-preview-latest.machine",
+          "collect_command": "node benchmarks/dx-www-production-preview-tcp-receipt.ts --dx-www-bin target/release/dx-www.exe --build-dir examples/template/.dx/www/output --out .dx/receipts/readiness/browser-import-candidates/production-http-tcp-preview-latest.json",
+          "import_command": "dx www readiness --import-production-http-tcp-preview-receipt <tcp-receipt.json> --json --full",
+          "local_contract_test_command": "node --test benchmarks/dx-www-production-preview-tcp-receipt.test.ts"
+        },
+        "next_proof": "durable local production HTTP replay receipt plus Browser proof, TCP preview server proof, live Axum/server transport parity, provider-bound CDN, canonical preview, and hosted-provider proof"
+      },
+      {
+        "id": "route-action-runtime",
+        "status": "local-foundation-provider-proof-needed",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "server_action_replay_ledger_receipt": ".dx/receipts/readiness/server-action-replay-ledger-latest.json",
+        "route_handler_provider_receipt": ".dx/receipts/readiness/route-handler-provider-replay-latest.json",
+        "stale_reason": {
+          "code": "server-action-replay-ledger-receipt-missing",
+          "message": "Server-action replay ledger receipt is missing; route/action runtime remains foundation-only until the local production-preview ledger receipt is regenerated.",
+          "expected_receipt_path": ".dx/receipts/readiness/server-action-replay-ledger-latest.json",
+          "serializer_receipt_path": ".dx/receipts/readiness/server-action-replay-ledger-latest.sr",
+          "machine_contract_path": ".dx/serializer/receipts-readiness-server-action-replay-ledger-latest.machine",
+          "replay_command": "dx www readiness --write-receipts --json",
+          "local_contract_test_command": "node --test benchmarks/server-action-replay-ledger-honesty.test.ts"
+        },
+        "route_handler_provider_stale_reason": {
+          "code": "route-handler-provider-replay-receipt-missing",
+          "message": "Hosted provider route-handler replay receipt is missing; run the route-handler provider replay collector against a real hosted URL, then import the JSON receipt.",
+          "expected_receipt_path": ".dx/receipts/readiness/route-handler-provider-replay-latest.json",
+          "serializer_receipt_path": ".dx/receipts/readiness/route-handler-provider-replay-latest.sr",
+          "machine_contract_path": ".dx/serializer/receipts-readiness-route-handler-provider-replay-latest.machine",
+          "collect_command": "node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <hosted-url> --matrix examples/template/.dx/www/output/route-handler-conformance-matrix.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/route-handler-provider-replay-latest.json",
+          "import_command": "dx www readiness --import-route-handler-provider-receipt <route-handler-provider-receipt.json> --json --full"
+        },
+        "next_proof": "durable local server-action replay ledger receipt plus provider-hosted route-handler matrix, distributed server-action replay, and CSRF/session replay"
+      },
+      {
+        "id": "primitive-proof",
+        "status": "source-owned-primitive-root-current-project-receipt-needed",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "primitive_proof_receipt": ".dx/receipts/readiness/primitive-proof-latest.json",
+        "stale_reason": {
+          "code": "primitive-proof-project-receipt-missing-root-current",
+          "message": "This WWW project is missing its local primitive foundation receipt, but a current source-owned repo-root primitive proof exists. Regenerate project-local receipts before treating this app as current.",
+          "expected_receipt_path": ".dx/receipts/readiness/primitive-proof-latest.json",
+          "root_receipt_path": "G:\\Dx\\www\\.dx/receipts/readiness/primitive-proof-latest.json",
+          "root_receipt_status": "source-owned-primitive-foundation-current",
+          "serializer_receipt_path": ".dx/receipts/readiness/primitive-proof-latest.sr",
+          "machine_contract_path": ".dx/serializer/receipts-readiness-primitive-proof-latest.machine",
+          "replay_command": "dx www readiness --write-receipts --json",
+          "local_contract_test_command": "node --test benchmarks/dx-www-readiness-primitive-receipts.test.ts"
+        },
+        "next_proof": "regenerate this project's local primitive proof receipt, then prove hosted Image, Font, Script, and Wasm primitive behavior"
+      },
+      {
+        "id": "route-handler-server-action-proof-gaps",
+        "status": "foundation-proven-breadth-gaps-remain",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "next_proof": "multi-provider route-handler/server-action replay and hosted adapter smoke proof"
+      },
+      {
+        "id": "visual-edit-workbench-receipts",
+        "status": "safe-preview-apply-undo-receipts-current-browser-workbench-missing",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "stale_reason": {
+          "code": "visual-edit-browser-replay-attempt-missing",
+          "message": "Visual-edit browser workbench proof exists, but it does not prove that the source-owned Devtools replay entrypoint was invoked.",
+          "visual_replay_status": "missing"
+        },
+        "next_proof": "interactive browser workbench replay for inspect, cascade, preview, apply, undo, and receipt"
+      },
+      {
+        "id": "docs-onboarding-doctor",
+        "status": "public-generated-archive-claim-coverage-wired",
+        "blocks_release": false,
+        "post_release_hardening": true,
+        "next_proof": "durable source-owned docs/onboarding receipt, then docs-doctor command replay and generated/archived warning cleanup"
+      }
+    ],
+    "proof_node_ids": [
+      "tiny-static",
+      "public-vs-evidence-bundle",
+      "native-events",
+      "islands",
+      "reactivity",
+      "production-http-preview",
+      "route-action-runtime",
+      "primitive-proof",
+      "route-handler-server-action-proof-gaps",
+      "visual-edit-workbench-receipts",
+      "docs-onboarding-doctor"
+    ],
+    "replay_commands": [
+      "node --test benchmarks/dx-www-readiness-foundation.test.ts",
+      "node --test benchmarks/dx-www-readiness-production-http-receipt.test.ts",
+      "node --test benchmarks/dx-www-production-preview-tcp-receipt.test.ts",
+      "node --test benchmarks/dx-www-route-handler-provider-replay.test.ts",
+      "node --test benchmarks/dx-www-readiness-proof-graph-receipt.test.ts",
+      "node --test benchmarks/dx-www-readiness-reactivity-receipts.test.ts",
+      "node --test benchmarks/dx-www-readiness-docs-onboarding-receipts.test.ts",
+      "node --test benchmarks/dx-www-readiness-browser-receipt-import.test.ts",
+      "node --test benchmarks/dx-www-readiness-browser-receipt-harness.test.ts",
+      "node --test benchmarks/dx-www-no-js-browser-receipt.test.ts",
+      "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-page-collector",
+      "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-dom-page-collector",
+      "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --from-page-json <page-snapshot.json> --out-dir .dx/receipts/readiness/browser-import-candidates",
+      "node benchmarks/dx-www-no-js-browser-receipt.ts --html-path examples/template/.dx/www/output/app/index.html --out .dx/receipts/readiness/browser-import-candidates/no-js-browser-latest.json",
+      "dx www readiness --import-browser-page-snapshot <page-snapshot.json> --json --full",
+      "node --test benchmarks/dx-www-agent-context-command.test.ts",
+      "node --test benchmarks/dx-www-native-dom-event-binder-replay.test.ts",
+      "node --test benchmarks/tsx-app-router-state-runtime-operations.test.ts",
+      "node --test benchmarks/dx-www-islands-abi-camelcase.test.ts",
+      "node --test benchmarks/dx-www-tiny-static-public-partition-proof.test.ts",
+      "node --test benchmarks/dx-runtime-throughput-receipt-contract.test.ts",
+      "node --test benchmarks/dx-runtime-throughput-orchestrator.test.ts",
+      "node --test benchmarks/dx-www-lighthouse-runtime-guard.test.ts",
+      "node --test benchmarks/dx-www-cdp-paint-receipt.test.ts",
+      "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:3000 --receipt-mode dev --out examples/template/.dx/receipts/check/web-perf/dev/report.json",
+      "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:4173 --receipt-mode static-build --out examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+      "dx check web-perf --url http://127.0.0.1:3000 --device desktop --receipt-mode dev --lighthouse --json",
+      "dx check web-perf --url http://127.0.0.1:4173 --device desktop --receipt-mode static-build --lighthouse --json",
+      "node benchmarks/dx-runtime-throughput-benchmark.ts --dry-run --rounds 2 --out target/framework-comparison-20260531/throughput-dry-run.json",
+      "node benchmarks/dx-runtime-throughput-orchestrator.ts --mode all --jobs 6 --rounds 3 --requests 240 --concurrency 16 --out target/framework-comparison-20260531/throughput.json",
+      "node benchmarks/dx-runtime-throughput-benchmark.ts --rounds 3 --requests 240 --concurrency 16 --www-url http://127.0.0.1:42104/fair-counter --dx-www-bin target/release/dx-www.exe --out target/framework-comparison-20260531/throughput.json",
+      "dx www readiness --import-same-machine-performance-receipt target/framework-comparison-20260531/throughput.json --json --full",
+      "node --test benchmarks/server-action-replay-ledger-honesty.test.ts",
+      "node --test benchmarks/dx-www-readiness-primitive-receipts.test.ts",
+      "node --test benchmarks/dx-devtools-framework-integration.test.ts",
+      "node --test benchmarks/dx-www-docs-doctor.test.ts",
+      "node --test benchmarks/public-framework-tools.test.ts",
+      "node benchmarks/dx-www-production-preview-tcp-receipt.ts --dx-www-bin target/release/dx-www.exe --build-dir examples/template/.dx/www/output --out .dx/receipts/readiness/browser-import-candidates/production-http-tcp-preview-latest.json",
+      "node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <hosted-url> --matrix examples/template/.dx/www/output/route-handler-conformance-matrix.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/route-handler-provider-replay-latest.json",
+      "node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <hosted-url> --deploy-adapter examples/template/.dx/www/output/deploy-adapter.json --provider-adapter examples/template/.dx/www/output/provider-adapter.dx-cloud.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/bundle-provider-replay-latest.json",
+      "dx www readiness --import-bundle-provider-replay-receipt <bundle-provider-replay-receipt.json> --json --full",
+      "cargo test -j 1 -p dx-www-compiler react_app_route_static_mode_emits_tiny_static_no_js_shell --lib",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli deploy_routes_do_not_invent_tiny_static_packet_paths -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli normalized_public_artifact_path_rejects_evidence_and_dot_dx_paths -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli public_runtime_artifact_plan_counts_evidence_but_returns_only_public_paths -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli copy_public_runtime_artifacts_leaves_receipts_outside_vercel_static -- --nocapture",
+      "cargo test -j 1 -p dx-www production_contract_precompressed_asset_sets_encoding_and_decoded_type --no-default-features --features cli --lib",
+      "cargo test -j 1 -p dx-www provider_upload_plan_marks_precompressed_runtime_headers --no-default-features --features cli --lib",
+      "cargo test -j 1 -p dx-www production_contract_server_action_validation_error_is_structured_bad_request --no-default-features --features cli --lib",
+      "cargo test -j 1 -p dx-www deploy_server_actions_exposes_validation_and_replay_contract --no-default-features --features cli --lib",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli dx_build_emits_hosted_preview_bundle_with_forge_receipts -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli dx_preview_production_contract_serves_only_deploy_adapter_outputs -- --nocapture",
+      "dx check --latest-receipt --json",
+      "dx www readiness --json --full",
+      "dx www readiness --write-receipts --json",
+      "dx www readiness --write-visual-edit-replay --json",
+      "dx www readiness --import-state-runtime-browser-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-native-event-browser-binder-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-island-browser-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-visual-edit-browser-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-no-js-browser-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-production-http-tcp-preview-receipt <tcp-receipt.json> --json --full",
+      "dx www readiness --import-route-handler-provider-receipt <route-handler-provider-receipt.json> --json --full",
+      "dx www agent-context --json --full",
+      "dx www docs-doctor --json",
+      "dx www docs-doctor --json --write-receipt",
+      "cargo check -j 1 -p dx-www --no-default-features --features cli --bin dx-www"
+    ]
+  },
+  "readiness_replay_commands": [
+    "node --test benchmarks/dx-www-readiness-foundation.test.ts",
+    "node --test benchmarks/dx-www-readiness-production-http-receipt.test.ts",
+    "node --test benchmarks/dx-www-production-preview-tcp-receipt.test.ts",
+    "node --test benchmarks/dx-www-route-handler-provider-replay.test.ts",
+    "node --test benchmarks/dx-www-readiness-proof-graph-receipt.test.ts",
+    "node --test benchmarks/dx-www-readiness-reactivity-receipts.test.ts",
+    "node --test benchmarks/dx-www-readiness-docs-onboarding-receipts.test.ts",
+    "node --test benchmarks/dx-www-readiness-browser-receipt-import.test.ts",
+    "node --test benchmarks/dx-www-readiness-browser-receipt-harness.test.ts",
+    "node --test benchmarks/dx-www-no-js-browser-receipt.test.ts",
+    "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-page-collector",
+    "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-dom-page-collector",
+    "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --from-page-json <page-snapshot.json> --out-dir .dx/receipts/readiness/browser-import-candidates",
+    "node benchmarks/dx-www-no-js-browser-receipt.ts --html-path examples/template/.dx/www/output/app/index.html --out .dx/receipts/readiness/browser-import-candidates/no-js-browser-latest.json",
+    "dx www readiness --import-browser-page-snapshot <page-snapshot.json> --json --full",
+    "node --test benchmarks/dx-www-agent-context-command.test.ts",
+    "node --test benchmarks/dx-www-native-dom-event-binder-replay.test.ts",
+    "node --test benchmarks/tsx-app-router-state-runtime-operations.test.ts",
+    "node --test benchmarks/dx-www-islands-abi-camelcase.test.ts",
+    "node --test benchmarks/dx-www-tiny-static-public-partition-proof.test.ts",
+    "node --test benchmarks/dx-runtime-throughput-receipt-contract.test.ts",
+    "node --test benchmarks/dx-runtime-throughput-orchestrator.test.ts",
+    "node --test benchmarks/dx-www-lighthouse-runtime-guard.test.ts",
+    "node --test benchmarks/dx-www-cdp-paint-receipt.test.ts",
+    "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:3000 --receipt-mode dev --out examples/template/.dx/receipts/check/web-perf/dev/report.json",
+    "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:4173 --receipt-mode static-build --out examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+    "dx check web-perf --url http://127.0.0.1:3000 --device desktop --receipt-mode dev --lighthouse --json",
+    "dx check web-perf --url http://127.0.0.1:4173 --device desktop --receipt-mode static-build --lighthouse --json",
+    "node benchmarks/dx-runtime-throughput-benchmark.ts --dry-run --rounds 2 --out target/framework-comparison-20260531/throughput-dry-run.json",
+    "node benchmarks/dx-runtime-throughput-orchestrator.ts --mode all --jobs 6 --rounds 3 --requests 240 --concurrency 16 --out target/framework-comparison-20260531/throughput.json",
+    "node benchmarks/dx-runtime-throughput-benchmark.ts --rounds 3 --requests 240 --concurrency 16 --www-url http://127.0.0.1:42104/fair-counter --dx-www-bin target/release/dx-www.exe --out target/framework-comparison-20260531/throughput.json",
+    "dx www readiness --import-same-machine-performance-receipt target/framework-comparison-20260531/throughput.json --json --full",
+    "node --test benchmarks/server-action-replay-ledger-honesty.test.ts",
+    "node --test benchmarks/dx-www-readiness-primitive-receipts.test.ts",
+    "node --test benchmarks/dx-devtools-framework-integration.test.ts",
+    "node --test benchmarks/dx-www-docs-doctor.test.ts",
+    "node --test benchmarks/public-framework-tools.test.ts",
+    "node benchmarks/dx-www-production-preview-tcp-receipt.ts --dx-www-bin target/release/dx-www.exe --build-dir examples/template/.dx/www/output --out .dx/receipts/readiness/browser-import-candidates/production-http-tcp-preview-latest.json",
+    "node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <hosted-url> --matrix examples/template/.dx/www/output/route-handler-conformance-matrix.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/route-handler-provider-replay-latest.json",
+    "node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <hosted-url> --deploy-adapter examples/template/.dx/www/output/deploy-adapter.json --provider-adapter examples/template/.dx/www/output/provider-adapter.dx-cloud.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/bundle-provider-replay-latest.json",
+    "dx www readiness --import-bundle-provider-replay-receipt <bundle-provider-replay-receipt.json> --json --full",
+    "cargo test -j 1 -p dx-www-compiler react_app_route_static_mode_emits_tiny_static_no_js_shell --lib",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli deploy_routes_do_not_invent_tiny_static_packet_paths -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli normalized_public_artifact_path_rejects_evidence_and_dot_dx_paths -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli public_runtime_artifact_plan_counts_evidence_but_returns_only_public_paths -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli copy_public_runtime_artifacts_leaves_receipts_outside_vercel_static -- --nocapture",
+    "cargo test -j 1 -p dx-www production_contract_precompressed_asset_sets_encoding_and_decoded_type --no-default-features --features cli --lib",
+    "cargo test -j 1 -p dx-www provider_upload_plan_marks_precompressed_runtime_headers --no-default-features --features cli --lib",
+    "cargo test -j 1 -p dx-www production_contract_server_action_validation_error_is_structured_bad_request --no-default-features --features cli --lib",
+    "cargo test -j 1 -p dx-www deploy_server_actions_exposes_validation_and_replay_contract --no-default-features --features cli --lib",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli dx_build_emits_hosted_preview_bundle_with_forge_receipts -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli dx_preview_production_contract_serves_only_deploy_adapter_outputs -- --nocapture",
+    "dx check --latest-receipt --json",
+    "dx www readiness --json --full",
+    "dx www readiness --write-receipts --json",
+    "dx www readiness --write-visual-edit-replay --json",
+    "dx www readiness --import-state-runtime-browser-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-native-event-browser-binder-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-island-browser-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-visual-edit-browser-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-no-js-browser-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-production-http-tcp-preview-receipt <tcp-receipt.json> --json --full",
+    "dx www readiness --import-route-handler-provider-receipt <route-handler-provider-receipt.json> --json --full",
+    "dx www agent-context --json --full",
+    "dx www docs-doctor --json",
+    "dx www docs-doctor --json --write-receipt",
+    "cargo check -j 1 -p dx-www --no-default-features --features cli --bin dx-www"
+  ],
+  "replay_commands": [
+    "node --test benchmarks/dx-www-readiness-foundation.test.ts",
+    "node --test benchmarks/dx-www-readiness-production-http-receipt.test.ts",
+    "node --test benchmarks/dx-www-production-preview-tcp-receipt.test.ts",
+    "node --test benchmarks/dx-www-route-handler-provider-replay.test.ts",
+    "node --test benchmarks/dx-www-readiness-proof-graph-receipt.test.ts",
+    "node --test benchmarks/dx-www-readiness-reactivity-receipts.test.ts",
+    "node --test benchmarks/dx-www-readiness-docs-onboarding-receipts.test.ts",
+    "node --test benchmarks/dx-www-readiness-browser-receipt-import.test.ts",
+    "node --test benchmarks/dx-www-readiness-browser-receipt-harness.test.ts",
+    "node --test benchmarks/dx-www-no-js-browser-receipt.test.ts",
+    "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-page-collector",
+    "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-dom-page-collector",
+    "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --from-page-json <page-snapshot.json> --out-dir .dx/receipts/readiness/browser-import-candidates",
+    "node benchmarks/dx-www-no-js-browser-receipt.ts --html-path examples/template/.dx/www/output/app/index.html --out .dx/receipts/readiness/browser-import-candidates/no-js-browser-latest.json",
+    "dx www readiness --import-browser-page-snapshot <page-snapshot.json> --json --full",
+    "node --test benchmarks/dx-www-agent-context-command.test.ts",
+    "node --test benchmarks/dx-www-native-dom-event-binder-replay.test.ts",
+    "node --test benchmarks/tsx-app-router-state-runtime-operations.test.ts",
+    "node --test benchmarks/dx-www-islands-abi-camelcase.test.ts",
+    "node --test benchmarks/dx-www-tiny-static-public-partition-proof.test.ts",
+    "node --test benchmarks/dx-runtime-throughput-receipt-contract.test.ts",
+    "node --test benchmarks/dx-runtime-throughput-orchestrator.test.ts",
+    "node --test benchmarks/dx-www-lighthouse-runtime-guard.test.ts",
+    "node --test benchmarks/dx-www-cdp-paint-receipt.test.ts",
+    "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:3000 --receipt-mode dev --out examples/template/.dx/receipts/check/web-perf/dev/report.json",
+    "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:4173 --receipt-mode static-build --out examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+    "dx check web-perf --url http://127.0.0.1:3000 --device desktop --receipt-mode dev --lighthouse --json",
+    "dx check web-perf --url http://127.0.0.1:4173 --device desktop --receipt-mode static-build --lighthouse --json",
+    "node benchmarks/dx-runtime-throughput-benchmark.ts --dry-run --rounds 2 --out target/framework-comparison-20260531/throughput-dry-run.json",
+    "node benchmarks/dx-runtime-throughput-orchestrator.ts --mode all --jobs 6 --rounds 3 --requests 240 --concurrency 16 --out target/framework-comparison-20260531/throughput.json",
+    "node benchmarks/dx-runtime-throughput-benchmark.ts --rounds 3 --requests 240 --concurrency 16 --www-url http://127.0.0.1:42104/fair-counter --dx-www-bin target/release/dx-www.exe --out target/framework-comparison-20260531/throughput.json",
+    "dx www readiness --import-same-machine-performance-receipt target/framework-comparison-20260531/throughput.json --json --full",
+    "node --test benchmarks/server-action-replay-ledger-honesty.test.ts",
+    "node --test benchmarks/dx-www-readiness-primitive-receipts.test.ts",
+    "node --test benchmarks/dx-devtools-framework-integration.test.ts",
+    "node --test benchmarks/dx-www-docs-doctor.test.ts",
+    "node --test benchmarks/public-framework-tools.test.ts",
+    "node benchmarks/dx-www-production-preview-tcp-receipt.ts --dx-www-bin target/release/dx-www.exe --build-dir examples/template/.dx/www/output --out .dx/receipts/readiness/browser-import-candidates/production-http-tcp-preview-latest.json",
+    "node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <hosted-url> --matrix examples/template/.dx/www/output/route-handler-conformance-matrix.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/route-handler-provider-replay-latest.json",
+    "node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <hosted-url> --deploy-adapter examples/template/.dx/www/output/deploy-adapter.json --provider-adapter examples/template/.dx/www/output/provider-adapter.dx-cloud.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/bundle-provider-replay-latest.json",
+    "dx www readiness --import-bundle-provider-replay-receipt <bundle-provider-replay-receipt.json> --json --full",
+    "cargo test -j 1 -p dx-www-compiler react_app_route_static_mode_emits_tiny_static_no_js_shell --lib",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli deploy_routes_do_not_invent_tiny_static_packet_paths -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli normalized_public_artifact_path_rejects_evidence_and_dot_dx_paths -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli public_runtime_artifact_plan_counts_evidence_but_returns_only_public_paths -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli copy_public_runtime_artifacts_leaves_receipts_outside_vercel_static -- --nocapture",
+    "cargo test -j 1 -p dx-www production_contract_precompressed_asset_sets_encoding_and_decoded_type --no-default-features --features cli --lib",
+    "cargo test -j 1 -p dx-www provider_upload_plan_marks_precompressed_runtime_headers --no-default-features --features cli --lib",
+    "cargo test -j 1 -p dx-www production_contract_server_action_validation_error_is_structured_bad_request --no-default-features --features cli --lib",
+    "cargo test -j 1 -p dx-www deploy_server_actions_exposes_validation_and_replay_contract --no-default-features --features cli --lib",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli dx_build_emits_hosted_preview_bundle_with_forge_receipts -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts -- --nocapture",
+    "cargo test -j 1 -p dx-www --no-default-features --features cli dx_preview_production_contract_serves_only_deploy_adapter_outputs -- --nocapture",
+    "dx check --latest-receipt --json",
+    "dx www readiness --json --full",
+    "dx www readiness --write-receipts --json",
+    "dx www readiness --write-visual-edit-replay --json",
+    "dx www readiness --import-state-runtime-browser-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-native-event-browser-binder-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-island-browser-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-visual-edit-browser-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-no-js-browser-receipt <browser-receipt.json> --json --full",
+    "dx www readiness --import-production-http-tcp-preview-receipt <tcp-receipt.json> --json --full",
+    "dx www readiness --import-route-handler-provider-receipt <route-handler-provider-receipt.json> --json --full",
+    "dx www agent-context --json --full",
+    "dx www docs-doctor --json",
+    "dx www docs-doctor --json --write-receipt",
+    "cargo check -j 1 -p dx-www --no-default-features --features cli --bin dx-www"
+  ],
+  "sections": [
+    {
+      "name": "project",
+      "score": 100,
+      "traffic": "green",
+      "metrics": []
+    },
+    {
+      "name": "forge",
+      "score": 95,
+      "traffic": "green",
+      "metrics": [
+        {
+          "name": "forge_package_lock_present",
+          "value": 0
+        },
+        {
+          "name": "forge_package_lock_packages",
+          "value": 0
+        },
+        {
+          "name": "forge_package_lock_files",
+          "value": 0
+        },
+        {
+          "name": "forge_package_lock_missing_files",
+          "value": 0
+        },
+        {
+          "name": "forge_package_lock_hash_mismatches",
+          "value": 0
+        },
+        {
+          "name": "forge_package_lock_integrity_valid",
+          "value": 0
+        },
+        {
+          "name": "forge_package_receipts",
+          "value": 0
+        },
+        {
+          "name": "forge_package_receipts_missing",
+          "value": 0
+        },
+        {
+          "name": "forge_package_receipts_invalid",
+          "value": 0
+        },
+        {
+          "name": "forge_package_cache_files",
+          "value": 0
+        },
+        {
+          "name": "forge_package_cache_missing_files",
+          "value": 0
+        },
+        {
+          "name": "forge_remotes_configured",
+          "value": 0
+        },
+        {
+          "name": "forge_remotes_unsafe",
+          "value": 0
+        },
+        {
+          "name": "forge_media_assets_tracked",
+          "value": 0
+        },
+        {
+          "name": "forge_media_assets_missing",
+          "value": 0
+        },
+        {
+          "name": "forge_media_chunk_maps",
+          "value": 0
+        },
+        {
+          "name": "forge_media_status_present",
+          "value": 0
+        },
+        {
+          "name": "forge_media_restore_receipts",
+          "value": 0
+        },
+        {
+          "name": "forge_media_cache_files",
+          "value": 0
+        },
+        {
+          "name": "forge_media_cache_missing_files",
+          "value": 0
+        },
+        {
+          "name": "forge_vcs_snapshot_present",
+          "value": 0
+        },
+        {
+          "name": "forge_vcs_snapshot_receipt_present",
+          "value": 0
+        },
+        {
+          "name": "forge_vcs_tracked_files",
+          "value": 0
+        },
+        {
+          "name": "forge_vcs_missing_files",
+          "value": 0
+        },
+        {
+          "name": "forge_vcs_media_files",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_status_present",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_sync_plan_present",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_safe_count",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_boundary_count",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_head_health_receipts",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_head_health_safe_receipts",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_head_health_blocking_checks",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_head_health_missing_required",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_head_health_missing_optional",
+          "value": 0
+        },
+        {
+          "name": "forge_remote_head_health_byte_mismatches",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "packages",
+      "score": 95,
+      "traffic": "green",
+      "metrics": []
+    },
+    {
+      "name": "security",
+      "score": 100,
+      "traffic": "green",
+      "metrics": []
+    },
+    {
+      "name": "maintainability",
+      "score": 100,
+      "traffic": "green",
+      "metrics": []
+    },
+    {
+      "name": "dx-style",
+      "score": 100,
+      "traffic": "green",
+      "metrics": [
+        {
+          "name": "dx_style_source_files",
+          "value": 10
+        },
+        {
+          "name": "dx_style_required_tokens_missing",
+          "value": 0
+        },
+        {
+          "name": "dx_style_hardcoded_color_findings",
+          "value": 0
+        },
+        {
+          "name": "dx_style_tailwind_leakage_findings",
+          "value": 0
+        },
+        {
+          "name": "dx_style_unused_generated_classes",
+          "value": 0
+        },
+        {
+          "name": "dx_style_generated_css_stale",
+          "value": 0
+        },
+        {
+          "name": "dx_style_tailwind_parity_receipt_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_tailwind_parity_contract_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_tailwind_parity_schema_supported",
+          "value": 1
+        },
+        {
+          "name": "dx_style_tailwind_parity_supported_classes",
+          "value": 311
+        },
+        {
+          "name": "dx_style_tailwind_parity_state_alias_supported_classes",
+          "value": 6
+        },
+        {
+          "name": "dx_style_tailwind_parity_unsupported_classes",
+          "value": 0
+        },
+        {
+          "name": "dx_style_tailwind_parity_intentional_differences",
+          "value": 1
+        },
+        {
+          "name": "dx_style_tailwind_equal_output_receipt_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_tailwind_equal_output_contract_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_tailwind_equal_output_schema_supported",
+          "value": 1
+        },
+        {
+          "name": "dx_style_tailwind_equal_output_class_count",
+          "value": 68
+        },
+        {
+          "name": "dx_style_tailwind_equal_output_equal_class_count",
+          "value": 68
+        },
+        {
+          "name": "dx_style_tailwind_equal_output_unsupported_classes",
+          "value": 0
+        },
+        {
+          "name": "dx_style_tailwind_equal_output_live_tailwind_execution",
+          "value": 0
+        },
+        {
+          "name": "dx_style_tailwind_equal_output_full_tailwind_parity",
+          "value": 0
+        },
+        {
+          "name": "dx_style_tailwind_equal_output_fair_speed_benchmark",
+          "value": 0
+        },
+        {
+          "name": "dx_style_browser_compat_receipt_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_browser_compat_contract_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_browser_compat_schema_supported",
+          "value": 1
+        },
+        {
+          "name": "dx_style_browser_compat_class_count",
+          "value": 6
+        },
+        {
+          "name": "dx_style_browser_compat_selector_class_count",
+          "value": 1
+        },
+        {
+          "name": "dx_style_browser_compat_full_autoprefixer_parity",
+          "value": 0
+        },
+        {
+          "name": "dx_style_browser_compat_full_tailwind_postcss_output_parity",
+          "value": 0
+        },
+        {
+          "name": "postcss_compat_supported_count",
+          "value": 18
+        },
+        {
+          "name": "postcss_compat_partial_count",
+          "value": 13
+        },
+        {
+          "name": "postcss_compat_unsupported_count",
+          "value": 0
+        },
+        {
+          "name": "dx_starter_replacement_score",
+          "value": 100
+        },
+        {
+          "name": "full_postcss_plugin_parity",
+          "value": 0
+        },
+        {
+          "name": "postcss_runtime_dependency_required",
+          "value": 0
+        },
+        {
+          "name": "local_postcss_config_required",
+          "value": 0
+        },
+        {
+          "name": "unsupported_transform_warnings",
+          "value": 5
+        },
+        {
+          "name": "dx_style_unsupported_scanned_class_receipt_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_unsupported_css_directive_receipt_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_unsupported_css_directives",
+          "value": 0
+        },
+        {
+          "name": "dx_style_unsupported_scanned_classes",
+          "value": 0
+        },
+        {
+          "name": "dx_style_package_ownership_receipt_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_package_ownership_package_count",
+          "value": 0
+        },
+        {
+          "name": "dx_style_package_ownership_generated_class_count",
+          "value": 0
+        },
+        {
+          "name": "dx_style_package_ownership_unsupported_class_count",
+          "value": 0
+        },
+        {
+          "name": "dx_style_rule_metadata_receipt_present",
+          "value": 1
+        },
+        {
+          "name": "dx_style_rule_metadata_class_count",
+          "value": 10
+        },
+        {
+          "name": "dx_style_rule_metadata_editable_class_count",
+          "value": 10
+        },
+        {
+          "name": "dx_style_rule_metadata_visual_property_count",
+          "value": 9
+        },
+        {
+          "name": "dx_style_rule_metadata_token_reference_count",
+          "value": 6
+        },
+        {
+          "name": "dx_style_rule_metadata_source_file_count",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "zed": {
+    "panel_kind": "project-health",
+    "schema_version": "dx.check.zed_panel.v1",
+    "source": "dx-www",
+    "weight_profile": "dx-check.launch-default",
+    "score_value": 490,
+    "score_max": 500,
+    "score_percent": 98,
+    "score_estimated": true,
+    "status": "ready",
+    "generated_at_unix_ms": 1780302012464,
+    "bucket_count": 6,
+    "blocker_count": 0,
+    "warning_count": 5,
+    "quick_fix_count": 1,
+    "receipt_path": ".dx/receipts/check/check-latest.json",
+    "refresh_command": "dx check --json",
+    "detail_command": "dx check --latest-receipt --json",
+    "blockers": [],
+    "warnings": [
+      {
+        "severity": "warning",
+        "code": "missing-forge-manifest",
+        "message": "Forge source manifest is not present",
+        "evidence_path": ".dx/forge/source-manifest.json",
+        "next_action": "Run dx forge add for source-owned packages so receipts are tracked."
+      },
+      {
+        "severity": "warning",
+        "code": "missing-license",
+        "message": "package `dx-www-template` does not declare a license",
+        "evidence_path": "package.json:license",
+        "next_action": "Add a package license or require a DX reviewed registry receipt."
+      },
+      {
+        "severity": "info",
+        "code": "missing-lock-integrity",
+        "message": "package `dx-www-template` has no nearby lockfile or integrity field",
+        "evidence_path": "package.json",
+        "next_action": "Keep lockfiles or DX registry receipts so package bytes are reviewable."
+      },
+      {
+        "severity": "info",
+        "code": "dx-style-tailwind-parity-intentional-differences",
+        "message": "dx-style parity receipt lists 1 intentional Tailwind difference(s): container",
+        "evidence_path": ".dx/receipts/style/check.json",
+        "next_action": "Keep intentional differences explicit in the compatibility matrix and launch notes."
+      },
+      {
+        "severity": "info",
+        "code": "dx-style-postcss-compat-unsupported-transforms",
+        "message": "dx-style PostCSS replacement still has 5 unsupported or partial transform warning(s): :has() fallback is diagnostic-only, autoprefixer parity is partial until equal-output browser target tests cover the full property matrix, full arbitrary PostCSS plugin parity is not claimed by the DX starter replacement contract, grid legacy prefixing records warnings instead of synthesizing unsafe -ms-grid placement, oklch/color-mix fallback coverage is intentionally narrow",
+        "evidence_path": ".dx/receipts/style/check.json",
+        "next_action": "Keep unsupported transform warnings visible in dx-check, Forge, Zed, and Studio receipts instead of claiming broad PostCSS parity."
+      }
+    ],
+    "quick_fixes": [
+      {
+        "id": "refresh-dx-check",
+        "label": "Refresh dx-check",
+        "next_action": "Run the current fast project check and rewrite the latest receipt.",
+        "risk_level": "safe",
+        "writes_receipts": true,
+        "command": "dx check --json"
+      }
+    ],
+    "sections": [
+      {
+        "id": "project",
+        "title": "Project",
+        "weight": 100,
+        "score": 100,
+        "max_score": 100,
+        "estimated": true,
+        "status": "ready",
+        "summary": "Project score is 100/100 with 0 finding(s)."
+      },
+      {
+        "id": "forge",
+        "title": "Forge",
+        "weight": 100,
+        "score": 95,
+        "max_score": 100,
+        "estimated": true,
+        "status": "ready",
+        "summary": "Forge score is 95/100 with 1 finding(s)."
+      },
+      {
+        "id": "packages",
+        "title": "Packages",
+        "weight": 100,
+        "score": 95,
+        "max_score": 100,
+        "estimated": true,
+        "status": "ready",
+        "summary": "Packages score is 95/100 with 2 finding(s)."
+      },
+      {
+        "id": "security",
+        "title": "Security",
+        "weight": 100,
+        "score": 100,
+        "max_score": 100,
+        "estimated": true,
+        "status": "ready",
+        "summary": "Security score is 100/100 with 0 finding(s)."
+      },
+      {
+        "id": "maintainability",
+        "title": "Maintainability",
+        "weight": 100,
+        "score": 100,
+        "max_score": 100,
+        "estimated": true,
+        "status": "ready",
+        "summary": "Maintainability score is 100/100 with 0 finding(s)."
+      },
+      {
+        "id": "dx-style",
+        "title": "Dx Style",
+        "weight": 100,
+        "score": 100,
+        "max_score": 100,
+        "estimated": true,
+        "status": "ready",
+        "summary": "Dx Style score is 100/100 with 2 finding(s)."
+      }
+    ]
+  }
+}

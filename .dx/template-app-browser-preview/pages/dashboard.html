@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard | www</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <script src="/public/launch-runtime.js" defer></script>
+  </head>
+  <body
+    class="template-app-body"
+    data-dx-scroll-root="document"
+    data-dx-scroll-system="native"
+  >
+    <!-- Generated from examples/template/components/template-app/dashboard-page.tsx and template-data.ts. -->
+    <main
+      id="dashboard-scroll-content"
+      class="dashboard-shell"
+      data-dx-route="/dashboard"
+      data-dx-hot-reload-target="route:/dashboard"
+      data-dx-source="examples/template/components/template-app/dashboard-page.tsx"
+      data-dx-component="template-dashboard-page"
+      data-dx-package="shadcn/ui/button state/zustand tanstack/query reactive/store db/drizzle-sqlite validation/zod forms/react-hook-form instantdb/react content/react-markdown content/fumadocs-next auth/better-auth i18n/next-intl api/trpc ai/vercel-ai payments/stripe-js supabase/client automations/n8n wasm/bindgen 3d/launch-scene animation/motion"
+      data-dx-style-surface="template-dashboard"
+      data-dx-check-surface="template-dashboard"
+      data-dx-forge-reality-score="89"
+      data-dx-forge-score-ceiling="89"
+      data-dx-forge-unbounded-source-score="93"
+      data-dx-forge-score-can-exceed-ceiling="false"
+      data-dx-forge-lock-backed-package-count="20"
+      data-dx-forge-current-cache-manifest-count="20"
+      data-dx-forge-current-lock-backed-manifests="20"
+      data-dx-forge-physical-cache-manifest-count="20"
+      data-dx-forge-physical-cache-manifests="20"
+      data-dx-forge-stale-physical-cache-manifest-count="0"
+      data-dx-forge-stale-physical-cache-manifests="0"
+      data-dx-forge-stale-cache-manifest-paths=""
+      data-dx-forge-cache-manifest-source="package-status-current-manifests"
+      data-dx-forge-cache-manifest-caveat="physical-cache-matches-current-manifests"
+      data-dx-forge-cache-archive-root=".dx/forge/cache-archive"
+      data-dx-forge-cache-archive-manifest-count="3"
+      data-dx-forge-cache-archive-manifest-paths=".dx/forge/cache-archive/stale-20260523/content-fumadocs-next/16.8.12-dx.10/manifest.json .dx/forge/cache-archive/stale-20260523/content-fumadocs-next/16.8.12-dx.9/manifest.json .dx/forge/cache-archive/stale-20260523/content-react-markdown/10.1.0-dx.1/manifest.json"
+      data-dx-forge-cache-archive-caveat="cache-archive-excluded-from-current-lock"
+      data-dx-forge-real-control-count="20"
+      data-dx-forge-real-lock-backed-count="17"
+      data-dx-forge-interactive-surface-count="20"
+      data-dx-forge-status-lane-count="0"
+      data-dx-lane-three-state="state-data-fetching"
+      data-dx-dashboard-filter-state="all"
+      data-dx-optimistic-ui-state="idle"
+      data-dx-reactive-store-runtime="source-owned-template-store"
+      data-dx-reactive-store-provider-boundary="react-context-template-provider"
+      data-dx-reactive-store-snapshot-key="dashboard:all:idle:dark"
+      data-dx-reactive-store-subscription="source-owned-subscription-ready"
+      data-dx-reactive-store-visible-count="4"
+      data-dx-query-cache-status="source-owned-cache-readiness"
+      data-dx-query-cache-runtime="source-owned-template-cache"
+      data-dx-query-cache-key="dx:dashboard:projects:all"
+      data-dx-query-cache-readiness-route="/api/query-cache/readiness"
+      data-dx-query-cache-action-state="no-cache-action-requested"
+      data-dx-query-cache-last-action="none"
+      data-dx-query-cache-ready-count="2"
+      data-dx-query-cache-invalidated-count="0"
+      data-dx-query-cache-optimistic-count="1"
+      data-dx-tanstack-query-runtime-boundary="queryclient-adapter-required"
+      data-dx-theme="dark"
+      data-dx-auth-state="unknown"
+      data-dx-state-storage-key="dx-template-workspace-state"
+      data-dx-form-validation="idle"
+      data-dx-node-modules="forbidden"
+      data-dx-ui-density="comfortable"
+      data-dx-locale="en"
+      data-dx-native-scroll="page"
+      data-dx-scroll-surface="document"
+      data-dx-scroll-lock="none"
+      data-dx-scroll-proof="document-flow-no-lock"
+      data-dx-wheel-scroll="native"
+      data-dx-scroll-content="viewport-plus"
+    >
+      <div class="dx-icon-runtime-markers" data-dx-component="dx-icon-runtime-markers" data-dx-icon-proof="runtime-markers" aria-hidden="true">
+        <span data-dx-icon="pack:auth" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:payments" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:database" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:fumadocs" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:wasm-bindgen" data-icon-source="dx-icons"></span>
+      </div>
+
+      <header class="dashboard-header" data-dx-component="template-dashboard-header">
+        <a class="template-brand" href="/" aria-label="www home">
+          <span class="template-brand-mark" aria-hidden="true"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:workspace" data-dx-icon-set="pack" data-dx-icon-name="workspace"><path d="M2.97 12.92 12 18.15l9.03-5.23" /><path d="M2.97 7.08 12 12.31l9.03-5.23L12 1.85 2.97 7.08Z" /><path d="M2.97 7.08v5.84L12 18.15v-5.84" /><path d="M21.03 7.08v5.84L12 18.15" /><path d="M12 22.15v-4" /></svg></span>
+          <span>www</span>
+        </a>
+        <nav class="dashboard-header-nav" aria-label="Primary dashboard navigation">
+          <a href="#overview" aria-current="page"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:dashboard" data-dx-icon-set="nav" data-dx-icon-name="dashboard"><rect width="7" height="9" x="3" y="3" rx="1" /><rect width="7" height="5" x="14" y="3" rx="1" /><rect width="7" height="9" x="14" y="12" rx="1" /><rect width="7" height="5" x="3" y="16" rx="1" /></svg><span>Overview</span></a>
+          <a href="#tasks"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="status:list-checks" data-dx-icon-set="status" data-dx-icon-name="list-checks"><path d="m3 7 2 2 4-4" /><path d="m3 17 2 2 4-4" /><path d="M13 6h8" /><path d="M13 12h8" /><path d="M13 18h8" /></svg><span>Tasks</span></a>
+          <a href="#team"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:team" data-dx-icon-set="nav" data-dx-icon-name="team"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg><span>Team</span></a>
+          <a href="#reports"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:reports" data-dx-icon-set="nav" data-dx-icon-name="reports"><path d="M3 3v18h18" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></svg><span>Reports</span></a>
+          <a href="#content"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="content:folder-check" data-dx-icon-set="content" data-dx-icon-name="folder-check"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.7-.9L9.6 3.9A2 2 0 0 0 7.9 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" /><path d="m9 13 2 2 4-4" /></svg><span>Content</span></a>
+          <a href="#tools"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:tools" data-dx-icon-set="action" data-dx-icon-name="tools"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94Z" /></svg><span>Tools</span></a>
+          <a href="#settings"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:settings" data-dx-icon-set="nav" data-dx-icon-name="settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.09a2 2 0 0 1-1-1.74v-.51a2 2 0 0 1 1-1.72l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2Z" /><circle cx="12" cy="12" r="3" /></svg><span>Settings</span></a>
+        </nav>
+        <div class="dashboard-header-actions">
+          <a class="template-button" href="/login"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:login" data-dx-icon-set="action" data-dx-icon-name="login"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /></svg><span>Sign in</span></a>
+          <a class="template-button template-button-primary" href="/logout"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:logout" data-dx-icon-set="action" data-dx-icon-name="logout"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /><path d="m16 17 5-5-5-5" /><path d="M21 12H9" /></svg><span>Clear review</span></a>
+        </div>
+        <details
+          class="dashboard-mobile-menu"
+          data-dx-mobile-menu="native-details"
+          data-dx-mobile-menu-scroll-lock="none"
+          data-dx-scroll-trap="false"
+        >
+          <summary class="dashboard-mobile-toggle" aria-label="Open navigation"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:menu" data-dx-icon-set="action" data-dx-icon-name="menu"><path d="M4 6h16" /><path d="M4 12h16" /><path d="M4 18h16" /></svg><span>Menu</span></summary>
+          <div class="dashboard-mobile-sheet">
+            <nav class="dashboard-mobile-nav" aria-label="Mobile dashboard navigation">
+              <a href="#overview" aria-current="page"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:dashboard" data-dx-icon-set="nav" data-dx-icon-name="dashboard"><rect width="7" height="9" x="3" y="3" rx="1" /><rect width="7" height="5" x="14" y="3" rx="1" /><rect width="7" height="9" x="14" y="12" rx="1" /><rect width="7" height="5" x="3" y="16" rx="1" /></svg><span>Overview</span></a>
+          <a href="#tasks"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="status:list-checks" data-dx-icon-set="status" data-dx-icon-name="list-checks"><path d="m3 7 2 2 4-4" /><path d="m3 17 2 2 4-4" /><path d="M13 6h8" /><path d="M13 12h8" /><path d="M13 18h8" /></svg><span>Tasks</span></a>
+          <a href="#team"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:team" data-dx-icon-set="nav" data-dx-icon-name="team"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg><span>Team</span></a>
+          <a href="#reports"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:reports" data-dx-icon-set="nav" data-dx-icon-name="reports"><path d="M3 3v18h18" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></svg><span>Reports</span></a>
+          <a href="#content"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="content:folder-check" data-dx-icon-set="content" data-dx-icon-name="folder-check"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.7-.9L9.6 3.9A2 2 0 0 0 7.9 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" /><path d="m9 13 2 2 4-4" /></svg><span>Content</span></a>
+          <a href="#tools"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:tools" data-dx-icon-set="action" data-dx-icon-name="tools"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94Z" /></svg><span>Tools</span></a>
+          <a href="#settings"><svg class="dx-icon dashboard-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:settings" data-dx-icon-set="nav" data-dx-icon-name="settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.09a2 2 0 0 1-1-1.74v-.51a2 2 0 0 1 1-1.72l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2Z" /><circle cx="12" cy="12" r="3" /></svg><span>Settings</span></a>
+            </nav>
+            <div class="dashboard-mobile-actions">
+              <a class="template-button" href="/login"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:login" data-dx-icon-set="action" data-dx-icon-name="login"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /></svg><span>Sign in</span></a>
+              <a class="template-button template-button-primary" href="/logout"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:logout" data-dx-icon-set="action" data-dx-icon-name="logout"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /><path d="m16 17 5-5-5-5" /><path d="M21 12H9" /></svg><span>Clear review</span></a>
+            </div>
+          </div>
+        </details>
+      </header>
+
+      <div class="dashboard-workspace">
+        <section class="dashboard-main">
+          <header class="dashboard-topbar">
+            <div>
+              <p class="template-kicker">Today</p>
+              <h1>Launch readiness</h1>
+            </div>
+            <div class="dashboard-account">
+              <span data-app-auth-label>Sign-in readiness</span>
+              <strong data-app-session-email>No hosted session</strong>
+            </div>
+          </header>
+
+          <section
+            class="template-card dashboard-panel"
+            data-dx-component="template-auth-session-panel"
+            data-dx-package="auth/better-auth"
+            data-dx-auth-config="missing-config"
+            data-dx-auth-session-source="missing-config"
+            data-dx-auth-profile-gate="missing-config"
+            data-dx-auth-provider="google"
+            data-dx-auth-readiness-endpoint="/api/auth/readiness"
+            data-dx-auth-missing-config="BETTER_AUTH_SECRET,BETTER_AUTH_URL,GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET"
+          >
+            <div class="dashboard-panel-header">
+              <div>
+                <h2>Authentication</h2>
+                <p>Authentication source is present; login, logout, session, and profile actions stay gated until app secrets exist.</p>
+              </div>
+              <a class="template-button" href="/login"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:login" data-dx-icon-set="action" data-dx-icon-name="login"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /></svg><span>Open login</span></a>
+            </div>
+            <div class="activity-list">
+              <div><strong>Google provider</strong><span>Configured as the only selected OAuth plugin surface.</span></div>
+              <div><strong>Profile gate</strong><span>No hosted session or account mutation is claimed while config is missing.</span></div>
+            </div>
+          </section>
+
+          <section id="overview" class="dashboard-grid" data-dx-component="template-dashboard-overview">
+            <article class="template-card stat-card"><span class="stat-card-title"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="status:check" data-dx-icon-set="status" data-dx-icon-name="check"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><path d="m9 11 3 3L22 4" /></svg><span>Launch readiness</span></span><strong id="dashboard-readiness">89%</strong><p>Current readiness across the workspace modules.</p></article>
+            <article class="template-card stat-card"><span class="stat-card-title"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="status:list-checks" data-dx-icon-set="status" data-dx-icon-name="list-checks"><path d="m3 7 2 2 4-4" /><path d="m3 17 2 2 4-4" /><path d="M13 6h8" /><path d="M13 12h8" /><path d="M13 18h8" /></svg><span>Package set</span></span><strong id="dashboard-project-count">20/20</strong><p>The installed package set is aligned; live integrations stay gated.</p></article>
+            <article class="template-card stat-card"><span class="stat-card-title"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:team" data-dx-icon-set="nav" data-dx-icon-name="team"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg><span>Template surfaces</span></span><strong id="dashboard-profile-state">20</strong><p id="dashboard-profile-detail">Interactive surfaces with current template evidence.</p></article>
+          </section>
+
+          <section
+            id="lane7"
+            class="template-card dashboard-panel lane7-forge-systems"
+            data-dx-component="lane7-forge-systems"
+            data-dx-package="shadcn/ui/button animation/motion 3d/launch-scene wasm/bindgen"
+            data-dx-style-surface="lane7-forge-systems"
+            data-dx-node-modules="forbidden"
+            data-dx-lane="7"
+          >
+            <div class="dashboard-panel-header">
+              <div>
+                <h2>UI, Motion, 3D, and WASM</h2>
+                <p>Interactive UI systems stay ready while renderer and compute checks remain gated.</p>
+              </div>
+              <output class="lane7-score" data-dx-score-scope="lane7-package-summary" data-dx-lane7-score="78">78/100</output>
+            </div>
+            <div class="lane7-package-strip" aria-label="Lane 7 package status">
+              <article data-dx-package="shadcn/ui/button" data-dx-lane7-package-reality="real-lock-backed" data-dx-lane7-package-score="84">
+                <svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:ui-components" data-dx-icon-set="pack" data-dx-icon-name="ui-components"><rect width="7" height="9" x="3" y="3" rx="1" /><rect width="7" height="5" x="14" y="3" rx="1" /><rect width="7" height="9" x="14" y="12" rx="1" /><rect width="7" height="5" x="3" y="16" rx="1" /></svg>
+                <span>UI Components</span>
+                <strong data-dx-score-scope="lane7-package-readiness-row" data-dx-package-score="84">84/100</strong>
+              </article>
+              <article data-dx-package="wasm/bindgen" data-dx-lane7-package-reality="source-owned-not-runtime-proven" data-dx-lane7-package-score="70">
+                <svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:wasm-bindgen" data-dx-icon-set="pack" data-dx-icon-name="wasm-bindgen"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg>
+                <span>WebAssembly Bridge</span>
+                <strong data-dx-score-scope="lane7-package-readiness-row" data-dx-package-score="70">70/100</strong>
+              </article>
+              <article data-dx-package="3d/launch-scene" data-dx-lane7-package-reality="real-lock-backed" data-dx-lane7-package-score="84">
+                <svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:three-scene" data-dx-icon-set="pack" data-dx-icon-name="three-scene"><path d="M2.97 12.92 12 18.15l9.03-5.23" /><path d="M2.97 7.08 12 12.31l9.03-5.23L12 1.85 2.97 7.08Z" /><path d="M2.97 7.08v5.84L12 18.15v-5.84" /><path d="M21.03 7.08v5.84L12 18.15" /><path d="M12 22.15v-4" /></svg>
+                <span>3D Scene System</span>
+                <strong data-dx-score-scope="lane7-package-readiness-row" data-dx-package-score="84">84/100</strong>
+              </article>
+              <article data-dx-package="animation/motion" data-dx-lane7-package-reality="source-owned-not-runtime-proven" data-dx-lane7-package-score="72">
+                <svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:motion" data-dx-icon-set="pack" data-dx-icon-name="motion"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg>
+                <span>Motion &amp; Animation</span>
+                <strong data-dx-score-scope="lane7-package-readiness-row" data-dx-package-score="72">72/100</strong>
+              </article>
+            </div>
+            <div class="lane7-boundary-grid">
+              <article
+                class="lane7-motion-control"
+                data-dx-component="lane7-motion-control"
+                data-dx-dashboard-workflow="lane7-motion-local-state"
+                data-dx-motion-interaction="dashboard-stage-toggle"
+                data-dx-motion-state="source-owned"
+                data-dx-package="animation/motion"
+                data-template-module="lane7-motion-stage"
+              >
+                <div>
+                  <svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:motion" data-dx-icon-set="pack" data-dx-icon-name="motion"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg>
+                  <strong>Motion & Animation</strong>
+                  <output data-template-module-status>Source-owned motion stage ready</output>
+                </div>
+                <button class="template-button template-button-primary" type="button" data-template-module-action="lane7-motion-stage"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:rocket" data-dx-icon-set="action" data-dx-icon-name="rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg><span>Advance stage</span></button>
+              </article>
+              <article
+                data-dx-lane7-boundary="lock-backed-source-owned-3d"
+                data-dx-package="3d/launch-scene"
+                data-dx-runtime-proof="false"
+                data-dx-style-surface="launch-scene"
+              >
+                <svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:three-scene" data-dx-icon-set="pack" data-dx-icon-name="three-scene"><path d="M2.97 12.92 12 18.15l9.03-5.23" /><path d="M2.97 7.08 12 12.31l9.03-5.23L12 1.85 2.97 7.08Z" /><path d="M2.97 7.08v5.84L12 18.15v-5.84" /><path d="M21.03 7.08v5.84L12 18.15" /><path d="M12 22.15v-4" /></svg>
+                <strong>3D Scene System</strong>
+                <span>Scene controls are ready for review; live renderer checks stay gated.</span>
+              </article>
+              <article
+                data-dx-lane7-boundary="source-only-wasm"
+                data-dx-package="wasm/bindgen"
+                data-dx-runtime-proof="false"
+                data-dx-style-surface="theme-token"
+                data-dx-wasm-readiness="missing-artifact"
+                data-dx-wasm-source-file="wasm/bindgen/readiness.ts"
+              >
+                <svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:wasm-bindgen" data-dx-icon-set="pack" data-dx-icon-name="wasm-bindgen"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg>
+                <strong>WebAssembly Bridge</strong>
+                <span>Source-owned wasm-bindgen helpers are present; no generated .wasm artifact is configured.</span>
+                <small>Add an app-owned wasm32 build and generated wasm-bindgen output before claiming runtime proof.</small>
+              </article>
+            </div>
+          </section>
+
+          <section id="tasks" class="template-card dashboard-panel" data-dx-component="template-project-panel">
+            <div class="dashboard-panel-header">
+              <div><h2>Task queue</h2><p>Filter real dashboard rows and keep priority items visible.</p></div>
+              <div class="template-segmented" role="group" aria-label="Project filter">
+                <button type="button" data-dashboard-filter="all" aria-pressed="true">All</button>
+                <button type="button" data-dashboard-filter="ready" aria-pressed="false">Ready</button>
+                <button type="button" data-dashboard-filter="review" aria-pressed="false">Review</button>
+              </div>
+            </div>
+            <div class="priority-row"><div><strong>Dashboard polish</strong><p>Keep the next release focused on ready modules and gated integrations.</p></div><button class="template-button template-button-primary" type="button" data-template-module-action="query-refresh"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:rocket" data-dx-icon-set="action" data-dx-icon-name="rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg><span>Refresh status</span></button></div>
+            <div class="project-table" role="table" aria-label="Project queue">
+              <div role="row" class="project-table-head"><span role="columnheader">Project</span><span role="columnheader">Owner</span><span role="columnheader">State</span></div>
+              <div role="row" data-project-state="ready">
+                <strong role="cell">Customer portal</strong>
+                <span role="cell">Mina</span>
+                <span role="cell">ready</span>
+              </div>
+              <div role="row" data-project-state="review">
+                <strong role="cell">Account profile</strong>
+                <span role="cell">Yusuf</span>
+                <span role="cell">review</span>
+              </div>
+              <div role="row" data-project-state="ready">
+                <strong role="cell">Mobile navigation</strong>
+                <span role="cell">Asha</span>
+                <span role="cell">ready</span>
+              </div>
+              <div role="row" data-project-state="review">
+                <strong role="cell">Billing settings</strong>
+                <span role="cell">Noor</span>
+                <span role="cell">review</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="dashboard-split">
+            <article id="team" class="template-card dashboard-panel">
+              <div><h2>Team rhythm</h2><p>A short operating view for the next standup.</p></div>
+              <div class="activity-list">
+                <div><strong>Design review</strong><span>Header, footer, and mobile navigation are ready for review.</span></div>
+                <div><strong>API contract</strong><span>Dashboard actions return clear states without leaving the page.</span></div>
+                <div><strong>Mobile QA</strong><span>Responsive sheets, filters, and forms stay reachable on small screens.</span></div>
+              </div>
+            </article>
+            <article id="reports" class="template-card dashboard-panel">
+              <h2>Weekly signal</h2>
+              <div class="report-list">
+                <div><span>Delivery</span><strong>72%</strong><div class="template-progress"><span style="width: 72%"></span></div></div>
+                <div><span>Quality</span><strong>88%</strong><div class="template-progress"><span style="width: 88%"></span></div></div>
+                <div><span>Response</span><strong>64%</strong><div class="template-progress"><span style="width: 64%"></span></div></div>
+              </div>
+            </article>
+          </section>
+
+          <section
+            id="state"
+            class="template-card dashboard-panel lane-three-state-panel"
+            data-dx-component="lane-three-state-data-panel"
+            data-dx-lane-three-state="state-data-fetching"
+            data-dx-package="state/zustand reactive/store tanstack/query"
+            data-dx-reactive-store-provider="dashboard-context"
+            data-dx-reactive-store-runtime="source-owned-template-store"
+            data-dx-reactive-store-provider-boundary="react-context-template-provider"
+            data-dx-reactive-store-snapshot-key="dashboard:all:idle:dark"
+            data-dx-reactive-store-subscription="source-owned-subscription-ready"
+            data-dx-reactive-store-visible-count="4"
+            data-dx-query-cache-status="source-owned-cache-readiness"
+            data-dx-query-cache-runtime="source-owned-template-cache"
+            data-dx-query-cache-key="dx:dashboard:projects:all"
+            data-dx-query-cache-readiness-route="/api/query-cache/readiness"
+            data-dx-query-cache-action-state="no-cache-action-requested"
+            data-dx-query-cache-last-action="none"
+            data-dx-query-cache-ready-count="2"
+            data-dx-query-cache-invalidated-count="0"
+            data-dx-query-cache-optimistic-count="1"
+            data-dx-tanstack-query-runtime-boundary="queryclient-adapter-required"
+            data-dx-dashboard-filter-state="all"
+            data-dx-optimistic-ui-state="idle"
+          >
+            <div class="dashboard-panel-header">
+              <div><h2>State and cache readiness</h2><p>Dashboard state, reactive snapshots, and cache readiness are visible without hosted services.</p></div>
+              <output id="lane-three-cache-meter" class="lane-three-cache-meter">2/2</output>
+            </div>
+            <div class="lane-three-state-grid">
+              <div><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:state" data-dx-icon-set="pack" data-dx-icon-name="state"><path d="M3 3v18h18" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></svg><strong>Dashboard filter</strong><span id="lane-three-filter">all</span></div>
+              <div><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="state:bolt" data-dx-icon-set="state" data-dx-icon-name="bolt"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg><strong>Reactive snapshot</strong><span id="lane-three-visible-rows">4 visible rows</span></div>
+              <div><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:query" data-dx-icon-set="pack" data-dx-icon-name="query"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg><strong>Query cache</strong><span id="lane-three-query-label">Local cache ready</span></div>
+              <div><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="status:check" data-dx-icon-set="status" data-dx-icon-name="check"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><path d="m9 11 3 3L22 4" /></svg><strong>Optimistic update</strong><span id="lane-three-optimistic">No optimistic receipt queued</span></div>
+            </div>
+          </section>
+
+          <section id="tools" class="template-card dashboard-panel package-module-board" data-dx-component="forge-package-reality-dashboard-shell" data-dx-package="shadcn/ui/button state/zustand tanstack/query reactive/store db/drizzle-sqlite validation/zod forms/react-hook-form instantdb/react content/react-markdown content/fumadocs-next auth/better-auth i18n/next-intl api/trpc ai/vercel-ai payments/stripe-js supabase/client automations/n8n wasm/bindgen 3d/launch-scene animation/motion">
+            <section class="forge-reality-dashboard" data-dx-component="forge-package-reality-dashboard" data-dx-forge-reality-score="89" data-dx-forge-lock-backed-package-count="20" data-dx-forge-current-cache-manifest-count="20" data-dx-forge-current-lock-backed-manifests="20" data-dx-forge-physical-cache-manifest-count="20" data-dx-forge-physical-cache-manifests="20" data-dx-forge-stale-physical-cache-manifest-count="0" data-dx-forge-stale-physical-cache-manifests="0" data-dx-forge-stale-cache-manifest-paths="" data-dx-forge-cache-manifest-source="package-status-current-manifests" data-dx-forge-cache-manifest-caveat="physical-cache-matches-current-manifests" data-dx-forge-cache-archive-root=".dx/forge/cache-archive" data-dx-forge-cache-archive-manifest-count="3" data-dx-forge-cache-archive-manifest-paths=".dx/forge/cache-archive/stale-20260523/content-fumadocs-next/16.8.12-dx.10/manifest.json .dx/forge/cache-archive/stale-20260523/content-fumadocs-next/16.8.12-dx.9/manifest.json .dx/forge/cache-archive/stale-20260523/content-react-markdown/10.1.0-dx.1/manifest.json" data-dx-forge-cache-archive-caveat="cache-archive-excluded-from-current-lock" data-dx-forge-real-control-count="20" data-dx-forge-real-lock-backed-count="17" data-dx-forge-interactive-surface-count="20" data-dx-forge-status-lane-count="0" data-dx-forge-provider-gated-count="6" data-dx-forge-provider-boundary-coverage="true" data-dx-forge-readiness-execution-proof-count="10" data-dx-forge-readiness-execution-proof-package-count="10" data-dx-forge-readiness-execution-proof-packages="ai/vercel-ai api/trpc auth/better-auth automations/n8n db/drizzle-sqlite i18n/next-intl instantdb/react payments/stripe-js supabase/client tanstack/query" data-dx-forge-adapter-boundary-readiness-count="6" data-dx-forge-source-owned-limited-proof-count="6" data-dx-forge-source-guard-only-count="0" data-dx-forge-public-summary-first="true" data-dx-forge-audit-details-default="collapsed">
+              <div class="forge-reality-summary" aria-label="Package readiness summary">
+                <div><span>Launch readiness</span><strong>89/100</strong></div>
+                <div><span>Package set</span><strong>20/20</strong></div>
+                <div><span>Current packages</span><strong>20</strong></div>
+                <div><span>Interactive surfaces</span><strong>20</strong></div>
+                <div><span>Setup required</span><strong>6</strong></div>
+                <div><span>Runtime model</span><strong>App source</strong></div>
+                <div><span>Route checks</span><strong>10</strong></div>
+              </div>
+              <div class="forge-maturity-strip" aria-label="Package maturity summary" data-dx-component="forge-package-maturity-summary" data-dx-package-maturity-summary="visible">
+                <article class="forge-maturity-card" data-dx-package-maturity-kind="lock-backed-package" data-dx-package-maturity-count="2">
+                <strong>Ready modules</strong>
+                <span>Controls that are usable without provider setup.</span>
+                <output>2</output>
+              </article>
+              <article class="forge-maturity-card" data-dx-package-maturity-kind="provider-gated" data-dx-package-maturity-count="6">
+                <strong>Provider setup</strong>
+                <span>Credentials are required before live provider execution.</span>
+                <output>6</output>
+              </article>
+              <article class="forge-maturity-card" data-dx-package-maturity-kind="adapter-boundary-readiness" data-dx-package-maturity-count="6">
+                <strong>Adapter boundary</strong>
+                <span>Readiness is visible while app-owned adapters remain gated.</span>
+                <output>6</output>
+              </article>
+              <article class="forge-maturity-card" data-dx-package-maturity-kind="source-owned-limited-proof" data-dx-package-maturity-count="6">
+                <strong>Source-ready modules</strong>
+                <span>Editable files are present; browser evidence is pending.</span>
+                <output>6</output>
+              </article>
+              <article class="forge-maturity-card" data-dx-package-maturity-kind="source-guard-only" data-dx-package-maturity-count="0">
+                <strong>Guarded source</strong>
+                <span>Guarded source evidence only, with no active package lane.</span>
+                <output>0</output>
+              </article>
+              </div>
+              <div class="forge-reality-controls" data-dx-component="launch-evidence-summary" data-dx-launch-evidence-score-ceiling="89" data-dx-launch-evidence-browser-proof="false" data-dx-launch-evidence-provider-proof="false">
+                <article class="package-module forge-reality-control" data-dx-launch-evidence-id="package-receipts" data-dx-launch-evidence-status="ready" data-dx-launch-evidence-score-ceiling="89" data-dx-launch-evidence-browser-proof="false" data-dx-launch-evidence-provider-proof="false" data-dx-launch-evidence-routes="" data-dx-launch-evidence-packages="">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="status:check" data-dx-icon-set="status" data-dx-icon-name="check"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><path d="m9 11 3 3L22 4" /></svg><span>Package health</span></strong>
+                <span>Installed package set and current cache manifests agree.</span>
+                <small>Included in current score.</small>
+                <footer><span class="forge-reality-level">Ready</span><output>20/20</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-launch-evidence-id="browser-route-proof" data-dx-launch-evidence-status="not-attached" data-dx-launch-evidence-score-ceiling="89" data-dx-launch-evidence-browser-proof="false" data-dx-launch-evidence-provider-proof="false" data-dx-launch-evidence-routes="/ /dashboard /login" data-dx-launch-evidence-packages="">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Browser check</span></strong>
+                <span>Browser evidence is not attached, so app readiness stays capped at 89.</span>
+                <small>Needed to lift score cap.</small>
+                <footer><span class="forge-reality-level">Attach preview</span><output>Pending</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-launch-evidence-id="live-provider-proof" data-dx-launch-evidence-status="provider-gated" data-dx-launch-evidence-score-ceiling="89" data-dx-launch-evidence-browser-proof="false" data-dx-launch-evidence-provider-proof="false" data-dx-launch-evidence-routes="" data-dx-launch-evidence-packages="auth/better-auth instantdb/react supabase/client payments/stripe-js ai/vercel-ai automations/n8n">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:tools" data-dx-icon-set="action" data-dx-icon-name="tools"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94Z" /></svg><span>Live integrations</span></strong>
+                <span>Credentialed Authentication, data, payments, AI, and automation runs remain app-owned provider work.</span>
+                <small>Required for live-provider claims.</small>
+                <footer><span class="forge-reality-level">Setup required</span><output>6 gated</output></footer>
+              </article>
+              </div>
+              <div class="dashboard-panel-header"><div><h2>Workspace controls</h2><p>Controls ready in this template are active here. Setup-gated integrations stay visible in details.</p></div></div>
+              <div class="forge-reality-note provider-gated-readiness lane5-provider-readiness" data-dx-component="provider-gated-readiness" data-dx-provider-readiness="all-provider-gated-packages" data-dx-lane5-provider-readiness="payments-ai-automations" data-dx-provider-runtime-proof="false" data-dx-provider-secret-values="[]">
+                <strong>Provider readiness</strong>
+                <span>Authentication, data, payments, AI, and automations expose setup checks and dry-run states. Live provider work starts only after app-owned credentials are configured.</span>
+                <div class="forge-reality-controls">
+                  <article class="package-module forge-reality-control provider-gated-card lane5-provider-card" data-dx-package-maturity="provider-gated" data-dx-package-id="auth/better-auth" data-dx-provider-endpoint="/api/auth/readiness" data-dx-provider-boundary-endpoints="/api/auth/[...all] /api/auth/session" data-dx-provider-method="GET" data-dx-provider-boundary="No OAuth redirect, cookie session, database adapter, or email flow is executed." data-dx-provider-runtime-execution="runtimeExecution: false" data-dx-provider-secret-values="secretValues: []" data-dx-template-readiness-receipt=".dx/forge/template-readiness/authentication.json" data-dx-runtime-proof="false">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:login" data-dx-icon-set="action" data-dx-icon-name="login"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /></svg><span>Authentication</span></strong>
+                <span>Review Better Auth secret, base URL, Google OAuth, and database adapter readiness.</span>
+                <small>/api/auth/readiness</small>
+                <small>No OAuth redirect, cookie session, database adapter, or email flow is executed.</small>
+                <footer><span class="forge-reality-level" data-dx-forge-reality-level="provider-boundary">Provider-boundary</span><output>Adapter gated</output></footer>
+              </article>
+                <article class="package-module forge-reality-control provider-gated-card lane5-provider-card" data-dx-package-maturity="provider-gated" data-dx-package-id="instantdb/react" data-dx-provider-endpoint="/api/instant/readiness" data-dx-provider-boundary-endpoints="/api/database-api/readiness" data-dx-provider-method="GET" data-dx-provider-boundary="No hosted app connection, auth rules, realtime transport, storage, or stream execution is performed." data-dx-provider-runtime-execution="runtimeExecution: false" data-dx-provider-secret-values="secretValues: []" data-dx-template-readiness-receipt=".dx/forge/template-readiness/database-api.json" data-dx-runtime-proof="false">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:team" data-dx-icon-set="nav" data-dx-icon-name="team"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg><span>Realtime App Database</span></strong>
+                <span>Validate local Instant app configuration before hosted realtime work.</span>
+                <small>/api/instant/readiness</small>
+                <small>No hosted app connection, auth rules, realtime transport, storage, or stream execution is performed.</small>
+                <footer><span class="forge-reality-level" data-dx-forge-reality-level="provider-boundary">Provider-boundary</span><output>Provider gated</output></footer>
+              </article>
+                <article class="package-module forge-reality-control provider-gated-card lane5-provider-card" data-dx-package-maturity="provider-gated" data-dx-package-id="supabase/client" data-dx-provider-endpoint="/api/supabase/readiness" data-dx-provider-boundary-endpoints="/api/database-api/readiness" data-dx-provider-method="GET" data-dx-provider-boundary="No hosted Supabase request, RLS migration, auth redirect, write, or realtime subscription is executed." data-dx-provider-runtime-execution="runtimeExecution: false" data-dx-provider-secret-values="secretValues: []" data-dx-template-readiness-receipt=".dx/forge/template-readiness/database-api.json" data-dx-runtime-proof="false">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:database" data-dx-icon-set="pack" data-dx-icon-name="database"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" /><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" /></svg><span>Backend Platform Client</span></strong>
+                <span>Validate local Supabase public environment before hosted reads, writes, auth, RLS, or realtime.</span>
+                <small>/api/supabase/readiness</small>
+                <small>No hosted Supabase request, RLS migration, auth redirect, write, or realtime subscription is executed.</small>
+                <footer><span class="forge-reality-level" data-dx-forge-reality-level="provider-boundary">Provider-boundary</span><output>Provider gated</output></footer>
+              </article>
+                <article class="package-module forge-reality-control provider-gated-card lane5-provider-card" data-dx-package-maturity="provider-gated" data-dx-package-id="payments/stripe-js" data-dx-provider-endpoint="/api/payments/stripe-js/readiness" data-dx-provider-boundary-endpoints="/api/checkout /api/stripe/webhook" data-dx-provider-method="GET/POST" data-dx-provider-boundary="No Checkout Session, redirect, webhook verification, or fulfillment is executed." data-dx-provider-runtime-execution="runtimeExecution: false" data-dx-provider-secret-values="secretValues: []" data-dx-template-readiness-receipt=".dx/forge/template-readiness/payments.json" data-dx-runtime-proof="false">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Payments</span></strong>
+                <span>Review Stripe keys, Price IDs, Checkout, and webhook signing before live billing.</span>
+                <small>/api/payments/stripe-js/readiness</small>
+                <small>No Checkout Session, redirect, webhook verification, or fulfillment is executed.</small>
+                <footer><span class="forge-reality-level" data-dx-forge-reality-level="provider-boundary">Provider-boundary</span><output>Setup required</output></footer>
+              </article>
+                <article class="package-module forge-reality-control provider-gated-card lane5-provider-card" data-dx-package-maturity="provider-gated" data-dx-package-id="ai/vercel-ai" data-dx-provider-endpoint="/api/ai/chat" data-dx-provider-boundary-endpoints="/api/ai/agent /api/ai/image /api/ai/object /api/ai/speech /api/ai/text-stream /api/ai/transcribe /api/ai/ui-stream /api/ai/upload-file /api/ai/video" data-dx-provider-method="POST" data-dx-provider-boundary="No model streaming, billing, persistence, or safety policy proof is claimed." data-dx-provider-runtime-execution="runtimeExecution: false" data-dx-provider-secret-values="secretValues: []" data-dx-template-readiness-receipt=".dx/forge/template-readiness/ai-sdk.json" data-dx-runtime-proof="false">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="ai:brain" data-dx-icon-set="ai" data-dx-icon-name="brain"><path d="M12 5a3 3 0 0 0-5.83-1M12 5a3 3 0 0 1 5.83-1M12 5v14" /><path d="M7 8H4a2 2 0 0 0 0 4h1" /><path d="M17 8h3a2 2 0 0 1 0 4h-1" /><path d="M7 16H5a2 2 0 1 0 0 4h2" /><path d="M17 16h2a2 2 0 1 1 0 4h-2" /></svg><span>AI SDK</span></strong>
+                <span>Connect AI_PROVIDER_API_KEY before streaming model output.</span>
+                <small>/api/ai/chat</small>
+                <small>No model streaming, billing, persistence, or safety policy proof is claimed.</small>
+                <footer><span class="forge-reality-level" data-dx-forge-reality-level="provider-boundary">Provider-boundary</span><output>Provider key required</output></footer>
+              </article>
+                <article class="package-module forge-reality-control provider-gated-card lane5-provider-card" data-dx-package-maturity="provider-gated" data-dx-package-id="automations/n8n" data-dx-provider-endpoint="/api/automations/n8n/dry-run" data-dx-provider-boundary-endpoints="/api/automations/n8n/dry-run" data-dx-provider-method="GET/POST" data-dx-provider-boundary="No provider APIs, webhook registration, or n8n execution is performed." data-dx-provider-runtime-execution="runtimeExecution: false" data-dx-provider-secret-values="secretValues: []" data-dx-template-readiness-receipt=".dx/forge/template-readiness/automation-connectors.json" data-dx-runtime-proof="false">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="state:bolt" data-dx-icon-set="state" data-dx-icon-name="bolt"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg><span>Automation Connectors</span></strong>
+                <span>Review connector metadata or draft a local run handoff.</span>
+                <small>/api/automations/n8n/dry-run</small>
+                <small>No provider APIs, webhook registration, or n8n execution is performed.</small>
+                <footer><span class="forge-reality-level" data-dx-forge-reality-level="provider-boundary">Provider-boundary</span><output>Credential gated</output></footer>
+              </article>
+                </div>
+              </div>
+              <div class="forge-reality-controls">
+                <article class="package-module forge-reality-control" data-dx-package-id="shadcn/ui/button" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="lock-backed-package" data-template-module="ui-density" data-module-active="false" style="--module-index: 0">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:ui-components" data-dx-icon-set="pack" data-dx-icon-name="ui-components"><rect width="7" height="9" x="3" y="3" rx="1" /><rect width="7" height="5" x="14" y="3" rx="1" /><rect width="7" height="9" x="14" y="12" rx="1" /><rect width="7" height="5" x="3" y="16" rx="1" /></svg><span>Forge Button controls</span></strong>
+                <span>Renders visible dashboard controls through the selected button primitive.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Installed</span><span class="forge-maturity-level" data-dx-package-maturity="lock-backed-package">Installed</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="ui-density"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Toggle density</span></button><output data-template-module-status>Comfortable</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="state/zustand" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="lock-backed-package" data-template-module="state-counter" data-module-active="true" style="--module-index: 1">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:state" data-dx-icon-set="pack" data-dx-icon-name="state"><path d="M3 3v18h18" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></svg><span>Forge state counter</span></strong>
+                <span>Drives active control state and output values with the cached Zustand-compatible store.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Installed</span><span class="forge-maturity-level" data-dx-package-maturity="lock-backed-package">Installed</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="state-counter"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Increment</span></button><output data-template-module-status>0 updates</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="tanstack/query" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="adapter-boundary-readiness" data-template-module="query-refresh" data-module-active="false" style="--module-index: 2">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:query" data-dx-icon-set="pack" data-dx-icon-name="query"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg><span>Query cache readiness</span></strong>
+                <span>Runs a dashboard cache readiness model and App Router readiness route while live QueryClient setup remains app-owned.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="lock-backed-adapter-boundary">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="query-refresh"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Refresh cache</span></button><output data-template-module-status>Local cache ready</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="reactive/store" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="source-owned-limited-proof" data-template-module="reactive-context" data-module-active="false" style="--module-index: 3">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="state:bolt" data-dx-icon-set="state" data-dx-icon-name="bolt"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg><span>Reactive context</span></strong>
+                <span>Runs a template store and React context snapshot for local dashboard state without claiming app-wide persistence.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="reactive-context"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Toggle signal</span></button><output data-template-module-status>9 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="db/drizzle-sqlite" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="adapter-boundary-readiness" data-template-module="database-schema" data-module-active="false" style="--module-index: 4">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:database" data-dx-icon-set="pack" data-dx-icon-name="database"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" /><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" /></svg><span>Database schema readiness</span></strong>
+                <span>Surfaces the Database ORM schema, read model, workflow, and readiness route without claiming a live database file.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="database-schema"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Inspect schema</span></button><output data-template-module-status>18 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="validation/zod" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="adapter-boundary-readiness" data-template-module="validation-settings" data-module-active="false" style="--module-index: 5">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:validation" data-dx-icon-set="pack" data-dx-icon-name="validation"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.77 4 4 0 0 1 0 6.76 4 4 0 0 1-4.78 4.77 4 4 0 0 1-6.74 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m9 12 2 2 4-4" /></svg><span>Zod settings validation</span></strong>
+                <span>Surfaces the dashboard settings schema as a validation readiness control without claiming production form execution.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="validation-settings"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Inspect schema</span></button><output data-template-module-status>19 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="forms/react-hook-form" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="adapter-boundary-readiness" data-template-module="form-shell" data-module-active="false" style="--module-index: 6">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:forms" data-dx-icon-set="pack" data-dx-icon-name="forms"><path d="m3 7 2 2 4-4" /><path d="m3 17 2 2 4-4" /><path d="M13 6h8" /><path d="M13 12h8" /><path d="M13 18h8" /></svg><span>RHF form shell</span></strong>
+                <span>Surfaces the form shell and field helpers without claiming a live submit lifecycle.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="form-shell"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Review form</span></button><output data-template-module-status>6 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="instantdb/react" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="provider-gated" data-template-module="instant-readiness" data-module-active="false" style="--module-index: 7">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:team" data-dx-icon-set="nav" data-dx-icon-name="team"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg><span>Realtime schema readiness</span></strong>
+                <span>Surfaces InstantDB schema and readiness while hosted app id and realtime transport remain app-owned.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="instant-readiness"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Check room</span></button><output data-template-module-status>28 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="content/react-markdown" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="adapter-boundary-readiness" data-template-module="markdown-content" data-module-active="false" style="--module-index: 8">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="content:folder-check" data-dx-icon-set="content" data-dx-icon-name="folder-check"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.7-.9L9.6 3.9A2 2 0 0 0 7.9 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" /><path d="m9 13 2 2 4-4" /></svg><span>Markdown renderer</span></strong>
+                <span>Surfaces Markdown rendering, safety audit, and content checks without claiming a hosted CMS pipeline.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="markdown-content"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Review renderer</span></button><output data-template-module-status>13 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="content/fumadocs-next" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="source-owned-limited-proof" data-template-module="docs-system" data-module-active="false" style="--module-index: 9">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="content:folder-check" data-dx-icon-set="content" data-dx-icon-name="folder-check"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.7-.9L9.6 3.9A2 2 0 0 0 7.9 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" /><path d="m9 13 2 2 4-4" /></svg><span>Docs system route map</span></strong>
+                <span>Surfaces docs route, content source, readiness route, and page-tree icons while hosted search and production indexing remain app-owned.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="docs-system"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Inspect docs</span></button><output data-template-module-status>33 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="auth/better-auth" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="provider-gated" data-template-module="auth-readiness" data-module-active="false" style="--module-index: 10">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:login" data-dx-icon-set="action" data-dx-icon-name="login"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /></svg><span>Authentication readiness</span></strong>
+                <span>App Router auth routes, app-owned server boundary, readiness route, and login/logout/session/profile/missing-config gates</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="auth-readiness"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Review gates</span></button><output data-template-module-status>Missing config gates</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="i18n/next-intl" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="source-owned-limited-proof" data-template-module="intl-messages" data-module-active="false" style="--module-index: 11">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="i18n:languages" data-dx-icon-set="i18n" data-dx-icon-name="languages"><path d="m5 8 6 6" /><path d="m4 14 6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" /><path d="m22 22-5-10-5 10" /><path d="M14 18h6" /></svg><span>Locale messages</span></strong>
+                <span>Surfaces locale messages, routing source, and catalog validation without claiming full SEO alternate proof.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="intl-messages"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Cycle locale</span></button><output data-template-module-status>40 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="api/trpc" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="adapter-boundary-readiness" data-template-module="trpc-health" data-module-active="false" style="--module-index: 12">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:tools" data-dx-icon-set="action" data-dx-icon-name="tools"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94Z" /></svg><span>Type-safe API route</span></strong>
+                <span>Surfaces the tRPC router, App Router handlers, and Database + API readiness contract without claiming production transport.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="trpc-health"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Check health</span></button><output data-template-module-status>28 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="ai/vercel-ai" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="provider-gated" data-template-module="ai-route-boundary" data-module-active="false" style="--module-index: 13">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="ai:brain" data-dx-icon-set="ai" data-dx-icon-name="brain"><path d="M12 5a3 3 0 0 0-5.83-1M12 5a3 3 0 0 1 5.83-1M12 5v14" /><path d="M7 8H4a2 2 0 0 0 0 4h1" /><path d="M17 8h3a2 2 0 0 1 0 4h-1" /><path d="M7 16H5a2 2 0 1 0 0 4h2" /><path d="M17 16h2a2 2 0 1 1 0 4h-2" /></svg><span>AI route boundary</span></strong>
+                <span>Surfaces AI SDK route/client helpers, provider-gated routes, and readiness gates without claiming model credentials or live streaming.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="ai-route-boundary"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Preview route</span></button><output data-template-module-status>Setup required</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="payments/stripe-js" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="provider-gated" data-template-module="stripe-checkout-boundary" data-module-active="false" style="--module-index: 14">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Stripe checkout boundary</span></strong>
+                <span>Surfaces Stripe Checkout helpers, App Router readiness, checkout, webhook boundary route, and missing-config gates without claiming live payments.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="stripe-checkout-boundary"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Review setup</span></button><output data-template-module-status>Setup required</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="supabase/client" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="provider-gated" data-template-module="backend-client" data-module-active="false" style="--module-index: 15">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:database" data-dx-icon-set="pack" data-dx-icon-name="database"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" /><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" /></svg><span>Backend client boundary</span></strong>
+                <span>Surfaces Supabase profile, config, and read-model checks with missing-provider gates.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="backend-client"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Review config</span></button><output data-template-module-status>31 files locked</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="automations/n8n" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="provider-gated" data-template-module="n8n-connector-boundary" data-module-active="false" style="--module-index: 16">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="state:bolt" data-dx-icon-set="state" data-dx-icon-name="bolt"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg><span>n8n connector boundary</span></strong>
+                <span>Surfaces n8n connector metadata, credential readiness, App Router dry-run route, and local handoffs without claiming hosted workflow execution.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="n8n-connector-boundary"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Draft dry run</span></button><output data-template-module-status>Credential needed</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="wasm/bindgen" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="source-owned-limited-proof" data-template-module="wasm-bindgen-readiness" data-module-active="false" style="--module-index: 17">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:wasm-bindgen" data-dx-icon-set="pack" data-dx-icon-name="wasm-bindgen"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg><span>WebAssembly bridge readiness</span></strong>
+                <span>Surfaces WebAssembly Bridge helpers and readiness gates without claiming a generated .wasm artifact or browser execution.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="source-owned-not-runtime-proven">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="wasm-bindgen-readiness"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Review bridge</span></button><output data-template-module-status>Bridge ready</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="3d/launch-scene" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="source-owned-limited-proof" data-template-module="landing-scene-surface" data-module-active="false" style="--module-index: 18">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:three-scene" data-dx-icon-set="pack" data-dx-icon-name="three-scene"><path d="M2.97 12.92 12 18.15l9.03-5.23" /><path d="M2.97 7.08 12 12.31l9.03-5.23L12 1.85 2.97 7.08Z" /><path d="M2.97 7.08v5.84L12 18.15v-5.84" /><path d="M21.03 7.08v5.84L12 18.15" /><path d="M12 22.15v-4" /></svg><span>3D landing scene</span></strong>
+                <span>Mounts the 3D Scene System as the home surface with WebGL handoff, pointer/keyboard markers, and preview controls.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="landing-scene-surface"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Inspect scene</span></button><output data-template-module-status>Home scene ready</output></footer>
+              </article>
+              <article class="package-module forge-reality-control" data-dx-package-id="animation/motion" data-dx-package-control="source-owned-template-control" data-dx-package-maturity="source-owned-limited-proof" data-template-module="lane7-motion-stage" data-module-active="false" style="--module-index: 19">
+                <strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:motion" data-dx-icon-set="pack" data-dx-icon-name="motion"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg><span>Motion workflow proof</span></strong>
+                <span>Surfaces Motion helpers, workflow controls, and reduced-motion gates without claiming browser animation proof.</span>
+                <div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="source-owned-not-runtime-proven">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div>
+                <footer><button class="template-button" type="button" data-template-module-action="lane7-motion-stage"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg><span>Advance stage</span></button><output data-template-module-status>Motion stage ready</output></footer>
+              </article>
+              </div>
+              <details class="forge-reality-audit-details" data-dx-component="forge-package-maturity-details" data-dx-forge-audit-details-default="collapsed">
+                <summary>Package readiness details</summary>
+                <div class="dashboard-panel-header"><div><h2>Integration readiness details</h2><p>Credentialed providers and browser checks remain gated until the app supplies evidence.</p></div></div>
+                <div class="forge-reality-table" role="table" aria-label="Forge package reality table">
+                  <div class="forge-reality-row forge-reality-row-head" role="row"><span role="columnheader">Package</span><span role="columnheader">Readiness</span><span role="columnheader">Evidence</span><span role="columnheader">Score</span><span role="columnheader">Next proof needed</span></div>
+                  <div class="forge-reality-row" role="row" data-dx-package-maturity="lock-backed-package" data-dx-package-id="shadcn/ui/button" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:ui-components" data-dx-icon-set="pack" data-dx-icon-name="ui-components"><rect width="7" height="9" x="3" y="3" rx="1" /><rect width="7" height="5" x="14" y="3" rx="1" /><rect width="7" height="9" x="14" y="12" rx="1" /><rect width="7" height="5" x="3" y="16" rx="1" /></svg>UI Components</strong><small>shadcn/ui/button</small><small>shadcn-ui</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Installed</span><span class="forge-maturity-level" data-dx-package-maturity="lock-backed-package">Installed</span></div></span>
+                <span role="cell">Visible template usage is present.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="84">84/100</span>
+                <span role="cell">Browser accessibility proof, full registry sync, and persisted dashboard usage.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="lock-backed-package" data-dx-package-id="state/zustand" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:state" data-dx-icon-set="pack" data-dx-icon-name="state"><path d="M3 3v18h18" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></svg>State Management</strong><small>state/zustand</small><small>zustand</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Installed</span><span class="forge-maturity-level" data-dx-package-maturity="lock-backed-package">Installed</span></div></span>
+                <span role="cell">Visible template usage is present.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="86">86/100</span>
+                <span role="cell">Hydration/storage proof, selector policy, and browser evidence.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="adapter-boundary-readiness" data-dx-package-id="tanstack/query" data-dx-forge-status-row="true" data-dx-forge-reality-level="lock-backed-adapter-boundary">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:query" data-dx-icon-set="pack" data-dx-icon-name="query"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>Data Fetching &amp; Cache</strong><small>tanstack/query</small><small>@tanstack/react-query</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="lock-backed-adapter-boundary">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div></span>
+                <span role="cell">Cache readiness helpers, QueryClient adapter metadata, and an App Router readiness route are present; live QueryClient setup remains app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="86">86/100</span>
+                <span role="cell">Live QueryClient execution, production fetcher wiring, persistence, browser proof, and dependency proof.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="source-owned-limited-proof" data-dx-package-id="reactive/store" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="state:bolt" data-dx-icon-set="state" data-dx-icon-name="bolt"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg>Reactive Store</strong><small>reactive/store</small><small>@tanstack/store</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div></span>
+                <span role="cell">Template store and React context snapshot are present; persistence and browser subscription QA remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="86">86/100</span>
+                <span role="cell">Browser subscription QA, persistence policy, dependency proof, and app-wide provider placement.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="adapter-boundary-readiness" data-dx-package-id="db/drizzle-sqlite" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:database" data-dx-icon-set="pack" data-dx-icon-name="database"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" /><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" /></svg>Database ORM</strong><small>db/drizzle-sqlite</small><small>drizzle-orm</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div></span>
+                <span role="cell">Schema, dashboard workflow, and readiness helpers are present; live SQLite execution stays app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="81">81/100</span>
+                <span role="cell">SQLite fixture execution, migration rollout, driver install, and governed database evidence.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="adapter-boundary-readiness" data-dx-package-id="validation/zod" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:validation" data-dx-icon-set="pack" data-dx-icon-name="validation"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.77 4 4 0 0 1 0 6.76 4 4 0 0 1-4.78 4.77 4 4 0 0 1-6.74 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m9 12 2 2 4-4" /></svg>Validation &amp; Schemas</strong><small>validation/zod</small><small>zod</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div></span>
+                <span role="cell">Zod schema files are present; production form execution still needs app evidence.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="82">82/100</span>
+                <span role="cell">Host app Zod dependency proof, browser schema execution, submit integration, and validation copy review.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="adapter-boundary-readiness" data-dx-package-id="forms/react-hook-form" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:forms" data-dx-icon-set="pack" data-dx-icon-name="forms"><path d="m3 7 2 2 4-4" /><path d="m3 17 2 2 4-4" /><path d="M13 6h8" /><path d="M13 12h8" /><path d="M13 18h8" /></svg>Forms</strong><small>forms/react-hook-form</small><small>react-hook-form</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div></span>
+                <span role="cell">RHF form files are present; browser form execution still needs app evidence.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="80">80/100</span>
+                <span role="cell">Host React Hook Form dependency proof, browser form-state execution, resolver wiring, submit lifecycle, and a11y QA.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="provider-gated" data-dx-package-id="instantdb/react" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:team" data-dx-icon-set="nav" data-dx-icon-name="team"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>Realtime App Database</strong><small>instantdb/react</small><small>@instantdb/react</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div></span>
+                <span role="cell">Schema/readiness files and provider-gated checks are present; hosted realtime app id and transport remain unproven.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="70">70/100</span>
+                <span role="cell">Hosted app id, rules/auth policy, realtime stream proof, and browser subscription QA.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="adapter-boundary-readiness" data-dx-package-id="content/react-markdown" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="content:folder-check" data-dx-icon-set="content" data-dx-icon-name="folder-check"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.7-.9L9.6 3.9A2 2 0 0 0 7.9 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" /><path d="m9 13 2 2 4-4" /></svg>Markdown &amp; MDX Content</strong><small>content/react-markdown</small><small>react-markdown; @mdx-js/mdx; @mdx-js/react</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div></span>
+                <span role="cell">Markdown renderer and safety audit files are present; browser render QA and advanced sanitizer review remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="74">74/100</span>
+                <span role="cell">Browser render QA, advanced sanitizer review, MDX interop decision, and content security review.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="source-owned-limited-proof" data-dx-package-id="content/fumadocs-next" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="content:folder-check" data-dx-icon-set="content" data-dx-icon-name="folder-check"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.7-.9L9.6 3.9A2 2 0 0 0 7.9 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" /><path d="m9 13 2 2 4-4" /></svg>Documentation System</strong><small>content/fumadocs-next</small><small>fumadocs</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div></span>
+                <span role="cell">Docs files, a readiness route, and page-tree icon wiring are present; hosted search and production indexing remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="75">75/100</span>
+                <span role="cell">Hosted search, docs indexing, navigation QA, metadata proof, and browser proof.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="provider-gated" data-dx-package-id="auth/better-auth" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:login" data-dx-icon-set="action" data-dx-icon-name="login"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /></svg>Authentication</strong><small>auth/better-auth</small><small>better-auth</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div></span>
+                <span role="cell">App Router auth routes, app-owned server boundary, and visible missing-config gates are present; live sessions still require app credentials and a database adapter.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="87">87/100</span>
+                <span role="cell">Credentials, cookie/session proof, database adapter, and OAuth/email execution.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="source-owned-limited-proof" data-dx-package-id="i18n/next-intl" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="i18n:languages" data-dx-icon-set="i18n" data-dx-icon-name="languages"><path d="m5 8 6 6" /><path d="m4 14 6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" /><path d="m22 22-5-10-5 10" /><path d="M14 18h6" /></svg>Internationalization</strong><small>i18n/next-intl</small><small>next-intl</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div></span>
+                <span role="cell">Locale files and catalog validation are present; production locale routing and SEO proof remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="72">72/100</span>
+                <span role="cell">Locale routing proof, translation coverage beyond catalog validity, formatting policy, and SEO alternates.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="adapter-boundary-readiness" data-dx-package-id="api/trpc" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:tools" data-dx-icon-set="action" data-dx-icon-name="tools"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94Z" /></svg>Type-Safe API</strong><small>api/trpc</small><small>@trpc/server</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Adapter-ready</span><span class="forge-maturity-level" data-dx-package-maturity="adapter-boundary-readiness">Adapter-ready</span></div></span>
+                <span role="cell">Router, App Router handlers, and Database + API readiness are present; production auth, transport, and observability remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="80">80/100</span>
+                <span role="cell">Production auth context, transport/subscription policy, request limits, durable event storage, and observability.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="provider-gated" data-dx-package-id="ai/vercel-ai" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="ai:brain" data-dx-icon-set="ai" data-dx-icon-name="brain"><path d="M12 5a3 3 0 0 0-5.83-1M12 5a3 3 0 0 1 5.83-1M12 5v14" /><path d="M7 8H4a2 2 0 0 0 0 4h1" /><path d="M17 8h3a2 2 0 0 1 0 4h-1" /><path d="M7 16H5a2 2 0 1 0 0 4h2" /><path d="M17 16h2a2 2 0 1 1 0 4h-2" /></svg>AI SDK</strong><small>ai/vercel-ai</small><small>ai</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div></span>
+                <span role="cell">AI route/client helpers and provider-gated responses are present; provider credentials, model billing, streaming evidence, and safety policy remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="80">80/100</span>
+                <span role="cell">Provider credentials, streaming proof, safety policy, persistence, and billing controls.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="provider-gated" data-dx-package-id="payments/stripe-js" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:open" data-dx-icon-set="action" data-dx-icon-name="open"><path d="M7 7h10v10M7 17 17 7" /></svg>Payments</strong><small>payments/stripe-js</small><small>@stripe/stripe-js</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div></span>
+                <span role="cell">Checkout, readiness, and webhook boundary route are present with missing-config gates; live Stripe keys, Price IDs, redirects, and webhook verification remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="86">86/100</span>
+                <span role="cell">Stripe keys, Price IDs, checkout redirect, live webhook verification, and fulfillment proof.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="provider-gated" data-dx-package-id="supabase/client" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:database" data-dx-icon-set="pack" data-dx-icon-name="database"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" /><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" /></svg>Backend Platform Client</strong><small>supabase/client</small><small>@supabase/ssr + @supabase/supabase-js</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div></span>
+                <span role="cell">Client/profile files and provider-gated checks are present; hosted credentials, RLS, and realtime remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="72">72/100</span>
+                <span role="cell">Hosted project credentials, RLS migration, Auth redirect allow-list, and read/write/realtime proof.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="provider-gated" data-dx-package-id="automations/n8n" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="state:bolt" data-dx-icon-set="state" data-dx-icon-name="bolt"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg>Automation Connectors</strong><small>automations/n8n</small><small>n8n-nodes-base</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Setup needed</span><span class="forge-maturity-level" data-dx-package-maturity="provider-gated">Setup needed</span></div></span>
+                <span role="cell">Connector metadata, dry-run route, and local run handoffs are present; credentials, webhook registration, and live n8n execution remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="83">83/100</span>
+                <span role="cell">Automation receipt drafted; provider credentials, webhook registration, and live workflow proof remain.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="source-owned-limited-proof" data-dx-package-id="wasm/bindgen" data-dx-forge-status-row="true" data-dx-forge-reality-level="source-owned-not-runtime-proven">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:wasm-bindgen" data-dx-icon-set="pack" data-dx-icon-name="wasm-bindgen"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" /></svg>WebAssembly Bridge</strong><small>wasm/bindgen</small><small>wasm-bindgen</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="source-owned-not-runtime-proven">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div></span>
+                <span role="cell">WebAssembly Bridge helpers are present; generated .wasm artifacts, wasm-bindgen CLI output, and browser execution stay app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="70">70/100</span>
+                <span role="cell">App-owned Rust build, generated .wasm artifact, generated JS glue, CSP/MIME review, and browser execution proof.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="source-owned-limited-proof" data-dx-package-id="3d/launch-scene" data-dx-forge-status-row="false" data-dx-forge-reality-level="real-lock-backed">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:three-scene" data-dx-icon-set="pack" data-dx-icon-name="three-scene"><path d="M2.97 12.92 12 18.15l9.03-5.23" /><path d="M2.97 7.08 12 12.31l9.03-5.23L12 1.85 2.97 7.08Z" /><path d="M2.97 7.08v5.84L12 18.15v-5.84" /><path d="M21.03 7.08v5.84L12 18.15" /><path d="M12 22.15v-4" /></svg>3D Scene System</strong><small>3d/launch-scene</small><small>three + @react-three/fiber + @react-three/drei</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="real-lock-backed">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div></span>
+                <span role="cell">LandingSceneSurface, WebGL renderer handoff, and pointer/keyboard markers are present; browser screenshot and performance evidence remain app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="84">84/100</span>
+                <span role="cell">Governed browser screenshot/performance evidence, optional Three/R3F/Drei dependency proof, asset policy, shader budget approval, and production device coverage.</span>
+              </div>
+              <div class="forge-reality-row" role="row" data-dx-package-maturity="source-owned-limited-proof" data-dx-package-id="animation/motion" data-dx-forge-status-row="true" data-dx-forge-reality-level="source-owned-not-runtime-proven">
+                <span role="cell"><strong><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:motion" data-dx-icon-set="pack" data-dx-icon-name="motion"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg>Motion &amp; Animation</strong><small>animation/motion</small><small>motion</small></span>
+                <span role="cell"><div class="forge-reality-badges"><span class="forge-reality-level" data-dx-forge-reality-level="source-owned-not-runtime-proven">Source-ready</span><span class="forge-maturity-level" data-dx-package-maturity="source-owned-limited-proof">App-ready</span></div></span>
+                <span role="cell">Motion &amp; Animation helpers are present; live browser choreography, reduced-motion policy, accessibility QA, and animation budgets stay app-owned.</span>
+                <span role="cell" class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="72">72/100</span>
+                <span role="cell">Browser motion proof, reduced-motion policy approval, accessibility QA, and animation budgets.</span>
+              </div>
+                </div>
+                <div class="forge-reality-note" data-dx-provider-gated-count="6" data-dx-adapter-boundary-readiness-count="6" data-dx-source-owned-limited-proof-count="6" data-dx-source-guard-only-count="0"><strong>All 20 packages have visible template surfaces.</strong><span>6 provider integrations still need credentials. Adapter-boundary and source-proof packages stay labeled until browser or live-provider evidence lands. Launch counts use package-status cache.manifests, and the live cache contains only the current manifest set. Archived cache manifests are retained under .dx/forge/cache-archive for rollback review only and never count toward active package totals.</span><ul class="forge-reality-stale-cache-list" data-dx-cache-archive-manifest-list><li>.dx/forge/cache-archive/stale-20260523/content-fumadocs-next/16.8.12-dx.10/manifest.json</li><li>.dx/forge/cache-archive/stale-20260523/content-fumadocs-next/16.8.12-dx.9/manifest.json</li><li>.dx/forge/cache-archive/stale-20260523/content-react-markdown/10.1.0-dx.1/manifest.json</li></ul><ul class="forge-score-component-list" data-dx-forge-score-components><li data-dx-forge-score-component="package-average"><strong>Package average</strong><span>Average of the visible package readiness rows.</span><output>80</output></li><li data-dx-forge-score-component="interactive-surfaces"><strong>Interactive surfaces</strong><span>Every visible package lane has a template surface.</span><output>4</output></li><li data-dx-forge-score-component="cache-truth"><strong>Cache truth</strong><span>Physical cache manifests match the current package-status manifest set.</span><output>2</output></li><li data-dx-forge-score-component="native-scroll-source-proof"><strong>Native scroll source proof</strong><span>Primary template routes use document-flow scrolling without custom scrollbar runtime or scroll traps.</span><output>2</output></li><li data-dx-forge-score-component="no-misleading-lanes"><strong>No misleading lanes</strong><span>No package row is classified as dummy or misleading.</span><output>1</output></li><li data-dx-forge-score-component="maturity-classification"><strong>Maturity classification</strong><span>Every visible lane uses an allowed maturity classification.</span><output>1</output></li><li data-dx-forge-score-component="provider-boundary-coverage"><strong>Provider readiness coverage</strong><span>Every provider-gated package has a visible readiness card without live execution or secret values.</span><output>1</output></li><li data-dx-forge-score-component="readiness-helper-execution"><strong>Route helper execution</strong><span>Focused checks execute readiness helpers without network calls, live provider execution, or secret values.</span><output>2</output></li></ul><div class="forge-score-gate-list" data-dx-forge-score-gate="dx.forge.launch_score_gate" data-dx-forge-score-gate-current="89" data-dx-forge-score-gate-target="90" data-dx-forge-score-gate-ceiling="89" data-dx-forge-score-gate-browser-proof="false" data-dx-forge-score-gate-provider-proof="false"><strong>Launch score gate</strong><span>App readiness stays capped at 89 until browser route proof or live-provider evidence is attached.</span><ul><li data-dx-forge-score-gate-proof="browser-route-proof" data-dx-forge-score-gate-proof-status="not-attached" data-dx-forge-score-gate-proof-routes="/ /dashboard /login" data-dx-forge-score-gate-proof-packages=""><strong>Browser route proof</strong><span>Attach a running preview and verify nonblank rendering, native wheel scrolling, responsive shell behavior, and no custom scrollbar runtime.</span></li><li data-dx-forge-score-gate-proof="live-provider-proof" data-dx-forge-score-gate-proof-status="provider-gated" data-dx-forge-score-gate-proof-routes="" data-dx-forge-score-gate-proof-packages="auth/better-auth instantdb/react supabase/client payments/stripe-js ai/vercel-ai automations/n8n"><strong>Live provider proof</strong><span>Configure real app-owned credentials and capture live-provider proof without exposing secret values.</span></li></ul></div><div class="forge-reality-route-proof-list" data-dx-component="template-readiness-execution-proof" data-dx-runtime-proof="false" data-dx-live-provider-execution="false"><strong>Route helper proof</strong><span>Focused tests execute source-owned readiness helpers. Browser runtime and live provider execution remain gated.</span><ul><li data-dx-readiness-execution-route="/api/auth/readiness" data-dx-readiness-execution-packages="auth/better-auth" data-dx-readiness-execution-http-status="200" data-dx-readiness-execution-proof="provider-boundary-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/api/auth/readiness</strong><span>Executes the Authentication readiness metadata path; OAuth redirects, cookie sessions, database adapters, and migrations stay app-owned.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li><li data-dx-readiness-execution-route="/api/query-cache/readiness" data-dx-readiness-execution-packages="tanstack/query" data-dx-readiness-execution-http-status="200" data-dx-readiness-execution-proof="source-owned-readiness-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/api/query-cache/readiness</strong><span>Executes the cache readiness and dry-run action helpers; live QueryClient execution stays app-owned.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li><li data-dx-readiness-execution-route="/i18n" data-dx-readiness-execution-packages="i18n/next-intl" data-dx-readiness-execution-http-status="200" data-dx-readiness-execution-proof="source-owned-readiness-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/i18n</strong><span>Executes the Internationalization dashboard copy, locale route preview, and alternate-link helpers; production middleware, SEO review, translation QA, and browser locale routing stay app-owned.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li><li data-dx-readiness-execution-route="/api/database-api/readiness" data-dx-readiness-execution-packages="db/drizzle-sqlite instantdb/react supabase/client api/trpc" data-dx-readiness-execution-http-status="200" data-dx-readiness-execution-proof="source-owned-readiness-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/api/database-api/readiness</strong><span>Executes the local Database + API readiness helper; hosted database, realtime, and transport proof stay app-owned.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li><li data-dx-readiness-execution-route="/api/database-orm/readiness" data-dx-readiness-execution-packages="db/drizzle-sqlite" data-dx-readiness-execution-http-status="501" data-dx-readiness-execution-proof="source-owned-readiness-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/api/database-orm/readiness</strong><span>Executes the gated Database ORM readiness helper without opening SQLite, running migrations, or querying data.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li><li data-dx-readiness-execution-route="/api/instant/readiness" data-dx-readiness-execution-packages="instantdb/react" data-dx-readiness-execution-http-status="501" data-dx-readiness-execution-proof="source-owned-readiness-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/api/instant/readiness</strong><span>Executes the provider-gated Instant readiness helper without creating hosted app handlers or realtime transport.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li><li data-dx-readiness-execution-route="/api/supabase/readiness" data-dx-readiness-execution-packages="supabase/client" data-dx-readiness-execution-http-status="501" data-dx-readiness-execution-proof="source-owned-readiness-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/api/supabase/readiness</strong><span>Executes the provider-gated Supabase readiness helper without hosted reads, writes, auth, RLS, or realtime calls.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li><li data-dx-readiness-execution-route="/api/payments/stripe-js/readiness" data-dx-readiness-execution-packages="payments/stripe-js" data-dx-readiness-execution-http-status="200 501 202" data-dx-readiness-execution-proof="provider-boundary-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/api/payments/stripe-js/readiness</strong><span>Exposes the Stripe readiness and dry-run boundary; Checkout Sessions, redirects, webhooks, fulfillment, and Stripe network calls stay app-owned.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li><li data-dx-readiness-execution-route="/api/ai/chat" data-dx-readiness-execution-packages="ai/vercel-ai" data-dx-readiness-execution-http-status="501" data-dx-readiness-execution-proof="provider-boundary-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/api/ai/chat</strong><span>Executes the AI provider-gated response helper; model streaming, provider billing, and safety policy stay app-owned.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li><li data-dx-readiness-execution-route="/api/automations/n8n/dry-run" data-dx-readiness-execution-packages="automations/n8n" data-dx-readiness-execution-http-status="200 501 202" data-dx-readiness-execution-proof="provider-boundary-helper" data-dx-runtime-proof="false" data-dx-live-provider-execution="false" data-dx-network-calls="false" data-dx-secret-values="[]"><strong>/api/automations/n8n/dry-run</strong><span>Exposes connector readiness and local handoff data; provider APIs, webhook registration, and live n8n execution stay app-owned.</span><small>benchmarks/template-readiness-execution-proof.test.ts</small></li></ul></div></div>
+              </details>
+            </section>
+          </section>
+
+          <section class="dashboard-split" data-dx-component="template-account-forms">
+            <article id="profile" class="template-card dashboard-panel">
+              <div><h2>Profile</h2><p>Validate a local profile draft without claiming hosted account storage.</p></div>
+              <form class="dashboard-form" data-dx-component="template-profile-form" data-dx-form-validation="idle" data-dx-form-package="forms/react-hook-form" data-dx-package="forms/react-hook-form validation/zod" data-dx-rhf-boundary="runtime-safe-form" data-dx-zod-schema="templateProfileSchema">
+                <label>Display name<input id="dashboard-profile-display-name" name="displayName" type="text" value="Essence Operator" aria-describedby="dashboard-profile-display-name-error" /></label>
+                <span id="dashboard-profile-display-name-error" class="template-field-error" data-template-field-error="displayName" hidden></span>
+                <label>Role<input id="dashboard-profile-role" name="role" type="text" value="Launch lead" aria-describedby="dashboard-profile-role-error" /></label>
+                <span id="dashboard-profile-role-error" class="template-field-error" data-template-field-error="role" hidden></span>
+                <button class="template-button template-button-primary" type="submit">Update profile</button>
+                <p class="template-status" data-template-form-status="profile" data-dx-form-dry-run-receipt="idle" data-dx-form-submit-mode="local-dry-run" data-dx-form-persistence="none" data-dx-form-secret-access="false" data-dx-form-receipt-schema="dx.forms.dry_run_receipt" role="status" aria-live="polite">Profile draft ready.</p>
+              </form>
+            </article>
+            <article id="billing" class="template-card dashboard-panel">
+              <div><h2>Billing contact</h2><p>Prepare a typed checkout contact while Payments remains provider-boundary.</p></div>
+              <form class="dashboard-form" data-dx-component="template-billing-contact-form" data-dx-form-validation="idle" data-dx-form-package="forms/react-hook-form" data-dx-package="payments/stripe-js forms/react-hook-form validation/zod" data-dx-rhf-boundary="runtime-safe-form" data-dx-zod-schema="templateBillingContactSchema">
+                <label>Billing email<input id="dashboard-billing-email" name="billingEmail" type="email" value="billing@example.com" aria-describedby="dashboard-billing-email-error" /></label>
+                <span id="dashboard-billing-email-error" class="template-field-error" data-template-field-error="billingEmail" hidden></span>
+                <label>Organization<input id="dashboard-billing-organization" name="organization" type="text" value="DX Forge" aria-describedby="dashboard-billing-organization-error" /></label>
+                <span id="dashboard-billing-organization-error" class="template-field-error" data-template-field-error="organization" hidden></span>
+                <label>Plan<select id="dashboard-billing-plan" name="plan" data-dx-zod-enum-options="starter team scale" aria-describedby="dashboard-billing-plan-error"><option value="starter">Starter</option><option value="team" selected>Team</option><option value="scale">Scale</option></select></label>
+                <span id="dashboard-billing-plan-error" class="template-field-error" data-template-field-error="plan" hidden></span>
+                <button class="template-button template-button-primary" type="submit">Prepare contact</button>
+                <p class="template-status" data-template-form-status="billing-contact" data-dx-form-dry-run-receipt="idle" data-dx-form-submit-mode="local-dry-run" data-dx-form-persistence="none" data-dx-form-secret-access="false" data-dx-form-receipt-schema="dx.forms.dry_run_receipt" role="status" aria-live="polite">Billing contact ready.</p>
+              </form>
+            </article>
+          </section>
+
+          <section id="settings" class="template-card dashboard-panel" data-dx-component="template-settings-panel">
+            <div class="dashboard-panel-header"><div><h2>Workspace settings</h2><p>Changes are saved locally so the preview behaves like a real dashboard.</p></div></div>
+            <form id="dashboard-settings-form" class="dashboard-form" data-dx-component="template-settings-form" data-dx-form-validation="idle" data-dx-form-package="forms/react-hook-form" data-dx-package="forms/react-hook-form validation/zod" data-dx-rhf-boundary="runtime-safe-form" data-dx-zod-schema="templateWorkspaceSettingsSchema">
+              <label>Workspace name<input id="dashboard-workspace-name" name="workspaceName" type="text" value="www Workspace" aria-describedby="dashboard-workspace-name-error" /></label>
+              <span id="dashboard-workspace-name-error" class="template-field-error" data-template-field-error="workspaceName" hidden></span>
+              <label>Contact email<input id="dashboard-contact-email" name="contactEmail" type="email" value="ops@example.com" aria-describedby="dashboard-contact-email-error" /></label>
+              <span id="dashboard-contact-email-error" class="template-field-error" data-template-field-error="contactEmail" hidden></span>
+              <label>Team size<input id="dashboard-team-size" name="teamSize" type="number" min="1" max="99" value="8" aria-describedby="dashboard-team-size-error" /></label>
+              <span id="dashboard-team-size-error" class="template-field-error" data-template-field-error="teamSize" hidden></span>
+              <button class="template-button template-button-primary" type="submit">Save changes</button>
+              <p id="dashboard-settings-status" class="template-status" data-template-form-status="settings" data-dx-form-dry-run-receipt="idle" data-dx-form-submit-mode="local-dry-run" data-dx-form-persistence="none" data-dx-form-secret-access="false" data-dx-form-receipt-schema="dx.forms.dry_run_receipt" role="status" aria-live="polite">Settings ready.</p>
+            </form>
+          </section>
+        </section>
+      </div>
+
+      <footer class="dashboard-footer" data-dx-component="template-dashboard-footer" data-dx-theme="dark">
+        <div class="dashboard-footer-primary">
+          <div class="dashboard-footer-brand">
+            <a class="template-brand" href="/" aria-label="www home"><span class="template-brand-mark" aria-hidden="true"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:workspace" data-dx-icon-set="pack" data-dx-icon-name="workspace"><path d="M2.97 12.92 12 18.15l9.03-5.23" /><path d="M2.97 7.08 12 12.31l9.03-5.23L12 1.85 2.97 7.08Z" /><path d="M2.97 7.08v5.84L12 18.15v-5.84" /><path d="M21.03 7.08v5.84L12 18.15" /><path d="M12 22.15v-4" /></svg></span><span>www</span></a>
+            <span>Default workspace template</span>
+          </div>
+          <nav class="dashboard-footer-nav" aria-label="Footer navigation"><a href="/"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:workspace" data-dx-icon-set="pack" data-dx-icon-name="workspace"><path d="M2.97 12.92 12 18.15l9.03-5.23" /><path d="M2.97 7.08 12 12.31l9.03-5.23L12 1.85 2.97 7.08Z" /><path d="M2.97 7.08v5.84L12 18.15v-5.84" /><path d="M21.03 7.08v5.84L12 18.15" /><path d="M12 22.15v-4" /></svg><span>Home</span></a><a href="/login"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:login" data-dx-icon-set="action" data-dx-icon-name="login"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /></svg><span>Auth</span></a><a href="/dashboard"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="nav:dashboard" data-dx-icon-set="nav" data-dx-icon-name="dashboard"><rect width="7" height="9" x="3" y="3" rx="1" /><rect width="7" height="5" x="14" y="3" rx="1" /><rect width="7" height="9" x="14" y="12" rx="1" /><rect width="7" height="5" x="3" y="16" rx="1" /></svg><span>Dashboard</span></a><a href="#tools"><svg class="dx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="action:tools" data-dx-icon-set="action" data-dx-icon-name="tools"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94Z" /></svg><span>Tools</span></a></nav>
+          <div class="dashboard-footer-actions">
+            <span>Theme</span>
+            <button class="template-button template-theme-toggle" type="button" data-theme-toggle aria-pressed="false"><svg class="dx-icon theme-toggle-icon theme-toggle-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="theme:sun" data-dx-icon-set="theme" data-dx-icon-name="sun"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg><svg class="dx-icon theme-toggle-icon theme-toggle-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="theme:moon" data-dx-icon-set="theme" data-dx-icon-name="moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg><span data-theme-toggle-label>Light</span></button>
+          </div>
+        </div>
+        <div class="dashboard-footer-status">
+          <span>www dashboard template</span>
+          <span>Responsive layout</span>
+          <span>Launch readiness tracked</span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

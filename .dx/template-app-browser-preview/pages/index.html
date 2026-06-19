@@ -1,0 +1,3497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DX WWW Launch Runtime</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <script src="/public/launch-runtime.js" defer></script>
+  </head>
+  <body data-dx-scroll-root="document" data-dx-scroll-system="native">
+    <main
+      class="dx-launch"
+      data-dx-route="/"
+      data-dx-hot-reload-target="route:/"
+      data-dx-edit-contract="dx.studio.launch_edit_contract"
+      data-dx-node-modules="forbidden"
+      data-dx-source="tools/launch/runtime-template/pages/index.html"
+      data-dx-forge="template-readiness"
+      data-dx-package-maturity="mixed-source-slices-and-adapter-boundaries"
+      data-dx-native-scroll="page"
+      data-dx-scroll-surface="document"
+      data-dx-scroll-lock="none"
+      data-dx-scroll-proof="document-flow-no-lock"
+      data-dx-wheel-scroll="native"
+      data-dx-scroll-content="viewport-plus"
+    >
+      <div class="dx-icon-runtime-markers" data-dx-component="dx-icon-runtime-markers" data-dx-icon-proof="runtime-markers" aria-hidden="true">
+        <span data-dx-icon="pack:auth" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:payments" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:database" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:fumadocs" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:wasm-bindgen" data-icon-source="dx-icons"></span>
+      </div>
+
+      <header class="topbar" data-dx-section="launch-nav" data-dx-editable-section="launch-nav">
+        <a class="brand" href="/" data-dx-component="dx-logo-link">
+          <span class="logo" aria-hidden="true">d</span>
+          <span>DX WWW</span>
+        </a>
+        <nav class="nav" aria-label="Launch routes">
+          <a href="/">Launch</a>
+          <a href="/automations">Automations</a>
+          <a href="/ui">UI</a>
+          <a href="/database">Database</a>
+          <a href="/backend">Backend</a>
+        </nav>
+      </header>
+
+      <section class="hero" data-dx-section="hero" data-dx-editable-section="launch-hero">
+        <div class="hero-copy" data-dx-component="launch-hero-copy">
+          <p class="eyebrow">Default DX template route</p>
+          <h1>One source-owned app, no dependency fog.</h1>
+          <p class="lead">
+            The starter opens directly into the DX dashboard: source-owned Forge
+            slices, honest adapter boundaries, dx-style CSS, and no generated
+            node_modules folder in the app.
+          </p>
+          <div class="hero-actions">
+            <a class="chip primary" href="#mission-control" data-dx-action="jump-to-launch-dashboard">Open dashboard</a>
+            <a class="chip" href="#proof-grid" data-dx-action="jump-to-package-proof">Package proof</a>
+            <a class="chip" href="/public/preview-manifest.json" data-dx-action="open-preview-manifest">Studio manifest</a>
+          </div>
+          <div class="status-line" data-dx-component="launch-runtime-status">
+            <span class="pill">data-dx route markers active</span>
+            <span class="pill">App-owned secrets stay out</span>
+            <span class="pill">TSX-first source contract</span>
+          </div>
+        </div>
+
+        <aside
+          class="scene-panel"
+          data-dx-component="launch-scene-webgl-proof"
+          data-dx-dashboard-workflow="scene-visual-ops"
+          data-dx-package="3d/launch-scene"
+          data-dx-media-slot="launch-scene"
+          data-dx-editable-section="launch-scene"
+          data-dx-product-surface="visual-operations-dashboard"
+          data-dx-scene-workflow-selected-node="none"
+          data-dx-scene-performance-band="stable"
+          data-dx-scene-quality-profile="preview"
+          data-dx-scene-material-palette="aurora"
+          data-dx-scene-camera-rig="orbit"
+          data-dx-scene-frame-sample="pending"
+          data-dx-scene-capability-report="pending"
+          data-dx-scene-capability-status="canvas-missing"
+          data-dx-scene-viewport-report="pending"
+          data-dx-scene-viewport-status="canvas-missing"
+          data-dx-scene-bounds-report="pending"
+          data-dx-scene-bounds-status="pending"
+          data-dx-scene-raycast-report="pending"
+          data-dx-scene-raycast-status="pending"
+          data-dx-scene-workflow-active="visual-runtime-health"
+          data-dx-scene-workflow-receipt-state="idle"
+        >
+          <div class="scene-frame">
+            <canvas
+              id="dx-launch-scene"
+              class="scene-canvas"
+              width="720"
+              height="420"
+              data-dx-scene-canvas
+              data-dx-scene-status="pending"
+              aria-label="DX WebGL launch scene"
+            ></canvas>
+                <p id="scene-status" class="notice" data-state="ready">
+                  Scene booting. Browser WebGL proof attaches only after a measured preview run.
+            </p>
+            <div
+              class="scene-workflow"
+              data-dx-scene-dashboard-card="visual-operations"
+              data-dx-scene-quality-profile="preview"
+              data-dx-scene-material-palette="aurora"
+              data-dx-scene-camera-rig="orbit"
+              data-dx-scene-frame-sample="pending"
+              data-dx-scene-capability-report="pending"
+              data-dx-scene-capability-status="canvas-missing"
+              data-dx-scene-viewport-report="pending"
+              data-dx-scene-viewport-status="canvas-missing"
+              data-dx-scene-bounds-report="pending"
+              data-dx-scene-bounds-status="pending"
+              data-dx-scene-raycast-report="pending"
+              data-dx-scene-raycast-status="pending"
+              data-dx-scene-workflow-card="visual-runtime-health"
+            >
+                  <strong id="scene-workflow-status">Runtime health: browser proof pending</strong>
+              <span>Focus a scene node, apply the preview render budget, and hand Zed a stable source marker.</span>
+              <small id="scene-receipt-output" data-dx-scene-dashboard-receipt="idle">
+                Render budget receipt not prepared yet.
+              </small>
+            </div>
+            <div
+              class="scene-controls"
+              data-dx-scene-workflow-controls
+              data-dx-scene-workflow-selected-node="none"
+              data-dx-scene-quality-profile="preview"
+              data-dx-scene-material-palette="aurora"
+              data-dx-scene-camera-rig="orbit"
+              data-dx-scene-frame-sample="pending"
+              data-dx-scene-capability-report="pending"
+              data-dx-scene-capability-status="canvas-missing"
+              data-dx-scene-viewport-report="pending"
+              data-dx-scene-viewport-status="canvas-missing"
+              data-dx-scene-bounds-report="pending"
+              data-dx-scene-bounds-status="pending"
+              data-dx-scene-raycast-report="pending"
+              data-dx-scene-raycast-status="pending"
+            >
+              <button
+                id="scene-select-node"
+                type="button"
+                data-dx-scene-action="focus-dashboard-node"
+                data-dx-scene-workflow-action="select-node"
+              >
+                Focus dashboard node
+              </button>
+              <button
+                id="scene-apply-render-budget"
+                type="button"
+                data-dx-scene-action="apply-render-budget"
+              >
+                Apply render budget
+              </button>
+              <button
+                id="scene-toggle-quality"
+                type="button"
+                aria-pressed="false"
+                data-dx-scene-action="toggle-quality-profile"
+              >
+                Quality: preview
+              </button>
+              <button
+                id="scene-cycle-material-palette"
+                type="button"
+                data-dx-scene-action="cycle-material-palette"
+              >
+                Material: aurora
+              </button>
+              <button
+                id="scene-cycle-camera-rig"
+                type="button"
+                data-dx-scene-action="cycle-camera-rig"
+              >
+                Camera: orbit
+              </button>
+              <button
+                id="scene-capture-frame-sample"
+                type="button"
+                data-dx-scene-action="capture-frame-sample"
+              >
+                Capture frame sample
+              </button>
+              <button
+                id="scene-inspect-renderer-capabilities"
+                type="button"
+                data-dx-scene-action="inspect-renderer-capabilities"
+              >
+                Inspect renderer
+              </button>
+              <button
+                id="scene-measure-viewport-dpr"
+                type="button"
+                data-dx-scene-action="measure-viewport-dpr"
+              >
+                Measure viewport
+              </button>
+              <button
+                id="scene-fit-bounds"
+                type="button"
+                data-dx-scene-action="fit-scene-bounds"
+              >
+                Fit bounds
+              </button>
+              <button
+                id="scene-inspect-raycast-hit"
+                type="button"
+                data-dx-scene-action="inspect-raycast-hit"
+              >
+                Inspect hit map
+              </button>
+              <button
+                id="scene-regress-performance"
+                type="button"
+                data-dx-scene-action="regress-performance"
+                data-dx-scene-workflow-action="regress-performance"
+              >
+                Regress performance
+              </button>
+              <button
+                id="scene-reset-performance"
+                type="button"
+                data-dx-scene-action="reset-render-budget"
+                data-dx-scene-workflow-action="reset-performance"
+              >
+                Reset
+              </button>
+              <span id="scene-active-node" class="pill" data-dx-scene-active-node-label>
+                Active node: none
+              </span>
+              <span id="scene-material-palette" class="pill" data-dx-scene-material-palette="aurora">
+                Material: Aurora launch
+              </span>
+              <span id="scene-camera-rig" class="pill" data-dx-scene-camera-rig="orbit">
+                Camera rig: Orbit
+              </span>
+              <span id="scene-frame-sample" class="pill" data-dx-scene-frame-sample="pending">
+                Frame sample: pending
+              </span>
+              <span
+                id="scene-capability-report"
+                class="pill"
+                data-dx-scene-capability-report="pending"
+                data-dx-scene-capability-status="canvas-missing"
+              >
+                Renderer: pending
+              </span>
+              <span
+                id="scene-viewport-report"
+                class="pill"
+                data-dx-scene-viewport-report="pending"
+                data-dx-scene-viewport-status="canvas-missing"
+              >
+                Viewport: pending
+              </span>
+              <span
+                id="scene-bounds-report"
+                class="pill"
+                data-dx-scene-bounds-report="pending"
+                data-dx-scene-bounds-status="pending"
+              >
+                Bounds: pending
+              </span>
+              <span
+                id="scene-raycast-report"
+                class="pill"
+                data-dx-scene-raycast-report="pending"
+                data-dx-scene-raycast-status="pending"
+              >
+                Raycast: pending
+              </span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section
+        id="mission-control"
+        class="section command-center"
+        data-dx-section="mission-control"
+        data-dx-editable-section="launch-dashboard"
+        data-dx-component="launch-operating-dashboard"
+        data-dx-product-surface="launch-dashboard"
+        data-dx-dashboard-state="ready"
+      >
+        <div class="command-copy">
+          <p class="eyebrow">Launch operations</p>
+          <h2>Runtime dashboard for the readiness workflow</h2>
+          <p class="copy">
+            This is the product surface Zed edits during Web Preview: session,
+            payment, automations, locale copy, database, Motion, and Studio
+            status are summarized from the same source-owned runtime
+            interactions below.
+          </p>
+          <div class="inline-stack">
+            <button
+              id="mission-sync-dashboard"
+              type="button"
+              data-dx-dashboard-action="sync-from-runtime"
+            >
+              Sync dashboard
+            </button>
+            <a class="chip" href="#launch-form" data-dx-dashboard-action="open-settings-form">Settings form</a>
+            <a class="chip" href="/database" data-dx-dashboard-action="open-data-route">Data route</a>
+          </div>
+          <p
+            id="mission-dashboard-status"
+            class="notice"
+            data-dx-dashboard-status="ready"
+            data-state="ready"
+          >
+            Dashboard connected to the source-owned runtime proof surfaces.
+          </p>
+        </div>
+        <div
+          class="dashboard-state-shell"
+          data-dx-component="launch-dashboard-state-shell"
+          data-dx-dashboard-workflow="ui-state-persistence-shell"
+          data-dx-package="state/zustand"
+          data-dx-product-surface="launch-dashboard"
+          data-dx-style-surface="state-management"
+          data-dx-node-modules="forbidden"
+          data-dx-zustand-store="launch-dashboard-settings"
+          data-dx-zustand-persist-key="dx-launch-dashboard-settings"
+          data-dx-zustand-dashboard-density="comfortable"
+          data-dx-zustand-dashboard-focus="payment"
+          data-dx-zustand-dashboard-applied="false"
+          data-dx-zustand-command-hints="enabled"
+          data-dx-zustand-hydration-event="onFinishHydration"
+          data-dx-zustand-rehydrate-state="idle"
+          data-dx-source-file="components/template-app/template-shell"
+        >
+        <div
+          id="zustand-dashboard-state-summary"
+          class="state-summary"
+          data-dx-component="launch-dashboard-state-summary"
+          data-dx-zustand-shell-summary="launch-dashboard-settings"
+          data-dx-zustand-summary-density="comfortable"
+          data-dx-zustand-summary-focus="payment"
+          data-dx-zustand-summary-hints="enabled"
+          data-dx-zustand-hydration-event="onFinishHydration"
+          data-dx-zustand-rehydrate-state="idle"
+        >
+          <span id="zustand-summary-density">Dashboard density: comfortable</span>
+          <span id="zustand-summary-focus">Focused workflow: payment</span>
+          <span id="zustand-summary-hints">Command hints: on</span>
+          <span id="zustand-summary-saved" class="muted">Saved: not-saved</span>
+        </div>
+        <div class="command-grid">
+          <article
+            class="command-card"
+            data-dx-component="dx-check-health-panel"
+            data-dx-check-panel="latest-receipt"
+            data-dx-check-command="dx check --latest-receipt --json"
+            data-dx-check-receipt-path=".dx/receipts/check/check-latest.json"
+            data-dx-check-schema="dx.www.check_panel"
+            data-dx-zed-panel-schema="dx.check.zed_panel"
+            data-dx-check-score-max="500"
+            data-dx-check-view-model-schema="dx.www.check_panel_view_model"
+            data-dx-check-view-model-status="missing"
+            data-dx-check-score-state="missing"
+            data-dx-check-bucket-count="0"
+            data-dx-check-package-lane-count="0"
+            data-dx-check-style-evidence-count="1"
+            data-dx-check-blocker-count="0"
+            data-dx-check-warning-count="0"
+            data-dx-check-quick-fix-count="0"
+            data-dx-check-last-run="missing"
+            data-dx-check-expensive-default="skipped"
+          >
+            <span>Project health</span>
+            <strong data-dx-dashboard-metric="dx-check">Latest receipt</strong>
+            <small>Score, buckets, blockers, warnings, quick fixes, and last run time.</small>
+            <small data-dx-check-empty-state="missing">
+              No dx-check receipt found at .dx/receipts/check/check-latest.json.
+            </small>
+            <span
+              class="sr-only"
+              data-dx-check-style-evidence-rows="fallback"
+              data-dx-check-style-evidence-row="dx-style-browser-compat"
+              data-dx-check-style-evidence-status="missing"
+              data-dx-check-style-evidence-receipt-path=".dx/receipts/style/check.json"
+              data-dx-check-style-evidence-fixture-path="related-crates/style/fixtures/tailwind-postcss-browser-compat.json"
+              data-dx-check-style-evidence-zed="dx-style:browser-compat"
+              data-dx-check-style-evidence-class-count="0"
+              data-dx-check-style-evidence-selector-class-count="0"
+              data-dx-check-style-evidence-selector-class-examples=""
+              data-dx-check-style-evidence-state-alias-count="0"
+              data-dx-check-style-evidence-state-alias-examples=""
+              data-dx-check-style-evidence-full-autoprefixer-parity="false"
+              data-dx-check-style-evidence-full-tailwind-postcss-output-parity="false"
+              data-dx-check-style-evidence-drift="source-guarded"
+              data-dx-check-style-evidence-drift-state="source-guarded"
+              data-dx-check-style-evidence-drift-loader="components/template-app/template-shell-evidence-loader.ts"
+              data-dx-check-style-evidence-drift-helper="components/template-app/template-shell-style-evidence-drift.ts"
+              data-dx-check-style-evidence-drift-states="unknown,false,true"
+              data-dx-style-package-panel="dx-style-browser-compat-package-panel"
+              data-dx-style-package-panel-read-model="dx.www.template.preview_style_package_panel_with_drift_read_model"
+              data-dx-style-package-panel-drift-state="preview-only"
+              data-dx-style-package-panel-drift-status="source-guarded"
+              data-dx-style-package-panel-drift-mismatch-fields=""
+              data-dx-style-package-panel-readiness-receipt="missing"
+            >
+              dx-style browser-compat evidence is visible as missing until
+              dx-check loads .dx/receipts/style/check.json.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="auth/better-auth"
+              data-dx-check-package-lane-row="auth/better-auth"
+              data-dx-check-package-lane-name="Authentication"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="better-auth"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/better-auth"
+              data-dx-check-package-lane-receipt-path=".dx/forge/receipts/auth-better-auth.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/authentication-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/authentication-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="authentication:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="8"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-current-file-list="examples/template/template-shell.tsx|examples/template/auth-session-status.tsx|examples/dashboard/src/lib/forge/auth/better-auth/dashboard.ts|examples/dashboard/src/components/BetterAuthAccountWorkflow.tsx|docs/packages/authentication.source-guard-runbook.json|tools/launch/materialize-www-template.ts"
+              data-dx-check-package-lane-hash-refresh-stale-file-list=""
+              data-dx-check-package-lane-hash-refresh-missing-file-list=""
+              data-dx-check-package-lane-hash-refresh-stale-mirror-file-list=""
+              data-dx-check-package-lane-hash-refresh-missing-mirror-file-list=""
+              data-dx-check-package-lane-hash-refresh-current-metric="authentication_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="authentication_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="authentication_receipt_hash_refresh_missing"
+              data-dx-style-surface="authentication-account-workflow"
+              data-dx-token-scope="auth/better-auth"
+            >
+              Authentication package-lane row renders from package_lane_rows when a
+              dx-check receipt is loaded.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="shadcn/ui/button"
+              data-dx-check-package-lane-row="shadcn/ui/button"
+              data-dx-check-package-lane-name="UI Components"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="shadcn-ui"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/shadcn-ui; G:/WWW/inspirations/radix-primitives"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-shadcn-dashboard-controls.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/ui-components-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/ui-components-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="ui-components:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="6"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-current-metric="ui_components_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="ui_components_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="ui_components_receipt_hash_refresh_missing"
+              data-dx-style-surface="ui-components"
+              data-dx-token-scope="shadcn/ui/button"
+              data-dx-package="shadcn/ui/button"
+            >
+              UI Components package-lane row renders helper freshness,
+              dx-style, and selected shadcn-ui/Radix source state when a
+              dx-check receipt is loaded; browser UI runtime proof remains
+              app-owned.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="payments/stripe-js"
+              data-dx-check-package-lane-row="payments/stripe-js"
+              data-dx-check-package-lane-name="Payments"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="@stripe/stripe-js"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/stripe-js"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/payments-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/payments-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="payments:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="4"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-style-surface="payments"
+              data-dx-token-scope="payments/stripe-js"
+              data-dx-package="payments/stripe-js"
+            >
+              Payments package-lane row renders receipt, hash-refresh, and
+              dx-style evidence before a dx-check receipt is loaded.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="forms/react-hook-form"
+              data-dx-check-package-lane-row="forms/react-hook-form"
+              data-dx-check-package-lane-name="Forms"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="react-hook-form"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/react-hook-form"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-forms-dashboard-workflow.json"
+              data-dx-check-package-lane-dx-style-status="missing"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/forms-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/forms-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="forms:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="7"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-stale-file-list=""
+              data-dx-check-package-lane-hash-refresh-missing-file-list=""
+              data-dx-check-package-lane-hash-refresh-current-metric="forms_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="forms_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="forms_receipt_hash_refresh_missing"
+              data-dx-style-surface="forms"
+              data-dx-token-scope="forms/react-hook-form"
+              data-dx-package="forms/react-hook-form"
+            >
+              Forms package-lane row renders receipt, helper freshness, and
+              selected React Hook Form source state when a dx-check receipt is
+              loaded; browser submission proof remains app-owned.
+            </span>
+            <div
+              class="dx-check-package-lane-template"
+              data-dx-check-package-lane-template="i18n/next-intl"
+              data-dx-check-package-lane-row="i18n/next-intl"
+              data-dx-check-package-lane-name="Internationalization"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="next-intl"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/next-intl"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/internationalization-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/internationalization-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="internationalization:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="3"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-current-metric="internationalization_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="internationalization_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="internationalization_receipt_hash_refresh_missing"
+              data-dx-style-surface="internationalization"
+              data-dx-token-scope="i18n/next-intl"
+            >
+              <span>Internationalization</span>
+              <small>
+                Receipt missing; helper freshness and dx-style evidence are
+                present for the static launch package-lane template.
+              </small>
+            </div>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="3d/launch-scene"
+              data-dx-check-package-lane-row="3d/launch-scene"
+              data-dx-check-package-lane-name="3D Scene System"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="three + @react-three/fiber + @react-three/drei"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/three.js; G:/WWW/inspirations/react-three-fiber; G:/WWW/inspirations/drei"
+              data-dx-check-package-lane-receipt-path=".dx/forge/receipts/3d-launch-scene-dashboard-workflow.json"
+              data-dx-check-package-lane-dx-style-status="missing"
+              data-dx-style-surface="launch-scene"
+              data-dx-token-scope="3d/launch-scene"
+            >
+              3D Scene System package-lane row renders receipt, hash, and
+              dx-style state when a dx-check receipt is loaded.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="validation/zod"
+              data-dx-check-package-lane-row="validation/zod"
+              data-dx-check-package-lane-name="Validation & Schemas"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="zod"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/zod"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-validation-zod-dashboard-settings.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/validation-schemas-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/validation-schemas-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="validation-schemas:receipt-hash-refresh"
+              data-dx-style-surface="validation-schemas"
+              data-dx-token-scope="validation/zod"
+              data-dx-zod-dashboard-receipt-api="createDxDashboardSettingsReceipt"
+              data-dx-zod-field-errors-api="z.flattenError"
+            >
+              Validation & Schemas package-lane row renders receipt,
+              hash-refresh, and Zod dashboard settings state when a dx-check
+              receipt is loaded.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="state/zustand"
+              data-dx-check-package-lane-row="state/zustand"
+              data-dx-check-package-lane-name="State Management"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="zustand"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/zustand"
+              data-dx-check-package-lane-receipt-path=".dx/forge/receipts/packages/state-zustand.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/state-management-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/state-management-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="state-management:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="7"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-stale-file-list=""
+              data-dx-check-package-lane-hash-refresh-current-metric="state_management_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="state_management_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="state_management_receipt_hash_refresh_missing"
+              data-dx-style-surface="state-management"
+              data-dx-token-scope="state/zustand"
+            >
+              State Management package-lane row renders receipt,
+              hash-refresh, and dx-style evidence when a dx-check receipt is
+              loaded.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="tanstack/query"
+              data-dx-check-package-lane-row="tanstack/query"
+              data-dx-check-package-lane-name="Data Fetching &amp; Cache"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="@tanstack/react-query"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/tanstack-query"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/data-fetching-cache-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/data-fetching-cache-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="data-fetching-cache:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="13"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-current-metric="data_fetching_cache_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="data_fetching_cache_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="data_fetching_cache_receipt_hash_refresh_missing"
+              data-dx-style-surface="data-fetching-cache"
+              data-dx-token-scope="tanstack/query"
+              data-dx-package="tanstack/query"
+            >
+              Data Fetching &amp; Cache package-lane row renders receipt,
+              hash-refresh, source hash, and dx-style evidence when a dx-check
+              receipt is loaded; live QueryClient execution remains app-owned.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="reactive/store"
+              data-dx-check-package-lane-row="reactive/store"
+              data-dx-check-package-lane-name="Reactive Store"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="@tanstack/store"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/tanstack-store"
+              data-dx-check-package-lane-receipt-path=".dx/forge/receipts/packages/reactive-store.json"
+              data-dx-check-package-lane-dx-style-status="missing"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/reactive-store-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/reactive-store-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="reactive-store:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="5"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-stale-file-list=""
+              data-dx-check-package-lane-hash-refresh-current-metric="reactive_store_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="reactive_store_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="reactive_store_receipt_hash_refresh_missing"
+              data-dx-style-surface="reactive-store"
+              data-dx-token-scope="reactive/store"
+              data-dx-package="reactive/store"
+            >
+              Reactive Store package-lane row renders receipt, hash-refresh,
+              and helper path attribution when a dx-check receipt is loaded.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="db/drizzle-sqlite"
+              data-dx-check-package-lane-row="db/drizzle-sqlite"
+              data-dx-check-package-lane-name="Database ORM"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="drizzle-orm"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/drizzle-orm"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-style-surface="database-orm"
+              data-dx-token-scope="db/drizzle-sqlite"
+            >
+              Database ORM package-lane row renders receipt and dx-style state when
+              a dx-check receipt is loaded.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="supabase/client"
+              data-dx-check-package-lane-row="supabase/client"
+              data-dx-check-package-lane-name="Backend Platform Client"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="@supabase/ssr + @supabase/supabase-js"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/supabase"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json"
+              data-dx-check-package-lane-dx-style-status="missing"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/backend-platform-client-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/backend-platform-client-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="backend-platform-client:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="12"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-style-surface="backend-platform-client"
+              data-dx-token-scope="supabase/client"
+              data-dx-package="supabase/client"
+            >
+              Backend Platform Client package-lane row renders receipt,
+              hash-refresh, and selected Supabase source state when a dx-check
+              receipt is loaded; hosted Supabase runtime proof remains
+              app-owned.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="instantdb/react"
+              data-dx-check-package-lane-row="instantdb/react"
+              data-dx-check-package-lane-name="Realtime App Database"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="@instantdb/react"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/instantdb"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/realtime-app-database-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/realtime-app-database-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="realtime-app-database:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="6"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-current-metric="realtime_app_database_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="realtime_app_database_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="realtime_app_database_receipt_hash_refresh_missing"
+              data-dx-style-surface="realtime-app-database"
+              data-dx-token-scope="instantdb/react"
+              data-dx-package="instantdb/react"
+            >
+              Realtime App Database package-lane row renders receipt,
+              hash-refresh, hash, and dx-style state when a dx-check receipt is
+              loaded; hosted Instant runtime proof remains app-owned.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="automations/n8n"
+              data-dx-check-package-lane-row="automations/n8n"
+              data-dx-check-package-lane-name="Automation Connectors"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="n8n-nodes-base"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/n8n/packages/nodes-base"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-automation-connectors-launch-workflow.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/automation-connectors-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/automation-connectors-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="automation-connectors:receipt-hash-refresh"
+              data-dx-style-surface="automation-connectors"
+              data-dx-token-scope="automations/n8n"
+            >
+              Automation Connectors package-lane row renders receipt,
+              hash-refresh, and dx-style state when a dx-check receipt is loaded.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="api/trpc"
+              data-dx-check-package-lane-row="api/trpc"
+              data-dx-check-package-lane-name="Type-Safe API"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="@trpc/server"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/trpc"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/type-safe-api-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/type-safe-api-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="type-safe-api:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="7"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-current-file-list="core/src/ecosystem/forge_trpc.rs|examples/template/trpc-launch-health.tsx|examples/template/trpc-launch-contract.ts|examples/dashboard/src/components/TrpcDashboardWorkflow.tsx|examples/dashboard/src/lib/trpcDashboardWorkflow.ts|docs/packages/api-trpc.source-guard-runbook.json|tools/launch/materialize-www-template.ts"
+              data-dx-check-package-lane-hash-refresh-stale-file-list=""
+              data-dx-check-package-lane-hash-refresh-missing-file-list=""
+              data-dx-check-package-lane-hash-refresh-stale-mirror-file-list=""
+              data-dx-check-package-lane-hash-refresh-missing-mirror-file-list=""
+              data-dx-check-package-lane-hash-refresh-current-metric="type_safe_api_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="type_safe_api_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="type_safe_api_receipt_hash_refresh_missing"
+              data-dx-package="api/trpc"
+            >
+              Type-Safe API package-lane row renders receipt, hash-refresh, and
+              source hash state when a dx-check receipt is loaded.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="animation/motion"
+              data-dx-check-package-lane-row="animation/motion"
+              data-dx-check-package-lane-name="Motion & Animation"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="motion"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/motion"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json"
+              data-dx-check-package-lane-dx-style-status="missing"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/motion-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/motion-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="motion-animation:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="4"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-current-metric="motion_animation_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="motion_animation_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="motion_animation_receipt_hash_refresh_missing"
+              data-dx-style-surface="motion-animation"
+              data-dx-token-scope="animation/motion"
+              data-dx-package="animation/motion"
+            >
+              Motion & Animation package-lane row renders receipt,
+              hash-refresh, and selected dashboard animation source state when
+              a dx-check receipt is loaded; live browser animation proof remains
+              app-owned.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="content/fumadocs-next"
+              data-dx-check-package-lane-row="content/fumadocs-next"
+              data-dx-check-package-lane-name="Documentation System"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="fumadocs"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/fumadocs"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-check-package-lane-hash-refresh-status="current"
+              data-dx-check-package-lane-hash-refresh-helper="examples/template/documentation-system-receipt-hashes.ts"
+              data-dx-check-package-lane-hash-refresh-json-command="node tools/launch/run-template-receipt-helper.js examples/template/documentation-system-receipt-hashes.ts --check --json"
+              data-dx-check-package-lane-hash-refresh-zed="documentation-system:receipt-hash-refresh"
+              data-dx-check-package-lane-hash-refresh-tracked-files="6"
+              data-dx-check-package-lane-hash-refresh-stale-files="0"
+              data-dx-check-package-lane-hash-refresh-missing-files="0"
+              data-dx-check-package-lane-hash-refresh-current-metric="documentation_system_receipt_hash_refresh_current"
+              data-dx-check-package-lane-hash-refresh-stale-metric="documentation_system_receipt_hash_refresh_stale"
+              data-dx-check-package-lane-hash-refresh-missing-metric="documentation_system_receipt_hash_refresh_missing"
+              data-dx-style-surface="documentation-system"
+              data-dx-token-scope="content/fumadocs-next"
+              data-dx-package="content/fumadocs-next"
+            >
+              Documentation System package-lane row renders receipt,
+              hash-refresh, source hash, and dx-style evidence when a dx-check
+              receipt is loaded; live Fumadocs renderer proof remains app-owned.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="ai/vercel-ai"
+              data-dx-check-package-lane-row="ai/vercel-ai"
+              data-dx-check-package-lane-name="AI SDK"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="ai"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/vercel-ai"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-ai-vercel-ai-launch-assistant.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-style-surface="ai-sdk"
+              data-dx-token-scope="ai/vercel-ai"
+              data-dx-package="ai/vercel-ai"
+            >
+              AI SDK package-lane row renders receipt, hash, and dx-style state
+              when a dx-check receipt is loaded; live model streaming remains
+              app-owned.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-check-package-lane-template="wasm/bindgen"
+              data-dx-check-package-lane-row="wasm/bindgen"
+              data-dx-check-package-lane-name="WebAssembly Bridge"
+              data-dx-check-package-lane-status="missing"
+              data-dx-check-package-lane-receipt-status="missing-receipt"
+              data-dx-check-package-lane-upstream-package="wasm-bindgen"
+              data-dx-check-package-lane-source-mirror="G:/WWW/inspirations/wasm-bindgen"
+              data-dx-check-package-lane-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-wasm-bindgen-dashboard-workflow.json"
+              data-dx-check-package-lane-dx-style-status="present"
+              data-dx-style-surface="theme-token"
+              data-dx-token-scope="wasm/bindgen"
+              data-dx-package="wasm/bindgen"
+            >
+              WebAssembly Bridge package-lane row renders receipt,
+              webassembly_bridge_hash_manifest_present,
+              webassembly_bridge_hash_mismatch,
+              webassembly_bridge_dx_style_compatibility_present, and
+              webassembly_bridge_dx_style_compatibility_missing state when a
+              dx-check receipt is loaded; live generated-Wasm runtime proof remains app-owned.
+            </span>
+            <code>dx check --latest-receipt --json</code>
+          </article>
+          <article
+            class="command-card"
+            data-dx-component="forge-golden-path-status"
+            data-dx-forge-status-surface="forge-golden-path-status"
+            data-dx-zed-surface="forge-golden-path-status"
+            data-dx-forge-golden-path="dx.forge.golden_path_status"
+            data-dx-forge-golden-path-state="partial"
+            data-dx-forge-golden-path-package="shadcn/ui/button"
+            data-dx-forge-golden-path-export="button"
+            data-dx-forge-golden-path-real-steps="10"
+            data-dx-forge-golden-path-partial-steps="0"
+            data-dx-forge-golden-path-blocked-steps="0"
+            data-dx-forge-golden-path-total-steps="10"
+            data-dx-forge-golden-path-dx-check-score="89"
+            data-dx-forge-golden-path-dx-check-traffic="score-gated"
+            data-dx-forge-root-manifest="dx"
+            data-dx-forge-local-publish-receipt=".dx/forge/registry/local/receipts/20260522T130612Z-shadcn-ui-button.json"
+            data-dx-forge-local-registry-manifest=".dx/forge/registry/local/packages/js/shadcn/ui/button/0.1.0/manifest.json"
+            data-dx-forge-add-receipt=".dx/forge/receipts/20260522T130626134038800Z-shadcn-ui-button--variant-export-button.json"
+            data-dx-forge-accepted-update-receipt=".dx/forge/receipts/20260522T130639403843800Z-shadcn-ui-button--variant-export-button.json"
+            data-dx-forge-status-receipt=".dx/receipts/forge/status-latest.json"
+            data-dx-forge-safety-archive-receipt=".dx/forge/receipts/safety/shadcn-ui-button-archive.json"
+          >
+            <span>Forge golden path</span>
+            <strong data-dx-dashboard-metric="forge-golden-path">
+              10/10 source steps real
+            </strong>
+            <small>
+              Root dx publish, selected visible add, and accepted no-op update
+              are proven. Remove and archive/restore are proven in the focused
+              local-registry fixture. Update/remove dry-runs now persist source
+              receipts; dx-check source guard is capped at 89/100 until browser
+              or live-provider proof is attached.
+            </small>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="root-dx-manifest"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              Root extensionless dx manifest declares shadcn/ui/button files,
+              exports, install defaults, local registry, and R2 dry-run boundary.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="local-publish"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              Local publish wrote a registry manifest and content-addressed blobs.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="selective-visible-install"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              Selected export button maps to visible lib and components files.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="status-lock"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              Forge status is ready and the package lock has zero hash
+              mismatches under the current lightweight dx-check smoke.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="update-dry-run"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              Update dry-run now persists an UpdateDryRun receipt without
+              mutating the source manifest or writing package files.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="accepted-update"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              Accepted update wrote a source-owned dry-run update receipt.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="remove-plan"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              Focused local-registry fixture proves remove write archives and
+              deletes the selected visible package file.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="archive-restore"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              Focused local-registry fixture proves rollback write restores the
+              removed selected file from registry content.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="dx-check-score"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              dx-check source guard is capped at 89/100 until browser or
+              live-provider proof is attached.
+            </span>
+            <span
+              class="sr-only"
+              data-dx-forge-golden-path-step="dashboard-row"
+              data-dx-forge-golden-path-step-state="real"
+            >
+              Static launch fixture exposes this row before React hydration.
+            </span>
+            <code>dx forge status --json</code>
+          </article>
+          <article
+            class="command-card forge-reality-dashboard"
+            data-dx-component="forge-package-reality-dashboard"
+            data-dx-forge-reality-score="89"
+            data-dx-forge-score-ceiling="89"
+            data-dx-forge-unbounded-source-score="93"
+            data-dx-forge-score-can-exceed-ceiling="false"
+            data-dx-forge-public-summary-first="true"
+            data-dx-forge-audit-details-default="collapsed"
+          >
+            <span>Forge score gate</span>
+            <strong data-dx-dashboard-metric="launch-readiness">89/100</strong>
+            <div class="forge-reality-summary" aria-label="Package readiness summary">
+              <div><span>Launch readiness</span><strong>89/100</strong></div>
+              <div><span>Package health</span><strong>20/20</strong></div>
+              <div><span>Browser check</span><strong>Pending</strong></div>
+              <div><span>Route checks</span><strong>3</strong></div>
+            </div>
+            <div
+              class="forge-reality-controls"
+              data-dx-component="launch-evidence-summary"
+              data-dx-launch-evidence-score-ceiling="89"
+              data-dx-launch-evidence-browser-proof="false"
+              data-dx-launch-evidence-provider-proof="false"
+            >
+              <section
+                data-dx-launch-evidence-id="package-receipts"
+                data-dx-launch-evidence-status="ready"
+                data-dx-launch-evidence-score-ceiling="89"
+                data-dx-launch-evidence-browser-proof="false"
+                data-dx-launch-evidence-provider-proof="false"
+                data-dx-launch-evidence-routes=""
+                data-dx-launch-evidence-packages=""
+              >
+                <strong>Package health</strong>
+                <span>20/20</span>
+              </section>
+              <section
+                data-dx-launch-evidence-id="browser-route-proof"
+                data-dx-launch-evidence-status="not-attached"
+                data-dx-launch-evidence-score-ceiling="89"
+                data-dx-launch-evidence-browser-proof="false"
+                data-dx-launch-evidence-provider-proof="false"
+                data-dx-launch-evidence-routes="/ /dashboard /login"
+                data-dx-launch-evidence-packages=""
+              >
+                <strong>Browser check</strong>
+                <span>Pending</span>
+              </section>
+              <section
+                data-dx-launch-evidence-id="live-provider-proof"
+                data-dx-launch-evidence-status="provider-gated"
+                data-dx-launch-evidence-score-ceiling="89"
+                data-dx-launch-evidence-browser-proof="false"
+                data-dx-launch-evidence-provider-proof="false"
+                data-dx-launch-evidence-routes=""
+                data-dx-launch-evidence-packages="ai/vercel-ai auth/better-auth automations/n8n instantdb/react payments/stripe-js supabase/client"
+              >
+                <strong>Live integrations</strong>
+                <span>6 gated</span>
+              </section>
+            </div>
+            <details class="forge-reality-audit-details"
+              data-dx-component="forge-package-maturity-details"
+              data-dx-forge-audit-details-default="collapsed"
+            >
+              <summary>Launch score gate</summary>
+              <div
+                class="forge-score-gate-list"
+                data-dx-forge-score-gate="dx.forge.launch_score_gate"
+                data-dx-forge-score-gate-current="89"
+                data-dx-forge-score-gate-target="90"
+                data-dx-forge-score-gate-ceiling="89"
+                data-dx-forge-score-gate-browser-proof="false"
+                data-dx-forge-score-gate-provider-proof="false"
+              >
+                <strong>Launch score gate</strong>
+                <span>dx-check source guard is capped at 89/100 until browser or live-provider proof is attached.</span>
+                <ul>
+                  <li
+                    data-dx-forge-score-gate-proof="browser-route-proof"
+                    data-dx-forge-score-gate-proof-status="not-attached"
+                    data-dx-forge-score-gate-proof-routes="/ /dashboard /login"
+                    data-dx-forge-score-gate-proof-packages=""
+                  >
+                    <strong>Browser route proof</strong>
+                    <span>Attach a running preview and verify nonblank rendering, native wheel scrolling, responsive shell behavior, and no custom scrollbar runtime.</span>
+                  </li>
+                  <li
+                    data-dx-forge-score-gate-proof="live-provider-proof"
+                    data-dx-forge-score-gate-proof-status="provider-gated"
+                    data-dx-forge-score-gate-proof-routes=""
+                    data-dx-forge-score-gate-proof-packages="ai/vercel-ai auth/better-auth automations/n8n instantdb/react payments/stripe-js supabase/client"
+                  >
+                    <strong>Live provider proof</strong>
+                    <span>Configure real app-owned credentials and capture live-provider proof without exposing secret values.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="forge-reality-score" data-dx-score-scope="package-readiness-row" data-dx-package-score="87">87/100</div>
+            </details>
+          </article>
+          <article
+            class="command-card"
+            data-dx-component="forge-safety-archive-status"
+            data-dx-forge-status-surface="safety-archive-status"
+            data-dx-zed-surface="safety-archive-status"
+            data-dx-safety-archive-contract="dx.forge.safety_archive_contract"
+            data-dx-safety-archive-operation="archive-before-delete"
+            data-dx-safety-archive-state="covered"
+            data-dx-safety-archive-safe-delete="true"
+            data-dx-safety-archive-package-count="3"
+            data-dx-safety-archive-covered-packages="3"
+            data-dx-safety-archive-missing-packages="0"
+            data-dx-safety-archive-rollback-coverage="100"
+            data-dx-safety-archive-receipt-count="3"
+            data-dx-safety-archive-directory=".dx/forge/receipts/safety"
+            data-dx-safety-archive-boundary="local-cache-restore-inputs-no-remote-rollback"
+            data-dx-safety-archive-runbook-source="public/preview-manifest.json"
+            data-dx-safety-archive-runbook-fixture="docs/packages/forge-safety-archive.source-guard-runbook.json"
+            data-dx-safety-archive-runbook-guard="forge-safety-archive-rollback-coverage"
+            data-dx-safety-archive-runbook-command="dx run --test .\benchmarks\www-forge-package-lock.test.ts"
+            data-dx-safety-archive-runbook-policy="source-only"
+          >
+            <span>Archive safety</span>
+            <strong data-dx-dashboard-metric="forge-safety-archive">
+              100% rollback coverage
+            </strong>
+            <small>
+              Local package archive receipts exist for tracked launch packages;
+              remote rollback remains an explicit boundary.
+            </small>
+            <small>Rollback proof</small>
+            <code>dx run --test .\benchmarks\www-forge-package-lock.test.ts</code>
+            <code>.dx/forge/receipts/safety</code>
+          </article>
+          <article
+            class="command-card"
+            data-dx-component="better-auth-account-dashboard-workflow"
+            data-dx-dashboard-card="session"
+            data-dx-dashboard-workflow="login-session-account"
+            data-dx-auth-dashboard-workflow="login-session-account"
+            data-dx-product-surface="account-access"
+            data-dx-package="auth/better-auth"
+            data-dx-package-role="auth"
+            data-dx-icon-search="auth:account"
+            data-dx-node-modules="forbidden"
+            data-dx-auth-provider-readiness="missing-config"
+            data-dx-auth-network-state="missing-config"
+            data-dx-auth-network-disabled="true"
+            data-dx-auth-local-session="not-created"
+            data-dx-auth-session-source="missing-config"
+            data-dx-auth-boundary-review="idle"
+            data-dx-auth-safe-action-state="idle"
+          >
+            <span>Sign-in readiness</span>
+            <strong id="mission-session-status" data-dx-dashboard-metric="session">Not reviewed</strong>
+            <small id="mission-session-detail">Sign-in readiness mounted; credentials stay app-owned.</small>
+            <label class="auth-readiness-field" data-dx-auth-interaction="dashboard-email-field">
+              Account email
+              <input
+                id="mission-auth-email"
+                type="email"
+                value="launch@dx.local"
+                autocomplete="off"
+                data-dx-auth-profile-field="email"
+                data-dx-auth-boundary-email-input="mission"
+              />
+            </label>
+            <div class="inline-stack" data-dx-auth-interaction="dashboard-provider-readiness">
+              <button
+                id="mission-auth-google"
+                type="button"
+                data-dx-auth-action="link-provider"
+                data-dx-auth-provider-option="google"
+                data-dx-auth-provider-state="missing-config"
+              >
+                Google ready?
+              </button>
+            </div>
+            <div class="inline-stack">
+              <button
+                id="mission-auth-preview"
+                type="button"
+                data-dx-auth-action="safe-sign-in-preview"
+                data-dx-auth-interaction="dashboard-safe-sign-in"
+                data-dx-auth-network-disabled="true"
+              >
+                Preview sign in
+              </button>
+              <button
+                id="mission-auth-sign-up"
+                type="button"
+                data-dx-auth-action="email-sign-up"
+                data-dx-auth-interaction="email-sign-up"
+                data-dx-auth-network-disabled="true"
+              >
+                Preview sign up
+              </button>
+              <button
+                id="mission-auth-boundary-review"
+                type="button"
+                data-dx-auth-action="mark-boundary-reviewed"
+                data-dx-auth-interaction="mark-boundary-reviewed"
+              >
+                Mark sign-in reviewed
+              </button>
+            </div>
+            <p
+              id="mission-auth-boundary-review-state"
+              class="notice"
+              data-auth-state="boundary-review"
+              data-dx-auth-session-source="boundary-review"
+              data-dx-auth-boundary-review="idle"
+            >
+              Sign-in readiness idle. No cookie, server session, or account is
+              created until the app owns Authentication config.
+            </p>
+            <small
+              id="mission-auth-receipt"
+              data-dx-auth-dashboard-receipt="none"
+              data-dx-auth-missing-provider-state="missing-config"
+            >
+              Provider credentials are missing; local sign-in review is safe.
+            </small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-component="launch-settings-validation-summary"
+            data-dx-dashboard-card="settings"
+            data-dx-dashboard-workflow="settings-validation"
+            data-dx-product-surface="account-settings"
+            data-dx-package="validation/zod"
+            data-dx-form-package="forms/react-hook-form"
+            data-dx-rhf-boundary="runtime-safe-form"
+            data-dx-zod-schema="dxDashboardSettingsSchema"
+            data-dx-zod-public-api="safeParseDxDashboardSettingsForm"
+            data-dx-source-owned-api="lib/validation/zod/dashboard-settings.ts"
+            data-dx-dashboard-summary-target="mission-settings-status"
+          >
+            <span>Settings</span>
+            <strong id="mission-settings-status" data-dx-dashboard-metric="settings">Waiting</strong>
+            <small id="mission-settings-detail">Zod validation has not run yet.</small>
+            <div class="adapter-list" data-dx-zod-dashboard-fieldset="editable-settings">
+              <label class="auth-readiness-field" data-dx-zod-dashboard-control="workspaceName">
+                Workspace
+                <input
+                  id="mission-settings-workspace"
+                  type="text"
+                  value="DX Launch Dashboard"
+                  autocomplete="off"
+                  data-dx-zod-dashboard-field="workspaceName"
+                  data-dx-zod-settings-field="workspaceName"
+                />
+              </label>
+              <label class="auth-readiness-field" data-dx-zod-dashboard-control="contactEmail">
+                Contact email
+                <input
+                  id="mission-settings-email"
+                  type="email"
+                  value="operator@example.com"
+                  autocomplete="off"
+                  data-dx-zod-dashboard-field="contactEmail"
+                  data-dx-zod-settings-field="contactEmail"
+                />
+              </label>
+              <label class="auth-readiness-field" data-dx-zod-dashboard-control="launchScoreTarget">
+                Score target
+                <input
+                  id="mission-settings-score"
+                  type="number"
+                  min="70"
+                  max="100"
+                  value="94"
+                  data-dx-zod-dashboard-field="launchScoreTarget"
+                  data-dx-zod-settings-field="launchScoreTarget"
+                />
+              </label>
+              <label class="auth-readiness-field" data-dx-zod-dashboard-control="defaultLocale">
+                Locale
+                <select
+                  id="mission-settings-locale"
+                  data-dx-zod-dashboard-field="defaultLocale"
+                  data-dx-zod-settings-field="defaultLocale"
+                >
+                  <option value="en" selected>English</option>
+                  <option value="bn">Bangla</option>
+                  <option value="hi">Hindi</option>
+                </select>
+              </label>
+              <label class="auth-readiness-field" data-dx-zod-dashboard-control="theme">
+                Theme
+                <select
+                  id="mission-settings-theme"
+                  data-dx-zod-dashboard-field="theme"
+                  data-dx-zod-settings-field="theme"
+                >
+                  <option value="system" selected>System</option>
+                  <option value="light">Light</option>
+                  <option value="dark">Dark</option>
+                </select>
+              </label>
+              <label class="auth-readiness-field" data-dx-zod-dashboard-control="previewMode">
+                Preview mode
+                <select
+                  id="mission-settings-preview-mode"
+                  data-dx-zod-dashboard-field="previewMode"
+                  data-dx-zod-settings-field="previewMode"
+                >
+                  <option value="preview" selected>Preview</option>
+                  <option value="stable">Stable</option>
+                </select>
+              </label>
+              <label class="auth-readiness-field" data-dx-zod-dashboard-control="packageReceiptsRequired">
+                <input
+                  id="mission-settings-receipts-required"
+                  type="checkbox"
+                  checked
+                  data-dx-zod-dashboard-field="packageReceiptsRequired"
+                  data-dx-zod-settings-field="packageReceiptsRequired"
+                />
+                Require source receipts
+              </label>
+            </div>
+            <div class="inline-stack" data-dx-zod-dashboard-controls="mission-control">
+              <button
+                id="mission-settings-show-errors"
+                type="button"
+                data-dx-zod-dashboard-action="load-invalid-settings"
+                data-dx-zod-dashboard-target="launch-form"
+                data-dx-zod-dashboard-action-state="idle"
+              >
+                Review errors
+              </button>
+              <button
+                id="mission-settings-validate"
+                type="button"
+                data-dx-zod-dashboard-action="load-valid-settings"
+                data-dx-zod-dashboard-target="launch-form"
+                data-dx-zod-dashboard-action-state="idle"
+              >
+                Apply valid settings
+              </button>
+            </div>
+            <small
+              id="mission-settings-receipt"
+              data-dx-zod-dashboard-receipt="idle"
+              data-dx-zod-dashboard-action-state="idle"
+              data-dx-zod-field-errors-api="z.flattenError"
+            >
+              Dashboard settings validation receipt idle.
+            </small>
+            <pre
+              id="mission-settings-receipt-json"
+              class="query-box"
+              data-dx-zod-dashboard-receipt-api="createDxDashboardSettingsReceipt"
+              data-dx-zod-dashboard-receipt-json="idle"
+              data-dx-zod-dashboard-receipt-state="idle"
+            >createDxDashboardSettingsReceipt output waiting for validation.</pre>
+          </article>
+          <article
+            class="command-card"
+            data-dx-dashboard-card="payment"
+            data-dx-package="payments/stripe-js"
+          >
+            <span>Payment</span>
+            <strong id="mission-payment-status" data-dx-dashboard-metric="payment">Idle</strong>
+            <small id="mission-payment-detail">Stripe-shaped checkout contract waiting.</small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-automation-auth-kinds="none"
+            data-dx-automation-credential-types="none"
+            data-dx-automation-dashboard-state="idle"
+            data-dx-automation-required-env="DX_AUTOMATIONS_OPERATOR_APPROVAL"
+            data-dx-automation-selected-connector="n8n-nodes-base.manualTrigger"
+            data-dx-automation-trigger-node="true"
+            data-dx-automation-usable-as-tool="false"
+            data-dx-automation-workflow-node-readiness="metadata-ready"
+            data-dx-automation-workflow-status="metadata-ready"
+            data-dx-component="launch-automation-mission-summary"
+            data-dx-dashboard-card="automation"
+            data-dx-dashboard-workflow="automation-release-receipt"
+            data-dx-package="automations/n8n"
+            data-dx-package-role="automations"
+            data-dx-product-surface="launch-dashboard"
+          >
+            <span>Automation</span>
+            <strong id="mission-automation-status" data-dx-dashboard-metric="automation">Manual Trigger</strong>
+            <small id="mission-automation-detail">Automation Connectors metadata ready.</small>
+            <small id="mission-automation-schema" data-dx-automation-mission-schema="none" data-dx-automation-required-env="DX_AUTOMATIONS_OPERATOR_APPROVAL">Auth schema: none; credentials: none; workflow node: metadata-ready; required env: DX_AUTOMATIONS_OPERATOR_APPROVAL; tool ready: false.</small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-dashboard-card="database"
+            data-dx-package="supabase/client,db/drizzle-sqlite,instantdb/react,api/trpc"
+          >
+            <span>Database</span>
+            <strong id="mission-database-status" data-dx-dashboard-metric="database">Local fixtures</strong>
+            <small id="mission-database-detail">Supabase, Drizzle, InstantDB, and tRPC adapters visible.</small>
+          </article>
+          <article
+            id="mission-trpc"
+            class="command-card"
+            data-dx-component="launch-trpc-api-dashboard-workflow"
+            data-dx-dashboard-card="typed-api"
+            data-dx-dashboard-workflow="typed-api-readiness"
+            data-dx-product-surface="launch-dashboard"
+            data-dx-package="api/trpc"
+            data-dx-package-role="api"
+            data-dx-icon-search="api:trpc"
+            data-dx-node-modules="forbidden"
+            data-dx-style-surface="theme-token"
+            data-dx-trpc-workflow="launch-api-readiness"
+            data-trpc-endpoint="/api/trpc/health"
+            data-trpc-procedure="health.query,launchEvent.mutation"
+            data-trpc-mutation-state="idle"
+            data-trpc-runtime-boundary="source-owned-runtime-pending"
+          >
+            <span><dx-icon name="api:trpc" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="api:trpc"></dx-icon> Typed API</span>
+            <strong
+              id="mission-trpc-status"
+              data-dx-dashboard-metric="trpc"
+              data-trpc-mutation-state="idle"
+              data-trpc-request-id="not-run"
+            >
+              Route idle
+            </strong>
+            <small id="mission-trpc-detail">tRPC health and launchEvent are ready for safe local checks.</small>
+            <div class="inline-stack" data-dx-trpc-workflow="launch-api-readiness">
+              <button
+                id="mission-trpc-health-check"
+                type="button"
+                data-dx-trpc-action="check-health"
+                data-trpc-interaction="health-query"
+              >
+                Query health
+              </button>
+              <button
+                id="mission-trpc-launch-event"
+                type="button"
+                data-dx-trpc-action="prepare-launch-event"
+                data-trpc-interaction="local-launch-event-mutation"
+              >
+                Record launchEvent
+              </button>
+            </div>
+            <small
+              id="mission-trpc-receipt"
+              data-dx-trpc-receipt-state="idle"
+              data-dx-trpc-request-id="not-run"
+            >
+              Runtime dependencies, auth, limits, and observability remain app-owned.
+            </small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-component="launch-query-dashboard-summary"
+            data-dx-dashboard-card="dashboard-data"
+            data-dx-dashboard-workflow="query-backed-dashboard-data"
+            data-dx-product-surface="launch-dashboard"
+            data-dx-package="tanstack/query"
+            data-dx-package-role="server-state"
+            data-dx-icon-search="pack:tanstack-query"
+            data-dx-node-modules="forbidden"
+            data-dx-query-dashboard-source="launch-runtime-catalog"
+            data-dx-query-dashboard-package-count="30"
+            data-dx-query-dashboard-role-count="22"
+            data-dx-query-dashboard-required-env-count="13"
+          >
+            <span><dx-icon name="pack:tanstack-query" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:tanstack-query"></dx-icon> Dashboard data</span>
+            <strong id="mission-query-status" data-dx-dashboard-metric="query-data">30 packages</strong>
+            <small id="mission-query-detail">Data Fetching &amp; Cache read model waiting for a dashboard refresh.</small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-component="launch-fumadocs-dashboard-summary"
+            data-dx-dashboard-card="docs-help"
+            data-dx-dashboard-workflow="docs-help-changelog"
+            data-dx-product-surface="dashboard-help-content"
+            data-dx-package="content/fumadocs-next"
+            data-dx-package-role="docs"
+            data-dx-icon-search="pack:fumadocs"
+            data-dx-node-modules="forbidden"
+            data-dx-fumadocs-dashboard-target="mission-control-docs"
+            data-dx-fumadocs-dashboard-route="/docs"
+            data-dx-fumadocs-dashboard-receipt="idle"
+          >
+            <span><dx-icon name="pack:fumadocs" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:fumadocs"></dx-icon> Docs help</span>
+            <strong id="mission-docs-status" data-dx-dashboard-metric="docs-help">/docs</strong>
+            <small id="mission-docs-detail">Documentation System route selection is waiting for dashboard interaction.</small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-component="launch-scene-dashboard-workflow"
+            data-dx-dashboard-card="scene"
+            data-dx-dashboard-workflow="scene-visual-ops"
+            data-dx-product-surface="visual-operations-dashboard"
+            data-dx-package="3d/launch-scene"
+            data-dx-package-role="3d"
+            data-dx-icon-search="scene:webgl"
+            data-dx-node-modules="forbidden"
+            data-dx-scene-quality-profile="preview"
+            data-dx-scene-material-palette="aurora"
+            data-dx-scene-camera-rig="orbit"
+            data-dx-scene-frame-sample="pending"
+            data-dx-scene-capability-report="pending"
+            data-dx-scene-capability-status="canvas-missing"
+            data-dx-scene-viewport-report="pending"
+            data-dx-scene-viewport-status="canvas-missing"
+            data-dx-scene-bounds-report="pending"
+            data-dx-scene-bounds-status="pending"
+            data-dx-scene-raycast-report="pending"
+            data-dx-scene-raycast-status="pending"
+            data-dx-scene-workflow-active="visual-runtime-health"
+            data-dx-scene-workflow-receipt-state="idle"
+          >
+            <span>3D Ops</span>
+            <strong id="mission-scene-status" data-dx-dashboard-metric="scene">Runtime health</strong>
+            <small id="mission-scene-detail">WebGL scene waiting for dashboard interaction.</small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-dashboard-card="realtime"
+            data-dx-component="launch-instantdb-runtime-dashboard-workflow"
+            data-dx-dashboard-workflow="realtime-data-readiness"
+            data-dx-instant-runtime-status="client-required"
+          data-dx-package="instantdb/react"
+          data-dx-package-role="realtime-data"
+          data-dx-node-modules="forbidden"
+          data-dx-style-surface="realtime-app-database"
+        >
+            <span><dx-icon name="pack:database" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:database"></dx-icon> Realtime</span>
+            <strong id="mission-instantdb-status" data-dx-dashboard-metric="instantdb">Missing config</strong>
+            <small id="mission-instantdb-detail">InstantDB receipt waiting for app-owned app id.</small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-component="launch-motion-dashboard-summary"
+            data-dx-dashboard-card="animation"
+            data-dx-dashboard-workflow="motion-panel-orchestration"
+            data-dx-package="animation/motion"
+            data-dx-product-surface="launch-dashboard"
+            data-dx-motion-policy="app-owned-reduced-motion-preview"
+            data-dx-motion-reduced="system"
+          >
+            <span>Motion</span>
+            <strong id="mission-motion-status" data-dx-dashboard-metric="animation">Source-owned adapters</strong>
+            <small id="mission-motion-detail">Motion stage has not changed yet.</small>
+            <small id="mission-motion-policy">Motion policy follows the system preference.</small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-dashboard-card="locale"
+            data-dx-package="i18n/next-intl"
+            data-dx-component="next-intl-dashboard-locale-workflow"
+            data-dx-intl-dashboard-workflow="locale-copy-boundary"
+            data-dx-intl-message-namespace="LaunchDashboard"
+            data-dx-dashboard-copy-locale="en"
+            data-dx-intl-readiness-copy="English copy is ready for product review."
+            data-dx-intl-format-preview="May 23, 2026, 10:00 AM"
+            data-dx-intl-format-source-api="useFormatter.dateTime"
+            data-dx-intl-format-time-zone="UTC"
+            data-dx-intl-number-preview="$49"
+            data-dx-intl-number-source-api="useFormatter.number"
+            data-dx-intl-number-currency="USD"
+            data-dx-icon-search="i18n:locale"
+            data-dx-node-modules="forbidden"
+          >
+            <span><dx-icon name="pack:i18n" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:i18n"></dx-icon> Locale</span>
+            <strong id="mission-locale-status" data-dx-dashboard-metric="locale" aria-live="polite">English</strong>
+            <small id="mission-locale-detail">next-intl dashboard copy boundary ready.</small>
+            <div class="inline-stack" data-dx-intl-interaction="locale-switcher">
+              <button
+                type="button"
+                data-dx-intl-action="switch-dashboard-locale"
+                data-dx-intl-locale-option="en"
+                data-dx-intl-locale-selected="true"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                data-dx-intl-action="switch-dashboard-locale"
+                data-dx-intl-locale-option="bn"
+                data-dx-intl-locale-selected="false"
+              >
+                ?????
+              </button>
+              <button
+                id="mission-locale-receipt-action"
+                type="button"
+                data-dx-intl-action="prepare-dashboard-intl-receipt"
+              >
+                Receipt
+              </button>
+            </div>
+            <small id="mission-locale-copy" data-dx-intl-copy-target="mission-summary">
+              Dashboard copy uses source-owned next-intl messages.
+            </small>
+            <small id="mission-locale-readiness" data-dx-intl-copy-target="readiness" aria-live="polite">
+              English copy is ready for product review.
+            </small>
+            <small id="mission-locale-format" data-dx-intl-copy-target="format-preview"
+              data-dx-intl-format-preview="May 23, 2026, 10:00 AM"
+              data-dx-intl-format-source-api="useFormatter.dateTime"
+              data-dx-intl-format-time-zone="UTC"
+            >
+              Formatter preview: May 23, 2026, 10:00 AM.
+            </small>
+            <small id="mission-locale-price" data-dx-intl-copy-target="price-preview"
+              data-dx-intl-number-preview="$49"
+              data-dx-intl-number-source-api="useFormatter.number"
+              data-dx-intl-number-currency="USD"
+            >
+              Localized plan price: $49/mo.
+            </small>
+            <small
+              id="mission-locale-plan"
+              data-dx-intl-copy-target="plan-label"
+              data-dx-intl-plan-label="Launch Pro"
+            >
+              Plan copy: Launch Pro.
+            </small>
+            <small
+              id="mission-locale-support"
+              data-dx-intl-copy-target="support-sla"
+              data-dx-intl-support-sla="Same business day"
+            >
+              Support SLA: Same business day.
+            </small>
+            <small
+              id="mission-locale-route"
+              data-dx-intl-copy-target="route-preview"
+              data-dx-intl-route-preview="/"
+              data-dx-intl-hreflang="en"
+              data-dx-intl-locale-prefix="as-needed"
+            >
+              Route preview:
+              <a
+                id="mission-locale-route-link"
+                href="/"
+                hreflang="en"
+                data-dx-intl-action="preview-localized-route"
+                data-dx-intl-hreflang="en"
+                data-dx-intl-locale-prefix="as-needed"
+              >/</a>.
+            </small>
+            <small
+              id="mission-locale-alternates"
+              data-dx-intl-alternate-links="launch-dashboard"
+            >
+              Alternate links:
+              <a
+                href="/"
+                hreflang="en"
+                rel="alternate"
+                data-dx-intl-action="review-alternate-link"
+                data-dx-intl-alternate-locale="en"
+                data-dx-intl-alternate-href="/"
+              >en</a>
+              <a
+                href="/?locale=bn"
+                hreflang="bn-BD"
+                rel="alternate"
+                data-dx-intl-action="review-alternate-link"
+                data-dx-intl-alternate-locale="bn"
+                data-dx-intl-alternate-href="/?locale=bn"
+              >bn-BD</a>.
+            </small>
+            <small
+              id="mission-locale-receipt"
+              data-dx-intl-receipt-state="idle"
+              data-dx-intl-receipt-locale="en"
+              data-dx-intl-receipt-hreflang="en"
+              data-dx-intl-receipt-format-source="useFormatter.dateTime"
+              data-dx-intl-receipt-number-source="useFormatter.number"
+              aria-live="polite"
+            >
+              Locale receipt idle.
+            </small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-component="launch-wasm-compute-dashboard-workflow"
+            data-dx-dashboard-card="local-compute"
+            data-dx-dashboard-workflow="local-compute-readiness"
+            data-dx-package="wasm/bindgen"
+            data-dx-product-surface="launch-dashboard"
+            data-dx-icon-search="wasm:bindgen"
+          >
+            <span>Local compute</span>
+            <strong id="mission-wasm-status" data-dx-dashboard-metric="wasm-compute">Idle</strong>
+            <small id="mission-wasm-detail">WebAssembly local add check waiting.</small>
+          </article>
+          <article
+            class="command-card"
+            data-dx-dashboard-card="controls"
+            data-dx-package="state/zustand,shadcn/ui/button,shadcn/ui/card,shadcn/ui/item"
+            data-dx-zustand-store="launch-dashboard-settings"
+            data-dx-zustand-persist-key="dx-launch-dashboard-settings"
+          >
+            <span>Controls</span>
+            <strong id="mission-controls-status" data-dx-dashboard-metric="controls">Comfortable</strong>
+            <small id="mission-controls-detail">Zustand dashboard settings ready.</small>
+          </article>
+        </div>
+        <div
+          class="dashboard-controls"
+          data-dx-component="shadcn-dashboard-controls-runtime"
+          data-dx-dashboard-workflow="operator-controls"
+          data-dx-package="state/zustand,shadcn/ui/button"
+          data-dx-node-modules="forbidden"
+          data-dx-shadcn-dashboard-density="comfortable"
+          data-dx-shadcn-dashboard-queue="payment"
+          data-dx-shadcn-dashboard-controls-target="mission-payment-status"
+          data-dx-shadcn-dashboard-focus-target="mission-payment-status"
+          data-dx-shadcn-dashboard-receipt="idle"
+          data-dx-zustand-store="launch-dashboard-settings"
+          data-dx-zustand-persist-key="dx-launch-dashboard-settings"
+          data-dx-zustand-dashboard-density="comfortable"
+          data-dx-zustand-dashboard-focus="payment"
+          data-dx-zustand-dashboard-applied="false"
+          data-dx-zustand-command-hints="enabled"
+          data-dx-zustand-hydration-event="onFinishHydration"
+          data-dx-zustand-rehydrate-state="idle"
+          data-dx-source-file="components/launch/shadcn-dashboard-controls"
+        >
+          <div class="control-header" data-slot="card-header">
+            <p class="eyebrow"><dx-icon name="pack:settings" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:settings"></dx-icon> Dashboard controls</p>
+            <h3 data-slot="card-title">Operate the launch surface</h3>
+            <p class="copy" data-slot="card-description">
+              These controls use the shadcn/ui Button, Badge, Card, Field, Input,
+              Textarea, Item, and Separator contracts to change dashboard state
+              without a template-local node_modules workflow.
+            </p>
+          </div>
+          <div
+            class="state-strip"
+            data-dx-component="launch-dashboard-state-workflow"
+            data-dx-dashboard-workflow="ui-state-persistence"
+            data-dx-package="state/zustand"
+            data-dx-style-surface="state-management"
+            data-dx-zustand-store="launch-dashboard-settings"
+            data-dx-zustand-persist-key="dx-launch-dashboard-settings"
+            data-dx-zustand-dashboard-density="comfortable"
+            data-dx-zustand-dashboard-focus="payment"
+            data-dx-zustand-dashboard-applied="false"
+            data-dx-zustand-command-hints="enabled"
+            data-dx-zustand-hydration-event="onFinishHydration"
+            data-dx-zustand-rehydrate-state="idle"
+            data-dx-icon-search="state:zustand"
+          >
+            <span class="pill"><dx-icon name="pack:state" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:state"></dx-icon> Persisted view</span>
+            <p id="zustand-dashboard-state-status" class="copy">
+              Select density or focus, then save the dashboard view locally.
+            </p>
+            <button
+              id="dashboard-command-hints"
+              type="button"
+              data-slot="button"
+              data-variant="outline"
+              data-size="sm"
+              data-dx-package="shadcn/ui/button"
+              data-dx-zustand-action="toggle-command-hints"
+            >
+              Toggle command hints
+            </button>
+          </div>
+          <div class="inline-stack" data-dx-shadcn-dashboard-control="density" aria-label="Dashboard density">
+            <button
+              type="button"
+              aria-controls="shadcn-dashboard-status"
+              aria-pressed="true"
+              data-slot="button"
+              data-variant="secondary"
+              data-size="sm"
+              data-dx-package="shadcn/ui/button"
+              data-dx-shadcn-dashboard-action="set-density"
+              data-dx-zustand-action="set-dashboard-density"
+              data-dx-shadcn-dashboard-density-option="comfortable"
+              data-dx-zustand-dashboard-density-option="comfortable"
+              data-dx-shadcn-dashboard-selected="true"
+            >
+              Comfortable
+            </button>
+            <button
+              type="button"
+              aria-controls="shadcn-dashboard-status"
+              aria-pressed="false"
+              data-slot="button"
+              data-variant="outline"
+              data-size="sm"
+              data-dx-package="shadcn/ui/button"
+              data-dx-shadcn-dashboard-action="set-density"
+              data-dx-zustand-action="set-dashboard-density"
+              data-dx-shadcn-dashboard-density-option="compact"
+              data-dx-zustand-dashboard-density-option="compact"
+              data-dx-shadcn-dashboard-selected="false"
+            >
+              Compact
+            </button>
+          </div>
+          <div class="control-list" data-slot="item-group" data-dx-shadcn-dashboard-control="queue" data-dx-shadcn-dashboard-keyboard="arrow-roving-focus" aria-label="Dashboard focus queue">
+            <button
+              type="button"
+              aria-controls="mission-session-status"
+              aria-current="false"
+              aria-pressed="false"
+              tabindex="-1"
+              data-slot="item"
+              data-dx-package="shadcn/ui/item"
+              data-dx-shadcn-dashboard-action="select-queue"
+              data-dx-shadcn-dashboard-keyboard="arrow-roving-focus"
+              data-dx-zustand-action="select-dashboard-focus"
+              data-dx-shadcn-dashboard-queue-option="session"
+              data-dx-zustand-dashboard-focus-option="session"
+              data-dx-shadcn-dashboard-selected="false"
+            >
+              <span data-slot="item-content">Session</span>
+              <small>auth/better-auth</small>
+            </button>
+            <button
+              type="button"
+              aria-controls="mission-payment-status"
+              aria-current="true"
+              aria-pressed="true"
+              tabindex="0"
+              data-slot="item"
+              data-dx-package="shadcn/ui/field"
+              data-dx-shadcn-dashboard-action="select-queue"
+              data-dx-shadcn-dashboard-keyboard="arrow-roving-focus"
+              data-dx-zustand-action="select-dashboard-focus"
+              data-dx-shadcn-dashboard-queue-option="payment"
+              data-dx-zustand-dashboard-focus-option="payment"
+              data-dx-shadcn-dashboard-selected="true"
+            >
+              <span data-slot="item-content">Payment</span>
+              <small>payments/stripe-js</small>
+            </button>
+            <button
+              type="button"
+              aria-controls="mission-database-status"
+              aria-current="false"
+              aria-pressed="false"
+              tabindex="-1"
+              data-slot="item"
+              data-dx-package="shadcn/ui/card"
+              data-dx-shadcn-dashboard-action="select-queue"
+              data-dx-shadcn-dashboard-keyboard="arrow-roving-focus"
+              data-dx-zustand-action="select-dashboard-focus"
+              data-dx-shadcn-dashboard-queue-option="data"
+              data-dx-zustand-dashboard-focus-option="data"
+              data-dx-shadcn-dashboard-selected="false"
+            >
+              <span data-slot="item-content">Data</span>
+              <small>tanstack/query</small>
+            </button>
+            <button
+              type="button"
+              aria-controls="mission-dashboard-status"
+              aria-current="false"
+              aria-pressed="false"
+              tabindex="-1"
+              data-slot="item"
+              data-dx-package="shadcn/ui/button"
+              data-dx-shadcn-dashboard-action="select-queue"
+              data-dx-shadcn-dashboard-keyboard="arrow-roving-focus"
+              data-dx-zustand-action="select-dashboard-focus"
+              data-dx-shadcn-dashboard-queue-option="studio"
+              data-dx-zustand-dashboard-focus-option="studio"
+              data-dx-shadcn-dashboard-selected="false"
+            >
+              <span data-slot="item-content">Studio</span>
+              <small>shadcn/ui/item</small>
+            </button>
+          </div>
+          <div data-slot="separator" role="separator" data-dx-package="shadcn/ui/separator"></div>
+          <form class="form-grid" data-slot="field-group" data-dx-package="shadcn/ui/field">
+            <label data-slot="field">
+              Control filter
+              <input
+                id="shadcn-dashboard-filter"
+                value="launch blockers"
+                data-slot="input"
+                data-dx-package="shadcn/ui/input"
+                data-dx-shadcn-dashboard-input="filter"
+              />
+            </label>
+            <label data-slot="field">
+              Operator note
+              <textarea
+                id="shadcn-dashboard-note"
+                data-slot="textarea"
+                data-dx-package="shadcn/ui/textarea"
+                data-dx-shadcn-dashboard-input="note"
+              >Keep session, payment, data, and Studio controls together.</textarea>
+            </label>
+            <button
+              type="button"
+              aria-controls="shadcn-dashboard-status"
+              class="primary"
+              id="shadcn-dashboard-save"
+              data-slot="button"
+              data-variant="default"
+              data-size="default"
+              data-dx-package="shadcn/ui/button"
+              data-dx-shadcn-dashboard-action="preview-dashboard-receipt"
+              data-dx-zustand-action="save-dashboard-settings"
+            >
+              Save dashboard view
+            </button>
+            <button
+              type="button"
+              aria-controls="mission-payment-status"
+              id="shadcn-dashboard-focus-target"
+              data-slot="button"
+              data-variant="outline"
+              data-size="default"
+              data-dx-package="shadcn/ui/button"
+              data-dx-shadcn-dashboard-action="focus-target-card"
+              data-dx-shadcn-dashboard-focus-target="mission-payment-status"
+            >
+              Focus selected card
+            </button>
+            <button
+              type="button"
+              id="dashboard-settings-reset"
+              data-slot="button"
+              data-variant="outline"
+              data-size="default"
+              data-dx-zustand-action="reset-dashboard-settings"
+            >
+              Reset saved view
+            </button>
+            <button
+              type="button"
+              id="dashboard-settings-rehydrate"
+              data-slot="button"
+              data-variant="outline"
+              data-size="default"
+              data-dx-package="shadcn/ui/button"
+              data-dx-zustand-action="rehydrate-dashboard-settings"
+              data-dx-zustand-rehydrate-state="idle"
+              aria-disabled="false"
+            >
+              Rehydrate saved view
+            </button>
+          </form>
+          <p
+            id="shadcn-dashboard-status"
+            class="notice"
+            aria-live="polite"
+            data-slot="badge"
+            data-dx-package="shadcn/ui/badge"
+            data-dx-shadcn-dashboard-receipt="idle"
+            data-dx-shadcn-dashboard-target-focused="none"
+            data-state="ready"
+          >
+            Choose a queue and preview a local shadcn/ui dashboard receipt.
+          </p>
+        </div>
+        </div>
+      </section>
+
+      <section
+        class="section command-workflow"
+        data-dx-section="launch-automation-ops"
+        data-dx-editable-section="launch-automation-ops"
+        data-dx-component="launch-automation-dashboard-workflow"
+        data-dx-dashboard-workflow="automation-release-receipt"
+        data-dx-package="automations/n8n"
+        data-dx-product-surface="launch-dashboard"
+      >
+        <div class="command-copy">
+          <p class="eyebrow">Release automation</p>
+          <h2>Prepare a launch notification workflow</h2>
+          <p class="copy">
+            Pick a source-owned connector backed by n8n-nodes-base provenance, review credential readiness, write
+            the release intent, and prepare a redacted receipt for Friday review.
+          </p>
+          <div class="status-line">
+            <span class="pill">No secrets imported</span>
+            <span class="pill">Receipt-only handoff</span>
+            <span class="pill">Zed-selectable workflow</span>
+          </div>
+        </div>
+        <article
+          class="workflow-panel"
+          data-dx-automation-dashboard-card="launch-release-notification"
+          data-dx-automation-workflow="connector-readiness"
+          data-dx-automation-receipt-path="G:/Dx/.dx/receipts/automations/launch-release-notification.json"
+          data-dx-automation-run-receipt-path="G:/Dx/.dx/receipts/automations/run-latest.json"
+          data-dx-automation-required-env="DX_AUTOMATIONS_OPERATOR_APPROVAL"
+          data-dx-automation-route="/automations"
+          data-dx-automation-view="launch-bridge"
+          data-dx-component="launch-automation-connector-workflow"
+          data-dx-dashboard-workflow="automation-release-receipt"
+          data-dx-package="automations/n8n"
+          data-dx-source-file="automations/workflows"
+        >
+          <div class="status-line" data-dx-icon-search="pack:n8n">
+            <dx-icon name="pack:n8n" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:n8n"></dx-icon>
+            <span class="pill" data-dx-automation-card-label="dashboard-workflow">
+              Automation Connectors workflow
+            </span>
+          </div>
+          <dl class="metric-grid" data-dx-component="launch-automation-catalog-summary">
+            <div>
+              <dt>Connectors</dt>
+              <dd>536</dd>
+            </div>
+            <div>
+              <dt>Credentials</dt>
+              <dd>396</dd>
+            </div>
+            <div>
+              <dt>Tool-ready</dt>
+              <dd>360</dd>
+            </div>
+          </dl>
+          <div class="inline-stack" data-dx-automation-interaction="connector-filter">
+            <button type="button" data-dx-automation-filter="all" data-dx-automation-filter-active="true">
+              All
+            </button>
+            <button type="button" data-dx-automation-filter="metadata-ready" data-dx-automation-filter-active="false">
+              Ready
+            </button>
+            <button type="button" data-dx-automation-filter="missing-config" data-dx-automation-filter-active="false">
+              Missing config
+            </button>
+          </div>
+          <div class="inline-stack" data-dx-automation-interaction="connector-picker">
+            <button
+              type="button"
+              data-dx-automation-auth-kinds="none"
+              data-dx-automation-connector="n8n-nodes-base.manualTrigger"
+              data-dx-automation-connector-status="metadata-ready"
+              data-dx-automation-credentials=""
+              data-dx-automation-credential-types=""
+              data-dx-automation-required-env="DX_AUTOMATIONS_OPERATOR_APPROVAL"
+              data-dx-automation-selected="true"
+              data-dx-automation-trigger-node="true"
+              data-dx-automation-usable-as-tool="false"
+              data-dx-automation-workflow-node-readiness="metadata-ready"
+            >
+              Manual Trigger
+            </button>
+            <button
+              type="button"
+              data-dx-automation-auth-kinds="bearer_token,oauth2"
+              data-dx-automation-connector="n8n-nodes-base.slack"
+              data-dx-automation-connector-status="missing-config"
+              data-dx-automation-credentials="slackApi,slackOAuth2Api"
+              data-dx-automation-credential-types="slackApi,slackOAuth2Api"
+              data-dx-automation-required-env="SLACK_BOT_TOKEN,SLACK_SIGNING_SECRET,DX_AUTOMATIONS_OPERATOR_APPROVAL"
+              data-dx-automation-selected="false"
+              data-dx-automation-trigger-node="false"
+              data-dx-automation-usable-as-tool="true"
+              data-dx-automation-workflow-node-readiness="credential-gated"
+            >
+              Slack
+            </button>
+            <button
+              type="button"
+              data-dx-automation-auth-kinds="api_key,oauth2"
+              data-dx-automation-connector="n8n-nodes-base.notion"
+              data-dx-automation-connector-status="missing-config"
+              data-dx-automation-credentials="notionApi,notionOAuth2Api"
+              data-dx-automation-credential-types="notionApi,notionOAuth2Api"
+              data-dx-automation-required-env="NOTION_API_KEY,DX_AUTOMATIONS_OPERATOR_APPROVAL"
+              data-dx-automation-selected="false"
+              data-dx-automation-trigger-node="false"
+              data-dx-automation-usable-as-tool="true"
+              data-dx-automation-workflow-node-readiness="credential-gated"
+            >
+              Notion
+            </button>
+          </div>
+          <label class="auth-readiness-field" data-dx-automation-interaction="workflow-intent">
+            Release workflow intent
+            <textarea
+              id="automation-intent"
+              data-dx-automation-intent-input="release-notification"
+            >Notify the launch channel when a release receipt is ready for Friday review.</textarea>
+          </label>
+          <div
+            class="notice"
+            id="automation-readiness"
+            data-dx-automation-interaction="workflow-readiness"
+            data-dx-automation-missing-config="false"
+            data-dx-automation-readiness-card="metadata-ready"
+            data-dx-automation-receipt-state="idle"
+            data-dx-automation-receipt-status="idle"
+            data-dx-automation-required-env="DX_AUTOMATIONS_OPERATOR_APPROVAL"
+            data-dx-automation-selected-connector="n8n-nodes-base.manualTrigger"
+            data-dx-automation-workflow-status="metadata-ready"
+            data-state="ready"
+          >
+            Manual Trigger is metadata-ready. No external credentials are used.
+          </div>
+          <div
+            class="notice"
+            id="automation-schema-summary"
+            data-dx-automation-auth-kinds="none"
+            data-dx-automation-credential-schema="n8n-nodes-base.manualTrigger"
+            data-dx-automation-credential-types=""
+            data-dx-automation-required-env="DX_AUTOMATIONS_OPERATOR_APPROVAL"
+            data-dx-automation-trigger-node="true"
+            data-dx-automation-usable-as-tool="false"
+            data-dx-automation-workflow-node-readiness="metadata-ready"
+            data-state="ready"
+          >
+            Credential schema: none; credentials: none; required env:
+            DX_AUTOMATIONS_OPERATOR_APPROVAL; workflow node: metadata-ready;
+            usable as tool: false.
+          </div>
+          <div class="inline-stack">
+            <button
+              id="automation-receipt"
+              type="button"
+              data-dx-automation-action="preview-run-receipt"
+              data-dx-automation-local-receipt="draft-workflow-receipt"
+              data-dx-automation-safe-action="prepare-dry-run-receipt"
+              data-dx-automation-safe-action-state="idle"
+            >
+              Prepare release receipt
+            </button>
+            <button
+              id="automation-zed-run-handoff"
+              type="button"
+              data-dx-automation-handoff="zed-run-receipt"
+              data-dx-automation-run-receipt-path="G:/Dx/.dx/receipts/automations/run-latest.json"
+              data-dx-automation-safe-action="prepare-zed-run-handoff"
+              data-dx-automation-safe-action-state="idle"
+            >
+              Prepare Zed run handoff
+            </button>
+            <a class="chip" href="/automations">Open automations route</a>
+          </div>
+          <p
+            id="automation-receipt-output"
+            class="notice"
+            data-dx-automation-draft-state="idle"
+            data-dx-automation-receipt-output="local-draft"
+            data-dx-automation-receipt-intent="Notify the launch channel when a release receipt is ready for Friday review."
+            data-dx-automation-receipt-path="G:/Dx/.dx/receipts/automations/launch-release-notification.json"
+            data-state="ready"
+          >
+            No local release automation receipt drafted yet.
+          </p>
+          <p
+            id="automation-zed-output"
+            class="notice"
+            data-dx-automation-run-receipt-output="zed-handoff"
+            data-dx-automation-run-receipt-intent="Notify the launch channel when a release receipt is ready for Friday review."
+            data-dx-automation-run-receipt-path="G:/Dx/.dx/receipts/automations/run-latest.json"
+            data-dx-automation-zed-run-state="idle"
+            data-state="ready"
+          >
+            Rust/Zed run handoff is idle. Prepare it after the connector and
+            intent look right.
+          </p>
+        </article>
+      </section>
+
+      <section
+        id="proof-grid"
+        class="section proof-grid"
+        data-dx-section="proof-grid"
+        data-dx-editable-section="launch-package-proof-grid"
+      >
+        <article
+          class="card"
+          data-dx-component="better-auth-boundary-review"
+          data-dx-package="auth/better-auth"
+          data-dx-auth-boundary-surface="session-readiness"
+          data-dx-auth-config="missing-config"
+          data-dx-auth-network-state="missing-config"
+          data-dx-auth-network-disabled="true"
+          data-dx-auth-local-session="not-created"
+          data-dx-auth-safe-action-state="idle"
+          data-dx-auth-storage-key="dx-better-auth-boundary-review"
+          data-dx-source-file="auth/session"
+        >
+          <p class="eyebrow">Authentication</p>
+          <h2>Sign-in session readiness</h2>
+          <p class="copy">
+            The template owns the session surface and exposes a safe environment
+            contract before real OAuth secrets are configured.
+          </p>
+          <p class="status-line">
+            <span class="pill" data-dx-component="auth-session-card">
+              Live Authentication session card
+            </span>
+          </p>
+          <div
+            class="notice"
+            data-dx-auth-readiness-card="missing-config"
+            data-dx-auth-missing-config="BETTER_AUTH_SECRET,BETTER_AUTH_URL,GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET"
+            data-state="ready"
+          >
+            Authentication provider credentials are not configured. This browser
+            proof uses a safe local sign-in review plus the app-owned
+            /api/auth/session readiness route.
+          </div>
+          <div class="adapter-list" data-dx-auth-provider-readiness="server-owned">
+            <div
+              data-dx-auth-provider="google"
+              data-dx-auth-provider-state="missing-config"
+              data-dx-auth-provider-env="GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET"
+            >
+              Google OAuth needs app-owned credentials.
+            </div>
+          </div>
+          <label class="auth-readiness-field" data-dx-auth-interaction="boundary-email-field">
+            Review email
+            <input
+              id="session-boundary-email"
+              type="email"
+              value="launch@dx.local"
+              autocomplete="off"
+              data-dx-auth-boundary-email-input="true"
+            />
+          </label>
+          <div class="inline-stack">
+            <button
+              id="session-sign-in"
+              type="button"
+              data-dx-action="auth-sign-in"
+              data-dx-auth-interaction="safe-sign-in-preview"
+              data-dx-auth-network-disabled="true"
+            >
+              Preview sign in
+            </button>
+            <button
+              id="session-sign-up"
+              type="button"
+              data-dx-action="auth-sign-up"
+              data-dx-auth-interaction="email-sign-up"
+              data-dx-auth-network-disabled="true"
+            >
+              Preview sign up
+            </button>
+            <button
+              id="session-boundary-review"
+              type="button"
+              data-dx-action="auth-mark-boundary-reviewed"
+              data-dx-auth-interaction="mark-boundary-reviewed"
+            >
+              Mark sign-in reviewed
+            </button>
+            <button
+              id="session-sign-out"
+              type="button"
+              data-dx-action="auth-clear-boundary-review"
+              data-dx-auth-interaction="clear-boundary-review"
+            >
+              Clear boundary review
+            </button>
+          </div>
+          <p
+            id="session-status"
+            class="notice"
+            data-dx-auth-boundary-review-state="idle"
+            data-state="ready"
+          >
+            Sign-in readiness idle.
+          </p>
+          <p id="session-boundary-review-user" class="notice" data-dx-auth-boundary-review-user="none">
+            No local sign-in review marker.
+          </p>
+          <p id="session-boundary-review-account" class="notice" data-dx-auth-boundary-review-account="none">
+            No account has been created.
+          </p>
+          <p id="session-detail" class="notice" data-dx-auth-session-endpoint="/api/auth/session">
+            Adapter boundary: /api/auth/session.
+          </p>
+        </article>
+
+        <article
+          class="card"
+          data-dx-component="launch-billing-checkout-workflow"
+          data-dx-package="payments/stripe-js"
+          data-dx-dashboard-flow="billing-checkout"
+          data-dx-node-modules="forbidden"
+          data-dx-source-file="payments/checkout"
+          data-dx-stripe-dashboard-workflow="plan-checkout"
+          data-dx-stripe-plan-id="team"
+          data-dx-stripe-price-env="STRIPE_PRICE_ID_TEAM"
+          data-dx-stripe-checkout-mode="hosted"
+          data-dx-stripe-config-state="missing-config"
+          data-dx-stripe-local-receipt="none"
+          data-dx-stripe-post-result="idle"
+          data-dx-stripe-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json"
+          data-dx-stripe-safe-readiness-post="true"
+        >
+          <p class="eyebrow"><dx-icon name="pack:payments" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:payments"></dx-icon> Billing</p>
+          <h2>Plan checkout workflow</h2>
+          <p class="copy">
+            Select a plan, validate billing contact details, and request the
+            app-owned Checkout Session boundary. No real payment data is collected.
+          </p>
+          <p class="status-line">
+            <span
+              class="pill"
+              data-dx-stripe-status-pill="billing-workflow"
+              data-dx-dashboard-flow="billing-checkout"
+            >
+              Stripe billing workflow
+            </span>
+          </p>
+          <div class="provider-options" data-dx-stripe-interaction="plan-picker">
+            <button
+              type="button"
+              data-dx-stripe-action="select-plan"
+              data-dx-stripe-plan-id="starter"
+              data-dx-stripe-price-env="STRIPE_PRICE_ID_STARTER"
+              data-dx-stripe-plan-selected="false"
+            >
+              Starter
+            </button>
+            <button
+              type="button"
+              data-dx-stripe-action="select-plan"
+              data-dx-stripe-plan-id="team"
+              data-dx-stripe-price-env="STRIPE_PRICE_ID_TEAM"
+              data-dx-stripe-plan-selected="true"
+            >
+              Team
+            </button>
+            <button
+              type="button"
+              data-dx-stripe-action="select-plan"
+              data-dx-stripe-plan-id="scale"
+              data-dx-stripe-price-env="STRIPE_PRICE_ID_SCALE"
+              data-dx-stripe-plan-selected="false"
+            >
+              Scale
+            </button>
+          </div>
+          <form
+            id="stripe-checkout-form"
+            class="form-grid"
+            data-dx-stripe-interaction="checkout-contact-form"
+            data-dx-stripe-post-result="idle"
+          >
+            <label>
+              Checkout email
+              <input name="email" autocomplete="email" placeholder="billing@example.com" />
+            </label>
+            <label>
+              Contact name
+              <input name="name" autocomplete="name" placeholder="Avery Stone" />
+            </label>
+            <label>
+              Checkout context
+              <textarea
+                name="message"
+                placeholder="Plan, billing owner, tax notes, or launch handoff context"
+              ></textarea>
+            </label>
+            <button
+              id="payment-action"
+              type="submit"
+              data-dx-action="stripe-checkout-boundary"
+              data-dx-stripe-action="request-checkout-intent"
+            >
+              Request checkout intent
+            </button>
+            <button
+              id="payment-fill-sample"
+              type="button"
+              data-dx-action="stripe-fill-sample-contact"
+              data-dx-stripe-action="load-sample-contact"
+            >
+              Load sample contact
+            </button>
+          </form>
+          <p
+            id="payment-status"
+            class="notice"
+            data-dx-stripe-post-result="idle"
+            data-state="ready"
+          >
+            Submit a contact payload to see the safe Stripe-shaped POST result.
+          </p>
+        </article>
+
+        <article
+          id="launch-settings"
+          class="card"
+          data-dx-component="zod-form-card"
+          data-dx-package="validation/zod"
+          data-dx-form-package="forms/react-hook-form"
+          data-dx-form="account-settings"
+          data-dx-dashboard-workflow="settings-validation"
+          data-dx-product-surface="account-settings"
+          data-dx-rhf-boundary="runtime-safe-form"
+          data-dx-zod-schema="dxDashboardSettingsSchema"
+          data-dx-zod-public-api="safeParseDxDashboardSettingsForm"
+          data-dx-source-owned-api="lib/validation/zod/dashboard-settings.ts"
+          data-dx-zod-validation-summary-target="mission-control"
+          data-dx-zod-validation="runtime-settings-validation"
+          data-dx-zod-validation-state="ready"
+        >
+          <p class="eyebrow">Forms and validation</p>
+          <h2>Account settings validation</h2>
+          <p class="copy">
+            This workflow validates operator profile/contact data before the
+            launch dashboard treats it as app-owned account state.
+          </p>
+          <form id="launch-form"
+            class="form-grid"
+            data-dx-component="react-hook-form-boundary"
+            data-dx-rhf-boundary="runtime-safe-form"
+            data-dx-zod-schema="dxDashboardSettingsSchema"
+            data-dx-zod-public-api="safeParseDxDashboardSettingsForm"
+            data-dx-zod-form="dashboard-settings"
+            data-dx-zod-validation-state="ready"
+          >
+            <label>
+              Workspace name
+              <input
+                name="workspaceName"
+                autocomplete="organization"
+                placeholder="DX Launch Dashboard"
+                data-dx-zod-validation-input="workspaceName"
+                data-dx-zod-settings-field="workspaceName"
+              />
+            </label>
+            <label>
+              Contact email
+              <input
+                name="contactEmail"
+                autocomplete="email"
+                placeholder="operator@example.com"
+                data-dx-zod-validation-input="contactEmail"
+                data-dx-zod-settings-field="contactEmail"
+              />
+            </label>
+            <label>
+              Locale
+              <select
+                name="defaultLocale"
+                data-dx-zod-validation-input="defaultLocale"
+                data-dx-zod-settings-field="defaultLocale"
+              >
+                <option value="en">English</option>
+                <option value="bn">Bangla</option>
+                <option value="hi">Hindi</option>
+              </select>
+            </label>
+            <label>
+              Theme
+              <select
+                name="theme"
+                data-dx-zod-validation-input="theme"
+                data-dx-zod-settings-field="theme"
+              >
+                <option value="system">System</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+              </select>
+            </label>
+            <label>
+              Preview mode
+              <select
+                name="previewMode"
+                data-dx-zod-validation-input="previewMode"
+                data-dx-zod-settings-field="previewMode"
+              >
+                <option value="preview">Preview</option>
+                <option value="stable">Stable</option>
+              </select>
+            </label>
+            <label>
+              Launch score target
+              <input
+                name="launchScoreTarget"
+                inputmode="numeric"
+                min="70"
+                max="100"
+                placeholder="94"
+                type="number"
+                data-dx-zod-validation-input="launchScoreTarget"
+                data-dx-zod-settings-field="launchScoreTarget"
+              />
+            </label>
+            <label>
+              <input
+                name="packageReceiptsRequired"
+                type="checkbox"
+                checked
+                data-dx-zod-validation-input="packageReceiptsRequired"
+                data-dx-zod-settings-field="packageReceiptsRequired"
+              />
+              Require source receipts
+            </label>
+            <button
+              type="submit"
+              class="primary"
+              data-dx-action="submit-zod-form"
+              data-dx-zod-validation-action="validate-settings-form"
+            >
+              Validate settings
+            </button>
+            <button type="button" id="zod-fill-invalid" data-dx-zod-validation-action="load-invalid-settings">
+              Show settings errors
+            </button>
+            <button type="button" id="zod-fill-valid" data-dx-zod-validation-action="load-valid-settings">
+              Load valid settings
+            </button>
+          </form>
+          <p
+            id="form-status"
+            class="notice"
+            data-state="ready"
+            data-dx-zod-validation-result="idle"
+            data-dx-zod-validation-state="ready"
+            data-dx-zod-validation-error=""
+          >
+            Submit empty settings to see validation, then submit a valid dashboard payload.
+          </p>
+          <ul
+            id="form-issues"
+            class="adapter-list"
+            data-dx-zod-validation-issues="[]"
+            data-dx-zod-validation-issue-list
+          >
+            <li data-dx-zod-validation-issue="idle">No settings validation issues yet.</li>
+          </ul>
+          <pre
+            id="form-field-errors"
+            class="query-box"
+            data-dx-zod-field-errors="{}"
+            data-dx-zod-field-errors-api="z.flattenError"
+            data-dx-zod-validation-field-errors="idle"
+          >z.flattenError field errors waiting for input.</pre>
+          <p
+            id="form-settings-summary"
+            class="notice"
+            data-state="ready"
+            data-dx-zod-settings-summary="idle"
+          >
+            Validated dashboard settings summary waiting.
+          </p>
+          <pre
+            id="form-payload"
+            class="query-box"
+            data-dx-zod-validation-payload="idle"
+            data-dx-zod-validation-output="pending"
+          >safeParse settings output waiting for input.</pre>
+        </article>
+
+        <article
+          class="card"
+          data-dx-component="zustand-state-card"
+          data-dx-package="state/zustand"
+          data-dx-state-store="launch-counter"
+          data-dx-zustand-store="launch-counter"
+          data-dx-zustand-count="0"
+          data-dx-zustand-toggle-state="disabled"
+          data-dx-zustand-persist-key="dx-launch-counter"
+          data-dx-zustand-hydration="ready"
+        >
+          <p class="eyebrow">State</p>
+          <h2>Persisted source-owned store</h2>
+          <div class="metric">
+            <span>Counter</span>
+            <strong id="state-count">0</strong>
+          </div>
+          <div class="metric">
+            <span>Review mode</span>
+            <strong id="state-toggle" data-dx-zustand-toggle-state="disabled">Off</strong>
+          </div>
+          <div class="inline-stack">
+            <button
+              id="state-increment"
+              type="button"
+              data-dx-action="state-increment"
+              data-dx-zustand-action="increment"
+            >
+              Increment
+            </button>
+            <button
+              id="state-toggle-mode"
+              type="button"
+              data-dx-action="state-toggle-review-mode"
+              data-dx-zustand-action="toggle-review-mode"
+            >
+              Toggle review mode
+            </button>
+            <button
+              id="state-reset"
+              type="button"
+              data-dx-action="state-reset"
+              data-dx-zustand-action="reset"
+            >
+              Reset
+            </button>
+            <button
+              id="state-rehydrate"
+              type="button"
+              data-dx-action="state-rehydrate"
+              data-dx-zustand-action="rehydrate"
+            >
+              Rehydrate
+            </button>
+          </div>
+          <p
+            id="state-status"
+            class="notice"
+            data-state="ready"
+            data-dx-zustand-persist-key="dx-launch-counter"
+          >
+            Zustand-style persisted store count: 0; review mode off.
+          </p>
+        </article>
+
+        <article
+          class="card"
+          data-dx-component="tanstack-query-dashboard-data-workflow"
+          data-dx-dashboard-workflow="query-backed-dashboard-data"
+          data-dx-node-modules="forbidden"
+          data-dx-package="tanstack/query"
+          data-dx-product-surface="launch-dashboard"
+          data-dx-query-cache-state="idle"
+          data-dx-query-dashboard-source="launch-runtime-catalog"
+          data-dx-query-dashboard-queue="package-readiness"
+          data-dx-query-dashboard-package-count="30"
+          data-dx-query-dashboard-role-count="22"
+          data-dx-query-dashboard-required-env-count="13"
+          data-dx-query-dashboard-boundary-count="43"
+          data-dx-query-key="[&quot;dx&quot;,&quot;launch&quot;,&quot;dashboard&quot;,&quot;read-model&quot;]"
+          data-dx-query-refresh-state="idle"
+        >
+          <p class="eyebrow">Query</p>
+          <h2>Query-backed dashboard data</h2>
+          <p class="copy">
+            The runtime-safe route reads launch package catalog counts through the
+            same dashboard read-model contract as the TSX source. No hidden package
+            tree or app-local node_modules folder is required.
+          </p>
+          <dl class="adapter-list" data-dx-query-cache-summary="dashboard-data">
+            <div>
+              <dt>Query key</dt>
+              <dd data-dx-query-key-label>["dx","launch","dashboard","read-model"]</dd>
+            </div>
+            <div>
+              <dt>Packages</dt>
+              <dd id="query-package-count" data-dx-query-dashboard-package-count="30">30</dd>
+            </div>
+            <div>
+              <dt>Roles</dt>
+              <dd id="query-role-count" data-dx-query-dashboard-role-count="22">22</dd>
+            </div>
+            <div>
+              <dt>Env gates</dt>
+              <dd id="query-required-env-count" data-dx-query-dashboard-required-env-count="13">13</dd>
+            </div>
+            <div>
+              <dt>Refreshes</dt>
+              <dd id="query-cache-runs" data-dx-query-run-count="0">0</dd>
+            </div>
+            <div>
+              <dt>Last update</dt>
+              <dd id="query-cache-updated" data-dx-query-updated-at="never">Never</dd>
+            </div>
+          </dl>
+          <div
+            id="query-package-queue"
+            class="adapter-list"
+            data-dx-query-dashboard-queue="package-readiness"
+          >
+            <div
+              data-dx-query-dashboard-row="tanstack/query"
+              data-dx-query-package-boundary-count="2"
+              data-dx-query-package-command="dx add data-fetching-cache --write"
+              data-dx-query-package-id="tanstack/query"
+              data-dx-query-package-name="Data Fetching &amp; Cache"
+              data-dx-query-package-receipt-count="9"
+              data-dx-query-package-role="server-state"
+              data-dx-query-package-status="ready"
+            >
+              <strong>Data Fetching &amp; Cache</strong>
+              <span>tanstack/query - server-state</span>
+              <span>ready</span>
+            </div>
+            <div
+              data-dx-query-dashboard-row="auth/better-auth"
+              data-dx-query-package-boundary-count="3"
+              data-dx-query-package-command="dx add authentication --write"
+              data-dx-query-package-id="auth/better-auth"
+              data-dx-query-package-name="Authentication"
+              data-dx-query-package-receipt-count="4"
+              data-dx-query-package-role="auth"
+              data-dx-query-package-status="needs-env"
+            >
+              <strong>Authentication</strong>
+              <span>auth</span>
+              <span>2 env gates</span>
+            </div>
+            <div
+              data-dx-query-dashboard-row="payments/stripe-js"
+              data-dx-query-package-boundary-count="3"
+              data-dx-query-package-command="dx add payments --write"
+              data-dx-query-package-id="payments/stripe-js"
+              data-dx-query-package-name="Payments"
+              data-dx-query-package-receipt-count="4"
+              data-dx-query-package-role="payments"
+              data-dx-query-package-status="needs-env"
+            >
+              <strong>Payments</strong>
+              <span>Payments</span>
+              <span>2 env gates</span>
+            </div>
+          </div>
+          <button
+            id="query-refresh"
+            type="button"
+            data-dx-action="query-refresh"
+            data-dx-query-interaction="refresh-dashboard-data"
+            data-dx-query-refresh-state="idle"
+            data-dx-query-safe-action="read-dashboard-catalog"
+            data-dx-query-safe-action-state="idle"
+            data-dx-query-action="refresh-dashboard-data"
+          >
+            Refresh dashboard data
+          </button>
+          <p
+            id="query-status"
+            class="notice"
+            data-dx-query-cache-entry="empty"
+            data-dx-query-result-status="idle"
+            data-state="ready"
+          >
+            Dashboard read model idle.
+          </p>
+        </article>
+
+        <article
+          id="motion-proof"
+          class="card motion-proof"
+          data-dx-component="motion-animation-card"
+          data-dx-package="animation/motion"
+          data-dx-dashboard-workflow="motion-panel-orchestration"
+          data-dx-product-surface="launch-dashboard"
+          data-dx-motion="launch-card-transition"
+          data-dx-motion-interaction="runtime-local-workflow"
+          data-dx-motion-policy="app-owned-reduced-motion-preview"
+          data-dx-motion-reduced="system"
+          data-dx-motion-state="source-owned"
+          data-dx-motion-progress="34"
+          data-dx-motion-order="source-owned,interactive,preview-ready"
+          data-dx-motion-preference-storage="local-storage"
+          data-dx-motion-storage-key="dx.launch.motion.dashboard"
+        >
+          <p class="eyebrow">Motion</p>
+          <h2>Dashboard choreography</h2>
+          <p class="copy">
+            Advance progress or reorder stages to update the launch dashboard's
+            animation state without a local install.
+          </p>
+          <div class="motion-progress-track" data-dx-motion-progress-track>
+            <span
+              class="motion-progress-bar"
+              style="width: 34%"
+              data-dx-motion-progress-bar
+            ></span>
+          </div>
+          <p id="motion-status" class="notice" data-state="ready">
+            Source-owned adapters: 34% complete.
+          </p>
+          <p
+            id="motion-policy-status"
+            class="notice"
+            data-dx-motion-policy-status="system"
+            data-state="ready"
+          >
+            Motion policy follows the system preference until the app overrides it.
+          </p>
+          <div class="inline-stack" data-dx-motion-interaction="control-row">
+            <button
+              id="motion-toggle"
+              type="button"
+              data-dx-action="motion-toggle"
+              data-dx-motion-interaction="advance-stage"
+            >
+              Advance stage
+            </button>
+            <button id="motion-reorder" type="button" data-dx-motion-interaction="reverse-order">
+              Reverse order
+            </button>
+            <button
+              id="motion-move-previous"
+              type="button"
+              aria-disabled="true"
+              data-dx-motion-interaction="move-stage-previous"
+              data-dx-motion-order-available="false"
+              data-dx-motion-order-direction="previous"
+              disabled
+            >
+              Move earlier
+            </button>
+            <button
+              id="motion-move-next"
+              type="button"
+              aria-disabled="false"
+              data-dx-motion-interaction="move-stage-next"
+              data-dx-motion-order-available="true"
+              data-dx-motion-order-direction="next"
+            >
+              Move later
+            </button>
+            <button id="motion-reset" type="button" data-dx-motion-interaction="reset-proof">
+              Reset
+            </button>
+            <button
+              id="motion-reduced"
+              type="button"
+              aria-pressed="false"
+              data-dx-motion-interaction="toggle-reduced-motion"
+              data-dx-motion-reduced="system"
+            >
+              Preview reduced motion
+            </button>
+          </div>
+          <div
+            id="motion-stage-list"
+            class="motion-stage-list"
+            aria-activedescendant="motion-stage-source-owned"
+            aria-label="Motion & Animation launch stage order"
+            data-dx-motion-interaction="layout-reorder-list"
+            data-dx-motion-keyboard-reorder="arrow-home-end"
+            data-dx-motion-keyboard-state="source-owned"
+            role="listbox"
+            tabindex="0"
+          >
+            <div
+              id="motion-stage-source-owned"
+              class="motion-stage-card is-current"
+              aria-selected="true"
+              data-dx-motion-stage="source-owned"
+              data-dx-motion-stage-active="true"
+              role="option"
+            >
+              <strong>Source-owned adapters</strong>
+              <span>Forge Motion helpers are visible on the root dashboard.</span>
+            </div>
+            <div
+              id="motion-stage-interactive"
+              class="motion-stage-card"
+              aria-selected="false"
+              data-dx-motion-stage="interactive"
+              role="option"
+            >
+              <strong>Local interaction</strong>
+              <span>Buttons update progress and reorder stage cards.</span>
+            </div>
+            <div
+              id="motion-stage-preview-ready"
+              class="motion-stage-card"
+              aria-selected="false"
+              data-dx-motion-stage="preview-ready"
+              role="option"
+            >
+              <strong>Web Preview markers</strong>
+              <span>Stable data-dx markers expose Motion state to Zed.</span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          id="fumadocs-workflow"
+          class="card wide docs-workflow"
+          data-dx-component="launch-fumadocs-docs-workflow"
+          data-dx-package="content/fumadocs-next"
+          data-dx-dashboard-workflow="docs-help-changelog"
+          data-dx-product-surface="dashboard-help-content"
+          data-dx-source-file="docs/fumadocs"
+          data-dx-node-modules="forbidden"
+          data-dx-edit-id="launch.docs-help"
+          data-dx-edit-kind="dashboard-workflow"
+          data-dx-edit-ops="insert_component,move_reorder_section,update_text_content,insert_icon_media"
+          data-dx-docs-search-route="/api/search"
+          data-dx-docs-static-search-route="/api/search-static"
+          data-dx-docs-llms-route="/llms.txt"
+          data-dx-docs-llms-full-route="/llms-full.txt"
+          data-dx-docs-openapi-route="/docs/api"
+          data-dx-docs-status="/docs"
+          data-dx-fumadocs-rendered-route="/docs"
+          data-dx-fumadocs-selected-page="overview"
+          data-dx-fumadocs-toc-count="3"
+          data-dx-fumadocs-local-response="idle"
+          data-dx-fumadocs-receipt-route="none"
+        >
+          <p class="eyebrow"><dx-icon name="pack:fumadocs" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:fumadocs"></dx-icon> Docs help</p>
+          <h2>Docs help and changelog</h2>
+          <p class="copy">
+            Pick a docs page to update the rendered route, breadcrumb, peer list,
+            TOC, safe Markdown pane, and local handoff receipt. This is
+            browser-visible Fumadocs behavior without a generated node_modules
+            folder.
+          </p>
+          <p class="notice" data-dx-fumadocs-missing-config="DX_FUMADOCS_OPENAPI_ALLOWED_ORIGINS">
+            Missing config: DX_FUMADOCS_OPENAPI_ALLOWED_ORIGINS. OpenAPI proxy execution stays app-owned.
+          </p>
+          <div class="docs-selector" data-dx-fumadocs-interaction="page-tree-selector">
+            <button
+              type="button"
+              data-dx-fumadocs-page-option="overview"
+              data-dx-fumadocs-page-route="/docs"
+              data-dx-fumadocs-page-selected="true"
+              aria-pressed="true"
+            >
+              Launch overview
+            </button>
+            <button
+              type="button"
+              data-dx-fumadocs-page-option="api-reference"
+              data-dx-fumadocs-page-route="/docs/api"
+              data-dx-fumadocs-page-selected="false"
+              aria-pressed="false"
+            >
+              API reference
+            </button>
+            <button
+              type="button"
+              data-dx-fumadocs-page-option="llm-export"
+              data-dx-fumadocs-page-route="/llms.txt"
+              data-dx-fumadocs-page-selected="false"
+              aria-pressed="false"
+            >
+              LLM export
+            </button>
+          </div>
+          <div class="docs-shell">
+            <aside
+              class="docs-meta"
+              data-dx-fumadocs-navigation-snapshot="Docs/Launch/Overview"
+            >
+              <p class="eyebrow">Page tree</p>
+              <h3 id="fumadocs-title">Launch overview</h3>
+              <p id="fumadocs-description" class="copy">
+                Source-owned App Router docs with generated navigation.
+              </p>
+              <ol id="fumadocs-breadcrumb" class="route-list">
+                <li data-dx-fumadocs-breadcrumb="Docs">Docs</li>
+                <li data-dx-fumadocs-breadcrumb="Launch">Launch</li>
+                <li data-dx-fumadocs-breadcrumb="Overview">Overview</li>
+              </ol>
+              <ul id="fumadocs-peers" class="docs-peers">
+                <li data-dx-fumadocs-peer="API reference">API reference</li>
+                <li data-dx-fumadocs-peer="LLM export">LLM export</li>
+              </ul>
+            </aside>
+            <div
+              class="markdown"
+              data-dx-component="markdown-docs-card"
+              data-dx-package="content/react-markdown"
+              data-dx-fumadocs-rendered-markdown="active-page"
+            >
+              <div class="status-line">
+                <span id="fumadocs-route" class="pill" data-dx-fumadocs-route-label="/docs">
+                  /docs
+                </span>
+                <span class="pill">HTML disabled</span>
+              </div>
+              <h3 id="fumadocs-heading">Launch overview</h3>
+              <p id="fumadocs-body">
+                DX materializes a Documentation System route from source-owned files.
+              </p>
+              <ul id="fumadocs-toc" data-dx-fumadocs-toc-list="overview">
+                <li>Package contract</li>
+                <li>Editable content</li>
+                <li>Search boundary</li>
+              </ul>
+            </div>
+          </div>
+          <div class="inline-stack">
+            <button
+              type="button"
+              data-dx-fumadocs-action="safe-local-route-preview"
+            >
+              Preview docs receipt
+            </button>
+            <span class="pill">HTML disabled</span>
+            <span class="pill">No node_modules path</span>
+          </div>
+          <ul class="route-list" data-dx-fumadocs-changelog="launch-docs">
+            <li data-dx-fumadocs-changelog-item="dashboard-workflow">
+              Docs route, OpenAPI, search, and LLM handoff surfaced in one panel.
+            </li>
+            <li data-dx-fumadocs-changelog-item="local-receipt">
+              Safe local route receipt added for Web Preview selection.
+            </li>
+            <li data-dx-fumadocs-changelog-item="openapi-boundary">
+              OpenAPI proxy remains missing-config until allowed origins are app-owned.
+            </li>
+          </ul>
+          <p
+            id="fumadocs-receipt"
+            class="notice"
+            role="status"
+            aria-live="polite"
+            data-dx-fumadocs-local-response="idle"
+            data-dx-fumadocs-receipt-route="none"
+          >
+            Select a docs route, then preview the local Documentation System route receipt.
+          </p>
+        </article>
+
+        <article
+          class="card"
+          data-dx-component="supabase-schema-query-workflow"
+          data-dx-package="supabase/client"
+          data-dx-source-file="lib/supabase"
+          data-dx-supabase-config-status="missing-config"
+          data-dx-supabase-readiness="client-readiness"
+          data-dx-supabase-query-operation="supabase.from('profiles').select('id, full_name, username, website')"
+          data-dx-supabase-query-state="idle"
+          data-dx-supabase-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json"
+        >
+          <p class="eyebrow">Supabase</p>
+          <h2>Client readiness and local schema query</h2>
+          <p class="copy">
+            Hosted Supabase requires app-owned public URL and publishable key.
+            The browser proof keeps secrets out and runs a safe local profiles
+            fixture.
+          </p>
+          <div
+            class="notice"
+            id="supabase-readiness"
+            data-dx-supabase-config-status="missing-config"
+            data-dx-supabase-interaction="config-readiness"
+            data-state="ready"
+          >
+            Missing NEXT_PUBLIC_SUPABASE_URL and
+            NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY. Service-role secrets are not
+            loaded in this path.
+          </div>
+          <div class="inline-stack">
+            <button
+              id="supabase-local-query"
+              type="button"
+              data-dx-supabase-action="run-local-schema-query"
+            >
+              Run local query
+            </button>
+            <a class="chip" href="/database">Database route</a>
+          </div>
+          <div
+            id="supabase-query-result"
+            class="query-box"
+            data-dx-supabase-query-operation="supabase.from('profiles').select('id, full_name, username, website')"
+            data-dx-supabase-query-state="idle"
+            data-dx-supabase-table="profiles"
+          >
+            Local profiles fixture idle.
+          </div>
+          <div
+            class="query-box"
+            data-dx-component="supabase-profile-workflow"
+            data-dx-icon-search="database:supabase"
+            data-dx-node-modules="not-required"
+            data-dx-package="supabase/client"
+            data-dx-supabase-config-status="missing-config"
+            data-dx-supabase-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json"
+            data-dx-supabase-receipt-state="idle"
+            data-dx-supabase-workflow="profile-settings"
+          >
+            <p class="eyebrow"><dx-icon name="database:supabase" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="database:supabase"></dx-icon> Profile workflow</p>
+            <p class="copy">
+              Uses the generated profile helpers to load the current user,
+              select from `profiles`, and prepare `upsertDxSupabaseProfile`.
+            </p>
+            <div
+              id="supabase-profile-fixture"
+              class="notice"
+              data-dx-supabase-profile-loaded="false"
+              data-dx-supabase-profile-id="none"
+              data-state="ready"
+            >
+              No profile fixture loaded yet.
+            </div>
+            <div class="inline-stack">
+              <button
+                id="supabase-load-profile"
+                type="button"
+                data-dx-supabase-action="load-profile-fixture"
+              >
+                Load profile fixture
+              </button>
+              <button
+                id="supabase-prepare-upsert"
+                type="button"
+                data-dx-supabase-action="prepare-profile-upsert"
+              >
+                Prepare profile upsert
+              </button>
+            </div>
+            <p
+              id="supabase-profile-receipt"
+              class="notice"
+              data-dx-supabase-upsert-operation="idle"
+              data-dx-supabase-upsert-status="idle"
+              data-state="ready"
+            >
+              Profile upsert receipt idle. Live writes wait for app-owned
+              Supabase public env and RLS.
+            </p>
+          </div>
+        </article>
+
+          <article
+            class="card"
+            data-dx-component="database-backend-card"
+            data-dx-package="supabase/client,db/drizzle-sqlite,instantdb/react,api/trpc"
+            data-dx-dashboard-target="mission-control-database"
+            data-dx-backend-status="read-model-ready"
+            data-dx-backend-detail="Drizzle read model ready; safe local SQLite fixture can update mission control without a template-local node_modules workflow."
+            data-dx-backend-workflow="sqlite-read-model"
+            data-dx-source-file="data/backends"
+          >
+          <p class="eyebrow">Database and backend</p>
+          <h2>Supabase, Drizzle, InstantDB, tRPC</h2>
+          <ul class="adapter-list">
+            <li data-dx-database="supabase">Supabase: env-owned client boundary.</li>
+            <li data-dx-database="drizzle">Drizzle SQLite: typed schema boundary.</li>
+            <li data-dx-database="instantdb">InstantDB: realtime adapter boundary.</li>
+            <li data-dx-backend="trpc" data-dx-trpc-workflow="launch-api-readiness">
+              tRPC: source-owned procedure route handled by the typed API dashboard workflow.
+            </li>
+          </ul>
+          <div class="inline-stack">
+            <a
+              class="chip"
+              href="#mission-trpc"
+              data-dx-backend-action="open-typed-api-dashboard"
+              data-dx-package="api/trpc"
+            >
+              Typed API workflow
+            </a>
+            <a class="chip" href="/database">Database route</a>
+            <a class="chip" href="/backend">Backend route</a>
+          </div>
+        </article>
+
+        <article
+          class="card wide"
+          data-dx-component="instantdb-runtime-dashboard-workflow"
+          data-dx-package="instantdb/react"
+          data-dx-instant-readiness="runtime-dashboard-readiness"
+          data-dx-instant-required-env="NEXT_PUBLIC_INSTANT_APP_ID"
+          data-dx-instant-runtime-status="client-required"
+          data-dx-instant-receipt-state="idle"
+          data-dx-icon-search="pack:database"
+          data-dx-node-modules="forbidden"
+          data-dx-source-file="components/launch/instantdb-status.tsx"
+          data-dx-style-surface="realtime-app-database"
+        >
+          <p class="eyebrow"><dx-icon name="pack:database" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:database"></dx-icon> InstantDB realtime</p>
+          <h2>Realtime dashboard data stays honest until the app owns credentials</h2>
+          <p class="copy">
+            The package slice exposes the real React client, room presence, auth,
+            storage, streams, and Next route handler APIs. This live route cannot
+            connect to hosted InstantDB until the app provides
+            <code>NEXT_PUBLIC_INSTANT_APP_ID</code>, so the safe interaction
+            creates a local schema receipt instead of pretending a network write
+            succeeded.
+          </p>
+          <dl class="adapter-list" data-dx-instant-runtime-api="source-owned">
+            <div>
+              <dt>Realtime model</dt>
+              <dd data-dx-instant-api="db.useQuery">db.useQuery({ todos: {} })</dd>
+            </div>
+            <div>
+              <dt>Presence room</dt>
+              <dd data-dx-instant-api="db.rooms.usePresence">db.rooms.usePresence(room)</dd>
+            </div>
+            <div>
+              <dt>App-owned boundary</dt>
+              <dd data-dx-instant-boundary="app-id-rules-auth-storage">
+                app id, rules, auth policy, storage access, stream topics
+              </dd>
+            </div>
+          </dl>
+          <div class="inline-stack">
+            <button
+              id="instantdb-local-receipt"
+              type="button"
+              data-dx-instant-action="prepare-local-schema-receipt"
+              data-dx-instant-safe-action-state="idle"
+            >
+              Prepare local realtime receipt
+            </button>
+            <a class="chip" href="/database" data-dx-instant-action="open-database-route">Database route</a>
+          </div>
+          <p
+            id="instantdb-runtime-receipt"
+            class="notice"
+            data-dx-instant-local-receipt="idle"
+            data-dx-instant-local-schema="todos,presence,typing,files,streams"
+            data-dx-instant-next-step="add NEXT_PUBLIC_INSTANT_APP_ID and rules"
+            data-state="ready"
+          >
+            InstantDB is visible on the root dashboard. Local receipt idle; hosted realtime
+            waits for app-owned configuration.
+          </p>
+        </article>
+
+        <article
+          class="card wide"
+          data-dx-component="launch-drizzle-data-workflow"
+          data-dx-dashboard-workflow="sqlite-read-model"
+          data-dx-product-surface="launch-data-dashboard"
+          data-dx-dashboard-target="mission-control-database"
+          data-dx-package="db/drizzle-sqlite"
+          data-dx-source="examples/template/drizzle-query-proof.tsx"
+          data-dx-drizzle-mission-control="database"
+          data-dx-drizzle-status="read-model-ready"
+          data-dx-drizzle-read-model="launch-pipeline"
+          data-dx-drizzle-receipt-path=".dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json"
+          data-dx-drizzle-receipt-state="idle"
+          data-dx-drizzle-runtime-boundary="app-owned-sqlite"
+          data-dx-drizzle-runtime-dependencies="drizzle-orm,better-sqlite3"
+          data-dx-node-modules="forbidden"
+          data-dx-source-file="db/drizzle/dashboard-data"
+        >
+          <p class="eyebrow">Drizzle SQLite</p>
+          <h2><dx-icon name="pack:database" aria-hidden="true" data-icon-source="dx-icons" data-dx-icon="pack:database"></dx-icon> Launch data read model</h2>
+          <p class="copy">
+            Select the dashboard data view, preview the Drizzle SQL plan, and
+            apply a safe local fixture. The real better-sqlite3 driver,
+            migration folder, database path, and production data stay app-owned.
+          </p>
+          <div class="inline-stack" aria-label="Drizzle dashboard read models">
+            <button
+              class="drizzle-query-button"
+              type="button"
+              data-dx-drizzle-action="select-read-model"
+              data-dx-drizzle-read-model-option="launch-pipeline"
+              data-active="true"
+            >
+              Launch pipeline
+            </button>
+            <button
+              class="drizzle-query-button"
+              type="button"
+              data-dx-drizzle-action="select-read-model"
+              data-dx-drizzle-read-model-option="published-content"
+            >
+              Published content
+            </button>
+            <button
+              class="drizzle-query-button"
+              type="button"
+              data-dx-drizzle-action="select-read-model"
+              data-dx-drizzle-read-model-option="author-workload"
+            >
+              Author workload
+            </button>
+            <button id="drizzle-apply-read-model" type="button" data-dx-drizzle-action="apply-read-model">
+              Apply read model
+            </button>
+          </div>
+          <div class="metrics-row" id="drizzle-metrics" data-dx-drizzle-metrics="launch-pipeline">
+            <span data-dx-drizzle-metric="Users">Users: 2</span>
+            <span data-dx-drizzle-metric="Published">Published: 2</span>
+            <span data-dx-drizzle-metric="Pending">Pending: 1</span>
+          </div>
+          <div
+            class="query-box"
+            data-dx-drizzle-sql-preview="launch-pipeline"
+            data-dx-drizzle-query-plan-id="overview"
+            data-dx-drizzle-query-plan-export="readDrizzleDashboardQueryPlanById"
+            data-dx-drizzle-query-plan-previewed="false"
+          >
+            <span id="drizzle-helper" data-dx-drizzle-helper="listPublishedPostPreviews">
+              Helper: readDrizzleDashboardOverview
+            </span>
+            <button id="drizzle-query-plan" type="button" data-dx-drizzle-action="preview-query-plan">
+              Preview query plan
+            </button>
+            <span id="drizzle-public-api" data-dx-drizzle-public-api="readLaunchDatabaseStats + readDrizzleDashboardOverview">
+              readLaunchDatabaseStats + readDrizzleDashboardOverview
+            </span>
+            <code id="drizzle-statement">
+              select count(*), count(distinct users.role), count(*) filter (where posts.status = ?) from users left join posts
+            </code>
+          </div>
+          <div id="drizzle-rows" class="grid" data-dx-drizzle-result="fixture">
+            <div class="route-card" data-dx-drizzle-fixture-row="dx-preview">
+              <strong>DX template</strong>
+              <span>Published content and adapter readiness are visible.</span>
+              <span>ready</span>
+            </div>
+            <div class="route-card" data-dx-drizzle-fixture-row="forge-source">
+              <strong>Forge source packages</strong>
+              <span>Generated files stay source-owned and editable.</span>
+              <span>ready</span>
+            </div>
+          </div>
+          <p id="drizzle-dashboard-summary" class="notice" data-dx-drizzle-dashboard-summary="launch-pipeline" data-state="ready">
+            Use the generated dashboard overview to drive the launch operations summary.
+          </p>
+          <p
+            id="drizzle-status"
+            class="notice"
+            data-dx-drizzle-receipt-state="idle"
+            data-state="ready"
+          >
+            Ready to apply db/drizzle-sqlite to the launch dashboard with no
+            node_modules workflow.
+          </p>
+        </article>
+
+        <article
+          class="card"
+          data-dx-component="wasm-bindgen-readiness-workflow"
+          data-dx-dashboard-workflow="local-compute-readiness"
+          data-dx-package="wasm/bindgen"
+          data-dx-product-surface="launch-dashboard"
+          data-dx-source-file="wasm/bindgen"
+          data-dx-wasm-bindgen-status="missing-app-module"
+          data-dx-wasm-local-readiness-enabled="false"
+          data-dx-wasm-node-modules="forbidden"
+        >
+          <p class="eyebrow">WASM</p>
+          <h2>
+            <dx-icon name="pack:wasm-bindgen" class="package-icon" data-icon-source="dx-icons" data-dx-icon="pack:wasm-bindgen"/>
+            wasm-bindgen browser proof
+          </h2>
+          <p class="copy">
+            The app-owned generated module is not configured yet. This route
+            still runs a safe local WebAssembly add check with the wasm-bindgen
+            loader shape and no template-local node_modules.
+          </p>
+          <p class="notice" data-dx-wasm-interaction="missing-module-state" data-state="ready">
+            Missing app-owned wasm-bindgen module import. Local readiness check remains available.
+          </p>
+          <button
+            id="wasm-action"
+            type="button"
+            data-dx-wasm-action="run-local-add"
+            data-dx-wasm-interaction="local-add-readiness"
+          >
+            Run local wasm
+          </button>
+          <p
+            id="wasm-status"
+            class="notice"
+            data-dx-wasm-add-result="idle"
+            data-dx-wasm-interaction="runtime-diagnostics"
+            data-dx-wasm-mime-status="application/wasm"
+            data-state="ready"
+          >
+            WebAssembly add check waiting.
+          </p>
+        </article>
+
+        <article
+          class="card"
+          data-dx-ai-config-state="missing-config"
+          data-dx-ai-readiness="prompt-action-provider-readiness"
+          data-dx-ai-local-response="idle"
+          data-dx-ai-model="gpt-4.1-mini"
+          data-dx-ai-provider="openai-compatible"
+          data-dx-ai-request-id="idle"
+          data-dx-component="launch-ai-assistant-dashboard-workflow"
+          data-dx-dashboard-workflow="prompt-action-provider-readiness"
+          data-dx-package="ai/vercel-ai"
+          data-dx-node-modules="forbidden"
+          data-dx-source-file="ai/provider"
+        >
+          <p class="eyebrow">AI</p>
+          <h2>AI SDK provider boundary</h2>
+          <p class="copy">
+            Pick a provider shape, send a safe launch prompt, and see the
+            app-owned missing-config state without importing credentials.
+          </p>
+          <div class="adapter-list" data-dx-ai-provider-readiness="app-owned">
+            <div
+              data-dx-ai-provider-option="openai-compatible"
+              data-dx-ai-provider-state="missing-config"
+              data-dx-ai-provider-env="AI_PROVIDER_API_KEY"
+            >
+              OpenAI-compatible provider waits for app-owned credentials.
+            </div>
+            <div
+              data-dx-ai-provider-option="gateway"
+              data-dx-ai-provider-state="missing-config"
+              data-dx-ai-provider-env="AI_GATEWAY_API_KEY"
+            >
+              Gateway provider waits for app-owned routing policy.
+            </div>
+          </div>
+          <label class="auth-readiness-field" data-dx-ai-interaction="prompt-field">
+            Launch prompt
+            <textarea
+              id="ai-prompt"
+              data-dx-ai-prompt-input="launch-proof"
+              data-dx-ai-prompt-state="ready"
+              placeholder="Ask DX about package readiness"
+            >Summarize the launch blockers safely.</textarea>
+          </label>
+          <div class="inline-stack" data-dx-ai-interaction="provider-picker">
+            <button
+              type="button"
+              data-dx-ai-provider-choice="openai-compatible"
+              data-dx-ai-provider-selected="true"
+            >
+              OpenAI-compatible
+            </button>
+            <button
+              type="button"
+              data-dx-ai-provider-choice="gateway"
+              data-dx-ai-provider-selected="false"
+            >
+              Gateway
+            </button>
+          </div>
+          <button
+            id="ai-action"
+            type="button"
+            data-dx-action="ai-chat"
+            data-dx-ai-action="safe-stream-contract-preview"
+            data-dx-ai-action-state="ready"
+          >
+            Preview AI response
+          </button>
+          <p
+            id="ai-status"
+            class="notice"
+            data-dx-ai-local-response="idle"
+            data-dx-ai-request-id="idle"
+            data-dx-ai-response-state="idle"
+            data-state="ready"
+          >
+            AI provider proof idle.
+          </p>
+        </article>
+
+        <article
+          class="card"
+          data-dx-component="dx-studio-edit-markers"
+          data-dx-package="dx-studio/web-preview"
+          data-dx-editable-section="studio-contract"
+        >
+          <p class="eyebrow">DX Studio</p>
+          <h2>Editable manifest markers</h2>
+          <p class="copy">
+            Zed Web Preview can consume stable selectors for route, section,
+            component, package, media, and source ownership.
+          </p>
+          <ul class="adapter-list">
+            <li data-dx-operation="insert_component">insert component into responsive slots</li>
+            <li data-dx-operation="move_reorder_section">move or reorder section</li>
+            <li data-dx-operation="update_design_token">update design token</li>
+            <li data-dx-operation="update_text_content">update text or content</li>
+            <li data-dx-operation="insert_icon_media">insert icon or media</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

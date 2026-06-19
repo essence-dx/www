@@ -1,0 +1,51 @@
+{
+  "tool": "dx imports check",
+  "version": 2,
+  "generated_at": "2026-06-10T06:20:32.817512800+00:00",
+  "project": "G:/Dx/www/examples/conversion-proof",
+  "passed": true,
+  "wrote_files": false,
+  "source_hash": "blake3:ae3918644a00411ba4946b55075170d8670040f4d0dd06c6349b3c1547a05f7e",
+  "entry_count": 14,
+  "public_barrel_entry_count": 2,
+  "used_symbol_count": 3,
+  "typed_entry_count": 12,
+  "untyped_entry_count": 2,
+  "skipped_entry_count": 0,
+  "scan_roots": [
+    "components",
+    "lib"
+  ],
+  "used_roots": [
+    "app",
+    "components",
+    "lib",
+    "styles"
+  ],
+  "aliases": [
+    "#components",
+    "#imports"
+  ],
+  "used_only": true,
+  "files": {
+    "barrel": "components/auto-imports.ts",
+    "import_map": ".dx/imports/import-map.json",
+    "declarations": ".dx/imports/imports.d.ts"
+  },
+  "receipts": {
+    "sync_sr": ".dx/imports/sync.sr",
+    "check_sr": ".dx/imports/check.sr",
+    "legacy_json": ".dx/receipts/imports/check.json"
+  },
+  "stale_barrel": false,
+  "stale_import_map": false,
+  "stale_declarations": false,
+  "stale_sync_receipt": false,
+  "next_command": "dx imports sync",
+  "checked_files": [
+    "components/auto-imports.ts",
+    ".dx/imports/import-map.json",
+    ".dx/imports/imports.d.ts",
+    ".dx/imports/sync.sr"
+  ]
+}

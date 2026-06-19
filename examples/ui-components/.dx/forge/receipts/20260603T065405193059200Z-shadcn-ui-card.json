@@ -1,0 +1,115 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "shadcn/ui/card",
+    "upstream_name": "shadcn-ui",
+    "version": "0.1.0",
+    "generator": "dx-forge/shadcn-ui",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "8437d343d49c055a69a75510174d019d93dd80deaec785f1baf8549b14dfbb9e",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "shadcn-ui://apps/v4/registry/bases/radix/ui/card.tsx",
+      "verified": false,
+      "note": "DX inspected the local shadcn-ui v4 registry entry for the official UI Components Card surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn-style card package, but it is not a live advisory feed."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/utils.ts",
+        "logical_path": "js/lib/utils.ts",
+        "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+        "bytes": 119
+      },
+      {
+        "path": "components/ui/card.tsx",
+        "logical_path": "js/ui/card.tsx",
+        "hash": "e90ea53ded9c97f14c4cb02bffbdbcece25cce723dbeac705c6227a4edd246df",
+        "bytes": 2057
+      },
+      {
+        "path": "components/ui/README.md",
+        "logical_path": "js/ui/README.md",
+        "hash": "06b1bd6f7e8e2966d46cb815a4191fe2f41806bd201b9932d2e13db2057040c9",
+        "bytes": 243
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "components/ui/card.tsx",
+      "logical_path": "js/ui/card.tsx",
+      "hash": "e90ea53ded9c97f14c4cb02bffbdbcece25cce723dbeac705c6227a4edd246df",
+      "bytes": 2057
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "bytes": 119
+    },
+    {
+      "logical_path": "js/ui/card.tsx",
+      "materialized_path": "components/ui/card.tsx",
+      "hash": "e90ea53ded9c97f14c4cb02bffbdbcece25cce723dbeac705c6227a4edd246df",
+      "bytes": 2057
+    },
+    {
+      "logical_path": "js/ui/README.md",
+      "materialized_path": "components/ui/README.md",
+      "hash": "06b1bd6f7e8e2966d46cb815a4191fe2f41806bd201b9932d2e13db2057040c9",
+      "bytes": 243
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `MIT OR Apache-2.0` with formal review `no`."
+    },
+    {
+      "policy": "preserve-local-edit",
+      "traffic": "yellow",
+      "message": "lib/utils.ts differs locally and was not overwritten."
+    },
+    {
+      "policy": "preserve-local-edit",
+      "traffic": "yellow",
+      "message": "components/ui/README.md differs locally and was not overwritten."
+    }
+  ],
+  "risk_score": 85,
+  "timestamp": "2026-06-03T06:54:05.192163+00:00",
+  "signature": null
+}

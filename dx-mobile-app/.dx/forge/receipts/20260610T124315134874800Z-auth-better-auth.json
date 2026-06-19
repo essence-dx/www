@@ -1,0 +1,471 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "auth/better-auth",
+    "upstream_name": "better-auth",
+    "version": "1.6.11-dx.9",
+    "generator": "dx-forge/better-auth",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "abf05518cf26867122a01140c35144274acb7c5b890d1c3d3051cb7c9dcceee9",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:better-auth@1.6.11",
+      "verified": false,
+      "note": "DX inspected the local upstream better-auth source mirror and package export map for betterAuth(), createAuthClient(), Next.js handlers/cookies, adapters, and plugins; this is curated Authentication launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Authentication launch slice based on upstream better-auth, but it is not a live advisory feed and does not audit the deployed database adapter, session policy, or OAuth provider credentials."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "auth/better-auth/options.ts",
+        "logical_path": "js/auth/better-auth/options.ts",
+        "hash": "7c7b5ad9f2a2402d0d486d11dcd3fc4b30925fd5d9e38e3d14fe96f922760d1a",
+        "bytes": 2543
+      },
+      {
+        "path": "auth/better-auth/server.ts",
+        "logical_path": "js/auth/better-auth/server.ts",
+        "hash": "34cd8ededca31b536f04155340bf611b65ebbcbed254a8ca7b8f23cf8b9048d6",
+        "bytes": 1216
+      },
+      {
+        "path": "auth/better-auth/client.ts",
+        "logical_path": "js/auth/better-auth/client.ts",
+        "hash": "d2d8138c5157e44725fe9b4b38918f21699855a9a861ff78ac67ab318547b00e",
+        "bytes": 1263
+      },
+      {
+        "path": "auth/better-auth/email-password.ts",
+        "logical_path": "js/auth/better-auth/email-password.ts",
+        "hash": "9b4330fac97ae61e3fa9b237d98101f3efc2a904788d52ad3134f435d5f56d74",
+        "bytes": 1919
+      },
+      {
+        "path": "auth/better-auth/social.ts",
+        "logical_path": "js/auth/better-auth/social.ts",
+        "hash": "78482fb99089b01fdf5d7fcbacec1333ff58456bab8306bd5949f7f09a0a7931",
+        "bytes": 2034
+      },
+      {
+        "path": "auth/better-auth/accounts.ts",
+        "logical_path": "js/auth/better-auth/accounts.ts",
+        "hash": "18bde753aa1093cc4482c1a14b98ce4c2195ea546a2ceee938b0be5c2fb41d36",
+        "bytes": 2730
+      },
+      {
+        "path": "auth/better-auth/profile.ts",
+        "logical_path": "js/auth/better-auth/profile.ts",
+        "hash": "aedf2d7491c4b056e9563ccfd44b3a384ae4b5c27b52d72716b1ff64d28a4de7",
+        "bytes": 2635
+      },
+      {
+        "path": "auth/better-auth/account-deletion.ts",
+        "logical_path": "js/auth/better-auth/account-deletion.ts",
+        "hash": "dad80da8c1eeec7767eea820f0098aa323bdf14e45fe84d3858001556949b1ba",
+        "bytes": 1682
+      },
+      {
+        "path": "auth/better-auth/account-security.ts",
+        "logical_path": "js/auth/better-auth/account-security.ts",
+        "hash": "06a69a6102990146b775099171c4874fc2eb81848d3d8a951b67848f69da6341",
+        "bytes": 2924
+      },
+      {
+        "path": "auth/better-auth/route.ts",
+        "logical_path": "js/auth/better-auth/route.ts",
+        "hash": "8e4fa36ee94770e5f8db97d5581e545fc6510f6e578ff1eb4be0f3072c03a774",
+        "bytes": 280
+      },
+      {
+        "path": "auth/better-auth/session.ts",
+        "logical_path": "js/auth/better-auth/session.ts",
+        "hash": "d58bcd1f5ef2fd1f83f05cf8fb7ace37a348429587652e07ab250f6427dca295",
+        "bytes": 630
+      },
+      {
+        "path": "auth/better-auth/session-management.ts",
+        "logical_path": "js/auth/better-auth/session-management.ts",
+        "hash": "d6bd6d50a4cc24c9cd35d389880cd1e0ae629b811861a9f71e81944cc49be722",
+        "bytes": 1236
+      },
+      {
+        "path": "auth/better-auth/dashboard.ts",
+        "logical_path": "js/auth/better-auth/dashboard.ts",
+        "hash": "60dcd968350f80085323ea36be3a0ce69d7af5dbf05c8325bfbdf6f1a2c70f5f",
+        "bytes": 6219
+      },
+      {
+        "path": "auth/better-auth/metadata.ts",
+        "logical_path": "js/auth/better-auth/metadata.ts",
+        "hash": "7060aa000c63c0ec0f3964516dce8c08afcb4a2fab1d094879d7b16f4c5d5939",
+        "bytes": 5666
+      },
+      {
+        "path": "auth/better-auth/.env.example",
+        "logical_path": "js/auth/better-auth/.env.example",
+        "hash": "968a6cc874a04a3b88eaddcdc54e7ab43b23810fe105bdc522f40cb4aa7962f2",
+        "bytes": 430
+      },
+      {
+        "path": "auth/better-auth/README.md",
+        "logical_path": "js/auth/better-auth/README.md",
+        "hash": "ade08a003db7fc4d16717d58c04e41ab22cd7e0bfffe91b34bb8215292565b16",
+        "bytes": 5552
+      },
+      {
+        "path": "auth/better-auth/providers/google/config.ts",
+        "logical_path": "js/auth/better-auth/providers/google/config.ts",
+        "hash": "0fb43278598b8a764cb77314b2774f17a34c8a6b3ce90342120308d033e8eea5",
+        "bytes": 3023
+      },
+      {
+        "path": "auth/better-auth/providers/google/route.ts",
+        "logical_path": "js/auth/better-auth/providers/google/route.ts",
+        "hash": "967a804da380265c0fceca421eda9f6d63ce75ecf183f5d5f49d46317321579a",
+        "bytes": 654
+      },
+      {
+        "path": "auth/better-auth/providers/google/callback.ts",
+        "logical_path": "js/auth/better-auth/providers/google/callback.ts",
+        "hash": "649f4fa54b5c4640c3f8f336ba09126ada9def8e35206751a953172cb63a9ec4",
+        "bytes": 2228
+      },
+      {
+        "path": "auth/better-auth/providers/google/.env.example",
+        "logical_path": "js/auth/better-auth/providers/google/.env.example",
+        "hash": "9e6fd3f02b089ebbf44c1089e178fee660fd6fd74dda888374e28f2916ca0fba",
+        "bytes": 340
+      },
+      {
+        "path": "auth/better-auth/providers/google/README.md",
+        "logical_path": "js/auth/better-auth/providers/google/README.md",
+        "hash": "535cda5f1f57abdd8a7c74cbac2f97ae84ed4e2f446a0ba1a4bd58c0c9efc2b6",
+        "bytes": 429
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "auth/better-auth/options.ts",
+      "logical_path": "js/auth/better-auth/options.ts",
+      "hash": "7c7b5ad9f2a2402d0d486d11dcd3fc4b30925fd5d9e38e3d14fe96f922760d1a",
+      "bytes": 2543
+    },
+    {
+      "path": "auth/better-auth/server.ts",
+      "logical_path": "js/auth/better-auth/server.ts",
+      "hash": "34cd8ededca31b536f04155340bf611b65ebbcbed254a8ca7b8f23cf8b9048d6",
+      "bytes": 1216
+    },
+    {
+      "path": "auth/better-auth/client.ts",
+      "logical_path": "js/auth/better-auth/client.ts",
+      "hash": "d2d8138c5157e44725fe9b4b38918f21699855a9a861ff78ac67ab318547b00e",
+      "bytes": 1263
+    },
+    {
+      "path": "auth/better-auth/email-password.ts",
+      "logical_path": "js/auth/better-auth/email-password.ts",
+      "hash": "9b4330fac97ae61e3fa9b237d98101f3efc2a904788d52ad3134f435d5f56d74",
+      "bytes": 1919
+    },
+    {
+      "path": "auth/better-auth/social.ts",
+      "logical_path": "js/auth/better-auth/social.ts",
+      "hash": "78482fb99089b01fdf5d7fcbacec1333ff58456bab8306bd5949f7f09a0a7931",
+      "bytes": 2034
+    },
+    {
+      "path": "auth/better-auth/accounts.ts",
+      "logical_path": "js/auth/better-auth/accounts.ts",
+      "hash": "18bde753aa1093cc4482c1a14b98ce4c2195ea546a2ceee938b0be5c2fb41d36",
+      "bytes": 2730
+    },
+    {
+      "path": "auth/better-auth/profile.ts",
+      "logical_path": "js/auth/better-auth/profile.ts",
+      "hash": "aedf2d7491c4b056e9563ccfd44b3a384ae4b5c27b52d72716b1ff64d28a4de7",
+      "bytes": 2635
+    },
+    {
+      "path": "auth/better-auth/account-deletion.ts",
+      "logical_path": "js/auth/better-auth/account-deletion.ts",
+      "hash": "dad80da8c1eeec7767eea820f0098aa323bdf14e45fe84d3858001556949b1ba",
+      "bytes": 1682
+    },
+    {
+      "path": "auth/better-auth/account-security.ts",
+      "logical_path": "js/auth/better-auth/account-security.ts",
+      "hash": "06a69a6102990146b775099171c4874fc2eb81848d3d8a951b67848f69da6341",
+      "bytes": 2924
+    },
+    {
+      "path": "auth/better-auth/route.ts",
+      "logical_path": "js/auth/better-auth/route.ts",
+      "hash": "8e4fa36ee94770e5f8db97d5581e545fc6510f6e578ff1eb4be0f3072c03a774",
+      "bytes": 280
+    },
+    {
+      "path": "auth/better-auth/session.ts",
+      "logical_path": "js/auth/better-auth/session.ts",
+      "hash": "d58bcd1f5ef2fd1f83f05cf8fb7ace37a348429587652e07ab250f6427dca295",
+      "bytes": 630
+    },
+    {
+      "path": "auth/better-auth/session-management.ts",
+      "logical_path": "js/auth/better-auth/session-management.ts",
+      "hash": "d6bd6d50a4cc24c9cd35d389880cd1e0ae629b811861a9f71e81944cc49be722",
+      "bytes": 1236
+    },
+    {
+      "path": "auth/better-auth/dashboard.ts",
+      "logical_path": "js/auth/better-auth/dashboard.ts",
+      "hash": "60dcd968350f80085323ea36be3a0ce69d7af5dbf05c8325bfbdf6f1a2c70f5f",
+      "bytes": 6219
+    },
+    {
+      "path": "auth/better-auth/metadata.ts",
+      "logical_path": "js/auth/better-auth/metadata.ts",
+      "hash": "7060aa000c63c0ec0f3964516dce8c08afcb4a2fab1d094879d7b16f4c5d5939",
+      "bytes": 5666
+    },
+    {
+      "path": "auth/better-auth/.env.example",
+      "logical_path": "js/auth/better-auth/.env.example",
+      "hash": "968a6cc874a04a3b88eaddcdc54e7ab43b23810fe105bdc522f40cb4aa7962f2",
+      "bytes": 430
+    },
+    {
+      "path": "auth/better-auth/README.md",
+      "logical_path": "js/auth/better-auth/README.md",
+      "hash": "ade08a003db7fc4d16717d58c04e41ab22cd7e0bfffe91b34bb8215292565b16",
+      "bytes": 5552
+    },
+    {
+      "path": "auth/better-auth/providers/google/config.ts",
+      "logical_path": "js/auth/better-auth/providers/google/config.ts",
+      "hash": "0fb43278598b8a764cb77314b2774f17a34c8a6b3ce90342120308d033e8eea5",
+      "bytes": 3023
+    },
+    {
+      "path": "auth/better-auth/providers/google/route.ts",
+      "logical_path": "js/auth/better-auth/providers/google/route.ts",
+      "hash": "967a804da380265c0fceca421eda9f6d63ce75ecf183f5d5f49d46317321579a",
+      "bytes": 654
+    },
+    {
+      "path": "auth/better-auth/providers/google/callback.ts",
+      "logical_path": "js/auth/better-auth/providers/google/callback.ts",
+      "hash": "649f4fa54b5c4640c3f8f336ba09126ada9def8e35206751a953172cb63a9ec4",
+      "bytes": 2228
+    },
+    {
+      "path": "auth/better-auth/providers/google/.env.example",
+      "logical_path": "js/auth/better-auth/providers/google/.env.example",
+      "hash": "9e6fd3f02b089ebbf44c1089e178fee660fd6fd74dda888374e28f2916ca0fba",
+      "bytes": 340
+    },
+    {
+      "path": "auth/better-auth/providers/google/README.md",
+      "logical_path": "js/auth/better-auth/providers/google/README.md",
+      "hash": "535cda5f1f57abdd8a7c74cbac2f97ae84ed4e2f446a0ba1a4bd58c0c9efc2b6",
+      "bytes": 429
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/auth/better-auth/options.ts",
+      "materialized_path": "auth/better-auth/options.ts",
+      "hash": "7c7b5ad9f2a2402d0d486d11dcd3fc4b30925fd5d9e38e3d14fe96f922760d1a",
+      "bytes": 2543
+    },
+    {
+      "logical_path": "js/auth/better-auth/server.ts",
+      "materialized_path": "auth/better-auth/server.ts",
+      "hash": "34cd8ededca31b536f04155340bf611b65ebbcbed254a8ca7b8f23cf8b9048d6",
+      "bytes": 1216
+    },
+    {
+      "logical_path": "js/auth/better-auth/client.ts",
+      "materialized_path": "auth/better-auth/client.ts",
+      "hash": "d2d8138c5157e44725fe9b4b38918f21699855a9a861ff78ac67ab318547b00e",
+      "bytes": 1263
+    },
+    {
+      "logical_path": "js/auth/better-auth/email-password.ts",
+      "materialized_path": "auth/better-auth/email-password.ts",
+      "hash": "9b4330fac97ae61e3fa9b237d98101f3efc2a904788d52ad3134f435d5f56d74",
+      "bytes": 1919
+    },
+    {
+      "logical_path": "js/auth/better-auth/social.ts",
+      "materialized_path": "auth/better-auth/social.ts",
+      "hash": "78482fb99089b01fdf5d7fcbacec1333ff58456bab8306bd5949f7f09a0a7931",
+      "bytes": 2034
+    },
+    {
+      "logical_path": "js/auth/better-auth/accounts.ts",
+      "materialized_path": "auth/better-auth/accounts.ts",
+      "hash": "18bde753aa1093cc4482c1a14b98ce4c2195ea546a2ceee938b0be5c2fb41d36",
+      "bytes": 2730
+    },
+    {
+      "logical_path": "js/auth/better-auth/profile.ts",
+      "materialized_path": "auth/better-auth/profile.ts",
+      "hash": "aedf2d7491c4b056e9563ccfd44b3a384ae4b5c27b52d72716b1ff64d28a4de7",
+      "bytes": 2635
+    },
+    {
+      "logical_path": "js/auth/better-auth/account-deletion.ts",
+      "materialized_path": "auth/better-auth/account-deletion.ts",
+      "hash": "dad80da8c1eeec7767eea820f0098aa323bdf14e45fe84d3858001556949b1ba",
+      "bytes": 1682
+    },
+    {
+      "logical_path": "js/auth/better-auth/account-security.ts",
+      "materialized_path": "auth/better-auth/account-security.ts",
+      "hash": "06a69a6102990146b775099171c4874fc2eb81848d3d8a951b67848f69da6341",
+      "bytes": 2924
+    },
+    {
+      "logical_path": "js/auth/better-auth/route.ts",
+      "materialized_path": "auth/better-auth/route.ts",
+      "hash": "8e4fa36ee94770e5f8db97d5581e545fc6510f6e578ff1eb4be0f3072c03a774",
+      "bytes": 280
+    },
+    {
+      "logical_path": "js/auth/better-auth/session.ts",
+      "materialized_path": "auth/better-auth/session.ts",
+      "hash": "d58bcd1f5ef2fd1f83f05cf8fb7ace37a348429587652e07ab250f6427dca295",
+      "bytes": 630
+    },
+    {
+      "logical_path": "js/auth/better-auth/session-management.ts",
+      "materialized_path": "auth/better-auth/session-management.ts",
+      "hash": "d6bd6d50a4cc24c9cd35d389880cd1e0ae629b811861a9f71e81944cc49be722",
+      "bytes": 1236
+    },
+    {
+      "logical_path": "js/auth/better-auth/dashboard.ts",
+      "materialized_path": "auth/better-auth/dashboard.ts",
+      "hash": "60dcd968350f80085323ea36be3a0ce69d7af5dbf05c8325bfbdf6f1a2c70f5f",
+      "bytes": 6219
+    },
+    {
+      "logical_path": "js/auth/better-auth/metadata.ts",
+      "materialized_path": "auth/better-auth/metadata.ts",
+      "hash": "7060aa000c63c0ec0f3964516dce8c08afcb4a2fab1d094879d7b16f4c5d5939",
+      "bytes": 5666
+    },
+    {
+      "logical_path": "js/auth/better-auth/.env.example",
+      "materialized_path": "auth/better-auth/.env.example",
+      "hash": "968a6cc874a04a3b88eaddcdc54e7ab43b23810fe105bdc522f40cb4aa7962f2",
+      "bytes": 430
+    },
+    {
+      "logical_path": "js/auth/better-auth/README.md",
+      "materialized_path": "auth/better-auth/README.md",
+      "hash": "ade08a003db7fc4d16717d58c04e41ab22cd7e0bfffe91b34bb8215292565b16",
+      "bytes": 5552
+    },
+    {
+      "logical_path": "js/auth/better-auth/providers/google/config.ts",
+      "materialized_path": "auth/better-auth/providers/google/config.ts",
+      "hash": "0fb43278598b8a764cb77314b2774f17a34c8a6b3ce90342120308d033e8eea5",
+      "bytes": 3023
+    },
+    {
+      "logical_path": "js/auth/better-auth/providers/google/route.ts",
+      "materialized_path": "auth/better-auth/providers/google/route.ts",
+      "hash": "967a804da380265c0fceca421eda9f6d63ce75ecf183f5d5f49d46317321579a",
+      "bytes": 654
+    },
+    {
+      "logical_path": "js/auth/better-auth/providers/google/callback.ts",
+      "materialized_path": "auth/better-auth/providers/google/callback.ts",
+      "hash": "649f4fa54b5c4640c3f8f336ba09126ada9def8e35206751a953172cb63a9ec4",
+      "bytes": 2228
+    },
+    {
+      "logical_path": "js/auth/better-auth/providers/google/.env.example",
+      "materialized_path": "auth/better-auth/providers/google/.env.example",
+      "hash": "9e6fd3f02b089ebbf44c1089e178fee660fd6fd74dda888374e28f2916ca0fba",
+      "bytes": 340
+    },
+    {
+      "logical_path": "js/auth/better-auth/providers/google/README.md",
+      "materialized_path": "auth/better-auth/providers/google/README.md",
+      "hash": "535cda5f1f57abdd8a7c74cbac2f97ae84ed4e2f446a0ba1a4bd58c0c9efc2b6",
+      "bytes": 429
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "yellow",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` with external verification `no`."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "yellow",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "yellow",
+      "message": "Forge records declared license `MIT` with formal review `no`."
+    },
+    {
+      "policy": "auth-google-env-contract",
+      "traffic": "green",
+      "message": "auth/better-auth materializes `.env.example` for GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URI, GOOGLE_OAUTH_SCOPES, DX_GOOGLE_STATE_COOKIE, and DX_GOOGLE_ALLOWED_REDIRECT_ORIGIN; secrets remain outside Forge receipts."
+    },
+    {
+      "policy": "auth-google-redirect-contract",
+      "traffic": "green",
+      "message": "auth/better-auth documents the local callback URL `http://localhost:3000/auth/better-auth/callback` and keeps redirect/origin values editable in project source."
+    },
+    {
+      "policy": "auth-google-source-ownership",
+      "traffic": "green",
+      "message": "Forge owns the starter config, start route, callback handler, env example, and README files; the application owns session storage, secret rotation, and production redirect policy."
+    },
+    {
+      "policy": "better-auth-database-boundary",
+      "traffic": "green",
+      "message": "auth/better-auth materializes a Better Auth server factory that requires the application to pass a real database adapter; Forge does not hide session storage behind a dummy in-memory default."
+    },
+    {
+      "policy": "better-auth-next-handler-contract",
+      "traffic": "green",
+      "message": "auth/better-auth uses Better Auth's public `toNextJsHandler` and `nextCookies` APIs for route-handler integration and keeps the app-owned auth instance explicit."
+    },
+    {
+      "policy": "better-auth-discovery-metadata",
+      "traffic": "green",
+      "message": "auth/better-auth includes `metadata.ts` so DX CLI, Zed, and launch templates can discover package id, upstream package, required dependency, and primary helper names without scanning generated source text."
+    }
+  ],
+  "risk_score": 85,
+  "timestamp": "2026-06-10T12:43:15.134277900+00:00",
+  "signature": null
+}

@@ -1,0 +1,13 @@
+{
+  "cache_schema": "dx.www.json_receipt",
+  "cache_version": 2,
+  "cache_kind": 3,
+  "source_path": "G:\\Dx\\www\\dx-mobile-app\\.dx/receipts/style/check.json",
+  "source_len": 254100,
+  "source_modified_unix_ms": 1781098626140,
+  "source_blake3": "71b926ae54e066748ec72416d9128078ef1fb844c6e5b0f9a6bdc35b4e064e91",
+  "machine_path": "G:\\Dx\\www\\dx-mobile-app\\.dx\\www\\style-check-receipt.machine",
+  "machine_payload_len": 273356,
+  "machine_archive_len": 273356,
+  "machine_payload_blake3": "638ec5c54538f303e36a0d73bac71ff601b60f3ac4b339e1518145385d7dc1a1"
+}

@@ -1,0 +1,135 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "shadcn/ui/button",
+    "upstream_name": "@dx/forge/shadcn-ui",
+    "version": "0.1.0",
+    "generator": "dx-forge/shadcn-ui",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "bf24547506e6428511a139f2968d21f6ea1cb4d094b441c062f49cdf132d6b6e",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "shadcn-ui://apps/v4/registry/bases/radix/ui/button.tsx",
+      "verified": false,
+      "note": "DX inspected the local shadcn/ui v4 radix registry entry for Button and copied the production component API shape into a source-owned Forge slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn-style button package, but it is not a live advisory feed."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/utils.ts",
+        "logical_path": "js/lib/utils.ts",
+        "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+        "bytes": 119
+      },
+      {
+        "path": "components/ui/slot.tsx",
+        "logical_path": "js/ui/slot.tsx",
+        "hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+        "bytes": 642
+      },
+      {
+        "path": "components/ui/button.tsx",
+        "logical_path": "js/ui/button.tsx",
+        "hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+        "bytes": 1976
+      },
+      {
+        "path": "components/ui/README.md",
+        "logical_path": "js/ui/README.md",
+        "hash": "6a5633e2163aff242dff4dfbe3f2feb8dd906c4ac848464662de7e22a13e02ba",
+        "bytes": 183
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/utils.ts",
+      "logical_path": "js/lib/utils.ts",
+      "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "bytes": 119
+    },
+    {
+      "path": "components/ui/slot.tsx",
+      "logical_path": "js/ui/slot.tsx",
+      "hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "bytes": 642
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "logical_path": "js/ui/button.tsx",
+      "hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+      "bytes": 1976
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "hash": "6a5633e2163aff242dff4dfbe3f2feb8dd906c4ac848464662de7e22a13e02ba",
+      "bytes": 183
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "bytes": 119
+    },
+    {
+      "logical_path": "js/ui/slot.tsx",
+      "materialized_path": "components/ui/slot.tsx",
+      "hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "bytes": 642
+    },
+    {
+      "logical_path": "js/ui/button.tsx",
+      "materialized_path": "components/ui/button.tsx",
+      "hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+      "bytes": 1976
+    },
+    {
+      "logical_path": "js/ui/README.md",
+      "materialized_path": "components/ui/README.md",
+      "hash": "6a5633e2163aff242dff4dfbe3f2feb8dd906c4ac848464662de7e22a13e02ba",
+      "bytes": 183
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `MIT OR Apache-2.0` with formal review `no`."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-22T00:15:43.090452500+00:00",
+  "signature": null
+}

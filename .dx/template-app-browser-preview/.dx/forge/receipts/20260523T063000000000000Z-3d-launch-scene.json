@@ -1,0 +1,180 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "3d/launch-scene",
+    "official_package_name": "3D Scene System",
+    "upstream_name": "three + @react-three/fiber + @react-three/drei",
+    "version": "0.184.0-r3f10-dx.0",
+    "generator": "dx-forge/3d-scene-system",
+    "variant": "source-owned-renderer-boundary",
+    "rollback_receipt": "20260523T063000000000000Z-3d-launch-scene.json",
+    "source_kind": "curated-registry",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-local-mirror",
+      "upstream_reference": "npm:three@0.184.0; npm:@react-three/fiber@9.6.1; npm:@react-three/drei local mirror",
+      "verified": false,
+      "note": "DX inspected local Three/R3F/Drei source mirrors and curated an editable 3D Scene System slice with renderer handoff, direct WebGL preview helpers, and dashboard controls; this package records no browser WebGL proof, screenshot proof, installed renderer dependency proof, or production asset policy approval."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-23T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this 3D Scene System source slice, but it is not a live advisory feed and does not audit renderer installs, WebGL execution, shader budgets, asset licensing, or screenshot QA."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from curated package declarations and local source mirror metadata only; no formal DX legal review is claimed."
+    },
+    "dependency_constraints": [
+      {
+        "name": "three",
+        "constraint": "0.184.0 upstream WebGLRenderer, Scene, Box3, Raycaster, and shader API shape",
+        "boundary": "Forge owns editable helper source; app-owned runtime supplies the Three package when a production renderer is enabled."
+      },
+      {
+        "name": "@react-three/fiber",
+        "constraint": "9.6.1 createRoot(canvas), frameloop, RootState, and event/raycaster API shape",
+        "boundary": "React Three Fiber root configuration, Suspense, and renderer-store execution remain application-owned."
+      },
+      {
+        "name": "@react-three/drei",
+        "constraint": "local mirror shape for KeyboardControls, PerformanceMonitor, AdaptiveDpr, Bounds, and meshBounds",
+        "boundary": "Drei controls, asset loaders, postprocessing, WebXR, and mesh composition remain application-owned."
+      },
+      {
+        "name": "WebGL browser runtime",
+        "constraint": "browser-provided canvas WebGL context used by the Web Preview helper",
+        "boundary": "Browser execution, screenshots, CSP, GPU capability QA, and asset policy remain application-owned."
+      },
+      {
+        "name": "react",
+        "constraint": "^18 || ^19 peer runtime supplied by the launch template",
+        "boundary": "Forge records React boundary source files but does not install React or make node_modules part of DX core."
+      }
+    ],
+    "runtime_proof": false,
+    "webgl_runtime_proof": false,
+    "browser_screenshot_proof": false,
+    "files": [
+      {
+        "path": "components/scene/launch-scene.tsx",
+        "logical_path": "js/components/scene/launch-scene.tsx",
+        "hash": "e0d35a115ecfc7843e7b15384012c5dbde0c9ebeb23e2627c2851bba8a582bf7",
+        "bytes": 23201
+      },
+      {
+        "path": "lib/scene/index.ts",
+        "logical_path": "js/lib/scene/index.ts",
+        "hash": "aba6d0b1e302fdc74cb01b05f158f92ee9738263f6844181556cd268e1561fd2",
+        "bytes": 4710
+      },
+      {
+        "path": "lib/scene/types.ts",
+        "logical_path": "js/lib/scene/types.ts",
+        "hash": "ef812e2ba01d8bcbe6b4b091514da099464a6a8d9ce357b8b522ace79af78e16",
+        "bytes": 9108
+      },
+      {
+        "path": "lib/scene/preset.ts",
+        "logical_path": "js/lib/scene/preset.ts",
+        "hash": "3f039904be1e67d9402e2bc345acc22e7b16ef676705dd0da283f6902e67339b",
+        "bytes": 4132
+      },
+      {
+        "path": "lib/scene/interaction.ts",
+        "logical_path": "js/lib/scene/interaction.ts",
+        "hash": "2a0f1adcea1d449b344f92186dc4dbc9c62ec5e99991afec880515506835edc9",
+        "bytes": 5719
+      },
+      {
+        "path": "lib/scene/dashboard-workflow.ts",
+        "logical_path": "js/lib/scene/dashboard-workflow.ts",
+        "hash": "1b5dd46979bc3aa214581bb8153dccc9cfe580cf31505c56ad93745e8dc94c5b",
+        "bytes": 6741
+      },
+      {
+        "path": "lib/scene/dashboard-controls.ts",
+        "logical_path": "js/lib/scene/dashboard-controls.ts",
+        "hash": "14eb36c18b781fbfe784690941387ed34e464f6019cfa284cae668c27963e865",
+        "bytes": 1339
+      },
+      {
+        "path": "lib/scene/frame-sample.ts",
+        "logical_path": "js/lib/scene/frame-sample.ts",
+        "hash": "5313cd1f62f0942f3def5c1a17da0d714d7fecc53c34ef395ff576b28d971961",
+        "bytes": 2955
+      },
+      {
+        "path": "lib/scene/capability-report.ts",
+        "logical_path": "js/lib/scene/capability-report.ts",
+        "hash": "f738c78e27e6a45693efe8d0a10b7e4a7e7e6dc49c73cad4942c2a7471b94711",
+        "bytes": 3623
+      },
+      {
+        "path": "lib/scene/viewport-report.ts",
+        "logical_path": "js/lib/scene/viewport-report.ts",
+        "hash": "90fcc500d93a916c9c94a2b36c52a87060bd044c0b32270982070eba04c82e54",
+        "bytes": 3907
+      },
+      {
+        "path": "lib/scene/bounds-report.ts",
+        "logical_path": "js/lib/scene/bounds-report.ts",
+        "hash": "c8f3ca94cfb2f0b6722ac59f6cec3444f9cc519d66f88bb84a7d4c34c735eccd",
+        "bytes": 5163
+      },
+      {
+        "path": "lib/scene/raycast-report.ts",
+        "logical_path": "js/lib/scene/raycast-report.ts",
+        "hash": "c4653d6c93f82b25df9ab9711dcacafbb83fb452adc878b593f1443bb652f1e6",
+        "bytes": 3061
+      },
+      {
+        "path": "lib/scene/preview-readiness.ts",
+        "logical_path": "js/lib/scene/preview-readiness.ts",
+        "hash": "b772aaf6c530ab8e17c66d3c0be7fbd42c11983f7daf1065cc17b44aebb94d1c",
+        "bytes": 3920
+      },
+      {
+        "path": "lib/scene/performance-monitor.ts",
+        "logical_path": "js/lib/scene/performance-monitor.ts",
+        "hash": "ea08afd5d4af554407575cf8f037aa3442107d086a18dbea4d133b9be460ce1c",
+        "bytes": 3554
+      },
+      {
+        "path": "lib/scene/renderer-handoff.ts",
+        "logical_path": "js/lib/scene/renderer-handoff.ts",
+        "hash": "28e37459fd584b34d4e2ce77bbe05a8a030e52efcb97467d43c4fbc2ae6eea42",
+        "bytes": 1357
+      },
+      {
+        "path": "lib/scene/r3f-renderer-adapter.ts",
+        "logical_path": "js/lib/scene/r3f-renderer-adapter.ts",
+        "hash": "22f251074586e44714ec0320c4ba25402d1b5086388b419e83271e6154f8b919",
+        "bytes": 4490
+      },
+      {
+        "path": "lib/scene/webgl-runtime.ts",
+        "logical_path": "js/lib/scene/webgl-runtime.ts",
+        "hash": "3b463ba3e0b827d78279dd8b17892c16645d784cd381da0372e8dbaea1ecf0a1",
+        "bytes": 25356
+      },
+      {
+        "path": "lib/scene/metadata.ts",
+        "logical_path": "js/lib/scene/metadata.ts",
+        "hash": "a58a6d3521ec6b292a5122dca1ab04c7353fc52da2d46231c5836cbaab01c795",
+        "bytes": 8890
+      },
+      {
+        "path": "lib/scene/README.md",
+        "logical_path": "js/lib/scene/README.md",
+        "hash": "e6be95996809a6b5f92b470ea5a7d8c3256823ae1ed4cac264306dff32423080",
+        "bytes": 14296
+      }
+    ],
+    "integrity_hash": "2eeac28f0e2e74921a92d7825524638464d9508116a5b52ae9b9faa337f5e66f"
+  }
+}

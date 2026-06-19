@@ -1,0 +1,43 @@
+---
+import { cards } from "../bench-data.js";
+import BenchmarkLayout from "../components/BenchmarkLayout.astro";
+
+const allCards = cards();
+---
+
+<BenchmarkLayout title="Astro Medium Cards Benchmark">
+  <main class="bench-shell">
+    <header class="bench-hero">
+      <div>
+        <div class="eyebrow">Medium interactive route</div>
+        <h1>Component registry catalog</h1>
+      </div>
+      <div class="metric-row">
+        <div class="metric"><span>Cards</span><b>{allCards.length}</b></div>
+        <div class="metric"><span>Runtime</span><b>Astro</b></div>
+      </div>
+    </header>
+    <div class="toolbar">
+      <input id="card-filter" type="search" placeholder="Filter registry cards" aria-label="Filter registry cards" />
+    </div>
+    <section id="card-grid" class="card-grid">
+      {allCards.map((card) => (
+        <article class="card" data-search={`${card.category} ${card.title}`}>
+          <h2>{card.title}</h2>
+          <p>{card.copy}</p>
+          <span class="tag">{card.category}</span>
+        </article>
+      ))}
+    </section>
+  </main>
+  <script>
+    const cardInput = document.getElementById("card-filter");
+    const cards = [...document.querySelectorAll("[data-search]")];
+    cardInput.addEventListener("input", () => {
+      const query = cardInput.value.toLowerCase();
+      for (const card of cards) {
+        card.hidden = !card.dataset.search.includes(query);
+      }
+    });
+  </script>
+</BenchmarkLayout>

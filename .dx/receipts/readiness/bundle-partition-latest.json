@@ -1,0 +1,42 @@
+{
+  "schema": "dx.www.readiness.bundle_partition_receipt_contract",
+  "schema_revision": 1,
+  "id": "bundle-partition",
+  "passed": true,
+  "status": "local-public-evidence-partition-current",
+  "release_ready": false,
+  "hosted_provider_proof": false,
+  "artifact_root": "examples/template",
+  "artifact_source": "examples-template-starter",
+  "deploy_adapter_path": "examples/template/.dx/www/output/deploy-adapter.json",
+  "provider_adapter_path": "examples/template/.dx/www/output/provider-adapter.dx-cloud.json",
+  "deploy_adapter_present": true,
+  "provider_adapter_present": true,
+  "deploy_partition_present": true,
+  "provider_partition_present": false,
+  "public_runtime_deployable": true,
+  "evidence_bundle_deployable_public_bytes": false,
+  "public_runtime_artifact_count": 44,
+  "evidence_artifact_count": 23,
+  "public_runtime_evidence_path_count": 0,
+  "precompressed_evidence_artifact_count": 0,
+  "precompressed_evidence_public_leak_count": 0,
+  "precompressed_evidence_path_samples": [
+    "deploy-adapter.json.br",
+    "cache-manifest.json.gz",
+    "source-routes/root/route-unit.json.br",
+    ".dx/receipts/readiness/proof-graph.sr.gz"
+  ],
+  "precompressed_evidence_paths_no_store": true,
+  "evidence_artifacts_no_store": true,
+  "rule": "This receipt validates local deploy/provider adapter partition output only; hosted multi-provider upload replay remains required before release readiness.",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/bundle-partition-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-bundle-partition-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "c5aa95e57a15fce8f2a81bd51f18c18e1d416ec60634e734cc6fa0fe172d846d",
+    "machine_blake3": "6ccbb2b533c94f152f919e75318464351efbe104487943a960529be22920a038"
+  }
+}

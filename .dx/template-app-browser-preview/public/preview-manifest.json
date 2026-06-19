@@ -1,0 +1,3358 @@
+{
+  "schema": "dx.studio.preview_manifest",
+  "generatedBy": "tools/launch/materialize-www-template.ts",
+  "noNodeModulesRequired": true,
+  "forgePackageReality": {
+    "schema": "dx.forge.template_package_reality",
+    "score": 89,
+    "packageAverageScore": 80,
+    "scoreCeilingWithoutLiveProof": 89,
+    "unboundedSourceScore": 93,
+    "scoreComponents": [
+      {
+        "id": "package-average",
+        "label": "Package average",
+        "points": 80,
+        "evidence": "Average of the visible package readiness rows."
+      },
+      {
+        "id": "interactive-surfaces",
+        "label": "Interactive surfaces",
+        "points": 4,
+        "evidence": "Every visible package lane has a template surface."
+      },
+      {
+        "id": "cache-truth",
+        "label": "Cache truth",
+        "points": 2,
+        "evidence": "Physical cache manifests match the current package-status manifest set."
+      },
+      {
+        "id": "native-scroll-source-proof",
+        "label": "Native scroll source proof",
+        "points": 2,
+        "evidence": "Primary template routes use document-flow scrolling without custom scrollbar runtime or scroll traps."
+      },
+      {
+        "id": "no-misleading-lanes",
+        "label": "No misleading lanes",
+        "points": 1,
+        "evidence": "No package row is classified as dummy or misleading."
+      },
+      {
+        "id": "maturity-classification",
+        "label": "Maturity classification",
+        "points": 1,
+        "evidence": "Every visible lane uses an allowed maturity classification."
+      },
+      {
+        "id": "provider-boundary-coverage",
+        "label": "Provider readiness coverage",
+        "points": 1,
+        "evidence": "Every provider-gated package has a visible readiness card without live execution or secret values."
+      },
+      {
+        "id": "readiness-helper-execution",
+        "label": "Route helper execution",
+        "points": 2,
+        "evidence": "Focused checks execute readiness helpers without network calls, live provider execution, or secret values."
+      }
+    ],
+    "scoreGate": {
+      "schema": "dx.forge.launch_score_gate",
+      "targetScore": 90,
+      "currentScore": 89,
+      "unboundedSourceScore": 93,
+      "ceilingWithoutLiveProof": 89,
+      "canExceedCeiling": false,
+      "browserRuntimeProof": false,
+      "liveProviderProof": false,
+      "requiredProofs": [
+        {
+          "id": "browser-route-proof",
+          "label": "Browser route proof",
+          "status": "not-attached",
+          "routes": [
+            "/",
+            "/dashboard",
+            "/login"
+          ],
+          "requiredEvidence": "Attach a running preview and verify nonblank rendering, native wheel scrolling, responsive shell behavior, and no custom scrollbar runtime."
+        },
+        {
+          "id": "live-provider-proof",
+          "label": "Live provider proof",
+          "status": "provider-gated",
+          "packageIds": [
+            "auth/better-auth",
+            "instantdb/react",
+            "supabase/client",
+            "payments/stripe-js",
+            "ai/vercel-ai",
+            "automations/n8n"
+          ],
+          "requiredEvidence": "Configure real app-owned credentials and capture live-provider proof without exposing secret values."
+        }
+      ],
+      "honesty": "App readiness stays capped at 89 until browser route proof or live-provider evidence is attached."
+    },
+    "launchEvidenceSummaryRows": [
+      {
+        "id": "package-receipts",
+        "label": "Package health",
+        "value": "20/20",
+        "status": "ready",
+        "statusLabel": "Ready",
+        "description": "Installed package set and current cache manifests agree.",
+        "scoreImpact": "Included in current score.",
+        "iconName": "status:check",
+        "routes": [],
+        "packageIds": []
+      },
+      {
+        "id": "browser-route-proof",
+        "label": "Browser check",
+        "value": "Pending",
+        "status": "not-attached",
+        "statusLabel": "Attach preview",
+        "description": "Browser evidence is not attached, so app readiness stays capped at 89.",
+        "scoreImpact": "Needed to lift score cap.",
+        "iconName": "action:open",
+        "routes": [
+          "/",
+          "/dashboard",
+          "/login"
+        ],
+        "packageIds": []
+      },
+      {
+        "id": "live-provider-proof",
+        "label": "Live integrations",
+        "value": "6 gated",
+        "status": "provider-gated",
+        "statusLabel": "Setup required",
+        "description": "Credentialed Authentication, data, payments, AI, and automation runs remain app-owned provider work.",
+        "scoreImpact": "Required for live-provider claims.",
+        "iconName": "action:tools",
+        "routes": [],
+        "packageIds": [
+          "auth/better-auth",
+          "instantdb/react",
+          "supabase/client",
+          "payments/stripe-js",
+          "ai/vercel-ai",
+          "automations/n8n"
+        ]
+      }
+    ],
+    "lockBackedPackageCount": 20,
+    "visiblePackageLaneCount": 20,
+    "realControlCount": 20,
+    "readinessOnlyLaneCount": 0,
+    "currentLockBackedManifests": 20,
+    "physicalCacheManifestCount": 20,
+    "stalePhysicalCacheManifestCount": 0,
+    "stalePhysicalCacheManifestPaths": [],
+    "cacheArchiveRoot": ".dx/forge/cache-archive",
+    "archivedCacheManifestCount": 3,
+    "archivedCacheManifestPaths": [
+      ".dx/forge/cache-archive/stale-20260523/content-fumadocs-next/16.8.12-dx.10/manifest.json",
+      ".dx/forge/cache-archive/stale-20260523/content-fumadocs-next/16.8.12-dx.9/manifest.json",
+      ".dx/forge/cache-archive/stale-20260523/content-react-markdown/10.1.0-dx.1/manifest.json"
+    ],
+    "providerGatedCount": 6,
+    "providerBoundaryCoverage": true,
+    "readinessExecutionProofCount": 10,
+    "readinessExecutionProofPackageCount": 10,
+    "readinessExecutionProofPackageIds": [
+      "ai/vercel-ai",
+      "api/trpc",
+      "auth/better-auth",
+      "automations/n8n",
+      "db/drizzle-sqlite",
+      "i18n/next-intl",
+      "instantdb/react",
+      "payments/stripe-js",
+      "supabase/client",
+      "tanstack/query"
+    ],
+    "readinessExecutionProofCoverage": true,
+    "adapterBoundaryReadinessCount": 6,
+    "sourceOwnedLimitedProofCount": 6,
+    "sourceGuardOnlyCount": 0,
+    "dummyOrMisleadingCount": 0,
+    "cacheManifestSource": "package-status-current-manifests",
+    "cacheManifestCaveatId": "physical-cache-matches-current-manifests",
+    "cacheArchiveCaveatId": "cache-archive-excluded-from-current-lock",
+    "maturityCoverage": {
+      "schema": "dx.forge.package_maturity_coverage",
+      "visiblePackageLaneCount": 20,
+      "coveredPackageLaneCount": 20,
+      "unknownPackageLaneCount": 0,
+      "allVisibleLanesClassified": true,
+      "allowedMaturityKinds": [
+        "lock-backed-package",
+        "provider-gated",
+        "adapter-boundary-readiness",
+        "source-owned-limited-proof",
+        "source-guard-only"
+      ],
+      "counts": {
+        "lockBackedPackage": 2,
+        "providerGated": 6,
+        "adapterBoundaryReadiness": 6,
+        "sourceOwnedLimitedProof": 6,
+        "sourceGuardOnly": 0
+      },
+      "packageIdsByMaturity": {
+        "lockBackedPackage": [
+          "shadcn/ui/button",
+          "state/zustand"
+        ],
+        "providerGated": [
+          "instantdb/react",
+          "auth/better-auth",
+          "ai/vercel-ai",
+          "payments/stripe-js",
+          "supabase/client",
+          "automations/n8n"
+        ],
+        "adapterBoundaryReadiness": [
+          "tanstack/query",
+          "db/drizzle-sqlite",
+          "validation/zod",
+          "forms/react-hook-form",
+          "content/react-markdown",
+          "api/trpc"
+        ],
+        "sourceOwnedLimitedProof": [
+          "reactive/store",
+          "content/fumadocs-next",
+          "i18n/next-intl",
+          "wasm/bindgen",
+          "3d/launch-scene",
+          "animation/motion"
+        ],
+        "sourceGuardOnly": [],
+        "unknown": []
+      },
+      "publicSummaryFirst": true,
+      "auditDetailsDefault": "collapsed"
+    },
+    "templateReadinessReceipts": [
+      {
+        "packageId": "ai/vercel-ai",
+        "packageIds": [
+          "ai/vercel-ai"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/ai-sdk.json",
+        "endpoint": "/api/ai/chat",
+        "classification": "provider-gated",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "auth/better-auth",
+        "packageIds": [
+          "auth/better-auth"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/authentication.json",
+        "endpoint": "/api/auth/readiness",
+        "classification": "lock-backed-adapter-boundary",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "automations/n8n",
+        "packageIds": [
+          "automations/n8n"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/automation-connectors.json",
+        "endpoint": "/api/automations/n8n/dry-run",
+        "classification": "provider-gated",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "db/drizzle-sqlite,instantdb/react,supabase/client,api/trpc",
+        "packageIds": [
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "supabase/client",
+          "api/trpc"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/database-api.json",
+        "endpoint": "/api/database-api/readiness",
+        "classification": "lock-backed-adapter-boundary",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "dx-www/template-shell",
+        "packageIds": [
+          "dx-www/template-shell"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/launch-companion-doc-receipts.json",
+        "endpoint": null,
+        "classification": "source-owned-limited-proof",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "dx-www/template-shell",
+        "packageIds": [
+          "dx-www/template-shell"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/launch-readiness-bundle.json",
+        "endpoint": null,
+        "classification": "source-owned-limited-proof",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "dx-www/template-shell",
+        "packageIds": [
+          "dx-www/template-shell"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/launch-route.json",
+        "endpoint": null,
+        "classification": "source-owned-limited-proof",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "dx-www/template-shell",
+        "packageIds": [
+          "dx-www/template-shell"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/launch-runtime-approval-request.json",
+        "endpoint": null,
+        "classification": "source-owned-limited-proof",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "dx-www/template-shell",
+        "packageIds": [
+          "dx-www/template-shell"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/launch-runtime-checklist.json",
+        "endpoint": null,
+        "classification": "source-owned-limited-proof",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "dx-www/template-shell",
+        "packageIds": [
+          "dx-www/template-shell"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/launch-runtime-evidence.json",
+        "endpoint": null,
+        "classification": "source-owned-limited-proof",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "3d/launch-scene",
+        "packageIds": [
+          "3d/launch-scene"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/launch-scene-readiness.json",
+        "endpoint": "/",
+        "classification": "source-owned-limited-proof",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "dx-www/template-shell",
+        "packageIds": [
+          "dx-www/template-shell"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/launch-verification-lane.json",
+        "endpoint": null,
+        "classification": "source-owned-limited-proof",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "payments/stripe-js",
+        "packageIds": [
+          "payments/stripe-js"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/payments.json",
+        "endpoint": "/api/payments/stripe-js/readiness",
+        "classification": "provider-gated",
+        "runtimeProof": false,
+        "secretValues": []
+      },
+      {
+        "packageId": "dx-www/template-shell",
+        "packageIds": [
+          "dx-www/template-shell"
+        ],
+        "readinessReceipt": ".dx/forge/template-readiness/zed-template-handoff.json",
+        "endpoint": null,
+        "classification": "source-owned-limited-proof",
+        "runtimeProof": false,
+        "secretValues": []
+      }
+    ]
+  },
+  "forgePackageRealityRows": [
+    {
+      "packageId": "shadcn/ui/button",
+      "packageName": "UI Components",
+      "maturityKind": "lock-backed-package",
+      "realityLevelId": "real-lock-backed",
+      "score": 84,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "ui-density"
+    },
+    {
+      "packageId": "state/zustand",
+      "packageName": "State Management",
+      "maturityKind": "lock-backed-package",
+      "realityLevelId": "real-lock-backed",
+      "score": 86,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "state-counter"
+    },
+    {
+      "packageId": "tanstack/query",
+      "packageName": "Data Fetching & Cache",
+      "maturityKind": "adapter-boundary-readiness",
+      "realityLevelId": "lock-backed-adapter-boundary",
+      "score": 86,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "query-refresh"
+    },
+    {
+      "packageId": "reactive/store",
+      "packageName": "Reactive Store",
+      "maturityKind": "source-owned-limited-proof",
+      "realityLevelId": "real-lock-backed",
+      "score": 86,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "reactive-context"
+    },
+    {
+      "packageId": "db/drizzle-sqlite",
+      "packageName": "Database ORM",
+      "maturityKind": "adapter-boundary-readiness",
+      "realityLevelId": "real-lock-backed",
+      "score": 81,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "database-schema"
+    },
+    {
+      "packageId": "validation/zod",
+      "packageName": "Validation & Schemas",
+      "maturityKind": "adapter-boundary-readiness",
+      "realityLevelId": "real-lock-backed",
+      "score": 82,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "validation-settings"
+    },
+    {
+      "packageId": "forms/react-hook-form",
+      "packageName": "Forms",
+      "maturityKind": "adapter-boundary-readiness",
+      "realityLevelId": "real-lock-backed",
+      "score": 80,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "form-shell"
+    },
+    {
+      "packageId": "instantdb/react",
+      "packageName": "Realtime App Database",
+      "maturityKind": "provider-gated",
+      "realityLevelId": "real-lock-backed",
+      "score": 70,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "instant-readiness"
+    },
+    {
+      "packageId": "content/react-markdown",
+      "packageName": "Markdown & MDX Content",
+      "maturityKind": "adapter-boundary-readiness",
+      "realityLevelId": "real-lock-backed",
+      "score": 74,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "markdown-content"
+    },
+    {
+      "packageId": "content/fumadocs-next",
+      "packageName": "Documentation System",
+      "maturityKind": "source-owned-limited-proof",
+      "realityLevelId": "real-lock-backed",
+      "score": 75,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "docs-system"
+    },
+    {
+      "packageId": "auth/better-auth",
+      "packageName": "Authentication",
+      "maturityKind": "provider-gated",
+      "realityLevelId": "real-lock-backed",
+      "score": 87,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "auth-readiness"
+    },
+    {
+      "packageId": "i18n/next-intl",
+      "packageName": "Internationalization",
+      "maturityKind": "source-owned-limited-proof",
+      "realityLevelId": "real-lock-backed",
+      "score": 72,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "intl-messages"
+    },
+    {
+      "packageId": "api/trpc",
+      "packageName": "Type-Safe API",
+      "maturityKind": "adapter-boundary-readiness",
+      "realityLevelId": "real-lock-backed",
+      "score": 80,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "trpc-health"
+    },
+    {
+      "packageId": "ai/vercel-ai",
+      "packageName": "AI SDK",
+      "maturityKind": "provider-gated",
+      "realityLevelId": "real-lock-backed",
+      "score": 80,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "ai-route-boundary"
+    },
+    {
+      "packageId": "payments/stripe-js",
+      "packageName": "Payments",
+      "maturityKind": "provider-gated",
+      "realityLevelId": "real-lock-backed",
+      "score": 86,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "stripe-checkout-boundary"
+    },
+    {
+      "packageId": "supabase/client",
+      "packageName": "Backend Platform Client",
+      "maturityKind": "provider-gated",
+      "realityLevelId": "real-lock-backed",
+      "score": 72,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "backend-client"
+    },
+    {
+      "packageId": "automations/n8n",
+      "packageName": "Automation Connectors",
+      "maturityKind": "provider-gated",
+      "realityLevelId": "real-lock-backed",
+      "score": 83,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "n8n-connector-boundary"
+    },
+    {
+      "packageId": "wasm/bindgen",
+      "packageName": "WebAssembly Bridge",
+      "maturityKind": "source-owned-limited-proof",
+      "realityLevelId": "source-owned-not-runtime-proven",
+      "score": 70,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "wasm-bindgen-readiness"
+    },
+    {
+      "packageId": "3d/launch-scene",
+      "packageName": "3D Scene System",
+      "maturityKind": "source-owned-limited-proof",
+      "realityLevelId": "real-lock-backed",
+      "score": 84,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "landing-scene-surface"
+    },
+    {
+      "packageId": "animation/motion",
+      "packageName": "Motion & Animation",
+      "maturityKind": "source-owned-limited-proof",
+      "realityLevelId": "source-owned-not-runtime-proven",
+      "score": 72,
+      "receiptStatus": "present",
+      "templateSurface": "interactive-control",
+      "hasInteractiveControl": true,
+      "controlId": "lane7-motion-stage"
+    }
+  ],
+  "templateReadinessRouteHandlers": [
+    {
+      "route": "/api/payments/stripe-js/readiness",
+      "packageId": "payments/stripe-js",
+      "readinessKind": "provider-gated",
+      "sourceFile": "app/api/payments/stripe-js/readiness/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "runtimeExecution": false,
+      "liveProviderExecution": false,
+      "missingConfigHttpStatus": 501
+    },
+    {
+      "route": "/api/automations/n8n/dry-run",
+      "packageId": "automations/n8n",
+      "readinessKind": "provider-gated",
+      "sourceFile": "app/api/automations/n8n/dry-run/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "runtimeExecution": false,
+      "liveProviderExecution": false,
+      "missingConfigHttpStatus": 501
+    },
+    {
+      "route": "/api/database-api/readiness",
+      "packageId": "api/trpc",
+      "readinessKind": "source-owned-adapter-boundary",
+      "sourceFile": "app/api/database-api/readiness/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "runtimeExecution": false,
+      "liveProviderExecution": false,
+      "readinessHttpStatus": 200
+    },
+    {
+      "route": "/api/query-cache/readiness",
+      "packageId": "tanstack/query",
+      "readinessKind": "source-owned-adapter-boundary",
+      "sourceFile": "app/api/query-cache/readiness/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "runtimeExecution": false,
+      "liveProviderExecution": false,
+      "readinessHttpStatus": 200,
+      "unsupportedActionHttpStatus": 400
+    },
+    {
+      "route": "/api/instant/readiness",
+      "packageId": "instantdb/react",
+      "readinessKind": "provider-gated",
+      "sourceFile": "app/api/instant/readiness/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "runtimeExecution": false,
+      "liveProviderExecution": false,
+      "missingConfigHttpStatus": 501
+    },
+    {
+      "route": "/api/database-orm/readiness",
+      "packageId": "db/drizzle-sqlite",
+      "readinessKind": "runtime-gated",
+      "sourceFile": "app/api/database-orm/readiness/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "runtimeExecution": false,
+      "liveProviderExecution": false,
+      "missingConfigHttpStatus": 501
+    },
+    {
+      "route": "/api/supabase/readiness",
+      "packageId": "supabase/client",
+      "readinessKind": "provider-gated",
+      "sourceFile": "app/api/supabase/readiness/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "runtimeExecution": false,
+      "liveProviderExecution": false,
+      "missingConfigHttpStatus": 501
+    }
+  ],
+  "nativeScrollProof": {
+    "schema": "dx.template.native_scroll_source_guard",
+    "sourceGuard": true,
+    "browserRuntimeProof": false,
+    "routesChecked": 3,
+    "coverage": {
+      "expectedRoutes": [
+        "/",
+        "/dashboard",
+        "/login"
+      ],
+      "routesCovered": 3,
+      "routesWithNativeDocumentFlow": 3,
+      "routesWithDocumentFlowContent": 3,
+      "routesWithoutDocumentRootScrollLock": 3,
+      "routesWithoutCustomScrollbarRuntime": 3,
+      "routesWithoutScrollTrap": 3,
+      "allRoutesNativeDocumentFlow": true,
+      "allRoutesHaveDocumentFlowContent": true,
+      "allRoutesDocumentRootUnlocked": true,
+      "allRoutesCustomScrollbarFree": true,
+      "allMobileMenusNonTrapping": true,
+      "cssDocumentRootUnlocked": true,
+      "sourceOnlyProof": true,
+      "browserRuntimeProof": false
+    },
+    "cssContract": {
+      "bodyNativeOverflowYAuto": true,
+      "htmlBodyOverflowDisabled": false,
+      "customScrollbarCss": false,
+      "documentHeightPolicy": "min-height-100vh-no-body-lock",
+      "mobileMenuTriggerPositionFixed": false,
+      "mobileMenuPanelsPositionFixed": false,
+      "mobileMenuPanelsScrollable": true
+    },
+    "routes": [
+      {
+        "route": "/",
+        "sourceFile": "pages/index.html",
+        "bodyScrollRoot": true,
+        "bodyScrollSystem": true,
+        "mainScrollSurface": true,
+        "mainScrollLock": true,
+        "wheelScroll": true,
+        "documentFlowProof": true,
+        "viewportPlusContent": true,
+        "documentFlowContent": true,
+        "mainContentBytes": 123991,
+        "inlineScrollLock": false,
+        "classScrollLock": false,
+        "dataScrollLock": false,
+        "customScrollbarRuntime": false,
+        "mobileMenuScrollTrap": null
+      },
+      {
+        "route": "/dashboard",
+        "sourceFile": "pages/dashboard.html",
+        "bodyScrollRoot": true,
+        "bodyScrollSystem": true,
+        "mainScrollSurface": true,
+        "mainScrollLock": true,
+        "wheelScroll": true,
+        "documentFlowProof": true,
+        "viewportPlusContent": true,
+        "documentFlowContent": true,
+        "mainContentBytes": 128836,
+        "inlineScrollLock": false,
+        "classScrollLock": false,
+        "dataScrollLock": false,
+        "customScrollbarRuntime": false,
+        "mobileMenuScrollTrap": false
+      },
+      {
+        "route": "/login",
+        "sourceFile": "pages/login.html",
+        "bodyScrollRoot": true,
+        "bodyScrollSystem": true,
+        "mainScrollSurface": true,
+        "mainScrollLock": true,
+        "wheelScroll": true,
+        "documentFlowProof": true,
+        "viewportPlusContent": true,
+        "documentFlowContent": true,
+        "mainContentBytes": 2187,
+        "inlineScrollLock": false,
+        "classScrollLock": false,
+        "dataScrollLock": false,
+        "customScrollbarRuntime": false,
+        "mobileMenuScrollTrap": null
+      }
+    ]
+  },
+  "styleEvidenceRows": [
+    {
+      "schema": "dx.style.browser_compat.preview_evidence",
+      "rowId": "dx-style-browser-compat",
+      "title": "dx-style browser compatibility",
+      "status": "missing",
+      "receiptPath": ".dx/receipts/style/check.json",
+      "fixturePath": "related-crates/style/fixtures/tailwind-postcss-browser-compat.json",
+      "zedVisibility": "dx-style:browser-compat",
+      "canaryClassCount": 0,
+      "selectorCanaryClassCount": 0,
+      "selectorClassExamples": [],
+      "tailwindParityStateAliasSupportedClassCount": 0,
+      "tailwindParitySupportedStateAliasExamples": [],
+      "fullAutoprefixerParity": false,
+      "fullTailwindPostcssOutputParity": false,
+      "source": "check_panel.view_model.style_evidence_rows",
+      "runtimeProof": false,
+      "nextAction": "Run dx style check, then dx check --json, and reload the check-panel receipt."
+    }
+  ],
+  "styleEvidenceDriftFixtures": [
+    {
+      "schema": "dx.style.browser_compat.drift_fixture",
+      "rowId": "dx-style-browser-compat",
+      "route": "/",
+      "status": "source-guarded",
+      "packagePanelReadModel": "dx.www.template.preview_style_package_panel_with_drift_read_model",
+      "loaderFile": "components/template-app/template-shell-evidence-loader.ts",
+      "markerHelperFile": "components/template-app/template-shell-style-evidence-drift.ts",
+      "fixturePath": "related-crates/style/fixtures/tailwind-postcss-browser-compat.json",
+      "states": [
+        "unknown",
+        "false",
+        "true"
+      ],
+      "fullAutoprefixerParity": false,
+      "fullTailwindPostcssOutputParity": false
+    }
+  ],
+  "stylePackageOwnershipRows": [
+    {
+      "schema": "dx.style.package_ownership",
+      "packageId": "shadcn/ui/button",
+      "packageName": "UI Components",
+      "styleScope": "ui-components",
+      "sourceFiles": [
+        "examples/template/components/ui/button.tsx"
+      ],
+      "requiredTokens": [
+        "primary",
+        "primary-foreground",
+        "ring",
+        "surface"
+      ],
+      "generatedClasses": [
+        "inline-flex",
+        "items-center",
+        "justify-center",
+        "rounded-md",
+        "text-sm",
+        "font-medium",
+        "transition-colors",
+        "bg-token(surface)"
+      ],
+      "unsupportedClasses": [],
+      "tokenSource": "styles/globals.css",
+      "generatedCss": "styles/generated.css",
+      "receiptPath": ".dx/forge/receipts/packages/shadcn-ui-button.json",
+      "zedVisibility": "shadcn-ui-button:style-ownership",
+      "runtimeProof": false
+    },
+    {
+      "schema": "dx.style.package_ownership",
+      "packageId": "animation/motion",
+      "packageName": "Motion Animation",
+      "styleScope": "motion-animation",
+      "sourceFiles": [
+        "examples/template/components/template-app/motion.tsx",
+        "examples/template/motion/dashboard-workflow.ts"
+      ],
+      "requiredTokens": [
+        "accent",
+        "accent-foreground",
+        "surface"
+      ],
+      "generatedClasses": [
+        "motion-safe:animate-pulse",
+        "motion-reduce:transition-none",
+        "opacity-100",
+        "animate-[var(--package-animation)]"
+      ],
+      "unsupportedClasses": [],
+      "tokenSource": "styles/globals.css",
+      "generatedCss": "styles/generated.css",
+      "receiptPath": ".dx/forge/receipts/packages/animation-motion.json",
+      "zedVisibility": "animation-motion:style-ownership",
+      "runtimeProof": false
+    }
+  ],
+  "sourceGuardRunbookFixtures": [
+    {
+      "packageId": "forge/safety-archive",
+      "officialPackageName": "Forge Safety Archive",
+      "upstreamPackage": "dx-forge",
+      "upstreamVersion": "launch-local",
+      "sourceMirror": "G:/Dx/www",
+      "route": "/",
+      "fixture": "docs/packages/forge-safety-archive.source-guard-runbook.json",
+      "guardId": "forge-safety-archive-rollback-coverage",
+      "schema": "dx.forge.safety_archive.source_guard_runbook_fixture",
+      "honestyLabel": "LOCK-BACKED SOURCE-OWNED",
+      "runtimeProof": false,
+      "zedVisibility": "forge-safety-archive:rollback-coverage",
+      "command": "dx run --test .\\benchmarks\\www-forge-package-lock.test.ts",
+      "commandPurpose": "Validate source-owned Forge package lock, archive receipt, rollback receipt, cache-file, and safety_archive status coverage for the app template.",
+      "scope": "source-only",
+      "writesFiles": false,
+      "startsServer": false,
+      "runsPackageInstall": false,
+      "runsFullBuild": false,
+      "nodeModulesRequired": false
+    },
+    {
+      "packageId": "auth/better-auth",
+      "officialPackageName": "Authentication",
+      "upstreamPackage": "better-auth",
+      "upstreamVersion": "1.6.11",
+      "sourceMirror": "G:/WWW/inspirations/better-auth",
+      "route": "/",
+      "fixture": "docs/packages/authentication.source-guard-runbook.json",
+      "guardId": "authentication-package-lane-panel",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "ADAPTER-BOUNDARY",
+      "runtimeProof": false,
+      "zedVisibility": "authentication:receipt-hash-refresh"
+    },
+    {
+      "packageId": "shadcn/ui/button",
+      "officialPackageName": "UI Components",
+      "upstreamPackage": "shadcn-ui",
+      "upstreamVersion": "0.0.1",
+      "sourceMirror": "G:/WWW/inspirations/shadcn-ui; G:/WWW/inspirations/radix-primitives",
+      "route": "/",
+      "fixture": "docs/packages/ui-components.source-guard-runbook.json",
+      "guardId": "ui-components-generated-starter-materialization",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "ui-components:receipt-hash-refresh"
+    },
+    {
+      "packageId": "state/zustand",
+      "officialPackageName": "State Management",
+      "upstreamPackage": "zustand",
+      "upstreamVersion": "5.0.13",
+      "sourceMirror": "G:/WWW/inspirations/zustand",
+      "route": "/",
+      "fixture": "docs/packages/state-zustand.source-guard-runbook.json",
+      "guardId": "state-management-generated-starter-materialization",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "state-management:receipt-hash-refresh"
+    },
+    {
+      "packageId": "reactive/store",
+      "officialPackageName": "Reactive Store",
+      "upstreamPackage": "@tanstack/store",
+      "upstreamVersion": "0.11.0",
+      "sourceMirror": "G:/WWW/inspirations/tanstack-store",
+      "route": "/",
+      "fixture": "docs/packages/reactive-store.source-guard-runbook.json",
+      "guardId": "reactive-store-lower-dx-check-helper-freshness",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "reactive-store:receipt-hash-refresh"
+    },
+    {
+      "packageId": "tanstack/query",
+      "officialPackageName": "Data Fetching & Cache",
+      "upstreamPackage": "@tanstack/react-query",
+      "upstreamVersion": "5.100.10",
+      "sourceMirror": "G:/WWW/inspirations/tanstack-query",
+      "route": "/",
+      "fixture": "docs/packages/data-fetching-cache.source-guard-runbook.json",
+      "guardId": "data-fetching-cache-generated-starter-materialization",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "data-fetching-cache:receipt-hash-refresh"
+    },
+    {
+      "packageId": "validation/zod",
+      "officialPackageName": "Validation & Schemas",
+      "upstreamPackage": "zod",
+      "upstreamVersion": "4.4.3",
+      "sourceMirror": "G:/WWW/inspirations/zod",
+      "route": "/",
+      "fixture": "docs/packages/validation-schemas.source-guard-runbook.json",
+      "guardId": "validation-schemas-generated-starter-materialization",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "validation-schemas:receipt-hash-refresh"
+    },
+    {
+      "packageId": "payments/stripe-js",
+      "officialPackageName": "Payments",
+      "upstreamPackage": "@stripe/stripe-js",
+      "upstreamVersion": "9.6.0",
+      "sourceMirror": "G:/WWW/inspirations/stripe-js",
+      "route": "/",
+      "fixture": "docs/packages/payments.source-guard-runbook.json",
+      "guardId": "payments-generated-starter-materialization",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "payments:receipt-hash-refresh"
+    },
+    {
+      "packageId": "forms/react-hook-form",
+      "officialPackageName": "Forms",
+      "upstreamPackage": "react-hook-form",
+      "upstreamVersion": "7.75.0",
+      "sourceMirror": "G:/WWW/inspirations/react-hook-form",
+      "route": "/",
+      "fixture": "docs/packages/forms.source-guard-runbook.json",
+      "guardId": "forms-generated-starter-materialization",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "forms:receipt-hash-refresh"
+    },
+    {
+      "packageId": "wasm/bindgen",
+      "officialPackageName": "WebAssembly Bridge",
+      "upstreamPackage": "wasm-bindgen",
+      "upstreamVersion": "0.2.121",
+      "sourceMirror": "G:/WWW/inspirations/wasm-bindgen",
+      "route": "/",
+      "fixture": "docs/packages/wasm-bindgen.source-guard-runbook.json",
+      "guardId": "webassembly-bridge-generated-starter-materialization",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "webassembly-bridge:source-guard-runbook"
+    },
+    {
+      "packageId": "animation/motion",
+      "officialPackageName": "Motion & Animation",
+      "upstreamPackage": "motion",
+      "upstreamVersion": "12.38.0",
+      "sourceMirror": "G:/WWW/inspirations/motion",
+      "route": "/",
+      "fixture": "docs/packages/motion-animation.source-guard-runbook.json",
+      "guardId": "motion-animation-generated-starter-materialization",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "motion-animation:receipt-hash-refresh"
+    },
+    {
+      "packageId": "3d/launch-scene",
+      "officialPackageName": "3D Scene System",
+      "upstreamPackage": "three + @react-three/fiber + @react-three/drei",
+      "upstreamVersion": "three 0.184.0; @react-three/fiber 9.6.1; @react-three/drei local mirror",
+      "sourceMirror": "G:/WWW/inspirations/three.js; G:/WWW/inspirations/react-three-fiber; G:/WWW/inspirations/drei",
+      "route": "/",
+      "fixture": "docs/packages/3d-scene-system.source-guard-runbook.json",
+      "guardId": "three-scene-system-lower-dx-check-helper-freshness",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "3d-scene-system:receipt-hash-refresh"
+    },
+    {
+      "packageId": "content/fumadocs-next",
+      "officialPackageName": "Documentation System",
+      "upstreamPackage": "fumadocs",
+      "upstreamVersion": "16.8.12",
+      "sourceMirror": "G:/WWW/inspirations/fumadocs",
+      "route": "/",
+      "fixture": "docs/packages/content-fumadocs-next.source-guard-runbook.json",
+      "guardId": "documentation-system-generated-starter-materialization",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "documentation-system:receipt-hash-refresh"
+    },
+    {
+      "packageId": "automations/n8n",
+      "officialPackageName": "Automation Connectors",
+      "upstreamPackage": "n8n-nodes-base",
+      "upstreamVersion": "2.22.0",
+      "sourceMirror": "G:/WWW/inspirations/n8n/packages/nodes-base",
+      "route": "/",
+      "fixture": "docs/packages/automation-connectors.source-guard-runbook.json",
+      "guardId": "automation-connectors-package-lane-panel",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "ADAPTER-BOUNDARY",
+      "runtimeProof": false,
+      "zedVisibility": "automation-connectors:receipt-hash-refresh"
+    },
+    {
+      "packageId": "i18n/next-intl",
+      "officialPackageName": "Internationalization",
+      "upstreamPackage": "next-intl",
+      "upstreamVersion": "4.12.0",
+      "sourceMirror": "G:/WWW/inspirations/next-intl",
+      "route": "/",
+      "fixture": "docs/packages/next-intl.source-guard-runbook.json",
+      "guardId": "internationalization-launch-package-lane-template",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "internationalization:receipt-hash-refresh"
+    },
+    {
+      "packageId": "api/trpc",
+      "officialPackageName": "Type-Safe API",
+      "upstreamPackage": "@trpc/server",
+      "upstreamVersion": "11.17.0",
+      "sourceMirror": "G:/WWW/inspirations/trpc",
+      "route": "/",
+      "fixture": "docs/packages/api-trpc.source-guard-runbook.json",
+      "guardId": "type-safe-api-unsupported-surface-context",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "type-safe-api:receipt-hash-refresh"
+    },
+    {
+      "packageId": "db/drizzle-sqlite",
+      "officialPackageName": "Database ORM",
+      "upstreamPackage": "drizzle-orm",
+      "upstreamVersion": "0.45.3",
+      "sourceMirror": "G:/WWW/inspirations/drizzle-orm",
+      "route": "/",
+      "fixture": "docs/packages/database-orm.source-guard-runbook.json",
+      "guardId": "database-orm-lower-dx-check-helper-freshness",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "database-orm:receipt-hash-refresh"
+    },
+    {
+      "packageId": "supabase/client",
+      "officialPackageName": "Backend Platform Client",
+      "upstreamPackage": "@supabase/ssr + @supabase/supabase-js",
+      "upstreamVersion": "@supabase/ssr latest; @supabase/supabase-js ^2",
+      "sourceMirror": "G:/WWW/inspirations/supabase",
+      "route": "/",
+      "fixture": "docs/packages/backend-platform-client.source-guard-runbook.json",
+      "guardId": "backend-platform-client-lower-dx-check-helper-freshness",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "backend-platform-client:receipt-hash-refresh"
+    },
+    {
+      "packageId": "ai/vercel-ai",
+      "officialPackageName": "AI SDK",
+      "upstreamPackage": "ai",
+      "upstreamVersion": "7.0.0-canary.146",
+      "sourceMirror": "G:/WWW/inspirations/vercel-ai",
+      "route": "/",
+      "fixture": "docs/packages/ai-sdk.source-guard-runbook.json",
+      "guardId": "ai-sdk-check-panel-helper-freshness",
+      "schema": "dx.forge.package.source_guard_runbook_fixture",
+      "honestyLabel": "SOURCE-ONLY",
+      "runtimeProof": false,
+      "zedVisibility": "ai-sdk:receipt-hash-refresh"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/login",
+      "sourceFile": "pages/login.html",
+      "forgePackages": [
+        "auth/better-auth",
+        "forms/react-hook-form",
+        "validation/zod",
+        "shadcn/ui/button",
+        "shadcn/ui/input"
+      ],
+      "hotReloadTarget": "route:/login"
+    },
+    {
+      "route": "/logout",
+      "sourceFile": "pages/logout.html",
+      "forgePackages": [
+        "auth/better-auth",
+        "shadcn/ui/button",
+        "shadcn/ui/card"
+      ],
+      "hotReloadTarget": "route:/logout"
+    },
+    {
+      "route": "/dashboard",
+      "sourceFile": "pages/dashboard.html",
+      "forgePackages": [
+        "shadcn/ui/button",
+        "state/zustand",
+        "tanstack/query",
+        "reactive/store",
+        "db/drizzle-sqlite",
+        "validation/zod",
+        "forms/react-hook-form",
+        "instantdb/react",
+        "content/react-markdown",
+        "content/fumadocs-next",
+        "auth/better-auth",
+        "i18n/next-intl",
+        "api/trpc",
+        "ai/vercel-ai",
+        "payments/stripe-js",
+        "supabase/client",
+        "automations/n8n",
+        "wasm/bindgen",
+        "3d/launch-scene",
+        "animation/motion"
+      ],
+      "hotReloadTarget": "route:/dashboard"
+    },
+    {
+      "route": "/",
+      "sourceFile": "pages/index.html",
+      "forgePackages": [
+        "shadcn/ui/button",
+        "shadcn/ui/badge",
+        "shadcn/ui/card",
+        "shadcn/ui/field",
+        "shadcn/ui/input",
+        "shadcn/ui/textarea",
+        "shadcn/ui/item",
+        "shadcn/ui/separator",
+        "auth/better-auth",
+        "i18n/next-intl",
+        "payments/stripe-js",
+        "validation/zod",
+        "forms/react-hook-form",
+        "state/zustand",
+        "reactive/store",
+        "tanstack/query",
+        "animation/motion",
+        "3d/launch-scene",
+        "content/react-markdown",
+        "content/fumadocs-next",
+        "automations/n8n",
+        "supabase/client",
+        "db/drizzle-sqlite",
+        "instantdb/react",
+        "api/trpc",
+        "ai/vercel-ai",
+        "wasm/bindgen"
+      ],
+      "hotReloadTarget": "route:/",
+      "styleEvidenceRows": [
+        {
+          "schema": "dx.style.browser_compat.preview_evidence",
+          "rowId": "dx-style-browser-compat",
+          "title": "dx-style browser compatibility",
+          "status": "missing",
+          "receiptPath": ".dx/receipts/style/check.json",
+          "fixturePath": "related-crates/style/fixtures/tailwind-postcss-browser-compat.json",
+          "zedVisibility": "dx-style:browser-compat",
+          "canaryClassCount": 0,
+          "selectorCanaryClassCount": 0,
+          "selectorClassExamples": [],
+          "tailwindParityStateAliasSupportedClassCount": 0,
+          "tailwindParitySupportedStateAliasExamples": [],
+          "fullAutoprefixerParity": false,
+          "fullTailwindPostcssOutputParity": false,
+          "source": "check_panel.view_model.style_evidence_rows",
+          "runtimeProof": false,
+          "nextAction": "Run dx style check, then dx check --json, and reload the check-panel receipt."
+        }
+      ],
+      "styleEvidenceDriftFixtures": [
+        {
+          "schema": "dx.style.browser_compat.drift_fixture",
+          "rowId": "dx-style-browser-compat",
+          "route": "/",
+          "status": "source-guarded",
+          "packagePanelReadModel": "dx.www.template.preview_style_package_panel_with_drift_read_model",
+          "loaderFile": "components/template-app/template-shell-evidence-loader.ts",
+          "markerHelperFile": "components/template-app/template-shell-style-evidence-drift.ts",
+          "fixturePath": "related-crates/style/fixtures/tailwind-postcss-browser-compat.json",
+          "states": [
+            "unknown",
+            "false",
+            "true"
+          ],
+          "fullAutoprefixerParity": false,
+          "fullTailwindPostcssOutputParity": false
+        }
+      ],
+      "stylePackageOwnershipRows": [
+        {
+          "schema": "dx.style.package_ownership",
+          "packageId": "shadcn/ui/button",
+          "packageName": "UI Components",
+          "styleScope": "ui-components",
+          "sourceFiles": [
+            "examples/template/components/ui/button.tsx"
+          ],
+          "requiredTokens": [
+            "primary",
+            "primary-foreground",
+            "ring",
+            "surface"
+          ],
+          "generatedClasses": [
+            "inline-flex",
+            "items-center",
+            "justify-center",
+            "rounded-md",
+            "text-sm",
+            "font-medium",
+            "transition-colors",
+            "bg-token(surface)"
+          ],
+          "unsupportedClasses": [],
+          "tokenSource": "styles/globals.css",
+          "generatedCss": "styles/generated.css",
+          "receiptPath": ".dx/forge/receipts/packages/shadcn-ui-button.json",
+          "zedVisibility": "shadcn-ui-button:style-ownership",
+          "runtimeProof": false
+        },
+        {
+          "schema": "dx.style.package_ownership",
+          "packageId": "animation/motion",
+          "packageName": "Motion Animation",
+          "styleScope": "motion-animation",
+          "sourceFiles": [
+            "examples/template/components/template-app/motion.tsx",
+            "examples/template/motion/dashboard-workflow.ts"
+          ],
+          "requiredTokens": [
+            "accent",
+            "accent-foreground",
+            "surface"
+          ],
+          "generatedClasses": [
+            "motion-safe:animate-pulse",
+            "motion-reduce:transition-none",
+            "opacity-100",
+            "animate-[var(--package-animation)]"
+          ],
+          "unsupportedClasses": [],
+          "tokenSource": "styles/globals.css",
+          "generatedCss": "styles/generated.css",
+          "receiptPath": ".dx/forge/receipts/packages/animation-motion.json",
+          "zedVisibility": "animation-motion:style-ownership",
+          "runtimeProof": false
+        }
+      ],
+      "sourceGuardRunbookFixtures": [
+        "docs/packages/forge-safety-archive.source-guard-runbook.json",
+        "docs/packages/authentication.source-guard-runbook.json",
+        "docs/packages/ui-components.source-guard-runbook.json",
+        "docs/packages/state-zustand.source-guard-runbook.json",
+        "docs/packages/reactive-store.source-guard-runbook.json",
+        "docs/packages/data-fetching-cache.source-guard-runbook.json",
+        "docs/packages/validation-schemas.source-guard-runbook.json",
+        "docs/packages/payments.source-guard-runbook.json",
+        "docs/packages/forms.source-guard-runbook.json",
+        "docs/packages/wasm-bindgen.source-guard-runbook.json",
+        "docs/packages/motion-animation.source-guard-runbook.json",
+        "docs/packages/3d-scene-system.source-guard-runbook.json",
+        "docs/packages/content-fumadocs-next.source-guard-runbook.json",
+        "docs/packages/automation-connectors.source-guard-runbook.json",
+        "docs/packages/next-intl.source-guard-runbook.json",
+        "docs/packages/api-trpc.source-guard-runbook.json",
+        "docs/packages/database-orm.source-guard-runbook.json",
+        "docs/packages/backend-platform-client.source-guard-runbook.json",
+        "docs/packages/ai-sdk.source-guard-runbook.json"
+      ],
+      "dataDxMarkers": [
+        "data-dx-route",
+        "data-dx-component",
+        "data-dx-package",
+        "data-dx-editable-section",
+        "data-dx-operation",
+        "data-dx-dashboard-flow",
+        "data-dx-dashboard-target",
+        "data-dx-product-surface",
+        "data-dx-check-style-evidence-count",
+        "data-dx-check-style-evidence-row",
+        "data-dx-check-style-evidence-status",
+        "data-dx-check-style-evidence-receipt-path",
+        "data-dx-check-style-evidence-fixture-path",
+        "data-dx-check-style-evidence-zed",
+        "data-dx-check-style-evidence-class-count",
+        "data-dx-check-style-evidence-selector-class-count",
+        "data-dx-check-style-evidence-selector-class-examples",
+        "data-dx-check-style-evidence-state-alias-count",
+        "data-dx-check-style-evidence-state-alias-examples",
+        "data-dx-check-style-evidence-full-autoprefixer-parity",
+        "data-dx-check-style-evidence-full-tailwind-postcss-output-parity",
+        "data-dx-check-style-evidence-drift",
+        "data-dx-check-style-evidence-drift-state",
+        "data-dx-check-style-evidence-drift-loader",
+        "data-dx-check-style-evidence-drift-helper",
+        "data-dx-check-style-evidence-drift-states",
+        "data-dx-style-package-panel",
+        "data-dx-style-package-panel-read-model",
+        "data-dx-style-package-panel-drift-state",
+        "data-dx-style-package-panel-drift-status",
+        "data-dx-style-package-panel-drift-mismatch-fields",
+        "data-dx-style-package-panel-readiness-receipt",
+        "data-dx-check-package-lane-template",
+        "data-dx-check-package-lane-row",
+        "data-dx-check-package-lane-dx-style-status",
+        "data-dx-check-package-lane-hash-refresh-status",
+        "data-dx-check-package-lane-hash-refresh-helper",
+        "data-dx-check-package-lane-hash-refresh-json-command",
+        "data-dx-check-package-lane-hash-refresh-zed",
+        "data-dx-check-package-lane-hash-refresh-tracked-files",
+        "data-dx-check-package-lane-hash-refresh-stale-files",
+        "data-dx-check-package-lane-hash-refresh-missing-files",
+        "data-dx-check-package-lane-hash-refresh-current-file-list",
+        "data-dx-check-package-lane-hash-refresh-stale-file-list",
+        "data-dx-check-package-lane-hash-refresh-missing-file-list",
+        "data-dx-check-package-lane-hash-refresh-stale-mirror-file-list",
+        "data-dx-check-package-lane-hash-refresh-missing-mirror-file-list",
+        "data-dx-check-package-lane-hash-refresh-current-metric",
+        "data-dx-check-package-lane-hash-refresh-stale-metric",
+        "data-dx-check-package-lane-hash-refresh-missing-metric",
+        "data-dx-safety-archive-contract",
+        "data-dx-safety-archive-state",
+        "data-dx-safety-archive-rollback-coverage",
+        "data-dx-safety-archive-receipt-count",
+        "data-dx-safety-archive-safe-delete",
+        "data-dx-style-surface",
+        "data-dx-token-scope",
+        "data-dx-intl-dashboard-workflow",
+        "data-dx-query-dashboard-source",
+        "data-dx-query-dashboard-queue",
+        "data-dx-query-dashboard-package-count",
+        "data-dx-query-dashboard-role-count",
+        "data-dx-query-action",
+        "data-dx-query-safe-action",
+        "data-dx-query-result-status",
+        "data-dx-scene-quality-profile",
+        "data-dx-scene-material-palette",
+        "data-dx-scene-camera-rig",
+        "data-dx-scene-frame-sample",
+        "data-dx-scene-capability-report",
+        "data-dx-scene-capability-status",
+        "data-dx-scene-viewport-report",
+        "data-dx-scene-viewport-status",
+        "data-dx-scene-bounds-report",
+        "data-dx-scene-bounds-status",
+        "data-dx-scene-raycast-report",
+        "data-dx-scene-raycast-status",
+        "data-dx-scene-workflow-active",
+        "data-dx-scene-workflow-receipt-state",
+        "data-dx-stripe-dashboard-workflow",
+        "data-dx-stripe-action",
+        "data-dx-stripe-receipt-path",
+        "data-dx-drizzle-action",
+        "data-dx-drizzle-status",
+        "data-dx-drizzle-read-model",
+        "data-dx-drizzle-query-plan-id",
+        "data-dx-drizzle-mission-control",
+        "data-dx-drizzle-sql-preview",
+        "data-dx-drizzle-fixture-row",
+        "data-dx-drizzle-receipt-path",
+        "data-dx-drizzle-receipt-state",
+        "data-dx-drizzle-runtime-dependencies",
+        "data-dx-query-dashboard-source",
+        "data-dx-query-dashboard-queue",
+        "data-dx-query-dashboard-package-count",
+        "data-dx-query-dashboard-role-count",
+        "data-dx-query-dashboard-required-env-count",
+        "data-dx-query-package-id",
+        "data-dx-query-package-role",
+        "data-dx-query-package-status",
+        "data-dx-query-action",
+        "data-dx-query-safe-action",
+        "data-dx-query-result-status",
+        "data-dx-backend-status",
+        "data-dx-backend-detail",
+        "data-dx-trpc-workflow",
+        "data-dx-trpc-action",
+        "data-trpc-interaction",
+        "data-dx-fumadocs-action",
+        "data-dx-fumadocs-page-option",
+        "data-dx-fumadocs-rendered-markdown",
+        "data-dx-fumadocs-changelog",
+        "data-dx-fumadocs-rendered-route",
+        "data-dx-fumadocs-selected-page",
+        "data-dx-fumadocs-toc-count",
+        "data-dx-fumadocs-local-response",
+        "data-dx-fumadocs-receipt-route",
+        "data-dx-fumadocs-missing-config",
+        "data-dx-docs-openapi-code-usage",
+        "data-dx-docs-openapi-proxy"
+      ]
+    },
+    {
+      "route": "/automations",
+      "sourceFile": "pages/automations.html",
+      "forgePackages": [
+        "automations/n8n"
+      ],
+      "hotReloadTarget": "route:/automations"
+    },
+    {
+      "route": "/ui",
+      "sourceFile": "pages/ui.html",
+      "forgePackages": [
+        "shadcn/ui/card",
+        "shadcn/ui/button",
+        "shadcn/ui/input",
+        "dx/icon/search"
+      ],
+      "hotReloadTarget": "route:/ui"
+    },
+    {
+      "route": "/database",
+      "sourceFile": "pages/database.html",
+      "forgePackages": [
+        "supabase/client",
+        "db/drizzle-sqlite",
+        "instantdb/react"
+      ],
+      "hotReloadTarget": "route:/database"
+    },
+    {
+      "route": "/backend",
+      "sourceFile": "pages/backend.html",
+      "forgePackages": [
+        "api/trpc",
+        "ai/vercel-ai"
+      ],
+      "hotReloadTarget": "route:/backend"
+    }
+  ],
+  "editableOperations": [
+    "insert_component",
+    "move_reorder_section",
+    "update_design_token",
+    "update_text_content",
+    "insert_icon_media"
+  ],
+  "editContract": {
+    "schema": "dx.studio.launch_edit_contract",
+    "route": "/",
+    "routeAliases": [
+      "/login",
+      "/logout",
+      "/dashboard"
+    ],
+    "sourceManifestFile": "public/preview-manifest.json",
+    "sourceOwned": true,
+    "noNodeModulesRequired": true,
+    "layoutPolicy": "responsive-design-system-grid",
+    "absolutePositioning": false,
+    "tokenScopeMarker": "data-dx-token-scope",
+    "operations": [
+      {
+        "operation": "insert_component",
+        "label": "Insert a Forge-backed component into a declared responsive slot",
+        "selector": "[data-dx-editable-section=\"launch-package-proof-grid\"]",
+        "sourceFile": "pages/index.html",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      },
+      {
+        "operation": "move_reorder_section",
+        "label": "Move or reorder declared route sections",
+        "selector": "[data-dx-section]",
+        "sourceFile": "pages/index.html",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      },
+      {
+        "operation": "update_design_token",
+        "label": "Update route-level design tokens",
+        "selector": "[data-dx-token-scope=\"launch-runtime\"]",
+        "sourceFile": "styles/globals.css",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      },
+      {
+        "operation": "update_text_content",
+        "label": "Update text or markdown-backed content",
+        "selector": "[data-dx-editable-section], [data-dx-component]",
+        "sourceFile": "pages/index.html",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      },
+      {
+        "operation": "insert_icon_media",
+        "label": "Insert source-owned icon or media assets",
+        "selector": "[data-dx-media-slot]",
+        "sourceFile": "pages/index.html",
+        "responsivePolicy": "use-existing-grid-and-design-tokens",
+        "writesFiles": true,
+        "requiresNodeModules": false,
+        "requiresServerRestart": false,
+        "requiresPackageInstall": false
+      }
+    ],
+    "editableSurfaces": [
+      {
+        "id": "launch-runtime-hero",
+        "selector": "[data-dx-editable-section=\"launch-hero\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "3d/launch-scene"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "template-landing-page",
+        "selector": "[data-dx-component=\"template-landing-page\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "3d/launch-scene",
+          "dx/icon/search"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "template-login-page",
+        "selector": "[data-dx-component=\"template-login-page\"]",
+        "sourceFile": "pages/login.html",
+        "materializedFile": "pages/login.html",
+        "packageIds": [
+          "auth/better-auth",
+          "forms/react-hook-form",
+          "validation/zod",
+          "shadcn/ui/button",
+          "shadcn/ui/input"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "template-logout-page",
+        "selector": "[data-dx-component=\"template-logout-page\"]",
+        "sourceFile": "pages/logout.html",
+        "materializedFile": "pages/logout.html",
+        "packageIds": [
+          "auth/better-auth",
+          "shadcn/ui/button",
+          "shadcn/ui/card"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "template-dashboard-page",
+        "selector": "[data-dx-component=\"template-dashboard-page\"]",
+        "sourceFile": "pages/dashboard.html",
+        "materializedFile": "pages/dashboard.html",
+        "packageIds": [
+          "shadcn/ui/button",
+          "state/zustand",
+          "tanstack/query",
+          "reactive/store",
+          "db/drizzle-sqlite",
+          "validation/zod",
+          "forms/react-hook-form",
+          "instantdb/react",
+          "content/react-markdown",
+          "content/fumadocs-next",
+          "auth/better-auth",
+          "i18n/next-intl",
+          "api/trpc",
+          "ai/vercel-ai",
+          "payments/stripe-js",
+          "supabase/client",
+          "automations/n8n",
+          "wasm/bindgen",
+          "3d/launch-scene",
+          "animation/motion"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "#dashboard-menu-toggle",
+          "[data-dashboard-filter]",
+          "#dashboard-settings-form",
+          "[data-dx-component=\"template-profile-form\"]",
+          "[data-dx-component=\"template-billing-contact-form\"]",
+          ".dashboard-nav a"
+        ],
+        "stateMarkers": [
+          "data-dx-auth-state",
+          "data-dx-state-storage-key",
+          "data-dx-form-validation",
+          "data-dx-form-dry-run-receipt",
+          "data-dx-form-persistence",
+          "data-dx-form-secret-access",
+          "data-dx-form-submit-mode",
+          "data-dx-rhf-boundary",
+          "data-dx-zod-schema",
+          "data-template-field-error",
+          "data-template-form-status",
+          "data-dx-sidebar-open",
+          "data-dx-state-saved"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-template-dashboard-app.json"
+      },
+      {
+        "id": "launch-runtime-dashboard",
+        "selector": "[data-dx-editable-section=\"launch-dashboard\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "shadcn/ui/button",
+          "shadcn/ui/badge",
+          "shadcn/ui/card",
+          "shadcn/ui/field",
+          "shadcn/ui/input",
+          "shadcn/ui/textarea",
+          "shadcn/ui/item",
+          "shadcn/ui/separator",
+          "auth/better-auth",
+          "payments/stripe-js",
+          "state/zustand",
+          "animation/motion",
+          "3d/launch-scene",
+          "automations/n8n",
+          "supabase/client",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "api/trpc"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "update_design_token"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-dx-check-panel",
+        "selector": "[data-dx-component=\"dx-check-health-panel\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "state/zustand",
+          "shadcn/ui/button",
+          "reactive/store",
+          "payments/stripe-js",
+          "db/drizzle-sqlite",
+          "validation/zod",
+          "forms/react-hook-form",
+          "automations/n8n",
+          "i18n/next-intl",
+          "supabase/client",
+          "tanstack/query",
+          "instantdb/react",
+          "api/trpc",
+          "ai/vercel-ai",
+          "wasm/bindgen",
+          "animation/motion",
+          "3d/launch-scene",
+          "content/fumadocs-next"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-check-command=\"dx check --latest-receipt --json\"]",
+          "[data-dx-check-panel=\"latest-receipt\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-check-panel",
+          "data-dx-check-command",
+          "data-dx-check-receipt-path",
+          "data-dx-check-schema",
+          "data-dx-check-score-max",
+          "data-dx-zed-panel-schema",
+          "data-dx-check-view-model-schema",
+          "data-dx-check-view-model-status",
+          "data-dx-check-score-state",
+          "data-dx-check-empty-state",
+          "data-dx-check-bucket-count",
+          "data-dx-check-package-lane-count",
+          "data-dx-check-style-evidence-count",
+          "data-dx-check-style-evidence-row",
+          "data-dx-check-style-evidence-status",
+          "data-dx-check-style-evidence-receipt-path",
+          "data-dx-check-style-evidence-fixture-path",
+          "data-dx-check-style-evidence-zed",
+          "data-dx-check-style-evidence-class-count",
+          "data-dx-check-style-evidence-selector-class-count",
+          "data-dx-check-style-evidence-selector-class-examples",
+          "data-dx-check-style-evidence-state-alias-count",
+          "data-dx-check-style-evidence-state-alias-examples",
+          "data-dx-check-style-evidence-full-autoprefixer-parity",
+          "data-dx-check-style-evidence-full-tailwind-postcss-output-parity",
+          "data-dx-check-style-evidence-drift",
+          "data-dx-check-style-evidence-drift-state",
+          "data-dx-check-style-evidence-drift-loader",
+          "data-dx-check-style-evidence-drift-helper",
+          "data-dx-check-style-evidence-drift-states",
+          "data-dx-style-package-panel",
+          "data-dx-style-package-panel-read-model",
+          "data-dx-style-package-panel-drift-state",
+          "data-dx-style-package-panel-drift-status",
+          "data-dx-style-package-panel-drift-mismatch-fields",
+          "data-dx-style-package-panel-readiness-receipt",
+          "data-dx-style-package-ownership-read-model",
+          "data-dx-style-package-ownership-packages",
+          "data-dx-style-package-ownership-generated-classes",
+          "data-dx-style-package-ownership-unsupported-classes",
+          "data-dx-check-package-lane-template",
+          "data-dx-check-package-lane-row",
+          "data-dx-check-package-lane-status",
+          "data-dx-check-package-lane-receipt-status",
+          "data-dx-check-package-lane-name",
+          "data-dx-check-package-lane-upstream-package",
+          "data-dx-check-package-lane-source-mirror",
+          "data-dx-check-package-lane-receipt-path",
+          "data-dx-check-package-lane-dx-style-status",
+          "data-dx-style-surface",
+          "data-dx-token-scope",
+          "data-dx-check-package-lane-hash-refresh-status",
+          "data-dx-check-package-lane-hash-refresh-helper",
+          "data-dx-check-package-lane-hash-refresh-json-command",
+          "data-dx-check-package-lane-hash-refresh-zed",
+          "data-dx-check-package-lane-hash-refresh-tracked-files",
+          "data-dx-check-package-lane-hash-refresh-stale-files",
+          "data-dx-check-package-lane-hash-refresh-missing-files",
+          "data-dx-check-package-lane-hash-refresh-current-file-list",
+          "data-dx-check-package-lane-hash-refresh-stale-file-list",
+          "data-dx-check-package-lane-hash-refresh-missing-file-list",
+          "data-dx-check-package-lane-hash-refresh-stale-mirror-file-list",
+          "data-dx-check-package-lane-hash-refresh-missing-mirror-file-list",
+          "data-dx-check-package-lane-hash-refresh-current-metric",
+          "data-dx-check-package-lane-hash-refresh-stale-metric",
+          "data-dx-check-package-lane-hash-refresh-missing-metric",
+          "data-dx-check-blocker-count",
+          "data-dx-check-warning-count",
+          "data-dx-check-quick-fix-count",
+          "data-dx-check-last-run"
+        ],
+        "zedVisibility": "dx-style:browser-compat",
+        "receiptPath": ".dx/receipts/check/check-latest.json"
+      },
+      {
+        "id": "launch-runtime-forge-safety-archive",
+        "selector": "[data-dx-component=\"forge-safety-archive-status\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "migration/static-site"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "stateMarkers": [
+          "data-dx-safety-archive-contract",
+          "data-dx-safety-archive-state",
+          "data-dx-safety-archive-safe-delete",
+          "data-dx-safety-archive-package-count",
+          "data-dx-safety-archive-covered-packages",
+          "data-dx-safety-archive-missing-packages",
+          "data-dx-safety-archive-rollback-coverage",
+          "data-dx-safety-archive-receipt-count",
+          "data-dx-safety-archive-directory",
+          "data-dx-safety-archive-boundary",
+          "data-dx-safety-archive-runbook-source",
+          "data-dx-safety-archive-runbook-fixture",
+          "data-dx-safety-archive-runbook-guard",
+          "data-dx-safety-archive-runbook-command",
+          "data-dx-safety-archive-runbook-policy"
+        ],
+        "receiptPath": ".dx/forge/receipts/safety"
+      },
+      {
+        "id": "launch-runtime-proof-grid",
+        "selector": "[data-dx-editable-section=\"launch-package-proof-grid\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "shadcn/ui/button",
+          "shadcn/ui/badge",
+          "shadcn/ui/card",
+          "shadcn/ui/field",
+          "shadcn/ui/input",
+          "shadcn/ui/textarea",
+          "shadcn/ui/item",
+          "shadcn/ui/separator",
+          "auth/better-auth",
+          "payments/stripe-js",
+          "validation/zod",
+          "forms/react-hook-form",
+          "state/zustand",
+          "tanstack/query",
+          "api/trpc",
+          "animation/motion",
+          "3d/launch-scene",
+          "content/fumadocs-next",
+          "content/react-markdown",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "wasm/bindgen"
+        ],
+        "operations": [
+          "insert_component",
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-billing-checkout",
+        "selector": "[data-dx-component=\"launch-billing-checkout-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "payments/stripe-js",
+          "forms/react-hook-form",
+          "validation/zod"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-settings-validation",
+        "selector": "[data-dx-component=\"launch-settings-validation-summary\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "validation/zod",
+          "forms/react-hook-form"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-zod-dashboard-action=\"load-invalid-settings\"]",
+          "[data-dx-zod-dashboard-action=\"load-valid-settings\"]",
+          "[data-dx-zod-dashboard-field]",
+          "[data-dx-zod-dashboard-receipt-api=\"createDxDashboardSettingsReceipt\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-zod-dashboard-receipt",
+          "data-dx-zod-dashboard-receipt-json",
+          "data-dx-zod-dashboard-receipt-state",
+          "data-dx-zod-field-errors-api",
+          "data-dx-dashboard-settings-validation",
+          "data-dx-dashboard-settings-field-error-count",
+          "data-dx-style-surface",
+          "data-dx-token-scope",
+          "data-dx-check-package-lane-dx-style-status"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-validation-zod-dashboard-settings.json"
+      },
+      {
+        "id": "launch-runtime-dashboard",
+        "selector": "[data-dx-editable-section=\"launch-dashboard\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "shadcn/ui/button",
+          "shadcn/ui/badge",
+          "shadcn/ui/card",
+          "shadcn/ui/field",
+          "shadcn/ui/input",
+          "shadcn/ui/textarea",
+          "shadcn/ui/item",
+          "shadcn/ui/separator",
+          "auth/better-auth",
+          "payments/stripe-js",
+          "state/zustand",
+          "animation/motion",
+          "3d/launch-scene",
+          "automations/n8n",
+          "supabase/client",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "api/trpc",
+          "wasm/bindgen"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-wasm-compute-dashboard",
+        "selector": "[data-dx-component=\"launch-wasm-compute-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "wasm/bindgen"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-wasm-action=\"run-local-add\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-dashboard-metric",
+          "data-dx-wasm-add-result",
+          "data-dx-wasm-bindgen-status",
+          "data-dx-wasm-mime-status"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-wasm-bindgen-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-dashboard-state-workflow",
+        "selector": "[data-dx-component=\"launch-dashboard-state-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "state/zustand"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "update_design_token"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-dashboard-state-shell",
+        "selector": "[data-dx-component=\"launch-dashboard-state-shell\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "state/zustand"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "update_design_token"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-zustand-action=\"set-dashboard-density\"]",
+          "[data-dx-zustand-action=\"select-dashboard-focus\"]",
+          "[data-dx-zustand-action=\"toggle-command-hints\"]",
+          "[data-dx-zustand-action=\"save-dashboard-settings\"]",
+          "[data-dx-zustand-action=\"reset-dashboard-settings\"]",
+          "[data-dx-zustand-action=\"rehydrate-dashboard-settings\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-zustand-store",
+          "data-dx-zustand-persist-key",
+          "data-dx-zustand-dashboard-density",
+          "data-dx-zustand-dashboard-focus",
+          "data-dx-zustand-command-hints",
+          "data-dx-zustand-dashboard-applied",
+          "data-dx-zustand-hydration-event",
+          "data-dx-zustand-rehydrate-state"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-state-zustand-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-query-dashboard-data",
+        "selector": "[data-dx-component=\"tanstack-query-dashboard-data-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "tanstack/query"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-query-action=\"refresh-dashboard-data\"]",
+          "[data-dx-query-safe-action=\"read-dashboard-catalog\"]",
+          "[data-dx-query-interaction=\"refresh-dashboard-data\"]",
+          "[data-dx-dashboard-workflow=\"query-backed-dashboard-data\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-query-dashboard-source",
+          "data-dx-query-dashboard-queue",
+          "data-dx-query-dashboard-package-count",
+          "data-dx-query-dashboard-role-count",
+          "data-dx-query-dashboard-required-env-count",
+          "data-dx-query-package-id",
+          "data-dx-query-package-role",
+          "data-dx-query-package-status",
+          "data-dx-query-result-status"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json"
+      },
+      {
+        "id": "launch-runtime-scene",
+        "selector": "[data-dx-media-slot=\"launch-scene\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "3d/launch-scene",
+          "animation/motion"
+        ],
+        "operations": [
+          "update_design_token",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-scene-dashboard-workflow",
+        "selector": "[data-dx-component=\"launch-scene-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "3d/launch-scene"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "update_design_token"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "receiptPath": ".dx/forge/receipts/3d-launch-scene-dashboard-workflow.json",
+        "interactionSelectors": [
+          "[data-dx-scene-action=\"focus-dashboard-node\"]",
+          "[data-dx-scene-action=\"toggle-quality-profile\"]",
+          "[data-dx-scene-action=\"cycle-material-palette\"]",
+          "[data-dx-scene-action=\"cycle-camera-rig\"]",
+          "[data-dx-scene-action=\"capture-frame-sample\"]",
+          "[data-dx-scene-action=\"inspect-renderer-capabilities\"]",
+          "[data-dx-scene-action=\"measure-viewport-dpr\"]",
+          "[data-dx-scene-action=\"fit-scene-bounds\"]",
+          "[data-dx-scene-action=\"inspect-raycast-hit\"]",
+          "[data-dx-scene-action=\"apply-render-budget\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-scene-quality-profile",
+          "data-dx-scene-material-palette",
+          "data-dx-scene-camera-rig",
+          "data-dx-scene-frame-sample",
+          "data-dx-scene-capability-report",
+          "data-dx-scene-capability-status",
+          "data-dx-scene-viewport-report",
+          "data-dx-scene-viewport-status",
+          "data-dx-scene-bounds-report",
+          "data-dx-scene-bounds-status",
+          "data-dx-scene-raycast-report",
+          "data-dx-scene-raycast-status",
+          "data-dx-scene-workflow-active",
+          "data-dx-scene-workflow-receipt-state"
+        ]
+      },
+      {
+        "id": "launch-runtime-docs",
+        "selector": "[data-dx-component=\"launch-fumadocs-docs-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "content/fumadocs-next",
+          "content/react-markdown"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-fumadocs-interaction=\"page-tree-selector\"]",
+          "[data-dx-fumadocs-action=\"safe-local-route-preview\"]",
+          "[data-dx-fumadocs-page-option]",
+          "[data-dx-fumadocs-rendered-markdown=\"active-page\"]",
+          "[data-dx-fumadocs-changelog=\"launch-docs\"]",
+          "[data-dx-dashboard-workflow=\"docs-help-changelog\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-fumadocs-rendered-route",
+          "data-dx-fumadocs-selected-page",
+          "data-dx-fumadocs-toc-count",
+          "data-dx-fumadocs-local-response",
+          "data-dx-fumadocs-receipt-route",
+          "data-dx-fumadocs-missing-config",
+          "data-dx-docs-openapi-code-usage",
+          "data-dx-docs-openapi-proxy"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-automations",
+        "selector": "[data-dx-component=\"launch-automation-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "automations/n8n"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-automation-safe-action=\"prepare-dry-run-receipt\"]",
+          "[data-dx-automation-safe-action=\"prepare-zed-run-handoff\"]",
+          "[data-dx-automation-intent-input]",
+          "[data-dx-automation-required-env]"
+        ],
+        "stateMarkers": [
+          "data-dx-automation-dashboard-state",
+          "data-dx-automation-selected-connector",
+          "data-dx-automation-credential-schema",
+          "data-dx-automation-required-env",
+          "data-dx-automation-workflow-node-readiness",
+          "data-dx-automation-receipt-intent",
+          "data-dx-automation-run-receipt-intent"
+        ],
+        "receiptPath": "G:/Dx/.dx/receipts/automations/launch-release-notification.json"
+      },
+      {
+        "id": "launch-runtime-database-backend",
+        "selector": "[data-dx-component=\"database-backend-card\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "supabase/client",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "api/trpc"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-trpc-api-dashboard",
+        "selector": "[data-dx-component=\"launch-trpc-api-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "api/trpc"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-trpc-action=\"check-health\"]",
+          "[data-dx-trpc-action=\"prepare-launch-event\"]",
+          "[data-trpc-interaction=\"health-query\"]",
+          "[data-trpc-interaction=\"local-launch-event-mutation\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-trpc-workflow",
+          "data-dx-trpc-action",
+          "data-trpc-interaction",
+          "data-trpc-mutation-state"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-drizzle-data-workflow",
+        "selector": "[data-dx-component=\"launch-drizzle-data-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "db/drizzle-sqlite"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-drizzle-action=\"select-read-model\"]",
+          "[data-dx-drizzle-action=\"preview-query-plan\"]",
+          "[data-dx-drizzle-action=\"apply-read-model\"]",
+          "[data-dx-dashboard-target=\"mission-control-database\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-drizzle-status",
+          "data-dx-drizzle-read-model",
+          "data-dx-drizzle-query-plan-id",
+          "data-dx-backend-status",
+          "data-dx-backend-detail",
+          "data-dx-drizzle-receipt-path",
+          "data-dx-drizzle-receipt-state",
+          "data-dx-drizzle-runtime-dependencies"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-instantdb-dashboard",
+        "selector": "[data-dx-component=\"instantdb-runtime-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "instantdb/react"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      }
+    ],
+    "surfaces": [
+      {
+        "id": "launch-runtime-hero",
+        "selector": "[data-dx-editable-section=\"launch-hero\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "3d/launch-scene"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "template-landing-page",
+        "selector": "[data-dx-component=\"template-landing-page\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "3d/launch-scene",
+          "dx/icon/search"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "template-login-page",
+        "selector": "[data-dx-component=\"template-login-page\"]",
+        "sourceFile": "pages/login.html",
+        "materializedFile": "pages/login.html",
+        "packageIds": [
+          "auth/better-auth",
+          "forms/react-hook-form",
+          "validation/zod",
+          "shadcn/ui/button",
+          "shadcn/ui/input"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "template-logout-page",
+        "selector": "[data-dx-component=\"template-logout-page\"]",
+        "sourceFile": "pages/logout.html",
+        "materializedFile": "pages/logout.html",
+        "packageIds": [
+          "auth/better-auth",
+          "shadcn/ui/button",
+          "shadcn/ui/card"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "template-dashboard-page",
+        "selector": "[data-dx-component=\"template-dashboard-page\"]",
+        "sourceFile": "pages/dashboard.html",
+        "materializedFile": "pages/dashboard.html",
+        "packageIds": [
+          "shadcn/ui/button",
+          "state/zustand",
+          "tanstack/query",
+          "reactive/store",
+          "db/drizzle-sqlite",
+          "validation/zod",
+          "forms/react-hook-form",
+          "instantdb/react",
+          "content/react-markdown",
+          "content/fumadocs-next",
+          "auth/better-auth",
+          "i18n/next-intl",
+          "api/trpc",
+          "ai/vercel-ai",
+          "payments/stripe-js",
+          "supabase/client",
+          "automations/n8n",
+          "wasm/bindgen",
+          "3d/launch-scene",
+          "animation/motion"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "#dashboard-menu-toggle",
+          "[data-dashboard-filter]",
+          "#dashboard-settings-form",
+          "[data-dx-component=\"template-profile-form\"]",
+          "[data-dx-component=\"template-billing-contact-form\"]",
+          ".dashboard-nav a"
+        ],
+        "stateMarkers": [
+          "data-dx-auth-state",
+          "data-dx-state-storage-key",
+          "data-dx-form-validation",
+          "data-dx-form-dry-run-receipt",
+          "data-dx-form-persistence",
+          "data-dx-form-secret-access",
+          "data-dx-form-submit-mode",
+          "data-dx-rhf-boundary",
+          "data-dx-zod-schema",
+          "data-template-field-error",
+          "data-template-form-status",
+          "data-dx-sidebar-open",
+          "data-dx-state-saved"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-template-dashboard-app.json"
+      },
+      {
+        "id": "launch-runtime-dashboard",
+        "selector": "[data-dx-editable-section=\"launch-dashboard\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "shadcn/ui/button",
+          "shadcn/ui/badge",
+          "shadcn/ui/card",
+          "shadcn/ui/field",
+          "shadcn/ui/input",
+          "shadcn/ui/textarea",
+          "shadcn/ui/item",
+          "shadcn/ui/separator",
+          "auth/better-auth",
+          "payments/stripe-js",
+          "state/zustand",
+          "animation/motion",
+          "3d/launch-scene",
+          "automations/n8n",
+          "supabase/client",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "api/trpc"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "update_design_token"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-dx-check-panel",
+        "selector": "[data-dx-component=\"dx-check-health-panel\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "state/zustand",
+          "shadcn/ui/button",
+          "reactive/store",
+          "payments/stripe-js",
+          "db/drizzle-sqlite",
+          "validation/zod",
+          "forms/react-hook-form",
+          "automations/n8n",
+          "i18n/next-intl",
+          "supabase/client",
+          "tanstack/query",
+          "instantdb/react",
+          "api/trpc",
+          "ai/vercel-ai",
+          "wasm/bindgen",
+          "animation/motion",
+          "3d/launch-scene",
+          "content/fumadocs-next"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-check-command=\"dx check --latest-receipt --json\"]",
+          "[data-dx-check-panel=\"latest-receipt\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-check-panel",
+          "data-dx-check-command",
+          "data-dx-check-receipt-path",
+          "data-dx-check-schema",
+          "data-dx-check-score-max",
+          "data-dx-zed-panel-schema",
+          "data-dx-check-view-model-schema",
+          "data-dx-check-view-model-status",
+          "data-dx-check-score-state",
+          "data-dx-check-empty-state",
+          "data-dx-check-bucket-count",
+          "data-dx-check-package-lane-count",
+          "data-dx-check-style-evidence-count",
+          "data-dx-check-style-evidence-row",
+          "data-dx-check-style-evidence-status",
+          "data-dx-check-style-evidence-receipt-path",
+          "data-dx-check-style-evidence-fixture-path",
+          "data-dx-check-style-evidence-zed",
+          "data-dx-check-style-evidence-class-count",
+          "data-dx-check-style-evidence-selector-class-count",
+          "data-dx-check-style-evidence-selector-class-examples",
+          "data-dx-check-style-evidence-state-alias-count",
+          "data-dx-check-style-evidence-state-alias-examples",
+          "data-dx-check-style-evidence-full-autoprefixer-parity",
+          "data-dx-check-style-evidence-full-tailwind-postcss-output-parity",
+          "data-dx-check-style-evidence-drift",
+          "data-dx-check-style-evidence-drift-state",
+          "data-dx-check-style-evidence-drift-loader",
+          "data-dx-check-style-evidence-drift-helper",
+          "data-dx-check-style-evidence-drift-states",
+          "data-dx-style-package-panel",
+          "data-dx-style-package-panel-read-model",
+          "data-dx-style-package-panel-drift-state",
+          "data-dx-style-package-panel-drift-status",
+          "data-dx-style-package-panel-drift-mismatch-fields",
+          "data-dx-style-package-panel-readiness-receipt",
+          "data-dx-style-package-ownership-read-model",
+          "data-dx-style-package-ownership-packages",
+          "data-dx-style-package-ownership-generated-classes",
+          "data-dx-style-package-ownership-unsupported-classes",
+          "data-dx-check-package-lane-template",
+          "data-dx-check-package-lane-row",
+          "data-dx-check-package-lane-status",
+          "data-dx-check-package-lane-receipt-status",
+          "data-dx-check-package-lane-name",
+          "data-dx-check-package-lane-upstream-package",
+          "data-dx-check-package-lane-source-mirror",
+          "data-dx-check-package-lane-receipt-path",
+          "data-dx-check-package-lane-dx-style-status",
+          "data-dx-style-surface",
+          "data-dx-token-scope",
+          "data-dx-check-package-lane-hash-refresh-status",
+          "data-dx-check-package-lane-hash-refresh-helper",
+          "data-dx-check-package-lane-hash-refresh-json-command",
+          "data-dx-check-package-lane-hash-refresh-zed",
+          "data-dx-check-package-lane-hash-refresh-tracked-files",
+          "data-dx-check-package-lane-hash-refresh-stale-files",
+          "data-dx-check-package-lane-hash-refresh-missing-files",
+          "data-dx-check-package-lane-hash-refresh-current-file-list",
+          "data-dx-check-package-lane-hash-refresh-stale-file-list",
+          "data-dx-check-package-lane-hash-refresh-missing-file-list",
+          "data-dx-check-package-lane-hash-refresh-stale-mirror-file-list",
+          "data-dx-check-package-lane-hash-refresh-missing-mirror-file-list",
+          "data-dx-check-package-lane-hash-refresh-current-metric",
+          "data-dx-check-package-lane-hash-refresh-stale-metric",
+          "data-dx-check-package-lane-hash-refresh-missing-metric",
+          "data-dx-check-blocker-count",
+          "data-dx-check-warning-count",
+          "data-dx-check-quick-fix-count",
+          "data-dx-check-last-run"
+        ],
+        "zedVisibility": "dx-style:browser-compat",
+        "receiptPath": ".dx/receipts/check/check-latest.json"
+      },
+      {
+        "id": "launch-runtime-forge-safety-archive",
+        "selector": "[data-dx-component=\"forge-safety-archive-status\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "migration/static-site"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "stateMarkers": [
+          "data-dx-safety-archive-contract",
+          "data-dx-safety-archive-state",
+          "data-dx-safety-archive-safe-delete",
+          "data-dx-safety-archive-package-count",
+          "data-dx-safety-archive-covered-packages",
+          "data-dx-safety-archive-missing-packages",
+          "data-dx-safety-archive-rollback-coverage",
+          "data-dx-safety-archive-receipt-count",
+          "data-dx-safety-archive-directory",
+          "data-dx-safety-archive-boundary",
+          "data-dx-safety-archive-runbook-source",
+          "data-dx-safety-archive-runbook-fixture",
+          "data-dx-safety-archive-runbook-guard",
+          "data-dx-safety-archive-runbook-command",
+          "data-dx-safety-archive-runbook-policy"
+        ],
+        "receiptPath": ".dx/forge/receipts/safety"
+      },
+      {
+        "id": "launch-runtime-proof-grid",
+        "selector": "[data-dx-editable-section=\"launch-package-proof-grid\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "shadcn/ui/button",
+          "shadcn/ui/badge",
+          "shadcn/ui/card",
+          "shadcn/ui/field",
+          "shadcn/ui/input",
+          "shadcn/ui/textarea",
+          "shadcn/ui/item",
+          "shadcn/ui/separator",
+          "auth/better-auth",
+          "payments/stripe-js",
+          "validation/zod",
+          "forms/react-hook-form",
+          "state/zustand",
+          "tanstack/query",
+          "api/trpc",
+          "animation/motion",
+          "3d/launch-scene",
+          "content/fumadocs-next",
+          "content/react-markdown",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "wasm/bindgen"
+        ],
+        "operations": [
+          "insert_component",
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-billing-checkout",
+        "selector": "[data-dx-component=\"launch-billing-checkout-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "payments/stripe-js",
+          "forms/react-hook-form",
+          "validation/zod"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-settings-validation",
+        "selector": "[data-dx-component=\"launch-settings-validation-summary\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "validation/zod",
+          "forms/react-hook-form"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-zod-dashboard-action=\"load-invalid-settings\"]",
+          "[data-dx-zod-dashboard-action=\"load-valid-settings\"]",
+          "[data-dx-zod-dashboard-field]",
+          "[data-dx-zod-dashboard-receipt-api=\"createDxDashboardSettingsReceipt\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-zod-dashboard-receipt",
+          "data-dx-zod-dashboard-receipt-json",
+          "data-dx-zod-dashboard-receipt-state",
+          "data-dx-zod-field-errors-api",
+          "data-dx-dashboard-settings-validation",
+          "data-dx-dashboard-settings-field-error-count",
+          "data-dx-style-surface",
+          "data-dx-token-scope",
+          "data-dx-check-package-lane-dx-style-status"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-validation-zod-dashboard-settings.json"
+      },
+      {
+        "id": "launch-runtime-dashboard",
+        "selector": "[data-dx-editable-section=\"launch-dashboard\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "shadcn/ui/button",
+          "shadcn/ui/badge",
+          "shadcn/ui/card",
+          "shadcn/ui/field",
+          "shadcn/ui/input",
+          "shadcn/ui/textarea",
+          "shadcn/ui/item",
+          "shadcn/ui/separator",
+          "auth/better-auth",
+          "payments/stripe-js",
+          "state/zustand",
+          "animation/motion",
+          "3d/launch-scene",
+          "automations/n8n",
+          "supabase/client",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "api/trpc",
+          "wasm/bindgen"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-wasm-compute-dashboard",
+        "selector": "[data-dx-component=\"launch-wasm-compute-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "wasm/bindgen"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-wasm-action=\"run-local-add\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-dashboard-metric",
+          "data-dx-wasm-add-result",
+          "data-dx-wasm-bindgen-status",
+          "data-dx-wasm-mime-status"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-wasm-bindgen-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-dashboard-state-workflow",
+        "selector": "[data-dx-component=\"launch-dashboard-state-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "state/zustand"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "update_design_token"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-dashboard-state-shell",
+        "selector": "[data-dx-component=\"launch-dashboard-state-shell\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "state/zustand"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "update_design_token"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-zustand-action=\"set-dashboard-density\"]",
+          "[data-dx-zustand-action=\"select-dashboard-focus\"]",
+          "[data-dx-zustand-action=\"toggle-command-hints\"]",
+          "[data-dx-zustand-action=\"save-dashboard-settings\"]",
+          "[data-dx-zustand-action=\"reset-dashboard-settings\"]",
+          "[data-dx-zustand-action=\"rehydrate-dashboard-settings\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-zustand-store",
+          "data-dx-zustand-persist-key",
+          "data-dx-zustand-dashboard-density",
+          "data-dx-zustand-dashboard-focus",
+          "data-dx-zustand-command-hints",
+          "data-dx-zustand-dashboard-applied",
+          "data-dx-zustand-hydration-event",
+          "data-dx-zustand-rehydrate-state"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-state-zustand-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-query-dashboard-data",
+        "selector": "[data-dx-component=\"tanstack-query-dashboard-data-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "tanstack/query"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_design_token",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-query-action=\"refresh-dashboard-data\"]",
+          "[data-dx-query-safe-action=\"read-dashboard-catalog\"]",
+          "[data-dx-query-interaction=\"refresh-dashboard-data\"]",
+          "[data-dx-dashboard-workflow=\"query-backed-dashboard-data\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-query-dashboard-source",
+          "data-dx-query-dashboard-queue",
+          "data-dx-query-dashboard-package-count",
+          "data-dx-query-dashboard-role-count",
+          "data-dx-query-dashboard-required-env-count",
+          "data-dx-query-package-id",
+          "data-dx-query-package-role",
+          "data-dx-query-package-status",
+          "data-dx-query-result-status"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json"
+      },
+      {
+        "id": "launch-runtime-scene",
+        "selector": "[data-dx-media-slot=\"launch-scene\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "3d/launch-scene",
+          "animation/motion"
+        ],
+        "operations": [
+          "update_design_token",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-scene-dashboard-workflow",
+        "selector": "[data-dx-component=\"launch-scene-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "3d/launch-scene"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "update_design_token"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "receiptPath": ".dx/forge/receipts/3d-launch-scene-dashboard-workflow.json",
+        "interactionSelectors": [
+          "[data-dx-scene-action=\"focus-dashboard-node\"]",
+          "[data-dx-scene-action=\"toggle-quality-profile\"]",
+          "[data-dx-scene-action=\"cycle-material-palette\"]",
+          "[data-dx-scene-action=\"cycle-camera-rig\"]",
+          "[data-dx-scene-action=\"capture-frame-sample\"]",
+          "[data-dx-scene-action=\"inspect-renderer-capabilities\"]",
+          "[data-dx-scene-action=\"measure-viewport-dpr\"]",
+          "[data-dx-scene-action=\"fit-scene-bounds\"]",
+          "[data-dx-scene-action=\"inspect-raycast-hit\"]",
+          "[data-dx-scene-action=\"apply-render-budget\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-scene-quality-profile",
+          "data-dx-scene-material-palette",
+          "data-dx-scene-camera-rig",
+          "data-dx-scene-frame-sample",
+          "data-dx-scene-capability-report",
+          "data-dx-scene-capability-status",
+          "data-dx-scene-viewport-report",
+          "data-dx-scene-viewport-status",
+          "data-dx-scene-bounds-report",
+          "data-dx-scene-bounds-status",
+          "data-dx-scene-raycast-report",
+          "data-dx-scene-raycast-status",
+          "data-dx-scene-workflow-active",
+          "data-dx-scene-workflow-receipt-state"
+        ]
+      },
+      {
+        "id": "launch-runtime-docs",
+        "selector": "[data-dx-component=\"launch-fumadocs-docs-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "content/fumadocs-next",
+          "content/react-markdown"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-fumadocs-interaction=\"page-tree-selector\"]",
+          "[data-dx-fumadocs-action=\"safe-local-route-preview\"]",
+          "[data-dx-fumadocs-page-option]",
+          "[data-dx-fumadocs-rendered-markdown=\"active-page\"]",
+          "[data-dx-fumadocs-changelog=\"launch-docs\"]",
+          "[data-dx-dashboard-workflow=\"docs-help-changelog\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-fumadocs-rendered-route",
+          "data-dx-fumadocs-selected-page",
+          "data-dx-fumadocs-toc-count",
+          "data-dx-fumadocs-local-response",
+          "data-dx-fumadocs-receipt-route",
+          "data-dx-fumadocs-missing-config",
+          "data-dx-docs-openapi-code-usage",
+          "data-dx-docs-openapi-proxy"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-automations",
+        "selector": "[data-dx-component=\"launch-automation-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "automations/n8n"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-automation-safe-action=\"prepare-dry-run-receipt\"]",
+          "[data-dx-automation-safe-action=\"prepare-zed-run-handoff\"]",
+          "[data-dx-automation-intent-input]",
+          "[data-dx-automation-required-env]"
+        ],
+        "stateMarkers": [
+          "data-dx-automation-dashboard-state",
+          "data-dx-automation-selected-connector",
+          "data-dx-automation-credential-schema",
+          "data-dx-automation-required-env",
+          "data-dx-automation-workflow-node-readiness",
+          "data-dx-automation-receipt-intent",
+          "data-dx-automation-run-receipt-intent"
+        ],
+        "receiptPath": "G:/Dx/.dx/receipts/automations/launch-release-notification.json"
+      },
+      {
+        "id": "launch-runtime-database-backend",
+        "selector": "[data-dx-component=\"database-backend-card\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "supabase/client",
+          "db/drizzle-sqlite",
+          "instantdb/react",
+          "api/trpc"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      },
+      {
+        "id": "launch-runtime-trpc-api-dashboard",
+        "selector": "[data-dx-component=\"launch-trpc-api-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "api/trpc"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-trpc-action=\"check-health\"]",
+          "[data-dx-trpc-action=\"prepare-launch-event\"]",
+          "[data-trpc-interaction=\"health-query\"]",
+          "[data-trpc-interaction=\"local-launch-event-mutation\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-trpc-workflow",
+          "data-dx-trpc-action",
+          "data-trpc-interaction",
+          "data-trpc-mutation-state"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-drizzle-data-workflow",
+        "selector": "[data-dx-component=\"launch-drizzle-data-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "db/drizzle-sqlite"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true,
+        "interactionSelectors": [
+          "[data-dx-drizzle-action=\"select-read-model\"]",
+          "[data-dx-drizzle-action=\"preview-query-plan\"]",
+          "[data-dx-drizzle-action=\"apply-read-model\"]",
+          "[data-dx-dashboard-target=\"mission-control-database\"]"
+        ],
+        "stateMarkers": [
+          "data-dx-drizzle-status",
+          "data-dx-drizzle-read-model",
+          "data-dx-drizzle-query-plan-id",
+          "data-dx-backend-status",
+          "data-dx-backend-detail",
+          "data-dx-drizzle-receipt-path",
+          "data-dx-drizzle-receipt-state",
+          "data-dx-drizzle-runtime-dependencies"
+        ],
+        "receiptPath": ".dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json"
+      },
+      {
+        "id": "launch-runtime-instantdb-dashboard",
+        "selector": "[data-dx-component=\"instantdb-runtime-dashboard-workflow\"]",
+        "sourceFile": "pages/index.html",
+        "materializedFile": "pages/index.html",
+        "packageIds": [
+          "instantdb/react"
+        ],
+        "operations": [
+          "move_reorder_section",
+          "update_text_content",
+          "insert_icon_media"
+        ],
+        "layoutPolicy": "responsive-design-system-grid",
+        "absolutePositioning": false,
+        "noNodeModulesRequired": true
+      }
+    ]
+  },
+  "files": [
+    "pages/_layout.html",
+    "pages/index.html",
+    "pages/login.html",
+    "pages/logout.html",
+    "pages/automations.html",
+    "pages/ui.html",
+    "pages/database.html",
+    "pages/backend.html",
+    "pages/dashboard.html",
+    "styles/globals.css",
+    "styles/theme.css",
+    "styles/generated.css",
+    "public/launch-runtime.js",
+    "public/favicon.svg",
+    "favicon.svg",
+    "pages/favicon.svg.html",
+    "auth/better-auth/.env.example",
+    "auth/better-auth/account-deletion.ts",
+    "auth/better-auth/account-security.ts",
+    "auth/better-auth/accounts.ts",
+    "auth/better-auth/client.ts",
+    "auth/better-auth/dashboard.ts",
+    "auth/better-auth/email-password.ts",
+    "auth/better-auth/metadata.ts",
+    "auth/better-auth/options.ts",
+    "auth/better-auth/profile.ts",
+    "auth/better-auth/providers/google/.env.example",
+    "auth/better-auth/providers/google/callback.ts",
+    "auth/better-auth/providers/google/config.ts",
+    "auth/better-auth/providers/google/README.md",
+    "auth/better-auth/providers/google/route.ts",
+    "auth/better-auth/README.md",
+    "auth/better-auth/route.ts",
+    "auth/better-auth/server.ts",
+    "auth/better-auth/session-management.ts",
+    "auth/better-auth/session.ts",
+    "auth/better-auth/social.ts",
+    "server/auth/better-auth.ts",
+    "server/query-cache/readiness.ts",
+    "components/template-app/dashboard-query-cache.ts",
+    "app/api/payments/stripe-js/readiness/route.ts",
+    "app/api/stripe/webhook/route.ts",
+    "app/api/automations/n8n/dry-run/route.ts",
+    "app/api/database-api/readiness/route.ts",
+    "app/api/instant/readiness/route.ts",
+    "app/api/database-orm/readiness/route.ts",
+    "app/api/supabase/readiness/route.ts",
+    "server/database-api/readiness.ts",
+    "server/instant/readiness.ts",
+    "server/database-orm/readiness.ts",
+    "server/supabase/readiness.ts",
+    "lib/payments/stripe-js/checkout.ts",
+    "lib/payments/stripe-js/config.ts",
+    "lib/payments/stripe-js/dashboard-checkout.ts",
+    "lib/payments/stripe-js/server.ts",
+    "lib/automations/n8n/catalog.ts",
+    "lib/automations/n8n/readiness.ts",
+    "lib/automations/n8n/receipt.ts",
+    "lib/ai/provider-boundary.ts",
+    "lib/supabase/env.ts",
+    "lib/database-api/source-contract.ts",
+    "app/api/auth/[...all]/route.ts",
+    "app/api/auth/readiness/route.ts",
+    "app/api/auth/session/route.ts",
+    "app/api/checkout/route.ts",
+    "app/api/ai/chat/route.ts",
+    "app/api/trpc/health/route.ts",
+    "app/api/query-cache/readiness/route.ts",
+    ".dx/forge/receipts/2026-05-22-ai-vercel-ai-launch-assistant.json",
+    ".dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json",
+    ".dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+    ".dx/forge/receipts/2026-05-22-automation-connectors-launch-workflow.json",
+    ".dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json",
+    ".dx/forge/receipts/2026-05-22-content-react-markdown-source-guard.json",
+    ".dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
+    ".dx/forge/receipts/2026-05-22-forms-dashboard-workflow.json",
+    ".dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json",
+    ".dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json",
+    ".dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json",
+    ".dx/forge/receipts/2026-05-22-shadcn-dashboard-controls.json",
+    ".dx/forge/receipts/2026-05-22-state-zustand-dashboard-workflow.json",
+    ".dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json",
+    ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json",
+    ".dx/forge/receipts/2026-05-22-template-dashboard-app.json",
+    ".dx/forge/receipts/2026-05-22-validation-zod-dashboard-settings.json",
+    ".dx/forge/receipts/2026-05-22-wasm-bindgen-dashboard-workflow.json",
+    ".dx/forge/receipts/20260522T001543090604200Z-shadcn-ui-button.json",
+    ".dx/forge/receipts/20260522T003036137384500Z-state-zustand.json",
+    ".dx/forge/receipts/20260522T005833305654100Z-tanstack-query.json",
+    ".dx/forge/receipts/20260522T130626134038800Z-shadcn-ui-button--variant-export-button.json",
+    ".dx/forge/receipts/20260522T130639403843800Z-shadcn-ui-button--variant-export-button.json",
+    ".dx/forge/receipts/20260522T140316675860400Z-state-zustand.json",
+    ".dx/forge/receipts/20260522T140316726407800Z-tanstack-query.json",
+    ".dx/forge/receipts/20260523T040605313883900Z-validation-zod.json",
+    ".dx/forge/receipts/20260523T042135893711600Z-forms-react-hook-form.json",
+    ".dx/forge/receipts/20260523T043303927907800Z-reactive-store.json",
+    ".dx/forge/receipts/20260523T043535517142400Z-db-drizzle-sqlite.json",
+    ".dx/forge/receipts/20260523T043543113033500Z-instantdb-react.json",
+    ".dx/forge/receipts/20260523T043550519761300Z-supabase-client.json",
+    ".dx/forge/receipts/20260523T043555816843800Z-content-react-markdown.json",
+    ".dx/forge/receipts/20260523T043556606727800Z-api-trpc.json",
+    ".dx/forge/receipts/20260523T043601481661400Z-content-fumadocs-next.json",
+    ".dx/forge/receipts/20260523T043607238984400Z-i18n-next-intl.json",
+    ".dx/forge/receipts/20260523T044826575Z-ai-vercel-ai.json",
+    ".dx/forge/receipts/20260523T044826575Z-automations-n8n.json",
+    ".dx/forge/receipts/20260523T044826575Z-payments-stripe-js.json",
+    ".dx/forge/receipts/20260523T0510051989887Z-content-react-markdown.json",
+    ".dx/forge/receipts/20260523T052300000000000Z-auth-better-auth.json",
+    ".dx/forge/receipts/20260523T054511265000000Z-content-fumadocs-next.json",
+    ".dx/forge/receipts/20260523T060000000000000Z-wasm-bindgen.json",
+    ".dx/forge/receipts/20260523T061500000000000Z-animation-motion.json",
+    ".dx/forge/receipts/20260523T061500000000000Z-content-fumadocs-next.json",
+    ".dx/forge/receipts/20260523T063000000000000Z-3d-launch-scene.json",
+    ".dx/forge/receipts/20260523T064956924988500Z-update-dry-run-api-trpc.json",
+    ".dx/forge/receipts/20260523T123555744570300Z-update-dry-run-instantdb-react.json",
+    ".dx/forge/receipts/20260523T123731296201200Z-update-dry-run-instantdb-react.json",
+    ".dx/forge/receipts/20260525T142027528811400Z-content-react-markdown.json",
+    ".dx/forge/receipts/20260525T142027622478500Z-content-fumadocs-next.json",
+    ".dx/forge/receipts/20260525T142027690741900Z-i18n-next-intl.json",
+    ".dx/forge/receipts/20260525T142400591499100Z-validation-zod.json",
+    ".dx/forge/receipts/20260525T142400708734700Z-forms-react-hook-form.json",
+    ".dx/forge/receipts/20260525T142400760743800Z-db-drizzle-sqlite.json",
+    ".dx/forge/receipts/20260525T142400830225500Z-instantdb-react.json",
+    ".dx/forge/receipts/20260525T142400912725600Z-supabase-client.json",
+    ".dx/forge/receipts/20260525T142400995725100Z-content-react-markdown.json",
+    ".dx/forge/receipts/20260525T142401049820100Z-content-fumadocs-next.json",
+    ".dx/forge/receipts/20260525T142401125454300Z-i18n-next-intl.json",
+    ".dx/forge/receipts/20260525T142401205412900Z-payments-stripe-js.json",
+    ".dx/forge/receipts/20260525T142401270535800Z-ai-vercel-ai.json",
+    ".dx/forge/receipts/20260525T142401338734900Z-automations-n8n.json",
+    ".dx/forge/receipts/20260525T142401383893200Z-wasm-bindgen--variant-web-target-source.json",
+    ".dx/forge/receipts/20260525T142401447389200Z-animation-motion--variant-react-dashboard-source.json",
+    ".dx/forge/receipts/20260525T142401544793700Z-3d-launch-scene--variant-source-owned-renderer-boundary.json",
+    ".dx/forge/receipts/3d-launch-scene-dashboard-workflow.json",
+    ".dx/forge/receipts/auth-better-auth.json",
+    ".dx/forge/template-readiness/ai-sdk.json",
+    ".dx/forge/template-readiness/authentication.json",
+    ".dx/forge/template-readiness/automation-connectors.json",
+    ".dx/forge/template-readiness/database-api.json",
+    ".dx/forge/template-readiness/launch-companion-doc-receipts.json",
+    ".dx/forge/template-readiness/launch-readiness-bundle.json",
+    ".dx/forge/template-readiness/launch-route.json",
+    ".dx/forge/template-readiness/launch-runtime-approval-request.json",
+    ".dx/forge/template-readiness/launch-runtime-checklist.json",
+    ".dx/forge/template-readiness/launch-runtime-evidence.json",
+    ".dx/forge/template-readiness/launch-scene-readiness.json",
+    ".dx/forge/template-readiness/launch-verification-lane.json",
+    ".dx/forge/template-readiness/payments.json",
+    ".dx/forge/template-readiness/zed-template-handoff.json"
+  ]
+}

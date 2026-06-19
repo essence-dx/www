@@ -1,0 +1,168 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "shadcn/ui/button",
+    "upstream_name": "shadcn-ui",
+    "version": "0.1.0",
+    "generator": "dx-forge/shadcn-ui",
+    "variant": "default",
+    "last_accepted_update": "2026-06-03T07:07:43.510987200+00:00",
+    "rollback_receipt": "20260603T065405079278100Z-shadcn-ui-button.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "e200e71acb908dad22b275f492e98905a8df68f4416b1c447f6082af68de0f42",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "shadcn-ui://apps/v4/registry/bases/radix/ui/button.tsx",
+      "verified": false,
+      "note": "DX inspected the local shadcn-ui v4 registry entry and Radix Slot primitive for the official UI Components Button surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn-style button package, but it is not a live advisory feed."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/utils.ts",
+        "logical_path": "js/lib/utils.ts",
+        "hash": "f53a1ea0634c2cbfbb6275d9cd6f58503bf519d4b7c0ebe06a3c6375b2cf6dec",
+        "bytes": 196
+      },
+      {
+        "path": "components/ui/slot.tsx",
+        "logical_path": "js/ui/slot.tsx",
+        "hash": "379958e54e9520a91562ec2ba853eb306f5351fa1eace7e9c01284b0e9db6f8b",
+        "bytes": 490
+      },
+      {
+        "path": "components/ui/button.tsx",
+        "logical_path": "js/ui/button.tsx",
+        "hash": "a2b405951bb3ead01e2adb931e56632d915f659912f26db4e9641e658c39ae58",
+        "bytes": 2031
+      },
+      {
+        "path": "components/ui/README.md",
+        "logical_path": "js/ui/README.md",
+        "hash": "6a5633e2163aff242dff4dfbe3f2feb8dd906c4ac848464662de7e22a13e02ba",
+        "bytes": 183
+      }
+    ]
+  },
+  "files_written": [],
+  "file_map": [
+    {
+      "logical_path": "js/lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "f53a1ea0634c2cbfbb6275d9cd6f58503bf519d4b7c0ebe06a3c6375b2cf6dec",
+      "bytes": 196
+    },
+    {
+      "logical_path": "js/ui/slot.tsx",
+      "materialized_path": "components/ui/slot.tsx",
+      "hash": "379958e54e9520a91562ec2ba853eb306f5351fa1eace7e9c01284b0e9db6f8b",
+      "bytes": 490
+    },
+    {
+      "logical_path": "js/ui/button.tsx",
+      "materialized_path": "components/ui/button.tsx",
+      "hash": "a2b405951bb3ead01e2adb931e56632d915f659912f26db4e9641e658c39ae58",
+      "bytes": 2031
+    },
+    {
+      "logical_path": "js/ui/README.md",
+      "materialized_path": "components/ui/README.md",
+      "hash": "6a5633e2163aff242dff4dfbe3f2feb8dd906c4ac848464662de7e22a13e02ba",
+      "bytes": 183
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/utils.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "components/ui/slot.tsx has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "components/ui/button.tsx has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/ui/README.md already matches the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `Codex` accepted yellow local edits for `shadcn/ui/button` variant `default`: Reviewed WWW-native no-npm adaptation for UI Components source slice"
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/utils.ts",
+      "logical_path": "js/lib/utils.ts",
+      "before_hash": "f53a1ea0634c2cbfbb6275d9cd6f58503bf519d4b7c0ebe06a3c6375b2cf6dec",
+      "after_hash": "f53a1ea0634c2cbfbb6275d9cd6f58503bf519d4b7c0ebe06a3c6375b2cf6dec",
+      "tracked_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/utils.ts accepted by `Codex` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "components/ui/slot.tsx",
+      "logical_path": "js/ui/slot.tsx",
+      "before_hash": "379958e54e9520a91562ec2ba853eb306f5351fa1eace7e9c01284b0e9db6f8b",
+      "after_hash": "379958e54e9520a91562ec2ba853eb306f5351fa1eace7e9c01284b0e9db6f8b",
+      "tracked_hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "components/ui/slot.tsx accepted by `Codex` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "logical_path": "js/ui/button.tsx",
+      "before_hash": "a2b405951bb3ead01e2adb931e56632d915f659912f26db4e9641e658c39ae58",
+      "after_hash": "a2b405951bb3ead01e2adb931e56632d915f659912f26db4e9641e658c39ae58",
+      "tracked_hash": "dd3775a5f32b9a2e3f05cd9955042b68686b514ef88c814c64e47f79200f9afe",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "components/ui/button.tsx accepted by `Codex` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "before_hash": "6a5633e2163aff242dff4dfbe3f2feb8dd906c4ac848464662de7e22a13e02ba",
+      "after_hash": "6a5633e2163aff242dff4dfbe3f2feb8dd906c4ac848464662de7e22a13e02ba",
+      "tracked_hash": "6a5633e2163aff242dff4dfbe3f2feb8dd906c4ac848464662de7e22a13e02ba",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/README.md accepted as already matching the latest package."
+    }
+  ],
+  "risk_score": 55,
+  "timestamp": "2026-06-03T07:07:43.510987200+00:00",
+  "signature": null
+}

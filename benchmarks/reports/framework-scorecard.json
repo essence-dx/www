@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-05-18T08:46:13.115Z",
+  "snapshot_status": {
+    "kind": "historical-benchmark-snapshot",
+    "not_current_release_readiness": true,
+    "current_worker_checkpoint_date": "2026-05-24",
+    "current_worker_checkpoint_score": "84/100",
+    "current_worker_checkpoint_blockers": [
+      "62 Rust warnings",
+      "chaotic worktree",
+      "source-guard-heavy evidence",
+      "missing browser screenshot proof",
+      "missing overlay recovery proof",
+      "generated artifact curation",
+      "full cargo test and clippy not rerun after curation"
+    ]
+  },
+  "method": {
+    "community_excluded": true,
+    "small": "Actual local route benchmark. DX-WWW uses its Rust demo runtime; Astro/Svelte/HTMX use static local servers; Next.js uses next start.",
+    "medium": "Scale payload/access model over docs and marketing-card page graphs from binary-web-lab. This is compiler evidence, not a full browser Lighthouse run.",
+    "big": "Scale payload/access model over a 1200-row dashboard. DX-WWW uses adaptive viewport delivery for initial load and records full-data packet numbers separately.",
+    "score_formula": "Overall = 25% small actual route + 20% medium scale + 20% big scale + 20% current product readiness + 15% developer experience. Community/adoption is not included."
+  },
+  "tiny": {
+    "DX-WWW": {
+      "brotli_bytes": 657,
+      "median_ms": 0.63
+    },
+    "Astro": {
+      "brotli_bytes": 729,
+      "median_ms": 1.465
+    },
+    "Svelte": {
+      "brotli_bytes": 16439,
+      "median_ms": 3.491
+    },
+    "HTMX": {
+      "brotli_bytes": 15719,
+      "median_ms": 3.923
+    },
+    "Next.js": {
+      "brotli_bytes": 162325,
+      "median_ms": 20.361
+    }
+  },
+  "medium": {
+    "DX-WWW": {
+      "brotli_bytes": 412,
+      "access_ns": 1217.5,
+      "model": "DX template/data packets for repeated docs and marketing cards"
+    },
+    "Astro": {
+      "brotli_bytes": 495,
+      "access_ns": 18377.5,
+      "model": "static HTML baseline, Astro-like output shape"
+    },
+    "Svelte": {
+      "brotli_bytes": 16788,
+      "access_ns": 18377.5,
+      "model": "static HTML payload plus measured Svelte runtime floor"
+    },
+    "HTMX": {
+      "brotli_bytes": 16068,
+      "access_ns": 18377.5,
+      "model": "static HTML payload plus measured HTMX runtime floor"
+    },
+    "Next.js": {
+      "brotli_bytes": 162674,
+      "access_ns": 18377.5,
+      "model": "static HTML payload plus measured Next/React runtime floor"
+    }
+  },
+  "big": {
+    "DX-WWW": {
+      "brotli_bytes": 199,
+      "access_ns": 182,
+      "full_data_brotli_bytes": 2675,
+      "full_data_access_ns": 13280,
+      "model": "adaptive initial viewport packet; full data can stream separately"
+    },
+    "Astro": {
+      "brotli_bytes": 3912,
+      "access_ns": 93285,
+      "model": "full static dashboard HTML baseline"
+    },
+    "Svelte": {
+      "brotli_bytes": 20205,
+      "access_ns": 93285,
+      "model": "full dashboard payload plus measured Svelte runtime floor"
+    },
+    "HTMX": {
+      "brotli_bytes": 19485,
+      "access_ns": 93285,
+      "model": "full dashboard payload plus measured HTMX runtime floor"
+    },
+    "Next.js": {
+      "brotli_bytes": 166091,
+      "access_ns": 93285,
+      "model": "full dashboard payload plus measured Next/React runtime floor"
+    }
+  },
+  "scorecard": {
+    "DX-WWW": {
+      "small_score": 100,
+      "medium_score": 100,
+      "big_score": 100,
+      "current_readiness_score": 58,
+      "developer_experience_score": 74,
+      "overall_score": 87.7,
+      "stars": "★★★★☆"
+    },
+    "Astro": {
+      "small_score": 66.5,
+      "medium_score": 44.9,
+      "big_score": 3,
+      "current_readiness_score": 88,
+      "developer_experience_score": 82,
+      "overall_score": 56.1,
+      "stars": "★★★☆☆"
+    },
+    "Svelte": {
+      "small_score": 11,
+      "medium_score": 4.5,
+      "big_score": 1,
+      "current_readiness_score": 84,
+      "developer_experience_score": 86,
+      "overall_score": 33.6,
+      "stars": "★★☆☆☆"
+    },
+    "HTMX": {
+      "small_score": 10.2,
+      "medium_score": 4.6,
+      "big_score": 1,
+      "current_readiness_score": 76,
+      "developer_experience_score": 70,
+      "overall_score": 29.4,
+      "stars": "★☆☆☆☆"
+    },
+    "Next.js": {
+      "small_score": 2,
+      "medium_score": 3.8,
+      "big_score": 1,
+      "current_readiness_score": 91,
+      "developer_experience_score": 89,
+      "overall_score": 33,
+      "stars": "★★☆☆☆"
+    }
+  },
+  "ranked": [
+    "DX-WWW",
+    "Astro",
+    "Svelte",
+    "Next.js",
+    "HTMX"
+  ],
+  "verdict": {
+    "performance_winner": "DX-WWW",
+    "product_readiness_winner": "Next.js",
+    "honest_note": "DX-WWW is now winning the measured small route and the adaptive medium/big payload model, but its product-readiness score is intentionally lower because App Router coverage, dx build proof, and the DX-owned dev feedback and diagnostics surface still need production proof."
+  }
+}

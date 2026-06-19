@@ -1,0 +1,67 @@
+.starter-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  gap: 16px;
+  padding: clamp(24px, 5vw, 64px);
+}
+
+.starter-card {
+  display: grid;
+  width: min(100%, 680px);
+  justify-items: center;
+  gap: 14px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--card));
+  padding: clamp(24px, 5vw, 48px);
+  text-align: center;
+}
+
+.starter-kicker {
+  color: hsl(var(--accent));
+  font-size: 0.78rem;
+  font-weight: 820;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.starter-copy {
+  color: hsl(var(--muted-foreground));
+  line-height: 1.7;
+}
+
+.starter-actions,
+.starter-route-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.starter-link,
+.starter-action-button {
+  min-height: 40px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  padding: 0 14px;
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.starter-link-secondary {
+  background: hsl(var(--surface-raised));
+  color: hsl(var(--foreground));
+}
+
+.starter-input {
+  min-height: 40px;
+  width: min(100%, 320px);
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--surface));
+  color: hsl(var(--foreground));
+  padding: 0 12px;
+}

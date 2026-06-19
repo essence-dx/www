@@ -1,0 +1,143 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Database ORM",
+    "package_id": "db/drizzle-sqlite",
+    "upstream_package": "drizzle-orm",
+    "upstream_version": "0.45.3",
+    "source_mirrors": [
+      "G:/WWW/inspirations/drizzle-orm"
+    ],
+    "based_on": "drizzle-orm/better-sqlite3",
+    "aliases": [
+      "database/drizzle",
+      "db/drizzle",
+      "drizzle",
+      "drizzle-orm/sqlite",
+      "drizzle/sqlite"
+    ]
+  },
+  "selected_surfaces": [
+    "drizzle-replica-routing",
+    "drizzle-launch-dashboard-workflow",
+    "database-orm-source-guard-runbook",
+    "database-orm-preview-manifest-materializer",
+    "database-orm-lock-backed-source",
+    "receipt-hash-refresh"
+  ],
+  "upstream_public_apis": [
+    "drizzle",
+    "withReplicas",
+    "selectDistinct",
+    "$count"
+  ],
+  "inspected_upstream_files": [
+    "drizzle-orm/package.json",
+    "drizzle-orm/src/sqlite-core/db.ts",
+    "drizzle-orm/src/better-sqlite3/driver.ts"
+  ],
+  "guard": {
+    "id": "database-orm-lower-dx-check-helper-freshness",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/project_check/database_orm_dx_check.rs",
+    "command": "cargo test -q -p dx-www-compiler database_orm_hash_refresh_stale_helper_keeps_source_hash_clean --lib",
+    "proves": [
+      "Database ORM lower-level dx-check helper freshness fixture",
+      "database_orm_receipt_hash_refresh_stale",
+      "database_orm_hash_mismatch stays byte-derived",
+      "docs/packages/database-orm.source-guard-runbook.json",
+      "db/drizzle-sqlite source-only Studio discovery",
+      "without claiming live SQLite read proof"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "database-orm-lower-dx-check-helper-freshness",
+      "purpose": "The lower-level Database ORM dx-check producer reports database_orm_receipt_hash_refresh_stale while keeping database_orm_hash_mismatch byte-derived.",
+      "evidence_field": "core/src/ecosystem/project_check/database_orm_dx_check.rs"
+    },
+    "command": {
+      "command": "cargo test -q -p dx-www-compiler database_orm_hash_refresh_stale_helper_keeps_source_hash_clean --lib",
+      "purpose": "Validate the source-only Database ORM helper-freshness metric proof without running SQLite, installing dependencies, or claiming browser runtime proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "dx_check_metrics": [
+    "database_orm_receipt_hash_refresh_current",
+    "database_orm_receipt_hash_refresh_stale",
+    "database_orm_receipt_hash_refresh_missing",
+    "database_orm_hash_mismatch"
+  ],
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-name",
+    "data-dx-check-package-lane-status",
+    "data-dx-check-package-lane-receipt-status",
+    "data-dx-check-package-lane-upstream-package",
+    "data-dx-check-package-lane-source-mirror",
+    "data-dx-check-package-lane-dx-style-status"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
+    "hash_helper": "examples/template/database-orm-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/database-orm-receipt-hashes.ts --check --json",
+    "zed_visibility": "database-orm:receipt-hash-refresh",
+    "source_guard_runbook_fixture": "docs/packages/database-orm.source-guard-runbook.json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "tracked_by_receipt_hash_helper": true,
+    "tracked_file_count": 12,
+    "tracked_files": [
+      "core/src/ecosystem/forge_drizzle.rs",
+      "examples/template/drizzle-query-proof.tsx",
+      "examples/template/data-status.tsx",
+      "tools/launch/runtime-template/pages/index.html",
+      "docs/packages/database-orm.source-guard-runbook.json",
+      "tools/launch/materialize-www-template.ts",
+      "tools/launch/runtime-template/assets/launch-runtime.ts",
+      "examples/template/db/drizzle/schema.ts",
+      "examples/template/db/drizzle/metadata.ts",
+      "examples/template/db/drizzle/README.md",
+      "examples/template/server/database-orm/readiness.ts",
+      "examples/template/app/api/database-orm/readiness/route.ts"
+    ],
+    "runtime_limitations_field": "runtime_limitations"
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "root_field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture": "docs/packages/database-orm.source-guard-runbook.json",
+    "runtime_proof": false
+  },
+  "app_owned_boundaries": [
+    "SQLite database path and file permissions",
+    "better-sqlite3 runtime installation",
+    "migration generation, review, and rollout",
+    "read-replica topology and health checks",
+    "dashboard authorization and tenant boundaries",
+    "browser visual proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: SQLite files, better-sqlite3 runtime installation, migration rollout, authorization, replica health, and browser runtime proof stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

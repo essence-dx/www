@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-05-16T22:10:56.789Z",
+  "report_id": "forge-large-content-comparison-v1",
+  "source": "benchmarks/compare-forge-large-content.ts",
+  "fixture": {
+    "route": "/forge/large-content",
+    "sections": 8,
+    "rows_per_section": 12,
+    "repeated_items": 96,
+    "package_metadata_count": 3,
+    "package_file_count": 8,
+    "static_evidence": true,
+    "content_parity": "Every framework row renders the same repeated release sections and the same source-owned package metadata."
+  },
+  "scope": {
+    "community_excluded": true,
+    "not_full_framework_benchmark": true,
+    "competitor_builds_not_run": true,
+    "no_package_install": true,
+    "no_node_modules_created": true,
+    "browser_timings_not_measured": true,
+    "safe_public_claim": "This large-content fixture checks static payload direction and first-route budget pressure. It does not prove broad framework replacement."
+  },
+  "first_route_budget": {
+    "max_decoded_bytes": 64000,
+    "max_brotli_bytes": 9000,
+    "max_package_metadata_bytes": 3000,
+    "dxwww_decoded_bytes": 28008,
+    "dxwww_brotli_bytes": 1534,
+    "package_metadata_bytes": 505,
+    "passed": true,
+    "caveat": "Budget applies only to this deterministic large static route fixture, not to arbitrary application pages."
+  },
+  "frameworks": [
+    {
+      "framework": "DX-WWW",
+      "baseline_id": "dx-www-large-static-route",
+      "baseline_kind": "generated-static-evidence",
+      "runtime_claim": "static first route with package metadata and no route runtime",
+      "route_count": 1,
+      "total_decoded_bytes": 28008,
+      "total_brotli_bytes": 1534,
+      "package_metadata_bytes": 505,
+      "static_evidence": {
+        "route": "/forge/large-content",
+        "html_bytes": 28008,
+        "brotli_bytes": 1534,
+        "sha256": "80d13577ecd2d04cbad8483e11662f29f6b366ab49f61fe76d1fc564f859d162",
+        "contains_repeated_sections": true,
+        "contains_package_metadata": true,
+        "contains_budget_copy": true
+      },
+      "note": "DX-WWW large-content fixture keeps source-owned package metadata in the route and records a first-route budget."
+    },
+    {
+      "framework": "Astro",
+      "baseline_id": "astro-large-static-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no Astro island hydration included",
+      "route_count": 1,
+      "total_decoded_bytes": 25275,
+      "total_brotli_bytes": 1483,
+      "package_metadata_bytes": 505,
+      "static_evidence": {
+        "route": "/forge/large-content",
+        "html_bytes": 25275,
+        "brotli_bytes": 1483,
+        "sha256": "ecee3e3abad60c5604cf2d212cbf845738e50fa77872b1baf882cca22c22994e",
+        "contains_repeated_sections": true,
+        "contains_package_metadata": true,
+        "contains_budget_copy": true
+      },
+      "note": "Generous Astro-style large static floor for the same content model. No astro build was run."
+    },
+    {
+      "framework": "Svelte",
+      "baseline_id": "svelte-large-prerender-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no Svelte client runtime included",
+      "route_count": 1,
+      "total_decoded_bytes": 25278,
+      "total_brotli_bytes": 1486,
+      "package_metadata_bytes": 505,
+      "static_evidence": {
+        "route": "/forge/large-content",
+        "html_bytes": 25278,
+        "brotli_bytes": 1486,
+        "sha256": "8d12e5c73a7c716a08b4294557627fb9f827053a4767c42f24e7f8dedfcec294",
+        "contains_repeated_sections": true,
+        "contains_package_metadata": true,
+        "contains_budget_copy": true
+      },
+      "note": "Generous Svelte prerender floor for the same content model. No SvelteKit build was run."
+    },
+    {
+      "framework": "HTMX",
+      "baseline_id": "htmx-large-static-floor",
+      "baseline_kind": "static-floor-with-htmx-attributes",
+      "runtime_claim": "htmx-shaped attributes included; external runtime bytes not fetched",
+      "route_count": 1,
+      "total_decoded_bytes": 28382,
+      "total_brotli_bytes": 1542,
+      "package_metadata_bytes": 505,
+      "static_evidence": {
+        "route": "/forge/large-content",
+        "html_bytes": 28382,
+        "brotli_bytes": 1542,
+        "sha256": "20c6dca9589a084e2ad7d2a95c5aee9dd86ca273001b59fdb92fd14824d04067",
+        "contains_repeated_sections": true,
+        "contains_package_metadata": true,
+        "contains_budget_copy": true
+      },
+      "note": "HTMX-shaped large static fixture for the same content model. No external htmx runtime was fetched."
+    },
+    {
+      "framework": "Next.js",
+      "baseline_id": "next-large-static-export-floor",
+      "baseline_kind": "static-floor",
+      "runtime_claim": "no React, RSC, router, font, image, or prefetch runtime included",
+      "route_count": 1,
+      "total_decoded_bytes": 25275,
+      "total_brotli_bytes": 1466,
+      "package_metadata_bytes": 505,
+      "static_evidence": {
+        "route": "/forge/large-content",
+        "html_bytes": 25275,
+        "brotli_bytes": 1466,
+        "sha256": "158dc414e32e75d4e41669db448c24dd04edcb3190998df10a076204dbd15bcf",
+        "contains_repeated_sections": true,
+        "contains_package_metadata": true,
+        "contains_budget_copy": true
+      },
+      "note": "Generous Next.js static export floor for the same content model. No next build was run."
+    }
+  ],
+  "rankings": {
+    "brotli": [
+      {
+        "rank": 1,
+        "framework": "Next.js",
+        "bytes": 1466
+      },
+      {
+        "rank": 2,
+        "framework": "Astro",
+        "bytes": 1483
+      },
+      {
+        "rank": 3,
+        "framework": "Svelte",
+        "bytes": 1486
+      },
+      {
+        "rank": 4,
+        "framework": "DX-WWW",
+        "bytes": 1534
+      },
+      {
+        "rank": 5,
+        "framework": "HTMX",
+        "bytes": 1542
+      }
+    ],
+    "decoded": [
+      {
+        "rank": 1,
+        "framework": "Astro",
+        "bytes": 25275
+      },
+      {
+        "rank": 2,
+        "framework": "Next.js",
+        "bytes": 25275
+      },
+      {
+        "rank": 3,
+        "framework": "Svelte",
+        "bytes": 25278
+      },
+      {
+        "rank": 4,
+        "framework": "DX-WWW",
+        "bytes": 28008
+      },
+      {
+        "rank": 5,
+        "framework": "HTMX",
+        "bytes": 28382
+      }
+    ]
+  },
+  "honest_findings": [
+    "Large repeated static content compresses well in every framework row, so small differences here are not a universal framework verdict.",
+    "Competitor rows remain generous static floors and exclude normal framework runtime, hydration, router, image, font, and data-loading overhead.",
+    "DX-WWW should treat this as a first-route budget stress test for package metadata and repeated content, not as proof of market victory.",
+    "The next credible benchmark step is a real build suite that renders this same model in each framework and measures browser navigation."
+  ],
+  "conclusion": "DX-WWW now has a large-content stress fixture with repeated sections and source-owned package metadata. The budget result is useful only inside this scoped static fixture."
+}

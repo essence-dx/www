@@ -1,0 +1,36 @@
+.companion-icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 1em;
+  height: 1em;
+  color: currentColor;
+}
+
+.companion-icon-check {
+  color: hsl(var(--success));
+}
+
+.companion-icon-check::before {
+  content: "";
+  display: block;
+  width: 0.72em;
+  height: 0.38em;
+  border-bottom: 0.14em solid currentColor;
+  border-left: 0.14em solid currentColor;
+  transform: translate(0.08em, 0.16em) rotate(-45deg);
+}
+
+.companion-icon-arrow::before,
+.companion-icon-muted::before {
+  content: "";
+  display: block;
+  width: 0.62em;
+  height: 0.62em;
+  border-top: 0.13em solid currentColor;
+  border-right: 0.13em solid currentColor;
+  transform: translate(-0.08em, 0.13em) rotate(45deg);
+}
+
+.companion-icon-muted {
+  color: hsl(var(--muted-foreground));
+}

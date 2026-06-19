@@ -1,0 +1,56 @@
+{
+  "schema": "dx.launch.runtime_checklist",
+  "template_id": "www-template",
+  "route": "/",
+  "status": "requires-explicit-permission",
+  "classification": "source-owned-limited-proof",
+  "package_id": "dx-www/template-shell",
+  "approval": {
+    "status": "requires-explicit-permission",
+    "requires_explicit_permission": true,
+    "default_action": "skip-runtime-build-preview"
+  },
+  "commands": [
+    {
+      "id": "start-preview",
+      "command": "governed preview start",
+      "purpose": "Start the default template preview only after approval.",
+      "requires_explicit_permission": true,
+      "requires_explicit_approval": true,
+      "default_action": "skip",
+      "expected_evidence": "governed-runtime-route-response"
+    },
+    {
+      "id": "browser-routes",
+      "command": "browser verify / /dashboard /login",
+      "purpose": "Verify nonblank routes, native scrolling, and responsive shell behavior.",
+      "requires_explicit_permission": true,
+      "requires_explicit_approval": true,
+      "default_action": "skip",
+      "expected_evidence": "production-contract-route-proof"
+    },
+    {
+      "id": "final-receipt",
+      "command": "dx forge launch-runtime-evidence --project . --json",
+      "purpose": "Record the approved runtime evidence receipt.",
+      "requires_explicit_permission": true,
+      "requires_explicit_approval": true,
+      "default_action": "skip",
+      "expected_evidence": "final-launch-evidence-receipt"
+    }
+  ],
+  "expected_evidence": [
+    "governed-runtime-route-response",
+    "production-contract-route-proof",
+    "final-launch-evidence-receipt"
+  ],
+  "runtime_proof": false,
+  "live_provider_execution": false,
+  "network_calls": false,
+  "secret_values": [],
+  "no_execution": true,
+  "honesty_notes": [
+    "Checklist inspection does not start a server or browser.",
+    "All runtime commands are skipped until explicit approval."
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "schema": "dx.www.readiness.reactivity_model_receipt_contract",
+  "schema_revision": 1,
+  "id": "reactivity",
+  "reactivity_model_schema": "dx.www.readiness.reactivity_model",
+  "runtime_capabilities_schema": "dx.tsx.dxNativeReactivityCapabilities",
+  "runtime_capabilities": {
+    "schema": "dx.tsx.dxNativeReactivityCapabilities",
+    "schema_revision": 1,
+    "contract_name": "DX Native Reactivity Capabilities",
+    "status": "foundation-contract",
+    "runtime": "fine-grained compiler-owned state graph",
+    "source_owned": true,
+    "node_modules_required": false,
+    "full_react_hook_runtime": false,
+    "readiness_release_ready": false,
+    "dx_native_api": [
+      "state()",
+      "derived()",
+      "effect()",
+      "action()"
+    ],
+    "react_familiar_authoring": true,
+    "capability_matrix": [
+      {
+        "api": "state()",
+        "status": "compiler-owned-foundation",
+        "current_lowering": "app-global store slots, local useState compatibility slots, and explicit state graph slots",
+        "readiness_gap": "public DX-native state() authoring syntax and browser replay receipts"
+      },
+      {
+        "api": "derived()",
+        "status": "compiler-owned-foundation",
+        "current_lowering": "safe derived slot recomputation for literal, identity, boolean, binary, and comparison operations",
+        "readiness_gap": "complete derived expression catalog and no-JS fallback proof"
+      },
+      {
+        "api": "effect()",
+        "status": "scheduled-boundary-foundation",
+        "current_lowering": "dependency scheduler records without arbitrary callback execution",
+        "readiness_gap": "supported effect body execution, cleanup policy, cancellation, and browser receipts"
+      },
+      {
+        "api": "action()",
+        "status": "edge-metadata-foundation",
+        "current_lowering": "event operation labels and server-action edge metadata",
+        "readiness_gap": "typed action authoring, optimistic/error states, and replay proof"
+      }
+    ],
+    "useState": {
+      "status": "exact compatibility lowering",
+      "rule": "lower only when the compiler can exactly map one local state slot, its setter, and a single safe event operation",
+      "runtime": "compiler-owned state slot; no React hook runtime or shim is executed"
+    },
+    "advanced_react_hooks": {
+      "status": "unsupported-react-hook-diagnostic",
+      "rule": "diagnose or require an adapter boundary before any runtime execution"
+    },
+    "unsupported_react_api_policy": "unsupported React hooks must emit diagnostics or require adapter-boundary islands",
+    "react_api_shim_executed": false,
+    "adapter_boundary_required": [
+      "arbitrary React hook execution",
+      "full React effect cleanup and ordering semantics",
+      "context/reducer/transition runtime parity",
+      "component imports that require React runtime execution"
+    ],
+    "browser_proof_status": "foundation-not-release-proof"
+  },
+  "passed": true,
+  "status": "source-owned-reactivity-model-foundation-current",
+  "source_root": "G:\\Dx\\www",
+  "source_owned": true,
+  "source_owned_runtime": true,
+  "public_runtime": "DX-native fine-grained state",
+  "dx_native_api": [
+    "state()",
+    "derived()",
+    "effect()",
+    "action()"
+  ],
+  "react_familiar_authoring": true,
+  "compatibility_lowering": [
+    "useState(exact-dx-state-slot-only)"
+  ],
+  "compatibility_lowering_api": [
+    "useState"
+  ],
+  "exact_lowering_required": true,
+  "use_state_lowering_rule": "lower useState only when state_graph_has_exact_use_state_lowering proves every binding maps to a compiler-owned DX state slot",
+  "unsupported_unlowerable_use_state_diagnostic": "dx.react-hook.useState.missing-exact-state-slot",
+  "adapter_boundary_required_when_unlowerable": true,
+  "unsupported_react_hooks": [
+    "useEffect",
+    "useReducer",
+    "useContext",
+    "useTransition"
+  ],
+  "unsupported_react_api_policy": "unsupported React hooks must emit diagnostics or require adapter-boundary islands",
+  "react_api_shim_executed": false,
+  "full_react_hook_runtime": false,
+  "node_modules_required": false,
+  "canonical_starter_route": "/state-runtime",
+  "canonical_proof_target_route": "/state-runtime",
+  "canonical_starter_source": "examples/template/app/state-runtime/page.tsx",
+  "canonical_local_dev_url": "http://127.0.0.1:3000/state-runtime",
+  "browser_runtime_executed_by_readiness": false,
+  "browser_runtime_executed": false,
+  "hosted_provider_proof": false,
+  "live_browser_executed": false,
+  "release_ready": false,
+  "readiness_release_ready": false,
+  "fastest_world_claim": false,
+  "browser_proof_status": "foundation-not-release-proof",
+  "proof_scope": "local-source-owned-reactivity-model-foundation",
+  "node_vm_state_runtime_replay_status": "source-guarded-not-real-browser-proof",
+  "node_vm_state_runtime_replay_test": "benchmarks/tsx-app-router-state-runtime-operations.test.ts",
+  "browser_replay_receipt_contract": "dx.www.readiness.state_runtime_browser_receipt_contract",
+  "browser_replay_receipt": ".dx/receipts/readiness/state-runtime-browser-latest.json",
+  "browser_replay_receipt_sr": ".dx/receipts/readiness/state-runtime-browser-latest.sr",
+  "browser_replay_receipt_machine": ".dx/serializer/receipts-readiness-state-runtime-browser-latest.machine",
+  "source_check_count": 6,
+  "source_check_current_count": 6,
+  "source_checks": [
+    {
+      "id": "capability-contract",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/state_runtime.rs",
+          "present": true,
+          "required_markers": [
+            "dx.tsx.dxNativeReactivityCapabilities",
+            "state()",
+            "derived()",
+            "effect()",
+            "action()",
+            "exact compatibility lowering",
+            "app-global store slots, local useState compatibility slots, and explicit state graph slots",
+            "\"full_react_hook_runtime\": false",
+            "unsupported_react_api_policy",
+            "unsupported-react-hook-diagnostic",
+            "adapter_boundary_required"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "generated-state-runtime",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/state_runtime.rs",
+          "present": true,
+          "required_markers": [
+            "__DX_STATE_GRAPH_RUNTIME__",
+            "reflectStateSlotToDom",
+            "setRuntimeSlot",
+            "refreshDerivedSlots",
+            "scheduleEffectsForState",
+            "dx:state-dom-reflection",
+            "dx:derived-state-slot",
+            "dx:effect-scheduled",
+            "dx:state-runtime-ready"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "unsupported-react-diagnostics",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/state_runtime.rs",
+          "present": true,
+          "required_markers": [
+            "dx:state-runtime-diagnostic",
+            "dx.state-runtime.operation.unsupported-react-like-operation",
+            "unsupported-react-like-state-operation",
+            "react_api_shim_executed: false",
+            "adapter_boundary_required: true",
+            "full_react_hook_runtime: false"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "react-hook-lowering-diagnostics",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_semantics.rs",
+          "present": true,
+          "required_markers": [
+            "state_graph_has_exact_use_state_lowering",
+            "source_events_have_exact_use_state_lowering",
+            "event_handler_has_exact_use_state_setter_operation",
+            "is_lowerable_use_state_setter_argument",
+            "dx.react-hook.useState.exact-dx-state-slot-lowering",
+            "dx.react-hook.useState.missing-exact-state-slot",
+            "useState is compatibility sugar only when the compiler can lower it exactly into DX state slots.",
+            "\"adapter_boundary_required\": status != \"compatibility-lowered\"",
+            "react-effect-boundary",
+            "react-semantic-boundary",
+            "callback bodies and cleanup are not executed with hidden React semantics"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "dom-action-state-bridge",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render_parts/client_component.rs",
+          "present": true,
+          "required_markers": [
+            "dispatchDomActionPreviewToStateRuntime",
+            "state_runtime_dispatcher",
+            "dx:state-runtime-dispatch",
+            "full_react_hook_parity: false",
+            "react_synthetic_events: false",
+            "generated-dom-action-binder"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "state-dom-reflection-markers",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render.rs",
+          "present": true,
+          "required_markers": [
+            "state_dom_reflection",
+            "dom_action_binder",
+            "client_islands",
+            "Bind generated state/event runtime operations to the real rendered DOM for client islands.",
+            "Define effect ordering and advanced hook lowering before claiming React runtime parity."
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render_parts/static_markup.rs",
+          "present": true,
+          "required_markers": [
+            "data-dx-state-read",
+            "data-dx-state-value",
+            "data-dx-state-checked",
+            "data-dx-state-aria-*",
+            "The generated runtime hook updates only elements carrying compiler-owned data-dx-state-* markers."
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "next_proof": "real browser state, derived, effect, action replay and unsupported React API diagnostic proof",
+  "rule": "This receipt validates the source-owned DX-native reactivity model only; useState is compatibility-lowered only through exact DX state-slot proofs, and this receipt does not run a browser, execute arbitrary React hooks, or claim hosted provider parity.",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/reactivity-model-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-reactivity-model-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "01c5f02e00c615bedc49c9c480e3bdaf9fd50acb819f5c38b039f5a7a03422d1",
+    "machine_blake3": "65555ede731e00191e564bc0affb8f1859fbf664a8cad6fea879562f9d1cb63c"
+  }
+}

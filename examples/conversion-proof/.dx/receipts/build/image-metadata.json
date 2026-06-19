@@ -1,0 +1,1496 @@
+{
+  "schema": "dx.www.imageMetadataReceipt",
+  "schema_revision": 1,
+  "generatedAt": "2026-06-10T03:50:07.788073700+00:00",
+  "projectRoot": "G:/Dx/www/examples/conversion-proof",
+  "receiptPath": ".dx/receipts/build/image-metadata.json",
+  "summary": {
+    "image_assets": 36,
+    "metadata_assets": 36,
+    "optimized_variants_emitted": 0,
+    "placeholders_emitted": 36,
+    "route_references": 0,
+    "style_references": 0,
+    "formats": {
+      "png": 22,
+      "svg": 14
+    },
+    "dimension_sources": {
+      "png-ihdr": 22,
+      "svg-root-attributes": 10,
+      "svg-viewbox": 4
+    },
+    "node_modules_required": false
+  },
+  "boundary": {
+    "owner": "DX-WWW source engine",
+    "reference": "turbopack-image",
+    "optimization": "metadata-plus-placeholder-artifacts-no-resize-or-encoding",
+    "placeholder_generation": "svg-artifact-placeholders-when-dimensions-known",
+    "full_pipeline_parity": false
+  },
+  "upstream_reference": {
+    "name": "Turbopack Image",
+    "crate": "turbopack-image",
+    "inspected_files": [
+      "vendor/next-rust/turbopack/crates/turbopack-image/src/process/mod.rs",
+      "vendor/next-rust/turbopack/crates/turbopack-image/src/process/svg.rs"
+    ]
+  },
+  "assets": [
+    {
+      "path": "public/favicon.svg",
+      "output": ".dx/www/output/public/favicon-94b1a6ce1d9289cf.svg",
+      "hash": "94b1a6ce1d9289cf",
+      "bytes": 410,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 64,
+        "height": 64,
+        "dimension_source": "svg-viewbox",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 64,
+            "height": 64,
+            "bytes": 286,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg",
+            "hash": "95cdf2c6b75c0830",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/android.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/android-6179e126fdf2b690.svg",
+      "hash": "6179e126fdf2b690",
+      "bytes": 1893,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 256,
+        "height": 150,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22150%22%20viewBox%3D%220%200%20256%20150%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 256,
+            "height": 150,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg",
+            "hash": "1f862bbfb91f091a",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg",
+      "hash": "326232c7beeb8fe8",
+      "bytes": 690,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 209,
+        "height": 256,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22209%22%20height%3D%22256%22%20viewBox%3D%220%200%20209%20256%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 209,
+            "height": 256,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg",
+            "hash": "4930e9a17f0554e8",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/apple.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/apple-64608ad998267c26.svg",
+      "hash": "64608ad998267c26",
+      "bytes": 678,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 209,
+        "height": 256,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22209%22%20height%3D%22256%22%20viewBox%3D%220%200%20209%20256%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 209,
+            "height": 256,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg",
+            "hash": "4930e9a17f0554e8",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/chrome-47847e68e6911c51.svg",
+      "hash": "47847e68e6911c51",
+      "bytes": 1183,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 191,
+        "height": 191,
+        "dimension_source": "svg-viewbox",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22191%22%20height%3D%22191%22%20viewBox%3D%220%200%20191%20191%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 191,
+            "height": 191,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg",
+            "hash": "a274e10bea40ed92",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg",
+      "hash": "71803a5b7bc95b0a",
+      "bytes": 12170,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 256,
+        "height": 265,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22265%22%20viewBox%3D%220%200%20256%20265%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 256,
+            "height": 265,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg",
+            "hash": "d533e35679bf3fb3",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/linux.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg",
+      "hash": "9b57c5b1eaa67b27",
+      "bytes": 11498,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 28,
+        "height": 32,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2228%22%20height%3D%2232%22%20viewBox%3D%220%200%2028%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 28,
+            "height": 32,
+            "bytes": 286,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg",
+            "hash": "d4eae2a799f1a34c",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg",
+      "hash": "b7883c0624ee14a6",
+      "bytes": 5425,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 224,
+        "height": 224,
+        "dimension_source": "svg-viewbox",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22224%22%20height%3D%22224%22%20viewBox%3D%220%200%20224%20224%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 224,
+            "height": 224,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg",
+            "hash": "b14238297a72c43e",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/rust.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg",
+      "hash": "6ee1a46a0ab69080",
+      "bytes": 5425,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 224,
+        "height": 224,
+        "dimension_source": "svg-viewbox",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22224%22%20height%3D%22224%22%20viewBox%3D%220%200%20224%20224%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 224,
+            "height": 224,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg",
+            "hash": "b14238297a72c43e",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg",
+      "hash": "e41230e938d7ad46",
+      "bytes": 169,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 256,
+        "height": 222,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22222%22%20viewBox%3D%220%200%20256%20222%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 256,
+            "height": 222,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg",
+            "hash": "bc4fc743c4b4aafe",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg",
+      "hash": "9b3d22fe9ef4d74d",
+      "bytes": 169,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 256,
+        "height": 222,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22222%22%20viewBox%3D%220%200%20256%20222%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 256,
+            "height": 222,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg",
+            "hash": "bc4fc743c4b4aafe",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/icons/platform-svgl/windows.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg",
+      "hash": "4e1fd2916a533d2b",
+      "bytes": 297,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 88,
+        "height": 88,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2288%22%20height%3D%2288%22%20viewBox%3D%220%200%2088%2088%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 88,
+            "height": 88,
+            "bytes": 286,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg",
+            "hash": "a5752798ef33bc2a",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/amber.png",
+      "output": ".dx/www/output/public/thumbnails/amber-fd8517e5453c2145.png",
+      "hash": "fd8517e5453c2145",
+      "bytes": 1997498,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/blue.png",
+      "output": ".dx/www/output/public/thumbnails/blue-2daf5706a85142cf.png",
+      "hash": "2daf5706a85142cf",
+      "bytes": 1820586,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/cyan.png",
+      "output": ".dx/www/output/public/thumbnails/cyan-f5830d34ea43ba2a.png",
+      "hash": "f5830d34ea43ba2a",
+      "bytes": 1649536,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/emerald.png",
+      "output": ".dx/www/output/public/thumbnails/emerald-ac411c3e669be3e2.png",
+      "hash": "ac411c3e669be3e2",
+      "bytes": 2028704,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/fuchsia.png",
+      "output": ".dx/www/output/public/thumbnails/fuchsia-2f08a8ddcbad25fc.png",
+      "hash": "2f08a8ddcbad25fc",
+      "bytes": 2124971,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/green-variant.png",
+      "output": ".dx/www/output/public/thumbnails/green-variant-acb7c68d24505294.png",
+      "hash": "acb7c68d24505294",
+      "bytes": 1881470,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/green.png",
+      "output": ".dx/www/output/public/thumbnails/green-4a2f9e787e85969f.png",
+      "hash": "4a2f9e787e85969f",
+      "bytes": 2030618,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/indigo.png",
+      "output": ".dx/www/output/public/thumbnails/indigo-028b20932f970d59.png",
+      "hash": "028b20932f970d59",
+      "bytes": 1939092,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/lime.png",
+      "output": ".dx/www/output/public/thumbnails/lime-2050bbd5f412de7d.png",
+      "hash": "2050bbd5f412de7d",
+      "bytes": 2497220,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/orange.png",
+      "output": ".dx/www/output/public/thumbnails/orange-b3e5cd7499323991.png",
+      "hash": "b3e5cd7499323991",
+      "bytes": 1940167,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/pink.png",
+      "output": ".dx/www/output/public/thumbnails/pink-fe1424b02465d707.png",
+      "hash": "fe1424b02465d707",
+      "bytes": 1911328,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/purple.png",
+      "output": ".dx/www/output/public/thumbnails/purple-8afc4bf4d04f753d.png",
+      "hash": "8afc4bf4d04f753d",
+      "bytes": 1965442,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/rainbow.png",
+      "output": ".dx/www/output/public/thumbnails/rainbow-6dcd801922d6c794.png",
+      "hash": "6dcd801922d6c794",
+      "bytes": 2061107,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/red.png",
+      "output": ".dx/www/output/public/thumbnails/red-e02103784760ee62.png",
+      "hash": "e02103784760ee62",
+      "bytes": 2235880,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/rose.png",
+      "output": ".dx/www/output/public/thumbnails/rose-2700bcddc2e4cf44.png",
+      "hash": "2700bcddc2e4cf44",
+      "bytes": 2127207,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/sky.png",
+      "output": ".dx/www/output/public/thumbnails/sky-835aeea13aa90224.png",
+      "hash": "835aeea13aa90224",
+      "bytes": 1333535,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/teal.png",
+      "output": ".dx/www/output/public/thumbnails/teal-00e58884c11c9b79.png",
+      "hash": "00e58884c11c9b79",
+      "bytes": 1829741,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/variant-1.png",
+      "output": ".dx/www/output/public/thumbnails/variant-1-2c5218548ca63387.png",
+      "hash": "2c5218548ca63387",
+      "bytes": 2214806,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/variant-2.png",
+      "output": ".dx/www/output/public/thumbnails/variant-2-6126e146834c330a.png",
+      "hash": "6126e146834c330a",
+      "bytes": 1664310,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/violet.png",
+      "output": ".dx/www/output/public/thumbnails/violet-8c81f7f2d8a3333c.png",
+      "hash": "8c81f7f2d8a3333c",
+      "bytes": 2315052,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/thumbnails/yellow.png",
+      "output": ".dx/www/output/public/thumbnails/yellow-8e4949f48aecba7d.png",
+      "hash": "8e4949f48aecba7d",
+      "bytes": 2024458,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/vendor/convex-logo.svg",
+      "output": ".dx/www/output/public/vendor/convex-logo-b2a1cfa88d831fea.svg",
+      "hash": "b2a1cfa88d831fea",
+      "bytes": 3936,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 249,
+        "height": 45,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22249%22%20height%3D%2245%22%20viewBox%3D%220%200%20249%2045%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 249,
+            "height": 45,
+            "bytes": 288,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg",
+            "hash": "aa90b90901b59203",
+            "artifact_bytes": 167
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/vendor/shadcn-favicon-32x32.png",
+      "output": ".dx/www/output/public/vendor/shadcn-favicon-32x32-73186821201a7eb8.png",
+      "hash": "73186821201a7eb8",
+      "bytes": 1567,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 32,
+        "height": 32,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 32,
+            "height": 32,
+            "bytes": 286,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg",
+            "hash": "e0672a7f37b24070",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    },
+    {
+      "path": "public/vendor/supabase-logo.svg",
+      "output": ".dx/www/output/public/vendor/supabase-logo-f0c8a57504f71be9.svg",
+      "hash": "f0c8a57504f71be9",
+      "bytes": 1124,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 109,
+        "height": 113,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22109%22%20height%3D%22113%22%20viewBox%3D%220%200%20109%20113%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 109,
+            "height": 113,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg",
+            "hash": "b0aa1f32e2c42ad9",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      },
+      "referenced_by_routes": [],
+      "referenced_by_styles": [],
+      "node_modules_required": false
+    }
+  ]
+}

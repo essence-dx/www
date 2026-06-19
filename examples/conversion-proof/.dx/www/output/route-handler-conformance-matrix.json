@@ -1,0 +1,225 @@
+{
+  "schema": "dx.www.deploy.route_handler_conformance_matrix",
+  "schema_revision": 1,
+  "manifest_hash": "blake3:778114897623c8e434a093f37b398c353e1d25579eaf025752307160174914c7",
+  "path": "route-handler-conformance-matrix.json",
+  "release_ready": false,
+  "hosted_provider_proof": false,
+  "matrix_status": "local-route-handler-conformance-foundation",
+  "coverage": {
+    "route_handlers": 4,
+    "health_checks": 4,
+    "get_head_preview_checks": 4,
+    "automatic_options_cases": 4,
+    "method_not_allowed_cases": 4
+  },
+  "routes": [
+    {
+      "path": "/api/ai/chat",
+      "source_path": "app/api/ai/chat/route.ts",
+      "allowed_methods": [
+        "POST",
+        "OPTIONS"
+      ],
+      "declared_methods": [
+        "POST"
+      ],
+      "implicit_methods": [
+        "OPTIONS"
+      ],
+      "safe_build_methods": [],
+      "skipped_build_methods": [
+        "POST",
+        "OPTIONS"
+      ],
+      "local_replay_cases": [
+        {
+          "method": "POST",
+          "expected_status": "source handler response",
+          "proof": "route-handler-contract-metadata",
+          "execution_scope": "source-owned-route-handler-runtime",
+          "hosted_provider": false
+        },
+        {
+          "method": "OPTIONS",
+          "expected_status": "204 No Content",
+          "proof": "automatic_route_handler_options_response",
+          "execution_scope": "source-owned-dev-runtime",
+          "hosted_provider": false
+        }
+      ],
+      "method_not_allowed_case": {
+        "method": "PUT",
+        "expected_status": "405 Method Not Allowed",
+        "expectation_source": "source-owned-route-handler-method-guard-contract",
+        "proof_status": "expected-contract-not-hosted-replayed",
+        "hosted_provider": false
+      }
+    },
+    {
+      "path": "/api/auth/session",
+      "source_path": "app/api/auth/session/route.ts",
+      "allowed_methods": [
+        "GET",
+        "HEAD",
+        "OPTIONS"
+      ],
+      "declared_methods": [
+        "GET"
+      ],
+      "implicit_methods": [
+        "HEAD",
+        "OPTIONS"
+      ],
+      "safe_build_methods": [
+        "GET",
+        "HEAD"
+      ],
+      "skipped_build_methods": [
+        "OPTIONS"
+      ],
+      "local_replay_cases": [
+        {
+          "method": "GET",
+          "expected_status": "200 OK",
+          "proof": "production-preview-health-check",
+          "execution_scope": "local-production-preview",
+          "hosted_provider": false
+        },
+        {
+          "method": "HEAD",
+          "expected_status": "200 OK",
+          "proof": "production-preview-health-check",
+          "execution_scope": "local-production-preview",
+          "hosted_provider": false
+        },
+        {
+          "method": "OPTIONS",
+          "expected_status": "204 No Content",
+          "proof": "automatic_route_handler_options_response",
+          "execution_scope": "source-owned-dev-runtime",
+          "hosted_provider": false
+        }
+      ],
+      "method_not_allowed_case": {
+        "method": "POST",
+        "expected_status": "405 Method Not Allowed",
+        "expectation_source": "local-production-preview-method-guard-contract",
+        "proof_status": "expected-contract-not-hosted-replayed",
+        "hosted_provider": false
+      }
+    },
+    {
+      "path": "/api/checkout",
+      "source_path": "app/api/checkout/route.ts",
+      "allowed_methods": [
+        "POST",
+        "OPTIONS"
+      ],
+      "declared_methods": [
+        "POST"
+      ],
+      "implicit_methods": [
+        "OPTIONS"
+      ],
+      "safe_build_methods": [],
+      "skipped_build_methods": [
+        "POST",
+        "OPTIONS"
+      ],
+      "local_replay_cases": [
+        {
+          "method": "POST",
+          "expected_status": "source handler response",
+          "proof": "route-handler-contract-metadata",
+          "execution_scope": "source-owned-route-handler-runtime",
+          "hosted_provider": false
+        },
+        {
+          "method": "OPTIONS",
+          "expected_status": "204 No Content",
+          "proof": "automatic_route_handler_options_response",
+          "execution_scope": "source-owned-dev-runtime",
+          "hosted_provider": false
+        }
+      ],
+      "method_not_allowed_case": {
+        "method": "PUT",
+        "expected_status": "405 Method Not Allowed",
+        "expectation_source": "source-owned-route-handler-method-guard-contract",
+        "proof_status": "expected-contract-not-hosted-replayed",
+        "hosted_provider": false
+      }
+    },
+    {
+      "path": "/api/trpc/health",
+      "source_path": "app/api/trpc/health/route.ts",
+      "allowed_methods": [
+        "GET",
+        "HEAD",
+        "POST",
+        "OPTIONS"
+      ],
+      "declared_methods": [
+        "GET",
+        "POST"
+      ],
+      "implicit_methods": [
+        "HEAD",
+        "OPTIONS"
+      ],
+      "safe_build_methods": [
+        "GET",
+        "HEAD"
+      ],
+      "skipped_build_methods": [
+        "POST",
+        "OPTIONS"
+      ],
+      "local_replay_cases": [
+        {
+          "method": "GET",
+          "expected_status": "200 OK",
+          "proof": "production-preview-health-check",
+          "execution_scope": "local-production-preview",
+          "hosted_provider": false
+        },
+        {
+          "method": "HEAD",
+          "expected_status": "200 OK",
+          "proof": "production-preview-health-check",
+          "execution_scope": "local-production-preview",
+          "hosted_provider": false
+        },
+        {
+          "method": "POST",
+          "expected_status": "source handler response",
+          "proof": "route-handler-contract-metadata",
+          "execution_scope": "source-owned-route-handler-runtime",
+          "hosted_provider": false
+        },
+        {
+          "method": "OPTIONS",
+          "expected_status": "204 No Content",
+          "proof": "automatic_route_handler_options_response",
+          "execution_scope": "source-owned-dev-runtime",
+          "hosted_provider": false
+        }
+      ],
+      "method_not_allowed_case": {
+        "method": "PUT",
+        "expected_status": "405 Method Not Allowed",
+        "expectation_source": "local-production-preview-method-guard-contract",
+        "proof_status": "expected-contract-not-hosted-replayed",
+        "hosted_provider": false
+      }
+    }
+  ],
+  "not_yet_proven": [
+    "provider-hosted GET/HEAD/OPTIONS/405 matrix",
+    "provider-hosted streaming body transport",
+    "multi-provider route-handler conformance replay",
+    "signed manifest promotion before hosted release"
+  ],
+  "rule": "This matrix is local deploy-contract and source-owned runtime evidence only; it is not hosted provider conformance proof."
+}

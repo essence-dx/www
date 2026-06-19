@@ -1,0 +1,2781 @@
+{
+  "schema": "dx.www.same_machine_performance_receipt",
+  "legacy_schema": "dx.www.runtime_throughput_benchmark",
+  "previous_schema": "dx.www.runtime_throughput_benchmark",
+  "generated_at": "2026-05-31T20:34:57.061Z",
+  "receipt_id": "dx-www-same-machine-1780259697061",
+  "benchmark": {
+    "script_path": "benchmarks/dx-runtime-throughput-benchmark.ts",
+    "script_sha256": "6c111f4b6c3c7114bc3a238ffc21d96f7f434315f5aa1d6ba19b3421eb39b71f",
+    "args": {
+      "rounds": "3",
+      "requests": "240",
+      "concurrency": "16",
+      "out": "target/framework-comparison-20260601/throughput.json",
+      "dx-www-bin": "target/release/dx-www.exe",
+      "www-url": "http://127.0.0.1:42104/fair-counter",
+      "www-command": "G:\\Dx\\www\\target\\release\\demo-server.exe",
+      "www-pid": "22812",
+      "next-url": "http://127.0.0.1:42101/",
+      "next-command": "npm run start -- -H 127.0.0.1 -p 42101",
+      "next-pid": "36820",
+      "svelte-url": "http://127.0.0.1:42102/",
+      "svelte-command": "\"C:\\\\Program Files\\\\nodejs\\\\node.exe\" G:\\Dx\\www\\benchmarks\\dx-runtime-throughput-orchestrator.ts --mode static-server --static-dir G:\\Dx\\www\\benchmarks\\fair-counter\\svelte\\dist --port 42102",
+      "svelte-pid": "25548",
+      "astro-url": "http://127.0.0.1:42103/",
+      "astro-command": "\"C:\\\\Program Files\\\\nodejs\\\\node.exe\" G:\\Dx\\www\\benchmarks\\dx-runtime-throughput-orchestrator.ts --mode static-server --static-dir G:\\Dx\\www\\benchmarks\\fair-counter\\astro\\dist --port 42103",
+      "astro-pid": "35768"
+    },
+    "request_count": 240,
+    "concurrency": 16,
+    "warmup": 20,
+    "request_timeout_ms": 10000,
+    "round_count": 3,
+    "requested_round_count": 3,
+    "dry_run": false,
+    "measurement_executed": true,
+    "http_requests_executed": true,
+    "preflight_http_requests_executed": true,
+    "measurement_http_requests_executed": true,
+    "target_order": [
+      "www",
+      "next",
+      "svelte",
+      "astro"
+    ],
+    "user_agent": "dx-www-throughput-benchmark/1.0"
+  },
+  "runtime": {
+    "node_version": "v22.19.0",
+    "node_exec_path": "C:\\Program Files\\nodejs\\node.exe",
+    "node_platform": "win32",
+    "node_arch": "x64"
+  },
+  "node": "v22.19.0",
+  "node_exec_path": "C:\\Program Files\\nodejs\\node.exe",
+  "request_count": 240,
+  "concurrency": 16,
+  "warmup": 20,
+  "request_timeout_ms": 10000,
+  "round_count": 3,
+  "requested_round_count": 3,
+  "dry_run": false,
+  "measurement_executed": true,
+  "http_requests_executed": true,
+  "preflight_http_requests_executed": true,
+  "measurement_http_requests_executed": true,
+  "measurement_skipped_reason": null,
+  "machine": {
+    "platform": "win32",
+    "os_platform": "win32",
+    "arch": "x64",
+    "os_arch": "x64",
+    "release": "10.0.26200",
+    "os_release": "10.0.26200",
+    "hostname": "dx",
+    "timezone": "Asia/Dhaka",
+    "totalmem_bytes": 25014145024,
+    "total_memory_bytes": 25014145024,
+    "freemem_bytes": 8351014912,
+    "cpu_count": 12,
+    "cpu_logical_cores": 12,
+    "cpu_model": "AMD Ryzen 5 5600G with Radeon Graphics         ",
+    "cpu_speed_mhz": 3900
+  },
+  "git": {
+    "repo_path": "G:\\Dx\\www",
+    "head_sha": "f92a2aa6974e4c8cf3c2ad73ba07bcef1e1a031e",
+    "sha": "f92a2aa6974e4c8cf3c2ad73ba07bcef1e1a031e",
+    "branch": "features",
+    "status_short": "",
+    "status_porcelain": "",
+    "status_captured_at": "2026-05-31T20:34:57.239Z",
+    "is_dirty": false,
+    "dirty": false
+  },
+  "dx_www_binary": {
+    "path": "target/release/dx-www.exe",
+    "exists": true,
+    "sha256": "ada38665547921ad7573cb4816bcdd7771602e6d2ce98c4f89a74f31bf04621e",
+    "bytes": 32848896,
+    "hash_status": "captured"
+  },
+  "binary": {
+    "path": "target/release/dx-www.exe",
+    "exists": true,
+    "sha256": "ada38665547921ad7573cb4816bcdd7771602e6d2ce98c4f89a74f31bf04621e",
+    "bytes": 32848896,
+    "hash_status": "captured"
+  },
+  "framework_package_versions": {
+    "www": {
+      "package_json": null,
+      "package_name": "www",
+      "package_version": null,
+      "dependencies": {},
+      "dev_dependencies": {}
+    },
+    "next": {
+      "package_json": "benchmarks/fair-counter/next/package.json",
+      "package_name": "fair-counter-next",
+      "package_version": "0.1.0",
+      "dependencies": {
+        "next": "16.2.6",
+        "react": "19.2.6",
+        "react-dom": "19.2.6"
+      },
+      "dev_dependencies": {}
+    },
+    "svelte": {
+      "package_json": "benchmarks/fair-counter/svelte/package.json",
+      "package_name": "fair-counter-svelte",
+      "package_version": "0.1.0",
+      "dependencies": {},
+      "dev_dependencies": {
+        "@sveltejs/vite-plugin-svelte": "7.1.2",
+        "svelte": "5.55.7",
+        "vite": "8.0.13"
+      }
+    },
+    "astro": {
+      "package_json": "benchmarks/fair-counter/astro/package.json",
+      "package_name": "fair-counter-astro",
+      "package_version": "0.1.0",
+      "dependencies": {},
+      "dev_dependencies": {
+        "astro": "6.3.3"
+      }
+    }
+  },
+  "frameworks": {
+    "www": {
+      "package_json": null,
+      "package_name": "www",
+      "package_version": null,
+      "dependencies": {},
+      "dev_dependencies": {}
+    },
+    "next": {
+      "package_json": "benchmarks/fair-counter/next/package.json",
+      "package_name": "fair-counter-next",
+      "package_version": "0.1.0",
+      "dependencies": {
+        "next": "16.2.6",
+        "react": "19.2.6",
+        "react-dom": "19.2.6"
+      },
+      "dev_dependencies": {}
+    },
+    "svelte": {
+      "package_json": "benchmarks/fair-counter/svelte/package.json",
+      "package_name": "fair-counter-svelte",
+      "package_version": "0.1.0",
+      "dependencies": {},
+      "dev_dependencies": {
+        "@sveltejs/vite-plugin-svelte": "7.1.2",
+        "svelte": "5.55.7",
+        "vite": "8.0.13"
+      }
+    },
+    "astro": {
+      "package_json": "benchmarks/fair-counter/astro/package.json",
+      "package_name": "fair-counter-astro",
+      "package_version": "0.1.0",
+      "dependencies": {},
+      "dev_dependencies": {
+        "astro": "6.3.3"
+      }
+    }
+  },
+  "server_provenance": [
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "host": "127.0.0.1",
+      "port": 42104,
+      "command": "G:\\Dx\\www\\target\\release\\demo-server.exe",
+      "cwd": null,
+      "pid": 22812,
+      "command_provided_by_user": true,
+      "pid_provided_by_user": true,
+      "command_source": "operator_supplied",
+      "pid_source": "operator_supplied",
+      "port_source": "url",
+      "captured_at": "2026-05-31T20:34:57.241Z"
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "host": "127.0.0.1",
+      "port": 42101,
+      "command": "npm run start -- -H 127.0.0.1 -p 42101",
+      "cwd": null,
+      "pid": 36820,
+      "command_provided_by_user": true,
+      "pid_provided_by_user": true,
+      "command_source": "operator_supplied",
+      "pid_source": "operator_supplied",
+      "port_source": "url",
+      "captured_at": "2026-05-31T20:34:57.241Z"
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "host": "127.0.0.1",
+      "port": 42102,
+      "command": "\"C:\\\\Program Files\\\\nodejs\\\\node.exe\" G:\\Dx\\www\\benchmarks\\dx-runtime-throughput-orchestrator.ts --mode static-server --static-dir G:\\Dx\\www\\benchmarks\\fair-counter\\svelte\\dist --port 42102",
+      "cwd": null,
+      "pid": 25548,
+      "command_provided_by_user": true,
+      "pid_provided_by_user": true,
+      "command_source": "operator_supplied",
+      "pid_source": "operator_supplied",
+      "port_source": "url",
+      "captured_at": "2026-05-31T20:34:57.241Z"
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "host": "127.0.0.1",
+      "port": 42103,
+      "command": "\"C:\\\\Program Files\\\\nodejs\\\\node.exe\" G:\\Dx\\www\\benchmarks\\dx-runtime-throughput-orchestrator.ts --mode static-server --static-dir G:\\Dx\\www\\benchmarks\\fair-counter\\astro\\dist --port 42103",
+      "cwd": null,
+      "pid": 35768,
+      "command_provided_by_user": true,
+      "pid_provided_by_user": true,
+      "command_source": "operator_supplied",
+      "pid_source": "operator_supplied",
+      "port_source": "url",
+      "captured_at": "2026-05-31T20:34:57.241Z"
+    }
+  ],
+  "servers": [
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "host": "127.0.0.1",
+      "port": 42104,
+      "command": "G:\\Dx\\www\\target\\release\\demo-server.exe",
+      "cwd": null,
+      "pid": 22812,
+      "command_provided_by_user": true,
+      "pid_provided_by_user": true,
+      "command_source": "operator_supplied",
+      "pid_source": "operator_supplied",
+      "port_source": "url",
+      "captured_at": "2026-05-31T20:34:57.241Z"
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "host": "127.0.0.1",
+      "port": 42101,
+      "command": "npm run start -- -H 127.0.0.1 -p 42101",
+      "cwd": null,
+      "pid": 36820,
+      "command_provided_by_user": true,
+      "pid_provided_by_user": true,
+      "command_source": "operator_supplied",
+      "pid_source": "operator_supplied",
+      "port_source": "url",
+      "captured_at": "2026-05-31T20:34:57.241Z"
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "host": "127.0.0.1",
+      "port": 42102,
+      "command": "\"C:\\\\Program Files\\\\nodejs\\\\node.exe\" G:\\Dx\\www\\benchmarks\\dx-runtime-throughput-orchestrator.ts --mode static-server --static-dir G:\\Dx\\www\\benchmarks\\fair-counter\\svelte\\dist --port 42102",
+      "cwd": null,
+      "pid": 25548,
+      "command_provided_by_user": true,
+      "pid_provided_by_user": true,
+      "command_source": "operator_supplied",
+      "pid_source": "operator_supplied",
+      "port_source": "url",
+      "captured_at": "2026-05-31T20:34:57.241Z"
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "host": "127.0.0.1",
+      "port": 42103,
+      "command": "\"C:\\\\Program Files\\\\nodejs\\\\node.exe\" G:\\Dx\\www\\benchmarks\\dx-runtime-throughput-orchestrator.ts --mode static-server --static-dir G:\\Dx\\www\\benchmarks\\fair-counter\\astro\\dist --port 42103",
+      "cwd": null,
+      "pid": 35768,
+      "command_provided_by_user": true,
+      "pid_provided_by_user": true,
+      "command_source": "operator_supplied",
+      "pid_source": "operator_supplied",
+      "port_source": "url",
+      "captured_at": "2026-05-31T20:34:57.241Z"
+    }
+  ],
+  "output_fixtures": [
+    {
+      "name": "www",
+      "target_name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "status": 200,
+      "ok": true,
+      "bytes": 474,
+      "sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "hash_algorithm": "sha256",
+      "captured_from": "preflight",
+      "captured_at": "2026-05-31T20:34:53.548Z"
+    },
+    {
+      "name": "next",
+      "target_name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "status": 200,
+      "ok": true,
+      "bytes": 6433,
+      "sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "hash_algorithm": "sha256",
+      "captured_from": "preflight",
+      "captured_at": "2026-05-31T20:34:53.566Z"
+    },
+    {
+      "name": "svelte",
+      "target_name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "status": 200,
+      "ok": true,
+      "bytes": 522,
+      "sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "hash_algorithm": "sha256",
+      "captured_from": "preflight",
+      "captured_at": "2026-05-31T20:34:53.572Z"
+    },
+    {
+      "name": "astro",
+      "target_name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "status": 200,
+      "ok": true,
+      "bytes": 2722,
+      "sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "hash_algorithm": "sha256",
+      "captured_from": "preflight",
+      "captured_at": "2026-05-31T20:34:53.578Z"
+    }
+  ],
+  "rounds": [
+    {
+      "round_index": 1,
+      "started_at": "2026-05-31T20:34:53.578Z",
+      "ended_at": "2026-05-31T20:34:55.086Z",
+      "targets": [
+        {
+          "name": "www",
+          "url": "http://127.0.0.1:42104/fair-counter",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 113760,
+          "duration_ms": 284.57,
+          "requests_per_second": 843.37,
+          "latency_ms": {
+            "min": 4.27,
+            "p50": 16.79,
+            "p95": 35.43,
+            "p99": 40.19,
+            "max": 44.54
+          },
+          "round_index": 1,
+          "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        },
+        {
+          "name": "next",
+          "url": "http://127.0.0.1:42101/",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 1543920,
+          "duration_ms": 631.3,
+          "requests_per_second": 380.17,
+          "latency_ms": {
+            "min": 15,
+            "p50": 40.01,
+            "p95": 56.26,
+            "p99": 64.88,
+            "max": 69.4
+          },
+          "round_index": 1,
+          "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        },
+        {
+          "name": "svelte",
+          "url": "http://127.0.0.1:42102/",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 125280,
+          "duration_ms": 186.32,
+          "requests_per_second": 1288.12,
+          "latency_ms": {
+            "min": 2.8,
+            "p50": 11.32,
+            "p95": 20.85,
+            "p99": 22.55,
+            "max": 23.27
+          },
+          "round_index": 1,
+          "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        },
+        {
+          "name": "astro",
+          "url": "http://127.0.0.1:42103/",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 653280,
+          "duration_ms": 190.49,
+          "requests_per_second": 1259.9,
+          "latency_ms": {
+            "min": 2.5,
+            "p50": 11.48,
+            "p95": 20.02,
+            "p99": 25.29,
+            "max": 26.72
+          },
+          "round_index": 1,
+          "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "started_at": "2026-05-31T20:34:55.086Z",
+      "ended_at": "2026-05-31T20:34:56.166Z",
+      "targets": [
+        {
+          "name": "www",
+          "url": "http://127.0.0.1:42104/fair-counter",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 113760,
+          "duration_ms": 142.07,
+          "requests_per_second": 1689.26,
+          "latency_ms": {
+            "min": 3.26,
+            "p50": 9.44,
+            "p95": 12.23,
+            "p99": 12.44,
+            "max": 12.55
+          },
+          "round_index": 2,
+          "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        },
+        {
+          "name": "next",
+          "url": "http://127.0.0.1:42101/",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 1543920,
+          "duration_ms": 485.22,
+          "requests_per_second": 494.62,
+          "latency_ms": {
+            "min": 11.47,
+            "p50": 33.41,
+            "p95": 43.76,
+            "p99": 45.3,
+            "max": 49.54
+          },
+          "round_index": 2,
+          "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        },
+        {
+          "name": "svelte",
+          "url": "http://127.0.0.1:42102/",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 125280,
+          "duration_ms": 155.36,
+          "requests_per_second": 1544.76,
+          "latency_ms": {
+            "min": 3.25,
+            "p50": 9.86,
+            "p95": 17.12,
+            "p99": 17.69,
+            "max": 17.73
+          },
+          "round_index": 2,
+          "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        },
+        {
+          "name": "astro",
+          "url": "http://127.0.0.1:42103/",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 653280,
+          "duration_ms": 145.9,
+          "requests_per_second": 1644.93,
+          "latency_ms": {
+            "min": 2.35,
+            "p50": 9.14,
+            "p95": 15.1,
+            "p99": 15.94,
+            "max": 16.16
+          },
+          "round_index": 2,
+          "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "started_at": "2026-05-31T20:34:56.166Z",
+      "ended_at": "2026-05-31T20:34:56.957Z",
+      "targets": [
+        {
+          "name": "www",
+          "url": "http://127.0.0.1:42104/fair-counter",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 113760,
+          "duration_ms": 88.01,
+          "requests_per_second": 2726.93,
+          "latency_ms": {
+            "min": 3.45,
+            "p50": 5.14,
+            "p95": 9.42,
+            "p99": 10.3,
+            "max": 10.38
+          },
+          "round_index": 3,
+          "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        },
+        {
+          "name": "next",
+          "url": "http://127.0.0.1:42101/",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 1543920,
+          "duration_ms": 385.04,
+          "requests_per_second": 623.3,
+          "latency_ms": {
+            "min": 8.19,
+            "p50": 26.06,
+            "p95": 34.1,
+            "p99": 37.17,
+            "max": 38.71
+          },
+          "round_index": 3,
+          "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        },
+        {
+          "name": "svelte",
+          "url": "http://127.0.0.1:42102/",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 125280,
+          "duration_ms": 119.39,
+          "requests_per_second": 2010.14,
+          "latency_ms": {
+            "min": 2.49,
+            "p50": 7.22,
+            "p95": 12.74,
+            "p99": 13.53,
+            "max": 15.08
+          },
+          "round_index": 3,
+          "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        },
+        {
+          "name": "astro",
+          "url": "http://127.0.0.1:42103/",
+          "requests": 240,
+          "concurrency": 16,
+          "warmup": 20,
+          "request_timeout_ms": 10000,
+          "errors": 0,
+          "bytes": 653280,
+          "duration_ms": 109.58,
+          "requests_per_second": 2190.14,
+          "latency_ms": {
+            "min": 2.1,
+            "p50": 6.87,
+            "p95": 9.59,
+            "p99": 10.11,
+            "max": 10.23
+          },
+          "round_index": 3,
+          "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+          "output_sha256_source": "preflight",
+          "measurement_body_hash_captured": false
+        }
+      ]
+    }
+  ],
+  "round_results": [
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 113760,
+      "duration_ms": 284.57,
+      "requests_per_second": 843.37,
+      "latency_ms": {
+        "min": 4.27,
+        "p50": 16.79,
+        "p95": 35.43,
+        "p99": 40.19,
+        "max": 44.54
+      },
+      "round_index": 1,
+      "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 1543920,
+      "duration_ms": 631.3,
+      "requests_per_second": 380.17,
+      "latency_ms": {
+        "min": 15,
+        "p50": 40.01,
+        "p95": 56.26,
+        "p99": 64.88,
+        "max": 69.4
+      },
+      "round_index": 1,
+      "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 125280,
+      "duration_ms": 186.32,
+      "requests_per_second": 1288.12,
+      "latency_ms": {
+        "min": 2.8,
+        "p50": 11.32,
+        "p95": 20.85,
+        "p99": 22.55,
+        "max": 23.27
+      },
+      "round_index": 1,
+      "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 653280,
+      "duration_ms": 190.49,
+      "requests_per_second": 1259.9,
+      "latency_ms": {
+        "min": 2.5,
+        "p50": 11.48,
+        "p95": 20.02,
+        "p99": 25.29,
+        "max": 26.72
+      },
+      "round_index": 1,
+      "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 113760,
+      "duration_ms": 142.07,
+      "requests_per_second": 1689.26,
+      "latency_ms": {
+        "min": 3.26,
+        "p50": 9.44,
+        "p95": 12.23,
+        "p99": 12.44,
+        "max": 12.55
+      },
+      "round_index": 2,
+      "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 1543920,
+      "duration_ms": 485.22,
+      "requests_per_second": 494.62,
+      "latency_ms": {
+        "min": 11.47,
+        "p50": 33.41,
+        "p95": 43.76,
+        "p99": 45.3,
+        "max": 49.54
+      },
+      "round_index": 2,
+      "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 125280,
+      "duration_ms": 155.36,
+      "requests_per_second": 1544.76,
+      "latency_ms": {
+        "min": 3.25,
+        "p50": 9.86,
+        "p95": 17.12,
+        "p99": 17.69,
+        "max": 17.73
+      },
+      "round_index": 2,
+      "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 653280,
+      "duration_ms": 145.9,
+      "requests_per_second": 1644.93,
+      "latency_ms": {
+        "min": 2.35,
+        "p50": 9.14,
+        "p95": 15.1,
+        "p99": 15.94,
+        "max": 16.16
+      },
+      "round_index": 2,
+      "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 113760,
+      "duration_ms": 88.01,
+      "requests_per_second": 2726.93,
+      "latency_ms": {
+        "min": 3.45,
+        "p50": 5.14,
+        "p95": 9.42,
+        "p99": 10.3,
+        "max": 10.38
+      },
+      "round_index": 3,
+      "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 1543920,
+      "duration_ms": 385.04,
+      "requests_per_second": 623.3,
+      "latency_ms": {
+        "min": 8.19,
+        "p50": 26.06,
+        "p95": 34.1,
+        "p99": 37.17,
+        "max": 38.71
+      },
+      "round_index": 3,
+      "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 125280,
+      "duration_ms": 119.39,
+      "requests_per_second": 2010.14,
+      "latency_ms": {
+        "min": 2.49,
+        "p50": 7.22,
+        "p95": 12.74,
+        "p99": 13.53,
+        "max": 15.08
+      },
+      "round_index": 3,
+      "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 653280,
+      "duration_ms": 109.58,
+      "requests_per_second": 2190.14,
+      "latency_ms": {
+        "min": 2.1,
+        "p50": 6.87,
+        "p95": 9.59,
+        "p99": 10.11,
+        "max": 10.23
+      },
+      "round_index": 3,
+      "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    }
+  ],
+  "targets": [
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 113760,
+      "duration_ms": 284.57,
+      "requests_per_second": 843.37,
+      "latency_ms": {
+        "min": 4.27,
+        "p50": 16.79,
+        "p95": 35.43,
+        "p99": 40.19,
+        "max": 44.54
+      },
+      "round_index": 1,
+      "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 1543920,
+      "duration_ms": 631.3,
+      "requests_per_second": 380.17,
+      "latency_ms": {
+        "min": 15,
+        "p50": 40.01,
+        "p95": 56.26,
+        "p99": 64.88,
+        "max": 69.4
+      },
+      "round_index": 1,
+      "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 125280,
+      "duration_ms": 186.32,
+      "requests_per_second": 1288.12,
+      "latency_ms": {
+        "min": 2.8,
+        "p50": 11.32,
+        "p95": 20.85,
+        "p99": 22.55,
+        "max": 23.27
+      },
+      "round_index": 1,
+      "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 653280,
+      "duration_ms": 190.49,
+      "requests_per_second": 1259.9,
+      "latency_ms": {
+        "min": 2.5,
+        "p50": 11.48,
+        "p95": 20.02,
+        "p99": 25.29,
+        "max": 26.72
+      },
+      "round_index": 1,
+      "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 113760,
+      "duration_ms": 142.07,
+      "requests_per_second": 1689.26,
+      "latency_ms": {
+        "min": 3.26,
+        "p50": 9.44,
+        "p95": 12.23,
+        "p99": 12.44,
+        "max": 12.55
+      },
+      "round_index": 2,
+      "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 1543920,
+      "duration_ms": 485.22,
+      "requests_per_second": 494.62,
+      "latency_ms": {
+        "min": 11.47,
+        "p50": 33.41,
+        "p95": 43.76,
+        "p99": 45.3,
+        "max": 49.54
+      },
+      "round_index": 2,
+      "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 125280,
+      "duration_ms": 155.36,
+      "requests_per_second": 1544.76,
+      "latency_ms": {
+        "min": 3.25,
+        "p50": 9.86,
+        "p95": 17.12,
+        "p99": 17.69,
+        "max": 17.73
+      },
+      "round_index": 2,
+      "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 653280,
+      "duration_ms": 145.9,
+      "requests_per_second": 1644.93,
+      "latency_ms": {
+        "min": 2.35,
+        "p50": 9.14,
+        "p95": 15.1,
+        "p99": 15.94,
+        "max": 16.16
+      },
+      "round_index": 2,
+      "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 113760,
+      "duration_ms": 88.01,
+      "requests_per_second": 2726.93,
+      "latency_ms": {
+        "min": 3.45,
+        "p50": 5.14,
+        "p95": 9.42,
+        "p99": 10.3,
+        "max": 10.38
+      },
+      "round_index": 3,
+      "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 1543920,
+      "duration_ms": 385.04,
+      "requests_per_second": 623.3,
+      "latency_ms": {
+        "min": 8.19,
+        "p50": 26.06,
+        "p95": 34.1,
+        "p99": 37.17,
+        "max": 38.71
+      },
+      "round_index": 3,
+      "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 125280,
+      "duration_ms": 119.39,
+      "requests_per_second": 2010.14,
+      "latency_ms": {
+        "min": 2.49,
+        "p50": 7.22,
+        "p95": 12.74,
+        "p99": 13.53,
+        "max": 15.08
+      },
+      "round_index": 3,
+      "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 653280,
+      "duration_ms": 109.58,
+      "requests_per_second": 2190.14,
+      "latency_ms": {
+        "min": 2.1,
+        "p50": 6.87,
+        "p95": 9.59,
+        "p99": 10.11,
+        "max": 10.23
+      },
+      "round_index": 3,
+      "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    }
+  ],
+  "legacy_targets": [
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 113760,
+      "duration_ms": 284.57,
+      "requests_per_second": 843.37,
+      "latency_ms": {
+        "min": 4.27,
+        "p50": 16.79,
+        "p95": 35.43,
+        "p99": 40.19,
+        "max": 44.54
+      },
+      "round_index": 1,
+      "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 1543920,
+      "duration_ms": 631.3,
+      "requests_per_second": 380.17,
+      "latency_ms": {
+        "min": 15,
+        "p50": 40.01,
+        "p95": 56.26,
+        "p99": 64.88,
+        "max": 69.4
+      },
+      "round_index": 1,
+      "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 125280,
+      "duration_ms": 186.32,
+      "requests_per_second": 1288.12,
+      "latency_ms": {
+        "min": 2.8,
+        "p50": 11.32,
+        "p95": 20.85,
+        "p99": 22.55,
+        "max": 23.27
+      },
+      "round_index": 1,
+      "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 653280,
+      "duration_ms": 190.49,
+      "requests_per_second": 1259.9,
+      "latency_ms": {
+        "min": 2.5,
+        "p50": 11.48,
+        "p95": 20.02,
+        "p99": 25.29,
+        "max": 26.72
+      },
+      "round_index": 1,
+      "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 113760,
+      "duration_ms": 142.07,
+      "requests_per_second": 1689.26,
+      "latency_ms": {
+        "min": 3.26,
+        "p50": 9.44,
+        "p95": 12.23,
+        "p99": 12.44,
+        "max": 12.55
+      },
+      "round_index": 2,
+      "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 1543920,
+      "duration_ms": 485.22,
+      "requests_per_second": 494.62,
+      "latency_ms": {
+        "min": 11.47,
+        "p50": 33.41,
+        "p95": 43.76,
+        "p99": 45.3,
+        "max": 49.54
+      },
+      "round_index": 2,
+      "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 125280,
+      "duration_ms": 155.36,
+      "requests_per_second": 1544.76,
+      "latency_ms": {
+        "min": 3.25,
+        "p50": 9.86,
+        "p95": 17.12,
+        "p99": 17.69,
+        "max": 17.73
+      },
+      "round_index": 2,
+      "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 653280,
+      "duration_ms": 145.9,
+      "requests_per_second": 1644.93,
+      "latency_ms": {
+        "min": 2.35,
+        "p50": 9.14,
+        "p95": 15.1,
+        "p99": 15.94,
+        "max": 16.16
+      },
+      "round_index": 2,
+      "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 113760,
+      "duration_ms": 88.01,
+      "requests_per_second": 2726.93,
+      "latency_ms": {
+        "min": 3.45,
+        "p50": 5.14,
+        "p95": 9.42,
+        "p99": 10.3,
+        "max": 10.38
+      },
+      "round_index": 3,
+      "output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 1543920,
+      "duration_ms": 385.04,
+      "requests_per_second": 623.3,
+      "latency_ms": {
+        "min": 8.19,
+        "p50": 26.06,
+        "p95": 34.1,
+        "p99": 37.17,
+        "max": 38.71
+      },
+      "round_index": 3,
+      "output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 125280,
+      "duration_ms": 119.39,
+      "requests_per_second": 2010.14,
+      "latency_ms": {
+        "min": 2.49,
+        "p50": 7.22,
+        "p95": 12.74,
+        "p99": 13.53,
+        "max": 15.08
+      },
+      "round_index": 3,
+      "output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    },
+    {
+      "name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "requests": 240,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "bytes": 653280,
+      "duration_ms": 109.58,
+      "requests_per_second": 2190.14,
+      "latency_ms": {
+        "min": 2.1,
+        "p50": 6.87,
+        "p95": 9.59,
+        "p99": 10.11,
+        "max": 10.23
+      },
+      "round_index": 3,
+      "output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "output_sha256_source": "preflight",
+      "measurement_body_hash_captured": false
+    }
+  ],
+  "target_summaries": [
+    {
+      "name": "www",
+      "target_name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "rounds": 3,
+      "round_count": 3,
+      "successful_round_count": 3,
+      "requests_per_round": 240,
+      "total_requests": 720,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "errors_total": 0,
+      "bytes": 341280,
+      "output_hash_stable": null,
+      "output_hash_stability_measured": false,
+      "output_hash_stability_scope": "not_measured_in_rounds",
+      "preflight_output_hash_stable": true,
+      "preflight_output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "preflight_output_sha256_values": [
+        "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa"
+      ],
+      "output_sha256_values": [
+        "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa"
+      ],
+      "aggregate": {
+        "requests_per_second": {
+          "min": 843.37,
+          "median": 1689.26,
+          "p95": 2726.93,
+          "p99": 2726.93,
+          "max": 2726.93
+        },
+        "duration_ms": {
+          "min": 88.01,
+          "median": 142.07,
+          "p95": 284.57,
+          "p99": 284.57,
+          "max": 284.57
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 5.14,
+            "median": 9.44,
+            "p95": 16.79,
+            "p99": 16.79,
+            "max": 16.79
+          },
+          "p95": {
+            "min": 9.42,
+            "median": 12.23,
+            "p95": 35.43,
+            "p99": 35.43,
+            "max": 35.43
+          },
+          "p99": {
+            "min": 10.3,
+            "median": 12.44,
+            "p95": 40.19,
+            "p99": 40.19,
+            "max": 40.19
+          }
+        }
+      },
+      "requests_per_second": {
+        "min": 843.37,
+        "median": 1689.26,
+        "p95": 2726.93,
+        "p99": 2726.93,
+        "max": 2726.93
+      },
+      "duration_ms": {
+        "min": 88.01,
+        "median": 142.07,
+        "p95": 284.57,
+        "p99": 284.57,
+        "max": 284.57
+      },
+      "latency_ms": {
+        "p50": {
+          "min": 5.14,
+          "median": 9.44,
+          "p95": 16.79,
+          "p99": 16.79,
+          "max": 16.79
+        },
+        "p95": {
+          "min": 9.42,
+          "median": 12.23,
+          "p95": 35.43,
+          "p99": 35.43,
+          "max": 35.43
+        },
+        "p99": {
+          "min": 10.3,
+          "median": 12.44,
+          "p95": 40.19,
+          "p99": 40.19,
+          "max": 40.19
+        }
+      }
+    },
+    {
+      "name": "next",
+      "target_name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "rounds": 3,
+      "round_count": 3,
+      "successful_round_count": 3,
+      "requests_per_round": 240,
+      "total_requests": 720,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "errors_total": 0,
+      "bytes": 4631760,
+      "output_hash_stable": null,
+      "output_hash_stability_measured": false,
+      "output_hash_stability_scope": "not_measured_in_rounds",
+      "preflight_output_hash_stable": true,
+      "preflight_output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "preflight_output_sha256_values": [
+        "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a"
+      ],
+      "output_sha256_values": [
+        "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a"
+      ],
+      "aggregate": {
+        "requests_per_second": {
+          "min": 380.17,
+          "median": 494.62,
+          "p95": 623.3,
+          "p99": 623.3,
+          "max": 623.3
+        },
+        "duration_ms": {
+          "min": 385.04,
+          "median": 485.22,
+          "p95": 631.3,
+          "p99": 631.3,
+          "max": 631.3
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 26.06,
+            "median": 33.41,
+            "p95": 40.01,
+            "p99": 40.01,
+            "max": 40.01
+          },
+          "p95": {
+            "min": 34.1,
+            "median": 43.76,
+            "p95": 56.26,
+            "p99": 56.26,
+            "max": 56.26
+          },
+          "p99": {
+            "min": 37.17,
+            "median": 45.3,
+            "p95": 64.88,
+            "p99": 64.88,
+            "max": 64.88
+          }
+        }
+      },
+      "requests_per_second": {
+        "min": 380.17,
+        "median": 494.62,
+        "p95": 623.3,
+        "p99": 623.3,
+        "max": 623.3
+      },
+      "duration_ms": {
+        "min": 385.04,
+        "median": 485.22,
+        "p95": 631.3,
+        "p99": 631.3,
+        "max": 631.3
+      },
+      "latency_ms": {
+        "p50": {
+          "min": 26.06,
+          "median": 33.41,
+          "p95": 40.01,
+          "p99": 40.01,
+          "max": 40.01
+        },
+        "p95": {
+          "min": 34.1,
+          "median": 43.76,
+          "p95": 56.26,
+          "p99": 56.26,
+          "max": 56.26
+        },
+        "p99": {
+          "min": 37.17,
+          "median": 45.3,
+          "p95": 64.88,
+          "p99": 64.88,
+          "max": 64.88
+        }
+      }
+    },
+    {
+      "name": "svelte",
+      "target_name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "rounds": 3,
+      "round_count": 3,
+      "successful_round_count": 3,
+      "requests_per_round": 240,
+      "total_requests": 720,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "errors_total": 0,
+      "bytes": 375840,
+      "output_hash_stable": null,
+      "output_hash_stability_measured": false,
+      "output_hash_stability_scope": "not_measured_in_rounds",
+      "preflight_output_hash_stable": true,
+      "preflight_output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "preflight_output_sha256_values": [
+        "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d"
+      ],
+      "output_sha256_values": [
+        "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d"
+      ],
+      "aggregate": {
+        "requests_per_second": {
+          "min": 1288.12,
+          "median": 1544.76,
+          "p95": 2010.14,
+          "p99": 2010.14,
+          "max": 2010.14
+        },
+        "duration_ms": {
+          "min": 119.39,
+          "median": 155.36,
+          "p95": 186.32,
+          "p99": 186.32,
+          "max": 186.32
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 7.22,
+            "median": 9.86,
+            "p95": 11.32,
+            "p99": 11.32,
+            "max": 11.32
+          },
+          "p95": {
+            "min": 12.74,
+            "median": 17.12,
+            "p95": 20.85,
+            "p99": 20.85,
+            "max": 20.85
+          },
+          "p99": {
+            "min": 13.53,
+            "median": 17.69,
+            "p95": 22.55,
+            "p99": 22.55,
+            "max": 22.55
+          }
+        }
+      },
+      "requests_per_second": {
+        "min": 1288.12,
+        "median": 1544.76,
+        "p95": 2010.14,
+        "p99": 2010.14,
+        "max": 2010.14
+      },
+      "duration_ms": {
+        "min": 119.39,
+        "median": 155.36,
+        "p95": 186.32,
+        "p99": 186.32,
+        "max": 186.32
+      },
+      "latency_ms": {
+        "p50": {
+          "min": 7.22,
+          "median": 9.86,
+          "p95": 11.32,
+          "p99": 11.32,
+          "max": 11.32
+        },
+        "p95": {
+          "min": 12.74,
+          "median": 17.12,
+          "p95": 20.85,
+          "p99": 20.85,
+          "max": 20.85
+        },
+        "p99": {
+          "min": 13.53,
+          "median": 17.69,
+          "p95": 22.55,
+          "p99": 22.55,
+          "max": 22.55
+        }
+      }
+    },
+    {
+      "name": "astro",
+      "target_name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "rounds": 3,
+      "round_count": 3,
+      "successful_round_count": 3,
+      "requests_per_round": 240,
+      "total_requests": 720,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "errors_total": 0,
+      "bytes": 1959840,
+      "output_hash_stable": null,
+      "output_hash_stability_measured": false,
+      "output_hash_stability_scope": "not_measured_in_rounds",
+      "preflight_output_hash_stable": true,
+      "preflight_output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "preflight_output_sha256_values": [
+        "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962"
+      ],
+      "output_sha256_values": [
+        "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962"
+      ],
+      "aggregate": {
+        "requests_per_second": {
+          "min": 1259.9,
+          "median": 1644.93,
+          "p95": 2190.14,
+          "p99": 2190.14,
+          "max": 2190.14
+        },
+        "duration_ms": {
+          "min": 109.58,
+          "median": 145.9,
+          "p95": 190.49,
+          "p99": 190.49,
+          "max": 190.49
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 6.87,
+            "median": 9.14,
+            "p95": 11.48,
+            "p99": 11.48,
+            "max": 11.48
+          },
+          "p95": {
+            "min": 9.59,
+            "median": 15.1,
+            "p95": 20.02,
+            "p99": 20.02,
+            "max": 20.02
+          },
+          "p99": {
+            "min": 10.11,
+            "median": 15.94,
+            "p95": 25.29,
+            "p99": 25.29,
+            "max": 25.29
+          }
+        }
+      },
+      "requests_per_second": {
+        "min": 1259.9,
+        "median": 1644.93,
+        "p95": 2190.14,
+        "p99": 2190.14,
+        "max": 2190.14
+      },
+      "duration_ms": {
+        "min": 109.58,
+        "median": 145.9,
+        "p95": 190.49,
+        "p99": 190.49,
+        "max": 190.49
+      },
+      "latency_ms": {
+        "p50": {
+          "min": 6.87,
+          "median": 9.14,
+          "p95": 11.48,
+          "p99": 11.48,
+          "max": 11.48
+        },
+        "p95": {
+          "min": 9.59,
+          "median": 15.1,
+          "p95": 20.02,
+          "p99": 20.02,
+          "max": 20.02
+        },
+        "p99": {
+          "min": 10.11,
+          "median": 15.94,
+          "p95": 25.29,
+          "p99": 25.29,
+          "max": 25.29
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "round_count": 3,
+    "measured_round_count": 3,
+    "request_count": 240,
+    "concurrency": 16,
+    "warmup": 20,
+    "targets": [
+      {
+        "name": "www",
+        "target_name": "www",
+        "url": "http://127.0.0.1:42104/fair-counter",
+        "rounds": 3,
+        "round_count": 3,
+        "successful_round_count": 3,
+        "requests_per_round": 240,
+        "total_requests": 720,
+        "concurrency": 16,
+        "warmup": 20,
+        "request_timeout_ms": 10000,
+        "errors": 0,
+        "errors_total": 0,
+        "bytes": 341280,
+        "output_hash_stable": null,
+        "output_hash_stability_measured": false,
+        "output_hash_stability_scope": "not_measured_in_rounds",
+        "preflight_output_hash_stable": true,
+        "preflight_output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+        "preflight_output_sha256_values": [
+          "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa"
+        ],
+        "output_sha256_values": [
+          "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa"
+        ],
+        "aggregate": {
+          "requests_per_second": {
+            "min": 843.37,
+            "median": 1689.26,
+            "p95": 2726.93,
+            "p99": 2726.93,
+            "max": 2726.93
+          },
+          "duration_ms": {
+            "min": 88.01,
+            "median": 142.07,
+            "p95": 284.57,
+            "p99": 284.57,
+            "max": 284.57
+          },
+          "latency_ms": {
+            "p50": {
+              "min": 5.14,
+              "median": 9.44,
+              "p95": 16.79,
+              "p99": 16.79,
+              "max": 16.79
+            },
+            "p95": {
+              "min": 9.42,
+              "median": 12.23,
+              "p95": 35.43,
+              "p99": 35.43,
+              "max": 35.43
+            },
+            "p99": {
+              "min": 10.3,
+              "median": 12.44,
+              "p95": 40.19,
+              "p99": 40.19,
+              "max": 40.19
+            }
+          }
+        },
+        "requests_per_second": {
+          "min": 843.37,
+          "median": 1689.26,
+          "p95": 2726.93,
+          "p99": 2726.93,
+          "max": 2726.93
+        },
+        "duration_ms": {
+          "min": 88.01,
+          "median": 142.07,
+          "p95": 284.57,
+          "p99": 284.57,
+          "max": 284.57
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 5.14,
+            "median": 9.44,
+            "p95": 16.79,
+            "p99": 16.79,
+            "max": 16.79
+          },
+          "p95": {
+            "min": 9.42,
+            "median": 12.23,
+            "p95": 35.43,
+            "p99": 35.43,
+            "max": 35.43
+          },
+          "p99": {
+            "min": 10.3,
+            "median": 12.44,
+            "p95": 40.19,
+            "p99": 40.19,
+            "max": 40.19
+          }
+        }
+      },
+      {
+        "name": "next",
+        "target_name": "next",
+        "url": "http://127.0.0.1:42101/",
+        "rounds": 3,
+        "round_count": 3,
+        "successful_round_count": 3,
+        "requests_per_round": 240,
+        "total_requests": 720,
+        "concurrency": 16,
+        "warmup": 20,
+        "request_timeout_ms": 10000,
+        "errors": 0,
+        "errors_total": 0,
+        "bytes": 4631760,
+        "output_hash_stable": null,
+        "output_hash_stability_measured": false,
+        "output_hash_stability_scope": "not_measured_in_rounds",
+        "preflight_output_hash_stable": true,
+        "preflight_output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+        "preflight_output_sha256_values": [
+          "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a"
+        ],
+        "output_sha256_values": [
+          "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a"
+        ],
+        "aggregate": {
+          "requests_per_second": {
+            "min": 380.17,
+            "median": 494.62,
+            "p95": 623.3,
+            "p99": 623.3,
+            "max": 623.3
+          },
+          "duration_ms": {
+            "min": 385.04,
+            "median": 485.22,
+            "p95": 631.3,
+            "p99": 631.3,
+            "max": 631.3
+          },
+          "latency_ms": {
+            "p50": {
+              "min": 26.06,
+              "median": 33.41,
+              "p95": 40.01,
+              "p99": 40.01,
+              "max": 40.01
+            },
+            "p95": {
+              "min": 34.1,
+              "median": 43.76,
+              "p95": 56.26,
+              "p99": 56.26,
+              "max": 56.26
+            },
+            "p99": {
+              "min": 37.17,
+              "median": 45.3,
+              "p95": 64.88,
+              "p99": 64.88,
+              "max": 64.88
+            }
+          }
+        },
+        "requests_per_second": {
+          "min": 380.17,
+          "median": 494.62,
+          "p95": 623.3,
+          "p99": 623.3,
+          "max": 623.3
+        },
+        "duration_ms": {
+          "min": 385.04,
+          "median": 485.22,
+          "p95": 631.3,
+          "p99": 631.3,
+          "max": 631.3
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 26.06,
+            "median": 33.41,
+            "p95": 40.01,
+            "p99": 40.01,
+            "max": 40.01
+          },
+          "p95": {
+            "min": 34.1,
+            "median": 43.76,
+            "p95": 56.26,
+            "p99": 56.26,
+            "max": 56.26
+          },
+          "p99": {
+            "min": 37.17,
+            "median": 45.3,
+            "p95": 64.88,
+            "p99": 64.88,
+            "max": 64.88
+          }
+        }
+      },
+      {
+        "name": "svelte",
+        "target_name": "svelte",
+        "url": "http://127.0.0.1:42102/",
+        "rounds": 3,
+        "round_count": 3,
+        "successful_round_count": 3,
+        "requests_per_round": 240,
+        "total_requests": 720,
+        "concurrency": 16,
+        "warmup": 20,
+        "request_timeout_ms": 10000,
+        "errors": 0,
+        "errors_total": 0,
+        "bytes": 375840,
+        "output_hash_stable": null,
+        "output_hash_stability_measured": false,
+        "output_hash_stability_scope": "not_measured_in_rounds",
+        "preflight_output_hash_stable": true,
+        "preflight_output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+        "preflight_output_sha256_values": [
+          "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d"
+        ],
+        "output_sha256_values": [
+          "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d"
+        ],
+        "aggregate": {
+          "requests_per_second": {
+            "min": 1288.12,
+            "median": 1544.76,
+            "p95": 2010.14,
+            "p99": 2010.14,
+            "max": 2010.14
+          },
+          "duration_ms": {
+            "min": 119.39,
+            "median": 155.36,
+            "p95": 186.32,
+            "p99": 186.32,
+            "max": 186.32
+          },
+          "latency_ms": {
+            "p50": {
+              "min": 7.22,
+              "median": 9.86,
+              "p95": 11.32,
+              "p99": 11.32,
+              "max": 11.32
+            },
+            "p95": {
+              "min": 12.74,
+              "median": 17.12,
+              "p95": 20.85,
+              "p99": 20.85,
+              "max": 20.85
+            },
+            "p99": {
+              "min": 13.53,
+              "median": 17.69,
+              "p95": 22.55,
+              "p99": 22.55,
+              "max": 22.55
+            }
+          }
+        },
+        "requests_per_second": {
+          "min": 1288.12,
+          "median": 1544.76,
+          "p95": 2010.14,
+          "p99": 2010.14,
+          "max": 2010.14
+        },
+        "duration_ms": {
+          "min": 119.39,
+          "median": 155.36,
+          "p95": 186.32,
+          "p99": 186.32,
+          "max": 186.32
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 7.22,
+            "median": 9.86,
+            "p95": 11.32,
+            "p99": 11.32,
+            "max": 11.32
+          },
+          "p95": {
+            "min": 12.74,
+            "median": 17.12,
+            "p95": 20.85,
+            "p99": 20.85,
+            "max": 20.85
+          },
+          "p99": {
+            "min": 13.53,
+            "median": 17.69,
+            "p95": 22.55,
+            "p99": 22.55,
+            "max": 22.55
+          }
+        }
+      },
+      {
+        "name": "astro",
+        "target_name": "astro",
+        "url": "http://127.0.0.1:42103/",
+        "rounds": 3,
+        "round_count": 3,
+        "successful_round_count": 3,
+        "requests_per_round": 240,
+        "total_requests": 720,
+        "concurrency": 16,
+        "warmup": 20,
+        "request_timeout_ms": 10000,
+        "errors": 0,
+        "errors_total": 0,
+        "bytes": 1959840,
+        "output_hash_stable": null,
+        "output_hash_stability_measured": false,
+        "output_hash_stability_scope": "not_measured_in_rounds",
+        "preflight_output_hash_stable": true,
+        "preflight_output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+        "preflight_output_sha256_values": [
+          "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962"
+        ],
+        "output_sha256_values": [
+          "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962"
+        ],
+        "aggregate": {
+          "requests_per_second": {
+            "min": 1259.9,
+            "median": 1644.93,
+            "p95": 2190.14,
+            "p99": 2190.14,
+            "max": 2190.14
+          },
+          "duration_ms": {
+            "min": 109.58,
+            "median": 145.9,
+            "p95": 190.49,
+            "p99": 190.49,
+            "max": 190.49
+          },
+          "latency_ms": {
+            "p50": {
+              "min": 6.87,
+              "median": 9.14,
+              "p95": 11.48,
+              "p99": 11.48,
+              "max": 11.48
+            },
+            "p95": {
+              "min": 9.59,
+              "median": 15.1,
+              "p95": 20.02,
+              "p99": 20.02,
+              "max": 20.02
+            },
+            "p99": {
+              "min": 10.11,
+              "median": 15.94,
+              "p95": 25.29,
+              "p99": 25.29,
+              "max": 25.29
+            }
+          }
+        },
+        "requests_per_second": {
+          "min": 1259.9,
+          "median": 1644.93,
+          "p95": 2190.14,
+          "p99": 2190.14,
+          "max": 2190.14
+        },
+        "duration_ms": {
+          "min": 109.58,
+          "median": 145.9,
+          "p95": 190.49,
+          "p99": 190.49,
+          "max": 190.49
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 6.87,
+            "median": 9.14,
+            "p95": 11.48,
+            "p99": 11.48,
+            "max": 11.48
+          },
+          "p95": {
+            "min": 9.59,
+            "median": 15.1,
+            "p95": 20.02,
+            "p99": 20.02,
+            "max": 20.02
+          },
+          "p99": {
+            "min": 10.11,
+            "median": 15.94,
+            "p95": 25.29,
+            "p99": 25.29,
+            "max": 25.29
+          }
+        }
+      }
+    ]
+  },
+  "aggregates": [
+    {
+      "name": "www",
+      "target_name": "www",
+      "url": "http://127.0.0.1:42104/fair-counter",
+      "rounds": 3,
+      "round_count": 3,
+      "successful_round_count": 3,
+      "requests_per_round": 240,
+      "total_requests": 720,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "errors_total": 0,
+      "bytes": 341280,
+      "output_hash_stable": null,
+      "output_hash_stability_measured": false,
+      "output_hash_stability_scope": "not_measured_in_rounds",
+      "preflight_output_hash_stable": true,
+      "preflight_output_sha256": "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa",
+      "preflight_output_sha256_values": [
+        "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa"
+      ],
+      "output_sha256_values": [
+        "dd19307f489a50c4b9374c9e85136d720e915bdf3314230bf085ebb2de00aaaa"
+      ],
+      "aggregate": {
+        "requests_per_second": {
+          "min": 843.37,
+          "median": 1689.26,
+          "p95": 2726.93,
+          "p99": 2726.93,
+          "max": 2726.93
+        },
+        "duration_ms": {
+          "min": 88.01,
+          "median": 142.07,
+          "p95": 284.57,
+          "p99": 284.57,
+          "max": 284.57
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 5.14,
+            "median": 9.44,
+            "p95": 16.79,
+            "p99": 16.79,
+            "max": 16.79
+          },
+          "p95": {
+            "min": 9.42,
+            "median": 12.23,
+            "p95": 35.43,
+            "p99": 35.43,
+            "max": 35.43
+          },
+          "p99": {
+            "min": 10.3,
+            "median": 12.44,
+            "p95": 40.19,
+            "p99": 40.19,
+            "max": 40.19
+          }
+        }
+      },
+      "requests_per_second": {
+        "min": 843.37,
+        "median": 1689.26,
+        "p95": 2726.93,
+        "p99": 2726.93,
+        "max": 2726.93
+      },
+      "duration_ms": {
+        "min": 88.01,
+        "median": 142.07,
+        "p95": 284.57,
+        "p99": 284.57,
+        "max": 284.57
+      },
+      "latency_ms": {
+        "p50": {
+          "min": 5.14,
+          "median": 9.44,
+          "p95": 16.79,
+          "p99": 16.79,
+          "max": 16.79
+        },
+        "p95": {
+          "min": 9.42,
+          "median": 12.23,
+          "p95": 35.43,
+          "p99": 35.43,
+          "max": 35.43
+        },
+        "p99": {
+          "min": 10.3,
+          "median": 12.44,
+          "p95": 40.19,
+          "p99": 40.19,
+          "max": 40.19
+        }
+      }
+    },
+    {
+      "name": "next",
+      "target_name": "next",
+      "url": "http://127.0.0.1:42101/",
+      "rounds": 3,
+      "round_count": 3,
+      "successful_round_count": 3,
+      "requests_per_round": 240,
+      "total_requests": 720,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "errors_total": 0,
+      "bytes": 4631760,
+      "output_hash_stable": null,
+      "output_hash_stability_measured": false,
+      "output_hash_stability_scope": "not_measured_in_rounds",
+      "preflight_output_hash_stable": true,
+      "preflight_output_sha256": "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a",
+      "preflight_output_sha256_values": [
+        "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a"
+      ],
+      "output_sha256_values": [
+        "08fb0b8dcb83ea3728f12744d49a1854c19a05805beaa159218a0ac54b1abb3a"
+      ],
+      "aggregate": {
+        "requests_per_second": {
+          "min": 380.17,
+          "median": 494.62,
+          "p95": 623.3,
+          "p99": 623.3,
+          "max": 623.3
+        },
+        "duration_ms": {
+          "min": 385.04,
+          "median": 485.22,
+          "p95": 631.3,
+          "p99": 631.3,
+          "max": 631.3
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 26.06,
+            "median": 33.41,
+            "p95": 40.01,
+            "p99": 40.01,
+            "max": 40.01
+          },
+          "p95": {
+            "min": 34.1,
+            "median": 43.76,
+            "p95": 56.26,
+            "p99": 56.26,
+            "max": 56.26
+          },
+          "p99": {
+            "min": 37.17,
+            "median": 45.3,
+            "p95": 64.88,
+            "p99": 64.88,
+            "max": 64.88
+          }
+        }
+      },
+      "requests_per_second": {
+        "min": 380.17,
+        "median": 494.62,
+        "p95": 623.3,
+        "p99": 623.3,
+        "max": 623.3
+      },
+      "duration_ms": {
+        "min": 385.04,
+        "median": 485.22,
+        "p95": 631.3,
+        "p99": 631.3,
+        "max": 631.3
+      },
+      "latency_ms": {
+        "p50": {
+          "min": 26.06,
+          "median": 33.41,
+          "p95": 40.01,
+          "p99": 40.01,
+          "max": 40.01
+        },
+        "p95": {
+          "min": 34.1,
+          "median": 43.76,
+          "p95": 56.26,
+          "p99": 56.26,
+          "max": 56.26
+        },
+        "p99": {
+          "min": 37.17,
+          "median": 45.3,
+          "p95": 64.88,
+          "p99": 64.88,
+          "max": 64.88
+        }
+      }
+    },
+    {
+      "name": "svelte",
+      "target_name": "svelte",
+      "url": "http://127.0.0.1:42102/",
+      "rounds": 3,
+      "round_count": 3,
+      "successful_round_count": 3,
+      "requests_per_round": 240,
+      "total_requests": 720,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "errors_total": 0,
+      "bytes": 375840,
+      "output_hash_stable": null,
+      "output_hash_stability_measured": false,
+      "output_hash_stability_scope": "not_measured_in_rounds",
+      "preflight_output_hash_stable": true,
+      "preflight_output_sha256": "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d",
+      "preflight_output_sha256_values": [
+        "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d"
+      ],
+      "output_sha256_values": [
+        "34025faa34e678d5fbda540644b23d9a5daa6a071f40c289482c94f5db9a737d"
+      ],
+      "aggregate": {
+        "requests_per_second": {
+          "min": 1288.12,
+          "median": 1544.76,
+          "p95": 2010.14,
+          "p99": 2010.14,
+          "max": 2010.14
+        },
+        "duration_ms": {
+          "min": 119.39,
+          "median": 155.36,
+          "p95": 186.32,
+          "p99": 186.32,
+          "max": 186.32
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 7.22,
+            "median": 9.86,
+            "p95": 11.32,
+            "p99": 11.32,
+            "max": 11.32
+          },
+          "p95": {
+            "min": 12.74,
+            "median": 17.12,
+            "p95": 20.85,
+            "p99": 20.85,
+            "max": 20.85
+          },
+          "p99": {
+            "min": 13.53,
+            "median": 17.69,
+            "p95": 22.55,
+            "p99": 22.55,
+            "max": 22.55
+          }
+        }
+      },
+      "requests_per_second": {
+        "min": 1288.12,
+        "median": 1544.76,
+        "p95": 2010.14,
+        "p99": 2010.14,
+        "max": 2010.14
+      },
+      "duration_ms": {
+        "min": 119.39,
+        "median": 155.36,
+        "p95": 186.32,
+        "p99": 186.32,
+        "max": 186.32
+      },
+      "latency_ms": {
+        "p50": {
+          "min": 7.22,
+          "median": 9.86,
+          "p95": 11.32,
+          "p99": 11.32,
+          "max": 11.32
+        },
+        "p95": {
+          "min": 12.74,
+          "median": 17.12,
+          "p95": 20.85,
+          "p99": 20.85,
+          "max": 20.85
+        },
+        "p99": {
+          "min": 13.53,
+          "median": 17.69,
+          "p95": 22.55,
+          "p99": 22.55,
+          "max": 22.55
+        }
+      }
+    },
+    {
+      "name": "astro",
+      "target_name": "astro",
+      "url": "http://127.0.0.1:42103/",
+      "rounds": 3,
+      "round_count": 3,
+      "successful_round_count": 3,
+      "requests_per_round": 240,
+      "total_requests": 720,
+      "concurrency": 16,
+      "warmup": 20,
+      "request_timeout_ms": 10000,
+      "errors": 0,
+      "errors_total": 0,
+      "bytes": 1959840,
+      "output_hash_stable": null,
+      "output_hash_stability_measured": false,
+      "output_hash_stability_scope": "not_measured_in_rounds",
+      "preflight_output_hash_stable": true,
+      "preflight_output_sha256": "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962",
+      "preflight_output_sha256_values": [
+        "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962"
+      ],
+      "output_sha256_values": [
+        "8d21e0ff104f3ac22f7b6991fb0610c430e5a25d5294b1a415f17e0f8a573962"
+      ],
+      "aggregate": {
+        "requests_per_second": {
+          "min": 1259.9,
+          "median": 1644.93,
+          "p95": 2190.14,
+          "p99": 2190.14,
+          "max": 2190.14
+        },
+        "duration_ms": {
+          "min": 109.58,
+          "median": 145.9,
+          "p95": 190.49,
+          "p99": 190.49,
+          "max": 190.49
+        },
+        "latency_ms": {
+          "p50": {
+            "min": 6.87,
+            "median": 9.14,
+            "p95": 11.48,
+            "p99": 11.48,
+            "max": 11.48
+          },
+          "p95": {
+            "min": 9.59,
+            "median": 15.1,
+            "p95": 20.02,
+            "p99": 20.02,
+            "max": 20.02
+          },
+          "p99": {
+            "min": 10.11,
+            "median": 15.94,
+            "p95": 25.29,
+            "p99": 25.29,
+            "max": 25.29
+          }
+        }
+      },
+      "requests_per_second": {
+        "min": 1259.9,
+        "median": 1644.93,
+        "p95": 2190.14,
+        "p99": 2190.14,
+        "max": 2190.14
+      },
+      "duration_ms": {
+        "min": 109.58,
+        "median": 145.9,
+        "p95": 190.49,
+        "p99": 190.49,
+        "max": 190.49
+      },
+      "latency_ms": {
+        "p50": {
+          "min": 6.87,
+          "median": 9.14,
+          "p95": 11.48,
+          "p99": 11.48,
+          "max": 11.48
+        },
+        "p95": {
+          "min": 9.59,
+          "median": 15.1,
+          "p95": 20.02,
+          "p99": 20.02,
+          "max": 20.02
+        },
+        "p99": {
+          "min": 10.11,
+          "median": 15.94,
+          "p95": 25.29,
+          "p99": 25.29,
+          "max": 25.29
+        }
+      }
+    }
+  ],
+  "upstream_baseline_measured": false,
+  "faster_than_upstream_claimed": false,
+  "same_machine_replay_required_for_speed_claim": true,
+  "claims": {
+    "upstream_baseline_measured": false,
+    "faster_than_upstream_claimed": false,
+    "same_machine_replay_required_for_speed_claim": true
+  },
+  "no_claims": {
+    "no_claim_cross_machine_comparison": true,
+    "no_claim_production_latency": true,
+    "no_claim_browser_render_performance": true,
+    "no_claim_cold_start_performance": true,
+    "no_claim_memory_or_cpu_efficiency": true,
+    "no_claim_build_time_or_bundle_size": true,
+    "no_claim_statistical_significance_beyond_recorded_rounds": true,
+    "no_claim_framework_absolute_superiority": true
+  },
+  "claim_boundary": "This receipt records one local configured benchmark run. It is not a faster-than-upstream claim without a replayed upstream/fork baseline on the same machine.",
+  "import_source_path": "target/framework-comparison-20260601/throughput.json",
+  "import_source_within_project": true,
+  "imported_by": "www readiness --import-same-machine-performance-receipt",
+  "import_rule": "validated-same-machine-performance-current-before-canonical-write",
+  "collection_receipt_path": "target/framework-comparison-20260531/throughput.json",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/same-machine-performance-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-same-machine-performance-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "e8317c84270a36bfaef38e553dba32d39d6b83a22be7ec0c490cfbaddeff3d90",
+    "machine_blake3": "73dfc1701375eceaef0cafdfaf9e500577a153d51f823e271b668894a3e63f6f"
+  },
+  "release_ready": false,
+  "fastest_world_claim": false
+}

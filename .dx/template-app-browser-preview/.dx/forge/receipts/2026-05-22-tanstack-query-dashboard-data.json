@@ -1,0 +1,320 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "tanstack/query",
+  "official_package_name": "Data Fetching & Cache",
+  "package_name": "Data Fetching & Cache",
+  "upstream_package": "@tanstack/react-query",
+  "source_mirror": "G:/WWW/inspirations/tanstack-query",
+  "route": "/",
+  "component": "tanstack-query-dashboard-data-workflow",
+  "workflow": "query-backed-dashboard-data",
+  "product_surface": "launch-dashboard",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 99,
+  "source_files": [
+    "core/src/ecosystem/forge_tanstack_query.rs",
+    "examples/template/query-cache-status.tsx",
+    "examples/template/query-dashboard-read-model.ts",
+    "examples/template/template-shell.tsx",
+    "examples/template/dx-studio-edit-contract.ts",
+    "examples/template/template-route-contract.ts",
+    "examples/template/package-catalog.ts",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/dashboard/src/lib/queryDashboardWorkflow.ts",
+    "examples/dashboard/src/components/QueryDashboardWorkflow.tsx",
+    "docs/packages/data-fetching-cache.source-guard-runbook.json",
+    "tools/launch/materialize-www-template.ts",
+    "examples/template/components/template-app/dashboard-query-cache.ts",
+    "examples/template/server/query-cache/readiness.ts",
+    "examples/template/app/api/query-cache/readiness/route.ts"
+  ],
+  "files": [
+    "core/src/ecosystem/forge_tanstack_query.rs",
+    "examples/template/query-cache-status.tsx",
+    "examples/template/query-dashboard-read-model.ts",
+    "examples/template/template-shell.tsx",
+    "examples/template/dx-studio-edit-contract.ts",
+    "examples/template/template-route-contract.ts",
+    "examples/template/package-catalog.ts",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/dashboard/src/lib/queryDashboardWorkflow.ts",
+    "examples/dashboard/src/components/QueryDashboardWorkflow.tsx",
+    "docs/packages/data-fetching-cache.source-guard-runbook.json",
+    "tools/launch/materialize-www-template.ts",
+    "examples/template/components/template-app/dashboard-query-cache.ts",
+    "examples/template/server/query-cache/readiness.ts",
+    "examples/template/app/api/query-cache/readiness/route.ts"
+  ],
+  "hash_algorithm": "sha256",
+  "file_hashes": {
+    "core/src/ecosystem/forge_tanstack_query.rs": "1e44c1418141d98c38ef3d015161c11abd46d17c042270f369e8c63592bbfa97",
+    "examples/template/query-cache-status.tsx": "25c45796ec447cb5f7ca4c6dc9c334db2803dcfc60bf7085fd314095c0a03e0b",
+    "examples/template/query-dashboard-read-model.ts": "fdbc89d9bccc6d4fe2a3d517fc001eeebd2adfa04d27ed3b91db6f6d3445c934",
+    "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+    "examples/template/dx-studio-edit-contract.ts": "8f7160139fbeda7379bdec1303bafd915cdcea5d07b50864648ddf00173b1750",
+    "examples/template/template-route-contract.ts": "12fa78599c5d94d9f19baec62fc245c4879f3d10af15a8a05e557f879152e7be",
+    "examples/template/package-catalog.ts": "09dccd3de0803634dd765444b3aa5176f3d2fbb36a2520467400156588f13f50",
+    "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+    "examples/dashboard/src/lib/queryDashboardWorkflow.ts": "2c74ea87396009e14a4faeb3b068b6e6bfa5f1aab9ef99c89f3e4ba6518f781e",
+    "examples/dashboard/src/components/QueryDashboardWorkflow.tsx": "27b6953c2d1a29e3897ff3b74616a399648c4184271ef1b262f79d9ef24e006e",
+    "docs/packages/data-fetching-cache.source-guard-runbook.json": "c821719bcd2eae27a73b2b48f3f72426b920167fea1a030dce3fd449dda683bb",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c",
+    "examples/template/components/template-app/dashboard-query-cache.ts": "a76b3cc24aad4719321b336fd242ccc5863e832c359c4fcb177b13495a688158",
+    "examples/template/server/query-cache/readiness.ts": "8404f59456efbca59665828a135413472c21f72ff325d2124301dcadf990789e",
+    "examples/template/app/api/query-cache/readiness/route.ts": "474b28d0a066ce7f4c48a344b426a9cefb0e36261b67d05ae14d69662ebb0097"
+  },
+  "hash_exclusions": [
+    {
+      "path": "examples/template/.dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json",
+      "reason": "Receipt self-hashing would create a recursive digest."
+    },
+    {
+      "path": "core/src/ecosystem/project_check/data_fetching_cache_dx_check.rs",
+      "reason": "The checker consumes the hash manifest but is not a generated Data Fetching & Cache app surface."
+    },
+    {
+      "path": "docs/packages/tanstack-query.md",
+      "reason": "Human package documentation is tracked separately from selected app source-surface hashes."
+    }
+  ],
+  "materialized_files": [
+    "components/launch/query-cache-status.tsx",
+    "components/launch/query-dashboard-read-model.ts",
+    "components/launch/dx-studio-edit-contract.ts",
+    "components/launch/template-route-contract.ts",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "public/preview-manifest.json",
+    "pages/index.html",
+    ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json"
+  ],
+  "upstream_public_apis": [
+    "QueryClient",
+    "useQuery",
+    "useMutation",
+    "queryOptions",
+    "mutationOptions",
+    "invalidateQueries",
+    "fetchQuery",
+    "setQueryDefaults",
+    "getQueryDefaults"
+  ],
+  "local_readiness_interactions": [
+    "refresh-dashboard-data",
+    "fetch-dashboard-data-now",
+    "inspect-package-readiness-queue",
+    "apply-query-cache-profile",
+    "toggle-query-focus-online-readiness"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"tanstack/query\"",
+    "data-dx-component=\"tanstack-query-dashboard-data-workflow\"",
+    "data-dx-dashboard-workflow=\"query-backed-dashboard-data\"",
+    "data-dx-product-surface=\"launch-dashboard\"",
+    "data-dx-style-surface=\"data-fetching-cache\"",
+    "data-dx-query-action=\"refresh-dashboard-data\"",
+    "data-dx-query-action=\"fetch-dashboard-data-now\"",
+    "data-dx-query-dashboard-queue=\"package-readiness\"",
+    "data-dx-query-dashboard-source",
+    "data-dx-query-dashboard-package-count",
+    "data-dx-query-dashboard-role-count",
+    "data-dx-query-dashboard-required-env-count",
+    "data-dx-query-package-id",
+    "data-dx-query-package-role",
+    "data-dx-query-package-status",
+    "data-dx-query-safe-action=\"read-dashboard-catalog\"",
+    "data-dx-query-result-status",
+    "data-dx-node-modules=\"forbidden\""
+  ],
+  "required_env": [],
+  "app_owned_boundaries": [
+    "Dashboard query keys",
+    "Network fetchers",
+    "Cache invalidation policy",
+    "Retry and stale-time policy",
+    "Production loading and error UI",
+    "Dependency installation outside the no-node-modules Forge path"
+  ],
+  "missing_runtime_features": [
+    "Friday-governed browser proof",
+    "production network fetcher",
+    "app-specific persisted cache policy",
+    "credential-backed telemetry retention"
+  ],
+  "guards": [
+    "node --test .\\benchmarks\\tanstack-query-slice.test.ts",
+    "node --test .\\benchmarks\\tanstack-query-dashboard-workflow.test.ts",
+    "node --test .\\benchmarks\\launch-runtime-materializer.test.ts"
+  ],
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "package_id": "tanstack/query",
+    "official_package_name": "Data Fetching & Cache",
+    "current_status": "present",
+    "receipt_path": ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json",
+    "status_legend": [
+      {
+        "status": "present",
+        "meaning": "selected Data Fetching & Cache source surfaces, visible markers, and receipt are present"
+      },
+      {
+        "status": "stale",
+        "meaning": "materialized Data Fetching & Cache files or hashes no longer match the Forge receipt"
+      },
+      {
+        "status": "missing-receipt",
+        "meaning": "selected Data Fetching & Cache surfaces exist without the dashboard workflow receipt"
+      },
+      {
+        "status": "blocked",
+        "meaning": "runtime proof, network fetcher ownership, or app-owned cache policy approval is required before claiming more"
+      },
+      {
+        "status": "unsupported-surface",
+        "meaning": "a requested Data Fetching & Cache surface is outside the selected upstream-backed set"
+      }
+    ],
+    "monitored_surfaces": [
+      {
+        "id": "query-dashboard-workflow",
+        "status": "present",
+        "source_file": "examples/template/query-cache-status.tsx",
+        "materialized_file": "components/launch/query-cache-status.tsx",
+        "receipt_path": ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json",
+        "files": [
+          "examples/template/components/template-app/dashboard-query-cache.ts"
+        ]
+      },
+      {
+        "id": "query-dashboard-read-model",
+        "status": "present",
+        "source_file": "examples/template/query-dashboard-read-model.ts",
+        "materialized_file": "components/launch/query-dashboard-read-model.ts",
+        "receipt_path": ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json"
+      },
+      {
+        "id": "starter-dashboard-workflow",
+        "status": "present",
+        "source_file": "examples/dashboard/src/components/QueryDashboardWorkflow.tsx",
+        "materialized_file": "examples/dashboard/src/components/QueryDashboardWorkflow.tsx",
+        "receipt_path": ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json"
+      },
+      {
+        "id": "production-network-fetcher",
+        "status": "blocked",
+        "source_file": "app-owned",
+        "materialized_file": "app-owned",
+        "receipt_path": ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json"
+      },
+      {
+        "id": "devtools-runtime-panel",
+        "status": "unsupported-surface",
+        "source_file": "query/devtools.tsx",
+        "materialized_file": "not-selected",
+        "receipt_path": ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json"
+      },
+      {
+        "id": "data-fetching-cache-preview-manifest-materializer",
+        "status": "present",
+        "source_file": "tools/launch/materialize-www-template.ts",
+        "generated_file": "public/preview-manifest.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json",
+        "source_markers": [
+          "sourceGuardRunbookFixtures",
+          "routes[].sourceGuardRunbookFixtures",
+          "docs/packages/data-fetching-cache.source-guard-runbook.json"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+        },
+        "next_action": "Keep generated preview-manifest fixture emission hash-backed without claiming live QueryClient proof."
+      },
+      {
+        "id": "data-fetching-cache-readiness-route",
+        "status": "present",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json",
+        "files": [
+          "examples/template/server/query-cache/readiness.ts",
+          "examples/template/app/api/query-cache/readiness/route.ts"
+        ],
+        "source_markers": [
+          "readDataFetchingCacheReadiness",
+          "createDataFetchingCacheReadinessResponse",
+          "app/api/query-cache/readiness/route.ts",
+          "queryclient-adapter-required",
+          "createDataFetchingCacheActionResponse",
+          "source-owned-cache-action-dry-run",
+          "export async function POST",
+          "createDataFetchingCacheActionErrorResponse",
+          "unsupported-cache-action"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/server/query-cache/readiness.ts": "8404f59456efbca59665828a135413472c21f72ff325d2124301dcadf990789e",
+          "examples/template/app/api/query-cache/readiness/route.ts": "474b28d0a066ce7f4c48a344b426a9cefb0e36261b67d05ae14d69662ebb0097"
+        },
+        "next_action": "Keep the route handler source-owned and no-network until a real QueryClient adapter is installed by the app."
+      }
+    ],
+    "unsupported_surfaces": [
+      "unselected devtools runtime panel",
+      "unselected persisted-storage runtime policy",
+      "unselected cross-tab broadcast runtime proof"
+    ],
+    "runtime_limitations": [
+      "No live browser/runtime proof was run",
+      "No production dashboard fetcher is claimed",
+      "No template-local node_modules workflow is claimed"
+    ]
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "styles/globals.css",
+    "generated_css": "styles/globals.css",
+    "visible_surfaces": [
+      "data-fetching-cache-query-dashboard-workflow",
+      "data-fetching-cache-starter-dashboard-workflow"
+    ],
+    "source_files": [
+      "examples/template/query-cache-status.tsx",
+      "examples/dashboard/src/components/QueryDashboardWorkflow.tsx"
+    ],
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json",
+    "runtime_proof": false,
+    "data_dx_markers": [
+      "data-dx-style-surface=\"data-fetching-cache\"",
+      "data-dx-style-surface=\"theme-token\""
+    ],
+    "style_boundaries": [
+      "uses DX token classes",
+      "no inline style objects",
+      "no hardcoded color literals",
+      "browser visual proof remains governed"
+    ],
+    "runtime_limitations": [
+      "SOURCE-ONLY: source markers and token references are present",
+      "No live browser style proof was run",
+      "No governed theme review is claimed"
+    ]
+  },
+  "preview_manifest": {
+    "path": "public/preview-manifest.json",
+    "editable_surface_id": "launch-runtime-query-dashboard-data",
+    "receipt_path": ".dx/forge/receipts/2026-05-22-tanstack-query-dashboard-data.json",
+    "state_markers": [
+      "data-dx-query-dashboard-queue",
+      "data-dx-query-package-id",
+      "data-dx-query-package-role",
+      "data-dx-query-package-status"
+    ],
+    "guarded_by": "DX_LIVE_BASE_URL=<approved-launch-url> node --test .\\benchmarks\\launch-live-runtime-guard.test.ts"
+  },
+  "governed_runtime_guards": [
+    "DX_LIVE_BASE_URL=<approved-launch-url> node --test .\\benchmarks\\launch-live-runtime-guard.test.ts"
+  ],
+  "no_runtime_execution": true
+}

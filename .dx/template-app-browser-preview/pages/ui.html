@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DX UI</title>
+    <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+  </head>
+  <body>
+    <main
+      class="route-shell"
+      data-dx-route="/ui"
+      data-dx-source="tools/launch/runtime-template/pages/ui.html"
+      data-dx-package="shadcn/ui/card,shadcn/ui/button,shadcn/ui/input,dx/icon/search"
+      data-dx-hot-reload-target="route:/ui"
+    >
+      <div class="dx-icon-runtime-markers" data-dx-component="dx-icon-runtime-markers" data-dx-icon-proof="runtime-markers" aria-hidden="true">
+        <span data-dx-icon="pack:auth" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:payments" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:database" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:fumadocs" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:wasm-bindgen" data-icon-source="dx-icons"></span>
+      </div>
+
+      <header class="topbar">
+        <a class="brand" href="/"><span class="logo">d</span><span>DX WWW</span></a>
+        <nav class="nav" aria-label="WWW routes">
+          <a href="/">Home</a>
+          <a href="/automations">Automations</a>
+          <a href="/database">Database</a>
+          <a href="/backend">Backend</a>
+        </nav>
+      </header>
+      <section class="route-hero card" data-dx-editable-section="ui-hero">
+        <p class="eyebrow">shadcn/ui shape</p>
+        <h1>Professional components, source-owned surfaces.</h1>
+        <p class="lead">
+          Buttons, inputs, cards, labels, icons, and command-style actions are
+          visible files in the app instead of opaque install output.
+        </p>
+      </section>
+      <section class="proof-grid" data-dx-section="ui-proof-grid">
+        <article class="card" data-dx-component="ui-button-proof" data-dx-package="shadcn/ui/button">
+          <h2>Button</h2>
+          <button type="button" class="primary" data-dx-action="ui-primary-action">Primary action</button>
+        </article>
+        <article class="card" data-dx-component="ui-form-proof" data-dx-package="shadcn/ui/input">
+          <h2>Input</h2>
+          <label>Workspace name<input value="dx-launch" aria-label="Workspace name" /></label>
+        </article>
+        <article class="card wide" data-dx-component="dx-icon-registry" data-dx-package="dx/icon/search">
+          <h2>DX Icons registry</h2>
+          <p class="copy">Launch, database, automation, payment, and Studio actions use stable DX icon names without adding a standalone Lucide Forge package.</p>
+          <div class="inline-stack">
+            <span class="pill">rocket</span>
+            <span class="pill">database</span>
+            <span class="pill">credit-card</span>
+            <span class="pill">workflow</span>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

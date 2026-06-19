@@ -1,0 +1,147 @@
+{
+  "cache_headers": [
+    {
+      "cache_control": "public, max-age=0, must-revalidate",
+      "glob": "**/*.html"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "glob": "**/*.dxpk"
+    },
+    {
+      "cache_control": "public, max-age=31536000, immutable",
+      "glob": "public/**/*"
+    }
+  ],
+  "generated": "2026-05-21T15:36:33.365372300+00:00",
+  "lifecycle_scripts_executed": false,
+  "manifest_hash": "blake3:4097cfee2f6a737e80f6b1158dc0531dd6e79ad5c0ccea5766b3fbb58b8aa1d8",
+  "manifest_kind": "dx-www-forge-hosting-release-gate",
+  "node_modules_required": false,
+  "observability_endpoints": {
+    "cache_control": "no-store",
+    "collects_request_headers": false,
+    "collects_request_payloads": false,
+    "collects_secrets": false,
+    "health_checks": [],
+    "metadata_path": "observability.json",
+    "metrics_path": "/.dx/observability",
+    "ready_path": "/.dx/ready"
+  },
+  "package_installs_executed": false,
+  "provider_portability": {
+    "portable": true,
+    "primary": "dx-www-cloud-local",
+    "providers": [
+      {
+        "account_required": false,
+        "adapter_kind": "account-free-fixture",
+        "network_required": false,
+        "notes": "Local account-free preview and release review path.",
+        "provider": "dx-www-cloud-local",
+        "supports_source_owned_actions": true,
+        "supports_static_assets": true
+      },
+      {
+        "account_required": false,
+        "adapter_kind": "portable-static-output",
+        "network_required": false,
+        "notes": "Pure static output can ship without server actions.",
+        "provider": "static-hosting",
+        "supports_source_owned_actions": false,
+        "supports_static_assets": true
+      },
+      {
+        "account_required": true,
+        "adapter_kind": "portable-hosted-output",
+        "network_required": true,
+        "notes": "Requires explicit provider binding after manifest signature.",
+        "provider": "vercel-static-output",
+        "supports_source_owned_actions": true,
+        "supports_static_assets": true
+      },
+      {
+        "account_required": true,
+        "adapter_kind": "portable-hosted-output",
+        "network_required": true,
+        "notes": "Requires explicit provider binding after manifest signature.",
+        "provider": "cloudflare-pages",
+        "supports_source_owned_actions": true,
+        "supports_static_assets": true
+      }
+    ],
+    "required_artifacts": [
+      "deploy-adapter.json",
+      "forge-hosting-manifest.json",
+      "hosted-preview.json",
+      "manifest.json",
+      "observability.json",
+      "provider-adapter.dx-cloud.json",
+      "rollback.json"
+    ]
+  },
+  "release_gate": {
+    "account_free_preview_ready": true,
+    "blockers": [
+      "build-manifest-signature-required"
+    ],
+    "coverage_score": 100,
+    "hosted_release_ready": false,
+    "manifest_signature_required": true,
+    "manifest_signed": false,
+    "no_node_modules": true,
+    "provider_portable": true,
+    "required_artifacts": [
+      "deploy-adapter.json",
+      "forge-hosting-manifest.json",
+      "hosted-preview.json",
+      "manifest.json",
+      "observability.json",
+      "provider-adapter.dx-cloud.json",
+      "rollback.json"
+    ],
+    "review_before_release": [
+      "Sign manifest.json with dx promote before hosted traffic.",
+      "Keep Forge package files source-owned and reviewable.",
+      "Verify rollback.json against the previous build before promotion."
+    ]
+  },
+  "rollback_inputs": {
+    "immutable_asset_count": 26,
+    "inputs": [
+      {
+        "kind": "rollback-metadata",
+        "path": "rollback.json",
+        "required": true
+      },
+      {
+        "kind": "build-manifest",
+        "path": "manifest.json",
+        "required": true
+      },
+      {
+        "kind": "deploy-contract",
+        "path": "deploy-adapter.json",
+        "required": true
+      }
+    ],
+    "metadata_path": "rollback.json",
+    "previous_release_required": true,
+    "restore_order": [
+      "immutable_assets",
+      "manifest.json",
+      "deploy-adapter.json"
+    ],
+    "strategy": "manifest-pinned-asset-rollback"
+  },
+  "signed_manifest": {
+    "hash": "blake3:4097cfee2f6a737e80f6b1158dc0531dd6e79ad5c0ccea5766b3fbb58b8aa1d8",
+    "path": "manifest.json",
+    "promotion_command": "dx promote --key <private-key.json>",
+    "promotion_path": "build-promotion.json",
+    "signature_policy": "sign manifest before hosted promotion",
+    "signature_required_for_release": true,
+    "signed": false
+  },
+  "version": 1
+}

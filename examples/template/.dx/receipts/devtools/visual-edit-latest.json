@@ -1,0 +1,147 @@
+{
+  "schema": "dx.www.readiness.visual_edit_workbench_receipt_contract",
+  "schema_revision": 1,
+  "receipt_path": ".dx/receipts/devtools/visual-edit-latest.json",
+  "json_read_model_path": ".dx/receipts/devtools/visual-edit-latest.json",
+  "serializer_receipt_path": ".dx/receipts/devtools/visual-edit-latest.sr",
+  "machine_contract_path": ".dx/serializer/receipts-devtools-visual-edit-latest.machine",
+  "source": "dx-www-rust-dev-server",
+  "dev_only": true,
+  "release_ready": false,
+  "fastest_world_claim": false,
+  "operation": "style-undo",
+  "applied": true,
+  "undone": true,
+  "source_mutated": true,
+  "write_status": "undone-exact-source-range",
+  "source_path": "styles/theme.css",
+  "workbench_phases": [
+    "inspect",
+    "cascade",
+    "preview",
+    "apply",
+    "undo",
+    "receipt"
+  ],
+  "implemented_phases": [
+    "inspect",
+    "cascade",
+    "preview",
+    "safe-apply-foundation",
+    "undo-receipt"
+  ],
+  "missing_release_phases": [
+    "browser-workbench-replay"
+  ],
+  "undo_supported": true,
+  "undo_receipt_required": true,
+  "undo_receipt_status": "json-sr-machine-written",
+  "browser_workbench_replay": "missing",
+  "receipt_durability": "json-sr-machine-written",
+  "receipt_write_status": "json-sr-machine-written",
+  "undo_operation_result": {
+    "schema": "dx.visual_edit.undo_operation",
+    "operation": "style-undo",
+    "status": "undone",
+    "undone": true,
+    "mutated": true,
+    "reason": "undone-exact-source-range",
+    "source_path": "styles/theme.css",
+    "range": {
+      "startByte": 381,
+      "endByte": 400,
+      "expectedTextAfter": "  --ring: 0 0% 84%;",
+      "restoreTextBefore": "  --ring: 0 0% 83%;"
+    }
+  },
+  "reverted_receipt": {
+    "schema": "dx.www.readiness.visual_edit_workbench_receipt_contract",
+    "schema_revision": 1,
+    "receipt_path": ".dx/receipts/devtools/visual-edit-latest.json",
+    "json_read_model_path": ".dx/receipts/devtools/visual-edit-latest.json",
+    "serializer_receipt_path": ".dx/receipts/devtools/visual-edit-latest.sr",
+    "machine_contract_path": ".dx/serializer/receipts-devtools-visual-edit-latest.machine",
+    "source": "dx-www-rust-dev-server",
+    "dev_only": true,
+    "release_ready": false,
+    "fastest_world_claim": false,
+    "operation": "style-apply",
+    "applied": true,
+    "source_mutated": true,
+    "write_status": "source-written-by-apply",
+    "source_path": "styles/theme.css",
+    "known_source": true,
+    "style_writable": true,
+    "workbench_phases": [
+      "inspect",
+      "cascade",
+      "preview",
+      "apply",
+      "undo",
+      "receipt"
+    ],
+    "implemented_phases": [
+      "inspect",
+      "cascade",
+      "preview",
+      "safe-apply-foundation"
+    ],
+    "missing_release_phases": [
+      "browser-workbench-replay"
+    ],
+    "undo_supported": true,
+    "undo_receipt_required": true,
+    "undo_receipt_status": "pending",
+    "undo_patch": {
+      "source_path": "styles/theme.css",
+      "property": "--ring",
+      "start_byte": 381,
+      "end_byte": 400,
+      "expected_text_after": "  --ring: 0 0% 84%;",
+      "restore_text_before": "  --ring: 0 0% 83%;"
+    },
+    "browser_workbench_replay": "missing",
+    "receipt_durability": "json-sr-machine-written",
+    "receipt_write_status": "json-sr-machine-written",
+    "operation_result": {
+      "operation": "style-apply",
+      "status": "applied",
+      "previewOnly": false,
+      "writable": true,
+      "mutated": true,
+      "reason": "applied-exact-source-range",
+      "validation": {
+        "valid": true,
+        "reasons": [],
+        "property": "--ring",
+        "value": "0 0% 84%",
+        "visualProperty": "token",
+        "breakpointLabel": "xl",
+        "currentComputedValue": "0 0% 84%"
+      },
+      "source": {
+        "status": "writable",
+        "writable": true,
+        "previewOnly": false,
+        "reason": "known-exact-source-target",
+        "relativePath": "styles/theme.css"
+      },
+      "previewCss": "--ring: 0 0% 84%;",
+      "writtenPath": "styles/theme.css"
+    },
+    "serializer_provenance": {
+      "source_path": ".dx/receipts/devtools/visual-edit-latest.sr",
+      "machine_path": ".dx/serializer/receipts-devtools-visual-edit-latest.machine",
+      "source_path_within_root": true,
+      "machine_path_within_root": true,
+      "serializer_machine_generated": true
+    }
+  },
+  "serializer_provenance": {
+    "source_path": ".dx/receipts/devtools/visual-edit-latest.sr",
+    "machine_path": ".dx/serializer/receipts-devtools-visual-edit-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "serializer_machine_generated": true
+  }
+}

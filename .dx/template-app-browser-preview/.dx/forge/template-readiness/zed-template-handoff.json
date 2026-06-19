@@ -1,0 +1,43 @@
+{
+  "schema": "dx.zed.template_handoff",
+  "template_id": "www-template",
+  "route": "/",
+  "route_aliases": [],
+  "status": "source-handoff-runtime-pending",
+  "classification": "source-owned-limited-proof",
+  "package_id": "dx-www/template-shell",
+  "entrypoint_file": "tools/launch/runtime-template/pages/index.html",
+  "readiness_receipt": ".dx/forge/template-readiness/launch-route.json",
+  "open_files": [
+    "tools/launch/runtime-template/pages/index.html",
+    "components/template-app/template-shell.tsx",
+    "components/launch/package-reality-panel.tsx",
+    ".dx/forge/template-readiness/launch-route.json",
+    ".dx/forge/package-status.json"
+  ],
+  "architecture_contract": {
+    "schema": "dx.www.default_template.architecture_contract",
+    "runtime_model": {
+      "foundation": "dx-www",
+      "react_required": false,
+      "rsc_required": false,
+      "node_required": false,
+      "napi_required": false
+    },
+    "developer_experience": {
+      "node_modules_required": false
+    },
+    "build_layer": {
+      "full_next_parity": false
+    }
+  },
+  "runtime_proof": false,
+  "live_provider_execution": false,
+  "network_calls": false,
+  "secret_values": [],
+  "no_execution": true,
+  "honesty_notes": [
+    "Zed handoff points at source-owned files and receipts.",
+    "It does not prove live browser rendering or provider execution."
+  ]
+}

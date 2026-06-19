@@ -1,0 +1,68 @@
+{
+  "schema": "dx.launch.companion_doc_receipts",
+  "template_id": "www-template",
+  "route": "/",
+  "status": "source-doc-receipts-present",
+  "classification": "source-owned-limited-proof",
+  "package_id": "dx-www/template-shell",
+  "companions": [
+    {
+      "package_id": "auth/better-auth",
+      "kind": "auth-session-status",
+      "source_file": "examples/template/auth-session-status.tsx",
+      "materialized_file": "components/launch/auth-session-status.tsx",
+      "docs_file": ".dx/forge/docs/launch-companions/auth-session-status.md"
+    },
+    {
+      "package_id": "ai/vercel-ai",
+      "kind": "ai-chat-status",
+      "source_file": "examples/template/ai-chat-status.tsx",
+      "materialized_file": "components/launch/ai-chat-status.tsx",
+      "docs_file": ".dx/forge/docs/launch-companions/ai-chat-status.md"
+    },
+    {
+      "package_id": "validation/zod",
+      "kind": "validation-status",
+      "source_file": "examples/template/zod-validation-status.tsx",
+      "materialized_file": "components/launch/zod-validation-status.tsx",
+      "docs_file": ".dx/forge/docs/launch-companions/validation-status.md"
+    },
+    {
+      "package_id": "instantdb/react",
+      "kind": "instantdb-status",
+      "source_file": "examples/template/instantdb-status.tsx",
+      "materialized_file": "components/launch/instantdb-status.tsx",
+      "docs_file": ".dx/forge/docs/launch-companions/instantdb-status.md"
+    },
+    {
+      "package_id": "i18n/next-intl",
+      "kind": "next-intl-status",
+      "source_file": "examples/template/next-intl-status.tsx",
+      "materialized_file": "components/launch/next-intl-status.tsx",
+      "docs_file": ".dx/forge/docs/launch-companions/next-intl-status.md"
+    },
+    {
+      "package_id": "tanstack/query",
+      "kind": "query-cache-status",
+      "source_file": "examples/template/query-cache-status.tsx",
+      "materialized_file": "components/launch/query-cache-status.tsx",
+      "docs_file": ".dx/forge/docs/launch-companions/query-cache-status.md"
+    },
+    {
+      "package_id": "wasm/bindgen",
+      "kind": "wasm-interop-status",
+      "source_file": "examples/template/wasm-interop-status.tsx",
+      "materialized_file": "components/launch/wasm-interop-status.tsx",
+      "docs_file": ".dx/forge/docs/launch-companions/wasm-interop-status.md"
+    }
+  ],
+  "runtime_proof": false,
+  "live_provider_execution": false,
+  "network_calls": false,
+  "secret_values": [],
+  "no_execution": true,
+  "honesty_notes": [
+    "Companion docs describe source-owned launch surfaces only.",
+    "They are not browser runtime, provider, or deployed-documentation proof."
+  ]
+}

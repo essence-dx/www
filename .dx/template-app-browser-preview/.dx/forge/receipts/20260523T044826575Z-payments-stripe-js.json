@@ -1,0 +1,269 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "payments/stripe-js",
+    "upstream_name": "@stripe/stripe-js",
+    "version": "9.6.0-dx.1",
+    "generator": "dx-forge/stripe-js",
+    "variant": "default",
+    "rollback_receipt": "20260523T044826575Z-payments-stripe-js.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "a06c5bae02b43046724f6b5577e4173cf06146551a790adab623b5905194b9f5",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:@stripe/stripe-js@9.6.0; npm:stripe server boundary",
+      "verified": false,
+      "note": "DX inspected the local Stripe.js source mirror, pure loader, shared helpers, types, and server Checkout/Webhook public API boundaries before curating this Payments slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Payments slice, but it is not a live advisory feed and does not audit app Stripe keys, Price IDs, webhook deployment, or fulfillment logic."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the upstream package declaration only; no formal DX legal review is claimed."
+    },
+    "dependency_constraints": [
+      {
+        "name": "@stripe/stripe-js",
+        "constraint": "browser adapter runtime supplied by the app when live checkout is enabled",
+        "boundary": "Forge materializes editable checkout helpers and missing-config gates; it does not install node_modules or load Stripe.js inside DX core."
+      },
+      {
+        "name": "stripe",
+        "constraint": "server route adapter supplied by the app for Checkout Sessions and webhooks",
+        "boundary": "Secret keys, Price IDs, webhook signing, and fulfillment remain application-owned."
+      }
+    ],
+    "files": [
+      {
+        "path": "lib/payments/stripe-js/config.ts",
+        "logical_path": "js/payments/stripe-js/config.ts",
+        "hash": "d12b3344069f437b56a19677a9a02b7cc949749c7c95b2d28784626b9f52f356",
+        "bytes": 4005
+      },
+      {
+        "path": "lib/payments/stripe-js/client.ts",
+        "logical_path": "js/payments/stripe-js/client.ts",
+        "hash": "d42492583020f22bb1121f007af73408cad759af93e52dc9eec74476188e9d9e",
+        "bytes": 1433
+      },
+      {
+        "path": "lib/payments/stripe-js/payment.ts",
+        "logical_path": "js/payments/stripe-js/payment.ts",
+        "hash": "7af16770397aca666a2e4cb514687f6e2f53d2e682ea26af0bf64c08e209c357",
+        "bytes": 3163
+      },
+      {
+        "path": "lib/payments/stripe-js/checkout.ts",
+        "logical_path": "js/payments/stripe-js/checkout.ts",
+        "hash": "5fccc008d6343efe1da5341145a5f178440b80322ab95ca5ead9713117f637d5",
+        "bytes": 13303
+      },
+      {
+        "path": "lib/payments/stripe-js/dashboard-checkout.ts",
+        "logical_path": "js/payments/stripe-js/dashboard-checkout.ts",
+        "hash": "03c9903af48b0e846860abeee40c63f073edc68e9be4e33857f5393a294b31f9",
+        "bytes": 4034
+      },
+      {
+        "path": "lib/payments/stripe-js/server.ts",
+        "logical_path": "js/payments/stripe-js/server.ts",
+        "hash": "b71b05508d8116f9620d4dd9e5767de4c224d1a6ffbc7b08a48c87e0c398c748",
+        "bytes": 17143
+      },
+      {
+        "path": "app/api/checkout/route.ts",
+        "logical_path": "js/app/api/checkout/route.ts",
+        "hash": "ca6b5f803af0e1c8faf2b041eee640fc0d3eebcad0c0a1c50b36747ddfc91f02",
+        "bytes": 6759
+      },
+      {
+        "path": "app/api/stripe/webhook/route.ts",
+        "logical_path": "js/app/api/stripe/webhook/route.ts",
+        "hash": "108e17a10fc44ab6cf1c038570ad5043df5d03bd29204fbc6bd551cea140f255",
+        "bytes": 4106
+      },
+      {
+        "path": "app/api/payments/stripe-js/readiness/route.ts",
+        "logical_path": "js/app/api/payments/stripe-js/readiness/route.ts",
+        "hash": "ea329e0a39e4013e0b51a8613f9400129a87e2921756d8f8d9957b11e848a582",
+        "bytes": 5907
+      },
+      {
+        "path": "lib/payments/stripe-js/metadata.ts",
+        "logical_path": "js/payments/stripe-js/metadata.ts",
+        "hash": "dd97b48257962967453681dab9adb6459ae673278f816dea5d29b69dd39dd9dd",
+        "bytes": 9620
+      },
+      {
+        "path": "lib/payments/stripe-js/README.md",
+        "logical_path": "js/payments/stripe-js/README.md",
+        "hash": "98633c1c3aeeda4a2e93c83010a69b3d98c676712f69ff8e238d8a7f9b822ce8",
+        "bytes": 9382
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/payments/stripe-js/config.ts",
+      "logical_path": "js/payments/stripe-js/config.ts",
+      "hash": "d12b3344069f437b56a19677a9a02b7cc949749c7c95b2d28784626b9f52f356",
+      "bytes": 4005
+    },
+    {
+      "path": "lib/payments/stripe-js/client.ts",
+      "logical_path": "js/payments/stripe-js/client.ts",
+      "hash": "d42492583020f22bb1121f007af73408cad759af93e52dc9eec74476188e9d9e",
+      "bytes": 1433
+    },
+    {
+      "path": "lib/payments/stripe-js/payment.ts",
+      "logical_path": "js/payments/stripe-js/payment.ts",
+      "hash": "7af16770397aca666a2e4cb514687f6e2f53d2e682ea26af0bf64c08e209c357",
+      "bytes": 3163
+    },
+    {
+      "path": "lib/payments/stripe-js/checkout.ts",
+      "logical_path": "js/payments/stripe-js/checkout.ts",
+      "hash": "5fccc008d6343efe1da5341145a5f178440b80322ab95ca5ead9713117f637d5",
+      "bytes": 13303
+    },
+    {
+      "path": "lib/payments/stripe-js/dashboard-checkout.ts",
+      "logical_path": "js/payments/stripe-js/dashboard-checkout.ts",
+      "hash": "03c9903af48b0e846860abeee40c63f073edc68e9be4e33857f5393a294b31f9",
+      "bytes": 4034
+    },
+    {
+      "path": "lib/payments/stripe-js/server.ts",
+      "logical_path": "js/payments/stripe-js/server.ts",
+      "hash": "b71b05508d8116f9620d4dd9e5767de4c224d1a6ffbc7b08a48c87e0c398c748",
+      "bytes": 17143
+    },
+    {
+      "path": "app/api/checkout/route.ts",
+      "logical_path": "js/app/api/checkout/route.ts",
+      "hash": "ca6b5f803af0e1c8faf2b041eee640fc0d3eebcad0c0a1c50b36747ddfc91f02",
+      "bytes": 6759
+    },
+    {
+      "path": "app/api/stripe/webhook/route.ts",
+      "logical_path": "js/app/api/stripe/webhook/route.ts",
+      "hash": "108e17a10fc44ab6cf1c038570ad5043df5d03bd29204fbc6bd551cea140f255",
+      "bytes": 4106
+    },
+    {
+      "path": "app/api/payments/stripe-js/readiness/route.ts",
+      "logical_path": "js/app/api/payments/stripe-js/readiness/route.ts",
+      "hash": "ea329e0a39e4013e0b51a8613f9400129a87e2921756d8f8d9957b11e848a582",
+      "bytes": 5907
+    },
+    {
+      "path": "lib/payments/stripe-js/metadata.ts",
+      "logical_path": "js/payments/stripe-js/metadata.ts",
+      "hash": "dd97b48257962967453681dab9adb6459ae673278f816dea5d29b69dd39dd9dd",
+      "bytes": 9620
+    },
+    {
+      "path": "lib/payments/stripe-js/README.md",
+      "logical_path": "js/payments/stripe-js/README.md",
+      "hash": "98633c1c3aeeda4a2e93c83010a69b3d98c676712f69ff8e238d8a7f9b822ce8",
+      "bytes": 9382
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/payments/stripe-js/config.ts",
+      "materialized_path": "lib/payments/stripe-js/config.ts",
+      "hash": "d12b3344069f437b56a19677a9a02b7cc949749c7c95b2d28784626b9f52f356",
+      "bytes": 4005
+    },
+    {
+      "logical_path": "js/payments/stripe-js/client.ts",
+      "materialized_path": "lib/payments/stripe-js/client.ts",
+      "hash": "d42492583020f22bb1121f007af73408cad759af93e52dc9eec74476188e9d9e",
+      "bytes": 1433
+    },
+    {
+      "logical_path": "js/payments/stripe-js/payment.ts",
+      "materialized_path": "lib/payments/stripe-js/payment.ts",
+      "hash": "7af16770397aca666a2e4cb514687f6e2f53d2e682ea26af0bf64c08e209c357",
+      "bytes": 3163
+    },
+    {
+      "logical_path": "js/payments/stripe-js/checkout.ts",
+      "materialized_path": "lib/payments/stripe-js/checkout.ts",
+      "hash": "5fccc008d6343efe1da5341145a5f178440b80322ab95ca5ead9713117f637d5",
+      "bytes": 13303
+    },
+    {
+      "logical_path": "js/payments/stripe-js/dashboard-checkout.ts",
+      "materialized_path": "lib/payments/stripe-js/dashboard-checkout.ts",
+      "hash": "03c9903af48b0e846860abeee40c63f073edc68e9be4e33857f5393a294b31f9",
+      "bytes": 4034
+    },
+    {
+      "logical_path": "js/payments/stripe-js/server.ts",
+      "materialized_path": "lib/payments/stripe-js/server.ts",
+      "hash": "b71b05508d8116f9620d4dd9e5767de4c224d1a6ffbc7b08a48c87e0c398c748",
+      "bytes": 17143
+    },
+    {
+      "logical_path": "js/app/api/checkout/route.ts",
+      "materialized_path": "app/api/checkout/route.ts",
+      "hash": "ca6b5f803af0e1c8faf2b041eee640fc0d3eebcad0c0a1c50b36747ddfc91f02",
+      "bytes": 6759
+    },
+    {
+      "logical_path": "js/app/api/stripe/webhook/route.ts",
+      "materialized_path": "app/api/stripe/webhook/route.ts",
+      "hash": "50ce4524e71da9503a02fb542fc6428aa3fe237283b3f7ae3bbf22a9689c691c",
+      "bytes": 1782
+    },
+    {
+      "logical_path": "js/app/api/payments/stripe-js/readiness/route.ts",
+      "materialized_path": "app/api/payments/stripe-js/readiness/route.ts",
+      "hash": "ea329e0a39e4013e0b51a8613f9400129a87e2921756d8f8d9957b11e848a582",
+      "bytes": 5907
+    },
+    {
+      "logical_path": "js/payments/stripe-js/metadata.ts",
+      "materialized_path": "lib/payments/stripe-js/metadata.ts",
+      "hash": "dd97b48257962967453681dab9adb6459ae673278f816dea5d29b69dd39dd9dd",
+      "bytes": 9620
+    },
+    {
+      "logical_path": "js/payments/stripe-js/README.md",
+      "materialized_path": "lib/payments/stripe-js/README.md",
+      "hash": "98633c1c3aeeda4a2e93c83010a69b3d98c676712f69ff8e238d8a7f9b822ce8",
+      "bytes": 9382
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records @stripe/stripe-js provenance from G:/WWW/inspirations/stripe-js without claiming external provenance verification."
+    },
+    {
+      "policy": "provider-boundary-honest",
+      "traffic": "green",
+      "message": "Payments exposes source-owned helpers and readiness gates while live provider credentials remain application-owned."
+    }
+  ],
+  "risk_score": 86,
+  "timestamp": "2026-05-23T04:48:26.575Z",
+  "signature": null
+}

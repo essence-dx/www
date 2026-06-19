@@ -1,0 +1,80 @@
+{
+  "schema": "dx.forge.template_readiness.package",
+  "lane_number": 4,
+  "lane_name": "Database + API",
+  "package_ids": [
+    "db/drizzle-sqlite",
+    "instantdb/react",
+    "supabase/client",
+    "api/trpc"
+  ],
+  "official_package_names": [
+    "Database ORM",
+    "Realtime App Database",
+    "Backend Platform Client",
+    "Type-Safe API"
+  ],
+  "classification": "lock-backed-adapter-boundary",
+  "runtime_proof": false,
+  "network_calls": false,
+  "hosted_credentials": false,
+  "readiness_route": "/api/database-api/readiness",
+  "app_route_handlers": [
+    "app/api/instant/route.ts",
+    "app/api/instant/readiness/route.ts",
+    "app/api/trpc/health/route.ts",
+    "app/api/trpc/[trpc]/route.ts",
+    "app/api/database-api/readiness/route.ts",
+    "app/api/database-orm/readiness/route.ts",
+    "app/api/supabase/readiness/route.ts"
+  ],
+  "server_boundary": "server/database-api/readiness.ts",
+  "source_contract": "lib/database-api/source-contract.ts",
+  "cache_evidence": {
+    "source_of_truth": ".dx/forge/package-status.json",
+    "current_manifest_set": "cache.manifests",
+    "current_manifest_count": 20,
+    "physical_manifest_count": 20,
+    "stale_physical_manifest_count": 0,
+    "manifest_source": "package-status-current-manifests",
+    "manifest_caveat_id": "physical-cache-matches-current-manifests",
+    "current_manifest_paths": {
+      "db/drizzle-sqlite": ".dx/forge/cache/db-drizzle-sqlite/0.1.0/manifest.json",
+      "instantdb/react": ".dx/forge/cache/instantdb-react/0.0.0-dx.0/manifest.json",
+      "supabase/client": ".dx/forge/cache/supabase-client/0.1.0/manifest.json",
+      "api/trpc": ".dx/forge/cache/api-trpc/11.17.0-dx.10/manifest.json"
+    }
+  },
+  "source_owned_surfaces": [
+    "db/drizzle/schema.ts",
+    "lib/instant/schema.ts",
+    "lib/supabase/profiles.ts",
+    "app/api/trpc/health/route.ts",
+    "lib/trpc/router.ts",
+    "lib/database-api/source-contract.ts",
+    "server/database-api/readiness.ts",
+    "app/api/database-api/readiness/route.ts",
+    "server/instant/readiness.ts",
+    "app/api/instant/readiness/route.ts",
+    "server/database-orm/readiness.ts",
+    "app/api/database-orm/readiness/route.ts",
+    "server/supabase/readiness.ts",
+    "app/api/supabase/readiness/route.ts"
+  ],
+  "blocked_until_configured": [
+    "SQLite database file path, migration rollout, better-sqlite3 install, and tenant authorization",
+    "Instant app id, hosted rules, auth policy, realtime transport, and storage/stream runtime proof",
+    "Supabase project URL, publishable key, RLS migration, auth redirect allow-list, and hosted read/write/realtime proof",
+    "Production tRPC auth context, transport/subscription policy, request limits, durable event storage, and observability"
+  ],
+  "honesty_notes": [
+    "The default template owns editable Database + API source and a local readiness route.",
+    "Current cache-manifest counts come from package-status cache.manifests, and the live physical cache now matches that current set.",
+    "Older cache manifests are archived outside .dx/forge/cache and are not launch package-count proof.",
+    "This receipt is not live SQLite, InstantDB, Supabase, or production tRPC runtime proof.",
+    "Database ORM has its own runtime-gated readiness route; it validates local database config acknowledgements only and does not open SQLite, run migrations, or query data.",
+    "Realtime App Database has its own provider-gated readiness route; it validates local InstantDB config only and does not create a hosted route handler, connect to realtime transport, or claim storage/stream proof.",
+    "Supabase has its own provider-gated readiness route; it performs local config validation only and does not claim hosted runtime proof.",
+    "Type-Safe API has a local /api/trpc/health route that returns Response JSON for template readiness and launchEvent dry-runs without live transport, subscriptions, persistence, or provider runtime proof."
+  ]
+}

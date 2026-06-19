@@ -1,0 +1,55 @@
+{
+  "schema": "dx.forge.conversion_receipt",
+  "source_project": "dx-website-startpage",
+  "source_local_path": "G:\\Dx\\website",
+  "source_files": [
+    "src/components/startpage.tsx",
+    "src/components/platform-download-cards.tsx",
+    "src/components/dx-ai-face.tsx",
+    "public/thumbnails/*.png"
+  ],
+  "license": "project-local DX source",
+  "converted_route": "/",
+  "source_surface_map": "forge/source-surfaces/dx-landing.json",
+  "visual_audit": "forge/visual-audits/dx-landing.json",
+  "converted_files": [
+    "pages/index.html",
+    "styles/dx-landing.css",
+    "forge/conversion-manifests/dx-landing.json",
+    "forge/source-surfaces/dx-landing.json",
+    "forge/visual-audits/dx-landing.json"
+  ],
+  "copied_assets": [
+    {
+      "source_path": "G:\\Dx\\website\\public\\thumbnails\\*.png",
+      "target_path": "public/thumbnails/*.png"
+    }
+  ],
+  "preserved_sections": [
+    "hero",
+    "platform downloads",
+    "stats",
+    "feature banners",
+    "story engine",
+    "what is DX",
+    "command center",
+    "Rust performance",
+    "generation categories",
+    "token revolution",
+    "platform coverage",
+    "free AI",
+    "competitive positioning",
+    "Forge storage",
+    "Traffic Security",
+    "DX Check",
+    "media workspace",
+    "built-in tools",
+    "extensions",
+    "pricing",
+    "benchmarks",
+    "testimonials",
+    "comparison table",
+    "waitlist"
+  ],
+  "no_runtime_execution": true
+}

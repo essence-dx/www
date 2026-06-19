@@ -1,0 +1,382 @@
+{
+  "generated_at": "2026-05-15T19:40:35.759Z",
+  "method": {
+    "description": "Equivalent minimal counter page, first-route HTML plus same-origin script/style/runtime assets. DX-WWW is served by its real Rust demo route; Next.js uses next start; Svelte/Astro use static local servers; HTMX uses a small local fragment server.",
+    "dx_note": "DX-WWW uses the compiler's micro-JS/no-WASM path for this tiny interaction.",
+    "timing_note": "Localhost HTTP fetch timing is a sanity check, not a browser Lighthouse or production CDN benchmark."
+  },
+  "versions": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "svelte": "5.55.7",
+    "vite": "8.0.13",
+    "astro": "6.3.3",
+    "htmx": "2.0.10"
+  },
+  "results": [
+    {
+      "name": "DX-WWW",
+      "version": "current local",
+      "model": "Rust route + static HTML + micro JS",
+      "resources": [
+        {
+          "url": "http://127.0.0.1:52701/fair-counter",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/html; charset=utf-8",
+          "content_length_header": "1867",
+          "decoded_bytes": 1867,
+          "elapsed_ms": 1.728
+        }
+      ],
+      "resource_count": 1,
+      "total_decoded_bytes": 1867,
+      "compression_estimate": {
+        "raw_bytes": 1867,
+        "gzip_bytes": 919,
+        "brotli_bytes": 657
+      },
+      "root_timing": {
+        "samples": 25,
+        "min_ms": 0.436,
+        "median_ms": 0.679,
+        "mean_ms": 0.961,
+        "p95_ms": 1.957,
+        "max_ms": 3.701
+      },
+      "full_route_timing": {
+        "samples": 15,
+        "min_ms": 0.469,
+        "median_ms": 0.63,
+        "mean_ms": 0.701,
+        "p95_ms": 1.774,
+        "max_ms": 1.774
+      },
+      "action": null
+    },
+    {
+      "name": "Next.js",
+      "version": "16.2.6",
+      "model": "App Router + React client island",
+      "resources": [
+        {
+          "url": "http://127.0.0.1:52710/",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/html; charset=utf-8",
+          "content_length_header": null,
+          "decoded_bytes": 6433,
+          "elapsed_ms": 7.328
+        },
+        {
+          "url": "http://127.0.0.1:52710/_next/static/chunks/03cnjj9mnzy_p.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 200921,
+          "elapsed_ms": 25.128
+        },
+        {
+          "url": "http://127.0.0.1:52710/_next/static/chunks/03m3~y~jbv1uz.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": "663",
+          "decoded_bytes": 663,
+          "elapsed_ms": 12.97
+        },
+        {
+          "url": "http://127.0.0.1:52710/_next/static/chunks/03~yq9q893hmn.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 112594,
+          "elapsed_ms": 24.66
+        },
+        {
+          "url": "http://127.0.0.1:52710/_next/static/chunks/07lhk_q6pmm3r.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 227537,
+          "elapsed_ms": 26.29
+        },
+        {
+          "url": "http://127.0.0.1:52710/_next/static/chunks/0dbhjjzl8qfwv.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 57909,
+          "elapsed_ms": 22.787
+        },
+        {
+          "url": "http://127.0.0.1:52710/_next/static/chunks/0ht900cau6_ur.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 17474,
+          "elapsed_ms": 21.288
+        },
+        {
+          "url": "http://127.0.0.1:52710/_next/static/chunks/0u5g.yfc1ot2~.css",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/css; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 2161,
+          "elapsed_ms": 20.607
+        },
+        {
+          "url": "external-next-bundler-runtime-chunk",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=UTF-8",
+          "content_length_header": null,
+          "decoded_bytes": 10547,
+          "elapsed_ms": 21.168,
+          "url_redacted": true,
+          "url_redaction_reason": "external-framework-baseline-runtime-asset"
+        }
+      ],
+      "resource_count": 9,
+      "total_decoded_bytes": 636239,
+      "compression_estimate": {
+        "raw_bytes": 636239,
+        "gzip_bytes": 187903,
+        "brotli_bytes": 162325
+      },
+      "root_timing": {
+        "samples": 25,
+        "min_ms": 3.112,
+        "median_ms": 3.587,
+        "mean_ms": 3.99,
+        "p95_ms": 6.198,
+        "max_ms": 7.473
+      },
+      "full_route_timing": {
+        "samples": 15,
+        "min_ms": 15.817,
+        "median_ms": 20.361,
+        "mean_ms": 19.671,
+        "p95_ms": 23.799,
+        "max_ms": 23.799
+      },
+      "action": null
+    },
+    {
+      "name": "Svelte",
+      "version": "5.55.7",
+      "model": "Svelte compiled client bundle",
+      "resources": [
+        {
+          "url": "http://127.0.0.1:52707/",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/html; charset=utf-8",
+          "content_length_header": "509",
+          "decoded_bytes": 509,
+          "elapsed_ms": 10.421
+        },
+        {
+          "url": "http://127.0.0.1:52707/assets/index-B5TOxzmh.css",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/css; charset=utf-8",
+          "content_length_header": "2088",
+          "decoded_bytes": 2088,
+          "elapsed_ms": 4.548
+        },
+        {
+          "url": "http://127.0.0.1:52707/assets/index-BUD7MxHk.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=utf-8",
+          "content_length_header": "45177",
+          "decoded_bytes": 45177,
+          "elapsed_ms": 4.652
+        }
+      ],
+      "resource_count": 3,
+      "total_decoded_bytes": 47774,
+      "compression_estimate": {
+        "raw_bytes": 47774,
+        "gzip_bytes": 18437,
+        "brotli_bytes": 16439
+      },
+      "root_timing": {
+        "samples": 25,
+        "min_ms": 0.905,
+        "median_ms": 1.102,
+        "mean_ms": 1.224,
+        "p95_ms": 2.132,
+        "max_ms": 2.163
+      },
+      "full_route_timing": {
+        "samples": 15,
+        "min_ms": 3.067,
+        "median_ms": 3.491,
+        "mean_ms": 3.468,
+        "p95_ms": 3.855,
+        "max_ms": 3.855
+      },
+      "action": null
+    },
+    {
+      "name": "Astro",
+      "version": "6.3.3",
+      "model": "Static HTML + inline script",
+      "resources": [
+        {
+          "url": "http://127.0.0.1:52708/",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/html; charset=utf-8",
+          "content_length_header": "2722",
+          "decoded_bytes": 2722,
+          "elapsed_ms": 2.742
+        }
+      ],
+      "resource_count": 1,
+      "total_decoded_bytes": 2722,
+      "compression_estimate": {
+        "raw_bytes": 2722,
+        "gzip_bytes": 1007,
+        "brotli_bytes": 729
+      },
+      "root_timing": {
+        "samples": 25,
+        "min_ms": 1.029,
+        "median_ms": 1.407,
+        "mean_ms": 1.505,
+        "p95_ms": 2.872,
+        "max_ms": 3.14
+      },
+      "full_route_timing": {
+        "samples": 15,
+        "min_ms": 1.111,
+        "median_ms": 1.465,
+        "mean_ms": 1.563,
+        "p95_ms": 2.279,
+        "max_ms": 2.279
+      },
+      "action": null
+    },
+    {
+      "name": "HTMX",
+      "version": "2.0.10",
+      "model": "HTML + htmx runtime + server fragment",
+      "resources": [
+        {
+          "url": "http://127.0.0.1:52709/",
+          "status": 200,
+          "ok": true,
+          "content_type": "text/html; charset=utf-8",
+          "content_length_header": "2667",
+          "decoded_bytes": 2667,
+          "elapsed_ms": 3.583
+        },
+        {
+          "url": "http://127.0.0.1:52709/htmx.min.js",
+          "status": 200,
+          "ok": true,
+          "content_type": "application/javascript; charset=utf-8",
+          "content_length_header": "51238",
+          "decoded_bytes": 51238,
+          "elapsed_ms": 4.325
+        }
+      ],
+      "resource_count": 2,
+      "total_decoded_bytes": 53905,
+      "compression_estimate": {
+        "raw_bytes": 53905,
+        "gzip_bytes": 17559,
+        "brotli_bytes": 15719
+      },
+      "root_timing": {
+        "samples": 25,
+        "min_ms": 1.233,
+        "median_ms": 1.584,
+        "mean_ms": 1.634,
+        "p95_ms": 2.516,
+        "max_ms": 2.926
+      },
+      "full_route_timing": {
+        "samples": 15,
+        "min_ms": 2.652,
+        "median_ms": 3.923,
+        "mean_ms": 3.838,
+        "p95_ms": 5.923,
+        "max_ms": 5.923
+      },
+      "action": {
+        "url": "http://127.0.0.1:52709/counter/increment",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/plain; charset=utf-8",
+        "content_length_header": "1",
+        "decoded_bytes": 1,
+        "elapsed_ms": 1.739
+      }
+    }
+  ],
+  "ratios": {
+    "DX-WWW": {
+      "raw_vs_dx": 1,
+      "gzip_vs_dx": 1,
+      "brotli_vs_dx": 1,
+      "full_median_vs_dx": 1
+    },
+    "Next.js": {
+      "raw_vs_dx": 340.78,
+      "gzip_vs_dx": 204.46,
+      "brotli_vs_dx": 247.07,
+      "full_median_vs_dx": 32.32
+    },
+    "Svelte": {
+      "raw_vs_dx": 25.59,
+      "gzip_vs_dx": 20.06,
+      "brotli_vs_dx": 25.02,
+      "full_median_vs_dx": 5.54
+    },
+    "Astro": {
+      "raw_vs_dx": 1.46,
+      "gzip_vs_dx": 1.1,
+      "brotli_vs_dx": 1.11,
+      "full_median_vs_dx": 2.33
+    },
+    "HTMX": {
+      "raw_vs_dx": 28.87,
+      "gzip_vs_dx": 19.11,
+      "brotli_vs_dx": 23.93,
+      "full_median_vs_dx": 6.23
+    }
+  },
+  "rankings": {
+    "raw_bytes": [
+      "DX-WWW",
+      "Astro",
+      "Svelte",
+      "HTMX",
+      "Next.js"
+    ],
+    "gzip_bytes": [
+      "DX-WWW",
+      "Astro",
+      "HTMX",
+      "Svelte",
+      "Next.js"
+    ],
+    "full_route_median_ms": [
+      "DX-WWW",
+      "Astro",
+      "Svelte",
+      "HTMX",
+      "Next.js"
+    ]
+  }
+}

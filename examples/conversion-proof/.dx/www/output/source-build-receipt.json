@@ -1,0 +1,228 @@
+{
+  "schema": "dx.www.sourceBuildReceipt",
+  "schema_revision": 1,
+  "summary": {
+    "routes": 1,
+    "route_handlers": 4,
+    "route_handler_receipt_output": ".dx/www/output/route-handler-receipts.json",
+    "route_handler_receipts_executed": 2,
+    "route_handler_receipts_skipped": 3,
+    "route_handler_receipts_node_modules_required": false,
+    "route_handler_receipts_lifecycle_scripts_executed": false,
+    "route_outputs": 1,
+    "server_data_routes": 1,
+    "server_data_entries": 0,
+    "source_module_chunks": 3,
+    "resolver_adapter_boundary_dependencies": 0,
+    "resolver_adapter_boundary_sources": [],
+    "resolver_adapter_boundary_details": [],
+    "styles": 6,
+    "content_documents": 0,
+    "mdx_documents": 0,
+    "assets": 39,
+    "image_assets": 36,
+    "image_metadata_assets": 36,
+    "optimized_image_variants": 0,
+    "image_placeholders": 36,
+    "image_route_references": 0,
+    "css_original_rules": 743,
+    "css_retained_rules": 743,
+    "css_pruned_rules": 0,
+    "css_minified_styles": 6,
+    "css_source_maps": 6,
+    "css_source_map_sources": 9,
+    "css_source_map_source_hashes": 9,
+    "css_source_map_entry_style_sources": 6,
+    "css_source_map_flattened_import_sources": 3,
+    "css_source_map_retained_import_sources": 0,
+    "css_source_map_segments": 0,
+    "css_source_map_exact_segment_maps": 0,
+    "css_source_map_evidence_only_maps": 6,
+    "css_source_map_links": 6,
+    "css_source_map_hashes": 6,
+    "css_flattened_imports": 3,
+    "css_retained_imports": 0,
+    "css_asset_references": 0,
+    "css_entry_style_asset_references": 0,
+    "css_flattened_import_asset_references": 0,
+    "css_retained_import_asset_references": 0,
+    "manifest_schema": "dx.www.sourceBuildManifest"
+  },
+  "adapters": [
+    {
+      "name": "dx-source-oxc-tsx-adapter",
+      "role": "tsx-app-route-graph-input",
+      "status": "parses-source-and-records-import-graph",
+      "informed_by": [
+        "Oxc",
+        "Rolldown"
+      ]
+    },
+    {
+      "name": "dx-source-css-adapter",
+      "role": "css-graph-input-generated-output-and-evidence",
+      "status": "source-owned-css-flatten-prune-minify-sourcemap-boundary",
+      "informed_by": [
+        "Lightning CSS",
+        "Turbopack CSS"
+      ]
+    },
+    {
+      "name": "dx-source-route-shell-adapter",
+      "role": "compiler-backed-route-shell-output",
+      "status": "emits-executable-fallback-shell-and-linked-source-module-chunks",
+      "informed_by": [
+        "Rolldown",
+        "Oxc"
+      ]
+    },
+    {
+      "name": "dx-source-ecmascript-analysis-adapter",
+      "role": "tsx-js-analysis-and-compatibility-evidence",
+      "status": "records-compatibility-evidence-with-dx-owned-output",
+      "informed_by": [
+        "turbopack-ecmascript",
+        "next-custom-transforms"
+      ]
+    },
+    {
+      "name": "dx-source-resolver-adapter",
+      "role": "source-owned-import-resolution-and-adapter-boundaries",
+      "status": "records resolver_source evidence and adapter-boundary graph nodes for relative, @/, tsconfig/jsconfig path aliases, package.json imports, package self-references, and adapter boundaries without node_modules",
+      "informed_by": [
+        "turbopack-resolve"
+      ]
+    },
+    {
+      "name": "dx-source-asset-adapter",
+      "role": "public-asset-copy-with-content-hash",
+      "status": "source-owned-asset-copy-boundary",
+      "informed_by": [
+        "Rolldown"
+      ]
+    },
+    {
+      "name": "dx-source-image-metadata-adapter",
+      "role": "public-image-metadata-and-optimization-receipt-boundary",
+      "status": "records-metadata-and-placeholder-artifacts-no-image-transforms-emitted",
+      "informed_by": [
+        "Turbopack Image"
+      ]
+    },
+    {
+      "name": "dx-source-mdx-docs-adapter",
+      "role": "docs-content-mdx-source-receipts",
+      "status": "records-source-owned-mdx-options-without-runtime-execution",
+      "informed_by": [
+        "turbopack-mdx",
+        "MDX.js"
+      ]
+    }
+  ],
+  "upstream_provenance": [
+    {
+      "name": "Rolldown",
+      "repository": "https://github.com/rolldown/rolldown",
+      "license": "MIT",
+      "local_mirror": null,
+      "commit": null,
+      "inspected_files": [
+        "crates/rolldown/src/bundle/bundle.rs",
+        "crates/rolldown/src/stages/scan_stage.rs",
+        "crates/rolldown/src/ast_scanner/mod.rs",
+        "crates/rolldown_common/src/inner_bundler_options/mod.rs"
+      ]
+    },
+    {
+      "name": "Oxc",
+      "repository": "https://github.com/oxc-project/oxc",
+      "license": "MIT",
+      "local_mirror": null,
+      "commit": null,
+      "inspected_files": [
+        "crates/oxc_parser/src/lib.rs",
+        "crates/oxc_codegen/src/lib.rs",
+        "crates/oxc_transformer/src/lib.rs",
+        "crates/oxc_semantic/src/lib.rs"
+      ]
+    },
+    {
+      "name": "Turbopack ECMAScript reference",
+      "repository": "https://github.com/vercel/next.js",
+      "license": "MIT source snapshot reference only",
+      "local_mirror": "vendor/next-rust/turbopack/crates/turbopack-ecmascript",
+      "commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+      "inspected_files": [
+        "src/analyzer/imports.rs",
+        "src/analyzer/top_level_await.rs",
+        "src/references/esm/dynamic.rs",
+        "../../crates/next-custom-transforms/src/transforms/track_dynamic_imports.rs",
+        "../../crates/next-custom-transforms/src/transforms/react_server_components.rs"
+      ]
+    },
+    {
+      "name": "Turbopack CSS",
+      "repository": "https://github.com/vercel/next.js",
+      "license": "MIT source snapshot reference only",
+      "local_mirror": "vendor/next-rust/turbopack/crates/turbopack-css",
+      "commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+      "inspected_files": [
+        "src/asset.rs",
+        "src/chunk/source_map.rs",
+        "src/chunk/single_item_chunk/source_map.rs",
+        "src/references/mod.rs",
+        "src/references/import.rs",
+        "src/references/url.rs"
+      ]
+    },
+    {
+      "name": "Turbopack Image",
+      "repository": "https://github.com/vercel/next.js",
+      "license": "MIT source snapshot reference only",
+      "local_mirror": "vendor/next-rust/turbopack/crates/turbopack-image",
+      "commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+      "inspected_files": [
+        "src/process/mod.rs",
+        "src/process/svg.rs",
+        "src/process/SVG_LICENSE"
+      ]
+    },
+    {
+      "name": "Turbopack MDX",
+      "repository": "https://github.com/vercel/next.js",
+      "license": "MIT source snapshot reference only",
+      "local_mirror": "vendor/next-rust/turbopack/crates/turbopack-mdx",
+      "commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+      "inspected_files": [
+        "src/lib.rs"
+      ]
+    },
+    {
+      "name": "Lightning CSS",
+      "repository": "https://github.com/parcel-bundler/lightningcss",
+      "license": "MPL-2.0 reference mirror only",
+      "local_mirror": null,
+      "commit": null,
+      "inspected_files": [
+        "src/bundler.rs",
+        "src/stylesheet.rs",
+        "src/dependencies.rs",
+        "src/lib.rs"
+      ]
+    },
+    {
+      "name": "Turbopack Resolve",
+      "repository": "https://github.com/vercel/next.js",
+      "license": "MIT reference snapshot",
+      "local_mirror": "vendor/next-rust",
+      "commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+      "inspected_files": [
+        "turbopack/crates/turbopack-resolve/src/resolve.rs",
+        "turbopack/crates/turbopack-resolve/src/resolve_options_context.rs",
+        "turbopack/crates/turbopack-resolve/src/typescript.rs"
+      ]
+    }
+  ],
+  "node_modules_required": false,
+  "integration_boundary": "This slice builds the source graph, generated CSS with local import flattening plus source-owned minify/prune/source-map evidence metadata, linked source-map comments, and source-map integrity hashes, Markdown/MDX docs metadata with turbopack-mdx option mapping, hashed assets, image metadata receipts with zero emitted optimization variants and source-owned SVG placeholder artifacts when dimensions are known, compiler-backed route shell outputs, linked source-module metadata chunks, DX-owned ECMAScript/TSX analysis receipts informed by turbopack-ecmascript and selected Next transforms, source-owned tsconfig/jsconfig path alias, package.json imports, package self-reference resolution, per-dependency resolver_source evidence, adapter-boundary import graph nodes, manifest, and ecosystem receipts. Full React hydration, complete Rolldown parity, broad CSS transform compatibility, exact CSS source-map segment mapping, MDX compile/evaluate remains app-owned, React/RSC is not required for docs content, image resizing/encoding/blur placeholders, Node/NAPI runtime takeover, node_modules package resolution, package.json exports, and conditional package imports remain explicit governed follow-ups. Full Lightning CSS, turbopack-mdx, Turbopack Image, Turbopack runtime/build adoption, and full Next.js runtime parity are outside DX-WWW runtime/build scope except as lightweight reference, provenance, or adapter-boundary material."
+}

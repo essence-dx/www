@@ -1,0 +1,209 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "shadcn/ui/item",
+    "upstream_name": "shadcn-ui",
+    "version": "0.1.0",
+    "generator": "dx-forge/shadcn-ui",
+    "variant": "default",
+    "last_accepted_update": "2026-06-03T07:24:13.938761400+00:00",
+    "rollback_receipt": "20260603T065405433458900Z-shadcn-ui-item.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "4aaa2339ad8e41cae9eabf9e7bcf0889fee9527049cd7440f75c69d459e48b92",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "shadcn-ui://apps/v4/registry/bases/radix/ui/item.tsx",
+      "verified": false,
+      "note": "DX inspected the local shadcn-ui v4 registry entry plus Radix Slot and Separator primitives for the official UI Components Item surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn item launch slice, but it is not a live advisory feed and does not audit application list semantics, actions, or row-level authorization."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/utils.ts",
+        "logical_path": "js/lib/utils.ts",
+        "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+        "bytes": 119
+      },
+      {
+        "path": "components/ui/slot.tsx",
+        "logical_path": "js/ui/slot.tsx",
+        "hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+        "bytes": 642
+      },
+      {
+        "path": "components/ui/separator.tsx",
+        "logical_path": "js/ui/separator.tsx",
+        "hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+        "bytes": 809
+      },
+      {
+        "path": "components/ui/item.tsx",
+        "logical_path": "js/ui/item.tsx",
+        "hash": "55fc3287b32031458aa88913316156390cd0d3b83e22bb1d7b6196752aa3bc8b",
+        "bytes": 4591
+      },
+      {
+        "path": "components/ui/README.md",
+        "logical_path": "js/ui/README.md",
+        "hash": "67f31042a73433879648ba5d9c5165c7f357fb9c803388e34c0d08716654a8fd",
+        "bytes": 748
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "components/ui/item.tsx",
+      "logical_path": "js/ui/item.tsx",
+      "hash": "55fc3287b32031458aa88913316156390cd0d3b83e22bb1d7b6196752aa3bc8b",
+      "bytes": 4591
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "hash": "67f31042a73433879648ba5d9c5165c7f357fb9c803388e34c0d08716654a8fd",
+      "bytes": 748
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "bytes": 119
+    },
+    {
+      "logical_path": "js/ui/slot.tsx",
+      "materialized_path": "components/ui/slot.tsx",
+      "hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "bytes": 642
+    },
+    {
+      "logical_path": "js/ui/separator.tsx",
+      "materialized_path": "components/ui/separator.tsx",
+      "hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+      "bytes": 809
+    },
+    {
+      "logical_path": "js/ui/item.tsx",
+      "materialized_path": "components/ui/item.tsx",
+      "hash": "55fc3287b32031458aa88913316156390cd0d3b83e22bb1d7b6196752aa3bc8b",
+      "bytes": 4591
+    },
+    {
+      "logical_path": "js/ui/README.md",
+      "materialized_path": "components/ui/README.md",
+      "hash": "67f31042a73433879648ba5d9c5165c7f357fb9c803388e34c0d08716654a8fd",
+      "bytes": 748
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/utils.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/ui/slot.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "components/ui/separator.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "components/ui/item.tsx would be updated from the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "components/ui/README.md would be updated from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "green",
+      "message": "Reviewer `Codex` accepted yellow local edits for `shadcn/ui/item` variant `default`: Reviewed WWW-native no-npm adaptation for the UI Components source slice"
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/utils.ts",
+      "logical_path": "js/lib/utils.ts",
+      "before_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "after_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "tracked_hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/utils.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "components/ui/slot.tsx",
+      "logical_path": "js/ui/slot.tsx",
+      "before_hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "after_hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "tracked_hash": "ba2a601a0e6ff61980dca81e9e81cf87c8be19d05cd09af3adefbbc7658786ff",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/slot.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/ui/separator.tsx",
+      "logical_path": "js/ui/separator.tsx",
+      "before_hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+      "after_hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+      "tracked_hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/separator.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "components/ui/item.tsx",
+      "logical_path": "js/ui/item.tsx",
+      "before_hash": "173d2c1282be81531552b6351ed807367a47591ee2655d23a7b2db6607a4e628",
+      "after_hash": "55fc3287b32031458aa88913316156390cd0d3b83e22bb1d7b6196752aa3bc8b",
+      "tracked_hash": "173d2c1282be81531552b6351ed807367a47591ee2655d23a7b2db6607a4e628",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/item.tsx accepted and updated from the latest package."
+    },
+    {
+      "path": "components/ui/README.md",
+      "logical_path": "js/ui/README.md",
+      "before_hash": "c806994969ae2271ae8f4c8f1ada11df6b8a92028249034ad10ce38f010412f4",
+      "after_hash": "67f31042a73433879648ba5d9c5165c7f357fb9c803388e34c0d08716654a8fd",
+      "tracked_hash": "c806994969ae2271ae8f4c8f1ada11df6b8a92028249034ad10ce38f010412f4",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "components/ui/README.md accepted and updated from the latest package."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-06-03T07:24:13.938761400+00:00",
+  "signature": null
+}

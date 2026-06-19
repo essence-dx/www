@@ -1,0 +1,264 @@
+{
+  "action": "update-write",
+  "package": {
+    "package_id": "forms/react-hook-form",
+    "upstream_name": "react-hook-form",
+    "version": "7.75.0-dx.0",
+    "generator": "dx-forge/react-hook-form",
+    "variant": "default",
+    "last_accepted_update": "2026-05-25T14:24:00.705757500+00:00",
+    "rollback_receipt": "20260523T042135893711600Z-forms-react-hook-form.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "c7969f795407410bdb602bc0778f6e59d3790ee8b2c82e311f9bfb9e48a7504e",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:react-hook-form@7.75.0",
+      "verified": false,
+      "note": "DX inspected the local React Hook Form source mirror, package export map, useForm(), FormProvider, useFormContext(), Controller, useFieldArray(), useWatch(), resolver contracts, and examples before curating this launch forms slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this React Hook Form launch slice, but it is not a live advisory feed and does not audit submitted data, validation schema quality, accessibility, or application authorization policy."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/forms/react-hook-form/form.tsx",
+        "logical_path": "js/forms/react-hook-form/form.tsx",
+        "hash": "abb499ca7ddba8a63a574f98309ef731c332af834685233822ae110f7854cdf1",
+        "bytes": 2091
+      },
+      {
+        "path": "lib/forms/react-hook-form/fields.tsx",
+        "logical_path": "js/forms/react-hook-form/fields.tsx",
+        "hash": "5166235cac19bd073a6bb55202224794d7da009a2af4321102dedfcfab6cd407",
+        "bytes": 3981
+      },
+      {
+        "path": "lib/forms/react-hook-form/resolver.ts",
+        "logical_path": "js/forms/react-hook-form/resolver.ts",
+        "hash": "8c927af879443cbae1a1b6400bcd4bdae6de5a97d1ea53c84e66d61833d64b62",
+        "bytes": 2240
+      },
+      {
+        "path": "lib/forms/react-hook-form/example.tsx",
+        "logical_path": "js/forms/react-hook-form/example.tsx",
+        "hash": "184d9f863cd3f25c3dd9d12402f5b6cc3293d0980e818fdff7121b4272006b49",
+        "bytes": 1015
+      },
+      {
+        "path": "lib/forms/react-hook-form/metadata.ts",
+        "logical_path": "js/forms/react-hook-form/metadata.ts",
+        "hash": "fc57037ebb8f2ba52a3660b2a7a724459e8e8573f88594aee2b7487b3ac75ab7",
+        "bytes": 2672
+      },
+      {
+        "path": "lib/forms/react-hook-form/README.md",
+        "logical_path": "js/forms/react-hook-form/README.md",
+        "hash": "c444c8f79568b1957a525f486bca89f8743b8b520817cac6dc01f6d0d76ec3b4",
+        "bytes": 1598
+      },
+      {
+        "path": "lib/forms/react-hook-form/dry-run-receipt.ts",
+        "logical_path": "js/forms/react-hook-form/dry-run-receipt.ts",
+        "hash": "40535f2011a1b8a76aa1e754f9d54a60503971fbef9688d8a403e4f25352dc42",
+        "bytes": 1806
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/forms/react-hook-form/fields.tsx",
+      "logical_path": "js/forms/react-hook-form/fields.tsx",
+      "hash": "5166235cac19bd073a6bb55202224794d7da009a2af4321102dedfcfab6cd407",
+      "bytes": 3981
+    },
+    {
+      "path": "lib/forms/react-hook-form/README.md",
+      "logical_path": "js/forms/react-hook-form/README.md",
+      "hash": "c444c8f79568b1957a525f486bca89f8743b8b520817cac6dc01f6d0d76ec3b4",
+      "bytes": 1598
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/forms/react-hook-form/form.tsx",
+      "materialized_path": "lib/forms/react-hook-form/form.tsx",
+      "hash": "abb499ca7ddba8a63a574f98309ef731c332af834685233822ae110f7854cdf1",
+      "bytes": 2091
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/fields.tsx",
+      "materialized_path": "lib/forms/react-hook-form/fields.tsx",
+      "hash": "5166235cac19bd073a6bb55202224794d7da009a2af4321102dedfcfab6cd407",
+      "bytes": 3981
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/resolver.ts",
+      "materialized_path": "lib/forms/react-hook-form/resolver.ts",
+      "hash": "8c927af879443cbae1a1b6400bcd4bdae6de5a97d1ea53c84e66d61833d64b62",
+      "bytes": 2240
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/example.tsx",
+      "materialized_path": "lib/forms/react-hook-form/example.tsx",
+      "hash": "184d9f863cd3f25c3dd9d12402f5b6cc3293d0980e818fdff7121b4272006b49",
+      "bytes": 1015
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/metadata.ts",
+      "materialized_path": "lib/forms/react-hook-form/metadata.ts",
+      "hash": "fc57037ebb8f2ba52a3660b2a7a724459e8e8573f88594aee2b7487b3ac75ab7",
+      "bytes": 2672
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/README.md",
+      "materialized_path": "lib/forms/react-hook-form/README.md",
+      "hash": "c444c8f79568b1957a525f486bca89f8743b8b520817cac6dc01f6d0d76ec3b4",
+      "bytes": 1598
+    },
+    {
+      "logical_path": "js/forms/react-hook-form/dry-run-receipt.ts",
+      "materialized_path": "lib/forms/react-hook-form/dry-run-receipt.ts",
+      "hash": "40535f2011a1b8a76aa1e754f9d54a60503971fbef9688d8a403e4f25352dc42",
+      "bytes": 1806
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "green-only-update",
+      "traffic": "green",
+      "message": "Forge update write only applies green changes and never runs package scripts."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forms/react-hook-form/form.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "lib/forms/react-hook-form/fields.tsx would be updated from the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forms/react-hook-form/resolver.ts already matches the latest package."
+    },
+    {
+      "policy": "update-unchanged",
+      "traffic": "green",
+      "message": "lib/forms/react-hook-form/example.tsx already matches the latest package."
+    },
+    {
+      "policy": "update-local-edit",
+      "traffic": "yellow",
+      "message": "lib/forms/react-hook-form/metadata.ts has local state that must be resolved before update."
+    },
+    {
+      "policy": "update-update",
+      "traffic": "green",
+      "message": "lib/forms/react-hook-form/README.md would be updated from the latest package."
+    },
+    {
+      "policy": "update-stale-tracked-file",
+      "traffic": "yellow",
+      "message": "lib/forms/react-hook-form/dry-run-receipt.ts is tracked locally but absent from the latest package."
+    },
+    {
+      "policy": "explicit-yellow-review",
+      "traffic": "yellow",
+      "message": "Reviewer `Shohan` accepted yellow local edits for `forms/react-hook-form` variant `default`: Reviewed after template rename; preserving source-owned local edits and stale tracked local files in Forge receipt state."
+    }
+  ],
+  "update_decisions": [
+    {
+      "path": "lib/forms/react-hook-form/form.tsx",
+      "logical_path": "js/forms/react-hook-form/form.tsx",
+      "before_hash": "abb499ca7ddba8a63a574f98309ef731c332af834685233822ae110f7854cdf1",
+      "after_hash": "abb499ca7ddba8a63a574f98309ef731c332af834685233822ae110f7854cdf1",
+      "tracked_hash": "abb499ca7ddba8a63a574f98309ef731c332af834685233822ae110f7854cdf1",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forms/react-hook-form/form.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forms/react-hook-form/fields.tsx",
+      "logical_path": "js/forms/react-hook-form/fields.tsx",
+      "before_hash": "2bc8847c8ed495bf17b89a25ca759e8b2a2196f78a40e800f8f1a54ca3b6b4a5",
+      "after_hash": "5166235cac19bd073a6bb55202224794d7da009a2af4321102dedfcfab6cd407",
+      "tracked_hash": "2bc8847c8ed495bf17b89a25ca759e8b2a2196f78a40e800f8f1a54ca3b6b4a5",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forms/react-hook-form/fields.tsx accepted and updated from the latest package."
+    },
+    {
+      "path": "lib/forms/react-hook-form/resolver.ts",
+      "logical_path": "js/forms/react-hook-form/resolver.ts",
+      "before_hash": "8c927af879443cbae1a1b6400bcd4bdae6de5a97d1ea53c84e66d61833d64b62",
+      "after_hash": "8c927af879443cbae1a1b6400bcd4bdae6de5a97d1ea53c84e66d61833d64b62",
+      "tracked_hash": "8c927af879443cbae1a1b6400bcd4bdae6de5a97d1ea53c84e66d61833d64b62",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forms/react-hook-form/resolver.ts accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forms/react-hook-form/example.tsx",
+      "logical_path": "js/forms/react-hook-form/example.tsx",
+      "before_hash": "184d9f863cd3f25c3dd9d12402f5b6cc3293d0980e818fdff7121b4272006b49",
+      "after_hash": "184d9f863cd3f25c3dd9d12402f5b6cc3293d0980e818fdff7121b4272006b49",
+      "tracked_hash": "184d9f863cd3f25c3dd9d12402f5b6cc3293d0980e818fdff7121b4272006b49",
+      "change": "unchanged",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forms/react-hook-form/example.tsx accepted as already matching the latest package."
+    },
+    {
+      "path": "lib/forms/react-hook-form/metadata.ts",
+      "logical_path": "js/forms/react-hook-form/metadata.ts",
+      "before_hash": "fc57037ebb8f2ba52a3660b2a7a724459e8e8573f88594aee2b7487b3ac75ab7",
+      "after_hash": "fc57037ebb8f2ba52a3660b2a7a724459e8e8573f88594aee2b7487b3ac75ab7",
+      "tracked_hash": "b8b65491015dad6fdeb8424c8e51b800fce22f17d795ab2a74f7ffa03264b03e",
+      "change": "local-edit",
+      "traffic": "yellow",
+      "decision": "accepted",
+      "message": "lib/forms/react-hook-form/metadata.ts accepted by `Shohan` as a reviewed local edit; Forge preserved the file and updated the manifest hash."
+    },
+    {
+      "path": "lib/forms/react-hook-form/README.md",
+      "logical_path": "js/forms/react-hook-form/README.md",
+      "before_hash": "ef3117bf597ef8d572bf56bc1ee521278b084ad530fec2fd46ae00445a86c64a",
+      "after_hash": "c444c8f79568b1957a525f486bca89f8743b8b520817cac6dc01f6d0d76ec3b4",
+      "tracked_hash": "ef3117bf597ef8d572bf56bc1ee521278b084ad530fec2fd46ae00445a86c64a",
+      "change": "update",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "lib/forms/react-hook-form/README.md accepted and updated from the latest package."
+    },
+    {
+      "path": "lib/forms/react-hook-form/dry-run-receipt.ts",
+      "logical_path": "js/forms/react-hook-form/dry-run-receipt.ts",
+      "before_hash": "40535f2011a1b8a76aa1e754f9d54a60503971fbef9688d8a403e4f25352dc42",
+      "tracked_hash": "40535f2011a1b8a76aa1e754f9d54a60503971fbef9688d8a403e4f25352dc42",
+      "change": "stale-tracked-file",
+      "traffic": "yellow",
+      "decision": "rejected",
+      "message": "lib/forms/react-hook-form/dry-run-receipt.ts is tracked locally but absent from the latest package."
+    }
+  ],
+  "risk_score": 70,
+  "timestamp": "2026-05-25T14:24:00.705757500+00:00",
+  "signature": null
+}

@@ -1,0 +1,203 @@
+{
+  "schema": "dx.build.zedHandoff",
+  "schema_revision": 1,
+  "status": "source-route-shell-and-module-graph-ready",
+  "project_root": "G:/Dx/www/examples/conversion-proof",
+  "source_build_manifest": ".dx/www/output/source-build-manifest.json",
+  "source_build_receipt": ".dx/www/output/source-build-receipt.json",
+  "canonical_build_receipt": ".dx/receipts/build/latest.json",
+  "graph_receipt": ".dx/receipts/graph/latest.json",
+  "graph_consumer_snapshot": ".dx/receipts/graph/consumer-snapshot.json",
+  "build_readiness": ".dx/receipts/build/readiness.json",
+  "image_metadata_receipt": ".dx/receipts/build/image-metadata.json",
+  "content_docs_receipt": ".dx/receipts/build/content-docs.json",
+  "installed_binary_smoke_receipt": ".dx/receipts/build/installed-binary-smoke-latest.json",
+  "route_handlers": [
+    {
+      "route": "/api/ai/chat",
+      "path": "app/api/ai/chat/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false
+    },
+    {
+      "route": "/api/auth/session",
+      "path": "app/api/auth/session/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false
+    },
+    {
+      "route": "/api/checkout",
+      "path": "app/api/checkout/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false
+    },
+    {
+      "route": "/api/trpc/health",
+      "path": "app/api/trpc/health/route.ts",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false
+    }
+  ],
+  "route_shell_chunks": 1,
+  "source_module_chunks": 3,
+  "style_optimization": {
+    "style_node_count": 6,
+    "original_rule_count": 743,
+    "retained_rule_count": 743,
+    "pruned_rule_count": 0,
+    "minified_style_count": 6,
+    "source_map_count": 6,
+    "source_map_source_count": 9,
+    "source_map_source_hash_count": 9,
+    "source_map_entry_style_source_count": 6,
+    "source_map_flattened_import_source_count": 3,
+    "source_map_retained_import_source_count": 0,
+    "source_map_segment_count": 0,
+    "source_map_exact_segment_map_count": 0,
+    "source_map_evidence_only_count": 6,
+    "source_map_link_count": 6,
+    "source_map_hash_count": 6,
+    "flattened_import_count": 3,
+    "retained_import_count": 0,
+    "asset_reference_count": 0,
+    "entry_style_asset_reference_count": 0,
+    "flattened_import_asset_reference_count": 0,
+    "retained_import_asset_reference_count": 0
+  },
+  "content_pipeline": {
+    "document_count": 0,
+    "mdx_document_count": 0,
+    "hash_manifest": ".dx/receipts/build/content-docs.json#hash_manifest",
+    "consumer_snapshot": ".dx/receipts/build/content-docs.json#consumer_snapshot",
+    "freshness": {
+      "schema": "dx.www.contentDocsFreshnessStatus",
+      "hash_algorithm": "blake3-16",
+      "status": "current-at-build",
+      "comparison": "manifest-self-check",
+      "checked_document_count": 0,
+      "current": true,
+      "stale_paths": [],
+      "missing_paths": [],
+      "unsafe_paths": [],
+      "safe_path_roots": [
+        "docs",
+        "content"
+      ],
+      "unsafe_path_policy": "reject absolute, parent, and non-docs/content receipt paths before hashing source bytes",
+      "runtime_proof": false,
+      "receipt_section": "content-docs.json#freshness_contract",
+      "consumer_action": "compare content-docs hash_manifest.document_hashes against current source bytes and reject unsafe receipt paths before trusting older receipts"
+    },
+    "node_modules_required": false,
+    "runtime_proof": false,
+    "full_mdx_pipeline_parity": false,
+    "status": "source-metadata-only"
+  },
+  "image_pipeline": {
+    "image_asset_count": 36,
+    "metadata_asset_count": 36,
+    "optimized_variant_count": 0,
+    "placeholder_count": 36,
+    "placeholder_artifact_count": 36,
+    "placeholder_artifact_bytes": 6150,
+    "placeholder_artifact_outputs": [
+      ".dx/www/output/image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg"
+    ],
+    "route_reference_count": 0,
+    "formats": {
+      "png": 22,
+      "svg": 14
+    },
+    "dimension_sources": {
+      "png-ihdr": 22,
+      "svg-root-attributes": 10,
+      "svg-viewbox": 4
+    },
+    "status": "metadata-plus-placeholder-artifacts-boundary",
+    "full_pipeline_parity": false
+  },
+  "routes": [
+    {
+      "route": "/",
+      "source_path": "app/page.tsx",
+      "html_output": ".dx/www/output/source-routes/root/index.html",
+      "shell_chunk_output": ".dx/www/output/source-routes/root/route-shell-30c76c59fa3798c0.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-df2cb24c3217a1bb.mjs",
+      "source_module_chunks": [
+        {
+          "source_path": "app/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-df2cb24c3217a1bb.mjs",
+          "kind": "tsx",
+          "hash": "df2cb24c3217a1bb"
+        },
+        {
+          "source_path": "components/icons/icon.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-icons-icon-tsx-1a91cff776d4e0b0.mjs",
+          "kind": "tsx",
+          "hash": "1a91cff776d4e0b0"
+        },
+        {
+          "source_path": "lib/forge/www/landing-page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/lib-forge-www-landing-page-tsx-85cb17e3b5359ab6.mjs",
+          "kind": "tsx",
+          "hash": "85cb17e3b5359ab6"
+        }
+      ],
+      "fallback_hash": "30c76c59fa3798c0"
+    }
+  ],
+  "node_modules_required": false,
+  "next_action": "Wire linked source-module chunks into governed preview/runtime validation before claiming full React hydration."
+}

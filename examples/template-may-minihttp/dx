@@ -1,0 +1,29 @@
+project(name=dx-www-template-may-minihttp version=0.1.0 kind=www-app)
+
+www(
+   app_dir=app
+   output_dir=.dx/www/output
+)
+
+dev(host=127.0.0.1 port=3000 hot_reload=false devtools=false server_mode=auto)
+
+style(
+   mode=generated-css
+   tokens=styles/theme.css
+   generated_css=styles/generated.css
+)
+
+imports(
+   map=.dx/imports/import-map.json
+   barrel=components/auto-imports.ts
+   declarations=.dx/imports/imports.d.ts
+   scan_roots=components,composables,utils
+   used_roots=app,components,lib,styles
+   aliases=#imports,#components
+   used_only=true
+)
+
+icons(component=Icon source_tag=icon runtime_tag=dx-icon generated_dir=components/icons)
+
+forge(policy=forge-first-no-node-modules)
+check(score_scale=500 lighthouse=true)

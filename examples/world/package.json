@@ -1,0 +1,12 @@
+{
+  "name": "dx-www-world",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "dx dev",
+    "build": "dx build",
+    "check": "dx check"
+  }
+}

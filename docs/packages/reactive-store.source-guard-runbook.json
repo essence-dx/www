@@ -1,0 +1,128 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Reactive Store",
+    "package_id": "reactive/store",
+    "upstream_package": "@tanstack/store",
+    "upstream_version": "0.11.0",
+    "source_mirrors": [
+      "G:/WWW/inspirations/tanstack-store"
+    ],
+    "based_on": "@tanstack/react-store",
+    "aliases": [
+      "reactive-store",
+      "@tanstack/store",
+      "@tanstack/react-store",
+      "tanstack-store"
+    ]
+  },
+  "selected_surfaces": [
+    "react-context",
+    "template-reactive-dashboard-store",
+    "receipt-hash-refresh"
+  ],
+  "upstream_public_apis": [
+    "Store",
+    "ReadonlyStore",
+    "createStore",
+    "createStoreContext",
+    "useCreateStore",
+    "useSelector"
+  ],
+  "inspected_upstream_files": [
+    "packages/store/package.json",
+    "packages/react-store/package.json",
+    "packages/store/src/store.ts",
+    "packages/react-store/src/createStoreContext.tsx",
+    "packages/react-store/src/useCreateStore.ts",
+    "packages/react-store/src/useSelector.ts"
+  ],
+  "guard": {
+    "id": "reactive-store-lower-dx-check-helper-freshness",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/project_check/reactive_store_dx_check.rs",
+    "command": "cargo test -q -p dx-www-compiler reactive_store_hash_refresh_stale_helper_keeps_source_hash_clean --lib",
+    "proves": [
+      "Reactive Store lower-level dx-check helper freshness fixture",
+      "reactive_store_receipt_hash_refresh_stale",
+      "reactive_store_hash_mismatch stays byte-derived",
+      "examples/template/components/template-app/dashboard-reactive-store.ts",
+      "data-dx-reactive-store-runtime=\"source-owned-template-store\"",
+      "docs/packages/reactive-store.source-guard-runbook.json",
+      "reactive/store source-only Studio discovery",
+      "without claiming live React runtime proof"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "reactive-store-lower-dx-check-helper-freshness",
+      "purpose": "The lower-level Reactive Store dx-check producer reports reactive_store_receipt_hash_refresh_stale while keeping reactive_store_hash_mismatch byte-derived; the default dashboard also exposes a source-owned template store without claiming browser subscription QA.",
+      "evidence_field": "core/src/ecosystem/project_check/reactive_store_dx_check.rs"
+    },
+    "command": {
+      "command": "cargo test -q -p dx-www-compiler reactive_store_hash_refresh_stale_helper_keeps_source_hash_clean --lib",
+      "purpose": "Validate the source-owned Reactive Store template store, helper-freshness metric proof, and runbook metadata without installing dependencies or claiming browser subscription QA.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "dx_check_metrics": [
+    "reactive_store_receipt_hash_refresh_current",
+    "reactive_store_receipt_hash_refresh_stale",
+    "reactive_store_receipt_hash_refresh_missing",
+    "reactive_store_hash_mismatch"
+  ],
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-name",
+    "data-dx-check-package-lane-status",
+    "data-dx-check-package-lane-receipt-status",
+    "data-dx-check-package-lane-upstream-package",
+    "data-dx-check-package-lane-source-mirror"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/packages/reactive-store.json",
+    "hash_helper": "examples/template/reactive-store-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/reactive-store-receipt-hashes.ts --check --json",
+    "zed_visibility": "reactive-store:receipt-hash-refresh"
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture_path": "docs/packages/reactive-store.source-guard-runbook.json",
+    "guard_id": "reactive-store-lower-dx-check-helper-freshness",
+    "runtime_proof": false,
+    "zed_visibility": "reactive-store:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "state shape and action design",
+    "mutation policy",
+    "persistence and sensitive-state review",
+    "render-performance expectations",
+    "runtime dependency installation",
+    "browser runtime proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-OWNED TEMPLATE STORE: the default dashboard store and snapshot summary execute from template source without node_modules.",
+    "ADAPTER-BOUNDARY: app-wide persistence, sensitive-state review, dependency installation, render-performance review, and browser subscription QA stay app-owned."
+  ],
+  "honesty_label": "SOURCE-OWNED TEMPLATE STORE",
+  "runtime_proof": false
+}

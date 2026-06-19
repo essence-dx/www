@@ -1,0 +1,13 @@
+{
+  "name": "fair-counter-htmx",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "htmx.org": "2.0.10"
+  }
+}

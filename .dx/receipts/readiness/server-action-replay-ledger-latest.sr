@@ -1,0 +1,17 @@
+tool="dx www readiness"
+command="dx www readiness --write-receipts"
+schema="dx.www.readiness.server_action_replay_ledger_receipt_contract"
+schema_revision=1
+passed=true
+status="local-replay-ledger-current-provider-proof-needed"
+release_ready=false
+fastest_world_claim=false
+ledger_path="examples/template/.dx/www/output/server-action-replay-ledger.json"
+ledger_present=true
+hosted_provider_proof=false
+provider_proof_status="not-run-local-preview-only"
+production_proof_scope="local-production-preview-only"
+provider_hosted_replay_required=true
+provider_proof_gap_ids="distributed-idempotency-store;provider-hosted-csrf-session-integration;cross-process-replay-consistency;durable-provider-kv-sql-replay-retention;provider-request-cancellation-replay"
+entry_count=0
+rule="local production-preview server-action replay ledger only; hosted provider proof remains separate"

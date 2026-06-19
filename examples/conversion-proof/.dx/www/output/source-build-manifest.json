@@ -1,0 +1,2404 @@
+{
+  "schema": "dx.www.sourceBuildManifest",
+  "schema_revision": 1,
+  "project_root": "G:/Dx/www/examples/conversion-proof",
+  "routes": [
+    {
+      "route": "/",
+      "path": "app/page.tsx",
+      "output": ".dx/www/output/source/app/page.tsx",
+      "hash": "df2cb24c3217a1bb",
+      "imports": [
+        {
+          "specifier": "@/lib/forge/www/landing-page",
+          "side_effect_only": false,
+          "type_only": false
+        }
+      ],
+      "parser_backend": "oxc-parser",
+      "diagnostics": 0,
+      "ecmascript_analysis": {
+        "schema": "dx.ecmascript.analysis",
+        "schema_revision": 1,
+        "source_path": "app/page.tsx",
+        "source_kind": "tsx",
+        "parser_backend": "oxc-parser",
+        "diagnostics": 0,
+        "compatibility_reference": {
+          "upstream_crates": [
+            "turbopack-ecmascript"
+          ],
+          "reference_only": true,
+          "runtime_build_adoption": false,
+          "public_runtime_dependency": false,
+          "vendor_root": "vendor/next-rust",
+          "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+          "next_transform_references": [
+            "next-custom-transforms::track_dynamic_imports",
+            "next-custom-transforms::react_server_components"
+          ],
+          "copied_code": false
+        },
+        "output_model": {
+          "contract": "dx.www.moduleGraph",
+          "compiler_owns_output": true,
+          "public_architecture": "DX-owned source graph analysis"
+        },
+        "runtime_boundaries": {
+          "next_runtime_required": false,
+          "react_runtime_required": false,
+          "rsc_required": false,
+          "node_modules_required": false
+        },
+        "directives": [],
+        "static_imports": [
+          {
+            "specifier": "@/lib/forge/www/landing-page",
+            "side_effect_only": false,
+            "type_only": false
+          }
+        ],
+        "dynamic_imports": [],
+        "unresolved_dynamic_imports": [],
+        "unsupported_dynamic_imports": [],
+        "dynamic_import_analysis": {
+          "status": "none-observed",
+          "static_count": 0,
+          "unresolved_count": 0,
+          "unsupported_count": 0,
+          "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+        },
+        "export_names": [
+          "LandingPage",
+          "metadata"
+        ],
+        "jsx": true,
+        "top_level_await": false,
+        "full_nextjs_parity": false,
+        "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+      }
+    }
+  ],
+  "route_handlers": [
+    {
+      "route": "/api/ai/chat",
+      "path": "app/api/ai/chat/route.ts",
+      "output": ".dx/www/output/source/app/api/ai/chat/route.ts",
+      "hash": "af773545a6dd8b42",
+      "methods": [
+        "POST"
+      ],
+      "imports": [],
+      "parser_backend": "oxc-parser",
+      "diagnostics": 0,
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false,
+      "ecmascript_analysis": {
+        "schema": "dx.ecmascript.analysis",
+        "schema_revision": 1,
+        "source_path": "app/api/ai/chat/route.ts",
+        "source_kind": "ts",
+        "parser_backend": "oxc-parser",
+        "diagnostics": 0,
+        "compatibility_reference": {
+          "upstream_crates": [
+            "turbopack-ecmascript"
+          ],
+          "reference_only": true,
+          "runtime_build_adoption": false,
+          "public_runtime_dependency": false,
+          "vendor_root": "vendor/next-rust",
+          "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+          "next_transform_references": [
+            "next-custom-transforms::track_dynamic_imports",
+            "next-custom-transforms::react_server_components"
+          ],
+          "copied_code": false
+        },
+        "output_model": {
+          "contract": "dx.www.moduleGraph",
+          "compiler_owns_output": true,
+          "public_architecture": "DX-owned source graph analysis"
+        },
+        "runtime_boundaries": {
+          "next_runtime_required": false,
+          "react_runtime_required": false,
+          "rsc_required": false,
+          "node_modules_required": false
+        },
+        "directives": [],
+        "static_imports": [],
+        "dynamic_imports": [],
+        "unresolved_dynamic_imports": [],
+        "unsupported_dynamic_imports": [],
+        "dynamic_import_analysis": {
+          "status": "none-observed",
+          "static_count": 0,
+          "unresolved_count": 0,
+          "unsupported_count": 0,
+          "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+        },
+        "export_names": [],
+        "jsx": false,
+        "top_level_await": false,
+        "full_nextjs_parity": false,
+        "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+      }
+    },
+    {
+      "route": "/api/auth/session",
+      "path": "app/api/auth/session/route.ts",
+      "output": ".dx/www/output/source/app/api/auth/session/route.ts",
+      "hash": "5eff78da83298098",
+      "methods": [
+        "GET"
+      ],
+      "imports": [],
+      "parser_backend": "oxc-parser",
+      "diagnostics": 0,
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false,
+      "ecmascript_analysis": {
+        "schema": "dx.ecmascript.analysis",
+        "schema_revision": 1,
+        "source_path": "app/api/auth/session/route.ts",
+        "source_kind": "ts",
+        "parser_backend": "oxc-parser",
+        "diagnostics": 0,
+        "compatibility_reference": {
+          "upstream_crates": [
+            "turbopack-ecmascript"
+          ],
+          "reference_only": true,
+          "runtime_build_adoption": false,
+          "public_runtime_dependency": false,
+          "vendor_root": "vendor/next-rust",
+          "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+          "next_transform_references": [
+            "next-custom-transforms::track_dynamic_imports",
+            "next-custom-transforms::react_server_components"
+          ],
+          "copied_code": false
+        },
+        "output_model": {
+          "contract": "dx.www.moduleGraph",
+          "compiler_owns_output": true,
+          "public_architecture": "DX-owned source graph analysis"
+        },
+        "runtime_boundaries": {
+          "next_runtime_required": false,
+          "react_runtime_required": false,
+          "rsc_required": false,
+          "node_modules_required": false
+        },
+        "directives": [],
+        "static_imports": [],
+        "dynamic_imports": [],
+        "unresolved_dynamic_imports": [],
+        "unsupported_dynamic_imports": [],
+        "dynamic_import_analysis": {
+          "status": "none-observed",
+          "static_count": 0,
+          "unresolved_count": 0,
+          "unsupported_count": 0,
+          "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+        },
+        "export_names": [
+          "GET"
+        ],
+        "jsx": false,
+        "top_level_await": false,
+        "full_nextjs_parity": false,
+        "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+      }
+    },
+    {
+      "route": "/api/checkout",
+      "path": "app/api/checkout/route.ts",
+      "output": ".dx/www/output/source/app/api/checkout/route.ts",
+      "hash": "ff2a988ed5d86f49",
+      "methods": [
+        "POST"
+      ],
+      "imports": [],
+      "parser_backend": "oxc-parser",
+      "diagnostics": 0,
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false,
+      "ecmascript_analysis": {
+        "schema": "dx.ecmascript.analysis",
+        "schema_revision": 1,
+        "source_path": "app/api/checkout/route.ts",
+        "source_kind": "ts",
+        "parser_backend": "oxc-parser",
+        "diagnostics": 0,
+        "compatibility_reference": {
+          "upstream_crates": [
+            "turbopack-ecmascript"
+          ],
+          "reference_only": true,
+          "runtime_build_adoption": false,
+          "public_runtime_dependency": false,
+          "vendor_root": "vendor/next-rust",
+          "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+          "next_transform_references": [
+            "next-custom-transforms::track_dynamic_imports",
+            "next-custom-transforms::react_server_components"
+          ],
+          "copied_code": false
+        },
+        "output_model": {
+          "contract": "dx.www.moduleGraph",
+          "compiler_owns_output": true,
+          "public_architecture": "DX-owned source graph analysis"
+        },
+        "runtime_boundaries": {
+          "next_runtime_required": false,
+          "react_runtime_required": false,
+          "rsc_required": false,
+          "node_modules_required": false
+        },
+        "directives": [],
+        "static_imports": [],
+        "dynamic_imports": [],
+        "unresolved_dynamic_imports": [],
+        "unsupported_dynamic_imports": [],
+        "dynamic_import_analysis": {
+          "status": "none-observed",
+          "static_count": 0,
+          "unresolved_count": 0,
+          "unsupported_count": 0,
+          "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+        },
+        "export_names": [],
+        "jsx": false,
+        "top_level_await": false,
+        "full_nextjs_parity": false,
+        "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+      }
+    },
+    {
+      "route": "/api/trpc/health",
+      "path": "app/api/trpc/health/route.ts",
+      "output": ".dx/www/output/source/app/api/trpc/health/route.ts",
+      "hash": "8b5c1081250b870a",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "imports": [],
+      "parser_backend": "oxc-parser",
+      "diagnostics": 0,
+      "execution_model": "source-owned-route-handler-contract",
+      "lifecycle_scripts_executed": false,
+      "node_modules_required": false,
+      "ecmascript_analysis": {
+        "schema": "dx.ecmascript.analysis",
+        "schema_revision": 1,
+        "source_path": "app/api/trpc/health/route.ts",
+        "source_kind": "ts",
+        "parser_backend": "oxc-parser",
+        "diagnostics": 0,
+        "compatibility_reference": {
+          "upstream_crates": [
+            "turbopack-ecmascript"
+          ],
+          "reference_only": true,
+          "runtime_build_adoption": false,
+          "public_runtime_dependency": false,
+          "vendor_root": "vendor/next-rust",
+          "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+          "next_transform_references": [
+            "next-custom-transforms::track_dynamic_imports",
+            "next-custom-transforms::react_server_components"
+          ],
+          "copied_code": false
+        },
+        "output_model": {
+          "contract": "dx.www.moduleGraph",
+          "compiler_owns_output": true,
+          "public_architecture": "DX-owned source graph analysis"
+        },
+        "runtime_boundaries": {
+          "next_runtime_required": false,
+          "react_runtime_required": false,
+          "rsc_required": false,
+          "node_modules_required": false
+        },
+        "directives": [],
+        "static_imports": [],
+        "dynamic_imports": [],
+        "unresolved_dynamic_imports": [],
+        "unsupported_dynamic_imports": [],
+        "dynamic_import_analysis": {
+          "status": "none-observed",
+          "static_count": 0,
+          "unresolved_count": 0,
+          "unsupported_count": 0,
+          "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+        },
+        "export_names": [
+          "GET"
+        ],
+        "jsx": false,
+        "top_level_await": false,
+        "full_nextjs_parity": false,
+        "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+      }
+    }
+  ],
+  "route_handler_receipts": {
+    "output": ".dx/www/output/route-handler-receipts.json",
+    "receipt_count": 2,
+    "skipped_count": 3,
+    "node_modules_required": false,
+    "lifecycle_scripts_executed": false
+  },
+  "route_outputs": [
+    {
+      "route": "/",
+      "source_path": "app/page.tsx",
+      "html_output": ".dx/www/output/source-routes/root/index.html",
+      "packet_output": ".dx/www/output/source-routes/root/index.dxpk",
+      "page_graph_output": ".dx/www/output/source-routes/root/page-graph.json",
+      "route_unit_output": ".dx/www/output/source-routes/root/route-unit.json",
+      "shell_chunk_output": ".dx/www/output/source-routes/root/route-shell-30c76c59fa3798c0.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-df2cb24c3217a1bb.mjs",
+      "server_data_output": ".dx/www/output/source-routes/root/server-data.json",
+      "source_module_chunks": [
+        {
+          "source_path": "app/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-df2cb24c3217a1bb.mjs",
+          "kind": "tsx",
+          "hash": "df2cb24c3217a1bb",
+          "dependencies": [
+            {
+              "specifier": "@/lib/forge/www/landing-page",
+              "resolved_path": "lib/forge/www/landing-page.tsx",
+              "chunk_output": ".dx/www/output/source-routes/root/modules/lib-forge-www-landing-page-tsx-85cb17e3b5359ab6.mjs",
+              "kind": "tsx",
+              "resolver_source": "project-root-alias",
+              "node_modules_required": false
+            }
+          ],
+          "browser_executable": true,
+          "source_transformed": true,
+          "transform_kind": "tsx-component-runtime",
+          "runtime_exports": [
+            "LandingPage"
+          ],
+          "ecmascript_analysis": {
+            "schema": "dx.ecmascript.analysis",
+            "schema_revision": 1,
+            "source_path": "app/page.tsx",
+            "source_kind": "tsx",
+            "parser_backend": "oxc-parser",
+            "diagnostics": 0,
+            "compatibility_reference": {
+              "upstream_crates": [
+                "turbopack-ecmascript"
+              ],
+              "reference_only": true,
+              "runtime_build_adoption": false,
+              "public_runtime_dependency": false,
+              "vendor_root": "vendor/next-rust",
+              "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+              "next_transform_references": [
+                "next-custom-transforms::track_dynamic_imports",
+                "next-custom-transforms::react_server_components"
+              ],
+              "copied_code": false
+            },
+            "output_model": {
+              "contract": "dx.www.moduleGraph",
+              "compiler_owns_output": true,
+              "public_architecture": "DX-owned source graph analysis"
+            },
+            "runtime_boundaries": {
+              "next_runtime_required": false,
+              "react_runtime_required": false,
+              "rsc_required": false,
+              "node_modules_required": false
+            },
+            "directives": [],
+            "static_imports": [
+              {
+                "specifier": "@/lib/forge/www/landing-page",
+                "side_effect_only": false,
+                "type_only": false
+              }
+            ],
+            "dynamic_imports": [],
+            "unresolved_dynamic_imports": [],
+            "unsupported_dynamic_imports": [],
+            "dynamic_import_analysis": {
+              "status": "none-observed",
+              "static_count": 0,
+              "unresolved_count": 0,
+              "unsupported_count": 0,
+              "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+            },
+            "export_names": [
+              "LandingPage"
+            ],
+            "jsx": true,
+            "top_level_await": false,
+            "full_nextjs_parity": false,
+            "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+          },
+          "node_modules_required": false
+        },
+        {
+          "source_path": "components/icons/icon.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/components-icons-icon-tsx-1a91cff776d4e0b0.mjs",
+          "kind": "tsx",
+          "hash": "1a91cff776d4e0b0",
+          "dependencies": [],
+          "browser_executable": true,
+          "source_transformed": false,
+          "transform_kind": "metadata-only",
+          "runtime_exports": [],
+          "ecmascript_analysis": {
+            "schema": "dx.ecmascript.analysis",
+            "schema_revision": 1,
+            "source_path": "components/icons/icon.tsx",
+            "source_kind": "tsx",
+            "parser_backend": "oxc-parser",
+            "diagnostics": 0,
+            "compatibility_reference": {
+              "upstream_crates": [
+                "turbopack-ecmascript"
+              ],
+              "reference_only": true,
+              "runtime_build_adoption": false,
+              "public_runtime_dependency": false,
+              "vendor_root": "vendor/next-rust",
+              "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+              "next_transform_references": [
+                "next-custom-transforms::track_dynamic_imports",
+                "next-custom-transforms::react_server_components"
+              ],
+              "copied_code": false
+            },
+            "output_model": {
+              "contract": "dx.www.moduleGraph",
+              "compiler_owns_output": true,
+              "public_architecture": "DX-owned source graph analysis"
+            },
+            "runtime_boundaries": {
+              "next_runtime_required": false,
+              "react_runtime_required": false,
+              "rsc_required": false,
+              "node_modules_required": false
+            },
+            "directives": [],
+            "static_imports": [],
+            "dynamic_imports": [],
+            "unresolved_dynamic_imports": [],
+            "unsupported_dynamic_imports": [],
+            "dynamic_import_analysis": {
+              "status": "none-observed",
+              "static_count": 0,
+              "unresolved_count": 0,
+              "unsupported_count": 0,
+              "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+            },
+            "export_names": [
+              "Icon"
+            ],
+            "jsx": true,
+            "top_level_await": false,
+            "full_nextjs_parity": false,
+            "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+          },
+          "node_modules_required": false
+        },
+        {
+          "source_path": "lib/forge/www/landing-page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/lib-forge-www-landing-page-tsx-85cb17e3b5359ab6.mjs",
+          "kind": "tsx",
+          "hash": "85cb17e3b5359ab6",
+          "dependencies": [
+            {
+              "specifier": "@/components/icons/icon",
+              "resolved_path": "components/icons/icon.tsx",
+              "chunk_output": ".dx/www/output/source-routes/root/modules/components-icons-icon-tsx-1a91cff776d4e0b0.mjs",
+              "kind": "tsx",
+              "resolver_source": "project-root-alias",
+              "node_modules_required": false
+            }
+          ],
+          "browser_executable": true,
+          "source_transformed": false,
+          "transform_kind": "metadata-only",
+          "runtime_exports": [],
+          "ecmascript_analysis": {
+            "schema": "dx.ecmascript.analysis",
+            "schema_revision": 1,
+            "source_path": "lib/forge/www/landing-page.tsx",
+            "source_kind": "tsx",
+            "parser_backend": "oxc-parser",
+            "diagnostics": 0,
+            "compatibility_reference": {
+              "upstream_crates": [
+                "turbopack-ecmascript"
+              ],
+              "reference_only": true,
+              "runtime_build_adoption": false,
+              "public_runtime_dependency": false,
+              "vendor_root": "vendor/next-rust",
+              "vendor_commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+              "next_transform_references": [
+                "next-custom-transforms::track_dynamic_imports",
+                "next-custom-transforms::react_server_components"
+              ],
+              "copied_code": false
+            },
+            "output_model": {
+              "contract": "dx.www.moduleGraph",
+              "compiler_owns_output": true,
+              "public_architecture": "DX-owned source graph analysis"
+            },
+            "runtime_boundaries": {
+              "next_runtime_required": false,
+              "react_runtime_required": false,
+              "rsc_required": false,
+              "node_modules_required": false
+            },
+            "directives": [],
+            "static_imports": [
+              {
+                "specifier": "@/components/icons/icon",
+                "side_effect_only": false,
+                "type_only": false
+              }
+            ],
+            "dynamic_imports": [],
+            "unresolved_dynamic_imports": [],
+            "unsupported_dynamic_imports": [],
+            "dynamic_import_analysis": {
+              "status": "none-observed",
+              "static_count": 0,
+              "unresolved_count": 0,
+              "unsupported_count": 0,
+              "boundary": "source-owned dynamic import analysis; static specifiers become evidence, expressions remain unresolved, and unsupported call forms stay as adapter-boundary receipts"
+            },
+            "export_names": [
+              "LandingPageContent"
+            ],
+            "jsx": true,
+            "top_level_await": false,
+            "full_nextjs_parity": false,
+            "analysis_boundary": "Uses vendored Turbopack ECMAScript and selected Next transform behavior as compatibility references while emitting DX-owned source graph receipts."
+          },
+          "node_modules_required": false
+        }
+      ],
+      "fallback_hash": "30c76c59fa3798c0",
+      "fallback_bytes": 2248,
+      "packet_bytes": 46165,
+      "node_modules_required": false
+    }
+  ],
+  "server_data_routes": [
+    {
+      "route": "/",
+      "route_source_path": "app/page.tsx",
+      "output": ".dx/www/output/source-routes/root/server-data.json",
+      "status": "no-loader-bindings",
+      "entry_count": 0,
+      "entry_source_paths": [],
+      "request": {
+        "mode": "static-route-contract-inputs",
+        "route_params": {},
+        "search_params": {},
+        "build_time_contract_inputs": true,
+        "runtime_request_values": false,
+        "source_owned_contract": true,
+        "external_runtime_request_values": false
+      },
+      "execution_model": "not-required",
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false
+    }
+  ],
+  "server_data_route_manifest": {
+    "source_build_routes": 1,
+    "manifest_routes": 1,
+    "source_build_entries": 0,
+    "manifest_entries": 0,
+    "routes_with_route_params": 0,
+    "routes_with_search_params": 0,
+    "route_param_keys": [],
+    "search_param_keys": [],
+    "manifest_includes_source_build_routes": true,
+    "missing_source_build_routes": []
+  },
+  "styles": [
+    {
+      "path": "styles/conversion-proof.css",
+      "output": ".dx/www/output/styles/conversion-proof.css",
+      "source_map_output": ".dx/www/output/styles/conversion-proof.css.map",
+      "source_map_source_count": 1,
+      "source_map_source_hash_count": 1,
+      "source_map_entry_style_source_count": 1,
+      "source_map_flattened_import_source_count": 0,
+      "source_map_retained_import_source_count": 0,
+      "source_map_segment_count": 0,
+      "source_map_exact_segment_mapping": false,
+      "source_map_evidence_only": true,
+      "source_map_linked": true,
+      "source_map_hash": "1fb8ebbe63d7a213",
+      "hash": "32ea5b9d5e557c90",
+      "rule_count": 28,
+      "original_rule_count": 28,
+      "retained_rule_count": 28,
+      "pruned_rule_count": 0,
+      "minified": true,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "import_count": 0,
+      "flattened_imports": [],
+      "retained_imports": [],
+      "asset_references": []
+    },
+    {
+      "path": "styles/dx-landing.css",
+      "output": ".dx/www/output/styles/dx-landing.css",
+      "source_map_output": ".dx/www/output/styles/dx-landing.css.map",
+      "source_map_source_count": 1,
+      "source_map_source_hash_count": 1,
+      "source_map_entry_style_source_count": 1,
+      "source_map_flattened_import_source_count": 0,
+      "source_map_retained_import_source_count": 0,
+      "source_map_segment_count": 0,
+      "source_map_exact_segment_mapping": false,
+      "source_map_evidence_only": true,
+      "source_map_linked": true,
+      "source_map_hash": "5db07def89b49360",
+      "hash": "6fadd190ef7c352d",
+      "rule_count": 186,
+      "original_rule_count": 186,
+      "retained_rule_count": 186,
+      "pruned_rule_count": 0,
+      "minified": true,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "import_count": 0,
+      "flattened_imports": [],
+      "retained_imports": [],
+      "asset_references": []
+    },
+    {
+      "path": "styles/generated.css",
+      "output": ".dx/www/output/styles/generated.css",
+      "source_map_output": ".dx/www/output/styles/generated.css.map",
+      "source_map_source_count": 1,
+      "source_map_source_hash_count": 1,
+      "source_map_entry_style_source_count": 1,
+      "source_map_flattened_import_source_count": 0,
+      "source_map_retained_import_source_count": 0,
+      "source_map_segment_count": 0,
+      "source_map_exact_segment_mapping": false,
+      "source_map_evidence_only": true,
+      "source_map_linked": true,
+      "source_map_hash": "4c151ac433d5d11f",
+      "hash": "ad12a1b24226d9a2",
+      "rule_count": 128,
+      "original_rule_count": 128,
+      "retained_rule_count": 128,
+      "pruned_rule_count": 0,
+      "minified": true,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "import_count": 0,
+      "flattened_imports": [],
+      "retained_imports": [],
+      "asset_references": []
+    },
+    {
+      "path": "styles/globals.css",
+      "output": ".dx/www/output/styles/globals.css",
+      "source_map_output": ".dx/www/output/styles/globals.css.map",
+      "source_map_source_count": 4,
+      "source_map_source_hash_count": 4,
+      "source_map_entry_style_source_count": 1,
+      "source_map_flattened_import_source_count": 3,
+      "source_map_retained_import_source_count": 0,
+      "source_map_segment_count": 0,
+      "source_map_exact_segment_mapping": false,
+      "source_map_evidence_only": true,
+      "source_map_linked": true,
+      "source_map_hash": "2663068a96e7c096",
+      "hash": "5a181917958db2d4",
+      "rule_count": 316,
+      "original_rule_count": 316,
+      "retained_rule_count": 316,
+      "pruned_rule_count": 0,
+      "minified": true,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "import_count": 0,
+      "flattened_imports": [
+        {
+          "specifier": "./theme.css",
+          "path": "styles/theme.css",
+          "inlined": true
+        },
+        {
+          "specifier": "./generated.css",
+          "path": "styles/generated.css",
+          "inlined": true
+        },
+        {
+          "specifier": "./dx-landing.css",
+          "path": "styles/dx-landing.css",
+          "inlined": true
+        }
+      ],
+      "retained_imports": [],
+      "asset_references": []
+    },
+    {
+      "path": "styles/launch-runtime.css",
+      "output": ".dx/www/output/styles/launch-runtime.css",
+      "source_map_output": ".dx/www/output/styles/launch-runtime.css.map",
+      "source_map_source_count": 1,
+      "source_map_source_hash_count": 1,
+      "source_map_entry_style_source_count": 1,
+      "source_map_flattened_import_source_count": 0,
+      "source_map_retained_import_source_count": 0,
+      "source_map_segment_count": 0,
+      "source_map_exact_segment_mapping": false,
+      "source_map_evidence_only": true,
+      "source_map_linked": true,
+      "source_map_hash": "0c7596e0a8d15005",
+      "hash": "97c3ac6442a3bab5",
+      "rule_count": 84,
+      "original_rule_count": 84,
+      "retained_rule_count": 84,
+      "pruned_rule_count": 0,
+      "minified": true,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "import_count": 0,
+      "flattened_imports": [],
+      "retained_imports": [],
+      "asset_references": []
+    },
+    {
+      "path": "styles/theme.css",
+      "output": ".dx/www/output/styles/theme.css",
+      "source_map_output": ".dx/www/output/styles/theme.css.map",
+      "source_map_source_count": 1,
+      "source_map_source_hash_count": 1,
+      "source_map_entry_style_source_count": 1,
+      "source_map_flattened_import_source_count": 0,
+      "source_map_retained_import_source_count": 0,
+      "source_map_segment_count": 0,
+      "source_map_exact_segment_mapping": false,
+      "source_map_evidence_only": true,
+      "source_map_linked": true,
+      "source_map_hash": "7114d95f81ab41bb",
+      "hash": "55bdf1efbbf8aa4a",
+      "rule_count": 1,
+      "original_rule_count": 1,
+      "retained_rule_count": 1,
+      "pruned_rule_count": 0,
+      "minified": true,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "import_count": 0,
+      "flattened_imports": [],
+      "retained_imports": [],
+      "asset_references": []
+    }
+  ],
+  "content_documents": [],
+  "assets": [
+    {
+      "path": "public/dx-landing-runtime.js",
+      "output": ".dx/www/output/public/dx-landing-runtime-74b4b9f208e8e1f2.js",
+      "hash": "74b4b9f208e8e1f2",
+      "size": 4855,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false
+    },
+    {
+      "path": "public/favicon.svg",
+      "output": ".dx/www/output/public/favicon-94b1a6ce1d9289cf.svg",
+      "hash": "94b1a6ce1d9289cf",
+      "size": 410,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 64,
+        "height": 64,
+        "dimension_source": "svg-viewbox",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 64,
+            "height": 64,
+            "bytes": 286,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg",
+            "hash": "95cdf2c6b75c0830",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/android.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/android-6179e126fdf2b690.svg",
+      "hash": "6179e126fdf2b690",
+      "size": 1893,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 256,
+        "height": 150,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22150%22%20viewBox%3D%220%200%20256%20150%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 256,
+            "height": 150,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg",
+            "hash": "1f862bbfb91f091a",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple-dark.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/apple-dark-326232c7beeb8fe8.svg",
+      "hash": "326232c7beeb8fe8",
+      "size": 690,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 209,
+        "height": 256,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22209%22%20height%3D%22256%22%20viewBox%3D%220%200%20209%20256%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 209,
+            "height": 256,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg",
+            "hash": "4930e9a17f0554e8",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/apple.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/apple-64608ad998267c26.svg",
+      "hash": "64608ad998267c26",
+      "size": 678,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 209,
+        "height": 256,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22209%22%20height%3D%22256%22%20viewBox%3D%220%200%20209%20256%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 209,
+            "height": 256,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg",
+            "hash": "4930e9a17f0554e8",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/chrome.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/chrome-47847e68e6911c51.svg",
+      "hash": "47847e68e6911c51",
+      "size": 1183,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 191,
+        "height": 191,
+        "dimension_source": "svg-viewbox",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22191%22%20height%3D%22191%22%20viewBox%3D%220%200%20191%20191%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 191,
+            "height": 191,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg",
+            "hash": "a274e10bea40ed92",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/firefox.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/firefox-71803a5b7bc95b0a.svg",
+      "hash": "71803a5b7bc95b0a",
+      "size": 12170,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 256,
+        "height": 265,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22265%22%20viewBox%3D%220%200%20256%20265%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 256,
+            "height": 265,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg",
+            "hash": "d533e35679bf3fb3",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/linux.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/linux-9b57c5b1eaa67b27.svg",
+      "hash": "9b57c5b1eaa67b27",
+      "size": 11498,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 28,
+        "height": 32,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2228%22%20height%3D%2232%22%20viewBox%3D%220%200%2028%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 28,
+            "height": 32,
+            "bytes": 286,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg",
+            "hash": "d4eae2a799f1a34c",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust-dark.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/rust-dark-b7883c0624ee14a6.svg",
+      "hash": "b7883c0624ee14a6",
+      "size": 5425,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 224,
+        "height": 224,
+        "dimension_source": "svg-viewbox",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22224%22%20height%3D%22224%22%20viewBox%3D%220%200%20224%20224%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 224,
+            "height": 224,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg",
+            "hash": "b14238297a72c43e",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/rust.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/rust-6ee1a46a0ab69080.svg",
+      "hash": "6ee1a46a0ab69080",
+      "size": 5425,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 224,
+        "height": 224,
+        "dimension_source": "svg-viewbox",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22224%22%20height%3D%22224%22%20viewBox%3D%220%200%20224%20224%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 224,
+            "height": 224,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg",
+            "hash": "b14238297a72c43e",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel-dark.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/vercel-dark-e41230e938d7ad46.svg",
+      "hash": "e41230e938d7ad46",
+      "size": 169,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 256,
+        "height": 222,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22222%22%20viewBox%3D%220%200%20256%20222%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 256,
+            "height": 222,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg",
+            "hash": "bc4fc743c4b4aafe",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/vercel.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/vercel-9b3d22fe9ef4d74d.svg",
+      "hash": "9b3d22fe9ef4d74d",
+      "size": 169,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 256,
+        "height": 222,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22222%22%20viewBox%3D%220%200%20256%20222%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 256,
+            "height": 222,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg",
+            "hash": "bc4fc743c4b4aafe",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/icons/platform-svgl/windows.svg",
+      "output": ".dx/www/output/public/icons/platform-svgl/windows-4e1fd2916a533d2b.svg",
+      "hash": "4e1fd2916a533d2b",
+      "size": 297,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 88,
+        "height": 88,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2288%22%20height%3D%2288%22%20viewBox%3D%220%200%2088%2088%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 88,
+            "height": 88,
+            "bytes": 286,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg",
+            "hash": "a5752798ef33bc2a",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/launch-runtime.js",
+      "output": ".dx/www/output/public/launch-runtime-3ae46d2cd01071b0.js",
+      "hash": "3ae46d2cd01071b0",
+      "size": 48911,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false
+    },
+    {
+      "path": "public/preview-manifest.json",
+      "output": ".dx/www/output/public/preview-manifest-09aa259f89e2b2d4.json",
+      "hash": "09aa259f89e2b2d4",
+      "size": 15548,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false
+    },
+    {
+      "path": "public/thumbnails/amber.png",
+      "output": ".dx/www/output/public/thumbnails/amber-fd8517e5453c2145.png",
+      "hash": "fd8517e5453c2145",
+      "size": 1997498,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/blue.png",
+      "output": ".dx/www/output/public/thumbnails/blue-2daf5706a85142cf.png",
+      "hash": "2daf5706a85142cf",
+      "size": 1820586,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/cyan.png",
+      "output": ".dx/www/output/public/thumbnails/cyan-f5830d34ea43ba2a.png",
+      "hash": "f5830d34ea43ba2a",
+      "size": 1649536,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/emerald.png",
+      "output": ".dx/www/output/public/thumbnails/emerald-ac411c3e669be3e2.png",
+      "hash": "ac411c3e669be3e2",
+      "size": 2028704,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/fuchsia.png",
+      "output": ".dx/www/output/public/thumbnails/fuchsia-2f08a8ddcbad25fc.png",
+      "hash": "2f08a8ddcbad25fc",
+      "size": 2124971,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/green-variant.png",
+      "output": ".dx/www/output/public/thumbnails/green-variant-acb7c68d24505294.png",
+      "hash": "acb7c68d24505294",
+      "size": 1881470,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/green.png",
+      "output": ".dx/www/output/public/thumbnails/green-4a2f9e787e85969f.png",
+      "hash": "4a2f9e787e85969f",
+      "size": 2030618,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/indigo.png",
+      "output": ".dx/www/output/public/thumbnails/indigo-028b20932f970d59.png",
+      "hash": "028b20932f970d59",
+      "size": 1939092,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/lime.png",
+      "output": ".dx/www/output/public/thumbnails/lime-2050bbd5f412de7d.png",
+      "hash": "2050bbd5f412de7d",
+      "size": 2497220,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/orange.png",
+      "output": ".dx/www/output/public/thumbnails/orange-b3e5cd7499323991.png",
+      "hash": "b3e5cd7499323991",
+      "size": 1940167,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/pink.png",
+      "output": ".dx/www/output/public/thumbnails/pink-fe1424b02465d707.png",
+      "hash": "fe1424b02465d707",
+      "size": 1911328,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/purple.png",
+      "output": ".dx/www/output/public/thumbnails/purple-8afc4bf4d04f753d.png",
+      "hash": "8afc4bf4d04f753d",
+      "size": 1965442,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/rainbow.png",
+      "output": ".dx/www/output/public/thumbnails/rainbow-6dcd801922d6c794.png",
+      "hash": "6dcd801922d6c794",
+      "size": 2061107,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/red.png",
+      "output": ".dx/www/output/public/thumbnails/red-e02103784760ee62.png",
+      "hash": "e02103784760ee62",
+      "size": 2235880,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/rose.png",
+      "output": ".dx/www/output/public/thumbnails/rose-2700bcddc2e4cf44.png",
+      "hash": "2700bcddc2e4cf44",
+      "size": 2127207,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/sky.png",
+      "output": ".dx/www/output/public/thumbnails/sky-835aeea13aa90224.png",
+      "hash": "835aeea13aa90224",
+      "size": 1333535,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/teal.png",
+      "output": ".dx/www/output/public/thumbnails/teal-00e58884c11c9b79.png",
+      "hash": "00e58884c11c9b79",
+      "size": 1829741,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/variant-1.png",
+      "output": ".dx/www/output/public/thumbnails/variant-1-2c5218548ca63387.png",
+      "hash": "2c5218548ca63387",
+      "size": 2214806,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/variant-2.png",
+      "output": ".dx/www/output/public/thumbnails/variant-2-6126e146834c330a.png",
+      "hash": "6126e146834c330a",
+      "size": 1664310,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/violet.png",
+      "output": ".dx/www/output/public/thumbnails/violet-8c81f7f2d8a3333c.png",
+      "hash": "8c81f7f2d8a3333c",
+      "size": 2315052,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/thumbnails/yellow.png",
+      "output": ".dx/www/output/public/thumbnails/yellow-8e4949f48aecba7d.png",
+      "hash": "8e4949f48aecba7d",
+      "size": 2024458,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 1024,
+        "height": 1024,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221024%22%20height%3D%221024%22%20viewBox%3D%220%200%201024%201024%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 1024,
+            "height": 1024,
+            "bytes": 294,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg",
+            "hash": "b0698a08bf67b748",
+            "artifact_bytes": 173
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/vendor/convex-logo.svg",
+      "output": ".dx/www/output/public/vendor/convex-logo-b2a1cfa88d831fea.svg",
+      "hash": "b2a1cfa88d831fea",
+      "size": 3936,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 249,
+        "height": 45,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22249%22%20height%3D%2245%22%20viewBox%3D%220%200%20249%2045%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 249,
+            "height": 45,
+            "bytes": 288,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg",
+            "hash": "aa90b90901b59203",
+            "artifact_bytes": 167
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/vendor/shadcn-favicon-32x32.png",
+      "output": ".dx/www/output/public/vendor/shadcn-favicon-32x32-73186821201a7eb8.png",
+      "hash": "73186821201a7eb8",
+      "size": 1567,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "png",
+        "mime_type": "image/png",
+        "width": 32,
+        "height": 32,
+        "dimension_source": "png-ihdr",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-raster-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "raster-svg-placeholder-artifact",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 32,
+            "height": 32,
+            "bytes": 286,
+            "source": "dx-source-owned-raster-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg",
+            "hash": "e0672a7f37b24070",
+            "artifact_bytes": 165
+          },
+          "boundary": "metadata-plus-raster-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data"
+          ]
+        }
+      }
+    },
+    {
+      "path": "public/vendor/supabase-logo.svg",
+      "output": ".dx/www/output/public/vendor/supabase-logo-f0c8a57504f71be9.svg",
+      "hash": "f0c8a57504f71be9",
+      "size": 1124,
+      "node_modules_required": false,
+      "lifecycle_scripts_executed": false,
+      "source_owned_contract": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "image_metadata": {
+        "format": "svg",
+        "mime_type": "image/svg+xml",
+        "width": 109,
+        "height": 113,
+        "dimension_source": "svg-root-attributes",
+        "status": "metadata-read",
+        "optimization": {
+          "status": "metadata-plus-svg-placeholder",
+          "variants_emitted": 0,
+          "optimizer_invoked": false,
+          "resize_emitted": false,
+          "encoding_emitted": false,
+          "blur_placeholder_emitted": false,
+          "placeholder": {
+            "kind": "svg-placeholder-data-url",
+            "data_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22109%22%20height%3D%22113%22%20viewBox%3D%220%200%20109%20113%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f3f4f6%22%2F%3E%3C%2Fsvg%3E",
+            "width": 109,
+            "height": 113,
+            "bytes": 290,
+            "source": "dx-source-owned-svg-placeholder",
+            "output": ".dx/www/output/image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg",
+            "hash": "b0aa1f32e2c42ad9",
+            "artifact_bytes": 169
+          },
+          "boundary": "metadata-plus-svg-placeholder-no-resize-or-encoding",
+          "informed_by": [
+            "turbopack-image::process::get_meta_data",
+            "turbopack-image::process::svg"
+          ]
+        }
+      }
+    }
+  ],
+  "node_modules_required": false
+}

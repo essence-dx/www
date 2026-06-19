@@ -1,0 +1,147 @@
+{
+  "consumers": {
+    "dxCli": {
+      "primaryField": "graph.nodeKindCounts"
+    },
+    "zedPreview": {
+      "fallbackField": "graph.nodeKindCounts",
+      "primaryField": "invalidation.affectedNodeIds",
+      "routeShellChunkKind": "route-shell-chunk",
+      "sourceModuleChunkKind": "source-module-chunk",
+      "sourceModuleKind": "source-module"
+    }
+  },
+  "coreConceptMap": {
+    "adapterBoundary": true,
+    "conceptCount": 9,
+    "coveredEdgeKinds": [
+      "checks",
+      "compiled-from-source",
+      "emits",
+      "emitted-from",
+      "expects-receipt",
+      "imports",
+      "imports-source-module",
+      "links-entry-module",
+      "maps-generated-to-source",
+      "owns-source"
+    ],
+    "coveredNodeKinds": [
+      "deploy-output",
+      "dx-check-receipt",
+      "dx-style-css",
+      "forge-surface",
+      "public-asset",
+      "route-shell-chunk",
+      "source-module",
+      "source-module-chunk",
+      "tsx-component",
+      "tsx-route"
+    ],
+    "nodeModulesRequired": false,
+    "publicArchitecture": false
+  },
+  "generatedAt": "2026-05-25T06:08:12.017025+00:00",
+  "graph": {
+    "contentPipeline": {
+      "documentCount": 53,
+      "mdxDocumentCount": 0,
+      "nodeModulesRequired": false,
+      "runtimeProof": false
+    },
+    "ecmascriptAnalysis": {
+      "clientBoundaryCount": 0,
+      "dynamicImportAnalysisStatusCounts": {},
+      "dynamicImportCount": 0,
+      "dynamicImportOptionBoundaryCount": 0,
+      "dynamicImportOptionUnsupportedCount": 0,
+      "fullNextjsParity": false,
+      "nextRuntimeRequired": false,
+      "nodeModulesRequired": false,
+      "reactRuntimeRequired": false,
+      "rscRequired": false,
+      "serverBoundaryCount": 0,
+      "sourceModuleCount": 0,
+      "topLevelAwaitCount": 0,
+      "unresolvedDynamicImportCount": 0,
+      "unsupportedDynamicImportCount": 0,
+      "unsupportedDynamicImportReasonCounts": {}
+    },
+    "edgeCount": 2,
+    "imageOptimization": {
+      "dimensionSourceCounts": {},
+      "formatCounts": {},
+      "fullPipelineParity": false,
+      "imageAssetCount": 0,
+      "metadataAssetCount": 0,
+      "optimizedVariantCount": 0,
+      "placeholderArtifactBytes": 0,
+      "placeholderArtifactCount": 0,
+      "placeholderArtifactEdgeCount": 0,
+      "placeholderArtifactOutputs": [],
+      "placeholderCount": 0,
+      "routeReferenceCount": 0,
+      "status": "metadata-only",
+      "styleReferenceCount": 0
+    },
+    "nodeCount": 57,
+    "nodeKindCounts": {
+      "dx-content-document": 53,
+      "dx-style-css": 2,
+      "dx-style-source-map": 2
+    },
+    "serverData": {
+      "emitsEdgeCount": 0,
+      "entryCount": 0,
+      "externalRuntimeExecuted": false,
+      "externalRuntimeRequired": false,
+      "lifecycleScriptsExecuted": false,
+      "linksEdgeCount": 0,
+      "nodeModulesRequired": false,
+      "routeCount": 0,
+      "routeParamKeys": [],
+      "routesWithRouteParams": 0,
+      "routesWithSearchParams": 0,
+      "searchParamKeys": [],
+      "sourceOwnedContract": false,
+      "statusCounts": {}
+    },
+    "styleOptimization": {
+      "assetReferenceCount": 0,
+      "entryStyleAssetReferenceCount": 0,
+      "flattenedImportAssetReferenceCount": 0,
+      "flattenedImportCount": 0,
+      "minifiedStyleCount": 2,
+      "originalRuleCount": 23,
+      "prunedRuleCount": 0,
+      "retainedImportAssetReferenceCount": 0,
+      "retainedImportCount": 0,
+      "retainedRuleCount": 23,
+      "sourceMapArtifactCount": 2,
+      "sourceMapCount": 2,
+      "sourceMapEntryStyleSourceCount": 2,
+      "sourceMapEvidenceOnlyCount": 2,
+      "sourceMapExactSegmentMapCount": 0,
+      "sourceMapFlattenedImportSourceCount": 0,
+      "sourceMapHashCount": 2,
+      "sourceMapLinkCount": 2,
+      "sourceMapRetainedImportSourceCount": 0,
+      "sourceMapSegmentCount": 0,
+      "sourceMapSourceCount": 2,
+      "sourceMapSourceHashCount": 2,
+      "styleNodeCount": 2
+    }
+  },
+  "invalidation": {
+    "affectedNodeIds": [],
+    "affectedRoutes": [],
+    "changedNodeIds": [],
+    "changedRoutes": [],
+    "emittedOutputArtifacts": [],
+    "emittedOutputNodeIds": [],
+    "rebuildNodeIds": [],
+    "rebuildRoutes": []
+  },
+  "schema": "dx.build.graph.consumerSnapshot",
+  "sourceSchema": "dx.build.graph"
+}

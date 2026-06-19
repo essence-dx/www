@@ -1,0 +1,90 @@
+[
+  {
+    "importer_path": "app/layout.tsx",
+    "specifier": "../styles/globals.css",
+    "kind": "relative-local",
+    "resolved_path": "styles/globals.css",
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "app/page.tsx",
+    "specifier": "@/lib/forge/www/landing-page",
+    "kind": "alias-local",
+    "resolved_path": "lib/forge/www/landing-page",
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "components/ConversionRouteHeader.tsx",
+    "specifier": "react",
+    "kind": "compiler-intrinsic",
+    "resolved_path": null,
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "components/RuntimeBoundaryPanel.tsx",
+    "specifier": "react",
+    "kind": "compiler-intrinsic",
+    "resolved_path": null,
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "components/SourceSurfaceTable.tsx",
+    "specifier": "react",
+    "kind": "compiler-intrinsic",
+    "resolved_path": null,
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "components/icons/pack-motion.tsx",
+    "specifier": "./icon",
+    "kind": "relative-local",
+    "resolved_path": "components/icons/icon",
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "components/icons/pack-play.tsx",
+    "specifier": "./icon",
+    "kind": "relative-local",
+    "resolved_path": "components/icons/icon",
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "components/icons/pack-state.tsx",
+    "specifier": "./icon",
+    "kind": "relative-local",
+    "resolved_path": "components/icons/icon",
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "components/icons/pack-three-scene.tsx",
+    "specifier": "./icon",
+    "kind": "relative-local",
+    "resolved_path": "components/icons/icon",
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "components/icons/pack-ui-components.tsx",
+    "specifier": "./icon",
+    "kind": "relative-local",
+    "resolved_path": "components/icons/icon",
+    "package_id": null,
+    "requires_node_modules": false
+  },
+  {
+    "importer_path": "components/icons/pack-workspace.tsx",
+    "specifier": "./icon",
+    "kind": "relative-local",
+    "resolved_path": "components/icons/icon",
+    "package_id": null,
+    "requires_node_modules": false
+  }
+]

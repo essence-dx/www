@@ -1,0 +1,1896 @@
+{
+  "tool": "dx imports",
+  "version": 2,
+  "generated_by": "dx imports sync",
+  "project": "G:/Dx/www/examples/whiteboard",
+  "source_hash": "blake3:25210702b69b6d59ffcc05d6dd281d86a34bed1222637b4a2abca89a419ced2f",
+  "policy": "generated-import-maps-no-runtime-magic",
+  "used_only": true,
+  "scan_roots": [
+    "components",
+    "composables",
+    "utils"
+  ],
+  "used_roots": [
+    "app",
+    "components",
+    "lib",
+    "server",
+    "styles"
+  ],
+  "aliases": [
+    "#components",
+    "#imports"
+  ],
+  "files": {
+    "barrel": "components/auto-imports.ts",
+    "import_map": ".dx/imports/import-map.json",
+    "declarations": ".dx/imports/imports.d.ts"
+  },
+  "entry_count": 51,
+  "used_symbol_count": 27,
+  "typed_entry_count": 48,
+  "untyped_entry_count": 3,
+  "entries": [
+    {
+      "kind": "component",
+      "name": "ArrangePanel",
+      "source": "components/whiteboard/arrange-panel.tsx",
+      "import_path": "@/components/whiteboard/arrange-panel",
+      "barrel_export": "./whiteboard/arrange-panel",
+      "exports": [
+        "ArrangePanel",
+        "ArrangePanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ArrangePanel"
+      ],
+      "unused_exports": [
+        "ArrangePanelProps"
+      ],
+      "type_exports": [
+        "ArrangePanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "CanvasStage",
+      "source": "components/whiteboard/canvas-stage.tsx",
+      "import_path": "@/components/whiteboard/canvas-stage",
+      "barrel_export": "./whiteboard/canvas-stage",
+      "exports": [
+        "CanvasStage",
+        "serializeCanvasStage"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "CanvasStage"
+      ],
+      "unused_exports": [
+        "serializeCanvasStage"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "ConnectorInfo",
+      "source": "components/whiteboard/connector-info.tsx",
+      "import_path": "@/components/whiteboard/connector-info",
+      "barrel_export": "./whiteboard/connector-info",
+      "exports": [
+        "ConnectorInfo",
+        "ConnectorInfoProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ConnectorInfo"
+      ],
+      "unused_exports": [
+        "ConnectorInfoProps"
+      ],
+      "type_exports": [
+        "ConnectorInfoProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "createDemoWhiteboardDocument",
+      "source": "components/whiteboard/demo-document.ts",
+      "import_path": "@/components/whiteboard/demo-document",
+      "barrel_export": "./whiteboard/demo-document",
+      "exports": [
+        "createDemoWhiteboardDocument"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "createDemoWhiteboardDocument"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "DocumentPanel",
+      "source": "components/whiteboard/document-panel.tsx",
+      "import_path": "@/components/whiteboard/document-panel",
+      "barrel_export": "./whiteboard/document-panel",
+      "exports": [
+        "DocumentPanel",
+        "DocumentPanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "DocumentPanel"
+      ],
+      "unused_exports": [
+        "DocumentPanelProps"
+      ],
+      "type_exports": [
+        "DocumentPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "ExportPanel",
+      "source": "components/whiteboard/export-panel.tsx",
+      "import_path": "@/components/whiteboard/export-panel",
+      "barrel_export": "./whiteboard/export-panel",
+      "exports": [
+        "ExportPanel",
+        "ExportPanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ExportPanel"
+      ],
+      "unused_exports": [
+        "ExportPanelProps"
+      ],
+      "type_exports": [
+        "ExportPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "ImportPanel",
+      "source": "components/whiteboard/import-panel.tsx",
+      "import_path": "@/components/whiteboard/import-panel",
+      "barrel_export": "./whiteboard/import-panel",
+      "exports": [
+        "ImportPanel",
+        "ImportPanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "ImportPanel"
+      ],
+      "unused_exports": [
+        "ImportPanelProps"
+      ],
+      "type_exports": [
+        "ImportPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "WhiteboardApp",
+      "source": "components/whiteboard/index.ts",
+      "import_path": "@/components/whiteboard/index",
+      "barrel_export": "./whiteboard/index",
+      "exports": [
+        "WhiteboardApp"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "WhiteboardApp"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "FILL_SWATCHES",
+      "source": "components/whiteboard/inspector-options.ts",
+      "import_path": "@/components/whiteboard/inspector-options",
+      "barrel_export": "./whiteboard/inspector-options",
+      "exports": [
+        "FILL_SWATCHES",
+        "InspectorSwatch",
+        "STROKE_SWATCHES"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "FILL_SWATCHES",
+        "STROKE_SWATCHES"
+      ],
+      "unused_exports": [
+        "InspectorSwatch"
+      ],
+      "type_exports": [
+        "InspectorSwatch"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Inspector",
+      "source": "components/whiteboard/inspector.tsx",
+      "import_path": "@/components/whiteboard/inspector",
+      "barrel_export": "./whiteboard/inspector",
+      "exports": [
+        "Inspector",
+        "InspectorProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Inspector"
+      ],
+      "unused_exports": [
+        "InspectorProps"
+      ],
+      "type_exports": [
+        "InspectorProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "LibraryPanel",
+      "source": "components/whiteboard/library-panel.tsx",
+      "import_path": "@/components/whiteboard/library-panel",
+      "barrel_export": "./whiteboard/library-panel",
+      "exports": [
+        "LibraryPanel"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "LibraryPanel"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "MeasurementPanel",
+      "source": "components/whiteboard/measurement-panel.tsx",
+      "import_path": "@/components/whiteboard/measurement-panel",
+      "barrel_export": "./whiteboard/measurement-panel",
+      "exports": [
+        "MeasurementPanel",
+        "MeasurementPanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "MeasurementPanel"
+      ],
+      "unused_exports": [
+        "MeasurementPanelProps"
+      ],
+      "type_exports": [
+        "MeasurementPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "MinimapPanel",
+      "source": "components/whiteboard/minimap-panel.tsx",
+      "import_path": "@/components/whiteboard/minimap-panel",
+      "barrel_export": "./whiteboard/minimap-panel",
+      "exports": [
+        "MinimapPanel",
+        "MinimapPanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "MinimapPanel"
+      ],
+      "unused_exports": [
+        "MinimapPanelProps"
+      ],
+      "type_exports": [
+        "MinimapPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "NumberField",
+      "source": "components/whiteboard/number-field.tsx",
+      "import_path": "@/components/whiteboard/number-field",
+      "barrel_export": "./whiteboard/number-field",
+      "exports": [
+        "NumberField",
+        "NumberFieldProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "NumberField"
+      ],
+      "unused_exports": [
+        "NumberFieldProps"
+      ],
+      "type_exports": [
+        "NumberFieldProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "OutlinePanel",
+      "source": "components/whiteboard/outline-panel.tsx",
+      "import_path": "@/components/whiteboard/outline-panel",
+      "barrel_export": "./whiteboard/outline-panel",
+      "exports": [
+        "OutlinePanel",
+        "OutlinePanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "OutlinePanel"
+      ],
+      "unused_exports": [
+        "OutlinePanelProps"
+      ],
+      "type_exports": [
+        "OutlinePanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "PresentationPanel",
+      "source": "components/whiteboard/presentation-panel.tsx",
+      "import_path": "@/components/whiteboard/presentation-panel",
+      "barrel_export": "./whiteboard/presentation-panel",
+      "exports": [
+        "PresentationPanel",
+        "PresentationPanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "PresentationPanel"
+      ],
+      "unused_exports": [
+        "PresentationPanelProps"
+      ],
+      "type_exports": [
+        "PresentationPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "SharePanel",
+      "source": "components/whiteboard/share-panel.tsx",
+      "import_path": "@/components/whiteboard/share-panel",
+      "barrel_export": "./whiteboard/share-panel",
+      "exports": [
+        "SharePanel",
+        "SharePanelProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "SharePanel"
+      ],
+      "unused_exports": [
+        "SharePanelProps"
+      ],
+      "type_exports": [
+        "SharePanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "StatusBar",
+      "source": "components/whiteboard/status-bar.tsx",
+      "import_path": "@/components/whiteboard/status-bar",
+      "barrel_export": "./whiteboard/status-bar",
+      "exports": [
+        "StatusBar",
+        "StatusBarProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "StatusBar"
+      ],
+      "unused_exports": [
+        "StatusBarProps"
+      ],
+      "type_exports": [
+        "StatusBarProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "SvgStagePreview",
+      "source": "components/whiteboard/svg-stage-preview.tsx",
+      "import_path": "@/components/whiteboard/svg-stage-preview",
+      "barrel_export": "./whiteboard/svg-stage-preview",
+      "exports": [
+        "SvgStagePreview",
+        "SvgStagePreviewProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "SvgStagePreview"
+      ],
+      "unused_exports": [
+        "SvgStagePreviewProps"
+      ],
+      "type_exports": [
+        "SvgStagePreviewProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "TextControls",
+      "source": "components/whiteboard/text-controls.tsx",
+      "import_path": "@/components/whiteboard/text-controls",
+      "barrel_export": "./whiteboard/text-controls",
+      "exports": [
+        "TextControls",
+        "TextControlsProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "TextControls"
+      ],
+      "unused_exports": [
+        "TextControlsProps"
+      ],
+      "type_exports": [
+        "TextControlsProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "TextEditorOverlay",
+      "source": "components/whiteboard/text-editor-overlay.tsx",
+      "import_path": "@/components/whiteboard/text-editor-overlay",
+      "barrel_export": "./whiteboard/text-editor-overlay",
+      "exports": [
+        "TextEditorOverlay"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "TextEditorOverlay"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "DxIcon",
+      "source": "components/whiteboard/toolbar.tsx",
+      "import_path": "@/components/whiteboard/toolbar",
+      "barrel_export": "./whiteboard/toolbar",
+      "exports": [
+        "DxIcon",
+        "IconName",
+        "Toolbar",
+        "ToolbarProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "DxIcon",
+        "Toolbar"
+      ],
+      "unused_exports": [
+        "IconName",
+        "ToolbarProps"
+      ],
+      "type_exports": [
+        "IconName",
+        "ToolbarProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "WhiteboardApp",
+      "source": "components/whiteboard/whiteboard-app.tsx",
+      "import_path": "@/components/whiteboard/whiteboard-app",
+      "barrel_export": "./whiteboard/whiteboard-app",
+      "exports": [
+        "WhiteboardApp"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "WhiteboardApp"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "import_path": "@/components/icons/icon",
+      "barrel_export": "./icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unused_exports": [],
+      "type_exports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardArrowIcon",
+      "source": "components/icons/whiteboard-arrow.tsx",
+      "import_path": "@/components/icons/whiteboard-arrow",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardArrowIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardArrowIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardAudioIcon",
+      "source": "components/icons/whiteboard-audio.tsx",
+      "import_path": "@/components/icons/whiteboard-audio",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardAudioIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardAudioIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardDiamondIcon",
+      "source": "components/icons/whiteboard-diamond.tsx",
+      "import_path": "@/components/icons/whiteboard-diamond",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardDiamondIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardDiamondIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardEllipseIcon",
+      "source": "components/icons/whiteboard-ellipse.tsx",
+      "import_path": "@/components/icons/whiteboard-ellipse",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardEllipseIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardEllipseIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardFitIcon",
+      "source": "components/icons/whiteboard-fit.tsx",
+      "import_path": "@/components/icons/whiteboard-fit",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardFitIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardFitIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardHandIcon",
+      "source": "components/icons/whiteboard-hand.tsx",
+      "import_path": "@/components/icons/whiteboard-hand",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardHandIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardHandIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardIconsIcon",
+      "source": "components/icons/whiteboard-icons.tsx",
+      "import_path": "@/components/icons/whiteboard-icons",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardIconsIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardIconsIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardImageIcon",
+      "source": "components/icons/whiteboard-image.tsx",
+      "import_path": "@/components/icons/whiteboard-image",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardImageIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardImageIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardKeyboardIcon",
+      "source": "components/icons/whiteboard-keyboard.tsx",
+      "import_path": "@/components/icons/whiteboard-keyboard",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardKeyboardIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardKeyboardIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardLineIcon",
+      "source": "components/icons/whiteboard-line.tsx",
+      "import_path": "@/components/icons/whiteboard-line",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardLineIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardLineIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardMathIcon",
+      "source": "components/icons/whiteboard-math.tsx",
+      "import_path": "@/components/icons/whiteboard-math",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardMathIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardMathIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardMoveIcon",
+      "source": "components/icons/whiteboard-move.tsx",
+      "import_path": "@/components/icons/whiteboard-move",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardMoveIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardMoveIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardPanelIcon",
+      "source": "components/icons/whiteboard-panel.tsx",
+      "import_path": "@/components/icons/whiteboard-panel",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardPanelIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardPanelIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardPenIcon",
+      "source": "components/icons/whiteboard-pen.tsx",
+      "import_path": "@/components/icons/whiteboard-pen",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardPenIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardPenIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardRectangleIcon",
+      "source": "components/icons/whiteboard-rectangle.tsx",
+      "import_path": "@/components/icons/whiteboard-rectangle",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardRectangleIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardRectangleIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardRedoIcon",
+      "source": "components/icons/whiteboard-redo.tsx",
+      "import_path": "@/components/icons/whiteboard-redo",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardRedoIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardRedoIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardSelectIcon",
+      "source": "components/icons/whiteboard-select.tsx",
+      "import_path": "@/components/icons/whiteboard-select",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardSelectIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardSelectIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardTableIcon",
+      "source": "components/icons/whiteboard-table.tsx",
+      "import_path": "@/components/icons/whiteboard-table",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardTableIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardTableIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardTextIcon",
+      "source": "components/icons/whiteboard-text.tsx",
+      "import_path": "@/components/icons/whiteboard-text",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardTextIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardTextIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardTrashIcon",
+      "source": "components/icons/whiteboard-trash.tsx",
+      "import_path": "@/components/icons/whiteboard-trash",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardTrashIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardTrashIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardUndoIcon",
+      "source": "components/icons/whiteboard-undo.tsx",
+      "import_path": "@/components/icons/whiteboard-undo",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardUndoIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardUndoIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardVideoIcon",
+      "source": "components/icons/whiteboard-video.tsx",
+      "import_path": "@/components/icons/whiteboard-video",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardVideoIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardVideoIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardZoomInIcon",
+      "source": "components/icons/whiteboard-zoom-in.tsx",
+      "import_path": "@/components/icons/whiteboard-zoom-in",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardZoomInIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardZoomInIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardZoomOutIcon",
+      "source": "components/icons/whiteboard-zoom-out.tsx",
+      "import_path": "@/components/icons/whiteboard-zoom-out",
+      "barrel_export": null,
+      "exports": [
+        "WhiteboardZoomOutIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "WhiteboardZoomOutIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "www/whiteboard-shell",
+      "source": "forge/www/whiteboard-shell",
+      "import_path": "@/forge/www/whiteboard-shell",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "generated.css",
+      "source": "styles/generated.css",
+      "import_path": "@/styles/generated.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "theme.css",
+      "source": "styles/theme.css",
+      "import_path": "@/styles/theme.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    }
+  ],
+  "public_barrel_entries": [
+    "components/whiteboard/arrange-panel.tsx",
+    "components/whiteboard/canvas-stage.tsx",
+    "components/whiteboard/connector-info.tsx",
+    "components/whiteboard/demo-document.ts",
+    "components/whiteboard/document-panel.tsx",
+    "components/whiteboard/export-panel.tsx",
+    "components/whiteboard/import-panel.tsx",
+    "components/whiteboard/index.ts",
+    "components/whiteboard/inspector-options.ts",
+    "components/whiteboard/inspector.tsx",
+    "components/whiteboard/library-panel.tsx",
+    "components/whiteboard/measurement-panel.tsx",
+    "components/whiteboard/minimap-panel.tsx",
+    "components/whiteboard/number-field.tsx",
+    "components/whiteboard/outline-panel.tsx",
+    "components/whiteboard/presentation-panel.tsx",
+    "components/whiteboard/share-panel.tsx",
+    "components/whiteboard/status-bar.tsx",
+    "components/whiteboard/svg-stage-preview.tsx",
+    "components/whiteboard/text-controls.tsx",
+    "components/whiteboard/text-editor-overlay.tsx",
+    "components/whiteboard/toolbar.tsx",
+    "components/whiteboard/whiteboard-app.tsx",
+    "components/icons/icon.tsx"
+  ],
+  "unused_entries": [
+    "components/icons/whiteboard-arrow.tsx",
+    "components/icons/whiteboard-audio.tsx",
+    "components/icons/whiteboard-diamond.tsx",
+    "components/icons/whiteboard-ellipse.tsx",
+    "components/icons/whiteboard-fit.tsx",
+    "components/icons/whiteboard-hand.tsx",
+    "components/icons/whiteboard-icons.tsx",
+    "components/icons/whiteboard-image.tsx",
+    "components/icons/whiteboard-keyboard.tsx",
+    "components/icons/whiteboard-line.tsx",
+    "components/icons/whiteboard-math.tsx",
+    "components/icons/whiteboard-move.tsx",
+    "components/icons/whiteboard-panel.tsx",
+    "components/icons/whiteboard-pen.tsx",
+    "components/icons/whiteboard-rectangle.tsx",
+    "components/icons/whiteboard-redo.tsx",
+    "components/icons/whiteboard-select.tsx",
+    "components/icons/whiteboard-table.tsx",
+    "components/icons/whiteboard-text.tsx",
+    "components/icons/whiteboard-trash.tsx",
+    "components/icons/whiteboard-undo.tsx",
+    "components/icons/whiteboard-video.tsx",
+    "components/icons/whiteboard-zoom-in.tsx",
+    "components/icons/whiteboard-zoom-out.tsx"
+  ],
+  "skipped_entries": [],
+  "component_exports": [
+    "./whiteboard/arrange-panel",
+    "./whiteboard/canvas-stage",
+    "./whiteboard/connector-info",
+    "./whiteboard/demo-document",
+    "./whiteboard/document-panel",
+    "./whiteboard/export-panel",
+    "./whiteboard/import-panel",
+    "./whiteboard/index",
+    "./whiteboard/inspector-options",
+    "./whiteboard/inspector",
+    "./whiteboard/library-panel",
+    "./whiteboard/measurement-panel",
+    "./whiteboard/minimap-panel",
+    "./whiteboard/number-field",
+    "./whiteboard/outline-panel",
+    "./whiteboard/presentation-panel",
+    "./whiteboard/share-panel",
+    "./whiteboard/status-bar",
+    "./whiteboard/svg-stage-preview",
+    "./whiteboard/text-controls",
+    "./whiteboard/text-editor-overlay",
+    "./whiteboard/toolbar",
+    "./whiteboard/whiteboard-app",
+    "./icons/icon"
+  ],
+  "components": [
+    {
+      "kind": "component",
+      "name": "ArrangePanel",
+      "source": "components/whiteboard/arrange-panel.tsx",
+      "importPath": "@/components/whiteboard/arrange-panel",
+      "barrelExport": "./whiteboard/arrange-panel",
+      "exports": [
+        "ArrangePanel",
+        "ArrangePanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ArrangePanel"
+      ],
+      "unusedExports": [
+        "ArrangePanelProps"
+      ],
+      "typeExports": [
+        "ArrangePanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "CanvasStage",
+      "source": "components/whiteboard/canvas-stage.tsx",
+      "importPath": "@/components/whiteboard/canvas-stage",
+      "barrelExport": "./whiteboard/canvas-stage",
+      "exports": [
+        "CanvasStage",
+        "serializeCanvasStage"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "CanvasStage"
+      ],
+      "unusedExports": [
+        "serializeCanvasStage"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "ConnectorInfo",
+      "source": "components/whiteboard/connector-info.tsx",
+      "importPath": "@/components/whiteboard/connector-info",
+      "barrelExport": "./whiteboard/connector-info",
+      "exports": [
+        "ConnectorInfo",
+        "ConnectorInfoProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ConnectorInfo"
+      ],
+      "unusedExports": [
+        "ConnectorInfoProps"
+      ],
+      "typeExports": [
+        "ConnectorInfoProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "createDemoWhiteboardDocument",
+      "source": "components/whiteboard/demo-document.ts",
+      "importPath": "@/components/whiteboard/demo-document",
+      "barrelExport": "./whiteboard/demo-document",
+      "exports": [
+        "createDemoWhiteboardDocument"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "createDemoWhiteboardDocument"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "DocumentPanel",
+      "source": "components/whiteboard/document-panel.tsx",
+      "importPath": "@/components/whiteboard/document-panel",
+      "barrelExport": "./whiteboard/document-panel",
+      "exports": [
+        "DocumentPanel",
+        "DocumentPanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "DocumentPanel"
+      ],
+      "unusedExports": [
+        "DocumentPanelProps"
+      ],
+      "typeExports": [
+        "DocumentPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "ExportPanel",
+      "source": "components/whiteboard/export-panel.tsx",
+      "importPath": "@/components/whiteboard/export-panel",
+      "barrelExport": "./whiteboard/export-panel",
+      "exports": [
+        "ExportPanel",
+        "ExportPanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ExportPanel"
+      ],
+      "unusedExports": [
+        "ExportPanelProps"
+      ],
+      "typeExports": [
+        "ExportPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "ImportPanel",
+      "source": "components/whiteboard/import-panel.tsx",
+      "importPath": "@/components/whiteboard/import-panel",
+      "barrelExport": "./whiteboard/import-panel",
+      "exports": [
+        "ImportPanel",
+        "ImportPanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "ImportPanel"
+      ],
+      "unusedExports": [
+        "ImportPanelProps"
+      ],
+      "typeExports": [
+        "ImportPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "WhiteboardApp",
+      "source": "components/whiteboard/index.ts",
+      "importPath": "@/components/whiteboard/index",
+      "barrelExport": "./whiteboard/index",
+      "exports": [
+        "WhiteboardApp"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "WhiteboardApp"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "FILL_SWATCHES",
+      "source": "components/whiteboard/inspector-options.ts",
+      "importPath": "@/components/whiteboard/inspector-options",
+      "barrelExport": "./whiteboard/inspector-options",
+      "exports": [
+        "FILL_SWATCHES",
+        "InspectorSwatch",
+        "STROKE_SWATCHES"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "FILL_SWATCHES",
+        "STROKE_SWATCHES"
+      ],
+      "unusedExports": [
+        "InspectorSwatch"
+      ],
+      "typeExports": [
+        "InspectorSwatch"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "Inspector",
+      "source": "components/whiteboard/inspector.tsx",
+      "importPath": "@/components/whiteboard/inspector",
+      "barrelExport": "./whiteboard/inspector",
+      "exports": [
+        "Inspector",
+        "InspectorProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Inspector"
+      ],
+      "unusedExports": [
+        "InspectorProps"
+      ],
+      "typeExports": [
+        "InspectorProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "LibraryPanel",
+      "source": "components/whiteboard/library-panel.tsx",
+      "importPath": "@/components/whiteboard/library-panel",
+      "barrelExport": "./whiteboard/library-panel",
+      "exports": [
+        "LibraryPanel"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "LibraryPanel"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "MeasurementPanel",
+      "source": "components/whiteboard/measurement-panel.tsx",
+      "importPath": "@/components/whiteboard/measurement-panel",
+      "barrelExport": "./whiteboard/measurement-panel",
+      "exports": [
+        "MeasurementPanel",
+        "MeasurementPanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "MeasurementPanel"
+      ],
+      "unusedExports": [
+        "MeasurementPanelProps"
+      ],
+      "typeExports": [
+        "MeasurementPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "MinimapPanel",
+      "source": "components/whiteboard/minimap-panel.tsx",
+      "importPath": "@/components/whiteboard/minimap-panel",
+      "barrelExport": "./whiteboard/minimap-panel",
+      "exports": [
+        "MinimapPanel",
+        "MinimapPanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "MinimapPanel"
+      ],
+      "unusedExports": [
+        "MinimapPanelProps"
+      ],
+      "typeExports": [
+        "MinimapPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "NumberField",
+      "source": "components/whiteboard/number-field.tsx",
+      "importPath": "@/components/whiteboard/number-field",
+      "barrelExport": "./whiteboard/number-field",
+      "exports": [
+        "NumberField",
+        "NumberFieldProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "NumberField"
+      ],
+      "unusedExports": [
+        "NumberFieldProps"
+      ],
+      "typeExports": [
+        "NumberFieldProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "OutlinePanel",
+      "source": "components/whiteboard/outline-panel.tsx",
+      "importPath": "@/components/whiteboard/outline-panel",
+      "barrelExport": "./whiteboard/outline-panel",
+      "exports": [
+        "OutlinePanel",
+        "OutlinePanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "OutlinePanel"
+      ],
+      "unusedExports": [
+        "OutlinePanelProps"
+      ],
+      "typeExports": [
+        "OutlinePanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "PresentationPanel",
+      "source": "components/whiteboard/presentation-panel.tsx",
+      "importPath": "@/components/whiteboard/presentation-panel",
+      "barrelExport": "./whiteboard/presentation-panel",
+      "exports": [
+        "PresentationPanel",
+        "PresentationPanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "PresentationPanel"
+      ],
+      "unusedExports": [
+        "PresentationPanelProps"
+      ],
+      "typeExports": [
+        "PresentationPanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "SharePanel",
+      "source": "components/whiteboard/share-panel.tsx",
+      "importPath": "@/components/whiteboard/share-panel",
+      "barrelExport": "./whiteboard/share-panel",
+      "exports": [
+        "SharePanel",
+        "SharePanelProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "SharePanel"
+      ],
+      "unusedExports": [
+        "SharePanelProps"
+      ],
+      "typeExports": [
+        "SharePanelProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "StatusBar",
+      "source": "components/whiteboard/status-bar.tsx",
+      "importPath": "@/components/whiteboard/status-bar",
+      "barrelExport": "./whiteboard/status-bar",
+      "exports": [
+        "StatusBar",
+        "StatusBarProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "StatusBar"
+      ],
+      "unusedExports": [
+        "StatusBarProps"
+      ],
+      "typeExports": [
+        "StatusBarProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "SvgStagePreview",
+      "source": "components/whiteboard/svg-stage-preview.tsx",
+      "importPath": "@/components/whiteboard/svg-stage-preview",
+      "barrelExport": "./whiteboard/svg-stage-preview",
+      "exports": [
+        "SvgStagePreview",
+        "SvgStagePreviewProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "SvgStagePreview"
+      ],
+      "unusedExports": [
+        "SvgStagePreviewProps"
+      ],
+      "typeExports": [
+        "SvgStagePreviewProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "TextControls",
+      "source": "components/whiteboard/text-controls.tsx",
+      "importPath": "@/components/whiteboard/text-controls",
+      "barrelExport": "./whiteboard/text-controls",
+      "exports": [
+        "TextControls",
+        "TextControlsProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "TextControls"
+      ],
+      "unusedExports": [
+        "TextControlsProps"
+      ],
+      "typeExports": [
+        "TextControlsProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "TextEditorOverlay",
+      "source": "components/whiteboard/text-editor-overlay.tsx",
+      "importPath": "@/components/whiteboard/text-editor-overlay",
+      "barrelExport": "./whiteboard/text-editor-overlay",
+      "exports": [
+        "TextEditorOverlay"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "TextEditorOverlay"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "DxIcon",
+      "source": "components/whiteboard/toolbar.tsx",
+      "importPath": "@/components/whiteboard/toolbar",
+      "barrelExport": "./whiteboard/toolbar",
+      "exports": [
+        "DxIcon",
+        "IconName",
+        "Toolbar",
+        "ToolbarProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "DxIcon",
+        "Toolbar"
+      ],
+      "unusedExports": [
+        "IconName",
+        "ToolbarProps"
+      ],
+      "typeExports": [
+        "IconName",
+        "ToolbarProps"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "WhiteboardApp",
+      "source": "components/whiteboard/whiteboard-app.tsx",
+      "importPath": "@/components/whiteboard/whiteboard-app",
+      "barrelExport": "./whiteboard/whiteboard-app",
+      "exports": [
+        "WhiteboardApp"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "WhiteboardApp"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "importPath": "@/components/icons/icon",
+      "barrelExport": "./icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unusedExports": [],
+      "typeExports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardArrowIcon",
+      "source": "components/icons/whiteboard-arrow.tsx",
+      "importPath": "@/components/icons/whiteboard-arrow",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardArrowIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardArrowIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardAudioIcon",
+      "source": "components/icons/whiteboard-audio.tsx",
+      "importPath": "@/components/icons/whiteboard-audio",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardAudioIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardAudioIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardDiamondIcon",
+      "source": "components/icons/whiteboard-diamond.tsx",
+      "importPath": "@/components/icons/whiteboard-diamond",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardDiamondIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardDiamondIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardEllipseIcon",
+      "source": "components/icons/whiteboard-ellipse.tsx",
+      "importPath": "@/components/icons/whiteboard-ellipse",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardEllipseIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardEllipseIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardFitIcon",
+      "source": "components/icons/whiteboard-fit.tsx",
+      "importPath": "@/components/icons/whiteboard-fit",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardFitIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardFitIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardHandIcon",
+      "source": "components/icons/whiteboard-hand.tsx",
+      "importPath": "@/components/icons/whiteboard-hand",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardHandIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardHandIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardIconsIcon",
+      "source": "components/icons/whiteboard-icons.tsx",
+      "importPath": "@/components/icons/whiteboard-icons",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardIconsIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardIconsIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardImageIcon",
+      "source": "components/icons/whiteboard-image.tsx",
+      "importPath": "@/components/icons/whiteboard-image",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardImageIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardImageIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardKeyboardIcon",
+      "source": "components/icons/whiteboard-keyboard.tsx",
+      "importPath": "@/components/icons/whiteboard-keyboard",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardKeyboardIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardKeyboardIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardLineIcon",
+      "source": "components/icons/whiteboard-line.tsx",
+      "importPath": "@/components/icons/whiteboard-line",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardLineIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardLineIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardMathIcon",
+      "source": "components/icons/whiteboard-math.tsx",
+      "importPath": "@/components/icons/whiteboard-math",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardMathIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardMathIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardMoveIcon",
+      "source": "components/icons/whiteboard-move.tsx",
+      "importPath": "@/components/icons/whiteboard-move",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardMoveIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardMoveIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardPanelIcon",
+      "source": "components/icons/whiteboard-panel.tsx",
+      "importPath": "@/components/icons/whiteboard-panel",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardPanelIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardPanelIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardPenIcon",
+      "source": "components/icons/whiteboard-pen.tsx",
+      "importPath": "@/components/icons/whiteboard-pen",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardPenIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardPenIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardRectangleIcon",
+      "source": "components/icons/whiteboard-rectangle.tsx",
+      "importPath": "@/components/icons/whiteboard-rectangle",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardRectangleIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardRectangleIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardRedoIcon",
+      "source": "components/icons/whiteboard-redo.tsx",
+      "importPath": "@/components/icons/whiteboard-redo",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardRedoIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardRedoIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardSelectIcon",
+      "source": "components/icons/whiteboard-select.tsx",
+      "importPath": "@/components/icons/whiteboard-select",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardSelectIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardSelectIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardTableIcon",
+      "source": "components/icons/whiteboard-table.tsx",
+      "importPath": "@/components/icons/whiteboard-table",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardTableIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardTableIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardTextIcon",
+      "source": "components/icons/whiteboard-text.tsx",
+      "importPath": "@/components/icons/whiteboard-text",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardTextIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardTextIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardTrashIcon",
+      "source": "components/icons/whiteboard-trash.tsx",
+      "importPath": "@/components/icons/whiteboard-trash",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardTrashIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardTrashIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardUndoIcon",
+      "source": "components/icons/whiteboard-undo.tsx",
+      "importPath": "@/components/icons/whiteboard-undo",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardUndoIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardUndoIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardVideoIcon",
+      "source": "components/icons/whiteboard-video.tsx",
+      "importPath": "@/components/icons/whiteboard-video",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardVideoIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardVideoIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardZoomInIcon",
+      "source": "components/icons/whiteboard-zoom-in.tsx",
+      "importPath": "@/components/icons/whiteboard-zoom-in",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardZoomInIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardZoomInIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "WhiteboardZoomOutIcon",
+      "source": "components/icons/whiteboard-zoom-out.tsx",
+      "importPath": "@/components/icons/whiteboard-zoom-out",
+      "barrelExport": null,
+      "exports": [
+        "WhiteboardZoomOutIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "WhiteboardZoomOutIcon"
+      ],
+      "typeExports": []
+    }
+  ],
+  "composables": [],
+  "utilities": [],
+  "forge_packages": [
+    "www/whiteboard-shell"
+  ],
+  "style_helpers": [
+    "styles/generated.css",
+    "styles/theme.css"
+  ]
+}

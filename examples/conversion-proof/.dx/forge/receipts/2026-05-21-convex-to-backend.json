@@ -1,0 +1,68 @@
+{
+  "schema": "dx.forge.conversion_receipt",
+  "source_project": "convex-backend",
+  "source_repo": "https://github.com/get-convex/convex-backend.git",
+  "source_commit": "e5026b0d466058eea21084f9561d7ad974e925fc",
+  "source_local_path": "G:\\WWW\\inspirations\\convex-backend",
+  "license": "FSL-1.1-Apache-2.0",
+  "license_notice_preserved": true,
+  "license_files_preserved": [
+    "notices/convex-backend/LICENSE.md"
+  ],
+  "converted_route": "/backend",
+  "source_surface_map": "forge/source-surfaces/convex-backend.json",
+  "visual_audit": "forge/visual-audits/convex-backend.json",
+  "converted_source_files": [
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/functions.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/data.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/logs.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/files.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/schedules/functions.tsx",
+    "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/schedules/crons.tsx",
+    "npm-packages/dashboard/src/layouts/DeploymentDashboardLayout.tsx",
+    "npm-packages/dashboard/dashboard-deployment-openapi.json",
+    "crates/function_runner/src/lib.rs",
+    "crates/model/src/modules/mod.rs",
+    "crates/model/src/source_packages/mod.rs"
+  ],
+  "converted_files": [
+    "pages/backend.html",
+    "components/ConversionRouteHeader.tsx",
+    "components/SourceSurfaceTable.tsx",
+    "components/RuntimeBoundaryPanel.tsx",
+    "styles/conversion-proof.css"
+  ],
+  "copied_assets": [
+    {
+      "source_path": "npm-packages/dashboard/public/convex-logo.svg",
+      "target_path": "public/vendor/convex-logo.svg"
+    }
+  ],
+  "forge_primitives": [
+    "cn",
+    "theme-provider",
+    "button",
+    "badge",
+    "table",
+    "tabs",
+    "dialog",
+    "dropdown",
+    "sidebar"
+  ],
+  "launch_shims": [
+    "next-routing",
+    "convex-realtime",
+    "convex-functions"
+  ],
+  "unsupported_runtime_features": [
+    "Realtime sockets are not opened.",
+    "Function execution and deployment writes are not performed.",
+    "OpenAPI clients are not generated or called.",
+    "FSL-sensitive backend runtime reuse is blocked beyond provenance and route structure."
+  ],
+  "source_inspection_commands": [
+    "rg --files | rg \"dashboard\\\\src\\\\pages\"",
+    "git rev-parse HEAD"
+  ],
+  "no_runtime_execution": true
+}

@@ -1,0 +1,34 @@
+[[permission]]
+identifier = "allow-dx-mobile-companion-contract"
+description = "Allows the mobile companion contract command."
+commands.allow = ["dx_mobile_companion_contract"]
+
+[[permission]]
+identifier = "allow-dx-mobile-credential-store-status"
+description = "Allows reading native credential store capability status."
+commands.allow = ["dx_mobile_credential_store_status"]
+
+[[permission]]
+identifier = "allow-dx-mobile-parse-pairing-payload"
+description = "Allows parsing a QR pairing payload without exposing bearer tokens."
+commands.allow = ["dx_mobile_parse_pairing_payload"]
+
+[[permission]]
+identifier = "allow-dx-mobile-store-device-credential"
+description = "Allows storing a validated desktop pairing credential through the native credential adapter."
+commands.allow = ["dx_mobile_store_device_credential"]
+
+[[permission]]
+identifier = "allow-dx-mobile-load-device-credential"
+description = "Allows loading a stored desktop pairing credential through the native credential adapter."
+commands.allow = ["dx_mobile_load_device_credential"]
+
+[[permission]]
+identifier = "allow-dx-mobile-clear-device-credential"
+description = "Allows clearing the stored desktop pairing credential."
+commands.allow = ["dx_mobile_clear_device_credential"]
+
+[[permission]]
+identifier = "allow-dx-mobile-scan-pairing-qr"
+description = "Allows launching the native QR scanner for desktop pairing payloads."
+commands.allow = ["dx_mobile_scan_pairing_qr"]

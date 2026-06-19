@@ -1,0 +1,701 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "ai/vercel-ai",
+    "upstream_name": "ai",
+    "version": "7.0.0-canary.146-dx.0",
+    "generator": "dx-forge/vercel-ai",
+    "variant": "default",
+    "rollback_receipt": "20260523T044826575Z-ai-vercel-ai.json",
+    "source_kind": "curated-registry",
+    "integrity_hash": "14faf43bbc72dcecf0ca9afec310fc750e1b020de67ac03672f70b5dd3300def",
+    "license": "Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:ai@7.0.0-canary.146; npm:@ai-sdk/openai provider boundary",
+      "verified": false,
+      "note": "DX inspected the local Vercel AI SDK source mirror for streamText, convertToModelMessages, DefaultChatTransport, tool, gateway, createGateway, and createProviderRegistry before curating this AI SDK slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this AI SDK slice, but it is not a live advisory feed and does not audit model credentials, prompts, billing, tool execution, or retention policy."
+    },
+    "license_review": {
+      "declared_license": "Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the upstream package declaration only; no formal DX legal review is claimed."
+    },
+    "dependency_constraints": [
+      {
+        "name": "ai",
+        "constraint": "adapter runtime supplied by the app when AI routes stream model output",
+        "boundary": "Forge materializes editable AI route/client helpers and missing-config gates; it does not make node_modules part of DX core."
+      },
+      {
+        "name": "@ai-sdk/openai",
+        "constraint": "selective provider boundary for the launch template route examples",
+        "boundary": "Provider API keys, model choice, billing, and safety policy remain application-owned."
+      }
+    ],
+    "files": [
+      {
+        "path": "lib/ai/model.ts",
+        "logical_path": "js/lib/ai/model.ts",
+        "hash": "9ee4f2eec31f2ce2881387ee199f9c5733bede743d712db27a2a9e71d81ef238",
+        "bytes": 284
+      },
+      {
+        "path": "lib/ai/model-policy.ts",
+        "logical_path": "js/lib/ai/model-policy.ts",
+        "hash": "c2ba58281464bdfd768da17c29cdfe39c24289c66e51d06d3d608f894dcb07ed",
+        "bytes": 842
+      },
+      {
+        "path": "lib/ai/tools.ts",
+        "logical_path": "js/lib/ai/tools.ts",
+        "hash": "b1fa7b62e6c20f34daa33aaa66c2a140d89492fe22ab7ac00ab2bdd551e57cc9",
+        "bytes": 461
+      },
+      {
+        "path": "lib/ai/chat-route.ts",
+        "logical_path": "js/lib/ai/chat-route.ts",
+        "hash": "b23aec76671d4432091dd278276f0a16724c1b07a80cf0d4591a9797ff4e7fd6",
+        "bytes": 1813
+      },
+      {
+        "path": "lib/ai/message-pruning.ts",
+        "logical_path": "js/lib/ai/message-pruning.ts",
+        "hash": "719e203ee703f75c68ba264ca573aca564c12df9247068f8d5ed267f1cb1f537",
+        "bytes": 781
+      },
+      {
+        "path": "lib/ai/tool-approval.ts",
+        "logical_path": "js/lib/ai/tool-approval.ts",
+        "hash": "fbd31def5cb48cacd2c9d2d1821872970ffb1c6e81256001ecbeaf79bdf89f36",
+        "bytes": 1203
+      },
+      {
+        "path": "lib/ai/image-generation.ts",
+        "logical_path": "js/lib/ai/image-generation.ts",
+        "hash": "f5221d1cee9bb3e028f0b927287cc4d9c0843f2280575d8f6bea1364a4d23d23",
+        "bytes": 1503
+      },
+      {
+        "path": "lib/ai/speech-generation.ts",
+        "logical_path": "js/lib/ai/speech-generation.ts",
+        "hash": "00b6fccc4cf01fe5d23d3825945b9866f8494afdaf26a3a2df4026ec30297e75",
+        "bytes": 1692
+      },
+      {
+        "path": "lib/ai/transcription.ts",
+        "logical_path": "js/lib/ai/transcription.ts",
+        "hash": "211acf4ddc342e21ada354d316f8ca1da53cfddaea04d238e7d641b73a4399ad",
+        "bytes": 1433
+      },
+      {
+        "path": "lib/ai/video-generation.ts",
+        "logical_path": "js/lib/ai/video-generation.ts",
+        "hash": "339a93374e575f6628e120946fb8f8d73144d063d03d1a3d8905fc1e72f0e272",
+        "bytes": 1727
+      },
+      {
+        "path": "lib/ai/object-generation.ts",
+        "logical_path": "js/lib/ai/object-generation.ts",
+        "hash": "3677841610b4f8fad6d9e8e0f81a3d4d2fa58b31944fb14af0c5bc4edbedfe9a",
+        "bytes": 1433
+      },
+      {
+        "path": "lib/ai/structured-output.ts",
+        "logical_path": "js/lib/ai/structured-output.ts",
+        "hash": "f60477530ec04bbcd9b059213940fe16a475dc71da92d450004aa73d5cf20db1",
+        "bytes": 1395
+      },
+      {
+        "path": "lib/ai/telemetry.ts",
+        "logical_path": "js/lib/ai/telemetry.ts",
+        "hash": "1db8605dcc4d238bcd5e41b244f6969c7d582deafe378cd8a6c812483ea96510",
+        "bytes": 3760
+      },
+      {
+        "path": "lib/ai/embeddings.ts",
+        "logical_path": "js/lib/ai/embeddings.ts",
+        "hash": "4fbd64a494b93b68bce278a0cdad4680d75e1a7594dc456b0141da36005a1b9f",
+        "bytes": 1328
+      },
+      {
+        "path": "lib/ai/reranking.ts",
+        "logical_path": "js/lib/ai/reranking.ts",
+        "hash": "b0d4f866cfc0922a866616398abdee628b7f7979693f17df81cfe5c95c847be6",
+        "bytes": 1040
+      },
+      {
+        "path": "lib/ai/agent.ts",
+        "logical_path": "js/lib/ai/agent.ts",
+        "hash": "83e8259788a94398c974ba785c4f8f87848b274ec6a9c6ce5e40cfdfcc2d20e8",
+        "bytes": 1325
+      },
+      {
+        "path": "lib/ai/provider-freedom.ts",
+        "logical_path": "js/lib/ai/provider-freedom.ts",
+        "hash": "5ccc6bc3ed99192dd10bc23cadc8b7524d07de29b0f4fa26f166ee6e684537fc",
+        "bytes": 1073
+      },
+      {
+        "path": "lib/ai/ui-message-stream.ts",
+        "logical_path": "js/lib/ai/ui-message-stream.ts",
+        "hash": "6f7a12fabe2c4e61f38e3cec47257e1332775a1bfa9a415cd3331132df163298",
+        "bytes": 1878
+      },
+      {
+        "path": "lib/ai/text-stream.ts",
+        "logical_path": "js/lib/ai/text-stream.ts",
+        "hash": "e0114383136bd079fad025a9330f5de75b908f19a9f3202086ae8cd0d54173a5",
+        "bytes": 1178
+      },
+      {
+        "path": "lib/ai/file-upload.ts",
+        "logical_path": "js/lib/ai/file-upload.ts",
+        "hash": "6b7542a10b462d33805352d9af49d7ecc5546064c372a0afacd77a1ed3523320",
+        "bytes": 1102
+      },
+      {
+        "path": "lib/ai/client-chat.tsx",
+        "logical_path": "js/lib/ai/client-chat.tsx",
+        "hash": "66d47bdd71acb4084457b89714ef8a3b1ea52ffe38023ae1a2a3c13637d13b0a",
+        "bytes": 2346
+      },
+      {
+        "path": "lib/ai/dashboard-readiness.ts",
+        "logical_path": "js/lib/ai/dashboard-readiness.ts",
+        "hash": "52c9fce8fe8f09c3c3e3bdf849284176696d212a1ec8054c63350e68780085fa",
+        "bytes": 1257
+      },
+      {
+        "path": "components/ai/ai-launch-assistant.tsx",
+        "logical_path": "js/components/ai/ai-launch-assistant.tsx",
+        "hash": "60a71896378b12bad78bf887b4fe2c61d2ad80890e1cea368f89be2218da8ed1",
+        "bytes": 3547
+      },
+      {
+        "path": "lib/ai/metadata.ts",
+        "logical_path": "js/lib/ai/metadata.ts",
+        "hash": "c2cfd2cc53b37b9cc74eb02bfb28e2ce6da23d4be597ca10466a60043d5132ce",
+        "bytes": 7771
+      },
+      {
+        "path": "app/api/ai/chat/route.ts",
+        "logical_path": "js/app/api/ai/chat/route.ts",
+        "hash": "6226ab937629117bcd20b122a3ef090efde6654ad1c4e376ac816c2e629487dc",
+        "bytes": 1476
+      },
+      {
+        "path": "app/api/ai/agent/route.ts",
+        "logical_path": "js/app/api/ai/agent/route.ts",
+        "hash": "32f922439eba24503393b8a43b0345a0558af9616dfb02fdcade62b670cc698d",
+        "bytes": 657
+      },
+      {
+        "path": "app/api/ai/image/route.ts",
+        "logical_path": "js/app/api/ai/image/route.ts",
+        "hash": "cd3aad99808f8c98bfb225615e5bdb44af604f205b705fdc5ba794fffbaad500",
+        "bytes": 708
+      },
+      {
+        "path": "app/api/ai/speech/route.ts",
+        "logical_path": "js/app/api/ai/speech/route.ts",
+        "hash": "022c316e99d76232643b325a44b030f1ea9a557cead922bfe78fd8655f201794",
+        "bytes": 663
+      },
+      {
+        "path": "app/api/ai/transcribe/route.ts",
+        "logical_path": "js/app/api/ai/transcribe/route.ts",
+        "hash": "55cf7aa6c7549b9be3ab2a91588a133ae904ffdf5d5e9e3851c14c5f8a83e940",
+        "bytes": 900
+      },
+      {
+        "path": "app/api/ai/video/route.ts",
+        "logical_path": "js/app/api/ai/video/route.ts",
+        "hash": "1a7957f72c10a1577406e9c98317b9bf08a00475ca71de58b6583c1d5a949cb8",
+        "bytes": 625
+      },
+      {
+        "path": "app/api/ai/object/route.ts",
+        "logical_path": "js/app/api/ai/object/route.ts",
+        "hash": "795c0284b9ee113a71b32374c3e495212686bfeab6da3670caac075137533b30",
+        "bytes": 838
+      },
+      {
+        "path": "app/api/ai/ui-stream/route.ts",
+        "logical_path": "js/app/api/ai/ui-stream/route.ts",
+        "hash": "4d0d098209f2b24d5e6542af3a8516264acc2074e303ed108e4ef3eefe3c3393",
+        "bytes": 777
+      },
+      {
+        "path": "app/api/ai/text-stream/route.ts",
+        "logical_path": "js/app/api/ai/text-stream/route.ts",
+        "hash": "711fc23c006c02a9bc661477ef96f77e935e6de957a34d010d4e8d2e9560e78c",
+        "bytes": 399
+      },
+      {
+        "path": "app/api/ai/upload-file/route.ts",
+        "logical_path": "js/app/api/ai/upload-file/route.ts",
+        "hash": "0d5151576a884f1464d4e3406e3103294e8d3b6c994c1fe8256f98be9b50a6ce",
+        "bytes": 839
+      },
+      {
+        "path": "lib/ai/README.md",
+        "logical_path": "js/lib/ai/README.md",
+        "hash": "3ef01c9302d3d9b6425aa1b958cb349b8dcc4fe2b1bac69cdbe64aff19e71e47",
+        "bytes": 5198
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/ai/model.ts",
+      "logical_path": "js/lib/ai/model.ts",
+      "hash": "9ee4f2eec31f2ce2881387ee199f9c5733bede743d712db27a2a9e71d81ef238",
+      "bytes": 284
+    },
+    {
+      "path": "lib/ai/model-policy.ts",
+      "logical_path": "js/lib/ai/model-policy.ts",
+      "hash": "c2ba58281464bdfd768da17c29cdfe39c24289c66e51d06d3d608f894dcb07ed",
+      "bytes": 842
+    },
+    {
+      "path": "lib/ai/tools.ts",
+      "logical_path": "js/lib/ai/tools.ts",
+      "hash": "b1fa7b62e6c20f34daa33aaa66c2a140d89492fe22ab7ac00ab2bdd551e57cc9",
+      "bytes": 461
+    },
+    {
+      "path": "lib/ai/chat-route.ts",
+      "logical_path": "js/lib/ai/chat-route.ts",
+      "hash": "b23aec76671d4432091dd278276f0a16724c1b07a80cf0d4591a9797ff4e7fd6",
+      "bytes": 1813
+    },
+    {
+      "path": "lib/ai/message-pruning.ts",
+      "logical_path": "js/lib/ai/message-pruning.ts",
+      "hash": "719e203ee703f75c68ba264ca573aca564c12df9247068f8d5ed267f1cb1f537",
+      "bytes": 781
+    },
+    {
+      "path": "lib/ai/tool-approval.ts",
+      "logical_path": "js/lib/ai/tool-approval.ts",
+      "hash": "fbd31def5cb48cacd2c9d2d1821872970ffb1c6e81256001ecbeaf79bdf89f36",
+      "bytes": 1203
+    },
+    {
+      "path": "lib/ai/image-generation.ts",
+      "logical_path": "js/lib/ai/image-generation.ts",
+      "hash": "f5221d1cee9bb3e028f0b927287cc4d9c0843f2280575d8f6bea1364a4d23d23",
+      "bytes": 1503
+    },
+    {
+      "path": "lib/ai/speech-generation.ts",
+      "logical_path": "js/lib/ai/speech-generation.ts",
+      "hash": "00b6fccc4cf01fe5d23d3825945b9866f8494afdaf26a3a2df4026ec30297e75",
+      "bytes": 1692
+    },
+    {
+      "path": "lib/ai/transcription.ts",
+      "logical_path": "js/lib/ai/transcription.ts",
+      "hash": "211acf4ddc342e21ada354d316f8ca1da53cfddaea04d238e7d641b73a4399ad",
+      "bytes": 1433
+    },
+    {
+      "path": "lib/ai/video-generation.ts",
+      "logical_path": "js/lib/ai/video-generation.ts",
+      "hash": "339a93374e575f6628e120946fb8f8d73144d063d03d1a3d8905fc1e72f0e272",
+      "bytes": 1727
+    },
+    {
+      "path": "lib/ai/object-generation.ts",
+      "logical_path": "js/lib/ai/object-generation.ts",
+      "hash": "3677841610b4f8fad6d9e8e0f81a3d4d2fa58b31944fb14af0c5bc4edbedfe9a",
+      "bytes": 1433
+    },
+    {
+      "path": "lib/ai/structured-output.ts",
+      "logical_path": "js/lib/ai/structured-output.ts",
+      "hash": "f60477530ec04bbcd9b059213940fe16a475dc71da92d450004aa73d5cf20db1",
+      "bytes": 1395
+    },
+    {
+      "path": "lib/ai/telemetry.ts",
+      "logical_path": "js/lib/ai/telemetry.ts",
+      "hash": "1db8605dcc4d238bcd5e41b244f6969c7d582deafe378cd8a6c812483ea96510",
+      "bytes": 3760
+    },
+    {
+      "path": "lib/ai/embeddings.ts",
+      "logical_path": "js/lib/ai/embeddings.ts",
+      "hash": "4fbd64a494b93b68bce278a0cdad4680d75e1a7594dc456b0141da36005a1b9f",
+      "bytes": 1328
+    },
+    {
+      "path": "lib/ai/reranking.ts",
+      "logical_path": "js/lib/ai/reranking.ts",
+      "hash": "b0d4f866cfc0922a866616398abdee628b7f7979693f17df81cfe5c95c847be6",
+      "bytes": 1040
+    },
+    {
+      "path": "lib/ai/agent.ts",
+      "logical_path": "js/lib/ai/agent.ts",
+      "hash": "83e8259788a94398c974ba785c4f8f87848b274ec6a9c6ce5e40cfdfcc2d20e8",
+      "bytes": 1325
+    },
+    {
+      "path": "lib/ai/provider-freedom.ts",
+      "logical_path": "js/lib/ai/provider-freedom.ts",
+      "hash": "5ccc6bc3ed99192dd10bc23cadc8b7524d07de29b0f4fa26f166ee6e684537fc",
+      "bytes": 1073
+    },
+    {
+      "path": "lib/ai/ui-message-stream.ts",
+      "logical_path": "js/lib/ai/ui-message-stream.ts",
+      "hash": "6f7a12fabe2c4e61f38e3cec47257e1332775a1bfa9a415cd3331132df163298",
+      "bytes": 1878
+    },
+    {
+      "path": "lib/ai/text-stream.ts",
+      "logical_path": "js/lib/ai/text-stream.ts",
+      "hash": "e0114383136bd079fad025a9330f5de75b908f19a9f3202086ae8cd0d54173a5",
+      "bytes": 1178
+    },
+    {
+      "path": "lib/ai/file-upload.ts",
+      "logical_path": "js/lib/ai/file-upload.ts",
+      "hash": "6b7542a10b462d33805352d9af49d7ecc5546064c372a0afacd77a1ed3523320",
+      "bytes": 1102
+    },
+    {
+      "path": "lib/ai/client-chat.tsx",
+      "logical_path": "js/lib/ai/client-chat.tsx",
+      "hash": "66d47bdd71acb4084457b89714ef8a3b1ea52ffe38023ae1a2a3c13637d13b0a",
+      "bytes": 2346
+    },
+    {
+      "path": "lib/ai/dashboard-readiness.ts",
+      "logical_path": "js/lib/ai/dashboard-readiness.ts",
+      "hash": "52c9fce8fe8f09c3c3e3bdf849284176696d212a1ec8054c63350e68780085fa",
+      "bytes": 1257
+    },
+    {
+      "path": "components/ai/ai-launch-assistant.tsx",
+      "logical_path": "js/components/ai/ai-launch-assistant.tsx",
+      "hash": "60a71896378b12bad78bf887b4fe2c61d2ad80890e1cea368f89be2218da8ed1",
+      "bytes": 3547
+    },
+    {
+      "path": "lib/ai/metadata.ts",
+      "logical_path": "js/lib/ai/metadata.ts",
+      "hash": "c2cfd2cc53b37b9cc74eb02bfb28e2ce6da23d4be597ca10466a60043d5132ce",
+      "bytes": 7771
+    },
+    {
+      "path": "app/api/ai/chat/route.ts",
+      "logical_path": "js/app/api/ai/chat/route.ts",
+      "hash": "6226ab937629117bcd20b122a3ef090efde6654ad1c4e376ac816c2e629487dc",
+      "bytes": 1476
+    },
+    {
+      "path": "app/api/ai/agent/route.ts",
+      "logical_path": "js/app/api/ai/agent/route.ts",
+      "hash": "32f922439eba24503393b8a43b0345a0558af9616dfb02fdcade62b670cc698d",
+      "bytes": 657
+    },
+    {
+      "path": "app/api/ai/image/route.ts",
+      "logical_path": "js/app/api/ai/image/route.ts",
+      "hash": "cd3aad99808f8c98bfb225615e5bdb44af604f205b705fdc5ba794fffbaad500",
+      "bytes": 708
+    },
+    {
+      "path": "app/api/ai/speech/route.ts",
+      "logical_path": "js/app/api/ai/speech/route.ts",
+      "hash": "022c316e99d76232643b325a44b030f1ea9a557cead922bfe78fd8655f201794",
+      "bytes": 663
+    },
+    {
+      "path": "app/api/ai/transcribe/route.ts",
+      "logical_path": "js/app/api/ai/transcribe/route.ts",
+      "hash": "55cf7aa6c7549b9be3ab2a91588a133ae904ffdf5d5e9e3851c14c5f8a83e940",
+      "bytes": 900
+    },
+    {
+      "path": "app/api/ai/video/route.ts",
+      "logical_path": "js/app/api/ai/video/route.ts",
+      "hash": "1a7957f72c10a1577406e9c98317b9bf08a00475ca71de58b6583c1d5a949cb8",
+      "bytes": 625
+    },
+    {
+      "path": "app/api/ai/object/route.ts",
+      "logical_path": "js/app/api/ai/object/route.ts",
+      "hash": "795c0284b9ee113a71b32374c3e495212686bfeab6da3670caac075137533b30",
+      "bytes": 838
+    },
+    {
+      "path": "app/api/ai/ui-stream/route.ts",
+      "logical_path": "js/app/api/ai/ui-stream/route.ts",
+      "hash": "4d0d098209f2b24d5e6542af3a8516264acc2074e303ed108e4ef3eefe3c3393",
+      "bytes": 777
+    },
+    {
+      "path": "app/api/ai/text-stream/route.ts",
+      "logical_path": "js/app/api/ai/text-stream/route.ts",
+      "hash": "711fc23c006c02a9bc661477ef96f77e935e6de957a34d010d4e8d2e9560e78c",
+      "bytes": 399
+    },
+    {
+      "path": "app/api/ai/upload-file/route.ts",
+      "logical_path": "js/app/api/ai/upload-file/route.ts",
+      "hash": "0d5151576a884f1464d4e3406e3103294e8d3b6c994c1fe8256f98be9b50a6ce",
+      "bytes": 839
+    },
+    {
+      "path": "lib/ai/README.md",
+      "logical_path": "js/lib/ai/README.md",
+      "hash": "3ef01c9302d3d9b6425aa1b958cb349b8dcc4fe2b1bac69cdbe64aff19e71e47",
+      "bytes": 5198
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/ai/model.ts",
+      "materialized_path": "lib/ai/model.ts",
+      "hash": "9ee4f2eec31f2ce2881387ee199f9c5733bede743d712db27a2a9e71d81ef238",
+      "bytes": 284
+    },
+    {
+      "logical_path": "js/lib/ai/model-policy.ts",
+      "materialized_path": "lib/ai/model-policy.ts",
+      "hash": "c2ba58281464bdfd768da17c29cdfe39c24289c66e51d06d3d608f894dcb07ed",
+      "bytes": 842
+    },
+    {
+      "logical_path": "js/lib/ai/tools.ts",
+      "materialized_path": "lib/ai/tools.ts",
+      "hash": "b1fa7b62e6c20f34daa33aaa66c2a140d89492fe22ab7ac00ab2bdd551e57cc9",
+      "bytes": 461
+    },
+    {
+      "logical_path": "js/lib/ai/chat-route.ts",
+      "materialized_path": "lib/ai/chat-route.ts",
+      "hash": "b23aec76671d4432091dd278276f0a16724c1b07a80cf0d4591a9797ff4e7fd6",
+      "bytes": 1813
+    },
+    {
+      "logical_path": "js/lib/ai/message-pruning.ts",
+      "materialized_path": "lib/ai/message-pruning.ts",
+      "hash": "719e203ee703f75c68ba264ca573aca564c12df9247068f8d5ed267f1cb1f537",
+      "bytes": 781
+    },
+    {
+      "logical_path": "js/lib/ai/tool-approval.ts",
+      "materialized_path": "lib/ai/tool-approval.ts",
+      "hash": "fbd31def5cb48cacd2c9d2d1821872970ffb1c6e81256001ecbeaf79bdf89f36",
+      "bytes": 1203
+    },
+    {
+      "logical_path": "js/lib/ai/image-generation.ts",
+      "materialized_path": "lib/ai/image-generation.ts",
+      "hash": "f5221d1cee9bb3e028f0b927287cc4d9c0843f2280575d8f6bea1364a4d23d23",
+      "bytes": 1503
+    },
+    {
+      "logical_path": "js/lib/ai/speech-generation.ts",
+      "materialized_path": "lib/ai/speech-generation.ts",
+      "hash": "00b6fccc4cf01fe5d23d3825945b9866f8494afdaf26a3a2df4026ec30297e75",
+      "bytes": 1692
+    },
+    {
+      "logical_path": "js/lib/ai/transcription.ts",
+      "materialized_path": "lib/ai/transcription.ts",
+      "hash": "211acf4ddc342e21ada354d316f8ca1da53cfddaea04d238e7d641b73a4399ad",
+      "bytes": 1433
+    },
+    {
+      "logical_path": "js/lib/ai/video-generation.ts",
+      "materialized_path": "lib/ai/video-generation.ts",
+      "hash": "339a93374e575f6628e120946fb8f8d73144d063d03d1a3d8905fc1e72f0e272",
+      "bytes": 1727
+    },
+    {
+      "logical_path": "js/lib/ai/object-generation.ts",
+      "materialized_path": "lib/ai/object-generation.ts",
+      "hash": "3677841610b4f8fad6d9e8e0f81a3d4d2fa58b31944fb14af0c5bc4edbedfe9a",
+      "bytes": 1433
+    },
+    {
+      "logical_path": "js/lib/ai/structured-output.ts",
+      "materialized_path": "lib/ai/structured-output.ts",
+      "hash": "f60477530ec04bbcd9b059213940fe16a475dc71da92d450004aa73d5cf20db1",
+      "bytes": 1395
+    },
+    {
+      "logical_path": "js/lib/ai/telemetry.ts",
+      "materialized_path": "lib/ai/telemetry.ts",
+      "hash": "1db8605dcc4d238bcd5e41b244f6969c7d582deafe378cd8a6c812483ea96510",
+      "bytes": 3760
+    },
+    {
+      "logical_path": "js/lib/ai/embeddings.ts",
+      "materialized_path": "lib/ai/embeddings.ts",
+      "hash": "4fbd64a494b93b68bce278a0cdad4680d75e1a7594dc456b0141da36005a1b9f",
+      "bytes": 1328
+    },
+    {
+      "logical_path": "js/lib/ai/reranking.ts",
+      "materialized_path": "lib/ai/reranking.ts",
+      "hash": "b0d4f866cfc0922a866616398abdee628b7f7979693f17df81cfe5c95c847be6",
+      "bytes": 1040
+    },
+    {
+      "logical_path": "js/lib/ai/agent.ts",
+      "materialized_path": "lib/ai/agent.ts",
+      "hash": "83e8259788a94398c974ba785c4f8f87848b274ec6a9c6ce5e40cfdfcc2d20e8",
+      "bytes": 1325
+    },
+    {
+      "logical_path": "js/lib/ai/provider-freedom.ts",
+      "materialized_path": "lib/ai/provider-freedom.ts",
+      "hash": "5ccc6bc3ed99192dd10bc23cadc8b7524d07de29b0f4fa26f166ee6e684537fc",
+      "bytes": 1073
+    },
+    {
+      "logical_path": "js/lib/ai/ui-message-stream.ts",
+      "materialized_path": "lib/ai/ui-message-stream.ts",
+      "hash": "6f7a12fabe2c4e61f38e3cec47257e1332775a1bfa9a415cd3331132df163298",
+      "bytes": 1878
+    },
+    {
+      "logical_path": "js/lib/ai/text-stream.ts",
+      "materialized_path": "lib/ai/text-stream.ts",
+      "hash": "e0114383136bd079fad025a9330f5de75b908f19a9f3202086ae8cd0d54173a5",
+      "bytes": 1178
+    },
+    {
+      "logical_path": "js/lib/ai/file-upload.ts",
+      "materialized_path": "lib/ai/file-upload.ts",
+      "hash": "6b7542a10b462d33805352d9af49d7ecc5546064c372a0afacd77a1ed3523320",
+      "bytes": 1102
+    },
+    {
+      "logical_path": "js/lib/ai/client-chat.tsx",
+      "materialized_path": "lib/ai/client-chat.tsx",
+      "hash": "66d47bdd71acb4084457b89714ef8a3b1ea52ffe38023ae1a2a3c13637d13b0a",
+      "bytes": 2346
+    },
+    {
+      "logical_path": "js/lib/ai/dashboard-readiness.ts",
+      "materialized_path": "lib/ai/dashboard-readiness.ts",
+      "hash": "52c9fce8fe8f09c3c3e3bdf849284176696d212a1ec8054c63350e68780085fa",
+      "bytes": 1257
+    },
+    {
+      "logical_path": "js/components/ai/ai-launch-assistant.tsx",
+      "materialized_path": "components/ai/ai-launch-assistant.tsx",
+      "hash": "60a71896378b12bad78bf887b4fe2c61d2ad80890e1cea368f89be2218da8ed1",
+      "bytes": 3547
+    },
+    {
+      "logical_path": "js/lib/ai/metadata.ts",
+      "materialized_path": "lib/ai/metadata.ts",
+      "hash": "c2cfd2cc53b37b9cc74eb02bfb28e2ce6da23d4be597ca10466a60043d5132ce",
+      "bytes": 7771
+    },
+    {
+      "logical_path": "js/app/api/ai/chat/route.ts",
+      "materialized_path": "app/api/ai/chat/route.ts",
+      "hash": "6226ab937629117bcd20b122a3ef090efde6654ad1c4e376ac816c2e629487dc",
+      "bytes": 1476
+    },
+    {
+      "logical_path": "js/app/api/ai/agent/route.ts",
+      "materialized_path": "app/api/ai/agent/route.ts",
+      "hash": "32f922439eba24503393b8a43b0345a0558af9616dfb02fdcade62b670cc698d",
+      "bytes": 657
+    },
+    {
+      "logical_path": "js/app/api/ai/image/route.ts",
+      "materialized_path": "app/api/ai/image/route.ts",
+      "hash": "cd3aad99808f8c98bfb225615e5bdb44af604f205b705fdc5ba794fffbaad500",
+      "bytes": 708
+    },
+    {
+      "logical_path": "js/app/api/ai/speech/route.ts",
+      "materialized_path": "app/api/ai/speech/route.ts",
+      "hash": "022c316e99d76232643b325a44b030f1ea9a557cead922bfe78fd8655f201794",
+      "bytes": 663
+    },
+    {
+      "logical_path": "js/app/api/ai/transcribe/route.ts",
+      "materialized_path": "app/api/ai/transcribe/route.ts",
+      "hash": "55cf7aa6c7549b9be3ab2a91588a133ae904ffdf5d5e9e3851c14c5f8a83e940",
+      "bytes": 900
+    },
+    {
+      "logical_path": "js/app/api/ai/video/route.ts",
+      "materialized_path": "app/api/ai/video/route.ts",
+      "hash": "1a7957f72c10a1577406e9c98317b9bf08a00475ca71de58b6583c1d5a949cb8",
+      "bytes": 625
+    },
+    {
+      "logical_path": "js/app/api/ai/object/route.ts",
+      "materialized_path": "app/api/ai/object/route.ts",
+      "hash": "795c0284b9ee113a71b32374c3e495212686bfeab6da3670caac075137533b30",
+      "bytes": 838
+    },
+    {
+      "logical_path": "js/app/api/ai/ui-stream/route.ts",
+      "materialized_path": "app/api/ai/ui-stream/route.ts",
+      "hash": "4d0d098209f2b24d5e6542af3a8516264acc2074e303ed108e4ef3eefe3c3393",
+      "bytes": 777
+    },
+    {
+      "logical_path": "js/app/api/ai/text-stream/route.ts",
+      "materialized_path": "app/api/ai/text-stream/route.ts",
+      "hash": "711fc23c006c02a9bc661477ef96f77e935e6de957a34d010d4e8d2e9560e78c",
+      "bytes": 399
+    },
+    {
+      "logical_path": "js/app/api/ai/upload-file/route.ts",
+      "materialized_path": "app/api/ai/upload-file/route.ts",
+      "hash": "0d5151576a884f1464d4e3406e3103294e8d3b6c994c1fe8256f98be9b50a6ce",
+      "bytes": 839
+    },
+    {
+      "logical_path": "js/lib/ai/README.md",
+      "materialized_path": "lib/ai/README.md",
+      "hash": "3ef01c9302d3d9b6425aa1b958cb349b8dcc4fe2b1bac69cdbe64aff19e71e47",
+      "bytes": 5198
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records ai provenance from G:/WWW/inspirations/vercel-ai without claiming external provenance verification."
+    },
+    {
+      "policy": "provider-boundary-honest",
+      "traffic": "green",
+      "message": "AI SDK exposes source-owned helpers and readiness gates while live provider credentials remain application-owned."
+    }
+  ],
+  "risk_score": 84,
+  "timestamp": "2026-05-23T04:48:26.575Z",
+  "signature": null
+}

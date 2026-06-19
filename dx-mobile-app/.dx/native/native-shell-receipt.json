@@ -1,0 +1,48 @@
+{
+  "schema": "dx.www.native_shell.receipt",
+  "command": "dx www native-shell",
+  "mode": "write",
+  "status": "source-materialized",
+  "target": "tauri",
+  "project": {
+    "name": "dx-mobile-app",
+    "root": "G:/Dx/www/dx-mobile-app",
+    "dx_config": "dx",
+    "www_output": ".dx/www/output"
+  },
+  "native": {
+    "bridge": "dx-native-mobile-companion",
+    "shell": "tauri-webview",
+    "product_name": "DX Mobile App",
+    "identifier": "com.essencefromexistence.dx.mobile",
+    "dev_url": "http://127.0.0.1:3000",
+    "dev_port": 3000,
+    "frontend_dist": "../.dx/www/output",
+    "native_root": "G:/Dx/native",
+    "tauri_crate": "../../../native/crates/tauri",
+    "tauri_build_crate": "../../../native/crates/tauri-build",
+    "receipt_path": ".dx/native/native-shell-receipt.json"
+  },
+  "materialized_files": [
+    "src-tauri/Cargo.toml",
+    "src-tauri/build.rs",
+    "src-tauri/src/main.rs",
+    "src-tauri/src/lib.rs",
+    "src-tauri/tauri.conf.json",
+    ".dx/native/native-shell-receipt.json"
+  ],
+  "blocked_files": [],
+  "runtime_proof": {
+    "source_materialized": true,
+    "native_build": false,
+    "webview_run": false,
+    "production_output_present": false,
+    "node_modules_created": false
+  },
+  "next_commands": [
+    "dx dev --host 127.0.0.1 --port 3000",
+    "dx build",
+    "dx www build --target android",
+    "cargo check --manifest-path src-tauri/Cargo.toml -j 1"
+  ]
+}

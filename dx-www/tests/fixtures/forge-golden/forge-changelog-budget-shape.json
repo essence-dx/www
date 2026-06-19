@@ -1,0 +1,63 @@
+{
+  "budget": {
+    "checks": [
+      {
+        "max": 18000,
+        "metric": "decoded bytes",
+        "passed": true,
+        "unit": " B",
+        "value": 4539
+      },
+      {
+        "max": 3000,
+        "metric": "Brotli estimate",
+        "passed": true,
+        "unit": " B",
+        "value": 911
+      },
+      {
+        "max": 5,
+        "metric": "HTTP route median",
+        "passed": true,
+        "unit": " ms",
+        "value": 2.993
+      },
+      {
+        "max": 75,
+        "metric": "Chrome load event median",
+        "passed": true,
+        "unit": " ms",
+        "value": 11.6
+      }
+    ],
+    "enforced": false,
+    "passed": true,
+    "profile": "compact-forge-changelog"
+  },
+  "chrome": {
+    "dx_packet_applied": false,
+    "enabled": true,
+    "interaction_works": false,
+    "load_event_ms": 11.6,
+    "scripts": 0
+  },
+  "delivery": {
+    "packet_artifact_written": true,
+    "route_mode": "static",
+    "runtime_asset_written": false
+  },
+  "fallback": {
+    "delivery_mode": "static",
+    "optimized_bytes": 4539,
+    "script_count": 0,
+    "style_count": 0
+  },
+  "fixture_mode": "forge-changelog",
+  "http": {
+    "brotli_bytes": 911,
+    "median_ms": 2.993,
+    "resource_count": 1,
+    "total_decoded_bytes": 4539
+  },
+  "route": "/forge/changelog"
+}

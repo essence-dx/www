@@ -1,0 +1,130 @@
+{
+  "schema": "dx.forge.package_import_plan",
+  "version": 1,
+  "generated_at": "2026-06-07T17:49:05.820834+00:00",
+  "passed": true,
+  "score": 95,
+  "fail_under": 80,
+  "project": "G:\\Dx\\www-and-forge",
+  "ecosystem": "npm",
+  "package_id": "npm/clsx",
+  "package_name": "clsx",
+  "mode": "write",
+  "import_alias": "@/lib/forge/npm/clsx",
+  "source_kind": "reviewed-source-adapter",
+  "forge_import_gate": true,
+  "no_node_modules": true,
+  "package_installs_run": false,
+  "lifecycle_scripts_executed": false,
+  "lifecycle_script_status": "not-executed",
+  "requested_symbols": [
+    "clsx",
+    "default"
+  ],
+  "origin": {
+    "ecosystem": "npm",
+    "registry": "npmjs",
+    "package_name": "clsx",
+    "package_id": "npm/clsx",
+    "upstream_name": "npm:clsx",
+    "upstream_version": "0.0.0-dx-reviewed-adapter",
+    "upstream_reference": "npm:clsx",
+    "tarball_integrity": null,
+    "source_kind": "reviewed-source-adapter",
+    "generator": "dx-forge/npm-reviewed-source-slice",
+    "provenance_verified": false,
+    "provenance_note": "Reviewed adapter/source slice; Forge did not run npm install or lifecycle scripts."
+  },
+  "license": {
+    "declared_license": "MIT",
+    "license_source": "reviewed npm metadata / adapter declaration",
+    "license_file_hash": null,
+    "reviewed": false,
+    "reviewed_at": null,
+    "note": "Declaration recorded; no formal DX legal review is claimed."
+  },
+  "exports": [
+    {
+      "name": "clsx",
+      "kind": "named",
+      "source_path": "lib/forge/npm/clsx.ts",
+      "upstream_export": "clsx",
+      "materialized": true
+    },
+    {
+      "name": "default",
+      "kind": "default",
+      "source_path": "lib/forge/npm/clsx.ts",
+      "upstream_export": "default",
+      "materialized": true
+    }
+  ],
+  "files_kept": [],
+  "files_written": [
+    "lib/forge/npm/clsx.ts"
+  ],
+  "files_rejected": [],
+  "files_considered": [
+    {
+      "path": "lib/forge/npm/clsx.ts",
+      "logical_path": "npm/clsx/clsx.ts",
+      "hash_algorithm": "BLAKE3",
+      "hash": "7dc7e7b672f4dcf5e1698fa0b0c5baa8e4d3277855a674b9d8e3905a7428516b",
+      "bytes": 910,
+      "before_hash": null,
+      "after_hash": "7dc7e7b672f4dcf5e1698fa0b0c5baa8e4d3277855a674b9d8e3905a7428516b",
+      "tracked_hash": "7dc7e7b672f4dcf5e1698fa0b0c5baa8e4d3277855a674b9d8e3905a7428516b",
+      "status": "written",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "Forge can write `lib/forge/npm/clsx.ts` as a reviewed npm source slice."
+    }
+  ],
+  "overwrite_policy": {
+    "missing_file": "write",
+    "matching_existing_file": "keep",
+    "different_existing_file": "reject-yellow-no-overwrite",
+    "security_sensitive_or_invalid_path": "reject-red-never-write",
+    "partial_write": "forbidden"
+  },
+  "materialization_ready": true,
+  "materialization_status": "materialized-source-owned-adapter",
+  "materialized": true,
+  "materialized_package_id": "npm/clsx",
+  "materialized_files": [
+    "lib/forge/npm/clsx.ts"
+  ],
+  "manifest_path": "G:\\Dx\\www-and-forge\\.dx/forge/source-manifest.json",
+  "receipt_path": "G:\\Dx\\www-and-forge\\.dx/forge/receipts\\20260607T174905841668300Z-npm-clsx.json",
+  "docs_path": "G:\\Dx\\www-and-forge\\.dx/forge/docs/npm-clsx.md",
+  "import_plan_path": "G:\\Dx\\www-and-forge\\.dx/forge/import-plans/npm-clsx.json",
+  "import_plan_sr_path": "G:\\Dx\\www-and-forge\\.dx/forge/import-plans/npm-clsx.sr",
+  "import_plan_machine_path": "G:\\Dx\\www-and-forge\\.dx/serializer\\forge-import-plans-npm-clsx.machine",
+  "inspected_inputs": [
+    "npm:clsx",
+    "local project contract",
+    "Forge import gate policy"
+  ],
+  "review_required": [
+    "Review the generated adapter before treating it as a full upstream package replacement.",
+    "Confirm license and advisory policy before publishing the adapter outside this project.",
+    "Run dx check . --strict-project-contract after materialization."
+  ],
+  "can_materialize": [
+    "Reviewed source-owned clsx-compatible adapter with no install step.",
+    "Forge manifest, receipt, docs, and import-plan metadata.",
+    "Editable project-facing TypeScript source under lib/forge/npm."
+  ],
+  "cannot_materialize": [
+    "Lifecycle scripts, postinstall hooks, or generated install artifacts.",
+    "Opaque native binaries or packages that require node_modules resolution at runtime.",
+    "Large dependency graphs without a reviewed source-owned scope."
+  ],
+  "findings": [],
+  "review_findings": [],
+  "next_commands": [
+    "Import `clsx` from `@/lib/forge/npm/clsx` in project source.",
+    "Run dx check . --strict-project-contract",
+    "Review `.dx/forge/docs/npm-clsx.md` before accepting future updates."
+  ]
+}

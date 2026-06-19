@@ -1,0 +1,237 @@
+{
+  "provider": "vercel",
+  "contract": "dx.vercel.prebuiltStatic",
+  "contract_revision": 1,
+  "contract_name": "Vercel Prebuilt Static Deploy",
+  "project": "G:/Dx/www/examples/shader",
+  "static_source": ".dx/www/output",
+  "adapter_output": ".vercel/output",
+  "build_output_api": {
+    "version": 3,
+    "config_path": ".vercel/output/config.json",
+    "static_dir": ".vercel/output/static",
+    "config": {
+      "version": 3,
+      "routes": [
+        {
+          "src": "/",
+          "dest": "/index.html"
+        },
+        {
+          "src": "/([^/.]+(?:/[^/.]+)*)/?",
+          "dest": "/$1/index.html"
+        },
+        {
+          "handle": "filesystem"
+        }
+      ]
+    }
+  },
+  "materialization": {
+    "ran": false,
+    "reason": "dry run requested",
+    "source": ".dx/www/output",
+    "copy_files_to": ".vercel/output/static",
+    "write_config": ".vercel/output/config.json"
+  },
+  "static_output": {
+    "exists": true,
+    "ready": true,
+    "file_count": 245,
+    "html_file_count": 6,
+    "asset_file_count": 239,
+    "total_bytes": 28674868,
+    "manifest_exists": true,
+    "deploy_adapter_exists": true,
+    "content_hash": "blake3:276edd35bf5eca6b555a47d6199ac0208356f3ad7bc79b2e84dcfb40ea14c249",
+    "public_runtime_artifact_count": 202,
+    "evidence_artifact_count": 25,
+    "bundle_partition_source": "provider-adapter.dx-cloud.json",
+    "upload_plan_sample": [
+      {
+        "source": ".dx/www/output/.dx/receipts/readiness/proof-graph.sr",
+        "target": ".dx/receipts/readiness/proof-graph.sr",
+        "bytes": 7621,
+        "hash": "blake3:485d60cec952fa4dd27e5bbdd4100a78e074b4823c91aeac01f864a21e90ef52",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/.dx/serializer/receipts-readiness-proof-graph.machine",
+        "target": ".dx/serializer/receipts-readiness-proof-graph.machine",
+        "bytes": 4598,
+        "hash": "blake3:801ff6db7b6eb4be47d888638ca846abdcc6e407a1a1bee6b649a07dc21b23a8",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/_dx/styles/react-route-3ca543b61d3665f6.css",
+        "target": "_dx/styles/react-route-3ca543b61d3665f6.css",
+        "bytes": 29703,
+        "hash": "blake3:3ca543b61d3665f6b85764530ac7f0304de3b27f803926d40704672ee01bf568",
+        "content_type": "text/css; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/_dx/styles/react-route-3ca543b61d3665f6.css.br",
+        "target": "_dx/styles/react-route-3ca543b61d3665f6.css.br",
+        "bytes": 5535,
+        "hash": "blake3:5b559285cf6589a28c0f4cd2aebd8f3948429ca3a16fdd0004abcc4c890dba9f",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/_dx/styles/react-route-3ca543b61d3665f6.css.gz",
+        "target": "_dx/styles/react-route-3ca543b61d3665f6.css.gz",
+        "bytes": 6275,
+        "hash": "blake3:5129920ea8ed5fc71da7a540c86f781f6fd4035222a9851519165c4cdfa9f7d2",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/app/app-router-execution.json",
+        "target": "app/app-router-execution.json",
+        "bytes": 268840,
+        "hash": "blake3:53ee5c9f0783fc771979ce7665342c0ea92ea14657c658be444cd83ea5d853c1",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/app/index.html",
+        "target": "app/index.html",
+        "bytes": 4254,
+        "hash": "blake3:c6e2a38b68879e684927533c81ab9d20d16e8badc5afad8413d2ab76d939f504",
+        "content_type": "text/html; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/app/page-graph.json",
+        "target": "app/page-graph.json",
+        "bytes": 35236,
+        "hash": "blake3:d0bdf0c1ebfef264097dc3bcdc30304e7b4a3297a7ee2cfa064fbf3b6381e4ae",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/app-route-discovery.json",
+        "target": "app-route-discovery.json",
+        "bytes": 900,
+        "hash": "blake3:88d69ccbd64c5a6a2d4c2ad94da27766fee5ceb425c1a70ede9b266e134413b6",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/cache-manifest.json",
+        "target": "cache-manifest.json",
+        "bytes": 80290,
+        "hash": "blake3:11a96142af69fc2f21509e6c52db8510464d914eac293dab1e641d0fc9ddd684",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/deploy-adapter.json",
+        "target": "deploy-adapter.json",
+        "bytes": 187080,
+        "hash": "blake3:26ca82a4c0aea7e689063b7336e9261dbbbe1039972f31fdab353d017204eeb2",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/favicon.svg",
+        "target": "favicon.svg",
+        "bytes": 874,
+        "hash": "blake3:cfb09e06980b21ac4df558fc791be8cef96c7ab79ab0d8b0eb0d8a95f7c1cd76",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/favicon.svg.br",
+        "target": "favicon.svg.br",
+        "bytes": 373,
+        "hash": "blake3:47088789d1b45b606984eb24a70e337fcecf0b6c6886d377e26a859a5fbd5e12",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/favicon.svg.gz",
+        "target": "favicon.svg.gz",
+        "bytes": 440,
+        "hash": "blake3:3cc120aba9ef800cb0538c035125b5535f8d25a3f2d56c111d00a8d06713f23c",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/forge/receipts/20260611T122031351813900Z-www-minimal-starter.json",
+        "target": "forge/receipts/20260611T122031351813900Z-www-minimal-starter.json",
+        "bytes": 8188,
+        "hash": "blake3:3ac51ef8515e716f382e24ea52d5e558bb681053bcee5b2ba5a1166e0b835899",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/forge/receipts/20260611T122031469502300Z-www-minimal-starter.json",
+        "target": "forge/receipts/20260611T122031469502300Z-www-minimal-starter.json",
+        "bytes": 8188,
+        "hash": "blake3:91478ed344a865add36632ce50089c0a42b7f3ed2ac5206fc3bfb19a2659c658",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/forge/source-manifest.json",
+        "target": "forge/source-manifest.json",
+        "bytes": 3453,
+        "hash": "blake3:fcd2e52c6ea20bcdc38b6ce97074d334677d7bc62d4bbce6af9b4538ba4ae2a2",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/forge/template-manifest.json",
+        "target": "forge/template-manifest.json",
+        "bytes": 3238,
+        "hash": "blake3:6a93f10ad805d82a4421cd19df583d9a796eb99a31ea1ab47401c98caa25a177",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/forge-hosting-manifest.json",
+        "target": "forge-hosting-manifest.json",
+        "bytes": 4812,
+        "hash": "blake3:46fc7a70d4e846ebb80046545fbc2a305020d7461d940f09606db16981f91f40",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/hosted-preview.json",
+        "target": "hosted-preview.json",
+        "bytes": 129375,
+        "hash": "blake3:2aff9408a427c5800a09098c9a169e31b5c118d2092b0a38d9f077ef7e222d25",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      }
+    ]
+  },
+  "command": {
+    "cwd": "G:/Dx/www/examples/shader",
+    "argv": [
+      "vercel",
+      "deploy",
+      "--prebuilt"
+    ],
+    "requires_env": [
+      "VERCEL_TOKEN"
+    ],
+    "safe_to_print": true,
+    "executes_network_deploy": true
+  },
+  "approval_gate": {
+    "dry_run": true,
+    "execution_allowed_by_this_invocation": false,
+    "external_execution_requires": "explicit user approval before running the Vercel CLI",
+    "reason": "source-only launch pass must not deploy or start external network work"
+  },
+  "receipts": {
+    "manifest": ".dx/deploy/vercel-manifest.json",
+    "command_contract": ".dx/deploy/vercel-command.json",
+    "deploy_receipt": ".dx/receipts/deploy/vercel.json"
+  }
+}

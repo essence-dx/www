@@ -1,0 +1,140 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Validation & Schemas",
+    "package_id": "validation/zod",
+    "upstream_package": "zod",
+    "upstream_version": "4.4.3",
+    "source_mirror": "G:/WWW/inspirations/zod",
+    "based_on": "Zod v4 classic schema parsing, metadata, JSON Schema conversion, and error formatting public APIs",
+    "aliases": [
+      "validation-schemas",
+      "zod",
+      "zod/v4",
+      "schema/zod",
+      "validation/zod/v4"
+    ]
+  },
+  "selected_surfaces": [
+    "dashboard-settings-validation",
+    "template-forms-validation",
+    "starter-dashboard-settings-validator",
+    "generated-starter-materialization",
+    "receipt-hash-refresh"
+  ],
+  "upstream_public_apis": [
+    "safeParse",
+    "safeParseAsync",
+    "z.strictObject",
+    "z.flattenError",
+    "z.treeifyError",
+    "z.prettifyError",
+    "z.toJSONSchema",
+    ".meta()",
+    ".readonly()"
+  ],
+  "inspected_upstream_files": [
+    "packages/zod/package.json",
+    "src/v4/classic/external.ts",
+    "src/v4/classic/schemas.ts",
+    "src/v4/classic/parse.ts",
+    "src/v4/core/errors.ts",
+    "src/v4/core/to-json-schema.ts"
+  ],
+  "guard": {
+    "id": "validation-schemas-generated-starter-materialization",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "benchmarks/zod-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\zod-dx-check-package-lane-panel.test.ts",
+    "proves": [
+      "Validation & Schemas generated-starter materialization guard",
+      "data-dx-check-package-lane-row=\"validation/zod\"",
+      "data-dx-token-scope=\"validation/zod\"",
+    "validation-schemas:receipt-hash-refresh",
+    "dx.validation.template_forms",
+    "docs/packages/validation-schemas.source-guard-runbook.json",
+      "without claiming live Validation & Schemas runtime proof",
+      "validation/zod source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "validation-schemas-generated-starter-materialization",
+      "purpose": "The generated starter preserves the Validation & Schemas package-lane row, helper freshness markers, dx-style markers, and package-scoped dx-check panel without live Validation & Schemas runtime proof.",
+      "evidence_field": "benchmarks/zod-dx-check-package-lane-panel.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\zod-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-only Validation & Schemas package-lane row, generated starter materialization, helper freshness markers, dx-style markers, and dx-check panel package scope without live Validation & Schemas runtime proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "generated_preview_manifest": {
+    "fixture_path": "docs/packages/validation-schemas.source-guard-runbook.json",
+    "paths": [
+      "sourceGuardRunbookFixtures",
+      "routes[].sourceGuardRunbookFixtures"
+    ],
+    "guard_id": "validation-schemas-generated-starter-materialization",
+    "zed_visibility": "validation-schemas:receipt-hash-refresh",
+    "honesty_label": "SOURCE-ONLY",
+    "runtime_proof": false
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-check-package-lane-dx-style-status",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-validation-zod-dashboard-settings.json",
+    "hash_helper": "examples/template/validation-schemas-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/validation-schemas-receipt-hashes.ts --check --json",
+    "source_guard_runbook_fixture": "docs/packages/validation-schemas.source-guard-runbook.json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "attribution_fields": [
+      "current_files",
+      "stale_files",
+      "missing_files",
+      "stale_mirror_files",
+      "missing_mirror_files"
+    ],
+    "materializer_only_stale_guard": "benchmarks/zod-receipt-hash-refresh.test.ts",
+    "zed_visibility": "validation-schemas:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "accepted schema design",
+    "account/settings persistence",
+    "authorization before account changes",
+    "final validation copy and locale policy",
+    "external JSON Schema trust policy",
+    "runtime dependency installation",
+    "downstream database writes and audit trail"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors package-owned Studio source guard and source_guard_runbook_index metadata only.",
+    "ADAPTER-BOUNDARY: browser runtime proof, settings persistence, authorization, and dependency installation stay app-owned; downstream database writes and audit trails also stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

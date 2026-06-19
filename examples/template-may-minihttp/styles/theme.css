@@ -1,0 +1,9 @@
+:root {
+  --dx-background: #000;
+  --dx-foreground: #ededed;
+  --dx-muted: #a1a1aa;
+  --dx-panel: #111;
+  --dx-border: #2a2a2a;
+  --dx-accent: #fff;
+  --dx-font-sans: "Inter", "Geist", system-ui, sans-serif;
+}

@@ -1,0 +1,57 @@
+/* Authored public tokens for the DX WWW template. */
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: 0 0% 0%;
+  --foreground: 0 0% 98%;
+  --surface: 0 0% 4%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 64%;
+  --border: 0 0% 28%;
+  --card: 0 0% 7%;
+  --card-foreground: var(--foreground);
+  --popover: 0 0% 7%;
+  --popover-foreground: var(--foreground);
+  --input: 0 0% 36%;
+  --accent: 0 0% 100%;
+  --accent-foreground: 0 0% 9%;
+  --success: 142 70% 45%;
+  --warning: 38 92% 50%;
+  --danger: 0 84% 60%;
+  --destructive: var(--danger);
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 9%;
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 0 0% 83%;
+  --radius: 0.5rem;
+  --spacing: 0.25rem;
+  --font-mono: "JetBrains Mono", "JetBrains Mono NL", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --background: 0 0% 100%;
+  --foreground: 0 0% 4%;
+  --surface: 0 0% 100%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 45%;
+  --border: 0 0% 84%;
+  --card: 0 0% 100%;
+  --card-foreground: var(--foreground);
+  --popover: 0 0% 100%;
+  --popover-foreground: var(--foreground);
+  --input: 0 0% 78%;
+  --accent: 0 0% 4%;
+  --accent-foreground: 0 0% 98%;
+  --success: 142 70% 34%;
+  --warning: 38 92% 40%;
+  --danger: 0 84% 52%;
+  --destructive: var(--danger);
+  --primary: 0 0% 9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 0% 9%;
+  --ring: 0 0% 64%;
+}

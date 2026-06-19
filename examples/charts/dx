@@ -1,0 +1,39 @@
+project(name="charts" version=0.1.0 kind=www-app)
+
+www(
+   app_dir=app
+   output_dir=.dx/www/output
+)
+
+dev(host=127.0.0.1 port=3000 hot_reload=true devtools=true)
+
+style(
+   mode=generated-css
+   tokens=styles/theme.css
+   generated_css=styles/generated.css
+)
+
+imports(
+   map=.dx/imports/import-map.json
+   barrel=.dx/imports/auto-imports.ts
+   declarations=.dx/imports/imports.d.ts
+   scan_roots=components,composables,utils
+   used_roots=app,components,lib,server,styles
+   aliases=#imports,#components
+   used_only=true
+)
+
+icons(component=Icon source_tag=icon runtime_tag=dx-icon generated_dir=components/icons)
+forge(policy=forge-first-no-node-modules)
+check(score_scale=500 lighthouse=true)
+
+tooling.biome.version="2.4.15"
+tooling.biome.formatter.enabled=true
+tooling.biome.linter.enabled=true
+tooling.biome.organize_imports.enabled=true
+
+docs(
+   route=/docs
+   content=content/docs
+   openapi=openapi/dx-www.yaml
+)

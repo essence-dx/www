@@ -1,0 +1,221 @@
+{
+  "generated": "2026-05-21T15:36:33.364294+00:00",
+  "health_checks": [],
+  "hooks": {
+    "health": [],
+    "observability": "/.dx/observability",
+    "packet_byte_metric": "packet.bytes",
+    "ready": "/.dx/ready",
+    "route_timing_metric": "route.duration_ms",
+    "server_action_receipt_metric": "server_action.receipts_total"
+  },
+  "manifest_hash": "blake3:4097cfee2f6a737e80f6b1158dc0531dd6e79ad5c0ccea5766b3fbb58b8aa1d8",
+  "packet_byte_sizes": [
+    {
+      "bytes": 1997498,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/amber.png"
+    },
+    {
+      "bytes": 1820586,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/blue.png"
+    },
+    {
+      "bytes": 1649536,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/cyan.png"
+    },
+    {
+      "bytes": 2028704,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/emerald.png"
+    },
+    {
+      "bytes": 2124971,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/fuchsia.png"
+    },
+    {
+      "bytes": 1881470,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/green-variant.png"
+    },
+    {
+      "bytes": 2030618,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/green.png"
+    },
+    {
+      "bytes": 1939092,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/indigo.png"
+    },
+    {
+      "bytes": 2497220,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/lime.png"
+    },
+    {
+      "bytes": 1940167,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/orange.png"
+    },
+    {
+      "bytes": 1911328,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/pink.png"
+    },
+    {
+      "bytes": 1965442,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/purple.png"
+    },
+    {
+      "bytes": 2061107,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/rainbow.png"
+    },
+    {
+      "bytes": 2235880,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/red.png"
+    },
+    {
+      "bytes": 2127207,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/rose.png"
+    },
+    {
+      "bytes": 1333535,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/sky.png"
+    },
+    {
+      "bytes": 1829741,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/teal.png"
+    },
+    {
+      "bytes": 2214806,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/variant-1.png"
+    },
+    {
+      "bytes": 1664310,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/variant-2.png"
+    },
+    {
+      "bytes": 2315052,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/violet.png"
+    },
+    {
+      "bytes": 2024458,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/thumbnails/yellow.png"
+    },
+    {
+      "bytes": 3936,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/vendor/convex-logo.svg"
+    },
+    {
+      "bytes": 1567,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/vendor/shadcn-favicon-32x32.png"
+    },
+    {
+      "bytes": 1124,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "public/vendor/supabase-logo.svg"
+    },
+    {
+      "bytes": 2870,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "styles/conversion-proof.css"
+    },
+    {
+      "bytes": 10036,
+      "cache_control": "public, max-age=31536000, immutable",
+      "collects_content": false,
+      "metric": "packet.bytes",
+      "path": "styles/dx-landing.css"
+    }
+  ],
+  "packet_bytes_total": 41612261,
+  "privacy": {
+    "collects_cookies": false,
+    "collects_environment_secrets": false,
+    "collects_query_strings": false,
+    "collects_request_headers": false,
+    "collects_request_payloads": false
+  },
+  "ready_check": {
+    "cache_control": "no-store",
+    "method": "GET",
+    "path": "/.dx/ready",
+    "required_artifacts": [
+      "deploy-adapter.json",
+      "manifest.json",
+      "observability.json",
+      "rollback.json"
+    ]
+  },
+  "route_timings": [],
+  "runtime": "dx-www-production-contract",
+  "secret_fields_collected": false,
+  "server_action_receipts": [],
+  "version": 1
+}

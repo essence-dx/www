@@ -1,0 +1,757 @@
+{
+  "schema_version": "dx.check.receipt.v1",
+  "generated_at_unix_ms": 1780434203123,
+  "command": "check",
+  "weight_profile": "dx-check.launch-default.v1",
+  "scoring_config": {
+    "schema_version": "dx.check.scoring_config.v1",
+    "active_profile": "dx-check.launch-default.v1",
+    "status": "default",
+    "config_present": false,
+    "config_paths_checked": [
+      ".dx/check/config.json",
+      ".dx/check/config.toml",
+      "dx.check.json",
+      "dx.check.toml"
+    ],
+    "active_bucket_weights": [
+      {
+        "id": "code-quality",
+        "label": "Code Quality",
+        "weight": 100
+      },
+      {
+        "id": "structure",
+        "label": "Structure",
+        "weight": 100
+      },
+      {
+        "id": "web-performance",
+        "label": "Web Performance",
+        "weight": 100
+      },
+      {
+        "id": "dx-framework-health",
+        "label": "DX Framework Health",
+        "weight": 100
+      },
+      {
+        "id": "test-readiness",
+        "label": "Test and Launch Readiness",
+        "weight": 100
+      }
+    ],
+    "configured_bucket_weights": [],
+    "applies_to_score": true,
+    "next_action": "No scoring config was found; dx-check is using the launch-default 500-point profile."
+  },
+  "score": 391,
+  "max_score": 500,
+  "score_estimated": true,
+  "source_ready": {
+    "schema_version": "dx.check.approval.v1",
+    "kind": "source_ready",
+    "status": "ready",
+    "approved": true,
+    "evidence": [
+      "project-tree-scanned",
+      "tooling-detected",
+      "structure-scored",
+      "scoring-config-inspected"
+    ],
+    "blockers": [],
+    "warnings": [],
+    "next_action": "Source inspection is ready; collect runtime evidence before launch approval."
+  },
+  "runtime_approved": {
+    "schema_version": "dx.check.approval.v1",
+    "kind": "runtime_approved",
+    "status": "warning",
+    "approved": false,
+    "evidence": [
+      "no-runtime-proof-imported-or-executed"
+    ],
+    "blockers": [],
+    "warnings": [
+      "score-estimated-expensive-checks-skipped: Score is estimated because lint, format, typecheck, E2E, Lighthouse, and CDP execution stay opt-in",
+      "Lighthouse audit skipped by default",
+      "CDP/browser metrics skipped by default",
+      "full E2E/visual suite skipped by default",
+      "lint/format/typecheck command execution skipped by default",
+      "approved lint runner evidence is missing",
+      "approved typecheck runner evidence is missing",
+      "approved test runner evidence is missing",
+      "imported Lighthouse evidence is missing",
+      "CDP/browser metrics evidence is missing",
+      "E2E smoke or full-suite evidence is missing"
+    ],
+    "next_action": "Collect approved runtime proof with `dx check --run lint,typecheck,test --json`, Lighthouse/CDP evidence, and E2E smoke or full-suite evidence."
+  },
+  "launch_approved": {
+    "schema_version": "dx.check.approval.v1",
+    "kind": "launch_approved",
+    "status": "blocked",
+    "approved": false,
+    "evidence": [
+      "score-391-of-500",
+      "source-ready-ready",
+      "runtime-approved-warning",
+      "project-tree-scanned",
+      "tooling-detected",
+      "structure-scored",
+      "scoring-config-inspected",
+      "no-runtime-proof-imported-or-executed"
+    ],
+    "blockers": [
+      "runtime approval is missing or incomplete",
+      "launch score is below the 450/500 approval floor"
+    ],
+    "warnings": [
+      "score is estimated because not all runtime checks produced evidence",
+      "Lighthouse audit skipped by default",
+      "CDP/browser metrics skipped by default",
+      "full E2E/visual suite skipped by default",
+      "lint/format/typecheck command execution skipped by default"
+    ],
+    "next_action": "Treat the score as advisory until source readiness, runtime approval, and launch blockers are all clear."
+  },
+  "bucket_scores": [
+    {
+      "id": "code-quality",
+      "label": "Code Quality",
+      "weight": 100,
+      "score": 75,
+      "max_score": 100,
+      "estimated": true,
+      "status": "warning",
+      "summary": "Lint, format, type/syntax, and import hygiene were inspected from project files."
+    },
+    {
+      "id": "structure",
+      "label": "Structure",
+      "weight": 100,
+      "score": 100,
+      "max_score": 100,
+      "estimated": false,
+      "status": "ready",
+      "summary": "Folder layout, ownership boundaries, source size, docs, and generated-artifact leakage were scanned."
+    },
+    {
+      "id": "web-performance",
+      "label": "Web Performance",
+      "weight": 100,
+      "score": 60,
+      "max_score": 100,
+      "estimated": true,
+      "status": "blocked",
+      "summary": "Static web readiness was estimated without running Lighthouse, CDP, or a browser."
+    },
+    {
+      "id": "dx-framework-health",
+      "label": "DX Framework Health",
+      "weight": 100,
+      "score": 94,
+      "max_score": 100,
+      "estimated": true,
+      "status": "ready",
+      "summary": "DX config, receipts, Forge metadata, static export hints, and future Studio/Zed markers were inspected."
+    },
+    {
+      "id": "test-readiness",
+      "label": "Test and Launch Readiness",
+      "weight": 100,
+      "score": 62,
+      "max_score": 100,
+      "estimated": true,
+      "status": "blocked",
+      "summary": "Unit, E2E, visual, browser, and release-readiness evidence were estimated from local project files."
+    }
+  ],
+  "pass_count": 2,
+  "fail_count": 0,
+  "warn_count": 1,
+  "skipped_count": 4,
+  "duration_ms": 115,
+  "checked_paths": [
+    ".",
+    "CHANGELOG.md",
+    "README.md",
+    "TODO.md",
+    "app/layout.tsx",
+    "app/page.tsx",
+    "components/auto-imports.ts",
+    "components/icons/icon.tsx",
+    "components/whiteboard/arrange-panel.tsx",
+    "components/whiteboard/canvas-stage.tsx",
+    "components/whiteboard/connector-info.tsx",
+    "components/whiteboard/demo-document.ts",
+    "components/whiteboard/document-panel.tsx",
+    "components/whiteboard/export-panel.tsx",
+    "components/whiteboard/import-panel.tsx",
+    "components/whiteboard/index.ts",
+    "components/whiteboard/inspector-options.ts",
+    "components/whiteboard/inspector.tsx",
+    "components/whiteboard/library-panel.tsx",
+    "components/whiteboard/number-field.tsx",
+    "components/whiteboard/share-panel.tsx",
+    "components/whiteboard/status-bar.tsx",
+    "components/whiteboard/svg-stage-preview.tsx",
+    "components/whiteboard/text-controls.tsx",
+    "components/whiteboard/text-editor-overlay.tsx",
+    "components/whiteboard/toolbar.tsx",
+    "components/whiteboard/whiteboard-app.tsx",
+    "dx",
+    "lib/stores/whiteboard-store.ts",
+    "lib/whiteboard/arrange-helpers.ts",
+    "lib/whiteboard/arrange.ts",
+    "lib/whiteboard/commands.ts",
+    "lib/whiteboard/connectors.ts",
+    "lib/whiteboard/demo-document.ts",
+    "lib/whiteboard/document-summary.ts",
+    "lib/whiteboard/element-factory.ts",
+    "lib/whiteboard/export/dxdraw.ts",
+    "lib/whiteboard/export/index.ts",
+    "lib/whiteboard/export/metadata.ts",
+    "lib/whiteboard/export/png.ts",
+    "lib/whiteboard/export/share-receipt.ts",
+    "lib/whiteboard/export/svg.ts",
+    "lib/whiteboard/geometry.ts",
+    "lib/whiteboard/grid.ts",
+    "lib/whiteboard/groups.ts",
+    "lib/whiteboard/history.ts",
+    "lib/whiteboard/hit-test.ts",
+    "lib/whiteboard/image-source.ts",
+    "lib/whiteboard/import/index.ts",
+    "lib/whiteboard/import/validation.ts",
+    "lib/whiteboard/input/elements.ts",
+    "lib/whiteboard/input/helpers.ts",
+    "lib/whiteboard/input/input-runtime-keyboard.test.ts",
+    "lib/whiteboard/input/input-runtime.test.ts",
+    "lib/whiteboard/input/input-runtime.ts",
+    "lib/whiteboard/input/keyboard.ts",
+    "lib/whiteboard/input/local-state.ts",
+    "lib/whiteboard/input/selection.ts",
+    "lib/whiteboard/input/types.ts",
+    "lib/whiteboard/library.ts",
+    "lib/whiteboard/model.ts",
+    "lib/whiteboard/persistence/image-fields.ts",
+    "lib/whiteboard/persistence/index.ts",
+    "lib/whiteboard/persistence/local-first.ts",
+    "lib/whiteboard/persistence/schema.ts",
+    "lib/whiteboard/render/geometry.ts",
+    "lib/whiteboard/render/model.ts",
+    "lib/whiteboard/render/renderer.test.ts",
+    "lib/whiteboard/render/renderer.ts",
+    "lib/whiteboard/scene-image-patches.ts",
+    "lib/whiteboard/scene-types.ts",
+    "lib/whiteboard/scene.ts",
+    "package.json",
+    "server/whiteboard/commands.ts",
+    "server/whiteboard/filesystem-snapshot.ts",
+    "server/whiteboard/filesystem-storage.ts",
+    "server/whiteboard/geometry.ts",
+    "server/whiteboard/index.ts",
+    "tsconfig.json"
+  ],
+  "skipped_expensive_checks": [
+    "Lighthouse audit skipped by default",
+    "CDP/browser metrics skipped by default",
+    "full E2E/visual suite skipped by default",
+    "lint/format/typecheck command execution skipped by default"
+  ],
+  "detected_tools": [
+    {
+      "id": "javascript.typescript",
+      "ecosystem": "javascript",
+      "tool": "TypeScript",
+      "status": "configured",
+      "detected_from": [
+        "tsconfig.json"
+      ],
+      "recommended_command": "npx tsc --noEmit",
+      "runs_by_default": false,
+      "opt_in_execution": true
+    }
+  ],
+  "runner_reports": [],
+  "findings": [
+    {
+      "severity": "warning",
+      "code": "score-estimated-expensive-checks-skipped",
+      "message": "Score is estimated because lint, format, typecheck, E2E, Lighthouse, and CDP execution stay opt-in",
+      "next_action": "Run explicit dx-check runner paths later when measured launch evidence is required."
+    }
+  ],
+  "next_actions": [
+    "Run explicit dx-check runner paths later when measured launch evidence is required.",
+    "Run `dx check web --url http://localhost:3000 --json` after a preview is already running to write a web-performance receipt.",
+    "Run `dx check e2e --json` to refresh E2E/visual readiness without executing the full suite."
+  ],
+  "receipt_dir": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check",
+  "receipt_path": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+  "ecosystem": {
+    "schema_version": "dx.check.ecosystem_contract.v1",
+    "status": "ready",
+    "receipt_path": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+    "consumer_count": 7,
+    "consumers": [
+      {
+        "id": "cli",
+        "label": "DX CLI",
+        "status": "ready",
+        "reads_receipt": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+        "primary_command": "dx check --json",
+        "evidence_fields": [
+          "score",
+          "bucket_scores",
+          "source_ready",
+          "runtime_approved",
+          "launch_approved"
+        ],
+        "next_action": "Use `dx check --json` as the canonical local project-health receipt."
+      },
+      {
+        "id": "dx-www",
+        "label": "DX-WWW",
+        "status": "ready",
+        "reads_receipt": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+        "primary_command": "dx check --json",
+        "evidence_fields": [
+          "zed",
+          "bucket_scores",
+          "source_ready",
+          "runtime_approved",
+          "launch_approved"
+        ],
+        "next_action": "Render the check panel from the latest receipt instead of recomputing status."
+      },
+      {
+        "id": "zed-gpui",
+        "label": "Zed GPUI",
+        "status": "ready",
+        "reads_receipt": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+        "primary_command": "dx check editor --json",
+        "evidence_fields": [
+          "zed",
+          "editor_runtime",
+          "runner_reports",
+          "source_ready",
+          "runtime_approved",
+          "launch_approved"
+        ],
+        "next_action": "Poll the editor-safe receipt view, then use the Zed panel and approval fields for native check rows and actions."
+      },
+      {
+        "id": "forge",
+        "label": "DX Forge",
+        "status": "ready",
+        "reads_receipt": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+        "primary_command": "dx forge packages --json",
+        "evidence_fields": [
+          "bucket_scores.dx-framework-health",
+          "detected_tools",
+          "source_ready"
+        ],
+        "next_action": "Gate package/template maturity on the DX framework-health bucket and Forge receipts."
+      },
+      {
+        "id": "style",
+        "label": "dx-style",
+        "status": "ready",
+        "reads_receipt": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+        "primary_command": "dx check style --json",
+        "evidence_fields": [
+          "bucket_scores.code-quality",
+          "detected_tools",
+          "source_ready"
+        ],
+        "next_action": "Use style and source-readiness evidence before exposing style fixes."
+      },
+      {
+        "id": "deploy",
+        "label": "DX Deploy",
+        "status": "blocked",
+        "reads_receipt": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+        "primary_command": "dx deploy vercel --dry-run",
+        "evidence_fields": [
+          "score",
+          "source_ready",
+          "runtime_approved",
+          "launch_approved"
+        ],
+        "next_action": "Read `launch_approved` before allowing deploy promotion from dx-check evidence."
+      },
+      {
+        "id": "friday",
+        "label": "Friday",
+        "status": "warning",
+        "reads_receipt": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+        "primary_command": "dx check --json",
+        "evidence_fields": [
+          "next_actions",
+          "runner_reports",
+          "source_ready",
+          "runtime_approved",
+          "launch_approved"
+        ],
+        "next_action": "Use approvals, runner receipts, and next actions as Friday's project-health context."
+      }
+    ],
+    "next_action": "Wire ecosystem consumers to this receipt path; do not create parallel score models."
+  },
+  "editor_runtime": {
+    "schema_version": "dx.check.editor_runtime.v1",
+    "mode": "low-impact-poll",
+    "status": "ready",
+    "background_safe": true,
+    "default_command": "dx check editor --json",
+    "default_command_writes_receipts": false,
+    "default_command_runs_expensive_checks": false,
+    "refresh_command": "dx check --json",
+    "refresh_writes_receipts": true,
+    "refresh_runs_expensive_checks": false,
+    "aggregate_command": "dx check launch --json",
+    "recommended_min_interval_ms": 120000,
+    "stale_after_ms": 900000,
+    "next_action": "Let editors poll `dx check editor --json`; refresh with `dx check --json` on idle, save, or stale receipts."
+  },
+  "zed": {
+    "panel_kind": "project-health",
+    "schema_version": "dx.check.zed_panel.v1",
+    "source": "dx-check",
+    "weight_profile": "dx-check.launch-default.v1",
+    "scoring_config": {
+      "schema_version": "dx.check.scoring_config.v1",
+      "active_profile": "dx-check.launch-default.v1",
+      "status": "default",
+      "config_present": false,
+      "config_paths_checked": [
+        ".dx/check/config.json",
+        ".dx/check/config.toml",
+        "dx.check.json",
+        "dx.check.toml"
+      ],
+      "active_bucket_weights": [
+        {
+          "id": "code-quality",
+          "label": "Code Quality",
+          "weight": 100
+        },
+        {
+          "id": "structure",
+          "label": "Structure",
+          "weight": 100
+        },
+        {
+          "id": "web-performance",
+          "label": "Web Performance",
+          "weight": 100
+        },
+        {
+          "id": "dx-framework-health",
+          "label": "DX Framework Health",
+          "weight": 100
+        },
+        {
+          "id": "test-readiness",
+          "label": "Test and Launch Readiness",
+          "weight": 100
+        }
+      ],
+      "configured_bucket_weights": [],
+      "applies_to_score": true,
+      "next_action": "No scoring config was found; dx-check is using the launch-default 500-point profile."
+    },
+    "score_value": 391,
+    "score_max": 500,
+    "score_percent": 78,
+    "score_estimated": true,
+    "status": "warning",
+    "generated_at_unix_ms": 1780434203123,
+    "bucket_count": 5,
+    "blocker_count": 0,
+    "warning_count": 1,
+    "quick_fix_count": 3,
+    "receipt_path": "G:\\Dx\\www\\examples/whiteboard\\.dx\\receipts\\check\\check-latest.json",
+    "refresh_command": "dx check --json",
+    "detail_command": "dx check --json",
+    "editor_runtime": {
+      "schema_version": "dx.check.editor_runtime.v1",
+      "mode": "low-impact-poll",
+      "status": "ready",
+      "background_safe": true,
+      "default_command": "dx check editor --json",
+      "default_command_writes_receipts": false,
+      "default_command_runs_expensive_checks": false,
+      "refresh_command": "dx check --json",
+      "refresh_writes_receipts": true,
+      "refresh_runs_expensive_checks": false,
+      "aggregate_command": "dx check launch --json",
+      "recommended_min_interval_ms": 120000,
+      "stale_after_ms": 900000,
+      "next_action": "Let editors poll `dx check editor --json`; refresh with `dx check --json` on idle, save, or stale receipts."
+    },
+    "blockers": [],
+    "warnings": [
+      {
+        "severity": "warning",
+        "code": "score-estimated-expensive-checks-skipped",
+        "message": "Score is estimated because lint, format, typecheck, E2E, Lighthouse, and CDP execution stay opt-in",
+        "next_action": "Run explicit dx-check runner paths later when measured launch evidence is required."
+      }
+    ],
+    "quick_fixes": [
+      {
+        "id": "quick-fix-1",
+        "label": "Run explicit dx-check runner paths later when measured launch evidence is required",
+        "next_action": "Run explicit dx-check runner paths later when measured launch evidence is required.",
+        "risk_level": "manual",
+        "requires_user_approval": false,
+        "writes_receipts": false
+      },
+      {
+        "id": "quick-fix-2",
+        "label": "Run `dx check web --url http://localhost:3000 --json` after a preview is already running to write a web-performance receipt",
+        "next_action": "Run `dx check web --url http://localhost:3000 --json` after a preview is already running to write a web-performance receipt.",
+        "command": "dx check web --url http://localhost:3000 --json",
+        "risk_level": "receipt-write",
+        "requires_user_approval": false,
+        "writes_receipts": true
+      },
+      {
+        "id": "quick-fix-3",
+        "label": "Run `dx check e2e --json` to refresh E2E/visual readiness without executing the full suite",
+        "next_action": "Run `dx check e2e --json` to refresh E2E/visual readiness without executing the full suite.",
+        "command": "dx check e2e --json",
+        "risk_level": "receipt-write",
+        "requires_user_approval": false,
+        "writes_receipts": true
+      }
+    ],
+    "sections": [
+      {
+        "id": "code-quality",
+        "title": "Code Quality",
+        "weight": 100,
+        "score": 75,
+        "max_score": 100,
+        "estimated": true,
+        "status": "warning",
+        "summary": "Lint, format, type/syntax, and import hygiene were inspected from project files."
+      },
+      {
+        "id": "structure",
+        "title": "Structure",
+        "weight": 100,
+        "score": 100,
+        "max_score": 100,
+        "estimated": false,
+        "status": "ready",
+        "summary": "Folder layout, ownership boundaries, source size, docs, and generated-artifact leakage were scanned."
+      },
+      {
+        "id": "web-performance",
+        "title": "Web Performance",
+        "weight": 100,
+        "score": 60,
+        "max_score": 100,
+        "estimated": true,
+        "status": "blocked",
+        "summary": "Static web readiness was estimated without running Lighthouse, CDP, or a browser."
+      },
+      {
+        "id": "dx-framework-health",
+        "title": "DX Framework Health",
+        "weight": 100,
+        "score": 94,
+        "max_score": 100,
+        "estimated": true,
+        "status": "ready",
+        "summary": "DX config, receipts, Forge metadata, static export hints, and future Studio/Zed markers were inspected."
+      },
+      {
+        "id": "test-readiness",
+        "title": "Test and Launch Readiness",
+        "weight": 100,
+        "score": 62,
+        "max_score": 100,
+        "estimated": true,
+        "status": "blocked",
+        "summary": "Unit, E2E, visual, browser, and release-readiness evidence were estimated from local project files."
+      }
+    ]
+  },
+  "engine": {
+    "score": {
+      "schema_version": "dx.check.engine_score.v1",
+      "profile": "dx-check-engine.rules.v1",
+      "score": 100,
+      "max_score": 100,
+      "status": "Ready",
+      "finding_weight_total": 0,
+      "failure_count": 0,
+      "warning_count": 0,
+      "info_count": 0,
+      "buckets": [
+        {
+          "id": "code-quality",
+          "label": "Code Quality",
+          "score": 100,
+          "max_score": 100,
+          "status": "Ready",
+          "finding_weight_total": 0,
+          "failure_count": 0,
+          "warning_count": 0,
+          "info_count": 0
+        },
+        {
+          "id": "structure",
+          "label": "Structure",
+          "score": 100,
+          "max_score": 100,
+          "status": "Ready",
+          "finding_weight_total": 0,
+          "failure_count": 0,
+          "warning_count": 0,
+          "info_count": 0
+        },
+        {
+          "id": "web-performance",
+          "label": "Web Performance",
+          "score": 100,
+          "max_score": 100,
+          "status": "Ready",
+          "finding_weight_total": 0,
+          "failure_count": 0,
+          "warning_count": 0,
+          "info_count": 0
+        },
+        {
+          "id": "dx-framework-health",
+          "label": "DX Framework Health",
+          "score": 100,
+          "max_score": 100,
+          "status": "Ready",
+          "finding_weight_total": 0,
+          "failure_count": 0,
+          "warning_count": 0,
+          "info_count": 0
+        },
+        {
+          "id": "test-readiness",
+          "label": "Test Readiness",
+          "score": 100,
+          "max_score": 100,
+          "status": "Ready",
+          "finding_weight_total": 0,
+          "failure_count": 0,
+          "warning_count": 0,
+          "info_count": 0
+        }
+      ]
+    },
+    "rule_packs": [
+      {
+        "id": "dx-check-default",
+        "version": "1",
+        "status": "MachineFresh",
+        "source_path": "G:\\Dx\\www\\examples/whiteboard\\.dx\\check\\dx-default.sr",
+        "machine_path": "G:\\Dx\\www\\examples/whiteboard\\.dx\\serializer\\check-dx-default.machine",
+        "source_hash": "f09e204213efc304dfff25633a5d343950c348c600248309ad620a9883398b60",
+        "registry_source": "project-local",
+        "provenance": "dx-default",
+        "lock_status": "local-machine-fresh",
+        "rule_count": 13
+      }
+    ],
+    "findings": [],
+    "diagnostics": [],
+    "adapter_plans": [],
+    "test_inventory": {
+      "rust_tests": 0,
+      "js_tests": 17,
+      "python_tests": 0,
+      "go_tests": 0
+    },
+    "checked_paths": [
+      "CHANGELOG.md",
+      "README.md",
+      "TODO.md",
+      "app/layout.tsx",
+      "app/page.tsx",
+      "components/auto-imports.ts",
+      "components/icons/icon.tsx",
+      "components/whiteboard/arrange-panel.tsx",
+      "components/whiteboard/canvas-stage.tsx",
+      "components/whiteboard/connector-info.tsx",
+      "components/whiteboard/demo-document.ts",
+      "components/whiteboard/document-panel.tsx",
+      "components/whiteboard/export-panel.tsx",
+      "components/whiteboard/import-panel.tsx",
+      "components/whiteboard/index.ts",
+      "components/whiteboard/inspector-options.ts",
+      "components/whiteboard/inspector.tsx",
+      "components/whiteboard/library-panel.tsx",
+      "components/whiteboard/number-field.tsx",
+      "components/whiteboard/share-panel.tsx",
+      "components/whiteboard/status-bar.tsx",
+      "components/whiteboard/svg-stage-preview.tsx",
+      "components/whiteboard/text-controls.tsx",
+      "components/whiteboard/text-editor-overlay.tsx",
+      "components/whiteboard/toolbar.tsx",
+      "components/whiteboard/whiteboard-app.tsx",
+      "dx",
+      "lib/stores/whiteboard-store.ts",
+      "lib/whiteboard/arrange-helpers.ts",
+      "lib/whiteboard/arrange.ts",
+      "lib/whiteboard/commands.ts",
+      "lib/whiteboard/connectors.ts",
+      "lib/whiteboard/demo-document.ts",
+      "lib/whiteboard/document-summary.ts",
+      "lib/whiteboard/element-factory.ts",
+      "lib/whiteboard/export/dxdraw.ts",
+      "lib/whiteboard/export/index.ts",
+      "lib/whiteboard/export/metadata.ts",
+      "lib/whiteboard/export/png.ts",
+      "lib/whiteboard/export/share-receipt.ts",
+      "lib/whiteboard/export/svg.ts",
+      "lib/whiteboard/geometry.ts",
+      "lib/whiteboard/grid.ts",
+      "lib/whiteboard/groups.ts",
+      "lib/whiteboard/history.ts",
+      "lib/whiteboard/hit-test.ts",
+      "lib/whiteboard/image-source.ts",
+      "lib/whiteboard/import/index.ts",
+      "lib/whiteboard/import/validation.ts",
+      "lib/whiteboard/input/elements.ts",
+      "lib/whiteboard/input/helpers.ts",
+      "lib/whiteboard/input/input-runtime-keyboard.test.ts",
+      "lib/whiteboard/input/input-runtime.test.ts",
+      "lib/whiteboard/input/input-runtime.ts",
+      "lib/whiteboard/input/keyboard.ts",
+      "lib/whiteboard/input/local-state.ts",
+      "lib/whiteboard/input/selection.ts",
+      "lib/whiteboard/input/types.ts",
+      "lib/whiteboard/library.ts",
+      "lib/whiteboard/model.ts",
+      "lib/whiteboard/persistence/image-fields.ts",
+      "lib/whiteboard/persistence/index.ts",
+      "lib/whiteboard/persistence/local-first.ts",
+      "lib/whiteboard/persistence/schema.ts",
+      "lib/whiteboard/render/geometry.ts",
+      "lib/whiteboard/render/model.ts",
+      "lib/whiteboard/render/renderer.test.ts",
+      "lib/whiteboard/render/renderer.ts",
+      "lib/whiteboard/scene-image-patches.ts",
+      "lib/whiteboard/scene-types.ts",
+      "lib/whiteboard/scene.ts",
+      "package.json",
+      "server/whiteboard/commands.ts",
+      "server/whiteboard/filesystem-snapshot.ts",
+      "server/whiteboard/filesystem-storage.ts",
+      "server/whiteboard/geometry.ts",
+      "server/whiteboard/index.ts",
+      "tsconfig.json"
+    ]
+  }
+}

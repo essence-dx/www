@@ -1,0 +1,115 @@
+{
+  "schema": "dx.forge.package_import_plan",
+  "version": 1,
+  "generated_at": "2026-06-07T22:11:29.807802+00:00",
+  "passed": true,
+  "score": 96,
+  "fail_under": 80,
+  "project": "G:\\Dx\\www-and-forge",
+  "ecosystem": "pip",
+  "package_id": "pip/requests",
+  "package_name": "requests",
+  "mode": "write",
+  "import_alias": "pip/requests",
+  "source_kind": "external-source-snapshot-ready",
+  "forge_import_gate": true,
+  "no_node_modules": true,
+  "package_installs_run": false,
+  "lifecycle_scripts_executed": false,
+  "lifecycle_script_status": "not-executed",
+  "requested_symbols": [],
+  "origin": {
+    "ecosystem": "pip",
+    "registry": "pypi",
+    "package_name": "requests",
+    "package_id": "pip/requests",
+    "upstream_name": "pip:requests",
+    "upstream_version": "unresolved",
+    "upstream_reference": "pip:requests",
+    "tarball_integrity": null,
+    "source_kind": "external-source-snapshot-ready",
+    "generator": "dx-forge/pip-external-source-snapshot",
+    "provenance_verified": false,
+    "provenance_note": "External source snapshot; Forge did not run package-manager installs or lifecycle/setup/build scripts."
+  },
+  "license": {
+    "declared_license": "unreviewed",
+    "license_source": "Forge import metadata declaration",
+    "license_file_hash": null,
+    "reviewed": false,
+    "reviewed_at": null,
+    "note": "Declaration recorded; no formal DX legal review is claimed."
+  },
+  "exports": [],
+  "files_kept": [
+    "lib/forge/pip/requests/__init__.py"
+  ],
+  "files_written": [],
+  "files_rejected": [],
+  "files_considered": [
+    {
+      "path": "lib/forge/pip/requests/__init__.py",
+      "logical_path": "pip/requests/__init__.py",
+      "hash_algorithm": "BLAKE3",
+      "hash": "c28218c36762c676349c7b49c8e5ef4c3a9db6ac268ae1d55593baf61910cc40",
+      "bytes": 40,
+      "before_hash": "c28218c36762c676349c7b49c8e5ef4c3a9db6ac268ae1d55593baf61910cc40",
+      "after_hash": "c28218c36762c676349c7b49c8e5ef4c3a9db6ac268ae1d55593baf61910cc40",
+      "tracked_hash": "c28218c36762c676349c7b49c8e5ef4c3a9db6ac268ae1d55593baf61910cc40",
+      "status": "kept",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "Forge kept existing `lib/forge/pip/requests/__init__.py` because its BLAKE3 hash matches."
+    }
+  ],
+  "overwrite_policy": {
+    "missing_file": "write",
+    "matching_existing_file": "keep",
+    "different_existing_file": "reject-yellow-no-overwrite",
+    "security_sensitive_or_invalid_path": "reject-red-never-write",
+    "partial_write": "forbidden"
+  },
+  "materialization_ready": true,
+  "materialization_status": "materialized-source-owned-adapter",
+  "materialized": true,
+  "materialized_package_id": "pip/requests",
+  "materialized_files": [
+    "lib/forge/pip/requests/__init__.py"
+  ],
+  "manifest_path": "G:\\Dx\\www-and-forge\\.dx/forge/source-manifest.json",
+  "receipt_path": "G:\\Dx\\www-and-forge\\.dx/forge/receipts\\20260607T221129838625800Z-pip-requests.json",
+  "docs_path": "G:\\Dx\\www-and-forge\\.dx/forge/docs/pip-requests.md",
+  "import_plan_path": "G:\\Dx\\www-and-forge\\.dx/forge/import-plans/pip-requests.json",
+  "import_plan_sr_path": "G:\\Dx\\www-and-forge\\.dx/forge/import-plans/pip-requests.sr",
+  "import_plan_machine_path": "G:\\Dx\\www-and-forge\\.dx/serializer\\forge-import-plans-pip-requests.machine",
+  "inspected_inputs": [
+    "pip:requests",
+    "local project contract",
+    "Forge import firewall policy",
+    "source-dir:G:\\Dx\\www-and-forge\\.dx\\cache\\pip\\requests\\package"
+  ],
+  "review_required": [
+    "Resolve package metadata, integrity, license, advisory state, and source provenance without running package-manager installs.",
+    "Review package exports, dependency graph, runtime target, and side-effect boundaries before writing source-owned files.",
+    "Use --source-dir with an inspected unpacked package source when materializing a Forge snapshot."
+  ],
+  "can_materialize": [
+    "Source directories that have already been acquired, unpacked, and reviewed outside package-manager install trees.",
+    "Small source slices that pass path safety, UTF-8 source, file-count, and byte-budget checks.",
+    "Forge manifest, receipt, docs, import-plan .sr, and serializer .machine metadata."
+  ],
+  "cannot_materialize": [
+    "Manual review required: setup.py execution required.",
+    "Manual review required: native extension or binary wheel.",
+    "Manual review required: dynamic version or build backend execution.",
+    "Manual review required: console script entrypoint side effects.",
+    "Manual review required: missing license or integrity declaration."
+  ],
+  "findings": [],
+  "review_findings": [],
+  "next_commands": [
+    "dx forge import pip requests --plan --format markdown",
+    "dx forge import pip requests --write --source-dir <inspected-source-dir>",
+    "Run dx check . --strict-project-contract after materialization."
+  ]
+}

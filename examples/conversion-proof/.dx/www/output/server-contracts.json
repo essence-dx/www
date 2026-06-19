@@ -1,0 +1,73 @@
+[
+  {
+    "kind": "route-handler",
+    "source_path": "app/api/ai/chat/route.ts",
+    "endpoint": "/api/ai/chat",
+    "exports": [
+      {
+        "name": "POST",
+        "http_method": "POST",
+        "async_export": true,
+        "request_serialization": "web-request",
+        "response_serialization": "json-object"
+      }
+    ],
+    "execution_model": "analyze-only",
+    "lifecycle_scripts_executed": false
+  },
+  {
+    "kind": "route-handler",
+    "source_path": "app/api/auth/session/route.ts",
+    "endpoint": "/api/auth/session",
+    "exports": [
+      {
+        "name": "GET",
+        "http_method": "GET",
+        "async_export": false,
+        "request_serialization": "json-value",
+        "response_serialization": "json-object"
+      }
+    ],
+    "execution_model": "analyze-only",
+    "lifecycle_scripts_executed": false
+  },
+  {
+    "kind": "route-handler",
+    "source_path": "app/api/checkout/route.ts",
+    "endpoint": "/api/checkout",
+    "exports": [
+      {
+        "name": "POST",
+        "http_method": "POST",
+        "async_export": true,
+        "request_serialization": "web-request",
+        "response_serialization": "json-object"
+      }
+    ],
+    "execution_model": "analyze-only",
+    "lifecycle_scripts_executed": false
+  },
+  {
+    "kind": "route-handler",
+    "source_path": "app/api/trpc/health/route.ts",
+    "endpoint": "/api/trpc/health",
+    "exports": [
+      {
+        "name": "GET",
+        "http_method": "GET",
+        "async_export": false,
+        "request_serialization": "json-value",
+        "response_serialization": "json-object"
+      },
+      {
+        "name": "POST",
+        "http_method": "POST",
+        "async_export": true,
+        "request_serialization": "web-request",
+        "response_serialization": "json-object"
+      }
+    ],
+    "execution_model": "analyze-only",
+    "lifecycle_scripts_executed": false
+  }
+]

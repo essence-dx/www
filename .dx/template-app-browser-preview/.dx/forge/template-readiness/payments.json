@@ -1,0 +1,66 @@
+{
+  "schema": "dx.forge.template_readiness.package",
+  "lane_number": 5,
+  "lane_name": "Payments + AI + Automations",
+  "package_id": "payments/stripe-js",
+  "official_package_name": "Payments",
+  "upstream_package": "@stripe/stripe-js",
+  "upstream_version": "9.6.0",
+  "dx_version": "9.6.0-dx.1",
+  "classification": "provider-gated",
+  "runtime_proof": false,
+  "live_provider_execution": false,
+  "live_checkout_execution": false,
+  "live_webhook_execution": false,
+  "secret_access": false,
+  "readiness_route": "/api/payments/stripe-js/readiness",
+  "app_route_handler": "app/api/payments/stripe-js/readiness/route.ts",
+  "checkout_route_handler": "app/api/checkout/route.ts",
+  "webhook_route_handler": "app/api/stripe/webhook/route.ts",
+  "required_env": [
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+    "STRIPE_SECRET_KEY",
+    "STRIPE_PRICE_ID"
+  ],
+  "optional_env": [
+    "STRIPE_PRICE_ID_STARTER",
+    "STRIPE_PRICE_ID_TEAM",
+    "STRIPE_PRICE_ID_SCALE",
+    "STRIPE_WEBHOOK_SECRET",
+    "NEXT_PUBLIC_APP_URL",
+    "APP_URL",
+    "VERCEL_URL"
+  ],
+  "source_owned_surfaces": [
+    "lib/payments/stripe-js/config.ts",
+    "lib/payments/stripe-js/checkout.ts",
+    "lib/payments/stripe-js/dashboard-checkout.ts",
+    "lib/payments/stripe-js/server.ts",
+    "app/api/checkout/route.ts",
+    "app/api/payments/stripe-js/readiness/route.ts",
+    "app/api/stripe/webhook/route.ts",
+    "components/template-app/forms.tsx",
+    "components/template-app/package-reality-panel.tsx"
+  ],
+  "template_usage": [
+    "billing contact form validates local input before checkout",
+    "readiness route reports missing Stripe keys and Price IDs",
+    "dashboard provider card links the readiness endpoint and receipt",
+    "checkout route returns readiness/provider-boundary states when Stripe config is missing",
+    "webhook route returns provider-boundary states when Stripe server or webhook secrets are missing"
+  ],
+  "blocked_until_configured": [
+    "Stripe publishable key",
+    "Stripe secret key",
+    "default or plan-specific Stripe Price ID",
+    "application base URL for redirect URLs outside localhost",
+    "webhook signing secret",
+    "fulfillment handler",
+    "billing-mode QA in the app environment"
+  ],
+  "honesty_notes": [
+    "This receipt is not live Stripe checkout, webhook verification, redirect, or fulfillment proof.",
+    "The template owns editable payment source and readiness gates, but app credentials and Stripe account configuration remain app-owned.",
+    "No secret values are read into this receipt."
+  ]
+}

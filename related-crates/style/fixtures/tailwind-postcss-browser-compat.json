@@ -1,0 +1,96 @@
+{
+  "schema": "dx.style.tailwindPostcssBrowserCompatFixture",
+  "schemaVersion": 1,
+  "baseline": "tailwindcss-4.3.0-plus-postcss-autoprefixer-reference",
+  "comparisonScope": "declaration-fragment-equality",
+  "runPolicy": "checked-in migration/compatibility input fixture for lightweight DX launch passes only; no package install, server, build, broad suite, or Tailwind/PostCSS execution is required to read it",
+  "migrationInputOnly": true,
+  "liveTailwindExecution": false,
+  "classes": [
+    {
+      "className": "appearance-none",
+      "area": "browser-compat",
+      "tailwindPostcssRequiredDeclarations": [
+        "-webkit-appearance: none",
+        "appearance: none"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "-webkit-appearance: none",
+        "appearance: none"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "select-none",
+      "area": "browser-compat",
+      "tailwindPostcssRequiredDeclarations": [
+        "-webkit-user-select: none",
+        "user-select: none"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "-webkit-user-select: none",
+        "user-select: none"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "backface-hidden",
+      "area": "browser-compat",
+      "tailwindPostcssRequiredDeclarations": [
+        "-webkit-backface-visibility: hidden",
+        "backface-visibility: hidden"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "-webkit-backface-visibility: hidden",
+        "backface-visibility: hidden"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "break-inside-avoid",
+      "area": "browser-compat",
+      "tailwindPostcssRequiredDeclarations": [
+        "page-break-inside: avoid",
+        "break-inside: avoid"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "page-break-inside: avoid",
+        "break-inside: avoid"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "backdrop-blur-md",
+      "area": "browser-compat",
+      "tailwindPostcssRequiredDeclarations": [
+        "--tw-backdrop-blur: blur(var(--blur-md))",
+        "-webkit-backdrop-filter:",
+        "backdrop-filter:"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "--tw-backdrop-blur: blur(var(--blur-md))",
+        "-webkit-backdrop-filter:",
+        "backdrop-filter:"
+      ],
+      "status": "supported"
+    },
+    {
+      "className": "hyphens-auto",
+      "area": "browser-compat",
+      "tailwindPostcssRequiredDeclarations": [
+        "-webkit-hyphens: auto",
+        "hyphens: auto"
+      ],
+      "dxStyleRequiredDeclarations": [
+        "-webkit-hyphens: auto",
+        "hyphens: auto"
+      ],
+      "status": "supported"
+    }
+  ],
+  "limitations": [
+    "This fixture proves declaration-fragment equality for a small browser-prefix canary list, not full selector ordering or complete Tailwind output parity.",
+    "It is not a speed benchmark and does not replace the future equal-output Tailwind CLI run in an approved build/install window.",
+    "Full browser-prefix/autoprefixer parity remains unproven until broader fixtures cover transforms, masks, print, form controls, and older browser targets."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "forge.package_add_receipt",
+  "package_id": "www/minimal-starter",
+  "official_package_name": "Forge Package",
+  "hash_algorithm": "blake3",
+  "package_receipt_path": ".dx/forge/receipts/packages/www-minimal-starter.json",
+  "source_receipt_path": ".dx/forge/receipts/20260610T124023604250300Z-www-minimal-starter.json",
+  "package": {
+    "package_id": "www/minimal-starter",
+    "name": "www/minimal-starter",
+    "version": "0.1.0",
+    "variant": "default",
+    "dx_check_visibility": {
+      "official_package_name": "Forge Package",
+      "package_id": "www/minimal-starter",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260610T124023604250300Z-www-minimal-starter.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "www/minimal-starter"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260610T124023604250300Z-www-minimal-starter.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260610T124023604250300Z-www-minimal-starter.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    }
+  }
+}

@@ -1,0 +1,1277 @@
+{
+  "version": 1,
+  "deployment_kind": "dx-www-hosted-preview-bundle",
+  "provider": "dx-www-cloud-local",
+  "adapter_kind": "account-free-preview",
+  "generated": "2026-06-07T22:11:43.548225400+00:00",
+  "requires_provider_account": false,
+  "account_bound": false,
+  "network_required": false,
+  "secrets_required": false,
+  "node_modules_required": false,
+  "package_installs_executed": false,
+  "lifecycle_scripts_executed": false,
+  "build": {
+    "dir": ".dx/build",
+    "manifest_hash": "blake3:3aa54e392a16464e92b1d80f787a775632fd9102867e521ddc2239a707f9fe7f",
+    "route_count": 2,
+    "immutable_asset_count": 39,
+    "server_action_count": 0,
+    "observability_path": "observability.json"
+  },
+  "deploy_adapter": {
+    "path": "deploy-adapter.json",
+    "adapter": "dx-www-static-hosting",
+    "no_node_modules_required": true,
+    "cache_headers": [
+      {
+        "glob": "**/*.html",
+        "cache_control": "public, max-age=0, must-revalidate"
+      },
+      {
+        "glob": "**/*.dxpk",
+        "cache_control": "public, max-age=31536000, immutable"
+      },
+      {
+        "glob": "public/**/*",
+        "cache_control": "public, max-age=31536000, immutable"
+      }
+    ]
+  },
+  "provider_adapter": {
+    "path": "provider-adapter.dx-cloud.json",
+    "provider": "dx-www-cloud-local",
+    "requires_provider_account": false,
+    "network_required": false
+  },
+  "forge": {
+    "root": "forge",
+    "source_manifest": {
+      "path": ".dx/forge/source-manifest.json",
+      "bundle_path": "forge/source-manifest.json",
+      "kind": "forge-source-manifest",
+      "hash": "blake3:6485cd88388662466e9002a16d2021d30ebe32a99d0921c7057a3da35fbb1253",
+      "source_owned": true,
+      "package_installs_executed": false,
+      "lifecycle_scripts_executed": false
+    },
+    "template_manifest": {
+      "path": ".dx/forge/template-manifest.json",
+      "bundle_path": "forge/template-manifest.json",
+      "kind": "forge-template-manifest",
+      "hash": "blake3:7cc7dcce6a5a280f0d82c828c7a4dcf45ab73b08083309ec701a891a01bfce77",
+      "source_owned": true,
+      "package_installs_executed": false,
+      "lifecycle_scripts_executed": false
+    },
+    "package_count": 6,
+    "receipt_count": 15,
+    "receipts_copied": true,
+    "receipts": [
+      {
+        "path": ".dx/forge/receipts/20260607T174853375646100Z-www-minimal-starter.json",
+        "bundle_path": "forge/receipts/20260607T174853375646100Z-www-minimal-starter.json",
+        "kind": "forge-receipt",
+        "package_id": "www/minimal-starter",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 13,
+        "risk_score": 100,
+        "hash": "blake3:c5b4551ee84d71fe7c0b922e0b50f0c573f6be106f1939ccfaa97fbadba577ad",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T174853445371200Z-www-minimal-starter.json",
+        "bundle_path": "forge/receipts/20260607T174853445371200Z-www-minimal-starter.json",
+        "kind": "forge-receipt",
+        "package_id": "www/minimal-starter",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 13,
+        "risk_score": 100,
+        "hash": "blake3:b2c257e44ff0f549a6dbdaf71acd2ce8605dec1cde53cd65c1eb231ef95e4bfb",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T174905841668300Z-npm-clsx.json",
+        "bundle_path": "forge/receipts/20260607T174905841668300Z-npm-clsx.json",
+        "kind": "forge-receipt",
+        "package_id": "npm/clsx",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 95,
+        "hash": "blake3:df25a7a44c22622450bafef361db7a15a4b395983a8df3639afd4630fa0874f9",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T214045680087200Z-npm-lodash.json",
+        "bundle_path": "forge/receipts/20260607T214045680087200Z-npm-lodash.json",
+        "kind": "forge-receipt",
+        "package_id": "npm/lodash",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:dcf2ab4d7d4fc92fdc633a7424cfa3893f98324f7f6cd53e4fcc1d86a15a4501",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T220958619944400Z-pip-requests.json",
+        "bundle_path": "forge/receipts/20260607T220958619944400Z-pip-requests.json",
+        "kind": "forge-receipt",
+        "package_id": "pip/requests",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:a44ebaf0e7d09386549cf28921c7c69c0bf9a562197c0b0ded2c2dfac4694ba6",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T220958713115300Z-cargo-serde.json",
+        "bundle_path": "forge/receipts/20260607T220958713115300Z-cargo-serde.json",
+        "kind": "forge-receipt",
+        "package_id": "cargo/serde",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:ab26b6a90bc213be813eeec457a9184a8639ecc87ff4cd0f54bd1e695c8edb39",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T220958824867000Z-go-quote.json",
+        "bundle_path": "forge/receipts/20260607T220958824867000Z-go-quote.json",
+        "kind": "forge-receipt",
+        "package_id": "go/quote",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:0ccdf746cd4626fb1277162fd5e614d6f639ad934bb3c6f6a152e49189482148",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T221112209576300Z-npm-lodash.json",
+        "bundle_path": "forge/receipts/20260607T221112209576300Z-npm-lodash.json",
+        "kind": "forge-receipt",
+        "package_id": "npm/lodash",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:da051ddd334084945d75eb89c14e191beb349f3f84f27f5d5ccf62325dc97e10",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T221112301950600Z-pip-requests.json",
+        "bundle_path": "forge/receipts/20260607T221112301950600Z-pip-requests.json",
+        "kind": "forge-receipt",
+        "package_id": "pip/requests",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:02343146e87e61f97d03d06c17dc9001358151b826982a078de9201a1d3636fc",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T221112398568600Z-cargo-serde.json",
+        "bundle_path": "forge/receipts/20260607T221112398568600Z-cargo-serde.json",
+        "kind": "forge-receipt",
+        "package_id": "cargo/serde",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:4a6f199f1e5f758d8f0aeed10b6019a70535cd6f40e90ea1823a396b5b8eb90f",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T221112507703700Z-go-quote.json",
+        "bundle_path": "forge/receipts/20260607T221112507703700Z-go-quote.json",
+        "kind": "forge-receipt",
+        "package_id": "go/quote",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:637aa2aa14644ca824364240810cc56769008a18134da7700c82c9cda62d0e7a",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T221129703560500Z-npm-lodash.json",
+        "bundle_path": "forge/receipts/20260607T221129703560500Z-npm-lodash.json",
+        "kind": "forge-receipt",
+        "package_id": "npm/lodash",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:a1628e0cabad66c5128f3b7e8380d189122f22787233f6a92c9f9e0d87a54ff8",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T221129838625800Z-pip-requests.json",
+        "bundle_path": "forge/receipts/20260607T221129838625800Z-pip-requests.json",
+        "kind": "forge-receipt",
+        "package_id": "pip/requests",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:ee4ca2ffee464f5ff55b28ede43ba31f8241599a2e1644566af602974b812b14",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T221129951136400Z-cargo-serde.json",
+        "bundle_path": "forge/receipts/20260607T221129951136400Z-cargo-serde.json",
+        "kind": "forge-receipt",
+        "package_id": "cargo/serde",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:89ed3c0e4a5a24992a1429e85bbc37eed7920914d3548b6d06e8e41ae54f1627",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": ".dx/forge/receipts/20260607T221130167009500Z-go-quote.json",
+        "bundle_path": "forge/receipts/20260607T221130167009500Z-go-quote.json",
+        "kind": "forge-receipt",
+        "package_id": "go/quote",
+        "variant": "default",
+        "action": "track-write",
+        "file_count": 1,
+        "risk_score": 90,
+        "hash": "blake3:d5d43591dd039529de6b2c8971075ff5f4504e0ccbc6ec1f1ad682d1ef79eb9a",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      }
+    ],
+    "source_owned": true,
+    "package_installs_executed": false,
+    "lifecycle_scripts_executed": false
+  },
+  "routes": [
+    {
+      "path": "/",
+      "html": "app/index.html",
+      "execution_contract": "app/app-router-execution.json"
+    },
+    {
+      "path": "/forge-proof",
+      "html": "app/forge-proof/index.html",
+      "execution_contract": "app/forge-proof/app-router-execution.json"
+    }
+  ],
+  "server_actions": [],
+  "health_checks": [],
+  "immutable_assets": [
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css"
+    },
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css"
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon-cfb09e06980b21ac.svg"
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon-cfb09e06980b21ac.svg"
+    },
+    {
+      "path": "public/favicon.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/favicon.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon.svg"
+    },
+    {
+      "path": "public/favicon.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon.svg"
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icon-32341047d202fbff.svg"
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icon-32341047d202fbff.svg"
+    },
+    {
+      "path": "public/icon.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icon.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icon.svg"
+    },
+    {
+      "path": "public/icon.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icon.svg"
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/logo-2afe23f6d7f297ab.svg"
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/logo-2afe23f6d7f297ab.svg"
+    },
+    {
+      "path": "public/logo.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/logo.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/logo.svg"
+    },
+    {
+      "path": "public/logo.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/logo.svg"
+    },
+    {
+      "path": "styles/generated.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/generated.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/generated.css"
+    },
+    {
+      "path": "styles/generated.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/generated.css"
+    },
+    {
+      "path": "styles/globals.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/globals.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/globals.css"
+    },
+    {
+      "path": "styles/globals.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/globals.css"
+    },
+    {
+      "path": "styles/theme.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/theme.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/theme.css"
+    },
+    {
+      "path": "styles/theme.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/theme.css"
+    }
+  ],
+  "rollback": {
+    "metadata_path": "rollback.json",
+    "strategy": "manifest-pinned-asset-rollback"
+  },
+  "observability": {
+    "metadata_path": "observability.json",
+    "ready_path": "/.dx/ready",
+    "metrics_path": "/.dx/observability",
+    "collects_secrets": false,
+    "collects_request_headers": false,
+    "collects_request_payloads": false,
+    "cache_control": "no-store"
+  },
+  "forge_hosting_manifest": {
+    "path": "forge-hosting-manifest.json",
+    "manifest_kind": "dx-www-forge-hosting-release-gate",
+    "coverage_score": 100,
+    "account_free_preview_ready": true,
+    "hosted_release_ready": false,
+    "provider_portability": true,
+    "cache_header_count": 3,
+    "observability_metadata_path": "observability.json",
+    "rollback_metadata_path": "rollback.json"
+  },
+  "bundle": {
+    "format": "directory-manifest",
+    "root": ".dx/build",
+    "artifact_count": 73,
+    "artifacts": [
+      {
+        "path": "_dx/styles/react-route-ce40f27a48d53008.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "_dx/styles/react-route-ce40f27a48d53008.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "_dx/styles/react-route-ce40f27a48d53008.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "app/app-router-execution.json",
+        "kind": "app-router-execution",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "app/forge-proof/app-router-execution.json",
+        "kind": "app-router-execution",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "app/forge-proof/index.html",
+        "kind": "route-html",
+        "cache_control": "public, max-age=0, must-revalidate",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "app/index.html",
+        "kind": "route-html",
+        "cache_control": "public, max-age=0, must-revalidate",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "deploy-adapter.json",
+        "kind": "deploy-contract",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge-hosting-manifest.json",
+        "kind": "forge-hosting-manifest",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T174853375646100Z-www-minimal-starter.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T174853445371200Z-www-minimal-starter.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T174905841668300Z-npm-clsx.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T214045680087200Z-npm-lodash.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T220958619944400Z-pip-requests.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T220958713115300Z-cargo-serde.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T220958824867000Z-go-quote.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T221112209576300Z-npm-lodash.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T221112301950600Z-pip-requests.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T221112398568600Z-cargo-serde.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T221112507703700Z-go-quote.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T221129703560500Z-npm-lodash.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T221129838625800Z-pip-requests.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T221129951136400Z-cargo-serde.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/receipts/20260607T221130167009500Z-go-quote.json",
+        "kind": "forge-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/source-manifest.json",
+        "kind": "forge-source-manifest",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "forge/template-manifest.json",
+        "kind": "forge-template-manifest",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "hosted-preview.json",
+        "kind": "hosted-preview-contract",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "import-resolution.json",
+        "kind": "import-resolution",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "manifest.json",
+        "kind": "build-manifest",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "observability.json",
+        "kind": "production-observability",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "provider-adapter.dx-cloud.json",
+        "kind": "provider-adapter",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon-cfb09e06980b21ac.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon-cfb09e06980b21ac.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon-cfb09e06980b21ac.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/favicon.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icon-32341047d202fbff.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icon-32341047d202fbff.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icon-32341047d202fbff.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icon.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icon.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/icon.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/logo-2afe23f6d7f297ab.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/logo-2afe23f6d7f297ab.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/logo-2afe23f6d7f297ab.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/logo.svg",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/logo.svg.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "public/logo.svg.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "rollback.json",
+        "kind": "rollback-metadata",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "server-action-protocols.json",
+        "kind": "server-action-protocols",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "server-action-runtime.json",
+        "kind": "server-action-runtime",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "server-contracts.json",
+        "kind": "server-contracts",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "source-build-manifest.json",
+        "kind": "source-build-manifest",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "source-build-receipt.json",
+        "kind": "source-build-receipt",
+        "cache_control": "no-store",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/generated.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/generated.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/generated.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/globals.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/globals.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/globals.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/theme.css",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/theme.css.br",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      {
+        "path": "styles/theme.css.gz",
+        "kind": "immutable-asset",
+        "cache_control": "public, max-age=31536000, immutable",
+        "account_required": false,
+        "network_required": false,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      }
+    ]
+  },
+  "release_gate": {
+    "account_free_preview_ready": true,
+    "hosted_release_ready": false,
+    "manifest_signature_required": true,
+    "manifest_signed": false,
+    "rollback_metadata_required": true,
+    "forge_receipts_copied": true,
+    "no_node_modules": true
+  },
+  "next_commands": [
+    "dx preview --production-contract",
+    "dx promote --key <private-key.json>",
+    "dx rollback verify --previous-build <path> --current-build .dx/build"
+  ]
+}

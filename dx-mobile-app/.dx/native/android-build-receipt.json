@@ -1,0 +1,187 @@
+{
+  "schema": "dx.www.native_android_build.receipt",
+  "canonical_command": "dx www build --target android",
+  "invoked_as": "dx build",
+  "status": "apk-built-static-proof",
+  "target": "android",
+  "build_profile": "debug",
+  "distribution_ready": false,
+  "release_signed": false,
+  "debug_signed": true,
+  "created_at": "2026-06-11T16:57:16.995165700+00:00",
+  "project": {
+    "name": "dx-mobile-app",
+    "root": "G:/Dx/www/dx-mobile-app",
+    "dx_config": "dx",
+    "www_output": ".dx/www/output",
+    "www_output_present": true
+  },
+  "native": {
+    "shell": "tauri-webview",
+    "target": "android",
+    "abi": "arm64-v8a",
+    "rust_target": "aarch64-linux-android",
+    "package_id": "com.essencefromexistence.dx.mobile"
+  },
+  "steps": [
+    {
+      "name": "android_toolchain_preflight",
+      "status": "passed",
+      "command": null,
+      "details": "tauri=G:/Dev/Tools/Scoop/persist/bun/bin/tauri.exe, rustup=G:/Dev/Caches/cargo/bin/rustup.exe, java_home=C:/Program Files/Java/jdk-21.0.3+9, android_sdk=G:/Dev/SDKs/Android, android_ndk=G:/Dev/SDKs/Android/ndk/28.2.13676358, platform_tools=G:/Dev/SDKs/Android/platform-tools, build_tools=G:/Dev/SDKs/Android/build-tools/36.0.0, platform=G:/Dev/SDKs/Android/platforms/android-36, rust_target=aarch64-linux-android, does_not_mutate_project=true"
+    },
+    {
+      "name": "android_environment_preflight",
+      "status": "ready",
+      "command": null,
+      "details": "cache_root=.dx/native/android-cache, cargo_target_dir=.dx/native/android-target, temp_dir=.dx/native/android-cache/temp, available_free_bytes=17199677440, required_free_bytes=6442450944, writable=true"
+    },
+    {
+      "name": "native_shell",
+      "status": "ready",
+      "command": "dx www native-shell --target tauri --write",
+      "details": "mobile-compatible Tauri shell is present"
+    },
+    {
+      "name": "android_icons",
+      "status": "present",
+      "command": null,
+      "details": "src-tauri/icons/icon.png already exists"
+    },
+    {
+      "name": "android_project",
+      "status": "present",
+      "command": null,
+      "details": "src-tauri/gen/android"
+    },
+    {
+      "name": "windows_gradle_helper",
+      "status": "ready",
+      "command": null,
+      "details": "inspected 1 BuildTask.kt file(s)"
+    },
+    {
+      "name": "apk_build",
+      "status": "passed",
+      "command": "G:\\Dev\\Tools\\Scoop\\persist\\bun\\bin\\tauri.exe android build --debug --apk --split-per-abi --target aarch64 --ci --ignore-version-mismatches",
+      "details": "arm64 debug APK built through DX Native/Tauri"
+    }
+  ],
+  "environment": {
+    "cache_root": ".dx/native/android-cache",
+    "gradle_user_home": ".dx/native/android-cache/gradle",
+    "android_user_home": ".dx/native/android-cache/android-user",
+    "android_avd_home": ".dx/native/android-cache/avd",
+    "cargo_home": ".dx/native/android-cache/cargo-home",
+    "cargo_target_dir": ".dx/native/android-target",
+    "temp_dir": ".dx/native/android-cache/temp",
+    "required_free_bytes": 6442450944,
+    "available_free_bytes": 17199677440,
+    "free_space_status": "ready",
+    "writable": true
+  },
+  "artifact": {
+    "path": "src-tauri/gen/android/app/build/outputs/apk/arm64/debug/app-arm64-debug.apk",
+    "bytes": 237389730,
+    "sha256": "e8295fa90f867359fdfc7a21b5af3e88e39954145281c92a214639a3e642f1a8",
+    "modified_at": "2026-06-11T16:51:47.001845400+00:00",
+    "variant": "arm64Debug",
+    "version": "0.1.0"
+  },
+  "proof": {
+    "dx_www_output_present": true,
+    "native_build": true,
+    "native_library_packaged": true,
+    "tauri_config_packaged": true,
+    "android_manifest_packaged": true,
+    "dex_bytecode_packaged": true,
+    "native_www_entrypoint_present": true,
+    "www_assets_packaged": true,
+    "www_asset_proof_mode": "apk-binary-marker",
+    "www_asset_marker_limit": 128,
+    "www_asset_markers_truncated": false,
+    "expected_native_library": "lib/arm64-v8a/libdx_mobile_app_native_lib.so",
+    "expected_tauri_config": "assets/tauri.conf.json",
+    "expected_android_manifest": "AndroidManifest.xml",
+    "expected_dex_bytecode": "classes.dex",
+    "expected_native_www_entrypoint": "index.html",
+    "expected_www_assets": [
+      "_dx/styles/react-route-5af670918829274b.css",
+      "_dx/styles/react-route-611508f70150e1f1.css",
+      "app/app-router-execution.json",
+      "app/index.html",
+      "app/page-graph.json",
+      "favicon.svg",
+      "forge/receipts/20260610T124023095919800Z-www-minimal-starter.json",
+      "forge/receipts/20260610T124023604250300Z-www-minimal-starter.json",
+      "forge/receipts/20260610T124315134874800Z-auth-better-auth.json",
+      "forge/source-manifest.json",
+      "forge/template-manifest.json",
+      "icon.svg",
+      "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+      "index.html",
+      "logo.svg",
+      "manifest.json",
+      "mobile-companion-runtime.js",
+      "public/favicon-cfb09e06980b21ac.svg",
+      "public/favicon.svg",
+      "public/icon-32341047d202fbff.svg",
+      "public/icon.svg",
+      "public/logo-2afe23f6d7f297ab.svg",
+      "public/logo.svg",
+      "public/mobile-companion-runtime-b89eded3f38b32b4.js",
+      "public/mobile-companion-runtime.js",
+      "source-build-manifest.json",
+      "source-build-receipt.json",
+      "source-routes/root/index.html",
+      "source-routes/root/page-graph.json",
+      "source-routes/root/route-unit.json",
+      "source-routes/root/server-data.json",
+      "styles/generated.css",
+      "styles/globals.css",
+      "styles/mobile-auth.css",
+      "styles/mobile-auth/contract.css",
+      "styles/mobile-auth/form.css",
+      "styles/mobile-auth/icons.css",
+      "styles/mobile-auth/layout.css",
+      "styles/mobile-auth/responsive.css",
+      "styles/mobile-companion.css",
+      "styles/mobile-companion/chat.css",
+      "styles/mobile-companion/forms.css",
+      "styles/mobile-companion/icons.css",
+      "styles/mobile-companion/layout.css",
+      "styles/mobile-companion/responsive.css",
+      "styles/theme.css"
+    ],
+    "missing_www_assets": [],
+    "www_asset_marker_scan": {
+      "status": "passed",
+      "command": null,
+      "details": "Scanned APK for 48 expected DX WWW asset marker(s)."
+    },
+    "apk_signature_scheme_v2": true,
+    "signature_verification": {
+      "status": "passed",
+      "command": "G:\\Dev\\SDKs\\Android\\build-tools\\36.0.0\\apksigner.bat verify --verbose src-tauri/gen/android/app/build/outputs/apk/arm64/debug/app-arm64-debug.apk",
+      "details": "Verifies\r\nVerified using v1 scheme (JAR signing): false\r\nVerified using v2 scheme (APK Signature Scheme v2): true\r\nVerified using v3 scheme (APK Signature Scheme v3): false\r\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\r\nVerified using v4 scheme (APK Signature Scheme v4): false\r\nVerified for SourceStamp: false\r\nNumber of signers: 1"
+    },
+    "apk_contents": {
+      "status": "passed",
+      "command": "\"C:\\Program Files\\Java\\jdk-21.0.3+9\\bin\\jar.exe\" tf src-tauri/gen/android/app/build/outputs/apk/arm64/debug/app-arm64-debug.apk lib/arm64-v8a/libdx_mobile_app_native_lib.so assets/tauri.conf.json AndroidManifest.xml classes.dex",
+      "details": "classes.dex\r\nassets/tauri.conf.json\r\nAndroidManifest.xml\r\nlib/arm64-v8a/libdx_mobile_app_native_lib.so"
+    },
+    "adb_devices_connected": false,
+    "adb_probe": {
+      "status": "passed",
+      "command": "G:\\Dev\\SDKs\\Android\\platform-tools\\adb.exe devices",
+      "details": "List of devices attached"
+    },
+    "installed_on_device": false,
+    "static_native_loadability_proof_complete": true,
+    "static_apk_proof_complete": true,
+    "device_smoke_proof_complete": false,
+    "proof_complete": false
+  }
+}

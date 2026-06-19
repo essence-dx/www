@@ -1,0 +1,192 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "WebAssembly Bridge",
+    "package_id": "wasm/bindgen",
+    "upstream_package": "wasm-bindgen",
+    "upstream_version": "0.2.121",
+    "source_mirror": "G:/WWW/inspirations/wasm-bindgen",
+    "based_on": "wasm-bindgen Rust attribute crate, generated web-target JavaScript glue, and browser WebAssembly instantiate APIs"
+  },
+  "inspected_upstream_files": [
+    "Cargo.toml",
+    "src/lib.rs",
+    "crates/cli/tests/reference/targets-target-web.js"
+  ],
+  "upstream_public_apis": [
+    "#[wasm_bindgen]",
+    "wasm_bindgen::prelude::*",
+    "JsValue",
+    "Closure",
+    "default init(input)",
+    "initSync(input)",
+    "WebAssembly.instantiateStreaming",
+    "WebAssembly.instantiate"
+  ],
+  "guard": {
+    "id": "webassembly-bridge-generated-starter-materialization",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "benchmarks/wasm-bindgen-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\wasm-bindgen-dx-check-package-lane-panel.test.ts",
+    "proves": [
+      "WebAssembly Bridge generated-starter materialization guard",
+      "data-dx-check-package-lane-row=\"wasm/bindgen\"",
+      "data-dx-token-scope=\"wasm/bindgen\"",
+      "docs/packages/wasm-bindgen.source-guard-runbook.json",
+      "without claiming live generated-Wasm runtime proof",
+      "wasm-bindgen 0.2.121 source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "helper_freshness_guard": {
+    "id": "webassembly-bridge-lower-dx-check-helper-freshness",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/project_check/wasm_bindgen_dx_check.rs",
+    "command": "cargo test -q -p dx-www-compiler webassembly_bridge_package_metrics_reports_helper_freshness_from_path_arrays --lib",
+    "proves": [
+      "WebAssembly Bridge lower dx-check helper freshness fixture",
+      "webassembly_bridge_receipt_hash_refresh_current",
+      "webassembly_bridge_receipt_hash_refresh_stale",
+      "webassembly_bridge_receipt_hash_refresh_missing",
+      "webassembly_bridge_hash_mismatch stays byte-derived",
+      "docs/packages/wasm-bindgen.source-guard-runbook.json",
+      "without claiming live generated-Wasm runtime proof",
+      "wasm-bindgen 0.2.121 source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false,
+    "runtime_proof": false
+  },
+  "check_panel_helper_freshness_guard": {
+    "id": "webassembly-bridge-check-panel-helper-freshness",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/dx_check_receipt.rs",
+    "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_webassembly_bridge_package_lane_hash_refresh_row --lib",
+    "proves": [
+      "WebAssembly Bridge check-panel helper freshness fixture",
+      "webassembly_bridge_receipt_hash_refresh_current",
+      "webassembly_bridge_receipt_hash_refresh_stale",
+      "webassembly_bridge_receipt_hash_refresh_missing",
+      "webassembly_bridge_hash_mismatch stays byte-derived",
+      "docs/packages/wasm-bindgen.source-guard-runbook.json",
+      "without claiming live generated-Wasm runtime proof",
+      "wasm-bindgen 0.2.121 source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false,
+    "runtime_proof": false
+  },
+  "receipt_hash_refresh_stale_only_fixtures": [
+    {
+      "id": "webassembly-bridge-check-panel-source-stale-only",
+      "description": "Mutates only the shared DX Studio/check-panel row source so the WebAssembly Bridge receipt helper proves check-panel drift independently from lower dx-check, generated starter, runbook, materializer, dashboard, and runtime helper files.",
+      "guard_file": "benchmarks/wasm-bindgen-receipt-hash-refresh.test.ts",
+      "command": "node --test .\\benchmarks\\wasm-bindgen-receipt-hash-refresh.test.ts --test-name-pattern \"check-panel-only stale source drift\"",
+      "mutates_only": "core/src/ecosystem/dx_check_receipt.rs",
+      "expected_status": "stale",
+      "expected_stale_files": [
+        "core/src/ecosystem/dx_check_receipt.rs"
+      ],
+      "expected_missing_files": [],
+      "expected_stale_surface_ids": [
+        "webassembly-bridge-check-panel-source"
+      ],
+      "expected_stale_surface_types": [
+        "check_panel_source"
+      ],
+      "expected_missing_surface_ids": [],
+      "expected_missing_surface_types": [],
+      "execution_policy": "source-only",
+      "writes_files": false,
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "node_modules_required": false,
+      "runtime_proof": false
+    }
+  ],
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "webassembly-bridge-generated-starter-materialization",
+      "purpose": "The generated starter preserves the WebAssembly Bridge package-lane row, provenance, dx-style markers, and package-scoped dx-check panel without live generated-Wasm runtime proof.",
+      "evidence_field": "benchmarks/wasm-bindgen-dx-check-package-lane-panel.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\wasm-bindgen-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-only WebAssembly Bridge package-lane row, generated starter materialization, provenance, dx-style markers, and dx-check panel package scope without live generated-Wasm runtime proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-dx-style-status",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package",
+    "webassembly_bridge_hash_manifest_present",
+    "webassembly_bridge_hash_mismatch",
+    "webassembly_bridge_dx_style_compatibility_present",
+    "webassembly_bridge_dx_style_compatibility_missing"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-wasm-bindgen-dashboard-workflow.json",
+    "hash_receipt_guard": "benchmarks/wasm-bindgen-hash-receipt.test.ts",
+    "receipt_status": "hash-backed",
+    "runtime_proof": false
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "root_field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture": "docs/packages/wasm-bindgen.source-guard-runbook.json",
+    "runtime_proof": false
+  },
+  "studio_manifest": {
+    "source_guard_entry": "source_guard_index[].fixture_path",
+    "runbook_fixture_paths": "source_guard_runbook_index[].fixture_paths[]",
+    "contract_entry": "source_guard_runbook_index[].contracts[].fixture_path",
+    "command_entry": "source_guard_runbook_index[].commands[].fixture_path",
+    "fixture_path": "docs/packages/wasm-bindgen.source-guard-runbook.json"
+  },
+  "app_owned_boundaries": [
+    "Rust crate source and #[wasm_bindgen] export design",
+    "wasm32-unknown-unknown build profile and generated .wasm artifact",
+    "wasm-bindgen CLI install, version pin, target selection, and output directory",
+    "browser CSP, MIME serving, memory growth, and WebAssembly performance/security review",
+    "governed browser runtime proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard, generated preview-manifest fixture path, and runbook metadata only.",
+    "ADAPTER-BOUNDARY: live generated-Wasm runtime proof, Rust crate compilation, artifact serving, CSP/MIME policy, and performance/security review stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "fixture_path": "docs/packages/motion-animation.source-guard-runbook.json",
+  "route": "/",
+  "package": {
+    "official_package_name": "Motion & Animation",
+    "package_id": "animation/motion",
+    "upstream_package": "motion",
+    "upstream_version": "12.38.0",
+    "source_mirror": "G:/WWW/inspirations/motion",
+    "based_on": "Motion React public animation APIs, Framer Motion feature bundles, and app-owned runtime choreography boundaries"
+  },
+  "guard": {
+    "id": "motion-animation-generated-starter-materialization",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "benchmarks/motion-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\motion-dx-check-package-lane-panel.test.ts",
+    "proves": [
+      "Motion & Animation generated-starter materialization guard",
+      "data-dx-check-package-lane-row=\"animation/motion\"",
+      "data-dx-token-scope=\"animation/motion\"",
+      "motion-animation:receipt-hash-refresh",
+      "docs/packages/motion-animation.source-guard-runbook.json",
+      "without claiming live Motion browser animation proof",
+      "animation/motion source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false,
+    "fixture_path": "docs/packages/motion-animation.source-guard-runbook.json"
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "fixture_paths": [
+      {
+        "source_guard_id": "motion-animation-generated-starter-materialization",
+        "package_id": "animation/motion",
+        "fixture_path": "docs/packages/motion-animation.source-guard-runbook.json",
+        "schema": "dx.forge.package.source_guard_runbook_fixture"
+      }
+    ],
+    "contract": {
+      "id": "motion-animation-generated-starter-materialization",
+      "purpose": "The generated starter preserves the Motion & Animation package-lane row, helper freshness markers, and package-scoped dx-check panel without live Motion browser animation proof.",
+      "evidence_field": "benchmarks/motion-dx-check-package-lane-panel.test.ts",
+      "fixture_path": "docs/packages/motion-animation.source-guard-runbook.json"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\motion-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-only Motion & Animation package-lane row, generated starter materialization, helper freshness markers, and dx-check panel package scope without live Motion browser animation proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false,
+      "fixture_path": "docs/packages/motion-animation.source-guard-runbook.json"
+    }
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json",
+    "hash_helper": "examples/template/motion-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/motion-receipt-hashes.ts --check --json",
+    "zed_visibility": "motion-animation:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "route transition choreography",
+    "reduced-motion policy approval",
+    "browser animation runtime proof",
+    "animation performance budget",
+    "accessibility and keyboard interaction QA"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: live Motion browser animation proof, route choreography, reduced-motion policy, accessibility QA, and animation budgets stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

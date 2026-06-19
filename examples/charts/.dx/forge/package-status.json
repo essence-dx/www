@@ -1,0 +1,86 @@
+{
+  "schema": "dx.www.template.forge_package_status",
+  "status": "present",
+  "source": "dx new",
+  "package_policy": "forge-first-no-node-modules",
+  "no_node_modules_required": true,
+  "package_count": 1,
+  "locked_package_count": 1,
+  "locked_package_names": [
+    "www/minimal-starter"
+  ],
+  "package_lane_visibility": [
+    {
+      "official_package_name": "Forge Package",
+      "package_id": "www/minimal-starter",
+      "schema": "dx.forge.package.dx_style_compatibility",
+      "status": "present",
+      "receipt_status": "present",
+      "token_source": "styles/theme.css",
+      "generated_css": "styles/generated.css",
+      "package_receipt_path": ".dx/forge/receipts/20260603T070621113923900Z-www-minimal-starter.json",
+      "status_vocabulary": [
+        "present",
+        "stale",
+        "missing-receipt",
+        "blocked",
+        "unsupported-surface"
+      ],
+      "receipt_hash_refresh": {
+        "schema": "dx.forge.package.receipt_hash_refresh",
+        "status": "current",
+        "tracked_file_count": 0,
+        "stale_file_count": 0,
+        "missing_file_count": 0,
+        "stale_files": [],
+        "missing_files": [],
+        "stale_mirror_files": [],
+        "missing_mirror_files": [],
+        "runtime_execution": false,
+        "secret_access": false
+      },
+      "dx_style_compatibility": {
+        "schema": "dx.forge.package.dx_style_compatibility",
+        "status": "present",
+        "token_source": "styles/theme.css",
+        "generated_css": "styles/generated.css",
+        "visible_surfaces": [
+          "www/minimal-starter"
+        ],
+        "source_files": [
+          ".dx/forge/receipts/20260603T070621113923900Z-www-minimal-starter.json"
+        ],
+        "data_dx_markers": [],
+        "receipt_path": ".dx/forge/receipts/20260603T070621113923900Z-www-minimal-starter.json",
+        "runtime_proof": false,
+        "runtime_limitations": [
+          "Fresh dx new package visibility is receipt-backed source evidence; live provider/runtime proof remains app-owned."
+        ]
+      },
+      "selected_surfaces": []
+    }
+  ],
+  "packages": [
+    {
+      "name": "www/minimal-starter",
+      "package_id": "www/minimal-starter",
+      "official_name": "Forge Package",
+      "status": "present",
+      "package_score": 100,
+      "version": "0.1.0",
+      "variant": "default",
+      "source_kind": "local",
+      "package_receipt_path": ".dx/forge/receipts/20260603T070621113923900Z-www-minimal-starter.json",
+      "file_count": 13
+    }
+  ],
+  "dx_check_metrics": [
+    "package-status-generated",
+    "receipt-hash-refresh-current",
+    "dx-style-compatibility-present"
+  ],
+  "zed_receipt_surfaces": [
+    "package-status",
+    "dx-new-forge-receipts"
+  ]
+}

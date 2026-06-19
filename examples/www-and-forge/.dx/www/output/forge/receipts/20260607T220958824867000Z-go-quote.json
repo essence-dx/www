@@ -1,0 +1,73 @@
+{
+  "action": "track-write",
+  "package": {
+    "package_id": "go/quote",
+    "upstream_name": "go:quote",
+    "version": "source-dir-snapshot",
+    "generator": "dx-forge/go-external-source-snapshot",
+    "variant": "default",
+    "source_kind": "external-snapshot",
+    "integrity_hash": "bf395e8943c63027ef14e39dae4fe36fc5b063ff81c0b451f97995047ebbae46",
+    "license": "unreviewed",
+    "provenance": {
+      "source": "dx-forge-go-external-source-snapshot",
+      "upstream_reference": "go:quote",
+      "verified": false,
+      "note": "External ecosystem source was materialized into Forge-owned files without running package-manager install or lifecycle commands."
+    },
+    "advisory_review": {
+      "coverage_kind": "missing",
+      "provider": "none",
+      "live_coverage": false,
+      "finding_count": 0,
+      "note": "External source snapshots do not have live advisory coverage attached by Forge yet."
+    },
+    "license_review": {
+      "declared_license": "unreviewed",
+      "reviewed": false,
+      "note": "License is recorded from inspected package metadata only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/forge/go/quote/main.go",
+        "hash": "bd30c40b6523f37051f3a0b8a0c993e6cc5acb1c9ee51be61dc70c5021fe3264",
+        "bytes": 61
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/forge/go/quote/main.go",
+      "hash": "bd30c40b6523f37051f3a0b8a0c993e6cc5acb1c9ee51be61dc70c5021fe3264",
+      "bytes": 61
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "lib/forge/go/quote/main.go",
+      "materialized_path": "lib/forge/go/quote/main.go",
+      "hash": "bd30c40b6523f37051f3a0b8a0c993e6cc5acb1c9ee51be61dc70c5021fe3264",
+      "bytes": 61
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "external-source-snapshot",
+      "traffic": "green",
+      "message": "Forge records this package as a source-owned external ecosystem snapshot, not as a package-manager install."
+    },
+    {
+      "policy": "no-package-install",
+      "traffic": "green",
+      "message": "Forge did not run npm, pip, cargo, go, or any package-manager install command."
+    },
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge did not run lifecycle hooks, build scripts, setup hooks, or upstream generated install artifacts."
+    }
+  ],
+  "risk_score": 90,
+  "timestamp": "2026-06-07T22:09:58.824422300+00:00",
+  "signature": null
+}

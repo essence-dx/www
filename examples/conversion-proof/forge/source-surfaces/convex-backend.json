@@ -1,0 +1,99 @@
+{
+  "schema": "dx.www.source_surface_map",
+  "source_project": "convex-backend",
+  "source_repo": "https://github.com/get-convex/convex-backend.git",
+  "source_commit": "e5026b0d466058eea21084f9561d7ad974e925fc",
+  "converted_route": "/backend",
+  "surfaces": {
+    "ui": {
+      "label": "Deployment dashboard controls",
+      "source_files": [
+        "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/functions.tsx",
+        "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/data.tsx",
+        "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/logs.tsx"
+      ],
+      "converted_files": [
+        "pages/backend.html",
+        "components/ConversionRouteHeader.tsx",
+        "components/SourceSurfaceTable.tsx",
+        "forge/primitives/table.ts",
+        "forge/primitives/badge.ts"
+      ],
+      "launch_value": "Gives DX-WWW a Convex-style backend operations surface for functions, data, logs, and files.",
+      "runtime_boundary": "No Convex client, dashboard API, realtime socket, or function runner is executed."
+    },
+    "layout": {
+      "label": "Deployment dashboard layout",
+      "source_files": [
+        "npm-packages/dashboard/src/layouts/DeploymentDashboardLayout.tsx",
+        "npm-packages/dashboard-common/src/layouts/DeploymentDashboardLayout.tsx"
+      ],
+      "converted_files": [
+        "pages/backend.html",
+        "components/RuntimeBoundaryPanel.tsx",
+        "styles/conversion-proof.css"
+      ],
+      "launch_value": "Converts the deployment dashboard structure into DX-WWW source-owned route sections.",
+      "runtime_boundary": "Dashboard layout providers and authenticated project context are not mounted."
+    },
+    "interaction": {
+      "label": "Functions, schedules, files, realtime workflows",
+      "source_files": [
+        "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/functions.tsx",
+        "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/schedules/functions.tsx",
+        "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/schedules/crons.tsx",
+        "npm-packages/dashboard/dashboard-deployment-openapi.json"
+      ],
+      "converted_files": [
+        "pages/backend.html",
+        "forge/shims/runtime-boundaries.ts",
+        "forge/shims/test-adapters.ts"
+      ],
+      "launch_value": "Keeps backend operations visible as launch lanes while marking execution and deployment writes as blocked.",
+      "runtime_boundary": "Function execution, cron mutation, OpenAPI clients, and realtime sockets remain blocked runtime boundaries."
+    },
+    "docs": {
+      "label": "Runtime model documentation",
+      "source_files": [
+        "crates/function_runner/src/lib.rs",
+        "crates/model/src/modules/mod.rs",
+        "crates/model/src/source_packages/mod.rs"
+      ],
+      "converted_files": [
+        "pages/backend.html",
+        "README.md",
+        "DX.md"
+      ],
+      "launch_value": "Documents runtime architecture terms without copying or executing server runtime internals.",
+      "runtime_boundary": "Rust checks, model execution, and backend reuse require a later license-sensitive pass."
+    },
+    "dashboard": {
+      "label": "Functions, data, logs, files dashboard",
+      "source_files": [
+        "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/data.tsx",
+        "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/files.tsx",
+        "npm-packages/dashboard/src/pages/t/[team]/[project]/[deploymentName]/logs.tsx"
+      ],
+      "converted_files": [
+        "pages/backend.html",
+        "components/SourceSurfaceTable.tsx",
+        "styles/conversion-proof.css"
+      ],
+      "launch_value": "Presents backend operations as a route-ready dashboard proof instead of fake success cards.",
+      "runtime_boundary": "Logs, files, and data are not fetched from a Convex deployment."
+    },
+    "brand": {
+      "label": "Convex visual identity",
+      "source_files": [
+        "npm-packages/dashboard/public/convex-logo.svg"
+      ],
+      "converted_files": [
+        "pages/backend.html",
+        "public/vendor/convex-logo.svg",
+        "components/ConversionRouteHeader.tsx"
+      ],
+      "launch_value": "Keeps the upstream Convex source mark visible in the DX-WWW route header.",
+      "runtime_boundary": "Only copied, provenance-tracked static assets are used."
+    }
+  }
+}

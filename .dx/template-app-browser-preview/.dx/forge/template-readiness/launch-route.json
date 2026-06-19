@@ -1,0 +1,81 @@
+{
+  "schema": "dx.www.template_readiness",
+  "template_id": "www-template",
+  "route": "/",
+  "route_aliases": [],
+  "status": "source-materialized-runtime-pending",
+  "classification": "source-owned-limited-proof",
+  "package_id": "dx-www/template-shell",
+  "package": {
+    "id": "dx-www/template-shell",
+    "official_name": "Default DX-WWW Template"
+  },
+  "score": 89,
+  "score_ceiling_without_live_proof": 89,
+  "runtime_proof": false,
+  "runtime_verification": "pending-governed-runtime-pass",
+  "runtime_verification_requires_explicit_permission": true,
+  "live_provider_execution": false,
+  "network_calls": false,
+  "secret_values": [],
+  "node_modules_required": false,
+  "no_execution": true,
+  "docs_file": ".dx/forge/docs/dx-www-template-shell--variant-next-familiar.md",
+  "materialized_files": [
+    "tools/launch/runtime-template/pages/index.html",
+    "components/template-app/template-shell.tsx",
+    "components/launch/package-catalog.ts",
+    "components/launch/template-surface-registry.ts",
+    "components/launch/package-reality-panel.tsx",
+    "components/scene/launch-scene.tsx",
+    "styles/globals.css",
+    ".dx/forge/package-status.json"
+  ],
+  "required_packages": [
+    "shadcn/ui/button",
+    "shadcn/ui/badge",
+    "shadcn/ui/card",
+    "shadcn/ui/label",
+    "shadcn/ui/separator",
+    "shadcn/ui/field",
+    "shadcn/ui/item",
+    "shadcn/ui/input",
+    "shadcn/ui/textarea",
+    "dx/icon/search",
+    "auth/better-auth",
+    "animation/motion",
+    "forms/react-hook-form",
+    "i18n/next-intl",
+    "tanstack/query",
+    "reactive/store",
+    "validation/zod",
+    "payments/stripe-js",
+    "automations/n8n",
+    "state/zustand",
+    "ai/vercel-ai",
+    "api/trpc",
+    "content/fumadocs-next",
+    "content/react-markdown",
+    "supabase/client",
+    "db/drizzle-sqlite",
+    "instantdb/react",
+    "wasm/bindgen",
+    "3d/launch-scene",
+    "migration/static-site"
+  ],
+  "source_guards": [
+    "node --test benchmarks/template-shell.test.ts",
+    "node --test benchmarks/www-template-forge-reality.test.ts",
+    "node --test benchmarks/www-template-template-readiness-receipts.test.ts"
+  ],
+  "blocked_until": [
+    "browser route proof for /, /dashboard, and /login",
+    "governed runtime verification approval",
+    "live provider credentials for provider-gated packages"
+  ],
+  "honesty_notes": [
+    "This receipt proves source-owned template readiness only.",
+    "It is not browser rendering, native-scroll, live provider, build, deploy, or production runtime proof.",
+    "Runtime verification remains permission-gated and must be attached as separate evidence."
+  ]
+}

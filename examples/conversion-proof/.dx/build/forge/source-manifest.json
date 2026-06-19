@@ -1,0 +1,128 @@
+{
+  "schema": "dx.forge.source_manifest",
+  "package": "examples/conversion-proof",
+  "purpose": "DX-WWW launch proof for converting large modern web products into Forge-owned routes.",
+  "route_discovery": "forge/route-discovery/conversion-routes.json",
+  "route_acceptance_checklist": "forge/acceptance/no-runtime-route-acceptance.json",
+  "rendered_proof_receipt_schema": "forge/acceptance/rendered-proof-evidence.schema.json",
+  "rendered_proof_validator": "forge/acceptance/validate-rendered-proof-evidence.cjs",
+  "blocked_rendered_proof_fixture": "forge/acceptance/fixtures/blocked-rendered-proof.sample.json",
+  "rendered_proof_import_plan": "forge/acceptance/rendered-proof-import-plan.json",
+  "rendered_proof_import_tool": "forge/acceptance/prepare-rendered-proof-import.cjs",
+  "rendered_proof_review_tool": "forge/acceptance/review-rendered-proof-completeness.cjs",
+  "rendered_proof_runtime_approval_request": "forge/acceptance/rendered-proof-runtime-approval-request.json",
+  "rendered_proof_runtime_approval_tool": "forge/acceptance/request-rendered-proof-runtime-approval.cjs",
+  "rendered_proof_authoring_guide": "forge/acceptance/rendered-proof-evidence-authoring-guide.json",
+  "rendered_proof_authoring_tool": "forge/acceptance/summarize-rendered-proof-evidence-requirements.cjs",
+  "routes": [
+    {
+      "route": "/ui",
+      "project": "shadcn-ui",
+      "page": "pages/ui.html",
+      "manifest": "forge/conversion-manifests/shadcn-ui.json",
+      "visual_audit": "forge/visual-audits/shadcn-ui.json",
+      "receipt": ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json",
+      "state": "real source conversion, partial runtime"
+    },
+    {
+      "route": "/database",
+      "project": "supabase",
+      "page": "pages/database.html",
+      "manifest": "forge/conversion-manifests/supabase.json",
+      "visual_audit": "forge/visual-audits/supabase.json",
+      "receipt": ".dx/forge/receipts/2026-05-21-supabase-to-database.json",
+      "state": "real source conversion, partial runtime"
+    },
+    {
+      "route": "/backend",
+      "project": "convex-backend",
+      "page": "pages/backend.html",
+      "manifest": "forge/conversion-manifests/convex-backend.json",
+      "visual_audit": "forge/visual-audits/convex-backend.json",
+      "receipt": ".dx/forge/receipts/2026-05-21-convex-to-backend.json",
+      "state": "real source conversion, partial and blocked runtime"
+    }
+  ],
+  "assets": [
+    "public/vendor/shadcn-favicon-32x32.png",
+    "public/vendor/supabase-logo.svg",
+    "public/vendor/convex-logo.svg"
+  ],
+  "components": [
+    "components/ConversionRouteHeader.tsx",
+    "components/SourceSurfaceTable.tsx",
+    "components/RuntimeBoundaryPanel.tsx"
+  ],
+  "source_surface_maps": [
+    "forge/source-surfaces/shadcn-ui.json",
+    "forge/source-surfaces/supabase.json",
+    "forge/source-surfaces/convex-backend.json"
+  ],
+  "visual_audits": [
+    "forge/visual-audits/shadcn-ui.json",
+    "forge/visual-audits/supabase.json",
+    "forge/visual-audits/convex-backend.json"
+  ],
+  "forge_primitives": {
+    "metadata": "forge/primitives/metadata.json",
+    "entrypoint": "forge/primitives/index.ts",
+    "files": [
+      "forge/primitives/class-merge.ts",
+      "forge/primitives/slot.ts",
+      "forge/primitives/theme-provider.ts",
+      "forge/primitives/button.ts",
+      "forge/primitives/input.ts",
+      "forge/primitives/badge.ts",
+      "forge/primitives/card.ts",
+      "forge/primitives/table.ts",
+      "forge/primitives/tabs.ts",
+      "forge/primitives/dialog.ts",
+      "forge/primitives/dropdown.ts",
+      "forge/primitives/sidebar.ts"
+    ]
+  },
+  "launch_shims": {
+    "metadata": "forge/shims/launch-runtime-boundaries.json",
+    "adapters": "forge/shims/test-adapters.ts",
+    "boundaries": [
+      "next-routing",
+      "react-hydration",
+      "tanstack-query",
+      "supabase-auth-storage",
+      "convex-realtime",
+      "convex-functions",
+      "radix-state-machines"
+    ]
+  },
+  "notices": [
+    "notices/shadcn-ui/LICENSE.md",
+    "notices/supabase/LICENSE",
+    "notices/convex-backend/LICENSE.md"
+  ],
+  "status": {
+    "score_out_of_100": 99,
+    "real": [
+      "Routes, manifests, receipts, copied assets, and license notices exist.",
+      "Source files were selected from local mirrors and recorded by path and commit.",
+      "Visual route audits record section, responsive, accessibility, and asset proof for every converted route.",
+      "Route discovery now gives DX-WWW, DX CLI, and Zed one canonical source-owned index for /ui, /database, and /backend.",
+      "Studio preview selectors map route DOM markers back to converted pages, surface maps, visual audits, manifests, and receipts.",
+      "A no-runtime route acceptance checklist records the evidence required before rendered-proof promotion.",
+      "A rendered-proof receipt schema gives future runtime verification a stable output contract under .dx/forge/runtime-evidence.",
+      "A source-only rendered-proof validator reports missing runtime evidence without failing source readiness.",
+      "A blocked rendered-proof sample receipt records the not-approved fixture shape without fake runtime artifacts.",
+      "A rendered-proof import plan and dry-run reporter map approved external receipts to their final runtime-evidence targets.",
+      "A rendered-proof completeness reviewer explains why the proof remains 99/100 until real runtime receipts exist.",
+      "A rendered-proof runtime approval request packet records the exact runtime capture scope before any server, build, credentialed backend, or evidence write is allowed.",
+      "A rendered-proof evidence authoring guide tells runtime lanes what to collect without creating fake screenshots, placeholder hashes, or source-lane receipts."
+    ],
+    "partial": [
+      "Interactive runtime behavior is represented structurally.",
+      "No renderer screenshot was taken because local servers were out of scope."
+    ],
+    "blocked": [
+      "No npm build, cargo check, cargo test, or long local server was allowed.",
+      "Supabase and Convex live backends require explicit credentials and runtime integration."
+    ]
+  }
+}

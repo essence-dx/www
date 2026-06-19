@@ -1,0 +1,60 @@
+{
+  "schema": "dx.www.server_action.replay_ledger",
+  "schema_revision": 1,
+  "manifest_hash": "blake3:778114897623c8e434a093f37b398c353e1d25579eaf025752307160174914c7",
+  "path": "server-action-replay-ledger.json",
+  "release_ready": false,
+  "distributed": false,
+  "provider_hosted": false,
+  "hosted_provider_proof": false,
+  "provider_proof_status": "not-run-local-preview-only",
+  "production_proof_scope": "local-production-preview-only",
+  "provider_hosted_replay_required": true,
+  "provider_proof_gap_ids": [
+    "distributed-idempotency-store",
+    "provider-hosted-csrf-session-integration",
+    "cross-process-replay-consistency",
+    "durable-provider-kv-sql-replay-retention",
+    "provider-request-cancellation-replay"
+  ],
+  "receipt_hint_fields": [
+    "schema",
+    "path",
+    "mode",
+    "hosted_provider_proof",
+    "provider_proof_status",
+    "provider_proof_gap_ids",
+    "entry_count",
+    "duplicate_replay_count",
+    "conflict_count",
+    "last_recorded_unix_ms",
+    "entries[].receipt_id",
+    "entries[].replay_key_hash",
+    "entries[].payload_hash",
+    "entries[].response_hash"
+  ],
+  "local_replay_hint_steps": [
+    "Run dx preview --production against the build output that emitted server-action-replay-ledger.json.",
+    "POST the compiled server action endpoint from server-action-protocols.json with x-dx-csrf, x-dx-session, and idempotency-key headers.",
+    "Compare replay_ledger.receipt_id, replay_key_hash, duplicate, conflict_observed, observed_count, and conflict_count in the local response.",
+    "Keep request cancellation as a provider proof gap until a hosted runtime can prove abort propagation and replay cleanup.",
+    "Treat this as local production-preview evidence only; it is not hosted or distributed provider proof."
+  ],
+  "enforced": false,
+  "mode": "local-preview-hash-ledger",
+  "privacy": "hash-only action/session/idempotency/payload/response receipts; raw payload, session, csrf, and idempotency values are not persisted",
+  "actions": [],
+  "entry_count": 0,
+  "conflict_count": 0,
+  "duplicate_replay_count": 0,
+  "entries": [],
+  "conflict_policy": "same action/session/idempotency with different payload is recorded as a local conflict, not accepted as provider-proof replay",
+  "not_yet_proven": [
+    "distributed idempotency store",
+    "provider-hosted CSRF/session integration",
+    "cross-process replay consistency",
+    "durable provider KV/SQL-backed replay retention",
+    "provider request cancellation replay"
+  ],
+  "rule": "This ledger is local production-preview evidence only; it is not a distributed or provider-hosted idempotency store."
+}

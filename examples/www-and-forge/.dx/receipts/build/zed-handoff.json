@@ -1,0 +1,129 @@
+{
+  "schema": "dx.build.zedHandoff",
+  "schema_revision": 1,
+  "status": "source-route-shell-and-module-graph-ready",
+  "project_root": "G:/Dx/www-and-forge",
+  "source_build_manifest": ".dx/www/output/source-build-manifest.json",
+  "source_build_receipt": ".dx/www/output/source-build-receipt.json",
+  "canonical_build_receipt": ".dx/receipts/build/latest.json",
+  "graph_receipt": ".dx/receipts/graph/latest.json",
+  "graph_consumer_snapshot": ".dx/receipts/graph/consumer-snapshot.json",
+  "build_readiness": ".dx/receipts/build/readiness.json",
+  "image_metadata_receipt": ".dx/receipts/build/image-metadata.json",
+  "content_docs_receipt": ".dx/receipts/build/content-docs.json",
+  "installed_binary_smoke_receipt": ".dx/receipts/build/installed-binary-smoke-latest.json",
+  "route_handlers": [],
+  "route_shell_chunks": 2,
+  "source_module_chunks": 2,
+  "style_optimization": {
+    "style_node_count": 3,
+    "original_rule_count": 53,
+    "retained_rule_count": 53,
+    "pruned_rule_count": 0,
+    "minified_style_count": 3,
+    "source_map_count": 3,
+    "source_map_source_count": 5,
+    "source_map_source_hash_count": 5,
+    "source_map_entry_style_source_count": 3,
+    "source_map_flattened_import_source_count": 2,
+    "source_map_retained_import_source_count": 0,
+    "source_map_segment_count": 0,
+    "source_map_exact_segment_map_count": 0,
+    "source_map_evidence_only_count": 3,
+    "source_map_link_count": 3,
+    "source_map_hash_count": 3,
+    "flattened_import_count": 2,
+    "retained_import_count": 0,
+    "asset_reference_count": 0,
+    "entry_style_asset_reference_count": 0,
+    "flattened_import_asset_reference_count": 0,
+    "retained_import_asset_reference_count": 0
+  },
+  "content_pipeline": {
+    "document_count": 0,
+    "mdx_document_count": 0,
+    "hash_manifest": ".dx/receipts/build/content-docs.json#hash_manifest",
+    "consumer_snapshot": ".dx/receipts/build/content-docs.json#consumer_snapshot",
+    "freshness": {
+      "schema": "dx.www.contentDocsFreshnessStatus",
+      "hash_algorithm": "blake3-16",
+      "status": "current-at-build",
+      "comparison": "manifest-self-check",
+      "checked_document_count": 0,
+      "current": true,
+      "stale_paths": [],
+      "missing_paths": [],
+      "unsafe_paths": [],
+      "safe_path_roots": [
+        "docs",
+        "content"
+      ],
+      "unsafe_path_policy": "reject absolute, parent, and non-docs/content receipt paths before hashing source bytes",
+      "runtime_proof": false,
+      "receipt_section": "content-docs.json#freshness_contract",
+      "consumer_action": "compare content-docs hash_manifest.document_hashes against current source bytes and reject unsafe receipt paths before trusting older receipts"
+    },
+    "node_modules_required": false,
+    "runtime_proof": false,
+    "full_mdx_pipeline_parity": false,
+    "status": "source-metadata-only"
+  },
+  "image_pipeline": {
+    "image_asset_count": 3,
+    "metadata_asset_count": 3,
+    "optimized_variant_count": 0,
+    "placeholder_count": 3,
+    "placeholder_artifact_count": 3,
+    "placeholder_artifact_bytes": 515,
+    "placeholder_artifact_outputs": [
+      ".dx/www/output/image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      ".dx/www/output/image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg"
+    ],
+    "route_reference_count": 1,
+    "formats": {
+      "svg": 3
+    },
+    "dimension_sources": {
+      "svg-root-attributes": 3
+    },
+    "status": "metadata-plus-placeholder-artifacts-boundary",
+    "full_pipeline_parity": false
+  },
+  "routes": [
+    {
+      "route": "/forge-proof",
+      "source_path": "app/forge-proof/page.tsx",
+      "html_output": ".dx/www/output/source-routes/forge-proof/index.html",
+      "shell_chunk_output": ".dx/www/output/source-routes/forge-proof/route-shell-7b728e851b8e17b8.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/forge-proof/modules/app-forge-proof-page-tsx-4e475f34b66c9e1f.mjs",
+      "source_module_chunks": [
+        {
+          "source_path": "app/forge-proof/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/forge-proof/modules/app-forge-proof-page-tsx-4e475f34b66c9e1f.mjs",
+          "kind": "tsx",
+          "hash": "4e475f34b66c9e1f"
+        }
+      ],
+      "fallback_hash": "7b728e851b8e17b8"
+    },
+    {
+      "route": "/",
+      "source_path": "app/page.tsx",
+      "html_output": ".dx/www/output/source-routes/root/index.html",
+      "shell_chunk_output": ".dx/www/output/source-routes/root/route-shell-7055611253a5f5db.mjs",
+      "entry_module_chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-d3203b887a53055d.mjs",
+      "source_module_chunks": [
+        {
+          "source_path": "app/page.tsx",
+          "chunk_output": ".dx/www/output/source-routes/root/modules/app-page-tsx-d3203b887a53055d.mjs",
+          "kind": "tsx",
+          "hash": "d3203b887a53055d"
+        }
+      ],
+      "fallback_hash": "7055611253a5f5db"
+    }
+  ],
+  "node_modules_required": false,
+  "next_action": "Wire linked source-module chunks into governed preview/runtime validation before claiming full React hydration."
+}

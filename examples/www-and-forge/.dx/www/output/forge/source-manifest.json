@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "packages": [
+    {
+      "package_id": "www/minimal-starter",
+      "upstream_name": "dx-www/examples/template",
+      "version": "0.1.0",
+      "generator": "dx-forge/local-source",
+      "variant": "default",
+      "source_kind": "local",
+      "integrity_hash": "2b0f4310482ef4807f5dd2b84c387b7ede8c80372a26d07e47e253566ca02440",
+      "license": "MIT",
+      "provenance": {
+        "source": "dx-forge-local-source",
+        "upstream_reference": "dx-www/examples/template",
+        "verified": false,
+        "note": "Local source was tracked by Forge, but no external upstream provenance is claimed."
+      },
+      "advisory_review": {
+        "coverage_kind": "missing",
+        "provider": "none",
+        "live_coverage": false,
+        "finding_count": 0,
+        "note": "Local source packages do not have live advisory coverage attached by Forge yet."
+      },
+      "license_review": {
+        "declared_license": "MIT",
+        "reviewed": false,
+        "note": "License is recorded from the local package declaration only; no formal DX legal review is claimed."
+      },
+      "files": [
+        {
+          "path": "app/page.tsx",
+          "hash": "680091d8e63daf0ea482d9427ae3e804d0661c192f3a940de20a9c046b45b1e8",
+          "bytes": 651
+        },
+        {
+          "path": "app/layout.tsx",
+          "hash": "db55d333539d31c2ad3fde13cfb5f807d71a2d67c0bb212b12693820a18cf66e",
+          "bytes": 381
+        },
+        {
+          "path": "styles/theme.css",
+          "hash": "d1f26f0a95c6a89406bb31b5e7412f065ed1099832c9285f5fd6f0f271ca1e16",
+          "bytes": 549
+        },
+        {
+          "path": "styles/generated.css",
+          "hash": "6453847bf4cd52d2ae841337303c85200ac7d2abb9aa281ee9b04477784353a8",
+          "bytes": 7011
+        },
+        {
+          "path": "styles/globals.css",
+          "hash": "57f00f8d0a8b89778edcdbd85f311477bd4ad315071d0dc69d0a0f83d66c57e0",
+          "bytes": 3640
+        },
+        {
+          "path": "components/icons/icon.tsx",
+          "hash": "1a91cff776d4e0b07e2184af991e0ec43214c222fa04f6c00b17df9c541174b4",
+          "bytes": 475
+        },
+        {
+          "path": "lib/utils.ts",
+          "hash": "f53a1ea0634c2cbfbb6275d9cd6f58503bf519d4b7c0ebe06a3c6375b2cf6dec",
+          "bytes": 196
+        },
+        {
+          "path": "public/logo.svg",
+          "hash": "2afe23f6d7f297ab8563ee05015907d2d0f1903344c7e8b1b483835f0d78ca3b",
+          "bytes": 910
+        },
+        {
+          "path": "public/icon.svg",
+          "hash": "32341047d202fbff170eee4493d889a5c3b79eb377ddeb284da8a0956070c2a4",
+          "bytes": 869
+        },
+        {
+          "path": "public/favicon.svg",
+          "hash": "cfb09e06980b21ac4df558fc791be8cef96c7ab79ab0d8b0eb0d8a95f7c1cd76",
+          "bytes": 874
+        },
+        {
+          "path": "vercel.json",
+          "hash": "feecdba5a814293bb225e931057c2f6eb314a3034479f57b7b1a24edfbc3a081",
+          "bytes": 525
+        },
+        {
+          "path": ".gitignore",
+          "hash": "c7bdb645502d81f18e2ceca7fde809eef64d89d87c29fdf3551bc22d14903d2f",
+          "bytes": 30
+        },
+        {
+          "path": "README.md",
+          "hash": "e9186ba3ff2f440ba8a7526bc90b290205e4c4d108a388d3762315ae2989e819",
+          "bytes": 316
+        }
+      ]
+    },
+    {
+      "package_id": "npm/clsx",
+      "upstream_name": "npm:clsx",
+      "version": "0.0.0-dx-reviewed-adapter",
+      "generator": "dx-forge/npm-reviewed-source-slice",
+      "variant": "default",
+      "source_kind": "npm-snapshot",
+      "integrity_hash": "3a2e4a3073161e6e034c268f77458f0afe57866390089c5246dd1e20c9d076b6",
+      "license": "MIT",
+      "provenance": {
+        "source": "dx-forge-npm-reviewed-source-slice",
+        "upstream_reference": "npm:clsx",
+        "verified": false,
+        "note": "Reviewed npm adapter/source slice; Forge did not run npm install or lifecycle scripts."
+      },
+      "advisory_review": {
+        "coverage_kind": "missing",
+        "provider": "none",
+        "live_coverage": false,
+        "finding_count": 0,
+        "note": "Reviewed npm source slices do not have live advisory coverage attached by Forge yet."
+      },
+      "license_review": {
+        "declared_license": "MIT",
+        "reviewed": false,
+        "note": "License is recorded from reviewed npm metadata only; no formal DX legal review is claimed."
+      },
+      "files": [
+        {
+          "path": "lib/forge/npm/clsx.ts",
+          "hash": "7dc7e7b672f4dcf5e1698fa0b0c5baa8e4d3277855a674b9d8e3905a7428516b",
+          "bytes": 910
+        }
+      ]
+    },
+    {
+      "package_id": "npm/lodash",
+      "upstream_name": "npm:lodash",
+      "version": "source-dir-snapshot",
+      "generator": "dx-forge/npm-external-source-snapshot",
+      "variant": "default",
+      "source_kind": "npm-snapshot",
+      "integrity_hash": "5d72a4d37223281c1722d7182431ac6af3da368c95b0ab14e178b14acfc5ed7d",
+      "license": "unreviewed",
+      "provenance": {
+        "source": "dx-forge-npm-external-source-snapshot",
+        "upstream_reference": "npm:lodash",
+        "verified": false,
+        "note": "External ecosystem source was materialized into Forge-owned files without running package-manager install or lifecycle commands."
+      },
+      "advisory_review": {
+        "coverage_kind": "missing",
+        "provider": "none",
+        "live_coverage": false,
+        "finding_count": 0,
+        "note": "External source snapshots do not have live advisory coverage attached by Forge yet."
+      },
+      "license_review": {
+        "declared_license": "unreviewed",
+        "reviewed": false,
+        "note": "License is recorded from inspected package metadata only; no formal DX legal review is claimed."
+      },
+      "files": [
+        {
+          "path": "lib/forge/npm/lodash/index.ts",
+          "hash": "565fbc5df64ee42526986dada1cbdff50eb8b2d9584f579cb83246f568e77a61",
+          "bytes": 266
+        }
+      ]
+    },
+    {
+      "package_id": "pip/requests",
+      "upstream_name": "pip:requests",
+      "version": "source-dir-snapshot",
+      "generator": "dx-forge/pip-external-source-snapshot",
+      "variant": "default",
+      "source_kind": "external-snapshot",
+      "integrity_hash": "997beb76cefb8f31da1d274fd9ced957843dc7cc1ce2740ddebb8099b8fcb35e",
+      "license": "unreviewed",
+      "provenance": {
+        "source": "dx-forge-pip-external-source-snapshot",
+        "upstream_reference": "pip:requests",
+        "verified": false,
+        "note": "External ecosystem source was materialized into Forge-owned files without running package-manager install or lifecycle commands."
+      },
+      "advisory_review": {
+        "coverage_kind": "missing",
+        "provider": "none",
+        "live_coverage": false,
+        "finding_count": 0,
+        "note": "External source snapshots do not have live advisory coverage attached by Forge yet."
+      },
+      "license_review": {
+        "declared_license": "unreviewed",
+        "reviewed": false,
+        "note": "License is recorded from inspected package metadata only; no formal DX legal review is claimed."
+      },
+      "files": [
+        {
+          "path": "lib/forge/pip/requests/__init__.py",
+          "hash": "c28218c36762c676349c7b49c8e5ef4c3a9db6ac268ae1d55593baf61910cc40",
+          "bytes": 40
+        }
+      ]
+    },
+    {
+      "package_id": "cargo/serde",
+      "upstream_name": "cargo:serde",
+      "version": "source-dir-snapshot",
+      "generator": "dx-forge/cargo-external-source-snapshot",
+      "variant": "default",
+      "source_kind": "external-snapshot",
+      "integrity_hash": "31929f8a37329db617f8f15571fa290a1f4dda8b9a6971d646aab5790056f974",
+      "license": "unreviewed",
+      "provenance": {
+        "source": "dx-forge-cargo-external-source-snapshot",
+        "upstream_reference": "cargo:serde",
+        "verified": false,
+        "note": "External ecosystem source was materialized into Forge-owned files without running package-manager install or lifecycle commands."
+      },
+      "advisory_review": {
+        "coverage_kind": "missing",
+        "provider": "none",
+        "live_coverage": false,
+        "finding_count": 0,
+        "note": "External source snapshots do not have live advisory coverage attached by Forge yet."
+      },
+      "license_review": {
+        "declared_license": "unreviewed",
+        "reviewed": false,
+        "note": "License is recorded from inspected package metadata only; no formal DX legal review is claimed."
+      },
+      "files": [
+        {
+          "path": "lib/forge/cargo/serde/lib.rs",
+          "hash": "2e3929b4783b966821b3ed9c1c4eaaa5fc2101b729af16634aff9db17261f6f5",
+          "bytes": 63
+        }
+      ]
+    },
+    {
+      "package_id": "go/quote",
+      "upstream_name": "go:quote",
+      "version": "source-dir-snapshot",
+      "generator": "dx-forge/go-external-source-snapshot",
+      "variant": "default",
+      "source_kind": "external-snapshot",
+      "integrity_hash": "bf395e8943c63027ef14e39dae4fe36fc5b063ff81c0b451f97995047ebbae46",
+      "license": "unreviewed",
+      "provenance": {
+        "source": "dx-forge-go-external-source-snapshot",
+        "upstream_reference": "go:quote",
+        "verified": false,
+        "note": "External ecosystem source was materialized into Forge-owned files without running package-manager install or lifecycle commands."
+      },
+      "advisory_review": {
+        "coverage_kind": "missing",
+        "provider": "none",
+        "live_coverage": false,
+        "finding_count": 0,
+        "note": "External source snapshots do not have live advisory coverage attached by Forge yet."
+      },
+      "license_review": {
+        "declared_license": "unreviewed",
+        "reviewed": false,
+        "note": "License is recorded from inspected package metadata only; no formal DX legal review is claimed."
+      },
+      "files": [
+        {
+          "path": "lib/forge/go/quote/main.go",
+          "hash": "bd30c40b6523f37051f3a0b8a0c993e6cc5acb1c9ee51be61dc70c5021fe3264",
+          "bytes": 61
+        }
+      ]
+    }
+  ],
+  "receipts": [
+    "20260607T174853375646100Z-www-minimal-starter.json",
+    "20260607T174853445371200Z-www-minimal-starter.json",
+    "20260607T174905841668300Z-npm-clsx.json",
+    "20260607T214045680087200Z-npm-lodash.json",
+    "20260607T220958619944400Z-pip-requests.json",
+    "20260607T220958713115300Z-cargo-serde.json",
+    "20260607T220958824867000Z-go-quote.json",
+    "20260607T221112209576300Z-npm-lodash.json",
+    "20260607T221112301950600Z-pip-requests.json",
+    "20260607T221112398568600Z-cargo-serde.json",
+    "20260607T221112507703700Z-go-quote.json",
+    "20260607T221129703560500Z-npm-lodash.json",
+    "20260607T221129838625800Z-pip-requests.json",
+    "20260607T221129951136400Z-cargo-serde.json",
+    "20260607T221130167009500Z-go-quote.json"
+  ]
+}

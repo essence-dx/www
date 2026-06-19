@@ -1,0 +1,38 @@
+{
+  "schema": "dx.forge.primitive_package",
+  "dependency_kind": "source-owned-forge-primitives",
+  "routes": [
+    "/ui",
+    "/database",
+    "/backend"
+  ],
+  "primitives": [
+    "cn",
+    "slot",
+    "theme-provider",
+    "button",
+    "input",
+    "badge",
+    "card",
+    "table",
+    "tabs",
+    "dialog",
+    "dropdown",
+    "sidebar"
+  ],
+  "replaced_runtime_packages": [
+    "@radix-ui/react-slot",
+    "@radix-ui/react-tabs",
+    "@radix-ui/react-dialog",
+    "@radix-ui/react-dropdown-menu",
+    "class-variance-authority",
+    "clsx",
+    "tailwind-merge",
+    "next-themes"
+  ],
+  "source_boundaries": [
+    "Small primitives are source-owned TypeScript recipes and do not require node_modules.",
+    "Interactive state machines remain launch shims until DX-WWW runtime approval.",
+    "The files are proof-layer primitives, not a claim of full Radix or shadcn runtime parity."
+  ]
+}

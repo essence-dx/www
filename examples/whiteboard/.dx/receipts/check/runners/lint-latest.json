@@ -1,0 +1,14 @@
+{
+  "schema_version": "dx.check.runner.v1",
+  "id": "lint",
+  "status": "blocked",
+  "command": "npm run lint",
+  "command_identity": "package.json:scripts.lint",
+  "configured_from": "package.json",
+  "runs_by_default": false,
+  "duration_ms": 0,
+  "blocked_reason": "`package.json` does not define an approved `lint` script",
+  "receipt_path": "G:\\Dx\\www\\examples\\whiteboard\\.dx\\receipts\\check\\runners\\lint-latest.json",
+  "snapshot_path": "G:\\Dx\\www\\examples\\whiteboard\\.dx\\receipts\\check\\runners\\lint-1780421597329.json",
+  "next_action": "Add `scripts.lint` to package.json or configure a future dx-check runner command."
+}

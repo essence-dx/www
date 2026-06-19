@@ -1,0 +1,110 @@
+.dx-mobile-pairing-form,
+.dx-mobile-message-form {
+  display: grid;
+  gap: 14px;
+}
+
+.dx-mobile-pairing-form {
+  grid-template-columns: minmax(0, 1fr) minmax(120px, 0.34fr) minmax(120px, 0.34fr);
+}
+
+.companion-field {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.companion-field-wide,
+.companion-actions,
+.companion-message-field {
+  grid-column: 1 / -1;
+}
+
+.companion-field span {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.companion-field input,
+.companion-field textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(0 0% 3%);
+  color: hsl(var(--foreground));
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  outline: none;
+}
+
+.companion-field input {
+  height: 44px;
+  padding: 0 12px;
+}
+
+.companion-field textarea {
+  min-height: 94px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.companion-field input:focus,
+.companion-field textarea:focus {
+  border-color: hsl(var(--ring));
+  box-shadow: 0 0 0 3px hsl(var(--ring) / 0.16);
+}
+
+.companion-field input::placeholder,
+.companion-field textarea::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+.companion-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr);
+  gap: 10px;
+}
+
+.companion-primary-action,
+.companion-secondary-action,
+.companion-forget-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.companion-primary-action {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+
+.companion-secondary-action {
+  background: transparent;
+  color: hsl(var(--foreground));
+}
+
+.companion-forget-action {
+  width: 100%;
+  margin-top: 8px;
+  background: hsl(var(--surface));
+  color: hsl(var(--muted-foreground));
+}
+
+.companion-primary-action:disabled,
+.companion-primary-action[aria-disabled="true"],
+.companion-secondary-action:disabled,
+.companion-secondary-action[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.56;
+}

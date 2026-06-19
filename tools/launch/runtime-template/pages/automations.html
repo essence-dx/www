@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DX Automations</title>
+    <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+  </head>
+  <body>
+    <main
+      class="route-shell"
+      data-dx-route="/automations"
+      data-dx-source="tools/launch/runtime-template/pages/automations.html"
+      data-dx-package="automations/n8n"
+      data-dx-hot-reload-target="route:/automations"
+    >
+      <div class="dx-icon-runtime-markers" data-dx-component="dx-icon-runtime-markers" data-dx-icon-proof="runtime-markers" aria-hidden="true">
+        <span data-dx-icon="pack:auth" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:payments" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:database" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:fumadocs" data-icon-source="dx-icons"></span>
+        <span data-dx-icon="pack:wasm-bindgen" data-icon-source="dx-icons"></span>
+      </div>
+
+      <header class="topbar">
+        <a class="brand" href="/"><span class="logo">d</span><span>DX WWW</span></a>
+        <nav class="nav" aria-label="WWW routes">
+          <a href="/">Home</a>
+          <a href="/ui">UI</a>
+          <a href="/database">Database</a>
+          <a href="/backend">Backend</a>
+        </nav>
+      </header>
+      <section class="route-hero card" data-dx-editable-section="automations-hero">
+        <p class="eyebrow">N8N bridge</p>
+        <h1>Automations are route-owned, not hidden jobs.</h1>
+        <p class="lead">
+          The template exposes every automation as a source-owned connector
+          contract with safe missing-credential states.
+        </p>
+      </section>
+      <section class="grid" data-dx-section="automations-grid">
+        <article class="route-card" data-dx-component="n8n-lead-capture" data-dx-automation="lead-capture">
+          <h2>Lead capture</h2>
+          <p>Webhook boundary for product launch signups. Secrets remain in app env.</p>
+          <span class="pill">ready for credentials</span>
+        </article>
+        <article class="route-card" data-dx-component="n8n-launch-digest" data-dx-automation="launch-digest">
+          <h2>Launch digest</h2>
+          <p>Daily digest contract for package readiness, route QA, and Studio edits.</p>
+          <span class="pill">source-owned schedule</span>
+        </article>
+        <article class="route-card" data-dx-component="n8n-forge-readiness" data-dx-automation="forge-readiness">
+          <h2>Forge readiness</h2>
+          <p>Bridge that receives package readiness events without package lifecycle scripts.</p>
+          <span class="pill">no node_modules required</span>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

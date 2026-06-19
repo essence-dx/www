@@ -1,0 +1,39 @@
+.template-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+
+.template-panel {
+  width: min(720px, 100%);
+  border: 1px solid var(--dx-border);
+  border-radius: 8px;
+  background: var(--dx-panel);
+  padding: 32px;
+}
+
+.template-eyebrow {
+  margin: 0 0 12px;
+  color: var(--dx-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+.template-panel h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
+}
+
+.template-panel p {
+  line-height: 1.6;
+}
+
+.template-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--dx-accent);
+  border-radius: 4px;
+}

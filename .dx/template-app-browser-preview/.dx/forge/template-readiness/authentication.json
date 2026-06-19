@@ -1,0 +1,55 @@
+{
+  "schema": "dx.forge.template_readiness.package",
+  "package_id": "auth/better-auth",
+  "official_package_name": "Authentication",
+  "upstream_package": "better-auth",
+  "upstream_version": "1.6.11",
+  "classification": "lock-backed-adapter-boundary",
+  "runtime_proof": false,
+  "live_oauth_execution": false,
+  "live_session_execution": false,
+  "secret_access": false,
+  "readiness_route": "/api/auth/readiness",
+  "app_route_handler": "app/api/auth/[...all]/route.ts",
+  "server_boundary": "server/auth/better-auth.ts",
+  "selected_provider_surfaces": [
+    "google-oauth"
+  ],
+  "required_env": [
+    "BETTER_AUTH_SECRET",
+    "BETTER_AUTH_URL",
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET"
+  ],
+  "blocked_until_configured": [
+    "Better Auth secret",
+    "trusted base URL",
+    "Google OAuth client id and client secret",
+    "Google OAuth callback URL",
+    "database adapter",
+    "durable session storage",
+    "production cookie policy",
+    "email delivery and account recovery policy"
+  ],
+  "source_owned_surfaces": [
+    "auth/better-auth/*",
+    "auth/better-auth/providers/google/*",
+    "app/api/auth/[...all]/route.ts",
+    "app/api/auth/readiness/route.ts",
+    "server/auth/better-auth.ts",
+    "components/template-app/auth-pages.tsx",
+    "components/template-app/dashboard-page.tsx"
+  ],
+  "template_usage": [
+    "login page missing-config gate",
+    "logout page local session clear surface",
+    "session panel readiness state",
+    "profile gate state",
+    "readiness route for env and adapter boundaries"
+  ],
+  "honesty_notes": [
+    "The default template owns editable Authentication source and selected Google provider surfaces.",
+    "This receipt is not live OAuth, cookie, database, email, or hosted session proof.",
+    "Apps must provide real credentials and a Better Auth database adapter before enabling route handlers for production sessions."
+  ]
+}

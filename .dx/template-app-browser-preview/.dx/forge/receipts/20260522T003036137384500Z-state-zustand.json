@@ -1,0 +1,297 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "state/zustand",
+    "upstream_name": "zustand",
+    "version": "5.0.13-dx.10",
+    "generator": "dx-forge/zustand",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "14ec5624cf621aa03f97e00a6de6f8ceccb5dddc1dc6db60c2eb1199ae21e787",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "npm:zustand@5.0.13",
+      "verified": false,
+      "note": "DX inspected the local Zustand source mirror, package export map, vanilla store, React hook, subscribeWithSelector, combine, persist, immer middleware, and shallow helpers before curating this launch state slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this Zustand-compatible launch state slice, but it is not a live advisory feed and does not audit application persistence keys, browser storage policy, optional Immer dependency review, draft mutation conventions, or sensitive state handling."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/forge/state/zustand/index.ts",
+        "logical_path": "js/state/zustand/index.ts",
+        "hash": "5818ee9ecf59cd4ab149d4ddf18f2691290a602b80a769134f63992c5ca5bbd1",
+        "bytes": 248
+      },
+      {
+        "path": "lib/forge/state/zustand/vanilla.ts",
+        "logical_path": "js/state/zustand/vanilla.ts",
+        "hash": "05efb3fd47acdba0252adf1f5135895fe97d75d2b59301158fd0f4009d27aafb",
+        "bytes": 3319
+      },
+      {
+        "path": "lib/forge/state/zustand/react.ts",
+        "logical_path": "js/state/zustand/react.ts",
+        "hash": "adab8fd89808248e48f6f48607784a4ad6bed1b99d3fe13ad28fccb3d9d3090c",
+        "bytes": 2177
+      },
+      {
+        "path": "lib/forge/state/zustand/traditional.ts",
+        "logical_path": "js/state/zustand/traditional.ts",
+        "hash": "fcfab94761dbe278a4d01af1c86cf4c3cf25394548acec0d9533e7a8e304c23f",
+        "bytes": 3493
+      },
+      {
+        "path": "lib/forge/state/zustand/middleware.ts",
+        "logical_path": "js/state/zustand/middleware.ts",
+        "hash": "e0697210819526df9b4b6d02d3c41628c2b91ba5f1045e524d8b556685f6137e",
+        "bytes": 3467
+      },
+      {
+        "path": "lib/forge/state/zustand/devtools.ts",
+        "logical_path": "js/state/zustand/devtools.ts",
+        "hash": "1267deb1c0aea44dbb3f0c11029e5a1e21def0b6c710c4b117587b31e18a9bf3",
+        "bytes": 4550
+      },
+      {
+        "path": "lib/forge/state/zustand/immer.ts",
+        "logical_path": "js/state/zustand/immer.ts",
+        "hash": "c1637bd6dc277d5b1ab249488f260aac727eee8c29633ceaf61018d051562a1e",
+        "bytes": 1689
+      },
+      {
+        "path": "lib/forge/state/zustand/redux.ts",
+        "logical_path": "js/state/zustand/redux.ts",
+        "hash": "f431f2ec707874d0936b21ddf1b79759353a93f58ba8cff06c5026603c7b5f41",
+        "bytes": 1079
+      },
+      {
+        "path": "lib/forge/state/zustand/ssr-safe.ts",
+        "logical_path": "js/state/zustand/ssr-safe.ts",
+        "hash": "58d7eb27f737bd4456f8ffc0d8a3e9f05aaec35f443a8af6954d978214bf58d7",
+        "bytes": 570
+      },
+      {
+        "path": "lib/forge/state/zustand/shallow.ts",
+        "logical_path": "js/state/zustand/shallow.ts",
+        "hash": "088cde223d05215bcb9035579c22f4912f5d0d72ac56048b3bd702e8bdbe41b4",
+        "bytes": 1356
+      },
+      {
+        "path": "lib/forge/state/zustand/persist.ts",
+        "logical_path": "js/state/zustand/persist.ts",
+        "hash": "e09b7f2bae1694b4d34ab7cc3088f30e5696dea50f59f3425e808aa67d54e3d2",
+        "bytes": 6754
+      },
+      {
+        "path": "lib/forge/state/zustand/metadata.ts",
+        "logical_path": "js/state/zustand/metadata.ts",
+        "hash": "cab4aa59b0746742235c8ebe379a29fbcd5a09a0eb5d03c3384105e06bb5d64c",
+        "bytes": 6196
+      },
+      {
+        "path": "lib/forge/state/zustand/README.md",
+        "logical_path": "js/state/zustand/README.md",
+        "hash": "d2fd27859f3d37305970eb423222491030f31b4b029f830efd1622a34414ce14",
+        "bytes": 8036
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "lib/forge/state/zustand/index.ts",
+      "logical_path": "js/state/zustand/index.ts",
+      "hash": "5818ee9ecf59cd4ab149d4ddf18f2691290a602b80a769134f63992c5ca5bbd1",
+      "bytes": 248
+    },
+    {
+      "path": "lib/forge/state/zustand/vanilla.ts",
+      "logical_path": "js/state/zustand/vanilla.ts",
+      "hash": "05efb3fd47acdba0252adf1f5135895fe97d75d2b59301158fd0f4009d27aafb",
+      "bytes": 3319
+    },
+    {
+      "path": "lib/forge/state/zustand/react.ts",
+      "logical_path": "js/state/zustand/react.ts",
+      "hash": "adab8fd89808248e48f6f48607784a4ad6bed1b99d3fe13ad28fccb3d9d3090c",
+      "bytes": 2177
+    },
+    {
+      "path": "lib/forge/state/zustand/traditional.ts",
+      "logical_path": "js/state/zustand/traditional.ts",
+      "hash": "fcfab94761dbe278a4d01af1c86cf4c3cf25394548acec0d9533e7a8e304c23f",
+      "bytes": 3493
+    },
+    {
+      "path": "lib/forge/state/zustand/middleware.ts",
+      "logical_path": "js/state/zustand/middleware.ts",
+      "hash": "e0697210819526df9b4b6d02d3c41628c2b91ba5f1045e524d8b556685f6137e",
+      "bytes": 3467
+    },
+    {
+      "path": "lib/forge/state/zustand/devtools.ts",
+      "logical_path": "js/state/zustand/devtools.ts",
+      "hash": "1267deb1c0aea44dbb3f0c11029e5a1e21def0b6c710c4b117587b31e18a9bf3",
+      "bytes": 4550
+    },
+    {
+      "path": "lib/forge/state/zustand/immer.ts",
+      "logical_path": "js/state/zustand/immer.ts",
+      "hash": "c1637bd6dc277d5b1ab249488f260aac727eee8c29633ceaf61018d051562a1e",
+      "bytes": 1689
+    },
+    {
+      "path": "lib/forge/state/zustand/redux.ts",
+      "logical_path": "js/state/zustand/redux.ts",
+      "hash": "f431f2ec707874d0936b21ddf1b79759353a93f58ba8cff06c5026603c7b5f41",
+      "bytes": 1079
+    },
+    {
+      "path": "lib/forge/state/zustand/ssr-safe.ts",
+      "logical_path": "js/state/zustand/ssr-safe.ts",
+      "hash": "58d7eb27f737bd4456f8ffc0d8a3e9f05aaec35f443a8af6954d978214bf58d7",
+      "bytes": 570
+    },
+    {
+      "path": "lib/forge/state/zustand/shallow.ts",
+      "logical_path": "js/state/zustand/shallow.ts",
+      "hash": "088cde223d05215bcb9035579c22f4912f5d0d72ac56048b3bd702e8bdbe41b4",
+      "bytes": 1356
+    },
+    {
+      "path": "lib/forge/state/zustand/persist.ts",
+      "logical_path": "js/state/zustand/persist.ts",
+      "hash": "e09b7f2bae1694b4d34ab7cc3088f30e5696dea50f59f3425e808aa67d54e3d2",
+      "bytes": 6754
+    },
+    {
+      "path": "lib/forge/state/zustand/metadata.ts",
+      "logical_path": "js/state/zustand/metadata.ts",
+      "hash": "cab4aa59b0746742235c8ebe379a29fbcd5a09a0eb5d03c3384105e06bb5d64c",
+      "bytes": 6196
+    },
+    {
+      "path": "lib/forge/state/zustand/README.md",
+      "logical_path": "js/state/zustand/README.md",
+      "hash": "d2fd27859f3d37305970eb423222491030f31b4b029f830efd1622a34414ce14",
+      "bytes": 8036
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/state/zustand/index.ts",
+      "materialized_path": "lib/forge/state/zustand/index.ts",
+      "hash": "5818ee9ecf59cd4ab149d4ddf18f2691290a602b80a769134f63992c5ca5bbd1",
+      "bytes": 248
+    },
+    {
+      "logical_path": "js/state/zustand/vanilla.ts",
+      "materialized_path": "lib/forge/state/zustand/vanilla.ts",
+      "hash": "05efb3fd47acdba0252adf1f5135895fe97d75d2b59301158fd0f4009d27aafb",
+      "bytes": 3319
+    },
+    {
+      "logical_path": "js/state/zustand/react.ts",
+      "materialized_path": "lib/forge/state/zustand/react.ts",
+      "hash": "adab8fd89808248e48f6f48607784a4ad6bed1b99d3fe13ad28fccb3d9d3090c",
+      "bytes": 2177
+    },
+    {
+      "logical_path": "js/state/zustand/traditional.ts",
+      "materialized_path": "lib/forge/state/zustand/traditional.ts",
+      "hash": "fcfab94761dbe278a4d01af1c86cf4c3cf25394548acec0d9533e7a8e304c23f",
+      "bytes": 3493
+    },
+    {
+      "logical_path": "js/state/zustand/middleware.ts",
+      "materialized_path": "lib/forge/state/zustand/middleware.ts",
+      "hash": "e0697210819526df9b4b6d02d3c41628c2b91ba5f1045e524d8b556685f6137e",
+      "bytes": 3467
+    },
+    {
+      "logical_path": "js/state/zustand/devtools.ts",
+      "materialized_path": "lib/forge/state/zustand/devtools.ts",
+      "hash": "1267deb1c0aea44dbb3f0c11029e5a1e21def0b6c710c4b117587b31e18a9bf3",
+      "bytes": 4550
+    },
+    {
+      "logical_path": "js/state/zustand/immer.ts",
+      "materialized_path": "lib/forge/state/zustand/immer.ts",
+      "hash": "c1637bd6dc277d5b1ab249488f260aac727eee8c29633ceaf61018d051562a1e",
+      "bytes": 1689
+    },
+    {
+      "logical_path": "js/state/zustand/redux.ts",
+      "materialized_path": "lib/forge/state/zustand/redux.ts",
+      "hash": "f431f2ec707874d0936b21ddf1b79759353a93f58ba8cff06c5026603c7b5f41",
+      "bytes": 1079
+    },
+    {
+      "logical_path": "js/state/zustand/ssr-safe.ts",
+      "materialized_path": "lib/forge/state/zustand/ssr-safe.ts",
+      "hash": "58d7eb27f737bd4456f8ffc0d8a3e9f05aaec35f443a8af6954d978214bf58d7",
+      "bytes": 570
+    },
+    {
+      "logical_path": "js/state/zustand/shallow.ts",
+      "materialized_path": "lib/forge/state/zustand/shallow.ts",
+      "hash": "088cde223d05215bcb9035579c22f4912f5d0d72ac56048b3bd702e8bdbe41b4",
+      "bytes": 1356
+    },
+    {
+      "logical_path": "js/state/zustand/persist.ts",
+      "materialized_path": "lib/forge/state/zustand/persist.ts",
+      "hash": "e09b7f2bae1694b4d34ab7cc3088f30e5696dea50f59f3425e808aa67d54e3d2",
+      "bytes": 6754
+    },
+    {
+      "logical_path": "js/state/zustand/metadata.ts",
+      "materialized_path": "lib/forge/state/zustand/metadata.ts",
+      "hash": "cab4aa59b0746742235c8ebe379a29fbcd5a09a0eb5d03c3384105e06bb5d64c",
+      "bytes": 6196
+    },
+    {
+      "logical_path": "js/state/zustand/README.md",
+      "materialized_path": "lib/forge/state/zustand/README.md",
+      "hash": "d2fd27859f3d37305970eb423222491030f31b4b029f830efd1622a34414ce14",
+      "bytes": 8036
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `MIT` with formal review `no`."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-05-22T00:30:36.136743100+00:00",
+  "signature": null
+}

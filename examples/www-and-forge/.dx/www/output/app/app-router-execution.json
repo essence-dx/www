@@ -1,0 +1,2303 @@
+{
+  "version": 1,
+  "route": "/",
+  "source_path": "app/page.tsx",
+  "source_path_from_cwd": "app/page.tsx",
+  "runtime": "source-owned-app-router",
+  "compiler_owns_runtime": true,
+  "runtime_boundary": {
+    "source_owned": true,
+    "external_runtime_required": false,
+    "external_runtime_executed": false
+  },
+  "source_owned_files": true,
+  "node_modules_required": false,
+  "node_modules_present": false,
+  "route_groups": [],
+  "visible_segments": [],
+  "dynamic_segments": [],
+  "page_props": {
+    "params": [],
+    "search_params": []
+  },
+  "metadata_sources": [
+    {
+      "source_path": "app/page.tsx",
+      "source_kind": "metadata",
+      "mode": "safe-static-metadata-literal-object",
+      "title": "Enhanced Development Experience",
+      "title_kind": "literal",
+      "title_default": null,
+      "title_template": null,
+      "title_absolute": null,
+      "description": "Orchestrate your code, don't just own it.",
+      "canonical": null,
+      "openGraph": null,
+      "node_modules_required": false,
+      "source_owned_metadata": true,
+      "source_owned_title_template": false,
+      "source_owned_title_absolute": false,
+      "source_owned_open_graph_metadata": false,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "full_next_title_runtime": false,
+      "full_next_open_graph_runtime": false
+    }
+  ],
+  "effective_metadata": {
+    "title": "Enhanced Development Experience",
+    "description": "Orchestrate your code, don't just own it.",
+    "canonical": null,
+    "title_template": null,
+    "title_absolute": null,
+    "openGraph": null,
+    "viewport": null,
+    "source_owned_metadata_merge": true,
+    "source_owned_title_template": false,
+    "source_owned_title_absolute": false,
+    "source_owned_open_graph_metadata": true,
+    "source_owned_viewport_metadata": true,
+    "metadata_merge_precedence": "segment-order-parent-to-leaf",
+    "source_count": 1,
+    "merged_source_paths": [
+      "app/page.tsx"
+    ],
+    "open_graph_field_sources": null,
+    "viewport_field_sources": null,
+    "field_sources": {
+      "title": "app/page.tsx",
+      "title_template": null,
+      "title_absolute": null,
+      "description": "app/page.tsx",
+      "canonical": null,
+      "openGraph": null,
+      "viewport": null
+    },
+    "node_modules_required": false,
+    "external_runtime_required": false,
+    "external_runtime_executed": false,
+    "full_next_metadata_runtime": false,
+    "full_next_title_runtime": false,
+    "full_next_open_graph_runtime": false,
+    "full_next_viewport_runtime": false,
+    "limits": [
+      "Merges safe layout, template, and page metadata fields in App Router segment order.",
+      "Applies safe title.default and title.template metadata without executing the Next.js metadata runtime.",
+      "Carries safe title.absolute as an explicit template-bypassing title source.",
+      "Reads safe openGraph title, description, url, siteName, and images fields.",
+      "Reads safe viewport width, height, themeColor, colorScheme, interactiveWidget, scale, and userScalable fields.",
+      "Leaf fields override parent fields only when the leaf field is statically resolved.",
+      "Does not execute dynamic metadata, streaming metadata, parent ResolvingMetadata, image object expansion, cookies, headers, or the Next.js runtime."
+    ]
+  },
+  "metadata_head": {
+    "status": "source-owned-head-tags-ready",
+    "tags": "<title data-dx-metadata=\"title\">Enhanced Development Experience</title><meta name=\"description\" content=\"Orchestrate your code, don't just own it.\" data-dx-metadata=\"description\" />",
+    "tag_count": 2,
+    "source_owned_head_tags": true,
+    "node_modules_required": false,
+    "external_runtime_required": false,
+    "external_runtime_executed": false,
+    "full_next_head_runtime": false,
+    "limits": [
+      "Emits bounded title, description, canonical, openGraph, and viewport tags from source-owned metadata extraction.",
+      "Does not execute Next.js head manager, Metadata API streaming, resource hints, dynamic image generation, cookies, headers, or external runtime code."
+    ]
+  },
+  "next_navigation_control_flow": {
+    "schema": "dx.next.appRouterControlFlow",
+    "schema_revision": 1,
+    "source_path": "app/page.tsx",
+    "status": "no-next-navigation-control-flow",
+    "upstream": {
+      "source_mirror": "G:/WWW/inspirations/nextjs",
+      "remote": "https://github.com/vercel/next.js.git",
+      "commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+      "license": "MIT License",
+      "files": [
+        "packages/next/src/client/components/redirect.ts",
+        "packages/next/src/client/components/redirect-error.ts",
+        "packages/next/src/client/components/not-found.ts",
+        "packages/next/src/client/components/http-access-fallback/http-access-fallback.ts"
+      ]
+    },
+    "uses_next_navigation": false,
+    "helpers": [
+      "redirect()",
+      "permanentRedirect()",
+      "notFound()"
+    ],
+    "redirect_type_arguments": [
+      "\"push\"",
+      "\"replace\"",
+      "RedirectType.push",
+      "RedirectType.replace"
+    ],
+    "helper_imports": {
+      "redirect": [],
+      "permanentRedirect": [],
+      "notFound": [],
+      "RedirectType": [],
+      "namespaces": []
+    },
+    "redirect": null,
+    "diagnostic_count": 0,
+    "diagnostics": [],
+    "not_found": {
+      "detected": false,
+      "helper": "notFound()",
+      "local_helpers": [],
+      "digest": "NEXT_HTTP_ERROR_FALLBACK;404",
+      "status_code": 404,
+      "head_hint": null
+    },
+    "node_modules_required": false,
+    "source_owned_control_flow": true,
+    "external_runtime_required": false,
+    "external_runtime_executed": false,
+    "limits": [
+      "Mirrors Next.js navigation helper names and sentinel digest semantics for source-owned App Router pages.",
+      "Emits server-component-style head hints for safe literal redirect/notFound calls.",
+      "Does not execute arbitrary component imports or throw/catch Next.js runtime errors through React.",
+      "Does not set the actual HTTP status for App Router page rendering yet."
+    ]
+  },
+  "next_custom_transform_receipt": {
+    "schema": "dx.next.customTransformReceipt",
+    "schema_revision": 1,
+    "contract_name": "Next Custom Transforms Compatibility Receipt",
+    "status": "next-custom-transform-surfaces-detected",
+    "adapter": {
+      "name": "next-custom-transforms-adapter",
+      "contract": "adapter-boundary-contract",
+      "mode": "source-owned-detection-only",
+      "runtime_takeover": false,
+      "react_required": false,
+      "rsc_required": false,
+      "node_required": false,
+      "swc_transform_execution": false
+    },
+    "upstream": {
+      "project": "vercel/next.js",
+      "commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+      "vendor_root": "vendor/next-rust/crates/next-custom-transforms",
+      "license": "MIT License via vendor/next-rust/license.nextjs.md",
+      "inspected_files": [
+        "src/transforms/react_server_components.rs",
+        "src/transforms/server_actions.rs",
+        "src/transforms/page_config.rs",
+        "src/transforms/dynamic.rs",
+        "src/transforms/track_dynamic_imports.rs",
+        "src/transforms/fonts/font_functions_collector.rs"
+      ]
+    },
+    "runtime_generation": {
+      "runtime_generation_contract": "source-receipt-only",
+      "runtime_generation_surface_counts": {
+        "rsc_boundaries": 1,
+        "server_actions": 0,
+        "dynamic_imports": 0,
+        "font_loaders": 0
+      },
+      "detected_generation_attempts": {
+        "next_proxy_generated": 0,
+        "rsc_runtime_proxy_generated": 0,
+        "font_css_import_generated": 0,
+        "dynamic_loadable_generated": 0
+      },
+      "runtime_generation_detected": false,
+      "source_rewrite_performed": false,
+      "next_proxy_generated": false,
+      "rsc_runtime_proxy_generated": false,
+      "font_css_import_generated": false,
+      "dynamic_loadable_generated": false,
+      "swc_transform_execution": false
+    },
+    "counts": {
+      "sources": 2,
+      "rsc_boundaries": 1,
+      "server_actions": 0,
+      "page_config_exports": 0,
+      "dynamic_imports": 0,
+      "font_loaders": 0,
+      "metadata_exports": 1,
+      "conflicts": 0
+    },
+    "rsc_boundaries": [
+      {
+        "source_path": "app/page.tsx",
+        "kind": "page",
+        "directives": [],
+        "use_client": false,
+        "use_server": false,
+        "use_cache": false,
+        "cache_directives": [],
+        "client_entry": false,
+        "server_action_file": false,
+        "client_boundary_needed": false,
+        "metadata_export_in_client": false,
+        "metadata_export_names": [
+          "metadata"
+        ],
+        "metadata_export_count": 1,
+        "error_file_requires_client": false,
+        "hook_or_event_boundary": false,
+        "client_entry_reasons": [],
+        "source_owned_boundary": true,
+        "runtime_proxy_generated": false
+      }
+    ],
+    "server_actions": [],
+    "page_config_exports": [],
+    "dynamic_imports": [],
+    "font_loaders": [],
+    "metadata_exports": [
+      {
+        "source_path": "app/page.tsx",
+        "kind": "page",
+        "static_metadata": true,
+        "generate_metadata": false,
+        "metadata_conflict": false,
+        "static_viewport": false,
+        "generate_viewport": false,
+        "viewport_conflict": false,
+        "parsed_static_metadata": {
+          "title": "Enhanced Development Experience",
+          "description": "Orchestrate your code, don't just own it.",
+          "canonical": null
+        },
+        "static_metadata_value_source": "{\n  title: \"Enhanced Development Experience\",\n  description: \"Orchestrate your code, don't just own it.\",\n} as const",
+        "static_metadata_value_kind": "object-literal",
+        "generate_metadata_return_source": null,
+        "generate_metadata_return_kind": null,
+        "static_viewport_value_source": null,
+        "static_viewport_value_kind": null,
+        "generate_viewport_return_source": null,
+        "generate_viewport_return_kind": null,
+        "exports": [
+          {
+            "name": "metadata",
+            "export_kind": "const",
+            "async_export": false,
+            "value_source": "{\n  title: \"Enhanced Development Experience\",\n  description: \"Orchestrate your code, don't just own it.\",\n} as const",
+            "value_kind": "object-literal",
+            "compatibility_issue": null
+          }
+        ],
+        "compatibility_issues": [],
+        "source_owned_detection": true,
+        "server_component_only_enforced": false
+      }
+    ],
+    "conflicts": [],
+    "node_modules_required": false,
+    "full_nextjs_runtime_parity": false,
+    "source_owned_receipt": true,
+    "contract_booleans": {
+      "node_modules_required": false,
+      "full_nextjs_runtime_parity": false,
+      "source_owned_receipt": true,
+      "does_not_claim_nextjs_parity": true,
+      "does_not_require_react_or_rsc": true,
+      "does_not_require_node_modules": true
+    },
+    "limits": [
+      "Records selected next-custom-transforms semantics as DX-owned receipts only.",
+      "Does not execute the vendored SWC transforms or rewrite source through Next.js runtime code.",
+      "Does not make React, RSC, Node, NAPI, or next-core the DX-WWW foundation.",
+      "Flags Next-familiar authoring surfaces so Forge, dx-check, Studio, and Zed can decide later adapter work explicitly."
+    ]
+  },
+  "layouts": [
+    {
+      "kind": "layout",
+      "source_path": "app/layout.tsx",
+      "depth": 0
+    }
+  ],
+  "templates": [],
+  "composition_chain": [
+    {
+      "kind": "layout",
+      "source_path": "app/layout.tsx",
+      "depth": 0
+    }
+  ],
+  "boundaries": {
+    "loading": [],
+    "error": [],
+    "not_found": []
+  },
+  "tsx_semantics": {
+    "schema": "dx.tsx.appRouterSemantics",
+    "schema_revision": 1,
+    "contract_name": "App Router Semantics",
+    "public_authoring": "tsx",
+    "react_compatibility_claim": "react-familiar-compiler-owned",
+    "full_react_runtime_parity": false,
+    "composition_chain": [
+      {
+        "kind": "layout",
+        "source_path": "app/layout.tsx",
+        "accepts_children": true,
+        "default_export": true
+      },
+      {
+        "kind": "page",
+        "source_path": "app/page.tsx",
+        "accepts_children": false,
+        "default_export": true
+      }
+    ],
+    "source_summaries": [
+      {
+        "kind": "layout",
+        "source_path": "app/layout.tsx",
+        "use_client": false,
+        "use_server": false,
+        "default_export": true,
+        "accepts_children": true,
+        "uses_params": false,
+        "uses_search_params": false,
+        "hook_count": 0,
+        "hooks": [],
+        "hook_support": [],
+        "event_handler_count": 0,
+        "event_handlers": [],
+        "event_support": [],
+        "client_boundary_needed": false
+      },
+      {
+        "kind": "page",
+        "source_path": "app/page.tsx",
+        "use_client": false,
+        "use_server": false,
+        "default_export": true,
+        "accepts_children": false,
+        "uses_params": false,
+        "uses_search_params": false,
+        "hook_count": 0,
+        "hooks": [],
+        "hook_support": [],
+        "event_handler_count": 0,
+        "event_handlers": [],
+        "event_support": [],
+        "client_boundary_needed": false
+      }
+    ],
+    "import_graph": [
+      {
+        "source_path": "app/layout.tsx",
+        "specifier": "../styles/globals.css",
+        "kind": "local",
+        "source_owned": true
+      },
+      {
+        "source_path": "app/page.tsx",
+        "specifier": "lodash",
+        "kind": "external",
+        "source_owned": false
+      }
+    ],
+    "hooks_detected": [],
+    "event_handlers_detected": [],
+    "react_event_support": {
+      "schema": "dx.tsx.reactEventSupport",
+      "schema_revision": 1,
+      "contract_name": "React-Style Native Event Support",
+      "native_dom_events_direct": true,
+      "react_synthetic_events": false,
+      "unsupported_count": 0,
+      "findings": [],
+      "policy": [
+        "React-style onClick/onInput authoring lowers to native addEventListener names when the event exists in the DX native DOM event catalog.",
+        "Unsupported onX attributes are diagnostics, not silent drops or synthetic React parity claims."
+      ]
+    },
+    "client_boundaries": {
+      "count": 0,
+      "sources": []
+    },
+    "server_boundaries": {
+      "count": 0,
+      "sources": []
+    },
+    "effect_context_boundaries": {
+      "schema": "dx.tsx.effectContextBoundaryManifest",
+      "schema_revision": 1,
+      "contract_name": "Effect And Context Boundary Manifest",
+      "status": "no-effect-context-boundaries",
+      "effect_scheduler_status": "not-needed",
+      "effect_count": 0,
+      "context_source_count": 0,
+      "context_provider_count": 0,
+      "context_consumer_count": 0,
+      "effects": [],
+      "contexts": [],
+      "context_runtime": {
+        "schema": "dx.tsx.contextRuntime",
+        "schema_revision": 1,
+        "contract_name": "Context Runtime",
+        "status": "no-contexts",
+        "strategy": "source-owned-provider-value-map",
+        "event": "dx:context-value",
+        "ready_event": "dx:context-runtime-ready",
+        "context_names": [],
+        "initial_values": {},
+        "context_initial_values": 0,
+        "provider_values": [],
+        "node_modules_required": false,
+        "full_react_context_runtime": false,
+        "limits": [
+          "Exposes detected contexts through getContext, setContext, and resolveContextValue.",
+          "Seeds safe literal createContext defaults and Provider value attributes into the generated value map.",
+          "Reflects values to data-dx-context-read markers for Studio/browser tooling.",
+          "Does not execute dynamic provider expressions, React useContext, or provider tree reconciliation."
+        ]
+      },
+      "full_react_effect_ordering": false,
+      "full_react_context_runtime": false,
+      "node_modules_required": false,
+      "limits": [
+        "Makes useEffect/useLayoutEffect and React context explicit before runtime lowering.",
+        "Schedules dependency records through the generated effect scheduler but does not execute callback bodies.",
+        "Registers detected context providers and consumers through the generated context runtime but does not execute useContext.",
+        "Does not run cleanup functions, emulate Strict Mode double invocation, or execute full React provider propagation.",
+        "Keeps full React parity blocked until effect ordering and context propagation are implemented."
+      ]
+    },
+    "react_hook_support": {
+      "schema": "dx.tsx.reactHookSupport",
+      "schema_revision": 1,
+      "contract_name": "React Hook Support Diagnostics",
+      "full_react_hook_runtime": false,
+      "react_api_shim_executed": false,
+      "unsupported_count": 0,
+      "findings": [],
+      "policy": [
+        "useState is compatibility sugar only when the compiler can lower it exactly into DX state slots.",
+        "Effect hooks are boundary records until source-owned scheduling can execute the supported subset.",
+        "Unsupported hooks require a precise diagnostic or an explicit adapter boundary before any runtime behavior."
+      ]
+    },
+    "state_graph": {
+      "schema": "dx.tsx.stateGraph",
+      "schema_revision": 1,
+      "contract_name": "TSX State Graph",
+      "compiler_owned": true,
+      "react_authoring_source": "useState/useMemo/events/server-actions",
+      "default_scope": "local",
+      "runtime_lowering": {
+        "status": "source-graph-ready",
+        "full_react_hook_runtime": false,
+        "next_step": "lower state/event graph into generated JS client islands"
+      },
+      "counts": {
+        "slots": 0,
+        "derived_slots": 0,
+        "event_slots": 0,
+        "effects": 0,
+        "server_actions": 0
+      },
+      "slots": [],
+      "derived_slots": [],
+      "event_slots": [],
+      "effects": [],
+      "server_actions": []
+    },
+    "supported_now": [
+      "app route matching",
+      "dynamic params",
+      "search params",
+      "metadata discovery",
+      "layout/template/boundary discovery",
+      "source-owned semantic contract",
+      "compiler-owned state graph ABI"
+    ],
+    "still_needed_for_nextjs_runtime_parity": [
+      "general JSX execution",
+      "component import execution",
+      "props evaluation",
+      "browser runtime lowering for common hook semantics",
+      "client island bundling",
+      "route handler execution beyond safe boundaries"
+    ],
+    "warnings": []
+  },
+  "state_runtime": {
+    "schema": "dx.tsx.stateRuntime",
+    "schema_revision": 1,
+    "contract_name": "TSX State Runtime",
+    "route": "/",
+    "runtime": "generated-js-client-islands",
+    "source_owned": true,
+    "node_modules_required": false,
+    "full_react_hook_runtime": false,
+    "lowering_status": "no-client-state",
+    "react_hook_policy": {
+      "status": "adapter-only-or-exact-compatibility-lowering",
+      "runtime_api": false,
+      "compatibility_authoring_only": true,
+      "react_api_shim_executed": false,
+      "full_react_hook_runtime": false,
+      "exact_state_slot_lowering": {
+        "adapter_syntax": "useState",
+        "status": "exact-dx-state-slot-compatibility-only",
+        "diagnostic_when_unlowerable": "dx.react-hook.useState.missing-exact-state-slot",
+        "adapter_boundary_required_when_unlowerable": true
+      },
+      "unsupported_hooks": [
+        {
+          "hook": "useEffect",
+          "status": "adapter-boundary-required",
+          "diagnostic_code": "dx.react-hook.useEffect.adapter-boundary-required",
+          "next_action": "Rewrite deterministic behavior to DX-native effect() or keep it behind an explicit client island adapter."
+        },
+        {
+          "hook": "useReducer",
+          "status": "adapter-boundary-required",
+          "diagnostic_code": "dx.react-hook.useReducer.adapter-boundary-required",
+          "next_action": "Rewrite transitions to DX-native state()/action() or keep reducer semantics behind an adapter."
+        },
+        {
+          "hook": "useContext",
+          "status": "adapter-boundary-required",
+          "diagnostic_code": "dx.react-hook.useContext.adapter-boundary-required",
+          "next_action": "Use compiler-visible provider values or keep React context behind an adapter boundary."
+        },
+        {
+          "hook": "useTransition/useOptimistic/useActionState",
+          "status": "adapter-boundary-required",
+          "diagnostic_code": "dx.react-hook.advanced.adapter-boundary-required",
+          "next_action": "Keep concurrent or optimistic React runtime semantics adapter-owned until DX-native equivalents are implemented."
+        }
+      ]
+    },
+    "supported_now": [
+      "DX-native state() and app-global store slot metadata",
+      "DX-native app-global store slot metadata",
+      "state snapshot inspection",
+      "safe setSlot state updates",
+      "lowerable event operation application",
+      "event-to-state dependency mapping",
+      "simple add/subtract/toggle/input event operation labels",
+      "deterministic effect dependency scheduling events",
+      "server-action edge metadata dispatch events",
+      "safe derived slot recomputation",
+      "derived state DOM reflection events"
+    ],
+    "adapter_boundary_gaps": [
+      "execute arbitrary component imports",
+      "browser-replay supported native DOM listener binding across all lowered event shapes",
+      "execute DX-native effect() callback bodies and cleanup functions with deterministic ordering",
+      "React reducer/context/transition hooks require adapter boundaries or DX-native rewrites",
+      "bundle client islands with full source imports"
+    ],
+    "counts": {
+      "slots": 0,
+      "global_stores": 0,
+      "global_store_actions": 0,
+      "derived_slots": 0,
+      "lowerable_derived_slots": 0,
+      "events": 0,
+      "lowerable_events": 0,
+      "effects": 0,
+      "server_actions": 0
+    },
+    "global_stores": [],
+    "slots": [],
+    "derived_slots": [],
+    "events": [],
+    "effects": [],
+    "effect_scheduler": {
+      "schema": "dx.tsx.effectScheduler",
+      "schema_revision": 1,
+      "contract_name": "Effect Scheduler",
+      "status": "no-effects",
+      "strategy": "mount-and-state-dependency-dispatch",
+      "event": "dx:effect-scheduled",
+      "source_owned": true,
+      "node_modules_required": false,
+      "full_react_effect_body_execution": false,
+      "full_react_effect_cleanup": false,
+      "full_react_effect_ordering": false,
+      "effects": [],
+      "limits": [
+        "Schedules effect records on mount and after compiler-owned dependency slot changes.",
+        "Does not execute callback bodies, cleanup functions, timers, subscriptions, or arbitrary JavaScript.",
+        "React effect hook ordering remains adapter-boundary unless the behavior is rewritten to DX-native effect()."
+      ]
+    },
+    "server_actions": [],
+    "action_runtime": {
+      "schema": "dx.tsx.serverActionEdgeRuntime",
+      "schema_revision": 1,
+      "contract_name": "Server Action Edge Runtime",
+      "status": "no-server-actions",
+      "event": "dx:server-action-edge",
+      "execution": "metadata-only",
+      "edge_matching": "match by action symbol, event id, and source path when server_actions metadata is present",
+      "unsafe_action_lowering_policy": "reject server-action operations unless they match source-owned server_actions metadata",
+      "unmatched_action_status": "diagnostic-only",
+      "unmatched_action_diagnostic_code": "dx.state-runtime.action.unmatched-source-edge",
+      "source_owned": true,
+      "node_modules_required": false,
+      "server_action_invoked": false,
+      "full_react_hook_runtime": false
+    },
+    "state_operation_diagnostics": {
+      "schema": "dx.tsx.stateOperationDiagnostics",
+      "schema_revision": 1,
+      "contract_name": "State Operation Diagnostics",
+      "event": "dx:state-runtime-diagnostic",
+      "unsupported_operation_status": "diagnostic-only",
+      "unsupported_react_like_operation_diagnostic_code": "dx.state-runtime.operation.unsupported-react-like-operation",
+      "react_api_shim_executed": false,
+      "adapter_boundary_required": true,
+      "full_react_hook_runtime": false,
+      "react_hook_policy": {
+        "status": "adapter-only-or-exact-compatibility-lowering",
+        "runtime_api": false,
+        "compatibility_authoring_only": true,
+        "react_api_shim_executed": false,
+        "full_react_hook_runtime": false,
+        "exact_state_slot_lowering": {
+          "adapter_syntax": "useState",
+          "status": "exact-dx-state-slot-compatibility-only",
+          "diagnostic_when_unlowerable": "dx.react-hook.useState.missing-exact-state-slot",
+          "adapter_boundary_required_when_unlowerable": true
+        },
+        "unsupported_hooks": [
+          {
+            "hook": "useEffect",
+            "status": "adapter-boundary-required",
+            "diagnostic_code": "dx.react-hook.useEffect.adapter-boundary-required",
+            "next_action": "Rewrite deterministic behavior to DX-native effect() or keep it behind an explicit client island adapter."
+          },
+          {
+            "hook": "useReducer",
+            "status": "adapter-boundary-required",
+            "diagnostic_code": "dx.react-hook.useReducer.adapter-boundary-required",
+            "next_action": "Rewrite transitions to DX-native state()/action() or keep reducer semantics behind an adapter."
+          },
+          {
+            "hook": "useContext",
+            "status": "adapter-boundary-required",
+            "diagnostic_code": "dx.react-hook.useContext.adapter-boundary-required",
+            "next_action": "Use compiler-visible provider values or keep React context behind an adapter boundary."
+          },
+          {
+            "hook": "useTransition/useOptimistic/useActionState",
+            "status": "adapter-boundary-required",
+            "diagnostic_code": "dx.react-hook.advanced.adapter-boundary-required",
+            "next_action": "Keep concurrent or optimistic React runtime semantics adapter-owned until DX-native equivalents are implemented."
+          }
+        ]
+      }
+    },
+    "public_reactivity_model": {
+      "schema": "dx.tsx.dxNativeReactivityCapabilities",
+      "schema_revision": 1,
+      "contract_name": "DX Native Reactivity Capabilities",
+      "status": "foundation-contract",
+      "runtime": "fine-grained compiler-owned state graph",
+      "source_owned": true,
+      "node_modules_required": false,
+      "full_react_hook_runtime": false,
+      "readiness_release_ready": false,
+      "dx_native_api": [
+        "state()",
+        "derived()",
+        "effect()",
+        "action()"
+      ],
+      "react_familiar_authoring": true,
+      "capability_matrix": [
+        {
+          "api": "state()",
+          "status": "compiler-owned-foundation",
+          "current_lowering": "DX-native state() slots, app-global store slots, and explicit state graph slots",
+          "readiness_gap": "public DX-native state() authoring syntax and browser replay receipts"
+        },
+        {
+          "api": "derived()",
+          "status": "compiler-owned-foundation",
+          "current_lowering": "safe derived slot recomputation for literal, identity, boolean, binary, and comparison operations",
+          "readiness_gap": "complete derived expression catalog and no-JS fallback proof"
+        },
+        {
+          "api": "effect()",
+          "status": "scheduled-boundary-foundation",
+          "current_lowering": "dependency scheduler records without arbitrary callback execution",
+          "readiness_gap": "supported effect body execution, cleanup policy, cancellation, and browser receipts"
+        },
+        {
+          "api": "action()",
+          "status": "edge-metadata-foundation",
+          "current_lowering": "event operation labels and server-action edge metadata",
+          "readiness_gap": "typed action authoring, optimistic/error states, and replay proof"
+        }
+      ],
+      "react_hook_policy": {
+        "status": "adapter-only-or-exact-compatibility-lowering",
+        "runtime_api": false,
+        "compatibility_authoring_only": true,
+        "react_api_shim_executed": false,
+        "full_react_hook_runtime": false,
+        "exact_state_slot_lowering": {
+          "adapter_syntax": "useState",
+          "status": "exact-dx-state-slot-compatibility-only",
+          "diagnostic_when_unlowerable": "dx.react-hook.useState.missing-exact-state-slot",
+          "adapter_boundary_required_when_unlowerable": true
+        },
+        "unsupported_hooks": [
+          {
+            "hook": "useEffect",
+            "status": "adapter-boundary-required",
+            "diagnostic_code": "dx.react-hook.useEffect.adapter-boundary-required",
+            "next_action": "Rewrite deterministic behavior to DX-native effect() or keep it behind an explicit client island adapter."
+          },
+          {
+            "hook": "useReducer",
+            "status": "adapter-boundary-required",
+            "diagnostic_code": "dx.react-hook.useReducer.adapter-boundary-required",
+            "next_action": "Rewrite transitions to DX-native state()/action() or keep reducer semantics behind an adapter."
+          },
+          {
+            "hook": "useContext",
+            "status": "adapter-boundary-required",
+            "diagnostic_code": "dx.react-hook.useContext.adapter-boundary-required",
+            "next_action": "Use compiler-visible provider values or keep React context behind an adapter boundary."
+          },
+          {
+            "hook": "useTransition/useOptimistic/useActionState",
+            "status": "adapter-boundary-required",
+            "diagnostic_code": "dx.react-hook.advanced.adapter-boundary-required",
+            "next_action": "Keep concurrent or optimistic React runtime semantics adapter-owned until DX-native equivalents are implemented."
+          }
+        ]
+      },
+      "unsupported_react_api_policy": "React hooks are adapter-only authoring syntax; unsupported hooks must emit diagnostics or require adapter-boundary islands",
+      "react_api_shim_executed": false,
+      "adapter_boundary_required": [
+        "arbitrary React hook execution",
+        "React effect cleanup and ordering semantics",
+        "React context/reducer/transition runtime parity",
+        "component imports that require React runtime execution"
+      ],
+      "browser_proof_status": "foundation-not-release-proof"
+    },
+    "state_dom_reflection": {
+      "schema": "dx.tsx.stateDomReflection",
+      "schema_revision": 1,
+      "contract_name": "State DOM Reflection",
+      "status": "no-state-slots",
+      "event": "dx:state-dom-reflection",
+      "derived_event": "dx:derived-state-slot",
+      "derived_dom_reflection": "derived slots use same data-dx-state-* markers after safe runtime lowering",
+      "markers": [
+        "data-dx-state-read",
+        "data-dx-state-value",
+        "data-dx-state-checked",
+        "data-dx-state-disabled",
+        "data-dx-state-aria-*"
+      ],
+      "supported_targets": [
+        "text-content",
+        "form-control-value",
+        "form-control-checked",
+        "boolean-attribute",
+        "aria-attribute"
+      ],
+      "full_react_reconciliation": false
+    },
+    "browser_evidence": {
+      "schema": "dx.tsx.stateRuntimeBrowserEvidence",
+      "schema_revision": 1,
+      "contract_name": "State Runtime Browser Evidence",
+      "status": "no-state-slots",
+      "runtime_global": "window.__DX_STATE_GRAPH_RUNTIME__",
+      "script_id": "__DX_STATE_GRAPH_RUNTIME__",
+      "ready_event": "dx:state-runtime-ready",
+      "accessor": "window.__DX_STATE_GRAPH_RUNTIME__.getBrowserEvidence(reason)",
+      "proof_surface": "browser-context DOM target counts, current state snapshot, event contract names, and explicit unsupported-runtime claims",
+      "source_owned": true,
+      "node_modules_required": false,
+      "full_react_hook_runtime": false,
+      "full_react_reconciliation": false
+    }
+  },
+  "tsx_render_plan": {
+    "schema": "dx.tsx.renderPlan",
+    "schema_revision": 1,
+    "contract_name": "TSX Render Plan",
+    "route": "/",
+    "status": "semantic-runtime-ready",
+    "public_authoring": "tsx",
+    "public_story": "React-familiar apps with source-owned packages and no hidden dependency surface.",
+    "source_owned": true,
+    "source_owned_render_plan": true,
+    "external_runtime_required": false,
+    "external_runtime_executed": false,
+    "node_modules_required": false,
+    "component_graph": {
+      "root_component_id": "app/layout",
+      "node_count": 2,
+      "edge_count": 1,
+      "source_owned_nodes": 2,
+      "forge_owned_nodes": 0,
+      "nodes": [
+        {
+          "id": "app/page",
+          "name": "Page",
+          "package_id": null,
+          "ownership": "local-source-owned",
+          "content_hash": "d3203b887a53055da1f9ff35373e98a4d7e5269d3728a3f83b577b449f009256"
+        },
+        {
+          "id": "app/layout",
+          "name": "Layout",
+          "package_id": null,
+          "ownership": "local-source-owned",
+          "content_hash": "db55d333539d31c2ad3fde13cfb5f807d71a2d67c0bb212b12693820a18cf66e"
+        }
+      ],
+      "edges": [
+        {
+          "from": "app/layout",
+          "to": "app/page"
+        }
+      ]
+    },
+    "runtime_ready": {
+      "crawlable_shell": true,
+      "metadata": true,
+      "layouts_and_templates": true,
+      "dynamic_route_params": true,
+      "search_params": true,
+      "state_graph": true,
+      "state_runtime": false,
+      "client_island_manifest": false,
+      "generated_dom_action_binder": false,
+      "effect_scheduler": false,
+      "context_runtime": "source-owned-provider-value-map",
+      "route_handlers": "safe-boundary-interpreter"
+    },
+    "runtime_boundaries": {
+      "state_slots": 0,
+      "event_slots": 0,
+      "effects": 0,
+      "server_actions": 0,
+      "effect_only_runtime": false,
+      "server_action_boundary": false,
+      "state_runtime_required": false,
+      "client_island_required": false
+    },
+    "claim_policy": {
+      "allowed": [
+        "React-familiar TSX",
+        "source-owned package boundaries",
+        "no node_modules required for the DX/Forge path",
+        "designed for fast static/dev paths when receipts prove it"
+      ],
+      "blocked_until_measured_or_implemented": [
+        "drop-in React replacement",
+        "drop-in App Router replacement",
+        "faster than Next.js globally",
+        "Forge package is a full replacement when it is only a boundary"
+      ]
+    },
+    "production_blockers": [
+      {
+        "kind": "component-import-execution",
+        "status": "partial",
+        "next_fix": "Execute source-owned component imports through the TSX renderer instead of only reporting graph edges."
+      },
+      {
+        "kind": "props-evaluation",
+        "status": "partial",
+        "next_fix": "Evaluate common literal, object, array, boolean, and expression props for source-owned components."
+      },
+      {
+        "kind": "context-runtime",
+        "status": "partial",
+        "next_fix": "Propagate provider values through the compiled component tree instead of exposing only a source-owned context value map."
+      },
+      {
+        "kind": "client-island-dom-binding",
+        "status": "not-needed-for-route",
+        "next_fix": "Bind generated state/event runtime operations to real JSX DOM nodes."
+      }
+    ]
+  },
+  "tsx_source_render": {
+    "schema": "dx.tsx.sourceRenderSurface",
+    "schema_revision": 1,
+    "contract_name": "TSX Source Render Surface",
+    "route": "/",
+    "status": "source-surface-ready",
+    "public_authoring": "tsx",
+    "full_jsx_execution": false,
+    "claim": "Source-owned TSX render surface, not full JSX execution.",
+    "documents": [
+      {
+        "role": "layout",
+        "source_path": "app/layout.tsx",
+        "imports": 1,
+        "elements": 5,
+        "events": 0,
+        "diagnostics": 0,
+        "parser_backend": "oxc-parser",
+        "parser_backend_status": "oxc-validated",
+        "jsx_backend": "oxc-jsx-ast",
+        "jsx_backend_status": "oxc-jsx-surface"
+      },
+      {
+        "role": "page",
+        "source_path": "app/page.tsx",
+        "imports": 1,
+        "elements": 7,
+        "events": 0,
+        "diagnostics": 0,
+        "parser_backend": "oxc-parser",
+        "parser_backend_status": "oxc-validated",
+        "jsx_backend": "oxc-jsx-ast",
+        "jsx_backend_status": "oxc-jsx-surface"
+      }
+    ],
+    "counts": {
+      "renderable_elements": 9,
+      "component_references": 0,
+      "source_owned_component_compositions": 0,
+      "prop_bindings": 19,
+      "page_prop_bindings": 0,
+      "page_prop_alias_bindings": 0,
+      "page_prop_unresolved_alias_bindings": 0,
+      "form_surfaces": 0,
+      "unresolved_components": 0,
+      "source_owned_imports_scanned": 0,
+      "source_owned_imports_skipped": 0,
+      "static_dom_snapshot_elements": 2,
+      "static_dom_snapshot_literal_expressions": 0,
+      "composed_static_dom_snapshot_elements": 2,
+      "component_preview_insertions": 0,
+      "dom_action_descriptors": 0,
+      "client_islands": 0,
+      "state_dom_reflections": 0,
+      "oxc_validated_documents": 2,
+      "oxc_jsx_documents": 2
+    },
+    "parser_backends": [
+      {
+        "schema": "dx.tsx.parserBackend",
+        "schema_revision": 1,
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "active_backend": "oxc-parser",
+        "status": "oxc-validated",
+        "oxc_available": true,
+        "custom_scanner_active": true,
+        "syntax_errors": 0,
+        "source_type": "tsx",
+        "typescript": true,
+        "jsx": true,
+        "module": true,
+        "panicked": false
+      },
+      {
+        "schema": "dx.tsx.parserBackend",
+        "schema_revision": 1,
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "active_backend": "oxc-parser",
+        "status": "oxc-validated",
+        "oxc_available": true,
+        "custom_scanner_active": true,
+        "syntax_errors": 0,
+        "source_type": "tsx",
+        "typescript": true,
+        "jsx": true,
+        "module": true,
+        "panicked": false
+      }
+    ],
+    "jsx_backends": [
+      {
+        "schema": "dx.tsx.oxcJsxSurface",
+        "schema_revision": 1,
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "active_backend": "oxc-jsx-ast",
+        "status": "oxc-jsx-surface",
+        "oxc_available": true,
+        "custom_scanner_fallback": true,
+        "elements": 5,
+        "expressions": 1
+      },
+      {
+        "schema": "dx.tsx.oxcJsxSurface",
+        "schema_revision": 1,
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "active_backend": "oxc-jsx-ast",
+        "status": "oxc-jsx-surface",
+        "oxc_available": true,
+        "custom_scanner_fallback": true,
+        "elements": 7,
+        "expressions": 0
+      }
+    ],
+    "import_scan": {
+      "mode": "bounded-source-owned-tsx",
+      "max_depth": 2,
+      "max_documents": 24,
+      "skipped_imports": []
+    },
+    "request_prop_bindings": {
+      "schema": "dx.tsx.requestPropBindings",
+      "schema_revision": 1,
+      "contract_name": "App Router Request Prop Bindings",
+      "mode": "safe-next-app-router-page-props",
+      "adapter_boundary": "source-owned-next-app-router-request-props",
+      "status": "no-request-props",
+      "route_param_bindings": [],
+      "search_param_bindings": [],
+      "request_prop_alias_bindings": [],
+      "request_prop_unresolved_alias_bindings": [],
+      "binding_count": 0,
+      "alias_binding_count": 0,
+      "unresolved_alias_binding_count": 0,
+      "supported_expressions": [
+        "params.slug",
+        "params[\"slug\"]",
+        "params?.slug",
+        "params?.[\"slug\"]",
+        "const { slug } = params",
+        "const { slug: postSlug } = params",
+        "const { slug = \"latest\" } = params",
+        "const { preview: previewMode = \"off\" } = searchParams",
+        "const { slug } = await params",
+        "const { slug: postSlug } = await params",
+        "const { slug } = (await params)",
+        "(await params)?.slug",
+        "(await params)?.[\"slug\"]",
+        "searchParams.query",
+        "searchParams[\"query\"]",
+        "searchParams?.query",
+        "searchParams?.[\"query\"]",
+        "const preview = searchParams.query",
+        "const preview = searchParams[\"query\"]",
+        "const preview = (await searchParams).query",
+        "const preview = (await searchParams)?.query"
+      ],
+      "bindings": [],
+      "node_modules_required": false,
+      "next_runtime_required": false,
+      "react_rsc_required": false,
+      "arbitrary_request_code_execution": false,
+      "source_owned_request_props": true,
+      "external_runtime_required": false,
+      "external_runtime_executed": false,
+      "limits": [
+        "Resolves safe literal request values already known to the DX App Router route matcher.",
+        "Supports direct params.name and searchParams.name reads, quoted bracket access, safe optional chaining page params and searchParams reads, simple destructuring aliases, quoted string destructuring defaults, simple member assignment aliases, and async page params and searchParams aliases including parenthesized page-prop objects.",
+        "Records unresolved page-prop aliases as missing-request-prop-value evidence instead of executing arbitrary request code.",
+        "Does not execute async Server Components, dynamic generateMetadata, cookies, headers, or arbitrary request code."
+      ]
+    },
+    "renderable_elements": [
+      {
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "element_index": 0,
+        "parent_index": null,
+        "tag": "html",
+        "source_tag": "html",
+        "framework_component": "",
+        "render_mode": "intrinsic-static-dom",
+        "text": "",
+        "attributes": [
+          {
+            "name": "lang",
+            "kind": "literal",
+            "value": "en",
+            "expression": null,
+            "event": false
+          }
+        ],
+        "child_node_count": 2,
+        "child_element_indices": [
+          1,
+          4
+        ],
+        "has_events": false,
+        "self_closing": false
+      },
+      {
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "element_index": 4,
+        "parent_index": 0,
+        "tag": "body",
+        "source_tag": "body",
+        "framework_component": "",
+        "render_mode": "intrinsic-static-dom",
+        "text": "",
+        "attributes": [],
+        "child_node_count": 1,
+        "child_element_indices": [],
+        "has_events": false,
+        "self_closing": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element_index": 0,
+        "parent_index": null,
+        "tag": "main",
+        "source_tag": "main",
+        "framework_component": "",
+        "render_mode": "intrinsic-static-dom",
+        "text": "",
+        "attributes": [
+          {
+            "name": "className",
+            "kind": "literal",
+            "value": "starter-shell forge-backed-shell",
+            "expression": null,
+            "event": false
+          },
+          {
+            "name": "data-dx-route",
+            "kind": "literal",
+            "value": "/",
+            "expression": null,
+            "event": false
+          },
+          {
+            "name": "data-forge-package",
+            "kind": "literal",
+            "value": "npm/lodash",
+            "expression": null,
+            "event": false
+          }
+        ],
+        "child_node_count": 1,
+        "child_element_indices": [
+          1
+        ],
+        "has_events": false,
+        "self_closing": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element_index": 1,
+        "parent_index": 0,
+        "tag": "section",
+        "source_tag": "section",
+        "framework_component": "",
+        "render_mode": "intrinsic-static-dom",
+        "text": "",
+        "attributes": [
+          {
+            "name": "className",
+            "kind": "literal",
+            "value": "starter-card source-owned-forge-package",
+            "expression": null,
+            "event": false
+          },
+          {
+            "name": "aria-labelledby",
+            "kind": "literal",
+            "value": "starter-title",
+            "expression": null,
+            "event": false
+          }
+        ],
+        "child_node_count": 5,
+        "child_element_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "has_events": false,
+        "self_closing": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element_index": 2,
+        "parent_index": 1,
+        "tag": "img",
+        "source_tag": "img",
+        "framework_component": "",
+        "render_mode": "intrinsic-static-dom",
+        "text": "",
+        "attributes": [
+          {
+            "name": "className",
+            "kind": "literal",
+            "value": "starter-logo",
+            "expression": null,
+            "event": false
+          },
+          {
+            "name": "src",
+            "kind": "literal",
+            "value": "/logo.svg",
+            "expression": null,
+            "event": false
+          },
+          {
+            "name": "alt",
+            "kind": "literal",
+            "value": "Dx WWW",
+            "expression": null,
+            "event": false
+          }
+        ],
+        "child_node_count": 0,
+        "child_element_indices": [],
+        "has_events": false,
+        "self_closing": true
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element_index": 3,
+        "parent_index": 1,
+        "tag": "p",
+        "source_tag": "p",
+        "framework_component": "",
+        "render_mode": "intrinsic-static-dom",
+        "text": "Dx WWW",
+        "attributes": [
+          {
+            "name": "className",
+            "kind": "literal",
+            "value": "starter-kicker",
+            "expression": null,
+            "event": false
+          }
+        ],
+        "child_node_count": 1,
+        "child_element_indices": [],
+        "has_events": false,
+        "self_closing": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element_index": 4,
+        "parent_index": 1,
+        "tag": "h1",
+        "source_tag": "h1",
+        "framework_component": "",
+        "render_mode": "intrinsic-static-dom",
+        "text": "Enhanced Development Experience",
+        "attributes": [
+          {
+            "name": "id",
+            "kind": "literal",
+            "value": "starter-title",
+            "expression": null,
+            "event": false
+          }
+        ],
+        "child_node_count": 1,
+        "child_element_indices": [],
+        "has_events": false,
+        "self_closing": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element_index": 5,
+        "parent_index": 1,
+        "tag": "p",
+        "source_tag": "p",
+        "framework_component": "",
+        "render_mode": "intrinsic-static-dom",
+        "text": "Orchestrate your code, don't just own it.",
+        "attributes": [
+          {
+            "name": "className",
+            "kind": "literal",
+            "value": "starter-copy",
+            "expression": null,
+            "event": false
+          }
+        ],
+        "child_node_count": 1,
+        "child_element_indices": [],
+        "has_events": false,
+        "self_closing": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element_index": 6,
+        "parent_index": 1,
+        "tag": "p",
+        "source_tag": "p",
+        "framework_component": "",
+        "render_mode": "intrinsic-static-dom",
+        "text": "Source-owned lodash proof.",
+        "attributes": [
+          {
+            "name": "className",
+            "kind": "literal",
+            "value": "starter-proof",
+            "expression": null,
+            "event": false
+          },
+          {
+            "name": "data-forge-helper",
+            "kind": "literal",
+            "value": "startCase",
+            "expression": null,
+            "event": false
+          }
+        ],
+        "child_node_count": 1,
+        "child_element_indices": [],
+        "has_events": false,
+        "self_closing": false
+      }
+    ],
+    "component_references": [],
+    "component_compositions": [],
+    "prop_bindings": [
+      {
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "element": "html",
+        "name": "lang",
+        "kind": "literal",
+        "value": "en",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "element": "link",
+        "name": "rel",
+        "kind": "literal",
+        "value": "icon",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "element": "link",
+        "name": "href",
+        "kind": "literal",
+        "value": "/favicon.svg",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "element": "link",
+        "name": "type",
+        "kind": "literal",
+        "value": "image/svg+xml",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "element": "link",
+        "name": "rel",
+        "kind": "literal",
+        "value": "apple-touch-icon",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/layout.tsx",
+        "role": "layout",
+        "element": "link",
+        "name": "href",
+        "kind": "literal",
+        "value": "/icon.svg",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "main",
+        "name": "className",
+        "kind": "literal",
+        "value": "starter-shell forge-backed-shell",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "main",
+        "name": "data-dx-route",
+        "kind": "literal",
+        "value": "/",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "main",
+        "name": "data-forge-package",
+        "kind": "literal",
+        "value": "npm/lodash",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "section",
+        "name": "className",
+        "kind": "literal",
+        "value": "starter-card source-owned-forge-package",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "section",
+        "name": "aria-labelledby",
+        "kind": "literal",
+        "value": "starter-title",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "img",
+        "name": "className",
+        "kind": "literal",
+        "value": "starter-logo",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "img",
+        "name": "src",
+        "kind": "literal",
+        "value": "/logo.svg",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "img",
+        "name": "alt",
+        "kind": "literal",
+        "value": "Dx WWW",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "p",
+        "name": "className",
+        "kind": "literal",
+        "value": "starter-kicker",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "h1",
+        "name": "id",
+        "kind": "literal",
+        "value": "starter-title",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "p",
+        "name": "className",
+        "kind": "literal",
+        "value": "starter-copy",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "p",
+        "name": "className",
+        "kind": "literal",
+        "value": "starter-proof",
+        "expression": null,
+        "event": false
+      },
+      {
+        "source_path": "app/page.tsx",
+        "role": "page",
+        "element": "p",
+        "name": "data-forge-helper",
+        "kind": "literal",
+        "value": "startCase",
+        "expression": null,
+        "event": false
+      }
+    ],
+    "form_surfaces": [],
+    "dom_action_binder": {
+      "schema": "dx.tsx.domActionBinder",
+      "schema_revision": 1,
+      "contract_name": "DOM Action Binder",
+      "status": "no-safe-actions",
+      "script_id": "__DX_DOM_ACTION_BINDER__",
+      "descriptor_count": 0,
+      "descriptor_sets": [],
+      "supported_events": [
+        "abort",
+        "abortpayment",
+        "activate",
+        "active",
+        "addsourcebuffer",
+        "addstream",
+        "addtrack",
+        "afterprint",
+        "afterscriptexecute",
+        "animationcancel",
+        "animationend",
+        "animationiteration",
+        "animationstart",
+        "appinstalled",
+        "audioend",
+        "audioprocess",
+        "audiostart",
+        "auxclick",
+        "backgroundfetchabort",
+        "backgroundfetchclick",
+        "backgroundfetchfail",
+        "backgroundfetchsuccess",
+        "beforeinput",
+        "beforeinstallprompt",
+        "beforematch",
+        "beforeprint",
+        "beforescriptexecute",
+        "beforetoggle",
+        "beforeunload",
+        "beforexrselect",
+        "beginevent",
+        "blocked",
+        "blur",
+        "bounce",
+        "boundary",
+        "bufferedamountlow",
+        "bufferedchange",
+        "cancel",
+        "canmakepayment",
+        "canplay",
+        "canplaythrough",
+        "capturehandlechange",
+        "change",
+        "characterboundsupdate",
+        "characteristicvaluechanged",
+        "chargingchange",
+        "chargingtimechange",
+        "click",
+        "clipboardchange",
+        "close",
+        "closing",
+        "command",
+        "complete",
+        "compositionend",
+        "compositionstart",
+        "compositionupdate",
+        "connect",
+        "connecting",
+        "connectionavailable",
+        "connectionstatechange",
+        "contentdelete",
+        "contentvisibilityautostatechange",
+        "contextlost",
+        "contextmenu",
+        "contextoverflow",
+        "contextrestored",
+        "controllerchange",
+        "cookiechange",
+        "copy",
+        "cuechange",
+        "currententrychange",
+        "currentscreenchange",
+        "cut",
+        "dataavailable",
+        "datachannel",
+        "dblclick",
+        "dequeue",
+        "devicechange",
+        "devicemotion",
+        "deviceorientation",
+        "deviceorientationabsolute",
+        "dischargingtimechange",
+        "disconnect",
+        "dispose",
+        "domactivate",
+        "domcontentloaded",
+        "dommousescroll",
+        "downloadprogress",
+        "drag",
+        "dragend",
+        "dragenter",
+        "dragexit",
+        "dragleave",
+        "dragover",
+        "dragstart",
+        "drop",
+        "durationchange",
+        "emptied",
+        "encrypted",
+        "end",
+        "ended",
+        "endevent",
+        "endstreaming",
+        "enter",
+        "enterpictureinpicture",
+        "error",
+        "exit",
+        "fetch",
+        "finish",
+        "focus",
+        "focusin",
+        "focusout",
+        "formdata",
+        "freeze",
+        "fullscreenchange",
+        "fullscreenerror",
+        "gamepadconnected",
+        "gamepaddisconnected",
+        "gatheringstatechange",
+        "gattserverdisconnected",
+        "geometrychange",
+        "gesturechange",
+        "gestureend",
+        "gesturestart",
+        "gotpointercapture",
+        "hashchange",
+        "icecandidate",
+        "icecandidateerror",
+        "iceconnectionstatechange",
+        "icegatheringstatechange",
+        "inactive",
+        "input",
+        "inputreport",
+        "inputsourceschange",
+        "install",
+        "interest",
+        "invalid",
+        "keydown",
+        "keypress",
+        "keystatuseschange",
+        "keyup",
+        "languagechange",
+        "leavepictureinpicture",
+        "levelchange",
+        "load",
+        "loadeddata",
+        "loadedmetadata",
+        "loadend",
+        "loading",
+        "loadingdone",
+        "loadingerror",
+        "loadstart",
+        "location",
+        "loseinterest",
+        "lostpointercapture",
+        "managedconfigurationchange",
+        "mark",
+        "merchantvalidation",
+        "message",
+        "messageerror",
+        "midimessage",
+        "mousedown",
+        "mouseenter",
+        "mouseleave",
+        "mousemove",
+        "mouseout",
+        "mouseover",
+        "mouseup",
+        "mousewheel",
+        "mozmousepixelscroll",
+        "mute",
+        "navigate",
+        "navigateerror",
+        "navigatesuccess",
+        "negotiationneeded",
+        "nomatch",
+        "notificationclick",
+        "notificationclose",
+        "offline",
+        "online",
+        "open",
+        "orientationchange",
+        "pagehide",
+        "pagereveal",
+        "pageshow",
+        "pageswap",
+        "paste",
+        "pause",
+        "payerdetailchange",
+        "paymentmethodchange",
+        "paymentrequest",
+        "periodicsync",
+        "play",
+        "playing",
+        "pointercancel",
+        "pointerdown",
+        "pointerenter",
+        "pointerleave",
+        "pointerlockchange",
+        "pointerlockerror",
+        "pointermove",
+        "pointerout",
+        "pointerover",
+        "pointerrawupdate",
+        "pointerup",
+        "popstate",
+        "prerenderingchange",
+        "prioritychange",
+        "processorerror",
+        "progress",
+        "promptaction",
+        "promptdismiss",
+        "push",
+        "pushsubscriptionchange",
+        "ratechange",
+        "reading",
+        "readingerror",
+        "readystatechange",
+        "redraw",
+        "reflectionchange",
+        "rejectionhandled",
+        "release",
+        "remove",
+        "removesourcebuffer",
+        "removestream",
+        "removetrack",
+        "repeatevent",
+        "reset",
+        "resize",
+        "resourcetimingbufferfull",
+        "result",
+        "resume",
+        "rtctransform",
+        "screenschange",
+        "scroll",
+        "scrollend",
+        "scrollsnapchange",
+        "scrollsnapchanging",
+        "search",
+        "securitypolicyviolation",
+        "seeked",
+        "seeking",
+        "select",
+        "selectedcandidatepairchange",
+        "selectend",
+        "selectionchange",
+        "selectstart",
+        "shippingaddresschange",
+        "shippingoptionchange",
+        "show",
+        "signalingstatechange",
+        "sinkchange",
+        "slotchange",
+        "soundend",
+        "soundstart",
+        "sourceclose",
+        "sourceended",
+        "sourceopen",
+        "speechend",
+        "speechstart",
+        "squeeze",
+        "squeezeend",
+        "squeezestart",
+        "stalled",
+        "start",
+        "startstreaming",
+        "statechange",
+        "stop",
+        "storage",
+        "submit",
+        "success",
+        "suspend",
+        "sync",
+        "terminate",
+        "textformatupdate",
+        "textupdate",
+        "timeout",
+        "timeupdate",
+        "toggle",
+        "tonechange",
+        "touchcancel",
+        "touchend",
+        "touchmove",
+        "touchstart",
+        "track",
+        "transitioncancel",
+        "transitionend",
+        "transitionrun",
+        "transitionstart",
+        "typechange",
+        "uncapturederror",
+        "unhandledrejection",
+        "unload",
+        "unmute",
+        "update",
+        "updateend",
+        "updatefound",
+        "updatestart",
+        "upgradeneeded",
+        "validationstatuschange",
+        "versionchange",
+        "visibilitychange",
+        "visibilitymaskchange",
+        "voiceschanged",
+        "volumechange",
+        "vrdisplayactivate",
+        "vrdisplayconnect",
+        "vrdisplaydeactivate",
+        "vrdisplaydisconnect",
+        "vrdisplaypresentchange",
+        "waiting",
+        "waitingforkey",
+        "webglcontextcreationerror",
+        "webglcontextlost",
+        "webglcontextrestored",
+        "webkitmouseforcechanged",
+        "webkitmouseforcedown",
+        "webkitmouseforceup",
+        "webkitmouseforcewillbegin",
+        "wheel",
+        "zoomlevelchange"
+      ],
+      "supported_event_count": 321,
+      "catalog_source": "core/src/delivery/dom_events.rs::NATIVE_DOM_EVENT_NAMES",
+      "catalog_hash": "blake3:e3c9ade97c3511850b0c8cf320dea87fcb526ac9d77ee524a37d9c307ec36339",
+      "compiler_integrity": {
+        "source_of_truth": "core/src/delivery/dom_events.rs::NATIVE_DOM_EVENT_NAMES",
+        "catalog_count": 321,
+        "sorted_unique": true,
+        "duplicate_events": [],
+        "catalog_hash": "blake3:e3c9ade97c3511850b0c8cf320dea87fcb526ac9d77ee524a37d9c307ec36339"
+      },
+      "readiness_receipt_contract": "dx.www.readiness.native_event_browser_binder_receipt_contract",
+      "react_style_event_examples": [
+        "onClick",
+        "onInput",
+        "onPointerMove"
+      ],
+      "dom_event_examples": [
+        "click",
+        "input",
+        "pointermove"
+      ],
+      "unsupported_event_policy": "diagnose unsupported React-style event attributes without attaching listeners or claiming React synthetic event parity",
+      "receipt_ready_fields": [
+        "binder_global_present",
+        "supported_event_count",
+        "catalog_hash",
+        "listener_events",
+        "unsupported_listener_attached",
+        "preview_event_count",
+        "state_dispatch_count"
+      ],
+      "node_modules_required": false,
+      "browser_api": "addEventListener + CustomEvent",
+      "ready_event": "dx:dom-action-binder-ready",
+      "preview_event": "dx:dom-action-preview",
+      "state_runtime_bridge": {
+        "schema": "dx.tsx.domActionStateBridge",
+        "schema_revision": 1,
+        "contract_name": "DOM Action State Bridge",
+        "status": "no-safe-actions",
+        "state_runtime_global": "__DX_STATE_GRAPH_RUNTIME__",
+        "state_runtime_dispatcher": "window.__DX_STATE_GRAPH_RUNTIME__.dispatch",
+        "dispatcher": "dispatchDomActionPreviewToStateRuntime",
+        "dispatch_event": "dx:state-runtime-dispatch",
+        "preview_event": "dx:dom-action-preview",
+        "node_modules_required": false,
+        "full_react_hook_parity": false,
+        "react_synthetic_events": false,
+        "limits": [
+          "Forwards safe DOM action previews to compiler-owned state event slots.",
+          "Uses the TSX state runtime dispatcher instead of executing React handler bodies.",
+          "Does not claim full React hook ordering, synthetic events, effects, or component execution."
+        ]
+      },
+      "script": null,
+      "full_react_event_parity": false,
+      "react_synthetic_events": false,
+      "limits": [
+        "Generates a no-node_modules browser binder for safe intrinsic action previews.",
+        "Attaches preview listeners for the source-owned native DOM event catalog when React-style attributes are present.",
+        "Dispatches DX preview events instead of executing React handler bodies or React synthetic events."
+      ]
+    },
+    "client_islands": {
+      "schema": "dx.tsx.clientIslandManifest",
+      "schema_revision": 1,
+      "contract_name": "TSX Client Island Manifest",
+      "abi": {
+        "schema": "dx.react.clientIsland.abi",
+        "schema_revision": 1,
+        "capabilities_schema": "dx.react.clientIsland.abi.capabilities",
+        "directive_style": "camelCase-jsx-props",
+        "directive_style_id": "camelCase-jsx-props",
+        "supported_directives": [
+          "clientLoad",
+          "clientVisible",
+          "clientIdle",
+          "clientOnly",
+          "clientMedia",
+          "clientInteraction"
+        ],
+        "unsupported_directive_syntax": [
+          "client:load",
+          "client:visible",
+          "client:idle",
+          "client:only"
+        ],
+        "source_owned_runtime": true,
+        "node_modules_required": false,
+        "full_react_hydration": false,
+        "no_js_fallback_required": true,
+        "adapter_boundary_required": [
+          "explicit clientOnly framework runtime",
+          "arbitrary React hydration semantics",
+          "Svelte/Vue/other framework component execution",
+          "third-party island runtime imports"
+        ],
+        "explicit_frameworks_policy": "framework adapters are preview-only and only allowed through explicit clientOnly directives until executable framework adapter receipts exist",
+        "framework_adapters": "preview-only",
+        "readiness_release_ready": false,
+        "browser_proof_status": "foundation-not-release-proof"
+      },
+      "route": "/",
+      "status": "no-client-islands",
+      "island_count": 0,
+      "descriptor_count": 0,
+      "state_slot_count": 0,
+      "event_slot_count": 0,
+      "islands": [],
+      "binder": "generated-dom-action-binder",
+      "binder_script_id": "__DX_DOM_ACTION_BINDER__",
+      "manifest_script_id": "__DX_TSX_CLIENT_ISLANDS__",
+      "state_runtime_global": "__DX_STATE_GRAPH_RUNTIME__",
+      "node_modules_required": false,
+      "full_react_hydration": false,
+      "full_react_event_parity": false,
+      "limits": [
+        "Publishes safe source-owned client island targets for generated DOM action binding.",
+        "Connects intrinsic events to the compiler-owned state runtime without React synthetic events.",
+        "Does not execute arbitrary client components, effects, context providers, or full React hydration."
+      ]
+    },
+    "state_dom_reflection": {
+      "schema": "dx.tsx.stateDomReflection",
+      "schema_revision": 1,
+      "contract_name": "State DOM Reflection",
+      "route": "/",
+      "status": "no-safe-state-reads",
+      "mode": "static-common-subset-reflection-plan",
+      "reflection_count": 0,
+      "full_react_reconciliation": false,
+      "browser_listeners_attached": false,
+      "supported_targets": [
+        "text-content",
+        "form-control-value",
+        "form-control-checked",
+        "boolean-attribute",
+        "aria-attribute"
+      ],
+      "marker_contract": [
+        "data-dx-state-read",
+        "data-dx-state-value",
+        "data-dx-state-checked",
+        "data-dx-state-{disabled|required|selected|multiple|readonly}",
+        "data-dx-state-aria-*"
+      ],
+      "reflections": [],
+      "limits": [
+        "Reflects direct state identifier reads only, such as {count}, value={name}, checked={open}, disabled={busy}, and aria-expanded={open}.",
+        "Reflects derived values when the expression has a safe runtime lowering and the DOM carries compiler-owned data-dx-state-* markers by derived name.",
+        "Does not evaluate ternaries, maps, member expressions without a safe derived lowering, component execution, effects, or React reconciliation.",
+        "The generated runtime hook updates only elements carrying compiler-owned data-dx-state-* markers."
+      ]
+    },
+    "static_dom_snapshot": {
+      "schema": "dx.tsx.staticDomSnapshot",
+      "schema_revision": 1,
+      "contract_name": "Static DOM Snapshot",
+      "route": "/",
+      "status": "static-dom-snapshot-ready",
+      "mode": "safe-common-subset",
+      "full_react_execution": false,
+      "source_documents": 2,
+      "element_count": 2,
+      "skipped_attributes": 1,
+      "literal_expressions": 0,
+      "skipped_child_expressions": 1,
+      "html": "<html><body></body></html><main class=\"starter-shell forge-backed-shell\" data-dx-route=\"/\" data-forge-package=\"npm/lodash\"><section class=\"starter-card source-owned-forge-package\" aria-labelledby=\"starter-title\"><img class=\"starter-logo\" src=\"/logo.svg\" alt=\"Dx WWW\"><p class=\"starter-kicker\">Dx WWW</p><h1 id=\"starter-title\">Enhanced Development Experience</h1><p class=\"starter-copy\">Orchestrate your code, don't just own it.</p><p class=\"starter-proof\" data-forge-helper=\"startCase\">Source-owned lodash proof.</p></section></main>",
+      "elements": [
+        {
+          "source_path": "app/layout.tsx",
+          "role": "layout",
+          "element_index": 0,
+          "parent_index": null,
+          "tag": "html",
+          "html": "<html><body></body></html>",
+          "text": "",
+          "child_node_count": 2,
+          "child_element_indices": [
+            1,
+            4
+          ],
+          "skipped_attributes": 1,
+          "literal_expressions": 0,
+          "skipped_child_expressions": 1,
+          "event_handlers_lowered": 0,
+          "state_dom_reflections": []
+        },
+        {
+          "source_path": "app/page.tsx",
+          "role": "page",
+          "element_index": 0,
+          "parent_index": null,
+          "tag": "main",
+          "html": "<main class=\"starter-shell forge-backed-shell\" data-dx-route=\"/\" data-forge-package=\"npm/lodash\"><section class=\"starter-card source-owned-forge-package\" aria-labelledby=\"starter-title\"><img class=\"starter-logo\" src=\"/logo.svg\" alt=\"Dx WWW\"><p class=\"starter-kicker\">Dx WWW</p><h1 id=\"starter-title\">Enhanced Development Experience</h1><p class=\"starter-copy\">Orchestrate your code, don't just own it.</p><p class=\"starter-proof\" data-forge-helper=\"startCase\">Source-owned lodash proof.</p></section></main>",
+          "text": "",
+          "child_node_count": 1,
+          "child_element_indices": [
+            1
+          ],
+          "skipped_attributes": 0,
+          "literal_expressions": 0,
+          "skipped_child_expressions": 0,
+          "event_handlers_lowered": 0,
+          "state_dom_reflections": []
+        }
+      ],
+      "limits": [
+        "Serializes safe intrinsic JSX elements from route, segment, and bounded source-owned import files.",
+        "Preserves literal safe attributes, boolean form attributes, and simple literal expression props such as string, number, boolean, nullish, and static template literal values.",
+        "Appends direct literal child expressions after lowered text because the current JSX surface does not preserve interleaved child order.",
+        "Does not execute arbitrary JavaScript, evaluate component functions, run hooks, or claim hydration parity."
+      ]
+    },
+    "composed_static_dom_snapshot": {
+      "schema": "dx.tsx.composedStaticDomSnapshot",
+      "schema_revision": 1,
+      "contract_name": "Composed Static DOM Snapshot",
+      "route": "/",
+      "status": "ready",
+      "mode": "layout-template-page-composition",
+      "tree_mode": "nested-static-dom-tree",
+      "full_component_execution": false,
+      "full_react_execution": false,
+      "source_documents": 2,
+      "element_count": 2,
+      "app_router_shell_child_insertions": 1,
+      "app_router_shell_wrappers": 1,
+      "component_preview_insertions": 0,
+      "component_prop_identifier_bindings": 0,
+      "skipped_component_references": 1,
+      "skipped_attributes": 1,
+      "literal_expressions": 0,
+      "skipped_child_expressions": 1,
+      "html": "<html><body><main class=\"starter-shell forge-backed-shell\" data-dx-route=\"/\" data-forge-package=\"npm/lodash\"><section class=\"starter-card source-owned-forge-package\" aria-labelledby=\"starter-title\"><img class=\"starter-logo\" src=\"/logo.svg\" alt=\"Dx WWW\"><p class=\"starter-kicker\">Dx WWW</p><h1 id=\"starter-title\">Enhanced Development Experience</h1><p class=\"starter-copy\">Orchestrate your code, don't just own it.</p><p class=\"starter-proof\" data-forge-helper=\"startCase\">Source-owned lodash proof.</p></section></main></body></html>",
+      "app_router_shell": {
+        "schema": "dx.tsx.appRouterStaticShell",
+        "schema_revision": 1,
+        "contract_name": "App Router Static Shell",
+        "status": "app-router-shell-ready",
+        "mode": "layout-template-page-composition",
+        "html": "<html><body><main class=\"starter-shell forge-backed-shell\" data-dx-route=\"/\" data-forge-package=\"npm/lodash\"><section class=\"starter-card source-owned-forge-package\" aria-labelledby=\"starter-title\"><img class=\"starter-logo\" src=\"/logo.svg\" alt=\"Dx WWW\"><p class=\"starter-kicker\">Dx WWW</p><h1 id=\"starter-title\">Enhanced Development Experience</h1><p class=\"starter-copy\">Orchestrate your code, don't just own it.</p><p class=\"starter-proof\" data-forge-helper=\"startCase\">Source-owned lodash proof.</p></section></main></body></html>",
+        "selected_leaf": {
+          "role": "page",
+          "source_path": "app/page.tsx",
+          "redirect_selected": false,
+          "not_found_boundary_selected": false,
+          "error_boundary_selected": false
+        },
+        "redirect": null,
+        "error_boundary_props": null,
+        "wrapper_count": 1,
+        "child_insertions": 1,
+        "skipped_wrappers": 0,
+        "scope_skipped_wrapper_count": 0,
+        "scope_skipped_wrappers": [],
+        "loading_boundary": null,
+        "template_boundary_count": 0,
+        "template_boundaries": [],
+        "documents": [
+          {
+            "role": "page",
+            "source_path": "app/page.tsx",
+            "mode": "page-static-html",
+            "redirect": null
+          },
+          {
+            "role": "layout",
+            "source_path": "app/layout.tsx",
+            "mode": "layout-template-page-composition",
+            "status": "children-inserted",
+            "children_insertions": 1,
+            "element_count": 1,
+            "skipped_attributes": 1,
+            "skipped_child_expressions": 1
+          }
+        ],
+        "full_app_router_runtime": false,
+        "limits": [
+          "Composes page, not-found, error boundary, or loading boundary preview HTML through layout/template children placeholders for the bounded static TSX surface.",
+          "Records template.tsx remount boundaries without executing React remount lifecycle, Server Components, Client Components, async data, streaming Suspense payloads, context providers, effects, or React reconciliation."
+        ]
+      },
+      "elements": [
+        {
+          "source_path": "app/layout.tsx",
+          "role": "layout",
+          "element_index": 0,
+          "parent_index": null,
+          "tag": "html",
+          "mode": "intrinsic-static-dom",
+          "html": "<html><body></body></html>",
+          "text": "",
+          "child_node_count": 2,
+          "child_element_indices": [
+            1,
+            4
+          ],
+          "skipped_attributes": 1,
+          "literal_expressions": 0,
+          "skipped_child_expressions": 1,
+          "component_preview_insertions": 0,
+          "component_prop_identifier_bindings": 0,
+          "skipped_component_references": 1,
+          "event_handlers_lowered": 0,
+          "state_dom_reflections": []
+        },
+        {
+          "source_path": "app/page.tsx",
+          "role": "page",
+          "element_index": 0,
+          "parent_index": null,
+          "tag": "main",
+          "mode": "intrinsic-static-dom",
+          "html": "<main class=\"starter-shell forge-backed-shell\" data-dx-route=\"/\" data-forge-package=\"npm/lodash\"><section class=\"starter-card source-owned-forge-package\" aria-labelledby=\"starter-title\"><img class=\"starter-logo\" src=\"/logo.svg\" alt=\"Dx WWW\"><p class=\"starter-kicker\">Dx WWW</p><h1 id=\"starter-title\">Enhanced Development Experience</h1><p class=\"starter-copy\">Orchestrate your code, don't just own it.</p><p class=\"starter-proof\" data-forge-helper=\"startCase\">Source-owned lodash proof.</p></section></main>",
+          "text": "",
+          "child_node_count": 1,
+          "child_element_indices": [
+            1
+          ],
+          "skipped_attributes": 0,
+          "literal_expressions": 0,
+          "skipped_child_expressions": 0,
+          "component_preview_insertions": 0,
+          "component_prop_identifier_bindings": 0,
+          "skipped_component_references": 0,
+          "event_handlers_lowered": 0,
+          "state_dom_reflections": []
+        }
+      ],
+      "limits": [
+        "Composes route and layout documents with bounded source-owned component return previews.",
+        "wraps page HTML with layout/template children placeholders in the static App Router shell.",
+        "Uses component_return_preview HTML generated from local TSX imports and literal caller props.",
+        "Does not execute arbitrary JavaScript, hooks, effects, data loaders, or client reconciliation.",
+        "Keeps source-owned component previews separate from full React/App Router parity claims."
+      ]
+    },
+    "adapter_boundary_gaps": [
+      "Execute general source-owned component functions beyond the bounded static preview composition surface.",
+      "Expand safe TSX expression evaluation beyond literal props, route params, search params, class helpers, and static conditional/template bindings.",
+      "Bind generated state/event runtime operations to the real rendered DOM for client islands.",
+      "Define DX-native effect() ordering and adapter diagnostics before accepting React-specific runtime semantics."
+    ]
+  },
+  "server_data": {
+    "route": "/",
+    "route_source_path": "app/page.tsx",
+    "entries": [],
+    "node_modules_required": false,
+    "lifecycle_scripts_executed": false,
+    "request": {
+      "mode": "static-route-contract-inputs",
+      "route_params": {},
+      "search_params": {},
+      "build_time_contract_inputs": true,
+      "runtime_request_values": false,
+      "source_owned_contract": true,
+      "external_runtime_request_values": false
+    },
+    "schema": "dx.appRouter.serverData",
+    "format": 1,
+    "schema_revision": 1,
+    "status": "no-loader-bindings",
+    "entry_count": 0,
+    "execution_model": "not-required",
+    "source_owned_contract": true,
+    "external_runtime_required": false,
+    "external_runtime_executed": false,
+    "limits": [
+      "Records DX-owned safe loader data only.",
+      "Does not execute arbitrary JavaScript, React Server Components, Node APIs, package lifecycle scripts, or Next.js runtime loaders."
+    ]
+  },
+  "proof": {
+    "page_graph_path": "page-graph.json",
+    "packet_path": null,
+    "tiny_static_no_js_packet_guard": "tiny_static_route_proof.no_js_capable",
+    "root_component_id": "app/layout",
+    "delivery_mode": "static",
+    "layout_count": 1,
+    "template_count": 0,
+    "packet_sections": 5,
+    "fallback_bytes": 1255,
+    "packet_bytes": 7189,
+    "roundtrip_matches": true
+  },
+  "source_manifest_hash": "6485cd88388662466e9002a16d2021d30ebe32a99d0921c7057a3da35fbb1253",
+  "request": {
+    "mode": "static-route-contract-inputs",
+    "route_params": {},
+    "search_params": {},
+    "build_time_contract_inputs": true,
+    "runtime_request_values": false,
+    "source_owned_contract": true,
+    "external_runtime_request_values": false
+  },
+  "build_time_request_props": {
+    "mode": "static-route-contract-inputs",
+    "route_params": {},
+    "search_params": {},
+    "build_time_contract_inputs": true,
+    "runtime_request_values": false,
+    "source_owned_contract": true,
+    "external_runtime_request_values": false
+  }
+}

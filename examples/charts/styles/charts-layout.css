@@ -1,0 +1,276 @@
+.charts-site-shell {
+  display: grid;
+  gap: 24px;
+  width: min(100%, 1440px);
+  margin: 0 auto;
+}
+
+.charts-topbar {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
+  gap: 16px;
+  align-items: center;
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--surface) / 0.92);
+  padding: 10px;
+}
+
+.charts-brand,
+.charts-nav-link,
+.charts-primary-action,
+.charts-secondary-action,
+.charts-task-card {
+  text-decoration: none;
+}
+
+.charts-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.charts-brand-mark,
+.charts-nav-link,
+.charts-primary-action,
+.charts-secondary-action,
+.charts-doc-card > .charts-icon,
+.charts-ecosystem-card > .charts-icon {
+  display: inline-grid;
+  place-items: center;
+}
+
+.charts-brand-mark {
+  width: 42px;
+  height: 42px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.charts-brand strong,
+.charts-brand small {
+  display: block;
+}
+
+.charts-brand small,
+.charts-lead,
+.chart-caption span,
+.charts-card-copy p,
+.charts-card-copy dd,
+.charts-doc-card p,
+.charts-ecosystem-card dd,
+.charts-swatch-row code {
+  color: hsl(var(--muted-foreground));
+}
+
+.charts-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.charts-nav-link {
+  min-height: 38px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--surface-raised));
+  color: hsl(var(--foreground));
+  padding: 0 10px;
+  gap: 7px;
+  font-size: 0.86rem;
+  font-weight: 720;
+}
+
+.charts-nav-link[data-active="true"] {
+  border-color: hsl(var(--primary));
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.charts-icon,
+[data-dx-icon] {
+  width: 1em;
+  height: 1em;
+}
+
+.charts-page-stack {
+  display: grid;
+  gap: 24px;
+}
+
+.charts-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1fr);
+  gap: 20px;
+  align-items: stretch;
+  min-height: 520px;
+}
+
+.charts-hero-copy,
+.charts-page-heading,
+.charts-section,
+.charts-code-panel,
+.charts-doc-card,
+.charts-ecosystem-card,
+.charts-gallery-card,
+.charts-metric,
+.charts-task-card,
+.charts-swatch-panel {
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  background: hsl(var(--card));
+}
+
+.charts-hero-copy,
+.charts-page-heading {
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  padding: clamp(28px, 5vw, 56px);
+}
+
+.charts-actions,
+.charts-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.charts-primary-action,
+.charts-secondary-action,
+.charts-filter-row a {
+  display: inline-grid;
+  min-height: 42px;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 8px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  padding: 0 14px;
+  font-weight: 760;
+}
+
+.charts-primary-action {
+  border-color: hsl(var(--primary));
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.charts-secondary-action,
+.charts-filter-row a {
+  background: hsl(var(--surface-raised));
+  color: hsl(var(--foreground));
+}
+
+.charts-metric-grid,
+.charts-preview-grid,
+.charts-task-grid,
+.charts-doc-grid,
+.charts-ecosystem-grid,
+.charts-gallery-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.charts-metric-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.charts-metric {
+  display: grid;
+  gap: 8px;
+  min-height: 118px;
+  align-content: center;
+  padding: 20px;
+}
+
+.charts-metric strong {
+  color: hsl(var(--accent));
+  font-size: 2.2rem;
+}
+
+.charts-metric span {
+  color: hsl(var(--muted-foreground));
+  font-weight: 720;
+}
+
+.charts-section {
+  display: grid;
+  gap: 18px;
+  padding: clamp(18px, 3vw, 28px);
+}
+
+.charts-section-heading {
+  display: grid;
+  gap: 8px;
+}
+
+.charts-preview-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.charts-gallery-grid,
+.charts-doc-grid,
+.charts-ecosystem-grid,
+.charts-task-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.charts-gallery-card {
+  display: grid;
+  overflow: hidden;
+}
+
+.charts-card-copy,
+.charts-doc-card,
+.charts-ecosystem-card,
+.charts-task-card,
+.charts-swatch-panel {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+}
+
+.charts-card-copy span,
+.charts-ecosystem-card p {
+  color: hsl(var(--accent));
+  font-size: 0.72rem;
+  font-weight: 820;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.charts-card-copy dl,
+.charts-ecosystem-card dl {
+  display: grid;
+  gap: 10px;
+}
+
+.charts-card-copy dt,
+.charts-ecosystem-card dt {
+  color: hsl(var(--foreground));
+  font-size: 0.75rem;
+  font-weight: 820;
+}
+
+.charts-task-card {
+  min-height: 150px;
+  color: hsl(var(--foreground));
+}
+
+.charts-task-card .charts-icon {
+  color: hsl(var(--accent));
+  font-size: 1.2rem;
+}
+
+.charts-theme-layout,
+.charts-playground-layout {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}

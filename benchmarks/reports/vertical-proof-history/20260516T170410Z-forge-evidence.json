@@ -1,0 +1,396 @@
+{
+  "generated_at": "2026-05-16T17:04:10.487Z",
+  "fixture": "generated:forge-evidence",
+  "fixture_mode": "forge-evidence",
+  "delivery": {
+    "route_mode": "static",
+    "packet_artifact_written": true,
+    "runtime_asset_written": false
+  },
+  "proof": {
+    "route": "/forge/evidence",
+    "fallback": {
+      "optimized_bytes": 6904,
+      "saved_bytes": 98,
+      "script_count": 0,
+      "style_count": 0,
+      "repeated_node_count": 12,
+      "delivery_mode": "static"
+    },
+    "packet": {
+      "format": "dxob-v1",
+      "bytes": 9631,
+      "decoded_name": "evidence",
+      "template_count": 75,
+      "string_count": 43,
+      "binding_count": 0,
+      "event_count": 0,
+      "css_class_count": 37,
+      "roundtrip_matches": true
+    },
+    "browser_packet": {
+      "format": "dxp-v1",
+      "bytes": 6952,
+      "decoded_kind": "Route",
+      "section_count": 3,
+      "payload_bytes": 6780,
+      "roundtrip_matches": true,
+      "sections": [
+        {
+          "kind": "FallbackHtmlRef",
+          "encoding": "Json",
+          "bytes": 166,
+          "content_hash": "0245ac30b9e596d9380512e506d817c53a29cdc34ec2e73384cd58f5a045d3ea"
+        },
+        {
+          "kind": "TemplateSlots",
+          "encoding": "CanonicalBinary",
+          "bytes": 6472,
+          "content_hash": "2c486528a8998fd644b1c6b3080198b6f34e0a89e56429c7ff62e095d0b874f6"
+        },
+        {
+          "kind": "SourceManifest",
+          "encoding": "Json",
+          "bytes": 142,
+          "content_hash": "6e78aee5153fd1cb2654359acaabc10b5fc342db1864d1b732db875ab7bd9d23"
+        }
+      ]
+    },
+    "interaction": null,
+    "forge": {
+      "package_id": "dx-www/vertical/forge-evidence",
+      "action": "TrackWrite",
+      "risk_score": 100,
+      "traffic": "green",
+      "files_tracked": 1
+    },
+    "forge_packages": []
+  },
+  "http": {
+    "route_url": "http://127.0.0.1:65161/forge/evidence",
+    "route_path": "/forge/evidence",
+    "resource_count": 10,
+    "total_decoded_bytes": 6985,
+    "content_length_bytes": 6985,
+    "compression_estimate": {
+      "raw_bytes": 6985,
+      "gzip_bytes": 1387,
+      "brotli_bytes": 1105
+    },
+    "route_timing_ms": {
+      "samples": 12,
+      "min": 1.218,
+      "median": 1.389,
+      "mean": 1.538,
+      "p95": 3.352,
+      "max": 3.352
+    },
+    "resources": [
+      {
+        "path": "/forge/evidence",
+        "status": 200,
+        "ok": true,
+        "decoded_bytes": 6904,
+        "elapsed_ms": 43.442,
+        "content_length": 6904
+      },
+      {
+        "path": "/forge/forge-launch-delivery-comparison.md",
+        "status": 404,
+        "ok": false,
+        "decoded_bytes": 9,
+        "elapsed_ms": 19.103,
+        "content_length": 9
+      },
+      {
+        "path": "/forge/forge-public-route-comparison.md",
+        "status": 404,
+        "ok": false,
+        "decoded_bytes": 9,
+        "elapsed_ms": 18.889,
+        "content_length": 9
+      },
+      {
+        "path": "/forge/forge-readiness-badge.json",
+        "status": 404,
+        "ok": false,
+        "decoded_bytes": 9,
+        "elapsed_ms": 18.724,
+        "content_length": 9
+      },
+      {
+        "path": "/forge/forge.claims.json",
+        "status": 404,
+        "ok": false,
+        "decoded_bytes": 9,
+        "elapsed_ms": 18.694,
+        "content_length": 9
+      },
+      {
+        "path": "/forge/forge.evidence.json",
+        "status": 404,
+        "ok": false,
+        "decoded_bytes": 9,
+        "elapsed_ms": 18.934,
+        "content_length": 9
+      },
+      {
+        "path": "/forge/forge.html",
+        "status": 404,
+        "ok": false,
+        "decoded_bytes": 9,
+        "elapsed_ms": 19.258,
+        "content_length": 9
+      },
+      {
+        "path": "/forge/forge/ci.html",
+        "status": 404,
+        "ok": false,
+        "decoded_bytes": 9,
+        "elapsed_ms": 19.209,
+        "content_length": 9
+      },
+      {
+        "path": "/forge/forge/evidence.claims.json",
+        "status": 404,
+        "ok": false,
+        "decoded_bytes": 9,
+        "elapsed_ms": 20.153,
+        "content_length": 9
+      },
+      {
+        "path": "/forge/forge/scorecard.html",
+        "status": 404,
+        "ok": false,
+        "decoded_bytes": 9,
+        "elapsed_ms": 20.059,
+        "content_length": 9
+      }
+    ]
+  },
+  "chrome": {
+    "enabled": true,
+    "samples": 5,
+    "warmup_excluded": true,
+    "title": "DX-WWW /forge/evidence",
+    "dom_nodes": 81,
+    "scripts": 0,
+    "buttons": 0,
+    "nav_duration_ms": 13.1,
+    "dom_content_loaded_ms": 12.6,
+    "load_event_ms": 13.1,
+    "transfer_size": 7204,
+    "encoded_body_size": 6904,
+    "decoded_body_size": 6904,
+    "dx_packet_status": null,
+    "dx_packet_sections": 0,
+    "dx_packet_payload_bytes": 0,
+    "dx_packet_template_count": 0,
+    "dx_packet_route": null,
+    "dx_packet_applied": false,
+    "counter_click_update_ms": 0,
+    "interaction_works": false,
+    "warmup": {
+      "title": "DX-WWW /forge/evidence",
+      "dom_nodes": 81,
+      "scripts": 0,
+      "buttons": 0,
+      "nav_duration_ms": 64.9,
+      "dom_content_loaded_ms": 64.2,
+      "load_event_ms": 64.9,
+      "transfer_size": 7204,
+      "encoded_body_size": 6904,
+      "decoded_body_size": 6904,
+      "resource_count": 1,
+      "dx_packet_status": null,
+      "dx_packet_sections": 0,
+      "dx_packet_payload_bytes": 0,
+      "dx_packet_template_count": 0,
+      "dx_packet_route": null,
+      "dx_packet_applied": false,
+      "counter_before": null,
+      "counter_after": null,
+      "counter_click_update_ms": 0,
+      "interaction_works": false
+    },
+    "raw_samples": [
+      {
+        "title": "DX-WWW /forge/evidence",
+        "dom_nodes": 81,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 13.1,
+        "dom_content_loaded_ms": 12.6,
+        "load_event_ms": 13.1,
+        "transfer_size": 7204,
+        "encoded_body_size": 6904,
+        "decoded_body_size": 6904,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/evidence",
+        "dom_nodes": 81,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 16.9,
+        "dom_content_loaded_ms": 16.1,
+        "load_event_ms": 16.9,
+        "transfer_size": 7513,
+        "encoded_body_size": 6913,
+        "decoded_body_size": 6913,
+        "resource_count": 2,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/evidence",
+        "dom_nodes": 81,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 28.7,
+        "dom_content_loaded_ms": 28.1,
+        "load_event_ms": 28.7,
+        "transfer_size": 7204,
+        "encoded_body_size": 6904,
+        "decoded_body_size": 6904,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/evidence",
+        "dom_nodes": 81,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 10.3,
+        "dom_content_loaded_ms": 9.8,
+        "load_event_ms": 10.3,
+        "transfer_size": 7204,
+        "encoded_body_size": 6904,
+        "decoded_body_size": 6904,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      },
+      {
+        "title": "DX-WWW /forge/evidence",
+        "dom_nodes": 81,
+        "scripts": 0,
+        "buttons": 0,
+        "nav_duration_ms": 12.8,
+        "dom_content_loaded_ms": 12.1,
+        "load_event_ms": 12.8,
+        "transfer_size": 7204,
+        "encoded_body_size": 6904,
+        "decoded_body_size": 6904,
+        "resource_count": 1,
+        "dx_packet_status": null,
+        "dx_packet_sections": 0,
+        "dx_packet_payload_bytes": 0,
+        "dx_packet_template_count": 0,
+        "dx_packet_route": null,
+        "dx_packet_applied": false,
+        "counter_before": null,
+        "counter_after": null,
+        "counter_click_update_ms": 0,
+        "interaction_works": false
+      }
+    ]
+  },
+  "budget": {
+    "profile": "compact-forge-evidence",
+    "config_path": null,
+    "enforced": true,
+    "passed": true,
+    "checks": [
+      {
+        "metric": "decoded bytes",
+        "value": 6985,
+        "max": 24000,
+        "unit": " B",
+        "passed": true
+      },
+      {
+        "metric": "Brotli estimate",
+        "value": 1105,
+        "max": 4000,
+        "unit": " B",
+        "passed": true
+      },
+      {
+        "metric": "HTTP route median",
+        "value": 1.389,
+        "max": 5,
+        "unit": " ms",
+        "passed": true
+      },
+      {
+        "metric": "Chrome load event median",
+        "value": 13.1,
+        "max": 75,
+        "unit": " ms",
+        "passed": true
+      }
+    ]
+  },
+  "comparison": {
+    "previous_generated_at": "2026-05-16T17:03:46.262Z",
+    "previous_fixture_mode": "forge-ci",
+    "current_fixture_mode": "forge-evidence",
+    "previous_forge_packages": 0,
+    "current_forge_packages": 0,
+    "delta_forge_packages": 0,
+    "previous_decoded_bytes": 3309,
+    "current_decoded_bytes": 6985,
+    "delta_decoded_bytes": 3676,
+    "previous_brotli_bytes": 865,
+    "current_brotli_bytes": 1105,
+    "delta_brotli_bytes": 240,
+    "previous_http_route_median_ms": 4.162,
+    "current_http_route_median_ms": 1.389,
+    "delta_http_route_median_ms": -2.7729999999999997,
+    "previous_chrome_load_event_ms": 13,
+    "current_chrome_load_event_ms": 13.1,
+    "delta_chrome_load_event_ms": 0.09999999999999964
+  },
+  "snapshot": {
+    "json": "vertical-proof-history/20260516T170410Z-forge-evidence.json",
+    "markdown": "vertical-proof-history/20260516T170410Z-forge-evidence.md",
+    "index_json": "vertical-proof-history/index.json",
+    "index_markdown": "vertical-proof-history/index.md"
+  }
+}

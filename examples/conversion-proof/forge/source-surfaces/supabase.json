@@ -1,0 +1,100 @@
+{
+  "schema": "dx.www.source_surface_map",
+  "source_project": "supabase",
+  "source_repo": "https://github.com/supabase/supabase.git",
+  "source_commit": "fdeaaec098e6151a199ff84b55b030547afe7eee",
+  "converted_route": "/database",
+  "surfaces": {
+    "ui": {
+      "label": "Studio admin controls",
+      "source_files": [
+        "apps/studio/pages/project/[ref]/editor/index.tsx",
+        "apps/studio/pages/project/[ref]/auth/users.tsx",
+        "apps/studio/pages/project/[ref]/storage/files/index.tsx"
+      ],
+      "converted_files": [
+        "pages/database.html",
+        "components/ConversionRouteHeader.tsx",
+        "components/SourceSurfaceTable.tsx",
+        "forge/primitives/table.ts",
+        "forge/primitives/input.ts"
+      ],
+      "launch_value": "Gives DX-WWW a Studio-style database, auth, and storage control surface without hosted credentials.",
+      "runtime_boundary": "No Supabase client, query runtime, auth mutation, or storage mutation is executed."
+    },
+    "layout": {
+      "label": "Studio project workspace layout",
+      "source_files": [
+        "apps/studio/pages/project/[ref]/editor/index.tsx",
+        "apps/studio/pages/project/[ref]/auth/users.tsx",
+        "apps/studio/pages/project/[ref]/storage/files/index.tsx"
+      ],
+      "converted_files": [
+        "pages/database.html",
+        "components/RuntimeBoundaryPanel.tsx",
+        "styles/conversion-proof.css"
+      ],
+      "launch_value": "Converts the repeated Studio workspace pattern into route header, source table, lane list, and runtime boundary panels.",
+      "runtime_boundary": "Layout is source proof only and does not mount Supabase Studio shell providers."
+    },
+    "interaction": {
+      "label": "Schema, user, and bucket workflows",
+      "source_files": [
+        "apps/studio/data/database/table-definition-query.ts",
+        "apps/studio/data/database/table-columns-query.ts",
+        "apps/studio/data/auth/users-infinite-query.ts",
+        "apps/studio/data/storage/buckets-query.ts"
+      ],
+      "converted_files": [
+        "pages/database.html",
+        "forge/shims/runtime-boundaries.ts",
+        "forge/shims/test-adapters.ts"
+      ],
+      "launch_value": "Keeps schema browsing, user management, and bucket browsing as explicit launch lanes.",
+      "runtime_boundary": "TanStack Query, project refs, hosted credentials, and live mutations remain missing-runtime shims."
+    },
+    "docs": {
+      "label": "Data-query provenance",
+      "source_files": [
+        "apps/studio/data/auth/auth-config-query.ts",
+        "apps/studio/data/auth/users-infinite-query.ts",
+        "apps/studio/data/storage/buckets-query.ts"
+      ],
+      "converted_files": [
+        "pages/database.html",
+        "README.md",
+        "DX.md"
+      ],
+      "launch_value": "Documents the data shapes behind the Studio route without pretending the hosted APIs are present.",
+      "runtime_boundary": "Remote query results are not fetched."
+    },
+    "dashboard": {
+      "label": "Database, auth, storage dashboard",
+      "source_files": [
+        "apps/studio/pages/project/[ref]/editor/index.tsx",
+        "apps/studio/pages/project/[ref]/auth/users.tsx",
+        "apps/studio/pages/project/[ref]/storage/files/index.tsx"
+      ],
+      "converted_files": [
+        "pages/database.html",
+        "components/SourceSurfaceTable.tsx",
+        "styles/conversion-proof.css"
+      ],
+      "launch_value": "Presents the launch-useful admin dashboard lanes for schema, users, and buckets.",
+      "runtime_boundary": "Project state, RLS policy writes, and storage object writes are not executed."
+    },
+    "brand": {
+      "label": "Supabase visual identity",
+      "source_files": [
+        "apps/studio/public/supabase-logo.svg"
+      ],
+      "converted_files": [
+        "pages/database.html",
+        "public/vendor/supabase-logo.svg",
+        "components/ConversionRouteHeader.tsx"
+      ],
+      "launch_value": "Keeps the upstream Supabase source mark visible in the DX-WWW route header.",
+      "runtime_boundary": "Only copied, provenance-tracked static assets are used."
+    }
+  }
+}

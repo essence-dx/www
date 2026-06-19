@@ -1,0 +1,1390 @@
+{
+  "route_id": "/",
+  "source_path": "app/page.tsx",
+  "root_component_id": "app/layout",
+  "components": {
+    "nodes": [
+      {
+        "id": "app/page",
+        "name": "Page",
+        "package_id": null,
+        "content_hash": "df2cb24c3217a1bbba5ee08ba599049d923ddcfea412cb6d467e0226868a5f83"
+      },
+      {
+        "id": "app/layout",
+        "name": "Layout",
+        "package_id": null,
+        "content_hash": "43ad13a565e714ec1a3d3996c7a51b909e5653440cd014f3263781135068a747"
+      }
+    ],
+    "edges": [
+      {
+        "from": "app/layout",
+        "to": "app/page"
+      }
+    ]
+  },
+  "styles": {
+    "tokens": [
+      {
+        "name": "--accent",
+        "value": "#ffffff"
+      },
+      {
+        "name": "--accent-foreground",
+        "value": "0 0% 4%"
+      },
+      {
+        "name": "--accent-soft",
+        "value": "color-mix(in srgb, var(--text) 10%, transparent)"
+      },
+      {
+        "name": "--accent-text",
+        "value": "#000000"
+      },
+      {
+        "name": "--background",
+        "value": "0 0% 3%"
+      },
+      {
+        "name": "--border",
+        "value": "color-mix(in srgb, var(--text) 14%, transparent)"
+      },
+      {
+        "name": "--border-strong",
+        "value": "color-mix(in srgb, var(--text) 28%, transparent)"
+      },
+      {
+        "name": "--button-primary-bg",
+        "value": "#ffffff"
+      },
+      {
+        "name": "--button-primary-text",
+        "value": "#000000"
+      },
+      {
+        "name": "--button-secondary-bg",
+        "value": "transparent"
+      },
+      {
+        "name": "--button-secondary-text",
+        "value": "#ededed"
+      },
+      {
+        "name": "--card",
+        "value": "0 0% 7%"
+      },
+      {
+        "name": "--card-bg",
+        "value": "color-mix(in srgb, var(--text) 6%, transparent)"
+      },
+      {
+        "name": "--card-bg-strong",
+        "value": "color-mix(in srgb, var(--text) 10%, transparent)"
+      },
+      {
+        "name": "--card-bg-subtle",
+        "value": "color-mix(in srgb, var(--text) 5%, transparent)"
+      },
+      {
+        "name": "--danger",
+        "value": "0 84% 60%"
+      },
+      {
+        "name": "--destructive",
+        "value": "var(--danger)"
+      },
+      {
+        "name": "--dx-amber",
+        "value": "#ffd166"
+      },
+      {
+        "name": "--dx-bg",
+        "value": "#050505"
+      },
+      {
+        "name": "--dx-blue",
+        "value": "#8bbcff"
+      },
+      {
+        "name": "--dx-border",
+        "value": "#272a33"
+      },
+      {
+        "name": "--dx-green",
+        "value": "#19f48a"
+      },
+      {
+        "name": "--dx-muted",
+        "value": "#9aa4b2"
+      },
+      {
+        "name": "--dx-panel",
+        "value": "#0b0d12"
+      },
+      {
+        "name": "--dx-panel-2",
+        "value": "#11141b"
+      },
+      {
+        "name": "--dx-red",
+        "value": "#ff6b6b"
+      },
+      {
+        "name": "--dx-text",
+        "value": "#f7f8fb"
+      },
+      {
+        "name": "--face-ink",
+        "value": "var(--text)"
+      },
+      {
+        "name": "--face-shell",
+        "value": "var(--card-bg-strong)"
+      },
+      {
+        "name": "--font-mono",
+        "value": "\"JetBrains Mono\", \"JetBrains Mono NL\", ui-monospace, SFMono-Regular, Consolas, \"Liberation Mono\", monospace"
+      },
+      {
+        "name": "--foreground",
+        "value": "0 0% 96%"
+      },
+      {
+        "name": "--glow",
+        "value": "color-mix(in srgb, var(--text) 12%, transparent)"
+      },
+      {
+        "name": "--muted",
+        "value": "#a1a1aa"
+      },
+      {
+        "name": "--muted-foreground",
+        "value": "0 0% 68%"
+      },
+      {
+        "name": "--muted-strong",
+        "value": "#fafafa"
+      },
+      {
+        "name": "--page-bg",
+        "value": "#000000"
+      },
+      {
+        "name": "--page-bg-alt",
+        "value": "#111111"
+      },
+      {
+        "name": "--page-bg-soft",
+        "value": "#0a0a0a"
+      },
+      {
+        "name": "--primary",
+        "value": "0 0% 98%"
+      },
+      {
+        "name": "--primary-foreground",
+        "value": "0 0% 4%"
+      },
+      {
+        "name": "--ring",
+        "value": "0 0% 83%"
+      },
+      {
+        "name": "--scroll-thumb",
+        "value": "color-mix(in srgb, var(--text) 68%, transparent)"
+      },
+      {
+        "name": "--scroll-track",
+        "value": "color-mix(in srgb, var(--text) 8%, transparent)"
+      },
+      {
+        "name": "--shadow",
+        "value": "0 28px 90px color-mix(in srgb, var(--page-bg) 72%, transparent)"
+      },
+      {
+        "name": "--shadow-soft",
+        "value": "0 18px 54px color-mix(in srgb, var(--page-bg) 58%, transparent)"
+      },
+      {
+        "name": "--spacing",
+        "value": "0.25rem"
+      },
+      {
+        "name": "--success",
+        "value": "142 70% 45%"
+      },
+      {
+        "name": "--surface",
+        "value": "0 0% 4%"
+      },
+      {
+        "name": "--text",
+        "value": "#ededed"
+      },
+      {
+        "name": "--warning",
+        "value": "38 92% 50%"
+      }
+    ],
+    "classes": [
+      {
+        "name": "action-icon",
+        "rule": "display: block; flex: 0 0 auto; height: 20px; width: 20px;",
+        "source_hash": "888fd8222710e823af1af35c5699997607cee59374899d5c6393c8ffdc7948c4"
+      },
+      {
+        "name": "active-dot",
+        "rule": "background: var(--text); box-shadow: 0 0 0 4px color-mix(in srgb, var(--text) 10%, transparent); width: 34px;",
+        "source_hash": "dc0f01b8bf2a942e0a4d51ecbeee8c3147e9f4cca8c3e56d7d85f1a6e1372b87"
+      },
+      {
+        "name": "adapter-list",
+        "rule": "display: grid; gap: 10px; padding-left: 0; list-style: none;",
+        "source_hash": "e7e303ebff85af0a4430094b760fab143ccc1e191b5d36366d1fe926508a2b05"
+      },
+      {
+        "name": "audit-list",
+        "rule": "color: #3f4552; line-height: 1.7; margin: 0; padding-left: 20px;",
+        "source_hash": "a87cc0d0cf609dd2471b26140c1df2e8caf4187b45fd8cbe27525af3d6febce6"
+      },
+      {
+        "name": "backend-accent",
+        "rule": "border-top: 4px solid #8b5cf6;",
+        "source_hash": "f567abce3cd8c619e6deb319ce2bd74b862e22fd663b69153a4eb848606a0bc9"
+      },
+      {
+        "name": "bar",
+        "rule": "background: var(--card-bg-subtle); border-radius: 999px; height: 10px; margin-top: 18px; overflow: hidden; position: relative;",
+        "source_hash": "cb78445f964e90a39bc9075b3ae1c3973f6d1234e6731c8df2c2b21422066e31"
+      },
+      {
+        "name": "bench-grid",
+        "rule": "grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 28px;",
+        "source_hash": "7e2e340f8462ac2c60b3b99cb4c669f9e77711206964b7632fd7a9d1f7188c24"
+      },
+      {
+        "name": "bg-amber-50",
+        "rule": "background-color: #fffbeb;",
+        "source_hash": "7d62b3b5fe242fa21b870ceb2611ad917dc5f6ca43e7da4cc95633f16bdd1416"
+      },
+      {
+        "name": "bg-background",
+        "rule": "background-color: var(--color-background);",
+        "source_hash": "be5449672e1d7dcb13f535d4ca86f09c94f7b8aa379e2132de4b77dc037ae2b3"
+      },
+      {
+        "name": "bg-card",
+        "rule": "background-color: var(--color-card);",
+        "source_hash": "666cf8c44d4d20b5d8364ea9c6cfd705735a40c57c9e84b30a5c3c63b7003122"
+      },
+      {
+        "name": "bg-emerald-50",
+        "rule": "background-color: #ecfdf5;",
+        "source_hash": "44259ff2374c023894b78e308e1fbce33738c953ddbbb96e99a3f657adb99411"
+      },
+      {
+        "name": "bg-foreground",
+        "rule": "background-color: var(--color-foreground);",
+        "source_hash": "7494c0dcd88337a88fc6d5e0820fdbdf1833c5cf9d4e3e04e07893354f0c0201"
+      },
+      {
+        "name": "bg-muted",
+        "rule": "background-color: var(--color-muted);",
+        "source_hash": "03b2daffbcadd8aff40400cc942cd0febaac233c252de0bfdd85cf3e4d3e7eb9"
+      },
+      {
+        "name": "bg-rose-50",
+        "rule": "background-color: #fff1f2;",
+        "source_hash": "e1135d56950a555c53fb42c94ac3809a83f2bb56dcd101b5e62c3608e524b471"
+      },
+      {
+        "name": "bg-surface",
+        "rule": "background-color: var(--color-surface);",
+        "source_hash": "1772d7846107413d4d4523b0db76a881c6ad44544b23ba6070c6144410304e5a"
+      },
+      {
+        "name": "bg-transparent",
+        "rule": "background-color: rgba(0, 0, 0, 0);",
+        "source_hash": "5546cb7bd15c60c589cc3cddff843ae19e28eadee8239198e15b46b1dcb7af4c"
+      },
+      {
+        "name": "block",
+        "rule": "display: block;",
+        "source_hash": "09ee756ba720cccb97dbfdb1d9993ca503f0eb74baf1cd6fae3e9df33dc667af"
+      },
+      {
+        "name": "border",
+        "rule": "border-style: var(--tw-border-style); border-width: 1px;",
+        "source_hash": "46e153f0b41f0110797591e1756390f1a63ba3423e9f2341fa7c8f6c6a40a3b2"
+      },
+      {
+        "name": "border-amber-300",
+        "rule": "border-color: #fcd34d;",
+        "source_hash": "980a50444165f1cd7bf3de11ecdb3b0c0a1bc4c29bf0559563b68958f07b165c"
+      },
+      {
+        "name": "border-border",
+        "rule": "border-color: var(--color-border);",
+        "source_hash": "592edf384cacf334c1cd272235f2fa83b099d956428aa941be1650f6c7811be4"
+      },
+      {
+        "name": "border-collapse",
+        "rule": "border-collapse: collapse;",
+        "source_hash": "7f4a88ad4df86ef5b0ae4689ad41f913aca1f35dc000ae9c38de812bb27ebc12"
+      },
+      {
+        "name": "border-danger",
+        "rule": "border-color: var(--color-danger);",
+        "source_hash": "040f35ebf15f1fd7621834bce7e684b68de118e54cb0748f1d8121970b8a3281"
+      },
+      {
+        "name": "border-emerald-300",
+        "rule": "border-color: #6ee7b7;",
+        "source_hash": "0ac40b439704b2ca93867803d1c34a12635727e0881796f7e4850518645a58cc"
+      },
+      {
+        "name": "border-r",
+        "rule": "border-right-style: var(--tw-border-style); border-right-width: 1px;",
+        "source_hash": "35915448294520ccd591f77560778e4c8d435f85954322eaca691c92d6203982"
+      },
+      {
+        "name": "border-rose-300",
+        "rule": "border-color: #fda4af;",
+        "source_hash": "7958e839c0f96cffd5cf0940d08a28ed013d239e5394d77243a77e987820eaca"
+      },
+      {
+        "name": "border-t",
+        "rule": "border-top-style: var(--tw-border-style); border-top-width: 1px;",
+        "source_hash": "4d2dc5cd9100e7694267865ad484e0b92c43ebbb8eff0b883af7a8edb778d171"
+      },
+      {
+        "name": "border-transparent",
+        "rule": "border-color: rgba(0, 0, 0, 0);",
+        "source_hash": "d8cceafb895f0031c97f34d4d09a46e1da9ea253583619af56ce9c96bfa773da"
+      },
+      {
+        "name": "brand",
+        "rule": "display: inline-flex; align-items: center; gap: 12px; font-weight: 800;",
+        "source_hash": "f802a4d44b7d69b976d66ac223aa0aac8e4053030b40ef20965a5c20d0f967bc"
+      },
+      {
+        "name": "brand-mark",
+        "rule": "align-items: center; background: var(--accent); border-radius: 999px; color: var(--accent-text); display: inline-flex; font-size: 0.8rem; font-weight: 900; height: 34px; justify-content: center; width: 34px;",
+        "source_hash": "c1bf69edcadbcb9e3a5b5430edb7bc565f9ea787fb2a066ba98d40df7656202c"
+      },
+      {
+        "name": "brand-pill",
+        "rule": "gap: 10px; flex: 0 0 auto; text-decoration: none;",
+        "source_hash": "6a1111fb5dd4fa04910fc290e7cacf45a3a71d89ff34bd08dde13287418a5098"
+      },
+      {
+        "name": "brand-row",
+        "rule": "align-items: center; display: flex; gap: 12px; font-size: 0.82rem; font-weight: 700; letter-spacing: 0; text-transform: uppercase;",
+        "source_hash": "98b93164125480a8f852eb7f4462d7c99df2ba7cb207720c1d473287a96124eb"
+      },
+      {
+        "name": "capability-icon",
+        "rule": "fill: none; height: 18px; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; width: 18px;",
+        "source_hash": "d536742d66470db4b4d57e6d39d14ff2437dbaf80e0c2be143a5280b9b31731d"
+      },
+      {
+        "name": "collapse",
+        "rule": "visibility: collapse;",
+        "source_hash": "ec47b44390488d84eabac468ef100aff736c8295f4d2e168716a7e5b57ecf99a"
+      },
+      {
+        "name": "conversion-shell",
+        "rule": "min-height: 100vh; background: #f7f8fb; color: #15161a; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; padding: 32px;",
+        "source_hash": "f05850ad86bb1d6f4fa273cf28239a73857f0f264ce93733d717570a8746996f"
+      },
+      {
+        "name": "copy",
+        "rule": "color: #b9c2cf; line-height: 1.62;",
+        "source_hash": "0313d336b4534e5d1debfd8d8d86f4952fd2d1c0097ae8a2e6509fcc621c4c79"
+      },
+      {
+        "name": "database-accent",
+        "rule": "border-top: 4px solid #20a36b;",
+        "source_hash": "3e4d408a5a373c1af6d4409d82942a9c49159678f6fb0a9c6a840f0ed47d53ed"
+      },
+      {
+        "name": "docs-meta",
+        "rule": "border: 1px solid var(--dx-border);",
+        "source_hash": "1a31e659795ad23f3a8e0e505e61dfdd64e0ec8f356feb7da91e3069cdd80834"
+      },
+      {
+        "name": "docs-peers",
+        "rule": "display: grid; gap: 8px; padding-left: 0; list-style: none;",
+        "source_hash": "f2e3818ff823e3f4b482bc65220b8c68ef2e9e08fef4b38fc3b032af3c82bc1b"
+      },
+      {
+        "name": "docs-selector",
+        "rule": "display: flex; flex-wrap: wrap; gap: 10px;",
+        "source_hash": "8e873fdf29e0c92a4e5f64da8de46336a7d9d55dd2a704f7df3e5017a30db3e2"
+      },
+      {
+        "name": "docs-shell",
+        "rule": "display: grid; grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr); gap: 14px;",
+        "source_hash": "49614215b4861e58a2bc6c2769acd9fb87aa57805d217834dcd5593f3654c9dc"
+      },
+      {
+        "name": "docs-workflow",
+        "rule": "display: grid; gap: 16px;",
+        "source_hash": "baec3b04276e0a2a5efc0d206da8a65edc9683ca97d920501c27a9bb932b79a1"
+      },
+      {
+        "name": "dx-action",
+        "rule": "display: inline-grid; place-items: center; background: hsl(var(--foreground)); color: hsl(var(--background));",
+        "source_hash": "b2b9d76364390401e56314f9f1df42a46560ba4c9a7e214cda9f85fd375da83f"
+      },
+      {
+        "name": "dx-action-icon",
+        "rule": "fill: currentColor; transform-origin: center; transition: transform 180ms ease;",
+        "source_hash": "5a430bc6556399040df9ca43d6cde6e7d8b1589de04294c9a47654a61c7f4124"
+      },
+      {
+        "name": "dx-card",
+        "rule": "width: min(100%, 76rem); border: 1px solid hsl(var(--border)); border-radius: var(--radius); background: hsl(var(--card)); box-shadow: 0 1px 0 hsl(var(--foreground) / 0.04) inset; padding: clamp(1.25rem, 3vw, 2.25rem);",
+        "source_hash": "91d0138c17683893e3bc363ed7f8fb12e59b2c89f6ecd762c2d385cdd0a4eaf6"
+      },
+      {
+        "name": "dx-footer",
+        "rule": "margin: 0 auto; max-width: 1160px; padding: 72px 24px;",
+        "source_hash": "632629669cc5a43eb09d2d009c24e1ccbcc8f4a582c0baa4cc27108bc6ef22d4"
+      },
+      {
+        "name": "dx-grid",
+        "rule": "display: grid; grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr)); gap: 1rem;",
+        "source_hash": "f96d7b525f9156e80ffb0d316f1065d61be35860b48d8917983f90c9c7642293"
+      },
+      {
+        "name": "dx-landing",
+        "rule": "background: linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-soft) 46%, var(--page-bg) 100%); color: var(--text); font-family: \"JetBrains Mono\", ui-monospace, \"SFMono-Regular\", Consolas, \"Liberation Mono\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; height: 100dvh; min-height: 100vh; overflow-x: hidden; overflow-y: auto; padding-bottom: 0; position: relative; scrollbar-gutter: stable; touch-action: pan-y; overscroll-behavior-y: contain; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; transition: background-color 220ms ease, color 220ms ease;",
+        "source_hash": "0e2b84b1f7ae60c72a453db05bee720eda4689e82a37d0cc8817f42be34cad4b"
+      },
+      {
+        "name": "dx-launch",
+        "rule": "width: min(1180px, calc(100vw - 32px)); margin: 0 auto; padding: 32px 0 72px;",
+        "source_hash": "60e8e34b52bd52789c57abaaf3240763f71af9000e58d96b44821185b59adbc1"
+      },
+      {
+        "name": "dx-muted",
+        "rule": "color: hsl(var(--muted));",
+        "source_hash": "a091a1a2172cb073b59291dd786e65de874461c058a936c52c2d98f42c8956a7"
+      },
+      {
+        "name": "dx-page-shell",
+        "rule": "align-items: center;",
+        "source_hash": "f9e56510903d3ef90b2754b897c1c550b86c029a6c5840e99fbba077e0100272"
+      },
+      {
+        "name": "dx-scrollbar",
+        "rule": "background: var(--scroll-track); border: 1px solid var(--border); border-radius: 999px; bottom: 24px; cursor: pointer; padding: 2px; position: fixed; right: max(4px, env(safe-area-inset-right)); top: 24px; width: 20px; z-index: 2147483647;",
+        "source_hash": "1a1f5a19a4bd29205529d58f8dede8b208f63d2c8cab228a33b74df31bf0df9c"
+      },
+      {
+        "name": "dx-secondary-action",
+        "rule": "min-height: 2.65rem; border-radius: var(--radius); border: 1px solid rgba(0, 0, 0, 0); padding: 0.7rem 1rem; font: inherit; font-size: 0.875rem; font-weight: 700; cursor: pointer; transition: transform 0.16s, border-color 0.16s, background 0.16s;",
+        "source_hash": "9c6e4e2de8fe04a7e4645a16ea6a4c7fcbb42379a5d5bd48e6ea7c6f6bca0e89"
+      },
+      {
+        "name": "dx-shell",
+        "rule": "min-height: 100vh; display: grid; place-items: center; padding: clamp(1rem, 3vw, 3rem);",
+        "source_hash": "40fe86b6469ad69af6b4d45031e88739f9bc7aae5c48d610eef98fc4631fb468"
+      },
+      {
+        "name": "dx-stack",
+        "rule": "display: grid; gap: 1rem;",
+        "source_hash": "bc97f1859c0d220b48721cffdfa7cc2b1f4bc1bcaeec43a7cafc13e1994c3b2e"
+      },
+      {
+        "name": "dx-table",
+        "rule": "border-collapse: collapse; margin-top: 30px; overflow: hidden; width: 100%;",
+        "source_hash": "36b25a990276650cbf610b0ea86d26ba2d7b714d36ff5b010c57383ecb40cece"
+      },
+      {
+        "name": "dx-template",
+        "rule": "min-height: 100vh; background: hsl(var(--background)); color: hsl(var(--foreground));",
+        "source_hash": "04932d1405594629afeb611e18cf47404132723ad44904cfe1571b61b34d8c69"
+      },
+      {
+        "name": "editor-rail",
+        "rule": "display: flex; flex-direction: column; gap: 10px; padding: 16px;",
+        "source_hash": "9cc7f37f6a286b6c0d70a6263532ee8570c890a2240aca0a1d8e31b98ed52d05"
+      },
+      {
+        "name": "editor-shell",
+        "rule": "background: var(--card-bg-subtle); border: 1px solid var(--border); border-radius: 8px; box-shadow: var(--shadow-soft); display: grid; gap: 14px; grid-template-columns: 160px minmax(0, 1fr) 180px; margin: 34px 0; min-height: 430px; overflow: hidden; padding: 14px;",
+        "source_hash": "616d136363ecea789ee2dae9ff0421514f90cfc25516575731bb32900e7977c9"
+      },
+      {
+        "name": "editor-stage",
+        "rule": "display: flex; flex-direction: column; gap: 18px; min-width: 0;",
+        "source_hash": "40f03819da26e1cdca9d8def1264b4ac9d405ae2f830e2a8986fbcea3c5b3662"
+      },
+      {
+        "name": "eyebrow",
+        "rule": "color: #6d7280; font-size: 0.78rem; font-weight: 800; letter-spacing: 0; margin: 0; text-transform: uppercase;",
+        "source_hash": "d6ad54b5823f139a34d5b1bc244997c58ceb770362daf1ae0e109f2c1b3f2619"
+      },
+      {
+        "name": "feature-banner",
+        "rule": "align-items: stretch; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; box-shadow: var(--shadow-soft); display: grid; grid-template-columns: minmax(220px, 0.42fr) minmax(0, 0.58fr); min-height: 260px; overflow: hidden;",
+        "source_hash": "90b20105a79d7748d9b93dc62947ccf251f3ef2261374aa4908184152de7e290"
+      },
+      {
+        "name": "feature-banner-grid",
+        "rule": "display: grid; gap: 22px; margin-top: 34px;",
+        "source_hash": "6f3e63c036a6fbecc49f592404e356c35dbef4aa060d811dcbfd5828606fc88f"
+      },
+      {
+        "name": "fixed",
+        "rule": "display: none !important;",
+        "source_hash": "434f5372b10731f1f446951daa33fdd995622f0ca25410aa2f447a946a772738"
+      },
+      {
+        "name": "flex",
+        "rule": "display: flex;",
+        "source_hash": "73e97aa22dbaa0ed0fa4dbdbfe867aa8152ee91797a10de19d56be9c44d2d3d3"
+      },
+      {
+        "name": "flex-col",
+        "rule": "flex-direction: column;",
+        "source_hash": "8385c7f4521c3bf42feb275b8714ed3b425b5104b47509fc3f69112f11f856b6"
+      },
+      {
+        "name": "flex-row",
+        "rule": "flex-direction: row;",
+        "source_hash": "af728b7694dedac764531177cc6791740572e4e01b9b30142cfdbaa9b41427f8"
+      },
+      {
+        "name": "flex-wrap",
+        "rule": "flex-wrap: wrap;",
+        "source_hash": "0c2d3910e62b2648d15671b3ac9c0d4324dc0de6e268b5746298df8059fb6eb5"
+      },
+      {
+        "name": "font-black",
+        "rule": "font-weight: 900;",
+        "source_hash": "c2e075854b649a0c173c3e9ee6a3332f4a7a5c522ce74736f2606b5b5ce6e0d2"
+      },
+      {
+        "name": "font-medium",
+        "rule": "font-weight: 500;",
+        "source_hash": "5b07fbca7c4356f385b6a228f40103d88886e034e4e7ea0c47e2c58e85be7df2"
+      },
+      {
+        "name": "font-mono",
+        "rule": "font-family: var(--font-mono, \"Geist Mono\", monospace);",
+        "source_hash": "a2a886cb48dda3e57d23bc96642c9f73b02316c7622c42660aa8f5c28c51d489"
+      },
+      {
+        "name": "font-semibold",
+        "rule": "font-weight: 600;",
+        "source_hash": "bfa0e01c2f637dc1b696c1e3317636b16e5dd0394ab0ac8bf949bbc903c437fa"
+      },
+      {
+        "name": "footer-brand",
+        "rule": "gap: 10px; min-width: 0; text-decoration: none;",
+        "source_hash": "c292bea03e2f2b0b194c0ac070ede3d1f8271fba136177135035452a38e863c2"
+      },
+      {
+        "name": "footer-callout",
+        "rule": "align-items: flex-start; background: var(--card-bg); border: 1px solid var(--border); border-bottom: 1px solid var(--border); border-radius: 8px; display: flex; gap: 16px; justify-content: space-between; margin: 28px 0 0; padding: 22px;",
+        "source_hash": "df372a0804c6b2bfd58cef1785dac6aa0067b9a5e4c5e767c22c99e229bd1802"
+      },
+      {
+        "name": "footer-link-grid",
+        "rule": "display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 36px 0;",
+        "source_hash": "c3616860cbbf8630bc0f0ffd1630b9133532c310714b85d77fe79d606eb39ca8"
+      },
+      {
+        "name": "footer-mega",
+        "rule": "height: clamp(156px, 20vw, 292px); margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); overflow: hidden; padding: clamp(28px, 5vw, 64px) 0 0;",
+        "source_hash": "b4b6a43f44ab46cff4dd29ceb4c6e36236a0a2960ec79d6f3d75b97a80217ede"
+      },
+      {
+        "name": "footer-status-strip",
+        "rule": "border-bottom: 1px solid var(--border); border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; padding: 18px 0;",
+        "source_hash": "34c4a58101539382bee4b97eea863bc82f55deb51e5107072803691a76546467"
+      },
+      {
+        "name": "footer-theme-row",
+        "rule": "align-items: center; border-bottom: 1px solid var(--border); display: flex; gap: 18px; justify-content: space-between; padding: 28px 0;",
+        "source_hash": "444102a6d82aef53939c390e316e8097a0d4f35fbb4f638f143920b630847292"
+      },
+      {
+        "name": "footer-topline",
+        "rule": "align-items: center; border-bottom: 1px solid var(--border); display: flex; gap: 18px; justify-content: space-between; padding-bottom: 28px;",
+        "source_hash": "ca20bf625d6dc6bee9b37158ed34709becef246a93b0f4f5d52db69a649d864e"
+      },
+      {
+        "name": "form-grid",
+        "rule": "display: grid; gap: 12px;",
+        "source_hash": "b72fc85d5bf15f003a468a080ddba0344c545f037178a1a369b74b10279b126e"
+      },
+      {
+        "name": "gap-1",
+        "rule": "gap: calc(var(--spacing) * 1);",
+        "source_hash": "0d2aa180fdd7f85ebfce71c4f089d09933f8a617ba838a19a6e71c843d00dc89"
+      },
+      {
+        "name": "gap-10",
+        "rule": "gap: calc(var(--spacing) * 10);",
+        "source_hash": "d5d1fd07823df36900cf18974ccadec1529aa393061671faa96be1fc1fb83ffe"
+      },
+      {
+        "name": "gap-2",
+        "rule": "gap: calc(var(--spacing) * 2);",
+        "source_hash": "fa37a169d37e55f38d491a7e69a1b217b68aefcaa618a80ae16e4a8330598674"
+      },
+      {
+        "name": "gap-3",
+        "rule": "gap: calc(var(--spacing) * 3);",
+        "source_hash": "8088b1d9d6601ffb164c7226282973c653fd692351179c312741f51007f94c81"
+      },
+      {
+        "name": "gap-4",
+        "rule": "gap: calc(var(--spacing) * 4);",
+        "source_hash": "6333e7201e46117cf8e28690b0a1af0c86c44c50b2b15d29de8f26990f4b3edb"
+      },
+      {
+        "name": "gap-5",
+        "rule": "gap: calc(var(--spacing) * 5);",
+        "source_hash": "981bca3bfae2b4de0168e1cc765a143cc328b0b5d530a60118e7c133a0bea854"
+      },
+      {
+        "name": "gap-8",
+        "rule": "gap: calc(var(--spacing) * 8);",
+        "source_hash": "ac759086fca7a84394351c48fd4fe5ba608540b0aac4a1302751cc5fc6e52463"
+      },
+      {
+        "name": "grid",
+        "rule": "display: grid;",
+        "source_hash": "59e25bd90875eb6807bc10a1b26843cbd4651cdd07139aed3d8a4dc7e21df031"
+      },
+      {
+        "name": "h-10",
+        "rule": "height: calc(var(--spacing) * 10);",
+        "source_hash": "92549b0446a4076cf62d31950b11dfab79b3820b6f6bc4b1992133c616d1a590"
+      },
+      {
+        "name": "h-11",
+        "rule": "height: calc(var(--spacing) * 11);",
+        "source_hash": "580e7cfa43cacae62ac25a97a2d2f78847bf2b972e51f10e88529931578ed415"
+      },
+      {
+        "name": "h-8",
+        "rule": "height: calc(var(--spacing) * 8);",
+        "source_hash": "42741f83f43473bb8db9750358266cb479b6ca7241a32121046d3a9aff814719"
+      },
+      {
+        "name": "hero",
+        "rule": "display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 440px); gap: 28px; align-items: stretch;",
+        "source_hash": "c7c1add55d479ac163651a97f0cbc8fe2a9bb2ed24df46b0a2db8254b81e825b"
+      },
+      {
+        "name": "hero-actions",
+        "rule": "display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px;",
+        "source_hash": "776661057cfd03c3f1e1ce4b86dc32616edd4abf21ed0fa6b55a3a32cc1e2870"
+      },
+      {
+        "name": "hero-copy",
+        "rule": "margin: 28px auto 0;",
+        "source_hash": "e415ca2eff6967774370f92633aaf469170763a8d99fe5a56dc59bf129dcf47c"
+      },
+      {
+        "name": "hero-image-grid",
+        "rule": "display: grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 34px; width: 100%;",
+        "source_hash": "bbe39f453fbd5044d88775015262213cc17b63e17ea8bee93b8c9865ef79585e"
+      },
+      {
+        "name": "hero-proof-grid",
+        "rule": "grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 44px;",
+        "source_hash": "5d25b15fa82c9259b10c44c31a20275ce8c6ae61efb851e225a13c5294780d76"
+      },
+      {
+        "name": "hero-video-carousel",
+        "rule": "border: 1px solid var(--border); border-radius: 8px; box-shadow: var(--shadow); margin: 0 auto clamp(32px, 5vw, 62px); max-width: 1080px; overflow: hidden; position: relative; width: 100%;",
+        "source_hash": "d448f00923271fa94248bd1b427fdf64a61175252518a6da468fcfc3691a568e"
+      },
+      {
+        "name": "inline-flex",
+        "rule": "display: inline-flex;",
+        "source_hash": "4c1d81e7ebdc88aa6b0e8af1ba8678383eaa6f796a276acf40dc7f9fd33fd971"
+      },
+      {
+        "name": "inline-stack",
+        "rule": "display: flex; flex-wrap: wrap; gap: 10px; align-items: center;",
+        "source_hash": "5f3b98e8466fd650246305dc8438cdad6eb14e3b0dd4e9e9bcfefc9cd401b9c9"
+      },
+      {
+        "name": "is-active",
+        "rule": "transform: translateY(-6px); border-color: rgba(25, 244, 138, 0.85); background: rgba(25, 244, 138, 0.12);",
+        "source_hash": "18e69b1657c43123463bb841bd63a3a0d0cbd613e3abd113c4dbd50754041509"
+      },
+      {
+        "name": "is-current",
+        "rule": "transform: translateX(4px); border-color: rgba(25, 244, 138, 0.75); background: rgba(25, 244, 138, 0.1);",
+        "source_hash": "31561023826187e49c34aaa37dcb6ad6cd14ff493403db0d62562343aba95f32"
+      },
+      {
+        "name": "is-visible",
+        "rule": "opacity: 1; transform: translateY(0) scale(1);",
+        "source_hash": "1a14a81538ed30d657a8484e0b34f4aea550d0c57a2a736619fe839b0b8f0280"
+      },
+      {
+        "name": "items-center",
+        "rule": "align-items: center;",
+        "source_hash": "f9e56510903d3ef90b2754b897c1c550b86c029a6c5840e99fbba077e0100272"
+      },
+      {
+        "name": "items-end",
+        "rule": "align-items: flex-end;",
+        "source_hash": "f45418ce5ed8cc28a2de61ff159ef58ac8c4edcdfa6bcf54a8b31f124b300ae5"
+      },
+      {
+        "name": "items-stretch",
+        "rule": "align-items: stretch;",
+        "source_hash": "9f94fe226f2591660b3305ddd5cd72356bedcaf3ec727ed311fabaee0055f7e8"
+      },
+      {
+        "name": "justify-between",
+        "rule": "justify-content: space-between;",
+        "source_hash": "c8bb7b019abb0b703ebd668f8c31de03eaf0316d878c91e0192be4bd544531dd"
+      },
+      {
+        "name": "justify-center",
+        "rule": "justify-content: center;",
+        "source_hash": "820fb718bf83c3916cf264ad17da7900323f926347d3b9f7c2b127383cc03f3f"
+      },
+      {
+        "name": "landing-cta",
+        "rule": "align-items: center; border: 1px solid var(--border); border-radius: 8px; box-shadow: var(--shadow-soft); display: flex; flex-direction: column; margin-top: 42px; text-align: center;",
+        "source_hash": "5fe09761539abcb6f7aa731a8ea2dca7668949d5ace15494b9b81ba7ffabc83e"
+      },
+      {
+        "name": "landing-hero",
+        "rule": "align-items: center; display: flex; flex-direction: column; min-height: calc(100vh - 80px); padding-top: 118px; text-align: center;",
+        "source_hash": "f3a7659e4c6e2aa34a377e7d0b66b51b99e4b87449f414188e5ebea8dcbc117d"
+      },
+      {
+        "name": "landing-section",
+        "rule": "border-top: 1px solid var(--border);",
+        "source_hash": "c0ce8540b879edbb0f271aa70f6d13e90f1d266655713e37b6d917d1cb5a25cb"
+      },
+      {
+        "name": "lead",
+        "rule": "max-width: 720px; color: #c2cad6; font-size: 18px; line-height: 1.7;",
+        "source_hash": "f785c87d553e571f334b81374a824c8b3b72ad7edeee8bcf4ab33641c39c729a"
+      },
+      {
+        "name": "leading-6",
+        "rule": "line-height: calc(var(--spacing) * 6);",
+        "source_hash": "ccbb7e796a5d831d571e9d69314639839313bc36e351fc095b36b5303464b646"
+      },
+      {
+        "name": "leading-8",
+        "rule": "line-height: calc(var(--spacing) * 8);",
+        "source_hash": "5fe64024832f7d49782c70c94a332a6be2d0e61f3fee2921cfd12e461e8bbb30"
+      },
+      {
+        "name": "leading-none",
+        "rule": "line-height: 1;",
+        "source_hash": "8429f00f53aa447a6130b0eec3e09b55d8865c05206a245cf574b1e0b0427354"
+      },
+      {
+        "name": "logo",
+        "rule": "display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid var(--dx-border); border-radius: 10px; background: #080a0f; color: var(--dx-text); font-size: 22px;",
+        "source_hash": "39094c20bac559756c90f7a4bdc8d9ba53586761f83d8e7f9b2a133253b383cc"
+      },
+      {
+        "name": "m-0",
+        "rule": "margin: calc(var(--spacing) * 0);",
+        "source_hash": "4797cd753e5b2f8679ca5ea5889842ca4fa0b44c539c95f82fd6caeb00478e93"
+      },
+      {
+        "name": "markdown",
+        "rule": "border-left: 3px solid var(--dx-green); padding-left: 16px;",
+        "source_hash": "73be69a4561c2478cfa4816cae27a7919e6b4c0be1ae48c950fa9337a57181f4"
+      },
+      {
+        "name": "max-w-2xl",
+        "rule": "max-width: var(--container-2xl);",
+        "source_hash": "41c418364ee5a615c3a22b66618f2ccfa0e4905a24374c87977aff08504fd07b"
+      },
+      {
+        "name": "max-w-3xl",
+        "rule": "max-width: var(--container-3xl);",
+        "source_hash": "ab82dc78b20e309a9fa51c8e92712b39ce5b7b9b9d3a8168877f7b84ab606de3"
+      },
+      {
+        "name": "max-w-5xl",
+        "rule": "max-width: var(--container-5xl);",
+        "source_hash": "14d601864a81bd3925a96f72b2f37f376ac6c5007b67bb69a2924d0955cfe281"
+      },
+      {
+        "name": "max-w-6xl",
+        "rule": "max-width: var(--container-6xl);",
+        "source_hash": "5437e0c06e69563865ad6344b6fd3406ee352cafe2aaafa12cdd1f6619cdd93b"
+      },
+      {
+        "name": "max-w-lg",
+        "rule": "max-width: var(--container-lg);",
+        "source_hash": "45008912118e3fc7218e1248266458569922bec631f221887c247ff09ad5be8c"
+      },
+      {
+        "name": "max-w-sm",
+        "rule": "max-width: var(--container-sm);",
+        "source_hash": "b33f299a26aa2a7f77abaa0e0b962ce369b606178a1fc6a3078510783c9b9946"
+      },
+      {
+        "name": "mb-5",
+        "rule": "margin-bottom: calc(var(--spacing) * 5);",
+        "source_hash": "8dc964ff9f53cc22bc8b590292541093ff385b24f5b1d38f1bfc9e1a122f71c7"
+      },
+      {
+        "name": "metric",
+        "rule": "display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid var(--dx-border); padding-top: 12px;",
+        "source_hash": "c040172b92c3e266c2601f54bebc22492161723ee77d925f5ef7ed584a35a384"
+      },
+      {
+        "name": "metric-grid",
+        "rule": "display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;",
+        "source_hash": "d0c220a693dbc330a7e30b72696412ccc62ba376dd4eabaad805ab378dc902d7"
+      },
+      {
+        "name": "min-h-0",
+        "rule": "min-height: calc(var(--spacing) * 0);",
+        "source_hash": "d03afbb7ed4246e8689511c8b6ebc1e97e30944ed43a97a41f1215e2cc52ba6c"
+      },
+      {
+        "name": "min-h-screen",
+        "rule": "min-height: 100vh;",
+        "source_hash": "9aa0ab50ea334f688451d64f268a300a324ed72ca4bf5c8afba50c91a8c80809"
+      },
+      {
+        "name": "min-w-48",
+        "rule": "min-width: calc(var(--spacing) * 48);",
+        "source_hash": "bb801b71fc4587f2a102431295670f5e024241951aac14f8babc51c2cae1eb8a"
+      },
+      {
+        "name": "motion-icon-rail",
+        "rule": "display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 28px;",
+        "source_hash": "173a2710dd9ad439bd44c14058e9adb92df3c396c03a0b7e8809a3e7e3382af3"
+      },
+      {
+        "name": "motion-progress-bar",
+        "rule": "display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--dx-green), #f8ff8f); transition: width 260ms ease;",
+        "source_hash": "7ec26e306e73dfd17e18b861278e472aae74f5089baff0f387b9bce9c06c1323"
+      },
+      {
+        "name": "motion-progress-track",
+        "rule": "position: relative; overflow: hidden; width: 100%; height: 10px; border: 1px solid var(--dx-border); border-radius: 999px; background: rgba(255, 255, 255, 0.06);",
+        "source_hash": "46d2c94756c83ee6e97819d9cc2bb059d35874d37a46907acc2da68e63d373a2"
+      },
+      {
+        "name": "motion-proof",
+        "rule": "transition: transform 260ms ease, border-color 260ms ease, background 260ms ease;",
+        "source_hash": "ae83ef33693025e6d42b07ad6dd8d8c097c2ed8d1254846e5c7642c7ad5e629d"
+      },
+      {
+        "name": "motion-stage-card",
+        "rule": "display: grid; gap: 4px; min-width: 0; border: 1px solid var(--dx-border); border-radius: 12px; padding: 12px; background: rgba(255, 255, 255, 0.035); transition: border-color 220ms ease, transform 220ms ease, background 220ms ease;",
+        "source_hash": "6939164487def2da2cad3ec15c92acaf99282d3722c0ff977bd4fd9f406c2e82"
+      },
+      {
+        "name": "motion-stage-list",
+        "rule": "display: grid; gap: 10px; margin-top: 4px;",
+        "source_hash": "04965b8d85cd6f4d02521df2e0c58cb62aaa1cd12db8b56fb426c489d73d3c6e"
+      },
+      {
+        "name": "mt-3",
+        "rule": "margin-top: calc(var(--spacing) * 3);",
+        "source_hash": "3560dfa6d73ad8c086e36ecf6ad16067b151da8165a86985582992b4d9eb3845"
+      },
+      {
+        "name": "nav",
+        "rule": "display: flex; flex-wrap: wrap; gap: 8px;",
+        "source_hash": "82c95fa868ca98764d7ef7e3fbfb78c2481bb4adfbb3dd0fb94dd9d3500cf4d1"
+      },
+      {
+        "name": "nav-links",
+        "rule": "gap: 4px; justify-content: flex-start; min-width: 0; overflow-x: auto; scrollbar-width: none;",
+        "source_hash": "465c01d6600ad94b58173a3aadf0b57a17827282da57f08430f62dda67c30c23"
+      },
+      {
+        "name": "notice",
+        "rule": "min-height: 24px; color: var(--dx-muted); font-size: 13px;",
+        "source_hash": "d2e6deb58931e39ee2166c4933a2841db752186dc6a1fc9b07d884d678fbb1f6"
+      },
+      {
+        "name": "origin-top-left",
+        "rule": "transform-origin: 0 0;",
+        "source_hash": "2a63b14e2d87357932a1d61e7296f25ec9ba293950ed8bde42bdfe5605e93367"
+      },
+      {
+        "name": "origin-top-right",
+        "rule": "transform-origin: 100% 0;",
+        "source_hash": "79799e237e9c5f1c17182ec8de0b66251a5a9fd08d8746e69750a462ca86bba2"
+      },
+      {
+        "name": "outline-none",
+        "rule": "outline: 2px solid rgba(0, 0, 0, 0); outline-offset: 2px;",
+        "source_hash": "9474709357a88fa68e1a2a21d3a0cb9297813be2178b0f0bfe5f3fd6cb7803d6"
+      },
+      {
+        "name": "overflow-hidden",
+        "rule": "overflow: hidden;",
+        "source_hash": "06fd6eb415b3de809aa4dff53ef8cc251570ce09cfdb0fbf89424c2da31fb5f8"
+      },
+      {
+        "name": "p-1",
+        "rule": "padding: calc(var(--spacing) * 1);",
+        "source_hash": "43b1c4896c0cacbb1b91fb95ebcb8afa59a85d259491b5332bba857c56c6fdcc"
+      },
+      {
+        "name": "p-3",
+        "rule": "padding: calc(var(--spacing) * 3);",
+        "source_hash": "376c18616718a4686e5e8c1eeecb82dfdca756ff4c0c8a8be1234d2281447476"
+      },
+      {
+        "name": "p-5",
+        "rule": "padding: calc(var(--spacing) * 5);",
+        "source_hash": "5c409f7bc57aa04e4cd2e3ec3677972e5aab6bdbb7d6f1fc3eef4ee4a75aaea4"
+      },
+      {
+        "name": "package-chip-grid",
+        "rule": "display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0;",
+        "source_hash": "525da723cdb8e6280bb552e52a225fd0a40867c8e6081e9e32023b15f00f85df"
+      },
+      {
+        "name": "pill",
+        "rule": "max-width: 100%; overflow-wrap: anywhere;",
+        "source_hash": "7c087c73cdc28ec414682723314e51e36ad0236980725ae70f035ad13b1e0a62"
+      },
+      {
+        "name": "place-items-center",
+        "rule": "place-items: center;",
+        "source_hash": "84ed8c00e1db41e33266c365ad48080e7d441e738f092933d49592368622694b"
+      },
+      {
+        "name": "platform-card",
+        "rule": "align-items: center; display: flex; flex-direction: column; gap: 7px; justify-content: center; min-height: 112px; overflow: hidden; padding: 14px 10px; position: relative; text-decoration: none; transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;",
+        "source_hash": "1a8b241d7a25f1a784616926279f005dabae733466ec336cd8cea201c2798c2f"
+      },
+      {
+        "name": "platform-grid",
+        "rule": "display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(112px, 1fr)); margin-top: 44px; width: 100%;",
+        "source_hash": "005355d3b282fe946dc89c7b54a80a0f310859c7e868a6d4427c5720191abd8f"
+      },
+      {
+        "name": "platform-icon",
+        "rule": "color: var(--text); display: block; height: 28px; margin-bottom: 2px; object-fit: contain; width: 28px;",
+        "source_hash": "2366f8c2b2e360bbec15333ad9b7b0133a1741632b0d400017a4d6d835691ba1"
+      },
+      {
+        "name": "playbook-grid",
+        "rule": "grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 24px;",
+        "source_hash": "b3f233928798c4412a876a88fa2156fe258160fd68ac1caf5f9a021e3423a2c3"
+      },
+      {
+        "name": "primary",
+        "rule": "background: var(--dx-text); color: #050505; font-weight: 800;",
+        "source_hash": "7f2ddd0c6d24b631466bdd3205699fbb8bb110c8d2f7dcc495c6c33f66ff7b3b"
+      },
+      {
+        "name": "primary-action",
+        "rule": "background: var(--button-primary-bg); border: 1px solid var(--button-primary-bg); color: var(--button-primary-text);",
+        "source_hash": "2953957c2c2ecdb30c8ac53b193c2a1070f8c8f0ca242145e213c330d3680f04"
+      },
+      {
+        "name": "proof-grid",
+        "rule": "display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;",
+        "source_hash": "604f08fc67d5c986884996bc74c7d2cf86aeae353a4b3a787c7572764e534cd5"
+      },
+      {
+        "name": "proof-header",
+        "rule": "border: 1px solid #d7dae3; border-radius: 8px; background: #ffffff; padding: 28px; box-shadow: 0 18px 44px rgba(25, 26, 30, 0.08);",
+        "source_hash": "2d830d62348b7863f251b82885a23fa080086c1b60ebd190497ee6c56f89f007"
+      },
+      {
+        "name": "proof-stack",
+        "rule": "display: grid; gap: 12px;",
+        "source_hash": "b72fc85d5bf15f003a468a080ddba0344c545f037178a1a369b74b10279b126e"
+      },
+      {
+        "name": "pt-16",
+        "rule": "padding-top: 0 !important;",
+        "source_hash": "e5f489cf9951a148c80e4c89e90c986054116d9bf69dca1e156b5db6e2c82de2"
+      },
+      {
+        "name": "px-2",
+        "rule": "padding-inline: calc(var(--spacing) * 2);",
+        "source_hash": "1c40fbde5c9eff54d7155f5dc409e05b99f00eb6fb9291b2b1f35147290557e1"
+      },
+      {
+        "name": "px-3",
+        "rule": "padding-inline: calc(var(--spacing) * 3);",
+        "source_hash": "8e59c5e81d1b7b085222d837d7645d374754eb12dc04c170d7323827e5f32c24"
+      },
+      {
+        "name": "px-4",
+        "rule": "padding-inline: calc(var(--spacing) * 4);",
+        "source_hash": "1f86af371801047a94fc2211373d85cf7823e1748bfb8824c420c14bcaf05b81"
+      },
+      {
+        "name": "px-6",
+        "rule": "padding-inline: calc(var(--spacing) * 6);",
+        "source_hash": "1b11fca43a16fda3d9bf72b30a1f111e8c00b76f19dbfabc9fad4ce0798de282"
+      },
+      {
+        "name": "py-1",
+        "rule": "padding-block: calc(var(--spacing) * 1);",
+        "source_hash": "0f42d76dc54bf19e0bc3ce40330052eb23f5be27deac200de7c18cce83c4e4f4"
+      },
+      {
+        "name": "py-10",
+        "rule": "padding-block: calc(var(--spacing) * 10);",
+        "source_hash": "c7ef177a64f3e25ec0febd66b51aed889a9ff52cd24e301b25ef1f89061540db"
+      },
+      {
+        "name": "py-14",
+        "rule": "padding-block: calc(var(--spacing) * 14);",
+        "source_hash": "81dbd7bf073b311fbc3ebe0a0e6534bdd9b321ec20ec4b5c2da41eae9590826e"
+      },
+      {
+        "name": "py-2",
+        "rule": "padding-block: calc(var(--spacing) * 2);",
+        "source_hash": "2958f71488c838664e2ce74ce7f01a551c7a9eea715125822d5645a9e4e5aba5"
+      },
+      {
+        "name": "query-box",
+        "rule": "display: grid; gap: 8px; border: 1px solid var(--dx-border); border-radius: 12px; margin: 14px 0; padding: 14px; background: rgba(255, 255, 255, 0.035); color: #cbd5e1; font-size: 13px;",
+        "source_hash": "cdc9499b12fd9ead0109f26eadf3eb72027131b28041c93ad9ae785ab5d81821"
+      },
+      {
+        "name": "rank-row",
+        "rule": "display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0;",
+        "source_hash": "525da723cdb8e6280bb552e52a225fd0a40867c8e6081e9e32023b15f00f85df"
+      },
+      {
+        "name": "rounded-full",
+        "rule": "border-radius: 3.40282e38px;",
+        "source_hash": "d2c443348db244b5081c15eb9af392817ade0d9cbb7108750672dff2e5186fcb"
+      },
+      {
+        "name": "rounded-lg",
+        "rule": "border-radius: var(--radius-lg);",
+        "source_hash": "8a4e50715cf1a32343827fd4c582db30ea1c819583cd584f8eb47a195df697f7"
+      },
+      {
+        "name": "rounded-md",
+        "rule": "border-radius: var(--radius-md);",
+        "source_hash": "df59a9d42f051d70e53740714e63282784351bff6d706b4c59919475b73fdff2"
+      },
+      {
+        "name": "route-card",
+        "rule": "border: 1px solid var(--dx-border); border-radius: 18px; background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025)); box-shadow: 0 22px 80px rgba(0, 0, 0, 0.35);",
+        "source_hash": "177b54689455803c9b57fe0cf864fdfd66683295e79d1d725bfaa71b9e493a45"
+      },
+      {
+        "name": "route-hero",
+        "rule": "margin-bottom: 18px; padding: 30px;",
+        "source_hash": "1be2ff5fe5addb2e13fdcd62fe213eef55fa62942f9014a7e34aeab0309e07b7"
+      },
+      {
+        "name": "route-label",
+        "rule": "color: #b45309; font-size: 0.9rem; font-weight: 700; margin: 28px 0 8px;",
+        "source_hash": "deb3612ccfb30835569ed61e3a59d22619817114e3bd736a3e20902c79d6cf6d"
+      },
+      {
+        "name": "route-list",
+        "rule": "margin-top: 12px;",
+        "source_hash": "cc73fd1301819fcd00fc5ef2a398aa55978d1091fb57678fa99d57d7280fbf33"
+      },
+      {
+        "name": "route-nav",
+        "rule": "align-items: center; display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0;",
+        "source_hash": "c9dadd8857e146627407b51a7f9a6f532d2904092e2e60cf20d1d7e8e91c16da"
+      },
+      {
+        "name": "route-shell",
+        "rule": "width: min(980px, calc(100vw - 32px)); margin: 0 auto; padding: 36px 0 72px;",
+        "source_hash": "8eeed7351ac160a67ddae33174802d3f3ee422fd02c4e89b797781b2b5bb76ba"
+      },
+      {
+        "name": "route-summary",
+        "rule": "color: #4a4f5c; font-size: 1.02rem; line-height: 1.65; max-width: 860px;",
+        "source_hash": "1bf741e7d2316a9e256cf5ceb0d0729680df861f374de330bba714ca8e5472b0"
+      },
+      {
+        "name": "runtime-boundary",
+        "rule": "border: 1px solid #d7dae3; border-radius: 8px; background: #ffffff; margin-top: 18px; padding: 24px;",
+        "source_hash": "a243deabeba2763f9af25f785d328dfb1c05ac9019881545ba5e80b7ccf4c879"
+      },
+      {
+        "name": "scene-canvas",
+        "rule": "width: 100%; min-height: 300px; border: 1px solid var(--dx-border); border-radius: 14px; background: #02040a;",
+        "source_hash": "3142ee65ee70b59cefa4b071fafb1b99fb5748e934dd76af9c86133857c84462"
+      },
+      {
+        "name": "scene-controls",
+        "rule": "display: flex; flex-wrap: wrap; gap: 8px; align-items: center;",
+        "source_hash": "55f4106ee9e135d2e0c212da4dac658a5612b515d4b0503ae471f052f1a08ba4"
+      },
+      {
+        "name": "scene-frame",
+        "rule": "display: grid; gap: 12px;",
+        "source_hash": "b72fc85d5bf15f003a468a080ddba0344c545f037178a1a369b74b10279b126e"
+      },
+      {
+        "name": "scene-panel",
+        "rule": "display: grid; min-height: 410px; padding: 18px;",
+        "source_hash": "2e8aeed4379c58c5ab26f600af4e0616991bf17ed2ce0c88a62fe3cfd1edf108"
+      },
+      {
+        "name": "screen-card",
+        "rule": "display: flex; flex-direction: column; justify-content: flex-end; min-height: 100%; overflow: hidden; padding: 28px; position: relative;",
+        "source_hash": "4e696c735b1e75d0251cb0b9d7b485ffddc7ead1abb949d0598eb310b8486a4e"
+      },
+      {
+        "name": "screen-dock",
+        "rule": "align-items: center; display: flex; gap: 9px; justify-content: center; padding: 10px;",
+        "source_hash": "691c64cfc604a640a57e54df783b4fcf73c8f33f078540c7fa312cd70dc7d1c4"
+      },
+      {
+        "name": "screen-stack",
+        "rule": "display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr) minmax(180px, 0.32fr); min-height: 330px;",
+        "source_hash": "760dd5cf1e0ed68f9cf73258a484e8be4a9be4ccffc4faae91d8f0e06c25a649"
+      },
+      {
+        "name": "secondary-action",
+        "rule": "align-items: center; border-radius: 8px; display: inline-flex; gap: 10px; font-weight: 900; justify-content: center; min-width: 150px; padding: 13px 18px; text-decoration: none; transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;",
+        "source_hash": "f490d44de53c8cda9a3d3ceb4c2e5cc058851bd3ef1a8a4f9ae5457e96367d2c"
+      },
+      {
+        "name": "section",
+        "rule": "margin-top: 26px;",
+        "source_hash": "c02bd30d592b97a56b17897683567bbaae92381e8b6cd9ef8d7b683ed7d2ae14"
+      },
+      {
+        "name": "shadow-lg",
+        "rule": "box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);",
+        "source_hash": "493899c43caeefef9d0cc1b5ab4ccd5dde37fb54f99052a570159bf16caaa3c5"
+      },
+      {
+        "name": "shadow-md",
+        "rule": "box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);",
+        "source_hash": "6936c9653e7e057bcf94d282a72ae3ed1b9c080eaf073409ef50096445d4da0d"
+      },
+      {
+        "name": "signal-strip",
+        "rule": "display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 28px 0;",
+        "source_hash": "f398804e76c169b6b6e65c1064ef34754ef37dc3776d05513642afbaaceaa205"
+      },
+      {
+        "name": "site-nav",
+        "rule": "align-items: center; backdrop-filter: blur(20px); background: color-mix(in srgb, var(--page-bg) 82%, transparent); border: 1px solid var(--border); border-radius: 999px; box-shadow: var(--shadow-soft); display: flex; gap: 18px; left: 50%; max-width: 1160px; padding: 10px; position: fixed; top: 16px; transform: translateX(-50%); width: calc(100% - 32px); z-index: 100;",
+        "source_hash": "262577d11335231d67d5eca876dbbf798aaef1477dde8ac7b385d49cce261d20"
+      },
+      {
+        "name": "size-5",
+        "rule": "width: calc(var(--spacing) * 5); height: calc(var(--spacing) * 5);",
+        "source_hash": "31691c6c41f7ca49d82a25573a693d4308493ff38dc27397ce5227c111f13b36"
+      },
+      {
+        "name": "source-table",
+        "rule": "border-collapse: collapse; width: 100%;",
+        "source_hash": "010b68f14f71af63b2681a3e25d36ad7e6a3c424e6a08030726b0ea33505ec39"
+      },
+      {
+        "name": "split-surface",
+        "rule": "display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr));",
+        "source_hash": "a3aca3909763c9f9b639953be5cca628b75d60295cc73b5232bee7230ef2338a"
+      },
+      {
+        "name": "stat-grid",
+        "rule": "grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 16px;",
+        "source_hash": "4d6462800375f344d332f29a610910648fcbbc1195e1d7b9772a201472814a33"
+      },
+      {
+        "name": "static",
+        "rule": "position: static;",
+        "source_hash": "33074cecab878567e23680cf2a23b662817514cca702382d2dac24f33915933d"
+      },
+      {
+        "name": "status-line",
+        "rule": "display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; color: var(--dx-muted); font-size: 13px;",
+        "source_hash": "f558e73d4fdcc6ab56c0bd553cb54dc7dc98b326d3d7a6bda46b104652219ead"
+      },
+      {
+        "name": "story-grid",
+        "rule": "grid-template-columns: repeat(2, minmax(0, 1fr));",
+        "source_hash": "1fa3cd08262695251c0d2fe388bef3b3924ba5542b6df99ad10e21dd73ecd99c"
+      },
+      {
+        "name": "surface-column",
+        "rule": "min-width: 0;",
+        "source_hash": "8433485d8d9b8bb37cd6c8c83219bc87933dd33850fa7309fcbda7abe86f225f"
+      },
+      {
+        "name": "table",
+        "rule": "display: table;",
+        "source_hash": "a811ffd812962a9cd2b23bdb293224a3002d83e39180ffe76ffb5cc596d2772f"
+      },
+      {
+        "name": "text-6xl",
+        "rule": "font-size: var(--text-6xl);",
+        "source_hash": "deb6121afa4acc22769219cd4f5690a80e8910845c53aec417fb857a2d22fdf5"
+      },
+      {
+        "name": "text-amber-900",
+        "rule": "color: #78350f;",
+        "source_hash": "3049158c17f9ca6d7b6176ead456fb45877f365ac9db918877b6153188642a70"
+      },
+      {
+        "name": "text-background",
+        "rule": "color: var(--color-background);",
+        "source_hash": "cf7e4afe197bc60828eda1e6b0813cca0dfd2775071435f5590dc41ad3c76375"
+      },
+      {
+        "name": "text-emerald-900",
+        "rule": "color: #064e3b;",
+        "source_hash": "3f7863fb87a677a72b3e588076cbc25d91d4f6de96ed087de2a0341ad8d53a05"
+      },
+      {
+        "name": "text-foreground",
+        "rule": "color: var(--color-foreground);",
+        "source_hash": "197ec7e93a9de04d0793bfe02e380deff79267daa49b79723b22c30386c60253"
+      },
+      {
+        "name": "text-lg",
+        "rule": "font-size: var(--text-lg);",
+        "source_hash": "c4e9c440c58941fdb7150f5787f01cb4b49b62a55b05f19f1b41a77888a2270d"
+      },
+      {
+        "name": "text-muted-foreground",
+        "rule": "color: hsl(var(--muted-foreground));",
+        "source_hash": "6210569052089105e5f76cd1eaa3cac9963ed3ed7047b3ecf1b6deb4af50f9f3"
+      },
+      {
+        "name": "text-primary",
+        "rule": "color: hsl(var(--primary));",
+        "source_hash": "2ac2a1d1c625ffca2b87c32adc80fa58049d0c72795b9b672aea696136fc0c98"
+      },
+      {
+        "name": "text-rose-900",
+        "rule": "color: #881337;",
+        "source_hash": "48c871b28f6ab2f2c0a671cd8d430661cb5430dcacf43e9db305b7eac743b0f5"
+      },
+      {
+        "name": "text-sm",
+        "rule": "font-size: var(--text-sm);",
+        "source_hash": "f2610a18d2df4417ef58b40635bfe3a935dbaf13d871c31cb5dd1768a703c206"
+      },
+      {
+        "name": "text-xl",
+        "rule": "font-size: var(--text-xl);",
+        "source_hash": "392bfe1bc54e76a18e0cb80afec62b50091fa76357999e9ba49b7f85345e84ba"
+      },
+      {
+        "name": "text-xs",
+        "rule": "font-size: var(--text-xs);",
+        "source_hash": "3ce70a5398113b38a21a88eba1a83a604181683bbce37aa93abfd8f69ec1da82"
+      },
+      {
+        "name": "theme-proof-grid",
+        "rule": "display: grid; gap: 16px; width: 100%;",
+        "source_hash": "a913506bc6186a2dc631c7d81f89e0fbc2c20cefd7dfb8cf80bc3806a8b8973e"
+      },
+      {
+        "name": "theme-section",
+        "rule": "position: relative;",
+        "source_hash": "c7b83ee7968a4a909f0e15c09ba7e815e626e6901392b87cc9d67707c747b0e5"
+      },
+      {
+        "name": "theme-switcher",
+        "rule": "align-items: center; display: flex;",
+        "source_hash": "6a5c539466e50db359c194961a21544910317da55be7bce439b0be1d1c1eaeb7"
+      },
+      {
+        "name": "three",
+        "rule": "grid-template-columns: repeat(3, minmax(0, 1fr));",
+        "source_hash": "e8c348450cd851c4eb7f3477de24747096f9a7aa13413af22bde67c63b3d21b9"
+      },
+      {
+        "name": "topbar",
+        "rule": "display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 16px 0 36px;",
+        "source_hash": "256d73332ccfeee1e291316c999891235253bf36054f45bf517fca8185e4ab47"
+      },
+      {
+        "name": "transition-colors",
+        "rule": "transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 0.15s;",
+        "source_hash": "b5f1c6204e10de7dea85f31cef7e4ce8c022bdd96e566573e7d0aeb3d0249f6a"
+      },
+      {
+        "name": "two",
+        "rule": "grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 16px;",
+        "source_hash": "1a9195dbdaee59c145e7581f906695ac6cfa47ffe9d4cfce4b604adf6d09f664"
+      },
+      {
+        "name": "uppercase",
+        "rule": "text-transform: uppercase;",
+        "source_hash": "0856e3b6fa750941df16c741012a469738a3743b56dc0bae5858dcbfbc6f957c"
+      },
+      {
+        "name": "video-carousel-track",
+        "rule": "animation: video-carousel-slide 24s cubic-bezier(0.76, 0, 0.24, 1) infinite; display: flex; width: 300%;",
+        "source_hash": "4d272087d05517bed4452550f91f5f21abeff77247f1f2b18c99d123b2922806"
+      },
+      {
+        "name": "video-play-icon",
+        "rule": "align-items: center; background: var(--button-primary-bg); border: 1px solid var(--border-strong); border-radius: 999px; color: var(--button-primary-text); display: flex; height: clamp(58px, 8vw, 92px); justify-content: center; padding: clamp(16px, 2.4vw, 28px); position: relative; width: clamp(58px, 8vw, 92px); z-index: 1;",
+        "source_hash": "c70fcdc4f59385f9135354265649cec09eec49a65db0fdd24718a7ffb29029cb"
+      },
+      {
+        "name": "video-preview-card",
+        "rule": "align-items: center; background: radial-gradient(circle at 24% 22%, color-mix(in srgb, var(--text) 18%, transparent), transparent 26%), radial-gradient(circle at 76% 34%, color-mix(in srgb, var(--text) 10%, transparent), transparent 30%), linear-gradient(135deg, var(--page-bg-alt), var(--card-bg-subtle)); color: var(--text); display: flex; height: 100%; justify-content: center; min-height: 100%; position: relative; text-decoration: none; width: 100%;",
+        "source_hash": "92d4aa84a2022aaa1683041592e92cafcaa60deb9928282df1ec0624efd582ad"
+      },
+      {
+        "name": "video-slide",
+        "rule": "aspect-ratio: 16 / 7.8; background: var(--card-bg-subtle); flex: 0 0 33.3333%; margin: 0; overflow: hidden; position: relative;",
+        "source_hash": "9dcaf18d3bd78517b99cdb9715c2ede0e3cd8413d64ef303400680e6f14c8d94"
+      },
+      {
+        "name": "visible",
+        "rule": "visibility: visible;",
+        "source_hash": "61aec1e2a5194e7d233675edf72305ba36d084406cc5d6adc85a0166123c5e20"
+      },
+      {
+        "name": "w-56",
+        "rule": "width: calc(var(--spacing) * 56);",
+        "source_hash": "d4a94f7696122a4230a48d13861992131b941eca7958e394a08995ea10afef23"
+      },
+      {
+        "name": "w-72",
+        "rule": "width: calc(var(--spacing) * 72);",
+        "source_hash": "eabe4ae3b14a776109f35722e1465a28d71d3f794872249348d585209691e8e3"
+      },
+      {
+        "name": "w-80",
+        "rule": "width: calc(var(--spacing) * 80);",
+        "source_hash": "a0ca11a20cd899b5c48c59970f8e7cceca57f2f18a55ebba58f84d4067ee1940"
+      },
+      {
+        "name": "w-full",
+        "rule": "width: 100%;",
+        "source_hash": "bab57470afcbc7af7f5d120ab693e52bfd6f088098426d5d2a387ec9325db13a"
+      },
+      {
+        "name": "wide",
+        "rule": "grid-column: 1 / -1;",
+        "source_hash": "0544a64c0bb741ff020d3482c55c56d34c7b4a5d85d5d876d6a3d17e349261ef"
+      }
+    ],
+    "delivery": "generated-css"
+  },
+  "source_manifest_hash": "fc1fe2d538ba46525226e6155a69ef855c9fb9e00fd98b95e769ac821079ad3a"
+}

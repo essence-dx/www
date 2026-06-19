@@ -1,0 +1,92 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "UI Components",
+    "package_id": "shadcn/ui/button",
+    "upstream_package": "shadcn-ui",
+    "upstream_version": "0.0.1",
+    "source_mirrors": [
+      "G:/WWW/inspirations/shadcn-ui",
+      "G:/WWW/inspirations/radix-primitives"
+    ],
+    "based_on": "shadcn-ui v4 registry plus Radix Primitives"
+  },
+  "guard": {
+    "id": "ui-components-generated-starter-materialization",
+    "routes": ["/"],
+    "guard_file": "benchmarks/ui-components-dx-check-package-lane-panel.test.ts",
+    "command": "dx run --test .\\benchmarks\\ui-components-dx-check-package-lane-panel.test.ts",
+    "proves": [
+      "UI Components generated-starter materialization guard",
+      "data-dx-check-package-lane-row=\"shadcn/ui/button\"",
+      "data-dx-token-scope=\"shadcn/ui/button\"",
+      "ui-components:receipt-hash-refresh",
+      "docs/packages/ui-components.source-guard-runbook.json",
+      "without claiming browser UI runtime proof",
+      "shadcn/ui/button source-only Studio discovery"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "ui-components-generated-starter-materialization",
+      "purpose": "The generated starter preserves the UI Components package-lane row, helper freshness markers, and package-scoped dx-check panel without claiming browser UI runtime proof.",
+      "evidence_field": "benchmarks/ui-components-dx-check-package-lane-panel.test.ts"
+    },
+    "command": {
+      "command": "dx run --test .\\benchmarks\\ui-components-dx-check-package-lane-panel.test.ts",
+      "purpose": "Validate the source-only UI Components package-lane row, generated starter materialization, helper freshness markers, and dx-check panel package scope.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture_path": "docs/packages/ui-components.source-guard-runbook.json",
+    "route": "/",
+    "runtime_proof": false,
+    "zed_visibility": "ui-components:receipt-hash-refresh"
+  },
+  "zed_dx_studio_markers": [
+    "data-dx-check-package-lane-row",
+    "data-dx-check-package-lane-hash-refresh-helper",
+    "data-dx-check-package-lane-hash-refresh-json-command",
+    "data-dx-check-package-lane-hash-refresh-zed",
+    "data-dx-style-surface",
+    "data-dx-token-scope",
+    "data-dx-package"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-shadcn-dashboard-controls.json",
+    "hash_helper": "examples/template/ui-components-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/ui-components-receipt-hashes.ts --check --json",
+    "zed_visibility": "ui-components:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "final operator copy",
+    "final accessibility review",
+    "dashboard persistence target",
+    "governed browser proof"
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned Studio source guard and runbook metadata only.",
+    "browser UI runtime proof, final accessibility review, and dashboard persistence stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

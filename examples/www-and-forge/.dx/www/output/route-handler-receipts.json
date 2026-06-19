@@ -1,0 +1,11 @@
+{
+  "schema": "dx.next.appRouteHandlerBuildReceipts",
+  "format": 1,
+  "receipt_count": 0,
+  "skipped_count": 0,
+  "node_modules_required": false,
+  "node_modules_present": false,
+  "lifecycle_scripts_executed": false,
+  "receipts": [],
+  "skipped": []
+}

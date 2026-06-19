@@ -1,0 +1,134 @@
+{
+  "schema": "dx.forge.package_import_plan",
+  "version": 1,
+  "generated_at": "2026-06-07T22:11:29.674816100+00:00",
+  "passed": true,
+  "score": 96,
+  "fail_under": 80,
+  "project": "G:\\Dx\\www-and-forge",
+  "ecosystem": "npm",
+  "package_id": "npm/lodash",
+  "package_name": "lodash",
+  "mode": "write",
+  "import_alias": "lodash",
+  "source_kind": "external-source-snapshot-ready",
+  "forge_import_gate": true,
+  "no_node_modules": true,
+  "package_installs_run": false,
+  "lifecycle_scripts_executed": false,
+  "lifecycle_script_status": "not-executed",
+  "requested_symbols": [
+    "default",
+    "startCase"
+  ],
+  "origin": {
+    "ecosystem": "npm",
+    "registry": "npmjs",
+    "package_name": "lodash",
+    "package_id": "npm/lodash",
+    "upstream_name": "npm:lodash",
+    "upstream_version": "unresolved",
+    "upstream_reference": "npm:lodash",
+    "tarball_integrity": null,
+    "source_kind": "external-source-snapshot-ready",
+    "generator": "dx-forge/npm-external-source-snapshot",
+    "provenance_verified": false,
+    "provenance_note": "External source snapshot; Forge did not run package-manager installs or lifecycle/setup/build scripts."
+  },
+  "license": {
+    "declared_license": "unreviewed",
+    "license_source": "Forge import metadata declaration",
+    "license_file_hash": null,
+    "reviewed": false,
+    "reviewed_at": null,
+    "note": "Declaration recorded; no formal DX legal review is claimed."
+  },
+  "exports": [
+    {
+      "name": "default",
+      "kind": "default",
+      "source_path": "index.ts",
+      "upstream_export": "default",
+      "materialized": true
+    },
+    {
+      "name": "startCase",
+      "kind": "named",
+      "source_path": "index.ts",
+      "upstream_export": "startCase",
+      "materialized": true
+    }
+  ],
+  "files_kept": [
+    "lib/forge/npm/lodash/index.ts"
+  ],
+  "files_written": [],
+  "files_rejected": [],
+  "files_considered": [
+    {
+      "path": "lib/forge/npm/lodash/index.ts",
+      "logical_path": "npm/lodash/index.ts",
+      "hash_algorithm": "BLAKE3",
+      "hash": "565fbc5df64ee42526986dada1cbdff50eb8b2d9584f579cb83246f568e77a61",
+      "bytes": 266,
+      "before_hash": "565fbc5df64ee42526986dada1cbdff50eb8b2d9584f579cb83246f568e77a61",
+      "after_hash": "565fbc5df64ee42526986dada1cbdff50eb8b2d9584f579cb83246f568e77a61",
+      "tracked_hash": "565fbc5df64ee42526986dada1cbdff50eb8b2d9584f579cb83246f568e77a61",
+      "status": "kept",
+      "traffic": "green",
+      "decision": "accepted",
+      "message": "Forge kept existing `lib/forge/npm/lodash/index.ts` because its BLAKE3 hash matches."
+    }
+  ],
+  "overwrite_policy": {
+    "missing_file": "write",
+    "matching_existing_file": "keep",
+    "different_existing_file": "reject-yellow-no-overwrite",
+    "security_sensitive_or_invalid_path": "reject-red-never-write",
+    "partial_write": "forbidden"
+  },
+  "materialization_ready": true,
+  "materialization_status": "materialized-source-owned-adapter",
+  "materialized": true,
+  "materialized_package_id": "npm/lodash",
+  "materialized_files": [
+    "lib/forge/npm/lodash/index.ts"
+  ],
+  "manifest_path": "G:\\Dx\\www-and-forge\\.dx/forge/source-manifest.json",
+  "receipt_path": "G:\\Dx\\www-and-forge\\.dx/forge/receipts\\20260607T221129703560500Z-npm-lodash.json",
+  "docs_path": "G:\\Dx\\www-and-forge\\.dx/forge/docs/npm-lodash.md",
+  "import_plan_path": "G:\\Dx\\www-and-forge\\.dx/forge/import-plans/npm-lodash.json",
+  "import_plan_sr_path": "G:\\Dx\\www-and-forge\\.dx/forge/import-plans/npm-lodash.sr",
+  "import_plan_machine_path": "G:\\Dx\\www-and-forge\\.dx/serializer\\forge-import-plans-npm-lodash.machine",
+  "inspected_inputs": [
+    "npm:lodash",
+    "local project contract",
+    "Forge import firewall policy",
+    "source-dir:G:\\Dx\\www-and-forge\\.dx\\cache\\npm\\lodash\\package"
+  ],
+  "review_required": [
+    "Resolve package metadata, integrity, license, advisory state, and source provenance without running package-manager installs.",
+    "Review package exports, dependency graph, runtime target, and side-effect boundaries before writing source-owned files.",
+    "Use --source-dir with an inspected unpacked package source when materializing a Forge snapshot."
+  ],
+  "can_materialize": [
+    "Source directories that have already been acquired, unpacked, and reviewed outside package-manager install trees.",
+    "Small source slices that pass path safety, UTF-8 source, file-count, and byte-budget checks.",
+    "Forge manifest, receipt, docs, import-plan .sr, and serializer .machine metadata."
+  ],
+  "cannot_materialize": [
+    "Manual review required: preinstall/install/postinstall lifecycle script.",
+    "Manual review required: native gyp or prebuild artifact.",
+    "Manual review required: dynamic require or import expression.",
+    "Manual review required: obfuscated or minified runtime blob.",
+    "Manual review required: large unreviewed dependency graph.",
+    "Manual review required: missing license or integrity declaration."
+  ],
+  "findings": [],
+  "review_findings": [],
+  "next_commands": [
+    "dx forge import npm lodash --plan --format markdown",
+    "dx forge import npm lodash --write --source-dir <inspected-source-dir>",
+    "Run dx check . --strict-project-contract after materialization."
+  ]
+}

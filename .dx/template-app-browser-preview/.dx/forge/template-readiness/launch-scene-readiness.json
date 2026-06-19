@@ -1,0 +1,42 @@
+{
+  "schema": "dx.forge.template_readiness.package",
+  "lane_number": 7,
+  "lane_name": "UI + Icons + Motion + 3D + WASM",
+  "package_id": "3d/launch-scene",
+  "official_package_name": "3D Scene System",
+  "upstream_package": "@react-three/fiber",
+  "upstream_version": "10.0.0",
+  "classification": "source-owned-limited-proof",
+  "status": "lock-backed-source-ready-runtime-pending",
+  "runtime_proof": false,
+  "browser_runtime_proof": false,
+  "webgl_runtime_proof": false,
+  "live_provider_execution": false,
+  "network_calls": false,
+  "secret_values": [],
+  "readiness_route": "/",
+  "source_owned_surfaces": [
+    "tools/launch/runtime-template/pages/index.html",
+    "components/template-app/landing-scene.tsx",
+    "components/scene/launch-scene.tsx",
+    "lib/scene/webgl-runtime.ts",
+    "scene/metadata.ts",
+    ".dx/forge/cache/3d-launch-scene/0.184.0-r3f10-dx.0/manifest.json"
+  ],
+  "template_usage": [
+    "default route renders the source-owned 3D landing scene surface",
+    "dashboard package row points at the lock-backed 3d/launch-scene package",
+    "runtime proof remains separate from source readiness"
+  ],
+  "blocked_until_configured": [
+    "approved browser preview",
+    "nonblank canvas screenshot or pixel proof",
+    "pointer interaction proof",
+    "native scroll proof on required routes"
+  ],
+  "honesty_notes": [
+    "This receipt proves checked-in source and lock-backed package wiring only.",
+    "It is not browser WebGL, screenshot, pointer interaction, or performance proof."
+  ],
+  "no_execution": true
+}

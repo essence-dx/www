@@ -1,0 +1,257 @@
+{
+  "schema": "dx.www.readiness.island_abi_receipt_contract",
+  "schema_revision": 1,
+  "id": "islands",
+  "island_abi_schema": "dx.www.readiness.island_abi",
+  "compiler_abi_schema": "dx.react.clientIsland.abi",
+  "compiler_capabilities_schema": "dx.react.clientIsland.abi.capabilities",
+  "passed": true,
+  "status": "source-owned-island-abi-foundation-current",
+  "source_root": "G:\\Dx\\www",
+  "source_owned": true,
+  "source_owned_runtime": true,
+  "directive_style_id": "camelCase-jsx-props",
+  "attribute_style": "camelCase",
+  "directives": [
+    "clientLoad",
+    "clientVisible",
+    "clientIdle",
+    "clientOnly"
+  ],
+  "core_directives": [
+    "clientLoad",
+    "clientVisible",
+    "clientIdle",
+    "clientOnly"
+  ],
+  "supported_directives": [
+    "clientLoad",
+    "clientVisible",
+    "clientIdle",
+    "clientOnly",
+    "clientMedia",
+    "clientInteraction"
+  ],
+  "additional_supported_directives": [
+    "clientMedia",
+    "clientInteraction"
+  ],
+  "release_core_directives": [
+    "clientLoad",
+    "clientVisible",
+    "clientIdle",
+    "clientOnly"
+  ],
+  "unsupported_directive_syntax": [
+    "client:load",
+    "client:visible",
+    "client:idle",
+    "client:only"
+  ],
+  "no_js_fallback_required": true,
+  "node_modules_required": false,
+  "full_react_hydration": false,
+  "react_synthetic_events": false,
+  "framework_adapter_boundary": "source-owned client islands by default; explicit framework adapters only through clientOnly",
+  "framework_adapter_policy": "clientOnly adapters are preview-only until executable framework adapter receipts exist",
+  "route_unit_proof_metadata": "DxRouteReceipt.client_island_abi",
+  "route_streaming_island_metadata": [
+    "directive_style_id",
+    "directives",
+    "hydration_strategy",
+    "no_js_fallback_required",
+    "browser_proof_status",
+    "framework_adapter"
+  ],
+  "canonical_starter_route": "/islands",
+  "canonical_proof_target_route": "/islands",
+  "canonical_starter_source": "examples/template/app/islands/page.tsx",
+  "canonical_local_dev_url": "http://127.0.0.1:3000/islands",
+  "browser_runtime_executed_by_readiness": false,
+  "browser_runtime_executed": false,
+  "hosted_provider_proof": false,
+  "provider_adapter_executed": false,
+  "live_browser_executed": false,
+  "release_ready": false,
+  "readiness_release_ready": false,
+  "fastest_world_claim": false,
+  "browser_proof_status": "foundation-not-release-proof",
+  "proof_scope": "local-source-owned-island-abi-foundation",
+  "source_check_count": 5,
+  "source_check_current_count": 5,
+  "source_checks": [
+    {
+      "id": "compiler-capabilities",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "core/src/delivery/client_island.rs",
+          "present": true,
+          "required_markers": [
+            "dx.react.clientIsland.abi.capabilities",
+            "dx.react.clientIsland.abi",
+            "source_owned_runtime: true",
+            "node_modules_required: false",
+            "full_react_hydration: false",
+            "no_js_fallback_required: true",
+            "readiness_release_ready: false",
+            "browser_proof_status: \"foundation-not-release-proof\"",
+            "camelCase-jsx-props",
+            "clientLoad",
+            "clientVisible",
+            "clientIdle",
+            "clientOnly",
+            "client:load",
+            "client:visible",
+            "client:idle",
+            "client:only",
+            "framework-adapter-client-only",
+            "framework adapters are preview-only"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "build-output-markers",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_build_output.rs",
+          "present": true,
+          "required_markers": [
+            "data-dx-client-island-bridge=\"source-owned\"",
+            "data-dx-client-island-abi=\"camelCase\"",
+            "data-dx-no-js-fallback=\"preserved\"",
+            "data-dx-client-only-adapters=\"preview-only\"",
+            "data-dx-client-media-support=\"recognized-not-executed\"",
+            "data-dx-client-interaction-support=\"recognized-not-executed\"",
+            "data-dx-browser-proof=\"not-claimed\"",
+            "data-dx-browser-runtime-proof=\"not-claimed\"",
+            "data-dx-provider-runtime-proof=\"not-claimed\"",
+            "data-dx-provider-adapters=\"not-executed\"",
+            "data-dx-island-hydration-strategy=",
+            "data-dx-island-directives=",
+            "data-dx-client-only-adapter=",
+            "data-dx-client-media=",
+            "data-dx-client-interaction="
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "source-render-manifest",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render.rs",
+          "present": true,
+          "required_markers": [
+            "\"client_islands\": client_islands",
+            "Bind generated state/event runtime operations to the real rendered DOM for client islands.",
+            "full_jsx_execution\": false",
+            "Source-owned TSX render surface, not full JSX execution."
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "client-component-runtime-boundary",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "dx-www/src/cli/app_router_execution/source_render_parts/client_component.rs",
+          "present": true,
+          "required_markers": [
+            "\"node_modules_required\": false",
+            "\"full_react_hydration\": false",
+            "\"react_synthetic_events\": false",
+            "Does not execute arbitrary client components, effects, context providers, or full React hydration.",
+            "generated-client-islands-ready"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "route-unit-no-js-proof",
+      "passed": true,
+      "source_owned": true,
+      "file_checks": [
+        {
+          "path": "core/src/delivery/app_route.rs",
+          "present": true,
+          "required_markers": [
+            "DxReactClientIslandInput",
+            "compile_react_client_islands(DxReactClientIslandInput",
+            "react_client_island_abi_capabilities()",
+            "directive_style_id",
+            "hydration_strategy",
+            "browser_proof_status",
+            "framework_adapter",
+            "local-source-owned-island-abi-foundation"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "core/src/delivery/contract.rs",
+          "present": true,
+          "required_markers": [
+            "DxRouteClientIslandAbiReceipt",
+            "client_island_abi",
+            "core_directives",
+            "browser_proof_status",
+            "fastest_world_claim"
+          ],
+          "missing_markers": [],
+          "passed": true
+        },
+        {
+          "path": "core/src/delivery/route_unit.rs",
+          "present": true,
+          "required_markers": [
+            "let lowercase_html = fallback.html.to_ascii_lowercase();",
+            "let script_tag_count = lowercase_html.matches(\"<script\").count();",
+            "client_island_abi: route_client_island_abi_receipt(streaming)",
+            "fn route_client_island_abi_receipt",
+            "core_directives: vec![",
+            "\"clientLoad\".to_string()",
+            "\"clientVisible\".to_string()",
+            "\"clientIdle\".to_string()",
+            "\"clientOnly\".to_string()",
+            "browser_proof_status: \"foundation-not-release-proof\".to_string()",
+            "no_js_capable",
+            "runtime_required",
+            "browser_api_required",
+            "astro_parity_status: \"not_yet_claimed\"",
+            "source-only no-JS shell; Astro parity is not claimed by route-unit proof"
+          ],
+          "missing_markers": [],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "next_proof": "per-directive browser proof, no-JS fallback proof, and explicit framework adapter receipts",
+  "rule": "This receipt validates the source-owned islands ABI foundation only; no browser/provider adapter execution is claimed by this source-owned islands ABI receipt.",
+  "serializer_provenance": {
+    "schema": "dx.www.readiness.serializer_provenance",
+    "source_path": ".dx/receipts/readiness/island-abi-latest.sr",
+    "machine_path": ".dx/serializer/receipts-readiness-island-abi-latest.machine",
+    "source_path_within_root": true,
+    "machine_path_within_root": true,
+    "source_blake3": "5a805c309b696e5f3dbe9635a6f1cd8cab226a132f6c8f6a79936a75750d75ac",
+    "machine_blake3": "b35e2958bcfbe567bb325a5d5074475b2f6655169fb5d3b500695bd537a28cfe"
+  }
+}

@@ -1,0 +1,2349 @@
+{
+  "tool": "dx deploy vercel",
+  "version": 1,
+  "generated_at": "2026-06-11T14:28:23.538177400+00:00",
+  "project": "G:/Dx/www/examples/shader",
+  "provider": "vercel",
+  "mode": "dry-run",
+  "target": "preview",
+  "passed": false,
+  "preflight_passed": false,
+  "ready_for_deploy": false,
+  "no_template_local_node_modules": true,
+  "preflight": {
+    "style_build": {
+      "ran": true,
+      "generated_css": "styles/generated.css",
+      "source_hash": "blake3:a3fb5e1b3f5fd279bcb1c5dca9af95aaab342796421952a603ee445c26f19f72",
+      "receipt_path": ".dx/receipts/style/build.json"
+    },
+    "style_check": {
+      "ran": true,
+      "passed": false,
+      "receipt_path": ".dx/receipts/style/check.json",
+      "missing_theme_tokens": [],
+      "stale_generated_css": false,
+      "hardcoded_color_findings": 99,
+      "tailwind_leakage_findings": 0
+    },
+    "imports_sync": {
+      "ran": true,
+      "source_hash": "blake3:e98e856c6bb3fca6ad157790055bb7a5730a76433cffb0eaef055fdde5ab52d4",
+      "entry_count": 4,
+      "receipt_path": ".dx/receipts/imports/sync.json"
+    },
+    "imports_check": {
+      "ran": true,
+      "passed": true,
+      "stale_barrel": false,
+      "stale_import_map": false,
+      "receipt_path": ".dx/receipts/imports/check.json"
+    }
+  },
+  "static_output": {
+    "path": ".dx/www/output",
+    "exists": true,
+    "ready": true,
+    "prebuilt": true,
+    "file_count": 245,
+    "html_file_count": 6,
+    "asset_file_count": 239,
+    "total_bytes": 28674868,
+    "manifest_exists": true,
+    "deploy_adapter_exists": true,
+    "content_hash": "blake3:276edd35bf5eca6b555a47d6199ac0208356f3ad7bc79b2e84dcfb40ea14c249",
+    "upload_plan": [
+      {
+        "source": ".dx/www/output/.dx/receipts/readiness/proof-graph.sr",
+        "target": ".dx/receipts/readiness/proof-graph.sr",
+        "bytes": 7621,
+        "hash": "blake3:485d60cec952fa4dd27e5bbdd4100a78e074b4823c91aeac01f864a21e90ef52",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/.dx/serializer/receipts-readiness-proof-graph.machine",
+        "target": ".dx/serializer/receipts-readiness-proof-graph.machine",
+        "bytes": 4598,
+        "hash": "blake3:801ff6db7b6eb4be47d888638ca846abdcc6e407a1a1bee6b649a07dc21b23a8",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/_dx/styles/react-route-3ca543b61d3665f6.css",
+        "target": "_dx/styles/react-route-3ca543b61d3665f6.css",
+        "bytes": 29703,
+        "hash": "blake3:3ca543b61d3665f6b85764530ac7f0304de3b27f803926d40704672ee01bf568",
+        "content_type": "text/css; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/_dx/styles/react-route-3ca543b61d3665f6.css.br",
+        "target": "_dx/styles/react-route-3ca543b61d3665f6.css.br",
+        "bytes": 5535,
+        "hash": "blake3:5b559285cf6589a28c0f4cd2aebd8f3948429ca3a16fdd0004abcc4c890dba9f",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/_dx/styles/react-route-3ca543b61d3665f6.css.gz",
+        "target": "_dx/styles/react-route-3ca543b61d3665f6.css.gz",
+        "bytes": 6275,
+        "hash": "blake3:5129920ea8ed5fc71da7a540c86f781f6fd4035222a9851519165c4cdfa9f7d2",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/app/app-router-execution.json",
+        "target": "app/app-router-execution.json",
+        "bytes": 268840,
+        "hash": "blake3:53ee5c9f0783fc771979ce7665342c0ea92ea14657c658be444cd83ea5d853c1",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/app/index.html",
+        "target": "app/index.html",
+        "bytes": 4254,
+        "hash": "blake3:c6e2a38b68879e684927533c81ab9d20d16e8badc5afad8413d2ab76d939f504",
+        "content_type": "text/html; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/app/page-graph.json",
+        "target": "app/page-graph.json",
+        "bytes": 35236,
+        "hash": "blake3:d0bdf0c1ebfef264097dc3bcdc30304e7b4a3297a7ee2cfa064fbf3b6381e4ae",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/app-route-discovery.json",
+        "target": "app-route-discovery.json",
+        "bytes": 900,
+        "hash": "blake3:88d69ccbd64c5a6a2d4c2ad94da27766fee5ceb425c1a70ede9b266e134413b6",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/cache-manifest.json",
+        "target": "cache-manifest.json",
+        "bytes": 80290,
+        "hash": "blake3:11a96142af69fc2f21509e6c52db8510464d914eac293dab1e641d0fc9ddd684",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/deploy-adapter.json",
+        "target": "deploy-adapter.json",
+        "bytes": 187080,
+        "hash": "blake3:26ca82a4c0aea7e689063b7336e9261dbbbe1039972f31fdab353d017204eeb2",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/favicon.svg",
+        "target": "favicon.svg",
+        "bytes": 874,
+        "hash": "blake3:cfb09e06980b21ac4df558fc791be8cef96c7ab79ab0d8b0eb0d8a95f7c1cd76",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/favicon.svg.br",
+        "target": "favicon.svg.br",
+        "bytes": 373,
+        "hash": "blake3:47088789d1b45b606984eb24a70e337fcecf0b6c6886d377e26a859a5fbd5e12",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/favicon.svg.gz",
+        "target": "favicon.svg.gz",
+        "bytes": 440,
+        "hash": "blake3:3cc120aba9ef800cb0538c035125b5535f8d25a3f2d56c111d00a8d06713f23c",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/forge/receipts/20260611T122031351813900Z-www-minimal-starter.json",
+        "target": "forge/receipts/20260611T122031351813900Z-www-minimal-starter.json",
+        "bytes": 8188,
+        "hash": "blake3:3ac51ef8515e716f382e24ea52d5e558bb681053bcee5b2ba5a1166e0b835899",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/forge/receipts/20260611T122031469502300Z-www-minimal-starter.json",
+        "target": "forge/receipts/20260611T122031469502300Z-www-minimal-starter.json",
+        "bytes": 8188,
+        "hash": "blake3:91478ed344a865add36632ce50089c0a42b7f3ed2ac5206fc3bfb19a2659c658",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/forge/source-manifest.json",
+        "target": "forge/source-manifest.json",
+        "bytes": 3453,
+        "hash": "blake3:fcd2e52c6ea20bcdc38b6ce97074d334677d7bc62d4bbce6af9b4538ba4ae2a2",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/forge/template-manifest.json",
+        "target": "forge/template-manifest.json",
+        "bytes": 3238,
+        "hash": "blake3:6a93f10ad805d82a4421cd19df583d9a796eb99a31ea1ab47401c98caa25a177",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/forge-hosting-manifest.json",
+        "target": "forge-hosting-manifest.json",
+        "bytes": 4812,
+        "hash": "blake3:46fc7a70d4e846ebb80046545fbc2a305020d7461d940f09606db16981f91f40",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/hosted-preview.json",
+        "target": "hosted-preview.json",
+        "bytes": 129375,
+        "hash": "blake3:2aff9408a427c5800a09098c9a169e31b5c118d2092b0a38d9f077ef7e222d25",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/icon.svg",
+        "target": "icon.svg",
+        "bytes": 869,
+        "hash": "blake3:32341047d202fbff170eee4493d889a5c3b79eb377ddeb284da8a0956070c2a4",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/icon.svg.br",
+        "target": "icon.svg.br",
+        "bytes": 378,
+        "hash": "blake3:d9010abc2f572d73ab824a4d36de8ed895572738c05be33d942a359d55b6ae5e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/icon.svg.gz",
+        "target": "icon.svg.gz",
+        "bytes": 439,
+        "hash": "blake3:a853247f5c390357b4e12b1a0fffaca8874ea07d5e8c859800c9aa8c3f6dec7c",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+        "target": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+        "bytes": 173,
+        "hash": "blake3:b0698a08bf67b748ccb4400aa57d47f69eda1112faac6a1a5bc97a476e2e73ed",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.br",
+        "target": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.br",
+        "bytes": 109,
+        "hash": "blake3:ee6c2943e4417b6a7f9ce10b50fff511dea886b109bac5d7458be92cadb64424",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.gz",
+        "target": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.gz",
+        "bytes": 148,
+        "hash": "blake3:f7068a7de574afc93f9d2c2de1099d7f039161cac57d25a8795df61f15632187",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+        "target": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+        "bytes": 169,
+        "hash": "blake3:653d1ed174ed39da288c163816f9ea88a5536c985cf0b2af87fd1856dc7fd278",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.br",
+        "target": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.br",
+        "bytes": 106,
+        "hash": "blake3:d56378f2d3c537039d7288ecce952acc7fb6042d7d911409e63bece68a528d3d",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.gz",
+        "target": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.gz",
+        "bytes": 146,
+        "hash": "blake3:cda98ebbbd3b211ab34cb967be46781b19f9dd654dcb48374e68caabbc14240a",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+        "target": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+        "bytes": 173,
+        "hash": "blake3:b0698a08bf67b748ccb4400aa57d47f69eda1112faac6a1a5bc97a476e2e73ed",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.br",
+        "target": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.br",
+        "bytes": 109,
+        "hash": "blake3:ee6c2943e4417b6a7f9ce10b50fff511dea886b109bac5d7458be92cadb64424",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.gz",
+        "target": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.gz",
+        "bytes": 148,
+        "hash": "blake3:f7068a7de574afc93f9d2c2de1099d7f039161cac57d25a8795df61f15632187",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/apple-touch-icon-653d1ed174ed39da.placeholder.svg",
+        "target": "image-placeholders/public/lumen/assets/apple-touch-icon-653d1ed174ed39da.placeholder.svg",
+        "bytes": 169,
+        "hash": "blake3:653d1ed174ed39da288c163816f9ea88a5536c985cf0b2af87fd1856dc7fd278",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/apple-touch-icon-653d1ed174ed39da.placeholder.svg.br",
+        "target": "image-placeholders/public/lumen/assets/apple-touch-icon-653d1ed174ed39da.placeholder.svg.br",
+        "bytes": 106,
+        "hash": "blake3:d56378f2d3c537039d7288ecce952acc7fb6042d7d911409e63bece68a528d3d",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/apple-touch-icon-653d1ed174ed39da.placeholder.svg.gz",
+        "target": "image-placeholders/public/lumen/assets/apple-touch-icon-653d1ed174ed39da.placeholder.svg.gz",
+        "bytes": 146,
+        "hash": "blake3:cda98ebbbd3b211ab34cb967be46781b19f9dd654dcb48374e68caabbc14240a",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/favicon-95cdf2c6b75c0830.placeholder.svg",
+        "target": "image-placeholders/public/lumen/assets/favicon-95cdf2c6b75c0830.placeholder.svg",
+        "bytes": 165,
+        "hash": "blake3:95cdf2c6b75c083093007bf8104024a8cfcaa661bf956e2957df6d0eb35dd549",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/favicon-95cdf2c6b75c0830.placeholder.svg.br",
+        "target": "image-placeholders/public/lumen/assets/favicon-95cdf2c6b75c0830.placeholder.svg.br",
+        "bytes": 124,
+        "hash": "blake3:166b9c5f0477971f9c6fbb65dfa1964f81cc1f2b009369eaeb950f7458909744",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/favicon-95cdf2c6b75c0830.placeholder.svg.gz",
+        "target": "image-placeholders/public/lumen/assets/favicon-95cdf2c6b75c0830.placeholder.svg.gz",
+        "bytes": 148,
+        "hash": "blake3:470484b18afabe082257e313ce6e3121c4bba914f3e6dd67baa7e71444f24b6c",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/icon-512-cb505b913bce0505.placeholder.svg",
+        "target": "image-placeholders/public/lumen/assets/icon-512-cb505b913bce0505.placeholder.svg",
+        "bytes": 169,
+        "hash": "blake3:cb505b913bce0505a94e65f240e95f959b02c135c688d2be45cf181661c934b7",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/icon-512-cb505b913bce0505.placeholder.svg.br",
+        "target": "image-placeholders/public/lumen/assets/icon-512-cb505b913bce0505.placeholder.svg.br",
+        "bytes": 113,
+        "hash": "blake3:0dfecd287980536c5b6fd726f221de8482d961fd85f757f17703db9cfc4e4cf7",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/icon-512-cb505b913bce0505.placeholder.svg.gz",
+        "target": "image-placeholders/public/lumen/assets/icon-512-cb505b913bce0505.placeholder.svg.gz",
+        "bytes": 148,
+        "hash": "blake3:2525846875efb4d2ceaf68e26fda4d2508a2e6b3ca0ad7f9388302f482637b0d",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/og-1bf376c84ef0d032.placeholder.svg",
+        "target": "image-placeholders/public/lumen/assets/og-1bf376c84ef0d032.placeholder.svg",
+        "bytes": 173,
+        "hash": "blake3:1bf376c84ef0d0321576d073dafe24bdb823c8c7dca3865c16041ff0e48ee720",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/og-1bf376c84ef0d032.placeholder.svg.br",
+        "target": "image-placeholders/public/lumen/assets/og-1bf376c84ef0d032.placeholder.svg.br",
+        "bytes": 118,
+        "hash": "blake3:4aba7d224201115d5662464003006edc25e854e64abd1588f9e92e114ece56a8",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/assets/og-1bf376c84ef0d032.placeholder.svg.gz",
+        "target": "image-placeholders/public/lumen/assets/og-1bf376c84ef0d032.placeholder.svg.gz",
+        "bytes": 152,
+        "hash": "blake3:e98a7ff256a6571c1fc5269328248375c880ddda55a7af13a378fe2a788c62fe",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/docs/preview-chrome-7b63194fdf61b810.placeholder.svg",
+        "target": "image-placeholders/public/lumen/docs/preview-chrome-7b63194fdf61b810.placeholder.svg",
+        "bytes": 173,
+        "hash": "blake3:7b63194fdf61b8109ac7bdaa71d7826a66c99f6763082736505c2c53d8f928f7",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/docs/preview-chrome-7b63194fdf61b810.placeholder.svg.br",
+        "target": "image-placeholders/public/lumen/docs/preview-chrome-7b63194fdf61b810.placeholder.svg.br",
+        "bytes": 119,
+        "hash": "blake3:30989ff61e3db29f70878bdc722d495c13e2d3c7a813d94b43cc6859ffa27d24",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/docs/preview-chrome-7b63194fdf61b810.placeholder.svg.gz",
+        "target": "image-placeholders/public/lumen/docs/preview-chrome-7b63194fdf61b810.placeholder.svg.gz",
+        "bytes": 154,
+        "hash": "blake3:728065e48be4733bcf07a97bb6c9dc349856a5d623e7b9af0ae1c746be267e68",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/docs/preview-glyphs-7b63194fdf61b810.placeholder.svg",
+        "target": "image-placeholders/public/lumen/docs/preview-glyphs-7b63194fdf61b810.placeholder.svg",
+        "bytes": 173,
+        "hash": "blake3:7b63194fdf61b8109ac7bdaa71d7826a66c99f6763082736505c2c53d8f928f7",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/docs/preview-glyphs-7b63194fdf61b810.placeholder.svg.br",
+        "target": "image-placeholders/public/lumen/docs/preview-glyphs-7b63194fdf61b810.placeholder.svg.br",
+        "bytes": 119,
+        "hash": "blake3:30989ff61e3db29f70878bdc722d495c13e2d3c7a813d94b43cc6859ffa27d24",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/docs/preview-glyphs-7b63194fdf61b810.placeholder.svg.gz",
+        "target": "image-placeholders/public/lumen/docs/preview-glyphs-7b63194fdf61b810.placeholder.svg.gz",
+        "bytes": 154,
+        "hash": "blake3:728065e48be4733bcf07a97bb6c9dc349856a5d623e7b9af0ae1c746be267e68",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/docs/preview-silk-7b63194fdf61b810.placeholder.svg",
+        "target": "image-placeholders/public/lumen/docs/preview-silk-7b63194fdf61b810.placeholder.svg",
+        "bytes": 173,
+        "hash": "blake3:7b63194fdf61b8109ac7bdaa71d7826a66c99f6763082736505c2c53d8f928f7",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/docs/preview-silk-7b63194fdf61b810.placeholder.svg.br",
+        "target": "image-placeholders/public/lumen/docs/preview-silk-7b63194fdf61b810.placeholder.svg.br",
+        "bytes": 119,
+        "hash": "blake3:30989ff61e3db29f70878bdc722d495c13e2d3c7a813d94b43cc6859ffa27d24",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/image-placeholders/public/lumen/docs/preview-silk-7b63194fdf61b810.placeholder.svg.gz",
+        "target": "image-placeholders/public/lumen/docs/preview-silk-7b63194fdf61b810.placeholder.svg.gz",
+        "bytes": 154,
+        "hash": "blake3:728065e48be4733bcf07a97bb6c9dc349856a5d623e7b9af0ae1c746be267e68",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/import-resolution.json",
+        "target": "import-resolution.json",
+        "bytes": 224,
+        "hash": "blake3:921bbb2db3dccd41f37d04a2ee5aceb0eda0f29deab675cc82a81d9cc2f2755b",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/index.html",
+        "target": "index.html",
+        "bytes": 4254,
+        "hash": "blake3:c6e2a38b68879e684927533c81ab9d20d16e8badc5afad8413d2ab76d939f504",
+        "content_type": "text/html; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/logo.svg",
+        "target": "logo.svg",
+        "bytes": 910,
+        "hash": "blake3:2afe23f6d7f297ab8563ee05015907d2d0f1903344c7e8b1b483835f0d78ca3b",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/logo.svg.br",
+        "target": "logo.svg.br",
+        "bytes": 371,
+        "hash": "blake3:e9df51bad8f47f10fd21000b2300727ce501d729760178826dc7f7e0011dc959",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/logo.svg.gz",
+        "target": "logo.svg.gz",
+        "bytes": 454,
+        "hash": "blake3:31458527ef777aa1ea0fe40abb5d658a59f079076682afe92652ad07d8c44ee4",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/LICENSE",
+        "target": "lumen/LICENSE",
+        "bytes": 1086,
+        "hash": "blake3:02ac006c1279a777567c8669f8314454567d00b340cd61b2a14575b639252b1e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/assets/apple-touch-icon.png",
+        "target": "lumen/assets/apple-touch-icon.png",
+        "bytes": 63857,
+        "hash": "blake3:8fd723367b340dd3f65cd7ea594c7f6b03e5190b2e6d3cecd423444b17fde626",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/assets/favicon.png",
+        "target": "lumen/assets/favicon.png",
+        "bytes": 9285,
+        "hash": "blake3:6bdf81e333572f096703f83c39864e824a4857f9f42ab5123d63a0eebac05c36",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/assets/icon-512.png",
+        "target": "lumen/assets/icon-512.png",
+        "bytes": 452852,
+        "hash": "blake3:e36bc88500149466a932efd92be6bb938a9719ac4503ed217ff2485c0d5a124d",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/assets/og.png",
+        "target": "lumen/assets/og.png",
+        "bytes": 2082002,
+        "hash": "blake3:c6e50395e4e4bd5c07e46078f85ee6a83ddc9e3658619d1d4b3d6c93d07d862a",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/docs/preview-chrome.png",
+        "target": "lumen/docs/preview-chrome.png",
+        "bytes": 2745569,
+        "hash": "blake3:b9351771d83a64715cdf837965573e9ae9144b165b769647d2dca59cc352566e",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/docs/preview-glyphs.png",
+        "target": "lumen/docs/preview-glyphs.png",
+        "bytes": 978265,
+        "hash": "blake3:a970ec9b0be1c989dc8ae7286f02e326264372ea5a62e39a5c962bd3b65e53e3",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/docs/preview-silk.png",
+        "target": "lumen/docs/preview-silk.png",
+        "bytes": 2469238,
+        "hash": "blake3:2eb9372696e7cf11d63a24435c59788c92690da97344cdc208a24113e64f30a5",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/docs.html",
+        "target": "lumen/docs.html",
+        "bytes": 8698,
+        "hash": "blake3:dcf8d7b9dc79741132b6c1e1af1c91ed16b4e183ae5943285e449ccbb9220d41",
+        "content_type": "text/html; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/engine.js",
+        "target": "lumen/js/engine.js",
+        "bytes": 10127,
+        "hash": "blake3:7e2eea390f9e1dbba110920e16bb800008f2952bd16ce9b8152a01c0848d18e1",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/engine.js.br",
+        "target": "lumen/js/engine.js.br",
+        "bytes": 2691,
+        "hash": "blake3:c04013c243b4bfef15f0748b0b421e6eb8dfeed8a550544e2a872f516a348a11",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/engine.js.gz",
+        "target": "lumen/js/engine.js.gz",
+        "bytes": 3026,
+        "hash": "blake3:31ef2734fd41ac6c8d2430b01421a827b8f5f4becdc2ea71d888b124dd7e2d2d",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/exporter.js",
+        "target": "lumen/js/exporter.js",
+        "bytes": 12566,
+        "hash": "blake3:348305ec4817dfe2c773d17ad4d663c3888f8199bff38f3278ff1b24949789b8",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/exporter.js.br",
+        "target": "lumen/js/exporter.js.br",
+        "bytes": 3362,
+        "hash": "blake3:f1fba5b5e46653df39c02852e1d33f3ee670f29de53f2abe89b2b0ce0c4621f6",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/exporter.js.gz",
+        "target": "lumen/js/exporter.js.gz",
+        "bytes": 3844,
+        "hash": "blake3:01716ba9273f266e544ff2110728a038e910127f1d8bcd43b76131117017209e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/fx.js",
+        "target": "lumen/js/fx.js",
+        "bytes": 3294,
+        "hash": "blake3:b31f960999d6a1282a58e45f3db01a629c463ddca4e42e3b4de13fff473dd260",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/fx.js.br",
+        "target": "lumen/js/fx.js.br",
+        "bytes": 1134,
+        "hash": "blake3:558c33b03019568ec54267a422aceab228cfe5f54a1436fd74505c13ac72391e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/fx.js.gz",
+        "target": "lumen/js/fx.js.gz",
+        "bytes": 1357,
+        "hash": "blake3:1ac8a60f845ad40c5867583ff6f0e9b31aa72eefc870a7d607315cb99aa41677",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/gifenc.js",
+        "target": "lumen/js/gifenc.js",
+        "bytes": 8378,
+        "hash": "blake3:5cebe3877a2b70ca64f6ab1c20cdcf6d5d8fc4a35df70248cfa8463a956100e1",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/gifenc.js.br",
+        "target": "lumen/js/gifenc.js.br",
+        "bytes": 2522,
+        "hash": "blake3:a076ce8cdfc08180e3a3ce4a1dd0406610ffb04f11d9ff27b6e23139d40e13dd",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/gifenc.js.gz",
+        "target": "lumen/js/gifenc.js.gz",
+        "bytes": 2834,
+        "hash": "blake3:269e90a6c951801b2e0320f679309303bd412e7c042687e53081d6641abdd37d",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/main.js",
+        "target": "lumen/js/main.js",
+        "bytes": 38389,
+        "hash": "blake3:15ea9b6584b40da48dd333b9735ebcb776fa0d916800198ba05aed61492a5876",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/main.js.br",
+        "target": "lumen/js/main.js.br",
+        "bytes": 9152,
+        "hash": "blake3:a4bf93d65b46bee89d9db549ab30c1a4cc5d45ac5281ac4c926a1471ff359364",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/main.js.gz",
+        "target": "lumen/js/main.js.gz",
+        "bytes": 10518,
+        "hash": "blake3:30d7097c6d891f9902224a29e9622a5105adb81e5d0694d8bdd5f37955d924e5",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/modals.js",
+        "target": "lumen/js/modals.js",
+        "bytes": 13081,
+        "hash": "blake3:68c1359dd920ba858584bbd584436d89188d46bf6b5ef988e01f4976872636b3",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/modals.js.br",
+        "target": "lumen/js/modals.js.br",
+        "bytes": 3216,
+        "hash": "blake3:2681da38cc919c955156bc4b94bed7a59f6ba48e60a1f4891f579c2f88794645",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/modals.js.gz",
+        "target": "lumen/js/modals.js.gz",
+        "bytes": 3653,
+        "hash": "blake3:596d19d455c5165e3651b8ebc8557c867bb1a3065598b36ae97dc0a9f00083cb",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/palettes.js",
+        "target": "lumen/js/palettes.js",
+        "bytes": 3784,
+        "hash": "blake3:204eb72c49f4665021a15f01caa2948660f1971d59465895b2bd9863e4c0c2c2",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/palettes.js.br",
+        "target": "lumen/js/palettes.js.br",
+        "bytes": 1325,
+        "hash": "blake3:e7801d65772ec710515f011acf7c9c9ded09a3c7278bb7de2332a014d7fdbf92",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/palettes.js.gz",
+        "target": "lumen/js/palettes.js.gz",
+        "bytes": 1490,
+        "hash": "blake3:5f0a674500f35723abfa79689bbaa72541c501efbc92e4f8e2f273523429dc8a",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/shaders.js",
+        "target": "lumen/js/shaders.js",
+        "bytes": 21579,
+        "hash": "blake3:33901d228423d859af3c33d846d3f049d909fa387e4c9b33673ea46bae9b6dc4",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/shaders.js.br",
+        "target": "lumen/js/shaders.js.br",
+        "bytes": 6127,
+        "hash": "blake3:502c928c7dcf44ee6d0f92d33df53b871ac85f3c4ef9575ca50e030847fba7d8",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/shaders.js.gz",
+        "target": "lumen/js/shaders.js.gz",
+        "bytes": 6903,
+        "hash": "blake3:595e49c50a6db65689099755da8332d10e8d0f4b1ebd0e1b630fc0c317defff7",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/ui.js",
+        "target": "lumen/js/ui.js",
+        "bytes": 7717,
+        "hash": "blake3:73bbfbb4d88bf6936fedc2c98b1632b7e5a227e0cfe829e308771eec419dff7e",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/ui.js.br",
+        "target": "lumen/js/ui.js.br",
+        "bytes": 1862,
+        "hash": "blake3:16de603368f6b2e8f052b6fa7243f1264d8cbc8b92ef6f9a993f378cbd389da0",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/ui.js.gz",
+        "target": "lumen/js/ui.js.gz",
+        "bytes": 2150,
+        "hash": "blake3:33c8152643e76329ecee0722eb133e80a9af82714b00d830b936f0baa25dcc18",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/webmmux.js",
+        "target": "lumen/js/webmmux.js",
+        "bytes": 4678,
+        "hash": "blake3:bd92008f400cda26092d896bd65cec24cbff0d29febb9849c9b46f2a5a7a574e",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/webmmux.js.br",
+        "target": "lumen/js/webmmux.js.br",
+        "bytes": 1450,
+        "hash": "blake3:017d99ca2b9de93d52b5f79d26bc628e4b914b022cdf3bf1449f023d723a3dff",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/webmmux.js.gz",
+        "target": "lumen/js/webmmux.js.gz",
+        "bytes": 1610,
+        "hash": "blake3:5eeb5c6550329af9529df3e6ae491e7fe964e3f6db57fcff32827ea420cbb9e4",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/zip.js",
+        "target": "lumen/js/zip.js",
+        "bytes": 3952,
+        "hash": "blake3:bc4e3341bafceec9d5cfaae665623a43c4f0056d56550e6094a151c12b5095fa",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/zip.js.br",
+        "target": "lumen/js/zip.js.br",
+        "bytes": 1140,
+        "hash": "blake3:eee4964d4552b269c0b00d9fe5c7cb9e19e07d74248e22c6542c27f177350662",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/js/zip.js.gz",
+        "target": "lumen/js/zip.js.gz",
+        "bytes": 1294,
+        "hash": "blake3:56782928b99ad24d9adb1c7646e3c7e968da33655ac923cb8d98aaf06e144368",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/styles.css",
+        "target": "lumen/styles.css",
+        "bytes": 29097,
+        "hash": "blake3:4ea80551c670edfbf31a05c8b05d1c707ef5d4d046a570bdb4fbc28e78a8e38e",
+        "content_type": "text/css; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/styles.css.br",
+        "target": "lumen/styles.css.br",
+        "bytes": 5285,
+        "hash": "blake3:519a7ca61394d3fd8d3473d64daad182add9dd265bd49c7d070dd2dc1f59d6ed",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/lumen/styles.css.gz",
+        "target": "lumen/styles.css.gz",
+        "bytes": 6106,
+        "hash": "blake3:0cfd4d11ae6bfafe2d7df1487f1491e08c5b21df2d60301754124379a3b3e4e2",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/manifest.json",
+        "target": "manifest.json",
+        "bytes": 3935,
+        "hash": "blake3:40f63a04542cc19b0ed150baf0d39429076925415d8a3cd41785301570a6e456",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/observability.json",
+        "target": "observability.json",
+        "bytes": 44484,
+        "hash": "blake3:5f7ef41c4fb6b8c1ccc2d086548dc180ec33da0ab75867a6fc554fbdf5f918dd",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/provider-adapter-smoke-matrix.json",
+        "target": "provider-adapter-smoke-matrix.json",
+        "bytes": 2371,
+        "hash": "blake3:8bb95c09043cf80d5b4166585f59d8a8630374bb060d1631d6ca8e7e43feea1a",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/provider-adapter.dx-cloud.json",
+        "target": "provider-adapter.dx-cloud.json",
+        "bytes": 306293,
+        "hash": "blake3:e3a7db809ca0c81e9449da8ae5a45a9de54a6b973050f09b779ac2f4acf019ef",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/favicon-cfb09e06980b21ac.svg",
+        "target": "public/favicon-cfb09e06980b21ac.svg",
+        "bytes": 874,
+        "hash": "blake3:cfb09e06980b21ac4df558fc791be8cef96c7ab79ab0d8b0eb0d8a95f7c1cd76",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/favicon-cfb09e06980b21ac.svg.br",
+        "target": "public/favicon-cfb09e06980b21ac.svg.br",
+        "bytes": 373,
+        "hash": "blake3:47088789d1b45b606984eb24a70e337fcecf0b6c6886d377e26a859a5fbd5e12",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/favicon-cfb09e06980b21ac.svg.gz",
+        "target": "public/favicon-cfb09e06980b21ac.svg.gz",
+        "bytes": 440,
+        "hash": "blake3:3cc120aba9ef800cb0538c035125b5535f8d25a3f2d56c111d00a8d06713f23c",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/favicon.svg",
+        "target": "public/favicon.svg",
+        "bytes": 874,
+        "hash": "blake3:cfb09e06980b21ac4df558fc791be8cef96c7ab79ab0d8b0eb0d8a95f7c1cd76",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/favicon.svg.br",
+        "target": "public/favicon.svg.br",
+        "bytes": 373,
+        "hash": "blake3:47088789d1b45b606984eb24a70e337fcecf0b6c6886d377e26a859a5fbd5e12",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/favicon.svg.gz",
+        "target": "public/favicon.svg.gz",
+        "bytes": 440,
+        "hash": "blake3:3cc120aba9ef800cb0538c035125b5535f8d25a3f2d56c111d00a8d06713f23c",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/icon-32341047d202fbff.svg",
+        "target": "public/icon-32341047d202fbff.svg",
+        "bytes": 869,
+        "hash": "blake3:32341047d202fbff170eee4493d889a5c3b79eb377ddeb284da8a0956070c2a4",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/icon-32341047d202fbff.svg.br",
+        "target": "public/icon-32341047d202fbff.svg.br",
+        "bytes": 378,
+        "hash": "blake3:d9010abc2f572d73ab824a4d36de8ed895572738c05be33d942a359d55b6ae5e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/icon-32341047d202fbff.svg.gz",
+        "target": "public/icon-32341047d202fbff.svg.gz",
+        "bytes": 439,
+        "hash": "blake3:a853247f5c390357b4e12b1a0fffaca8874ea07d5e8c859800c9aa8c3f6dec7c",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/icon.svg",
+        "target": "public/icon.svg",
+        "bytes": 869,
+        "hash": "blake3:32341047d202fbff170eee4493d889a5c3b79eb377ddeb284da8a0956070c2a4",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/icon.svg.br",
+        "target": "public/icon.svg.br",
+        "bytes": 378,
+        "hash": "blake3:d9010abc2f572d73ab824a4d36de8ed895572738c05be33d942a359d55b6ae5e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/icon.svg.gz",
+        "target": "public/icon.svg.gz",
+        "bytes": 439,
+        "hash": "blake3:a853247f5c390357b4e12b1a0fffaca8874ea07d5e8c859800c9aa8c3f6dec7c",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/logo-2afe23f6d7f297ab.svg",
+        "target": "public/logo-2afe23f6d7f297ab.svg",
+        "bytes": 910,
+        "hash": "blake3:2afe23f6d7f297ab8563ee05015907d2d0f1903344c7e8b1b483835f0d78ca3b",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/logo-2afe23f6d7f297ab.svg.br",
+        "target": "public/logo-2afe23f6d7f297ab.svg.br",
+        "bytes": 371,
+        "hash": "blake3:e9df51bad8f47f10fd21000b2300727ce501d729760178826dc7f7e0011dc959",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/logo-2afe23f6d7f297ab.svg.gz",
+        "target": "public/logo-2afe23f6d7f297ab.svg.gz",
+        "bytes": 454,
+        "hash": "blake3:31458527ef777aa1ea0fe40abb5d658a59f079076682afe92652ad07d8c44ee4",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/logo.svg",
+        "target": "public/logo.svg",
+        "bytes": 910,
+        "hash": "blake3:2afe23f6d7f297ab8563ee05015907d2d0f1903344c7e8b1b483835f0d78ca3b",
+        "content_type": "image/svg+xml",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/logo.svg.br",
+        "target": "public/logo.svg.br",
+        "bytes": 371,
+        "hash": "blake3:e9df51bad8f47f10fd21000b2300727ce501d729760178826dc7f7e0011dc959",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/logo.svg.gz",
+        "target": "public/logo.svg.gz",
+        "bytes": 454,
+        "hash": "blake3:31458527ef777aa1ea0fe40abb5d658a59f079076682afe92652ad07d8c44ee4",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/LICENSE",
+        "target": "public/lumen/LICENSE",
+        "bytes": 1086,
+        "hash": "blake3:02ac006c1279a777567c8669f8314454567d00b340cd61b2a14575b639252b1e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/LICENSE-02ac006c1279a777",
+        "target": "public/lumen/LICENSE-02ac006c1279a777",
+        "bytes": 1086,
+        "hash": "blake3:02ac006c1279a777567c8669f8314454567d00b340cd61b2a14575b639252b1e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/assets/apple-touch-icon-8fd723367b340dd3.png",
+        "target": "public/lumen/assets/apple-touch-icon-8fd723367b340dd3.png",
+        "bytes": 63857,
+        "hash": "blake3:8fd723367b340dd3f65cd7ea594c7f6b03e5190b2e6d3cecd423444b17fde626",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/assets/apple-touch-icon.png",
+        "target": "public/lumen/assets/apple-touch-icon.png",
+        "bytes": 63857,
+        "hash": "blake3:8fd723367b340dd3f65cd7ea594c7f6b03e5190b2e6d3cecd423444b17fde626",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/assets/favicon-6bdf81e333572f09.png",
+        "target": "public/lumen/assets/favicon-6bdf81e333572f09.png",
+        "bytes": 9285,
+        "hash": "blake3:6bdf81e333572f096703f83c39864e824a4857f9f42ab5123d63a0eebac05c36",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/assets/favicon.png",
+        "target": "public/lumen/assets/favicon.png",
+        "bytes": 9285,
+        "hash": "blake3:6bdf81e333572f096703f83c39864e824a4857f9f42ab5123d63a0eebac05c36",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/assets/icon-512-e36bc88500149466.png",
+        "target": "public/lumen/assets/icon-512-e36bc88500149466.png",
+        "bytes": 452852,
+        "hash": "blake3:e36bc88500149466a932efd92be6bb938a9719ac4503ed217ff2485c0d5a124d",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/assets/icon-512.png",
+        "target": "public/lumen/assets/icon-512.png",
+        "bytes": 452852,
+        "hash": "blake3:e36bc88500149466a932efd92be6bb938a9719ac4503ed217ff2485c0d5a124d",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/assets/og-c6e50395e4e4bd5c.png",
+        "target": "public/lumen/assets/og-c6e50395e4e4bd5c.png",
+        "bytes": 2082002,
+        "hash": "blake3:c6e50395e4e4bd5c07e46078f85ee6a83ddc9e3658619d1d4b3d6c93d07d862a",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/assets/og.png",
+        "target": "public/lumen/assets/og.png",
+        "bytes": 2082002,
+        "hash": "blake3:c6e50395e4e4bd5c07e46078f85ee6a83ddc9e3658619d1d4b3d6c93d07d862a",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/docs/preview-chrome-b9351771d83a6471.png",
+        "target": "public/lumen/docs/preview-chrome-b9351771d83a6471.png",
+        "bytes": 2745569,
+        "hash": "blake3:b9351771d83a64715cdf837965573e9ae9144b165b769647d2dca59cc352566e",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/docs/preview-chrome.png",
+        "target": "public/lumen/docs/preview-chrome.png",
+        "bytes": 2745569,
+        "hash": "blake3:b9351771d83a64715cdf837965573e9ae9144b165b769647d2dca59cc352566e",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/docs/preview-glyphs-a970ec9b0be1c989.png",
+        "target": "public/lumen/docs/preview-glyphs-a970ec9b0be1c989.png",
+        "bytes": 978265,
+        "hash": "blake3:a970ec9b0be1c989dc8ae7286f02e326264372ea5a62e39a5c962bd3b65e53e3",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/docs/preview-glyphs.png",
+        "target": "public/lumen/docs/preview-glyphs.png",
+        "bytes": 978265,
+        "hash": "blake3:a970ec9b0be1c989dc8ae7286f02e326264372ea5a62e39a5c962bd3b65e53e3",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/docs/preview-silk-2eb9372696e7cf11.png",
+        "target": "public/lumen/docs/preview-silk-2eb9372696e7cf11.png",
+        "bytes": 2469238,
+        "hash": "blake3:2eb9372696e7cf11d63a24435c59788c92690da97344cdc208a24113e64f30a5",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/docs/preview-silk.png",
+        "target": "public/lumen/docs/preview-silk.png",
+        "bytes": 2469238,
+        "hash": "blake3:2eb9372696e7cf11d63a24435c59788c92690da97344cdc208a24113e64f30a5",
+        "content_type": "image/png",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/docs-dcf8d7b9dc797411.html",
+        "target": "public/lumen/docs-dcf8d7b9dc797411.html",
+        "bytes": 8698,
+        "hash": "blake3:dcf8d7b9dc79741132b6c1e1af1c91ed16b4e183ae5943285e449ccbb9220d41",
+        "content_type": "text/html; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/docs.html",
+        "target": "public/lumen/docs.html",
+        "bytes": 8698,
+        "hash": "blake3:dcf8d7b9dc79741132b6c1e1af1c91ed16b4e183ae5943285e449ccbb9220d41",
+        "content_type": "text/html; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/engine-7e2eea390f9e1dbb.js",
+        "target": "public/lumen/js/engine-7e2eea390f9e1dbb.js",
+        "bytes": 10127,
+        "hash": "blake3:7e2eea390f9e1dbba110920e16bb800008f2952bd16ce9b8152a01c0848d18e1",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/engine-7e2eea390f9e1dbb.js.br",
+        "target": "public/lumen/js/engine-7e2eea390f9e1dbb.js.br",
+        "bytes": 2691,
+        "hash": "blake3:c04013c243b4bfef15f0748b0b421e6eb8dfeed8a550544e2a872f516a348a11",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/engine-7e2eea390f9e1dbb.js.gz",
+        "target": "public/lumen/js/engine-7e2eea390f9e1dbb.js.gz",
+        "bytes": 3026,
+        "hash": "blake3:31ef2734fd41ac6c8d2430b01421a827b8f5f4becdc2ea71d888b124dd7e2d2d",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/engine.js",
+        "target": "public/lumen/js/engine.js",
+        "bytes": 10127,
+        "hash": "blake3:7e2eea390f9e1dbba110920e16bb800008f2952bd16ce9b8152a01c0848d18e1",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/engine.js.br",
+        "target": "public/lumen/js/engine.js.br",
+        "bytes": 2691,
+        "hash": "blake3:c04013c243b4bfef15f0748b0b421e6eb8dfeed8a550544e2a872f516a348a11",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/engine.js.gz",
+        "target": "public/lumen/js/engine.js.gz",
+        "bytes": 3026,
+        "hash": "blake3:31ef2734fd41ac6c8d2430b01421a827b8f5f4becdc2ea71d888b124dd7e2d2d",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/exporter-348305ec4817dfe2.js",
+        "target": "public/lumen/js/exporter-348305ec4817dfe2.js",
+        "bytes": 12566,
+        "hash": "blake3:348305ec4817dfe2c773d17ad4d663c3888f8199bff38f3278ff1b24949789b8",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/exporter-348305ec4817dfe2.js.br",
+        "target": "public/lumen/js/exporter-348305ec4817dfe2.js.br",
+        "bytes": 3362,
+        "hash": "blake3:f1fba5b5e46653df39c02852e1d33f3ee670f29de53f2abe89b2b0ce0c4621f6",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/exporter-348305ec4817dfe2.js.gz",
+        "target": "public/lumen/js/exporter-348305ec4817dfe2.js.gz",
+        "bytes": 3844,
+        "hash": "blake3:01716ba9273f266e544ff2110728a038e910127f1d8bcd43b76131117017209e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/exporter.js",
+        "target": "public/lumen/js/exporter.js",
+        "bytes": 12566,
+        "hash": "blake3:348305ec4817dfe2c773d17ad4d663c3888f8199bff38f3278ff1b24949789b8",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/exporter.js.br",
+        "target": "public/lumen/js/exporter.js.br",
+        "bytes": 3362,
+        "hash": "blake3:f1fba5b5e46653df39c02852e1d33f3ee670f29de53f2abe89b2b0ce0c4621f6",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/exporter.js.gz",
+        "target": "public/lumen/js/exporter.js.gz",
+        "bytes": 3844,
+        "hash": "blake3:01716ba9273f266e544ff2110728a038e910127f1d8bcd43b76131117017209e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/fx-b31f960999d6a128.js",
+        "target": "public/lumen/js/fx-b31f960999d6a128.js",
+        "bytes": 3294,
+        "hash": "blake3:b31f960999d6a1282a58e45f3db01a629c463ddca4e42e3b4de13fff473dd260",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/fx-b31f960999d6a128.js.br",
+        "target": "public/lumen/js/fx-b31f960999d6a128.js.br",
+        "bytes": 1134,
+        "hash": "blake3:558c33b03019568ec54267a422aceab228cfe5f54a1436fd74505c13ac72391e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/fx-b31f960999d6a128.js.gz",
+        "target": "public/lumen/js/fx-b31f960999d6a128.js.gz",
+        "bytes": 1357,
+        "hash": "blake3:1ac8a60f845ad40c5867583ff6f0e9b31aa72eefc870a7d607315cb99aa41677",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/fx.js",
+        "target": "public/lumen/js/fx.js",
+        "bytes": 3294,
+        "hash": "blake3:b31f960999d6a1282a58e45f3db01a629c463ddca4e42e3b4de13fff473dd260",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/fx.js.br",
+        "target": "public/lumen/js/fx.js.br",
+        "bytes": 1134,
+        "hash": "blake3:558c33b03019568ec54267a422aceab228cfe5f54a1436fd74505c13ac72391e",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/fx.js.gz",
+        "target": "public/lumen/js/fx.js.gz",
+        "bytes": 1357,
+        "hash": "blake3:1ac8a60f845ad40c5867583ff6f0e9b31aa72eefc870a7d607315cb99aa41677",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/gifenc-5cebe3877a2b70ca.js",
+        "target": "public/lumen/js/gifenc-5cebe3877a2b70ca.js",
+        "bytes": 8378,
+        "hash": "blake3:5cebe3877a2b70ca64f6ab1c20cdcf6d5d8fc4a35df70248cfa8463a956100e1",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/gifenc-5cebe3877a2b70ca.js.br",
+        "target": "public/lumen/js/gifenc-5cebe3877a2b70ca.js.br",
+        "bytes": 2522,
+        "hash": "blake3:a076ce8cdfc08180e3a3ce4a1dd0406610ffb04f11d9ff27b6e23139d40e13dd",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/gifenc-5cebe3877a2b70ca.js.gz",
+        "target": "public/lumen/js/gifenc-5cebe3877a2b70ca.js.gz",
+        "bytes": 2834,
+        "hash": "blake3:269e90a6c951801b2e0320f679309303bd412e7c042687e53081d6641abdd37d",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/gifenc.js",
+        "target": "public/lumen/js/gifenc.js",
+        "bytes": 8378,
+        "hash": "blake3:5cebe3877a2b70ca64f6ab1c20cdcf6d5d8fc4a35df70248cfa8463a956100e1",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/gifenc.js.br",
+        "target": "public/lumen/js/gifenc.js.br",
+        "bytes": 2522,
+        "hash": "blake3:a076ce8cdfc08180e3a3ce4a1dd0406610ffb04f11d9ff27b6e23139d40e13dd",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/gifenc.js.gz",
+        "target": "public/lumen/js/gifenc.js.gz",
+        "bytes": 2834,
+        "hash": "blake3:269e90a6c951801b2e0320f679309303bd412e7c042687e53081d6641abdd37d",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/main-15ea9b6584b40da4.js",
+        "target": "public/lumen/js/main-15ea9b6584b40da4.js",
+        "bytes": 38389,
+        "hash": "blake3:15ea9b6584b40da48dd333b9735ebcb776fa0d916800198ba05aed61492a5876",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/main-15ea9b6584b40da4.js.br",
+        "target": "public/lumen/js/main-15ea9b6584b40da4.js.br",
+        "bytes": 9152,
+        "hash": "blake3:a4bf93d65b46bee89d9db549ab30c1a4cc5d45ac5281ac4c926a1471ff359364",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/main-15ea9b6584b40da4.js.gz",
+        "target": "public/lumen/js/main-15ea9b6584b40da4.js.gz",
+        "bytes": 10518,
+        "hash": "blake3:30d7097c6d891f9902224a29e9622a5105adb81e5d0694d8bdd5f37955d924e5",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/main.js",
+        "target": "public/lumen/js/main.js",
+        "bytes": 38389,
+        "hash": "blake3:15ea9b6584b40da48dd333b9735ebcb776fa0d916800198ba05aed61492a5876",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/main.js.br",
+        "target": "public/lumen/js/main.js.br",
+        "bytes": 9152,
+        "hash": "blake3:a4bf93d65b46bee89d9db549ab30c1a4cc5d45ac5281ac4c926a1471ff359364",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/main.js.gz",
+        "target": "public/lumen/js/main.js.gz",
+        "bytes": 10518,
+        "hash": "blake3:30d7097c6d891f9902224a29e9622a5105adb81e5d0694d8bdd5f37955d924e5",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/modals-68c1359dd920ba85.js",
+        "target": "public/lumen/js/modals-68c1359dd920ba85.js",
+        "bytes": 13081,
+        "hash": "blake3:68c1359dd920ba858584bbd584436d89188d46bf6b5ef988e01f4976872636b3",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/modals-68c1359dd920ba85.js.br",
+        "target": "public/lumen/js/modals-68c1359dd920ba85.js.br",
+        "bytes": 3216,
+        "hash": "blake3:2681da38cc919c955156bc4b94bed7a59f6ba48e60a1f4891f579c2f88794645",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/modals-68c1359dd920ba85.js.gz",
+        "target": "public/lumen/js/modals-68c1359dd920ba85.js.gz",
+        "bytes": 3653,
+        "hash": "blake3:596d19d455c5165e3651b8ebc8557c867bb1a3065598b36ae97dc0a9f00083cb",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/modals.js",
+        "target": "public/lumen/js/modals.js",
+        "bytes": 13081,
+        "hash": "blake3:68c1359dd920ba858584bbd584436d89188d46bf6b5ef988e01f4976872636b3",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/modals.js.br",
+        "target": "public/lumen/js/modals.js.br",
+        "bytes": 3216,
+        "hash": "blake3:2681da38cc919c955156bc4b94bed7a59f6ba48e60a1f4891f579c2f88794645",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/modals.js.gz",
+        "target": "public/lumen/js/modals.js.gz",
+        "bytes": 3653,
+        "hash": "blake3:596d19d455c5165e3651b8ebc8557c867bb1a3065598b36ae97dc0a9f00083cb",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/palettes-204eb72c49f46650.js",
+        "target": "public/lumen/js/palettes-204eb72c49f46650.js",
+        "bytes": 3784,
+        "hash": "blake3:204eb72c49f4665021a15f01caa2948660f1971d59465895b2bd9863e4c0c2c2",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/palettes-204eb72c49f46650.js.br",
+        "target": "public/lumen/js/palettes-204eb72c49f46650.js.br",
+        "bytes": 1325,
+        "hash": "blake3:e7801d65772ec710515f011acf7c9c9ded09a3c7278bb7de2332a014d7fdbf92",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/palettes-204eb72c49f46650.js.gz",
+        "target": "public/lumen/js/palettes-204eb72c49f46650.js.gz",
+        "bytes": 1490,
+        "hash": "blake3:5f0a674500f35723abfa79689bbaa72541c501efbc92e4f8e2f273523429dc8a",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/palettes.js",
+        "target": "public/lumen/js/palettes.js",
+        "bytes": 3784,
+        "hash": "blake3:204eb72c49f4665021a15f01caa2948660f1971d59465895b2bd9863e4c0c2c2",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/palettes.js.br",
+        "target": "public/lumen/js/palettes.js.br",
+        "bytes": 1325,
+        "hash": "blake3:e7801d65772ec710515f011acf7c9c9ded09a3c7278bb7de2332a014d7fdbf92",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/palettes.js.gz",
+        "target": "public/lumen/js/palettes.js.gz",
+        "bytes": 1490,
+        "hash": "blake3:5f0a674500f35723abfa79689bbaa72541c501efbc92e4f8e2f273523429dc8a",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/shaders-33901d228423d859.js",
+        "target": "public/lumen/js/shaders-33901d228423d859.js",
+        "bytes": 21579,
+        "hash": "blake3:33901d228423d859af3c33d846d3f049d909fa387e4c9b33673ea46bae9b6dc4",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/shaders-33901d228423d859.js.br",
+        "target": "public/lumen/js/shaders-33901d228423d859.js.br",
+        "bytes": 6127,
+        "hash": "blake3:502c928c7dcf44ee6d0f92d33df53b871ac85f3c4ef9575ca50e030847fba7d8",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/shaders-33901d228423d859.js.gz",
+        "target": "public/lumen/js/shaders-33901d228423d859.js.gz",
+        "bytes": 6903,
+        "hash": "blake3:595e49c50a6db65689099755da8332d10e8d0f4b1ebd0e1b630fc0c317defff7",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/shaders.js",
+        "target": "public/lumen/js/shaders.js",
+        "bytes": 21579,
+        "hash": "blake3:33901d228423d859af3c33d846d3f049d909fa387e4c9b33673ea46bae9b6dc4",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/shaders.js.br",
+        "target": "public/lumen/js/shaders.js.br",
+        "bytes": 6127,
+        "hash": "blake3:502c928c7dcf44ee6d0f92d33df53b871ac85f3c4ef9575ca50e030847fba7d8",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/shaders.js.gz",
+        "target": "public/lumen/js/shaders.js.gz",
+        "bytes": 6903,
+        "hash": "blake3:595e49c50a6db65689099755da8332d10e8d0f4b1ebd0e1b630fc0c317defff7",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/ui-73bbfbb4d88bf693.js",
+        "target": "public/lumen/js/ui-73bbfbb4d88bf693.js",
+        "bytes": 7717,
+        "hash": "blake3:73bbfbb4d88bf6936fedc2c98b1632b7e5a227e0cfe829e308771eec419dff7e",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/ui-73bbfbb4d88bf693.js.br",
+        "target": "public/lumen/js/ui-73bbfbb4d88bf693.js.br",
+        "bytes": 1862,
+        "hash": "blake3:16de603368f6b2e8f052b6fa7243f1264d8cbc8b92ef6f9a993f378cbd389da0",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/ui-73bbfbb4d88bf693.js.gz",
+        "target": "public/lumen/js/ui-73bbfbb4d88bf693.js.gz",
+        "bytes": 2150,
+        "hash": "blake3:33c8152643e76329ecee0722eb133e80a9af82714b00d830b936f0baa25dcc18",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/ui.js",
+        "target": "public/lumen/js/ui.js",
+        "bytes": 7717,
+        "hash": "blake3:73bbfbb4d88bf6936fedc2c98b1632b7e5a227e0cfe829e308771eec419dff7e",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/ui.js.br",
+        "target": "public/lumen/js/ui.js.br",
+        "bytes": 1862,
+        "hash": "blake3:16de603368f6b2e8f052b6fa7243f1264d8cbc8b92ef6f9a993f378cbd389da0",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/ui.js.gz",
+        "target": "public/lumen/js/ui.js.gz",
+        "bytes": 2150,
+        "hash": "blake3:33c8152643e76329ecee0722eb133e80a9af82714b00d830b936f0baa25dcc18",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/webmmux-bd92008f400cda26.js",
+        "target": "public/lumen/js/webmmux-bd92008f400cda26.js",
+        "bytes": 4678,
+        "hash": "blake3:bd92008f400cda26092d896bd65cec24cbff0d29febb9849c9b46f2a5a7a574e",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/webmmux-bd92008f400cda26.js.br",
+        "target": "public/lumen/js/webmmux-bd92008f400cda26.js.br",
+        "bytes": 1450,
+        "hash": "blake3:017d99ca2b9de93d52b5f79d26bc628e4b914b022cdf3bf1449f023d723a3dff",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/webmmux-bd92008f400cda26.js.gz",
+        "target": "public/lumen/js/webmmux-bd92008f400cda26.js.gz",
+        "bytes": 1610,
+        "hash": "blake3:5eeb5c6550329af9529df3e6ae491e7fe964e3f6db57fcff32827ea420cbb9e4",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/webmmux.js",
+        "target": "public/lumen/js/webmmux.js",
+        "bytes": 4678,
+        "hash": "blake3:bd92008f400cda26092d896bd65cec24cbff0d29febb9849c9b46f2a5a7a574e",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/webmmux.js.br",
+        "target": "public/lumen/js/webmmux.js.br",
+        "bytes": 1450,
+        "hash": "blake3:017d99ca2b9de93d52b5f79d26bc628e4b914b022cdf3bf1449f023d723a3dff",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/webmmux.js.gz",
+        "target": "public/lumen/js/webmmux.js.gz",
+        "bytes": 1610,
+        "hash": "blake3:5eeb5c6550329af9529df3e6ae491e7fe964e3f6db57fcff32827ea420cbb9e4",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/zip-bc4e3341bafceec9.js",
+        "target": "public/lumen/js/zip-bc4e3341bafceec9.js",
+        "bytes": 3952,
+        "hash": "blake3:bc4e3341bafceec9d5cfaae665623a43c4f0056d56550e6094a151c12b5095fa",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/zip-bc4e3341bafceec9.js.br",
+        "target": "public/lumen/js/zip-bc4e3341bafceec9.js.br",
+        "bytes": 1140,
+        "hash": "blake3:eee4964d4552b269c0b00d9fe5c7cb9e19e07d74248e22c6542c27f177350662",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/zip-bc4e3341bafceec9.js.gz",
+        "target": "public/lumen/js/zip-bc4e3341bafceec9.js.gz",
+        "bytes": 1294,
+        "hash": "blake3:56782928b99ad24d9adb1c7646e3c7e968da33655ac923cb8d98aaf06e144368",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/zip.js",
+        "target": "public/lumen/js/zip.js",
+        "bytes": 3952,
+        "hash": "blake3:bc4e3341bafceec9d5cfaae665623a43c4f0056d56550e6094a151c12b5095fa",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/zip.js.br",
+        "target": "public/lumen/js/zip.js.br",
+        "bytes": 1140,
+        "hash": "blake3:eee4964d4552b269c0b00d9fe5c7cb9e19e07d74248e22c6542c27f177350662",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/js/zip.js.gz",
+        "target": "public/lumen/js/zip.js.gz",
+        "bytes": 1294,
+        "hash": "blake3:56782928b99ad24d9adb1c7646e3c7e968da33655ac923cb8d98aaf06e144368",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/styles-4ea80551c670edfb.css",
+        "target": "public/lumen/styles-4ea80551c670edfb.css",
+        "bytes": 29097,
+        "hash": "blake3:4ea80551c670edfbf31a05c8b05d1c707ef5d4d046a570bdb4fbc28e78a8e38e",
+        "content_type": "text/css; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/styles-4ea80551c670edfb.css.br",
+        "target": "public/lumen/styles-4ea80551c670edfb.css.br",
+        "bytes": 5285,
+        "hash": "blake3:519a7ca61394d3fd8d3473d64daad182add9dd265bd49c7d070dd2dc1f59d6ed",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/styles-4ea80551c670edfb.css.gz",
+        "target": "public/lumen/styles-4ea80551c670edfb.css.gz",
+        "bytes": 6106,
+        "hash": "blake3:0cfd4d11ae6bfafe2d7df1487f1491e08c5b21df2d60301754124379a3b3e4e2",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/styles.css",
+        "target": "public/lumen/styles.css",
+        "bytes": 29097,
+        "hash": "blake3:4ea80551c670edfbf31a05c8b05d1c707ef5d4d046a570bdb4fbc28e78a8e38e",
+        "content_type": "text/css; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/styles.css.br",
+        "target": "public/lumen/styles.css.br",
+        "bytes": 5285,
+        "hash": "blake3:519a7ca61394d3fd8d3473d64daad182add9dd265bd49c7d070dd2dc1f59d6ed",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/public/lumen/styles.css.gz",
+        "target": "public/lumen/styles.css.gz",
+        "bytes": 6106,
+        "hash": "blake3:0cfd4d11ae6bfafe2d7df1487f1491e08c5b21df2d60301754124379a3b3e4e2",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/rollback.json",
+        "target": "rollback.json",
+        "bytes": 294,
+        "hash": "blake3:2bae2eaf99d14dbb123f2b0608b4723a287a8e8edfe849252ec0695ca5dec27a",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/route-handler-conformance-matrix.json",
+        "target": "route-handler-conformance-matrix.json",
+        "bytes": 916,
+        "hash": "blake3:94a912dc70e6a368265f83ed04c4ec63f427e24fc0dea920e29d85be3b81dc7d",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/route-handler-receipts.json",
+        "target": "route-handler-receipts.json",
+        "bytes": 254,
+        "hash": "blake3:fe487fa07e0146cfa7672e4a723174c89e4728a7b14ba08a888016eec340feda",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/server-action-replay-ledger.json",
+        "target": "server-action-replay-ledger.json",
+        "bytes": 2632,
+        "hash": "blake3:87aee58ef663b2f775cb6d1cd935502dacbd20837daf627f8855482742005f9a",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/source/app/page.tsx",
+        "target": "source/app/page.tsx",
+        "bytes": 10845,
+        "hash": "blake3:50c98598c43383dfcf6e20ed53d5ce635a326fa578b786f174c66556ab1899dc",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/source-build-manifest.json",
+        "target": "source-build-manifest.json",
+        "bytes": 38011,
+        "hash": "blake3:b5316ace5b89d4f0349bce4d5c7c34b55add0b9cb9ca85df79333831f25dd058",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/source-build-receipt.json",
+        "target": "source-build-receipt.json",
+        "bytes": 9083,
+        "hash": "blake3:503e8b0c0717b69edccaf09b1bd9a2cdc12ef2d418ac501e525b931104409288",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/source-routes/root/index.dxpk",
+        "target": "source-routes/root/index.dxpk",
+        "bytes": 29167,
+        "hash": "blake3:b57f556dab1893110d77dd16e51696980e0bce8fb17bfb00213ba3875a77ce30",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/source-routes/root/index.html",
+        "target": "source-routes/root/index.html",
+        "bytes": 4254,
+        "hash": "blake3:c6e2a38b68879e684927533c81ab9d20d16e8badc5afad8413d2ab76d939f504",
+        "content_type": "text/html; charset=utf-8",
+        "cache": "no-store"
+      },
+      {
+        "source": ".dx/www/output/source-routes/root/modules/app-page-tsx-50c98598c43383df.mjs",
+        "target": "source-routes/root/modules/app-page-tsx-50c98598c43383df.mjs",
+        "bytes": 14286,
+        "hash": "blake3:1e266c23f8b98a4d3473ea5079411dd648ae0e71dde107818040c653bb205e1b",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/source-routes/root/page-graph.json",
+        "target": "source-routes/root/page-graph.json",
+        "bytes": 35174,
+        "hash": "blake3:9569a766a93cf3180cd3a15b86003aded855509defd4762bac594b863c4a0b9c",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/source-routes/root/route-shell-c6e2a38b68879e68.mjs",
+        "target": "source-routes/root/route-shell-c6e2a38b68879e68.mjs",
+        "bytes": 5263,
+        "hash": "blake3:7b3b839d3e120b3800cccf3f0b8d60efbcd63176ff91ca8fb5a829411f66ad80",
+        "content_type": "text/javascript; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/source-routes/root/route-unit.json",
+        "target": "source-routes/root/route-unit.json",
+        "bytes": 44933,
+        "hash": "blake3:07b9b167a4594a6d2b814b1fac079c645c1ae9850639d22a13fc18ee7911c48b",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/source-routes/root/server-data.json",
+        "target": "source-routes/root/server-data.json",
+        "bytes": 1228,
+        "hash": "blake3:cb6247a89de0a3d980708f91f0e9b5b92996aea94a04fe9a17117f9aff73842e",
+        "content_type": "application/json; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/generated.css",
+        "target": "styles/generated.css",
+        "bytes": 1470,
+        "hash": "blake3:2e0a98c8102077920ecdabaa1604bc9aef1458b13c602e5567d8758dbfdaf616",
+        "content_type": "text/css; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/generated.css.br",
+        "target": "styles/generated.css.br",
+        "bytes": 483,
+        "hash": "blake3:ed7d53a00b9eeb7fa88e45d662660eb9ea313c1050d6b1855848c6efe292a1cd",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/generated.css.gz",
+        "target": "styles/generated.css.gz",
+        "bytes": 600,
+        "hash": "blake3:3e44fbd21d3a02e6e17af2db45b9fc8c28ca05aa1148c1ecb41c5615b09a44eb",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/generated.css.map",
+        "target": "styles/generated.css.map",
+        "bytes": 8455,
+        "hash": "blake3:f407296768ebdac64b3d6988ba0f2754cf5820b294ea89a7ffe760895237d26b",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/globals.css",
+        "target": "styles/globals.css",
+        "bytes": 25255,
+        "hash": "blake3:44935df773f01d0470e60ce6ee5159872f389a8f576bc7fe70a6eb3d1773ae7a",
+        "content_type": "text/css; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/globals.css.br",
+        "target": "styles/globals.css.br",
+        "bytes": 5041,
+        "hash": "blake3:9885c423bf38961107bea7f38205692edc1ccd54897f9e85c5c9b1f25384a2f4",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/globals.css.gz",
+        "target": "styles/globals.css.gz",
+        "bytes": 5733,
+        "hash": "blake3:5e8893b938c57fe79b35e99d2a2fed0084fb4b48bc1eb4809faea00e6b10a399",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/globals.css.map",
+        "target": "styles/globals.css.map",
+        "bytes": 40573,
+        "hash": "blake3:b4d7ee9e3a55e04a329e85747216dcd73f3c8682537b88c2593d7b87004d057c",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/lumen.css",
+        "target": "styles/lumen.css",
+        "bytes": 23326,
+        "hash": "blake3:63eedeb28e043a567356498dc81d16e420137c8c71d5a687197355f8655169e7",
+        "content_type": "text/css; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/lumen.css.br",
+        "target": "styles/lumen.css.br",
+        "bytes": 4556,
+        "hash": "blake3:1b54c4ad831d10c9e102e7dfa15e4da5230efbff8da97589ec62291b7b6181e3",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/lumen.css.gz",
+        "target": "styles/lumen.css.gz",
+        "bytes": 5232,
+        "hash": "blake3:feaffcaa77a7e46e4bb3b01e7ca915ac7d4cc802cf34af27ddff14e3b91f6bf7",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/lumen.css.map",
+        "target": "styles/lumen.css.map",
+        "bytes": 31820,
+        "hash": "blake3:3cef312231889df7b612bc561b8475544e42f84828dd47e460fd1b981f64bdf2",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/theme.css",
+        "target": "styles/theme.css",
+        "bytes": 512,
+        "hash": "blake3:7f613a7ba8ef31a4ba8f8f7bd43fa40da15aff33ed8113fe0ae87b4da2d49894",
+        "content_type": "text/css; charset=utf-8",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/theme.css.br",
+        "target": "styles/theme.css.br",
+        "bytes": 259,
+        "hash": "blake3:1be76160320b10b2d86f9e7f43a9724b1995f91acbf259d318f145a45ad949d4",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/theme.css.gz",
+        "target": "styles/theme.css.gz",
+        "bytes": 310,
+        "hash": "blake3:ad462f645bfc2eaf72ed2180e6eea86a48798d25a1d6de5d98d2126e867a617b",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      },
+      {
+        "source": ".dx/www/output/styles/theme.css.map",
+        "target": "styles/theme.css.map",
+        "bytes": 1447,
+        "hash": "blake3:680f8231e64ed77f0d793f3138d2275ba7c450c88ea3b4afa79b71e65af0acff",
+        "content_type": "application/octet-stream",
+        "cache": "public, max-age=31536000, immutable"
+      }
+    ]
+  },
+  "vercel_prebuilt_contract": {
+    "provider": "vercel",
+    "contract": "dx.vercel.prebuiltStatic",
+    "contract_revision": 1,
+    "contract_name": "Vercel Prebuilt Static Deploy",
+    "project": "G:/Dx/www/examples/shader",
+    "static_source": ".dx/www/output",
+    "adapter_output": ".vercel/output",
+    "build_output_api": {
+      "version": 3,
+      "config_path": ".vercel/output/config.json",
+      "static_dir": ".vercel/output/static",
+      "config": {
+        "version": 3,
+        "routes": [
+          {
+            "src": "/",
+            "dest": "/index.html"
+          },
+          {
+            "src": "/([^/.]+(?:/[^/.]+)*)/?",
+            "dest": "/$1/index.html"
+          },
+          {
+            "handle": "filesystem"
+          }
+        ]
+      }
+    },
+    "materialization": {
+      "ran": false,
+      "reason": "dry run requested",
+      "source": ".dx/www/output",
+      "copy_files_to": ".vercel/output/static",
+      "write_config": ".vercel/output/config.json"
+    },
+    "static_output": {
+      "exists": true,
+      "ready": true,
+      "file_count": 245,
+      "html_file_count": 6,
+      "asset_file_count": 239,
+      "total_bytes": 28674868,
+      "manifest_exists": true,
+      "deploy_adapter_exists": true,
+      "content_hash": "blake3:276edd35bf5eca6b555a47d6199ac0208356f3ad7bc79b2e84dcfb40ea14c249",
+      "public_runtime_artifact_count": 202,
+      "evidence_artifact_count": 25,
+      "bundle_partition_source": "provider-adapter.dx-cloud.json",
+      "upload_plan_sample": [
+        {
+          "source": ".dx/www/output/.dx/receipts/readiness/proof-graph.sr",
+          "target": ".dx/receipts/readiness/proof-graph.sr",
+          "bytes": 7621,
+          "hash": "blake3:485d60cec952fa4dd27e5bbdd4100a78e074b4823c91aeac01f864a21e90ef52",
+          "content_type": "application/octet-stream",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/.dx/serializer/receipts-readiness-proof-graph.machine",
+          "target": ".dx/serializer/receipts-readiness-proof-graph.machine",
+          "bytes": 4598,
+          "hash": "blake3:801ff6db7b6eb4be47d888638ca846abdcc6e407a1a1bee6b649a07dc21b23a8",
+          "content_type": "application/octet-stream",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/_dx/styles/react-route-3ca543b61d3665f6.css",
+          "target": "_dx/styles/react-route-3ca543b61d3665f6.css",
+          "bytes": 29703,
+          "hash": "blake3:3ca543b61d3665f6b85764530ac7f0304de3b27f803926d40704672ee01bf568",
+          "content_type": "text/css; charset=utf-8",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/_dx/styles/react-route-3ca543b61d3665f6.css.br",
+          "target": "_dx/styles/react-route-3ca543b61d3665f6.css.br",
+          "bytes": 5535,
+          "hash": "blake3:5b559285cf6589a28c0f4cd2aebd8f3948429ca3a16fdd0004abcc4c890dba9f",
+          "content_type": "application/octet-stream",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/_dx/styles/react-route-3ca543b61d3665f6.css.gz",
+          "target": "_dx/styles/react-route-3ca543b61d3665f6.css.gz",
+          "bytes": 6275,
+          "hash": "blake3:5129920ea8ed5fc71da7a540c86f781f6fd4035222a9851519165c4cdfa9f7d2",
+          "content_type": "application/octet-stream",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/app/app-router-execution.json",
+          "target": "app/app-router-execution.json",
+          "bytes": 268840,
+          "hash": "blake3:53ee5c9f0783fc771979ce7665342c0ea92ea14657c658be444cd83ea5d853c1",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/app/index.html",
+          "target": "app/index.html",
+          "bytes": 4254,
+          "hash": "blake3:c6e2a38b68879e684927533c81ab9d20d16e8badc5afad8413d2ab76d939f504",
+          "content_type": "text/html; charset=utf-8",
+          "cache": "no-store"
+        },
+        {
+          "source": ".dx/www/output/app/page-graph.json",
+          "target": "app/page-graph.json",
+          "bytes": 35236,
+          "hash": "blake3:d0bdf0c1ebfef264097dc3bcdc30304e7b4a3297a7ee2cfa064fbf3b6381e4ae",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/app-route-discovery.json",
+          "target": "app-route-discovery.json",
+          "bytes": 900,
+          "hash": "blake3:88d69ccbd64c5a6a2d4c2ad94da27766fee5ceb425c1a70ede9b266e134413b6",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/cache-manifest.json",
+          "target": "cache-manifest.json",
+          "bytes": 80290,
+          "hash": "blake3:11a96142af69fc2f21509e6c52db8510464d914eac293dab1e641d0fc9ddd684",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "no-store"
+        },
+        {
+          "source": ".dx/www/output/deploy-adapter.json",
+          "target": "deploy-adapter.json",
+          "bytes": 187080,
+          "hash": "blake3:26ca82a4c0aea7e689063b7336e9261dbbbe1039972f31fdab353d017204eeb2",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "no-store"
+        },
+        {
+          "source": ".dx/www/output/favicon.svg",
+          "target": "favicon.svg",
+          "bytes": 874,
+          "hash": "blake3:cfb09e06980b21ac4df558fc791be8cef96c7ab79ab0d8b0eb0d8a95f7c1cd76",
+          "content_type": "image/svg+xml",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/favicon.svg.br",
+          "target": "favicon.svg.br",
+          "bytes": 373,
+          "hash": "blake3:47088789d1b45b606984eb24a70e337fcecf0b6c6886d377e26a859a5fbd5e12",
+          "content_type": "application/octet-stream",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/favicon.svg.gz",
+          "target": "favicon.svg.gz",
+          "bytes": 440,
+          "hash": "blake3:3cc120aba9ef800cb0538c035125b5535f8d25a3f2d56c111d00a8d06713f23c",
+          "content_type": "application/octet-stream",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/forge/receipts/20260611T122031351813900Z-www-minimal-starter.json",
+          "target": "forge/receipts/20260611T122031351813900Z-www-minimal-starter.json",
+          "bytes": 8188,
+          "hash": "blake3:3ac51ef8515e716f382e24ea52d5e558bb681053bcee5b2ba5a1166e0b835899",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/forge/receipts/20260611T122031469502300Z-www-minimal-starter.json",
+          "target": "forge/receipts/20260611T122031469502300Z-www-minimal-starter.json",
+          "bytes": 8188,
+          "hash": "blake3:91478ed344a865add36632ce50089c0a42b7f3ed2ac5206fc3bfb19a2659c658",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "public, max-age=31536000, immutable"
+        },
+        {
+          "source": ".dx/www/output/forge/source-manifest.json",
+          "target": "forge/source-manifest.json",
+          "bytes": 3453,
+          "hash": "blake3:fcd2e52c6ea20bcdc38b6ce97074d334677d7bc62d4bbce6af9b4538ba4ae2a2",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "no-store"
+        },
+        {
+          "source": ".dx/www/output/forge/template-manifest.json",
+          "target": "forge/template-manifest.json",
+          "bytes": 3238,
+          "hash": "blake3:6a93f10ad805d82a4421cd19df583d9a796eb99a31ea1ab47401c98caa25a177",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "no-store"
+        },
+        {
+          "source": ".dx/www/output/forge-hosting-manifest.json",
+          "target": "forge-hosting-manifest.json",
+          "bytes": 4812,
+          "hash": "blake3:46fc7a70d4e846ebb80046545fbc2a305020d7461d940f09606db16981f91f40",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "no-store"
+        },
+        {
+          "source": ".dx/www/output/hosted-preview.json",
+          "target": "hosted-preview.json",
+          "bytes": 129375,
+          "hash": "blake3:2aff9408a427c5800a09098c9a169e31b5c118d2092b0a38d9f077ef7e222d25",
+          "content_type": "application/json; charset=utf-8",
+          "cache": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    "command": {
+      "cwd": "G:/Dx/www/examples/shader",
+      "argv": [
+        "vercel",
+        "deploy",
+        "--prebuilt"
+      ],
+      "requires_env": [
+        "VERCEL_TOKEN"
+      ],
+      "safe_to_print": true,
+      "executes_network_deploy": true
+    },
+    "approval_gate": {
+      "dry_run": true,
+      "execution_allowed_by_this_invocation": false,
+      "external_execution_requires": "explicit user approval before running the Vercel CLI",
+      "reason": "source-only launch pass must not deploy or start external network work"
+    },
+    "receipts": {
+      "manifest": ".dx/deploy/vercel-manifest.json",
+      "command_contract": ".dx/deploy/vercel-command.json",
+      "deploy_receipt": ".dx/receipts/deploy/vercel.json"
+    }
+  },
+  "vercel_build_output": {
+    "ran": false,
+    "reason": "dry run requested",
+    "source": ".dx/www/output",
+    "copy_files_to": ".vercel/output/static",
+    "write_config": ".vercel/output/config.json"
+  },
+  "static_export": {
+    "ran": false,
+    "reason": "existing .dx/www/output output will be used as prebuilt static output",
+    "next_command": null
+  },
+  "pipeline": [
+    {
+      "step": "dx style build",
+      "required": true,
+      "ran": true,
+      "mutates": [
+        "styles/generated.css",
+        ".dx/receipts/style/build.json"
+      ]
+    },
+    {
+      "step": "dx style check",
+      "required": true,
+      "ran": true,
+      "passed": false,
+      "mutates": [
+        ".dx/receipts/style/check.json"
+      ]
+    },
+    {
+      "step": "dx imports sync",
+      "required": true,
+      "ran": true,
+      "mutates": [
+        "components/auto-imports.ts",
+        ".dx/imports/import-map.json"
+      ]
+    },
+    {
+      "step": "dx imports check",
+      "required": true,
+      "ran": true,
+      "passed": true,
+      "mutates": [
+        ".dx/receipts/imports/check.json"
+      ]
+    },
+    {
+      "step": "static export",
+      "required": false,
+      "ran": false,
+      "output": ".dx/www/output",
+      "ready": true
+    },
+    {
+      "step": "materialize Vercel Build Output API",
+      "required": true,
+      "ran": false,
+      "from": ".dx/www/output",
+      "to": ".vercel/output/static",
+      "config": ".vercel/output/config.json"
+    },
+    {
+      "step": "write deploy manifest",
+      "required": true,
+      "output": ".dx/deploy/vercel-manifest.json"
+    },
+    {
+      "step": "write deploy command contract",
+      "required": true,
+      "output": ".dx/deploy/vercel-command.json"
+    },
+    {
+      "step": "vercel deploy --prebuilt",
+      "required": false,
+      "ran": false,
+      "argv": [
+        "vercel",
+        "deploy",
+        "--prebuilt"
+      ],
+      "blocked_without_explicit_deploy": false
+    }
+  ],
+  "deploy_execution": {
+    "ran": false,
+    "approved": false,
+    "reason": "dry run requested"
+  },
+  "manifest_path": ".dx/deploy/vercel-manifest.json",
+  "deploy_command_path": ".dx/deploy/vercel-command.json",
+  "receipt_path": ".dx/receipts/deploy/vercel.json"
+}

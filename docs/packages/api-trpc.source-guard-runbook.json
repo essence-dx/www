@@ -1,0 +1,158 @@
+{
+  "schema": "dx.forge.package.source_guard_runbook_fixture",
+  "route": "/",
+  "package": {
+    "official_package_name": "Type-Safe API",
+    "package_id": "api/trpc",
+    "upstream_package": "@trpc/server",
+    "upstream_version": "11.17.0",
+    "source_mirror": "G:/WWW/inspirations/trpc",
+    "based_on": "tRPC server, client, fetch adapter, HTTP batch link, and React Query public APIs"
+  },
+  "selected_surfaces": [
+    "check-panel-unsupported-surface-context",
+    "receipt-hash-refresh",
+    "source-guard-runbook-fixture",
+    "preview-manifest-materializer",
+    "route-handler"
+  ],
+  "inspected_upstream_files": [
+    "packages/server/package.json",
+    "packages/server/src/unstable-core-do-not-import/initTRPC.ts",
+    "packages/server/src/adapters/fetch/fetchRequestHandler.ts",
+    "packages/client/src/createTRPCClient.ts",
+    "packages/client/src/links/httpBatchLink.ts",
+    "packages/react-query/src/createTRPCReact.tsx",
+    "packages/tanstack-react-query/src/internals/createOptionsProxy.ts"
+  ],
+  "upstream_public_apis": [
+    "initTRPC.context().create()",
+    "createCallerFactory",
+    "fetchRequestHandler",
+    "createTRPCClient",
+    "httpBatchLink",
+    "createTRPCReact"
+  ],
+  "guard": {
+    "id": "type-safe-api-unsupported-surface-context",
+    "routes": [
+      "/"
+    ],
+    "guard_file": "core/src/ecosystem/dx_check_receipt.rs",
+    "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_type_safe_api_unsupported_surface_context --lib",
+    "proves": [
+      "Type-Safe API unsupported requested surfaces remain visible in check_panel.view_model.package_lane_rows",
+      "selected_surfaces status=\"unsupported-surface\" for trpc-websocket-subscriptions",
+      "reason and app_owned_boundary stay attached to the unsupported requested surface",
+      "type_safe_api_unsupported_surface increments without claiming subscription runtime support",
+      "docs/packages/api-trpc.source-guard-runbook.json",
+      "without claiming live tRPC subscriptions"
+    ],
+    "execution_policy": "source-only",
+    "writes_files": false,
+    "starts_server": false,
+    "runs_package_install": false,
+    "runs_full_build": false,
+    "node_modules_required": false
+  },
+  "runbook": {
+    "index_field": "source_guard_runbook_index",
+    "default_action": "show-source-only-runbook",
+    "contract": {
+      "id": "type-safe-api-unsupported-surface-context",
+      "purpose": "The Type-Safe API check-panel row keeps unsupported requested surfaces visible with reason and app-owned boundary context without claiming live tRPC subscriptions.",
+      "evidence_field": "core/src/ecosystem/dx_check_receipt.rs"
+    },
+    "command": {
+      "command": "cargo test -q -p dx-www-compiler dx_check_latest_panel_exposes_type_safe_api_unsupported_surface_context --lib",
+      "purpose": "Validate the source-only Type-Safe API unsupported-surface row context without running a tRPC server, opening a WebSocket, installing packages, or claiming subscription runtime proof.",
+      "scope": "source-only",
+      "starts_server": false,
+      "runs_package_install": false,
+      "runs_full_build": false,
+      "writes_files": false,
+      "node_modules_required": false
+    }
+  },
+  "preview_manifest": {
+    "generated_file": "public/preview-manifest.json",
+    "materializer": "tools/launch/materialize-www-template.ts",
+    "field": "sourceGuardRunbookFixtures",
+    "route_field": "routes[].sourceGuardRunbookFixtures",
+    "fixture_path": "docs/packages/api-trpc.source-guard-runbook.json",
+    "guard_id": "type-safe-api-unsupported-surface-context",
+    "package_id": "api/trpc",
+    "honesty_label": "SOURCE-ONLY",
+    "runtime_proof": false,
+    "zed_visibility": "type-safe-api:receipt-hash-refresh"
+  },
+  "dx_check_metrics": [
+    "type_safe_api_package_present",
+    "type_safe_api_receipt_present",
+    "type_safe_api_receipt_stale",
+    "type_safe_api_missing_receipt",
+    "type_safe_api_blocked_surface",
+    "type_safe_api_unsupported_surface",
+    "type_safe_api_hash_manifest_present",
+    "type_safe_api_hash_mismatch",
+    "type_safe_api_receipt_hash_refresh_current",
+    "type_safe_api_receipt_hash_refresh_stale",
+    "type_safe_api_receipt_hash_refresh_missing"
+  ],
+  "zed_dx_studio_markers": [
+    "check_panel.view_model.package_lane_rows",
+    "type_safe_api_unsupported_surface",
+    "type-safe-api-unsupported-surface",
+    "trpc-websocket-subscriptions",
+    "reason",
+    "app_owned_boundary"
+  ],
+  "receipt": {
+    "path": "examples/template/.dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",
+    "hash_helper": "examples/template/type-safe-api-receipt-hashes.ts",
+    "hash_helper_json_command": "node tools/launch/run-template-receipt-helper.js examples/template/type-safe-api-receipt-hashes.ts --check --json",
+    "hash_helper_test_command": "dx run --test .\\benchmarks\\trpc-receipt-hash-refresh.test.ts",
+    "source_guard_runbook_fixture": "docs/packages/api-trpc.source-guard-runbook.json",
+    "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+    "tracked_file_count": 11,
+    "helper_report_fields": [
+      "tracked_files",
+      "current_files",
+      "stale_files",
+      "missing_files",
+      "stale_mirror_files",
+      "missing_mirror_files",
+      "mirror_problem_count"
+    ],
+    "tracked_files": [
+      "core/src/ecosystem/forge_trpc.rs",
+      "examples/template/trpc-launch-health.tsx",
+      "examples/template/trpc-launch-contract.ts",
+      "examples/dashboard/src/components/TrpcDashboardWorkflow.tsx",
+      "examples/dashboard/src/lib/trpcDashboardWorkflow.ts",
+      "docs/packages/api-trpc.source-guard-runbook.json",
+      "tools/launch/materialize-www-template.ts",
+      "examples/template/.dx/forge/template-readiness/database-api.json",
+      "examples/template/app/api/trpc/health/route.ts",
+      "examples/template/lib/trpc/metadata.ts",
+      "examples/template/lib/trpc/README.md"
+    ],
+    "stale_helper_fixture": {
+      "command": "dx run --test .\\benchmarks\\trpc-receipt-hash-refresh.test.ts",
+      "proves": "Only the source-guard runbook fixture and preview-manifest materializer are reported in stale_files when those helper surfaces drift; route handler, dashboard, template-readiness, and lock-backed source hashes stay current.",
+      "runtime_proof": false
+    },
+    "zed_visibility": "type-safe-api:receipt-hash-refresh"
+  },
+  "app_owned_boundaries": [
+    "Subscription transport, connection authorization, stream fan-out, retry policy, and hosted runtime limits stay app-owned.",
+    "Domain routers, procedures, authorization, persistence, observability, and production rate limits stay app-owned.",
+    "Runtime dependency installation, deployment topology, and browser subscription runtime proof stay app-owned."
+  ],
+  "runtime_limitations": [
+    "SOURCE-ONLY: this fixture mirrors the package-owned unsupported-surface source guard and runbook metadata only.",
+    "ADAPTER-BOUNDARY: live tRPC subscriptions, WebSocket transport, stream fan-out, retry policy, authorization, deployment limits, dependency installation, and browser runtime proof stay app-owned."
+  ],
+  "honesty_label": "SOURCE-ONLY",
+  "runtime_proof": false
+}

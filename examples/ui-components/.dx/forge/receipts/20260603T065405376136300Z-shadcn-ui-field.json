@@ -1,0 +1,149 @@
+{
+  "action": "add-write",
+  "package": {
+    "package_id": "shadcn/ui/field",
+    "upstream_name": "shadcn-ui",
+    "version": "0.1.0",
+    "generator": "dx-forge/shadcn-ui",
+    "variant": "default",
+    "source_kind": "curated-registry",
+    "integrity_hash": "cdbbf0a71538158ef8b26b955bbf337ac14d8ab508aa84177de7a5645b97cb36",
+    "license": "MIT OR Apache-2.0",
+    "provenance": {
+      "source": "dx-forge-curated-registry",
+      "upstream_reference": "shadcn-ui://apps/v4/registry/bases/radix/ui/field.tsx",
+      "verified": false,
+      "note": "DX inspected the local shadcn-ui v4 registry entry plus Radix Label and Separator primitives for the official UI Components Field surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    "advisory_review": {
+      "coverage_kind": "curated-fixture",
+      "provider": "dx-forge-curated-advisory-fixture",
+      "live_coverage": false,
+      "finding_count": 0,
+      "reviewed_at": "2026-05-17T00:00:00Z",
+      "note": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn field launch slice, but it is not a live advisory feed and does not audit application form layout, validation copy, or error announcement policy."
+    },
+    "license_review": {
+      "declared_license": "MIT OR Apache-2.0",
+      "reviewed": false,
+      "note": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "lib/utils.ts",
+        "logical_path": "js/lib/utils.ts",
+        "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+        "bytes": 119
+      },
+      {
+        "path": "components/ui/label.tsx",
+        "logical_path": "js/ui/label.tsx",
+        "hash": "159b0a0f2182491257a052818159734b53add410a74eed7a0c8f990da0ff9ac8",
+        "bytes": 458
+      },
+      {
+        "path": "components/ui/separator.tsx",
+        "logical_path": "js/ui/separator.tsx",
+        "hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+        "bytes": 809
+      },
+      {
+        "path": "components/ui/field.tsx",
+        "logical_path": "js/ui/field.tsx",
+        "hash": "0221cc93b81801c177790c136b01fb25e459b0356075e8170f6bb35603e9d584",
+        "bytes": 5370
+      },
+      {
+        "path": "components/ui/README.md",
+        "logical_path": "js/ui/README.md",
+        "hash": "c806994969ae2271ae8f4c8f1ada11df6b8a92028249034ad10ce38f010412f4",
+        "bytes": 686
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "components/ui/field.tsx",
+      "logical_path": "js/ui/field.tsx",
+      "hash": "0221cc93b81801c177790c136b01fb25e459b0356075e8170f6bb35603e9d584",
+      "bytes": 5370
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "js/lib/utils.ts",
+      "materialized_path": "lib/utils.ts",
+      "hash": "597629c1fe30ddda8d02ad7f93c4bd8f50e041e2166da29ff03a1b96712c06a1",
+      "bytes": 119
+    },
+    {
+      "logical_path": "js/ui/label.tsx",
+      "materialized_path": "components/ui/label.tsx",
+      "hash": "159b0a0f2182491257a052818159734b53add410a74eed7a0c8f990da0ff9ac8",
+      "bytes": 458
+    },
+    {
+      "logical_path": "js/ui/separator.tsx",
+      "materialized_path": "components/ui/separator.tsx",
+      "hash": "fce33cd494a500bdbbbd36398c0be4623f3c84900b41728c7f6c3a6ac9f8e849",
+      "bytes": 809
+    },
+    {
+      "logical_path": "js/ui/field.tsx",
+      "materialized_path": "components/ui/field.tsx",
+      "hash": "0221cc93b81801c177790c136b01fb25e459b0356075e8170f6bb35603e9d584",
+      "bytes": 5370
+    },
+    {
+      "logical_path": "js/ui/README.md",
+      "materialized_path": "components/ui/README.md",
+      "hash": "c806994969ae2271ae8f4c8f1ada11df6b8a92028249034ad10ce38f010412f4",
+      "bytes": 686
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge add does not run npm install, lifecycle hooks, or upstream scripts."
+    },
+    {
+      "policy": "package-provenance-recorded",
+      "traffic": "green",
+      "message": "Forge records package provenance source `dx-forge-curated-registry` but does not claim external provenance verification yet."
+    },
+    {
+      "policy": "package-advisory-boundary",
+      "traffic": "green",
+      "message": "Forge records advisory coverage `curated-fixture` from provider `dx-forge-curated-advisory-fixture` with live coverage `no` and finding count `0`."
+    },
+    {
+      "policy": "package-license-review-boundary",
+      "traffic": "green",
+      "message": "Forge records declared license `MIT OR Apache-2.0` with formal review `no`."
+    },
+    {
+      "policy": "preserve-local-edit",
+      "traffic": "yellow",
+      "message": "lib/utils.ts differs locally and was not overwritten."
+    },
+    {
+      "policy": "existing-file",
+      "traffic": "green",
+      "message": "components/ui/label.tsx already matches the curated source."
+    },
+    {
+      "policy": "existing-file",
+      "traffic": "green",
+      "message": "components/ui/separator.tsx already matches the curated source."
+    },
+    {
+      "policy": "preserve-local-edit",
+      "traffic": "yellow",
+      "message": "components/ui/README.md differs locally and was not overwritten."
+    }
+  ],
+  "risk_score": 85,
+  "timestamp": "2026-06-03T06:54:05.375160700+00:00",
+  "signature": null
+}

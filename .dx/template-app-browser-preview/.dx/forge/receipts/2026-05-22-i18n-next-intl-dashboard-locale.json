@@ -1,0 +1,399 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "i18n/next-intl",
+  "package_name": "Internationalization",
+  "official_package_name": "Internationalization",
+  "upstream_package": "next-intl",
+  "upstream_version": "4.12.0",
+  "source_mirror": "G:/WWW/inspirations/next-intl",
+  "honesty_label": "SOURCE-ONLY",
+  "route": "/",
+  "component": "next-intl-dashboard-locale-workflow",
+  "workflow": "locale-copy-boundary",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 99,
+  "reality_audit": {
+    "verdict": "REAL",
+    "upstream_source": [
+      "packages/next-intl/package.json",
+      "packages/next-intl/src/shared/NextIntlClientProvider.tsx",
+      "packages/next-intl/src/react-client/index.tsx",
+      "packages/use-intl/src/react/index.tsx",
+      "packages/next-intl/src/routing/defineRouting.tsx",
+      "packages/next-intl/src/navigation/react-client/createNavigation.tsx",
+      "packages/next-intl/src/server/react-server/getRequestConfig.tsx",
+      "packages/next-intl/src/middleware/middleware.tsx"
+    ],
+    "upstream_public_apis": [
+      "NextIntlClientProvider",
+      "useTranslations",
+      "useLocale",
+      "useFormatter",
+      "defineRouting",
+      "createNavigation",
+      "getRequestConfig",
+      "createMiddleware"
+    ],
+    "forge_files": [
+      "core/src/ecosystem/forge_next_intl.rs",
+      "i18n/dashboard-copy.ts",
+      "i18n/dashboard-locale-workflow.tsx",
+      "i18n/messages/en.json",
+      "i18n/messages/bn.json"
+    ],
+    "dashboard_consumer": "examples/template/next-intl-dashboard-locale.tsx",
+    "runtime_consumer": "tools/launch/runtime-template/pages/index.html",
+    "content_contract": "examples/template/next-intl-dashboard-locale-contract.ts",
+    "format_preview_contract": "DashboardIntlFormatPreview",
+    "number_preview_contract": "DashboardIntlNumberPreview",
+    "alternate_link_contract": "DashboardLocaleAlternateLink",
+    "route_preview_contract": "DashboardLocaleRoutePreview",
+    "guard": "benchmarks/next-intl-dashboard-workflow.test.ts",
+    "dashboard_markers": [
+      "data-dx-package=\"i18n/next-intl\"",
+      "data-dx-component=\"next-intl-dashboard-locale-workflow\"",
+      "data-dx-intl-dashboard-workflow=\"locale-copy-boundary\"",
+      "data-dx-intl-action=\"switch-dashboard-locale\"",
+      "data-dx-intl-action=\"prepare-dashboard-intl-receipt\"",
+      "data-dx-intl-action=\"review-alternate-link\"",
+      "data-dx-style-surface=\"internationalization\"",
+      "data-dx-intl-format-preview",
+      "data-dx-intl-format-source-api",
+      "data-dx-intl-format-time-zone",
+      "data-dx-intl-number-preview",
+      "data-dx-intl-number-source-api",
+      "data-dx-intl-number-currency"
+    ],
+    "partial_boundaries": [
+      "governed browser proof",
+      "production locale routing verification",
+      "SEO alternate-link review",
+      "production runtime dependency installation"
+    ]
+  },
+  "source_files": [
+    "examples/template/next-intl-dashboard-locale-contract.ts",
+    "examples/template/next-intl-dashboard-locale.tsx",
+    "examples/template/template-shell.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "docs/packages/next-intl.source-guard-runbook.json",
+    "core/src/ecosystem/forge_next_intl.rs",
+    "tools/launch/materialize-www-template.ts",
+    "examples/template/app/i18n/page.tsx",
+    "examples/template/components/template-app/i18n-page.tsx",
+    "examples/template/i18n/catalog-validation.ts",
+    "examples/template/i18n/messages/en.json",
+    "examples/template/i18n/messages/bn.json"
+  ],
+  "materialized_files": [
+    "components/launch/next-intl-dashboard-locale-contract.ts",
+    "components/launch/next-intl-dashboard-locale.tsx",
+    "i18n/dashboard-copy.ts",
+    "i18n/dashboard-locale-workflow.tsx",
+    "i18n/messages/en.json",
+    "i18n/messages/bn.json",
+    "app/i18n/page.tsx",
+    "components/template-app/i18n-page.tsx",
+    "i18n/catalog-validation.ts"
+  ],
+  "hash_algorithm": "sha256",
+  "files": [
+    "examples/template/next-intl-dashboard-locale-contract.ts",
+    "examples/template/next-intl-dashboard-locale.tsx",
+    "core/src/ecosystem/forge_next_intl.rs",
+    "docs/packages/next-intl.source-guard-runbook.json",
+    "tools/launch/materialize-www-template.ts",
+    "examples/template/app/i18n/page.tsx",
+    "examples/template/components/template-app/i18n-page.tsx",
+    "examples/template/i18n/catalog-validation.ts",
+    "examples/template/i18n/messages/en.json",
+    "examples/template/i18n/messages/bn.json"
+  ],
+  "file_hashes": {
+    "examples/template/next-intl-dashboard-locale-contract.ts": "1a1ba6cf3495fad375119a940100aafc9c03f5158155911b859bbed352b91e47",
+    "examples/template/next-intl-dashboard-locale.tsx": "7764c9b5061f6ed22eab84216d94d41b9df83e76d11e3f732ec78df086960eb9",
+    "core/src/ecosystem/forge_next_intl.rs": "af8c313e2b0653340b534d1753b61f5356cc5a497a02f834f18af84c4f853a54",
+    "docs/packages/next-intl.source-guard-runbook.json": "e3492042ae3bb7bf4a315365c76fa3068bd0484e8ee97dbb2adbd4443c1eea8b",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "examples/template/app/i18n/page.tsx": "aba37c3f12c703af7143c71ba5b70784d536affd831acd974ec1654ae29c9ec9",
+    "examples/template/components/template-app/i18n-page.tsx": "2f1141b6a01666612bb92143d47675e421779d85c0724fe6d250b4251022eeff",
+    "examples/template/i18n/catalog-validation.ts": "3558b64fde30c3ab1f430b025b3e09df15bcf7bde07ceb54ce820ea2e1772cba",
+    "examples/template/i18n/messages/en.json": "a239cadc0a088a5f625fa288054c4f4d6153fbf36cf4d29043189474b1689cdc",
+    "examples/template/i18n/messages/bn.json": "a239cadc0a088a5f625fa288054c4f4d6153fbf36cf4d29043189474b1689cdc"
+  },
+  "upstream_public_apis": [
+    "NextIntlClientProvider",
+    "useTranslations",
+    "useLocale",
+    "useFormatter",
+    "defineRouting",
+    "createNavigation",
+    "getRequestConfig",
+    "createMiddleware"
+  ],
+  "local_readiness_interactions": [
+    "switch-dashboard-locale",
+    "prepare-dashboard-intl-receipt",
+    "preview-localized-route",
+    "review-alternate-link"
+  ],
+  "route_preview_contract": {
+    "en": {
+      "href": "/",
+      "hrefLang": "en",
+      "localePrefix": "as-needed",
+      "seoBoundary": "app-owned-alternate-link-review"
+    },
+    "bn": {
+      "href": "/?locale=bn",
+      "hrefLang": "bn-BD",
+      "localePrefix": "as-needed",
+      "seoBoundary": "app-owned-alternate-link-review"
+    }
+  },
+  "alternate_link_contract": [
+    {
+      "href": "/",
+      "hrefLang": "en",
+      "locale": "en",
+      "rel": "alternate"
+    },
+    {
+      "href": "/?locale=bn",
+      "hrefLang": "bn-BD",
+      "locale": "bn",
+      "rel": "alternate"
+    }
+  ],
+  "format_preview_contract": {
+    "dateIso": "2026-05-23T10:00:00.000Z",
+    "dateStyle": "medium",
+    "formatted": "May 23, 2026, 10:00 AM",
+    "sourceApi": "useFormatter.dateTime",
+    "timeStyle": "short",
+    "timeZone": "UTC"
+  },
+  "number_preview_contract": {
+    "amount": 49,
+    "currency": "USD",
+    "formatted": "$49",
+    "maximumFractionDigits": 0,
+    "sourceApi": "useFormatter.number",
+    "style": "currency"
+  },
+  "visible_locale_copy": {
+    "en": "English",
+    "bn": "বাংলা"
+  },
+  "stable_markers": [
+    "data-dx-package=\"i18n/next-intl\"",
+    "data-dx-component=\"next-intl-dashboard-locale-workflow\"",
+    "data-dx-intl-dashboard-workflow=\"locale-copy-boundary\"",
+    "data-dx-intl-message-namespace=\"LaunchDashboard\"",
+    "data-dx-dashboard-copy-locale",
+    "data-dx-intl-action=\"switch-dashboard-locale\"",
+    "data-dx-intl-action=\"prepare-dashboard-intl-receipt\"",
+    "data-dx-intl-action=\"preview-localized-route\"",
+    "data-dx-intl-action=\"review-alternate-link\"",
+    "data-dx-intl-alternate-links",
+    "data-dx-intl-alternate-locale",
+    "data-dx-intl-alternate-href",
+    "data-dx-intl-locale-option",
+    "data-dx-intl-locale-selected",
+    "data-dx-intl-hreflang",
+    "data-dx-intl-locale-prefix",
+    "data-dx-intl-format-preview",
+    "data-dx-intl-format-source-api",
+    "data-dx-intl-format-time-zone",
+    "data-dx-intl-number-preview",
+    "data-dx-intl-number-source-api",
+    "data-dx-intl-number-currency",
+    "data-dx-intl-copy-target",
+    "data-dx-intl-copy-target=\"readiness\"",
+    "data-dx-intl-readiness-copy",
+    "data-dx-style-surface=\"internationalization\"",
+    "data-dx-intl-plan-label",
+    "data-dx-intl-support-sla",
+    "data-dx-intl-route-preview",
+    "data-dx-intl-receipt-state",
+    "data-dx-intl-receipt-locale",
+    "data-dx-intl-receipt-route",
+    "data-dx-intl-receipt-hreflang",
+    "data-dx-intl-receipt-number-source"
+  ],
+  "required_env": [],
+  "app_owned_boundaries": [
+    "translated message quality",
+    "locale routing policy",
+    "middleware placement",
+    "SEO metadata",
+    "production runtime dependency installation"
+  ],
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "package_id": "i18n/next-intl",
+    "official_package_name": "Internationalization",
+    "current_status": "present",
+    "metrics": [
+      "internationalization_receipt_present",
+      "internationalization_receipt_stale",
+      "internationalization_missing_receipt",
+      "internationalization_blocked_surface",
+      "internationalization_unsupported_surface",
+      "internationalization_hash_manifest_present",
+      "internationalization_hash_mismatch",
+      "internationalization_dx_style_compatibility_present",
+      "internationalization_dx_style_compatibility_missing"
+    ],
+    "status_legend": [
+      {
+        "status": "present",
+        "meaning": "Selected Internationalization surfaces and their receipt are present."
+      },
+      {
+        "status": "stale",
+        "meaning": "A selected surface or receipt is older than the current source-owned Forge metadata."
+      },
+      {
+        "status": "missing-receipt",
+        "meaning": "The selected Internationalization surface exists without its required Forge receipt."
+      },
+      {
+        "status": "blocked",
+        "meaning": "A selected Internationalization surface cannot be trusted until a required app-owned boundary is resolved."
+      },
+      {
+        "status": "unsupported-surface",
+        "meaning": "The requested Internationalization runtime surface is outside the materialized source-owned slice."
+      }
+    ],
+    "monitored_surfaces": [
+      {
+        "id": "next-intl-dashboard-locale-workflow",
+        "status": "present",
+        "source_file": "examples/template/next-intl-dashboard-locale.tsx",
+        "materialized_file": "components/launch/next-intl-dashboard-locale.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json",
+        "upstream_public_apis": [
+          "NextIntlClientProvider",
+          "useTranslations",
+          "useLocale",
+          "useFormatter"
+        ],
+        "next_action": "Keep visible locale switching, formatter, route, and alternate-link markers receipt-backed."
+      },
+      {
+        "id": "next-intl-dashboard-message-contract",
+        "status": "present",
+        "source_file": "examples/template/next-intl-dashboard-locale-contract.ts",
+        "materialized_file": "components/launch/next-intl-dashboard-locale-contract.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json",
+        "upstream_public_apis": [
+          "defineRouting",
+          "createNavigation",
+          "getRequestConfig",
+          "createMiddleware"
+        ],
+        "next_action": "Keep translated LaunchDashboard copy and receipt fields in the typed Internationalization contract."
+      },
+      {
+        "id": "internationalization-preview-manifest-materializer",
+        "status": "present",
+        "source_file": "tools/launch/materialize-www-template.ts",
+        "generated_file": "public/preview-manifest.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json",
+        "source_markers": [
+          "sourceGuardRunbookFixtures",
+          "routes[].sourceGuardRunbookFixtures",
+          "docs/packages/next-intl.source-guard-runbook.json"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+        },
+        "next_action": "Keep generated preview-manifest fixture emission hash-backed without claiming live locale routing proof."
+      },
+      {
+        "id": "internationalization-catalog-validation-route",
+        "status": "present",
+        "route": "/i18n",
+        "source_file": "examples/template/components/template-app/i18n-page.tsx",
+        "materialized_file": "components/template-app/i18n-page.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json",
+        "source_markers": [
+          "data-dx-i18n-catalog-validation=\"source-owned\"",
+          "data-dx-i18n-catalog-status",
+          "validateDxLaunchCatalogs",
+          "i18n/messages/en.json",
+          "i18n/messages/bn.json"
+        ],
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/app/i18n/page.tsx": "aba37c3f12c703af7143c71ba5b70784d536affd831acd974ec1654ae29c9ec9",
+          "examples/template/components/template-app/i18n-page.tsx": "2f1141b6a01666612bb92143d47675e421779d85c0724fe6d250b4251022eeff",
+          "examples/template/i18n/catalog-validation.ts": "3558b64fde30c3ab1f430b025b3e09df15bcf7bde07ceb54ce820ea2e1772cba",
+          "examples/template/i18n/messages/en.json": "a239cadc0a088a5f625fa288054c4f4d6153fbf36cf4d29043189474b1689cdc",
+          "examples/template/i18n/messages/bn.json": "a239cadc0a088a5f625fa288054c4f4d6153fbf36cf4d29043189474b1689cdc"
+        },
+        "next_action": "Keep the visible /i18n catalog-validation route hash-backed without claiming production locale routing or SEO proof.",
+        "files": [
+          "app/i18n/page.tsx",
+          "components/template-app/i18n-page.tsx",
+          "i18n/catalog-validation.ts",
+          "i18n/messages/en.json",
+          "i18n/messages/bn.json"
+        ]
+      }
+    ],
+    "blocked_surfaces": [],
+    "unsupported_surfaces": [
+      {
+        "id": "production-locale-routing-runtime",
+        "status": "unsupported-surface",
+        "reason": "Requires app-owned middleware placement, route deployment, dependency installation, and governed browser/SEO proof."
+      }
+    ],
+    "stale_receipt_policy": "Compare receipt source_files and materialized_files hashes in the shared dx-check read model before reporting stale.",
+    "missing_receipt_policy": "Report missing-receipt when the dashboard workflow receipt is absent."
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "styles/globals.css",
+    "generated_css": "styles/globals.css",
+    "visible_surfaces": [
+      "next-intl-dashboard-locale-workflow"
+    ],
+    "source_files": [
+      "examples/template/next-intl-dashboard-locale.tsx",
+      "examples/template/next-intl-dashboard-locale-contract.ts",
+      "core/src/ecosystem/forge_next_intl.rs"
+    ],
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json",
+    "runtime_proof": false,
+    "data_dx_markers": [
+      "data-dx-style-surface=\"internationalization\""
+    ],
+    "style_boundaries": [
+      "use dx-style token classes instead of inline color objects on the selected Internationalization dashboard surface",
+      "keep locale routing, translation QA, SEO alternates, and dependency installation app-owned",
+      "do not claim browser visual proof from source-only marker evidence"
+    ],
+    "runtime_limitations": [
+      "SOURCE-ONLY: dx-style compatibility verifies the selected Internationalization source marker and token boundary without browser proof.",
+      "ADAPTER-BOUNDARY: locale routing, translation quality, SEO alternate links, and runtime dependency installation stay app-owned."
+    ]
+  },
+  "missing_runtime_features": [
+    "governed browser proof",
+    "production locale routing verification",
+    "SEO alternate-link review"
+  ],
+  "guards": [
+    "node --test .\\benchmarks\\next-intl-dx-check-visibility.test.ts",
+    "node --test .\\benchmarks\\next-intl-dashboard-workflow.test.ts",
+    "node --test .\\benchmarks\\next-intl-slice.test.ts"
+  ],
+  "no_runtime_execution": true
+}

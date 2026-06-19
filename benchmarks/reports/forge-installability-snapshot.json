@@ -1,0 +1,159 @@
+{
+  "generated_at": "2026-05-18T18:45:24.641Z",
+  "report_id": "forge-installability-snapshot-v1",
+  "source": "benchmarks/measure-forge-installability-snapshot.ts",
+  "root_dir": "G:\\WWW",
+  "score": 100,
+  "passed": true,
+  "scope": {
+    "no_package_installs_run": true,
+    "not_live_npm_or_shadcn_benchmark": true,
+    "competitor_builds_run": false,
+    "no_node_modules_created": true,
+    "safe_public_claim": "Forge beta install and upgrade rows use local evidence artifacts; npm and shadcn rows are static references, not live install measurements."
+  },
+  "sources": {
+    "release_bundle": ".dx\\adoption-update-rehearsal\\.dx\\forge\\adoption-smoke\\release-bundle",
+    "package_update_rehearsal": "benchmarks\\reports\\forge-package-update-rehearsal.json",
+    "source_owned_package_review": "benchmarks\\reports\\forge-source-owned-package-review.json"
+  },
+  "release_bundle": {
+    "path": "G:\\WWW\\.dx\\adoption-update-rehearsal\\.dx\\forge\\adoption-smoke\\release-bundle",
+    "total_bytes": 184496,
+    "file_count": 46
+  },
+  "update_evidence": {
+    "files": [
+      "G:\\WWW\\benchmarks\\reports\\forge-package-update-rehearsal.json",
+      "G:\\WWW\\benchmarks\\reports\\forge-source-owned-package-review.json"
+    ],
+    "total_bytes": 36419,
+    "file_count": 2
+  },
+  "rows": [
+    {
+      "id": "dx-forge-beta-install",
+      "tool": "dx forge",
+      "operation": "beta-install",
+      "baseline_kind": "local-evidence",
+      "measurement_kind": "derived from local Forge adoption prepare evidence",
+      "time_ms": 2470,
+      "artifact_bytes": 184496,
+      "artifact_files": 46,
+      "package_install_ran": false,
+      "node_modules_required": false,
+      "source": ".dx\\adoption-update-rehearsal\\.dx\\forge\\adoption-smoke\\release-bundle",
+      "evidence": "benchmarks\\reports\\forge-package-update-rehearsal.json prepare_result.duration_ms"
+    },
+    {
+      "id": "dx-forge-beta-upgrade",
+      "tool": "dx forge",
+      "operation": "beta-upgrade",
+      "baseline_kind": "local-evidence",
+      "measurement_kind": "local Forge package update rehearsal",
+      "time_ms": 95,
+      "artifact_bytes": 36419,
+      "artifact_files": 2,
+      "package_install_ran": false,
+      "node_modules_required": false,
+      "source": "benchmarks\\reports\\forge-package-update-rehearsal.json",
+      "evidence": "benchmarks\\reports\\forge-package-update-rehearsal.json green/yellow update.duration_ms"
+    },
+    {
+      "id": "npm-install-baseline",
+      "tool": "npm",
+      "operation": "npm install",
+      "baseline_kind": "static-reference",
+      "measurement_kind": "skipped package-install reference",
+      "time_ms": 15000,
+      "artifact_bytes": 25000000,
+      "package_install_ran": false,
+      "node_modules_required": true,
+      "source": "static npm install reference row",
+      "evidence": "Install is intentionally skipped; this row is only a conservative reference point for reviewing Forge installability."
+    },
+    {
+      "id": "shadcn-add-baseline",
+      "tool": "shadcn",
+      "operation": "npx shadcn add button",
+      "baseline_kind": "static-reference",
+      "measurement_kind": "skipped package-install reference",
+      "time_ms": 8000,
+      "artifact_bytes": 4000000,
+      "package_install_ran": false,
+      "node_modules_required": true,
+      "source": "static shadcn add reference row",
+      "evidence": "Command is intentionally skipped; this row is not a live shadcn benchmark and creates no node_modules."
+    }
+  ],
+  "comparisons": [
+    {
+      "baseline": "npm-install-baseline",
+      "install_time_delta_ms": 12530,
+      "install_artifact_delta_bytes": 24815504,
+      "upgrade_time_delta_ms": 14905,
+      "upgrade_artifact_delta_bytes": 24963581,
+      "caveat": "Positive deltas favor Forge only inside this static-reference snapshot."
+    },
+    {
+      "baseline": "shadcn-add-baseline",
+      "install_time_delta_ms": 5530,
+      "install_artifact_delta_bytes": 3815504,
+      "upgrade_time_delta_ms": 7905,
+      "upgrade_artifact_delta_bytes": 3963581,
+      "caveat": "Positive deltas favor Forge only inside this static-reference snapshot."
+    }
+  ],
+  "checks": {
+    "no_package_installs": {
+      "name": "no package installs",
+      "passed": true,
+      "present": 1,
+      "expected": 1,
+      "score": 100
+    },
+    "forge_installability": {
+      "name": "Forge installability evidence",
+      "passed": true,
+      "present": 2,
+      "expected": 2,
+      "score": 100
+    },
+    "artifact_size": {
+      "name": "artifact size evidence",
+      "passed": true,
+      "present": 2,
+      "expected": 2,
+      "score": 100
+    },
+    "baseline_scope": {
+      "name": "static baseline scope",
+      "passed": true,
+      "present": 2,
+      "expected": 2,
+      "score": 100
+    },
+    "local_reports": {
+      "name": "local reports readable",
+      "passed": true,
+      "present": 2,
+      "expected": 2,
+      "score": 100
+    },
+    "release_bundle": {
+      "name": "release bundle present",
+      "passed": true,
+      "present": 1,
+      "expected": 1,
+      "score": 100
+    }
+  },
+  "findings": [],
+  "honest_scope": [
+    "This is an installability snapshot, not a live npm/shadcn install benchmark.",
+    "The script never runs npm, npx, shadcn, cargo, or package manager install commands.",
+    "Forge timing comes from local beta/adoption evidence reports when present; static baseline rows are review references only.",
+    "Artifact size is based on local release-bundle and update-review evidence files, not downloaded remote packages.",
+    "Broader framework or ecosystem replacement claims still require separate live benchmark suites."
+  ]
+}

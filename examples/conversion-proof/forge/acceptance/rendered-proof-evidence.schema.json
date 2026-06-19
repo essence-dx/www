@@ -1,0 +1,321 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dx.www.rendered-proof-evidence.schema.json",
+  "schema": "dx.www.rendered_proof_evidence_schema",
+  "title": "DX-WWW Conversion Rendered-Proof Evidence Receipt",
+  "description": "Schema for runtime-verification lanes to write rendered-proof evidence for converted DX-WWW routes without mutating source proof files.",
+  "type": "object",
+  "runtime_lane": "runtime-verification-lane",
+  "receipt_output_pattern": ".dx/forge/runtime-evidence/conversion-proof/{route}.rendered-proof.json",
+  "validator": "forge/acceptance/validate-rendered-proof-evidence.ts",
+  "blocked_receipt_fixture": "forge/acceptance/fixtures/blocked-rendered-proof.sample.json",
+  "import_plan": "forge/acceptance/rendered-proof-import-plan.json",
+  "import_tool": "forge/acceptance/prepare-rendered-proof-import.ts",
+  "review_tool": "forge/acceptance/review-rendered-proof-completeness.ts",
+  "runtime_approval_request": "forge/acceptance/rendered-proof-runtime-approval-request.json",
+  "runtime_approval_tool": "forge/acceptance/request-rendered-proof-runtime-approval.ts",
+  "authoring_guide": "forge/acceptance/rendered-proof-evidence-authoring-guide.json",
+  "authoring_tool": "forge/acceptance/summarize-rendered-proof-evidence-requirements.ts",
+  "no_source_proof_mutation": true,
+  "source_inputs": [
+    "forge/route-discovery/conversion-routes.json",
+    "forge/acceptance/no-runtime-route-acceptance.json",
+    ".dx/forge/source-manifest.json"
+  ],
+  "required": [
+    "route",
+    "source_project",
+    "approval",
+    "checks",
+    "provenance_snapshot",
+    "result",
+    "no_source_proof_mutation"
+  ],
+  "properties": {
+    "route": {
+      "type": "string",
+      "enum": [
+        "/ui",
+        "/database",
+        "/backend"
+      ]
+    },
+    "source_project": {
+      "type": "string",
+      "enum": [
+        "shadcn-ui",
+        "supabase",
+        "convex-backend"
+      ]
+    },
+    "approval": {
+      "type": "object",
+      "required": [
+        "status",
+        "approval_reference"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "approved",
+            "not-approved"
+          ]
+        },
+        "approved_by": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "approved_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "approval_reference": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "required": [
+        "renderer_snapshot",
+        "asset_rendering",
+        "responsive_review",
+        "accessibility_review"
+      ],
+      "properties": {
+        "renderer_snapshot": {
+          "$ref": "#/$defs/artifact"
+        },
+        "asset_rendering": {
+          "$ref": "#/$defs/artifact"
+        },
+        "responsive_review": {
+          "$ref": "#/$defs/artifact"
+        },
+        "accessibility_review": {
+          "$ref": "#/$defs/artifact"
+        }
+      }
+    },
+    "checks": {
+      "type": "object",
+      "required": [
+        "interaction_boundary_review",
+        "provenance_review"
+      ],
+      "properties": {
+        "interaction_boundary_review": {
+          "$ref": "#/$defs/check"
+        },
+        "provenance_review": {
+          "$ref": "#/$defs/check"
+        }
+      }
+    },
+    "provenance_snapshot": {
+      "type": "object",
+      "required": [
+        "route_discovery",
+        "acceptance_checklist",
+        "source_manifest",
+        "visual_audit",
+        "conversion_manifest",
+        "receipt"
+      ],
+      "properties": {
+        "route_discovery": {
+          "type": "string"
+        },
+        "acceptance_checklist": {
+          "type": "string"
+        },
+        "source_manifest": {
+          "type": "string"
+        },
+        "visual_audit": {
+          "type": "string"
+        },
+        "conversion_manifest": {
+          "type": "string"
+        },
+        "receipt": {
+          "type": "string"
+        }
+      }
+    },
+    "result": {
+      "type": "string",
+      "enum": [
+        "rendered-proof-ready",
+        "blocked"
+      ]
+    },
+    "fixture_kind": {
+      "type": "string"
+    },
+    "blocked_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "missing_artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "renderer_snapshot",
+          "asset_rendering",
+          "responsive_review",
+          "accessibility_review"
+        ]
+      }
+    },
+    "no_source_proof_mutation": {
+      "const": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "result": {
+            "const": "rendered-proof-ready"
+          }
+        },
+        "required": [
+          "result"
+        ]
+      },
+      "then": {
+        "required": [
+          "artifacts"
+        ],
+        "properties": {
+          "approval": {
+            "required": [
+              "approved_by",
+              "approved_at"
+            ],
+            "properties": {
+              "status": {
+                "const": "approved"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "result": {
+            "const": "blocked"
+          }
+        },
+        "required": [
+          "result"
+        ]
+      },
+      "then": {
+        "required": [
+          "blocked_reason",
+          "missing_artifacts"
+        ],
+        "properties": {
+          "approval": {
+            "properties": {
+              "status": {
+                "const": "not-approved"
+              }
+            }
+          }
+        },
+        "not": {
+          "required": [
+            "artifacts"
+          ]
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256",
+        "captured_at"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "captured_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "check": {
+      "type": "object",
+      "required": [
+        "status",
+        "reviewed_at",
+        "notes"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "blocked"
+          ]
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "status": {
+    "score_out_of_100": 99,
+    "real": [
+      "Runtime lanes have a concrete schema for rendered-proof receipts.",
+      "Receipts write under .dx/forge/runtime-evidence instead of modifying source proof files.",
+      "A source-only validator reports missing runtime evidence without failing source readiness.",
+      "A blocked rendered-proof sample receipt shows the honest no-runtime-approval shape without inventing screenshot artifacts.",
+      "A rendered-proof import plan and source-only reporter define how approved runtime evidence can be reviewed before receipt promotion.",
+      "A rendered-proof completeness reviewer records why 100/100 is blocked until real receipts exist.",
+      "A rendered-proof runtime approval request is linked before runtime lanes create evidence that conforms to this schema.",
+      "A rendered-proof evidence authoring guide maps this schema to route-specific capture fields without writing runtime evidence."
+    ],
+    "partial": [
+      "The schema defines receipt shape only; no rendered-proof receipt has been collected in this lane.",
+      "The blocked sample and import report are fixtures/metadata under forge/acceptance, not runtime-evidence receipts."
+    ],
+    "blocked": [
+      "Actual renderer snapshots, browser captures, and backend runtime evidence remain approval-gated."
+    ]
+  }
+}

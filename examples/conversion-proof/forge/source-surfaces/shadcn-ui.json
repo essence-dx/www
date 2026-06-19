@@ -1,0 +1,101 @@
+{
+  "schema": "dx.www.source_surface_map",
+  "source_project": "shadcn-ui",
+  "source_repo": "https://github.com/shadcn-ui/ui.git",
+  "source_commit": "36139f6200d9c2684ef7695fce5f3d9787378e26",
+  "converted_route": "/ui",
+  "surfaces": {
+    "ui": {
+      "label": "Component registry and primitive styling",
+      "source_files": [
+        "apps/v4/registry/__index__.tsx",
+        "apps/v4/styles/radix-vega/ui/button.tsx",
+        "apps/v4/styles/radix-vega/ui/table.tsx"
+      ],
+      "converted_files": [
+        "pages/ui.html",
+        "components/ConversionRouteHeader.tsx",
+        "components/SourceSurfaceTable.tsx",
+        "forge/primitives/button.ts",
+        "forge/primitives/table.ts"
+      ],
+      "launch_value": "Gives DX-WWW a shadcn-style component registry view with source-owned button, table, badge, card, tabs, dialog, dropdown, and sidebar recipes.",
+      "runtime_boundary": "No React component runtime, Radix runtime, CVA runtime, or package-manager install is executed."
+    },
+    "layout": {
+      "label": "Dashboard block layout",
+      "source_files": [
+        "apps/v4/registry/bases/base/blocks/dashboard-01/page.tsx",
+        "apps/v4/registry/bases/base/blocks/dashboard-01/components/app-sidebar.tsx",
+        "apps/v4/registry/bases/base/blocks/dashboard-01/components/site-header.tsx"
+      ],
+      "converted_files": [
+        "pages/ui.html",
+        "components/ConversionRouteHeader.tsx",
+        "components/RuntimeBoundaryPanel.tsx",
+        "styles/conversion-proof.css"
+      ],
+      "launch_value": "Keeps the dashboard shell, source table, navigation, and proof panels reusable in DX-WWW route files.",
+      "runtime_boundary": "Responsive layout is represented as source CSS and DX-WWW components, not a hydrated React dashboard."
+    },
+    "interaction": {
+      "label": "Tabs, dialog, dropdown, slot/as-child behavior",
+      "source_files": [
+        "apps/v4/styles/radix-vega/ui/command.tsx",
+        "apps/v4/registry/bases/base/blocks/dashboard-01/components/data-table.tsx",
+        "apps/v4/registry/bases/base/blocks/dashboard-01/components/nav-user.tsx"
+      ],
+      "converted_files": [
+        "pages/ui.html",
+        "forge/primitives/slot.ts",
+        "forge/primitives/tabs.ts",
+        "forge/primitives/dialog.ts",
+        "forge/primitives/dropdown.ts"
+      ],
+      "launch_value": "Documents the interaction affordances that matter for launch while keeping DX-WWW source-owned primitive recipes visible.",
+      "runtime_boundary": "Focus trapping, keyboard menus, command filtering, and tab state machines remain launch shims."
+    },
+    "docs": {
+      "label": "Registry docs and install guidance",
+      "source_files": [
+        "apps/v4/registry/styles.tsx",
+        "apps/v4/registry/themes.ts"
+      ],
+      "converted_files": [
+        "pages/ui.html",
+        "README.md",
+        "DX.md"
+      ],
+      "launch_value": "Turns registry style/theme documentation into auditable proof tables and route status docs.",
+      "runtime_boundary": "Install snippets are provenance only and are not executed."
+    },
+    "dashboard": {
+      "label": "Dashboard gallery proof",
+      "source_files": [
+        "apps/v4/registry/bases/base/blocks/dashboard-01/data.json",
+        "apps/v4/registry/bases/base/blocks/dashboard-01/components/section-cards.tsx",
+        "apps/v4/registry/bases/base/blocks/dashboard-01/components/chart-area-interactive.tsx"
+      ],
+      "converted_files": [
+        "pages/ui.html",
+        "components/SourceSurfaceTable.tsx",
+        "styles/conversion-proof.css"
+      ],
+      "launch_value": "Shows the registry dashboard block inventory as a DX-WWW proof surface instead of fake gallery cards.",
+      "runtime_boundary": "Charts and data-table sorting are recorded structurally, not executed."
+    },
+    "brand": {
+      "label": "shadcn-ui visual identity",
+      "source_files": [
+        "apps/v4/public/favicon-32x32.png"
+      ],
+      "converted_files": [
+        "pages/ui.html",
+        "public/vendor/shadcn-favicon-32x32.png",
+        "components/ConversionRouteHeader.tsx"
+      ],
+      "launch_value": "Keeps the upstream source mark visible in the DX-WWW route header.",
+      "runtime_boundary": "Only copied, provenance-tracked static assets are used."
+    }
+  }
+}

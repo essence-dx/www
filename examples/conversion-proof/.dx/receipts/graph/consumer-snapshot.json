@@ -1,0 +1,203 @@
+{
+  "schema": "dx.build.graph.consumerSnapshot",
+  "sourceSchema": "dx.build.graph",
+  "generatedAt": "2026-06-10T03:50:07.947565400+00:00",
+  "coreConceptMap": {
+    "conceptCount": 9,
+    "coveredNodeKinds": [
+      "deploy-output",
+      "dx-check-receipt",
+      "dx-style-css",
+      "forge-surface",
+      "public-asset",
+      "route-shell-chunk",
+      "source-module",
+      "source-module-chunk",
+      "tsx-component",
+      "tsx-route"
+    ],
+    "coveredEdgeKinds": [
+      "checks",
+      "compiled-from-source",
+      "emits",
+      "emitted-from",
+      "expects-receipt",
+      "imports",
+      "imports-source-module",
+      "links-entry-module",
+      "maps-generated-to-source",
+      "owns-source"
+    ],
+    "nodeModulesRequired": false,
+    "adapterBoundary": true,
+    "publicArchitecture": false
+  },
+  "graph": {
+    "nodeCount": 101,
+    "edgeCount": 53,
+    "nodeKindCounts": {
+      "app-route-handler": 4,
+      "dx-style-css": 6,
+      "dx-style-import-source": 3,
+      "dx-style-source-map": 6,
+      "image-placeholder-asset": 36,
+      "public-asset": 39,
+      "route-shell-chunk": 1,
+      "server-data-route": 1,
+      "source-module": 1,
+      "source-module-chunk": 3,
+      "tsx-route": 1
+    },
+    "styleOptimization": {
+      "styleNodeCount": 6,
+      "originalRuleCount": 743,
+      "retainedRuleCount": 743,
+      "prunedRuleCount": 0,
+      "minifiedStyleCount": 6,
+      "sourceMapCount": 6,
+      "sourceMapSourceCount": 9,
+      "sourceMapSourceHashCount": 9,
+      "sourceMapEntryStyleSourceCount": 6,
+      "sourceMapFlattenedImportSourceCount": 3,
+      "sourceMapRetainedImportSourceCount": 0,
+      "sourceMapSegmentCount": 0,
+      "sourceMapExactSegmentMapCount": 0,
+      "sourceMapEvidenceOnlyCount": 6,
+      "sourceMapLinkCount": 6,
+      "sourceMapHashCount": 6,
+      "sourceMapArtifactCount": 6,
+      "flattenedImportCount": 3,
+      "retainedImportCount": 0,
+      "assetReferenceCount": 0,
+      "entryStyleAssetReferenceCount": 0,
+      "flattenedImportAssetReferenceCount": 0,
+      "retainedImportAssetReferenceCount": 0
+    },
+    "imageOptimization": {
+      "imageAssetCount": 36,
+      "metadataAssetCount": 36,
+      "optimizedVariantCount": 0,
+      "placeholderCount": 36,
+      "placeholderArtifactCount": 36,
+      "placeholderArtifactBytes": 6150,
+      "placeholderArtifactOutputs": [
+        ".dx/www/output/image-placeholders/public/favicon-95cdf2c6b75c0830.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/android-1f862bbfb91f091a.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/apple-4930e9a17f0554e8.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/apple-dark-4930e9a17f0554e8.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/chrome-a274e10bea40ed92.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/firefox-d533e35679bf3fb3.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/linux-d4eae2a799f1a34c.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/rust-b14238297a72c43e.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/rust-dark-b14238297a72c43e.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/vercel-bc4fc743c4b4aafe.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/vercel-dark-bc4fc743c4b4aafe.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/icons/platform-svgl/windows-a5752798ef33bc2a.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/amber-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/blue-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/cyan-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/emerald-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/fuchsia-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/green-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/green-variant-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/indigo-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/lime-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/orange-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/pink-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/purple-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/rainbow-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/red-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/rose-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/sky-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/teal-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/variant-1-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/variant-2-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/violet-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/thumbnails/yellow-b0698a08bf67b748.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/vendor/convex-logo-aa90b90901b59203.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/vendor/shadcn-favicon-32x32-e0672a7f37b24070.placeholder.svg",
+        ".dx/www/output/image-placeholders/public/vendor/supabase-logo-b0aa1f32e2c42ad9.placeholder.svg"
+      ],
+      "placeholderArtifactEdgeCount": 36,
+      "routeReferenceCount": 0,
+      "styleReferenceCount": 0,
+      "formatCounts": {
+        "png": 22,
+        "svg": 14
+      },
+      "dimensionSourceCounts": {
+        "png-ihdr": 22,
+        "svg-root-attributes": 10,
+        "svg-viewbox": 4
+      },
+      "status": "metadata-plus-placeholder-artifacts-boundary",
+      "fullPipelineParity": false
+    },
+    "serverData": {
+      "routeCount": 1,
+      "entryCount": 0,
+      "statusCounts": {
+        "no-loader-bindings": 1
+      },
+      "emitsEdgeCount": 1,
+      "linksEdgeCount": 1,
+      "routesWithRouteParams": 0,
+      "routesWithSearchParams": 0,
+      "routeParamKeys": [],
+      "searchParamKeys": [],
+      "nodeModulesRequired": false,
+      "lifecycleScriptsExecuted": false,
+      "sourceOwnedContract": true,
+      "externalRuntimeRequired": false,
+      "externalRuntimeExecuted": false
+    },
+    "contentPipeline": {
+      "documentCount": 0,
+      "mdxDocumentCount": 0,
+      "nodeModulesRequired": false,
+      "runtimeProof": false
+    },
+    "ecmascriptAnalysis": {
+      "sourceModuleCount": 3,
+      "dynamicImportCount": 0,
+      "dynamicImportOptionBoundaryCount": 0,
+      "dynamicImportOptionUnsupportedCount": 0,
+      "unresolvedDynamicImportCount": 0,
+      "unsupportedDynamicImportCount": 0,
+      "unsupportedDynamicImportReasonCounts": {},
+      "dynamicImportAnalysisStatusCounts": {
+        "none-observed": 3
+      },
+      "clientBoundaryCount": 0,
+      "serverBoundaryCount": 0,
+      "topLevelAwaitCount": 0,
+      "nextRuntimeRequired": false,
+      "reactRuntimeRequired": false,
+      "rscRequired": false,
+      "nodeModulesRequired": false,
+      "fullNextjsParity": false
+    }
+  },
+  "invalidation": {
+    "changedNodeIds": [],
+    "affectedNodeIds": [],
+    "emittedOutputNodeIds": [],
+    "emittedOutputArtifacts": [],
+    "rebuildNodeIds": [],
+    "changedRoutes": [],
+    "affectedRoutes": [],
+    "rebuildRoutes": []
+  },
+  "consumers": {
+    "zedPreview": {
+      "primaryField": "invalidation.affectedNodeIds",
+      "fallbackField": "graph.nodeKindCounts",
+      "routeShellChunkKind": "route-shell-chunk",
+      "sourceModuleKind": "source-module",
+      "sourceModuleChunkKind": "source-module-chunk"
+    },
+    "dxCli": {
+      "primaryField": "graph.nodeKindCounts"
+    }
+  }
+}

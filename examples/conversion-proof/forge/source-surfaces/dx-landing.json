@@ -1,0 +1,81 @@
+{
+  "schema": "dx.www.source_surface_map",
+  "source_project": "dx-website-startpage",
+  "source_local_path": "G:\\Dx\\website",
+  "source_files": [
+    {
+      "path": "src/components/startpage.tsx",
+      "surfaces": [
+        "hero",
+        "platform download cards",
+        "feature banners",
+        "story engine",
+        "token revolution",
+        "provider freedom",
+        "Forge storage",
+        "Traffic Security",
+        "DX Check",
+        "media workspace",
+        "built-in tools",
+        "extensions",
+        "pricing",
+        "benchmarks",
+        "testimonials",
+        "comparison table",
+        "waitlist"
+      ],
+      "dx_www_treatment": "Recreated as a source-owned DX-WWW .html page with static HTML, route markers, and no React or Next runtime requirement."
+    },
+    {
+      "path": "src/components/platform-download-cards.tsx",
+      "surfaces": [
+        "macOS",
+        "Windows",
+        "Linux",
+        "Android",
+        "iOS",
+        "ChromeOS",
+        "Browser",
+        "IDE",
+        "creative plugin download targets"
+      ],
+      "dx_www_treatment": "Flattened into accessible platform cards that link to /download."
+    },
+    {
+      "path": "public/thumbnails/*.png",
+      "surfaces": [
+        "feature hero images",
+        "visual proof tiles"
+      ],
+      "dx_www_treatment": "Copied into public/thumbnails for the DX-WWW example so the landing keeps real visual assets."
+    }
+  ],
+  "preserved_sections": [
+    "Hi. I'm DX hero",
+    "platform downloads",
+    "Rust + GPUI proof cards",
+    "launch stats",
+    "game-changing feature banners",
+    "DX Story Engine",
+    "What Is DX",
+    "DX Command Center",
+    "Built on Rust",
+    "Generate Literally Anything",
+    "Token Revolution",
+    "Works Everywhere",
+    "Free AI Access",
+    "Competitive Positioning",
+    "Forge Storage Strategy",
+    "Traffic Security",
+    "DX Check",
+    "Media Workspace",
+    "Built-In Tools",
+    "Extensions",
+    "Pricing",
+    "Built With Rust benchmark",
+    "Developer Testimonials",
+    "Comparison Table",
+    "Early Access waitlist"
+  ],
+  "runtime_policy": "No Next.js, no node_modules, no hosted provider calls, no browser automation required for source proof."
+}

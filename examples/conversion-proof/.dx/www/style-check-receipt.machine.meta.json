@@ -1,0 +1,13 @@
+{
+  "cache_schema": "dx.www.json_receipt",
+  "cache_version": 2,
+  "cache_kind": 3,
+  "source_path": "G:\\Dx\\www\\examples\\conversion-proof\\.dx/receipts/style/check.json",
+  "source_len": 329084,
+  "source_modified_unix_ms": 1781073391627,
+  "source_blake3": "39a5b9930272bfe1e2e7dafcab996aca8a6105bc66dab8ebcc1914668b2b6401",
+  "machine_path": "G:\\Dx\\www\\examples\\conversion-proof\\.dx\\www\\style-check-receipt.machine",
+  "machine_payload_len": 357172,
+  "machine_archive_len": 357172,
+  "machine_payload_blake3": "3240705d83487b6bd365cf3a210b38758bff375d6e2bea65578edf7a69c58e1a"
+}

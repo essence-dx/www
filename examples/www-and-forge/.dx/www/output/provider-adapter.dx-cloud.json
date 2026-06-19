@@ -1,0 +1,3638 @@
+{
+  "version": 1,
+  "provider": "dx-www-cloud-local",
+  "adapter_kind": "account-free-fixture",
+  "requires_provider_account": false,
+  "account_bound": false,
+  "network_required": false,
+  "secrets_required": false,
+  "deployment_id": "dxlocal-3aa54e392a16464e",
+  "deploy_adapter_path": "deploy-adapter.json",
+  "no_node_modules_required": true,
+  "runtime": {
+    "kind": "static-plus-source-owned-actions",
+    "static_routes": 2,
+    "server_actions": 0,
+    "lifecycle_scripts_executed": false
+  },
+  "build_manifest": {
+    "path": "manifest.json",
+    "hash": "blake3:3aa54e392a16464e92b1d80f787a775632fd9102867e521ddc2239a707f9fe7f",
+    "signed": false,
+    "signature_required_for_release": true,
+    "signature_policy": "sign manifest before hosted promotion"
+  },
+  "routes": [
+    {
+      "path": "/",
+      "html": "app/index.html",
+      "execution_contract": "app/app-router-execution.json"
+    },
+    {
+      "path": "/forge-proof",
+      "html": "app/forge-proof/index.html",
+      "execution_contract": "app/forge-proof/app-router-execution.json"
+    }
+  ],
+  "route_handlers": [],
+  "server_actions": [],
+  "immutable_assets": [
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css"
+    },
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css"
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg"
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon-cfb09e06980b21ac.svg"
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon-cfb09e06980b21ac.svg"
+    },
+    {
+      "path": "public/favicon.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/favicon.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon.svg"
+    },
+    {
+      "path": "public/favicon.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon.svg"
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icon-32341047d202fbff.svg"
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icon-32341047d202fbff.svg"
+    },
+    {
+      "path": "public/icon.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/icon.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icon.svg"
+    },
+    {
+      "path": "public/icon.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icon.svg"
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/logo-2afe23f6d7f297ab.svg"
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/logo-2afe23f6d7f297ab.svg"
+    },
+    {
+      "path": "public/logo.svg",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "public/logo.svg.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/logo.svg"
+    },
+    {
+      "path": "public/logo.svg.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/logo.svg"
+    },
+    {
+      "path": "styles/generated.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/generated.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/generated.css"
+    },
+    {
+      "path": "styles/generated.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/generated.css"
+    },
+    {
+      "path": "styles/globals.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/globals.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/globals.css"
+    },
+    {
+      "path": "styles/globals.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/globals.css"
+    },
+    {
+      "path": "styles/theme.css",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null
+    },
+    {
+      "path": "styles/theme.css.br",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/theme.css"
+    },
+    {
+      "path": "styles/theme.css.gz",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/theme.css"
+    }
+  ],
+  "cache_headers": [
+    {
+      "glob": "**/*.html",
+      "cache_control": "public, max-age=0, must-revalidate"
+    },
+    {
+      "glob": "**/*.dxpk",
+      "cache_control": "public, max-age=31536000, immutable"
+    },
+    {
+      "glob": "public/**/*",
+      "cache_control": "public, max-age=31536000, immutable"
+    }
+  ],
+  "cdn_headers": [
+    {
+      "glob": "**/*.br",
+      "headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "glob": "**/*.gz",
+      "headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding"
+      }
+    }
+  ],
+  "cache_manifest": {
+    "schema": "dx.www.deploy.cache_manifest",
+    "schema_revision": 1,
+    "path": "cache-manifest.json",
+    "public_runtime_artifacts": 41,
+    "precompressed_encodings": [
+      "br",
+      "gzip"
+    ],
+    "cache_control": "no-store"
+  },
+  "health_checks": [],
+  "next_adapter_fixtures": null,
+  "next_migration": null,
+  "next_familiar_compatibility_evidence": null,
+  "next_familiar_fixtures": null,
+  "observability": {
+    "metadata_path": "observability.json",
+    "ready_path": "/.dx/ready",
+    "metrics_path": "/.dx/observability",
+    "collects_secrets": false,
+    "collects_request_headers": false,
+    "collects_request_payloads": false,
+    "cache_control": "no-store"
+  },
+  "forge_hosting_manifest": {
+    "path": "forge-hosting-manifest.json",
+    "manifest_kind": "dx-www-forge-hosting-release-gate",
+    "coverage_score": 100,
+    "account_free_preview_ready": true,
+    "hosted_release_ready": false,
+    "provider_portability": true,
+    "cache_header_count": 3,
+    "observability_metadata_path": "observability.json",
+    "rollback_metadata_path": "rollback.json"
+  },
+  "hosted_preview": {
+    "path": "hosted-preview.json",
+    "deployment_kind": "dx-www-hosted-preview-bundle",
+    "requires_provider_account": false,
+    "network_required": false,
+    "node_modules_required": false,
+    "artifact_count": 73,
+    "forge_receipt_count": 15,
+    "forge": {
+      "root": "forge",
+      "source_manifest": {
+        "path": ".dx/forge/source-manifest.json",
+        "bundle_path": "forge/source-manifest.json",
+        "kind": "forge-source-manifest",
+        "hash": "blake3:6485cd88388662466e9002a16d2021d30ebe32a99d0921c7057a3da35fbb1253",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      "template_manifest": {
+        "path": ".dx/forge/template-manifest.json",
+        "bundle_path": "forge/template-manifest.json",
+        "kind": "forge-template-manifest",
+        "hash": "blake3:7cc7dcce6a5a280f0d82c828c7a4dcf45ab73b08083309ec701a891a01bfce77",
+        "source_owned": true,
+        "package_installs_executed": false,
+        "lifecycle_scripts_executed": false
+      },
+      "package_count": 6,
+      "receipt_count": 15,
+      "receipts_copied": true,
+      "receipts": [
+        {
+          "path": ".dx/forge/receipts/20260607T174853375646100Z-www-minimal-starter.json",
+          "bundle_path": "forge/receipts/20260607T174853375646100Z-www-minimal-starter.json",
+          "kind": "forge-receipt",
+          "package_id": "www/minimal-starter",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 13,
+          "risk_score": 100,
+          "hash": "blake3:c5b4551ee84d71fe7c0b922e0b50f0c573f6be106f1939ccfaa97fbadba577ad",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T174853445371200Z-www-minimal-starter.json",
+          "bundle_path": "forge/receipts/20260607T174853445371200Z-www-minimal-starter.json",
+          "kind": "forge-receipt",
+          "package_id": "www/minimal-starter",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 13,
+          "risk_score": 100,
+          "hash": "blake3:b2c257e44ff0f549a6dbdaf71acd2ce8605dec1cde53cd65c1eb231ef95e4bfb",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T174905841668300Z-npm-clsx.json",
+          "bundle_path": "forge/receipts/20260607T174905841668300Z-npm-clsx.json",
+          "kind": "forge-receipt",
+          "package_id": "npm/clsx",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 95,
+          "hash": "blake3:df25a7a44c22622450bafef361db7a15a4b395983a8df3639afd4630fa0874f9",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T214045680087200Z-npm-lodash.json",
+          "bundle_path": "forge/receipts/20260607T214045680087200Z-npm-lodash.json",
+          "kind": "forge-receipt",
+          "package_id": "npm/lodash",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:dcf2ab4d7d4fc92fdc633a7424cfa3893f98324f7f6cd53e4fcc1d86a15a4501",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T220958619944400Z-pip-requests.json",
+          "bundle_path": "forge/receipts/20260607T220958619944400Z-pip-requests.json",
+          "kind": "forge-receipt",
+          "package_id": "pip/requests",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:a44ebaf0e7d09386549cf28921c7c69c0bf9a562197c0b0ded2c2dfac4694ba6",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T220958713115300Z-cargo-serde.json",
+          "bundle_path": "forge/receipts/20260607T220958713115300Z-cargo-serde.json",
+          "kind": "forge-receipt",
+          "package_id": "cargo/serde",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:ab26b6a90bc213be813eeec457a9184a8639ecc87ff4cd0f54bd1e695c8edb39",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T220958824867000Z-go-quote.json",
+          "bundle_path": "forge/receipts/20260607T220958824867000Z-go-quote.json",
+          "kind": "forge-receipt",
+          "package_id": "go/quote",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:0ccdf746cd4626fb1277162fd5e614d6f639ad934bb3c6f6a152e49189482148",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T221112209576300Z-npm-lodash.json",
+          "bundle_path": "forge/receipts/20260607T221112209576300Z-npm-lodash.json",
+          "kind": "forge-receipt",
+          "package_id": "npm/lodash",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:da051ddd334084945d75eb89c14e191beb349f3f84f27f5d5ccf62325dc97e10",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T221112301950600Z-pip-requests.json",
+          "bundle_path": "forge/receipts/20260607T221112301950600Z-pip-requests.json",
+          "kind": "forge-receipt",
+          "package_id": "pip/requests",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:02343146e87e61f97d03d06c17dc9001358151b826982a078de9201a1d3636fc",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T221112398568600Z-cargo-serde.json",
+          "bundle_path": "forge/receipts/20260607T221112398568600Z-cargo-serde.json",
+          "kind": "forge-receipt",
+          "package_id": "cargo/serde",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:4a6f199f1e5f758d8f0aeed10b6019a70535cd6f40e90ea1823a396b5b8eb90f",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T221112507703700Z-go-quote.json",
+          "bundle_path": "forge/receipts/20260607T221112507703700Z-go-quote.json",
+          "kind": "forge-receipt",
+          "package_id": "go/quote",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:637aa2aa14644ca824364240810cc56769008a18134da7700c82c9cda62d0e7a",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T221129703560500Z-npm-lodash.json",
+          "bundle_path": "forge/receipts/20260607T221129703560500Z-npm-lodash.json",
+          "kind": "forge-receipt",
+          "package_id": "npm/lodash",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:a1628e0cabad66c5128f3b7e8380d189122f22787233f6a92c9f9e0d87a54ff8",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T221129838625800Z-pip-requests.json",
+          "bundle_path": "forge/receipts/20260607T221129838625800Z-pip-requests.json",
+          "kind": "forge-receipt",
+          "package_id": "pip/requests",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:ee4ca2ffee464f5ff55b28ede43ba31f8241599a2e1644566af602974b812b14",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T221129951136400Z-cargo-serde.json",
+          "bundle_path": "forge/receipts/20260607T221129951136400Z-cargo-serde.json",
+          "kind": "forge-receipt",
+          "package_id": "cargo/serde",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:89ed3c0e4a5a24992a1429e85bbc37eed7920914d3548b6d06e8e41ae54f1627",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        },
+        {
+          "path": ".dx/forge/receipts/20260607T221130167009500Z-go-quote.json",
+          "bundle_path": "forge/receipts/20260607T221130167009500Z-go-quote.json",
+          "kind": "forge-receipt",
+          "package_id": "go/quote",
+          "variant": "default",
+          "action": "track-write",
+          "file_count": 1,
+          "risk_score": 90,
+          "hash": "blake3:d5d43591dd039529de6b2c8971075ff5f4504e0ccbc6ec1f1ad682d1ef79eb9a",
+          "source_owned": true,
+          "package_installs_executed": false,
+          "lifecycle_scripts_executed": false
+        }
+      ],
+      "source_owned": true,
+      "package_installs_executed": false,
+      "lifecycle_scripts_executed": false
+    },
+    "account_free_preview_ready": true,
+    "hosted_release_ready": false
+  },
+  "server_action_replay_ledger": {
+    "schema": "dx.www.server_action.replay_ledger",
+    "schema_revision": 1,
+    "path": "server-action-replay-ledger.json",
+    "release_ready": false,
+    "distributed": false,
+    "provider_hosted": false,
+    "hosted_provider_proof": false,
+    "provider_proof_status": "not-run-local-preview-only",
+    "production_proof_scope": "local-production-preview-only",
+    "provider_hosted_replay_required": true,
+    "provider_proof_gap_ids": [
+      "distributed-idempotency-store",
+      "provider-hosted-csrf-session-integration",
+      "cross-process-replay-consistency",
+      "durable-provider-kv-sql-replay-retention",
+      "provider-request-cancellation-replay"
+    ],
+    "receipt_hint_fields": [
+      "schema",
+      "path",
+      "mode",
+      "hosted_provider_proof",
+      "provider_proof_status",
+      "provider_proof_gap_ids",
+      "entry_count",
+      "duplicate_replay_count",
+      "conflict_count",
+      "last_recorded_unix_ms",
+      "entries[].receipt_id",
+      "entries[].replay_key_hash",
+      "entries[].payload_hash",
+      "entries[].response_hash"
+    ],
+    "local_replay_hint_steps": [
+      "Run dx preview --production against the build output that emitted server-action-replay-ledger.json.",
+      "POST the compiled server action endpoint from server-action-protocols.json with x-dx-csrf, x-dx-session, and idempotency-key headers.",
+      "Compare replay_ledger.receipt_id, replay_key_hash, duplicate, conflict_observed, observed_count, and conflict_count in the local response.",
+      "Keep request cancellation as a provider proof gap until a hosted runtime can prove abort propagation and replay cleanup.",
+      "Treat this as local production-preview evidence only; it is not hosted or distributed provider proof."
+    ],
+    "enforced": false,
+    "mode": "local-preview-hash-ledger",
+    "entry_count": 0,
+    "conflict_count": 0,
+    "duplicate_replay_count": 0,
+    "conflict_policy": "same action/session/idempotency with different payload is recorded as a local conflict, not accepted as provider-proof replay",
+    "privacy": "hash-only action/session/idempotency/payload/response receipts; raw payload, session, csrf, and idempotency values are not persisted"
+  },
+  "route_handler_conformance_matrix": {
+    "schema": "dx.www.deploy.route_handler_conformance_matrix",
+    "schema_revision": 1,
+    "path": "route-handler-conformance-matrix.json",
+    "release_ready": false,
+    "hosted_provider_proof": false,
+    "matrix_status": "local-route-handler-conformance-foundation",
+    "route_handlers": 0,
+    "get_head_preview_checks": 0,
+    "automatic_options_cases": 0,
+    "method_not_allowed_cases": 0
+  },
+  "provider_adapter_smoke_matrix": {
+    "schema": "dx.www.deploy.provider_adapter_smoke_matrix",
+    "schema_revision": 1,
+    "path": "provider-adapter-smoke-matrix.json",
+    "release_ready": false,
+    "hosted_provider_proof": false,
+    "matrix_status": "local-proof-and-upload-plan-only",
+    "public_runtime_artifacts": 41,
+    "evidence_artifacts": 40
+  },
+  "readiness": {
+    "schema": "dx.www.readiness.deploy_contract",
+    "schema_revision": 1,
+    "manifest_hash": "blake3:3aa54e392a16464e92b1d80f787a775632fd9102867e521ddc2239a707f9fe7f",
+    "target_score": 99,
+    "current_honest_score": 99,
+    "fastest_world_claim": false,
+    "proof_graph_receipt": ".dx/receipts/readiness/proof-graph.sr",
+    "bundle_partition": {
+      "schema": "dx.www.readiness.bundle_partition",
+      "schema_revision": 1,
+      "receipt_contract": "dx.www.readiness.bundle_partition_receipt_contract",
+      "receipt_path": ".dx/receipts/readiness/bundle-partition-latest.json",
+      "serializer_receipt_path": ".dx/receipts/readiness/bundle-partition-latest.sr",
+      "machine_contract_path": ".dx/serializer/receipts-readiness-bundle-partition-latest.machine",
+      "hosted_provider_replay": {
+        "receipt_contract": "dx.www.readiness.bundle_provider_replay_receipt_contract",
+        "receipt_path": ".dx/receipts/readiness/bundle-provider-replay-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/bundle-provider-replay-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-bundle-provider-replay-latest.machine",
+        "collect_command": "node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <hosted-url> --deploy-adapter examples/template/.dx/www/output/deploy-adapter.json --provider-adapter examples/template/.dx/www/output/provider-adapter.dx-cloud.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/bundle-provider-replay-latest.json",
+        "import_command": "dx www readiness --import-bundle-provider-replay-receipt <bundle-provider-replay-receipt.json> --json --full",
+        "status": "hosted-public-evidence-bundle-replay-current"
+      },
+      "public_runtime_bundle": {
+        "deployable": true,
+        "contains": [
+          "html",
+          "css",
+          "immutable_assets",
+          "needed_runtime_chunks"
+        ],
+        "excludes": [
+          "proof_graph_receipts",
+          "build_evidence",
+          "agent_context",
+          "benchmark_claims"
+        ],
+        "materialization": "dx deploy vercel reads provider-adapter.dx-cloud.json upload_plan and copies only bundle=public-runtime artifacts into .vercel/output/static",
+        "materialization_receipt_shape": {
+          "vercel_build_output": {
+            "evidence_excluded_from_public_output": true,
+            "public_runtime_content_hash": "blake3:*",
+            "public_runtime_artifact_count": "usize",
+            "evidence_artifact_count": "usize",
+            "bundle_partition_source": "provider-adapter.dx-cloud.json | deploy-adapter.json/bundle_partition | static-output-scan-fallback"
+          }
+        }
+      },
+      "evidence_bundle": {
+        "deployable_public_bytes": false,
+        "cache_control": "no-store",
+        "contains": [
+          ".dx/receipts/readiness/proof-graph.sr",
+          ".dx/receipts/**",
+          "deploy-adapter.json",
+          "provider-adapter-smoke-matrix.json",
+          "route-handler-conformance-matrix.json",
+          "server-action-replay-ledger.json",
+          "observability contracts"
+        ],
+        "serializer_contract": "sr"
+      }
+    },
+    "production_http": {
+      "schema": "dx.www.readiness.production_http",
+      "schema_revision": 1,
+      "receipt_contract": "dx.www.readiness.production_http_local_replay_receipt_contract",
+      "receipt_path": ".dx/receipts/readiness/production-http-local-replay-latest.json",
+      "serializer_receipt_path": ".dx/receipts/readiness/production-http-local-replay-latest.sr",
+      "machine_contract_path": ".dx/serializer/receipts-readiness-production-http-local-replay-latest.machine",
+      "status": "preview-and-deploy-contract-foundation",
+      "implemented": [
+        "ETag generation",
+        "If-None-Match 304 responses",
+        "Last-Modified and If-Modified-Since 304 responses",
+        "single byte Range 206 responses",
+        "If-Range gating for partial responses",
+        "416 Range Not Satisfiable with Content-Range: bytes */length",
+        "Accept-Ranges header",
+        "precompressed .br/.gz Content-Encoding",
+        "decoded Content-Type retained for precompressed .br/.gz assets",
+        "Accept-Encoding negotiation for precompressed .br/.gz immutable assets",
+        "Vary: Accept-Encoding for encoded assets and negotiable plain assets",
+        "static OPTIONS returns 204 with Allow: GET, HEAD, OPTIONS",
+        "unsafe static methods return 405 with Allow: GET, HEAD, OPTIONS",
+        "cache-manifest.json evidence",
+        "provider upload-plan CDN header metadata",
+        "provider-adapter-smoke-matrix.json local replay/account-free/upload-plan proof",
+        "production HTTP local wire replay JSON/SR/machine receipt",
+        "source-owned Axum adapter parity delegates to the canonical production wire responder"
+      ],
+      "axum_source_parity": {
+        "schema": "dx.www.readiness.production_http_axum_source_parity",
+        "schema_revision": 1,
+        "status": "source-owned-axum-adapter-parity-current-local",
+        "source_owned": true,
+        "release_ready": false,
+        "fastest_world_claim": false,
+        "adapter_function": "production_contract_axum_response_cached",
+        "wire_responder": "production_contract_wire_response_cached",
+        "unit_test": "production_contract_axum_static_responder_matches_wire_semantics",
+        "test_command": "cargo test -j 1 -p dx-www --lib --no-default-features --features cli,dev-server production_contract_axum_static_responder_matches_wire_semantics",
+        "covered_semantics": [
+          "precompressed Accept-Encoding negotiation",
+          "decoded Content-Type for encoded assets",
+          "Range 206 with Content-Range",
+          "HEAD omits body while preserving Content-Length",
+          "static unsafe methods return 405 with Allow"
+        ],
+        "not_yet_claimed": [
+          "real browser runtime proof",
+          "live Axum server transport proof",
+          "HTTP/2 transport proof",
+          "provider-bound CDN replay",
+          "hosted-provider adapter replay",
+          "duplicate Set-Cookie header preservation"
+        ],
+        "remaining_external_proof_gap_id": "axum-static-responder-parity",
+        "remaining_external_proof_gap_meaning": "source adapter parity has a local unit proof; the release gap now means live Axum/server transport proof through the production preview cache/range policy"
+      },
+      "not_yet_claimed": [
+        "real Browser/Chrome page proof",
+        "TCP preview server proof",
+        "HTTP/2 server transport",
+        "live Axum/server transport proof for the preview cache/range policy",
+        "provider-bound CDN purge/surrogate-key execution",
+        "multi-provider deployed smoke proof"
+      ]
+    },
+    "route_action_runtime": {
+      "schema": "dx.www.readiness.route_action_runtime",
+      "schema_revision": 1,
+      "status": "source-owned-contract-foundation",
+      "route_handlers": {
+        "implemented": [
+          "route-handler-receipts.json for safe GET/HEAD build receipts",
+          "route-handler-conformance-matrix.json for local GET/HEAD/OPTIONS/405 expectations",
+          "safe_build_methods and skipped_build_methods in deploy metadata",
+          "declared_methods, implicit_methods, and public allowed methods in deploy metadata",
+          "HEAD health checks map to GET source methods when using the standard fallback",
+          "automatic OPTIONS and 405 method guard in safe interpreter with Allow: GET, HEAD, OPTIONS",
+          "request path, search params, headers, cookies, and typed body aliases for supported patterns"
+        ],
+        "not_yet_claimed": [
+          "full NextRequest parity",
+          "streaming body transport across every adapter",
+          "provider-deployed route-handler conformance matrix"
+        ]
+      },
+      "server_actions": {
+        "readiness_receipt_contract": "dx.www.readiness.server_action_replay_ledger_receipt_contract",
+        "readiness_receipt": ".dx/receipts/readiness/server-action-replay-ledger-latest.json",
+        "readiness_receipt_sr": ".dx/receipts/readiness/server-action-replay-ledger-latest.sr",
+        "readiness_receipt_machine": ".dx/serializer/receipts-readiness-server-action-replay-ledger-latest.machine",
+        "implemented": [
+          "server-action-protocols.json",
+          "server-action-runtime.json",
+          "server-action-replay-ledger.json",
+          "typed request and response schemas",
+          "required CSRF hook",
+          "required session hook",
+          "idempotency-key replay protection",
+          "hash-only local preview replay ledger",
+          "hash-only receipt fields for session, payload, idempotency, and response",
+          "production preview 405 for method mismatch",
+          "production preview 400 for validation or replay failures"
+        ],
+        "not_yet_claimed": [
+          "distributed idempotency store",
+          "provider-hosted CSRF/session integration",
+          "broad cancellation and retry stress proof"
+        ]
+      }
+    },
+    "primitive_proof": {
+      "schema": "dx.www.readiness.primitive_proof",
+      "schema_revision": 1,
+      "status": "source-owned-foundation-not-full-framework-parity",
+      "receipt_contract": "dx.www.readiness.primitive_proof_receipt_contract",
+      "receipt_path": ".dx/receipts/readiness/primitive-proof-latest.json",
+      "serializer_receipt_path": ".dx/receipts/readiness/primitive-proof-latest.sr",
+      "machine_contract_path": ".dx/serializer/receipts-readiness-primitive-proof-latest.machine",
+      "receipt_status": "source-owned-primitive-foundation-current-when-written",
+      "primitives": [
+        {
+          "id": "image",
+          "authoring": [
+            "<Image />",
+            "next/image static-safe imports"
+          ],
+          "implemented": [
+            "static-safe next/image lowers to <img>",
+            "width, height, loading, decoding, priority/fetchpriority metadata",
+            "data-dx-framework-component and data-dx-image-boundary markers"
+          ],
+          "not_yet_claimed": [
+            "hosted optimizer service",
+            "remote image loader parity",
+            "responsive srcset generation for every loader"
+          ]
+        },
+        {
+          "id": "font",
+          "authoring": [
+            "next/font/google",
+            "next/font/local"
+          ],
+          "implemented": [
+            "module-scope font loader detection",
+            "CSS variable/class metadata receipts",
+            "static fallback font-family attributes without remote font requests"
+          ],
+          "not_yet_claimed": [
+            "font binary downloading",
+            "full Next font manifest parity",
+            "cross-provider hosted font cache proof"
+          ]
+        },
+        {
+          "id": "script",
+          "authoring": [
+            "<Script />",
+            "next/script static-safe imports"
+          ],
+          "implemented": [
+            "static-safe next/script lowers to <script>",
+            "strategy is converted to data-dx-next-script-strategy instead of invalid HTML",
+            "afterInteractive/lazyOnload default to defer when async/defer is absent"
+          ],
+          "not_yet_claimed": [
+            "full Next script lifecycle ordering",
+            "worker strategy runtime",
+            "onReady/onLoad callback execution without a client runtime"
+          ]
+        },
+        {
+          "id": "wasm",
+          "authoring": [
+            "*.wasm assets",
+            "wasm/bindgen Forge package lane"
+          ],
+          "implemented": [
+            ".wasm and .wasm.gz are immutable runtime assets",
+            "precompressed wasm metadata carries Content-Encoding, encoded_from, and decoded application/wasm content type",
+            "wasm/bindgen source-guard receipts expose app-owned generated-Wasm boundaries"
+          ],
+          "not_yet_claimed": [
+            "automatic Rust-to-wasm app build pipeline",
+            "generated wasm-bindgen glue execution for arbitrary apps",
+            "browser proof for app-owned wasm modules"
+          ]
+        }
+      ],
+      "rule": "Primitive claims must stay tied to source-owned receipts and explicit not_yet_claimed boundaries."
+    },
+    "score_breakdown": {
+      "schema": "dx.www.readiness.score_breakdown",
+      "schema_revision": 1,
+      "target_score": 99,
+      "current_honest_score": 99,
+      "fastest_world_claim": false,
+      "scores": {
+        "starter_score": 100,
+        "runtime_proof_score": 99,
+        "framework_maturity_score": 99,
+        "release_readiness_score": 99
+      },
+      "remaining_hardening": [
+        "broader Astro tiny-static payload and throughput parity beyond the current same-machine tiny route",
+        "broad production HTTP and CDN adapter proof",
+        "route-handler provider-hosted conformance matrix",
+        "server-action distributed idempotency and provider CSRF/session proof",
+        "production-contract provider-hosted multi-adapter smoke matrix",
+        "visual edit devtools browser workbench replay proof",
+        "archived/generated docs warning cleanup and public ownership promotion"
+      ]
+    },
+    "delivery_tiers": {
+      "schema": "dx.www.readiness.delivery_tiers",
+      "schema_revision": 1,
+      "tiers": [
+        {
+          "id": "tier-0",
+          "name": "static/no-JS",
+          "contract": "tier-0-static-no-js-source-only",
+          "output_mode": "tiny-static",
+          "browser_runtime": false,
+          "browser_js_budget_bytes": 0,
+          "public_route_packet": false,
+          "source_route_evidence_only": true,
+          "route_unit_required_markers": [
+            "tiny_static_route_proof.no_js_capable",
+            "script_tag_count == 0",
+            "runtime_required == false",
+            "browser_api_required == false"
+          ],
+          "astro_parity_claimed": false,
+          "live_astro_parity_receipt": "missing",
+          "proof": "meaningful static HTML/CSS with no framework JS; forms, SEO, and accessibility stay explicit proof gates",
+          "claim_boundary": "source-only HTML/CSS no-JS proof; not live Astro payload/paint/throughput parity"
+        },
+        {
+          "id": "tier-1",
+          "name": "micro-js",
+          "output_mode": "compiler-lowered DOM actions",
+          "browser_runtime": "source-owned generated JS",
+          "proof": "small state/events without React runtime"
+        },
+        {
+          "id": "tier-2",
+          "name": "island",
+          "output_mode": "source-owned client islands",
+          "browser_runtime": "lazy JS/Wasm chunks only where needed",
+          "proof": "state slots, event slots, server-action edges, and no-JS fallback"
+        },
+        {
+          "id": "tier-3",
+          "name": "adapter-boundary",
+          "output_mode": "explicit framework island",
+          "browser_runtime": "React/Svelte/other runtime only when requested",
+          "proof": "adapter receipts, byte budgets, and fallback behavior"
+        }
+      ]
+    },
+    "native_event_catalog": {
+      "schema": "dx.www.readiness.native_event_catalog",
+      "schema_revision": 1,
+      "receipt_contract": "dx.www.readiness.native_event_catalog_receipt_contract",
+      "receipt_path": ".dx/receipts/readiness/native-events-latest.json",
+      "json_read_model_path": ".dx/receipts/readiness/native-events-latest.json",
+      "serializer_receipt_path": ".dx/receipts/readiness/native-events-latest.sr",
+      "machine_contract_path": ".dx/serializer/receipts-readiness-native-events-latest.machine",
+      "catalog_source": "compiler-owned-static-snapshot",
+      "mdn_snapshot_status": "durable-local-receipt-supported",
+      "source_freshness": "evaluated-by-dx-www-readiness-write-receipts-when-local-mdn-checkout-exists",
+      "source": "MDN browser-compat-data durable target; current compiler delivery module is the source-owned foundation catalog",
+      "react_style_attributes": true,
+      "react_style_example": "onClick",
+      "react_style_event_examples": [
+        "onClick",
+        "onInput",
+        "onPointerMove"
+      ],
+      "dom_event_examples": [
+        "click",
+        "input",
+        "pointermove"
+      ],
+      "native_dom_events_direct": true,
+      "unsupported_event_policy": "diagnose unsupported React-style event attributes without attaching listeners or claiming React synthetic event parity",
+      "catalog_count": 321,
+      "events": [
+        "abort",
+        "abortpayment",
+        "activate",
+        "active",
+        "addsourcebuffer",
+        "addstream",
+        "addtrack",
+        "afterprint",
+        "afterscriptexecute",
+        "animationcancel",
+        "animationend",
+        "animationiteration",
+        "animationstart",
+        "appinstalled",
+        "audioend",
+        "audioprocess",
+        "audiostart",
+        "auxclick",
+        "backgroundfetchabort",
+        "backgroundfetchclick",
+        "backgroundfetchfail",
+        "backgroundfetchsuccess",
+        "beforeinput",
+        "beforeinstallprompt"
+      ],
+      "source_of_truth": "core/src/delivery/dom_events.rs::NATIVE_DOM_EVENT_NAMES",
+      "compiler_integrity": {
+        "source_of_truth": "core/src/delivery/dom_events.rs::NATIVE_DOM_EVENT_NAMES",
+        "catalog_count": 321,
+        "sorted_unique": true,
+        "duplicate_events": [],
+        "catalog_hash": "blake3:e3c9ade97c3511850b0c8cf320dea87fcb526ac9d77ee524a37d9c307ec36339"
+      },
+      "mdn_event_freshness_receipt": ".dx/receipts/readiness/native-events-latest.json",
+      "mdn_event_freshness_rule": "dx www readiness --write-receipts compares compiler events against target/mdn-browser-compat-data/api *_event entries",
+      "browser_binder_receipt_contract": "dx.www.readiness.native_event_browser_binder_receipt_contract",
+      "browser_binder_receipt": ".dx/receipts/readiness/native-event-browser-binder-latest.json",
+      "browser_binder_receipt_sr": ".dx/receipts/readiness/native-event-browser-binder-latest.sr",
+      "browser_binder_receipt_machine": ".dx/serializer/receipts-readiness-native-event-browser-binder-latest.machine",
+      "browser_binder_proof_status": "missing-browser-binder-receipt",
+      "node_vm_binder_replay_status": "source-guarded-not-real-browser-proof",
+      "node_vm_binder_replay_test": "benchmarks/dx-www-native-dom-event-binder-replay.test.ts",
+      "compiler_integrity_contract": {
+        "source_of_truth": "core/src/delivery/dom_events.rs::NATIVE_DOM_EVENT_NAMES",
+        "catalog_count": "usize",
+        "sorted_unique": "bool",
+        "duplicate_events": "Vec<&'static str>",
+        "catalog_hash": "blake3"
+      },
+      "native_event_catalog_integrity": {
+        "schema": "dx.www.readiness.native_event_catalog_integrity",
+        "schema_revision": 1,
+        "receipt_contract": "dx.www.readiness.native_event_catalog_receipt_contract",
+        "receipt_path": ".dx/receipts/readiness/native-events-latest.json",
+        "json_read_model_path": ".dx/receipts/readiness/native-events-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/native-events-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-native-events-latest.machine",
+        "catalog_source": "compiler-owned-static-snapshot",
+        "mdn_snapshot_status": "durable-local-receipt-supported",
+        "source_freshness": "evaluated-by-dx-www-readiness-write-receipts-when-local-mdn-checkout-exists",
+        "catalog_count": 321,
+        "group_count": 11,
+        "grouped_event_count": 321,
+        "unknown_grouped_events": [],
+        "ungrouped_catalog_events": [],
+        "native_event_catalog_complete": true,
+        "release_ready": false,
+        "rule": "Grouped native-event claims must match the compiler-owned catalog; release readiness MDN freshness is evaluated by the native-events receipt when a local browser-compat-data checkout exists, and real browser binder receipts remain required."
+      },
+      "groups": [
+        {
+          "group": "mouse",
+          "events": [
+            "auxclick",
+            "click",
+            "contextmenu",
+            "dblclick",
+            "mousedown",
+            "mouseenter",
+            "mouseleave",
+            "mousemove",
+            "mouseout",
+            "mouseover",
+            "mouseup"
+          ]
+        },
+        {
+          "group": "pointer",
+          "events": [
+            "gotpointercapture",
+            "lostpointercapture",
+            "pointercancel",
+            "pointerdown",
+            "pointerenter",
+            "pointerleave",
+            "pointermove",
+            "pointerout",
+            "pointerover",
+            "pointerrawupdate",
+            "pointerup"
+          ]
+        },
+        {
+          "group": "keyboard",
+          "events": [
+            "keydown",
+            "keyup"
+          ]
+        },
+        {
+          "group": "input-form",
+          "events": [
+            "beforeinput",
+            "change",
+            "formdata",
+            "input",
+            "invalid",
+            "reset",
+            "select",
+            "selectionchange",
+            "submit"
+          ]
+        },
+        {
+          "group": "clipboard-composition",
+          "events": [
+            "compositionend",
+            "compositionstart",
+            "compositionupdate",
+            "copy",
+            "cut",
+            "paste"
+          ]
+        },
+        {
+          "group": "touch-wheel-drag",
+          "events": [
+            "drag",
+            "dragend",
+            "dragenter",
+            "dragleave",
+            "dragover",
+            "dragstart",
+            "drop",
+            "touchcancel",
+            "touchend",
+            "touchmove",
+            "touchstart",
+            "wheel"
+          ]
+        },
+        {
+          "group": "css-animation",
+          "events": [
+            "animationcancel",
+            "animationend",
+            "animationiteration",
+            "animationstart",
+            "transitioncancel",
+            "transitionend",
+            "transitionrun",
+            "transitionstart"
+          ]
+        },
+        {
+          "group": "media-resource",
+          "events": [
+            "abort",
+            "canplay",
+            "canplaythrough",
+            "durationchange",
+            "emptied",
+            "ended",
+            "error",
+            "load",
+            "loadeddata",
+            "loadedmetadata",
+            "loadstart",
+            "pause",
+            "play",
+            "playing",
+            "progress",
+            "ratechange",
+            "seeked",
+            "seeking",
+            "stalled",
+            "suspend",
+            "timeupdate",
+            "volumechange",
+            "waiting"
+          ]
+        },
+        {
+          "group": "document-window",
+          "events": [
+            "beforematch",
+            "beforetoggle",
+            "beforeunload",
+            "blur",
+            "focus",
+            "focusin",
+            "focusout",
+            "fullscreenchange",
+            "fullscreenerror",
+            "hashchange",
+            "languagechange",
+            "offline",
+            "online",
+            "pagehide",
+            "pageshow",
+            "popstate",
+            "readystatechange",
+            "resize",
+            "scroll",
+            "scrollend",
+            "storage",
+            "unload"
+          ]
+        },
+        {
+          "group": "platform",
+          "events": [
+            "cancel",
+            "close",
+            "contextlost",
+            "contextrestored",
+            "cuechange",
+            "gamepadconnected",
+            "gamepaddisconnected",
+            "message",
+            "messageerror",
+            "rejectionhandled",
+            "securitypolicyviolation",
+            "slotchange",
+            "toggle",
+            "unhandledrejection"
+          ]
+        },
+        {
+          "group": "mdn-other",
+          "events": [
+            "abortpayment",
+            "activate",
+            "active",
+            "addsourcebuffer",
+            "addstream",
+            "addtrack",
+            "afterprint",
+            "afterscriptexecute",
+            "appinstalled",
+            "audioend",
+            "audioprocess",
+            "audiostart",
+            "backgroundfetchabort",
+            "backgroundfetchclick",
+            "backgroundfetchfail",
+            "backgroundfetchsuccess",
+            "beforeinstallprompt",
+            "beforeprint",
+            "beforescriptexecute",
+            "beforexrselect",
+            "beginevent",
+            "blocked",
+            "bounce",
+            "boundary",
+            "bufferedamountlow",
+            "bufferedchange",
+            "canmakepayment",
+            "capturehandlechange",
+            "characterboundsupdate",
+            "characteristicvaluechanged",
+            "chargingchange",
+            "chargingtimechange",
+            "clipboardchange",
+            "closing",
+            "command",
+            "complete",
+            "connect",
+            "connecting",
+            "connectionavailable",
+            "connectionstatechange",
+            "contentdelete",
+            "contentvisibilityautostatechange",
+            "contextoverflow",
+            "controllerchange",
+            "cookiechange",
+            "currententrychange",
+            "currentscreenchange",
+            "dataavailable",
+            "datachannel",
+            "dequeue",
+            "devicechange",
+            "devicemotion",
+            "deviceorientation",
+            "deviceorientationabsolute",
+            "dischargingtimechange",
+            "disconnect",
+            "dispose",
+            "domactivate",
+            "domcontentloaded",
+            "dommousescroll",
+            "downloadprogress",
+            "dragexit",
+            "encrypted",
+            "end",
+            "endevent",
+            "endstreaming",
+            "enter",
+            "enterpictureinpicture",
+            "exit",
+            "fetch",
+            "finish",
+            "freeze",
+            "gatheringstatechange",
+            "gattserverdisconnected",
+            "geometrychange",
+            "gesturechange",
+            "gestureend",
+            "gesturestart",
+            "icecandidate",
+            "icecandidateerror",
+            "iceconnectionstatechange",
+            "icegatheringstatechange",
+            "inactive",
+            "inputreport",
+            "inputsourceschange",
+            "install",
+            "interest",
+            "keypress",
+            "keystatuseschange",
+            "leavepictureinpicture",
+            "levelchange",
+            "loadend",
+            "loading",
+            "loadingdone",
+            "loadingerror",
+            "location",
+            "loseinterest",
+            "managedconfigurationchange",
+            "mark",
+            "merchantvalidation",
+            "midimessage",
+            "mousewheel",
+            "mozmousepixelscroll",
+            "mute",
+            "navigate",
+            "navigateerror",
+            "navigatesuccess",
+            "negotiationneeded",
+            "nomatch",
+            "notificationclick",
+            "notificationclose",
+            "open",
+            "orientationchange",
+            "pagereveal",
+            "pageswap",
+            "payerdetailchange",
+            "paymentmethodchange",
+            "paymentrequest",
+            "periodicsync",
+            "pointerlockchange",
+            "pointerlockerror",
+            "prerenderingchange",
+            "prioritychange",
+            "processorerror",
+            "promptaction",
+            "promptdismiss",
+            "push",
+            "pushsubscriptionchange",
+            "reading",
+            "readingerror",
+            "redraw",
+            "reflectionchange",
+            "release",
+            "remove",
+            "removesourcebuffer",
+            "removestream",
+            "removetrack",
+            "repeatevent",
+            "resourcetimingbufferfull",
+            "result",
+            "resume",
+            "rtctransform",
+            "screenschange",
+            "scrollsnapchange",
+            "scrollsnapchanging",
+            "search",
+            "selectedcandidatepairchange",
+            "selectend",
+            "selectstart",
+            "shippingaddresschange",
+            "shippingoptionchange",
+            "show",
+            "signalingstatechange",
+            "sinkchange",
+            "soundend",
+            "soundstart",
+            "sourceclose",
+            "sourceended",
+            "sourceopen",
+            "speechend",
+            "speechstart",
+            "squeeze",
+            "squeezeend",
+            "squeezestart",
+            "start",
+            "startstreaming",
+            "statechange",
+            "stop",
+            "success",
+            "sync",
+            "terminate",
+            "textformatupdate",
+            "textupdate",
+            "timeout",
+            "tonechange",
+            "track",
+            "typechange",
+            "uncapturederror",
+            "unmute",
+            "update",
+            "updateend",
+            "updatefound",
+            "updatestart",
+            "upgradeneeded",
+            "validationstatuschange",
+            "versionchange",
+            "visibilitychange",
+            "visibilitymaskchange",
+            "voiceschanged",
+            "vrdisplayactivate",
+            "vrdisplayconnect",
+            "vrdisplaydeactivate",
+            "vrdisplaydisconnect",
+            "vrdisplaypresentchange",
+            "waitingforkey",
+            "webglcontextcreationerror",
+            "webglcontextlost",
+            "webglcontextrestored",
+            "webkitmouseforcechanged",
+            "webkitmouseforcedown",
+            "webkitmouseforceup",
+            "webkitmouseforcewillbegin",
+            "zoomlevelchange"
+          ],
+          "rule": "Automatically covers compiler-owned MDN event names that do not belong to the curated UI groups yet."
+        }
+      ]
+    },
+    "route_handler_server_action_gaps": {
+      "schema": "dx.www.readiness.route_handler_server_action_gaps",
+      "schema_revision": 1,
+      "id": "route-handler-server-action-proof-gaps",
+      "release_ready": false,
+      "dx_check_context": "dx check --latest-receipt --json",
+      "agent_context": "dx www agent-context --json --full",
+      "gap_count": 3,
+      "gap_ids": [
+        "route-handler-provider-conformance-matrix",
+        "server-action-distributed-replay-store",
+        "production-contract-adapter-smoke-matrix"
+      ],
+      "server_action_provider_gap_ids": [
+        "distributed-idempotency-store",
+        "provider-hosted-csrf-session-integration",
+        "cross-process-replay-consistency",
+        "durable-provider-kv-sql-replay-retention",
+        "provider-request-cancellation-replay"
+      ],
+      "gaps": null,
+      "rule": "Local route-handler/server-action foundations are proven; do not claim release readiness server runtime maturity until provider-hosted breadth proof passes."
+    },
+    "release_rule": "public_runtime_bundle must stay deployable without evidence_bundle bytes; evidence stays no-store and receipt-addressable"
+  },
+  "readiness_proof_graph_receipt": {
+    "id": "proof-graph",
+    "schema": "dx.www.readiness.proof_graph",
+    "schema_revision": 1,
+    "path": ".dx/receipts/readiness/proof-graph.sr",
+    "machine_contract_path": ".dx/serializer/receipts-readiness-proof-graph.machine",
+    "format": "sr",
+    "command": "dx build",
+    "proof_scope": "build-output-deploy-adapter-proof-graph",
+    "inputs": [
+      "manifest.json",
+      "deploy-adapter.json",
+      "readiness_gate_status",
+      "proof_nodes",
+      "same-machine-performance",
+      "tiny-static-no-js-artifact",
+      "tiny-static-no-js-browser",
+      "lighthouse-paint-receipts",
+      "production-http-local-replay",
+      "production-http-tcp-preview",
+      "server-action-replay-ledger",
+      "primitive-proof",
+      "native-event-catalog",
+      "native-event-browser-binder",
+      "island-abi",
+      "island-browser",
+      "reactivity-model",
+      "state-runtime-browser",
+      "bundle-partition",
+      "docs-onboarding-receipt",
+      "docs-onboarding-doctor",
+      "visual-edit-workbench-receipts",
+      "proof_graph"
+    ],
+    "output_hashes": {
+      "manifest_hash": "blake3:3aa54e392a16464e92b1d80f787a775632fd9102867e521ddc2239a707f9fe7f",
+      "serializer_source_blake3": "73b57639bc472ec8b08ce7dd322dfc8ac54b15b19264ca4091117ccb7d3f39bd",
+      "serializer_machine_blake3": "1b193b9c2ab2deac30e185c153f57aa4c461354465f9d1cc432e1440705a341a"
+    },
+    "receipt_freshness": "written-by-dx-build-not-release-proof",
+    "stale_reasons": [
+      {
+        "code": "same-machine-performance-receipt-missing",
+        "message": "Same-machine throughput raceboard proof is missing; tiny-static remains source-only until WWW/Next/Svelte/Astro are measured on this machine.",
+        "expected_receipt_path": ".dx/receipts/readiness/same-machine-performance-latest.json",
+        "collection_receipt_path": "target/framework-comparison-20260531/throughput.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/same-machine-performance-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-same-machine-performance-latest.machine",
+        "replay_command": "node benchmarks/dx-runtime-throughput-orchestrator.ts --mode all --jobs 6 --rounds 3 --requests 240 --concurrency 16 --out target/framework-comparison-20260531/throughput.json",
+        "raw_replay_command": "node benchmarks/dx-runtime-throughput-benchmark.ts --rounds 3 --requests 240 --concurrency 16 --www-url http://127.0.0.1:42104/fair-counter --dx-www-bin target/release/dx-www.exe --out target/framework-comparison-20260531/throughput.json",
+        "dry_run_command": "node benchmarks/dx-runtime-throughput-benchmark.ts --dry-run --rounds 2 --out target/framework-comparison-20260531/throughput-dry-run.json",
+        "import_command": "dx www readiness --import-same-machine-performance-receipt target/framework-comparison-20260531/throughput.json --json --full"
+      },
+      {
+        "code": "tiny-static-no-js-artifact-receipt-missing",
+        "message": "The tiny-static/no-JS artifact receipt is missing; regenerate it before using artifact-only no-JS proof in the proof graph.",
+        "expected_receipt_path": ".dx/receipts/readiness/no-js-artifact-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/no-js-artifact-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-no-js-artifact-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-tiny-static-public-partition-proof.test.ts"
+      },
+      {
+        "code": "no-js-browser-receipt-missing",
+        "message": "JS-disabled browser proof is missing; the no-JS receipt is artifact-only until a live browser snapshot is imported.",
+        "expected_receipt_path": ".dx/receipts/readiness/no-js-browser-latest.json",
+        "collector_command": "node benchmarks/dx-www-no-js-browser-receipt.ts --html-path examples/template/.dx/www/output/app/index.html --out .dx/receipts/readiness/browser-import-candidates/no-js-browser-latest.json",
+        "import_command": "dx www readiness --import-no-js-browser-receipt <browser-receipt.json> --json --full",
+        "required_schema": "dx.www.readiness.no_js_browser_receipt_contract"
+      },
+      {
+        "code": "lighthouse-paint-receipts-missing",
+        "message": "Canonical dev and static-build browser paint receipts are missing; run the source-owned CDP replay commands or import Lighthouse JSON before using paint data in readiness claims.",
+        "missing_modes": [
+          "dev",
+          "static-build"
+        ],
+        "replay_commands": [
+          "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:3000 --receipt-mode dev --out examples/template/.dx/receipts/check/web-perf/dev/report.json",
+          "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:4173 --receipt-mode static-build --out examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+          "dx check web-perf --url http://127.0.0.1:3000 --device desktop --receipt-mode dev --lighthouse --json",
+          "dx check web-perf --url http://127.0.0.1:4173 --device desktop --receipt-mode static-build --lighthouse --json"
+        ]
+      },
+      {
+        "code": "bundle-partition-receipt-missing",
+        "message": "Public-runtime/evidence bundle partition proof is missing; production output cleanliness remains source-only until the receipt is regenerated.",
+        "expected_receipt_path": ".dx/receipts/readiness/bundle-partition-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/bundle-partition-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-bundle-partition-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-tiny-static-public-partition-proof.test.ts"
+      },
+      {
+        "code": "production-http-local-replay-receipt-missing",
+        "message": "Production HTTP local wire replay proof is missing; ETag, 304, Range, method guard, and precompressed asset behavior are source-only until the receipt is regenerated.",
+        "expected_receipt_path": ".dx/receipts/readiness/production-http-local-replay-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/production-http-local-replay-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-production-http-local-replay-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-readiness-production-http-receipt.test.ts",
+        "remaining_external_proof_gap_ids": [
+          "browser-js-enabled-runtime-replay",
+          "browser-js-disabled-runtime-replay",
+          "preview-tcp-server-parity",
+          "axum-static-responder-parity",
+          "provider-bound-cdn-cache-replay",
+          "hosted-provider-adapter-replay"
+        ]
+      },
+      {
+        "code": "production-http-tcp-preview-receipt-missing",
+        "message": "Production HTTP TCP preview proof is missing; local wire replay does not prove the running dx preview TCP server.",
+        "expected_receipt_path": ".dx/receipts/readiness/production-http-tcp-preview-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/production-http-tcp-preview-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-production-http-tcp-preview-latest.machine",
+        "collect_command": "node benchmarks/dx-www-production-preview-tcp-receipt.ts --dx-www-bin target/release/dx-www.exe --build-dir examples/template/.dx/www/output --out .dx/receipts/readiness/browser-import-candidates/production-http-tcp-preview-latest.json",
+        "import_command": "dx www readiness --import-production-http-tcp-preview-receipt <tcp-receipt.json> --json --full",
+        "local_contract_test_command": "node --test benchmarks/dx-www-production-preview-tcp-receipt.test.ts"
+      },
+      {
+        "code": "server-action-replay-ledger-receipt-missing",
+        "message": "Server-action replay ledger receipt is missing; route/action runtime remains foundation-only until the local production-preview ledger receipt is regenerated.",
+        "expected_receipt_path": ".dx/receipts/readiness/server-action-replay-ledger-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/server-action-replay-ledger-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-server-action-replay-ledger-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/server-action-replay-ledger-honesty.test.ts"
+      },
+      {
+        "code": "primitive-proof-receipt-missing",
+        "message": "Primitive foundation proof is missing; Image, Font, Script, and Wasm claims remain source-only until the receipt is regenerated.",
+        "expected_receipt_path": ".dx/receipts/readiness/primitive-proof-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/primitive-proof-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-primitive-proof-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-readiness-primitive-receipts.test.ts"
+      },
+      {
+        "code": "native-event-catalog-receipt-missing",
+        "message": "The native DOM event catalog receipt is missing; regenerate it before using MDN/catalog freshness in the proof graph.",
+        "expected_receipt_path": ".dx/receipts/readiness/native-events-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/native-events-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-native-events-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-readiness-foundation.test.ts"
+      },
+      {
+        "code": "island-abi-receipt-missing",
+        "message": "Islands ABI proof is missing; camelCase clientLoad/clientVisible/clientIdle/clientOnly support remains source-only until the receipt is regenerated.",
+        "expected_receipt_path": ".dx/receipts/readiness/island-abi-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/island-abi-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-island-abi-latest.machine",
+        "replay_command": "dx www readiness --write-receipts --json",
+        "local_contract_test_command": "node --test benchmarks/dx-www-islands-abi-camelcase.test.ts"
+      },
+      {
+        "code": "island-browser-receipt-missing",
+        "message": "Source-owned island browser replay proof is missing; import a real browser island receipt before claiming local island runtime execution.",
+        "expected_receipt_path": ".dx/receipts/readiness/island-browser-latest.json",
+        "serializer_receipt_path": ".dx/receipts/readiness/island-browser-latest.sr",
+        "machine_contract_path": ".dx/serializer/receipts-readiness-island-browser-latest.machine",
+        "canonical_starter_route": "/islands",
+        "canonical_proof_target_route": "/islands",
+        "canonical_starter_source": "examples/template/proof-routes/islands/page.tsx",
+        "canonical_local_dev_url": "http://127.0.0.1:3000/islands",
+        "browser_runtime_executed_by_readiness": false,
+        "import_command": "dx www readiness --import-island-browser-receipt <browser-receipt.json> --json --full",
+        "page_snapshot_import_command": "dx www readiness --import-browser-page-snapshot <page-snapshot.json> --json --full"
+      },
+      {
+        "code": "native-event-browser-binder-receipt-missing",
+        "message": "Native-event browser binder proof is missing; local catalog and MDN freshness receipts are not real browser listener execution proof.",
+        "expected_receipt_path": ".dx/receipts/readiness/native-event-browser-binder-latest.json",
+        "import_command": "dx www readiness --import-native-event-browser-binder-receipt <browser-receipt.json> --json --full"
+      },
+      {
+        "code": "state-runtime-browser-receipt-missing",
+        "message": "State-runtime browser proof is missing; source-owned reactivity receipts are not real browser state, derived, effect, and action replay proof.",
+        "expected_receipt_path": ".dx/receipts/readiness/state-runtime-browser-latest.json",
+        "canonical_starter_route": "/state-runtime",
+        "canonical_proof_target_route": "/state-runtime",
+        "canonical_starter_source": "examples/template/proof-routes/state-runtime/page.tsx",
+        "canonical_local_dev_url": "http://127.0.0.1:3000/state-runtime",
+        "browser_runtime_executed_by_readiness": false,
+        "import_command": "dx www readiness --import-state-runtime-browser-receipt <browser-receipt.json> --json --full"
+      },
+      {
+        "code": "docs-onboarding-receipt-not-current",
+        "message": "The source-owned docs/onboarding JSON, .sr, and .machine receipt set is missing or stale."
+      },
+      {
+        "code": "visual-edit-browser-workbench-replay-missing",
+        "message": "Visual-edit browser workbench proof is still missing; local source receipts prove only loopback preview/apply/undo plumbing."
+      }
+    ],
+    "replay_commands": [
+      "node --test benchmarks/dx-www-readiness-foundation.test.ts",
+      "node --test benchmarks/dx-www-readiness-production-http-receipt.test.ts",
+      "node --test benchmarks/dx-www-production-preview-tcp-receipt.test.ts",
+      "node --test benchmarks/dx-www-route-handler-provider-replay.test.ts",
+      "node --test benchmarks/dx-www-readiness-proof-graph-receipt.test.ts",
+      "node --test benchmarks/dx-www-readiness-reactivity-receipts.test.ts",
+      "node --test benchmarks/dx-www-readiness-docs-onboarding-receipts.test.ts",
+      "node --test benchmarks/dx-www-readiness-browser-receipt-import.test.ts",
+      "node --test benchmarks/dx-www-readiness-browser-receipt-harness.test.ts",
+      "node --test benchmarks/dx-www-no-js-browser-receipt.test.ts",
+      "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-page-collector",
+      "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --print-dom-page-collector",
+      "node benchmarks/dx-www-readiness-browser-receipt-harness.ts --from-page-json <page-snapshot.json> --out-dir .dx/receipts/readiness/browser-import-candidates",
+      "node benchmarks/dx-www-no-js-browser-receipt.ts --html-path examples/template/.dx/www/output/app/index.html --out .dx/receipts/readiness/browser-import-candidates/no-js-browser-latest.json",
+      "dx www readiness --import-browser-page-snapshot <page-snapshot.json> --json --full",
+      "node --test benchmarks/dx-www-agent-context-command.test.ts",
+      "node --test benchmarks/dx-www-native-dom-event-binder-replay.test.ts",
+      "node --test benchmarks/tsx-app-router-state-runtime-operations.test.ts",
+      "node --test benchmarks/dx-www-islands-abi-camelcase.test.ts",
+      "node --test benchmarks/dx-www-tiny-static-public-partition-proof.test.ts",
+      "node --test benchmarks/dx-runtime-throughput-receipt-contract.test.ts",
+      "node --test benchmarks/dx-runtime-throughput-orchestrator.test.ts",
+      "node --test benchmarks/dx-www-lighthouse-runtime-guard.test.ts",
+      "node --test benchmarks/dx-www-cdp-paint-receipt.test.ts",
+      "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:3000 --receipt-mode dev --out examples/template/.dx/receipts/check/web-perf/dev/report.json",
+      "node benchmarks/dx-www-cdp-paint-receipt.ts --url http://127.0.0.1:4173 --receipt-mode static-build --out examples/template/.dx/receipts/check/web-perf/static-build/report.json",
+      "dx check web-perf --url http://127.0.0.1:3000 --device desktop --receipt-mode dev --lighthouse --json",
+      "dx check web-perf --url http://127.0.0.1:4173 --device desktop --receipt-mode static-build --lighthouse --json",
+      "node benchmarks/dx-runtime-throughput-benchmark.ts --dry-run --rounds 2 --out target/framework-comparison-20260531/throughput-dry-run.json",
+      "node benchmarks/dx-runtime-throughput-orchestrator.ts --mode all --jobs 6 --rounds 3 --requests 240 --concurrency 16 --out target/framework-comparison-20260531/throughput.json",
+      "node benchmarks/dx-runtime-throughput-benchmark.ts --rounds 3 --requests 240 --concurrency 16 --www-url http://127.0.0.1:42104/fair-counter --dx-www-bin target/release/dx-www.exe --out target/framework-comparison-20260531/throughput.json",
+      "dx www readiness --import-same-machine-performance-receipt target/framework-comparison-20260531/throughput.json --json --full",
+      "node --test benchmarks/server-action-replay-ledger-honesty.test.ts",
+      "node --test benchmarks/dx-www-readiness-primitive-receipts.test.ts",
+      "node --test benchmarks/dx-devtools-framework-integration.test.ts",
+      "node --test benchmarks/dx-www-docs-doctor.test.ts",
+      "node --test benchmarks/public-framework-tools.test.ts",
+      "node benchmarks/dx-www-production-preview-tcp-receipt.ts --dx-www-bin target/release/dx-www.exe --build-dir examples/template/.dx/www/output --out .dx/receipts/readiness/browser-import-candidates/production-http-tcp-preview-latest.json",
+      "node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <hosted-url> --matrix examples/template/.dx/www/output/route-handler-conformance-matrix.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/route-handler-provider-replay-latest.json",
+      "node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <hosted-url> --deploy-adapter examples/template/.dx/www/output/deploy-adapter.json --provider-adapter examples/template/.dx/www/output/provider-adapter.dx-cloud.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/bundle-provider-replay-latest.json",
+      "dx www readiness --import-bundle-provider-replay-receipt <bundle-provider-replay-receipt.json> --json --full",
+      "cargo test -j 1 -p dx-www-compiler react_app_route_static_mode_emits_tiny_static_no_js_shell --lib",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli deploy_routes_do_not_invent_tiny_static_packet_paths -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli normalized_public_artifact_path_rejects_evidence_and_dot_dx_paths -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli public_runtime_artifact_plan_counts_evidence_but_returns_only_public_paths -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli copy_public_runtime_artifacts_leaves_receipts_outside_vercel_static -- --nocapture",
+      "cargo test -j 1 -p dx-www production_contract_precompressed_asset_sets_encoding_and_decoded_type --no-default-features --features cli --lib",
+      "cargo test -j 1 -p dx-www provider_upload_plan_marks_precompressed_runtime_headers --no-default-features --features cli --lib",
+      "cargo test -j 1 -p dx-www production_contract_server_action_validation_error_is_structured_bad_request --no-default-features --features cli --lib",
+      "cargo test -j 1 -p dx-www deploy_server_actions_exposes_validation_and_replay_contract --no-default-features --features cli --lib",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli dx_build_emits_hosted_preview_bundle_with_forge_receipts -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts -- --nocapture",
+      "cargo test -j 1 -p dx-www --no-default-features --features cli dx_preview_production_contract_serves_only_deploy_adapter_outputs -- --nocapture",
+      "dx check --latest-receipt --json",
+      "dx www readiness --json --full",
+      "dx www readiness --write-receipts --json",
+      "dx www readiness --write-visual-edit-replay --json",
+      "dx www readiness --import-state-runtime-browser-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-native-event-browser-binder-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-island-browser-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-visual-edit-browser-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-no-js-browser-receipt <browser-receipt.json> --json --full",
+      "dx www readiness --import-production-http-tcp-preview-receipt <tcp-receipt.json> --json --full",
+      "dx www readiness --import-route-handler-provider-receipt <route-handler-provider-receipt.json> --json --full",
+      "dx www agent-context --json --full",
+      "dx www docs-doctor --json",
+      "dx www docs-doctor --json --write-receipt",
+      "cargo check -j 1 -p dx-www --no-default-features --features cli --bin dx-www"
+    ],
+    "machine_path": ".dx/serializer/receipts-readiness-proof-graph.machine",
+    "machine_path_within_root": true,
+    "serializer_machine_generated": true,
+    "release_ready": false,
+    "manifest_hash": "blake3:3aa54e392a16464e92b1d80f787a775632fd9102867e521ddc2239a707f9fe7f"
+  },
+  "bundle_partition": {
+    "schema": "dx.www.deploy.bundle_partition",
+    "schema_revision": 1,
+    "separation_enforced": true,
+    "public_runtime_bundle": {
+      "deployable": true,
+      "artifact_count": 41,
+      "artifacts": [
+        {
+          "path": "_dx/styles/react-route-ce40f27a48d53008.css",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "_dx/styles/react-route-ce40f27a48d53008.css.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "br",
+          "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css"
+        },
+        {
+          "path": "_dx/styles/react-route-ce40f27a48d53008.css.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "gzip",
+          "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css"
+        },
+        {
+          "path": "app/forge-proof/index.html",
+          "kind": "route-html",
+          "cache_control": "public, max-age=0, must-revalidate",
+          "content_type": "text/html; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "app/index.html",
+          "kind": "route-html",
+          "cache_control": "public, max-age=0, must-revalidate",
+          "content_type": "text/html; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "br",
+          "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg"
+        },
+        {
+          "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "gzip",
+          "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg"
+        },
+        {
+          "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "br",
+          "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg"
+        },
+        {
+          "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "gzip",
+          "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg"
+        },
+        {
+          "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "br",
+          "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg"
+        },
+        {
+          "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "gzip",
+          "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg"
+        },
+        {
+          "path": "public/favicon-cfb09e06980b21ac.svg",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "public/favicon-cfb09e06980b21ac.svg.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "br",
+          "encoded_from": "public/favicon-cfb09e06980b21ac.svg"
+        },
+        {
+          "path": "public/favicon-cfb09e06980b21ac.svg.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "gzip",
+          "encoded_from": "public/favicon-cfb09e06980b21ac.svg"
+        },
+        {
+          "path": "public/favicon.svg",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "public/favicon.svg.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "br",
+          "encoded_from": "public/favicon.svg"
+        },
+        {
+          "path": "public/favicon.svg.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "gzip",
+          "encoded_from": "public/favicon.svg"
+        },
+        {
+          "path": "public/icon-32341047d202fbff.svg",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "public/icon-32341047d202fbff.svg.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "br",
+          "encoded_from": "public/icon-32341047d202fbff.svg"
+        },
+        {
+          "path": "public/icon-32341047d202fbff.svg.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "gzip",
+          "encoded_from": "public/icon-32341047d202fbff.svg"
+        },
+        {
+          "path": "public/icon.svg",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "public/icon.svg.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "br",
+          "encoded_from": "public/icon.svg"
+        },
+        {
+          "path": "public/icon.svg.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "gzip",
+          "encoded_from": "public/icon.svg"
+        },
+        {
+          "path": "public/logo-2afe23f6d7f297ab.svg",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "public/logo-2afe23f6d7f297ab.svg.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "br",
+          "encoded_from": "public/logo-2afe23f6d7f297ab.svg"
+        },
+        {
+          "path": "public/logo-2afe23f6d7f297ab.svg.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "gzip",
+          "encoded_from": "public/logo-2afe23f6d7f297ab.svg"
+        },
+        {
+          "path": "public/logo.svg",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "public/logo.svg.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "br",
+          "encoded_from": "public/logo.svg"
+        },
+        {
+          "path": "public/logo.svg.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "image/svg+xml",
+          "content_encoding": "gzip",
+          "encoded_from": "public/logo.svg"
+        },
+        {
+          "path": "styles/generated.css",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "styles/generated.css.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "br",
+          "encoded_from": "styles/generated.css"
+        },
+        {
+          "path": "styles/generated.css.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "gzip",
+          "encoded_from": "styles/generated.css"
+        },
+        {
+          "path": "styles/globals.css",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "styles/globals.css.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "br",
+          "encoded_from": "styles/globals.css"
+        },
+        {
+          "path": "styles/globals.css.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "gzip",
+          "encoded_from": "styles/globals.css"
+        },
+        {
+          "path": "styles/theme.css",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "styles/theme.css.br",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "br",
+          "encoded_from": "styles/theme.css"
+        },
+        {
+          "path": "styles/theme.css.gz",
+          "kind": "immutable-asset",
+          "cache_control": "public, max-age=31536000, immutable",
+          "content_type": "text/css; charset=utf-8",
+          "content_encoding": "gzip",
+          "encoded_from": "styles/theme.css"
+        }
+      ],
+      "excludes": [
+        ".dx/receipts/readiness/proof-graph.sr",
+        ".dx/receipts/**",
+        "app-router-execution.json",
+        "deploy-adapter.json",
+        "server-action-replay-ledger.json"
+      ]
+    },
+    "evidence_bundle": {
+      "deployable_public_bytes": false,
+      "cache_control": "no-store",
+      "artifact_count": 40,
+      "artifacts": [
+        {
+          "path": ".dx/receipts/readiness/proof-graph.sr",
+          "kind": "readiness-proof-graph",
+          "cache_control": "no-store",
+          "content_type": "application/octet-stream",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "app/app-router-execution.json",
+          "kind": "app-router-execution",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "app/forge-proof/app-router-execution.json",
+          "kind": "app-router-execution",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "cache-manifest.json",
+          "kind": "cache-manifest",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "deploy-adapter.json",
+          "kind": "deploy-contract",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge-hosting-manifest.json",
+          "kind": "forge-hosting-manifest",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T174853375646100Z-www-minimal-starter.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T174853445371200Z-www-minimal-starter.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T174905841668300Z-npm-clsx.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T214045680087200Z-npm-lodash.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T220958619944400Z-pip-requests.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T220958713115300Z-cargo-serde.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T220958824867000Z-go-quote.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T221112209576300Z-npm-lodash.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T221112301950600Z-pip-requests.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T221112398568600Z-cargo-serde.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T221112507703700Z-go-quote.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T221129703560500Z-npm-lodash.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T221129838625800Z-pip-requests.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T221129951136400Z-cargo-serde.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/receipts/20260607T221130167009500Z-go-quote.json",
+          "kind": "forge-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/source-manifest.json",
+          "kind": "forge-source-manifest",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "forge/template-manifest.json",
+          "kind": "forge-template-manifest",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "hosted-preview.json",
+          "kind": "hosted-preview-contract",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "import-resolution.json",
+          "kind": "import-resolution",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "manifest.json",
+          "kind": "build-manifest",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "observability.json",
+          "kind": "production-observability",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "provider-adapter-smoke-matrix.json",
+          "kind": "provider-adapter-smoke-matrix",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "provider-adapter.dx-cloud.json",
+          "kind": "provider-adapter",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "rollback.json",
+          "kind": "rollback-metadata",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "route-handler-conformance-matrix.json",
+          "kind": "route-handler-conformance-matrix",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "route-handler-receipts.json",
+          "kind": "route-handler-receipts",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "server-action-protocols.json",
+          "kind": "server-action-protocols",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "server-action-replay-ledger.json",
+          "kind": "server-action-replay-ledger",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "server-action-runtime.json",
+          "kind": "server-action-runtime",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "server-contracts.json",
+          "kind": "server-contracts",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "source-build-manifest.json",
+          "kind": "source-build-manifest",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "source-build-receipt.json",
+          "kind": "source-build-receipt",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "source-routes/forge-proof/route-unit.json",
+          "kind": "source-route-unit",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        },
+        {
+          "path": "source-routes/root/route-unit.json",
+          "kind": "source-route-unit",
+          "cache_control": "no-store",
+          "content_type": "application/json; charset=utf-8",
+          "content_encoding": null,
+          "encoded_from": null
+        }
+      ],
+      "serializer_contract": "sr"
+    }
+  },
+  "upload_plan": [
+    {
+      "path": ".dx/receipts/readiness/proof-graph.sr",
+      "kind": "readiness-proof-graph",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/octet-stream",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "_dx/styles/react-route-ce40f27a48d53008.css.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "_dx/styles/react-route-ce40f27a48d53008.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "app/app-router-execution.json",
+      "kind": "app-router-execution",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "app/forge-proof/app-router-execution.json",
+      "kind": "app-router-execution",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "app/forge-proof/index.html",
+      "kind": "route-html",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "text/html; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "app/index.html",
+      "kind": "route-html",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=0, must-revalidate",
+      "content_type": "text/html; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "cache-manifest.json",
+      "kind": "cache-manifest",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "deploy-adapter.json",
+      "kind": "deploy-contract",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge-hosting-manifest.json",
+      "kind": "forge-hosting-manifest",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T174853375646100Z-www-minimal-starter.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T174853445371200Z-www-minimal-starter.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T174905841668300Z-npm-clsx.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T214045680087200Z-npm-lodash.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T220958619944400Z-pip-requests.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T220958713115300Z-cargo-serde.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T220958824867000Z-go-quote.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T221112209576300Z-npm-lodash.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T221112301950600Z-pip-requests.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T221112398568600Z-cargo-serde.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T221112507703700Z-go-quote.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T221129703560500Z-npm-lodash.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T221129838625800Z-pip-requests.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T221129951136400Z-cargo-serde.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/receipts/20260607T221130167009500Z-go-quote.json",
+      "kind": "forge-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/source-manifest.json",
+      "kind": "forge-source-manifest",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "forge/template-manifest.json",
+      "kind": "forge-template-manifest",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "hosted-preview.json",
+      "kind": "hosted-preview-contract",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/favicon-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/icon-653d1ed174ed39da.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "image-placeholders/public/logo-b0698a08bf67b748.placeholder.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "import-resolution.json",
+      "kind": "import-resolution",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "manifest.json",
+      "kind": "build-manifest",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "observability.json",
+      "kind": "production-observability",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "provider-adapter-smoke-matrix.json",
+      "kind": "provider-adapter-smoke-matrix",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "provider-adapter.dx-cloud.json",
+      "kind": "provider-adapter",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon-cfb09e06980b21ac.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/favicon-cfb09e06980b21ac.svg.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon-cfb09e06980b21ac.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/favicon.svg",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/favicon.svg.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/favicon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/favicon.svg.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/favicon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icon-32341047d202fbff.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/icon-32341047d202fbff.svg.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icon-32341047d202fbff.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/icon.svg",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/icon.svg.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/icon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/icon.svg.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/icon.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/logo-2afe23f6d7f297ab.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/logo-2afe23f6d7f297ab.svg.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/logo-2afe23f6d7f297ab.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/logo.svg",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/logo.svg.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "br",
+      "encoded_from": "public/logo.svg",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "public/logo.svg.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "image/svg+xml",
+      "content_encoding": "gzip",
+      "encoded_from": "public/logo.svg",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "image/svg+xml"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "rollback.json",
+      "kind": "rollback-metadata",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "route-handler-conformance-matrix.json",
+      "kind": "route-handler-conformance-matrix",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "route-handler-receipts.json",
+      "kind": "route-handler-receipts",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "server-action-protocols.json",
+      "kind": "server-action-protocols",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "server-action-replay-ledger.json",
+      "kind": "server-action-replay-ledger",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "server-action-runtime.json",
+      "kind": "server-action-runtime",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "server-contracts.json",
+      "kind": "server-contracts",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "source-build-manifest.json",
+      "kind": "source-build-manifest",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "source-build-receipt.json",
+      "kind": "source-build-receipt",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "source-routes/forge-proof/route-unit.json",
+      "kind": "source-route-unit",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "source-routes/root/route-unit.json",
+      "kind": "source-route-unit",
+      "bundle": "evidence",
+      "cache_control": "no-store",
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "styles/generated.css",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "styles/generated.css.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/generated.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "styles/generated.css.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/generated.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "styles/globals.css",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "styles/globals.css.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/globals.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "styles/globals.css.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/globals.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "styles/theme.css",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": null,
+      "encoded_from": null,
+      "cdn_headers": {},
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "styles/theme.css.br",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "br",
+      "encoded_from": "styles/theme.css",
+      "cdn_headers": {
+        "Content-Encoding": "br",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    },
+    {
+      "path": "styles/theme.css.gz",
+      "kind": "immutable-asset",
+      "bundle": "public-runtime",
+      "cache_control": "public, max-age=31536000, immutable",
+      "content_type": "text/css; charset=utf-8",
+      "content_encoding": "gzip",
+      "encoded_from": "styles/theme.css",
+      "cdn_headers": {
+        "Content-Encoding": "gzip",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/css; charset=utf-8"
+      },
+      "account_required": false,
+      "network_required": false,
+      "lifecycle_scripts_executed": false
+    }
+  ],
+  "review_before_materialization": [
+    "Bind a real provider account only after the manifest is signed.",
+    "Keep package materialization source-owned; do not install node_modules.",
+    "Review server actions and health endpoints before promoting to hosted traffic."
+  ]
+}

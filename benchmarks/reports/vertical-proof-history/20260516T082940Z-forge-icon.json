@@ -1,0 +1,315 @@
+{
+  "generated_at": "2026-05-16T08:29:40.451Z",
+  "fixture": "generated:forge-icon",
+  "fixture_mode": "forge-icon",
+  "proof": {
+    "route": "/",
+    "fallback": {
+      "optimized_bytes": 2030,
+      "saved_bytes": 98,
+      "script_count": 1,
+      "style_count": 0,
+      "repeated_node_count": 0,
+      "delivery_mode": "micro-js"
+    },
+    "packet": {
+      "format": "dxob-v1",
+      "bytes": 2454,
+      "decoded_name": "index",
+      "template_count": 17,
+      "string_count": 10,
+      "binding_count": 1,
+      "event_count": 1,
+      "css_class_count": 35,
+      "roundtrip_matches": true
+    },
+    "browser_packet": {
+      "format": "dxp-v1",
+      "bytes": 1910,
+      "decoded_kind": "Route",
+      "section_count": 3,
+      "payload_bytes": 1738,
+      "roundtrip_matches": true,
+      "sections": [
+        {
+          "kind": "FallbackHtmlRef",
+          "encoding": "Json",
+          "bytes": 154,
+          "content_hash": "e2c90caede421f795e6a5b1687aabb83440795be1112918555117c0a7b5a7368"
+        },
+        {
+          "kind": "TemplateSlots",
+          "encoding": "CanonicalBinary",
+          "bytes": 1459,
+          "content_hash": "b8aa93916daae09c6d60eb3cc132dc80576a025a9e58d0f83fd0bea0f5802a70"
+        },
+        {
+          "kind": "SourceManifest",
+          "encoding": "Json",
+          "bytes": 125,
+          "content_hash": "3b5166abdc1712f739e331e5421bf977d60274abea8e271c237cb31bb816ea1f"
+        }
+      ]
+    },
+    "interaction": {
+      "delivery_mode": "micro-js",
+      "state_name": "count",
+      "target_id": "dx-state-count",
+      "action_count": 1,
+      "script_bytes": 172,
+      "warnings": [
+        "Phase 1 interaction proof supports simple numeric counter state and click handlers only."
+      ]
+    },
+    "forge": {
+      "package_id": "dx-www/vertical/index",
+      "action": "TrackWrite",
+      "risk_score": 100,
+      "traffic": "green",
+      "files_tracked": 1
+    },
+    "forge_packages": [
+      {
+        "package_id": "dx/icon/search",
+        "action": "AddWrite",
+        "risk_score": 100,
+        "traffic": "green",
+        "files_tracked": 3,
+        "manifest_path": "G:\\Temp\\UserTemp\\dx-www-vertical-proof-33Pvfg\\.dx/forge/source-manifest.json",
+        "receipt_path": "G:\\Temp\\UserTemp\\dx-www-vertical-proof-33Pvfg\\.dx/forge/receipts\\20260516T082938616456000Z-dx-icon-search.json"
+      }
+    ]
+  },
+  "http": {
+    "resource_count": 3,
+    "total_decoded_bytes": 11008,
+    "content_length_bytes": 11008,
+    "compression_estimate": {
+      "raw_bytes": 11008,
+      "gzip_bytes": 3713,
+      "brotli_bytes": 3125
+    },
+    "route_timing_ms": {
+      "samples": 12,
+      "min": 1.599,
+      "median": 2.54,
+      "mean": 3.3,
+      "p95": 8.293,
+      "max": 8.293
+    },
+    "resources": [
+      {
+        "path": "/",
+        "status": 200,
+        "ok": true,
+        "decoded_bytes": 2185,
+        "elapsed_ms": 66.887,
+        "content_length": 2185
+      },
+      {
+        "path": "/index.dxp",
+        "status": 200,
+        "ok": true,
+        "decoded_bytes": 1910,
+        "elapsed_ms": 12.679,
+        "content_length": 1910
+      },
+      {
+        "path": "/index.dxp.js",
+        "status": 200,
+        "ok": true,
+        "decoded_bytes": 6913,
+        "elapsed_ms": 11.879,
+        "content_length": 6913
+      }
+    ]
+  },
+  "chrome": {
+    "enabled": true,
+    "samples": 5,
+    "warmup_excluded": true,
+    "title": "DX-WWW /",
+    "dom_nodes": 29,
+    "scripts": 2,
+    "buttons": 2,
+    "nav_duration_ms": 44.7,
+    "dom_content_loaded_ms": 44.5,
+    "load_event_ms": 44.7,
+    "transfer_size": 11908,
+    "encoded_body_size": 11008,
+    "decoded_body_size": 11008,
+    "dx_packet_status": "applied",
+    "dx_packet_sections": 3,
+    "dx_packet_payload_bytes": 1738,
+    "dx_packet_template_count": 17,
+    "dx_packet_route": "/",
+    "dx_packet_applied": true,
+    "counter_click_update_ms": 0.3,
+    "interaction_works": true,
+    "warmup": {
+      "title": "DX-WWW /",
+      "dom_nodes": 29,
+      "scripts": 2,
+      "buttons": 2,
+      "nav_duration_ms": 55.2,
+      "dom_content_loaded_ms": 55,
+      "load_event_ms": 55.2,
+      "transfer_size": 12217,
+      "encoded_body_size": 11017,
+      "decoded_body_size": 11017,
+      "resource_count": 4,
+      "dx_packet_status": "applied",
+      "dx_packet_sections": 3,
+      "dx_packet_payload_bytes": 1738,
+      "dx_packet_template_count": 17,
+      "dx_packet_route": "/",
+      "dx_packet_applied": true,
+      "counter_before": "0",
+      "counter_after": "1",
+      "counter_click_update_ms": 0.3,
+      "interaction_works": true
+    },
+    "raw_samples": [
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 51.3,
+        "dom_content_loaded_ms": 51.2,
+        "load_event_ms": 51.3,
+        "transfer_size": 11908,
+        "encoded_body_size": 11008,
+        "decoded_body_size": 11008,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1738,
+        "dx_packet_template_count": 17,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.3,
+        "interaction_works": true
+      },
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 43.7,
+        "dom_content_loaded_ms": 43.5,
+        "load_event_ms": 43.7,
+        "transfer_size": 11908,
+        "encoded_body_size": 11008,
+        "decoded_body_size": 11008,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1738,
+        "dx_packet_template_count": 17,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.3,
+        "interaction_works": true
+      },
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 18.2,
+        "dom_content_loaded_ms": 17.2,
+        "load_event_ms": 18.2,
+        "transfer_size": 11908,
+        "encoded_body_size": 11008,
+        "decoded_body_size": 11008,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1738,
+        "dx_packet_template_count": 17,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.3,
+        "interaction_works": true
+      },
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 46.1,
+        "dom_content_loaded_ms": 45.9,
+        "load_event_ms": 46.1,
+        "transfer_size": 11908,
+        "encoded_body_size": 11008,
+        "decoded_body_size": 11008,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1738,
+        "dx_packet_template_count": 17,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.3,
+        "interaction_works": true
+      },
+      {
+        "title": "DX-WWW /",
+        "dom_nodes": 29,
+        "scripts": 2,
+        "buttons": 2,
+        "nav_duration_ms": 44.7,
+        "dom_content_loaded_ms": 44.5,
+        "load_event_ms": 44.7,
+        "transfer_size": 11908,
+        "encoded_body_size": 11008,
+        "decoded_body_size": 11008,
+        "resource_count": 3,
+        "dx_packet_status": "applied",
+        "dx_packet_sections": 3,
+        "dx_packet_payload_bytes": 1738,
+        "dx_packet_template_count": 17,
+        "dx_packet_route": "/",
+        "dx_packet_applied": true,
+        "counter_before": "0",
+        "counter_after": "1",
+        "counter_click_update_ms": 0.3,
+        "interaction_works": true
+      }
+    ]
+  },
+  "comparison": {
+    "previous_generated_at": "2026-05-16T08:29:18.248Z",
+    "previous_fixture_mode": "forge-icon",
+    "current_fixture_mode": "forge-icon",
+    "previous_forge_packages": 1,
+    "current_forge_packages": 1,
+    "delta_forge_packages": 0,
+    "previous_decoded_bytes": 11008,
+    "current_decoded_bytes": 11008,
+    "delta_decoded_bytes": 0,
+    "previous_brotli_bytes": 3125,
+    "current_brotli_bytes": 3125,
+    "delta_brotli_bytes": 0,
+    "previous_http_route_median_ms": 1.878,
+    "current_http_route_median_ms": 2.54,
+    "delta_http_route_median_ms": 0.6620000000000001,
+    "previous_chrome_load_event_ms": 41.9,
+    "current_chrome_load_event_ms": 44.7,
+    "delta_chrome_load_event_ms": 2.8000000000000043
+  },
+  "snapshot": {
+    "json": "vertical-proof-history/20260516T082940Z-forge-icon.json",
+    "markdown": "vertical-proof-history/20260516T082940Z-forge-icon.md",
+    "index": "vertical-proof-history/index.json"
+  }
+}

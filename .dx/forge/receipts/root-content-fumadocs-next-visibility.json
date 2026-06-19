@@ -1,0 +1,18 @@
+{
+    "schema":  "dx.forge.root_visibility_receipt",
+    "generated_at":  "2026-05-26T00:20:42.2821873+00:00",
+    "package_id":  "content/fumadocs-next",
+    "official_package_name":  "Documentation System",
+    "status":  "visibility-only",
+    "project_root":  "G:/Dx/www",
+    "evidence":  "Root dx check visibility row for the framework repo; this is not a live provider, browser, or runtime proof.",
+    "runtime_proof":  {
+
+                      },
+    "provider_proof":  {
+
+                       },
+    "hash_manifest":  {
+
+                      }
+}

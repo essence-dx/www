@@ -1,0 +1,55 @@
+{
+  "schema": "dx.launch.runtime_evidence",
+  "template_id": "www-template",
+  "route": "/",
+  "status": "awaiting-approved-runtime-run",
+  "classification": "source-owned-limited-proof",
+  "package_id": "dx-www/template-shell",
+  "approval_required": true,
+  "blocked_until_approved": true,
+  "approval_request": ".dx/forge/template-readiness/launch-runtime-approval-request.json",
+  "approval_gate": {
+    "status": "pending-explicit-approval",
+    "approved": false
+  },
+  "required_evidence": [
+    {
+      "id": "governed-runtime-route-response",
+      "kind": "browser-route-proof",
+      "status": "not-collected",
+      "required": true,
+      "artifact_path": ".dx/forge/runtime/governed-runtime-route-response.json",
+      "source_command": "approved browser route check"
+    },
+    {
+      "id": "production-contract-route-proof",
+      "kind": "production-contract-proof",
+      "status": "not-collected",
+      "required": true,
+      "artifact_path": ".dx/forge/runtime/production-contract-route-proof.json",
+      "source_command": "approved production-contract route check"
+    },
+    {
+      "id": "final-launch-evidence-receipt",
+      "kind": "runtime-evidence-receipt",
+      "status": "not-collected",
+      "required": true,
+      "artifact_path": ".dx/forge/runtime/final-launch-evidence-receipt.json",
+      "source_command": "dx forge launch-runtime-evidence --project . --json"
+    }
+  ],
+  "collected_evidence": {
+    "present": 0,
+    "artifacts": []
+  },
+  "fake_proof": false,
+  "runtime_proof": false,
+  "live_provider_execution": false,
+  "network_calls": false,
+  "secret_values": [],
+  "no_execution": true,
+  "honesty_notes": [
+    "No browser, provider, deploy, or production runtime evidence is attached.",
+    "Collected evidence remains empty until an approved runtime run records real artifacts."
+  ]
+}

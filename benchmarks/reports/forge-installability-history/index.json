@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-18T18:45:24.641Z",
+  "report_id": "forge-installability-trend-history-v1",
+  "source": "benchmarks/measure-forge-installability-snapshot.ts",
+  "snapshot_count": 1,
+  "latest": {
+    "id": "2026-05-18T18-45-24-641Z",
+    "generated_at": "2026-05-18T18:45:24.641Z",
+    "snapshot_path": "snapshots/2026-05-18T18-45-24-641Z.json",
+    "passed": true,
+    "score": 100,
+    "beta_install_time_ms": 2470,
+    "beta_upgrade_time_ms": 95,
+    "beta_install_artifact_bytes": 184496,
+    "beta_upgrade_artifact_bytes": 36419,
+    "no_package_installs_run": true,
+    "no_node_modules_created": true,
+    "release_bundle": ".dx\\adoption-update-rehearsal\\.dx\\forge\\adoption-smoke\\release-bundle",
+    "finding_count": 0,
+    "delta": {
+      "score": null,
+      "install_time_ms": null,
+      "upgrade_time_ms": null,
+      "install_artifact_bytes": null,
+      "upgrade_artifact_bytes": null
+    },
+    "trend": "baseline"
+  },
+  "previous": null,
+  "snapshots": [
+    {
+      "id": "2026-05-18T18-45-24-641Z",
+      "generated_at": "2026-05-18T18:45:24.641Z",
+      "snapshot_path": "snapshots/2026-05-18T18-45-24-641Z.json",
+      "passed": true,
+      "score": 100,
+      "beta_install_time_ms": 2470,
+      "beta_upgrade_time_ms": 95,
+      "beta_install_artifact_bytes": 184496,
+      "beta_upgrade_artifact_bytes": 36419,
+      "no_package_installs_run": true,
+      "no_node_modules_created": true,
+      "release_bundle": ".dx\\adoption-update-rehearsal\\.dx\\forge\\adoption-smoke\\release-bundle",
+      "finding_count": 0,
+      "delta": {
+        "score": null,
+        "install_time_ms": null,
+        "upgrade_time_ms": null,
+        "install_artifact_bytes": null,
+        "upgrade_artifact_bytes": null
+      },
+      "trend": "baseline"
+    }
+  ],
+  "checks": {
+    "has_history": {
+      "name": "installability history",
+      "passed": true,
+      "present": 1,
+      "expected": 1,
+      "score": 100
+    },
+    "latest_passed": {
+      "name": "latest snapshot passed",
+      "passed": true,
+      "present": 1,
+      "expected": 1,
+      "score": 100
+    },
+    "no_package_installs": {
+      "name": "no package installs across history",
+      "passed": true,
+      "present": 1,
+      "expected": 1,
+      "score": 100
+    }
+  },
+  "honest_scope": [
+    "Trend history compares local Forge installability snapshots only.",
+    "Negative time and byte deltas mean the newer snapshot is smaller or faster than the previous snapshot.",
+    "npm and shadcn rows remain static references; this history does not run package installs.",
+    "Each history snapshot is copied into the history folder so release-to-release movement can be reviewed later."
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "schema": "dx.www.conversion_route_discovery",
+  "purpose": "Single DX-WWW, DX CLI, and Zed index for the source-owned conversion proof routes.",
+  "discovery_consumers": [
+    "dx-www",
+    "dx-cli",
+    "zed"
+  ],
+  "routing": {
+    "canonical": "dx-www",
+    "no_next_router": true,
+    "no_tanstack_router": true,
+    "no_react_router": true,
+    "route_file_kind": "dx-www .html",
+    "runtime_policy": "source-only launch proof; no server, build, or hosted backend execution"
+  },
+  "acceptance_checklist": "forge/acceptance/no-runtime-route-acceptance.json",
+  "rendered_proof_receipt_schema": "forge/acceptance/rendered-proof-evidence.schema.json",
+  "rendered_proof_validator": "forge/acceptance/validate-rendered-proof-evidence.ts",
+  "blocked_rendered_proof_fixture": "forge/acceptance/fixtures/blocked-rendered-proof.sample.json",
+  "rendered_proof_import_plan": "forge/acceptance/rendered-proof-import-plan.json",
+  "rendered_proof_import_tool": "forge/acceptance/prepare-rendered-proof-import.ts",
+  "rendered_proof_review_tool": "forge/acceptance/review-rendered-proof-completeness.ts",
+  "rendered_proof_runtime_approval_request": "forge/acceptance/rendered-proof-runtime-approval-request.json",
+  "rendered_proof_runtime_approval_tool": "forge/acceptance/request-rendered-proof-runtime-approval.ts",
+  "rendered_proof_authoring_guide": "forge/acceptance/rendered-proof-evidence-authoring-guide.json",
+  "rendered_proof_authoring_tool": "forge/acceptance/summarize-rendered-proof-evidence-requirements.ts",
+  "studio_preview": {
+    "schema": "dx.studio.preview_route_markers",
+    "purpose": "Selector-ready DOM marker handoff for Studio, Zed, and DX preview panes.",
+    "marker_attributes": [
+      "data-dx-route",
+      "data-dx-source",
+      "data-dx-forge",
+      "data-dx-package",
+      "data-dx-hot-reload-target",
+      "data-surface-map",
+      "data-visual-audit"
+    ],
+    "selection_policy": "Open the converted .html page first, then the matching source surface map, visual audit, conversion manifest, and receipt.",
+    "runtime_policy": "Selectors are source metadata only and do not start a server, hydrate React, or call hosted backends."
+  },
+  "routes": [
+    {
+      "route": "/",
+      "source_project": "dx-website-startpage",
+      "page": "pages/index.html",
+      "manifest": "forge/conversion-manifests/dx-landing.json",
+      "receipt": ".dx/forge/receipts/2026-05-21-dx-landing-to-index.json",
+      "source_surface_map": "forge/source-surfaces/dx-landing.json",
+      "visual_audit": "forge/visual-audits/dx-landing.json",
+      "runtime_state": "real source recreation, runtime pending",
+      "assets": [
+        "public/thumbnails/amber.png",
+        "public/thumbnails/blue.png",
+        "public/thumbnails/cyan.png",
+        "public/thumbnails/emerald.png",
+        "public/thumbnails/fuchsia.png",
+        "public/thumbnails/green.png"
+      ],
+      "provenance": {
+        "source_repo": "project-local DX website",
+        "source_commit": "current working source",
+        "license": "project-local DX source",
+        "notice": null
+      },
+      "dx_www_entrypoints": [
+        "pages/index.html",
+        "styles/dx-landing.css"
+      ],
+      "studio_preview": {
+        "selector": "[data-dx-route=\"/\"]",
+        "source_selector": "[data-dx-source=\"dx-website-startpage\"]",
+        "forge_selector": "[data-dx-forge=\"website-conversion-dx-landing\"]",
+        "surface_selector": "[data-dx-surface=\"migration/static-site\"]",
+        "hot_reload_target": "route:/",
+        "open_files": [
+          "pages/index.html",
+          "styles/dx-landing.css",
+          "forge/source-surfaces/dx-landing.json",
+          "forge/visual-audits/dx-landing.json",
+          "forge/conversion-manifests/dx-landing.json",
+          ".dx/forge/receipts/2026-05-21-dx-landing-to-index.json"
+        ]
+      },
+      "operator_next_action": "Preview the DX-WWW route after runtime approval and use it as the canonical launch landing."
+    },
+    {
+      "route": "/ui",
+      "source_project": "shadcn-ui",
+      "page": "pages/ui.html",
+      "manifest": "forge/conversion-manifests/shadcn-ui.json",
+      "receipt": ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json",
+      "source_surface_map": "forge/source-surfaces/shadcn-ui.json",
+      "visual_audit": "forge/visual-audits/shadcn-ui.json",
+      "runtime_state": "real source conversion, partial runtime",
+      "assets": [
+        "public/vendor/shadcn-favicon-32x32.png"
+      ],
+      "provenance": {
+        "source_repo": "https://github.com/shadcn-ui/ui.git",
+        "source_commit": "36139f6200d9c2684ef7695fce5f3d9787378e26",
+        "license": "MIT",
+        "notice": "notices/shadcn-ui/LICENSE.md"
+      },
+      "dx_www_entrypoints": [
+        "pages/ui.html",
+        "components/ConversionRouteHeader.tsx",
+        "components/SourceSurfaceTable.tsx",
+        "components/RuntimeBoundaryPanel.tsx"
+      ],
+      "studio_preview": {
+        "selector": "[data-dx-route=\"/ui\"]",
+        "source_selector": "[data-dx-source=\"shadcn-ui\"]",
+        "forge_selector": "[data-dx-forge=\"website-conversion-shadcn\"]",
+        "package_selector": "[data-dx-package=\"shadcn/ui/card\"]",
+        "hot_reload_target": "route:/ui",
+        "open_files": [
+          "pages/ui.html",
+          "forge/source-surfaces/shadcn-ui.json",
+          "forge/visual-audits/shadcn-ui.json",
+          "forge/conversion-manifests/shadcn-ui.json",
+          ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json"
+        ]
+      },
+      "operator_next_action": "Promote selected route sections after DX-WWW renderer snapshot approval."
+    },
+    {
+      "route": "/database",
+      "source_project": "supabase",
+      "page": "pages/database.html",
+      "manifest": "forge/conversion-manifests/supabase.json",
+      "receipt": ".dx/forge/receipts/2026-05-21-supabase-to-database.json",
+      "source_surface_map": "forge/source-surfaces/supabase.json",
+      "visual_audit": "forge/visual-audits/supabase.json",
+      "runtime_state": "real source conversion, partial runtime",
+      "assets": [
+        "public/vendor/supabase-logo.svg"
+      ],
+      "provenance": {
+        "source_repo": "https://github.com/supabase/supabase.git",
+        "source_commit": "fdeaaec098e6151a199ff84b55b030547afe7eee",
+        "license": "Apache-2.0",
+        "notice": "notices/supabase/LICENSE"
+      },
+      "dx_www_entrypoints": [
+        "pages/database.html",
+        "components/ConversionRouteHeader.tsx",
+        "components/SourceSurfaceTable.tsx",
+        "components/RuntimeBoundaryPanel.tsx"
+      ],
+      "studio_preview": {
+        "selector": "[data-dx-route=\"/database\"]",
+        "source_selector": "[data-dx-source=\"supabase\"]",
+        "forge_selector": "[data-dx-forge=\"website-conversion-supabase\"]",
+        "package_selector": "[data-dx-package=\"supabase/client\"]",
+        "hot_reload_target": "route:/database",
+        "open_files": [
+          "pages/database.html",
+          "forge/source-surfaces/supabase.json",
+          "forge/visual-audits/supabase.json",
+          "forge/conversion-manifests/supabase.json",
+          ".dx/forge/receipts/2026-05-21-supabase-to-database.json"
+        ]
+      },
+      "operator_next_action": "Attach live Supabase credentials only after explicit runtime approval."
+    },
+    {
+      "route": "/backend",
+      "source_project": "convex-backend",
+      "page": "pages/backend.html",
+      "manifest": "forge/conversion-manifests/convex-backend.json",
+      "receipt": ".dx/forge/receipts/2026-05-21-convex-to-backend.json",
+      "source_surface_map": "forge/source-surfaces/convex-backend.json",
+      "visual_audit": "forge/visual-audits/convex-backend.json",
+      "runtime_state": "real source conversion, partial and blocked runtime",
+      "assets": [
+        "public/vendor/convex-logo.svg"
+      ],
+      "provenance": {
+        "source_repo": "https://github.com/get-convex/convex-backend.git",
+        "source_commit": "e5026b0d466058eea21084f9561d7ad974e925fc",
+        "license": "FSL-1.1-Apache-2.0",
+        "notice": "notices/convex-backend/LICENSE.md"
+      },
+      "dx_www_entrypoints": [
+        "pages/backend.html",
+        "components/ConversionRouteHeader.tsx",
+        "components/SourceSurfaceTable.tsx",
+        "components/RuntimeBoundaryPanel.tsx"
+      ],
+      "studio_preview": {
+        "selector": "[data-dx-route=\"/backend\"]",
+        "source_selector": "[data-dx-source=\"convex-backend\"]",
+        "forge_selector": "[data-dx-forge=\"website-conversion-convex\"]",
+        "package_selector": "[data-dx-package=\"supabase/client\"]",
+        "hot_reload_target": "route:/backend",
+        "open_files": [
+          "pages/backend.html",
+          "forge/source-surfaces/convex-backend.json",
+          "forge/visual-audits/convex-backend.json",
+          "forge/conversion-manifests/convex-backend.json",
+          ".dx/forge/receipts/2026-05-21-convex-to-backend.json"
+        ]
+      },
+      "operator_next_action": "Keep realtime/function execution blocked until license-sensitive runtime review is approved."
+    }
+  ],
+  "status": {
+    "score_out_of_100": 99,
+    "real": [
+      "All four converted routes have page, manifest, receipt, source-surface, visual-audit, asset, and route-discovery pointers.",
+      "The DX landing route recreates the correct DX website startpage in DX-WWW .html form with hero, platform downloads, feature sections, token/speed/performance claims, Forge, Traffic Security, Check, media, built-in tools, pricing, benchmarks, testimonials, and comparison sections.",
+      "DX-WWW routing is canonical and heavy app routers are explicitly excluded.",
+      "Studio preview selectors map each route DOM marker back to source-owned files for inspection.",
+      "A no-runtime acceptance checklist records the exact evidence needed before rendered proof.",
+      "A rendered-proof receipt schema lets runtime lanes write future evidence without mutating source proof files.",
+      "A source-only validator reports missing rendered-proof receipts without failing source readiness.",
+      "A blocked rendered-proof sample receipt is indexed so runtime lanes can copy the honest not-approved receipt shape.",
+      "A rendered-proof import plan and dry-run reporter are indexed for approved receipt handoff.",
+      "A rendered-proof completeness reviewer is indexed so operators can see the final runtime blocker without guessing.",
+      "A rendered-proof runtime approval request is indexed so operators can approve the exact capture scope before any runtime action.",
+      "A rendered-proof evidence authoring guide is indexed so runtime lanes can collect real artifacts without inventing evidence."
+    ],
+    "partial": [
+      "Discovery, Studio preview selection, acceptance evidence, and rendered-proof schema are source metadata only; they do not prove rendered screenshots or hydrated interactions."
+    ],
+    "blocked": [
+      "Runtime route rendering, hosted Supabase operations, Convex realtime/function execution, and full builds remain approval-gated."
+    ]
+  }
+}

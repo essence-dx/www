@@ -1,0 +1,359 @@
+{
+  "schema": "dx.forge.receipt",
+  "receipt_id": "auth-better-auth-dashboard-workflow",
+  "package_id": "auth/better-auth",
+  "package_name": "Authentication",
+  "official_package_name": "Authentication",
+  "source_mirror": "G:/WWW/inspirations/better-auth",
+  "upstream_package": "better-auth",
+  "upstream_version": "1.6.11",
+  "route": "/",
+  "dashboard_workflow": "login-session-account",
+  "component_marker": "data-dx-component=\"better-auth-account-dashboard-workflow\"",
+  "package_marker": "data-dx-package=\"auth/better-auth\"",
+  "receipt_path_marker": "data-dx-auth-receipt-path=\".dx/forge/receipts/auth-better-auth.json\"",
+  "source_files": [
+    "core/src/ecosystem/forge_registry.rs",
+    "examples/template/app/page.tsx",
+    "examples/template/auth-session-status.tsx",
+    "examples/template/template-shell.tsx",
+    "examples/template/package-catalog.ts",
+    "examples/template/dx-studio-edit-contract.ts",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/dashboard/src/lib/forge/auth/better-auth/dashboard.ts",
+    "examples/dashboard/src/components/BetterAuthAccountWorkflow.tsx",
+    "docs/packages/authentication.md",
+    "docs/packages/authentication.source-guard-runbook.json",
+    "tools/launch/materialize-www-template.ts",
+    "dx-www/src/cli/studio_manifest.rs"
+  ],
+  "files": [
+    "examples/template/template-shell.tsx",
+    "examples/template/auth-session-status.tsx",
+    "examples/dashboard/src/lib/forge/auth/better-auth/dashboard.ts",
+    "examples/dashboard/src/components/BetterAuthAccountWorkflow.tsx",
+    "docs/packages/authentication.source-guard-runbook.json",
+    "tools/launch/materialize-www-template.ts",
+    "dx-www/src/cli/studio_manifest.rs",
+    "examples/template/app/api/auth/[...all]/route.ts",
+    "examples/template/app/api/auth/readiness/route.ts",
+    "examples/template/server/auth/better-auth.ts",
+    "examples/template/.dx/forge/template-readiness/authentication.json"
+  ],
+  "hash_algorithm": "sha256",
+  "file_hashes": {
+    "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+    "examples/template/auth-session-status.tsx": "862e210ddb9f1f67a7c09a229d241d9cfd9cb13e95c9ce0650d9591ee34d1514",
+    "examples/dashboard/src/lib/forge/auth/better-auth/dashboard.ts": "a76da57b68a45aae4dc8379cf37df08acc36755ae45e5009b8c5d47aeb865e97",
+    "examples/dashboard/src/components/BetterAuthAccountWorkflow.tsx": "54a478a7d5a41497d29297f3a5de2a4e1cce5aa11a8c9b8047ed8edb11d0356c",
+    "docs/packages/authentication.source-guard-runbook.json": "b2092d953f2a80d3e2746f054160aa6d419e1e1204ebe0c51d3b93344145d34d",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8",
+    "examples/template/app/api/auth/[...all]/route.ts": "502924250cc57f4c27421bf4c3494c38e5fcb8868c86c6c05d7e179430614a17",
+    "examples/template/app/api/auth/readiness/route.ts": "e6b43c3964e2f7988d4bfe04c7ddffb3af6efba2418b9cd7b171229bb231024b",
+    "examples/template/server/auth/better-auth.ts": "ac15932d213f0d7721da84a9ae77deea51b653aa71e34c9d6c49ee88c54503e9",
+    "examples/template/.dx/forge/template-readiness/authentication.json": "9e50e709e46ad774404820c2cdca6e07bf9ca9d89a336c75a82437032553f2a3"
+  },
+  "hash_exclusions": [
+    {
+      "path": "docs/packages/authentication.md",
+      "reason": "package docs are status evidence and are updated per worker receipt; selected runtime surfaces are hash-gated separately"
+    },
+    {
+      "path": "core/src/ecosystem/project_check/authentication_dx_check.rs",
+      "reason": "dx-check consumer code is verified by targeted tests and rustfmt instead of this app-surface freshness manifest"
+    }
+  ],
+  "materialized_files": [
+    "auth/better-auth/options.ts",
+    "auth/better-auth/server.ts",
+    "auth/better-auth/client.ts",
+    "auth/better-auth/email-password.ts",
+    "auth/better-auth/social.ts",
+    "auth/better-auth/accounts.ts",
+    "auth/better-auth/profile.ts",
+    "auth/better-auth/account-deletion.ts",
+    "auth/better-auth/account-security.ts",
+    "auth/better-auth/route.ts",
+    "auth/better-auth/session.ts",
+    "auth/better-auth/session-management.ts",
+    "auth/better-auth/dashboard.ts",
+    "auth/better-auth/metadata.ts",
+    "auth/better-auth/.env.example",
+    "auth/better-auth/README.md",
+    "components/launch/auth-session-status.tsx",
+    "components/template-app/template-shell.tsx",
+    "pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    ".dx/forge/receipts/auth-better-auth.json"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"auth/better-auth\"",
+    "data-dx-component=\"better-auth-account-dashboard-workflow\"",
+    "data-dx-component=\"better-auth-session-status-panel\"",
+    "data-dx-component=\"better-auth-boundary-review\"",
+    "data-dx-dashboard-workflow=\"login-session-account\"",
+    "data-dx-auth-dashboard-workflow=\"login-session-account\"",
+    "data-dx-auth-interaction=\"email-sign-up\"",
+    "data-dx-auth-interaction=\"mark-boundary-reviewed\"",
+    "data-dx-auth-network-state",
+    "data-dx-auth-safe-action-state",
+    "data-dx-auth-boundary-review",
+    "data-dx-auth-session-source",
+    "data-dx-auth-receipt-path",
+    "data-dx-style-surface=\"authentication-account-workflow\"",
+    "data-dx-style-surface=\"authentication-session-status\""
+  ],
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "package_id": "auth/better-auth",
+    "official_package_name": "Authentication",
+    "current_status": "present",
+    "status_legend": [
+      {
+        "status": "present",
+        "meaning": "selected Authentication surfaces, source markers, and dashboard workflow receipt are present"
+      },
+      {
+        "status": "stale",
+        "meaning": "materialized Authentication files or source markers no longer match the Forge receipt"
+      },
+      {
+        "status": "missing-receipt",
+        "meaning": "selected Authentication surfaces exist without the dashboard workflow receipt"
+      },
+      {
+        "status": "blocked",
+        "meaning": "credentials, database/session policy, OAuth setup, email delivery, or governed runtime proof is required before claiming more"
+      },
+      {
+        "status": "unsupported-surface",
+        "meaning": "a requested Authentication surface is outside the selected upstream-backed set"
+      }
+    ],
+    "monitored_surfaces": [
+      {
+        "id": "authentication-account-workflow",
+        "status": "present",
+        "source_file": "examples/template/template-shell.tsx",
+        "materialized_file": "components/template-app/template-shell.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+          "examples/dashboard/src/lib/forge/auth/better-auth/dashboard.ts": "a76da57b68a45aae4dc8379cf37df08acc36755ae45e5009b8c5d47aeb865e97",
+          "examples/dashboard/src/components/BetterAuthAccountWorkflow.tsx": "54a478a7d5a41497d29297f3a5de2a4e1cce5aa11a8c9b8047ed8edb11d0356c"
+        },
+        "next_action": "Run the Authentication dx-check visibility guard after editing the account workflow."
+      },
+      {
+        "id": "authentication-session-status",
+        "status": "present",
+        "source_file": "examples/template/auth-session-status.tsx",
+        "materialized_file": "components/launch/auth-session-status.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/auth-session-status.tsx": "862e210ddb9f1f67a7c09a229d241d9cfd9cb13e95c9ce0650d9591ee34d1514"
+        },
+        "next_action": "Keep boundary-review, missing-config, and Zed/DX Studio selectors aligned with the receipt."
+      },
+      {
+        "id": "authentication-source-guard-runbook",
+        "status": "present",
+        "source_file": "docs/packages/authentication.source-guard-runbook.json",
+        "materialized_file": "docs/packages/authentication.source-guard-runbook.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "docs/packages/authentication.source-guard-runbook.json": "b2092d953f2a80d3e2746f054160aa6d419e1e1204ebe0c51d3b93344145d34d"
+        },
+        "next_action": "Keep the Authentication Studio/Zed source-guard runbook fixture synchronized through the package-owned receipt hash helper."
+      },
+      {
+        "id": "authentication-preview-manifest-materializer",
+        "status": "present",
+        "source_file": "tools/launch/materialize-www-template.ts",
+        "materialized_file": "public/preview-manifest.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48"
+        },
+        "next_action": "Keep the shared preview-manifest materializer hash-backed when it exposes Authentication source-guard runbook fixtures."
+      },
+      {
+        "id": "authentication-studio-manifest-source",
+        "status": "present",
+        "source_file": "dx-www/src/cli/studio_manifest.rs",
+        "materialized_file": "dx-www/src/cli/studio_manifest.rs",
+        "receipt_path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8"
+        },
+        "next_action": "Keep the Authentication Studio manifest source-guard declarations hash-backed through the package-owned receipt helper.",
+        "source_markers": [
+          "authentication-package-lane-panel",
+          "source_guard_index",
+          "source_guard_runbook_index"
+        ]
+      },
+      {
+        "id": "authentication-app-route-handler",
+        "status": "present",
+        "source_file": "examples/template/app/api/auth/[...all]/route.ts",
+        "materialized_file": "app/api/auth/[...all]/route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/app/api/auth/[...all]/route.ts": "502924250cc57f4c27421bf4c3494c38e5fcb8868c86c6c05d7e179430614a17"
+        },
+        "next_action": "Keep the Next App Router Better Auth catch-all route source-owned and hash-backed through the package-owned receipt helper.",
+        "source_markers": [
+          "export const runtime = \"nodejs\"",
+          "export { GET, POST } from \"@/auth/better-auth/route\"",
+          "app/api/auth/[...all]/route.ts",
+          "export { GET, POST } from \"@/server/auth/better-auth\""
+        ]
+      },
+      {
+        "id": "authentication-readiness-route-handler",
+        "status": "present",
+        "source_file": "examples/template/app/api/auth/readiness/route.ts",
+        "materialized_file": "app/api/auth/readiness/route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/app/api/auth/readiness/route.ts": "e6b43c3964e2f7988d4bfe04c7ddffb3af6efba2418b9cd7b171229bb231024b"
+        },
+        "next_action": "Keep the Authentication readiness route hash-backed so missing env and adapter boundaries remain visible without live OAuth.",
+        "source_markers": [
+          "export const runtime = \"nodejs\"",
+          "createDxBetterAuthReadiness",
+          "app/api/auth/readiness/route.ts",
+          "createTemplateBetterAuthReadiness"
+        ]
+      },
+      {
+        "id": "authentication-app-server-boundary",
+        "status": "present",
+        "source_file": "examples/template/server/auth/better-auth.ts",
+        "materialized_file": "server/auth/better-auth.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/server/auth/better-auth.ts": "ac15932d213f0d7721da84a9ae77deea51b653aa71e34c9d6c49ee88c54503e9"
+        },
+        "next_action": "Keep the app-owned Authentication server boundary hash-backed so route handlers can accept a real Better Auth database adapter without claiming one by default.",
+        "source_markers": [
+          "dxTemplateBetterAuthDatabaseBoundary",
+          "createTemplateBetterAuthReadiness",
+          "createTemplateBetterAuthRouteHandlers",
+          "BetterAuthOptions[\"database\"]"
+        ]
+      },
+      {
+        "id": "authentication-template-readiness-receipt",
+        "status": "present",
+        "source_file": "examples/template/.dx/forge/template-readiness/authentication.json",
+        "materialized_file": ".dx/forge/template-readiness/authentication.json",
+        "receipt_path": "examples/template/.dx/forge/receipts/auth-better-auth.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/.dx/forge/template-readiness/authentication.json": "9e50e709e46ad774404820c2cdca6e07bf9ca9d89a336c75a82437032553f2a3"
+        },
+        "next_action": "Keep the Authentication template-readiness receipt hash-backed so auditors can distinguish source-owned readiness from live OAuth/session proof.",
+        "source_markers": [
+          "dx.forge.template_readiness.package",
+          "\"classification\": \"lock-backed-adapter-boundary\"",
+          "\"runtime_proof\": false",
+          "\"selected_provider_surfaces\": [\"google-oauth\"]"
+        ]
+      }
+    ]
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "styles/globals.css",
+    "generated_css": "styles/globals.css",
+    "visible_surfaces": [
+      "authentication-account-workflow",
+      "authentication-session-status"
+    ],
+    "source_files": [
+      "examples/template/template-shell.tsx",
+      "examples/template/auth-session-status.tsx",
+      "examples/dashboard/src/components/BetterAuthAccountWorkflow.tsx"
+    ],
+    "receipt_path": ".dx/forge/receipts/auth-better-auth.json",
+    "runtime_proof": false,
+    "data_dx_markers": [
+      "data-dx-style-surface=\"authentication-account-workflow\"",
+      "data-dx-style-surface=\"authentication-session-status\""
+    ],
+    "style_boundaries": [
+      "use dx-style token classes instead of inline color objects on selected Authentication surfaces",
+      "keep credential-gated Authentication runtime behavior app-owned",
+      "do not claim browser visual proof from source-only marker evidence"
+    ],
+    "runtime_limitations": [
+      "SOURCE-ONLY: dx-style compatibility verifies selected Authentication source markers and token boundaries without browser proof.",
+      "ADAPTER-BOUNDARY: credentials, provider callbacks, cookies, database adapters, and hosted sessions stay app-owned."
+    ]
+  },
+  "public_apis": [
+    "betterAuth",
+    "createAuthClient",
+    "toNextJsHandler",
+    "nextCookies",
+    "getDxBetterAuthSession",
+    "requireDxBetterAuthSession",
+    "listDxBetterAuthSessions",
+    "revokeDxBetterAuthSession",
+    "signInDxBetterAuthEmail",
+    "signUpDxBetterAuthEmail",
+    "signInDxBetterAuthSocial",
+    "listDxBetterAuthAccounts",
+    "linkDxBetterAuthSocialAccount",
+    "updateDxBetterAuthUserProfile",
+    "changeDxBetterAuthEmail",
+    "deleteDxBetterAuthAccount",
+    "requestDxBetterAuthPasswordReset",
+    "createDxBetterAuthDashboardSessionSnapshot",
+    "createDxBetterAuthDashboardProfileRequest",
+    "createDxBetterAuthDashboardActionReceipt"
+  ],
+  "required_env": [
+    "BETTER_AUTH_SECRET",
+    "BETTER_AUTH_URL",
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET"
+  ],
+  "runtime_execution": false,
+  "secret_values": [],
+  "credential_state": "missing-config",
+  "safe_local_interaction": {
+    "kind": "boundary-review",
+    "actions": [
+      "mark-boundary-reviewed",
+      "email-sign-up-missing-config",
+      "provider-missing-config"
+    ],
+    "result": "The launch dashboard can preview a local session receipt and blocks real sign-in until Better Auth secrets/providers are configured."
+  },
+  "app_owned_boundaries": [
+    "Better Auth secret rotation and trusted-origin policy",
+    "database adapter, session storage, and migrations",
+    "Google OAuth provider credentials and callback URLs",
+    "email verification, password reset, account deletion, and audit policy"
+  ],
+  "checks": [
+    "node --test .\\benchmarks\\better-auth-dashboard-workflow.test.ts",
+    "node --test .\\benchmarks\\better-auth-session-helper.test.ts"
+  ],
+  "node_modules_policy": "no-template-local-node_modules",
+  "notes": "This receipt proves the source-owned Authentication Forge slice based on upstream better-auth APIs, /launch dashboard workflow markers, and an honest missing-config/boundary-review surface. It is not live OAuth, local account creation, cookie creation, or production session runtime evidence."
+}

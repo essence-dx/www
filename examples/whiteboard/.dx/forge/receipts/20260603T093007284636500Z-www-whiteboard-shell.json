@@ -1,0 +1,388 @@
+{
+  "action": "track-write",
+  "package": {
+    "package_id": "www/whiteboard-shell",
+    "upstream_name": "dx-www/examples/whiteboard",
+    "version": "0.1.0",
+    "generator": "dx-forge/local-source",
+    "variant": "default",
+    "source_kind": "local",
+    "integrity_hash": "ee40f62c55e064cefd00a77a189bc7eb369df4a79ac8a01a21e74937fb366b18",
+    "license": "MIT",
+    "provenance": {
+      "source": "dx-forge-local-source",
+      "upstream_reference": "dx-www/examples/whiteboard",
+      "verified": false,
+      "note": "Local source was tracked by Forge, but no external upstream provenance is claimed."
+    },
+    "advisory_review": {
+      "coverage_kind": "missing",
+      "provider": "none",
+      "live_coverage": false,
+      "finding_count": 0,
+      "note": "Local source packages do not have live advisory coverage attached by Forge yet."
+    },
+    "license_review": {
+      "declared_license": "MIT",
+      "reviewed": false,
+      "note": "License is recorded from the local package declaration only; no formal DX legal review is claimed."
+    },
+    "files": [
+      {
+        "path": "components/icons/icon.tsx",
+        "hash": "1a91cff776d4e0b07e2184af991e0ec43214c222fa04f6c00b17df9c541174b4",
+        "bytes": 475
+      },
+      {
+        "path": "components/icons/whiteboard-arrow.tsx",
+        "hash": "fa98955da982918545b2b3d2b70b65a621247f060b5f7bf50d0719ce243b5da7",
+        "bytes": 179
+      },
+      {
+        "path": "components/icons/whiteboard-diamond.tsx",
+        "hash": "49f3793505b92c7e5681e8cd2d89895ff0bc8ee6043fea805975cf44a626787e",
+        "bytes": 183
+      },
+      {
+        "path": "components/icons/whiteboard-ellipse.tsx",
+        "hash": "1e44e1a74f30dae99774f24eba58c0add2c6c5027f2407de3b3648670c294463",
+        "bytes": 183
+      },
+      {
+        "path": "components/icons/whiteboard-fit.tsx",
+        "hash": "49f7adb6e7667dc2c1cae36348234bcd9973a36fa02b6565082fefea77f87269",
+        "bytes": 175
+      },
+      {
+        "path": "components/icons/whiteboard-hand.tsx",
+        "hash": "a3568ce8169ed3a309e999894e55d4847edb2870a5b04547b8d63ec1ef6b51dd",
+        "bytes": 177
+      },
+      {
+        "path": "components/icons/whiteboard-keyboard.tsx",
+        "hash": "7888f401025f6538df5d00e1a174c90bf337129eae4f3bb54a907e8fadcc02ae",
+        "bytes": 185
+      },
+      {
+        "path": "components/icons/whiteboard-line.tsx",
+        "hash": "7030d668f1f57aba73399411a9dc001f263593f5a4966411777cb7a88f9dc77d",
+        "bytes": 177
+      },
+      {
+        "path": "components/icons/whiteboard-math.tsx",
+        "hash": "dae608e14a1926d9ebf50680a206e4ee4b33b291aaac29f80ca37f3e47eb009d",
+        "bytes": 177
+      },
+      {
+        "path": "components/icons/whiteboard-move.tsx",
+        "hash": "fdf5ea0b19da1f3f0c348597cf0fd3ce32aad6849f001ee37d8db0a7577e517f",
+        "bytes": 177
+      },
+      {
+        "path": "components/icons/whiteboard-pen.tsx",
+        "hash": "77e31206586ef90ab2564a6ab2212608d2368d684c7dbdc0a6d432b0de6da39d",
+        "bytes": 175
+      },
+      {
+        "path": "components/icons/whiteboard-rectangle.tsx",
+        "hash": "906880f94b5fe5ac78edbe3f5ff5b9fa4849ab8b7ed892d08114a80ccb18e330",
+        "bytes": 187
+      },
+      {
+        "path": "components/icons/whiteboard-redo.tsx",
+        "hash": "69d33c4a6aff6d8de70d7f24240849ac7d3bad0d7445bb401a23692de4e4a2b8",
+        "bytes": 177
+      },
+      {
+        "path": "components/icons/whiteboard-select.tsx",
+        "hash": "cd6c28ffb67fab3441ab52a5039c11faa3917527ed0114825a1bf01989476f6a",
+        "bytes": 181
+      },
+      {
+        "path": "components/icons/whiteboard-table.tsx",
+        "hash": "024cb2c7f6f2628862a650097348f4443872dff698606b7b653db9b32dfca312",
+        "bytes": 179
+      },
+      {
+        "path": "components/icons/whiteboard-text.tsx",
+        "hash": "947a6a1619acc4ee0ee854fa7f06abd5631bbefa4c29ac39bdea1ed4495c5a08",
+        "bytes": 177
+      },
+      {
+        "path": "components/icons/whiteboard-undo.tsx",
+        "hash": "08ce67fba6e3c0399b832d74482661b8da29d6ff0c4bc98d3adc426167fa36dc",
+        "bytes": 177
+      },
+      {
+        "path": "components/icons/whiteboard-zoom-in.tsx",
+        "hash": "62f4d9c66735536ba9925e4d884f9ae6091b46429330febaef29c3caf4ee6db1",
+        "bytes": 182
+      },
+      {
+        "path": "components/icons/whiteboard-zoom-out.tsx",
+        "hash": "0627fd971b3375058d14f278507d5d68a9a0f457dfa0a375a15c35a430420f61",
+        "bytes": 184
+      },
+      {
+        "path": "public/favicon.svg",
+        "hash": "3e9e677e4744193cdfb587bad6e3031539c1feaf64f35aef2967a204fa356ec9",
+        "bytes": 460
+      },
+      {
+        "path": "public/icon.svg",
+        "hash": "d88817f720a81506ae4abcaa3904d9ea29f25c537ca65b00a6685c64a4c38b3c",
+        "bytes": 481
+      }
+    ]
+  },
+  "files_written": [
+    {
+      "path": "components/icons/icon.tsx",
+      "hash": "1a91cff776d4e0b07e2184af991e0ec43214c222fa04f6c00b17df9c541174b4",
+      "bytes": 475
+    },
+    {
+      "path": "components/icons/whiteboard-arrow.tsx",
+      "hash": "fa98955da982918545b2b3d2b70b65a621247f060b5f7bf50d0719ce243b5da7",
+      "bytes": 179
+    },
+    {
+      "path": "components/icons/whiteboard-diamond.tsx",
+      "hash": "49f3793505b92c7e5681e8cd2d89895ff0bc8ee6043fea805975cf44a626787e",
+      "bytes": 183
+    },
+    {
+      "path": "components/icons/whiteboard-ellipse.tsx",
+      "hash": "1e44e1a74f30dae99774f24eba58c0add2c6c5027f2407de3b3648670c294463",
+      "bytes": 183
+    },
+    {
+      "path": "components/icons/whiteboard-fit.tsx",
+      "hash": "49f7adb6e7667dc2c1cae36348234bcd9973a36fa02b6565082fefea77f87269",
+      "bytes": 175
+    },
+    {
+      "path": "components/icons/whiteboard-hand.tsx",
+      "hash": "a3568ce8169ed3a309e999894e55d4847edb2870a5b04547b8d63ec1ef6b51dd",
+      "bytes": 177
+    },
+    {
+      "path": "components/icons/whiteboard-keyboard.tsx",
+      "hash": "7888f401025f6538df5d00e1a174c90bf337129eae4f3bb54a907e8fadcc02ae",
+      "bytes": 185
+    },
+    {
+      "path": "components/icons/whiteboard-line.tsx",
+      "hash": "7030d668f1f57aba73399411a9dc001f263593f5a4966411777cb7a88f9dc77d",
+      "bytes": 177
+    },
+    {
+      "path": "components/icons/whiteboard-math.tsx",
+      "hash": "dae608e14a1926d9ebf50680a206e4ee4b33b291aaac29f80ca37f3e47eb009d",
+      "bytes": 177
+    },
+    {
+      "path": "components/icons/whiteboard-move.tsx",
+      "hash": "fdf5ea0b19da1f3f0c348597cf0fd3ce32aad6849f001ee37d8db0a7577e517f",
+      "bytes": 177
+    },
+    {
+      "path": "components/icons/whiteboard-pen.tsx",
+      "hash": "77e31206586ef90ab2564a6ab2212608d2368d684c7dbdc0a6d432b0de6da39d",
+      "bytes": 175
+    },
+    {
+      "path": "components/icons/whiteboard-rectangle.tsx",
+      "hash": "906880f94b5fe5ac78edbe3f5ff5b9fa4849ab8b7ed892d08114a80ccb18e330",
+      "bytes": 187
+    },
+    {
+      "path": "components/icons/whiteboard-redo.tsx",
+      "hash": "69d33c4a6aff6d8de70d7f24240849ac7d3bad0d7445bb401a23692de4e4a2b8",
+      "bytes": 177
+    },
+    {
+      "path": "components/icons/whiteboard-select.tsx",
+      "hash": "cd6c28ffb67fab3441ab52a5039c11faa3917527ed0114825a1bf01989476f6a",
+      "bytes": 181
+    },
+    {
+      "path": "components/icons/whiteboard-table.tsx",
+      "hash": "024cb2c7f6f2628862a650097348f4443872dff698606b7b653db9b32dfca312",
+      "bytes": 179
+    },
+    {
+      "path": "components/icons/whiteboard-text.tsx",
+      "hash": "947a6a1619acc4ee0ee854fa7f06abd5631bbefa4c29ac39bdea1ed4495c5a08",
+      "bytes": 177
+    },
+    {
+      "path": "components/icons/whiteboard-undo.tsx",
+      "hash": "08ce67fba6e3c0399b832d74482661b8da29d6ff0c4bc98d3adc426167fa36dc",
+      "bytes": 177
+    },
+    {
+      "path": "components/icons/whiteboard-zoom-in.tsx",
+      "hash": "62f4d9c66735536ba9925e4d884f9ae6091b46429330febaef29c3caf4ee6db1",
+      "bytes": 182
+    },
+    {
+      "path": "components/icons/whiteboard-zoom-out.tsx",
+      "hash": "0627fd971b3375058d14f278507d5d68a9a0f457dfa0a375a15c35a430420f61",
+      "bytes": 184
+    },
+    {
+      "path": "public/favicon.svg",
+      "hash": "3e9e677e4744193cdfb587bad6e3031539c1feaf64f35aef2967a204fa356ec9",
+      "bytes": 460
+    },
+    {
+      "path": "public/icon.svg",
+      "hash": "d88817f720a81506ae4abcaa3904d9ea29f25c537ca65b00a6685c64a4c38b3c",
+      "bytes": 481
+    }
+  ],
+  "file_map": [
+    {
+      "logical_path": "components/icons/icon.tsx",
+      "materialized_path": "components/icons/icon.tsx",
+      "hash": "1a91cff776d4e0b07e2184af991e0ec43214c222fa04f6c00b17df9c541174b4",
+      "bytes": 475
+    },
+    {
+      "logical_path": "components/icons/whiteboard-arrow.tsx",
+      "materialized_path": "components/icons/whiteboard-arrow.tsx",
+      "hash": "fa98955da982918545b2b3d2b70b65a621247f060b5f7bf50d0719ce243b5da7",
+      "bytes": 179
+    },
+    {
+      "logical_path": "components/icons/whiteboard-diamond.tsx",
+      "materialized_path": "components/icons/whiteboard-diamond.tsx",
+      "hash": "49f3793505b92c7e5681e8cd2d89895ff0bc8ee6043fea805975cf44a626787e",
+      "bytes": 183
+    },
+    {
+      "logical_path": "components/icons/whiteboard-ellipse.tsx",
+      "materialized_path": "components/icons/whiteboard-ellipse.tsx",
+      "hash": "1e44e1a74f30dae99774f24eba58c0add2c6c5027f2407de3b3648670c294463",
+      "bytes": 183
+    },
+    {
+      "logical_path": "components/icons/whiteboard-fit.tsx",
+      "materialized_path": "components/icons/whiteboard-fit.tsx",
+      "hash": "49f7adb6e7667dc2c1cae36348234bcd9973a36fa02b6565082fefea77f87269",
+      "bytes": 175
+    },
+    {
+      "logical_path": "components/icons/whiteboard-hand.tsx",
+      "materialized_path": "components/icons/whiteboard-hand.tsx",
+      "hash": "a3568ce8169ed3a309e999894e55d4847edb2870a5b04547b8d63ec1ef6b51dd",
+      "bytes": 177
+    },
+    {
+      "logical_path": "components/icons/whiteboard-keyboard.tsx",
+      "materialized_path": "components/icons/whiteboard-keyboard.tsx",
+      "hash": "7888f401025f6538df5d00e1a174c90bf337129eae4f3bb54a907e8fadcc02ae",
+      "bytes": 185
+    },
+    {
+      "logical_path": "components/icons/whiteboard-line.tsx",
+      "materialized_path": "components/icons/whiteboard-line.tsx",
+      "hash": "7030d668f1f57aba73399411a9dc001f263593f5a4966411777cb7a88f9dc77d",
+      "bytes": 177
+    },
+    {
+      "logical_path": "components/icons/whiteboard-math.tsx",
+      "materialized_path": "components/icons/whiteboard-math.tsx",
+      "hash": "dae608e14a1926d9ebf50680a206e4ee4b33b291aaac29f80ca37f3e47eb009d",
+      "bytes": 177
+    },
+    {
+      "logical_path": "components/icons/whiteboard-move.tsx",
+      "materialized_path": "components/icons/whiteboard-move.tsx",
+      "hash": "fdf5ea0b19da1f3f0c348597cf0fd3ce32aad6849f001ee37d8db0a7577e517f",
+      "bytes": 177
+    },
+    {
+      "logical_path": "components/icons/whiteboard-pen.tsx",
+      "materialized_path": "components/icons/whiteboard-pen.tsx",
+      "hash": "77e31206586ef90ab2564a6ab2212608d2368d684c7dbdc0a6d432b0de6da39d",
+      "bytes": 175
+    },
+    {
+      "logical_path": "components/icons/whiteboard-rectangle.tsx",
+      "materialized_path": "components/icons/whiteboard-rectangle.tsx",
+      "hash": "906880f94b5fe5ac78edbe3f5ff5b9fa4849ab8b7ed892d08114a80ccb18e330",
+      "bytes": 187
+    },
+    {
+      "logical_path": "components/icons/whiteboard-redo.tsx",
+      "materialized_path": "components/icons/whiteboard-redo.tsx",
+      "hash": "69d33c4a6aff6d8de70d7f24240849ac7d3bad0d7445bb401a23692de4e4a2b8",
+      "bytes": 177
+    },
+    {
+      "logical_path": "components/icons/whiteboard-select.tsx",
+      "materialized_path": "components/icons/whiteboard-select.tsx",
+      "hash": "cd6c28ffb67fab3441ab52a5039c11faa3917527ed0114825a1bf01989476f6a",
+      "bytes": 181
+    },
+    {
+      "logical_path": "components/icons/whiteboard-table.tsx",
+      "materialized_path": "components/icons/whiteboard-table.tsx",
+      "hash": "024cb2c7f6f2628862a650097348f4443872dff698606b7b653db9b32dfca312",
+      "bytes": 179
+    },
+    {
+      "logical_path": "components/icons/whiteboard-text.tsx",
+      "materialized_path": "components/icons/whiteboard-text.tsx",
+      "hash": "947a6a1619acc4ee0ee854fa7f06abd5631bbefa4c29ac39bdea1ed4495c5a08",
+      "bytes": 177
+    },
+    {
+      "logical_path": "components/icons/whiteboard-undo.tsx",
+      "materialized_path": "components/icons/whiteboard-undo.tsx",
+      "hash": "08ce67fba6e3c0399b832d74482661b8da29d6ff0c4bc98d3adc426167fa36dc",
+      "bytes": 177
+    },
+    {
+      "logical_path": "components/icons/whiteboard-zoom-in.tsx",
+      "materialized_path": "components/icons/whiteboard-zoom-in.tsx",
+      "hash": "62f4d9c66735536ba9925e4d884f9ae6091b46429330febaef29c3caf4ee6db1",
+      "bytes": 182
+    },
+    {
+      "logical_path": "components/icons/whiteboard-zoom-out.tsx",
+      "materialized_path": "components/icons/whiteboard-zoom-out.tsx",
+      "hash": "0627fd971b3375058d14f278507d5d68a9a0f457dfa0a375a15c35a430420f61",
+      "bytes": 184
+    },
+    {
+      "logical_path": "public/favicon.svg",
+      "materialized_path": "public/favicon.svg",
+      "hash": "3e9e677e4744193cdfb587bad6e3031539c1feaf64f35aef2967a204fa356ec9",
+      "bytes": 460
+    },
+    {
+      "logical_path": "public/icon.svg",
+      "materialized_path": "public/icon.svg",
+      "hash": "d88817f720a81506ae4abcaa3904d9ea29f25c537ca65b00a6685c64a4c38b3c",
+      "bytes": 481
+    }
+  ],
+  "policy_decisions": [
+    {
+      "policy": "source-owned-inputs",
+      "traffic": "green",
+      "message": "Forge records existing local source files as editable, reviewable project-owned inputs."
+    },
+    {
+      "policy": "no-lifecycle-execution",
+      "traffic": "green",
+      "message": "Forge tracking does not run npm install, lifecycle hooks, or upstream scripts."
+    }
+  ],
+  "risk_score": 100,
+  "timestamp": "2026-06-03T09:30:07.283541300+00:00",
+  "signature": null
+}

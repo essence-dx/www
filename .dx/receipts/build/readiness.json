@@ -1,0 +1,95 @@
+{
+  "consumers": {
+    "dx_cli": "read .dx/receipts/build/readiness.json for source/product score split",
+    "dx_www": "render source-ready and governed-runtime-pending status without parsing prose",
+    "zed_preview": "open zed_handoff and graph_consumer_snapshot for editor preview details"
+  },
+  "content_freshness": {
+    "checked_document_count": 53,
+    "comparison": "manifest-self-check",
+    "consumer_action": "compare content-docs hash_manifest.document_hashes against current source bytes and reject unsafe receipt paths before trusting older receipts",
+    "current": true,
+    "hash_algorithm": "blake3-16",
+    "missing_paths": [],
+    "receipt_section": "content-docs.json#freshness_contract",
+    "runtime_proof": false,
+    "safe_path_roots": [
+      "docs",
+      "content"
+    ],
+    "schema": "dx.www.contentDocsFreshnessStatus",
+    "stale_paths": [],
+    "status": "current-at-build",
+    "unsafe_path_policy": "reject absolute, parent, and non-docs/content receipt paths before hashing source bytes",
+    "unsafe_paths": []
+  },
+  "graph": {
+    "assets": 0,
+    "content_documents": 53,
+    "image_assets": 0,
+    "image_dimension_sources": {},
+    "image_formats": {},
+    "image_metadata_assets": 0,
+    "image_placeholder_artifact_bytes": 0,
+    "image_placeholder_artifact_outputs": [],
+    "image_placeholder_artifacts": 0,
+    "image_placeholders": 0,
+    "image_route_references": 0,
+    "mdx_documents": 0,
+    "node_modules_required": false,
+    "optimized_image_variants": 0,
+    "ready": true,
+    "route_handler_receipt_output": ".dx/build/route-handler-receipts.json",
+    "route_handler_receipts_executed": 0,
+    "route_handler_receipts_lifecycle_scripts_executed": false,
+    "route_handler_receipts_node_modules_required": false,
+    "route_handler_receipts_skipped": 0,
+    "route_handlers": 0,
+    "route_shell_chunks": 0,
+    "routes": 0,
+    "server_data_entries": 0,
+    "server_data_routes": 0,
+    "source_module_chunks": 0,
+    "styles": 2
+  },
+  "installed_binary_smoke": {
+    "next_action": "Refresh the governed installed DX binaries, then run the tiny installed-binary build fixture smoke.",
+    "receipt": ".dx/receipts/build/installed-binary-smoke-latest.json",
+    "required": true,
+    "status": "pending-governed-refresh"
+  },
+  "next_action": "Governed installed-binary refresh and runtime smoke remain the only product-ready blockers for this build graph lane.",
+  "product_ready": false,
+  "product_score": 82,
+  "product_score_basis": [
+    "source-build-graph-ready",
+    "installed-binary-smoke-pending",
+    "runtime-proof-pending",
+    "live-browser-proof-pending"
+  ],
+  "product_score_ceiling": 82,
+  "project_root": "G:/Dx/www",
+  "receipts": {
+    "canonical_build_receipt": ".dx/receipts/build/latest.json",
+    "content_docs": ".dx/receipts/build/content-docs.json",
+    "graph_consumer_snapshot": ".dx/receipts/graph/consumer-snapshot.json",
+    "graph_receipt": ".dx/receipts/graph/latest.json",
+    "image_metadata": ".dx/receipts/build/image-metadata.json",
+    "installed_binary_smoke": ".dx/receipts/build/installed-binary-smoke-latest.json",
+    "source_build_manifest": ".dx/build/source-build-manifest.json",
+    "source_build_receipt": ".dx/build/source-build-receipt.json",
+    "zed_handoff": ".dx/receipts/build/zed-handoff.json"
+  },
+  "runtime_validation": {
+    "full_react_hydration": false,
+    "live_hydration_proof": false,
+    "next_action": "Run the governed runtime and hydration proof before claiming product-ready 100/100.",
+    "required": true,
+    "status": "pending-governed-runtime-proof"
+  },
+  "schema": "dx.build.readiness",
+  "schema_revision": 1,
+  "source_ready": true,
+  "source_score": 100,
+  "status": "source-ready-runtime-governed"
+}

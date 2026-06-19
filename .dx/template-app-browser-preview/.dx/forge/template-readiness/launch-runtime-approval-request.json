@@ -1,0 +1,55 @@
+{
+  "schema": "dx.launch.runtime_approval_request",
+  "template_id": "www-template",
+  "route": "/",
+  "status": "pending-explicit-approval",
+  "classification": "source-owned-limited-proof",
+  "package_id": "dx-www/template-shell",
+  "approval_record": {
+    "status": "pending-explicit-approval",
+    "approved_by": null,
+    "approved_at": null,
+    "approval_note": null,
+    "scope": "browser-route-proof-and-runtime-evidence"
+  },
+  "requested_commands": [
+    {
+      "id": "start-preview",
+      "command": "governed preview start",
+      "approved": false,
+      "requires_explicit_permission": true,
+      "expected_evidence": "governed-runtime-route-response"
+    },
+    {
+      "id": "browser-routes",
+      "command": "browser verify / /dashboard /login",
+      "approved": false,
+      "requires_explicit_permission": true,
+      "expected_evidence": "production-contract-route-proof"
+    },
+    {
+      "id": "final-runtime-receipt",
+      "command": "dx forge launch-runtime-evidence --project . --json",
+      "approved": false,
+      "requires_explicit_permission": true,
+      "expected_evidence": "final-launch-evidence-receipt"
+    }
+  ],
+  "requested_evidence": {
+    "items": [
+      "governed-runtime-route-response",
+      "production-contract-route-proof",
+      "final-launch-evidence-receipt"
+    ],
+    "receipt": ".dx/forge/template-readiness/launch-runtime-evidence.json"
+  },
+  "runtime_proof": false,
+  "live_provider_execution": false,
+  "network_calls": false,
+  "secret_values": [],
+  "no_execution": true,
+  "honesty_notes": [
+    "No runtime approval has been granted in this checked-in template.",
+    "This file records the required approval boundary only."
+  ]
+}

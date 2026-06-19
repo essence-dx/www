@@ -1,0 +1,106 @@
+{
+  "schema": "dx.nextRust.vendorBoundary.consumerReceipt",
+  "status": "ok",
+  "receipt": {
+    "kind": "dx.nextRust.vendorBoundary.consumer",
+    "path": ".dx/receipts/next-rust/vendor-boundary-consumer.json",
+    "generatedAt": "2026-05-24T07:17:11.372Z",
+    "producer": "tools/vendor/next-rust-boundary-check.js"
+  },
+  "snapshot": {
+    "schema": "dx.nextRust.vendorBoundary.consumerSnapshot",
+    "status": "ok",
+    "sourceReceipt": {
+      "schema": "dx.nextRust.vendorBoundary",
+      "path": ".dx/receipts/next-rust/vendor-boundary.json",
+      "fresh": true,
+      "checkStatus": "ok",
+      "mismatchCount": 0,
+      "mismatches": []
+    },
+    "vendor": {
+      "root": "vendor/next-rust",
+      "role": "quarantined build infrastructure reference",
+      "publicArchitecture": "DX-WWW runtime/security/source model"
+    },
+    "claimPolicy": {
+      "schema": "dx.nextRust.vendorBoundary.claimPolicy",
+      "allowedClaimScope": [
+        "quarantined provenance",
+        "license evidence",
+        "selected Rust build infrastructure reference",
+        "DX-owned receipt handoff"
+      ],
+      "unprovenClaims": [
+        "full Next.js parity",
+        "Next.js runtime takeover",
+        "React/RSC core app model",
+        "Node/NAPI default foundation",
+        "node_modules default resolver",
+        "Turbopack public architecture"
+      ],
+      "fullNextParityClaimed": false,
+      "nextRuntimeTakeoverClaimed": false,
+      "reactRscCoreDependencyClaimed": false,
+      "nodeNapiFoundationClaimed": false,
+      "nodeModulesDefaultClaimed": false,
+      "turbopackPublicArchitectureClaimed": false
+    },
+    "adapterBoundary": {
+      "schema": "dx.nextRust.vendorBoundary.adapterBoundary",
+      "sourceOnlyReceipt": true,
+      "nativeDxCheckWired": false,
+      "nativeZedSurfaceWired": false,
+      "nativeStudioSurfaceWired": false,
+      "cargoWorkspaceWired": false,
+      "publicTurbopackApi": false,
+      "allowedConsumers": [
+        "Forge/source receipts",
+        "dx-check receipt adapters",
+        "Zed/Studio status surfaces"
+      ],
+      "requiredFreshnessChecks": [
+        ".dx/receipts/next-rust/vendor-boundary.json",
+        ".dx/receipts/next-rust/vendor-boundary-consumer.json"
+      ],
+      "blockedUntilProven": [
+        "native dx-check rendering",
+        "native Zed surface rendering",
+        "native Studio surface rendering",
+        "Cargo workspace dependency wiring",
+        "runtime use of vendored Next/Turbopack crates"
+      ]
+    },
+    "upstream": {
+      "repository": "vercel/next.js",
+      "commit": "f3f56ecec2f3f8cefa0f0a1323ea406740251d5c",
+      "branch": "canary",
+      "importedOn": "2026-05-23"
+    },
+    "license": {
+      "file": "vendor/next-rust/license.nextjs.md",
+      "sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224",
+      "mitNoticePresent": true
+    },
+    "counts": {
+      "importedGroups": 24,
+      "protectedBoundaries": 12,
+      "excludedCoreFoundations": 8
+    },
+    "boundary": {
+      "workspaceQuarantined": true,
+      "runtimeTakeoverBlocked": true,
+      "publicDependencyClaimsBlocked": true,
+      "vendoredCargoDependencyClaimsBlocked": true,
+      "vendorSourceInclusionBlocked": true,
+      "publicSourceExposureBlocked": true,
+      "nextRuntimeRequired": false,
+      "reactRscRequired": false,
+      "nodeNapiRequired": false,
+      "nodeModulesDefault": false,
+      "turbopackPublicArchitecture": false,
+      "removedTargetsBlocked": true,
+      "excludedRuntimeTargetsBlocked": true
+    }
+  }
+}

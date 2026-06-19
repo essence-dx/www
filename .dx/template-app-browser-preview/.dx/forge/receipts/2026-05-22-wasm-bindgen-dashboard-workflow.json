@@ -1,0 +1,235 @@
+{
+  "schema": "dx.forge.package_dashboard_workflow_receipt",
+  "package_id": "wasm/bindgen",
+  "package_name": "WebAssembly Bridge",
+  "upstream_package": "wasm-bindgen",
+  "upstream_version": "0.2.121",
+  "honesty_label": "ADAPTER-BOUNDARY",
+  "source_mirror": "G:/WWW/inspirations/wasm-bindgen",
+  "route": "/",
+  "component": "launch-wasm-compute-dashboard-workflow",
+  "workflow": "local-compute-readiness",
+  "product_surface": "launch-dashboard",
+  "status": "source-coded-runtime-pending",
+  "coding_score": 97,
+  "source_files": [
+    "examples/template/wasm-interop-status.tsx",
+    "examples/template/template-shell.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/dx-studio-edit-contract.ts",
+    "tools/launch/materialize-www-template.ts",
+    "examples/dashboard/src/components/WasmBindgenWorkflow.tsx",
+    "examples/dashboard/src/lib/wasmBindgenDashboard.ts",
+    "core/src/ecosystem/forge_wasm_bindgen.rs",
+    "docs/packages/wasm-bindgen.source-guard-runbook.json",
+    "core/src/ecosystem/project_check/wasm_bindgen_dx_check.rs",
+    "core/src/ecosystem/dx_check_receipt.rs",
+    "examples/template/wasm/bindgen/loader.ts",
+    "examples/template/wasm/bindgen/react.tsx",
+    "examples/template/wasm/bindgen/readiness.ts",
+    "examples/template/wasm/bindgen/metadata.ts",
+    "examples/template/wasm/bindgen/README.md"
+  ],
+  "files": [
+    "examples/template/wasm-interop-status.tsx",
+    "examples/template/template-shell.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/dx-studio-edit-contract.ts",
+    "tools/launch/materialize-www-template.ts",
+    "examples/dashboard/src/components/WasmBindgenWorkflow.tsx",
+    "examples/dashboard/src/lib/wasmBindgenDashboard.ts",
+    "core/src/ecosystem/forge_wasm_bindgen.rs",
+    "docs/packages/wasm-bindgen.source-guard-runbook.json",
+    "core/src/ecosystem/project_check/wasm_bindgen_dx_check.rs",
+    "core/src/ecosystem/dx_check_receipt.rs",
+    "examples/template/wasm/bindgen/loader.ts",
+    "examples/template/wasm/bindgen/react.tsx",
+    "examples/template/wasm/bindgen/readiness.ts",
+    "examples/template/wasm/bindgen/metadata.ts",
+    "examples/template/wasm/bindgen/README.md"
+  ],
+  "hash_algorithm": "sha256",
+  "file_hashes": {
+    "examples/template/wasm-interop-status.tsx": "86227c78cb5df78bbcfd8fb198c23d7a7491c684763db4709fb86be10a4d2479",
+    "examples/template/template-shell.tsx": "4b507bda643934dbe24ca50fa69070057b9fa6e7ce36c182e2f1e2ada1088b7a",
+    "tools/launch/runtime-template/pages/index.html": "468fced03bc8a5e925f1be3cabff8fe9fdd63dbc78806f6215ae729092ec00b7",
+    "examples/template/dx-studio-edit-contract.ts": "8f7160139fbeda7379bdec1303bafd915cdcea5d07b50864648ddf00173b1750",
+    "tools/launch/materialize-www-template.ts": "71ba838f229db3072f9f99fd557bfa5e008d393ae39b8524595debbd8dcc5b48",
+    "examples/dashboard/src/components/WasmBindgenWorkflow.tsx": "4f52877da1d8ca32b3685c056f4e0a49335c126e45c71533d52b38e9b9e3a5b0",
+    "examples/dashboard/src/lib/wasmBindgenDashboard.ts": "38e716647876f9ba20d35d5f79c7e84a3b97f0358140e899c06a7e04977bcccd",
+    "core/src/ecosystem/forge_wasm_bindgen.rs": "3e568cd47a3fe005f4c12c59d5f59165bf20bf75441ffc9788f34374145711e8",
+    "docs/packages/wasm-bindgen.source-guard-runbook.json": "2a8adff1fcbfa92a69357ee2dcf6935c4733d1ce6b148a265260fabc0aeb2b75",
+    "core/src/ecosystem/project_check/wasm_bindgen_dx_check.rs": "6dfe828557550f68a9f6321b341b82ae3d1aea9538ee5f09a9db871a17c6a7d1",
+    "core/src/ecosystem/dx_check_receipt.rs": "c8c3342dc6403831e6255ec60a619c7fce97363c40cff6e9e54d25bf6a308a41",
+    "tools/launch/runtime-template/assets/launch-runtime.ts": "d7f6154460f290088c4d7dd90289c918b982f6fb7a2b9532cf5913363f210f2c",
+    "examples/template/wasm/bindgen/loader.ts": "8f2143c059f1558bfc1f651b3b85513b519dc90eff79421ccf9c40ed9ed3e7be",
+    "examples/template/wasm/bindgen/react.tsx": "d312289a68855951ba0bfd10ed6ee36f50fbdd114d1291f29436448434184679",
+    "examples/template/wasm/bindgen/readiness.ts": "0c503434191627ae5c326f97cce08cd32265c3c9f1cb7753029644508bad6cc2",
+    "examples/template/wasm/bindgen/metadata.ts": "177b83a1e223b491ac8a13783db19d4352eb24eb76176dee44030c586e48eec2",
+    "examples/template/wasm/bindgen/README.md": "ec5f049e3cf0ec324181d4584ada6cb2135790a23ef92d14e183b4ac280d2657"
+  },
+  "materialized_files": [
+    "wasm/bindgen/loader.ts",
+    "wasm/bindgen/react.tsx",
+    "wasm/bindgen/dashboard-workflow.tsx",
+    "wasm/bindgen/metadata.ts",
+    "components/launch/wasm-interop-status.tsx",
+    "public/preview-manifest.json#launch-runtime-wasm-compute-dashboard"
+  ],
+  "zed_preview_surface": "launch-runtime-wasm-compute-dashboard",
+  "zed_preview_selector": "[data-dx-component=\"launch-wasm-compute-dashboard-workflow\"]",
+  "upstream_public_apis": [
+    "default init(input)",
+    "initSync(input)",
+    "WebAssembly.instantiateStreaming",
+    "WebAssembly.instantiate",
+    "__wbindgen_malloc",
+    "__wbindgen_realloc",
+    "__wbindgen_free",
+    "__wbindgen_externrefs",
+    "__wbindgen_start"
+  ],
+  "selected_surfaces": [
+    "generated-module-loader",
+    "react-hook",
+    "dashboard-workflow",
+    "launch-local-compute-dashboard",
+    "response-mime-diagnostics",
+    "webassembly-bridge-source-guard-runbook",
+    "webassembly-bridge-receipt-hash-refresh",
+    "webassembly-bridge-preview-manifest-materializer",
+    "webassembly-bridge-lower-dx-check-source",
+    "webassembly-bridge-check-panel-source"
+  ],
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "current_status": "present",
+    "statuses": [
+      "present",
+      "stale",
+      "missing-receipt",
+      "blocked",
+      "unsupported-surface"
+    ],
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-wasm-bindgen-dashboard-workflow.json",
+    "monitored_surfaces": [
+      "dashboard-wasm-bindgen-workflow",
+      "launch-wasm-compute-dashboard-workflow",
+      "wasm-bindgen-readiness-workflow",
+      "webassembly-bridge-source-guard-runbook",
+      "webassembly-bridge-receipt-hash-refresh",
+      "webassembly-bridge-preview-manifest-materializer",
+      "webassembly-bridge-lower-dx-check-source",
+      "webassembly-bridge-check-panel-source"
+    ]
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "styles/globals.css",
+    "generated_css": "styles/globals.css",
+    "visible_surfaces": [
+      "dashboard-wasm-bindgen-workflow",
+      "launch-wasm-compute-dashboard-workflow",
+      "wasm-bindgen-readiness-workflow"
+    ],
+    "source_files": [
+      "examples/template/template-shell.tsx",
+      "examples/template/wasm-interop-status.tsx",
+      "examples/dashboard/src/components/WasmBindgenWorkflow.tsx",
+      "core/src/ecosystem/forge_wasm_bindgen.rs"
+    ],
+    "data_dx_markers": [
+      "data-dx-style-surface=\"theme-token\"",
+      "data-dx-style-surface=\"theme-token-card\"",
+      "data-dx-component=\"launch-wasm-compute-dashboard-workflow\"",
+      "data-dx-component=\"dashboard-wasm-bindgen-workflow\""
+    ],
+    "style_boundaries": [
+      "theme-token CSS variables only",
+      "responsive design-system grid",
+      "no template-local node_modules",
+      "no inline absolute positioning for dashboard placement"
+    ],
+    "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-wasm-bindgen-dashboard-workflow.json",
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "SOURCE-ONLY: no live governed browser style proof is claimed.",
+      "ADAPTER-BOUNDARY: app-owned generated Wasm glue and browser security/performance review stay outside this style receipt."
+    ]
+  },
+  "local_readiness_interactions": [
+    "run-local-add",
+    "update-wasm-dashboard-metric",
+    "show-missing-generated-module-boundary",
+    "show-response-mime-diagnostics"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"wasm/bindgen\"",
+    "data-dx-component=\"launch-wasm-compute-dashboard-workflow\"",
+    "data-dx-component=\"wasm-bindgen-readiness-workflow\"",
+    "data-dx-style-surface=\"theme-token\"",
+    "data-dx-style-surface=\"theme-token-card\"",
+    "data-dx-dashboard-card=\"local-compute\"",
+    "data-dx-dashboard-workflow=\"local-compute-readiness\"",
+    "data-dx-dashboard-metric=\"wasm-compute\"",
+    "data-dx-wasm-action=\"run-local-add\"",
+    "data-dx-wasm-add-result",
+    "data-dx-wasm-bindgen-status",
+    "data-dx-wasm-mime-status"
+  ],
+  "required_env": [],
+  "app_owned_boundaries": [
+    "Rust crate source and #[wasm_bindgen] export design",
+    "wasm32-unknown-unknown build profile",
+    "generated .wasm artifact",
+    "wasm-bindgen CLI install and version pin",
+    "generated JavaScript glue import path",
+    "browser CSP and MIME serving policy",
+    "WebAssembly security and performance review",
+    "governed browser proof"
+  ],
+  "missing_runtime_features": [
+    "app-owned Rust crate module import",
+    "real generated wasm-bindgen JavaScript glue",
+    "production .wasm artifact",
+    "governed browser QA"
+  ],
+  "guards": [
+    "dx run --test .\\benchmarks\\wasm-bindgen-slice.test.ts"
+  ],
+  "no_runtime_execution": true,
+  "source_guard_runbook_fixture": "docs/packages/wasm-bindgen.source-guard-runbook.json",
+  "source_guard_runbook_surface": {
+    "surface_id": "webassembly-bridge-source-guard-runbook",
+    "official_package_name": "WebAssembly Bridge",
+    "surface_type": "source_guard_runbook_fixture",
+    "status": "present",
+    "receipt_path": ".dx/forge/receipts/2026-05-22-wasm-bindgen-dashboard-workflow.json",
+    "files": [
+      "docs/packages/wasm-bindgen.source-guard-runbook.json"
+    ],
+    "source_markers": [
+      "webassembly-bridge-generated-starter-materialization",
+      "source_guard_runbook_index",
+      "sourceGuardRunbookFixtures",
+      "routes[].sourceGuardRunbookFixtures",
+      "docs/packages/wasm-bindgen.source-guard-runbook.json"
+    ],
+    "hash_algorithm": "sha256",
+    "file_hashes": {
+      "docs/packages/wasm-bindgen.source-guard-runbook.json": "2a8adff1fcbfa92a69357ee2dcf6935c4733d1ce6b148a265260fabc0aeb2b75"
+    },
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "SOURCE-ONLY: the runbook fixture is source and receipt evidence only.",
+      "ADAPTER-BOUNDARY: live generated-Wasm runtime proof, Rust crate compilation, artifact serving, CSP/MIME policy, and performance/security review stay app-owned."
+    ]
+  },
+  "preview_manifest_materializer": "tools/launch/materialize-www-template.ts",
+  "official_package_name": "WebAssembly Bridge",
+  "lower_dx_check_source": "core/src/ecosystem/project_check/wasm_bindgen_dx_check.rs",
+  "check_panel_source": "core/src/ecosystem/dx_check_receipt.rs"
+}

@@ -1,0 +1,280 @@
+{
+  "schema": "dx.forge.receipt",
+  "receipt_id": "2026-05-22-payments-stripe-js-billing-workflow",
+  "package_id": "payments/stripe-js",
+  "package_name": "Payments",
+  "source_mirror": "G:/WWW/inspirations/stripe-js",
+  "upstream_package": "@stripe/stripe-js",
+  "upstream_version": "9.6.0",
+  "dashboard_workflow": "billing-checkout",
+  "component_marker": "data-dx-component=\"launch-billing-checkout-workflow\"",
+  "package_marker": "data-dx-package=\"payments/stripe-js\"",
+  "receipt_path_marker": "data-dx-stripe-receipt-path=\"examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json\"",
+  "source_files": [
+    "examples/template/payments-status.tsx",
+    "tools/launch/runtime-template/pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    "examples/template/package-catalog.ts",
+    "core/src/ecosystem/forge_stripe_js.rs",
+    "tools/launch/materialize-www-template.ts",
+    "docs/packages/payments-stripe-js.md",
+    "docs/packages/payments.source-guard-runbook.json",
+    "dx-www/src/cli/studio_manifest.rs",
+    "examples/template/app/api/payments/stripe-js/readiness/route.ts",
+    "examples/template/lib/payments/stripe-js/dashboard-checkout.ts"
+  ],
+  "hash_algorithm": "sha256",
+  "files": [
+    "core/src/ecosystem/forge_stripe_js.rs",
+    "examples/template/payments-status.tsx",
+    "docs/packages/payments-stripe-js.md",
+    "docs/packages/payments.source-guard-runbook.json",
+    "dx-www/src/cli/studio_manifest.rs",
+    "examples/template/app/api/payments/stripe-js/readiness/route.ts",
+    "examples/template/lib/payments/stripe-js/dashboard-checkout.ts"
+  ],
+  "file_hashes": {
+    "core/src/ecosystem/forge_stripe_js.rs": "b8c05200cd46c6cedae2930b68d57b9f353c702e9bea1d7ac2472ceb62039703",
+    "examples/template/payments-status.tsx": "443b4f08dc339ac31be6c4aff5332b6189944fb4f624d7cd07249fe9b53da55e",
+    "docs/packages/payments-stripe-js.md": "db6ee989e7d6c4967519dd00abd1133acf9675bab7d3da94d90d065ba3e574cf",
+    "docs/packages/payments.source-guard-runbook.json": "36832f85bc241720c551dd25427e71c9d2210945ba3f2dff46d7e66305b53393",
+    "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8",
+    "examples/template/app/api/payments/stripe-js/readiness/route.ts": "50ab6357b8a78c768486f4751407d3b665f9249e360835711baccbb253bbc698",
+    "examples/template/lib/payments/stripe-js/dashboard-checkout.ts": "3be5693d5070882414a1d7530d7af418d361bcbf173f1f58056921bddabc4e3b"
+  },
+  "hash_exclusions": [
+    {
+      "path": "examples/template/package-catalog.ts",
+      "reason": "Shared catalog provenance is tracked separately so unrelated package-lane edits do not stale the Payments receipt."
+    },
+    {
+      "path": "tools/launch/materialize-www-template.ts",
+      "reason": "Shared runtime materialization tooling is provenance-only for this Payments billing workflow receipt."
+    },
+    {
+      "path": "tools/launch/runtime-template/pages/index.html",
+      "reason": "Shared launch runtime output is edited by multiple package lanes and is checked by launch materialization receipts, not Payments-owned source freshness."
+    },
+    {
+      "path": "tools/launch/runtime-template/assets/launch-runtime.ts",
+      "reason": "Shared launch runtime asset is edited by multiple package lanes and is checked by launch materialization receipts, not Payments-owned source freshness."
+    }
+  ],
+  "materialized_files": [
+    "components/launch/payments-status.tsx",
+    "pages/index.html",
+    "tools/launch/runtime-template/assets/launch-runtime.ts",
+    ".dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json",
+    "app/api/payments/stripe-js/readiness/route.ts",
+    "lib/payments/stripe-js/dashboard-checkout.ts"
+  ],
+  "stable_markers": [
+    "data-dx-package=\"payments/stripe-js\"",
+    "data-dx-component=\"launch-billing-checkout-workflow\"",
+    "data-dx-dashboard-flow=\"billing-checkout\"",
+    "data-dx-style-surface=\"payments\"",
+    "data-dx-stripe-dashboard-workflow=\"plan-checkout\"",
+    "data-dx-stripe-action=\"select-plan\"",
+    "data-dx-stripe-action=\"request-checkout-intent\"",
+    "data-dx-stripe-receipt-path=\"examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json\"",
+    "data-dx-stripe-post-result",
+    "data-dx-stripe-local-receipt",
+    "payments-readiness-route",
+    "runtimeExecution: false",
+    "stripeLiveExecution: false",
+    "secretValues: []"
+  ],
+  "public_apis": [
+    "readDxStripeClientConfig",
+    "submitDxStripeCheckoutContact",
+    "createDxStripeDashboardCheckoutRequest",
+    "createDxStripeDashboardMissingConfigReceipt",
+    "dxStripeDashboardPlans",
+    "createDxStripeEmbeddedCheckoutClientSecretFetcher",
+    "dxStripeDashboardCheckoutReadiness"
+  ],
+  "required_env": [
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+    "STRIPE_SECRET_KEY",
+    "STRIPE_PRICE_ID",
+    "STRIPE_PRICE_ID_STARTER",
+    "STRIPE_PRICE_ID_TEAM",
+    "STRIPE_PRICE_ID_SCALE"
+  ],
+  "selected_surfaces": [
+    "launch-billing-checkout-workflow",
+    "dashboard-stripe-plan-checkout",
+    "checkout-session-route",
+    "stripe-webhook-route",
+    "embedded-checkout-helper",
+    "payment-element-helper",
+    "billing-portal-helper",
+    "studio-manifest-source",
+    "readiness-route"
+  ],
+  "honesty_label": "ADAPTER-BOUNDARY",
+  "dx_check_visibility": {
+    "schema": "dx.forge.package.dx_check_visibility",
+    "package_id": "payments/stripe-js",
+    "official_package_name": "Payments",
+    "current_status": "present",
+    "status_legend": [
+      {
+        "status": "present",
+        "meaning": "selected Payments surfaces, receipt, and source markers are present"
+      },
+      {
+        "status": "stale",
+        "meaning": "materialized Payments files or hashes no longer match the Forge receipt"
+      },
+      {
+        "status": "missing-receipt",
+        "meaning": "selected Payments surfaces exist without the billing workflow receipt"
+      },
+      {
+        "status": "blocked",
+        "meaning": "Stripe credentials, Price IDs, customer lookup, webhook policy, or governed runtime proof is required before claiming live payment execution"
+      },
+      {
+        "status": "unsupported-surface",
+        "meaning": "a requested Payments surface is outside the selected Checkout, Payment Element, Billing Portal, webhook, and launch billing workflow set"
+      }
+    ],
+    "monitored_surfaces": [
+      {
+        "id": "payments-launch-billing-checkout-workflow",
+        "status": "present",
+        "source_file": "examples/template/payments-status.tsx",
+        "materialized_file": "components/launch/payments-status.tsx",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "core/src/ecosystem/forge_stripe_js.rs": "b8c05200cd46c6cedae2930b68d57b9f353c702e9bea1d7ac2472ceb62039703",
+          "examples/template/payments-status.tsx": "443b4f08dc339ac31be6c4aff5332b6189944fb4f624d7cd07249fe9b53da55e",
+          "docs/packages/payments-stripe-js.md": "db6ee989e7d6c4967519dd00abd1133acf9675bab7d3da94d90d065ba3e574cf",
+          "docs/packages/payments.source-guard-runbook.json": "36832f85bc241720c551dd25427e71c9d2210945ba3f2dff46d7e66305b53393",
+          "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8"
+        },
+        "next_action": "Keep Zed/DX Studio data-dx markers aligned with the visible Payments checkout workflow."
+      },
+      {
+        "id": "payments-checkout-session-route",
+        "status": "present",
+        "source_file": "core/src/ecosystem/forge_stripe_js.rs",
+        "materialized_file": "app/api/checkout/route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "core/src/ecosystem/forge_stripe_js.rs": "b8c05200cd46c6cedae2930b68d57b9f353c702e9bea1d7ac2472ceb62039703",
+          "examples/template/payments-status.tsx": "443b4f08dc339ac31be6c4aff5332b6189944fb4f624d7cd07249fe9b53da55e",
+          "docs/packages/payments-stripe-js.md": "db6ee989e7d6c4967519dd00abd1133acf9675bab7d3da94d90d065ba3e574cf",
+          "docs/packages/payments.source-guard-runbook.json": "36832f85bc241720c551dd25427e71c9d2210945ba3f2dff46d7e66305b53393",
+          "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8"
+        },
+        "next_action": "Keep hosted and embedded Checkout Session creation behind server-owned Stripe credentials and app-owned Price IDs."
+      },
+      {
+        "id": "payments-webhook-route",
+        "status": "present",
+        "source_file": "core/src/ecosystem/forge_stripe_js.rs",
+        "materialized_file": "app/api/stripe/webhook/route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "core/src/ecosystem/forge_stripe_js.rs": "b8c05200cd46c6cedae2930b68d57b9f353c702e9bea1d7ac2472ceb62039703",
+          "examples/template/payments-status.tsx": "443b4f08dc339ac31be6c4aff5332b6189944fb4f624d7cd07249fe9b53da55e",
+          "docs/packages/payments-stripe-js.md": "db6ee989e7d6c4967519dd00abd1133acf9675bab7d3da94d90d065ba3e574cf",
+          "docs/packages/payments.source-guard-runbook.json": "36832f85bc241720c551dd25427e71c9d2210945ba3f2dff46d7e66305b53393",
+          "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8"
+        },
+        "next_action": "Keep webhook verification source-owned while fulfillment, idempotency, and entitlement writes remain app-owned."
+      },
+      {
+        "id": "payments-studio-manifest-source",
+        "status": "present",
+        "source_file": "dx-www/src/cli/studio_manifest.rs",
+        "materialized_file": "dx-www/src/cli/studio_manifest.rs",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "dx-www/src/cli/studio_manifest.rs": "07e13797ab5eaa4c1cce87c6d3074dd7cd98348e264aa3c24a6420ae65c65ad8"
+        },
+        "next_action": "Keep the Payments Studio source-guard runbook declaration hash-backed before claiming Zed/DX Studio discovery freshness."
+      },
+      {
+        "id": "payments-readiness-route",
+        "status": "present",
+        "source_file": "examples/template/app/api/payments/stripe-js/readiness/route.ts",
+        "materialized_file": "app/api/payments/stripe-js/readiness/route.ts",
+        "receipt_path": "examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json",
+        "hash_algorithm": "sha256",
+        "file_hashes": {
+          "examples/template/app/api/payments/stripe-js/readiness/route.ts": "50ab6357b8a78c768486f4751407d3b665f9249e360835711baccbb253bbc698",
+          "examples/template/lib/payments/stripe-js/dashboard-checkout.ts": "3be5693d5070882414a1d7530d7af418d361bcbf173f1f58056921bddabc4e3b"
+        },
+        "next_action": "Keep the Payments readiness route local and dry-run only until Stripe credentials, Price IDs, and provider webhooks are app-owned and configured."
+      }
+    ]
+  },
+  "dx_style_compatibility": {
+    "schema": "dx.forge.package.dx_style_compatibility",
+    "status": "present",
+    "token_source": "styles/globals.css",
+    "generated_css": "styles/globals.css",
+    "visible_surfaces": [
+      "launch-billing-checkout-workflow"
+    ],
+    "source_files": [
+      "examples/template/payments-status.tsx",
+      "core/src/ecosystem/forge_stripe_js.rs"
+    ],
+    "data_dx_markers": [
+      "data-dx-style-surface=\"payments\"",
+      "data-dx-component=\"launch-billing-checkout-workflow\"",
+      "data-dx-package=\"payments/stripe-js\""
+    ],
+    "style_boundaries": [
+      "no inline style objects",
+      "no hardcoded hex colors in visible workflow source",
+      "theme token classes remain app-owned"
+    ],
+    "runtime_proof": false,
+    "runtime_limitations": [
+      "live Stripe Checkout visual proof",
+      "existing app theme token review",
+      "governed browser QA"
+    ]
+  },
+  "plan_price_env_contract": {
+    "starter": "STRIPE_PRICE_ID_STARTER",
+    "team": "STRIPE_PRICE_ID_TEAM",
+    "scale": "STRIPE_PRICE_ID_SCALE",
+    "fallback": "STRIPE_PRICE_ID",
+    "trust_boundary": "The generated checkout route accepts only the app-owned starter/team/scale plan ids and ignores arbitrary browser-provided env names."
+  },
+  "runtime_execution": false,
+  "secret_values": [],
+  "credential_state": "missing-config",
+  "safe_local_interaction": {
+    "kind": "checkout-intent-preview",
+    "endpoint": "/api/checkout",
+    "method": "POST",
+    "result": "safe missing-config receipt, not a payment success"
+  },
+  "app_owned_boundaries": [
+    "Stripe account and product catalog",
+    "Price IDs, plan env mapping, and billing interval copy",
+    "STRIPE_SECRET_KEY and webhook secret rotation",
+    "Hosted or embedded Checkout Session creation",
+    "Tax, fraud, disputes, refunds, compliance, and entitlement mapping"
+  ],
+  "checks": [
+    "node --test .\\benchmarks\\payments-stripe-js-package-doc.test.ts",
+    "node --test .\\benchmarks\\payments-dx-check-visibility-receipt.test.ts",
+    "node --test .\\benchmarks\\stripe-payment-launch-proof.test.ts",
+    "node --test .\\benchmarks\\stripe-rhf-checkout-flow.test.ts",
+    "node --test .\\benchmarks\\launch-runtime-materializer.test.ts"
+  ],
+  "node_modules_policy": "no-template-local-node_modules",
+  "notes": "This receipt proves the source-owned /launch billing workflow, stable Web Preview markers, and honest missing-config boundary. It is not live Stripe runtime evidence."
+}

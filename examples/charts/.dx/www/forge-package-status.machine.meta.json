@@ -1,0 +1,13 @@
+{
+  "cache_schema": "dx.www.forge_package_status",
+  "cache_version": 2,
+  "cache_kind": 3,
+  "source_path": "G:\\Dx\\www\\examples\\charts\\.dx/forge/package-status.json",
+  "source_len": 2729,
+  "source_modified_unix_ms": 1780470381261,
+  "source_blake3": "c93075d96e02b08a46aaa077039e805f5d5139d66fd010054e816f33d8d70553",
+  "machine_path": "G:\\Dx\\www\\examples\\charts\\.dx\\www\\forge-package-status.machine",
+  "machine_payload_len": 1980,
+  "machine_archive_len": 1980,
+  "machine_payload_blake3": "1eb8b8c00686f69a3f1811282fcd017723c32b0598ece992abb09f5a27f862c4"
+}

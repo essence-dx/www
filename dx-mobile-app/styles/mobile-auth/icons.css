@@ -1,0 +1,50 @@
+.auth-icon {
+  position: relative;
+  display: inline-grid;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  place-items: center;
+  color: currentColor;
+}
+
+.auth-icon::before,
+.auth-icon::after {
+  content: "";
+  min-width: 0;
+}
+
+.auth-icon-check {
+  border-radius: 50%;
+  background: hsl(var(--success) / 0.14);
+  color: hsl(var(--success));
+}
+
+.auth-icon-check::before {
+  width: 7px;
+  height: 12px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.auth-icon-arrow {
+  width: 18px;
+  color: currentColor;
+}
+
+.auth-icon-arrow::before {
+  width: 14px;
+  height: 2px;
+  background: currentColor;
+}
+
+.auth-icon-arrow::after {
+  position: absolute;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+}

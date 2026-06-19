@@ -1,0 +1,15 @@
+tool="dx devtools"
+command="POST /_dx/devtools/style-undo"
+schema="dx.www.readiness.visual_edit_workbench_receipt_contract"
+schema_revision=1
+release_ready=false
+fastest_world_claim=false
+operation="style-undo"
+applied=true
+source_mutated=true
+source_path="styles/theme.css"
+undo_supported=true
+undo_receipt_required=true
+undo_receipt_status="json-sr-machine-written"
+browser_workbench_replay="missing"
+receipt_write_status="json-sr-machine-written"

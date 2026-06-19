@@ -1,0 +1,75 @@
+{
+  "schema": "dx.www.route_visual_audit",
+  "source_project": "supabase",
+  "converted_route": "/database",
+  "source_surface_map": "forge/source-surfaces/supabase.json",
+  "score_out_of_100": 91,
+  "no_fake_cards": true,
+  "route_sections": [
+    {
+      "kind": "brand-header",
+      "label": "Supabase source mark and route headline",
+      "source_files": ["apps/studio/public/img/supabase-logo.svg"],
+      "converted_files": ["pages/database.html"],
+      "launch_value": "Makes the database source identity visible before route controls."
+    },
+    {
+      "kind": "route-navigation",
+      "label": "DX-WWW conversion route switcher",
+      "source_files": ["apps/studio/pages/project/[ref]/editor/index.tsx"],
+      "converted_files": ["pages/database.html"],
+      "launch_value": "Keeps database proof connected to the UI and backend conversion routes."
+    },
+    {
+      "kind": "primary-source-surface",
+      "label": "Studio database source table",
+      "source_files": ["apps/studio/pages/project/[ref]/editor/index.tsx", "apps/studio/data/database"],
+      "converted_files": ["pages/database.html"],
+      "launch_value": "Shows the real Studio data/editor source surfaces without calling hosted services."
+    },
+    {
+      "kind": "dashboard-workflow",
+      "label": "Auth, storage, and schema lanes",
+      "source_files": ["apps/studio/pages/project/[ref]/auth/users.tsx", "apps/studio/pages/project/[ref]/storage/files/index.tsx"],
+      "converted_files": ["pages/database.html"],
+      "launch_value": "Preserves admin workflows as explicit route sections."
+    },
+    {
+      "kind": "runtime-boundary",
+      "label": "Hosted Supabase credential boundary",
+      "source_files": ["apps/studio/data/auth", "apps/studio/data/storage"],
+      "converted_files": ["pages/database.html"],
+      "launch_value": "Marks credentials, RLS, mutations, and storage writes as app-owned runtime work."
+    },
+    {
+      "kind": "responsive-layout",
+      "label": "Database admin split surface",
+      "source_files": ["apps/studio/pages/project/[ref]/editor/index.tsx"],
+      "converted_files": ["pages/database.html"],
+      "launch_value": "Keeps tables, runtime notes, and navigation readable in preview."
+    }
+  ],
+  "visual_assets": ["public/vendor/supabase-logo.svg"],
+  "responsive_constraints": [
+    "Admin workflow lanes collapse without hiding runtime boundaries.",
+    "Source surface tables preserve labels and upstream paths.",
+    "Navigation remains reachable before the long database detail sections."
+  ],
+  "accessibility_notes": [
+    "Supabase logo uses descriptive alt text.",
+    "Runtime blockers are rendered as visible list items.",
+    "Route navigation has an active page state."
+  ],
+  "launch_state": {
+    "real": [
+      "Database editor, auth, storage, and query module source paths are recorded.",
+      "Copied logo and Apache-2.0 notice are preserved."
+    ],
+    "partial": [
+      "Hosted project state is represented as route structure until credentials are supplied."
+    ],
+    "blocked": [
+      "No Supabase mutations, auth writes, or storage calls were executed."
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-05-16T22:50:15.950869700+00:00",
+  "records": [
+    {
+      "generated_at": "2026-05-16T22:50:15.950869700+00:00",
+      "score": 94,
+      "signals": {
+        "public_bundle": {
+          "score": 93,
+          "passed": true,
+          "decoded_bytes": 24192,
+          "brotli_bytes": 5103,
+          "route_count": 5,
+          "source": "G:/WWW/dx-www-binary-web/benchmarks/reports/forge-public-release-history.json",
+          "detail": "release-dashboard score 93 with 5 public route(s)"
+        },
+        "medium_route": {
+          "score": 100,
+          "passed": true,
+          "decoded_bytes": 5057,
+          "brotli_bytes": 1454,
+          "source": "G:/WWW/dx-www-binary-web/benchmarks/reports/forge-medium-route-comparison.json",
+          "detail": "medium-route DX-WWW static fixture"
+        },
+        "large_route": {
+          "score": 100,
+          "passed": true,
+          "decoded_bytes": 28008,
+          "brotli_bytes": 1534,
+          "source": "G:/WWW/dx-www-binary-web/benchmarks/reports/forge-large-content-comparison.json",
+          "detail": "large-route first-route payload budget"
+        },
+        "trust_policy": {
+          "score": 85,
+          "passed": true,
+          "traffic": "yellow",
+          "source": "dx forge trust-policy",
+          "detail": "trust-policy traffic yellow, advisory coverage curated-fixture"
+        }
+      },
+      "findings": []
+    }
+  ]
+}

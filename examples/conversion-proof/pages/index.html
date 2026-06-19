@@ -1,0 +1,705 @@
+<template>
+  <main class="dx-landing" data-dx-route="/" data-dx-source="dx-website-startpage" data-dx-forge="website-conversion-dx-landing" data-dx-surface="migration/static-site" data-dx-hot-reload-target="route:/" data-route="/" data-source="dx-website-startpage" data-proof="DX-WWW recreated launch landing" data-surface-map="forge/source-surfaces/dx-landing.json" data-visual-audit="forge/visual-audits/dx-landing.json">
+    <link rel="stylesheet" href="/styles/dx-landing.css">
+    <div class="dx-scrollbar" aria-hidden="true"><span></span></div>
+
+    <header class="site-nav" data-dx-section="navigation">
+      <a class="brand-pill" href="/" aria-label="DX home">
+        <span class="brand-mark">DX</span>
+      </a>
+      <nav class="nav-links" aria-label="DX landing sections">
+        <a href="#dx-www-platform">WWW</a>
+        <a href="#dx-style-system">Style</a>
+        <a href="#agents-automation-browser">Agents</a>
+        <a href="#forge">Forge</a>
+        <a href="#check">Check</a>
+      </nav>
+    </header>
+
+    <section class="landing-hero">
+      <div class="hero-video-carousel" aria-label="8K nature video carousel">
+        <div class="video-carousel-track">
+          <article class="video-slide">
+            <a class="video-preview-card" href="https://www.youtube.com/watch?v=u1GSweKRC9U" target="_blank" rel="noopener noreferrer" aria-label="Open 8K nature preview video">
+              <icon name="pack:play" class="video-play-icon" />
+              <div><span>8K Nature</span><strong>Wildlife preview surface</strong></div>
+            </a>
+          </article>
+          <article class="video-slide">
+            <a class="video-preview-card" href="https://www.youtube.com/watch?v=oJZhvdtiPUw" target="_blank" rel="noopener noreferrer" aria-label="Open ocean HDR preview video">
+              <icon name="pack:play" class="video-play-icon" />
+              <div><span>Ocean HDR</span><strong>Media-rich launch proof</strong></div>
+            </a>
+          </article>
+          <article class="video-slide">
+            <a class="video-preview-card" href="https://www.youtube.com/watch?v=rHYuYdDqCmk" target="_blank" rel="noopener noreferrer" aria-label="Open travel 8K preview video">
+              <icon name="pack:play" class="video-play-icon" />
+              <div><span>Travel 8K</span><strong>Fullscreen creator canvas</strong></div>
+            </a>
+          </article>
+        </div>
+      </div>
+      <p class="hero-kicker">Hi. I'm DX.</p>
+      <h1>The Developer Experience You Actually Deserve.</h1>
+      <p class="hero-copy">
+        DX-WWW is the web framework and launch stack for DX: a Rust-first runtime, dx-style design system,
+        dx-forge package workflow, dx-check quality gates, local AI, browser automation, and automation-ready workflows.
+      </p>
+
+      <div class="platform-grid" aria-label="DX platform downloads">
+        <a href="/download" class="platform-card">
+          <dx-icon name="simple-icons:apple" class="platform-icon" data-icon-source="dx-icons" data-icon-title="Apple" />
+          <span>macOS</span><small>Native app</small>
+        </a>
+        <a href="/download" class="platform-card">
+          <dx-icon name="simple-icons:windows" class="platform-icon" data-icon-source="dx-icons" data-icon-title="Windows" />
+          <span>Windows</span><small>Native app</small>
+        </a>
+        <a href="/download" class="platform-card">
+          <dx-icon name="simple-icons:linux" class="platform-icon" data-icon-source="dx-icons" data-icon-title="Linux" />
+          <span>Linux</span><small>Native app</small>
+        </a>
+        <a href="/download" class="platform-card">
+          <dx-icon name="simple-icons:android" class="platform-icon" data-icon-source="dx-icons" data-icon-title="Android" />
+          <span>Android</span><small>Mobile app</small>
+        </a>
+        <a href="/download" class="platform-card">
+          <dx-icon name="simple-icons:apple" class="platform-icon" data-icon-source="dx-icons" data-icon-title="Apple" />
+          <span>iOS</span><small>Mobile app</small>
+        </a>
+        <a href="/download" class="platform-card">
+          <dx-icon name="simple-icons:googlechrome" class="platform-icon" data-icon-source="dx-icons" data-icon-title="Chrome" />
+          <span>ChromeOS</span><small>Web app</small>
+        </a>
+        <a href="/download" class="platform-card">
+          <dx-icon name="simple-icons:firefoxbrowser" class="platform-icon" data-icon-source="dx-icons" data-icon-title="Firefox" />
+          <span>Browser</span><small>Remote console</small>
+        </a>
+        <a href="/download" class="platform-card">
+          <dx-icon name="simple-icons:rust" class="platform-icon" data-icon-source="dx-icons" data-icon-title="Rust" />
+          <span>CLI</span><small>dx toolchain</small>
+        </a>
+        <a href="/download" class="platform-card">
+          <dx-icon name="simple-icons:vercel" class="platform-icon" data-icon-source="dx-icons" data-icon-title="Vercel" />
+          <span>More</span><small>Plugins later</small>
+        </a>
+      </div>
+
+      <div class="hero-actions">
+        <a href="/download" class="primary-action dx-icon-download-action" data-icon-source="dx-icons" aria-label="Download DX with DX-powered icons">
+          <icon name="pack:sparkles" class="action-icon dx-action-icon" />
+          <span>Get Started Free</span>
+        </a>
+        <a href="#showcases" class="secondary-action">Watch Preview</a>
+      </div>
+
+      <div class="hero-image-grid" aria-label="DX launch visual proof">
+        <figure><img src="/public/thumbnails/rainbow.png" alt="DX colorful launch workflow preview" width="1024" height="1024" loading="lazy" decoding="async"><figcaption>Visual builder</figcaption></figure>
+        <figure><img src="/public/thumbnails/indigo.png" alt="DX forge package workflow preview" width="1024" height="1024" loading="lazy" decoding="async"><figcaption>Forge workflow</figcaption></figure>
+        <figure><img src="/public/thumbnails/teal.png" alt="DX browser automation preview" width="1024" height="1024" loading="lazy" decoding="async"><figcaption>Automation</figcaption></figure>
+      </div>
+
+      <div class="hero-proof-grid">
+        <article>Rust-first DX-WWW runtime with dx-style and no template node_modules</article>
+        <article>dx-forge packages, provider freedom, and automation-ready workflows</article>
+        <article>dx-check, RLM, and serializer receipts for measurable launch proof</article>
+      </div>
+
+      <div class="stat-grid">
+        <article><strong>100+</strong><span>LLM Providers</span></article>
+        <article><strong>500+</strong><span>Automation Nodes</span></article>
+        <article><strong>90%</strong><span>Local Agent Speed Target</span></article>
+        <article><strong>0</strong><span>Template node_modules</span></article>
+      </div>
+
+      <div class="motion-icon-rail" aria-label="Animated DX capability icons">
+        <span style="--icon-delay: 0s"><icon name="pack:monitor" class="capability-icon" />WWW</span>
+        <span style="--icon-delay: .08s"><icon name="pack:package" class="capability-icon" />Forge</span>
+        <span style="--icon-delay: .16s"><icon name="pack:split" class="capability-icon" />Tokens</span>
+        <span style="--icon-delay: .24s"><icon name="pack:palette" class="capability-icon" />Style</span>
+        <span style="--icon-delay: .32s"><icon name="pack:play" class="capability-icon" />Browser</span>
+        <span style="--icon-delay: .4s"><icon name="pack:layers" class="capability-icon" />3D</span>
+      </div>
+    </section>
+
+    <section class="landing-section" id="showcases">
+      <p class="eyebrow">Launch Thesis</p>
+      <h2>Game-Changing Features That Set DX Apart</h2>
+      <p class="section-copy">Every feature is designed to go viral. This is not incremental; it is a paradigm shift.</p>
+      <div class="feature-banner-grid">
+        <article class="feature-banner">
+          <img src="/public/thumbnails/amber.png" alt="Forge storage workflow preview" width="1024" height="1024" loading="lazy" decoding="async">
+          <div><span>Forge</span><h3>Unlimited Free Storage for Every Media Type</h3><p>Video to YouTube, images to Pinterest, audio to SoundCloud, 3D to Sketchfab, code to Git providers.</p></div>
+        </article>
+        <article class="feature-banner">
+          <img src="/public/thumbnails/blue.png" alt="Traffic security workflow preview" width="1024" height="1024" loading="lazy" decoding="async">
+          <div><span>Traffic Security</span><h3>AI That Acts Autonomously Without Compromising Safety</h3><p>Green auto-execute, Yellow warn, Red backup-then-execute, with hashes, firewall, and VPN posture.</p></div>
+        </article>
+        <article class="feature-banner">
+          <img src="/public/thumbnails/cyan.png" alt="DX check quality preview" width="1024" height="1024" loading="lazy" decoding="async">
+          <div><span>Check</span><h3>500-Point Anime Rank System for Every Project</h3><p>F to SSSSS rank, security scanner, code linter, media linter, and full audit reports.</p></div>
+        </article>
+        <article class="feature-banner">
+          <img src="/public/thumbnails/emerald.png" alt="Media engine preview" width="1024" height="1024" loading="lazy" decoding="async">
+          <div><span>Media Engine</span><h3>5,000+ Fonts, 1M+ Icons, 20+ Providers, Built-In Asset Tools</h3><p>Fetch from Unsplash, Pexels, YouTube, Vimeo, Spotify, Sketchfab, then transform, version, and collaborate.</p></div>
+        </article>
+        <article class="feature-banner">
+          <img src="/public/thumbnails/fuchsia.png" alt="Works everywhere preview" width="1024" height="1024" loading="lazy" decoding="async">
+          <div><span>Works Everywhere</span><h3>9+ Native Platforms, Every Browser, Every IDE, Every Creative Tool</h3><p>macOS, Windows, Linux, Android, iOS, ChromeOS, watchOS, tvOS, remote web console, and extensions.</p></div>
+        </article>
+        <article class="feature-banner">
+          <img src="/public/thumbnails/green.png" alt="AI provider freedom preview" width="1024" height="1024" loading="lazy" decoding="async">
+          <div><span>100+ AI Providers</span><h3>Any Model. Any Provider. Even Offline.</h3><p>More providers than any competitor, unlimited local models, and hybrid cloud/offline switching.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="story-engine">
+      <p class="eyebrow">The DX Story Engine</p>
+      <h2>A single runtime for local speed, provider freedom, and production workflows.</h2>
+      <div class="story-grid">
+        <article><small>Step 01</small><h3>Rust Core + DX-WWW Runtime</h3><strong>Up to 70% lower RAM pressure</strong><p>DX runs generation, routing, package receipts, and automation workflows without the dependency overhead that slows traditional web stacks.</p></article>
+        <article><small>Step 02</small><h3>Token Stack: RLM + Serializer + Tokenizers</h3><strong>30-90% token savings</strong><p>Context compression and transport optimization compound across multi-step workflows to reduce cost and latency.</p></article>
+        <article><small>Step 03</small><h3>Always-On Workflows</h3><strong>No offline lockout</strong><p>Switch between cloud and local execution while preserving workflow state and output continuity.</p></article>
+        <article><small>Step 04</small><h3>100+ Providers + 400+ Connects</h3><strong>One connected runtime</strong><p>Models, tools, communication apps, and media pipelines share context so work moves end-to-end faster.</p></article>
+      </div>
+    </section>
+
+    <section class="landing-section theme-section" id="dx-style-system">
+      <p class="eyebrow">dx-style Theme System</p>
+      <h2>Clean in light mode, cinematic in dark mode, native to the user's system.</h2>
+      <p class="section-copy">DX-WWW should feel sharp in a browser and in static export. The landing uses system-aware dx-style theme variables, a manual switcher, readable contrast, and motion that stays light enough for launch demos.</p>
+      <div class="theme-proof-grid">
+        <article>
+          <span>Light</span>
+          <strong>White surface, black type, restrained borders.</strong>
+          <p>Vercel-like clarity for product claims, comparison tables, docs, and launch sections.</p>
+        </article>
+        <article>
+          <span>Dark</span>
+          <strong>Black canvas, soft glow, high signal cards.</strong>
+          <p>DX-WWW energy for the DX face, dx-style story, agents, Forge, and local AI.</p>
+        </article>
+        <article>
+          <span>System</span>
+          <strong>Follows the operating system by default.</strong>
+          <p>Users can switch manually without breaking the DX-WWW export or the Vercel static bundle.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="what-is-dx">
+      <p class="eyebrow">What Is DX?</p>
+      <h2>A unified development experience platform for developers, creators, and teams.</h2>
+      <div class="card-grid three">
+        <article>AI generation, tool calling, media creation, and workflow integration are one cohesive experience.</article>
+        <article>Generate code, analyze data, run research, and produce media with one context and one mental model.</article>
+        <article>Manage everything from the browser, then keep the same workflow across native desktop, mobile, and companion apps.</article>
+      </div>
+      <div class="card-grid two">
+        <article><small>Modes</small><strong>Ask, Agent, Plan, Search, Study, Research.</strong></article>
+        <article><small>Extensions</small><strong>Browsers, IDEs, Figma, Photoshop, DaVinci Resolve, and more.</strong></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="command-center">
+      <p class="eyebrow">DX Command Center</p>
+      <h2>Move from landing-page overview to operational proof in one click.</h2>
+      <div class="card-grid three">
+        <article><small>Product Workflows</small><strong>Assistant flows</strong><p>Explore ask, agent, research execution patterns and connected context flows.</p></article>
+        <article><small>Integration Surface</small><strong>MCP and providers</strong><p>Validate routing, provider coverage, and tool-call interfaces across clients.</p></article>
+        <article><small>Docs + API Readiness</small><strong>Operational setup</strong><p>Go deeper into architecture notes, setup patterns, and workflow documentation.</p></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="dx-www-platform">
+      <p class="eyebrow">The DX-WWW Platform</p>
+      <h2>A Rust-first web stack where framework, style, packages, checks, and automation share one contract.</h2>
+      <div class="editor-shell">
+        <aside class="editor-rail left-rail">
+          <span>Source</span>
+          <strong>Routes</strong>
+          <strong>Styles</strong>
+          <strong>Assets</strong>
+          <strong>Receipts</strong>
+        </aside>
+        <div class="editor-stage">
+          <div class="screen-dock" aria-label="DX-WWW route proof preview">
+            <span class="active-dot"></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="screen-stack">
+            <article class="screen-card primary-screen">
+              <small>DX-WWW Runtime</small>
+              <strong>Routes, pages, styles, assets, and manifests built as one system</strong>
+              <p>Every launch surface can carry source metadata, theme tokens, Forge receipts, and quality gates without template-local dependency chaos.</p>
+            </article>
+            <article class="screen-card preview-screen">
+              <small>dx-style + dx-check</small>
+              <strong>Theme values, responsive sections, and route checks stay inspectable</strong>
+              <p>DX-WWW routes carry data markers and source maps so future studio tools can make precise responsive edits without hardcoded guesses.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="editor-rail right-rail">
+          <span>Quality</span>
+          <strong>dx-check</strong>
+          <strong>Forge</strong>
+          <strong>Tokens</strong>
+          <strong>Deploy</strong>
+        </aside>
+      </div>
+      <div class="card-grid three">
+        <article><small>dx-style</small><strong>Theme tokens, layout primitives, motion, and icon surfaces stay source-owned and export-safe.</strong></article>
+        <article><small>dx-forge</small><strong>Package slices, media assets, provenance, and rollback receipts are part of the app workflow.</strong></article>
+        <article><small>dx-check</small><strong>Routes, assets, accessibility notes, and launch proof can be scored before public release.</strong></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="dx-www-studio">
+      <p class="eyebrow">DX-WWW + Forge Studio</p>
+      <h2>React ecosystem power without the black-hole template workflow.</h2>
+      <p class="section-copy">DX-WWW templates are built from source-owned Forge packages, route manifests, edit markers, and preview receipts so the app can describe itself instead of hiding behind black-box dependencies.</p>
+      <div class="package-chip-grid" aria-label="DX-WWW launch package proof">
+        <span>Better Auth</span><span>Stripe</span><span>React Hook Form</span><span>Zod</span>
+        <span>Zustand</span><span>TanStack Query</span><span>Motion</span><span>3D Scene</span>
+        <span>react-markdown</span><span>Fumadocs</span><span>Supabase</span><span>Drizzle</span>
+        <span>InstantDB</span><span>tRPC</span><span>Vercel AI</span><span>n8n Nodes</span>
+      </div>
+      <div class="card-grid three">
+        <article><small>No template node_modules</small><strong>Forge materializes small, inspectable front-facing files instead of dumping dependency chaos into every new project.</strong></article>
+        <article><small>Source Edit Contract</small><strong>Stable data-dx markers connect route sections to real source files, tokens, assets, and media slots.</strong></article>
+        <article><small>Template</small><strong>Auth, payments, forms, validation, state, query, docs, markdown, 3D, automation, and backend surfaces appear together.</strong></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="local-ai-runtime">
+      <p class="eyebrow">Local AI Runtime</p>
+      <h2>Fast local agents plus premium-model onboarding when users want instant wow.</h2>
+      <div class="signal-strip">
+        <article><small>Direct Runtime</small><strong>llama.tsxp path</strong><p>DX avoids extra local RPC layers where agent loops feel every millisecond.</p></article>
+        <article><small>Provider Catalog</small><strong>rkyv + memmap2 plan</strong><p>LiteLLM, models.dev, local, free, and premium provider records can load from compact binary catalogs.</p></article>
+        <article><small>Token Stack</small><strong>RLM + serializer</strong><p>Receipts show prompt, output, tool, and saved-token estimates instead of hiding costs.</p></article>
+      </div>
+      <div class="card-grid three">
+        <article><small>First Run</small><strong>Detect ready providers, ask before importing credentials, and keep Skip visible on every step.</strong></article>
+        <article><small>Preview Routing</small><strong>Use the strongest approved premium provider for first impressions, then reveal the local moat.</strong></article>
+        <article><small>Local Moat</small><strong>Unlimited local runs, OS-aware model choice, direct Rust integration, and no provider lock-in.</strong></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="agents-automation-browser">
+      <p class="eyebrow">Agents, Automations, Browser Control</p>
+      <h2>ZeroClaw-inspired agents, social connection UI, n8n-scale nodes, and visual browser checks.</h2>
+      <div class="card-grid three">
+        <article><small>dx-agents</small><strong>CLI-first agents with connection status, automation entrypoints, social account readiness, and background receipts.</strong></article>
+        <article><small>Automations</small><strong>n8n node metadata becomes a DX automation surface with connector, credential, workflow, and receipt views.</strong></article>
+        <article><small>Check Panel</small><strong>Manual and AI-driven browser control can power visual QA, Chrome flows, e2e proofs, and deploy confidence.</strong></article>
+      </div>
+      <div class="playbook-grid">
+        <article><small>Step 1</small><p>Connect model, browser, repo, and sources.</p></article>
+        <article><small>Step 2</small><p>Generate or edit UI through DX-WWW routes and source markers.</p></article>
+        <article><small>Step 3</small><p>Run visual checks and browser automations.</p></article>
+        <article><small>Step 4</small><p>Forge backs up risky operations and records receipts.</p></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="built-on-rust">
+      <p class="eyebrow">Built on Rust. Not Node.js. Not Electron.</p>
+      <h2>Native-grade responsiveness across platforms.</h2>
+      <div class="card-grid three">
+        <article><small>Speed</small><strong>Near-native performance on every operation.</strong></article>
+        <article><small>Efficiency</small><strong>Designed to save RAM and stay responsive under heavy workloads.</strong></article>
+        <article><small>Toolchain</small><strong>Rust-powered routing, static export, package manifests, and launch checks.</strong></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="generate-anything">
+      <p class="eyebrow">Generate Literally Anything</p>
+      <h2>If you can name it, DX can generate it.</h2>
+      <table class="dx-table">
+        <thead><tr><th>Category</th><th>Capabilities</th></tr></thead>
+        <tbody>
+          <tr><td>Text & Code</td><td>Code generation, completion, refactor, and review</td></tr>
+          <tr><td>Images</td><td>Image generation, editing, and token-efficient image workflows</td></tr>
+          <tr><td>Video</td><td>Video generation and processing pipelines</td></tr>
+          <tr><td>Audio & Music</td><td>Sound design, composition, and voice synthesis</td></tr>
+          <tr><td>3D / AR / VR</td><td>3D, AR, and VR asset and scene generation</td></tr>
+          <tr><td>Documents & PDFs</td><td>PDFs, specs, reports, and document generation</td></tr>
+          <tr><td>Charts & Data</td><td>Visualizations, dashboards, and analysis</td></tr>
+          <tr><td>Tool Calling</td><td>MCP, ACP, A2A, and DX DCP-compatible tool execution</td></tr>
+          <tr><td>Conversation</td><td>Real-time voice interaction and STT/TTS</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="landing-section" id="token-revolution">
+      <p class="eyebrow">Token Revolution</p>
+      <h2>RLM + DX Serializer + tokenizers + micro-optimizations across the full pipeline.</h2>
+      <div class="card-grid three">
+        <article><small>RLM</small><strong>80-90% token savings on large file operations.</strong><p>Minimize reference length in context flows.</p></article>
+        <article><small>DX Serializer</small><strong>70-90% smaller tool-call payloads.</strong><p>Replace bloated JSON transport with compact machine formats where the runtime allows.</p></article>
+        <article><small>Tokenizers</small><strong>Compact multimodal payloads.</strong><p>Image tokenization and compact encodings keep deep workflows affordable.</p></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="works-everywhere">
+      <p class="eyebrow">Works Everywhere</p>
+      <h2>Native apps and extensions across the development and creative workflow.</h2>
+      <table class="dx-table">
+        <thead><tr><th>Platform</th><th>App Type</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>macOS</td><td>Native desktop app</td><td>Launch</td></tr>
+          <tr><td>Windows</td><td>Native desktop app</td><td>Launch</td></tr>
+          <tr><td>Linux</td><td>Native desktop app</td><td>Launch</td></tr>
+          <tr><td>Android</td><td>Mobile app</td><td>Launch</td></tr>
+          <tr><td>iOS</td><td>Mobile app</td><td>Launch</td></tr>
+          <tr><td>ChromeOS</td><td>Native / web app</td><td>Launch</td></tr>
+          <tr><td>Browser</td><td>Remote web console + extension</td><td>Launch</td></tr>
+          <tr><td>Developer tools</td><td>CLI, browser console, future connectors</td><td>Launch</td></tr>
+          <tr><td>Design and media tools</td><td>Plugins</td><td>Launch</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="landing-section" id="free-ai">
+      <p class="eyebrow">Free AI Access</p>
+      <h2>Any provider, even offline. Own your workflow.</h2>
+      <div class="card-grid three">
+        <article><small>Online</small><strong>Connect to 100+ LLM providers, open-source models, and self-hosted endpoints.</strong></article>
+        <article><small>Offline</small><strong>Run capable local models without internet and without token limits.</strong></article>
+        <article><small>Hybrid</small><strong>Switch between cloud and local models based on runtime conditions.</strong></article>
+      </div>
+      <div class="card-grid two">
+        <article><small>Integrations</small><strong>400+ connects, Cloud CLI skills, plugins, WhatsApp, Telegram, Discord, and more.</strong></article>
+        <article><small>Forge</small><strong>Version control for code and viral-ready media with bring-your-own storage connectors.</strong></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="competitive">
+      <p class="eyebrow">Competitive Positioning</p>
+      <h2>Technical differences that matter in production workflows.</h2>
+      <table class="dx-table">
+        <thead><tr><th>Feature</th><th>DX</th><th>Competitors</th></tr></thead>
+        <tbody>
+          <tr><td>Core Language</td><td>Rust + DX-WWW</td><td>Node.js app stacks</td></tr>
+          <tr><td>Token Efficiency</td><td>30-90% savings with RLM + tokenizers</td><td>No end-to-end optimization</td></tr>
+          <tr><td>Serialization</td><td>DX Serializer, 70-90% savings</td><td>Raw JSON payloads</td></tr>
+          <tr><td>Offline Support</td><td>Unlimited and free</td><td>Internet plus paid tiers</td></tr>
+          <tr><td>AI Provider Support</td><td>100+ providers + local models</td><td>Locked to 1-3 providers</td></tr>
+          <tr><td>Connectors</td><td>400+ connects + Cloud CLI skills</td><td>Limited integrations</td></tr>
+          <tr><td>Media Generation</td><td>Text, images, video, 3D/AR/VR, audio, and docs</td><td>Mostly code only</td></tr>
+          <tr><td>Traffic Security</td><td>Green / Yellow / Red automation + safe backups</td><td>Manual review or all-or-nothing</td></tr>
+          <tr><td>Platform Coverage</td><td>Desktop, mobile, ChromeOS, companion OS, extensions</td><td>1-2 platforms, limited plugins</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="landing-section" id="forge">
+      <p class="eyebrow">Forge Storage Strategy</p>
+      <h2>Code and every media type get resilient storage plus distribution-ready workflows.</h2>
+      <table class="dx-table">
+        <thead><tr><th>Asset Type</th><th>Primary Storage Route</th></tr></thead>
+        <tbody>
+          <tr><td>Video</td><td>YouTube unlisted or draft</td></tr>
+          <tr><td>Images</td><td>Pinterest libraries</td></tr>
+          <tr><td>Audio</td><td>SoundCloud or Spotify-like platforms</td></tr>
+          <tr><td>3D / AR / VR</td><td>Sketchfab-like storage endpoints</td></tr>
+          <tr><td>Code + Docs</td><td>GitHub, GitLab, Bitbucket, single or multi-target</td></tr>
+        </tbody>
+      </table>
+      <div class="playbook-grid">
+        <article><small>Forge Step 1</small><p>Generate assets in one DX flow.</p></article>
+        <article><small>Forge Step 2</small><p>Route each media type to platform-specific storage.</p></article>
+        <article><small>Forge Step 3</small><p>Version every iteration and preserve rollback history.</p></article>
+        <article><small>Forge Step 4</small><p>Promote from draft to publish-ready channels.</p></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="traffic-security">
+      <p class="eyebrow">Traffic Security: Green / Yellow / Red</p>
+      <h2>Your AI agent stays autonomous and safe.</h2>
+      <div class="card-grid three">
+        <article><small>Green</small><strong>Auto-executes harmless actions.</strong><p>Optimized for zero-friction flow when the operation is safe.</p></article>
+        <article><small>Yellow</small><strong>Executes with warnings or silent notifications.</strong><p>Keeps velocity high while signaling medium-risk operations clearly.</p></article>
+        <article><small>Red</small><strong>Executes with high-visibility warnings plus safety backup.</strong><p>For destructive operations, DX creates a backup snapshot before changes.</p></article>
+      </div>
+      <div class="playbook-grid">
+        <article><small>Security Step 1</small><p>Classify action risk in real time.</p></article>
+        <article><small>Security Step 2</small><p>Apply Green, Yellow, or Red execution policy.</p></article>
+        <article><small>Security Step 3</small><p>Protect sensitive values before outbound calls.</p></article>
+        <article><small>Security Step 4</small><p>Create safety snapshot on high-risk operations.</p></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="check">
+      <p class="eyebrow">DX Check</p>
+      <h2>500-point code + media quality score that helps you improve.</h2>
+      <div class="rank-row" aria-label="DX Check ranks">
+        <span>F</span><span>E</span><span>D</span><span>C</span><span>B</span><span>A</span><span>S</span><span>SS</span><span>SSS</span><span>SSSS</span><span>SSSSS</span>
+      </div>
+      <div class="card-grid three">
+        <article>Security and vulnerability scanning.</article>
+        <article>Code + media linting for quality consistency.</article>
+        <article>Actionable reports with prioritized improvements.</article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="media-workspace">
+      <p class="eyebrow">Media, Workspace, Serializer, i18n, Driven, DCP</p>
+      <h2>Multimodal creation with disciplined workspace and transport layers.</h2>
+      <div class="card-grid three">
+        <article>Unified support for audio, video, image, and 3D/AR/VR providers.</article>
+        <article>Built-in media library with organization and collaborative workflows.</article>
+        <article>5000+ fonts, 219+ icon sets, 1M+ icons, images, video, audio, and 3D assets.</article>
+        <article>Version control for media assets with rollback support.</article>
+        <article>Custom provider linking and reusable asset workflows.</article>
+        <article>Driven spec-first workflows and DCP-compatible execution.</article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="built-in-tools">
+      <p class="eyebrow">Built-In Tools</p>
+      <h2>Every DX workflow ships with a complete power suite.</h2>
+      <div class="card-grid three">
+        <article><small>Workspace</small><strong>Clean workspace layout, context sharing, and project scaffolding across DX-WWW apps.</strong></article>
+        <article><small>Serializer</small><strong>Human-readable, token-efficient, fast serialization with 70-90% smaller payloads than JSON.</strong></article>
+        <article><small>i18n</small><strong>Translate text, speech-to-text, and text-to-speech with global workflows.</strong></article>
+        <article><small>Driven</small><strong>Spec-driven AI workflows instead of chaotic, unrepeatable execution.</strong></article>
+        <article><small>DCP</small><strong>Like MCP, A2A, and ACP, but faster and more token-efficient for agent communication.</strong></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="extensions">
+      <p class="eyebrow">Extensions</p>
+      <h2>DX everywhere you already work.</h2>
+      <table class="dx-table">
+        <thead><tr><th>Category</th><th>Supported Tools</th></tr></thead>
+        <tbody>
+          <tr><td>Browsers</td><td>Chrome, Safari, Firefox, Edge, Arc, Brave, Opera</td></tr>
+          <tr><td>Developer Surfaces</td><td>CLI, browser extension, hosted dashboard, and future editor connectors</td></tr>
+          <tr><td>Design Tools</td><td>Figma, Adobe Photoshop, Adobe Illustrator, Sketch, Canva</td></tr>
+          <tr><td>Video Editors</td><td>DaVinci Resolve, Adobe Premiere Pro, Final Cut Pro</td></tr>
+          <tr><td>Communication</td><td>WhatsApp, Telegram, Discord, Slack, Microsoft Teams</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="landing-section" id="benchmarks">
+      <p class="eyebrow">Built With Rust. Built To Fly.</p>
+      <h2>Instant routing, low memory pressure, and source-owned package paths.</h2>
+      <div class="bench-grid">
+        <article><span>DX-WWW</span><strong>Rust-first dev path</strong><div class="bar dx-bar"></div></article>
+        <article><span>Next.js app</span><strong>Node runtime stack</strong><div class="bar vscode-bar"></div></article>
+        <article><span>Vite + npm</span><strong>Plugin-heavy stack</strong><div class="bar jetbrains-bar"></div></article>
+      </div>
+      <p class="section-copy">Low memory pressure, static export readiness, source-owned package slices, and native execution paths for web framework workflows.</p>
+    </section>
+
+    <section class="landing-section" id="testimonials">
+      <p class="eyebrow">Developer Testimonials</p>
+      <h2>Launch story proof points.</h2>
+      <div class="card-grid three">
+        <article>"DX cut our token costs by 60% on day one. The RLM compression alone was worth the switch." <small>- Lena M., Staff Engineer @ Arcforge</small></article>
+        <article>"Finally an AI tool that works offline. Deployed DX on a remote rig with no internet, full capability." <small>- Riku S., DevOps Lead @ Shellgrid</small></article>
+        <article>"Forge is underrated. We now version all design exports alongside code with zero extra tooling." <small>- Priya K., Senior Developer @ Byteplane</small></article>
+      </div>
+    </section>
+
+    <section class="landing-section" id="comparison-table">
+      <p class="eyebrow">Comparison Table</p>
+      <h2>DX-WWW versus the old web stack.</h2>
+      <table class="dx-table">
+        <thead><tr><th>Feature</th><th>DX-WWW</th><th>Next.js-style apps</th><th>Vite + npm apps</th></tr></thead>
+        <tbody>
+          <tr><td>Runtime Shape</td><td>Rust-first DX-WWW</td><td>Node.js server/app router</td><td>Node.js dev server</td></tr>
+          <tr><td>Styling</td><td>dx-style tokens and source-owned CSS</td><td>Tailwind/config-heavy setup</td><td>Plugin-dependent CSS setup</td></tr>
+          <tr><td>Package Model</td><td>dx-forge source slices and receipts</td><td>node_modules dependency graph</td><td>node_modules dependency graph</td></tr>
+          <tr><td>Quality Gates</td><td>dx-check route, asset, and launch proof</td><td>App-specific scripts</td><td>App-specific scripts</td></tr>
+          <tr><td>Token Efficiency</td><td>RLM + serializer receipts</td><td>Usually external</td><td>Usually external</td></tr>
+          <tr><td>Automation</td><td>Agents, browser checks, and Forge backups</td><td>Custom integration work</td><td>Custom integration work</td></tr>
+          <tr><td>Media Workflow</td><td>Code + media assets with Forge provenance</td><td>App-owned manual setup</td><td>App-owned manual setup</td></tr>
+          <tr><td>Static Export</td><td>Launch-ready static bundle path</td><td>Config-dependent</td><td>Config-dependent</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="landing-cta" id="waitlist">
+      <p class="eyebrow">Early Access</p>
+      <h2>Be first on DX launch day.</h2>
+      <p>Join the waitlist for priority access, release notes, and first-week benchmarks.</p>
+      <a href="mailto:hello@dx.ai?subject=DX%20Early%20Access" class="primary-action">Join Waitlist</a>
+    </section>
+
+    <footer class="dx-footer" data-dx-section="footer">
+      <div class="footer-topline">
+        <a class="footer-brand" href="/" aria-label="DX home footer">
+          <span class="brand-mark">DX</span>
+          <span>Enhanced Development Experience</span>
+        </a>
+      </div>
+
+      <div class="footer-callout">
+        <span>DX Launch Stack</span>
+        <strong>DX-WWW. dx-style. dx-forge. dx-check. Agents. Browser. Local AI.</strong>
+      </div>
+
+      <div class="footer-theme-row">
+        <div>
+          <span>Theme</span>
+          <strong>Vercel-clean light mode. DX-WWW dark mode.</strong>
+        </div>
+        <div class="theme-switcher" aria-label="Theme selector">
+          <button type="button" data-theme-choice="light">Light</button>
+          <button type="button" data-theme-choice="dark">Dark</button>
+          <button type="button" data-theme-choice="system">System</button>
+        </div>
+      </div>
+
+      <div class="footer-link-grid">
+        <nav aria-label="Product links">
+          <strong>Product</strong>
+          <a href="#dx-www-platform">DX-WWW Platform</a>
+          <a href="#dx-www-studio">DX-WWW Studio</a>
+          <a href="#local-ai-runtime">Local Runtime</a>
+          <a href="#agents-automation-browser">Agents</a>
+        </nav>
+        <nav aria-label="Platform links">
+          <strong>Platform</strong>
+          <a href="#forge">Forge</a>
+          <a href="#check">Check</a>
+          <a href="#token-revolution">Token Stack</a>
+          <a href="#works-everywhere">Apps</a>
+        </nav>
+        <nav aria-label="Launch links">
+          <strong>Launch</strong>
+          <a href="#showcases">Feature Story</a>
+          <a href="#competitive">Comparison</a>
+          <a href="#benchmarks">Benchmarks</a>
+          <a href="#waitlist">Early Access</a>
+        </nav>
+      </div>
+
+      <div class="footer-status-strip" aria-label="DX launch proof points">
+        <span>DX-WWW</span>
+        <span>Forge Packages</span>
+        <span>Local AI Runtime</span>
+        <span>DX Icons</span>
+        <span>Browser Automation</span>
+      </div>
+
+      <div class="footer-mega">
+        <span>Enhanced Development Experience</span>
+        <strong>I use Dx BTW</strong>
+      </div>
+    </footer>
+
+    <script>
+      (() => {
+        const key = "dx-landing-theme-v2";
+        const root = document.documentElement;
+        const scroller = document.querySelector(".dx-landing");
+        const scrollTrack = document.querySelector(".dx-scrollbar");
+        const scrollThumb = document.querySelector(".dx-scrollbar span");
+        const buttons = Array.from(document.querySelectorAll("[data-theme-choice]"));
+        const revealTargets = Array.from(document.querySelectorAll(
+          ".landing-section, .landing-cta, .dx-footer, .platform-card, .feature-banner, .card-grid article, .story-grid article, .playbook-grid article, .theme-proof-grid article, .hero-image-grid figure, .hero-video-carousel"
+        ));
+
+        function applyTheme(theme) {
+          const nextTheme = theme === "light" || theme === "dark" ? theme : "system";
+          root.dataset.theme = nextTheme;
+          localStorage.setItem(key, nextTheme);
+          buttons.forEach((button) => {
+            button.setAttribute("aria-pressed", String(button.dataset.themeChoice === nextTheme));
+          });
+        }
+
+        function updateScrollbar() {
+          if (!scroller || !scrollThumb) return;
+          const max = Math.max(1, scroller.scrollHeight - scroller.clientHeight);
+          const ratio = scroller.clientHeight / Math.max(scroller.scrollHeight, scroller.clientHeight);
+          const track = Math.max(72, scroller.clientHeight - 56);
+          const thumbHeight = Math.max(44, Math.round(track * ratio));
+          const thumbTravel = Math.max(0, track - thumbHeight);
+          const y = Math.round((scroller.scrollTop / max) * thumbTravel);
+          scrollThumb.style.height = `${thumbHeight}px`;
+          scrollThumb.style.transform = `translate3d(0, ${y}px, 0)`;
+        }
+
+        function scrollToTrackPoint(clientY) {
+          if (!scroller || !scrollTrack || !scrollThumb) return;
+          const rect = scrollTrack.getBoundingClientRect();
+          const trackStyle = getComputedStyle(scrollTrack);
+          const trackInset = parseFloat(trackStyle.paddingTop) || 0;
+          const max = Math.max(1, scroller.scrollHeight - scroller.clientHeight);
+          const track = Math.max(1, rect.height - trackInset * 2);
+          const thumbHeight = scrollThumb.offsetHeight || 44;
+          const travel = Math.max(1, track - thumbHeight);
+          const localY = Math.min(Math.max(clientY - rect.top - trackInset - thumbHeight / 2, 0), travel);
+          scroller.scrollTop = (localY / travel) * max;
+          updateScrollbar();
+        }
+
+        applyTheme(localStorage.getItem(key) || "dark");
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => applyTheme(button.dataset.themeChoice));
+        });
+
+        if (scroller) {
+          scroller.addEventListener("scroll", updateScrollbar, { passive: true });
+          window.addEventListener("resize", updateScrollbar);
+          updateScrollbar();
+        }
+
+        if (scrollTrack && scroller) {
+          let isDragging = false;
+
+          scrollTrack.addEventListener("pointerdown", (event) => {
+            event.preventDefault();
+            isDragging = true;
+            scrollTrack.classList.add("is-dragging");
+            scrollTrack.setPointerCapture?.(event.pointerId);
+            scrollToTrackPoint(event.clientY);
+          });
+
+          scrollTrack.addEventListener("pointermove", (event) => {
+            if (!isDragging) return;
+            event.preventDefault();
+            scrollToTrackPoint(event.clientY);
+          });
+
+          const stopDragging = (event) => {
+            if (!isDragging) return;
+            isDragging = false;
+            scrollTrack.classList.remove("is-dragging");
+            scrollTrack.releasePointerCapture?.(event.pointerId);
+          };
+
+          scrollTrack.addEventListener("pointerup", stopDragging);
+          scrollTrack.addEventListener("pointercancel", stopDragging);
+          scrollTrack.addEventListener("lostpointercapture", () => {
+            isDragging = false;
+            scrollTrack.classList.remove("is-dragging");
+          });
+        }
+
+        if ("IntersectionObserver" in window) {
+          scroller?.setAttribute("data-reveal-ready", "true");
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { root: scroller, threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+          revealTargets.forEach((target) => observer.observe(target));
+        } else {
+          revealTargets.forEach((target) => target.classList.add("is-visible"));
+        }
+
+        window.addEventListener("resize", updateScrollbar, { passive: true });
+      })();
+    </script>
+  </main>
+</template>

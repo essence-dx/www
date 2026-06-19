@@ -1,0 +1,82 @@
+{
+  "schema_version": "dx.forge.status",
+  "command": "dx forge status",
+  "status": "missing-registry",
+  "project": "G:\\Dx\\www\\examples\\ui-components",
+  "receipt_path": ".dx/receipts/forge/status-latest.json",
+  "root_dx": {
+    "path": "G:\\Dx\\www\\examples\\ui-components\\dx",
+    "present": true
+  },
+  "local_registry": {
+    "path": "G:\\Dx\\www\\examples\\ui-components\\.dx/forge/registry/local",
+    "present": false
+  },
+  "root_package": {
+    "status": "not-declared",
+    "package_id": null,
+    "version": null,
+    "description": null,
+    "source_kind": null,
+    "export_count": 0,
+    "default_exports": [],
+    "allow_selective_imports": null,
+    "error": "root dx in `G:\\Dx\\www\\examples\\ui-components` does not declare a Forge package"
+  },
+  "local_registry_package": null,
+  "remotes": [
+    {
+      "name": "local",
+      "kind": "filesystem",
+      "configured": false,
+      "setup_status": "missing-local-registry",
+      "account_id_set": null,
+      "access_key_id_set": null,
+      "secret_access_key_set": null,
+      "bucket_set": null,
+      "endpoint_set": null,
+      "public_base_url_set": null,
+      "missing_config": [
+        ".dx/forge/registry/local"
+      ],
+      "prefix": null
+    },
+    {
+      "name": "r2",
+      "kind": "s3-compatible-object-storage",
+      "configured": false,
+      "setup_status": "missing-config",
+      "account_id_set": false,
+      "access_key_id_set": false,
+      "secret_access_key_set": false,
+      "bucket_set": false,
+      "endpoint_set": false,
+      "public_base_url_set": false,
+      "missing_config": [
+        "account_id_or_endpoint",
+        "access_key_id",
+        "secret_access_key",
+        "bucket"
+      ],
+      "prefix": "dx-forge/registry/v1"
+    }
+  ],
+  "remote_object_head_health": [],
+  "public_commands": [
+    "dx forge add shadcn/ui#button,card,input --dry-run",
+    "dx forge add ui --only button,input --dry-run",
+    "dx forge publish --registry local",
+    "dx forge publish --registry r2 --package shadcn/ui/button --dry-run",
+    "dx forge remotes --json",
+    "dx forge receipts --json"
+  ],
+  "warnings": [
+    "Root dx file is present but does not declare a Forge package yet.",
+    "R2 remote is not configured; dry-run remains available without printing credential values."
+  ],
+  "next_actions": [
+    "Add R2/S3 environment config before live publish. Dry-run remains safe while R2 is missing config.",
+    "Run dx forge publish --registry local to materialize the safe local registry.",
+    "Use dx forge add package#surface --dry-run to inspect front-facing file placement."
+  ]
+}

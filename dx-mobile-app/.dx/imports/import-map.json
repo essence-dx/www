@@ -1,0 +1,370 @@
+{
+  "tool": "dx imports",
+  "version": 2,
+  "generated_by": "dx imports sync",
+  "project": "G:/Dx/www/dx-mobile-app",
+  "source_hash": "blake3:d0aa75113f40a9355595ef8602abde9c8f93084fe134ba7c6ac513172ae7d1bf",
+  "policy": "generated-import-maps-no-runtime-magic",
+  "used_only": true,
+  "scan_roots": [
+    "components",
+    "composables",
+    "utils"
+  ],
+  "used_roots": [
+    "app",
+    "components",
+    "lib",
+    "server",
+    "styles"
+  ],
+  "aliases": [
+    "#components",
+    "#imports"
+  ],
+  "files": {
+    "barrel": "components/auto-imports.ts",
+    "import_map": ".dx/imports/import-map.json",
+    "declarations": ".dx/imports/imports.d.ts"
+  },
+  "entry_count": 11,
+  "used_symbol_count": 3,
+  "typed_entry_count": 7,
+  "untyped_entry_count": 4,
+  "entries": [
+    {
+      "kind": "component",
+      "name": "FrameworkCompletenessItem",
+      "source": "components/launch/framework-completeness.ts",
+      "import_path": "@/components/launch/framework-completeness",
+      "barrel_export": null,
+      "exports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus",
+        "dxMobileAppFrameworkCompleteness",
+        "dxMobileAppFrameworkCompletenessScore",
+        "dxMobileAppFrameworkCompletenessSummary",
+        "frameworkCompletenessContract"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus",
+        "dxMobileAppFrameworkCompleteness",
+        "dxMobileAppFrameworkCompletenessScore",
+        "dxMobileAppFrameworkCompletenessSummary",
+        "frameworkCompletenessContract"
+      ],
+      "type_exports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "DxMobileAuthScreen",
+      "source": "components/mobile-auth/auth-screen.tsx",
+      "import_path": "@/components/mobile-auth/auth-screen",
+      "barrel_export": null,
+      "exports": [
+        "DxMobileAuthScreen"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "DxMobileAuthScreen"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "component",
+      "name": "DxMobileCompanionScreen",
+      "source": "components/mobile-companion/companion-screen.tsx",
+      "import_path": "@/components/mobile-companion/companion-screen",
+      "barrel_export": "./mobile-companion/companion-screen",
+      "exports": [
+        "DxMobileCompanionScreen"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "DxMobileCompanionScreen"
+      ],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "import_path": "@/components/icons/icon",
+      "barrel_export": "./icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "default_export_name": null,
+      "used_exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unused_exports": [],
+      "type_exports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackArrowRightIcon",
+      "source": "components/icons/pack-arrow-right.tsx",
+      "import_path": "@/components/icons/pack-arrow-right",
+      "barrel_export": null,
+      "exports": [
+        "PackArrowRightIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackArrowRightIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackCheckIcon",
+      "source": "components/icons/pack-check.tsx",
+      "import_path": "@/components/icons/pack-check",
+      "barrel_export": null,
+      "exports": [
+        "PackCheckIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "PackCheckIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "StatusCheckIcon",
+      "source": "components/icons/status-check.tsx",
+      "import_path": "@/components/icons/status-check",
+      "barrel_export": null,
+      "exports": [
+        "StatusCheckIcon"
+      ],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [
+        "StatusCheckIcon"
+      ],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "auth/better-auth",
+      "source": "forge/auth/better-auth",
+      "import_path": "@/forge/auth/better-auth",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "forge-package",
+      "name": "www/minimal-starter",
+      "source": "forge/www/minimal-starter",
+      "import_path": "@/forge/www/minimal-starter",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "generated.css",
+      "source": "styles/generated.css",
+      "import_path": "@/styles/generated.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    },
+    {
+      "kind": "style-helper",
+      "name": "theme.css",
+      "source": "styles/theme.css",
+      "import_path": "@/styles/theme.css",
+      "barrel_export": null,
+      "exports": [],
+      "default_export_name": null,
+      "used_exports": [],
+      "unused_exports": [],
+      "type_exports": []
+    }
+  ],
+  "public_barrel_entries": [
+    "components/mobile-companion/companion-screen.tsx",
+    "components/icons/icon.tsx"
+  ],
+  "unused_entries": [
+    "components/launch/framework-completeness.ts",
+    "components/mobile-auth/auth-screen.tsx",
+    "components/icons/pack-arrow-right.tsx",
+    "components/icons/pack-check.tsx",
+    "components/icons/status-check.tsx"
+  ],
+  "skipped_entries": [],
+  "component_exports": [
+    "./mobile-companion/companion-screen",
+    "./icons/icon"
+  ],
+  "components": [
+    {
+      "kind": "component",
+      "name": "FrameworkCompletenessItem",
+      "source": "components/launch/framework-completeness.ts",
+      "importPath": "@/components/launch/framework-completeness",
+      "barrelExport": null,
+      "exports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus",
+        "dxMobileAppFrameworkCompleteness",
+        "dxMobileAppFrameworkCompletenessScore",
+        "dxMobileAppFrameworkCompletenessSummary",
+        "frameworkCompletenessContract"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus",
+        "dxMobileAppFrameworkCompleteness",
+        "dxMobileAppFrameworkCompletenessScore",
+        "dxMobileAppFrameworkCompletenessSummary",
+        "frameworkCompletenessContract"
+      ],
+      "typeExports": [
+        "FrameworkCompletenessItem",
+        "FrameworkCompletenessStatus"
+      ]
+    },
+    {
+      "kind": "component",
+      "name": "DxMobileAuthScreen",
+      "source": "components/mobile-auth/auth-screen.tsx",
+      "importPath": "@/components/mobile-auth/auth-screen",
+      "barrelExport": null,
+      "exports": [
+        "DxMobileAuthScreen"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "DxMobileAuthScreen"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "component",
+      "name": "DxMobileCompanionScreen",
+      "source": "components/mobile-companion/companion-screen.tsx",
+      "importPath": "@/components/mobile-companion/companion-screen",
+      "barrelExport": "./mobile-companion/companion-screen",
+      "exports": [
+        "DxMobileCompanionScreen"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "DxMobileCompanionScreen"
+      ],
+      "unusedExports": [],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "Icon",
+      "source": "components/icons/icon.tsx",
+      "importPath": "@/components/icons/icon",
+      "barrelExport": "./icons/icon",
+      "exports": [
+        "Icon",
+        "IconProps"
+      ],
+      "defaultExportName": null,
+      "usedExports": [
+        "Icon",
+        "IconProps"
+      ],
+      "unusedExports": [],
+      "typeExports": [
+        "IconProps"
+      ]
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackArrowRightIcon",
+      "source": "components/icons/pack-arrow-right.tsx",
+      "importPath": "@/components/icons/pack-arrow-right",
+      "barrelExport": null,
+      "exports": [
+        "PackArrowRightIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackArrowRightIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "PackCheckIcon",
+      "source": "components/icons/pack-check.tsx",
+      "importPath": "@/components/icons/pack-check",
+      "barrelExport": null,
+      "exports": [
+        "PackCheckIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "PackCheckIcon"
+      ],
+      "typeExports": []
+    },
+    {
+      "kind": "dx-icon",
+      "name": "StatusCheckIcon",
+      "source": "components/icons/status-check.tsx",
+      "importPath": "@/components/icons/status-check",
+      "barrelExport": null,
+      "exports": [
+        "StatusCheckIcon"
+      ],
+      "defaultExportName": null,
+      "usedExports": [],
+      "unusedExports": [
+        "StatusCheckIcon"
+      ],
+      "typeExports": []
+    }
+  ],
+  "composables": [],
+  "utilities": [],
+  "forge_packages": [
+    "auth/better-auth",
+    "www/minimal-starter"
+  ],
+  "style_helpers": [
+    "styles/generated.css",
+    "styles/theme.css"
+  ]
+}

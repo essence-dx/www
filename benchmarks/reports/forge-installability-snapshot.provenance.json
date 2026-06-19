@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-18T18:45:24.641Z",
+  "report_id": "forge-installability-snapshot-provenance-v1",
+  "source": "benchmarks/measure-forge-installability-snapshot.ts",
+  "hash_algorithm": "sha256",
+  "artifact_count": 2,
+  "artifacts": [
+    {
+      "path": "forge-installability-snapshot.json",
+      "artifact_type": "benchmark-snapshot-json",
+      "bytes": 5685,
+      "sha256": "5fc5b6a043732c5ab6d034ad3592b0074ceb861c28cf97f86b660f85b407412f"
+    },
+    {
+      "path": "forge-installability-snapshot.md",
+      "artifact_type": "benchmark-snapshot-markdown",
+      "bytes": 2710,
+      "sha256": "c499edac28b447c1aa666a419195012fb80c62efe377606cba712593527cd7fa"
+    }
+  ],
+  "manifest_digest": "e27aa1c8ac2961946206c5a2988b427b665bedd85a31bb6e9f8bb3b9786f16c9",
+  "signed": true,
+  "signer": "essencefromexistence",
+  "key_id": "ed25519-sha256:5ffcf21b4c46c13271ca61b2a5869f1734964bc98cbc1c7ea07451702608f409",
+  "algorithm": "ed25519",
+  "public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAJ0LzPVW7MKewcVIICiG4RM8eWktzj8tZp9oyAesn5Lw=\n-----END PUBLIC KEY-----\n",
+  "signature": "ed25519:kbKbIXNB1SNr+J+9/yb0n1/1hA7054k20ArJQdT3dPtjUxOQbcDUEo0gsfmV+j+AOavgQym6GLbpc0kGbO7SDw==",
+  "signature_payload": "dx-forge-report-provenance-v1\nversion=1\nhash_algorithm=sha256\nmanifest_digest=e27aa1c8ac2961946206c5a2988b427b665bedd85a31bb6e9f8bb3b9786f16c9\nartifact_count=2\nsigner=essencefromexistence\nkey_id=ed25519-sha256:5ffcf21b4c46c13271ca61b2a5869f1734964bc98cbc1c7ea07451702608f409\npublic_key=-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAJ0LzPVW7MKewcVIICiG4RM8eWktzj8tZp9oyAesn5Lw=\n-----END PUBLIC KEY-----\n\ngenerated_at=2026-05-18T18:45:24.641Z\n",
+  "signature_verified": true,
+  "message": "Signed snapshot provenance: Ed25519 publisher identity covers the installability snapshot artifact digest."
+}

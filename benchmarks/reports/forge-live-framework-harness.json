@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-05-18T08:46:13.199Z",
+  "report_id": "forge-live-framework-harness-v1",
+  "source": "benchmarks/compare-forge-live-frameworks.ts",
+  "static_floor_report": {
+    "source": "benchmarks/reports/forge-public-route-comparison.json",
+    "framework_count": 5,
+    "route_count": 7,
+    "dxwww_brotli_bytes": 7284,
+    "competitor_floor_brotli_bytes": {
+      "Astro": 2711,
+      "Svelte": 2729,
+      "HTMX": 2725,
+      "Next.js": 2727
+    },
+    "scope": {
+      "community_excluded": true,
+      "not_full_framework_benchmark": true,
+      "competitor_builds_not_run": true,
+      "no_package_install": true,
+      "no_node_modules_created": true,
+      "content_parity": "Competitor rows are summary-level static floors for the same public route roles, not byte-identical recreations of the full DX-WWW evidence pages.",
+      "safe_public_claim": "This fixture checks whether DX-WWW public Forge routes stay reasonably small against generous static HTML floors. It does not prove broad framework replacement."
+    }
+  },
+  "live_frameworks": {
+    "enabled": false,
+    "builds_run": false,
+    "package_installs_run": false,
+    "rows": [
+      {
+        "framework": "Astro",
+        "project_dir": "G:\\WWW\\benchmarks\\fair-counter\\astro",
+        "static_floor_id": "astro-static-html-floor",
+        "live_enabled": false,
+        "package_install_run": false,
+        "detected": {
+          "project_exists": true,
+          "package_json_exists": true,
+          "node_modules_exists": true,
+          "build_script_exists": true,
+          "package_name": "fair-counter-astro",
+          "package_version": "0.1.0"
+        },
+        "status": "skipped",
+        "reason": "Set DX_FORGE_LIVE_FRAMEWORKS=1 to run installed local framework builds.",
+        "build_command": "npm run build",
+        "output_summary": [
+          {
+            "path": "G:\\WWW\\benchmarks\\fair-counter\\astro\\dist",
+            "exists": true,
+            "file_count": 4,
+            "total_bytes": 292686
+          }
+        ]
+      },
+      {
+        "framework": "Svelte",
+        "project_dir": "G:\\WWW\\benchmarks\\fair-counter\\svelte",
+        "static_floor_id": "svelte-prerendered-static-floor",
+        "live_enabled": false,
+        "package_install_run": false,
+        "detected": {
+          "project_exists": true,
+          "package_json_exists": true,
+          "node_modules_exists": true,
+          "build_script_exists": true,
+          "package_name": "fair-counter-svelte",
+          "package_version": "0.1.0"
+        },
+        "status": "skipped",
+        "reason": "Set DX_FORGE_LIVE_FRAMEWORKS=1 to run installed local framework builds.",
+        "build_command": "npm run build",
+        "output_summary": [
+          {
+            "path": "G:\\WWW\\benchmarks\\fair-counter\\svelte\\dist",
+            "exists": true,
+            "file_count": 3,
+            "total_bytes": 47774
+          },
+          {
+            "path": "G:\\WWW\\benchmarks\\fair-counter\\svelte\\build",
+            "exists": false,
+            "file_count": 0,
+            "total_bytes": 0
+          }
+        ]
+      },
+      {
+        "framework": "HTMX",
+        "project_dir": "G:\\WWW\\benchmarks\\fair-counter\\htmx",
+        "static_floor_id": "htmx-local-static-server",
+        "live_enabled": false,
+        "package_install_run": false,
+        "detected": {
+          "project_exists": true,
+          "package_json_exists": true,
+          "node_modules_exists": true,
+          "build_script_exists": false,
+          "package_name": "fair-counter-htmx",
+          "package_version": "0.1.0"
+        },
+        "status": "skipped",
+        "reason": "Set DX_FORGE_LIVE_FRAMEWORKS=1 to run installed local framework builds.",
+        "build_command": null,
+        "output_summary": [
+          {
+            "path": "G:\\WWW\\benchmarks\\fair-counter\\htmx\\public",
+            "exists": true,
+            "file_count": 1,
+            "total_bytes": 2667
+          }
+        ]
+      },
+      {
+        "framework": "Next.js",
+        "project_dir": "G:\\WWW\\benchmarks\\fair-counter\\next",
+        "static_floor_id": "next-static-export-floor",
+        "live_enabled": false,
+        "package_install_run": false,
+        "detected": {
+          "project_exists": true,
+          "package_json_exists": true,
+          "node_modules_exists": true,
+          "build_script_exists": true,
+          "package_name": "fair-counter-next",
+          "package_version": "0.1.0"
+        },
+        "status": "skipped",
+        "reason": "Set DX_FORGE_LIVE_FRAMEWORKS=1 to run installed local framework builds.",
+        "build_command": "npm run build",
+        "output_summary": [
+          {
+            "path": "G:\\WWW\\benchmarks\\fair-counter\\next\\.next",
+            "exists": true,
+            "file_count": 222,
+            "total_bytes": 4821265
+          },
+          {
+            "path": "G:\\WWW\\benchmarks\\fair-counter\\next\\out",
+            "exists": false,
+            "file_count": 0,
+            "total_bytes": 0
+          }
+        ]
+      }
+    ]
+  },
+  "separation_contract": [
+    "Static-floor rows are deterministic local fixtures and are always generated.",
+    "Live framework rows are opt-in and run only when DX_FORGE_LIVE_FRAMEWORKS=1.",
+    "The live harness never runs npm install, pnpm install, yarn install, bun install, or package manager audit commands.",
+    "Missing node_modules or package scripts produce skipped rows, not fake benchmark numbers.",
+    "Do not merge static-floor and live-build rows into one winner without labeling the evidence type."
+  ],
+  "honest_scope": [
+    "This harness proves the comparison workflow, not broad framework superiority.",
+    "Live rows measure only already-installed local baseline projects.",
+    "Static floors remain useful for conservative payload direction when live toolchains are unavailable.",
+    "A production benchmark claim still needs route parity, browser timing, CDN transfer, and interaction evidence."
+  ]
+}

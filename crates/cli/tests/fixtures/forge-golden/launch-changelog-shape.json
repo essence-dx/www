@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "passed": true,
+  "score": 100,
+  "status": "passing",
+  "record_count": 2,
+  "latest": {
+    "dashboard_score": 93,
+    "dashboard_passed": true,
+    "route_count": 6,
+    "total_decoded_delta_bytes": 9102,
+    "total_brotli_delta_bytes": 1766,
+    "added_routes": [
+      "/forge/changelog",
+      "/forge/releases"
+    ],
+    "removed_routes": [],
+    "changed_route_count": 0,
+    "regression_finding_count": 0,
+    "summary": "Reviewed launch evidence added `/forge/changelog`, `/forge/releases`."
+  },
+  "entry_count": 2,
+  "entries": [
+    {
+      "dashboard_score": 93,
+      "dashboard_passed": true,
+      "route_count": 6,
+      "total_decoded_bytes": 28731,
+      "total_brotli_bytes": 6014,
+      "total_decoded_delta_bytes": 9102,
+      "total_brotli_delta_bytes": 1766,
+      "added_routes": [
+        "/forge/changelog",
+        "/forge/releases"
+      ],
+      "removed_routes": [],
+      "changed_route_count": 0,
+      "regression_finding_count": 0,
+      "summary": "Reviewed launch evidence added `/forge/changelog`, `/forge/releases`."
+    },
+    {
+      "dashboard_score": 93,
+      "dashboard_passed": true,
+      "route_count": 4,
+      "total_decoded_bytes": 19629,
+      "total_brotli_bytes": 4248,
+      "total_decoded_delta_bytes": null,
+      "total_brotli_delta_bytes": null,
+      "added_routes": [
+        "/forge",
+        "/forge/ci",
+        "/forge/evidence",
+        "/forge/scorecard"
+      ],
+      "removed_routes": [],
+      "changed_route_count": 0,
+      "regression_finding_count": 0,
+      "summary": "Initial recorded Forge public launch evidence snapshot."
+    }
+  ],
+  "honest_scope_count": 4,
+  "findings": []
+}

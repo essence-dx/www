@@ -1,0 +1,49 @@
+{
+  "claim_count": 6,
+  "claims": [
+    {
+      "has_evidence": true,
+      "id": "adoption-no-node-modules",
+      "source_field": "no_node_modules",
+      "source_model": "DxForgeAdoptionReport",
+      "verification_status": "verified"
+    },
+    {
+      "has_evidence": true,
+      "id": "adoption-source-owned-packages",
+      "source_field": "packages[]; receipt_count",
+      "source_model": "DxForgeAdoptionReport",
+      "verification_status": "verified"
+    },
+    {
+      "has_evidence": true,
+      "id": "adoption-package-docs",
+      "source_field": "package_docs_present; package_docs_missing",
+      "source_model": "DxForgeAdoptionReport",
+      "verification_status": "verified"
+    },
+    {
+      "has_evidence": true,
+      "id": "adoption-public-routes",
+      "source_field": "public_routes[]",
+      "source_model": "DxForgeAdoptionReport",
+      "verification_status": "verified"
+    },
+    {
+      "has_evidence": true,
+      "id": "adoption-release-bundle",
+      "source_field": "release_bundle",
+      "source_model": "DxForgeAdoptionReport",
+      "verification_status": "verified"
+    },
+    {
+      "has_evidence": true,
+      "id": "adoption-honest-scope",
+      "source_field": "honest_scope[]",
+      "source_model": "DxForgeAdoptionReport",
+      "verification_status": "declared"
+    }
+  ],
+  "route": "/forge/adoption",
+  "version": 1
+}

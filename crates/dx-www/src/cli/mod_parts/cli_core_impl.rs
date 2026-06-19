@@ -2271,12 +2271,14 @@ impl Cli {
         )?;
 
         crate::cli::utils::print_build_summary(
+            &config,
             app_routes_compiled,
             client_islands_compiled,
             generated_style_assets_compiled,
             total_size,
             build_start.elapsed(),
-            &config.build.output_dir
+            &config.build.output_dir,
+            &self.cwd,
         );
 
         Ok(())

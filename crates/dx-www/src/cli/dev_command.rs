@@ -84,10 +84,22 @@ where
         options.devtools,
     )?;
 
-    eprintln!("{}", style("Starting development server...").cyan().bold());
     eprintln!();
-    eprintln!("{} Development server running at http://{}:{}", style("◆").cyan(), options.host, port);
-    eprintln!("   Project: {}", config.project.name);
+    eprintln!("{}", crate::cli::utils::rainbow_text(&format!("◆ Www {} (Dx)", env!("CARGO_PKG_VERSION"))));
+    
+    let name_val = config.project.name.clone();
+    let local_val = style(format!("http://{}:{}", options.host, port)).cyan().to_string();
+    let project_size = crate::cli::utils::get_dir_size(cwd);
+    let size_val = crate::cli::utils::format_size(project_size);
+    
+    crate::cli::utils::print_ascii_table(
+        ("Key", "Value"),
+        &[
+            ("Name", &name_val),
+            ("Local", &local_val),
+            ("Size", &size_val),
+        ]
+    );
 
     if port != options.port {
         eprintln!(

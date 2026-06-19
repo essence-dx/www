@@ -293,7 +293,7 @@ fn compile_app_router_page(
     let route_size = proof.fallback.bytes + packet_bytes + generated_style_bytes;
     output.total_size += route_size;
     output.app_routes_compiled += 1;
-    eprintln!("  {} Compiled {} {}", console::style("✓").green(), console::style(&route).cyan(), console::style(format!("({} bytes)", route_size)).dim());
+    eprintln!("{} Compiled {} {}", console::style("✓").green(), console::style(&route).cyan(), console::style(format!("({} bytes)", route_size)).dim());
 
     Ok(())
 }

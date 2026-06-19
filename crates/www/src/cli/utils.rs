@@ -103,11 +103,11 @@ pub fn ascii_table_string(rows: &[(&str, &str)]) -> String {
         out.push_str(&border_dim);
         out.push('\n');
     }
-    out
+    out.trim_end().to_string()
 }
 
 pub fn print_ascii_table(rows: &[(&str, &str)]) {
-    print!("{}", ascii_table_string(rows));
+    println!("{}", ascii_table_string(rows));
 }
 
 pub fn print_build_summary(

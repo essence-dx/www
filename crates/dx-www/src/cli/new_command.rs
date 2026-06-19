@@ -968,28 +968,28 @@ impl NewCommand<'_> {
             ),
             (
                 "components/template-app/dx-check-style-evidence-read-model.ts",
-                include_str!("../../../examples/onboard/dx-check-style-evidence-read-model.ts"),
+                include_str!("../../../../examples/onboard/dx-check-style-evidence-read-model.ts"),
             ),
             (
                 "components/template-app/template-shell-evidence-loader.ts",
-                include_str!("../../../examples/onboard/template-shell-evidence-loader.ts"),
+                include_str!("../../../../examples/onboard/template-shell-evidence-loader.ts"),
             ),
             (
                 "components/template-app/template-shell-style-evidence-drift.ts",
-                include_str!("../../../examples/onboard/template-shell-style-evidence-drift.ts"),
+                include_str!("../../../../examples/onboard/template-shell-style-evidence-drift.ts"),
             ),
             (
                 "components/template-app/preview-style-evidence-read-model.ts",
-                include_str!("../../../examples/onboard/preview-style-evidence-read-model.ts"),
+                include_str!("../../../../examples/onboard/preview-style-evidence-read-model.ts"),
             ),
             (
                 "components/template-app/preview-style-package-panel-read-model.ts",
-                include_str!("../../../examples/onboard/preview-style-package-panel-read-model.ts"),
+                include_str!("../../../../examples/onboard/preview-style-package-panel-read-model.ts"),
             ),
             (
                 "components/template-app/preview-style-package-ownership-read-model.ts",
                 include_str!(
-                    "../../../examples/onboard/preview-style-package-ownership-read-model.ts"
+                    "../../../../examples/onboard/preview-style-package-ownership-read-model.ts"
                 ),
             ),
             (

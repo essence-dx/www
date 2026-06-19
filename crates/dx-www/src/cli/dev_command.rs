@@ -84,31 +84,23 @@ where
         options.devtools,
     )?;
 
-    eprintln!(
-        "  ◆ {} {}",
-        style("dx-www").bold().white(),
-        style("·").dim()
-    );
-    eprintln!(
-        "  {} {}",
-        style("Local:").dim(),
-        style(format!("http://{}:{}", options.host, port)).cyan().bold()
-    );
-    eprintln!(
-        "  {} {}",
-        style("Project:").dim(),
-        style(&config.project.name).white()
-    );
+    eprintln!("{}", style("Starting development server...").cyan().bold());
+    eprintln!();
+    eprintln!("🚀 Development server running at http://{}:{}", options.host, port);
+    eprintln!("   Hot reload: {}", if options.hot_reload { "enabled" } else { "disabled" });
+    eprintln!("   Project: {}", config.project.name);
+
     if port != options.port {
         eprintln!(
-            "  {} Port {} was busy, using {}",
+            "   {} Port {} was busy, using {}",
             style("!").yellow(),
             options.port,
             style(port).cyan()
         );
     }
     eprintln!();
-    eprintln!("  {} Ready", style("✓").green());
+    eprintln!("Press Ctrl+C to stop the server");
+    eprintln!();
 
     let cwd = cwd.clone();
     let hot_reload = options.hot_reload;
@@ -179,23 +171,47 @@ where
 
             let path_str = request.path.as_str();
             if !path_str.starts_with("/_dx/") && !path_str.contains("__no_cache") && path_str != "/favicon.ico" {
-                let elapsed_ms = compile_elapsed.as_millis();
-                let time_str = if elapsed_ms > 1000 {
-                    format!("{:.1}s", compile_elapsed.as_secs_f32())
-                } else {
-                    format!("{}ms", elapsed_ms)
+                let size_bytes = axum_response.body.len();
+                let method = request.method.as_str();
+                
+                let method_colored = match method {
+                    "GET" => style(method).green(),
+                    "POST" => style(method).blue(),
+                    "PUT" => style(method).yellow(),
+                    "DELETE" => style(method).red(),
+                    "HEAD" => style(method).cyan(),
+                    _ => style(method).white(),
                 };
+
+                let path_colored = if path_str == "/" {
+                    style(path_str).cyan()
+                } else if path_str.starts_with("/api") {
+                    style(path_str).magenta()
+                } else {
+                    style(path_str).blue()
+                };
+
+                let render_time = compile_elapsed;
+                
+                // Let's just use compile_elapsed for both, since we don't have total_time yet.
+                let display_time = crate::cli::utils::format_time(compile_elapsed);
                 
                 if axum_response.status == 200 {
-                    let colored_time = if elapsed_ms < 100 { style(time_str).green().to_string() } else if elapsed_ms < 1000 { style(time_str).yellow().to_string() } else { style(time_str).red().to_string() };
-                    eprintln!(" {} Compiled {} in {}", style("✓").green(), path_str, colored_time);
+                    eprintln!(
+                        "{} {} {} - {} - {}",
+                        style("→").dim(),
+                        method_colored.bold(),
+                        path_colored,
+                        style(&display_time).yellow(),
+                        style(crate::cli::utils::format_size(size_bytes)).cyan()
+                    );
                 } else if axum_response.status == 404 {
-                    eprintln!(" {} Not Found {} in {}", style("⨯").yellow(), path_str, style(time_str).yellow());
+                    eprintln!("{} {} {} - {} - {}", style("⨯").yellow(), method_colored.bold(), path_colored, style("404 Not Found").yellow(), style(&display_time).yellow());
                 } else if axum_response.status >= 500 {
-                    eprintln!(" {} Error {} in {}", style("⨯").red(), path_str, style(time_str).red());
+                    eprintln!("{} {} {} - {} - {}", style("⨯").red(), method_colored.bold(), path_colored, style(format!("{} Error", axum_response.status)).red(), style(&display_time).red());
                     if let Ok(body_str) = String::from_utf8(axum_response.body.to_vec()) {
-                        if let Some(start) = body_str.find("<!-- DX_DEV_ERROR: ") {
-                            let remaining = &body_str[start + 19..];
+                        if let Some(start_idx) = body_str.find("<!-- DX_DEV_ERROR: ") {
+                            let remaining = &body_str[start_idx + 19..];
                             if let Some(end) = remaining.find(" -->") {
                                 let error_msg = &remaining[..end];
                                 eprintln!("   {}", style(error_msg.replace("\n", "\n   ")).red());

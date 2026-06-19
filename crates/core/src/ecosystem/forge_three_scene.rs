@@ -8,80 +8,80 @@ pub(crate) fn three_scene_templates() -> Vec<(&'static str, &'static str)> {
     vec![
         (
             "js/components/scene/launch-scene.tsx",
-            include_str!("../../../examples/onboard/launch-scene.tsx"),
+            include_str!("../../../../examples/onboard/launch-scene.tsx"),
         ),
         (
             "js/scene/index.ts",
-            include_str!("../../../examples/onboard/scene/index.ts"),
+            include_str!("../../../../examples/onboard/scene/index.ts"),
         ),
         ("js/three/index.ts", THREE_SCENE_SOURCE_ALIAS_INDEX_TS),
         (
             "js/scene/types.ts",
-            include_str!("../../../examples/onboard/scene/types.ts"),
+            include_str!("../../../../examples/onboard/scene/types.ts"),
         ),
         (
             "js/scene/preset.ts",
-            include_str!("../../../examples/onboard/scene/preset.ts"),
+            include_str!("../../../../examples/onboard/scene/preset.ts"),
         ),
         (
             "js/scene/interaction.ts",
-            include_str!("../../../examples/onboard/scene/interaction.ts"),
+            include_str!("../../../../examples/onboard/scene/interaction.ts"),
         ),
         (
             "js/scene/dashboard-workflow.ts",
-            include_str!("../../../examples/onboard/scene/dashboard-workflow.ts"),
+            include_str!("../../../../examples/onboard/scene/dashboard-workflow.ts"),
         ),
         (
             "js/scene/dashboard-controls.ts",
-            include_str!("../../../examples/onboard/scene/dashboard-controls.ts"),
+            include_str!("../../../../examples/onboard/scene/dashboard-controls.ts"),
         ),
         (
             "js/scene/frame-sample.ts",
-            include_str!("../../../examples/onboard/scene/frame-sample.ts"),
+            include_str!("../../../../examples/onboard/scene/frame-sample.ts"),
         ),
         (
             "js/scene/capability-report.ts",
-            include_str!("../../../examples/onboard/scene/capability-report.ts"),
+            include_str!("../../../../examples/onboard/scene/capability-report.ts"),
         ),
         (
             "js/scene/viewport-report.ts",
-            include_str!("../../../examples/onboard/scene/viewport-report.ts"),
+            include_str!("../../../../examples/onboard/scene/viewport-report.ts"),
         ),
         (
             "js/scene/bounds-report.ts",
-            include_str!("../../../examples/onboard/scene/bounds-report.ts"),
+            include_str!("../../../../examples/onboard/scene/bounds-report.ts"),
         ),
         (
             "js/scene/raycast-report.ts",
-            include_str!("../../../examples/onboard/scene/raycast-report.ts"),
+            include_str!("../../../../examples/onboard/scene/raycast-report.ts"),
         ),
         (
             "js/scene/preview-readiness.ts",
-            include_str!("../../../examples/onboard/scene/preview-readiness.ts"),
+            include_str!("../../../../examples/onboard/scene/preview-readiness.ts"),
         ),
         (
             "js/scene/performance-monitor.ts",
-            include_str!("../../../examples/onboard/scene/performance-monitor.ts"),
+            include_str!("../../../../examples/onboard/scene/performance-monitor.ts"),
         ),
         (
             "js/scene/renderer-handoff.ts",
-            include_str!("../../../examples/onboard/scene/renderer-handoff.ts"),
+            include_str!("../../../../examples/onboard/scene/renderer-handoff.ts"),
         ),
         (
             "js/scene/r3f-renderer-adapter.ts",
-            include_str!("../../../examples/onboard/scene/r3f-renderer-adapter.ts"),
+            include_str!("../../../../examples/onboard/scene/r3f-renderer-adapter.ts"),
         ),
         (
             "js/scene/webgl-runtime.ts",
-            include_str!("../../../examples/onboard/scene/webgl-runtime.ts"),
+            include_str!("../../../../examples/onboard/scene/webgl-runtime.ts"),
         ),
         (
             "js/scene/metadata.ts",
-            include_str!("../../../examples/onboard/scene/metadata.ts"),
+            include_str!("../../../../examples/onboard/scene/metadata.ts"),
         ),
         (
             "js/scene/README.md",
-            include_str!("../../../examples/onboard/scene/README.md"),
+            include_str!("../../../../examples/onboard/scene/README.md"),
         ),
     ]
 }

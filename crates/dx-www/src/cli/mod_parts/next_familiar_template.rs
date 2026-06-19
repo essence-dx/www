@@ -67,7 +67,7 @@ const FORGE_WWW_TEMPLATE_MATERIALIZED_PACKAGE_IDS: [&str; 30] = [
 ];
 
 const NEXT_FAMILIAR_TEMPLATE_ROUTE_CONTRACT_TS: &str =
-    include_str!("../../../../examples/onboard/template-route-contract.ts");
+    include_str!("../../../../../examples/onboard/template-route-contract.ts");
 const NEXT_FAMILIAR_TEMPLATE_CATALOG_TS: &str = r#"export type TemplateCatalogItem = {
   packageId: string;
   surface: string;
@@ -87,111 +87,111 @@ export const templateCatalogSummary = {
 };
 "#;
 const NEXT_FAMILIAR_TEMPLATE_SURFACE_REGISTRY_TS: &str =
-    include_str!("../../../../examples/onboard/template-surface-registry.ts");
+    include_str!("../../../../../examples/onboard/template-surface-registry.ts");
 const NEXT_FAMILIAR_FRAMEWORK_COMPLETENESS_TS: &str =
-    include_str!("../../../../examples/onboard/framework-completeness.ts");
+    include_str!("../../../../../examples/onboard/framework-completeness.ts");
 const NEXT_FAMILIAR_SHADCN_DASHBOARD_CONTROLS_CONTRACT_TSX: &str =
-    include_str!("../../../../examples/onboard/shadcn-dashboard-controls-contract.tsx");
+    include_str!("../../../../../examples/onboard/shadcn-dashboard-controls-contract.tsx");
 const NEXT_FAMILIAR_SHADCN_DASHBOARD_CONTROLS_TSX: &str =
-    include_str!("../../../../examples/onboard/shadcn-dashboard-controls.tsx");
+    include_str!("../../../../../examples/onboard/shadcn-dashboard-controls.tsx");
 const NEXT_FAMILIAR_AUTH_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/auth-session-status.tsx");
+    include_str!("../../../../../examples/onboard/auth-session-status.tsx");
 const NEXT_FAMILIAR_BETTER_AUTH_DASHBOARD_RECEIPT_JSON: &str =
-    include_str!("../../../../examples/onboard/.dx/forge/receipts/auth-better-auth.json");
+    include_str!("../../../../../examples/onboard/.dx/forge/receipts/auth-better-auth.json");
 const NEXT_FAMILIAR_AI_CHAT_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/ai-chat-status.tsx");
+    include_str!("../../../../../examples/onboard/ai-chat-status.tsx");
 const NEXT_FAMILIAR_INSTANT_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/instantdb-status.tsx");
+    include_str!("../../../../../examples/onboard/instantdb-status.tsx");
 const NEXT_FAMILIAR_INSTANT_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../examples/onboard/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json"
+    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json"
 );
 const NEXT_FAMILIAR_WASM_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/wasm-interop-status.tsx");
+    include_str!("../../../../../examples/onboard/wasm-interop-status.tsx");
 const NEXT_FAMILIAR_ZOD_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/zod-validation-status.tsx");
+    include_str!("../../../../../examples/onboard/zod-validation-status.tsx");
 const NEXT_FAMILIAR_ZOD_DASHBOARD_SETTINGS_TSX: &str =
-    include_str!("../../../../examples/onboard/zod-dashboard-settings.tsx");
+    include_str!("../../../../../examples/onboard/zod-dashboard-settings.tsx");
 const NEXT_FAMILIAR_DATA_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/data-status.tsx");
+    include_str!("../../../../../examples/onboard/data-status.tsx");
 const NEXT_FAMILIAR_SUPABASE_PROFILE_WORKFLOW_STATE_TS: &str =
-    include_str!("../../../../examples/onboard/supabase-profile-workflow-state.ts");
+    include_str!("../../../../../examples/onboard/supabase-profile-workflow-state.ts");
 const NEXT_FAMILIAR_SUPABASE_PROFILE_WORKFLOW_TSX: &str =
-    include_str!("../../../../examples/onboard/supabase-profile-workflow.tsx");
+    include_str!("../../../../../examples/onboard/supabase-profile-workflow.tsx");
 const NEXT_FAMILIAR_SUPABASE_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../examples/onboard/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json"
+    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json"
 );
 const NEXT_FAMILIAR_DRIZZLE_QUERY_PROOF_TSX: &str =
-    include_str!("../../../../examples/onboard/drizzle-query-proof.tsx");
+    include_str!("../../../../../examples/onboard/drizzle-query-proof.tsx");
 const NEXT_FAMILIAR_PAYMENTS_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/payments-status.tsx");
+    include_str!("../../../../../examples/onboard/payments-status.tsx");
 const NEXT_FAMILIAR_STRIPE_BILLING_WORKFLOW_RECEIPT_JSON: &str = include_str!(
-    "../../../../examples/onboard/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json"
+    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json"
 );
 const NEXT_FAMILIAR_DOCS_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/docs-status.tsx");
+    include_str!("../../../../../examples/onboard/docs-status.tsx");
 const NEXT_FAMILIAR_DOCS_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../examples/onboard/.dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json"
+    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json"
 );
 const NEXT_FAMILIAR_LAUNCH_SCENE_TSX: &str =
-    include_str!("../../../../examples/onboard/launch-scene.tsx");
+    include_str!("../../../../../examples/onboard/launch-scene.tsx");
 const NEXT_FAMILIAR_SCENE_INDEX_TS: &str =
-    include_str!("../../../../examples/onboard/scene/index.ts");
+    include_str!("../../../../../examples/onboard/scene/index.ts");
 const NEXT_FAMILIAR_SCENE_TYPES_TS: &str =
-    include_str!("../../../../examples/onboard/scene/types.ts");
+    include_str!("../../../../../examples/onboard/scene/types.ts");
 const NEXT_FAMILIAR_SCENE_PRESET_TS: &str =
-    include_str!("../../../../examples/onboard/scene/preset.ts");
+    include_str!("../../../../../examples/onboard/scene/preset.ts");
 const NEXT_FAMILIAR_SCENE_INTERACTION_TS: &str =
-    include_str!("../../../../examples/onboard/scene/interaction.ts");
+    include_str!("../../../../../examples/onboard/scene/interaction.ts");
 const NEXT_FAMILIAR_SCENE_DASHBOARD_WORKFLOW_TS: &str =
-    include_str!("../../../../examples/onboard/scene/dashboard-workflow.ts");
+    include_str!("../../../../../examples/onboard/scene/dashboard-workflow.ts");
 const NEXT_FAMILIAR_SCENE_DASHBOARD_CONTROLS_TS: &str =
-    include_str!("../../../../examples/onboard/scene/dashboard-controls.ts");
+    include_str!("../../../../../examples/onboard/scene/dashboard-controls.ts");
 const NEXT_FAMILIAR_SCENE_FRAME_SAMPLE_TS: &str =
-    include_str!("../../../../examples/onboard/scene/frame-sample.ts");
+    include_str!("../../../../../examples/onboard/scene/frame-sample.ts");
 const NEXT_FAMILIAR_SCENE_CAPABILITY_REPORT_TS: &str =
-    include_str!("../../../../examples/onboard/scene/capability-report.ts");
+    include_str!("../../../../../examples/onboard/scene/capability-report.ts");
 const NEXT_FAMILIAR_SCENE_VIEWPORT_REPORT_TS: &str =
-    include_str!("../../../../examples/onboard/scene/viewport-report.ts");
+    include_str!("../../../../../examples/onboard/scene/viewport-report.ts");
 const NEXT_FAMILIAR_SCENE_BOUNDS_REPORT_TS: &str =
-    include_str!("../../../../examples/onboard/scene/bounds-report.ts");
+    include_str!("../../../../../examples/onboard/scene/bounds-report.ts");
 const NEXT_FAMILIAR_SCENE_RAYCAST_REPORT_TS: &str =
-    include_str!("../../../../examples/onboard/scene/raycast-report.ts");
+    include_str!("../../../../../examples/onboard/scene/raycast-report.ts");
 const NEXT_FAMILIAR_SCENE_PREVIEW_READINESS_TS: &str =
-    include_str!("../../../../examples/onboard/scene/preview-readiness.ts");
+    include_str!("../../../../../examples/onboard/scene/preview-readiness.ts");
 const NEXT_FAMILIAR_SCENE_PERFORMANCE_MONITOR_TS: &str =
-    include_str!("../../../../examples/onboard/scene/performance-monitor.ts");
+    include_str!("../../../../../examples/onboard/scene/performance-monitor.ts");
 const NEXT_FAMILIAR_SCENE_RENDERER_HANDOFF_TS: &str =
-    include_str!("../../../../examples/onboard/scene/renderer-handoff.ts");
+    include_str!("../../../../../examples/onboard/scene/renderer-handoff.ts");
 const NEXT_FAMILIAR_SCENE_R3F_RENDERER_ADAPTER_TS: &str =
-    include_str!("../../../../examples/onboard/scene/r3f-renderer-adapter.ts");
+    include_str!("../../../../../examples/onboard/scene/r3f-renderer-adapter.ts");
 const NEXT_FAMILIAR_SCENE_WEBGL_RUNTIME_TS: &str =
-    include_str!("../../../../examples/onboard/scene/webgl-runtime.ts");
+    include_str!("../../../../../examples/onboard/scene/webgl-runtime.ts");
 const NEXT_FAMILIAR_SCENE_METADATA_TS: &str =
-    include_str!("../../../../examples/onboard/scene/metadata.ts");
+    include_str!("../../../../../examples/onboard/scene/metadata.ts");
 const NEXT_FAMILIAR_SCENE_README_MD: &str =
-    include_str!("../../../../examples/onboard/scene/README.md");
+    include_str!("../../../../../examples/onboard/scene/README.md");
 const NEXT_FAMILIAR_TEMPLATE_DASHBOARD_NAV_TSX: &str =
-    include_str!("../../../../examples/onboard/template-dashboard-nav.tsx");
+    include_str!("../../../../../examples/onboard/template-dashboard-nav.tsx");
 const NEXT_FAMILIAR_DX_STUDIO_EDIT_CONTRACT_TS: &str =
-    include_str!("../../../../examples/onboard/dx-studio-edit-contract.ts");
+    include_str!("../../../../../examples/onboard/dx-studio-edit-contract.ts");
 const NEXT_FAMILIAR_AUTOMATIONS_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/automations-status.tsx");
+    include_str!("../../../../../examples/onboard/automations-status.tsx");
 const NEXT_FAMILIAR_AUTOMATION_MISSION_SUMMARY_TSX: &str =
-    include_str!("../../../../examples/onboard/automation-mission-summary.tsx");
+    include_str!("../../../../../examples/onboard/automation-mission-summary.tsx");
 const NEXT_FAMILIAR_AUTOMATIONS_METADATA_TS: &str =
-    include_str!("../../../../examples/onboard/automations/automations-metadata.ts");
+    include_str!("../../../../../examples/onboard/automations/automations-metadata.ts");
 const NEXT_FAMILIAR_AUTOMATION_CONNECTORS_LAUNCH_RECEIPT_JSON: &str = include_str!(
-    "../../../../examples/onboard/.dx/forge/receipts/2026-05-22-automation-connectors-launch-workflow.json"
+    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-automation-connectors-launch-workflow.json"
 );
 const NEXT_FAMILIAR_MOTION_INTERACTION_PROOF_TSX: &str =
-    include_str!("../../../../examples/onboard/motion-interaction-proof.tsx");
+    include_str!("../../../../../examples/onboard/motion-interaction-proof.tsx");
 const NEXT_FAMILIAR_MOTION_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../examples/onboard/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json"
+    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json"
 );
 const NEXT_FAMILIAR_TEMPLATE_LEAD_FORM_TSX: &str =
-    include_str!("../../../../examples/onboard/template-lead-form.tsx");
+    include_str!("../../../../../examples/onboard/template-lead-form.tsx");
 const NEXT_FAMILIAR_FORMS_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../examples/onboard/.dx/forge/receipts/2026-05-22-forms-dashboard-workflow.json"
+    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-forms-dashboard-workflow.json"
 );
 const NEXT_FAMILIAR_TEMPLATE_SHELL_TSX: &str = r#"export type TemplateShellProps = {
   route?: string;
@@ -208,22 +208,22 @@ export function TemplateShell({ route = "/" }: TemplateShellProps) {
 }
 "#;
 const NEXT_FAMILIAR_ICON_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/icon-status.tsx");
+    include_str!("../../../../../examples/onboard/icon-status.tsx");
 const NEXT_FAMILIAR_INTL_DASHBOARD_LOCALE_CONTRACT_TS: &str =
-    include_str!("../../../../examples/onboard/next-intl-dashboard-locale-contract.ts");
+    include_str!("../../../../../examples/onboard/next-intl-dashboard-locale-contract.ts");
 const NEXT_FAMILIAR_INTL_DASHBOARD_LOCALE_TSX: &str =
-    include_str!("../../../../examples/onboard/next-intl-dashboard-locale.tsx");
+    include_str!("../../../../../examples/onboard/next-intl-dashboard-locale.tsx");
 const NEXT_FAMILIAR_INTL_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../examples/onboard/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json"
+    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json"
 );
 const NEXT_FAMILIAR_INTL_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/next-intl-status.tsx");
+    include_str!("../../../../../examples/onboard/next-intl-status.tsx");
 const NEXT_FAMILIAR_QUERY_STATUS_TSX: &str =
-    include_str!("../../../../examples/onboard/query-cache-status.tsx");
+    include_str!("../../../../../examples/onboard/query-cache-status.tsx");
 const NEXT_FAMILIAR_QUERY_DASHBOARD_READ_MODEL_TS: &str =
-    include_str!("../../../../examples/onboard/query-dashboard-read-model.ts");
+    include_str!("../../../../../examples/onboard/query-dashboard-read-model.ts");
 const NEXT_FAMILIAR_FORGE_PACKAGE_STATUS_TS: &str =
-    include_str!("../../../../examples/onboard/forge-package-status.ts");
+    include_str!("../../../../../examples/onboard/forge-package-status.ts");
 const NEXT_FAMILIAR_FORGE_PACKAGE_STATUS_READ_MODEL_TS: &str = r#"export type ForgePackageStatusReadModel = {
   source: ".dx/forge/package-status.json";
   authority: "read-model";
@@ -241,32 +241,32 @@ export function getForgePackageStatusReadModel() {
 }
 "#;
 const NEXT_FAMILIAR_FORGE_GOLDEN_PATH_CONTRACT_TS: &str =
-    include_str!("../../../../examples/onboard/forge-golden-path-contract.ts");
+    include_str!("../../../../../examples/onboard/forge-golden-path-contract.ts");
 const NEXT_FAMILIAR_FORGE_GOLDEN_PATH_PANEL_TSX: &str =
-    include_str!("../../../../examples/onboard/forge-golden-path-panel.tsx");
+    include_str!("../../../../../examples/onboard/forge-golden-path-panel.tsx");
 const NEXT_FAMILIAR_FORGE_SAFETY_ARCHIVE_CONTRACT_TS: &str =
-    include_str!("../../../../examples/onboard/forge-safety-archive-contract.ts");
+    include_str!("../../../../../examples/onboard/forge-safety-archive-contract.ts");
 const NEXT_FAMILIAR_FORGE_SAFETY_ARCHIVE_RUNBOOK_TS: &str =
-    include_str!("../../../../examples/onboard/forge-safety-archive-runbook.ts");
+    include_str!("../../../../../examples/onboard/forge-safety-archive-runbook.ts");
 const NEXT_FAMILIAR_FORGE_SAFETY_ARCHIVE_PANEL_TSX: &str =
-    include_str!("../../../../examples/onboard/forge-safety-archive-panel.tsx");
+    include_str!("../../../../../examples/onboard/forge-safety-archive-panel.tsx");
 const NEXT_FAMILIAR_FORGE_REMOTE_HEAD_HEALTH_CONTRACT_TS: &str =
-    include_str!("../../../../examples/onboard/forge-remote-head-health-contract.ts");
+    include_str!("../../../../../examples/onboard/forge-remote-head-health-contract.ts");
 const NEXT_FAMILIAR_FORGE_REMOTE_HEAD_HEALTH_PANEL_TSX: &str =
-    include_str!("../../../../examples/onboard/forge-remote-head-health-panel.tsx");
+    include_str!("../../../../../examples/onboard/forge-remote-head-health-panel.tsx");
 const NEXT_FAMILIAR_MARKDOWN_PREVIEW_TSX: &str =
-    include_str!("../../../../examples/onboard/react-markdown-preview.tsx");
+    include_str!("../../../../../examples/onboard/react-markdown-preview.tsx");
 const NEXT_FAMILIAR_STATE_COUNTER_TSX: &str =
-    include_str!("../../../../examples/onboard/state-zustand-counter.tsx");
+    include_str!("../../../../../examples/onboard/state-zustand-counter.tsx");
 const NEXT_FAMILIAR_STATE_DASHBOARD_TSX: &str =
-    include_str!("../../../../examples/onboard/state-zustand-dashboard.tsx");
+    include_str!("../../../../../examples/onboard/state-zustand-dashboard.tsx");
 const NEXT_FAMILIAR_ZUSTAND_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../examples/onboard/.dx/forge/receipts/2026-05-22-state-zustand-dashboard-workflow.json"
+    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-state-zustand-dashboard-workflow.json"
 );
 const NEXT_FAMILIAR_TRPC_CONTRACT_TS: &str =
-    include_str!("../../../../examples/onboard/trpc-launch-contract.ts");
+    include_str!("../../../../../examples/onboard/trpc-launch-contract.ts");
 const NEXT_FAMILIAR_TRPC_HEALTH_TSX: &str =
-    include_str!("../../../../examples/onboard/trpc-launch-health.tsx");
+    include_str!("../../../../../examples/onboard/trpc-launch-health.tsx");
 
 const NEXT_FAMILIAR_TEMPLATE_CONSOLE_TSX: &str = r#""use client";
 

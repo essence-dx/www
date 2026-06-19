@@ -2067,11 +2067,7 @@ impl Cli {
     }
 
     fn cmd_build_web(&self) -> DxResult<()> {
-        use console::style;
-        eprintln!();
-        eprintln!("  ◆ {} {}", style("dx build").bold().white(), style("· production").dim());
-        eprintln!();
-
+        let build_start = std::time::Instant::now();
         let config = config_diagnostics::load_project_config_with_diagnostics(&self.cwd)?;
         ensure_dx_imports_current_for_build(&self.cwd).map_err(forge_error)?;
 
@@ -2218,16 +2214,14 @@ impl Cli {
             },
         )?;
 
-        let size_str = if total_size >= 1024 {
-            format!("{:.1} kB", total_size as f64 / 1024.0)
-        } else {
-            format!("{} B", total_size)
-        };
-        eprintln!();
-        eprintln!("  {} Build complete", style("✓").green());
-        eprintln!("  {} Routes compiled:  {}", style("·").dim(), style(compiled_count).cyan());
-        eprintln!("  {} Output size:      {}", style("·").dim(), style(&size_str).cyan());
-        eprintln!("  {} Output:           {}", style("·").dim(), style(config.build.output_dir.display()).white().dim());
+        crate::cli::utils::print_build_summary(
+            app_routes_compiled,
+            client_islands_compiled,
+            generated_style_assets_compiled,
+            total_size,
+            build_start.elapsed(),
+            &config.build.output_dir
+        );
 
         Ok(())
     }

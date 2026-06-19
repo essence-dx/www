@@ -296,6 +296,7 @@ mod template_readiness;
 mod templates_command;
 mod update_command;
 mod update_options;
+mod utils;
 mod www_output_presence;
 mod www_root;
 

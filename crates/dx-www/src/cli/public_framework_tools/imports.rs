@@ -176,37 +176,10 @@ pub(crate) fn ensure_dx_imports_current_for_build(project: &Path) -> anyhow::Res
         return Ok(());
     }
 
-    let stale_files = report
-        .get("checked_files")
-        .and_then(Value::as_array)
-        .map(|items| {
-            items
-                .iter()
-                .filter_map(Value::as_str)
-                .filter(|path| {
-                    let key = match *path {
-                        p if p == report["files"]["barrel"].as_str().unwrap_or("") => {
-                            "stale_barrel"
-                        }
-                        p if p == report["files"]["import_map"].as_str().unwrap_or("") => {
-                            "stale_import_map"
-                        }
-                        p if p == report["files"]["declarations"].as_str().unwrap_or("") => {
-                            "stale_declarations"
-                        }
-                        ".dx/imports/sync.sr" => "stale_sync_receipt",
-                        _ => "",
-                    };
-                    !key.is_empty() && report.get(key).and_then(Value::as_bool).unwrap_or(false)
-                })
-                .collect::<Vec<_>>()
-        })
-        .unwrap_or_default();
-
-    bail!(
-        "dx build blocked because auto-import artifacts are stale: {}. Run dx imports sync.",
-        stale_files.join(", ")
-    )
+    println!("Imports are stale or missing cache, automatically syncing...");
+    sync_dx_imports(project, PublicToolFormat::Terminal)?;
+    
+    Ok(())
 }
 
 fn build_import_map(project: &Path) -> anyhow::Result<ImportMap> {

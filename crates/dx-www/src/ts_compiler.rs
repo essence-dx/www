@@ -23,8 +23,8 @@ pub fn transpile_ts_to_js(source_text: &str, _file_path: &str) -> Result<String,
     js = re_var_prim.replace_all(&js, "$1 $2").to_string();
 
     // Remove function argument types: (arg: Type) -> (arg)
-    let re_arg_type = Regex::new(r"(\w+)\s*:\s*[A-Za-z0-9_\[\]]+(?=[,)])").unwrap();
-    js = re_arg_type.replace_all(&js, "$1").to_string();
+    let re_arg_type = Regex::new(r"(\w+)\s*:\s*[A-Za-z0-9_\[\]]+([,)])").unwrap();
+    js = re_arg_type.replace_all(&js, "$1$2").to_string();
 
     // Remove return types: function foo(): Type { -> function foo() {
     let re_return_type = Regex::new(r"(\([^)]*\))\s*:\s*[A-Za-z0-9_\[\]]+\s*\{").unwrap();

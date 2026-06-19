@@ -1,40 +1,7 @@
 [workspace]
 resolver = "2"
 members = [
-    "a11y",
-    "auth",
-    "benchmarks",
-    "binary",
-    "build",
-    "cache",
-    "browser",
-    "browser-micro",
-    "core",
-    "db",
-    "db-teleport",
-    "demo",
-    "dom",
-    "dx-www",
-    "error",
-    "fallback",
-    "form",
-    "framework-core",
-    "guard",
-    "interaction",
-    "morph",
-    "observability",
-    "offline",
-    "packet",
-    "print",
-    "query",
-    "reactor",
-    "router",
-    "rtl",
-    "sched",
-    "server",
-    "state",
-    "sync",
-    "tests",
+    "crates/*",
     "related-crates/markdown",
     "related-crates/media-icon",
     "related-crates/security",
@@ -52,14 +19,14 @@ documentation = "https://docs.dx-www.dev"
 rust-version = "1.85"
 
 [workspace.dependencies]
-dx-www-binary = { path = "binary" }
-dx-www-compiler = { path = "core" }
-dx-www-core = { path = "framework-core" }
-dx-www-dom = { path = "dom" }
-dx-www-error = { path = "error" }
-dx-www-morph = { path = "morph" }
-dx-www-packet = { path = "packet" }
-dx-www-server = { path = "server" }
+dx-www-binary = { path = "crates/binary" }
+dx-www-compiler = { path = "crates/core" }
+dx-www-core = { path = "crates/framework-core" }
+dx-www-dom = { path = "crates/dom" }
+dx-www-error = { path = "crates/error" }
+dx-www-morph = { path = "crates/morph" }
+dx-www-packet = { path = "crates/packet" }
+dx-www-server = { path = "crates/server" }
 dx-security = { path = "related-crates/security" }
 dx-serializer = { path = "../serializer" }
 markdown = { path = "related-crates/markdown" }

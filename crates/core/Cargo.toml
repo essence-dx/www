@@ -84,7 +84,7 @@ dx-www-print = { path = "../print" }
 dx-www-rtl = { path = "../rtl" }
 
 # DX Tools integration
-dx-icon = { package = "dx-icons", path = "../related-crates/media-icon", default-features = false, features = ["rayon"] }
+dx-icon = { package = "dx-icons", path = "../../related-crates/media-icon", default-features = false, features = ["rayon"] }
 
 # Production features (10/10)
 log = "0.4"
@@ -93,3 +93,4 @@ ed25519-dalek = { version = "2.0", features = ["rand_core"] }
 [dev-dependencies]
 tempfile = "3.8"
 proptest = "1.4"
+

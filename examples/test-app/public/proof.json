@@ -1,0 +1,93 @@
+{
+  "route": "/forge",
+  "page": "forge",
+  "components": [
+    "Button",
+    "SearchIcon"
+  ],
+  "missing_components": [],
+  "fallback": {
+    "optimized_bytes": 18377,
+    "saved_bytes": 178,
+    "script_count": 0,
+    "style_count": 0,
+    "repeated_node_count": 35,
+    "delivery_mode": "static"
+  },
+  "packet": {
+    "format": "dxob-v1",
+    "bytes": 23720,
+    "decoded_name": "forge",
+    "template_count": 182,
+    "string_count": 113,
+    "binding_count": 0,
+    "event_count": 0,
+    "css_class_count": 37,
+    "roundtrip_matches": true
+  },
+  "browser_packet": {
+    "format": "dxp-v1",
+    "bytes": 14706,
+    "decoded_kind": "Route",
+    "section_count": 3,
+    "payload_bytes": 14534,
+    "roundtrip_matches": true,
+    "sections": [
+      {
+        "kind": "FallbackHtmlRef",
+        "encoding": "Json",
+        "bytes": 158,
+        "content_hash": "df9de6469e5940ed5d023fe30a52f31fad596802b2abf22bbc2bd2890f84ff89"
+      },
+      {
+        "kind": "TemplateSlots",
+        "encoding": "CanonicalBinary",
+        "bytes": 14245,
+        "content_hash": "df63b4da0e27e3d21a5bb26f7c358d1dd4453152b59378424fc56f80305a949c"
+      },
+      {
+        "kind": "SourceManifest",
+        "encoding": "Json",
+        "bytes": 131,
+        "content_hash": "8f0305ac103689449411eb7d3c400b3e4e3dc5d4866bf7b242802c23ce9788fe"
+      }
+    ]
+  },
+  "interaction": null,
+  "forge_packages": [
+    {
+      "package_id": "shadcn/ui/button",
+      "action": "AddWrite",
+      "risk_score": 100,
+      "traffic": "green",
+      "files_tracked": 4,
+      "manifest_path": "G:\\Dx\\www\\.dx/forge/source-manifest.json",
+      "receipt_path": "G:\\Dx\\www\\.dx/forge/receipts\\20260525T234626025501500Z-shadcn-ui-button.json"
+    },
+    {
+      "package_id": "dx/icon/search",
+      "action": "AddWrite",
+      "risk_score": 100,
+      "traffic": "green",
+      "files_tracked": 3,
+      "manifest_path": "G:\\Dx\\www\\.dx/forge/source-manifest.json",
+      "receipt_path": "G:\\Dx\\www\\.dx/forge/receipts\\20260525T234626035689100Z-dx-icon-search.json"
+    }
+  ],
+  "forge": {
+    "package_id": "dx-www/vertical/forge",
+    "action": "TrackWrite",
+    "risk_score": 100,
+    "traffic": "green",
+    "files_tracked": 1,
+    "manifest_path": "G:\\Dx\\www\\.dx/forge/source-manifest.json",
+    "receipt_path": "G:\\Dx\\www\\.dx/forge/receipts\\20260525T234645803579500Z-dx-www-vertical-forge.json"
+  },
+  "written": {
+    "html_path": "G:\\Dx\\www\\public\\forge.html",
+    "packet_path": "G:\\Dx\\www\\public\\forge.dxp",
+    "claims_manifest_path": "G:\\Dx\\www\\public\\forge.claims.json",
+    "evidence_manifest_path": "G:\\Dx\\www\\public\\forge.evidence.json",
+    "summary_path": "G:\\Dx\\www\\public\\proof.json"
+  }
+}

@@ -1,0 +1,999 @@
+{
+  "version": 1,
+  "route": "/forge",
+  "generated_at": "2026-05-25T23:46:45.508427800+00:00",
+  "claims": [
+    {
+      "id": "release-gate",
+      "claim": "Release gate is `Passed` with DX check 60 / 100, traffic `red`, and 0 launch findings.",
+      "source_model": "DxForgeReleaseEvidenceReport",
+      "source_field": "passed,check_score,check_traffic,launch_gate_findings",
+      "verification_status": "verified",
+      "evidence": "rollback_coverage=0%, package_docs_coverage=100%"
+    },
+    {
+      "id": "benchmark-evidence",
+      "claim": "Mode forge-adoption, delivery static, decoded 8465, Brotli 1270, HTTP median 2.815 ms, Chrome load 21.100 ms, DXPK applied no, interaction no.",
+      "source_model": "DxForgeReleaseEvidenceReport",
+      "source_field": "latest_benchmark",
+      "verification_status": "verified",
+      "evidence": "forge-adoption"
+    },
+    {
+      "id": "package-scorecard-score",
+      "claim": "Package scorecard is 100 / 100 for 29 launch packages.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.score,package_scorecard.packages",
+      "verification_status": "verified",
+      "evidence": "verified_packages=29, source_owned_packages=29, node_modules_packages=0"
+    },
+    {
+      "id": "source-owned-no-node-modules",
+      "claim": "The launch package set is source-owned and creates no node_modules packages.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[].source_owned",
+      "verification_status": "verified",
+      "evidence": "source_owned=29/29, node_modules=0"
+    },
+    {
+      "id": "install-scripts-blocked",
+      "claim": "The launch package set blocks install scripts and package lifecycle execution.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[].install_scripts_blocked",
+      "verification_status": "verified",
+      "evidence": "Every package card reads `scripts blocked yes` only from the scorecard model."
+    },
+    {
+      "id": "package-shadcn-ui-button",
+      "claim": "shadcn/ui/button is rendered as source-owned with 4 files, 2920 bytes, and launch boundary `This proves curated UI component materialization, not full shadcn registry parity yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/button]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-shadcn-ui-button-provenance",
+      "claim": "shadcn/ui/button provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/button].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local shadcn-ui v4 registry entry and Radix Slot primitive for the official UI Components Button surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-shadcn-ui-button-advisory",
+      "claim": "shadcn/ui/button advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/button].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn-style button package, but it is not a live advisory feed."
+    },
+    {
+      "id": "package-shadcn-ui-button-license",
+      "claim": "shadcn/ui/button declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/button].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-shadcn-ui-badge",
+      "claim": "shadcn/ui/badge is rendered as source-owned with 4 files, 2701 bytes, and launch boundary `This adds a real status/tag primitive for launch templates, not full shadcn registry parity yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/badge]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-shadcn-ui-badge-provenance",
+      "claim": "shadcn/ui/badge provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/badge].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local shadcn-ui v4 registry entry and Radix Slot primitive for the official UI Components Badge surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-shadcn-ui-badge-advisory",
+      "claim": "shadcn/ui/badge advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/badge].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn badge launch slice, but it is not a live advisory feed and does not audit application status taxonomy, labels, or tone."
+    },
+    {
+      "id": "package-shadcn-ui-badge-license",
+      "claim": "shadcn/ui/badge declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/badge].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-shadcn-ui-card",
+      "claim": "shadcn/ui/card is rendered as source-owned with 3 files, 2419 bytes, and launch boundary `This expands curated UI coverage to a layout component, not the full shadcn registry yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/card]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-shadcn-ui-card-provenance",
+      "claim": "shadcn/ui/card provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/card].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local shadcn-ui v4 registry entry for the official UI Components Card surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-shadcn-ui-card-advisory",
+      "claim": "shadcn/ui/card advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/card].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn-style card package, but it is not a live advisory feed."
+    },
+    {
+      "id": "package-shadcn-ui-card-license",
+      "claim": "shadcn/ui/card declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/card].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-shadcn-ui-label",
+      "claim": "shadcn/ui/label is rendered as source-owned with 3 files, 1016 bytes, and launch boundary `This adds a real accessible form-label primitive for launch templates, not full shadcn registry parity yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/label]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-shadcn-ui-label-provenance",
+      "claim": "shadcn/ui/label provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/label].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local shadcn-ui v4 registry entry and Radix Label primitive for the official UI Components Label surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-shadcn-ui-label-advisory",
+      "claim": "shadcn/ui/label advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/label].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn label launch slice, but it is not a live advisory feed and does not audit application form copy, accessible names, or validation relationships."
+    },
+    {
+      "id": "package-shadcn-ui-label-license",
+      "claim": "shadcn/ui/label declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/label].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-shadcn-ui-separator",
+      "claim": "shadcn/ui/separator is rendered as source-owned with 3 files, 1409 bytes, and launch boundary `This adds a real layout separator primitive for launch templates, not full shadcn registry parity yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/separator]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-shadcn-ui-separator-provenance",
+      "claim": "shadcn/ui/separator provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/separator].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local shadcn-ui v4 registry entry and Radix Separator primitive for the official UI Components Separator surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-shadcn-ui-separator-advisory",
+      "claim": "shadcn/ui/separator advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/separator].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn separator launch slice, but it is not a live advisory feed and does not audit application information hierarchy or decorative-versus-semantic divider policy."
+    },
+    {
+      "id": "package-shadcn-ui-separator-license",
+      "claim": "shadcn/ui/separator declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/separator].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-shadcn-ui-field",
+      "claim": "shadcn/ui/field is rendered as source-owned with 5 files, 7442 bytes, and launch boundary `This adds real form layout, description, and error primitives for launch templates, not full shadcn registry parity yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/field]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-shadcn-ui-field-provenance",
+      "claim": "shadcn/ui/field provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/field].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local shadcn-ui v4 registry entry plus Radix Label and Separator primitives for the official UI Components Field surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-shadcn-ui-field-advisory",
+      "claim": "shadcn/ui/field advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/field].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn field launch slice, but it is not a live advisory feed and does not audit application form layout, validation copy, or error announcement policy."
+    },
+    {
+      "id": "package-shadcn-ui-field-license",
+      "claim": "shadcn/ui/field declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/field].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-shadcn-ui-item",
+      "claim": "shadcn/ui/item is rendered as source-owned with 5 files, 6909 bytes, and launch boundary `This adds real list row, media, content, and action primitives for launch templates, not full shadcn registry parity yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/item]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-shadcn-ui-item-provenance",
+      "claim": "shadcn/ui/item provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/item].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local shadcn-ui v4 registry entry plus Radix Slot and Separator primitives for the official UI Components Item surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-shadcn-ui-item-advisory",
+      "claim": "shadcn/ui/item advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/item].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn item launch slice, but it is not a live advisory feed and does not audit application list semantics, actions, or row-level authorization."
+    },
+    {
+      "id": "package-shadcn-ui-item-license",
+      "claim": "shadcn/ui/item declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/item].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-shadcn-ui-input",
+      "claim": "shadcn/ui/input is rendered as source-owned with 2 files, 664 bytes, and launch boundary `This adds a real form primitive for launch templates, not full shadcn registry parity yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/input]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-shadcn-ui-input-provenance",
+      "claim": "shadcn/ui/input provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/input].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local shadcn-ui v4 registry entry for the official UI Components Input surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-shadcn-ui-input-advisory",
+      "claim": "shadcn/ui/input advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/input].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn input package, but it is not a live advisory feed."
+    },
+    {
+      "id": "package-shadcn-ui-input-license",
+      "claim": "shadcn/ui/input declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/input].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-shadcn-ui-textarea",
+      "claim": "shadcn/ui/textarea is rendered as source-owned with 2 files, 584 bytes, and launch boundary `This expands launch form coverage to long-form text fields, not full shadcn registry parity yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/textarea]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-shadcn-ui-textarea-provenance",
+      "claim": "shadcn/ui/textarea provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/textarea].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local shadcn-ui v4 registry entry for the official UI Components Textarea surface; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-shadcn-ui-textarea-advisory",
+      "claim": "shadcn/ui/textarea advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/textarea].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this shadcn textarea package, but it is not a live advisory feed."
+    },
+    {
+      "id": "package-shadcn-ui-textarea-license",
+      "claim": "shadcn/ui/textarea declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[shadcn/ui/textarea].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-dx-icon-search",
+      "claim": "dx/icon/search is rendered as source-owned with 3 files, 1516 bytes, and launch boundary `This proves selected asset packaging, not every icon library or tree-shaking scenario yet.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[dx/icon/search]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-dx-icon-search-provenance",
+      "claim": "dx/icon/search provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[dx/icon/search].provenance",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge source metadata is recorded, but this is not SLSA or live upstream provenance yet."
+    },
+    {
+      "id": "package-dx-icon-search-advisory",
+      "claim": "dx/icon/search advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[dx/icon/search].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this selected icon package, but it is not a live advisory feed."
+    },
+    {
+      "id": "package-dx-icon-search-license",
+      "claim": "dx/icon/search declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[dx/icon/search].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-auth-better-auth",
+      "claim": "auth/better-auth is rendered as source-owned with 21 files, 45563 bytes, and launch boundary `This proves source-owned Better Auth/OAuth launch wiring, not a complete hosted identity platform, account system, organization model, or database policy.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[auth/better-auth]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-auth-better-auth-provenance",
+      "claim": "auth/better-auth provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[auth/better-auth].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local upstream better-auth source mirror and package export map for betterAuth(), createAuthClient(), Next.js handlers/cookies, adapters, and plugins; this is curated Authentication launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-auth-better-auth-advisory",
+      "claim": "auth/better-auth advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[auth/better-auth].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this Authentication launch slice based on upstream better-auth, but it is not a live advisory feed and does not audit the deployed database adapter, session policy, or OAuth provider credentials."
+    },
+    {
+      "id": "package-auth-better-auth-license",
+      "claim": "auth/better-auth declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[auth/better-auth].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-animation-motion",
+      "claim": "animation/motion is rendered as source-owned with 17 files, 64581 bytes, and launch boundary `This proves Motion React launch wiring, not every gesture, layout projection, timeline, or DOM animation API.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[animation/motion]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-animation-motion-provenance",
+      "claim": "animation/motion provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[animation/motion].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Motion source mirror, package export map, motion/react re-export, DOM API, React hooks, and examples before curating this launch animation slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-animation-motion-advisory",
+      "claim": "animation/motion advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[animation/motion].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this Motion launch slice, but it is not a live advisory feed and does not audit application animation performance or accessibility choices."
+    },
+    {
+      "id": "package-animation-motion-license",
+      "claim": "animation/motion declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[animation/motion].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-i18n-next-intl",
+      "claim": "i18n/next-intl is rendered as source-owned with 40 files, 66135 bytes, and launch boundary `This proves next-intl App Router launch wiring, not complete translation operations, locale SEO policy, or domain routing governance.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[i18n/next-intl]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-i18n-next-intl-provenance",
+      "claim": "i18n/next-intl provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[i18n/next-intl].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local next-intl source mirror, package export map, App Router examples, defineRouting(), createNavigation(), getRequestConfig(), createMiddleware(), NextIntlClientProvider, useTranslations(), and getTranslations() before curating this launch i18n slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-i18n-next-intl-advisory",
+      "claim": "i18n/next-intl advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[i18n/next-intl].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this next-intl launch slice, but it is not a live advisory feed and does not audit translated message quality, locale strategy, or deployed routing policy."
+    },
+    {
+      "id": "package-i18n-next-intl-license",
+      "claim": "i18n/next-intl declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[i18n/next-intl].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-tanstack-query",
+      "claim": "tanstack/query is rendered as source-owned with 38 files, 119878 bytes, and launch boundary `This proves TanStack Query launch wiring, not a replacement for every observer, devtools, persistence, or offline sync feature.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[tanstack/query]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-tanstack-query-provenance",
+      "claim": "tanstack/query provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[tanstack/query].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local TanStack Query source mirror for QueryClient, QueryClientProvider, useQuery, queryOptions, prefetchQuery, dehydrate, HydrationBoundary, Query, Mutation, QueryState, MutationState, status types, and Updater before curating this launch query slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-tanstack-query-advisory",
+      "claim": "tanstack/query advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[tanstack/query].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this TanStack Query launch slice, but it is not a live advisory feed and does not audit application query functions, endpoints, or cached payload contents."
+    },
+    {
+      "id": "package-tanstack-query-license",
+      "claim": "tanstack/query declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[tanstack/query].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-validation-zod",
+      "claim": "validation/zod is rendered as source-owned with 19 files, 50683 bytes, and launch boundary `This proves Zod validation launch wiring, not a universal schema governance, policy, or data-access authorization layer.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[validation/zod]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-validation-zod-provenance",
+      "claim": "validation/zod provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[validation/zod].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Zod source mirror, package export map, v4 classic external exports, schema constructors, safeParse helpers, error formatters, and JSON Schema conversion before curating this launch validation slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-validation-zod-advisory",
+      "claim": "validation/zod advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[validation/zod].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this Zod validation launch slice, but it is not a live advisory feed and does not audit application schemas, accepted inputs, or downstream authorization policy."
+    },
+    {
+      "id": "package-validation-zod-license",
+      "claim": "validation/zod declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[validation/zod].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-forms-react-hook-form",
+      "claim": "forms/react-hook-form is rendered as source-owned with 6 files, 13386 bytes, and launch boundary `This proves React Hook Form launch wiring, not a replacement for app-specific schema design, accessibility review, or authorization policy.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[forms/react-hook-form]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-forms-react-hook-form-provenance",
+      "claim": "forms/react-hook-form provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[forms/react-hook-form].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local React Hook Form source mirror, package export map, useForm(), FormProvider, useFormContext(), Controller, useFieldArray(), useWatch(), resolver contracts, and examples before curating this launch forms slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-forms-react-hook-form-advisory",
+      "claim": "forms/react-hook-form advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[forms/react-hook-form].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this React Hook Form launch slice, but it is not a live advisory feed and does not audit submitted data, validation schema quality, accessibility, or application authorization policy."
+    },
+    {
+      "id": "package-forms-react-hook-form-license",
+      "claim": "forms/react-hook-form declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[forms/react-hook-form].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-payments-stripe-js",
+      "claim": "payments/stripe-js is rendered as source-owned with 10 files, 69735 bytes, and launch boundary `This proves Stripe.js browser payment wiring, not server PaymentIntent creation, webhooks, pricing, fraud, tax, dispute, or compliance policy.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[payments/stripe-js]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-payments-stripe-js-provenance",
+      "claim": "payments/stripe-js provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[payments/stripe-js].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Stripe.js source mirror, package metadata, README, pure loadStripe export, Stripe type declarations, Elements options, and confirmPayment contracts before curating this launch payment slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-payments-stripe-js-advisory",
+      "claim": "payments/stripe-js advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[payments/stripe-js].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this Stripe.js launch client slice, but it is not a live advisory feed and does not audit server-side payment creation, webhook verification, fulfillment, fraud policy, or PCI posture."
+    },
+    {
+      "id": "package-payments-stripe-js-license",
+      "claim": "payments/stripe-js declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[payments/stripe-js].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-automations-n8n",
+      "claim": "automations/n8n is rendered as source-owned with 6 files, 26371 bytes, and launch boundary `This proves n8n metadata and DX CLI automation bridge wiring, not live workflow execution, credential setup, or canvas parity.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[automations/n8n]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-automations-n8n-provenance",
+      "claim": "automations/n8n provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[automations/n8n].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the copied n8n-nodes-base node and credential metadata generated under integrations/n8n-nodes-base before curating this source-owned automation bridge slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-automations-n8n-advisory",
+      "claim": "automations/n8n advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[automations/n8n].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this n8n automation bridge slice, but it is not a live advisory feed and does not audit live connector credentials, workflow execution, or external account policy."
+    },
+    {
+      "id": "package-automations-n8n-license",
+      "claim": "automations/n8n declares license `Sustainable Use License` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[automations/n8n].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-state-zustand",
+      "claim": "state/zustand is rendered as source-owned with 13 files, 43062 bytes, and launch boundary `This proves a Zustand-compatible launch state slice with explicit app-owned Immer dependency boundaries, not every middleware, upstream multi-store DevTools tracking, or durable application storage.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[state/zustand]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-state-zustand-provenance",
+      "claim": "state/zustand provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[state/zustand].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Zustand source mirror, package export map, vanilla store, React hook, subscribeWithSelector, combine, persist, immer middleware, and shallow helpers before curating this launch state slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-state-zustand-advisory",
+      "claim": "state/zustand advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[state/zustand].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this Zustand-compatible launch state slice, but it is not a live advisory feed and does not audit application persistence keys, browser storage policy, optional Immer dependency review, draft mutation conventions, or sensitive state handling."
+    },
+    {
+      "id": "package-state-zustand-license",
+      "claim": "state/zustand declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[state/zustand].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-ai-vercel-ai",
+      "claim": "ai/vercel-ai is rendered as source-owned with 35 files, 55220 bytes, and launch boundary `This proves Vercel AI SDK route and client wiring, not provider account setup, model safety policy, persistence, or rate limiting.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[ai/vercel-ai]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-ai-vercel-ai-provenance",
+      "claim": "ai/vercel-ai provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[ai/vercel-ai].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Vercel AI SDK source mirror and package export map for streamText(), tool(), convertToModelMessages(), DefaultChatTransport, UIMessage, and provider boundaries; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-ai-vercel-ai-advisory",
+      "claim": "ai/vercel-ai advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[ai/vercel-ai].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this Vercel AI SDK launch slice, but it is not a live advisory feed and does not audit the selected provider package, API key handling, model safety policy, rate limiting, or persistence."
+    },
+    {
+      "id": "package-ai-vercel-ai-license",
+      "claim": "ai/vercel-ai declares license `Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[ai/vercel-ai].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-api-trpc",
+      "claim": "api/trpc is rendered as source-owned with 28 files, 68761 bytes, and launch boundary `This proves tRPC App Router wiring, typed clients, and subscription transport shape, not application authorization, procedure design, request limits, stream fan-out, or persistence policy.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[api/trpc]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-api-trpc-provenance",
+      "claim": "api/trpc provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[api/trpc].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local tRPC source mirror, package export maps, fetch adapter, initTRPC root builder, errorFormatter, TRPCErrorFormatter, TRPCErrorShape, inferRouterError, getHTTPStatusCodeFromError, responseMeta, ResponseMeta, ResponseMetaFn, TRPCCombinedDataTransformer, TRPCDataTransformer, createCallerFactory server caller usage, typed router inference, typed client proxy, HTTPBatchLinkOptions, HTTPHeaders, TRPCFetch, headers, maxItems, maxURLLength, methodOverride, link transformer options, httpBatchLink, httpBatchStreamLink, loggerLink, httpSubscriptionLink, splitLink, tracked subscriptions, TanStack React Query query/mutation/infinite-query/subscription options, and Next App Router examples before curating this launch API slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-api-trpc-advisory",
+      "claim": "api/trpc advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[api/trpc].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this tRPC launch slice, but it is not a live advisory feed and does not audit application procedures, authorization policy, request limits, request id propagation, auth token source, cross-origin header policy, proxy URL limits, fetch runtime selection, persistence, audit logging, pagination cursor semantics, serializer dependency selection, custom type registration, cache taxonomy, CDN/proxy behavior, deployed header verification, log redaction policy, JSONL/proxy compatibility, error redaction policy, public error copy, subscription fan-out, stream pacing, EventSource policy, or deployed route configuration."
+    },
+    {
+      "id": "package-api-trpc-license",
+      "claim": "api/trpc declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[api/trpc].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-content-fumadocs-next",
+      "claim": "content/fumadocs-next is rendered as source-owned with 31 files, 59392 bytes, and launch boundary `This proves Fumadocs docs, source plugin frontmatter, navigation snapshot helpers, toc summary helpers, LLMs route materialization, OpenAPI virtual docs, OpenAPI request proxy source wiring, OpenAPI request code usage, dynamic search, static search-index export, and client preset materialization, not source plugin taxonomy, navigation policy, toc policy, slug/canonical URL policy, OpenAPI schema governance, proxy allowed origins/auth forwarding policy, request code sample policy, AI crawler policy, search UI, multilingual/vector policy, content governance, or automatic merging of existing Next config.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[content/fumadocs-next]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-content-fumadocs-next-provenance",
+      "claim": "content/fumadocs-next provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[content/fumadocs-next].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Fumadocs source mirror, package export maps, package metadata, next, next-min, next-static, and openapi examples, MDX config, source loader, source plugin exports, lucideIconsPlugin(), statusBadgesPlugin(), slugsFromData(), breadcrumb/page-tree exports, getBreadcrumbItems(), flattenTree(), findNeighbour(), getPageTreePeers(), getTableOfContents(), TOCItemType, page.data.toc, llms() source export, processed Markdown getText() flow, createOpenAPI(), staticSource(), loaderPlugin(), createProxy(), proxyUrl, createAPIPage(), createCodeUsageGeneratorRegistry(), registerDefault(), defineClientConfig(), createFromSource search route, staticGET search export, useDocsSearch client preset shape, docs layouts, MDX component exports, and starter content flow before curating this launch docs slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-content-fumadocs-next-advisory",
+      "claim": "content/fumadocs-next advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[content/fumadocs-next].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this Fumadocs launch docs slice, but it is not a live advisory feed and does not audit application content, source plugin taxonomy, navigation policy, slug/canonical URL policy, OpenAPI proxy allowed origins, auth forwarding policy, search UI, multilingual/vector search policy, Next config merges, or deployment policy."
+    },
+    {
+      "id": "package-content-fumadocs-next-license",
+      "claim": "content/fumadocs-next declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[content/fumadocs-next].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-content-react-markdown",
+      "claim": "content/react-markdown is rendered as source-owned with 13 files, 31679 bytes, and launch boundary `This proves markdown rendering for launch content, not raw HTML trust, plugin governance, moderation, or full MDX/docs infrastructure.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[content/react-markdown]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-content-react-markdown-provenance",
+      "claim": "content/react-markdown provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[content/react-markdown].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Markdown & MDX Content source mirrors for react-markdown Markdown/MarkdownAsync/MarkdownHooks/defaultUrlTransform, @mdx-js/mdx compile/compileSync/createProcessor/nodeTypes/providerImportSource, and @mdx-js/react MDXProvider/useMDXComponents before curating this launch content slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-content-react-markdown-advisory",
+      "claim": "content/react-markdown advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[content/react-markdown].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this react-markdown launch slice, but it is not a live advisory feed and does not audit user-generated content, plugin policy, raw HTML, or link sanitization."
+    },
+    {
+      "id": "package-content-react-markdown-license",
+      "claim": "content/react-markdown declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[content/react-markdown].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-supabase-client",
+      "claim": "supabase/client is rendered as source-owned with 31 files, 125507 bytes, and launch boundary `This proves Supabase SSR client materialization, not deployed RLS correctness, Auth redirect setup, or secret management.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[supabase/client]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-supabase-client-provenance",
+      "claim": "supabase/client provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[supabase/client].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Supabase monorepo examples and package metadata for @supabase/ssr, @supabase/supabase-js, createBrowserClient(), createServerClient(), auth actions, and the profiles RLS seed; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-supabase-client-advisory",
+      "claim": "supabase/client advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[supabase/client].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this Supabase client slice, but it is not a live advisory feed and does not audit deployed RLS policy, Auth redirect configuration, or project secrets."
+    },
+    {
+      "id": "package-supabase-client-license",
+      "claim": "supabase/client declares license `Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[supabase/client].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-db-drizzle-sqlite",
+      "claim": "db/drizzle-sqlite is rendered as source-owned with 18 files, 46908 bytes, and launch boundary `This proves a SQLite-first Drizzle data slice, not every Drizzle driver, dialect, migration, or database hosting scenario.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[db/drizzle-sqlite]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-db-drizzle-sqlite-provenance",
+      "claim": "db/drizzle-sqlite provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[db/drizzle-sqlite].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Drizzle ORM source mirror, package metadata, sqlite-core README, root exports, relations, SQL helpers, and better-sqlite3 driver shape; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-db-drizzle-sqlite-advisory",
+      "claim": "db/drizzle-sqlite advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[db/drizzle-sqlite].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this Drizzle SQLite launch slice, but it is not a live advisory feed and does not audit deployed database files, migration policy, or application query access control."
+    },
+    {
+      "id": "package-db-drizzle-sqlite-license",
+      "claim": "db/drizzle-sqlite declares license `Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[db/drizzle-sqlite].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-instantdb-react",
+      "claim": "instantdb/react is rendered as source-owned with 28 files, 58772 bytes, and launch boundary `This proves InstantDB React launch wiring, not dashboard rules, production auth policy, or complete realtime data governance.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[instantdb/react]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-instantdb-react-provenance",
+      "claim": "instantdb/react provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[instantdb/react].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local InstantDB source mirror, @instantdb/react export map, init(), schema builder, db.useQuery(), db.transact(), db.tx, room presence, and the Next.js app-dir example; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-instantdb-react-advisory",
+      "claim": "instantdb/react advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[instantdb/react].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this InstantDB React launch slice, but it is not a live advisory feed and does not audit dashboard rules, app ids, auth policy, or deployed data access."
+    },
+    {
+      "id": "package-instantdb-react-license",
+      "claim": "instantdb/react declares license `Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[instantdb/react].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-wasm-bindgen",
+      "claim": "wasm/bindgen is rendered as source-owned with 6 files, 66170 bytes, and launch boundary `This proves launch-template loading for generated wasm-bindgen modules, not Rust macro or CLI replacement.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[wasm/bindgen]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-wasm-bindgen-provenance",
+      "claim": "wasm/bindgen provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[wasm/bindgen].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local wasm-bindgen source mirror for the #[wasm_bindgen] prelude, JsValue runtime surface, Closure bridge, cli-support Bindgen builder, CLI targets, and examples before curating this launch loader slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-wasm-bindgen-advisory",
+      "claim": "wasm/bindgen advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[wasm/bindgen].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this wasm-bindgen loader slice, but it is not a live advisory feed and does not audit generated Wasm binaries, Rust crates, or JavaScript glue emitted by local builds."
+    },
+    {
+      "id": "package-wasm-bindgen-license",
+      "claim": "wasm/bindgen declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[wasm/bindgen].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-3d-launch-scene",
+      "claim": "3d/launch-scene is rendered as source-owned with 19 files, 135522 bytes, and launch boundary `This proves a source-owned Web Preview scene, not a replacement for the Three engine, React Three Fiber renderer, Drei helper catalog, Spline editor, 3D asset pipeline, or GPU QA.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[3d/launch-scene]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-3d-launch-scene-provenance",
+      "claim": "3d/launch-scene provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[3d/launch-scene].provenance",
+      "verification_status": "declared",
+      "evidence": "DX inspected the local Three, React Three Fiber, and Drei mirrors for WebGL engine shape, Canvas/root rendering, frame hooks, Stage, Environment, PresentationControls, Text, and MIT license boundaries before curating this source-owned Web Preview scene slice; this is curated launch metadata, not SLSA or live upstream provenance."
+    },
+    {
+      "id": "package-3d-launch-scene-advisory",
+      "claim": "3d/launch-scene advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[3d/launch-scene].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this 3D launch scene slice, but it is not a live advisory feed and does not audit application WebGL shaders, GPU performance, external 3D assets, or optional Three/R3F/Drei dependencies."
+    },
+    {
+      "id": "package-3d-launch-scene-license",
+      "claim": "3d/launch-scene declares license `MIT` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[3d/launch-scene].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "package-migration-static-site",
+      "claim": "migration/static-site is rendered as source-owned with 4 files, 5493 bytes, and launch boundary `This proves a static content migration seed, not full WordPress plugin, theme, CMS, or dynamic-site migration.`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[migration/static-site]",
+      "verification_status": "verified",
+      "evidence": "integrity_verified=true, source_owned=true, scripts_blocked=true, node_modules_created=false"
+    },
+    {
+      "id": "package-migration-static-site-provenance",
+      "claim": "migration/static-site provenance source is `dx-forge-curated-registry` and verified is `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[migration/static-site].provenance",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge source metadata is recorded, but this is not SLSA or live upstream provenance yet."
+    },
+    {
+      "id": "package-migration-static-site-advisory",
+      "claim": "migration/static-site advisory coverage uses `dx-forge-curated-advisory-fixture` with live coverage `false` and 0 findings.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[migration/static-site].advisory_review",
+      "verification_status": "declared",
+      "evidence": "Curated DX Forge advisory fixture records no known advisory findings for this static migration example, but it is not a live advisory feed and does not scan imported HTML."
+    },
+    {
+      "id": "package-migration-static-site-license",
+      "claim": "migration/static-site declares license `MIT OR Apache-2.0` and license review `false`.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.packages[migration/static-site].license_review",
+      "verification_status": "declared",
+      "evidence": "License is recorded from the curated package declaration only; no formal DX legal review is claimed."
+    },
+    {
+      "id": "honest-boundary-1",
+      "claim": "Forge v1 is not a universal npm replacement; it is a source-owned package firewall for curated packages first.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.honest_boundaries[]",
+      "verification_status": "declared",
+      "evidence": "Displayed directly in the launch-page honest-boundary section."
+    },
+    {
+      "id": "honest-boundary-2",
+      "claim": "The launch package set proves no install scripts, no package lifecycle hooks, and no node_modules creation for these packages.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.honest_boundaries[]",
+      "verification_status": "declared",
+      "evidence": "Displayed directly in the launch-page honest-boundary section."
+    },
+    {
+      "id": "honest-boundary-3",
+      "claim": "Arbitrary npm, Cargo, pip, and Go package ingestion still needs provenance, advisory metadata, license review, and ecosystem-specific sandboxing.",
+      "source_model": "DxForgePackageScorecardReport",
+      "source_field": "package_scorecard.honest_boundaries[]",
+      "verification_status": "declared",
+      "evidence": "Displayed directly in the launch-page honest-boundary section."
+    }
+  ]
+}

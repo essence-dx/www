@@ -1,8 +1,0 @@
-tool="dx icons"
-command="check"
-passed=true
-generated_dir="components/icons"
-component="Icon"
-icon_source="dx-icons"
-referenced_icon_count=2
-legacy_json=".dx/receipts/icons/check.json"

@@ -59,9 +59,9 @@ go = []
 
 [dependencies]
 # Core DX ecosystem
-dx-style = { path = "../related-crates/style", optional = true }
-dx-serializer = { path = "../../serializer", optional = true }
-dx-icon = { package = "dx-icons", path = "../related-crates/media-icon", default-features = false, features = ["rayon"], optional = true }
+dx-style = { path = "../../related-crates/style", optional = true }
+dx-serializer = { path = "../../../serializer", optional = true }
+dx-icon = { package = "dx-icons", path = "../../related-crates/media-icon", default-features = false, features = ["rayon"], optional = true }
 dx-www-binary = { workspace = true, optional = true }
 dx-www-compiler = { workspace = true, optional = true }
 dx-www-dom = { workspace = true, optional = true }
@@ -154,4 +154,5 @@ tempfile = "3.14"
 pretty_assertions = "1.4"
 insta = "1.41"
 proptest = { workspace = true }
+
 

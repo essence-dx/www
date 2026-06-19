@@ -29,7 +29,7 @@ walkdir = "2.4"
 pathdiff = "0.2"
 
 # Icon processing
-dx-icon = { package = "dx-icons", path = "../related-crates/media-icon", default-features = false, features = ["rayon"] }
+dx-icon = { package = "dx-icons", path = "../../related-crates/media-icon", default-features = false, features = ["rayon"] }
 
 # Regex for parsing
 regex = "1.10"
@@ -38,4 +38,5 @@ once_cell = "1.19"
 [dev-dependencies]
 proptest.workspace = true
 tempfile = "3.8"
-dx-style = { path = "../related-crates/style" }
+dx-style = { path = "../../related-crates/style" }
+

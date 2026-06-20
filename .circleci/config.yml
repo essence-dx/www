@@ -46,6 +46,7 @@ jobs:
           shell: powershell.exe
           command: |
             choco install gh -y --no-progress --limit-output
+            $env:GH_TOKEN = [System.Environment]::GetEnvironmentVariable("CIRCLECI_GH_TOKEN")
             $tag = "windows"
             C:\ProgramData\chocolatey\bin\gh.exe release create $tag --repo essence-dx/www --title "Windows build" --notes "CI Windows artifact" --target $env:CIRCLE_SHA1 2>$null; $LASTEXITCODE = 0
             C:\ProgramData\chocolatey\bin\gh.exe release upload $tag dist\dx-www-windows-x86_64-*.zip --repo essence-dx/www --clobber
@@ -134,6 +135,7 @@ workflows:
 #     when: << pipeline.parameters.macos_release_artifacts >>
 #     jobs:
 #       - macos-release
+
 
 
 

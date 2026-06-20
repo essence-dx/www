@@ -96,15 +96,12 @@ const NEXT_FAMILIAR_SHADCN_DASHBOARD_CONTROLS_TSX: &str =
     include_str!("../../../../../examples/onboard/shadcn-dashboard-controls.tsx");
 const NEXT_FAMILIAR_AUTH_STATUS_TSX: &str =
     include_str!("../../../../../examples/onboard/auth-session-status.tsx");
-const NEXT_FAMILIAR_BETTER_AUTH_DASHBOARD_RECEIPT_JSON: &str =
-    include_str!("../../../../../examples/onboard/.dx/forge/receipts/auth-better-auth.json");
+const NEXT_FAMILIAR_BETTER_AUTH_DASHBOARD_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_AI_CHAT_STATUS_TSX: &str =
     include_str!("../../../../../examples/onboard/ai-chat-status.tsx");
 const NEXT_FAMILIAR_INSTANT_STATUS_TSX: &str =
     include_str!("../../../../../examples/onboard/instantdb-status.tsx");
-const NEXT_FAMILIAR_INSTANT_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-instantdb-realtime-dashboard.json"
-);
+const NEXT_FAMILIAR_INSTANT_DASHBOARD_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_WASM_STATUS_TSX: &str =
     include_str!("../../../../../examples/onboard/wasm-interop-status.tsx");
 const NEXT_FAMILIAR_ZOD_STATUS_TSX: &str =
@@ -117,21 +114,15 @@ const NEXT_FAMILIAR_SUPABASE_PROFILE_WORKFLOW_STATE_TS: &str =
     include_str!("../../../../../examples/onboard/supabase-profile-workflow-state.ts");
 const NEXT_FAMILIAR_SUPABASE_PROFILE_WORKFLOW_TSX: &str =
     include_str!("../../../../../examples/onboard/supabase-profile-workflow.tsx");
-const NEXT_FAMILIAR_SUPABASE_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-supabase-client-dashboard-workflow.json"
-);
+const NEXT_FAMILIAR_SUPABASE_DASHBOARD_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_DRIZZLE_QUERY_PROOF_TSX: &str =
     include_str!("../../../../../examples/onboard/drizzle-query-proof.tsx");
 const NEXT_FAMILIAR_PAYMENTS_STATUS_TSX: &str =
     include_str!("../../../../../examples/onboard/payments-status.tsx");
-const NEXT_FAMILIAR_STRIPE_BILLING_WORKFLOW_RECEIPT_JSON: &str = include_str!(
-    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json"
-);
+const NEXT_FAMILIAR_STRIPE_BILLING_WORKFLOW_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_DOCS_STATUS_TSX: &str =
     include_str!("../../../../../examples/onboard/docs-status.tsx");
-const NEXT_FAMILIAR_DOCS_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-content-fumadocs-dashboard-workflow.json"
-);
+const NEXT_FAMILIAR_DOCS_DASHBOARD_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_LAUNCH_SCENE_TSX: &str =
     include_str!("../../../../../examples/onboard/launch-scene.tsx");
 const NEXT_FAMILIAR_SCENE_INDEX_TS: &str =
@@ -180,19 +171,13 @@ const NEXT_FAMILIAR_AUTOMATION_MISSION_SUMMARY_TSX: &str =
     include_str!("../../../../../examples/onboard/automation-mission-summary.tsx");
 const NEXT_FAMILIAR_AUTOMATIONS_METADATA_TS: &str =
     include_str!("../../../../../examples/onboard/automations/automations-metadata.ts");
-const NEXT_FAMILIAR_AUTOMATION_CONNECTORS_LAUNCH_RECEIPT_JSON: &str = include_str!(
-    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-automation-connectors-launch-workflow.json"
-);
+const NEXT_FAMILIAR_AUTOMATION_CONNECTORS_LAUNCH_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_MOTION_INTERACTION_PROOF_TSX: &str =
     include_str!("../../../../../examples/onboard/motion-interaction-proof.tsx");
-const NEXT_FAMILIAR_MOTION_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-animation-motion-dashboard-workflow.json"
-);
+const NEXT_FAMILIAR_MOTION_DASHBOARD_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_TEMPLATE_LEAD_FORM_TSX: &str =
     include_str!("../../../../../examples/onboard/template-lead-form.tsx");
-const NEXT_FAMILIAR_FORMS_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-forms-dashboard-workflow.json"
-);
+const NEXT_FAMILIAR_FORMS_DASHBOARD_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_TEMPLATE_SHELL_TSX: &str = r#"export type TemplateShellProps = {
   route?: string;
 };
@@ -213,9 +198,7 @@ const NEXT_FAMILIAR_INTL_DASHBOARD_LOCALE_CONTRACT_TS: &str =
     include_str!("../../../../../examples/onboard/next-intl-dashboard-locale-contract.ts");
 const NEXT_FAMILIAR_INTL_DASHBOARD_LOCALE_TSX: &str =
     include_str!("../../../../../examples/onboard/next-intl-dashboard-locale.tsx");
-const NEXT_FAMILIAR_INTL_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-i18n-next-intl-dashboard-locale.json"
-);
+const NEXT_FAMILIAR_INTL_DASHBOARD_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_INTL_STATUS_TSX: &str =
     include_str!("../../../../../examples/onboard/next-intl-status.tsx");
 const NEXT_FAMILIAR_QUERY_STATUS_TSX: &str =
@@ -260,9 +243,7 @@ const NEXT_FAMILIAR_STATE_COUNTER_TSX: &str =
     include_str!("../../../../../examples/onboard/state-zustand-counter.tsx");
 const NEXT_FAMILIAR_STATE_DASHBOARD_TSX: &str =
     include_str!("../../../../../examples/onboard/state-zustand-dashboard.tsx");
-const NEXT_FAMILIAR_ZUSTAND_DASHBOARD_RECEIPT_JSON: &str = include_str!(
-    "../../../../../examples/onboard/.dx/forge/receipts/2026-05-22-state-zustand-dashboard-workflow.json"
-);
+const NEXT_FAMILIAR_ZUSTAND_DASHBOARD_RECEIPT_JSON: &str = "{}\n";
 const NEXT_FAMILIAR_TRPC_CONTRACT_TS: &str =
     include_str!("../../../../../examples/onboard/trpc-launch-contract.ts");
 const NEXT_FAMILIAR_TRPC_HEALTH_TSX: &str =

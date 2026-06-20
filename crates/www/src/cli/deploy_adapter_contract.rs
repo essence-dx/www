@@ -26,10 +26,10 @@ use super::server_action_runtime::{
     SERVER_ACTION_REPLAY_LEDGER_JSON, write_server_action_replay_ledger_contract,
 };
 
-pub(super) const DX_CLOUD_PROVIDER_ADAPTER_JSON: &str = "provider-adapter.dx-cloud.json";
-const CACHE_MANIFEST_JSON: &str = "cache-manifest.json";
-const PROVIDER_ADAPTER_SMOKE_MATRIX_JSON: &str = "provider-adapter-smoke-matrix.json";
-const ROUTE_HANDLER_CONFORMANCE_MATRIX_JSON: &str = "route-handler-conformance-matrix.json";
+pub(super) const DX_CLOUD_PROVIDER_ADAPTER_JSON: &str = ".dx/build-cache/provider-adapter.dx-cloud.json";
+const CACHE_MANIFEST_JSON: &str = ".dx/build-cache/cache-manifest.json";
+const PROVIDER_ADAPTER_SMOKE_MATRIX_JSON: &str = ".dx/build-cache/provider-adapter-smoke-matrix.json";
+const ROUTE_HANDLER_CONFORMANCE_MATRIX_JSON: &str = ".dx/build-cache/route-handler-conformance-matrix.json";
 pub(super) fn write_deploy_adapter_contract(
     project_dir: &Path,
     output_dir: &Path,
@@ -44,14 +44,13 @@ pub(super) fn write_deploy_adapter_contract(
         "strategy": "manifest-pinned-asset-rollback",
         "manifest_hash": manifest_hash,
         "previous_release_required": true,
-        "restore_order": ["immutable_assets", "manifest.json", "deploy-adapter.json"],
+        "restore_order": ["immutable_assets", ".dx/build-cache/manifest.json", ".dx/build-cache/deploy-adapter.json"],
     });
-    std::fs::write(
-        output_dir.join("rollback.json"),
+    if let Some(p) = output_dir.join(".dx/build-cache/rollback.json").parent() { let _ = std::fs::create_dir_all(p); } std::fs::write(output_dir.join(".dx/build-cache/rollback.json"),
         serde_json::to_string_pretty(&rollback).map_err(forge_error)?,
     )
     .map_err(|e| DxError::IoError {
-        path: Some(output_dir.join("rollback.json")),
+        path: Some(output_dir.join(".dx/build-cache/rollback.json")),
         message: e.to_string(),
     })?;
 
@@ -107,14 +106,14 @@ pub(super) fn write_deploy_adapter_contract(
         "next_familiar_compatibility_evidence": deploy_next_familiar_compatibility_contract(output_dir),
         "next_familiar_fixtures": deploy_next_familiar_fixtures_contract(output_dir),
         "build_manifest": {
-            "path": "manifest.json",
+            "path": ".dx/build-cache/manifest.json",
             "hash": manifest_hash,
             "signed": false,
             "signature_required_for_release": true,
             "signature_policy": "sign manifest before hosted promotion"
         },
         "rollback": {
-            "metadata_path": "rollback.json",
+            "metadata_path": ".dx/build-cache/rollback.json",
             "strategy": "manifest-pinned-asset-rollback"
         },
         "readiness": readiness::readiness_deploy_contract(&manifest_hash),
@@ -143,12 +142,11 @@ pub(super) fn write_deploy_adapter_contract(
     deploy["bundle_partition"] = deploy_bundle_partition(&deploy);
     deploy["provider_adapter"] =
         write_provider_adapter_fixture(output_dir, &deploy, &manifest_hash)?;
-    std::fs::write(
-        output_dir.join("deploy-adapter.json"),
+    if let Some(p) = output_dir.join(".dx/build-cache/deploy-adapter.json").parent() { let _ = std::fs::create_dir_all(p); } std::fs::write(output_dir.join(".dx/build-cache/deploy-adapter.json"),
         serde_json::to_string_pretty(&deploy).map_err(forge_error)?,
     )
     .map_err(|e| DxError::IoError {
-        path: Some(output_dir.join("deploy-adapter.json")),
+        path: Some(output_dir.join(".dx/build-cache/deploy-adapter.json")),
         message: e.to_string(),
     })?;
     Ok(())
@@ -174,7 +172,7 @@ fn write_provider_adapter_fixture(
         "network_required": false,
         "secrets_required": false,
         "deployment_id": format!("dxlocal-{hash_prefix}"),
-        "deploy_adapter_path": "deploy-adapter.json",
+        "deploy_adapter_path": ".dx/build-cache/deploy-adapter.json",
         "no_node_modules_required": deploy["no_node_modules_required"],
         "runtime": {
             "kind": "static-plus-source-owned-actions",
@@ -211,8 +209,7 @@ fn write_provider_adapter_fixture(
             "Review server actions and health endpoints before promoting to hosted traffic."
         ]
     });
-    std::fs::write(
-        output_dir.join(DX_CLOUD_PROVIDER_ADAPTER_JSON),
+    if let Some(p) = output_dir.join(DX_CLOUD_PROVIDER_ADAPTER_JSON).parent() { let _ = std::fs::create_dir_all(p); } std::fs::write(output_dir.join(DX_CLOUD_PROVIDER_ADAPTER_JSON),
         serde_json::to_string_pretty(&provider).map_err(forge_error)?,
     )
     .map_err(|e| DxError::IoError {
@@ -254,7 +251,7 @@ fn write_provider_adapter_smoke_matrix(
         "release_ready": false,
         "hosted_provider_proof": false,
         "provider_adapter_path": DX_CLOUD_PROVIDER_ADAPTER_JSON,
-        "deploy_adapter_path": "deploy-adapter.json",
+        "deploy_adapter_path": ".dx/build-cache/deploy-adapter.json",
         "account_required": false,
         "network_required": false,
         "matrix_status": "local-proof-and-upload-plan-only",
@@ -289,7 +286,7 @@ fn write_provider_adapter_smoke_matrix(
             {
                 "surface": "static-cdn-upload-plan",
                 "status": "upload-plan-only",
-                "proof": "cache-manifest.json plus provider upload_plan CDN Content-Encoding/Content-Type headers",
+                "proof": ".dx/build-cache/cache-manifest.json plus provider upload_plan CDN Content-Encoding/Content-Type headers",
                 "hosted_provider": false
             },
             {
@@ -315,8 +312,7 @@ fn write_provider_adapter_smoke_matrix(
         ],
         "rule": "This matrix is evidence for local replay and upload planning only; it must not be used as hosted provider proof."
     });
-    std::fs::write(
-        output_dir.join(PROVIDER_ADAPTER_SMOKE_MATRIX_JSON),
+    if let Some(p) = output_dir.join(PROVIDER_ADAPTER_SMOKE_MATRIX_JSON).parent() { let _ = std::fs::create_dir_all(p); } std::fs::write(output_dir.join(PROVIDER_ADAPTER_SMOKE_MATRIX_JSON),
         serde_json::to_string_pretty(&matrix).map_err(forge_error)?,
     )
     .map_err(|e| DxError::IoError {
@@ -446,8 +442,7 @@ fn write_route_handler_conformance_matrix(
         ],
         "rule": "This matrix is local deploy-contract and source-owned runtime evidence only; it is not hosted provider conformance proof."
     });
-    std::fs::write(
-        output_dir.join(ROUTE_HANDLER_CONFORMANCE_MATRIX_JSON),
+    if let Some(p) = output_dir.join(ROUTE_HANDLER_CONFORMANCE_MATRIX_JSON).parent() { let _ = std::fs::create_dir_all(p); } std::fs::write(output_dir.join(ROUTE_HANDLER_CONFORMANCE_MATRIX_JSON),
         serde_json::to_string_pretty(&matrix).map_err(forge_error)?,
     )
     .map_err(|e| DxError::IoError {
@@ -495,14 +490,14 @@ fn provider_adapter_upload_plan(deploy: &serde_json::Value) -> Vec<serde_json::V
         }
     };
 
-    add_artifact("manifest.json", "build-manifest", "no-store", "evidence");
+    add_artifact(".dx/build-cache/manifest.json", "build-manifest", "no-store", "evidence");
     add_artifact(
-        "deploy-adapter.json",
+        ".dx/build-cache/deploy-adapter.json",
         "deploy-contract",
         "no-store",
         "evidence",
     );
-    add_artifact("rollback.json", "rollback-metadata", "no-store", "evidence");
+    add_artifact(".dx/build-cache/rollback.json", "rollback-metadata", "no-store", "evidence");
     add_artifact(
         PRODUCTION_OBSERVABILITY_JSON,
         "production-observability",
@@ -582,7 +577,7 @@ fn provider_adapter_upload_plan(deploy: &serde_json::Value) -> Vec<serde_json::V
         "evidence",
     );
     add_artifact(
-        "import-resolution.json",
+        ".dx/build-cache/import-resolution.json",
         "import-resolution",
         "no-store",
         "evidence",
@@ -594,7 +589,7 @@ fn provider_adapter_upload_plan(deploy: &serde_json::Value) -> Vec<serde_json::V
         "evidence",
     );
     add_artifact(
-        "source-build-receipt.json",
+        ".dx/build-cache/source-build-receipt.json",
         "source-build-receipt",
         "no-store",
         "evidence",
@@ -659,9 +654,9 @@ fn provider_adapter_upload_plan(deploy: &serde_json::Value) -> Vec<serde_json::V
             add_artifact(path, "hosted-preview-contract", "no-store", "evidence");
         }
         for path in hosted_preview_forge_bundle_paths(hosted_preview) {
-            let kind = if path == "forge/source-manifest.json" {
+            let kind = if path == "forge/source-.dx/build-cache/manifest.json" {
                 "forge-source-manifest"
-            } else if path == "forge/template-manifest.json" {
+            } else if path == "forge/template-.dx/build-cache/manifest.json" {
                 "forge-template-manifest"
             } else {
                 "forge-receipt"
@@ -747,17 +742,17 @@ fn deploy_artifact_evidence_only_path(path: &str) -> bool {
     let normalized = path.replace('\\', "/");
     let decoded = deploy_precompressed_source_path(&normalized).unwrap_or(normalized.as_str());
     decoded.starts_with(".dx/")
-        || decoded.starts_with("source-routes/")
+        || decoded.starts_with(".dx/build-cache/source-routes/")
         || decoded.ends_with(".sr")
-        || decoded == "deploy-adapter.json"
+        || decoded == ".dx/build-cache/deploy-adapter.json"
         || decoded == DX_CLOUD_PROVIDER_ADAPTER_JSON
         || decoded == PROVIDER_ADAPTER_SMOKE_MATRIX_JSON
         || decoded == ROUTE_HANDLER_CONFORMANCE_MATRIX_JSON
         || decoded == SERVER_ACTION_REPLAY_LEDGER_JSON
         || decoded == READINESS_PROOF_GRAPH_RECEIPT
         || decoded == CACHE_MANIFEST_JSON
-        || decoded == "rollback.json"
-        || decoded == "manifest.json"
+        || decoded == ".dx/build-cache/rollback.json"
+        || decoded == ".dx/build-cache/manifest.json"
         || decoded == "page-graph.json"
         || decoded.ends_with("/page-graph.json")
         || decoded.ends_with("/app-router-execution.json")
@@ -789,7 +784,7 @@ fn bundle_partition_from_upload_plan(upload_plan: &[serde_json::Value]) -> serde
             "deployable": true,
             "artifact_count": public_runtime_artifacts.len(),
             "artifacts": public_runtime_artifacts,
-            "excludes": [READINESS_PROOF_GRAPH_RECEIPT, ".dx/receipts/**", "app-router-execution.json", "deploy-adapter.json", SERVER_ACTION_REPLAY_LEDGER_JSON],
+            "excludes": [READINESS_PROOF_GRAPH_RECEIPT, ".dx/receipts/**", "app-router-execution.json", ".dx/build-cache/deploy-adapter.json", SERVER_ACTION_REPLAY_LEDGER_JSON],
         },
         "evidence_bundle": {
             "deployable_public_bytes": false,
@@ -832,8 +827,7 @@ fn write_cache_manifest(
         "precompressed_encodings": ["br", "gzip"],
         "evidence_cache_control": "no-store",
     });
-    std::fs::write(
-        output_dir.join(CACHE_MANIFEST_JSON),
+    if let Some(p) = output_dir.join(CACHE_MANIFEST_JSON).parent() { let _ = std::fs::create_dir_all(p); } std::fs::write(output_dir.join(CACHE_MANIFEST_JSON),
         serde_json::to_string_pretty(&manifest)?,
     )
     .map_err(serde_json::Error::io)?;
@@ -1021,7 +1015,7 @@ fn precompress_deploy_immutable_assets(output_dir: &Path) -> DxResult<()> {
 
 fn deploy_precompress_candidate_path(path: &str) -> bool {
     if deploy_precompressed_encoding(path).is_some()
-        || path.starts_with("source-routes/")
+        || path.starts_with(".dx/build-cache/source-routes/")
         || path.starts_with(".dx/")
         || !is_deploy_immutable_asset_path(path)
     {
@@ -1080,7 +1074,7 @@ fn precompressed_asset_path(path: &Path, extension: &str) -> PathBuf {
 }
 
 fn deploy_source_route_evidence(output_dir: &Path) -> Vec<serde_json::Value> {
-    let source_routes_dir = output_dir.join("source-routes");
+    let source_routes_dir = output_dir.join(".dx/build-cache/source-routes");
     if !source_routes_dir.exists() {
         return Vec::new();
     }
@@ -1103,7 +1097,7 @@ fn deploy_source_route_evidence(output_dir: &Path) -> Vec<serde_json::Value> {
 
 fn is_deploy_immutable_asset_path(path: &str) -> bool {
     let decoded_path = deploy_precompressed_source_path(path).unwrap_or(path);
-    if decoded_path.starts_with("source-routes/") {
+    if decoded_path.starts_with(".dx/build-cache/source-routes/") {
         return false;
     }
     Path::new(decoded_path)
@@ -1270,10 +1264,10 @@ mod tests {
         assert!(is_deploy_immutable_asset_path("assets/app.wasm.gz"));
         assert!(!is_deploy_immutable_asset_path("app/index.html.br"));
         assert!(!is_deploy_immutable_asset_path(
-            "source-routes/root/modules/app-page.mjs"
+            ".dx/build-cache/source-routes/root/modules/app-page.mjs"
         ));
         assert!(!is_deploy_immutable_asset_path(
-            "source-routes/root/index.dxpk"
+            ".dx/build-cache/source-routes/root/index.dxpk"
         ));
     }
 
@@ -1286,17 +1280,17 @@ mod tests {
         std::fs::write(output.join("chunks/app.wasm.gz"), b"gz").expect("gz asset");
         std::fs::create_dir_all(output.join("app")).expect("app dir");
         std::fs::write(output.join("app/index.html.br"), b"html").expect("html br");
-        std::fs::create_dir_all(output.join("source-routes/root/modules"))
+        std::fs::create_dir_all(output.join(".dx/build-cache/source-routes/root/modules"))
             .expect("source route dir");
         std::fs::write(
-            output.join("source-routes/root/modules/app-page.mjs"),
+            output.join(".dx/build-cache/source-routes/root/modules/app-page.mjs"),
             b"export {};",
         )
         .expect("source route module");
-        std::fs::write(output.join("source-routes/root/index.dxpk"), b"packet")
+        std::fs::write(output.join(".dx/build-cache/source-routes/root/index.dxpk"), b"packet")
             .expect("source route packet");
         std::fs::write(
-            output.join("source-routes/root/route-unit.json"),
+            output.join(".dx/build-cache/source-routes/root/route-unit.json"),
             br#"{"tiny_static_route_proof":{"no_js_capable":true}}"#,
         )
         .expect("route unit");
@@ -1327,10 +1321,10 @@ mod tests {
             !asset["path"]
                 .as_str()
                 .expect("asset path")
-                .starts_with("source-routes/")
+                .starts_with(".dx/build-cache/source-routes/")
         }));
         assert!(evidence.iter().any(|artifact| {
-            artifact["path"] == "source-routes/root/route-unit.json"
+            artifact["path"] == ".dx/build-cache/source-routes/root/route-unit.json"
                 && artifact["kind"] == "source-route-unit"
                 && artifact["bundle"] == "evidence"
                 && artifact["cache_control"] == "no-store"
@@ -1342,14 +1336,14 @@ mod tests {
         let dir = tempfile::tempdir().expect("tempdir");
         let output = dir.path();
         std::fs::create_dir_all(output.join("_dx/styles")).expect("style dir");
-        std::fs::create_dir_all(output.join("source-routes/root")).expect("source route dir");
+        std::fs::create_dir_all(output.join(".dx/build-cache/source-routes/root")).expect("source route dir");
         std::fs::create_dir_all(output.join("public")).expect("public dir");
 
         let css = ".card{color:#fff;background:#000;padding:16px;}\n".repeat(64);
         std::fs::write(output.join("_dx/styles/app.css"), css.as_bytes()).expect("css asset");
         std::fs::write(output.join("_dx/styles/app.css.br"), b"stale").expect("stale br");
         std::fs::write(
-            output.join("source-routes/root/route-shell.mjs"),
+            output.join(".dx/build-cache/source-routes/root/route-shell.mjs"),
             b"export const source = true;",
         )
         .expect("source route module");
@@ -1363,7 +1357,7 @@ mod tests {
         assert!(gzip_path.is_file());
         assert!(
             !output
-                .join("source-routes/root/route-shell.mjs.br")
+                .join(".dx/build-cache/source-routes/root/route-shell.mjs.br")
                 .exists()
         );
         assert!(!output.join("public/logo.png.br").exists());
@@ -1456,7 +1450,7 @@ mod tests {
             ],
             "source_route_evidence": [
                 {
-                    "path": "source-routes/root/route-unit.json",
+                    "path": ".dx/build-cache/source-routes/root/route-unit.json",
                     "kind": "source-route-unit",
                     "cache_control": "no-store",
                     "bundle": "evidence"
@@ -1502,11 +1496,11 @@ mod tests {
             Some("evidence")
         );
         assert_eq!(
-            artifact_bundle(&upload_plan, "source-routes/root/route-unit.json"),
+            artifact_bundle(&upload_plan, ".dx/build-cache/source-routes/root/route-unit.json"),
             Some("evidence")
         );
         let route_unit_artifact =
-            artifact_by_path(&upload_plan, "source-routes/root/route-unit.json")
+            artifact_by_path(&upload_plan, ".dx/build-cache/source-routes/root/route-unit.json")
                 .expect("source route-unit artifact");
         assert_eq!(route_unit_artifact["kind"], "source-route-unit");
         assert_eq!(route_unit_artifact["cache_control"], "no-store");
@@ -1543,7 +1537,7 @@ mod tests {
                 && !artifact["path"]
                     .as_str()
                     .expect("public artifact path")
-                    .starts_with("source-routes/")
+                    .starts_with(".dx/build-cache/source-routes/")
         }));
     }
 
@@ -1555,7 +1549,7 @@ mod tests {
                     "html": "app/index.html",
                     "packet": ".dx/receipts/readiness/proof-graph.sr",
                     "execution_contract": "app/page-graph.json",
-                    "client_islands_runtime": "source-routes/root/client-islands.js",
+                    "client_islands_runtime": ".dx/build-cache/source-routes/root/client-islands.js",
                     "server_data": "app/server-data.json",
                 }
             ],
@@ -1565,11 +1559,11 @@ mod tests {
                     "cache_control": "public, max-age=31536000, immutable"
                 },
                 {
-                    "path": "deploy-adapter.json.br",
+                    "path": ".dx/build-cache/deploy-adapter.json.br",
                     "cache_control": "public, max-age=31536000, immutable"
                 },
                 {
-                    "path": "cache-manifest.json.gz",
+                    "path": ".dx/build-cache/cache-manifest.json.gz",
                     "cache_control": "public, max-age=31536000, immutable"
                 },
                 {
@@ -1577,7 +1571,7 @@ mod tests {
                     "cache_control": "public, max-age=31536000, immutable"
                 },
                 {
-                    "path": "source-routes/root/route-unit.json",
+                    "path": ".dx/build-cache/source-routes/root/route-unit.json",
                     "cache_control": "public, max-age=31536000, immutable"
                 }
             ],
@@ -1587,10 +1581,10 @@ mod tests {
         for path in [
             READINESS_PROOF_GRAPH_RECEIPT,
             "app/page-graph.json",
-            "source-routes/root/client-islands.js",
-            "source-routes/root/route-unit.json",
-            "deploy-adapter.json.br",
-            "cache-manifest.json.gz",
+            ".dx/build-cache/source-routes/root/client-islands.js",
+            ".dx/build-cache/source-routes/root/route-unit.json",
+            ".dx/build-cache/deploy-adapter.json.br",
+            ".dx/build-cache/cache-manifest.json.gz",
             ".dx/receipts/readiness/proof-graph.sr.gz",
         ] {
             let artifact = artifact_by_path(&upload_plan, path).expect("evidence-only artifact");

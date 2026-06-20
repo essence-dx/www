@@ -949,7 +949,7 @@ fn app_route_relative_dir<'a>(project_root: &Path, path: &'a Path) -> Option<&'a
 }
 
 pub fn output_snapshot_path(output_dir: &Path, relative: &Path) -> PathBuf {
-    output_dir.join("source").join(relative)
+    output_dir.join(".dx/build-cache/source").join(relative)
 }
 
 pub fn read_file(path: &Path) -> DxResult<Vec<u8>> {

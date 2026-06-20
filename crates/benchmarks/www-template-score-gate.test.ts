@@ -101,8 +101,8 @@ test("launch score gate blocks 90+ until real browser or provider evidence exist
 
 test("generated preview manifests and dashboard expose score gate without overclaiming", () => {
   const manifestPaths = [
-    "examples/template/public/preview-manifest.json",
-    ".dx/template-app-browser-preview/public/preview-manifest.json",
+    "examples/template/public/preview-.dx/build-cache/manifest.json",
+    ".dx/template-app-browser-preview/public/preview-.dx/build-cache/manifest.json",
   ];
 
   for (const manifestPath of manifestPaths) {

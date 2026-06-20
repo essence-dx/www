@@ -43,16 +43,16 @@ pub(super) fn verify_build_rollback(
     previous_build_dir: &Path,
     current_build_dir: &Path,
 ) -> anyhow::Result<DxBuildRollbackVerificationReport> {
-    let previous_deploy = read_json(previous_build_dir.join("deploy-adapter.json"))?;
-    let current_deploy = read_json(current_build_dir.join("deploy-adapter.json"))?;
-    let previous_manifest_path = previous_build_dir.join("manifest.json");
-    let current_manifest_path = current_build_dir.join("manifest.json");
+    let previous_deploy = read_json(previous_build_dir.join(".dx/build-cache/deploy-adapter.json"))?;
+    let current_deploy = read_json(current_build_dir.join(".dx/build-cache/deploy-adapter.json"))?;
+    let previous_manifest_path = previous_build_dir.join(".dx/build-cache/manifest.json");
+    let current_manifest_path = current_build_dir.join(".dx/build-cache/manifest.json");
     let previous_manifest_hash = blake3_file_hash(&previous_manifest_path)?;
     let current_manifest_hash = blake3_file_hash(&current_manifest_path)?;
     let current_rollback_path = current_build_dir.join(
         current_deploy["rollback"]["metadata_path"]
             .as_str()
-            .unwrap_or("rollback.json"),
+            .unwrap_or(".dx/build-cache/rollback.json"),
     );
     let current_rollback_metadata_present = current_rollback_path.exists();
     let current_rollback = if current_rollback_metadata_present {
@@ -78,8 +78,8 @@ pub(super) fn verify_build_rollback(
         .unwrap_or_else(|| {
             vec![
                 "immutable_assets".to_string(),
-                "manifest.json".to_string(),
-                "deploy-adapter.json".to_string(),
+                ".dx/build-cache/manifest.json".to_string(),
+                ".dx/build-cache/deploy-adapter.json".to_string(),
             ]
         });
 
@@ -132,15 +132,15 @@ pub(super) fn verify_build_rollback(
         &mut findings,
         previous_manifest_matches_deploy,
         "previous-manifest-hash",
-        "Previous manifest hash matches deploy-adapter.json.",
-        "Previous manifest hash does not match deploy-adapter.json.",
+        "Previous manifest hash matches .dx/build-cache/deploy-adapter.json.",
+        "Previous manifest hash does not match .dx/build-cache/deploy-adapter.json.",
     );
     push_finding(
         &mut findings,
         current_manifest_matches_deploy,
         "current-manifest-hash",
-        "Current manifest hash matches deploy-adapter.json.",
-        "Current manifest hash does not match deploy-adapter.json.",
+        "Current manifest hash matches .dx/build-cache/deploy-adapter.json.",
+        "Current manifest hash does not match .dx/build-cache/deploy-adapter.json.",
     );
     push_finding(
         &mut findings,

@@ -13,7 +13,7 @@ const ICON_MANIFEST_CACHE_SCHEMA: &str = "dx.icon.manifest.v1";
 const ICON_MANIFEST_PERFORMANCE_RECEIPT_SCHEMA: &str =
     "dx.performance.json_machine_cache_receipt.icon_manifest.v1";
 const ICON_MANIFEST_PERFORMANCE_RECEIPT_PATH: &str =
-    ".dx/performance/json-machine-cache-receipts/icon-manifest.json";
+    ".dx/performance/json-machine-cache-receipts/icon-.dx/build-cache/manifest.json";
 
 #[derive(Archive, RkyvSerialize, RkyvDeserialize, Debug, Clone, PartialEq)]
 #[rkyv(compare(PartialEq), derive(Debug))]

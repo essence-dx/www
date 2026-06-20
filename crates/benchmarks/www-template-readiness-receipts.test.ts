@@ -126,9 +126,9 @@ test("template-readiness receipts referenced by launch surfaces exist and stay n
 });
 
 test("preview manifest lists every copied template-readiness receipt without lifting runtime proof", () => {
-  const manifest = readJson("examples/template/public/preview-manifest.json");
+  const manifest = readJson("examples/template/public/preview-.dx/build-cache/manifest.json");
   const previewManifest = readJson(
-    ".dx/template-app-browser-preview/public/preview-manifest.json",
+    ".dx/template-app-browser-preview/public/preview-.dx/build-cache/manifest.json",
   );
   const expectedRefs = requiredTemplateReadinessReceipts.map(
     (name) => `.dx/forge/template-readiness/${name}`,

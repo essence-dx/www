@@ -9,7 +9,7 @@ const templateRoot = path.join(root, "examples", "template");
 
 const packageId = "3d/launch-scene";
 const cacheManifestPath =
-  ".dx/forge/cache/3d-launch-scene/0.184.0-r3f10-dx.0/manifest.json";
+  ".dx/forge/cache/3d-launch-scene/0.184.0-r3f10-dx.0/.dx/build-cache/manifest.json";
 const expectedFiles = [
   "components/scene/launch-scene.tsx",
   "lib/scene/index.ts",
@@ -42,7 +42,7 @@ function readJson(relativePath: string) {
 
 test("3D Scene System is promoted into the lock-backed Forge package set without WebGL overclaims", () => {
   const sourceManifest = readJson(
-    "examples/template/.dx/forge/source-manifest.json",
+    "examples/template/.dx/forge/source-.dx/build-cache/manifest.json",
   );
   const lock = readJson("examples/template/.dx/forge/package-lock.json");
   const status = readJson("examples/template/.dx/forge/package-status.json");

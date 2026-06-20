@@ -83,7 +83,7 @@ function serverArtifactFailures(report) {
     contracts.lifecycleScriptsExecuted,
     "server contracts executed lifecycle scripts",
   );
-  pushIf(failures, !deploy.present, "dx build did not write deploy-adapter.json");
+  pushIf(failures, !deploy.present, "dx build did not write .dx/build-cache/deploy-adapter.json");
   pushIf(failures, !deploy.noNodeModulesRequired, "deploy adapter does not prove no-node_modules");
   pushIf(failures, !deploy.hasRootServerDataRoute, "deploy adapter is missing root server-data route");
   pushIf(failures, !deploy.hasHealthCheck, "deploy adapter is missing /api/health check");

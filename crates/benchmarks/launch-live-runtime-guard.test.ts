@@ -126,7 +126,7 @@ test("live root route renders package proof instead of fallback", async () => {
 });
 
 test("live preview manifest exposes TanStack Query dashboard workflow", async () => {
-  const { response, text } = await get("/public/preview-manifest.json");
+  const { response, text } = await get("/public/preview-.dx/build-cache/manifest.json");
   assert.equal(response.status, 200);
 
   const manifest = JSON.parse(text);

@@ -98,6 +98,7 @@ mod app_server_data_manifest;
 mod build_command;
 mod build_observability;
 mod build_options;
+mod sandbox_generator;
 mod build_promotion;
 mod build_rollback_verification;
 mod command_output;

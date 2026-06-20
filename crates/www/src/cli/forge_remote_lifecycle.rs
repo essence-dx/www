@@ -139,7 +139,7 @@ pub(super) fn forge_remote_lifecycle_dry_run(
     let prefix = r2_status.prefix.clone();
     let package_base = format!("{prefix}/packages/js/{package_object_path}/{version_segment}");
     let object_key_plan = vec![
-        format!("{package_base}/manifest.json"),
+        format!("{package_base}/.dx/build-cache/manifest.json"),
         format!("{package_base}/files/<content-hash>"),
         format!("{prefix}/packages/js/{package_object_path}/latest.json"),
         format!("{package_base}/{}", action.object_suffix()),

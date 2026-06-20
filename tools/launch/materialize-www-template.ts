@@ -690,7 +690,7 @@ function countPhysicalCacheManifests() {
       const fullPath = path.join(directory, entry.name);
       if (entry.isDirectory()) {
         visit(fullPath);
-      } else if (entry.name === "manifest.json") {
+      } else if (entry.name === ".dx/build-cache/manifest.json") {
         manifestCount += 1;
       }
     }
@@ -711,7 +711,7 @@ function listCacheArchiveManifestPaths() {
       const fullPath = path.join(directory, entry.name);
       if (entry.isDirectory()) {
         visit(fullPath);
-      } else if (entry.name === "manifest.json") {
+      } else if (entry.name === ".dx/build-cache/manifest.json") {
         manifestPaths.push(
           path.relative(templateRoot, fullPath).replace(/\\/g, "/"),
         );
@@ -2659,7 +2659,7 @@ function buildEditContract(noNodeModulesRequired) {
     schema: "dx.studio.launch_edit_contract",
     route: "/",
     routeAliases: ["/login", "/logout", "/dashboard"],
-    sourceManifestFile: "public/preview-manifest.json",
+    sourceManifestFile: "public/preview-.dx/build-cache/manifest.json",
     sourceOwned: true,
     noNodeModulesRequired,
     layoutPolicy: "responsive-design-system-grid",
@@ -3067,7 +3067,7 @@ function materializePreviewManifest(projectDir, files) {
     editContract: buildEditContract(noNodeModulesRequired),
     files,
   };
-  const target = path.join(projectDir, "public", "preview-manifest.json");
+  const target = path.join(projectDir, "public", "preview-.dx/build-cache/manifest.json");
   writeText(target, `${JSON.stringify(manifest, null, 2)}\n`);
   return path.relative(projectDir, target).replaceAll("\\", "/");
 }

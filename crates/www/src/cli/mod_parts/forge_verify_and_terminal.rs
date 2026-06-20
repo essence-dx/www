@@ -123,7 +123,7 @@ fn build_forge_verify_package_report(
         .cloned()
         .ok_or_else(|| {
             anyhow::anyhow!(
-                "Forge package `{canonical}` variant `{variant}` is not tracked in `.dx/forge/source-manifest.json`"
+                "Forge package `{canonical}` variant `{variant}` is not tracked in `.dx/forge/source-.dx/build-cache/manifest.json`"
             )
         })?;
 
@@ -439,7 +439,7 @@ fn build_forge_migration_static_site_verify_checks(
                     missing_files.join(", ")
                 )
             },
-            ".dx/forge/source-manifest.json",
+            ".dx/forge/source-.dx/build-cache/manifest.json",
         ),
         forge_verify_check(
             "migration-static-site-no-node-modules",
@@ -571,7 +571,7 @@ fn build_forge_verify_all_packages_report(
             Err(error) => missing_packages.push(DxForgeVerifyMissingPackage {
                 package_id,
                 variant,
-                message: error.to_string(),
+                message: format!("{}:{}: {}", file!(), line!(), error),
             }),
         }
     }
@@ -627,7 +627,7 @@ fn load_benchmark_snapshots(
 }
 
 fn read_forge_source_manifest(project: &Path) -> anyhow::Result<DxSourceManifest> {
-    let manifest_path = project.join(".dx/forge/source-manifest.json");
+    let manifest_path = project.join(".dx/forge/source-.dx/build-cache/manifest.json");
     let bytes = std::fs::read(&manifest_path)
         .map_err(|error| anyhow::anyhow!("read `{}`: {error}", manifest_path.display()))?;
     serde_json::from_slice::<DxSourceManifest>(&bytes)
@@ -635,7 +635,7 @@ fn read_forge_source_manifest(project: &Path) -> anyhow::Result<DxSourceManifest
 }
 
 fn read_optional_forge_source_manifest(project: &Path) -> anyhow::Result<Option<DxSourceManifest>> {
-    let manifest_path = project.join(".dx/forge/source-manifest.json");
+    let manifest_path = project.join(".dx/forge/source-.dx/build-cache/manifest.json");
     match std::fs::read(&manifest_path) {
         Ok(bytes) => serde_json::from_slice::<DxSourceManifest>(&bytes)
             .map(Some)

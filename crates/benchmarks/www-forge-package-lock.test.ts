@@ -40,7 +40,7 @@ test("launch template exposes real Forge package locks and package-add receipts"
   assert.match(statusSource, /packageRows: launchForgePackageRows\(\)/);
 
   const sourceManifest = readJson(
-    "examples/template/.dx/forge/source-manifest.json",
+    "examples/template/.dx/forge/source-.dx/build-cache/manifest.json",
   );
   const sourcePackageIds = new Set(
     sourceManifest.packages.map((packageEntry) => packageEntry.package_id),

@@ -146,7 +146,7 @@ fn forge_golden_artifact_values(
     let mut artifacts = BTreeMap::new();
     artifacts.insert(
         "source_manifest".to_string(),
-        read_json_value(project.join(".dx/forge/source-manifest.json")),
+        read_json_value(project.join(".dx/forge/source-.dx/build-cache/manifest.json")),
     );
     artifacts.insert(
         "receipt".to_string(),
@@ -1221,7 +1221,7 @@ fn write_signed_adoption_release_bundle_fixture(root: &Path, bundle_name: &str) 
     ])
     .expect("adoption release bundle fixture");
 
-    let manifest_path = bundle_dir.join("forge-release-manifest.json");
+    let manifest_path = bundle_dir.join("forge-release-.dx/build-cache/manifest.json");
     let manifest: DxForgeReleaseBundleManifest =
         serde_json::from_slice(&fs::read(&manifest_path).expect("manifest bytes"))
             .expect("manifest json");

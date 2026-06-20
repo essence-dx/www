@@ -87,7 +87,7 @@ fn run_forge_publisher_key_sign(cwd: &Path, args: &[String]) -> DxResult<()> {
         field: Some("forge publisher-key sign".to_string()),
     })?;
     let manifest = manifest.ok_or_else(|| DxError::ConfigValidationError {
-        message: "dx forge publisher-key sign requires --manifest <manifest.json>".to_string(),
+        message: "dx forge publisher-key sign requires --manifest <.dx/build-cache/manifest.json>".to_string(),
         field: Some("forge publisher-key sign".to_string()),
     })?;
     let report =

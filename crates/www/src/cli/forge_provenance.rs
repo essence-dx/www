@@ -11,7 +11,7 @@ use dx_compiler::ecosystem::{
 };
 use serde::Serialize;
 
-const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-manifest.json";
+const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-.dx/build-cache/manifest.json";
 const RECEIPT_DIR: &str = ".dx/forge/receipts";
 
 #[derive(Debug, Clone, Serialize)]

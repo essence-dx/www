@@ -499,13 +499,13 @@ fn write_fixture_source(project: &Path, source: &DxVerticalFixtureSource) -> DxR
     if let Some(parent) = target.parent() {
         std::fs::create_dir_all(parent).map_err(|error| DxError::IoError {
             path: Some(parent.to_path_buf()),
-            message: error.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), error),
         })?;
     }
 
     std::fs::write(&target, &source.page_source).map_err(|error| DxError::IoError {
         path: Some(target),
-        message: error.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), error),
     })
 }
 
@@ -535,7 +535,7 @@ fn ensure_fixture_source_writable(
 fn read_text_file(path: &Path) -> DxResult<String> {
     std::fs::read_to_string(path).map_err(|error| DxError::IoError {
         path: Some(path.to_path_buf()),
-        message: error.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), error),
     })
 }
 
@@ -627,11 +627,11 @@ fn project_relative_file(project: &Path, path: &Path) -> DxResult<String> {
 
     let project = std::fs::canonicalize(project).map_err(|error| DxError::IoError {
         path: Some(project.to_path_buf()),
-        message: error.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), error),
     })?;
     let path = std::fs::canonicalize(path).map_err(|error| DxError::IoError {
         path: Some(path.to_path_buf()),
-        message: error.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), error),
     })?;
     let relative = path
         .strip_prefix(&project)
@@ -657,7 +657,7 @@ fn project_relative_virtual_file(project: &Path, path: &Path) -> DxResult<String
         std::env::current_dir()
             .map_err(|error| DxError::IoError {
                 path: Some(project.to_path_buf()),
-                message: error.to_string(),
+                message: format!("{}:{}: {}", file!(), line!(), error),
             })?
             .join(project)
     };
@@ -791,13 +791,13 @@ fn write_vertical_proof(
     if let Some(parent) = html_path.parent() {
         std::fs::create_dir_all(parent).map_err(|error| DxError::IoError {
             path: Some(parent.to_path_buf()),
-            message: error.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), error),
         })?;
     }
     if let Some(parent) = runtime_path.as_ref().and_then(|path| path.parent()) {
         std::fs::create_dir_all(parent).map_err(|error| DxError::IoError {
             path: Some(parent.to_path_buf()),
-            message: error.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), error),
         })?;
     }
     let packet_file_name = route_file_name(&packet_path)?;
@@ -810,19 +810,19 @@ fn write_vertical_proof(
     };
     std::fs::write(&html_path, html).map_err(|error| DxError::IoError {
         path: Some(html_path.clone()),
-        message: error.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), error),
     })?;
     std::fs::write(&packet_path, &proof.browser_packet.encoded).map_err(|error| {
         DxError::IoError {
             path: Some(packet_path.clone()),
-            message: error.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), error),
         }
     })?;
     if let Some(runtime_path) = &runtime_path {
         std::fs::write(runtime_path, DXPK_RUNTIME_FIXTURE_JS).map_err(|error| {
             DxError::IoError {
                 path: Some(runtime_path.clone()),
-                message: error.to_string(),
+                message: format!("{}:{}: {}", file!(), line!(), error),
             }
         })?;
     }
@@ -830,7 +830,7 @@ fn write_vertical_proof(
         if let Some(parent) = path.parent() {
             std::fs::create_dir_all(parent).map_err(|error| DxError::IoError {
                 path: Some(parent.to_path_buf()),
-                message: error.to_string(),
+                message: format!("{}:{}: {}", file!(), line!(), error),
             })?;
         }
         std::fs::write(
@@ -839,14 +839,14 @@ fn write_vertical_proof(
         )
         .map_err(|error| DxError::IoError {
             path: Some(path.clone()),
-            message: error.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), error),
         })?;
     }
     if let (Some(manifest), Some(path)) = (evidence_manifest, evidence_manifest_path.as_ref()) {
         if let Some(parent) = path.parent() {
             std::fs::create_dir_all(parent).map_err(|error| DxError::IoError {
                 path: Some(parent.to_path_buf()),
-                message: error.to_string(),
+                message: format!("{}:{}: {}", file!(), line!(), error),
             })?;
         }
         std::fs::write(
@@ -855,13 +855,13 @@ fn write_vertical_proof(
         )
         .map_err(|error| DxError::IoError {
             path: Some(path.clone()),
-            message: error.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), error),
         })?;
     }
 
     std::fs::create_dir_all(out_dir).map_err(|error| DxError::IoError {
         path: Some(out_dir.to_path_buf()),
-        message: error.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), error),
     })?;
     let summary_path = out_dir.join("proof.json");
     let output_summary = DxVerticalOutputSummary {
@@ -879,7 +879,7 @@ fn write_vertical_proof(
     )
     .map_err(|error| DxError::IoError {
         path: Some(summary_path.clone()),
-        message: error.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), error),
     })?;
 
     Ok(output_summary)
@@ -895,7 +895,7 @@ fn remove_stale_runtime_fixture(path: &Path) -> DxResult<()> {
         Err(error) if error.kind() == std::io::ErrorKind::NotFound => Ok(()),
         Err(error) => Err(DxError::IoError {
             path: Some(path.to_path_buf()),
-            message: error.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), error),
         }),
     }
 }
@@ -1215,7 +1215,7 @@ mod tests {
         .expect("prove vertical dry run");
 
         assert!(!dir.path().join(".dx/vertical/index.html").exists());
-        assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+        assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
         assert!(!dir.path().join("node_modules").exists());
     }
 
@@ -1242,7 +1242,7 @@ mod tests {
         let html = fs::read_to_string(dir.path().join("proof/index.html")).expect("html");
         let summary = fs::read_to_string(dir.path().join("proof/proof.json")).expect("summary");
         let packet = fs::read(dir.path().join("proof/index.dxp")).expect("packet");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
         assert!(html.contains("DX-WWW CLI vertical proof"));
         assert!(html.contains("<button"));
@@ -1290,7 +1290,7 @@ mod tests {
 
         let html = fs::read_to_string(dir.path().join("proof/index.html")).expect("html");
         let summary = fs::read_to_string(dir.path().join("proof/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
         assert!(html.contains("Launch with Forge"));
         assert!(html.contains("<button"));
@@ -1327,7 +1327,7 @@ mod tests {
 
         let html = fs::read_to_string(dir.path().join("proof/index.html")).expect("html");
         let summary = fs::read_to_string(dir.path().join("proof/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
         assert!(html.contains("Search the registry"));
         assert!(html.contains("<svg"));
@@ -1363,7 +1363,7 @@ mod tests {
         let evidence =
             fs::read_to_string(dir.path().join("public/forge.evidence.json")).expect("evidence");
         let summary = fs::read_to_string(dir.path().join("public/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
         assert!(source.contains("Not universal npm yet"));
         assert!(source.contains("release-proof and package-scorecard models"));
@@ -1459,7 +1459,7 @@ mod tests {
         let html =
             fs::read_to_string(dir.path().join("public/forge/scorecard.html")).expect("html");
         let summary = fs::read_to_string(dir.path().join("public/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
         assert!(source.contains("DX Forge Package Scorecard"));
         assert!(source.contains("shadcn/ui/button"));
@@ -1500,7 +1500,7 @@ mod tests {
         let claims =
             fs::read_to_string(dir.path().join("public/forge/ci.claims.json")).expect("claims");
         let summary = fs::read_to_string(dir.path().join("public/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
 
         assert!(source.contains("DX Forge CI evidence"));
@@ -1545,7 +1545,7 @@ mod tests {
         let claims = fs::read_to_string(dir.path().join("public/forge/evidence.claims.json"))
             .expect("claims");
         let summary = fs::read_to_string(dir.path().join("public/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
 
         assert!(source.contains("DX Forge Public Evidence"));
@@ -1593,7 +1593,7 @@ mod tests {
         let claims = fs::read_to_string(dir.path().join("public/forge/releases.claims.json"))
             .expect("claims");
         let summary = fs::read_to_string(dir.path().join("public/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
 
         assert!(source.contains("DX Forge Release History"));
@@ -1640,7 +1640,7 @@ mod tests {
         let claims = fs::read_to_string(dir.path().join("public/forge/changelog.claims.json"))
             .expect("claims");
         let summary = fs::read_to_string(dir.path().join("public/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
 
         assert!(source.contains("DX Forge Public Launch Changelog"));
@@ -1700,7 +1700,7 @@ mod tests {
         let claims = fs::read_to_string(dir.path().join("public/forge/adoption.claims.json"))
             .expect("claims");
         let summary = fs::read_to_string(dir.path().join("public/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
 
         assert!(source.contains("DX Forge Adoption Report"));
@@ -1745,7 +1745,7 @@ mod tests {
         let claims = fs::read_to_string(dir.path().join("public/forge/quickstart.claims.json"))
             .expect("claims");
         let summary = fs::read_to_string(dir.path().join("public/proof.json")).expect("summary");
-        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json"))
+        let manifest = fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"))
             .expect("manifest");
 
         assert!(source.contains("DX Forge Public Beta Quickstart"));

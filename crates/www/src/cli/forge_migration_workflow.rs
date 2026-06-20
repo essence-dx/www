@@ -90,14 +90,14 @@ pub(super) fn build_forge_migration_guide_report(
             materialized,
             if materialized { 100 } else { 55 },
             if materialized {
-                format!("`{display_package_id}` is tracked in `.dx/forge/source-manifest.json`.")
+                format!("`{display_package_id}` is tracked in `.dx/forge/source-.dx/build-cache/manifest.json`.")
             } else {
                 format!(
                     "`{display_package_id}` is not materialized yet; run `dx add {} --write`.",
                     spec.forge_alias
                 )
             },
-            Some(project.join(".dx/forge/source-manifest.json").display().to_string()),
+            Some(project.join(".dx/forge/source-.dx/build-cache/manifest.json").display().to_string()),
         ),
         docs: forge_migration_check(
             docs_present,
@@ -330,7 +330,7 @@ fn forge_migration_expectation_map(
         DxForgeMigrationExpectation {
             upstream_expectation: "Component source files are copied into the app.".to_string(),
             forge_behavior: format!(
-                "Forge materializes the {} as editable source files and records every materialized path in `.dx/forge/source-manifest.json`.",
+                "Forge materializes the {} as editable source files and records every materialized path in `.dx/forge/source-.dx/build-cache/manifest.json`.",
                 spec.component
             ),
             evidence: format!(

@@ -12,7 +12,7 @@ use super::{
 const REPORT_SCHEMA: &str = "dx.forge.launch_evidence_restart_receipt";
 const RECEIPT_SCHEMA: &str = "dx.launch.evidence_restart_receipt";
 const RECEIPT_PATH: &str = ".dx/forge/release/launch-evidence-restart-receipt.json";
-const RESTART_MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-restart-manifest.json";
+const RESTART_MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-restart-.dx/build-cache/manifest.json";
 
 #[derive(Debug, Serialize)]
 pub(crate) struct LaunchEvidenceRestartReceiptReport {

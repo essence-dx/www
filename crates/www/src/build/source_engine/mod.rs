@@ -119,7 +119,7 @@ pub struct SourceBuildReport {
     pub receipt: SourceBuildReceipt,
     /// Path to `source-build-manifest.json`.
     pub manifest_path: PathBuf,
-    /// Path to `source-build-receipt.json`.
+    /// Path to `.dx/build-cache/source-build-receipt.json`.
     pub receipt_path: PathBuf,
     /// Path to canonical `.dx/receipts/build/latest.json`.
     pub canonical_receipt_path: PathBuf,

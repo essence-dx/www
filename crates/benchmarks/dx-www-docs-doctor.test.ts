@@ -438,7 +438,7 @@ test("docs doctor proves public starter score and inventory claims against curre
     "examples/template/app/dashboard/page.tsx",
     "examples/template/app/api/health/route.ts",
     "examples/template/components/ui/*",
-    "examples/template/public/preview-manifest.json",
+    "examples/template/public/preview-.dx/build-cache/manifest.json",
   ]) {
     assert.equal(exists(removedClaim.replace(/\*$/, "")), false, `${removedClaim} is absent today`);
     for (const doc of publicWwwDocs) {

@@ -16,7 +16,7 @@ test("installed smoke readiness normalizes route-handler receipt output paths", 
     projectRoot,
     ".dx",
     "build",
-    "route-handler-receipts.json",
+    ".dx/build-cache/route-handler-receipts.json",
   );
 
   const summary = summarizeReadiness({
@@ -37,7 +37,7 @@ test("installed smoke readiness normalizes route-handler receipt output paths", 
           installed_binary_smoke: INSTALLED_BINARY_SMOKE_RECEIPT,
         },
         graph: {
-          route_handler_receipt_output: ".\\.dx\\build\\route-handler-receipts.json",
+          route_handler_receipt_output: ".\\.dx\\build\\.dx/build-cache/route-handler-receipts.json",
           route_handler_receipts_executed: 1,
           route_handler_receipts_skipped: 1,
           route_handler_receipts_node_modules_required: false,
@@ -47,7 +47,7 @@ test("installed smoke readiness normalizes route-handler receipt output paths", 
     },
   });
 
-  assert.equal(summary.routeHandlerReceiptOutput, ".\\.dx\\build\\route-handler-receipts.json");
+  assert.equal(summary.routeHandlerReceiptOutput, ".\\.dx\\build\\.dx/build-cache/route-handler-receipts.json");
   assert.equal(summary.routeHandlerReceiptOutputMatchesActual, true);
   assert.equal(summary.routeHandlerReceiptsExecuted, 1);
   assert.equal(summary.routeHandlerReceiptsSkipped, 1);

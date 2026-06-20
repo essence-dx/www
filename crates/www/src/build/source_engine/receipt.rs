@@ -504,7 +504,7 @@ fn css_asset_references_by_role(styles: &[SourceBuildStyle], source_role: &str) 
 }
 
 pub fn write_receipt(output_dir: &Path, receipt: &SourceBuildReceipt) -> DxResult<PathBuf> {
-    let path = output_dir.join("source-build-receipt.json");
+    let path = output_dir.join(".dx/build-cache/source-build-receipt.json");
     let json = serde_json::to_string_pretty(receipt)?;
     std::fs::write(&path, json).map_err(|error| DxError::IoError {
         path: Some(path.clone()),

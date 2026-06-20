@@ -15,7 +15,7 @@ use super::app_route_handler_receipt::{
     DxAppRouteHandlerReceiptInput, build_app_route_handler_receipt,
 };
 
-pub(super) const APP_ROUTE_HANDLER_RECEIPTS_JSON: &str = "route-handler-receipts.json";
+pub(super) const APP_ROUTE_HANDLER_RECEIPTS_JSON: &str = ".dx/build-cache/route-handler-receipts.json";
 const ROUTE_HANDLER_METHOD_ORDER: &[&str] =
     &["GET", "HEAD", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"];
 

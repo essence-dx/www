@@ -13,8 +13,8 @@ use super::{
 const REPORT_SCHEMA: &str = "dx.forge.launch_evidence_packet";
 const PACKET_SCHEMA: &str = "dx.launch.evidence_packet";
 const PACKET_PATH: &str = ".dx/forge/release/launch-evidence-packet.json";
-const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-manifest.json";
-const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-manifest.json";
+const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-.dx/build-cache/manifest.json";
+const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-.dx/build-cache/manifest.json";
 const READINESS_BUNDLE_PATH: &str = ".dx/forge/template-readiness/launch-readiness-bundle.json";
 const RUNTIME_EVIDENCE_PATH: &str = ".dx/forge/template-readiness/launch-runtime-evidence.json";
 const FINAL_RECEIPT_PATH: &str = ".dx/forge/runtime/final-launch-evidence-receipt.json";

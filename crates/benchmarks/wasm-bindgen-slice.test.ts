@@ -441,7 +441,7 @@ test("wasm-bindgen slice tracks real generated web glue surface", () => {
     '"data-dx-dashboard-metric=\\"wasm-compute\\""',
     '"data-dx-wasm-action=\\"run-local-add\\""',
     '"tools/launch/materialize-www-template.ts"',
-    '"public/preview-manifest.json#launch-runtime-wasm-compute-dashboard"',
+    '"public/preview-.dx/build-cache/manifest.json#launch-runtime-wasm-compute-dashboard"',
     '"zed_preview_surface": "launch-runtime-wasm-compute-dashboard"',
     '"zed_preview_selector": "[data-dx-component=\\"launch-wasm-compute-dashboard-workflow\\"]"',
     '"required_env": []',

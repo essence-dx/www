@@ -1140,7 +1140,7 @@ const DRIZZLE_METADATA_TS: &str = r#"export const dxDrizzlePackage = {
     ".dx/forge/docs/db-drizzle-sqlite.md",
     ".dx/forge/receipts/*-db-drizzle-sqlite.json",
     "examples/template/.dx/forge/receipts/2026-05-22-db-drizzle-sqlite-dashboard-workflow.json",
-    ".dx/forge/source-manifest.json",
+    ".dx/forge/source-.dx/build-cache/manifest.json",
   ],
   dxCheckVisibility: {
     schema: "dx.forge.package.dx_check_visibility",

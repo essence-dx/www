@@ -596,7 +596,7 @@ test("Zustand Forge slice exposes real middleware and selector APIs", () => {
   assert.ok(dashboardReceipt.materializedFiles.includes("pages/index.html"));
   assert.ok(dashboardReceipt.materializedFiles.includes("public/launch-runtime.js"));
   assert.ok(dashboardReceipt.materializedFiles.includes("styles/launch-runtime.css"));
-  assert.ok(dashboardReceipt.materializedFiles.includes("public/preview-manifest.json"));
+  assert.ok(dashboardReceipt.materializedFiles.includes("public/preview-.dx/build-cache/manifest.json"));
   assert.ok(dashboardReceipt.markers.includes('data-dx-component="launch-dashboard-state-workflow"'));
   assert.ok(dashboardReceipt.markers.includes('data-dx-component="shadcn-dashboard-controls"'));
   assert.ok(dashboardReceipt.markers.includes('data-dx-component="launch-dashboard-state-shell"'));

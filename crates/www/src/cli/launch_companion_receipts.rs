@@ -7,7 +7,7 @@ use serde_json::Value;
 
 const REPORT_SCHEMA: &str = "dx.forge.launch_companion_receipts";
 const TEMPLATE_ID: &str = "next-familiar-www-template";
-const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-manifest.json";
+const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-.dx/build-cache/manifest.json";
 
 #[derive(Debug, Serialize)]
 pub(crate) struct LaunchCompanionReceiptsReport {

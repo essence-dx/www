@@ -20,7 +20,7 @@ pub(super) fn cmd_preview(
         eprintln!("Usage: dx preview --production-contract [--build-dir <path>] [--port <port>]");
         eprintln!();
         eprintln!(
-            "Serves only routes, immutable assets, and health checks listed in .dx/www/output/deploy-adapter.json."
+            "Serves only routes, immutable assets, and health checks listed in .dx/www/output/.dx/build-cache/deploy-adapter.json."
         );
         return Ok(());
     }
@@ -29,7 +29,7 @@ pub(super) fn cmd_preview(
     let build_dir = options.build_dir;
     let port = options.port;
 
-    let contract_path = build_dir.join("deploy-adapter.json");
+    let contract_path = build_dir.join(".dx/build-cache/deploy-adapter.json");
     if !contract_path.is_file() {
         return Err(DxError::IoError {
             path: Some(contract_path),

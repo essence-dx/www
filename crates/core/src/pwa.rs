@@ -59,7 +59,7 @@ impl PwaManifest {
         }
     }
 
-    /// Convert to JSON for standard manifest.json
+    /// Convert to JSON for standard .dx/build-cache/manifest.json
     pub fn to_json(&self) -> Result<String> {
         let manifest = serde_json::json!({
             "name": self.name,
@@ -289,7 +289,7 @@ pub fn generate_pwa_meta(manifest: &PwaManifest) -> String {
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="{name}">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/.dx/build-cache/manifest.json">
     "#,
         theme = manifest.theme_color,
         name = manifest.short_name,

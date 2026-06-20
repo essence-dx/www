@@ -16,7 +16,7 @@ function readJson(relativePath) {
 
 test("validation/zod is promoted into the lock-backed Forge package set", () => {
   const sourceManifest = readJson(
-    "examples/template/.dx/forge/source-manifest.json",
+    "examples/template/.dx/forge/source-.dx/build-cache/manifest.json",
   );
   const lock = readJson("examples/template/.dx/forge/package-lock.json");
   const status = readJson("examples/template/.dx/forge/package-status.json");
@@ -94,7 +94,7 @@ test("validation/zod is promoted into the lock-backed Forge package set", () => 
   );
   assert.ok(
     status.cache.manifests.includes(
-      ".dx/forge/cache/validation-zod/4.4.3-dx.13/manifest.json",
+      ".dx/forge/cache/validation-zod/4.4.3-dx.13/.dx/build-cache/manifest.json",
     ),
     "package-status cache manifests should include validation/zod",
   );

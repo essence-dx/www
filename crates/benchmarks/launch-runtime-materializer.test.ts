@@ -265,7 +265,7 @@ test("launch runtime materializer creates live pages without node_modules", () =
     assert.doesNotMatch(read(file), /export const \{?\s*(GET|POST)/);
   }
 
-  const manifest = JSON.parse(read(path.join(dir, "public", "preview-manifest.json")));
+  const manifest = JSON.parse(read(path.join(dir, "public", "preview-.dx/build-cache/manifest.json")));
   assert.equal(manifest.noNodeModulesRequired, true);
   assert.ok(manifest.routes.some((route) => route.route === "/"));
   assert.ok(

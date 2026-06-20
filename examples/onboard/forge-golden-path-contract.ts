@@ -71,7 +71,7 @@ const goldenPathSteps = [
     state: "real",
     command: "dx forge publish --registry local --package shadcn/ui/button --write --json",
     evidencePath:
-      ".dx/forge/registry/local/packages/js/shadcn/ui/button/0.1.0/manifest.json",
+      ".dx/forge/registry/local/packages/js/shadcn/ui/button/0.1.0/.dx/build-cache/manifest.json",
     summary:
       "The root dx package was published into the local filesystem registry with a manifest and content-addressed file blobs.",
     boundary:
@@ -190,7 +190,7 @@ export const forgeGoldenPathContract = {
   dxCheckTraffic: "score-gated",
   rootManifestPath: "dx",
   localRegistryManifestPath:
-    ".dx/forge/registry/local/packages/js/shadcn/ui/button/0.1.0/manifest.json",
+    ".dx/forge/registry/local/packages/js/shadcn/ui/button/0.1.0/.dx/build-cache/manifest.json",
   localPublishReceiptPath:
     ".dx/forge/registry/local/receipts/20260522T130612Z-shadcn-ui-button.json",
   addReceiptPath:

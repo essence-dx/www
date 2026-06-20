@@ -225,7 +225,7 @@ test("Lane 12 staged report blocks generated artifacts and node_modules boundari
     [
       "M\tDX.md",
       "A\t.dx/receipts/build/installed-binary-smoke-latest.json",
-      "A\texamples/template/.dx/build/server-data/route-manifest.json",
+      "A\texamples/template/.dx/build/server-data/route-.dx/build-cache/manifest.json",
       "A\texamples/template/.dx/forge/receipts/package.json",
       "A\texamples/template/node_modules/.bin/next",
     ].join("\n"),
@@ -239,7 +239,7 @@ test("Lane 12 staged report blocks generated artifacts and node_modules boundari
   assert.equal(report.summary.nodeModulesBoundaryCount, 1);
   assert.deepEqual(report.summary.generatedArtifactPaths, [
     ".dx/receipts/build/installed-binary-smoke-latest.json",
-    "examples/template/.dx/build/server-data/route-manifest.json",
+    "examples/template/.dx/build/server-data/route-.dx/build-cache/manifest.json",
     "examples/template/.dx/forge/receipts/package.json",
   ]);
   assert.deepEqual(report.summary.nodeModulesBoundaryPaths, [

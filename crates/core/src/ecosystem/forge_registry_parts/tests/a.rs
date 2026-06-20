@@ -196,7 +196,7 @@ allow_selective_imports = true
         assert!(
             registry
                 .path()
-                .join("packages/js/state/zustand/0.1.0/manifest.json")
+                .join("packages/js/state/zustand/0.1.0/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert_eq!(package.source_kind, DxSourceKind::Local);
@@ -275,7 +275,7 @@ allow_selective_imports = true
             report
                 .objects
                 .iter()
-                .any(|object| object.ends_with("packages/js/auth/better-auth/0.1.0/manifest.json"))
+                .any(|object| object.ends_with("packages/js/auth/better-auth/0.1.0/.dx/build-cache/manifest.json"))
         );
         assert!(!registry.path().join("index.json").exists());
     }
@@ -329,7 +329,7 @@ allow_selective_imports = true
             report
                 .objects
                 .iter()
-                .any(|object| object.contains("packages/js/auth/better-auth/0.1.0/manifest.json"))
+                .any(|object| object.contains("packages/js/auth/better-auth/0.1.0/.dx/build-cache/manifest.json"))
         );
         assert!(!serialized.contains("SECRET_ACCESS_KEY"));
         assert!(!serialized.contains("ACCESS_KEY_ID"));
@@ -474,7 +474,7 @@ allow_selective_imports = true
             object.intent == "package-manifest"
                 && object
                     .object_key
-                    .contains("packages/js/auth/better-auth/0.1.0/manifest.json")
+                    .contains("packages/js/auth/better-auth/0.1.0/.dx/build-cache/manifest.json")
                 && object.required
         }));
         assert!(plan.objects.iter().any(|object| {
@@ -533,7 +533,7 @@ allow_selective_imports = true
         let package = root_dx_registry_package(project.path()).expect("root dx registry package");
         let manifest_dir = project.path().join(".dx/remote-fixtures");
         fs::create_dir_all(&manifest_dir).expect("manifest dir");
-        let manifest_path = manifest_dir.join("manifest.json");
+        let manifest_path = manifest_dir.join(".dx/build-cache/manifest.json");
         fs::write(
             &manifest_path,
             serde_json::to_vec_pretty(&package.clone_without_content()).expect("manifest json"),
@@ -561,7 +561,7 @@ allow_selective_imports = true
             object.intent == "package-manifest"
                 && object
                     .object_key
-                    .contains("packages/js/auth/better-auth/0.1.0/manifest.json")
+                    .contains("packages/js/auth/better-auth/0.1.0/.dx/build-cache/manifest.json")
         }));
 
         let preview = plan
@@ -638,7 +638,7 @@ allow_selective_imports = true
         let package = root_dx_registry_package(project.path()).expect("root dx registry package");
         let manifest_dir = project.path().join(".dx/remote-fixtures");
         fs::create_dir_all(&manifest_dir).expect("manifest dir");
-        let manifest_path = manifest_dir.join("manifest.json");
+        let manifest_path = manifest_dir.join(".dx/build-cache/manifest.json");
         fs::write(
             &manifest_path,
             serde_json::to_vec_pretty(&package.clone_without_content()).expect("manifest json"),
@@ -673,7 +673,7 @@ allow_selective_imports = true
                 && check.metadata_operation == "head-object"
                 && check
                     .object_key
-                    .contains("packages/js/auth/better-auth/0.1.0/manifest.json")
+                    .contains("packages/js/auth/better-auth/0.1.0/.dx/build-cache/manifest.json")
                 && check.required
                 && check.status == DxForgeRemoteObjectMetadataStatus::PlannedNotChecked
         }));
@@ -732,7 +732,7 @@ allow_selective_imports = true
         let package = root_dx_registry_package(project.path()).expect("root dx registry package");
         let manifest_dir = project.path().join(".dx/remote-fixtures");
         fs::create_dir_all(&manifest_dir).expect("manifest dir");
-        let manifest_path = manifest_dir.join("manifest.json");
+        let manifest_path = manifest_dir.join(".dx/build-cache/manifest.json");
         fs::write(
             &manifest_path,
             serde_json::to_vec_pretty(&package.clone_without_content()).expect("manifest json"),

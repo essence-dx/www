@@ -265,7 +265,7 @@ test("Database ORM package-lane row exposes DX check-panel style visibility", ()
     );
   }
   assert.deepEqual(runbookFixture.preview_manifest, {
-    generated_file: "public/preview-manifest.json",
+    generated_file: "public/preview-.dx/build-cache/manifest.json",
     materializer: "tools/launch/materialize-www-template.ts",
     root_field: "sourceGuardRunbookFixtures",
     route_field: "routes[].sourceGuardRunbookFixtures",
@@ -301,7 +301,7 @@ test("Database ORM runbook fixture is exposed from generated preview-manifest me
       }),
     );
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
     const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
     const fixture = readJson(runbookFixturePath);
@@ -356,7 +356,7 @@ test("Database ORM runbook fixture is exposed from generated preview-manifest me
     assert.match(launch, /data-dx-check-package-lane-row="db\/drizzle-sqlite"/);
     assert.match(launch, /data-dx-check-package-lane-name="Database ORM"/);
     assert.deepEqual(fixture.preview_manifest, {
-      generated_file: "public/preview-manifest.json",
+      generated_file: "public/preview-.dx/build-cache/manifest.json",
       materializer: "tools/launch/materialize-www-template.ts",
       root_field: "sourceGuardRunbookFixtures",
       route_field: "routes[].sourceGuardRunbookFixtures",

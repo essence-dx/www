@@ -2242,7 +2242,7 @@ fn build_forge_publish_plan_report(
         findings,
         next_commands: vec![
             "dx forge publish-plan --project . --release-bundle .dx/forge-release-bundle-adoption --pages .dx/forge-pages --registry-smoke .dx/ci/forge-registry-smoke.json --release-operations .dx/ci/forge-release-operations.json --format markdown".to_string(),
-            "dx forge release-operations --project . --release-manifest .dx/forge-release-bundle-adoption/forge-release-manifest.json --format markdown".to_string(),
+            "dx forge release-operations --project . --release-manifest .dx/forge-release-bundle-adoption/forge-release-.dx/build-cache/manifest.json --format markdown".to_string(),
             "dx forge registry smoke --remote r2 --local .dx/forge-registry-smoke --format markdown".to_string(),
         ],
     })

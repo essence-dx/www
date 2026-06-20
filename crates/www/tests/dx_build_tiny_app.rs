@@ -93,7 +93,7 @@ export default async function Page() {
         .cmd_build()
         .expect("dx build");
 
-    let manifest = read_json(root.join(".dx/build/manifest.json"));
+    let manifest = read_json(root.join(".dx/build/.dx/build-cache/manifest.json"));
     assert_eq!(manifest["app_routes_compiled"], 1);
     assert_eq!(manifest["server_data_entries_compiled"], 1);
     assert_eq!(manifest["route_handler_receipts_compiled"], 1);
@@ -123,7 +123,7 @@ export default async function Page() {
         0
     );
 
-    let route_receipts = read_json(root.join(".dx/build/route-handler-receipts.json"));
+    let route_receipts = read_json(root.join(".dx/build/.dx/build-cache/route-handler-receipts.json"));
     let receipts = route_receipts["receipts"]
         .as_array()
         .expect("route receipts");
@@ -151,7 +151,7 @@ export default async function Page() {
             )
     );
 
-    let deploy = read_json(root.join(".dx/build/deploy-adapter.json"));
+    let deploy = read_json(root.join(".dx/build/.dx/build-cache/deploy-adapter.json"));
     assert!(
         deploy["health_checks"]
             .as_array()
@@ -159,7 +159,7 @@ export default async function Page() {
             .iter()
             .any(|check| check["path"] == "/api/health"
                 && check["source_path"] == "app/api/health/route.ts"
-                && check["receipt"] == "route-handler-receipts.json")
+                && check["receipt"] == ".dx/build-cache/route-handler-receipts.json")
     );
     assert!(
         !deploy["health_checks"]
@@ -180,7 +180,7 @@ export default async function Page() {
                     .iter()
                     .any(|method| method == "POST")
                 && route["build_execution"] == "skipped-build-execution"
-                && route["receipt"] == "route-handler-receipts.json")
+                && route["receipt"] == ".dx/build-cache/route-handler-receipts.json")
     );
     assert!(!root.join("node_modules").exists());
 }
@@ -226,9 +226,9 @@ export { getHandler as GET, headHandler as HEAD };
         .cmd_build()
         .expect("dx build");
 
-    let manifest = read_json(root.join(".dx/build/manifest.json"));
+    let manifest = read_json(root.join(".dx/build/.dx/build-cache/manifest.json"));
     let source_build_manifest = read_json(root.join(".dx/build/source-build-manifest.json"));
-    let route_receipts = read_json(root.join(".dx/build/route-handler-receipts.json"));
+    let route_receipts = read_json(root.join(".dx/build/.dx/build-cache/route-handler-receipts.json"));
 
     assert_eq!(route_receipts["receipt_count"], 2);
     assert_eq!(

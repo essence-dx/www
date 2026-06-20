@@ -340,7 +340,7 @@ const DOCS_DOCTOR_STARTER_PATH_CLAIMS: &[DocsDoctorStarterPathClaim] = &[
     },
     DocsDoctorStarterPathClaim {
         doc_path: "README.md",
-        starter_path: "examples/template/public/preview-manifest.json",
+        starter_path: "examples/template/public/preview-.dx/build-cache/manifest.json",
     },
     DocsDoctorStarterPathClaim {
         doc_path: "docs/DX_WWW_FRAMEWORK_STRUCTURE.md",

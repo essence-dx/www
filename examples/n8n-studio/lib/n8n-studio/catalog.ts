@@ -1,7 +1,7 @@
 import type { CatalogSummary, N8nSourceNode } from "./types";
 
 export const n8nSourceManifestPath =
-  "integrations/n8n-nodes-base/dx-node-source-manifest.json";
+  "integrations/n8n-nodes-base/dx-node-source-.dx/build-cache/manifest.json";
 
 export const n8nCatalogNodes: N8nSourceNode[] = [
   {

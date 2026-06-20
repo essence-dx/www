@@ -59,7 +59,7 @@ export type DxStylePreviewManifestEvidence = {
 
 const ROOT_STYLE_EVIDENCE_SOURCE = "preview_manifest.styleEvidenceRows";
 const MISSING_PREVIEW_EVIDENCE_NEXT_ACTION =
-  "Run the launch materializer so public/preview-manifest.json carries styleEvidenceRows.";
+  "Run the launch materializer so public/preview-.dx/build-cache/manifest.json carries styleEvidenceRows.";
 
 export function dxStyleBrowserCompatEvidenceFromPreviewManifest(
   manifest: DxStylePreviewManifest,

@@ -88,9 +88,9 @@ pub(super) fn write_next_familiar_fixtures(
         ]
     });
 
-    std::fs::write(
-        output_dir.join(NEXT_FAMILIAR_FIXTURES_JSON),
-        serde_json::to_vec_pretty(&fixtures)?,
+    std::fs::write(&
+        output_dir.join(NEXT_FAMILIAR_FIXTURES_JSON), serde_json::to_vec_pretty(&fixtures).map_err(|e| anyhow::anyhow!("Failed to write to {:?}: {}", 
+        output_dir.join(NEXT_FAMILIAR_FIXTURES_JSON), e))?,
     )?;
 
     Ok(Some(fixtures))
@@ -441,7 +441,7 @@ fn metadata_file_kind(path: &Path) -> Option<&'static str> {
     match file_name.as_ref() {
         "robots.ts" | "robots.js" => Some("robots"),
         "sitemap.ts" | "sitemap.js" => Some("sitemap"),
-        "manifest.ts" | "manifest.js" | "manifest.json" => Some("manifest"),
+        "manifest.ts" | "manifest.js" | ".dx/build-cache/manifest.json" => Some("manifest"),
         "favicon.ico" => Some("favicon"),
         _ if stem.starts_with("opengraph-image") => Some("opengraph-image"),
         _ if stem.starts_with("twitter-image") => Some("twitter-image"),

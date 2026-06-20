@@ -95,8 +95,8 @@ test("launch template does not expose legacy non-catalog backend package claims"
     "tools/launch/runtime-template/pages/backend.html",
     "tools/launch/runtime-template/pages/backend.html",
     ".dx/template-app-browser-preview/pages/backend.html",
-    "examples/template/public/preview-manifest.json",
-    ".dx/template-app-browser-preview/public/preview-manifest.json",
+    "examples/template/public/preview-.dx/build-cache/manifest.json",
+    ".dx/template-app-browser-preview/public/preview-.dx/build-cache/manifest.json",
     "tools/launch/materialize-www-template.ts",
   ];
 
@@ -117,8 +117,8 @@ test("launch template does not expose legacy non-catalog backend package claims"
   }
 
   for (const manifestPath of [
-    "examples/template/public/preview-manifest.json",
-    ".dx/template-app-browser-preview/public/preview-manifest.json",
+    "examples/template/public/preview-.dx/build-cache/manifest.json",
+    ".dx/template-app-browser-preview/public/preview-.dx/build-cache/manifest.json",
   ]) {
     const manifest = readJson(manifestPath);
     for (const route of manifest.routes ?? []) {
@@ -141,8 +141,8 @@ test("conversion proof public routes do not expose stale package or demo claims"
     "examples/conversion-proof/forge/route-discovery/conversion-routes.json",
     "examples/conversion-proof/public/launch-runtime.js",
     "examples/conversion-proof/.dx/vercel-landing/launch-runtime.js",
-    "examples/conversion-proof/public/preview-manifest.json",
-    "examples/conversion-proof/.dx/vercel-landing/preview-manifest.json",
+    "examples/conversion-proof/public/preview-.dx/build-cache/manifest.json",
+    "examples/conversion-proof/.dx/vercel-landing/preview-.dx/build-cache/manifest.json",
   ];
   const stalePublicClaims =
     /backend\/convex(?:-compatible)?|icons\/lucide-react|data-dx-[a-z-]*demo|live-demo|local-demo|wasm-bindgen-live-demo|data-dx-wasm-demo-enabled|dxWasmDemoEnabled|local-add-demo|local-demo-ready|no-node-modules-demo|Local demo remains available|Local WebAssembly demo failed|Drizzle query demos|Session demo|No local demo|Demo email|Live connector demo|dxZodDemo/;
@@ -156,8 +156,8 @@ test("conversion proof public routes do not expose stale package or demo claims"
   }
 
   for (const manifestPath of [
-    "examples/conversion-proof/public/preview-manifest.json",
-    "examples/conversion-proof/.dx/vercel-landing/preview-manifest.json",
+    "examples/conversion-proof/public/preview-.dx/build-cache/manifest.json",
+    "examples/conversion-proof/.dx/vercel-landing/preview-.dx/build-cache/manifest.json",
   ]) {
     const manifest = readJson(manifestPath);
     for (const route of manifest.routes ?? []) {
@@ -220,8 +220,8 @@ test("launch template public route package claims use catalog package ids", () =
   const catalogPackageIds = new Set(packageIdsFromCatalog());
 
   for (const manifestPath of [
-    "examples/template/public/preview-manifest.json",
-    ".dx/template-app-browser-preview/public/preview-manifest.json",
+    "examples/template/public/preview-.dx/build-cache/manifest.json",
+    ".dx/template-app-browser-preview/public/preview-.dx/build-cache/manifest.json",
   ]) {
     const manifest = readJson(manifestPath);
     for (const route of manifest.routes ?? []) {
@@ -259,8 +259,8 @@ test("launch template source metadata does not keep template-only package ids", 
     "tools/launch/runtime-template/pages/index.html",
     "tools/launch/runtime-template/pages/index.html",
     ".dx/template-app-browser-preview/pages/index.html",
-    "examples/template/public/preview-manifest.json",
-    ".dx/template-app-browser-preview/public/preview-manifest.json",
+    "examples/template/public/preview-.dx/build-cache/manifest.json",
+    ".dx/template-app-browser-preview/public/preview-.dx/build-cache/manifest.json",
   ];
 
   for (const sourcePath of checkedSources) {
@@ -309,7 +309,7 @@ test("InstantDB cursor package manifests lock the accepted tokenized source hash
   }
 
   const sourcePackage = readJson(
-    "examples/template/.dx/forge/source-manifest.json",
+    "examples/template/.dx/forge/source-.dx/build-cache/manifest.json",
   ).packages.find(
     (entry: { package_id?: string }) => entry.package_id === "instantdb/react",
   );
@@ -332,7 +332,7 @@ test("InstantDB cursor package manifests lock the accepted tokenized source hash
   assert.equal(lockedFile.bytes, expectedBytes);
 
   const cacheFile = readJson(
-    "examples/template/.dx/forge/cache/instantdb-react/0.0.0-dx.0/manifest.json",
+    "examples/template/.dx/forge/cache/instantdb-react/0.0.0-dx.0/.dx/build-cache/manifest.json",
   ).cached_files.find(
     (entry: { path?: string }) => entry.path === cursorPath,
   );

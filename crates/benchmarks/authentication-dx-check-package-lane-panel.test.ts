@@ -171,7 +171,7 @@ test("Authentication publishes a package-owned source-guard runbook fixture", ()
     );
   }
   assert.deepEqual(fixture.preview_manifest, {
-    generated_file: "public/preview-manifest.json",
+    generated_file: "public/preview-.dx/build-cache/manifest.json",
     materializer: "tools/launch/materialize-www-template.ts",
     field: "sourceGuardRunbookFixtures",
     route_field: "routes[].sourceGuardRunbookFixtures",
@@ -365,7 +365,7 @@ test("Authentication runbook fixture is exposed in generated preview-manifest me
     );
     const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
 
     assert.equal(result.ok, true);

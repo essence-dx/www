@@ -5,7 +5,7 @@ const { nextFamiliarCompatibilityFailures } = require("./next-familiar-compatibi
 function buildReceiptFailures(report, input) {
   const failures = [];
   pushIf(failures, input.build.status !== 0, "dx build fixture exited non-zero");
-  pushIf(failures, !report.build.manifest.present, "dx build did not write .dx/build/manifest.json");
+  pushIf(failures, !report.build.manifest.present, "dx build did not write .dx/build/.dx/build-cache/manifest.json");
   pushIf(failures, !report.build.manifest.hasCssSummary, "manifest is missing source_build_css_* summary fields");
   pushIf(failures, !report.build.manifest.hasServerDataSummary, "manifest is missing server-data build summary fields");
   pushIf(

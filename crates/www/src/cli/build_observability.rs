@@ -1,6 +1,6 @@
 use std::path::{Component, Path};
 
-pub(super) const PRODUCTION_OBSERVABILITY_JSON: &str = "observability.json";
+pub(super) const PRODUCTION_OBSERVABILITY_JSON: &str = ".dx/build-cache/observability.json";
 
 pub(super) fn write_production_observability_contract(
     output_dir: &Path,
@@ -136,9 +136,9 @@ fn production_observability_server_action_receipts(
 
 fn production_ready_required_artifacts(deploy: &serde_json::Value) -> Vec<String> {
     let mut artifacts = vec![
-        "manifest.json".to_string(),
-        "deploy-adapter.json".to_string(),
-        "rollback.json".to_string(),
+        ".dx/build-cache/manifest.json".to_string(),
+        ".dx/build-cache/deploy-adapter.json".to_string(),
+        ".dx/build-cache/rollback.json".to_string(),
         PRODUCTION_OBSERVABILITY_JSON.to_string(),
     ];
     for route in deploy["routes"].as_array().into_iter().flatten() {

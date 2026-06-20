@@ -251,7 +251,7 @@ test("Drizzle launch dashboard workflow survives live runtime page materializati
   assert.equal(receipt.no_runtime_execution, true);
   assert.ok(!fs.existsSync(path.join(dir, "node_modules")));
 
-  const previewManifest = JSON.parse(fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"));
+  const previewManifest = JSON.parse(fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"));
   const launchRoute = previewManifest.routes.find((route) => route.route === "/");
   assert.ok(launchRoute, "preview manifest must include /launch");
   assert.ok(

@@ -132,9 +132,11 @@ fn print_registry_report(
     Ok(())
 }
 
+#[track_caller]
 pub(super) fn forge_error(error: impl std::fmt::Display) -> DxError {
+    let caller = std::panic::Location::caller();
     DxError::InternalError {
-        message: error.to_string(),
+        message: format!("{}:{}: {}", caller.file(), caller.line(), error),
     }
 }
 
@@ -2386,7 +2388,7 @@ fn build_forge_init_app_report(
         planned_files,
         scaffolded_files,
         packages,
-        source_manifest_path: project.join(".dx/forge/source-manifest.json"),
+        source_manifest_path: project.join(".dx/forge/source-.dx/build-cache/manifest.json"),
         scorecard_report_path,
         dx_check_report_path,
         check_score,
@@ -2424,7 +2426,7 @@ fn forge_init_app_scaffold_file_list() -> Vec<String> {
 
 fn forge_init_app_artifact_file_list() -> Vec<String> {
     [
-        ".dx/forge/source-manifest.json",
+        ".dx/forge/source-.dx/build-cache/manifest.json",
         ".dx/forge/init-app/forge-scorecard.json",
         ".dx/forge/init-app/forge-scorecard.md",
         ".dx/forge/init-app/dx-check.json",
@@ -2536,7 +2538,7 @@ fn build_forge_adoption_smoke_report(
         release_bundle_dir: release_bundle_dir.clone(),
         release_bundle_manifest_path: release_bundle_dir.join(FORGE_RELEASE_BUNDLE_MANIFEST_JSON),
         public_dir,
-        source_manifest_path: project.join(".dx/forge/source-manifest.json"),
+        source_manifest_path: project.join(".dx/forge/source-.dx/build-cache/manifest.json"),
         route_comparison_path,
         release_history_path,
         smoke_score,
@@ -2550,7 +2552,7 @@ fn build_forge_adoption_report(
     release_bundle: Option<PathBuf>,
     fail_under: u8,
 ) -> anyhow::Result<DxForgeAdoptionReport> {
-    let source_manifest_path = project.join(".dx/forge/source-manifest.json");
+    let source_manifest_path = project.join(".dx/forge/source-.dx/build-cache/manifest.json");
     let receipt_dir = project.join(".dx/forge/receipts");
     let package_docs_dir = project.join(".dx/forge/docs");
     let public_dir = project.join("public");
@@ -2776,7 +2778,7 @@ fn build_forge_beta_install_report(
         },
         Some(
             project
-                .join(".dx/forge/source-manifest.json")
+                .join(".dx/forge/source-.dx/build-cache/manifest.json")
                 .display()
                 .to_string(),
         ),
@@ -3352,7 +3354,7 @@ fn build_forge_beta_upgrade_smoke_report(
         },
         Some(
             project
-                .join(".dx/forge/source-manifest.json")
+                .join(".dx/forge/source-.dx/build-cache/manifest.json")
                 .display()
                 .to_string(),
         ),

@@ -34,7 +34,7 @@ export type ForgeSafetyArchivePreviewManifest = {
 
 export type ForgeSafetyArchiveRunbookReadModel = {
   readonly schema: "dx.forge.safety_archive_runbook_read_model";
-  readonly previewManifestSource: "public/preview-manifest.json";
+  readonly previewManifestSource: "public/preview-.dx/build-cache/manifest.json";
   readonly previewManifestRootField: "sourceGuardRunbookFixtures";
   readonly previewManifestRouteField: "routes[].sourceGuardRunbookFixtures";
   readonly route: "/";
@@ -104,7 +104,7 @@ export function readForgeSafetyArchiveRunbookFromPreviewManifest(
 
   return {
     schema: "dx.forge.safety_archive_runbook_read_model",
-    previewManifestSource: "public/preview-manifest.json",
+    previewManifestSource: "public/preview-.dx/build-cache/manifest.json",
     previewManifestRootField: "sourceGuardRunbookFixtures",
     previewManifestRouteField: "routes[].sourceGuardRunbookFixtures",
     route: "/",
@@ -125,7 +125,7 @@ export function readForgeSafetyArchiveRunbookFromPreviewManifest(
     availableOnLaunchRoute,
     nextAction: availableOnLaunchRoute
       ? "Show this source-only rollback proof command beside the safety/archive row before React hydration or fresh package-status receipts."
-      : "Regenerate public/preview-manifest.json so the /launch route links the safety/archive rollback proof fixture.",
+      : "Regenerate public/preview-.dx/build-cache/manifest.json so the /launch route links the safety/archive rollback proof fixture.",
   };
 }
 

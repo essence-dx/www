@@ -11,7 +11,7 @@ use super::{
 
 const REPORT_SCHEMA: &str = "dx.forge.launch_evidence_restart_manifest";
 const MANIFEST_SCHEMA: &str = "dx.launch.evidence_restart_manifest";
-const MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-restart-manifest.json";
+const MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-restart-.dx/build-cache/manifest.json";
 const RESTART_BRIEF_PATH: &str = ".dx/forge/release/launch-evidence-restart-brief.md";
 const RESTART_CHECKLIST_PATH: &str = ".dx/forge/release/launch-evidence-restart-checklist.json";
 const RESTART_LEDGER_PATH: &str = ".dx/forge/release/launch-evidence-restart-ledger.json";

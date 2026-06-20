@@ -467,7 +467,7 @@ fn is_identifier_like(value: &str) -> bool {
 
 fn forge_package_entries(project: &Path) -> Vec<ImportEntry> {
     let mut entries = Vec::new();
-    let manifest_path = project.join(".dx/forge/source-manifest.json");
+    let manifest_path = project.join(".dx/forge/source-.dx/build-cache/manifest.json");
     let Ok(bytes) = std::fs::read(&manifest_path) else {
         return entries;
     };

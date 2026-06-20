@@ -104,8 +104,8 @@ test("hosted bundle replay fails when evidence artifacts are public", async () =
 });
 
 function writeAdapters(dir: string): { deployAdapter: string; providerAdapter: string } {
-  const deployAdapter = path.join(dir, "deploy-adapter.json");
-  const providerAdapter = path.join(dir, "provider-adapter.dx-cloud.json");
+  const deployAdapter = path.join(dir, ".dx/build-cache/deploy-adapter.json");
+  const providerAdapter = path.join(dir, ".dx/build-cache/provider-adapter.dx-cloud.json");
   fs.writeFileSync(
     deployAdapter,
     `${JSON.stringify(
@@ -133,7 +133,7 @@ function writeAdapters(dir: string): { deployAdapter: string; providerAdapter: s
         upload_plan: [
           { path: "app/index.html", bundle: "public-runtime", cache_control: "public, max-age=31536000, immutable" },
           { path: ".dx/receipts/readiness/proof-graph.sr", bundle: "evidence", cache_control: "no-store" },
-          { path: "deploy-adapter.json.br", bundle: "evidence", cache_control: "no-store" },
+          { path: ".dx/build-cache/deploy-adapter.json.br", bundle: "evidence", cache_control: "no-store" },
         ],
       },
       null,

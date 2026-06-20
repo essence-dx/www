@@ -117,7 +117,7 @@ test("validation/zod stays visible and interactive in the launch template", () =
   }));
   const materializedLaunch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
   const materializedRuntime = fs.readFileSync(path.join(dir, "public", "launch-runtime.js"), "utf8");
-  const manifest = JSON.parse(fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"));
+  const manifest = JSON.parse(fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"));
 
   assert.equal(result.ok, true);
   assert.equal(result.noNodeModules, true);

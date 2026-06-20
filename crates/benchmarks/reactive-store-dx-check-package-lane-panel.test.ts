@@ -302,7 +302,7 @@ test("Reactive Store source-guard fixture is exposed in generated preview manife
       }),
     );
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
 
     assert.equal(result.ok, true);

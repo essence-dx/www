@@ -1,7 +1,7 @@
 //! Media processing for DX-WWW build pipeline
 //!
 //! This module handles favicon generation from source logos using the dx-media CLI tool.
-//! It generates all required favicon sizes and formats, and creates a manifest.json file
+//! It generates all required favicon sizes and formats, and creates a .dx/build-cache/manifest.json file
 //! with icon references.
 
 use crate::error::{BuildError, Result};
@@ -163,7 +163,7 @@ impl MediaProcessor {
         let artifacts = self.create_artifacts(&manifest)?;
 
         // Cache the manifest
-        let manifest_path = self.config.output_dir.join("manifest.json");
+        let manifest_path = self.config.output_dir.join(".dx/build-cache/manifest.json");
         let manifest_data = serde_json::to_vec_pretty(&manifest)
             .map_err(|e| BuildError::Media(format!("Failed to serialize manifest: {}", e)))?;
         let manifest_hash = content_hash(&manifest_data);
@@ -308,7 +308,7 @@ impl MediaProcessor {
         Ok(artifacts)
     }
 
-    /// Generate manifest.json for PWA
+    /// Generate .dx/build-cache/manifest.json for PWA
     ///
     /// # Errors
     ///

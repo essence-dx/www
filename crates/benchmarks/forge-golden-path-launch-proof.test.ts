@@ -38,7 +38,7 @@ assert(
 );
 
 const registryManifest = readJson(
-  "examples/template/.dx/forge/registry/local/packages/js/shadcn/ui/button/0.1.0/manifest.json",
+  "examples/template/.dx/forge/registry/local/packages/js/shadcn/ui/button/0.1.0/.dx/build-cache/manifest.json",
 );
 assert(
   registryManifest.source["root-dx"],

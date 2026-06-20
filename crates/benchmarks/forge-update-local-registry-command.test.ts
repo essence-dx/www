@@ -115,7 +115,7 @@ function assertRemoteLifecyclePlan(plan, expected) {
   assert.deepEqual(plan.missing_config, []);
   assert.deepEqual(plan.selected_exports, ["client"]);
   assert.equal(plan.requested_version ?? null, expected.requestedVersion ?? null);
-  assert.ok(plan.object_key_plan.some((object) => object.endsWith("/manifest.json")));
+  assert.ok(plan.object_key_plan.some((object) => object.endsWith("/.dx/build-cache/manifest.json")));
   assert.ok(plan.object_key_plan.some((object) => object.endsWith("/files/<content-hash>")));
   assert.ok(plan.object_key_plan.some((object) => object.endsWith("/latest.json")));
   assert.ok(plan.object_key_plan.some((object) => object.endsWith(`/${expected.objectPlan}`)));
@@ -135,7 +135,7 @@ function assertRemoteLifecyclePlan(plan, expected) {
     assert.deepEqual(plan.remote_read_plan.selected_exports, ["client"]);
     assert.ok(
       plan.remote_read_plan.objects.some(
-        (object) => object.intent === "package-manifest" && object.object_key.endsWith("/manifest.json"),
+        (object) => object.intent === "package-manifest" && object.object_key.endsWith("/.dx/build-cache/manifest.json"),
       ),
     );
     assert.ok(
@@ -685,7 +685,7 @@ test(
       assert.ok(report.objects.some((object) => object.endsWith("launch-smoke/index.json")));
       assert.ok(
         report.objects.some((object) =>
-          object.endsWith("launch-smoke/packages/js/auth/better-auth/0.1.0/manifest.json"),
+          object.endsWith("launch-smoke/packages/js/auth/better-auth/0.1.0/.dx/build-cache/manifest.json"),
         ),
       );
       assert.ok(report.objects.some((object) => object.includes("/files/")));
@@ -1049,7 +1049,7 @@ test(
 
       const manifestPath = path.join(
         registryDir,
-        "packages/js/auth/better-auth/0.1.0/manifest.json",
+        "packages/js/auth/better-auth/0.1.0/.dx/build-cache/manifest.json",
       );
       assert.equal(fs.existsSync(manifestPath), true);
 

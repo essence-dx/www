@@ -160,8 +160,8 @@ test("legacy backend package claims are removed from launch runtime surfaces", (
   const surfaces = [
     "tools/launch/runtime-template/pages/backend.html",
     ".dx/template-app-browser-preview/pages/backend.html",
-    "examples/template/public/preview-manifest.json",
-    ".dx/template-app-browser-preview/public/preview-manifest.json",
+    "examples/template/public/preview-.dx/build-cache/manifest.json",
+    ".dx/template-app-browser-preview/public/preview-.dx/build-cache/manifest.json",
     "tools/launch/materialize-www-template.ts",
   ];
 

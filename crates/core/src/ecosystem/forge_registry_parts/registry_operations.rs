@@ -603,7 +603,7 @@ pub fn load_local_registry_package(
 ) -> Result<DxForgeRegistryPackage> {
     let root = root.as_ref();
     let canonical = canonical_package_id(package_id);
-    let manifest_path = root.join(format!("packages/js/{canonical}/{version}/manifest.json"));
+    let manifest_path = root.join(format!("packages/js/{canonical}/{version}/.dx/build-cache/manifest.json"));
     let bytes = fs::read(&manifest_path)
         .with_context(|| format!("read local registry manifest `{}`", manifest_path.display()))?;
     let package: DxForgeRegistryPackage =
@@ -820,7 +820,7 @@ pub fn plan_r2_remote_read_only_install(
     let package_object_path = package_id.trim_matches('/');
     let version_segment = requested_version.unwrap_or("<version>");
     let manifest_key = format!(
-        "{}/packages/js/{package_object_path}/{version_segment}/manifest.json",
+        "{}/packages/js/{package_object_path}/{version_segment}/.dx/build-cache/manifest.json",
         status.prefix
     );
     let content_key = format!(
@@ -851,7 +851,7 @@ pub fn plan_r2_remote_read_only_install(
     if matches!(intent, DxForgeRemoteReadIntent::UninstallDryRun) {
         objects.push(DxForgeRemoteReadObject {
             intent: "tracked-source-manifest".to_string(),
-            object_key: ".dx/forge/source-manifest.json".to_string(),
+            object_key: ".dx/forge/source-.dx/build-cache/manifest.json".to_string(),
             required: true,
         });
     }
@@ -1050,7 +1050,7 @@ pub async fn pull_registry_package_from_r2(
     if dry_run {
         let status = DxForgeR2Config::status_from_env();
         let manifest_key = format!(
-            "{}/packages/js/{canonical}/{version}/manifest.json",
+            "{}/packages/js/{canonical}/{version}/.dx/build-cache/manifest.json",
             status.prefix
         );
         let content_key = format!(
@@ -1075,7 +1075,7 @@ pub async fn pull_registry_package_from_r2(
     let config = DxForgeR2Config::from_env()
         .context("Cloudflare R2 is not configured for DX Forge registry pulls")?;
     let manifest_key = format!(
-        "{}/packages/js/{}/{}/manifest.json",
+        "{}/packages/js/{}/{}/.dx/build-cache/manifest.json",
         config.prefix, canonical, version
     );
     let store = config.store()?;

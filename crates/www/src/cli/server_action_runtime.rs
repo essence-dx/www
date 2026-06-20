@@ -9,7 +9,7 @@ use dx_compiler::delivery::{
 
 use super::dev_http::DxCliHttpRequest;
 
-pub(super) const SERVER_ACTION_REPLAY_LEDGER_JSON: &str = "server-action-replay-ledger.json";
+pub(super) const SERVER_ACTION_REPLAY_LEDGER_JSON: &str = ".dx/build-cache/server-action-replay-ledger.json";
 const SERVER_ACTION_REPLAY_LEDGER_SCHEMA: &str = "dx.www.server_action.replay_ledger";
 const SERVER_ACTION_REPLAY_LEDGER_PROVIDER_PROOF_GAP_IDS: &[&str] = &[
     "distributed-idempotency-store",
@@ -35,7 +35,7 @@ const SERVER_ACTION_REPLAY_LEDGER_RECEIPT_HINT_FIELDS: &[&str] = &[
     "entries[].response_hash",
 ];
 const SERVER_ACTION_REPLAY_LEDGER_LOCAL_REPLAY_HINT_STEPS: &[&str] = &[
-    "Run dx preview --production against the build output that emitted server-action-replay-ledger.json.",
+    "Run dx preview --production against the build output that emitted .dx/build-cache/server-action-replay-ledger.json.",
     "POST the compiled server action endpoint from server-action-protocols.json with x-dx-csrf, x-dx-session, and idempotency-key headers.",
     "Compare replay_ledger.receipt_id, replay_key_hash, duplicate, conflict_observed, observed_count, and conflict_count in the local response.",
     "Keep request cancellation as a provider proof gap until a hosted runtime can prove abort propagation and replay cleanup.",

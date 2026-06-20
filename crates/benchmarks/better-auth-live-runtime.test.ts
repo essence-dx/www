@@ -90,7 +90,7 @@ test("auth/better-auth is visible and interactive in the materialized /launch ru
   assert.match(serverBoundary, /\{ status: 501 \}/);
   assert.doesNotMatch(serverBoundary, /GITHUB_|APPLE_|auth\/google/);
 
-  const manifest = JSON.parse(read(path.join(dir, "public", "preview-manifest.json")));
+  const manifest = JSON.parse(read(path.join(dir, "public", "preview-.dx/build-cache/manifest.json")));
   assert.equal(manifest.noNodeModulesRequired, true);
   assert.ok(
     manifest.routes.some(

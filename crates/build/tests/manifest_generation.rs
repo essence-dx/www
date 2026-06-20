@@ -2,7 +2,7 @@
 //!
 //! Feature: dx-www-production-ready, Property 2: Manifest Icon References
 //!
-//! This property test verifies that for any generated favicon set, the manifest.json
+//! This property test verifies that for any generated favicon set, the .dx/build-cache/manifest.json
 //! contains valid references to all generated icon files. The property tests that:
 //! 1. All generated icons are referenced in the manifest
 //! 2. Each reference has correct src, sizes, and type fields
@@ -46,7 +46,7 @@ proptest! {
     /// Property 2a: All generated icons are referenced in manifest
     ///
     /// For any generated favicon set, every icon file that exists on disk
-    /// should have a corresponding entry in the manifest.json.
+    /// should have a corresponding entry in the .dx/build-cache/manifest.json.
     ///
     /// **Validates: Requirements 1.1**
     #[test]
@@ -112,7 +112,7 @@ proptest! {
 
     /// Property 2b: Each manifest reference has correct src field
     ///
-    /// For any generated favicon set, each icon entry in the manifest.json
+    /// For any generated favicon set, each icon entry in the .dx/build-cache/manifest.json
     /// should have a valid 'src' field that matches the actual filename.
     ///
     /// **Validates: Requirements 1.1**
@@ -179,7 +179,7 @@ proptest! {
 
     /// Property 2c: Each manifest reference has correct sizes field
     ///
-    /// For any generated favicon set, each icon entry in the manifest.json
+    /// For any generated favicon set, each icon entry in the .dx/build-cache/manifest.json
     /// should have a 'sizes' field in "WxH" format matching the actual dimensions.
     ///
     /// **Validates: Requirements 1.1**
@@ -262,7 +262,7 @@ proptest! {
 
     /// Property 2d: Each manifest reference has correct type field
     ///
-    /// For any generated favicon set, each icon entry in the manifest.json
+    /// For any generated favicon set, each icon entry in the .dx/build-cache/manifest.json
     /// should have a 'type' field with the correct MIME type.
     ///
     /// **Validates: Requirements 1.1**
@@ -343,7 +343,7 @@ proptest! {
 
     /// Property 2e: Manifest JSON is valid and parseable
     ///
-    /// For any generated favicon set, the manifest.json should be valid JSON
+    /// For any generated favicon set, the .dx/build-cache/manifest.json should be valid JSON
     /// that can be parsed and contains the required PWA manifest fields.
     ///
     /// **Validates: Requirements 1.1**
@@ -433,7 +433,7 @@ proptest! {
 
     /// Property 2f: All referenced files actually exist
     ///
-    /// For any generated favicon set, every file referenced in the manifest.json
+    /// For any generated favicon set, every file referenced in the .dx/build-cache/manifest.json
     /// should actually exist on the filesystem.
     ///
     /// **Validates: Requirements 1.1**

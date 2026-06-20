@@ -494,7 +494,7 @@ test("materialized app routes keep package receipts and avoid node_modules", () 
 
   const dashboard = fs.readFileSync(path.join(dir, "pages", "dashboard.html"), "utf8");
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
 
   assert.match(dashboard, /data-dx-component="template-dashboard-page"/);
@@ -655,7 +655,7 @@ test("backend route does not claim non-catalog Forge packages", () => {
     const sourceBackend = read("tools/launch/runtime-template/pages/backend.html");
     const materializedBackend = fs.readFileSync(path.join(dir, "pages", "backend.html"), "utf8");
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
     const backendRoute = manifest.routes.find(
       (route: { route: string }) => route.route === "/backend",

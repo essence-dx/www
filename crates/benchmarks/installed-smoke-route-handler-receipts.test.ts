@@ -14,9 +14,9 @@ const {
 const { sourceBuildFailures } = require("../tools/build/installed-smoke/source-build-failures.ts");
 
 const DUPLICATE_RECEIPT_MESSAGE =
-  ".dx/build/route-handler-receipts.json has duplicate app/api/health/route.ts GET /api/health receipts";
+  ".dx/build/.dx/build-cache/route-handler-receipts.json has duplicate app/api/health/route.ts GET /api/health receipts";
 const DUPLICATE_SKIP_MESSAGE =
-  ".dx/build/route-handler-receipts.json has duplicate app/api/checkout/route.ts POST /api/checkout skipped evidence";
+  ".dx/build/.dx/build-cache/route-handler-receipts.json has duplicate app/api/checkout/route.ts POST /api/checkout skipped evidence";
 
 test("installed smoke route-handler receipts reject duplicate receipt and skip evidence", () => {
   const summary = summarizeRouteHandlerReceipts(createReceiptInput());
@@ -90,7 +90,7 @@ function createReceiptInput() {
   const checkoutSkip = routeHandlerSkip("app/api/checkout/route.ts", "/api/checkout", "POST");
   return {
     projectRoot: "G:/Dx/www",
-    routeHandlerReceiptsPath: path.join("G:/Dx/www", ".dx", "build", "route-handler-receipts.json"),
+    routeHandlerReceiptsPath: path.join("G:/Dx/www", ".dx", "build", ".dx/build-cache/route-handler-receipts.json"),
     routeHandlerReceipts: {
       ok: true,
       value: {
@@ -109,7 +109,7 @@ function createReceiptInput() {
 function createNormalizedReceiptInput() {
   return {
     projectRoot: "G:/Dx/www",
-    routeHandlerReceiptsPath: path.join("G:/Dx/www", ".dx", "build", "route-handler-receipts.json"),
+    routeHandlerReceiptsPath: path.join("G:/Dx/www", ".dx", "build", ".dx/build-cache/route-handler-receipts.json"),
     routeHandlerReceipts: {
       ok: true,
       value: {

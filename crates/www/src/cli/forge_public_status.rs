@@ -17,7 +17,7 @@ const FORGE_PUBLIC_STATUS_LATEST_RECEIPT: &str = ".dx/receipts/forge/status-late
 
 pub(super) fn run_forge_public_status(cwd: &Path, args: &[String]) -> DxResult<()> {
     let format = parse_public_listing_format(args, "forge status")?;
-    if cwd.join(".dx/forge/source-manifest.json").is_file() {
+    if cwd.join(".dx/forge/source-.dx/build-cache/manifest.json").is_file() {
         refresh_forge_package_status_receipts(cwd)?;
     }
     let report = forge_public_status_report(cwd, "dx forge status");
@@ -521,7 +521,7 @@ fn forge_public_local_registry_manifest_path(
         .join("packages/js")
         .join(canonical_package_id(package_id))
         .join(version)
-        .join("manifest.json")
+        .join(".dx/build-cache/manifest.json")
 }
 
 pub(super) fn forge_public_remotes_report(cwd: &Path, command: &str) -> DxForgePublicRemotesReport {

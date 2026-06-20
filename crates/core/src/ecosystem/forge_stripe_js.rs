@@ -2272,7 +2272,7 @@ const STRIPE_METADATA_TS: &str = r#"export const dxStripeJsForgePackage = {
     launch: ".dx/forge/docs/launch-companions/payments-status.md",
     dashboard: ".dx/forge/docs/dashboard-stripe-plan-checkout.md",
     dashboardWorkflow: "examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json",
-    previewManifest: "examples/conversion-proof/public/preview-manifest.json#launch-runtime-billing-checkout",
+    previewManifest: "examples/conversion-proof/public/preview-.dx/build-cache/manifest.json#launch-runtime-billing-checkout",
     sourceGuard: "benchmarks/stripe-rhf-checkout-flow.test.ts",
   },
   dashboardUsage: {
@@ -2404,7 +2404,7 @@ The dashboard surface uses `<dx-icon name="pack:payments" />`, `data-dx-package=
 
 The `/launch` template consumes the same plan-checkout boundary through `examples/template/payments-status.tsx`. The visible billing workflow selects an app-owned plan, chooses hosted or embedded Checkout, validates contact details with React Hook Form plus Zod, and creates a safe missing-config receipt through `createDxStripeDashboardCheckoutRequest` and `createDxStripeDashboardMissingConfigReceipt` when Stripe credentials are absent.
 
-The launch surface uses `data-dx-component="launch-billing-checkout-workflow"`, `data-dx-dashboard-flow="billing-checkout"`, `data-dx-stripe-dashboard-workflow="plan-checkout"`, `data-dx-stripe-action="request-checkout-intent"`, and `data-dx-stripe-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json"` so Zed Web Preview can map the payment interaction back to source and receipt proof. The runtime materializer preserves that selector as `launch-runtime-billing-checkout` in `public/preview-manifest.json`, keeping the generated/static Web Preview handoff pointed at the billing workflow instead of the generic package proof grid.
+The launch surface uses `data-dx-component="launch-billing-checkout-workflow"`, `data-dx-dashboard-flow="billing-checkout"`, `data-dx-stripe-dashboard-workflow="plan-checkout"`, `data-dx-stripe-action="request-checkout-intent"`, and `data-dx-stripe-receipt-path="examples/template/.dx/forge/receipts/2026-05-22-payments-stripe-js-billing-workflow.json"` so Zed Web Preview can map the payment interaction back to source and receipt proof. The runtime materializer preserves that selector as `launch-runtime-billing-checkout` in `public/preview-.dx/build-cache/manifest.json`, keeping the generated/static Web Preview handoff pointed at the billing workflow instead of the generic package proof grid.
 
 ## Template Usage
 

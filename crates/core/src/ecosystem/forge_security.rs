@@ -23,7 +23,7 @@ use super::forge_registry::{
 };
 use super::forge_root_manifest::source_package_from_root_dx_selected_exports;
 
-const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-manifest.json";
+const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-.dx/build-cache/manifest.json";
 const RECEIPT_DIR: &str = ".dx/forge/receipts";
 const PACKAGE_DOCS_DIR: &str = ".dx/forge/docs";
 const FORBIDDEN_LIFECYCLE_SCRIPTS: [&str; 5] = [
@@ -1324,7 +1324,7 @@ pub fn risk_score_from_findings(findings: &[DxSupplyChainFinding]) -> u8 {
     score.clamp(0, 100) as u8
 }
 
-/// Classify current Forge-owned source files against `.dx/forge/source-manifest.json`.
+/// Classify current Forge-owned source files against `.dx/forge/source-.dx/build-cache/manifest.json`.
 pub fn classify_forge_source_state(project: impl AsRef<Path>) -> Result<DxForgeSourceStateReport> {
     let project = project.as_ref();
     let manifest_path = project.join(SOURCE_MANIFEST_PATH);
@@ -4854,7 +4854,7 @@ fn write_remove_archive_manifest(
         "timestamp": &receipt.timestamp,
         "files": files,
     });
-    let manifest_path = archive_root.join("manifest.json");
+    let manifest_path = archive_root.join(".dx/build-cache/manifest.json");
     let mut transaction = DxForgeFileTransaction::new(archive_root);
     if let Err(error) = transaction.write_json_pretty(&manifest_path, &manifest) {
         let rollback_findings = transaction.rollback();

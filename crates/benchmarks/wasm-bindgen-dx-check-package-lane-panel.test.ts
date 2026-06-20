@@ -196,7 +196,7 @@ test("WebAssembly Bridge package-lane row survives generated starter materializa
     );
     const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
     const studioManifest = read("dx-www/src/cli/studio_manifest.rs");
     const frameworkStructure = read("docs/DX_WWW_FRAMEWORK_STRUCTURE.md");
@@ -469,7 +469,7 @@ test("WebAssembly Bridge source-guard runbook fixture mirrors the Studio manifes
   );
   assert.equal(
     fixture.preview_manifest.generated_file,
-    "public/preview-manifest.json",
+    "public/preview-.dx/build-cache/manifest.json",
   );
   assert.equal(
     fixture.preview_manifest.materializer,

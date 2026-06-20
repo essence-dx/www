@@ -124,7 +124,7 @@ test("Internationalization receipt exposes hash-backed dx-check freshness", () =
   assert.equal(materializerSurface.hash_algorithm, "sha256");
   assert.deepEqual(materializerSurface.files, [
     previewManifestMaterializerPath,
-    "public/preview-manifest.json",
+    "public/preview-.dx/build-cache/manifest.json",
   ]);
   assert.equal(
     materializerSurface.file_hashes[previewManifestMaterializerPath],

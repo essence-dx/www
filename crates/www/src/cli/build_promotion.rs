@@ -91,7 +91,7 @@ pub(super) fn promote_build_manifest_with_local_key(
         anyhow::bail!("Publisher key key_id does not match private key seed");
     }
 
-    let manifest_path = build_dir.join("manifest.json");
+    let manifest_path = build_dir.join(".dx/build-cache/manifest.json");
     let manifest_bytes = std::fs::read(&manifest_path)?;
     let manifest_hash = build_manifest_hash(&manifest_bytes);
     let mut deploy_adapter = read_deploy_adapter(build_dir)?;
@@ -102,7 +102,7 @@ pub(super) fn promote_build_manifest_with_local_key(
     let signed_at = Utc::now().to_rfc3339();
     let payload = build_manifest_promotion_signing_payload(
         &manifest_hash,
-        "manifest.json",
+        ".dx/build-cache/manifest.json",
         &deploy_summary,
         &key.signer,
         &key.key_id,
@@ -125,7 +125,7 @@ pub(super) fn promote_build_manifest_with_local_key(
     };
     let verification = verify_build_manifest_signature(
         &manifest_hash,
-        "manifest.json",
+        ".dx/build-cache/manifest.json",
         &deploy_summary,
         &publisher_identity,
     )
@@ -145,7 +145,7 @@ pub(super) fn promote_build_manifest_with_local_key(
         score: 0,
         build_dir: build_dir.to_path_buf(),
         build_manifest: DxBuildManifestPromotionManifest {
-            path: "manifest.json".to_string(),
+            path: ".dx/build-cache/manifest.json".to_string(),
             hash: manifest_hash,
             bytes: manifest_bytes.len() as u64,
         },
@@ -167,10 +167,10 @@ pub(super) fn promote_build_manifest_with_local_key(
     std::fs::write(&promotion_path, serde_json::to_vec_pretty(&report)?)?;
     report.wrote_promotion = promotion_path.is_file();
     std::fs::write(
-        build_dir.join("deploy-adapter.json"),
+        build_dir.join(".dx/build-cache/deploy-adapter.json"),
         serde_json::to_vec_pretty(&deploy_adapter)?,
     )?;
-    report.wrote_deploy_adapter = build_dir.join("deploy-adapter.json").is_file();
+    report.wrote_deploy_adapter = build_dir.join(".dx/build-cache/deploy-adapter.json").is_file();
     std::fs::write(&promotion_path, serde_json::to_vec_pretty(&report)?)?;
 
     match verify_build_manifest_promotion(build_dir) {
@@ -233,24 +233,24 @@ pub(super) fn verify_build_manifest_promotion(
         || deploy_summary.health_check_count != promotion.deploy_adapter.health_check_count
     {
         return Err(
-            "Current deploy-adapter.json no longer matches build-promotion.json".to_string(),
+            "Current .dx/build-cache/deploy-adapter.json no longer matches build-promotion.json".to_string(),
         );
     }
 
     let build_manifest = &deploy_adapter["build_manifest"];
     if build_manifest["path"].as_str() != Some(promotion.build_manifest.path.as_str()) {
-        return Err("deploy-adapter.json build_manifest path does not match promotion".to_string());
+        return Err(".dx/build-cache/deploy-adapter.json build_manifest path does not match promotion".to_string());
     }
     if build_manifest["hash"].as_str() != Some(promotion.build_manifest.hash.as_str()) {
-        return Err("deploy-adapter.json build_manifest hash does not match promotion".to_string());
+        return Err(".dx/build-cache/deploy-adapter.json build_manifest hash does not match promotion".to_string());
     }
     if build_manifest["signed"].as_bool() != Some(true) {
-        return Err("deploy-adapter.json build_manifest is not signed".to_string());
+        return Err(".dx/build-cache/deploy-adapter.json build_manifest is not signed".to_string());
     }
     if build_manifest["signature"].as_str() != Some(promotion.publisher_identity.signature.as_str())
     {
         return Err(
-            "deploy-adapter.json build_manifest signature does not match promotion".to_string(),
+            ".dx/build-cache/deploy-adapter.json build_manifest signature does not match promotion".to_string(),
         );
     }
 
@@ -317,7 +317,7 @@ fn build_manifest_hash(bytes: &[u8]) -> String {
 
 fn read_deploy_adapter(build_dir: &Path) -> anyhow::Result<serde_json::Value> {
     Ok(serde_json::from_slice(&std::fs::read(
-        build_dir.join("deploy-adapter.json"),
+        build_dir.join(".dx/build-cache/deploy-adapter.json"),
     )?)?)
 }
 
@@ -326,11 +326,11 @@ fn verify_unsigned_deploy_adapter_manifest(
     manifest_hash: &str,
 ) -> anyhow::Result<()> {
     let build_manifest = &deploy_adapter["build_manifest"];
-    if build_manifest["path"].as_str() != Some("manifest.json") {
-        anyhow::bail!("deploy-adapter.json build_manifest.path must be manifest.json");
+    if build_manifest["path"].as_str() != Some(".dx/build-cache/manifest.json") {
+        anyhow::bail!(".dx/build-cache/deploy-adapter.json build_manifest.path must be .dx/build-cache/manifest.json");
     }
     if build_manifest["hash"].as_str() != Some(manifest_hash) {
-        anyhow::bail!("deploy-adapter.json build_manifest.hash does not match manifest.json");
+        anyhow::bail!(".dx/build-cache/deploy-adapter.json build_manifest.hash does not match .dx/build-cache/manifest.json");
     }
     if deploy_adapter["no_node_modules_required"].as_bool() != Some(true) {
         anyhow::bail!("signed promotion requires no_node_modules_required=true");
@@ -342,10 +342,10 @@ fn deploy_adapter_summary(
     deploy_adapter: &serde_json::Value,
 ) -> Result<DxBuildManifestPromotionDeployAdapter, String> {
     Ok(DxBuildManifestPromotionDeployAdapter {
-        path: "deploy-adapter.json".to_string(),
+        path: ".dx/build-cache/deploy-adapter.json".to_string(),
         adapter: deploy_adapter["adapter"]
             .as_str()
-            .ok_or_else(|| "deploy-adapter.json missing adapter".to_string())?
+            .ok_or_else(|| ".dx/build-cache/deploy-adapter.json missing adapter".to_string())?
             .to_string(),
         no_node_modules_required: deploy_adapter["no_node_modules_required"].as_bool()
             == Some(true),

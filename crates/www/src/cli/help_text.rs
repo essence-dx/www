@@ -300,9 +300,9 @@ pub(super) fn print_build_help(command_name: &str) {
     eprintln!("    --target <target>    Build target: web or android (default: web)");
     eprintln!();
     eprintln!("OUTPUT:");
-    eprintln!("    .dx/build/manifest.json");
+    eprintln!("    .dx/build/.dx/build-cache/manifest.json");
     eprintln!("    .dx/build/source-build-manifest.json");
-    eprintln!("    .dx/build/source-build-receipt.json");
+    eprintln!("    .dx/build/.dx/build-cache/source-build-receipt.json");
     eprintln!("    .dx/www/output");
     eprintln!("    .dx/native/android-build-receipt.json for --target android");
     eprintln!("    .dx/receipts/build/latest.json");

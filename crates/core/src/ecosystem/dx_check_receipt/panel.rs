@@ -125,7 +125,7 @@ const STATE_MANAGEMENT_PACKAGE_RECEIPT_PATH: &str =
 #[cfg(test)]
 #[allow(dead_code)]
 const STATE_MANAGEMENT_PACKAGE_STATUS_PATH: &str = ".dx/forge/package-status.json";
-const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-manifest.json";
+const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-.dx/build-cache/manifest.json";
 const STATE_MANAGEMENT_STATUS_VOCABULARY: [&str; 5] = [
     "present",
     "stale",

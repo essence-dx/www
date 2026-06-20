@@ -205,7 +205,7 @@ test("ui-components uses source-owned primitives and DX icons in app routes", ()
 });
 
 test("ui-components has Forge receipts for the baseline source-owned packages", () => {
-  const manifest = JSON.parse(read(".dx/forge/source-manifest.json"));
+  const manifest = JSON.parse(read(".dx/forge/source-.dx/build-cache/manifest.json"));
   const packageIds = manifest.packages.map((item) => item.package_id);
 
   for (const packageId of [

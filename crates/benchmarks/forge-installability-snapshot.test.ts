@@ -20,7 +20,7 @@ function writeFixtureRoot() {
   fs.mkdirSync(reportsDir, { recursive: true });
 
   fs.writeFileSync(
-    path.join(releaseBundle, "forge-release-manifest.json"),
+    path.join(releaseBundle, "forge-release-.dx/build-cache/manifest.json"),
     `${JSON.stringify(
       {
         signed: true,

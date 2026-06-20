@@ -296,7 +296,7 @@ test("Internationalization exposes a static www-template package-lane template",
   assert.equal(runbookFixture.runbook.command.starts_server, false);
   assert.equal(runbookFixture.runbook.helper_command.runs_package_install, false);
   assert.deepEqual(runbookFixture.preview_manifest, {
-    generated_file: "public/preview-manifest.json",
+    generated_file: "public/preview-.dx/build-cache/manifest.json",
     materializer: "tools/launch/materialize-www-template.ts",
     field: "sourceGuardRunbookFixtures",
     route_field: "routes[].sourceGuardRunbookFixtures",
@@ -361,7 +361,7 @@ test("Internationalization package-lane template survives generated starter mate
   );
   const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
 
   assert.equal(result.ok, true);

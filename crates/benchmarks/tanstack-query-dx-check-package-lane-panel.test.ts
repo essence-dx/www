@@ -194,7 +194,7 @@ test("Data Fetching & Cache static launch package-lane template is Studio discov
     );
     const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
 
     assert.equal(result.ok, true);
@@ -440,7 +440,7 @@ test("Data Fetching & Cache source-guard runbook fixture mirrors the Studio cont
   assert.equal(fixture.runbook.command.runs_full_build, false);
   assert.equal(fixture.runbook.command.writes_files, false);
   assert.equal(fixture.runbook.command.node_modules_required, false);
-  assert.equal(fixture.preview_manifest.generated_file, "public/preview-manifest.json");
+  assert.equal(fixture.preview_manifest.generated_file, "public/preview-.dx/build-cache/manifest.json");
   assert.equal(fixture.preview_manifest.root_field, "sourceGuardRunbookFixtures");
   assert.equal(
     fixture.preview_manifest.route_field,

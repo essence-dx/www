@@ -5,7 +5,7 @@ use serde_json::{Value, json};
 
 use super::forge_hosting_manifest::FORGE_HOSTING_MANIFEST_JSON;
 
-pub(super) const HOSTED_PREVIEW_JSON: &str = "hosted-preview.json";
+pub(super) const HOSTED_PREVIEW_JSON: &str = ".dx/build-cache/hosted-preview.json";
 
 pub(super) fn write_hosted_preview_contract(
     project_dir: &Path,
@@ -49,13 +49,13 @@ pub(super) fn write_hosted_preview_contract(
             "observability_path": deploy["observability"]["metadata_path"],
         },
         "deploy_adapter": {
-            "path": "deploy-adapter.json",
+            "path": ".dx/build-cache/deploy-adapter.json",
             "adapter": deploy["adapter"],
             "no_node_modules_required": deploy["no_node_modules_required"],
             "cache_headers": deploy["cache_headers"],
         },
         "provider_adapter": {
-            "path": "provider-adapter.dx-cloud.json",
+            "path": ".dx/build-cache/provider-adapter.dx-cloud.json",
             "provider": "dx-www-cloud-local",
             "requires_provider_account": false,
             "network_required": false,
@@ -114,15 +114,15 @@ fn copy_forge_preview_artifacts(project_dir: &Path, output_dir: &Path) -> anyhow
     let source_manifest = copy_optional_forge_json(
         project_dir,
         output_dir,
-        ".dx/forge/source-manifest.json",
-        "forge/source-manifest.json",
+        ".dx/forge/source-.dx/build-cache/manifest.json",
+        "forge/source-.dx/build-cache/manifest.json",
         "forge-source-manifest",
     )?;
     let template_manifest = copy_optional_forge_json(
         project_dir,
         output_dir,
-        ".dx/forge/template-manifest.json",
-        "forge/template-manifest.json",
+        ".dx/forge/template-.dx/build-cache/manifest.json",
+        "forge/template-.dx/build-cache/manifest.json",
         "forge-template-manifest",
     )?;
 
@@ -175,7 +175,7 @@ fn copy_forge_preview_artifacts(project_dir: &Path, output_dir: &Path) -> anyhow
         }
     }
 
-    let package_count = read_json(output_dir.join("forge/source-manifest.json"))
+    let package_count = read_json(output_dir.join("forge/source-.dx/build-cache/manifest.json"))
         .and_then(|manifest| {
             manifest
                 .get("packages")
@@ -245,10 +245,10 @@ fn hosted_preview_artifacts(deploy: &Value, forge: &Value) -> Vec<Value> {
     };
 
     add_artifact(HOSTED_PREVIEW_JSON, "hosted-preview-contract", "no-store");
-    add_artifact("manifest.json", "build-manifest", "no-store");
-    add_artifact("deploy-adapter.json", "deploy-contract", "no-store");
+    add_artifact(".dx/build-cache/manifest.json", "build-manifest", "no-store");
+    add_artifact(".dx/build-cache/deploy-adapter.json", "deploy-contract", "no-store");
     add_artifact(
-        "provider-adapter.dx-cloud.json",
+        ".dx/build-cache/provider-adapter.dx-cloud.json",
         "provider-adapter",
         "no-store",
     );
@@ -257,8 +257,8 @@ fn hosted_preview_artifacts(deploy: &Value, forge: &Value) -> Vec<Value> {
         "forge-hosting-manifest",
         "no-store",
     );
-    add_artifact("rollback.json", "rollback-metadata", "no-store");
-    add_artifact("observability.json", "production-observability", "no-store");
+    add_artifact(".dx/build-cache/rollback.json", "rollback-metadata", "no-store");
+    add_artifact(".dx/build-cache/observability.json", "production-observability", "no-store");
     add_artifact("server-contracts.json", "server-contracts", "no-store");
     add_artifact(
         "server-action-protocols.json",
@@ -270,14 +270,14 @@ fn hosted_preview_artifacts(deploy: &Value, forge: &Value) -> Vec<Value> {
         "server-action-runtime",
         "no-store",
     );
-    add_artifact("import-resolution.json", "import-resolution", "no-store");
+    add_artifact(".dx/build-cache/import-resolution.json", "import-resolution", "no-store");
     add_artifact(
         "source-build-manifest.json",
         "source-build-manifest",
         "no-store",
     );
     add_artifact(
-        "source-build-receipt.json",
+        ".dx/build-cache/source-build-receipt.json",
         "source-build-receipt",
         "no-store",
     );

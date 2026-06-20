@@ -92,7 +92,7 @@ test("materialized launch runtime keeps the visible Motion proof", () => {
   assert.match(motionStyles, /\.motion-proof\[data-dx-motion-reduced="preview"\]/);
   assert.doesNotMatch(motionStyles, /#[0-9a-f]{3,8}|rgba?\(/i);
 
-  const manifest = JSON.parse(read(path.join(dir, "public", "preview-manifest.json")));
+  const manifest = JSON.parse(read(path.join(dir, "public", "preview-.dx/build-cache/manifest.json")));
   assert.ok(
     manifest.routes.some(
       (route) => route.route === "/" && route.forgePackages.includes("animation/motion"),

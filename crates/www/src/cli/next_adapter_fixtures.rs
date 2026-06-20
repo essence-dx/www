@@ -27,7 +27,7 @@ pub(super) fn write_next_adapter_fixtures(
         if let Some(parent) = path.parent() {
             std::fs::create_dir_all(parent)?;
         }
-        std::fs::write(&path, adapter.source)?;
+        std::fs::write(&path, adapter.source).map_err(|e| anyhow::anyhow!("Failed to write to {:?}: {}", path, e))?;
         adapters.push(json!({
             "specifier": adapter.specifier,
             "package_id": adapter.package_id,
@@ -65,9 +65,9 @@ pub(super) fn write_next_adapter_fixtures(
         ]
     });
 
-    std::fs::write(
-        output_dir.join(NEXT_ADAPTER_FIXTURES_JSON),
-        serde_json::to_string_pretty(&proof)?,
+    std::fs::write(&
+        output_dir.join(NEXT_ADAPTER_FIXTURES_JSON), serde_json::to_string_pretty(&proof).map_err(|e| anyhow::anyhow!("Failed to write to {:?}: {}", 
+        output_dir.join(NEXT_ADAPTER_FIXTURES_JSON), e))?,
     )?;
 
     Ok(Some(proof))

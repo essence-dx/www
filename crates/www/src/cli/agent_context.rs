@@ -431,7 +431,7 @@ fn receipt_path_statuses(cwd: &Path) -> Vec<Value> {
         TEMPLATE_CHECK_RECEIPT,
         "examples/template/.dx/receipts/style/build.json",
         "examples/template/.dx/receipts/style/check.json",
-        "examples/template/public/preview-manifest.json",
+        "examples/template/public/preview-.dx/build-cache/manifest.json",
     ]
     .into_iter()
     .map(|relative| {

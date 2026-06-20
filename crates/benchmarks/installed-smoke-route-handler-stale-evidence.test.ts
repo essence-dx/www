@@ -27,9 +27,9 @@ const UNEXPECTED_MANIFEST_MESSAGE =
 const UNEXPECTED_GRAPH_MESSAGE =
   "dx.build.graph has unexpected stale app/api/stale/route.ts GET /api/stale route-handler node";
 const UNEXPECTED_RECEIPT_MESSAGE =
-  ".dx/build/route-handler-receipts.json has unexpected stale app/api/stale/route.ts GET /api/stale receipt evidence";
+  ".dx/build/.dx/build-cache/route-handler-receipts.json has unexpected stale app/api/stale/route.ts GET /api/stale receipt evidence";
 const UNEXPECTED_SKIP_MESSAGE =
-  ".dx/build/route-handler-receipts.json has unexpected stale app/api/old-checkout/route.ts POST /api/old-checkout skipped evidence";
+  ".dx/build/.dx/build-cache/route-handler-receipts.json has unexpected stale app/api/old-checkout/route.ts POST /api/old-checkout skipped evidence";
 
 test("route-handler unexpected evidence has one installed-smoke ownership module", () => {
   const manifestSource = readInstalledSmokeSource("route-handler-manifest.ts");
@@ -319,7 +319,7 @@ test("source-build failures include stale route-handler receipt evidence", () =>
 function createStaleReceiptInput() {
   return {
     projectRoot: "G:/Dx/www",
-    routeHandlerReceiptsPath: path.join("G:/Dx/www", ".dx", "build", "route-handler-receipts.json"),
+    routeHandlerReceiptsPath: path.join("G:/Dx/www", ".dx", "build", ".dx/build-cache/route-handler-receipts.json"),
     routeHandlerReceipts: {
       ok: true,
       value: {
@@ -352,9 +352,9 @@ function createStaleSourceBuildInput() {
   return {
     projectRoot: "G:/Dx/www",
     sourceBuildManifestPath: "G:/Dx/www/.dx/build/source-build-manifest.json",
-    sourceBuildReceiptPath: "G:/Dx/www/.dx/build/source-build-receipt.json",
+    sourceBuildReceiptPath: "G:/Dx/www/.dx/build/.dx/build-cache/source-build-receipt.json",
     canonicalReceiptPath: "G:/Dx/www/.dx/receipts/build/latest.json",
-    routeHandlerReceiptsPath: "G:/Dx/www/.dx/build/route-handler-receipts.json",
+    routeHandlerReceiptsPath: "G:/Dx/www/.dx/build/.dx/build-cache/route-handler-receipts.json",
     graphReceiptPath: "G:/Dx/www/.dx/receipts/graph/latest.json",
     graphConsumerSnapshotPath: "G:/Dx/www/.dx/receipts/graph/consumer-snapshot.json",
     sourceBuildManifest: {
@@ -606,7 +606,7 @@ function routeHandlerManifestSummary(sourcePath, route, method) {
 function routeHandlerReceiptSummary() {
   return summarizeRouteHandlerReceipts({
     projectRoot: "G:/Dx/www",
-    routeHandlerReceiptsPath: path.join("G:/Dx/www", ".dx", "build", "route-handler-receipts.json"),
+    routeHandlerReceiptsPath: path.join("G:/Dx/www", ".dx", "build", ".dx/build-cache/route-handler-receipts.json"),
     routeHandlerReceipts: {
       ok: true,
       value: {

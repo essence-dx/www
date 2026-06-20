@@ -271,7 +271,7 @@ test("Backend Platform Client source-guard runbook fixture mirrors the Studio ru
     ),
     "fixture must publish the helper-freshness guard as a targetable fixture path",
   );
-  assert.equal(fixture.preview_manifest.generated_file, "public/preview-manifest.json");
+  assert.equal(fixture.preview_manifest.generated_file, "public/preview-.dx/build-cache/manifest.json");
   assert.equal(fixture.preview_manifest.root_field, "sourceGuardRunbookFixtures");
   assert.equal(fixture.preview_manifest.route_field, "routes[].sourceGuardRunbookFixtures");
   assert.equal(fixture.preview_manifest.route, "/");
@@ -355,7 +355,7 @@ test("Backend Platform Client package-lane row survives generated starter materi
   );
   const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
 
   assert.equal(result.ok, true);

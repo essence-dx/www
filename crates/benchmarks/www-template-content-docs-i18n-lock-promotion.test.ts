@@ -61,7 +61,7 @@ function readJson(relativePath: string) {
 
 test("content, docs, and i18n are promoted into the lock-backed Forge package set", () => {
   const sourceManifest = readJson(
-    "examples/template/.dx/forge/source-manifest.json",
+    "examples/template/.dx/forge/source-.dx/build-cache/manifest.json",
   );
   const lock = readJson("examples/template/.dx/forge/package-lock.json");
   const status = readJson("examples/template/.dx/forge/package-status.json");
@@ -128,7 +128,7 @@ test("content, docs, and i18n are promoted into the lock-backed Forge package se
     assert.ok(status.locked_package_names.includes(expectedPackage.id));
     assert.ok(
       status.cache.manifests.includes(
-        `.dx/forge/cache/${expectedPackage.slug}/${expectedPackage.version}/manifest.json`,
+        `.dx/forge/cache/${expectedPackage.slug}/${expectedPackage.version}/.dx/build-cache/manifest.json`,
       ),
       `package-status cache manifests should include ${expectedPackage.id}`,
     );

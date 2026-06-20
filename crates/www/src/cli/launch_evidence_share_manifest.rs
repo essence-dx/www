@@ -11,7 +11,7 @@ use super::{
 
 const REPORT_SCHEMA: &str = "dx.forge.launch_evidence_share_manifest";
 const MANIFEST_SCHEMA: &str = "dx.launch.evidence_share_manifest";
-const MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-share-manifest.json";
+const MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-share-.dx/build-cache/manifest.json";
 const RELEASE_CHECKLIST_PATH: &str = ".dx/forge/release/launch-evidence-release-checklist.json";
 const DIGEST_PATH: &str = ".dx/forge/release/launch-evidence-handoff-digest.md";
 const TIMELINE_PATH: &str = ".dx/forge/release/launch-evidence-status-timeline.json";

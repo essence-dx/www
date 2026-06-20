@@ -6,9 +6,9 @@ use serde_json::Value;
 
 const READINESS_RECEIPT_PATH: &str = ".dx/forge/template-readiness/launch-route.json";
 const READINESS_BUNDLE_PATH: &str = ".dx/forge/template-readiness/launch-readiness-bundle.json";
-const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-manifest.json";
+const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-.dx/build-cache/manifest.json";
 const PACKAGE_CATALOG_PATH: &str = "components/template-app/package-catalog.ts";
-const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-manifest.json";
+const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-.dx/build-cache/manifest.json";
 const OPTIONAL_RUNTIME_APPROVAL_ARTIFACTS: [&str; 3] = [
     ".dx/forge/template-readiness/launch-runtime-approval-request.json",
     ".dx/forge/template-readiness/launch-runtime-evidence.json",

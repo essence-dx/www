@@ -187,7 +187,7 @@ mod tests {
             "--bundle".to_string(),
             ".dx/forge-release-bundle".to_string(),
             "--manifest".to_string(),
-            ".dx/forge-release-bundle/forge-release-manifest.json".to_string(),
+            ".dx/forge-release-bundle/forge-release-.dx/build-cache/manifest.json".to_string(),
             "--trust-regression".to_string(),
             ".dx/forge/trust-regression.json".to_string(),
             "--candidate".to_string(),
@@ -214,7 +214,7 @@ mod tests {
         );
         assert_eq!(
             options.release_manifest,
-            Some(cwd.join(".dx/forge-release-bundle/forge-release-manifest.json"))
+            Some(cwd.join(".dx/forge-release-bundle/forge-release-.dx/build-cache/manifest.json"))
         );
         assert_eq!(
             options.trust_regression,

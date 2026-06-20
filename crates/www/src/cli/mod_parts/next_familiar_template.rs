@@ -323,7 +323,7 @@ const NEXT_FAMILIAR_LAUNCH_EVIDENCE_HANDOFF_DIGEST_FILE: &str =
 const NEXT_FAMILIAR_LAUNCH_EVIDENCE_RELEASE_CHECKLIST_FILE: &str =
     ".dx/forge/release/launch-evidence-release-checklist.json";
 const NEXT_FAMILIAR_LAUNCH_EVIDENCE_SHARE_MANIFEST_FILE: &str =
-    ".dx/forge/release/launch-evidence-share-manifest.json";
+    ".dx/forge/release/launch-evidence-share-.dx/build-cache/manifest.json";
 const NEXT_FAMILIAR_LAUNCH_EVIDENCE_ARCHIVE_INDEX_FILE: &str =
     ".dx/forge/release/launch-evidence-archive-index.json";
 const NEXT_FAMILIAR_LAUNCH_EVIDENCE_ARCHIVE_RECEIPT_FILE: &str =
@@ -363,7 +363,7 @@ const NEXT_FAMILIAR_LAUNCH_EVIDENCE_RESTART_CHECKLIST_FILE: &str =
 const NEXT_FAMILIAR_LAUNCH_EVIDENCE_RESTART_BRIEF_FILE: &str =
     ".dx/forge/release/launch-evidence-restart-brief.md";
 const NEXT_FAMILIAR_LAUNCH_EVIDENCE_RESTART_MANIFEST_FILE: &str =
-    ".dx/forge/release/launch-evidence-restart-manifest.json";
+    ".dx/forge/release/launch-evidence-restart-.dx/build-cache/manifest.json";
 const NEXT_FAMILIAR_LAUNCH_EVIDENCE_RESTART_RECEIPT_FILE: &str =
     ".dx/forge/release/launch-evidence-restart-receipt.json";
 const NEXT_FAMILIAR_LAUNCH_EVIDENCE_RESTART_SUMMARY_FILE: &str =
@@ -1189,7 +1189,7 @@ fn launch_runtime_approval_request_contract() -> serde_json::Value {
             "receipt": NEXT_FAMILIAR_LAUNCH_RUNTIME_EVIDENCE_FILE
         },
         "source_artifacts": [
-            ".dx/forge/template-manifest.json",
+            ".dx/forge/template-.dx/build-cache/manifest.json",
             NEXT_FAMILIAR_LAUNCH_READINESS_RECEIPT_FILE,
             NEXT_FAMILIAR_LAUNCH_READINESS_BUNDLE_FILE,
             NEXT_FAMILIAR_LAUNCH_RUNTIME_CHECKLIST_FILE
@@ -1265,7 +1265,7 @@ fn launch_runtime_evidence_contract() -> serde_json::Value {
             "artifacts": []
         },
         "source_artifacts": [
-            ".dx/forge/template-manifest.json",
+            ".dx/forge/template-.dx/build-cache/manifest.json",
             NEXT_FAMILIAR_LAUNCH_READINESS_RECEIPT_FILE,
             NEXT_FAMILIAR_LAUNCH_READINESS_BUNDLE_FILE,
             NEXT_FAMILIAR_LAUNCH_RUNTIME_CHECKLIST_FILE,
@@ -2253,7 +2253,7 @@ fn launch_adoption_report_contract() -> serde_json::Value {
             "permission_gated_runtime_proofs"
         ],
         "input_artifacts": [
-            ".dx/forge/template-manifest.json",
+            ".dx/forge/template-.dx/build-cache/manifest.json",
             NEXT_FAMILIAR_LAUNCH_READINESS_RECEIPT_FILE,
             NEXT_FAMILIAR_LAUNCH_READINESS_BUNDLE_FILE,
             NEXT_FAMILIAR_LAUNCH_COMPANION_DOC_RECEIPTS_FILE,
@@ -2449,7 +2449,7 @@ fn launch_manifest_drift_contract() -> serde_json::Value {
         "command": "dx forge launch-manifest-drift --project <path> --json",
         "compares": [
             "dx_templates_json_source_contract",
-            ".dx/forge/template-manifest.json",
+            ".dx/forge/template-.dx/build-cache/manifest.json",
             ".dx/forge/template-readiness/launch-route.json",
             ".dx/forge/template-readiness/launch-companion-doc-receipts.json",
             ".dx/forge/template-readiness/launch-runtime-checklist.json",

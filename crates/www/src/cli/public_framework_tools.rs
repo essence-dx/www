@@ -202,7 +202,7 @@ pub(super) fn run_dx_deploy(project: &Path, args: &[String]) -> anyhow::Result<P
     let prebuilt = options.flags.contains("--prebuilt");
     let output_dir = dx_build_output_dir(project)?;
     let output_label = normalize_relative_path(project, &output_dir);
-    let manifest_path = project.join(".dx/deploy/vercel-manifest.json");
+    let manifest_path = project.join(".dx/deploy/vercel-.dx/build-cache/manifest.json");
     let deploy_command_path = project.join(".dx/deploy/vercel-command.json");
     let receipt_path = project.join(".dx/receipts/deploy/vercel.json");
     let generated_at = Utc::now().to_rfc3339();
@@ -328,7 +328,7 @@ pub(super) fn run_dx_deploy(project: &Path, args: &[String]) -> anyhow::Result<P
             {"step": "dx imports check", "required": true, "ran": true, "passed": imports_passed, "mutates": [".dx/receipts/imports/check.json"]},
             {"step": "static export", "required": !prebuilt, "ran": false, "output": output_label.clone(), "ready": static_output_ready},
             {"step": "materialize Vercel Build Output API", "required": true, "ran": build_output_materialized, "from": output_label, "to": ".vercel/output/static", "config": ".vercel/output/config.json"},
-            {"step": "write deploy manifest", "required": true, "output": ".dx/deploy/vercel-manifest.json"},
+            {"step": "write deploy manifest", "required": true, "output": ".dx/deploy/vercel-.dx/build-cache/manifest.json"},
             {"step": "write deploy command contract", "required": true, "output": ".dx/deploy/vercel-command.json"},
             {"step": "vercel deploy --prebuilt", "required": !dry_run, "ran": false, "argv": vercel_prebuilt_argv(prod), "blocked_without_explicit_deploy": !dry_run}
         ],
@@ -341,7 +341,7 @@ pub(super) fn run_dx_deploy(project: &Path, args: &[String]) -> anyhow::Result<P
                 "CLI manifest path is ready; external Vercel execution must be approved by the user"
             }
         },
-        "manifest_path": ".dx/deploy/vercel-manifest.json",
+        "manifest_path": ".dx/deploy/vercel-.dx/build-cache/manifest.json",
         "deploy_command_path": ".dx/deploy/vercel-command.json",
         "receipt_path": ".dx/receipts/deploy/vercel.json",
     });
@@ -355,7 +355,7 @@ pub(super) fn run_dx_deploy(project: &Path, args: &[String]) -> anyhow::Result<P
         "DX Vercel deploy",
         &report,
         &format!(
-            "DX Vercel deploy\nProvider: vercel\nMode: {}\nTarget: {}\nPreflight passed: {}\nReady for deploy: {}\nStatic output ready: {}\nManifest: .dx/deploy/vercel-manifest.json\nCommand contract: .dx/deploy/vercel-command.json\nDeploy ran: false\n",
+            "DX Vercel deploy\nProvider: vercel\nMode: {}\nTarget: {}\nPreflight passed: {}\nReady for deploy: {}\nStatic output ready: {}\nManifest: .dx/deploy/vercel-.dx/build-cache/manifest.json\nCommand contract: .dx/deploy/vercel-command.json\nDeploy ran: false\n",
             report["mode"].as_str().unwrap_or("unknown"),
             report["target"].as_str().unwrap_or("preview"),
             preflight_passed,
@@ -464,8 +464,8 @@ pub(super) fn run_dx_doctor(project: &Path, args: &[String]) -> anyhow::Result<P
     let output_dir = dx_build_output_dir(project)?;
     let static_output = inspect_static_output(project, &output_dir)?;
     let no_node_modules = !project.join("node_modules").exists();
-    let studio_manifest_present = project.join("public/preview-manifest.json").is_file()
-        || project.join(".dx/studio/preview-manifest.json").is_file();
+    let studio_manifest_present = project.join("public/preview-.dx/build-cache/manifest.json").is_file()
+        || project.join(".dx/studio/preview-.dx/build-cache/manifest.json").is_file();
     let web_perf_proof = web_perf_receipt_proof(project)?;
     let route_contract_count = route_contracts.len();
     let framework_risks = framework_risk_register(
@@ -536,7 +536,7 @@ pub(super) fn run_dx_doctor(project: &Path, args: &[String]) -> anyhow::Result<P
             },
             "studio": {
                 "preview_manifest_present": studio_manifest_present,
-                "preview_manifest_paths": ["public/preview-manifest.json", ".dx/studio/preview-manifest.json"]
+                "preview_manifest_paths": ["public/preview-.dx/build-cache/manifest.json", ".dx/studio/preview-.dx/build-cache/manifest.json"]
             },
             "no_node_modules": no_node_modules
         },
@@ -681,7 +681,7 @@ pub(super) fn run_dx_export_analyze(
         "next_command": if static_output.ready { Value::Null } else { json!("dx build or governed static export") },
         "receipts": {
             "export_analyze": ".dx/receipts/export/analyze.json",
-            "deploy_manifest": ".dx/deploy/vercel-manifest.json"
+            "deploy_manifest": ".dx/deploy/vercel-.dx/build-cache/manifest.json"
         }
     });
     write_json_receipt(&project.join(".dx/receipts/export/analyze.json"), &report)?;
@@ -1147,7 +1147,7 @@ fn package_health_report(project: &Path) -> anyhow::Result<Value> {
         "packages": packages,
         "receipts": {
             "package_check": ".dx/receipts/check/packages.json",
-            "source_manifest": ".dx/forge/source-manifest.json",
+            "source_manifest": ".dx/forge/source-.dx/build-cache/manifest.json",
             "package_lock": ".dx/forge/package-lock.json"
         }
     }))
@@ -1156,7 +1156,7 @@ fn package_health_report(project: &Path) -> anyhow::Result<Value> {
 fn package_sources(project: &Path) -> anyhow::Result<Vec<Value>> {
     let mut packages = Vec::new();
     for relative in [
-        ".dx/forge/source-manifest.json",
+        ".dx/forge/source-.dx/build-cache/manifest.json",
         ".dx/forge/package-lock.json",
     ] {
         let path = project.join(relative);
@@ -1206,7 +1206,7 @@ fn package_health_entry(package: &Value) -> Value {
     json!({
         "package_id": package_id,
         "maturity": maturity,
-        "source_manifest": package.get("_source_manifest").and_then(Value::as_str).unwrap_or(".dx/forge/source-manifest.json"),
+        "source_manifest": package.get("_source_manifest").and_then(Value::as_str).unwrap_or(".dx/forge/source-.dx/build-cache/manifest.json"),
         "source_owned": matches!(maturity.as_str(), "full" | "slice" | "adapter-boundary"),
         "exported_file_count": exported_files.len(),
         "exported_files": exported_files,
@@ -1633,9 +1633,9 @@ fn framework_risk_register(
             "severity": "medium",
             "status": "needs-fix",
             "risk_summary": "The editor-native story is strongest when Zed/Web Preview can consume real route and edit contracts.",
-            "fix": "Write public/preview-manifest.json or .dx/studio/preview-manifest.json with routes, sources, packages, assets, and hot-reload targets.",
+            "fix": "Write public/preview-.dx/build-cache/manifest.json or .dx/studio/preview-.dx/build-cache/manifest.json with routes, sources, packages, assets, and hot-reload targets.",
             "evidence": {
-                "paths": ["public/preview-manifest.json", ".dx/studio/preview-manifest.json"]
+                "paths": ["public/preview-.dx/build-cache/manifest.json", ".dx/studio/preview-.dx/build-cache/manifest.json"]
             }
         }));
         score_ceiling = score_ceiling.min(92);
@@ -2149,8 +2149,8 @@ fn inspect_static_output(
         }));
     }
 
-    let manifest_exists = output_dir.join("manifest.json").is_file();
-    let deploy_adapter_exists = output_dir.join("deploy-adapter.json").is_file();
+    let manifest_exists = output_dir.join(".dx/build-cache/manifest.json").is_file();
+    let deploy_adapter_exists = output_dir.join(".dx/build-cache/deploy-adapter.json").is_file();
     let ready = !files.is_empty() && (html_file_count > 0 || deploy_adapter_exists);
     let public_runtime_artifact_plan = public_runtime_artifact_plan(output_dir, &upload_plan)?;
     let content_hash = if files.is_empty() {
@@ -2196,7 +2196,7 @@ fn public_runtime_artifact_plan(
         }
     }
 
-    if let Some(deploy_adapter) = read_optional_json_value(&output_dir.join("deploy-adapter.json"))?
+    if let Some(deploy_adapter) = read_optional_json_value(&output_dir.join(".dx/build-cache/deploy-adapter.json"))?
     {
         if let Some(partition) = deploy_adapter
             .get("bundle_partition")
@@ -2230,7 +2230,7 @@ fn public_runtime_artifact_plan(
             return Ok(PublicRuntimeArtifactPlan {
                 paths,
                 evidence_artifact_count,
-                source: "deploy-adapter.json/bundle_partition".to_string(),
+                source: ".dx/build-cache/deploy-adapter.json/bundle_partition".to_string(),
             });
         }
     }
@@ -2301,14 +2301,14 @@ fn normalized_public_artifact_path(path: &str) -> anyhow::Result<String> {
 
 fn is_evidence_artifact_path(path: &str) -> bool {
     let normalized = path.replace('\\', "/");
-    normalized == "deploy-adapter.json"
-        || normalized == "manifest.json"
-        || normalized == "rollback.json"
+    normalized == ".dx/build-cache/deploy-adapter.json"
+        || normalized == ".dx/build-cache/manifest.json"
+        || normalized == ".dx/build-cache/rollback.json"
         || normalized == DX_CLOUD_PROVIDER_ADAPTER_JSON
-        || normalized == "provider-adapter-smoke-matrix.json"
-        || normalized == "route-handler-conformance-matrix.json"
-        || normalized == "cache-manifest.json"
-        || normalized == "server-action-replay-ledger.json"
+        || normalized == ".dx/build-cache/provider-adapter-smoke-matrix.json"
+        || normalized == ".dx/build-cache/route-handler-conformance-matrix.json"
+        || normalized == ".dx/build-cache/cache-manifest.json"
+        || normalized == ".dx/build-cache/server-action-replay-ledger.json"
         || normalized == READINESS_PROOF_GRAPH_RECEIPT
         || normalized.starts_with(".dx/")
         || normalized == "page-graph.json"
@@ -2316,7 +2316,7 @@ fn is_evidence_artifact_path(path: &str) -> bool {
         || normalized.contains("/app-router-execution.json")
         || normalized.contains("/client-islands.json")
         || normalized.contains("/streaming-plan.json")
-        || normalized.starts_with("source-routes/")
+        || normalized.starts_with(".dx/build-cache/source-routes/")
 }
 
 fn vercel_prebuilt_deploy_contract(
@@ -2364,7 +2364,7 @@ fn vercel_prebuilt_deploy_contract(
             "reason": "source-only launch pass must not deploy or start external network work"
         },
         "receipts": {
-            "manifest": ".dx/deploy/vercel-manifest.json",
+            "manifest": ".dx/deploy/vercel-.dx/build-cache/manifest.json",
             "command_contract": ".dx/deploy/vercel-command.json",
             "deploy_receipt": ".dx/receipts/deploy/vercel.json"
         }
@@ -2559,8 +2559,8 @@ fn static_content_type(relative: &str) -> &'static str {
 
 fn static_cache_policy(relative: &str) -> &'static str {
     if relative.ends_with(".html")
-        || relative.ends_with("manifest.json")
-        || relative.ends_with("deploy-adapter.json")
+        || relative.ends_with(".dx/build-cache/manifest.json")
+        || relative.ends_with(".dx/build-cache/deploy-adapter.json")
     {
         "no-store"
     } else {
@@ -2951,11 +2951,11 @@ mod web_perf_score_tests {
         for path in [
             ".dx/receipts/readiness/proof-graph.sr",
             READINESS_PROOF_GRAPH_RECEIPT,
-            "deploy-adapter.json",
-            "provider-adapter-smoke-matrix.json",
-            "route-handler-conformance-matrix.json",
-            "server-action-replay-ledger.json",
-            "source-routes/root/index.dxpk",
+            ".dx/build-cache/deploy-adapter.json",
+            ".dx/build-cache/provider-adapter-smoke-matrix.json",
+            ".dx/build-cache/route-handler-conformance-matrix.json",
+            ".dx/build-cache/server-action-replay-ledger.json",
+            ".dx/build-cache/source-routes/root/index.dxpk",
             "../index.html",
             "/index.html",
             "C:/index.html",
@@ -3011,7 +3011,7 @@ mod web_perf_score_tests {
                         "bundle": "evidence"
                     },
                     {
-                        "path": "server-action-replay-ledger.json",
+                        "path": ".dx/build-cache/server-action-replay-ledger.json",
                         "bundle": "evidence"
                     }
                 ]
@@ -3085,13 +3085,13 @@ mod web_perf_score_tests {
         let project = tempfile::tempdir().expect("temp project");
         let output = project.path().join(".dx/www/output");
         std::fs::create_dir_all(output.join("app")).expect("app dir");
-        std::fs::create_dir_all(output.join("source-routes/root")).expect("source route dir");
+        std::fs::create_dir_all(output.join(".dx/build-cache/source-routes/root")).expect("source route dir");
         std::fs::create_dir_all(output.join(".dx/receipts/readiness")).expect("receipt dir");
         std::fs::write(output.join("app/index.html"), b"<!doctype html><h1>DX</h1>").expect("html");
         std::fs::write(output.join("app/page-graph.json"), b"{}").expect("page graph");
         std::fs::write(output.join("app/app-router-execution.json"), b"{}")
             .expect("execution evidence");
-        std::fs::write(output.join("source-routes/root/route-unit.json"), b"{}")
+        std::fs::write(output.join(".dx/build-cache/source-routes/root/route-unit.json"), b"{}")
             .expect("route unit");
         std::fs::write(
             output.join(".dx/receipts/readiness/proof-graph.sr"),
@@ -3099,7 +3099,7 @@ mod web_perf_score_tests {
         )
         .expect("proof graph");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [],
@@ -3124,7 +3124,7 @@ mod web_perf_score_tests {
                 json!({"target": "app/page-graph.json"}),
                 json!({"target": "app/app-router-execution.json"}),
                 json!({"target": READINESS_PROOF_GRAPH_RECEIPT}),
-                json!({"target": "source-routes/root/route-unit.json"}),
+                json!({"target": ".dx/build-cache/source-routes/root/route-unit.json"}),
             ],
             public_runtime_artifact_count: 1,
             evidence_artifact_count: 4,
@@ -3169,7 +3169,7 @@ mod web_perf_score_tests {
         );
         assert!(
             !vercel_static
-                .join("source-routes/root/route-unit.json")
+                .join(".dx/build-cache/source-routes/root/route-unit.json")
                 .exists()
         );
     }

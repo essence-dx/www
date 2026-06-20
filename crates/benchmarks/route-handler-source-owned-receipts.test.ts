@@ -145,19 +145,19 @@ test("installed smoke route-handler receipt runtime-boundary failures name the r
 
   assert.ok(
     failures.includes(
-      ".dx/build/route-handler-receipts.json app/api/checkout/route.ts POST does not declare source-owned runtime boundary",
+      ".dx/build/.dx/build-cache/route-handler-receipts.json app/api/checkout/route.ts POST does not declare source-owned runtime boundary",
     ),
     JSON.stringify(failures, null, 2),
   );
   assert.ok(
     failures.includes(
-      ".dx/build/route-handler-receipts.json app/api/checkout/route.ts POST requires an external runtime",
+      ".dx/build/.dx/build-cache/route-handler-receipts.json app/api/checkout/route.ts POST requires an external runtime",
     ),
     JSON.stringify(failures, null, 2),
   );
   assert.ok(
     failures.includes(
-      ".dx/build/route-handler-receipts.json app/api/checkout/route.ts POST executed an external runtime",
+      ".dx/build/.dx/build-cache/route-handler-receipts.json app/api/checkout/route.ts POST executed an external runtime",
     ),
     JSON.stringify(failures, null, 2),
   );

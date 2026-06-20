@@ -13,7 +13,7 @@ const REPORT_SCHEMA: &str = "dx.forge.launch_evidence_restart_summary";
 const SUMMARY_SCHEMA: &str = "dx.launch.evidence_restart_summary";
 const SUMMARY_PATH: &str = ".dx/forge/release/launch-evidence-restart-summary.json";
 const RESTART_RECEIPT_PATH: &str = ".dx/forge/release/launch-evidence-restart-receipt.json";
-const RESTART_MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-restart-manifest.json";
+const RESTART_MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-restart-.dx/build-cache/manifest.json";
 const RESTART_BRIEF_PATH: &str = ".dx/forge/release/launch-evidence-restart-brief.md";
 const RESTART_CHECKLIST_PATH: &str = ".dx/forge/release/launch-evidence-restart-checklist.json";
 

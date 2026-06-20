@@ -64,9 +64,9 @@ function assertNoUnselectedProviders(contents: string, label: string): void {
 test("Authentication is lock-backed, cached, and source-owned in the default template", () => {
   const status = readJson<any>(path.join(forgeRoot, "package-status.json"));
   const lock = readJson<any>(path.join(forgeRoot, "package-lock.json"));
-  const sourceManifest = readJson<any>(path.join(forgeRoot, "source-manifest.json"));
+  const sourceManifest = readJson<any>(path.join(forgeRoot, "source-.dx/build-cache/manifest.json"));
   const receipt = readJson<any>(path.join(forgeRoot, "receipts", "auth-better-auth.json"));
-  const cacheManifestPath = path.join(forgeRoot, "cache", packageSlug, packageVersion, "manifest.json");
+  const cacheManifestPath = path.join(forgeRoot, "cache", packageSlug, packageVersion, ".dx/build-cache/manifest.json");
 
   assert.ok(
     status.locked_package_names.includes(packageId),

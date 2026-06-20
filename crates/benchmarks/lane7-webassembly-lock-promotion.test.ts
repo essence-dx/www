@@ -8,7 +8,7 @@ const templateRoot = path.join(root, "examples", "template");
 
 const packageId = "wasm/bindgen";
 const cacheManifestPath =
-  ".dx/forge/cache/wasm-bindgen/0.2.121-dx.0/manifest.json";
+  ".dx/forge/cache/wasm-bindgen/0.2.121-dx.0/.dx/build-cache/manifest.json";
 const expectedFiles = [
   "wasm/bindgen/loader.ts",
   "wasm/bindgen/react.tsx",
@@ -27,7 +27,7 @@ function readJson(relativePath) {
 
 test("wasm/bindgen is promoted into the lock-backed Forge package set without live-Wasm overclaims", () => {
   const sourceManifest = readJson(
-    "examples/template/.dx/forge/source-manifest.json",
+    "examples/template/.dx/forge/source-.dx/build-cache/manifest.json",
   );
   const lock = readJson("examples/template/.dx/forge/package-lock.json");
   const status = readJson("examples/template/.dx/forge/package-status.json");

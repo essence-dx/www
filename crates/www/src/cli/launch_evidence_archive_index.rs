@@ -12,7 +12,7 @@ use super::{
 const REPORT_SCHEMA: &str = "dx.forge.launch_evidence_archive_index";
 const ARCHIVE_SCHEMA: &str = "dx.launch.evidence_archive_index";
 const ARCHIVE_INDEX_PATH: &str = ".dx/forge/release/launch-evidence-archive-index.json";
-const SHARE_MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-share-manifest.json";
+const SHARE_MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-share-.dx/build-cache/manifest.json";
 const CHECKLIST_PATH: &str = ".dx/forge/release/launch-evidence-release-checklist.json";
 const DIGEST_PATH: &str = ".dx/forge/release/launch-evidence-handoff-digest.md";
 const PACKET_PATH: &str = ".dx/forge/release/launch-evidence-packet.json";

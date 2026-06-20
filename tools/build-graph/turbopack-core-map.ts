@@ -114,7 +114,7 @@ const TURBOPACK_CORE_DX_GRAPH_CONCEPTS = Object.freeze([
     dxContracts: ["dx.forge.sourceGraph"],
     dxNodeKinds: ["forge-surface"],
     dxEdgeKinds: ["expects-receipt", "owns-source"],
-    dxReceiptFields: [".dx/forge/source-manifest.json"],
+    dxReceiptFields: [".dx/forge/source-.dx/build-cache/manifest.json"],
     boundary:
       "Forge package ownership is a DX source model; Turbopack has no authority over it",
     nodeModulesRequired: false,

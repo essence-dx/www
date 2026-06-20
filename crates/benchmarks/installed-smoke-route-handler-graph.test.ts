@@ -94,9 +94,9 @@ function createSourceBuildInput(graphReceipt) {
   return {
     projectRoot,
     sourceBuildManifestPath: path.join(projectRoot, ".dx", "build", "source-build-manifest.json"),
-    sourceBuildReceiptPath: path.join(projectRoot, ".dx", "build", "source-build-receipt.json"),
+    sourceBuildReceiptPath: path.join(projectRoot, ".dx", "build", ".dx/build-cache/source-build-receipt.json"),
     canonicalReceiptPath: path.join(projectRoot, ".dx", "receipts", "build", "latest.json"),
-    routeHandlerReceiptsPath: path.join(projectRoot, ".dx", "build", "route-handler-receipts.json"),
+    routeHandlerReceiptsPath: path.join(projectRoot, ".dx", "build", ".dx/build-cache/route-handler-receipts.json"),
     graphReceiptPath: path.join(projectRoot, ".dx", "receipts", "graph", "latest.json"),
     graphConsumerSnapshotPath: path.join(projectRoot, ".dx", "receipts", "graph", "consumer-snapshot.json"),
     sourceBuildManifest: { ok: true, value: sourceBuildManifest },

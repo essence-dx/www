@@ -7,7 +7,7 @@ const proofRoot = path.resolve(__dirname, "..", "..");
 const routeDiscoveryPath = "forge/route-discovery/conversion-routes.json";
 const acceptanceChecklistPath = "forge/acceptance/no-runtime-route-acceptance.json";
 const receiptSchemaPath = "forge/acceptance/rendered-proof-evidence.schema.json";
-const sourceManifestPath = ".dx/forge/source-manifest.json";
+const sourceManifestPath = ".dx/forge/source-.dx/build-cache/manifest.json";
 
 function readJson(relativePath) {
   return JSON.parse(fs.readFileSync(path.join(proofRoot, relativePath), "utf8"));

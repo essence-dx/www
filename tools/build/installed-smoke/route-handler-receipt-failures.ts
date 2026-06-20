@@ -5,7 +5,7 @@ const ROUTE_HANDLER_RECEIPT_SCHEMA = "dx.next.appRouteHandlerReceipt";
 
 function routeHandlerReceiptFailures(routeHandlerReceipt) {
   if (!routeHandlerReceipt.present) {
-    return ["dx build did not write .dx/build/route-handler-receipts.json"];
+    return ["dx build did not write .dx/build/.dx/build-cache/route-handler-receipts.json"];
   }
 
   const failures = collectionFailures(routeHandlerReceipt);
@@ -26,7 +26,7 @@ function routeHandlerReceiptFailures(routeHandlerReceipt) {
     : [];
   for (const receipt of unexpectedReceipts) {
     failures.push(
-      `.dx/build/route-handler-receipts.json has unexpected stale ${routeHandlerReceiptIdentity(receipt)} receipt evidence`,
+      `.dx/build/.dx/build-cache/route-handler-receipts.json has unexpected stale ${routeHandlerReceiptIdentity(receipt)} receipt evidence`,
     );
   }
   const unexpectedSkips = Array.isArray(routeHandlerReceipt.unexpectedSkips)
@@ -34,7 +34,7 @@ function routeHandlerReceiptFailures(routeHandlerReceipt) {
     : [];
   for (const skipped of unexpectedSkips) {
     failures.push(
-      `.dx/build/route-handler-receipts.json has unexpected stale ${routeHandlerReceiptIdentity(skipped)} skipped evidence`,
+      `.dx/build/.dx/build-cache/route-handler-receipts.json has unexpected stale ${routeHandlerReceiptIdentity(skipped)} skipped evidence`,
     );
   }
   return failures;
@@ -56,26 +56,26 @@ function collectionFailures(routeHandlerReceipt) {
 
 function skipFailures(skipped) {
   if (skipped.duplicateCount > 0) {
-    return [`.dx/build/route-handler-receipts.json has duplicate ${routeHandlerReceiptIdentity(skipped)} skipped evidence`];
+    return [`.dx/build/.dx/build-cache/route-handler-receipts.json has duplicate ${routeHandlerReceiptIdentity(skipped)} skipped evidence`];
   }
   if (skipped.present) {
     return [];
   }
   return [
-    `.dx/build/route-handler-receipts.json is missing ${skipped.sourcePath} ${skipped.method} skipped evidence`,
+    `.dx/build/.dx/build-cache/route-handler-receipts.json is missing ${skipped.sourcePath} ${skipped.method} skipped evidence`,
   ];
 }
 
 function receiptFailures(receipt) {
   const failures = [];
   if (!receipt.present) {
-    failures.push(`.dx/build/route-handler-receipts.json is missing ${receipt.sourcePath} ${receipt.method} receipt`);
+    failures.push(`.dx/build/.dx/build-cache/route-handler-receipts.json is missing ${receipt.sourcePath} ${receipt.method} receipt`);
     return failures;
   }
   pushIf(
     failures,
     receipt.duplicateCount > 0,
-    `.dx/build/route-handler-receipts.json has duplicate ${routeHandlerReceiptIdentity(receipt)} receipts`,
+    `.dx/build/.dx/build-cache/route-handler-receipts.json has duplicate ${routeHandlerReceiptIdentity(receipt)} receipts`,
   );
   pushIf(failures, receipt.schema !== ROUTE_HANDLER_RECEIPT_SCHEMA, "route-handler receipt has an unexpected schema");
   pushIf(failures, receipt.format !== 1, "route-handler receipt has an unexpected format");
@@ -107,7 +107,7 @@ function receiptFailures(receipt) {
 }
 
 function routeHandlerReceiptLabel(receipt) {
-  return `.dx/build/route-handler-receipts.json ${receipt.sourcePath} ${receipt.method}`;
+  return `.dx/build/.dx/build-cache/route-handler-receipts.json ${receipt.sourcePath} ${receipt.method}`;
 }
 
 function routeHandlerReceiptIdentity(receipt) {

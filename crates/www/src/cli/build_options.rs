@@ -18,12 +18,14 @@ impl DxBuildTarget {
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub(super) struct DxBuildCommandOptions {
     pub(super) target: DxBuildTarget,
+    pub(super) sandbox: bool,
 }
 
 impl Default for DxBuildCommandOptions {
     fn default() -> Self {
         Self {
             target: DxBuildTarget::Web,
+            sandbox: false,
         }
     }
 }
@@ -39,6 +41,10 @@ pub(super) fn parse_build_options(
     while index < args.len() {
         let arg = &args[index];
         match arg.as_str() {
+            "--sandbox" => {
+                options.sandbox = true;
+                index += 1;
+            }
             "--target" => {
                 let value = args.get(index + 1).ok_or_else(|| {
                     build_options_error("--target requires a value", "build.target")

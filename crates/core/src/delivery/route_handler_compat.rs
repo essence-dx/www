@@ -247,10 +247,10 @@ fn database_api_readiness_body() -> serde_json::Value {
             "currentManifestSource": "package-status-current-manifests",
             "physicalManifestCaveatId": "physical-cache-may-include-stale-manifests",
             "laneCacheManifests": {
-                "db/drizzle-sqlite": ".dx/forge/cache/db-drizzle-sqlite/0.1.0/manifest.json",
-                "instantdb/react": ".dx/forge/cache/instantdb-react/0.0.0-dx.0/manifest.json",
-                "supabase/client": ".dx/forge/cache/supabase-client/0.1.0/manifest.json",
-                "api/trpc": ".dx/forge/cache/api-trpc/11.17.0-dx.10/manifest.json",
+                "db/drizzle-sqlite": ".dx/forge/cache/db-drizzle-sqlite/0.1.0/.dx/build-cache/manifest.json",
+                "instantdb/react": ".dx/forge/cache/instantdb-react/0.0.0-dx.0/.dx/build-cache/manifest.json",
+                "supabase/client": ".dx/forge/cache/supabase-client/0.1.0/.dx/build-cache/manifest.json",
+                "api/trpc": ".dx/forge/cache/api-trpc/11.17.0-dx.10/.dx/build-cache/manifest.json",
             },
         },
         "appRouterRoutes": [

@@ -668,7 +668,7 @@ impl Cli {
                     let value =
                         args.get(index + 1)
                             .ok_or_else(|| DxError::ConfigValidationError {
-                                message: "--remote-manifest requires a manifest.json path"
+                                message: "--remote-manifest requires a .dx/build-cache/manifest.json path"
                                     .to_string(),
                                 field: Some("forge remote-head".to_string()),
                             })?;
@@ -790,7 +790,7 @@ impl Cli {
             field: Some("forge remote-head".to_string()),
         })?;
         let remote_manifest = remote_manifest.ok_or_else(|| DxError::ConfigValidationError {
-            message: "dx forge remote-head requires --remote-manifest <manifest.json> so HEAD checks come from a real Forge package manifest".to_string(),
+            message: "dx forge remote-head requires --remote-manifest <.dx/build-cache/manifest.json> so HEAD checks come from a real Forge package manifest".to_string(),
             field: Some("forge remote-head".to_string()),
         })?;
         let request = parse_public_forge_add_request(&package_spec, only.as_deref())?;
@@ -2199,7 +2199,7 @@ impl Cli {
         let components_dir = self.cwd.join("components");
         std::fs::create_dir_all(&components_dir).map_err(|e| DxError::IoError {
             path: Some(components_dir.clone()),
-            message: e.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), e),
         })?;
 
         let path = components_dir.join(format!("{}.tsx", component.name));
@@ -2223,7 +2223,7 @@ impl Cli {
         // Write the component file
         std::fs::write(&path, &component.source).map_err(|e| DxError::IoError {
             path: Some(path.clone()),
-            message: e.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), e),
         })?;
 
         eprintln!("  ? Added {}", component.name);
@@ -2899,7 +2899,7 @@ fn print_forge_publish_help() {
 
 fn print_forge_remote_head_help() {
     eprintln!(
-        "Usage: dx forge remote-head <package[#exports]> --registry r2 --remote-manifest <manifest.json> [--version <version>] [--project <path>] [--dry-run|--yes] [--approved-by <operator>] [--write-receipt] [--output <path>] [--format terminal|json|markdown]"
+        "Usage: dx forge remote-head <package[#exports]> --registry r2 --remote-manifest <.dx/build-cache/manifest.json> [--version <version>] [--project <path>] [--dry-run|--yes] [--approved-by <operator>] [--write-receipt] [--output <path>] [--format terminal|json|markdown]"
     );
     eprintln!(
         "       Plans or measures remote object HEAD health without fetching package blobs or writing remote state."
@@ -3144,7 +3144,7 @@ fn forge_registry_output_nonce() -> u128 {
 
 fn forge_ui_registry_error(error: impl std::fmt::Display) -> DxError {
     DxError::ConfigValidationError {
-        message: error.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), error),
         field: Some("forge registry".to_string()),
     }
 }

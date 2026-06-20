@@ -291,7 +291,7 @@ mod tests {
                             {
                                 "intent": "package-manifest",
                                 "metadata_operation": "head-object",
-                                "object_key": "dx-forge/registry/v1/packages/js/auth/better-auth/0.1.0/manifest.json",
+                                "object_key": "dx-forge/registry/v1/packages/js/auth/better-auth/0.1.0/.dx/build-cache/manifest.json",
                                 "required": true,
                                 "status": "healthy",
                                 "safe_for_remote_install": true

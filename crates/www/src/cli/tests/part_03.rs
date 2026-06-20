@@ -48,7 +48,7 @@ fn forge_materialize_static_assets_copies_reviewed_assets_with_cache_evidence() 
 
     let manifest_path = dir
         .path()
-        .join("migrations/static-site/generated/landing/asset-manifest.json");
+        .join("migrations/static-site/generated/landing/asset-.dx/build-cache/manifest.json");
     let public_dir = dir.path().join("public");
     let output_path = dir.path().join("materialize-static-assets.json");
     cli.cmd_forge(&[
@@ -188,7 +188,7 @@ fn forge_migrate_static_page_blocks_unsafe_html_without_manual_review_decision()
         .path()
         .join("migrations/static-site/generated/unsafe/content.ts")
         .exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
 
@@ -362,7 +362,7 @@ fn forge_migrate_static_page_writes_hosted_preview_artifact_for_reviewers() {
     assert!(preview_html.contains("DX Forge Migrated Route Preview"));
     assert!(preview_html.contains("../migration-audit.json"));
     assert!(preview_html.contains("../content.ts"));
-    assert!(preview_html.contains("../asset-manifest.json"));
+    assert!(preview_html.contains("../asset-.dx/build-cache/manifest.json"));
     assert!(preview_html.contains("../benchmark-fixture.json"));
     assert!(preview_html.contains(decision));
 
@@ -443,9 +443,9 @@ fn forge_static_migration_smoke_runs_end_to_end_temp_project_pipeline() {
         .join("migrations/static-site/generated/smoke/preview/index.html")
         .exists());
     assert!(temp_project
-        .join("migrations/static-site/generated/smoke/asset-manifest.json")
+        .join("migrations/static-site/generated/smoke/asset-.dx/build-cache/manifest.json")
         .exists());
-    assert!(temp_project.join(".dx/forge/source-manifest.json").exists());
+    assert!(temp_project.join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!temp_project.join("node_modules").exists());
     assert!(!artifacts_dir.join("node_modules").exists());
 }
@@ -574,7 +574,7 @@ fn forge_add_auth_google_writes_source_owned_auth_package() {
     assert!(dir.path().join("auth/better-auth/client.ts").exists());
     assert!(dir.path().join("auth/better-auth/route.ts").exists());
     assert!(dir.path().join("auth/better-auth/metadata.ts").exists());
-    assert!(dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
 
@@ -589,7 +589,7 @@ fn dx_add_source_owned_package_supports_project_option() {
         .expect("dx add ui/button --project");
 
     assert!(project.join("components/ui/button.tsx").exists());
-    assert!(project.join(".dx/forge/source-manifest.json").exists());
+    assert!(project.join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!workspace.path().join("components/ui/button.tsx").exists());
     assert!(!project.join("node_modules").exists());
 }
@@ -791,11 +791,11 @@ fn forge_registry_init_creates_local_index() {
     assert!(dir.path().join("registry/index.json").exists());
     assert!(dir
         .path()
-        .join("registry/packages/js/shadcn/ui/button/0.1.0/manifest.json")
+        .join("registry/packages/js/shadcn/ui/button/0.1.0/.dx/build-cache/manifest.json")
         .exists());
     assert!(dir
         .path()
-        .join("registry/packages/js/shadcn/ui/card/0.1.0/manifest.json")
+        .join("registry/packages/js/shadcn/ui/card/0.1.0/.dx/build-cache/manifest.json")
         .exists());
 }
 
@@ -833,7 +833,7 @@ fn forge_registry_smoke_proves_dry_run_publish_pull_without_secrets() {
     assert_eq!(report["no_node_modules"], true);
     assert!(dir
         .path()
-        .join("registry-smoke/packages/js/shadcn/ui/button/0.1.0/manifest.json")
+        .join("registry-smoke/packages/js/shadcn/ui/button/0.1.0/.dx/build-cache/manifest.json")
         .is_file());
 
     let operations = report["operations"].as_array().expect("operations");
@@ -846,7 +846,7 @@ fn forge_registry_smoke_proves_dry_run_publish_pull_without_secrets() {
         .iter()
         .any(|object| object
             .as_str()
-            .is_some_and(|value| value.contains("manifest.json"))));
+            .is_some_and(|value| value.contains(".dx/build-cache/manifest.json"))));
     let pull = registry_smoke_operation(operations, "registry-pull");
     assert_eq!(pull["dry_run"], true);
     assert_eq!(pull["package_id"], "ui/button");
@@ -914,7 +914,7 @@ fn forge_add_alias_still_creates_canonical_manifest() {
     cli.cmd_forge(&args).expect("forge add alias");
 
     let manifest =
-        fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json")).expect("manifest");
+        fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json")).expect("manifest");
     assert!(manifest.contains("shadcn/ui/button"));
 }
 
@@ -1570,7 +1570,7 @@ fn forge_import_npm_source_dir_materializes_lodash_without_node_modules() {
             && adapter["root"] == false
     }));
 
-    let manifest = read_json_value(dir.path().join(".dx/forge/source-manifest.json"));
+    let manifest = read_json_value(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"));
     assert!(manifest["packages"]
         .as_array()
         .expect("packages")
@@ -1591,7 +1591,7 @@ fn forge_import_npm_source_dir_materializes_lodash_without_node_modules() {
         .expect("imports sync");
     cli.cmd_build().expect("dx build");
     let import_resolution =
-        read_json_value(dir.path().join(".dx/www/output/import-resolution.json"));
+        read_json_value(dir.path().join(".dx/www/output/.dx/build-cache/import-resolution.json"));
     assert!(import_resolution
         .as_array()
         .expect("import resolutions")
@@ -1687,7 +1687,7 @@ fn forge_import_npm_selected_subpath_does_not_invent_root_adapter() {
     cli.cmd_build().expect("dx build");
 
     let import_resolution =
-        read_json_value(dir.path().join(".dx/www/output/import-resolution.json"));
+        read_json_value(dir.path().join(".dx/www/output/.dx/build-cache/import-resolution.json"));
     let resolutions = import_resolution
         .as_array()
         .expect("import resolutions");
@@ -1816,7 +1816,7 @@ fn forge_import_write_rejects_stale_accepted_plan_when_source_hash_changes() {
         .path()
         .join("lib/forge/npm/stale-plan-tool/index.ts")
         .exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
 
     let report = read_json_value(output_path);
     assert_eq!(report["mode"], "write");
@@ -1863,7 +1863,7 @@ fn forge_import_write_requires_reviewed_plan_before_materializing() {
         .path()
         .join("lib/forge/npm/plan-required-tool/index.ts")
         .exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
 
     let report = read_json_value(output_path);
     assert_eq!(report["mode"], "write");
@@ -1920,7 +1920,7 @@ fn forge_import_write_rolls_back_source_files_when_receipt_dir_is_blocked() {
         .path()
         .join("lib/forge/npm/rollback-tool/index.ts")
         .exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir
         .path()
         .join(".dx/forge/docs/npm-rollback-tool.md")
@@ -1971,7 +1971,7 @@ fn forge_import_write_rolls_back_state_when_import_plan_artifacts_fail() {
         .path()
         .join("lib/forge/npm/plan-blocked/index.ts")
         .exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir
         .path()
         .join(".dx/forge/docs/npm-plan-blocked.md")
@@ -2023,7 +2023,7 @@ fn forge_import_output_preflight_runs_before_source_materialization() {
         .path()
         .join("lib/forge/npm/output-blocked/index.ts")
         .exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir
         .path()
         .join(".dx/forge/import-plans/npm-output-blocked.json")
@@ -2130,7 +2130,7 @@ fn forge_import_www_conversion_packages_materialize_reviewed_adapters() {
         .join(format!("lib/forge/npm/{}/index.ts", bridge_package.slug))
         .exists());
 
-    let manifest = read_json_value(dir.path().join(".dx/forge/source-manifest.json"));
+    let manifest = read_json_value(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"));
     let manifest_packages = manifest["packages"].as_array().expect("packages");
     for package in &packages {
         let materialized_path = format!("lib/forge/npm/{}/index.ts", package.slug);
@@ -2265,7 +2265,7 @@ fn forge_import_popular_ecosystems_materialize_reviewed_source_snapshots() {
         );
     }
 
-    let manifest = read_json_value(dir.path().join(".dx/forge/source-manifest.json"));
+    let manifest = read_json_value(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json"));
     let manifest_packages = manifest["packages"].as_array().expect("packages");
     for package in &packages {
         let materialized_path = format!(
@@ -4028,7 +4028,7 @@ fn dx_check_strict_forge_fails_for_missing_rollback_coverage() {
     ])
     .expect("forge add");
 
-    let manifest_path = dir.path().join(".dx/forge/source-manifest.json");
+    let manifest_path = dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json");
     let mut manifest: dx_compiler::ecosystem::DxSourceManifest =
         serde_json::from_slice(&fs::read(&manifest_path).expect("manifest bytes"))
             .expect("manifest json");
@@ -4667,7 +4667,7 @@ fn forge_release_operations_gate_links_signed_manifest_and_shipping_evidence() {
     ])
     .expect("release bundle");
 
-    let manifest_path = bundle_dir.join("forge-release-manifest.json");
+    let manifest_path = bundle_dir.join("forge-release-.dx/build-cache/manifest.json");
     let manifest: DxForgeReleaseBundleManifest =
         serde_json::from_slice(&fs::read(&manifest_path).expect("manifest bytes"))
             .expect("manifest json");
@@ -4816,7 +4816,7 @@ fn forge_publish_plan_maps_public_beta_artifacts_before_deployment() {
     ])
     .expect("release bundle");
 
-    let manifest_path = bundle_dir.join("forge-release-manifest.json");
+    let manifest_path = bundle_dir.join("forge-release-.dx/build-cache/manifest.json");
     let manifest: DxForgeReleaseBundleManifest =
         serde_json::from_slice(&fs::read(&manifest_path).expect("manifest bytes"))
             .expect("manifest json");
@@ -4995,7 +4995,7 @@ fn forge_release_triage_groups_release_operations_and_publish_plan_failures_for_
                         "passed": false,
                         "score": 0,
                         "message": "publisher status `missing` with 0 artifact(s), signature verified=false, artifact integrity=false.",
-                        "evidence": "release-bundle/forge-release-manifest.json"
+                        "evidence": "release-bundle/forge-release-.dx/build-cache/manifest.json"
                     },
                     "package_gallery": {
                         "passed": false,
@@ -5099,7 +5099,7 @@ fn forge_release_triage_groups_release_operations_and_publish_plan_failures_for_
                 "rollback_inputs": [
                     {
                         "name": "signed_release_manifest",
-                        "path": "release-bundle/forge-release-manifest.json",
+                        "path": "release-bundle/forge-release-.dx/build-cache/manifest.json",
                         "required": true,
                         "exists": false,
                         "passed": false,
@@ -5944,7 +5944,7 @@ fn forge_release_bundle_assembles_and_verifies_public_surface() {
         "forge/migration-gallery/index.html",
         "forge/migration-gallery.json",
         "forge/migration-gallery.md",
-        "forge-release-manifest.json",
+        "forge-release-.dx/build-cache/manifest.json",
         "forge-release-manifest.md",
     ] {
         assert!(
@@ -5954,7 +5954,7 @@ fn forge_release_bundle_assembles_and_verifies_public_surface() {
     }
 
     let manifest: DxForgeReleaseBundleManifest = serde_json::from_slice(
-        &std::fs::read(bundle_dir.join("forge-release-manifest.json")).unwrap(),
+        &std::fs::read(bundle_dir.join("forge-release-.dx/build-cache/manifest.json")).unwrap(),
     )
     .expect("release manifest json");
     assert_eq!(manifest.hash_algorithm, "blake3");
@@ -6095,7 +6095,7 @@ fn forge_release_bundle_assembles_and_verifies_public_surface() {
     ])
     .expect("release bundle verify");
 
-    let manifest_path = bundle_dir.join("forge-release-manifest.json");
+    let manifest_path = bundle_dir.join("forge-release-.dx/build-cache/manifest.json");
     let signed_manifest = signed_release_manifest_value_for_test(&manifest);
     std::fs::write(
         &manifest_path,

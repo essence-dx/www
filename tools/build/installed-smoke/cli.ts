@@ -104,10 +104,10 @@ function main(args) {
 
 function buildReceiptPaths(projectRoot) {
   return {
-    manifestPath: path.join(projectRoot, ".dx", "build", "manifest.json"),
-    sourceBuildManifestPath: path.join(projectRoot, ".dx", "build", "source-build-manifest.json"),
-    sourceBuildReceiptPath: path.join(projectRoot, ".dx", "build", "source-build-receipt.json"),
-    routeHandlerReceiptsPath: path.join(projectRoot, ".dx", "build", "route-handler-receipts.json"),
+    manifestPath: path.join(projectRoot, ".dx", "build", ".dx/build-cache/manifest.json"),
+    sourceBuildManifestPath: path.join(projectRoot, ".dx", "build", "source-build-.dx/build-cache/manifest.json"),
+    sourceBuildReceiptPath: path.join(projectRoot, ".dx", "build", ".dx/build-cache/source-build-receipt.json"),
+    routeHandlerReceiptsPath: path.join(projectRoot, ".dx", "build", ".dx/build-cache/route-handler-receipts.json"),
     canonicalReceiptPath: path.join(projectRoot, ".dx", "receipts", "build", "latest.json"),
     graphReceiptPath: path.join(projectRoot, ".dx", "receipts", "graph", "latest.json"),
     graphConsumerSnapshotPath: path.join(projectRoot, ".dx", "receipts", "graph", "consumer-snapshot.json"),
@@ -119,7 +119,7 @@ function buildReceiptPaths(projectRoot) {
     appExecutionPath: path.join(projectRoot, ".dx", "build", "app", "app-router-execution.json"),
     serverDataPath: path.join(projectRoot, ".dx", "build", "app", "server-data.json"),
     serverContractsPath: path.join(projectRoot, ".dx", "build", "server-contracts.json"),
-    deployAdapterPath: path.join(projectRoot, ".dx", "build", "deploy-adapter.json"),
+    deployAdapterPath: path.join(projectRoot, ".dx", "build", ".dx/build-cache/deploy-adapter.json"),
     zedHandoffPath: path.join(projectRoot, ".dx", "receipts", "build", "zed-handoff.json"),
     readinessPath: path.join(projectRoot, ".dx", "receipts", "build", "readiness.json"),
   };

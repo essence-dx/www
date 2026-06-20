@@ -153,7 +153,7 @@ test("launch template keeps native document scrolling across primary routes", ()
     const dashboardSource = read("examples/template/components/template-app/dashboard-page.tsx");
     const authSource = read("examples/template/components/template-app/auth-pages.tsx");
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
 
   assertNativeDocumentScrollCss(globals, "globals.css");

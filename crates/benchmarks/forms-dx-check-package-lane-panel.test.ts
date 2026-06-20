@@ -183,7 +183,7 @@ test("Forms package-lane row survives generated starter materialization", () => 
     );
     const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
     const sourceContract = read("examples/template/dx-studio-edit-contract.ts");
     const materializerSource = read("tools/launch/materialize-www-template.ts");
@@ -523,7 +523,7 @@ test("Forms source-guard runbook fixture mirrors the Studio manifest", () => {
   assert.equal(fixture.receipt.tracked_file_count, 7);
   assert.equal(
     fixture.preview_manifest.generated_file,
-    "public/preview-manifest.json",
+    "public/preview-.dx/build-cache/manifest.json",
   );
   assert.equal(
     fixture.preview_manifest.materializer,

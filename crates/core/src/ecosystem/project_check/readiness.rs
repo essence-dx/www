@@ -44,13 +44,13 @@ use super::ui_components_dx_check::forge_ui_components_package_metrics;
 use super::validation_schemas_dx_check::forge_validation_schemas_package_metrics;
 use super::wasm_bindgen_dx_check::forge_webassembly_bridge_package_metrics;
 
-pub(super) const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-manifest.json";
+pub(super) const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-.dx/build-cache/manifest.json";
 const PACKAGE_LOCK_PATH: &str = ".dx/forge/package-lock.json";
 const VCS_STATUS_PATH: &str = ".dx/forge/vcs-status.json";
 const REMOTE_STATUS_PATH: &str = ".dx/forge/remote-status.json";
 const MEDIA_STATUS_PATH: &str = ".dx/forge/media-status.json";
 const REMOTES_CONFIG_PATH: &str = ".dx/forge/remotes.json";
-const MEDIA_MANIFEST_PATH: &str = ".dx/forge/media-manifest.json";
+const MEDIA_MANIFEST_PATH: &str = ".dx/forge/media-.dx/build-cache/manifest.json";
 const RECEIPT_DIR: &str = ".dx/forge/receipts";
 const FORGE_STATUS_LATEST_RECEIPT_PATH: &str = ".dx/receipts/forge/status-latest.json";
 const PACKAGE_DOCS_DIR: &str = ".dx/forge/docs";

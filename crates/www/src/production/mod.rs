@@ -300,7 +300,7 @@ impl ProductionBuilder {
 
         // Generate manifest
         let manifest = self.generate_manifest();
-        let manifest_path = self.config.output_dir.join("manifest.json");
+        let manifest_path = self.config.output_dir.join(".dx/build-cache/manifest.json");
         std::fs::write(&manifest_path, &manifest).map_err(|e| DxError::IoError {
             path: Some(manifest_path.clone()),
             message: e.to_string(),

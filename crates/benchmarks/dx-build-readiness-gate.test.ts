@@ -835,7 +835,7 @@ test("release readiness writer rejects route-handler receipt collections that re
     summary: {
       routes: 1,
       route_handlers: 1,
-      route_handler_receipt_output: ".dx/build/route-handler-receipts.json",
+      route_handler_receipt_output: ".dx/build/.dx/build-cache/route-handler-receipts.json",
       route_handler_receipts_executed: 1,
       route_handler_receipts_skipped: 0,
       route_handler_receipts_node_modules_required: true,
@@ -862,7 +862,7 @@ test("release readiness writer rejects route-handler receipt collections that re
 
   assert.equal(result.status, 1, result.stdout + result.stderr);
   const report = JSON.parse(result.stdout);
-  assert.equal(report.receipts.sourceBuild.summary.routeHandlerReceiptOutput, ".dx/build/route-handler-receipts.json");
+  assert.equal(report.receipts.sourceBuild.summary.routeHandlerReceiptOutput, ".dx/build/.dx/build-cache/route-handler-receipts.json");
   assert.equal(report.receipts.sourceBuild.summary.routeHandlerReceiptsExecuted, 1);
   assert.equal(report.receipts.sourceBuild.summary.routeHandlerReceiptsNodeModulesRequired, true);
   assert.ok(
@@ -873,7 +873,7 @@ test("release readiness writer rejects route-handler receipt collections that re
 
   const readiness = readReceipt(root, ".dx/receipts/build/readiness.json");
   assert.equal(readiness.source_ready, false);
-  assert.equal(readiness.graph.route_handler_receipt_output, ".dx/build/route-handler-receipts.json");
+  assert.equal(readiness.graph.route_handler_receipt_output, ".dx/build/.dx/build-cache/route-handler-receipts.json");
   assert.equal(readiness.graph.route_handler_receipts_executed, 1);
   assert.equal(readiness.graph.route_handler_receipts_node_modules_required, true);
   assert.equal(readiness.graph.node_modules_required, true);
@@ -886,7 +886,7 @@ test("release readiness writer writes source projection receipts without claimin
     summary: {
       routes: 2,
       route_handlers: 1,
-      route_handler_receipt_output: ".dx/build/route-handler-receipts.json",
+      route_handler_receipt_output: ".dx/build/.dx/build-cache/route-handler-receipts.json",
       route_handler_receipts_executed: 1,
       route_handler_receipts_skipped: 1,
       route_handler_receipts_node_modules_required: false,
@@ -978,7 +978,7 @@ test("release readiness writer writes source projection receipts without claimin
   assert.equal(readiness.receipts.installed_binary_smoke, ".dx/receipts/build/installed-binary-smoke-latest.json");
   assert.equal(readiness.graph.routes, 2);
   assert.equal(readiness.graph.route_handlers, 1);
-  assert.equal(readiness.graph.route_handler_receipt_output, ".dx/build/route-handler-receipts.json");
+  assert.equal(readiness.graph.route_handler_receipt_output, ".dx/build/.dx/build-cache/route-handler-receipts.json");
   assert.equal(readiness.graph.route_handler_receipts_executed, 1);
   assert.equal(readiness.graph.route_handler_receipts_skipped, 1);
   assert.equal(readiness.graph.route_handler_receipts_node_modules_required, false);

@@ -160,7 +160,7 @@ const GENERATED_LOCAL_ARTIFACTS = [
     expectedPattern: "target-*/",
   },
   {
-    path: "examples/template/.dx/build/manifest.json",
+    path: "examples/template/.dx/build/.dx/build-cache/manifest.json",
     reason: "rebuildable www-template output",
     expectedPattern: "examples/template/.dx/build/",
   },
@@ -180,7 +180,7 @@ const GENERATED_LOCAL_ARTIFACTS = [
     expectedPattern: "/.vercel/",
   },
   {
-    path: "examples/charts/.dx/www/output/manifest.json",
+    path: "examples/charts/.dx/www/output/.dx/build-cache/manifest.json",
     reason: "charts rebuildable www output",
     expectedPattern: "/.dx/www/output/",
   },

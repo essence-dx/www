@@ -54,7 +54,7 @@ export const drizzleDashboardPackage = {
         '.dx/forge/docs/db-drizzle-sqlite.md',
         '.dx/forge/receipts/*-db-drizzle-sqlite.json',
         drizzleDashboardWorkflowReceiptPath,
-        '.dx/forge/source-manifest.json',
+        '.dx/forge/source-.dx/build-cache/manifest.json',
     ],
     appOwnedBoundaries: [
         'DATABASE_URL or SQLite file path',

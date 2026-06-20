@@ -86,7 +86,7 @@ test("Forge doctor command construction and rendering live outside cli mod.rs", 
     "Launch Gate",
     "Registry Integrity",
     "Package Docs",
-    "source-manifest.json",
+    "source-.dx/build-cache/manifest.json",
   ]) {
     assert.equal(
       moduleSource.includes(contractText),

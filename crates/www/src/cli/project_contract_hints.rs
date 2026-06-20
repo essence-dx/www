@@ -62,7 +62,7 @@ pub(super) fn build_project_contract_hint_artifact(
             hints.push(DxProjectContractHint {
                 code: "project-contract-forge-package-suggestion".to_string(),
                 severity: "info".to_string(),
-                evidence_path: Some(".dx/forge/source-manifest.json".to_string()),
+                evidence_path: Some(".dx/forge/source-.dx/build-cache/manifest.json".to_string()),
                 message: "No Forge-owned package files are recorded yet.".to_string(),
                 action:
                     "Add a curated source-owned package intentionally, or plan an npm bridge before importing external code."
@@ -158,12 +158,12 @@ fn build_lsp_diagnostics(
 ) -> Vec<DxProjectContractDiagnostic> {
     let mut diagnostics = report_findings_to_diagnostics(report);
     diagnostics.extend(scan_source_diagnostics(project));
-    if !project.join(".dx/forge/source-manifest.json").is_file() {
+    if !project.join(".dx/forge/source-.dx/build-cache/manifest.json").is_file() {
         diagnostics.push(DxProjectContractDiagnostic {
             source: "forge-provenance".to_string(),
             code: "lsp-forge-provenance-missing".to_string(),
             severity: "info".to_string(),
-            path: Some(".dx/forge/source-manifest.json".to_string()),
+            path: Some(".dx/forge/source-.dx/build-cache/manifest.json".to_string()),
             line: None,
             column: None,
             message: "No Forge source manifest is present, so package provenance cannot be shown in the editor yet.".to_string(),

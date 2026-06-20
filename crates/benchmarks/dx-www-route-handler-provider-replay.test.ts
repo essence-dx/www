@@ -73,7 +73,7 @@ test("route-handler provider replay fails when provider status mismatches matrix
 });
 
 function writeMatrix(dir: string): string {
-  const matrixPath = path.join(dir, "route-handler-conformance-matrix.json");
+  const matrixPath = path.join(dir, ".dx/build-cache/route-handler-conformance-matrix.json");
   fs.writeFileSync(
     matrixPath,
     `${JSON.stringify(

@@ -15,7 +15,7 @@ const previewManifestPath = path.join(
   "examples",
   "www-template",
   "public",
-  "preview-manifest.json",
+  "preview-.dx/build-cache/manifest.json",
 );
 const launchStatusDocs = [
   "README.md",

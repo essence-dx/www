@@ -103,7 +103,7 @@ test("Lane 7 default template uses DX icons and honest UI/Motion/3D/WASM surface
       "utf8",
     );
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
     const dashboardRoute = manifest.routes.find(
       (route: { route: string }) => route.route === "/dashboard",

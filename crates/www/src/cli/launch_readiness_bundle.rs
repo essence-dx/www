@@ -9,9 +9,9 @@ use super::template_readiness;
 
 const BUNDLE_SCHEMA: &str = "dx.forge.launch_readiness_bundle";
 const TEMPLATE_ID: &str = "next-familiar-www-template";
-const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-manifest.json";
+const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-.dx/build-cache/manifest.json";
 const ZED_TEMPLATE_HANDOFF_PATH: &str = ".dx/forge/template-readiness/zed-template-handoff.json";
-const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-manifest.json";
+const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-.dx/build-cache/manifest.json";
 const RECEIPT_DIR: &str = ".dx/forge/receipts";
 const COMPANION_DOC_RECEIPTS_PATH: &str =
     ".dx/forge/template-readiness/launch-companion-doc-receipts.json";

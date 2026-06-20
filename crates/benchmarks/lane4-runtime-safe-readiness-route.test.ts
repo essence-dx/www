@@ -291,11 +291,11 @@ test("Type-Safe API health route returns App Router Responses without live trans
 test("Type-Safe API health route is lock-backed and discoverable as package source", () => {
   const healthRoutePath = "app/api/trpc/health/route.ts";
   const sourceManifest = JSON.parse(
-    read("examples/template/.dx/forge/source-manifest.json"),
+    read("examples/template/.dx/forge/source-.dx/build-cache/manifest.json"),
   );
   const cacheManifest = JSON.parse(
     read(
-      "examples/template/.dx/forge/cache/api-trpc/11.17.0-dx.10/manifest.json",
+      "examples/template/.dx/forge/cache/api-trpc/11.17.0-dx.10/.dx/build-cache/manifest.json",
     ),
   );
   const packageReceipt = JSON.parse(

@@ -27,7 +27,7 @@ test("materialized launch route includes visible Zustand state and dashboard wor
   const result = JSON.parse(output);
   const launch = read(path.join(dir, "pages", "index.html"));
   const runtime = read(path.join(dir, "public", "launch-runtime.js"));
-  const manifest = JSON.parse(read(path.join(dir, "public", "preview-manifest.json")));
+  const manifest = JSON.parse(read(path.join(dir, "public", "preview-.dx/build-cache/manifest.json")));
 
   assert.equal(result.ok, true);
   assert.equal(result.noNodeModules, true);

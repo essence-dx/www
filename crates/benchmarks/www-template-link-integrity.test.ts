@@ -94,7 +94,7 @@ function assertLocaleReferencesStayMaterialized(entries, materializedRoutes) {
 }
 
 test("launch template locale route references stay inside materialized template routes", () => {
-  const manifest = JSON.parse(read("examples/template/public/preview-manifest.json"));
+  const manifest = JSON.parse(read("examples/template/public/preview-.dx/build-cache/manifest.json"));
   const materializedRoutes = new Set([
     ...collectManifestRoutes(manifest),
     ...collectPageRoutes(),
@@ -120,7 +120,7 @@ test("materialized launch template keeps locale previews on generated routes", (
   try {
     execFileSync(process.execPath, [materializer, outputDir], { cwd: root, stdio: "pipe" });
 
-    const manifest = JSON.parse(fs.readFileSync(path.join(outputDir, "public", "preview-manifest.json"), "utf8"));
+    const manifest = JSON.parse(fs.readFileSync(path.join(outputDir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"));
     const materializedRoutes = collectManifestRoutes(manifest);
     for (const entry of fs.readdirSync(path.join(outputDir, "pages"), { withFileTypes: true })) {
       if (entry.isFile() && entry.name.endsWith(".html")) {

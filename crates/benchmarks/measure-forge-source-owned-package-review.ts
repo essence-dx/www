@@ -34,7 +34,7 @@ async function buildReview(options = {}) {
   }
 
   fs.mkdirSync(reviewDir, { recursive: true });
-  const manifestPath = path.join(projectDir, ".dx", "forge", "source-manifest.json");
+  const manifestPath = path.join(projectDir, ".dx", "forge", "source-.dx/build-cache/manifest.json");
   const manifest = readJsonFile(manifestPath);
   const packages = packageReviews(projectDir, manifest.value);
   const adoptionReportCommand = timedRun(() =>

@@ -428,7 +428,7 @@ export function POST() {
     assert_eq!(handlers[0]["lifecycle_scripts_executed"], false);
     assert_eq!(
         manifest["route_handler_receipts"]["output"],
-        ".dx/www/output/route-handler-receipts.json"
+        ".dx/www/output/.dx/build-cache/route-handler-receipts.json"
     );
     assert_eq!(manifest["route_handler_receipts"]["receipt_count"], 1);
     assert_eq!(manifest["route_handler_receipts"]["skipped_count"], 1);

@@ -91,7 +91,7 @@ export const studioWorkflowDocument: WorkflowDocument = {
   pinData: {
     "Read Connector Manifest": [
       {
-        manifestUrl: "file://integrations/n8n-nodes-base/dx-node-source-manifest.json",
+        manifestUrl: "file://integrations/n8n-nodes-base/dx-node-source-.dx/build-cache/manifest.json",
         connectorSummary: "536 node files and 396 credential files available for source-owned readiness.",
       },
     ],

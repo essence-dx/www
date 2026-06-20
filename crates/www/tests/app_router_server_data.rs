@@ -197,7 +197,7 @@ export default async function Page() {
         false
     );
 
-    let manifest = read_json(root.join(".dx/build/manifest.json"));
+    let manifest = read_json(root.join(".dx/build/.dx/build-cache/manifest.json"));
     assert_eq!(manifest["server_data_entries_compiled"], 1);
     assert_eq!(manifest["node_modules_required"], false);
     let manifest_server_data_routes = manifest["server_data_routes"]
@@ -258,7 +258,7 @@ export default async function Page() {
         "manifest should count both app routes: {manifest:#?}"
     );
 
-    let deploy = read_json(root.join(".dx/build/deploy-adapter.json"));
+    let deploy = read_json(root.join(".dx/build/.dx/build-cache/deploy-adapter.json"));
     assert!(
         deploy["routes"]
             .as_array()

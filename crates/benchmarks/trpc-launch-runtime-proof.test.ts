@@ -92,7 +92,7 @@ test("api/trpc materializes into generated launch output without node_modules", 
   const backendPage = readGenerated(dir, "pages/backend.html");
   const runtimeJs = readGenerated(dir, "public/launch-runtime.js");
   const trpcRoute = readGenerated(dir, "app/api/trpc/health/route.ts");
-  const previewManifest = JSON.parse(readGenerated(dir, "public/preview-manifest.json"));
+  const previewManifest = JSON.parse(readGenerated(dir, "public/preview-.dx/build-cache/manifest.json"));
   const receipt = readGenerated(
     dir,
     ".dx/forge/receipts/2026-05-22-api-trpc-dashboard-workflow.json",

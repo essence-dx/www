@@ -23,7 +23,7 @@ fn dx_new_creates_react_familiar_no_node_modules_starter() {
         "styles/globals.css",
         "styles/theme.css",
         "styles/generated.css",
-        ".dx/forge/source-manifest.json",
+        ".dx/forge/source-.dx/build-cache/manifest.json",
         ".dx/forge/docs/dx-www-starter-ui.md",
         ".dx/forge",
         ".dx/serializer/dx.machine",
@@ -263,8 +263,8 @@ fn dx_new_creates_next_familiar_template_surface_without_node_modules() {
         "public/robots.txt",
         "README.md",
         ".gitignore",
-        ".dx/forge/template-manifest.json",
-        ".dx/forge/source-manifest.json",
+        ".dx/forge/template-.dx/build-cache/manifest.json",
+        ".dx/forge/source-.dx/build-cache/manifest.json",
         ".dx/forge/docs/dx-www-starter-ui.md",
         ".dx/forge/docs/dx-www-template-shell--variant-next-familiar.md",
         NEXT_FAMILIAR_LAUNCH_ZED_TEMPLATE_HANDOFF_FILE,
@@ -320,7 +320,7 @@ fn dx_new_creates_next_familiar_template_surface_without_node_modules() {
             .any(|route| route == "/docs/readiness")
     );
 
-    let manifest = read_json_value(project.join(".dx/forge/template-manifest.json"));
+    let manifest = read_json_value(project.join(".dx/forge/template-.dx/build-cache/manifest.json"));
     assert_eq!(manifest["template"], "next-familiar");
     assert_eq!(manifest["node_modules_required"], false);
     assert_eq!(manifest["entrypoint"], "app/page.tsx");
@@ -346,7 +346,7 @@ fn dx_new_creates_next_familiar_template_surface_without_node_modules() {
             .as_array()
             .expect("forge artifacts")
             .iter()
-            .any(|path| path == ".dx/forge/source-manifest.json")
+            .any(|path| path == ".dx/forge/source-.dx/build-cache/manifest.json")
     );
     assert!(
         manifest["app_router_files"]
@@ -471,7 +471,7 @@ fn dx_new_creates_next_familiar_template_surface_without_node_modules() {
     let project_cli = Cli::with_cwd(project.clone());
     project_cli.cmd_build().expect("dx build");
 
-    let build_manifest = read_json_value(project.join(".dx/www/output/manifest.json"));
+    let build_manifest = read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"));
     assert_eq!(build_manifest["app_routes_compiled"], 7);
     assert_eq!(build_manifest["tsx_app_router_entrypoint"], true);
     assert_eq!(
@@ -490,7 +490,7 @@ fn dx_new_materializes_every_launch_manifest_source_file() {
     cli.cmd_new("launch-materialized-app").expect("dx new");
 
     let project = dir.path().join("launch-materialized-app");
-    let manifest = read_json_value(project.join(".dx/forge/template-manifest.json"));
+    let manifest = read_json_value(project.join(".dx/forge/template-.dx/build-cache/manifest.json"));
     let mut manifest_files = Vec::new();
     for key in ["app_router_files", "local_source"] {
         manifest_files.extend(
@@ -583,7 +583,7 @@ fn dx_new_materializes_every_launch_manifest_source_file() {
             .any(|path| path == NEXT_FAMILIAR_LAUNCH_RUNTIME_CHECKLIST_FILE)
     );
 
-    let source_manifest = read_json_value(project.join(".dx/forge/source-manifest.json"));
+    let source_manifest = read_json_value(project.join(".dx/forge/source-.dx/build-cache/manifest.json"));
     let launch_package = source_manifest["packages"]
         .as_array()
         .expect("source manifest packages")
@@ -711,7 +711,7 @@ fn dx_new_writes_launch_companion_documentation_receipts() {
                 .any(|api| api == "validateDxInput")
     }));
 
-    let manifest = read_json_value(project.join(".dx/forge/template-manifest.json"));
+    let manifest = read_json_value(project.join(".dx/forge/template-.dx/build-cache/manifest.json"));
     assert_eq!(
         manifest["launch_companion_doc_receipts"]["file"],
         receipts_path
@@ -1162,7 +1162,7 @@ fn forge_launch_companion_receipts_expose_source_proof_docs_without_runtime() {
     assert!(auth_doc.contains("examples/template/auth-session-status.tsx"));
     assert!(auth_doc.contains("components/template-app/auth-session-status.tsx"));
 
-    let manifest = read_json_value(project.join(".dx/forge/template-manifest.json"));
+    let manifest = read_json_value(project.join(".dx/forge/template-.dx/build-cache/manifest.json"));
     assert_eq!(
         manifest["launch_companion_receipts"]["schema"],
         "dx.launch.companion_receipts"
@@ -1249,7 +1249,7 @@ fn forge_launch_runtime_checklist_requires_explicit_approval_without_execution()
             .any(|evidence| evidence == "final-launch-evidence-receipt")
     );
 
-    let manifest = read_json_value(project.join(".dx/forge/template-manifest.json"));
+    let manifest = read_json_value(project.join(".dx/forge/template-.dx/build-cache/manifest.json"));
     assert_eq!(
         manifest["launch_runtime_checklist"]["file"],
         ".dx/forge/template-readiness/launch-runtime-checklist.json"
@@ -1328,7 +1328,7 @@ allow_selective_imports = true
     assert_eq!(local_package.export_count, 1);
     assert!(local_package.verified);
     assert!(local_package.manifest_path.ends_with(Path::new(
-        "packages/js/auth/better-auth/0.1.0/manifest.json"
+        "packages/js/auth/better-auth/0.1.0/.dx/build-cache/manifest.json"
     )));
     assert!(
         report
@@ -1452,7 +1452,7 @@ fn dx_new_writes_runtime_approval_request_receipt() {
             .any(|evidence| evidence == "final-launch-evidence-receipt")
     );
 
-    let manifest = read_json_value(project.join(".dx/forge/template-manifest.json"));
+    let manifest = read_json_value(project.join(".dx/forge/template-.dx/build-cache/manifest.json"));
     assert_eq!(
         manifest["launch_runtime_approval_request"]["file"],
         request_path
@@ -1565,7 +1565,7 @@ fn dx_new_writes_runtime_evidence_schema_stub_without_fake_proof() {
                 && item["required"] == true)
     );
 
-    let manifest = read_json_value(project.join(".dx/forge/template-manifest.json"));
+    let manifest = read_json_value(project.join(".dx/forge/template-.dx/build-cache/manifest.json"));
     assert_eq!(manifest["launch_runtime_evidence"]["file"], evidence_path);
     assert_eq!(
         manifest["launch_runtime_approval_request"]["requested_evidence"]["receipt"],
@@ -1722,7 +1722,7 @@ fn dx_new_writes_launch_verification_lane_metadata() {
                 && step["status"] == "awaiting-approved-runtime-run")
     );
 
-    let manifest = read_json_value(project.join(".dx/forge/template-manifest.json"));
+    let manifest = read_json_value(project.join(".dx/forge/template-.dx/build-cache/manifest.json"));
     assert_eq!(manifest["launch_verification_lane"]["file"], lane_path);
     assert_eq!(
         manifest["zed_template_handoff"]["launch_verification_lane"],
@@ -2954,7 +2954,7 @@ fn forge_launch_evidence_packet_passes_complete_reviewed_evidence() {
             .as_array()
             .expect("packet contracts")
             .iter()
-            .any(|item| item["path"] == ".dx/forge/template-manifest.json"
+            .any(|item| item["path"] == ".dx/forge/template-.dx/build-cache/manifest.json"
                 && item["hash_algorithm"] == "blake3"
                 && item["source_hash"]
                     .as_str()

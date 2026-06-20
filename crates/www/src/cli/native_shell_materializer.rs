@@ -69,7 +69,7 @@ pub(super) fn materialize_native_shell(
         write_project_file(&project_root, file)?;
     }
 
-    let receipt = serde_json::to_string_pretty(report).map_err(super::forge_error)?;
+    let receipt = serde_json::to_string_pretty(report).map_err(|e| super::forge_error(format!("line {}: {}", line!(), e)))?;
     write_project_file(
         &project_root,
         NativeShellFile {

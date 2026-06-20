@@ -393,7 +393,7 @@ fn strict_compile_diagnostics(
             why: "strict DX-WWW apps cannot depend on an opaque node_modules tree; packages must be visible, reviewed, and source-owned.".to_string(),
             fix: "Remove node_modules from the strict app and materialize needed packages through Forge receipts or adapters.".to_string(),
             command: "dx check --strict-project-contract".to_string(),
-            source_owned_target: ".dx/forge/source-manifest.json".to_string(),
+            source_owned_target: ".dx/forge/source-.dx/build-cache/manifest.json".to_string(),
         });
     }
 

@@ -405,17 +405,17 @@ impl NewCommand<'_> {
             },
             "generated_files": materialized_files,
             "forge_artifacts": [
-                ".dx/forge/source-manifest.json",
+                ".dx/forge/source-.dx/build-cache/manifest.json",
                 DEFAULT_TEMPLATE_CORE_SOURCE_RECEIPT_FILE
             ],
             "compiler_owned_intrinsics": ["jsx", "app-router", "static-assets"]
         });
         std::fs::write(
-            project_dir.join(".dx/forge/template-manifest.json"),
+            project_dir.join(".dx/forge/template-.dx/build-cache/manifest.json"),
             serde_json::to_string_pretty(&template_manifest).map_err(forge_error)?,
         )
         .map_err(|e| DxError::IoError {
-            path: Some(project_dir.join(".dx/forge/template-manifest.json")),
+            path: Some(project_dir.join(".dx/forge/template-.dx/build-cache/manifest.json")),
             message: e.to_string(),
         })?;
 
@@ -491,7 +491,7 @@ impl NewCommand<'_> {
         Ok(())
     }
     fn write_forge_package_status_receipts(project_dir: &Path) -> DxResult<()> {
-        let manifest_path = project_dir.join(".dx/forge/source-manifest.json");
+        let manifest_path = project_dir.join(".dx/forge/source-.dx/build-cache/manifest.json");
         let mut manifest =
             read_json_value(&manifest_path, "source manifest for generated Forge status")?;
         let packages_snapshot = {
@@ -1595,7 +1595,7 @@ impl NewCommand<'_> {
                 "source_guard": "dx run --test .\\benchmarks\\dx-style-launch-contract.test.ts -- --test-name-pattern \"template shell evidence fixture resolves concrete drift markers without a server\"",
                 "loader_file": "components/template-app/template-shell-evidence-loader.ts",
                 "marker_helper_file": "components/template-app/template-shell-style-evidence-drift.ts",
-                "preview_manifest_fixture": "public/preview-manifest.json",
+                "preview_manifest_fixture": "public/preview-.dx/build-cache/manifest.json",
                 "check_receipt_fixture": ".dx/receipts/check/check-latest.json",
                 "marker": "data-dx-check-style-evidence-drift",
                 "states": ["unknown", "false", "true"],

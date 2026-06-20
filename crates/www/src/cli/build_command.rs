@@ -95,7 +95,7 @@ pub(super) fn ensure_build_output_dirs(project_root: &Path, output_dir: &Path) -
     clean_build_output_dir(project_root, output_dir)?;
     create_build_dir(output_dir)?;
 
-    for child in ["app", "components", "styles", "public"] {
+    for child in ["app", "components", "styles", ".dx/build-cache", ".dx/build-cache/source-routes", ".dx/build-cache/image-placeholders", ".dx/build-cache/source"] {
         create_build_dir(&output_dir.join(child))?;
     }
 
@@ -265,12 +265,12 @@ pub(super) fn write_import_build_artifacts(
 
     if !import_resolutions.is_empty() {
         summary.import_resolutions_compiled = import_resolutions.len();
-        write_json_artifact(output_dir, "import-resolution.json", &import_resolutions)?;
+        write_json_artifact(output_dir, ".dx/build-cache/import-resolution.json", &import_resolutions)?;
     }
 
     summary.next_adapter_fixtures_emitted =
         write_next_adapter_fixtures(output_dir, import_resolutions)
-            .map_err(super::forge_error)?
+            .map_err(|e| super::forge_error(format!("line {}: {}", line!(), e)))?
             .is_some();
 
     Ok(summary)
@@ -307,8 +307,8 @@ where
     F: FnOnce(&str) -> DxResult<()>,
 {
     let manifest = build_manifest_value(input);
-    let manifest_json = serialize_json_artifact("manifest.json", &manifest)?;
-    write_text_artifact(output_dir, "manifest.json", &manifest_json)?;
+    let manifest_json = serialize_json_artifact(".dx/build-cache/manifest.json", &manifest)?;
+    write_text_artifact(output_dir, ".dx/build-cache/manifest.json", &manifest_json)?;
     write_deploy_adapter(&manifest_json)
 }
 
@@ -456,7 +456,7 @@ pub(super) fn copy_build_asset_tree(
                     message: format!("Build asset path escaped {source_name}: {error}"),
                     field: Some("build.assets".to_string()),
                 })?;
-        let dst = output_dir.join(source_name).join(rel);
+        let dst = if source_name == "public" { output_dir.join(rel) } else { output_dir.join(source_name).join(rel) };
 
         if let Some(parent) = dst.parent() {
             create_build_dir(parent)?;
@@ -486,70 +486,11 @@ pub(super) fn copy_build_asset_tree(
         }
     }
 
-    if source_name == "public" {
-        copy_public_root_asset_aliases(project_root, output_dir)?;
-    }
+    
 
     Ok(())
 }
 
-fn copy_public_root_asset_aliases(project_root: &Path, output_dir: &Path) -> DxResult<()> {
-    let public_dir = project_root.join("public");
-    if !public_dir.exists() {
-        return Ok(());
-    }
-
-    for entry in walkdir::WalkDir::new(&public_dir) {
-        let entry = entry.map_err(|error| DxError::IoError {
-            path: None,
-            message: error.to_string(),
-        })?;
-        if !entry.file_type().is_file() {
-            continue;
-        }
-
-        let src = entry.path();
-        let rel =
-            src.strip_prefix(&public_dir)
-                .map_err(|error| DxError::ConfigValidationError {
-                    message: format!("Public root asset path escaped public directory: {error}"),
-                    field: Some("build.public_assets".to_string()),
-                })?;
-        let dst = output_dir.join(rel);
-        if dst.exists() {
-            continue;
-        }
-
-        if let Some(parent) = dst.parent() {
-            create_build_dir(parent)?;
-        }
-
-        if src.extension().and_then(|ext| ext.to_str()) == Some("ts") {
-            let ts_code = std::fs::read_to_string(src).map_err(|error| DxError::IoError {
-                path: Some(src.to_path_buf()),
-                message: error.to_string(),
-            })?;
-            
-            let dst_js = dst.with_extension("js");
-            let js_code = crate::ts_compiler::transpile_ts_to_js(&ts_code, src.to_string_lossy().as_ref()).map_err(|error| DxError::IoError {
-                path: Some(src.to_path_buf()),
-                message: format!("TypeScript compilation failed for {}: {}", src.display(), error),
-            })?;
-            
-            std::fs::write(&dst_js, js_code).map_err(|error| DxError::IoError {
-                path: Some(dst_js),
-                message: error.to_string(),
-            })?;
-        } else {
-            std::fs::copy(src, &dst).map_err(|error| DxError::IoError {
-                path: Some(dst),
-                message: error.to_string(),
-            })?;
-        }
-    }
-
-    Ok(())
-}
 
 fn create_build_dir(path: &Path) -> DxResult<()> {
     std::fs::create_dir_all(path).map_err(|error| DxError::IoError {
@@ -575,6 +516,10 @@ fn serialize_json_artifact<T: Serialize>(file_name: &str, value: &T) -> DxResult
 }
 
 fn write_text_artifact(output_dir: &Path, file_name: &str, content: &str) -> DxResult<()> {
+    let path = output_dir.join(file_name);
+    if let Some(parent) = path.parent() {
+        let _ = std::fs::create_dir_all(parent);
+    }
     let path = output_dir.join(file_name);
     std::fs::write(&path, content).map_err(|error| DxError::IoError {
         path: Some(path),

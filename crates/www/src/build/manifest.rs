@@ -1,6 +1,6 @@
 //! # Route Manifest Generator
 //!
-//! Generates the `manifest.json` file for the build output.
+//! Generates the `.dx/build-cache/manifest.json` file for the build output.
 //! This manifest contains all routes, assets, and their metadata.
 
 use std::collections::HashMap;

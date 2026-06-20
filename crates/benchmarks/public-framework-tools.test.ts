@@ -285,7 +285,7 @@ test("dx deploy vercel performs a guarded local preflight pipeline", () => {
     "normalized.contains(\"/page-graph.json\")",
     "normalized == READINESS_PROOF_GRAPH_RECEIPT",
     "normalized.starts_with(\".dx/\")",
-    "normalized.starts_with(\"source-routes/\")",
+    "normalized.starts_with(\".dx/build-cache/source-routes/\")",
     "fn ensure_generated_project_path(path: &Path, expected_suffix: &str) -> anyhow::Result<()>",
     "fn vercel_prebuilt_argv(prod: bool) -> Vec<&'static str>",
     "\"vercel_prebuilt_contract\": deploy_contract.clone()",
@@ -316,7 +316,7 @@ test("dx deploy vercel performs a guarded local preflight pipeline", () => {
     "materialize_vercel_build_output_keeps_tiny_static_public_and_evidence_private",
     "app/page-graph.json",
     "app/app-router-execution.json",
-    "source-routes/root/route-unit.json",
+    ".dx/build-cache/source-routes/root/route-unit.json",
   ]) {
     assert.match(tools, new RegExp(marker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }

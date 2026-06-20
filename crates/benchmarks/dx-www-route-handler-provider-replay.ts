@@ -138,7 +138,7 @@ function requiredValue(argv: string[], index: number, option: string): string {
 function printUsage(): void {
   process.stderr.write(
     [
-      "Usage: node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <url> --matrix <route-handler-conformance-matrix.json> [--out <receipt.json>] [--hosted-provider] [--provider-id <id>]",
+      "Usage: node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <url> --matrix <.dx/build-cache/route-handler-conformance-matrix.json> [--out <receipt.json>] [--hosted-provider] [--provider-id <id>]",
       "",
     ].join("\n"),
   );

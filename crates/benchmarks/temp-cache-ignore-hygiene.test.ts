@@ -57,7 +57,7 @@ test("temp and cache hygiene ignores only local worker/build byproducts", () => 
     ".dx/icon/machine/v1/pack-body.machine",
     ".dx/icon/machine/v1/pack-body.machine.meta.json",
     ".dx/receipts/build/installed-binary-smoke-latest.json",
-    "examples/template/.dx/build/route-manifest.json",
+    "examples/template/.dx/build/route-.dx/build-cache/manifest.json",
     "examples/template/.dx/receipts/build/latest.json",
     "examples/template/.dx/receipts/graph/latest.json",
     "worker-lanes/state/www-worker.json",

@@ -2744,7 +2744,7 @@ impl DxForgeExternalStateSnapshot {
     fn capture(project: &Path, package_id: &str) -> anyhow::Result<Self> {
         Ok(Self {
             manifest: DxForgeImportFileSnapshot::capture(
-                project.join(".dx/forge/source-manifest.json"),
+                project.join(".dx/forge/source-.dx/build-cache/manifest.json"),
             )?,
             docs: DxForgeImportFileSnapshot::capture(project.join(import_docs_path(package_id)))?,
         })

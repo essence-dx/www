@@ -19,7 +19,7 @@ pub(super) fn cmd_promote(cwd: &Path, args: &[String]) -> DxResult<()> {
         );
         eprintln!();
         eprintln!(
-            "Signs .dx/build/manifest.json, writes build-promotion.json, and updates deploy-adapter.json with a verified Ed25519 publisher identity."
+            "Signs .dx/build/.dx/build-cache/manifest.json, writes build-promotion.json, and updates .dx/build-cache/deploy-adapter.json with a verified Ed25519 publisher identity."
         );
         return Ok(());
     }

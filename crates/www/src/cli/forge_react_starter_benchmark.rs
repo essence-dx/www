@@ -226,9 +226,9 @@ pub(super) fn build_forge_react_starter_benchmark_report(
     let packet_path = build_output_dir.join("app/index.dxpk");
     let client_islands_runtime_path = build_output_dir.join("app/client-islands.js");
     let page_graph_path = build_output_dir.join("app/page-graph.json");
-    let build_manifest_path = build_output_dir.join("manifest.json");
-    let template_manifest_path = project.join(".dx/forge/template-manifest.json");
-    let source_manifest_path = project.join(".dx/forge/source-manifest.json");
+    let build_manifest_path = build_output_dir.join(".dx/build-cache/manifest.json");
+    let template_manifest_path = project.join(".dx/forge/template-.dx/build-cache/manifest.json");
+    let source_manifest_path = project.join(".dx/forge/source-.dx/build-cache/manifest.json");
 
     let html = fs::read_to_string(&html_path).unwrap_or_default();
     let html_brotli_bytes = brotli_size(html.as_bytes())?;

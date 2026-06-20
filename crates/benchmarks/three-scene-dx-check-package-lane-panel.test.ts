@@ -273,7 +273,7 @@ test("3D Scene System package-lane row exposes dx-style evidence in the DX check
   );
   assert.equal(runbookFixture.receipt.tracked_by_receipt_hash_helper, true);
   assert.deepEqual(runbookFixture.preview_manifest, {
-    generated_file: "public/preview-manifest.json",
+    generated_file: "public/preview-.dx/build-cache/manifest.json",
     materializer: "tools/launch/materialize-www-template.ts",
     hash_backed_by: "examples/template/3d-scene-system-receipt-hashes.ts",
     hash_backed_files: ["tools/launch/materialize-www-template.ts"],
@@ -312,7 +312,7 @@ test("3D Scene System package-scoped dx-check row survives generated starter mat
   );
   const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
 
   assert.equal(result.ok, true);

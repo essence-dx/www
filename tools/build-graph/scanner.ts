@@ -172,7 +172,7 @@ function isSourceOwnedImportSpecifier(specifier) {
 }
 
 function addForgeSurfaceNodes(projectRoot, nodes, edges, nodesByPath) {
-  const manifestPath = path.join(projectRoot, ".dx", "forge", "source-manifest.json");
+  const manifestPath = path.join(projectRoot, ".dx", "forge", "source-.dx/build-cache/manifest.json");
   if (!fs.existsSync(manifestPath)) return;
 
   const manifest = readJson(manifestPath);
@@ -182,7 +182,7 @@ function addForgeSurfaceNodes(projectRoot, nodes, edges, nodesByPath) {
     const node = {
       id: `forge:${packageId}#${surface}`,
       kind: "forge-surface",
-      path: ".dx/forge/source-manifest.json",
+      path: ".dx/forge/source-.dx/build-cache/manifest.json",
       contract: CONTRACT_NAMES.forgeSourceGraph,
       packageId,
       surface,

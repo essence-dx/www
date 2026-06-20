@@ -24,7 +24,7 @@ test("Release-readiness proof graph exposes a replayable receipt contract with f
     "\"dx www readiness --write-receipts\"",
     "\"local-readiness-receipt-refresh-not-build-output-proof\"",
     "readiness_local_build_manifest_hash",
-    "examples/template/.dx/www/output/manifest.json",
+    "examples/template/.dx/www/output/.dx/build-cache/manifest.json",
     "\"inputs\"",
     "\"output_hashes\"",
     "\"receipt_freshness\": \"not-evaluated-in-this-command\"",

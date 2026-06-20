@@ -256,44 +256,44 @@ impl Cli {
 
     /// Generate or verify dx-style CSS for the public TSX launch path.
     pub fn cmd_style(&self, args: &[String]) -> DxResult<()> {
-        let report = run_dx_style(&self.cwd, args).map_err(forge_error)?;
-        print_public_tool_report(report).map_err(forge_error)
+        let report = run_dx_style(&self.cwd, args).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
+        print_public_tool_report(report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))
     }
 
     /// Generate or verify source-owned icon wrappers for static TSX icon tags.
     pub fn cmd_icons(&self, args: &[String]) -> DxResult<()> {
-        let report = run_dx_icons(&self.cwd, args).map_err(forge_error)?;
-        print_public_tool_report(report).map_err(forge_error)
+        let report = run_dx_icons(&self.cwd, args).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
+        print_public_tool_report(report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))
     }
 
     /// Generate or verify readable auto-import maps.
     pub fn cmd_imports(&self, args: &[String]) -> DxResult<()> {
-        let report = run_dx_imports(&self.cwd, args).map_err(forge_error)?;
-        print_public_tool_report(report).map_err(forge_error)
+        let report = run_dx_imports(&self.cwd, args).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
+        print_public_tool_report(report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))
     }
 
     /// Explain a TSX route and write AI/Zed-readable route contracts.
     pub fn cmd_explain(&self, args: &[String]) -> DxResult<()> {
-        let report = run_dx_explain(&self.cwd, args).map_err(forge_error)?;
-        print_public_tool_report(report).map_err(forge_error)
+        let report = run_dx_explain(&self.cwd, args).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
+        print_public_tool_report(report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))
     }
 
     /// Run the source-only DX launch doctor.
     pub fn cmd_doctor(&self, args: &[String]) -> DxResult<()> {
-        let report = run_dx_doctor(&self.cwd, args).map_err(forge_error)?;
-        print_public_tool_report(report).map_err(forge_error)
+        let report = run_dx_doctor(&self.cwd, args).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
+        print_public_tool_report(report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))
     }
 
     /// Analyze static export output without running a heavy build.
     pub fn cmd_export(&self, args: &[String]) -> DxResult<()> {
-        let report = run_dx_export_analyze(&self.cwd, args).map_err(forge_error)?;
-        print_public_tool_report(report).map_err(forge_error)
+        let report = run_dx_export_analyze(&self.cwd, args).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
+        print_public_tool_report(report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))
     }
 
     /// Prepare a static Vercel deploy manifest for DX-WWW.
     pub fn cmd_deploy(&self, args: &[String]) -> DxResult<()> {
-        let report = run_dx_deploy(&self.cwd, args).map_err(forge_error)?;
-        print_public_tool_report(report).map_err(forge_error)
+        let report = run_dx_deploy(&self.cwd, args).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
+        print_public_tool_report(report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))
     }
 
     fn cmd_templates(&self, args: &[String]) -> DxResult<()> {
@@ -309,18 +309,18 @@ impl Cli {
         let quiet = options.quiet;
 
         let report =
-            build_launch_readiness_bundle_report(&project, fail_under).map_err(forge_error)?;
+            build_launch_readiness_bundle_report(&project, fail_under).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
         let rendered = match format {
-            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(forge_error)?,
+            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?,
             DxOutputFormat::Markdown => launch_readiness_bundle_markdown(&report),
             DxOutputFormat::Terminal => launch_readiness_bundle_terminal(&report),
         };
 
         if let Some(output) = output {
             if let Some(parent) = output.parent() {
-                std::fs::create_dir_all(parent).map_err(forge_error)?;
+                std::fs::create_dir_all(parent).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             }
-            std::fs::write(&output, &rendered).map_err(forge_error)?;
+            std::fs::write(&output, &rendered).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             if !quiet {
                 println!("{}", output.display());
             }
@@ -348,9 +348,9 @@ impl Cli {
         let quiet = options.quiet;
 
         let report = launch_adoption_report::build_launch_adoption_report(&project, fail_under)
-            .map_err(forge_error)?;
+            .map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
         let rendered = match format {
-            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(forge_error)?,
+            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?,
             DxOutputFormat::Markdown => {
                 launch_adoption_report::launch_adoption_report_markdown(&report)
             }
@@ -361,9 +361,9 @@ impl Cli {
 
         if let Some(output) = output {
             if let Some(parent) = output.parent() {
-                std::fs::create_dir_all(parent).map_err(forge_error)?;
+                std::fs::create_dir_all(parent).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             }
-            std::fs::write(&output, &rendered).map_err(forge_error)?;
+            std::fs::write(&output, &rendered).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             if !quiet {
                 println!("{}", output.display());
             }
@@ -396,9 +396,9 @@ impl Cli {
             fail_under,
             &source_template,
         )
-        .map_err(forge_error)?;
+        .map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
         let rendered = match format {
-            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(forge_error)?,
+            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?,
             DxOutputFormat::Markdown => {
                 launch_manifest_drift::launch_manifest_drift_markdown(&report)
             }
@@ -409,9 +409,9 @@ impl Cli {
 
         if let Some(output) = output {
             if let Some(parent) = output.parent() {
-                std::fs::create_dir_all(parent).map_err(forge_error)?;
+                std::fs::create_dir_all(parent).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             }
-            std::fs::write(&output, &rendered).map_err(forge_error)?;
+            std::fs::write(&output, &rendered).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             if !quiet {
                 println!("{}", output.display());
             }
@@ -440,9 +440,9 @@ impl Cli {
 
         let report =
             launch_companion_receipts::build_launch_companion_receipts_report(&project, fail_under)
-                .map_err(forge_error)?;
+                .map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
         let rendered = match format {
-            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(forge_error)?,
+            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?,
             DxOutputFormat::Markdown => {
                 launch_companion_receipts::launch_companion_receipts_markdown(&report)
             }
@@ -453,9 +453,9 @@ impl Cli {
 
         if let Some(output) = output {
             if let Some(parent) = output.parent() {
-                std::fs::create_dir_all(parent).map_err(forge_error)?;
+                std::fs::create_dir_all(parent).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             }
-            std::fs::write(&output, &rendered).map_err(forge_error)?;
+            std::fs::write(&output, &rendered).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             if !quiet {
                 println!("{}", output.display());
             }
@@ -486,9 +486,9 @@ impl Cli {
 
         let report =
             launch_runtime_checklist::build_launch_runtime_checklist_report(&project, fail_under)
-                .map_err(forge_error)?;
+                .map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
         let rendered = match format {
-            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(forge_error)?,
+            DxOutputFormat::Json => serde_json::to_string_pretty(&report).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?,
             DxOutputFormat::Markdown => {
                 launch_runtime_checklist::launch_runtime_checklist_markdown(&report)
             }
@@ -499,9 +499,9 @@ impl Cli {
 
         if let Some(output) = output {
             if let Some(parent) = output.parent() {
-                std::fs::create_dir_all(parent).map_err(forge_error)?;
+                std::fs::create_dir_all(parent).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             }
-            std::fs::write(&output, &rendered).map_err(forge_error)?;
+            std::fs::write(&output, &rendered).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
             if !quiet {
                 println!("{}", output.display());
             }
@@ -2114,20 +2114,20 @@ impl Cli {
         invoked_as: &'static str,
     ) -> DxResult<()> {
         match options.target {
-            DxBuildTarget::Web => self.cmd_build_web(),
+            DxBuildTarget::Web => self.cmd_build_web(&options),
             DxBuildTarget::Android => {
-                self.cmd_build_web()?;
+                self.cmd_build_web(&options)?;
                 cmd_www_build_android(&self.cwd, invoked_as)
             }
         }
     }
 
-    fn cmd_build_web(&self) -> DxResult<()> {
+    fn cmd_build_web(&self, options: &DxBuildCommandOptions) -> DxResult<()> {
         let build_start = std::time::Instant::now();
         let config = config_diagnostics::load_project_config_with_diagnostics(&self.cwd)?;
-        ensure_dx_imports_current_for_build(&self.cwd).map_err(forge_error)?;
+        ensure_dx_imports_current_for_build(&self.cwd).map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?;
 
-        let output_dir = self.cwd.join(&config.build.output_dir);
+        let output_dir = self.cwd.join(&config.build.output_dir); println!("OUTPUT DIR IS: {:?}", output_dir);
         ensure_build_output_dirs(&self.cwd, &output_dir)?;
 
         let translations = self.load_translations()?;
@@ -2205,7 +2205,7 @@ impl Cli {
         let next_familiar_compatibility_evidence_emitted =
             next_migration_artifacts.next_familiar_compatibility_evidence_emitted;
         let next_familiar_fixtures_emitted = write_next_familiar_fixtures(&self.cwd, &output_dir)
-            .map_err(forge_error)?
+            .map_err(|e| forge_error(format!("cli_core_impl line {}: {}", line!(), e)))?
             .is_some();
         let source_build_report =
             match crate::build::SourceBuildEngine::new(crate::build::SourceBuildOptions {
@@ -2280,6 +2280,10 @@ impl Cli {
             &config.build.output_dir,
             &self.cwd,
         );
+
+        if options.sandbox {
+            crate::cli::sandbox_generator::generate_sandbox_html(&output_dir)?;
+        }
 
         Ok(())
     }

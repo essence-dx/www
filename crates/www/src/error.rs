@@ -514,7 +514,7 @@ fn dx_style_unsupported_class_name(message: &str) -> Option<&str> {
 impl From<std::io::Error> for DxError {
     fn from(err: std::io::Error) -> Self {
         Self::IoError {
-            message: err.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), err),
             path: None,
         }
     }
@@ -524,7 +524,7 @@ impl From<toml::de::Error> for DxError {
     fn from(err: toml::de::Error) -> Self {
         Self::ConfigParseError {
             file: None,
-            message: err.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), err),
             src: None,
             span: None,
         }
@@ -534,7 +534,7 @@ impl From<toml::de::Error> for DxError {
 impl From<serde_json::Error> for DxError {
     fn from(err: serde_json::Error) -> Self {
         Self::ParseError {
-            message: err.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), err),
             file: PathBuf::new(),
             line: Some(err.line() as u32),
             column: Some(err.column() as u32),
@@ -547,7 +547,7 @@ impl From<serde_json::Error> for DxError {
 impl From<crate::config::ConfigError> for DxError {
     fn from(err: crate::config::ConfigError) -> Self {
         Self::ConfigValidationError {
-            message: err.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), err),
             field: None,
         }
     }
@@ -1289,7 +1289,7 @@ impl ErrorOverlayData {
                 severity: DxDiagnosticSeverity::Error,
                 title: "DX-WWW error".to_string(),
                 diagnostic_code: None,
-                message: error.to_string(),
+                message: format!("{}:{}: {}", file!(), line!(), error),
                 file_path: None,
                 line: None,
                 column: None,

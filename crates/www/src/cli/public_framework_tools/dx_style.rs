@@ -1739,8 +1739,8 @@ fn unsupported_css_directive_findings(theme_css: &str, style_paths: &DxStylePath
 fn collect_style_package_ownership_rows(project: &Path) -> Vec<Value> {
     let mut rows = Vec::new();
     for relative in [
-        "public/preview-manifest.json",
-        ".dx/template-app-browser-preview/public/preview-manifest.json",
+        "public/preview-.dx/build-cache/manifest.json",
+        ".dx/template-app-browser-preview/public/preview-.dx/build-cache/manifest.json",
     ] {
         rows.extend(read_preview_style_package_ownership_rows(
             &project.join(relative),

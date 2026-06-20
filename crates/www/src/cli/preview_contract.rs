@@ -38,7 +38,7 @@ pub(super) fn load_production_preview_cache(
         let path = safe_production_contract_file(build_dir, &relative_path)?;
         let body = std::fs::read(&path).map_err(|error| {
             format!(
-                "Failed to read contract file {relative_path} from deploy-adapter.json: {error}"
+                "Failed to read contract file {relative_path} from .dx/build-cache/deploy-adapter.json: {error}"
             )
         })?;
         files.insert(relative_path, body);
@@ -77,7 +77,7 @@ pub(super) fn production_contract_wire_response(
                 last_modified: None,
                 vary_accept_encoding: false,
                 allow: None,
-                contract_path: "deploy-adapter.json".to_string(),
+                contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
                 body: error.into_bytes(),
             });
     wire_response_bytes(
@@ -133,7 +133,7 @@ pub(super) fn production_contract_wire_response_cached_with_connection(
                 last_modified: None,
                 vary_accept_encoding: false,
                 allow: None,
-                contract_path: "deploy-adapter.json".to_string(),
+                contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
                 body: error.into_bytes(),
             });
     wire_response_bytes(
@@ -548,7 +548,7 @@ fn handle_production_contract_request_with_cached_files(
         }
         let html = route["html"]
             .as_str()
-            .ok_or_else(|| format!("Route {path} is missing html in deploy-adapter.json"))?;
+            .ok_or_else(|| format!("Route {path} is missing html in .dx/build-cache/deploy-adapter.json"))?;
         return read_production_contract_file(
             build_dir,
             html,
@@ -612,7 +612,7 @@ fn production_contract_static_options_response() -> DxProductionPreviewResponse 
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(PRODUCTION_STATIC_ALLOWED_METHODS.to_string()),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: Vec::new(),
     }
 }
@@ -637,7 +637,7 @@ fn production_contract_static_method_guard_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(PRODUCTION_STATIC_ALLOWED_METHODS.to_string()),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: serde_json::to_vec(&body).map_err(|error| {
             format!("Failed to serialize static method guard response: {error}")
         })?,
@@ -659,7 +659,7 @@ fn production_contract_server_action_response(
         return Ok(None);
     };
     let action_id = action["action_id"].as_str().ok_or_else(|| {
-        format!("Server action {path} is missing action_id in deploy-adapter.json")
+        format!("Server action {path} is missing action_id in .dx/build-cache/deploy-adapter.json")
     })?;
     let method = action["method"].as_str().unwrap_or("POST");
     if request.method == "OPTIONS" {
@@ -686,7 +686,7 @@ fn production_contract_server_action_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: None,
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: body.into_bytes(),
     }))
 }
@@ -703,7 +703,7 @@ fn server_action_options_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(server_action_allowed_methods(method)),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: Vec::new(),
     })
 }
@@ -729,7 +729,7 @@ fn server_action_method_not_allowed_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(server_action_allowed_methods(method)),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: serde_json::to_vec(&body)
             .map_err(|error| format!("Failed to serialize server action 405 response: {error}"))?,
     })
@@ -760,7 +760,7 @@ fn server_action_failed_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: None,
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: serde_json::to_vec(&body).map_err(|error| {
             format!("Failed to serialize server action error response: {error}")
         })?,
@@ -768,11 +768,11 @@ fn server_action_failed_response(
 }
 
 pub(super) fn read_deploy_adapter_contract(build_dir: &Path) -> Result<serde_json::Value, String> {
-    let contract_path = build_dir.join("deploy-adapter.json");
+    let contract_path = build_dir.join(".dx/build-cache/deploy-adapter.json");
     let contract_json = std::fs::read_to_string(&contract_path)
-        .map_err(|error| format!("Failed to read deploy-adapter.json: {error}"))?;
+        .map_err(|error| format!("Failed to read .dx/build-cache/deploy-adapter.json: {error}"))?;
     serde_json::from_str(&contract_json)
-        .map_err(|error| format!("Failed to parse deploy-adapter.json: {error}"))
+        .map_err(|error| format!("Failed to parse .dx/build-cache/deploy-adapter.json: {error}"))
 }
 
 fn read_production_observability_contract(
@@ -784,7 +784,7 @@ fn read_production_observability_contract(
         .unwrap_or(PRODUCTION_OBSERVABILITY_JSON);
     let path = safe_production_contract_file(build_dir, metadata_path)?;
     let json = std::fs::read_to_string(&path).map_err(|error| {
-        format!("Failed to read {metadata_path} from deploy-adapter.json: {error}")
+        format!("Failed to read {metadata_path} from .dx/build-cache/deploy-adapter.json: {error}")
     })?;
     serde_json::from_str(&json).map_err(|error| format!("Failed to parse {metadata_path}: {error}"))
 }
@@ -870,7 +870,7 @@ fn production_contract_health_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(allowed_methods.join(", ")),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: serde_json::to_vec(&body)
             .map_err(|error| format!("Failed to serialize health response: {error}"))?,
     }))
@@ -926,7 +926,7 @@ fn production_contract_health_options_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(allowed_methods.join(", ")),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: Vec::new(),
     }
 }
@@ -951,7 +951,7 @@ fn production_contract_health_method_not_allowed_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(allowed_methods.join(", ")),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: serde_json::to_vec(&body)
             .map_err(|error| format!("Failed to serialize health 405 response: {error}"))?,
     })
@@ -1010,7 +1010,7 @@ fn production_contract_ready_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(PRODUCTION_STATIC_ALLOWED_METHODS.to_string()),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: serde_json::to_vec(&body)
             .map_err(|error| format!("Failed to serialize ready response: {error}"))?,
     }))
@@ -1048,7 +1048,7 @@ fn production_contract_observability_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(PRODUCTION_STATIC_ALLOWED_METHODS.to_string()),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: serde_json::to_vec(&observability)
             .map_err(|error| format!("Failed to serialize observability response: {error}"))?,
     }))
@@ -1063,7 +1063,7 @@ fn production_contract_internal_options_response(_path: &str) -> DxProductionPre
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(PRODUCTION_STATIC_ALLOWED_METHODS.to_string()),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: Vec::new(),
     }
 }
@@ -1088,7 +1088,7 @@ fn production_contract_internal_method_not_allowed_response(
         last_modified: None,
         vary_accept_encoding: false,
         allow: Some(PRODUCTION_STATIC_ALLOWED_METHODS.to_string()),
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body: serde_json::to_vec(&body).map_err(|error| {
             format!("Failed to serialize production internal method guard response: {error}")
         })?,
@@ -1110,7 +1110,7 @@ fn read_production_contract_file(
     } else {
         std::fs::read(&file_path).map_err(|error| {
             format!(
-                "Failed to read contract file {relative_path} from deploy-adapter.json: {error}"
+                "Failed to read contract file {relative_path} from .dx/build-cache/deploy-adapter.json: {error}"
             )
         })?
     };
@@ -1122,7 +1122,7 @@ fn read_production_contract_file(
         last_modified,
         vary_accept_encoding,
         allow: None,
-        contract_path: "deploy-adapter.json".to_string(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
         body,
     })
 }
@@ -1279,13 +1279,13 @@ fn parse_http_quality(value: &str) -> u16 {
 fn safe_production_contract_file(build_dir: &Path, relative_path: &str) -> Result<PathBuf, String> {
     if relative_path.is_empty() || relative_path.contains('\\') {
         return Err(format!(
-            "Unsafe deploy-adapter.json file path: {relative_path}"
+            "Unsafe .dx/build-cache/deploy-adapter.json file path: {relative_path}"
         ));
     }
     let path = Path::new(relative_path);
     if path.is_absolute() {
         return Err(format!(
-            "deploy-adapter.json file paths must be relative: {relative_path}"
+            ".dx/build-cache/deploy-adapter.json file paths must be relative: {relative_path}"
         ));
     }
     let mut output = build_dir.to_path_buf();
@@ -1294,7 +1294,7 @@ fn safe_production_contract_file(build_dir: &Path, relative_path: &str) -> Resul
             std::path::Component::Normal(part) => output.push(part),
             _ => {
                 return Err(format!(
-                    "deploy-adapter.json file path cannot escape build output: {relative_path}"
+                    ".dx/build-cache/deploy-adapter.json file path cannot escape build output: {relative_path}"
                 ));
             }
         }
@@ -1386,8 +1386,8 @@ fn production_contract_not_found(path: &str) -> DxProductionPreviewResponse {
         last_modified: None,
         vary_accept_encoding: false,
         allow: None,
-        contract_path: "deploy-adapter.json".to_string(),
-        body: format!("{path} is not listed in deploy-adapter.json").into_bytes(),
+        contract_path: ".dx/build-cache/deploy-adapter.json".to_string(),
+        body: format!("{path} is not listed in .dx/build-cache/deploy-adapter.json").into_bytes(),
     }
 }
 
@@ -1425,7 +1425,7 @@ mod tests {
         std::fs::create_dir_all(output.join("app")).expect("app dir");
         std::fs::write(output.join("app/index.html"), "<!doctype html><h1>DX</h1>").expect("html");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [],
@@ -1457,7 +1457,7 @@ mod tests {
         std::fs::create_dir_all(output.join("app")).expect("app dir");
         std::fs::write(output.join("app/index.html"), "<!doctype html><h1>DX</h1>").expect("html");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [],
@@ -1490,7 +1490,7 @@ mod tests {
         std::fs::write(output.join("app/index.html"), "<!doctype html><h1>DX</h1>").expect("html");
         std::fs::write(output.join("chunks/app.mjs"), b"console.log('dx');").expect("asset");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [
@@ -1550,7 +1550,7 @@ mod tests {
         .expect("logo");
         std::fs::write(output.join("public/logo.svg.br"), b"br-logo").expect("br logo");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [],
                 "immutable_assets": [
@@ -1600,7 +1600,7 @@ mod tests {
         std::fs::create_dir_all(output.join("app")).expect("app dir");
         std::fs::write(output.join("app/index.html"), "<!doctype html><h1>DX</h1>").expect("html");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [],
@@ -1643,7 +1643,7 @@ mod tests {
         std::fs::create_dir_all(output.join("app")).expect("app dir");
         std::fs::write(output.join("app/index.html"), "<!doctype html><h1>DX</h1>").expect("html");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [],
@@ -1683,7 +1683,7 @@ mod tests {
         std::fs::create_dir_all(output.join("app")).expect("app dir");
         std::fs::write(output.join("app/index.html"), "<!doctype html><h1>DX</h1>").expect("html");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [],
@@ -1725,7 +1725,7 @@ mod tests {
         std::fs::create_dir_all(output.join("app")).expect("app dir");
         std::fs::write(output.join("app/index.html"), "abcdef").expect("html");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [],
@@ -1757,7 +1757,7 @@ mod tests {
         std::fs::create_dir_all(output.join("app")).expect("app dir");
         std::fs::write(output.join("app/index.html"), "abcdef").expect("html");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [],
@@ -1788,7 +1788,7 @@ mod tests {
         std::fs::create_dir_all(output.join("app")).expect("app dir");
         std::fs::write(output.join("app/index.html"), "abcdef").expect("html");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [{"path": "/", "html": "app/index.html"}],
                 "immutable_assets": [],
@@ -1847,7 +1847,7 @@ mod tests {
         let dir = tempfile::tempdir().expect("tempdir");
         let output = dir.path();
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [],
                 "immutable_assets": [],
@@ -1935,7 +1935,7 @@ mod tests {
         std::fs::create_dir_all(output.join("chunks")).expect("chunks dir");
         std::fs::write(output.join("chunks/app.mjs.br"), b"compressed-js").expect("asset");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [],
                 "immutable_assets": [
@@ -1974,7 +1974,7 @@ mod tests {
         std::fs::write(output.join("chunks/app.mjs.br"), b"br-js").expect("br asset");
         std::fs::write(output.join("chunks/app.mjs.gz"), b"gzip-js").expect("gzip asset");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [],
                 "immutable_assets": [
@@ -2041,7 +2041,7 @@ mod tests {
         std::fs::write(output.join("chunks/app.mjs.br"), b"br-js").expect("br asset");
         std::fs::write(output.join("chunks/app.mjs.gz"), b"gzip-js").expect("gzip asset");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [
                     {
@@ -2145,7 +2145,7 @@ mod tests {
         let dir = tempfile::tempdir().expect("tempdir");
         let output = dir.path();
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [],
                 "immutable_assets": [],
@@ -2183,7 +2183,7 @@ mod tests {
         let dir = tempfile::tempdir().expect("tempdir");
         let output = dir.path();
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [],
                 "immutable_assets": [],
@@ -2218,7 +2218,7 @@ mod tests {
         let dir = tempfile::tempdir().expect("tempdir");
         let output = dir.path();
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::json!({
                 "routes": [],
                 "immutable_assets": [],

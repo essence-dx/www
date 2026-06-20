@@ -157,7 +157,7 @@ pub(crate) const READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_SR: &str =
     ".dx/receipts/readiness/bundle-provider-replay-latest.sr";
 pub(crate) const READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_MACHINE: &str =
     ".dx/serializer/receipts-readiness-bundle-provider-replay-latest.machine";
-pub(crate) const READINESS_BUNDLE_PROVIDER_REPLAY_COLLECT_COMMAND: &str = "node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <hosted-url> --deploy-adapter examples/template/.dx/www/output/deploy-adapter.json --provider-adapter examples/template/.dx/www/output/provider-adapter.dx-cloud.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/bundle-provider-replay-latest.json";
+pub(crate) const READINESS_BUNDLE_PROVIDER_REPLAY_COLLECT_COMMAND: &str = "node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <hosted-url> --deploy-adapter examples/template/.dx/www/output/.dx/build-cache/deploy-adapter.json --provider-adapter examples/template/.dx/www/output/.dx/build-cache/provider-adapter.dx-cloud.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/bundle-provider-replay-latest.json";
 pub(crate) const READINESS_PRODUCTION_HTTP_SCHEMA: &str = "dx.www.readiness.production_http";
 pub(crate) const READINESS_PRODUCTION_HTTP_RECEIPT_CONTRACT: &str =
     "dx.www.readiness.production_http_local_replay_receipt_contract";
@@ -194,7 +194,7 @@ pub(crate) const READINESS_ROUTE_HANDLER_PROVIDER_RECEIPT_SR: &str =
     ".dx/receipts/readiness/route-handler-provider-replay-latest.sr";
 pub(crate) const READINESS_ROUTE_HANDLER_PROVIDER_RECEIPT_MACHINE: &str =
     ".dx/serializer/receipts-readiness-route-handler-provider-replay-latest.machine";
-pub(crate) const READINESS_ROUTE_HANDLER_PROVIDER_COLLECT_COMMAND: &str = "node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <hosted-url> --matrix examples/template/.dx/www/output/route-handler-conformance-matrix.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/route-handler-provider-replay-latest.json";
+pub(crate) const READINESS_ROUTE_HANDLER_PROVIDER_COLLECT_COMMAND: &str = "node benchmarks/dx-www-route-handler-provider-replay.ts --base-url <hosted-url> --matrix examples/template/.dx/www/output/.dx/build-cache/route-handler-conformance-matrix.json --hosted-provider --out .dx/receipts/readiness/browser-import-candidates/route-handler-provider-replay-latest.json";
 pub(crate) const READINESS_ISLAND_ABI_SCHEMA: &str = "dx.www.readiness.island_abi";
 pub(crate) const READINESS_ISLAND_ABI_RECEIPT_CONTRACT: &str =
     "dx.www.readiness.island_abi_receipt_contract";
@@ -2023,10 +2023,10 @@ mod tests {
         let output = project.path().join(".dx/www/output");
         std::fs::create_dir_all(&output).expect("output dir");
         std::fs::write(
-            output.join("deploy-adapter.json"),
+            output.join(".dx/build-cache/deploy-adapter.json"),
             serde_json::to_string_pretty(&json!({
                 "provider_adapter": {
-                    "path": "provider-adapter.dx-cloud.json"
+                    "path": ".dx/build-cache/provider-adapter.dx-cloud.json"
                 },
                 "bundle_partition": readiness_bundle_partition()
             }))
@@ -2034,7 +2034,7 @@ mod tests {
         )
         .expect("write deploy adapter");
         std::fs::write(
-            output.join("provider-adapter.dx-cloud.json"),
+            output.join(".dx/build-cache/provider-adapter.dx-cloud.json"),
             serde_json::to_string_pretty(&json!({
                 "bundle_partition": readiness_bundle_partition(),
                 "upload_plan": [
@@ -2044,7 +2044,7 @@ mod tests {
                         "cache_control": "public, max-age=0, must-revalidate"
                     },
                     {
-                        "path": "deploy-adapter.json",
+                        "path": ".dx/build-cache/deploy-adapter.json",
                         "bundle": "evidence",
                         "cache_control": "no-store"
                     },
@@ -3015,7 +3015,7 @@ mod tests {
             "status": "local-replay-ledger-current-provider-proof-needed",
             "release_ready": false,
             "fastest_world_claim": false,
-            "ledger_path": ".dx/www/output/server-action-replay-ledger.json",
+            "ledger_path": ".dx/www/output/.dx/build-cache/server-action-replay-ledger.json",
             "ledger_present": true,
             "ledger_schema": "dx.www.server_action.replay_ledger",
             "ledger_release_ready": false,
@@ -3706,8 +3706,8 @@ fn write_readiness_proof_graph_receipt_with_command(
         "command": command,
         "proof_scope": proof_scope,
         "inputs": [
-            "manifest.json",
-            "deploy-adapter.json",
+            ".dx/build-cache/manifest.json",
+            ".dx/build-cache/deploy-adapter.json",
             "readiness_gate_status",
             "proof_nodes",
             "same-machine-performance",
@@ -4495,8 +4495,8 @@ fn write_readiness_local_proof_graph_receipt(project: &Path) -> DxResult<Value> 
 
 fn readiness_local_build_manifest_hash(project: &Path) -> String {
     [
-        ".dx/www/output/manifest.json",
-        "examples/template/.dx/www/output/manifest.json",
+        ".dx/www/output/.dx/build-cache/manifest.json",
+        "examples/template/.dx/www/output/.dx/build-cache/manifest.json",
     ]
     .iter()
     .find_map(|relative| file_blake3_hex(&project.join(relative)))
@@ -5605,11 +5605,11 @@ fn write_readiness_server_action_replay_ledger_receipt(project: &Path) -> DxResu
 }
 
 fn readiness_server_action_replay_ledger_path(project: &Path) -> String {
-    let root_output = ".dx/www/output/server-action-replay-ledger.json";
+    let root_output = ".dx/www/output/.dx/build-cache/server-action-replay-ledger.json";
     if project.join(root_output).is_file() {
         root_output.to_string()
     } else {
-        "examples/template/.dx/www/output/server-action-replay-ledger.json".to_string()
+        "examples/template/.dx/www/output/.dx/build-cache/server-action-replay-ledger.json".to_string()
     }
 }
 
@@ -6440,7 +6440,7 @@ fn write_readiness_production_http_fixture(fixture_dir: &Path) -> DxResult<()> {
     });
     write_readiness_json_receipt(
         fixture_dir,
-        "deploy-adapter.json",
+        ".dx/build-cache/deploy-adapter.json",
         &contract,
         "production HTTP local replay fixture deploy adapter",
     )
@@ -8655,7 +8655,7 @@ fn readiness_bundle_partition_artifacts(project: &Path) -> ReadinessBundlePartit
         ),
     ];
     for (artifact_root, artifact_source, output_relative) in candidates {
-        let deploy_adapter_relative = format!("{output_relative}/deploy-adapter.json");
+        let deploy_adapter_relative = format!("{output_relative}/.dx/build-cache/deploy-adapter.json");
         let deploy_adapter_path = project.join(&deploy_adapter_relative);
         if !deploy_adapter_path.is_file() {
             continue;
@@ -8665,7 +8665,7 @@ fn readiness_bundle_partition_artifacts(project: &Path) -> ReadinessBundlePartit
             .as_ref()
             .and_then(|adapter| adapter["provider_adapter"]["path"].as_str())
             .map(|path| format!("{output_relative}/{path}"))
-            .unwrap_or_else(|| format!("{output_relative}/provider-adapter.dx-cloud.json"));
+            .unwrap_or_else(|| format!("{output_relative}/.dx/build-cache/provider-adapter.dx-cloud.json"));
         let provider_adapter = read_json_file(&project.join(&provider_adapter_relative));
         return ReadinessBundlePartitionArtifacts {
             artifact_root: artifact_root.to_string(),
@@ -8680,8 +8680,8 @@ fn readiness_bundle_partition_artifacts(project: &Path) -> ReadinessBundlePartit
     ReadinessBundlePartitionArtifacts {
         artifact_root: ".".to_string(),
         artifact_source: "project-root-output",
-        deploy_adapter_relative: ".dx/www/output/deploy-adapter.json".to_string(),
-        provider_adapter_relative: ".dx/www/output/provider-adapter.dx-cloud.json".to_string(),
+        deploy_adapter_relative: ".dx/www/output/.dx/build-cache/deploy-adapter.json".to_string(),
+        provider_adapter_relative: ".dx/www/output/.dx/build-cache/provider-adapter.dx-cloud.json".to_string(),
         deploy_adapter: None,
         provider_adapter: None,
     }
@@ -8691,17 +8691,17 @@ fn readiness_bundle_evidence_only_path(path: &str) -> bool {
     let normalized = path.replace('\\', "/");
     let decoded = readiness_decoded_precompressed_path_str(&normalized);
     decoded.starts_with(".dx/")
-        || decoded.starts_with("source-routes/")
+        || decoded.starts_with(".dx/build-cache/source-routes/")
         || decoded.ends_with(".sr")
         || decoded.ends_with(".machine")
-        || decoded == "deploy-adapter.json"
-        || decoded == "provider-adapter.dx-cloud.json"
-        || decoded == "provider-adapter-smoke-matrix.json"
-        || decoded == "route-handler-conformance-matrix.json"
-        || decoded == "server-action-replay-ledger.json"
-        || decoded == "cache-manifest.json"
-        || decoded == "rollback.json"
-        || decoded == "manifest.json"
+        || decoded == ".dx/build-cache/deploy-adapter.json"
+        || decoded == ".dx/build-cache/provider-adapter.dx-cloud.json"
+        || decoded == ".dx/build-cache/provider-adapter-smoke-matrix.json"
+        || decoded == ".dx/build-cache/route-handler-conformance-matrix.json"
+        || decoded == ".dx/build-cache/server-action-replay-ledger.json"
+        || decoded == ".dx/build-cache/cache-manifest.json"
+        || decoded == ".dx/build-cache/rollback.json"
+        || decoded == ".dx/build-cache/manifest.json"
         || decoded.ends_with("/page-graph.json")
         || decoded.ends_with("/app-router-execution.json")
         || decoded.ends_with("/client-islands.json")
@@ -8720,9 +8720,9 @@ fn readiness_precompressed_artifact_path(path: &str) -> bool {
 
 fn readiness_precompressed_evidence_path_samples() -> Vec<&'static str> {
     vec![
-        "deploy-adapter.json.br",
-        "cache-manifest.json.gz",
-        "source-routes/root/route-unit.json.br",
+        ".dx/build-cache/deploy-adapter.json.br",
+        ".dx/build-cache/cache-manifest.json.gz",
+        ".dx/build-cache/source-routes/root/route-unit.json.br",
         ".dx/receipts/readiness/proof-graph.sr.gz",
     ]
 }
@@ -10564,7 +10564,7 @@ fn readiness_proof_graph() -> Value {
                 "tiny-static",
                 "compiler-fallback-and-public-byte-trim-wired",
                 "source-receipt-contract",
-                vec!["tier-0-static-no-js-source-only", "tiny_static_route_proof", "no_js_capable", "script_tag_count=0", "browser_js_budget_bytes=0", "runtime_required == false", "browser_api_required == false", "semantic_landmark_present", "link_count", "form_count", "seo_title_present", "accessibility_signal_count", "links_forms_seo_accessibility_fact_status", "astro_parity_status=not_yet_claimed", "astro_parity_claimed=false", "live_astro_parity_receipt=missing", "data-dx-output-mode=tiny-static", "data-dx-js=none", "route_public_packet_required", "remove_stale_route_packet", "no public route packet for no_js_capable routes", "no stale index.dxpk for tiny-static no-JS routes", "no stale server-data.json for tiny-static no-JS routes", "react_app_route_static_mode_emits_tiny_static_no_js_shell", READINESS_NO_JS_ARTIFACT_RECEIPT_CONTRACT, READINESS_NO_JS_ARTIFACT_RECEIPT, READINESS_NO_JS_ARTIFACT_RECEIPT_SR, READINESS_NO_JS_ARTIFACT_RECEIPT_MACHINE, READINESS_CANONICAL_STARTER_OUTPUT_HTML, "source-only local tiny-static contract; no live Astro payload/paint/throughput replay receipt yet", "source-only HTML/CSS no-JS proof; not live Astro payload/paint/throughput parity", "source-routes are excluded from deploy immutable public assets", "source-routes/**/route-unit.json is evidence-only"],
+                vec!["tier-0-static-no-js-source-only", "tiny_static_route_proof", "no_js_capable", "script_tag_count=0", "browser_js_budget_bytes=0", "runtime_required == false", "browser_api_required == false", "semantic_landmark_present", "link_count", "form_count", "seo_title_present", "accessibility_signal_count", "links_forms_seo_accessibility_fact_status", "astro_parity_status=not_yet_claimed", "astro_parity_claimed=false", "live_astro_parity_receipt=missing", "data-dx-output-mode=tiny-static", "data-dx-js=none", "route_public_packet_required", "remove_stale_route_packet", "no public route packet for no_js_capable routes", "no stale index.dxpk for tiny-static no-JS routes", "no stale server-data.json for tiny-static no-JS routes", "react_app_route_static_mode_emits_tiny_static_no_js_shell", READINESS_NO_JS_ARTIFACT_RECEIPT_CONTRACT, READINESS_NO_JS_ARTIFACT_RECEIPT, READINESS_NO_JS_ARTIFACT_RECEIPT_SR, READINESS_NO_JS_ARTIFACT_RECEIPT_MACHINE, READINESS_CANONICAL_STARTER_OUTPUT_HTML, "source-only local tiny-static contract; no live Astro payload/paint/throughput replay receipt yet", "source-only HTML/CSS no-JS proof; not live Astro payload/paint/throughput parity", "source-routes are excluded from deploy immutable public assets", ".dx/build-cache/source-routes/**/route-unit.json is evidence-only"],
                 vec!["tiny_static_route_proof", "deploy_routes_do_not_invent_tiny_static_packet_paths", "dx_preview_production_contract_serves_only_deploy_adapter_outputs", "react_app_route_static_mode_emits_tiny_static_no_js_shell", READINESS_NO_JS_ARTIFACT_RECEIPT],
                 true,
                 Some("Astro tiny-static payload, paint, and throughput parity remains a live benchmark proof gate; current evidence is compiler/source-contract only"),
@@ -10573,8 +10573,8 @@ fn readiness_proof_graph() -> Value {
                 "public-vs-evidence-bundle",
                 "deploy-upload-plan-partition-and-vercel-public-materialization-wired",
                 "source-receipt-contract",
-                vec!["deploy-adapter.json/bundle_partition", "provider-adapter/upload_plan/bundle", ".vercel/output/static", "dx deploy vercel copies public-runtime artifacts only", "vercel_build_output.evidence_excluded_from_public_output", "public_runtime_content_hash", "public_runtime_artifact_count", "evidence_artifact_count", "bundle_partition_source", READINESS_BUNDLE_PARTITION_RECEIPT_CONTRACT, READINESS_BUNDLE_PARTITION_RECEIPT, READINESS_BUNDLE_PARTITION_RECEIPT_SR, READINESS_BUNDLE_PARTITION_RECEIPT_MACHINE, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_CONTRACT, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_SR, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_MACHINE, READINESS_BUNDLE_PROVIDER_REPLAY_COLLECT_COMMAND, "hosted-public-evidence-bundle-replay-current", "local-public-evidence-partition-current", "provider-adapter-smoke-matrix.json", "public-framework-tools.test.ts", "page-graph.json evidence-only", r#"normalized.ends_with("/page-graph.json")"#, "materialize_vercel_build_output_keeps_tiny_static_public_and_evidence_private", "normalized_public_artifact_path_rejects_evidence_and_dot_dx_paths", "public_runtime_artifact_plan_counts_evidence_but_returns_only_public_paths", "copy_public_runtime_artifacts_leaves_receipts_outside_vercel_static", "source-only local deploy contract; no hosted multi-provider evidence-bundle replay receipt yet", "source-only local deploy contract; hosted multi-provider evidence-bundle replay receipt required", READINESS_PROOF_GRAPH_RECEIPT],
-                vec!["deploy-adapter.json", "provider-adapter.dx-cloud.json", "provider-adapter-smoke-matrix.json", READINESS_BUNDLE_PARTITION_RECEIPT, READINESS_BUNDLE_PARTITION_RECEIPT_SR, READINESS_BUNDLE_PARTITION_RECEIPT_MACHINE, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_SR, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_MACHINE, READINESS_PROOF_GRAPH_RECEIPT],
+                vec![".dx/build-cache/deploy-adapter.json/bundle_partition", "provider-adapter/upload_plan/bundle", ".vercel/output/static", "dx deploy vercel copies public-runtime artifacts only", "vercel_build_output.evidence_excluded_from_public_output", "public_runtime_content_hash", "public_runtime_artifact_count", "evidence_artifact_count", "bundle_partition_source", READINESS_BUNDLE_PARTITION_RECEIPT_CONTRACT, READINESS_BUNDLE_PARTITION_RECEIPT, READINESS_BUNDLE_PARTITION_RECEIPT_SR, READINESS_BUNDLE_PARTITION_RECEIPT_MACHINE, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_CONTRACT, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_SR, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_MACHINE, READINESS_BUNDLE_PROVIDER_REPLAY_COLLECT_COMMAND, "hosted-public-evidence-bundle-replay-current", "local-public-evidence-partition-current", ".dx/build-cache/provider-adapter-smoke-matrix.json", "public-framework-tools.test.ts", "page-graph.json evidence-only", r#"normalized.ends_with("/page-graph.json")"#, "materialize_vercel_build_output_keeps_tiny_static_public_and_evidence_private", "normalized_public_artifact_path_rejects_evidence_and_dot_dx_paths", "public_runtime_artifact_plan_counts_evidence_but_returns_only_public_paths", "copy_public_runtime_artifacts_leaves_receipts_outside_vercel_static", "source-only local deploy contract; no hosted multi-provider evidence-bundle replay receipt yet", "source-only local deploy contract; hosted multi-provider evidence-bundle replay receipt required", READINESS_PROOF_GRAPH_RECEIPT],
+                vec![".dx/build-cache/deploy-adapter.json", ".dx/build-cache/provider-adapter.dx-cloud.json", ".dx/build-cache/provider-adapter-smoke-matrix.json", READINESS_BUNDLE_PARTITION_RECEIPT, READINESS_BUNDLE_PARTITION_RECEIPT_SR, READINESS_BUNDLE_PARTITION_RECEIPT_MACHINE, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_SR, READINESS_BUNDLE_PROVIDER_REPLAY_RECEIPT_MACHINE, READINESS_PROOF_GRAPH_RECEIPT],
                 true,
                 Some("Provider-hosted public/evidence split replay remains required across release adapters; current evidence is local upload-plan/materialization only."),
             ),
@@ -10693,15 +10693,15 @@ fn readiness_proof_graph() -> Value {
                     "axum-static-responder-parity",
                     "provider-bound-cdn-cache-replay",
                     "hosted-provider-adapter-replay",
-                    "cache-manifest.json",
+                    ".dx/build-cache/cache-manifest.json",
                     "cdn_headers",
                 ],
                 vec![
                     READINESS_PRODUCTION_HTTP_RECEIPT,
                     READINESS_PRODUCTION_HTTP_RECEIPT_SR,
                     READINESS_PRODUCTION_HTTP_RECEIPT_MACHINE,
-                    "cache-manifest.json",
-                    "provider-adapter-smoke-matrix.json",
+                    ".dx/build-cache/cache-manifest.json",
+                    ".dx/build-cache/provider-adapter-smoke-matrix.json",
                 ],
                 true,
                 Some("Local production HTTP wire replay is receipt-addressable when regenerated; Browser, TCP preview server, live Axum/server transport parity, provider-bound CDN, canonical preview, and hosted-provider proof remain release-readiness gates."),
@@ -10710,8 +10710,8 @@ fn readiness_proof_graph() -> Value {
                 "route-action-runtime",
                 "method-schema-replay-error-foundation",
                 "runtime-receipt-contract",
-                vec!["route-handler-receipts.json", "server-action-protocols.json", "server-action-runtime.json", "server-action-replay-ledger.json", READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT_CONTRACT, READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT, READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT_SR, READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT_MACHINE, "csrf_hook", "session_hook", "replay_protection", "provider_proof_gap_ids", "distributed-idempotency-store", "provider-request-cancellation-replay", "405 Method Not Allowed", "400 Bad Request"],
-                vec!["route-handler-receipts.json", "server-action-protocols.json", "server-action-runtime.json", "server-action-replay-ledger.json", READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT],
+                vec![".dx/build-cache/route-handler-receipts.json", "server-action-protocols.json", "server-action-runtime.json", ".dx/build-cache/server-action-replay-ledger.json", READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT_CONTRACT, READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT, READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT_SR, READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT_MACHINE, "csrf_hook", "session_hook", "replay_protection", "provider_proof_gap_ids", "distributed-idempotency-store", "provider-request-cancellation-replay", "405 Method Not Allowed", "400 Bad Request"],
+                vec![".dx/build-cache/route-handler-receipts.json", "server-action-protocols.json", "server-action-runtime.json", ".dx/build-cache/server-action-replay-ledger.json", READINESS_SERVER_ACTION_REPLAY_LEDGER_RECEIPT],
                 true,
                 Some("Provider-hosted route-handler matrix, distributed replay, and CSRF/session proof remain release-readiness gates."),
             ),
@@ -10728,8 +10728,8 @@ fn readiness_proof_graph() -> Value {
                 "route-handler-server-action-proof-gaps",
                 "foundation-proven-breadth-gaps-remain",
                 "runtime-receipt-contract",
-                vec!["route-handler-conformance-matrix.json", "server-action-replay-ledger.json", "provider-adapter-smoke-matrix.json", "dx_build_emits_hosted_preview_bundle_with_forge_receipts", "dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts", "dx_preview_production_contract_serves_only_deploy_adapter_outputs"],
-                vec!["route-handler-conformance-matrix.json", "server-action-replay-ledger.json", "provider-adapter-smoke-matrix.json"],
+                vec![".dx/build-cache/route-handler-conformance-matrix.json", ".dx/build-cache/server-action-replay-ledger.json", ".dx/build-cache/provider-adapter-smoke-matrix.json", "dx_build_emits_hosted_preview_bundle_with_forge_receipts", "dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts", "dx_preview_production_contract_serves_only_deploy_adapter_outputs"],
+                vec![".dx/build-cache/route-handler-conformance-matrix.json", ".dx/build-cache/server-action-replay-ledger.json", ".dx/build-cache/provider-adapter-smoke-matrix.json"],
                 true,
                 Some("Local dev/preview/deploy-adapter fixtures, the hash-only server-action replay ledger, and the account-free smoke matrix are proven; provider-hosted conformance, distributed server-action replay, and multi-provider deployed smoke remain release readiness breadth gates."),
             ),
@@ -10826,8 +10826,8 @@ fn readiness_proof_graph_receipt_contract() -> Value {
         "command": "dx build",
         "report_command": "dx www readiness --json --full",
         "inputs": [
-            "manifest.json",
-            "deploy-adapter.json",
+            ".dx/build-cache/manifest.json",
+            ".dx/build-cache/deploy-adapter.json",
             "readiness_gate_status",
             "proof_nodes",
             "same-machine-performance",
@@ -11199,21 +11199,21 @@ fn readiness_bundle_partition() -> Value {
             "deployable": true,
             "contains": ["html", "css", "immutable_assets", "needed_runtime_chunks"],
             "excludes": ["proof_graph_receipts", "build_evidence", "agent_context", "benchmark_claims"],
-            "materialization": "dx deploy vercel reads provider-adapter.dx-cloud.json upload_plan and copies only bundle=public-runtime artifacts into .vercel/output/static",
+            "materialization": "dx deploy vercel reads .dx/build-cache/provider-adapter.dx-cloud.json upload_plan and copies only bundle=public-runtime artifacts into .vercel/output/static",
             "materialization_receipt_shape": {
                 "vercel_build_output": {
                     "evidence_excluded_from_public_output": true,
                     "public_runtime_content_hash": "blake3:*",
                     "public_runtime_artifact_count": "usize",
                     "evidence_artifact_count": "usize",
-                    "bundle_partition_source": "provider-adapter.dx-cloud.json | deploy-adapter.json/bundle_partition | static-output-scan-fallback"
+                    "bundle_partition_source": ".dx/build-cache/provider-adapter.dx-cloud.json | .dx/build-cache/deploy-adapter.json/bundle_partition | static-output-scan-fallback"
                 }
             }
         },
         "evidence_bundle": {
             "deployable_public_bytes": false,
             "cache_control": "no-store",
-            "contains": [READINESS_PROOF_GRAPH_RECEIPT, ".dx/receipts/**", "deploy-adapter.json", "provider-adapter-smoke-matrix.json", "route-handler-conformance-matrix.json", "server-action-replay-ledger.json", "observability contracts"],
+            "contains": [READINESS_PROOF_GRAPH_RECEIPT, ".dx/receipts/**", ".dx/build-cache/deploy-adapter.json", ".dx/build-cache/provider-adapter-smoke-matrix.json", ".dx/build-cache/route-handler-conformance-matrix.json", ".dx/build-cache/server-action-replay-ledger.json", "observability contracts"],
             "serializer_contract": "sr"
         }
     })
@@ -11274,9 +11274,9 @@ fn readiness_production_http() -> Value {
             "Vary: Accept-Encoding for encoded assets and negotiable plain assets",
             "static OPTIONS returns 204 with Allow: GET, HEAD, OPTIONS",
             "unsafe static methods return 405 with Allow: GET, HEAD, OPTIONS",
-            "cache-manifest.json evidence",
+            ".dx/build-cache/cache-manifest.json evidence",
             "provider upload-plan CDN header metadata",
-            "provider-adapter-smoke-matrix.json local replay/account-free/upload-plan proof",
+            ".dx/build-cache/provider-adapter-smoke-matrix.json local replay/account-free/upload-plan proof",
             "production HTTP local wire replay JSON/SR/machine receipt",
             "source-owned Axum adapter parity delegates to the canonical production wire responder"
         ],
@@ -11299,8 +11299,8 @@ fn readiness_route_action_runtime() -> Value {
         "status": "source-owned-contract-foundation",
         "route_handlers": {
             "implemented": [
-                "route-handler-receipts.json for safe GET/HEAD build receipts",
-                "route-handler-conformance-matrix.json for local GET/HEAD/OPTIONS/405 expectations",
+                ".dx/build-cache/route-handler-receipts.json for safe GET/HEAD build receipts",
+                ".dx/build-cache/route-handler-conformance-matrix.json for local GET/HEAD/OPTIONS/405 expectations",
                 "safe_build_methods and skipped_build_methods in deploy metadata",
                 "declared_methods, implicit_methods, and public allowed methods in deploy metadata",
                 "HEAD health checks map to GET source methods when using the standard fallback",
@@ -11321,7 +11321,7 @@ fn readiness_route_action_runtime() -> Value {
             "implemented": [
                 "server-action-protocols.json",
                 "server-action-runtime.json",
-                "server-action-replay-ledger.json",
+                ".dx/build-cache/server-action-replay-ledger.json",
                 "typed request and response schemas",
                 "required CSRF hook",
                 "required session hook",
@@ -11418,9 +11418,9 @@ fn readiness_route_handler_server_action_gaps(full: bool) -> Value {
             "id": "route-handler-provider-conformance-matrix",
             "surface": "route-handler",
             "status": "breadth-proof-gap",
-            "issue": "route-handler-conformance-matrix.json now records local GET/HEAD/OPTIONS/405 expectations, but provider-hosted route-handler conformance is not broad enough for release-readiness claims.",
+            "issue": ".dx/build-cache/route-handler-conformance-matrix.json now records local GET/HEAD/OPTIONS/405 expectations, but provider-hosted route-handler conformance is not broad enough for release-readiness claims.",
             "evidence_test": "dx_build_emits_hosted_preview_bundle_with_forge_receipts",
-            "foundation_receipt": "route-handler-conformance-matrix.json",
+            "foundation_receipt": ".dx/build-cache/route-handler-conformance-matrix.json",
             "foundation_status": "local-route-handler-conformance-foundation",
             "next_proof": "provider-hosted GET/HEAD/OPTIONS/405 matrix with source receipts"
         },
@@ -11430,7 +11430,7 @@ fn readiness_route_handler_server_action_gaps(full: bool) -> Value {
             "status": "breadth-proof-gap",
             "issue": "Dev and production preview now prove protocol receipts, a hash-only local replay ledger, and structured 400 validation failures; distributed idempotency, provider CSRF/session integrations, provider request cancellation, and durable replay retention remain unproven.",
             "evidence_test": "dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts",
-            "foundation_receipt": "server-action-replay-ledger.json",
+            "foundation_receipt": ".dx/build-cache/server-action-replay-ledger.json",
             "foundation_status": "local-preview-hash-ledger",
             "provider_proof_gap_ids": READINESS_SERVER_ACTION_PROVIDER_GAP_IDS,
             "next_proof": "distributed idempotency store, provider-hosted CSRF/session, request cancellation, and durable replay matrix"
@@ -11439,9 +11439,9 @@ fn readiness_route_handler_server_action_gaps(full: bool) -> Value {
             "id": "production-contract-adapter-smoke-matrix",
             "surface": "production-preview-contract",
             "status": "breadth-proof-gap",
-            "issue": "Production preview and provider-adapter-smoke-matrix.json now prove local replay, the account-free adapter fixture, and upload-plan-only CDN metadata; multi-adapter hosted smoke proof is still required.",
+            "issue": "Production preview and .dx/build-cache/provider-adapter-smoke-matrix.json now prove local replay, the account-free adapter fixture, and upload-plan-only CDN metadata; multi-adapter hosted smoke proof is still required.",
             "evidence_test": "dx_preview_production_contract_serves_only_deploy_adapter_outputs",
-            "foundation_receipt": "provider-adapter-smoke-matrix.json",
+            "foundation_receipt": ".dx/build-cache/provider-adapter-smoke-matrix.json",
             "foundation_status": "local-smoke-matrix-emitted",
             "next_proof": "same contract replayed across at least two provider adapters with signed manifest promotion"
         }
@@ -15587,7 +15587,7 @@ fn readiness_proof_graph_sr_fields_for_command(
         (
             "inputs",
             sr_string(
-                "manifest.json;deploy-adapter.json;readiness_gate_status;proof_nodes;same-machine-performance;tiny-static-no-js-artifact;tiny-static-no-js-browser;lighthouse-paint-receipts;production-http-local-replay;production-http-tcp-preview;server-action-replay-ledger;route-handler-provider-replay;primitive-proof;native-event-catalog;native-event-browser-binder;island-abi;island-browser;reactivity-model;state-runtime-browser;bundle-partition;docs-onboarding-receipt;docs-onboarding-doctor;visual-edit-workbench-receipts;proof_graph",
+                ".dx/build-cache/manifest.json;.dx/build-cache/deploy-adapter.json;readiness_gate_status;proof_nodes;same-machine-performance;tiny-static-no-js-artifact;tiny-static-no-js-browser;lighthouse-paint-receipts;production-http-local-replay;production-http-tcp-preview;server-action-replay-ledger;route-handler-provider-replay;primitive-proof;native-event-catalog;native-event-browser-binder;island-abi;island-browser;reactivity-model;state-runtime-browser;bundle-partition;docs-onboarding-receipt;docs-onboarding-doctor;visual-edit-workbench-receipts;proof_graph",
             ),
         ),
         (
@@ -15841,10 +15841,10 @@ fn readiness_proof_graph_sr_fields_for_command(
         ),
         ("public_runtime_bundle", sr_bool(true)),
         ("evidence_bundle", sr_bool(true)),
-        ("cache_manifest", sr_string("cache-manifest.json")),
+        ("cache_manifest", sr_string(".dx/build-cache/cache-manifest.json")),
         (
             "provider_adapter_smoke_matrix",
-            sr_string("provider-adapter-smoke-matrix.json"),
+            sr_string(".dx/build-cache/provider-adapter-smoke-matrix.json"),
         ),
         ("precompressed_assets", sr_bool(true)),
         (

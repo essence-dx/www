@@ -436,12 +436,12 @@ where
 }
 
 fn read_manifest(project: &Path) -> anyhow::Result<DxSourceManifest> {
-    let manifest_path = project.join(".dx/forge/source-manifest.json");
+    let manifest_path = project.join(".dx/forge/source-.dx/build-cache/manifest.json");
     Ok(serde_json::from_slice(&fs::read(&manifest_path)?)?)
 }
 
 fn write_manifest(project: &Path, manifest: &DxSourceManifest) -> anyhow::Result<()> {
-    let manifest_path = project.join(".dx/forge/source-manifest.json");
+    let manifest_path = project.join(".dx/forge/source-.dx/build-cache/manifest.json");
     fs::write(&manifest_path, serde_json::to_string_pretty(manifest)?)?;
     Ok(())
 }

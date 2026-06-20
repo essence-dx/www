@@ -1225,13 +1225,13 @@ fn dx_build_emits_compiled_app_route_artifacts_without_node_modules() {
         .join(".dx/www/output/server-action-protocols.json")
         .exists());
     assert!(project
-        .join(".dx/www/output/import-resolution.json")
+        .join(".dx/www/output/.dx/build-cache/import-resolution.json")
         .exists());
-    assert!(project.join(".dx/www/output/deploy-adapter.json").exists());
-    assert!(project.join(".dx/www/output/rollback.json").exists());
+    assert!(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json").exists());
+    assert!(project.join(".dx/www/output/.dx/build-cache/rollback.json").exists());
     assert!(!project.join("node_modules").exists());
 
-    let manifest = read_json_value(project.join(".dx/www/output/manifest.json"));
+    let manifest = read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"));
     assert_eq!(manifest["app_routes_compiled"], 1);
     assert_eq!(manifest["server_data_entries_compiled"], 0);
     assert_eq!(manifest["server_contracts_compiled"], 0);
@@ -1240,7 +1240,7 @@ fn dx_build_emits_compiled_app_route_artifacts_without_node_modules() {
     assert_eq!(manifest["import_resolutions_compiled"], 1);
     assert_eq!(manifest["node_modules_required"], false);
 
-    let import_resolutions = read_json_value(project.join(".dx/www/output/import-resolution.json"));
+    let import_resolutions = read_json_value(project.join(".dx/www/output/.dx/build-cache/import-resolution.json"));
     assert!(import_resolutions
         .as_array()
         .expect("import resolutions")
@@ -1249,7 +1249,7 @@ fn dx_build_emits_compiled_app_route_artifacts_without_node_modules() {
             |resolution| resolution["specifier"] == "../styles/globals.css"
                 && resolution["requires_node_modules"] == false
         ));
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     assert_eq!(deploy["adapter"], "dx-www-static-hosting");
     assert_eq!(deploy["no_node_modules_required"], true);
     let root_route = deploy["routes"]
@@ -1270,7 +1270,7 @@ fn dx_build_emits_compiled_app_route_artifacts_without_node_modules() {
         .as_array()
         .expect("health checks")
         .is_empty());
-    assert_eq!(deploy["build_manifest"]["path"], "manifest.json");
+    assert_eq!(deploy["build_manifest"]["path"], ".dx/build-cache/manifest.json");
     assert!(deploy["build_manifest"]["hash"]
         .as_str()
         .expect("manifest hash")
@@ -1279,15 +1279,15 @@ fn dx_build_emits_compiled_app_route_artifacts_without_node_modules() {
         deploy["build_manifest"]["signature_required_for_release"],
         true
     );
-    assert_eq!(deploy["rollback"]["metadata_path"], "rollback.json");
-    let provider = read_json_value(project.join(".dx/www/output/provider-adapter.dx-cloud.json"));
+    assert_eq!(deploy["rollback"]["metadata_path"], ".dx/build-cache/rollback.json");
+    let provider = read_json_value(project.join(".dx/www/output/.dx/build-cache/provider-adapter.dx-cloud.json"));
     assert!(provider["upload_plan"]
         .as_array()
         .expect("upload plan")
         .iter()
         .all(|artifact| artifact["path"] != "app/index.dxpk"
             && artifact["path"] != "app/docs/[[...slug]]/server-data.json"));
-    let rollback = read_json_value(project.join(".dx/www/output/rollback.json"));
+    let rollback = read_json_value(project.join(".dx/www/output/.dx/build-cache/rollback.json"));
     assert_eq!(rollback["manifest_hash"], deploy["build_manifest"]["hash"]);
 }
 
@@ -1305,7 +1305,7 @@ fn dx_build_mirrors_public_root_assets_for_native_static_entrypoints() {
     )
     .expect("mobile runtime");
     fs::write(
-        project.join("public/manifest.json"),
+        project.join("public/.dx/build-cache/manifest.json"),
         r#"{"name":"DX Mobile public manifest"}"#,
     )
     .expect("public manifest");
@@ -1333,10 +1333,10 @@ fn dx_build_mirrors_public_root_assets_for_native_static_entrypoints() {
             .expect("public mobile runtime")
     );
 
-    let build_manifest = read_json_value(project.join(".dx/www/output/manifest.json"));
+    let build_manifest = read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"));
     assert_eq!(build_manifest["app_routes_compiled"], 1);
     assert_eq!(
-        fs::read_to_string(project.join(".dx/www/output/public/manifest.json"))
+        fs::read_to_string(project.join(".dx/www/output/public/.dx/build-cache/manifest.json"))
             .expect("public manifest"),
         r#"{"name":"DX Mobile public manifest"}"#
     );
@@ -1678,7 +1678,7 @@ export function CounterList() {
         "native root index.html should mirror the final root app route after island stamping"
     );
 
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     assert!(deploy["routes"]
         .as_array()
         .expect("routes")
@@ -1688,7 +1688,7 @@ export function CounterList() {
                 && route["client_islands"] == "app/client-islands.json"
                 && route["client_islands_runtime"] == "app/client-islands.js"
         }));
-    let provider = read_json_value(project.join(".dx/www/output/provider-adapter.dx-cloud.json"));
+    let provider = read_json_value(project.join(".dx/www/output/.dx/build-cache/provider-adapter.dx-cloud.json"));
     assert!(provider["upload_plan"]
         .as_array()
         .expect("upload plan")
@@ -1903,7 +1903,7 @@ export function ProductCard() {
     assert!(css.contains(scoped_class));
     assert!(css.contains("color:var(--dx-accent)"));
     assert!(
-        read_json_value(project.join(".dx/www/output/manifest.json"))
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"))
             ["generated_style_assets_compiled"]
             .as_u64()
             .is_some_and(|count| count >= 1)
@@ -1965,7 +1965,7 @@ export function BuyButton() {
     );
     assert_eq!(streaming["resumable_islands"][0]["runtime"], "js");
 
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     assert!(deploy["routes"]
         .as_array()
         .expect("routes")
@@ -1974,7 +1974,7 @@ export function BuyButton() {
             route["path"] == "/" && route["streaming_plan"] == "app/streaming-plan.json"
         }));
     assert_eq!(
-        read_json_value(project.join(".dx/www/output/manifest.json"))["streaming_plans_compiled"],
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"))["streaming_plans_compiled"],
         7
     );
     assert!(!project.join("node_modules").exists());
@@ -2205,7 +2205,7 @@ export function GET() {
         "recordWelcomeView"
     );
 
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     assert_eq!(
         deploy["next_migration"]["path"],
         "next-migration-proof.json"
@@ -2219,17 +2219,17 @@ export function GET() {
         "next-adapter-fixtures.json"
     );
     assert_eq!(
-        read_json_value(project.join(".dx/www/output/manifest.json"))
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"))
             ["next_migration_proof_emitted"],
         true
     );
     assert_eq!(
-        read_json_value(project.join(".dx/www/output/manifest.json"))
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"))
             ["next_familiar_compatibility_evidence_emitted"],
         true
     );
     assert_eq!(
-        read_json_value(project.join(".dx/www/output/manifest.json"))
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"))
             ["next_adapter_fixtures_emitted"],
         true
     );
@@ -2446,12 +2446,12 @@ export default async function Page({ params }) {
             && route["server_data"] == "app/dashboard/[team]/server-data.json"));
     assert_eq!(fixtures["strict_runtime_proof"]["score"], 100);
 
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     assert_eq!(
         deploy["next_familiar_fixtures"]["path"],
         "next-familiar-fixtures.json"
     );
-    let provider = read_json_value(project.join(".dx/www/output/provider-adapter.dx-cloud.json"));
+    let provider = read_json_value(project.join(".dx/www/output/.dx/build-cache/provider-adapter.dx-cloud.json"));
     assert!(provider["upload_plan"]
         .as_array()
         .expect("upload plan")
@@ -2459,7 +2459,7 @@ export default async function Page({ params }) {
         .any(|artifact| artifact["path"] == "next-familiar-fixtures.json"
             && artifact["kind"] == "next-familiar-fixtures"));
     assert_eq!(
-        read_json_value(project.join(".dx/www/output/manifest.json"))
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"))
             ["next_familiar_fixtures_emitted"],
         true
     );
@@ -2477,14 +2477,14 @@ fn dx_build_emits_account_free_provider_adapter_fixture() {
     let project_cli = Cli::with_cwd(project.clone());
     project_cli.cmd_build().expect("dx build");
 
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     assert_eq!(
         deploy["provider_adapter"]["path"],
-        "provider-adapter.dx-cloud.json"
+        ".dx/build-cache/provider-adapter.dx-cloud.json"
     );
     assert_eq!(
         deploy["provider_adapter_smoke_matrix"]["path"],
-        "provider-adapter-smoke-matrix.json"
+        ".dx/build-cache/provider-adapter-smoke-matrix.json"
     );
     assert_eq!(
         deploy["provider_adapter_smoke_matrix"]["hosted_provider_proof"],
@@ -2495,9 +2495,9 @@ fn dx_build_emits_account_free_provider_adapter_fixture() {
         false
     );
 
-    let provider = read_json_value(project.join(".dx/www/output/provider-adapter.dx-cloud.json"));
+    let provider = read_json_value(project.join(".dx/www/output/.dx/build-cache/provider-adapter.dx-cloud.json"));
     let smoke_matrix =
-        read_json_value(project.join(".dx/www/output/provider-adapter-smoke-matrix.json"));
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/provider-adapter-smoke-matrix.json"));
     assert_eq!(provider["provider"], "dx-www-cloud-local");
     assert_eq!(provider["adapter_kind"], "account-free-fixture");
     assert_eq!(provider["requires_provider_account"], false);
@@ -2525,7 +2525,7 @@ fn dx_build_emits_account_free_provider_adapter_fixture() {
     );
     assert_eq!(
         provider["server_action_replay_ledger"]["path"],
-        "server-action-replay-ledger.json"
+        ".dx/build-cache/server-action-replay-ledger.json"
     );
     assert_eq!(
         provider["server_action_replay_ledger"]["mode"],
@@ -2569,19 +2569,19 @@ fn dx_build_emits_account_free_provider_adapter_fixture() {
         .expect("upload plan")
         .iter()
         .any(
-            |artifact| artifact["path"] == "provider-adapter.dx-cloud.json"
+            |artifact| artifact["path"] == ".dx/build-cache/provider-adapter.dx-cloud.json"
                 && artifact["account_required"] == false
         ));
     assert_eq!(
         provider["provider_adapter_smoke_matrix"]["path"],
-        "provider-adapter-smoke-matrix.json"
+        ".dx/build-cache/provider-adapter-smoke-matrix.json"
     );
     assert!(provider["upload_plan"]
         .as_array()
         .expect("upload plan")
         .iter()
         .any(
-            |artifact| artifact["path"] == "provider-adapter-smoke-matrix.json"
+            |artifact| artifact["path"] == ".dx/build-cache/provider-adapter-smoke-matrix.json"
                 && artifact["kind"] == "provider-adapter-smoke-matrix"
                 && artifact["bundle"] == "evidence"
                 && artifact["cache_control"] == "no-store"
@@ -2591,7 +2591,7 @@ fn dx_build_emits_account_free_provider_adapter_fixture() {
         .expect("upload plan")
         .iter()
         .any(
-            |artifact| artifact["path"] == "server-action-replay-ledger.json"
+            |artifact| artifact["path"] == ".dx/build-cache/server-action-replay-ledger.json"
                 && artifact["kind"] == "server-action-replay-ledger"
                 && artifact["bundle"] == "evidence"
                 && artifact["cache_control"] == "no-store"
@@ -2650,7 +2650,7 @@ fn dx_build_emits_hosted_preview_bundle_with_forge_receipts() {
         .expect("dx imports sync");
     project_cli.cmd_build().expect("dx build");
 
-    let hosted = read_json_value(project.join(".dx/www/output/hosted-preview.json"));
+    let hosted = read_json_value(project.join(".dx/www/output/.dx/build-cache/hosted-preview.json"));
     assert_eq!(hosted["deployment_kind"], "dx-www-hosted-preview-bundle");
     assert_eq!(hosted["requires_provider_account"], false);
     assert_eq!(hosted["network_required"], false);
@@ -2658,18 +2658,18 @@ fn dx_build_emits_hosted_preview_bundle_with_forge_receipts() {
     assert_eq!(hosted["node_modules_required"], false);
     assert_eq!(hosted["package_installs_executed"], false);
     assert_eq!(hosted["lifecycle_scripts_executed"], false);
-    assert_eq!(hosted["deploy_adapter"]["path"], "deploy-adapter.json");
+    assert_eq!(hosted["deploy_adapter"]["path"], ".dx/build-cache/deploy-adapter.json");
     assert_eq!(
         hosted["provider_adapter"]["path"],
-        "provider-adapter.dx-cloud.json"
+        ".dx/build-cache/provider-adapter.dx-cloud.json"
     );
     assert_eq!(
         hosted["forge"]["source_manifest"]["bundle_path"],
-        "forge/source-manifest.json"
+        "forge/source-.dx/build-cache/manifest.json"
     );
     assert_eq!(
         hosted["forge"]["template_manifest"]["bundle_path"],
-        "forge/template-manifest.json"
+        "forge/template-.dx/build-cache/manifest.json"
     );
     assert!(hosted["forge"]["receipt_count"].as_u64().unwrap_or(0) >= 2);
     assert!(hosted["forge"]["receipts"]
@@ -2684,7 +2684,7 @@ fn dx_build_emits_hosted_preview_bundle_with_forge_receipts() {
             && receipt["source_owned"] == true
             && receipt["lifecycle_scripts_executed"] == false));
     let hosted_source_manifest =
-        read_json_value(project.join(".dx/www/output/forge/source-manifest.json"));
+        read_json_value(project.join(".dx/www/output/forge/source-.dx/build-cache/manifest.json"));
     assert!(hosted_source_manifest["packages"]
         .as_array()
         .expect("hosted source manifest packages")
@@ -2710,35 +2710,35 @@ fn dx_build_emits_hosted_preview_bundle_with_forge_receipts() {
             == false));
 
     assert!(project
-        .join(".dx/www/output/forge/source-manifest.json")
+        .join(".dx/www/output/forge/source-.dx/build-cache/manifest.json")
         .is_file());
     assert!(project
-        .join(".dx/www/output/forge/template-manifest.json")
+        .join(".dx/www/output/forge/template-.dx/build-cache/manifest.json")
         .is_file());
     assert!(project.join(".dx/www/output/forge/receipts").is_dir());
 
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
-    assert_eq!(deploy["hosted_preview"]["path"], "hosted-preview.json");
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
+    assert_eq!(deploy["hosted_preview"]["path"], ".dx/build-cache/hosted-preview.json");
     assert_eq!(deploy["hosted_preview"]["requires_provider_account"], false);
     assert_eq!(
-        read_json_value(project.join(".dx/www/output/manifest.json"))
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"))
             ["hosted_preview_contract_emitted"],
         true
     );
 
-    let provider = read_json_value(project.join(".dx/www/output/provider-adapter.dx-cloud.json"));
-    assert_eq!(provider["hosted_preview"]["path"], "hosted-preview.json");
+    let provider = read_json_value(project.join(".dx/www/output/.dx/build-cache/provider-adapter.dx-cloud.json"));
+    assert_eq!(provider["hosted_preview"]["path"], ".dx/build-cache/hosted-preview.json");
     assert!(provider["upload_plan"]
         .as_array()
         .expect("upload plan")
         .iter()
-        .any(|artifact| artifact["path"] == "hosted-preview.json"
+        .any(|artifact| artifact["path"] == ".dx/build-cache/hosted-preview.json"
             && artifact["kind"] == "hosted-preview-contract"));
     assert!(provider["upload_plan"]
         .as_array()
         .expect("upload plan")
         .iter()
-        .any(|artifact| artifact["path"] == "forge/source-manifest.json"
+        .any(|artifact| artifact["path"] == "forge/source-.dx/build-cache/manifest.json"
             && artifact["kind"] == "forge-source-manifest"));
     assert!(provider["upload_plan"]
         .as_array()
@@ -2766,7 +2766,7 @@ fn dx_build_emits_forge_hosting_manifest_release_gate() {
         .expect("dx add ui/button");
     project_cli.cmd_build().expect("dx build");
 
-    let hosting = read_json_value(project.join(".dx/www/output/forge-hosting-manifest.json"));
+    let hosting = read_json_value(project.join(".dx/www/output/.dx/build-cache/forge-hosting-.dx/build-cache/manifest.json"));
     assert_eq!(
         hosting["manifest_kind"],
         "dx-www-forge-hosting-release-gate"
@@ -2785,7 +2785,7 @@ fn dx_build_emits_forge_hosting_manifest_release_gate() {
             .any(|blocker| blocker == "build-manifest-signature-required"),
         true
     );
-    assert_eq!(hosting["signed_manifest"]["path"], "manifest.json");
+    assert_eq!(hosting["signed_manifest"]["path"], ".dx/build-cache/manifest.json");
     assert_eq!(hosting["signed_manifest"]["signed"], false);
     assert_eq!(
         hosting["signed_manifest"]["signature_required_for_release"],
@@ -2795,12 +2795,12 @@ fn dx_build_emits_forge_hosting_manifest_release_gate() {
         hosting["signed_manifest"]["promotion_path"],
         "build-promotion.json"
     );
-    assert_eq!(hosting["rollback_inputs"]["metadata_path"], "rollback.json");
+    assert_eq!(hosting["rollback_inputs"]["metadata_path"], ".dx/build-cache/rollback.json");
     assert!(hosting["rollback_inputs"]["restore_order"]
         .as_array()
         .expect("restore order")
         .iter()
-        .any(|entry| entry == "deploy-adapter.json"));
+        .any(|entry| entry == ".dx/build-cache/deploy-adapter.json"));
     assert!(hosting["cache_headers"]
         .as_array()
         .expect("cache headers")
@@ -2835,36 +2835,36 @@ fn dx_build_emits_forge_hosting_manifest_release_gate() {
         .as_array()
         .expect("required artifacts")
         .iter()
-        .any(|artifact| artifact == "provider-adapter.dx-cloud.json"));
+        .any(|artifact| artifact == ".dx/build-cache/provider-adapter.dx-cloud.json"));
 
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     assert_eq!(
         deploy["forge_hosting_manifest"]["path"],
-        "forge-hosting-manifest.json"
+        ".dx/build-cache/forge-hosting-.dx/build-cache/manifest.json"
     );
     assert_eq!(deploy["forge_hosting_manifest"]["coverage_score"], 100);
 
-    let hosted = read_json_value(project.join(".dx/www/output/hosted-preview.json"));
+    let hosted = read_json_value(project.join(".dx/www/output/.dx/build-cache/hosted-preview.json"));
     assert!(hosted["bundle"]["artifacts"]
         .as_array()
         .expect("hosted artifacts")
         .iter()
-        .any(|artifact| artifact["path"] == "forge-hosting-manifest.json"
+        .any(|artifact| artifact["path"] == ".dx/build-cache/forge-hosting-.dx/build-cache/manifest.json"
             && artifact["kind"] == "forge-hosting-manifest"));
 
-    let provider = read_json_value(project.join(".dx/www/output/provider-adapter.dx-cloud.json"));
+    let provider = read_json_value(project.join(".dx/www/output/.dx/build-cache/provider-adapter.dx-cloud.json"));
     assert_eq!(
         provider["forge_hosting_manifest"]["path"],
-        "forge-hosting-manifest.json"
+        ".dx/build-cache/forge-hosting-.dx/build-cache/manifest.json"
     );
     assert!(provider["upload_plan"]
         .as_array()
         .expect("upload plan")
         .iter()
-        .any(|artifact| artifact["path"] == "forge-hosting-manifest.json"
+        .any(|artifact| artifact["path"] == ".dx/build-cache/forge-hosting-.dx/build-cache/manifest.json"
             && artifact["kind"] == "forge-hosting-manifest"));
     assert_eq!(
-        read_json_value(project.join(".dx/www/output/manifest.json"))
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/manifest.json"))
             ["forge_hosting_manifest_emitted"],
         true
     );
@@ -2882,10 +2882,10 @@ fn dx_build_emits_secret_safe_production_observability_contract() {
     let project_cli = Cli::with_cwd(project.clone());
     project_cli.cmd_build().expect("dx build");
 
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     assert_eq!(
         deploy["observability"]["metadata_path"],
-        "observability.json"
+        ".dx/build-cache/observability.json"
     );
     assert_eq!(deploy["observability"]["ready_path"], "/.dx/ready");
     assert_eq!(
@@ -2894,7 +2894,7 @@ fn dx_build_emits_secret_safe_production_observability_contract() {
     );
     assert_eq!(deploy["observability"]["collects_secrets"], false);
 
-    let observability = read_json_value(project.join(".dx/www/output/observability.json"));
+    let observability = read_json_value(project.join(".dx/www/output/.dx/build-cache/observability.json"));
     assert_eq!(observability["secret_fields_collected"], false);
     assert_eq!(observability["privacy"]["collects_request_headers"], false);
     assert_eq!(observability["privacy"]["collects_request_payloads"], false);
@@ -3139,7 +3139,7 @@ fn dx_preview_production_contract_serves_only_deploy_adapter_outputs() {
         home.cache_control.as_deref(),
         Some("public, max-age=0, must-revalidate")
     );
-    let deploy = read_json_value(build_dir.join("deploy-adapter.json"));
+    let deploy = read_json_value(build_dir.join(".dx/build-cache/deploy-adapter.json"));
     let root_route = deploy["routes"]
         .as_array()
         .expect("deploy routes")
@@ -3157,7 +3157,7 @@ fn dx_preview_production_contract_serves_only_deploy_adapter_outputs() {
     assert!(home_html.contains("data-dx-output-mode=\"tiny-static\""));
     assert!(home_html.contains("data-dx-js=\"none\""));
     assert!(home_html.contains("Enhanced Development Experience"));
-    assert_eq!(home.contract_path, "deploy-adapter.json");
+    assert_eq!(home.contract_path, ".dx/build-cache/deploy-adapter.json");
 
     let packet =
         preview_contract::handle_production_contract_request(&build_dir, "/app/index.dxpk")
@@ -3176,7 +3176,7 @@ fn dx_preview_production_contract_serves_only_deploy_adapter_outputs() {
         .all(|asset| !asset["path"]
             .as_str()
             .expect("asset path")
-            .starts_with("source-routes/")));
+            .starts_with(".dx/build-cache/source-routes/")));
 
     let ready = preview_contract::handle_production_contract_request(&build_dir, "/.dx/ready")
         .expect("ready");
@@ -3194,7 +3194,7 @@ fn dx_preview_production_contract_serves_only_deploy_adapter_outputs() {
     assert_eq!(missing_health.status, "404 Not Found");
     assert!(String::from_utf8(missing_health.body)
         .expect("missing health body")
-        .contains("not listed in deploy-adapter.json"));
+        .contains("not listed in .dx/build-cache/deploy-adapter.json"));
 
     let missing =
         preview_contract::handle_production_contract_request(&build_dir, "/pages/index.dxob")
@@ -3202,7 +3202,7 @@ fn dx_preview_production_contract_serves_only_deploy_adapter_outputs() {
     assert_eq!(missing.status, "404 Not Found");
     assert!(String::from_utf8(missing.body)
         .expect("missing body")
-        .contains("not listed in deploy-adapter.json"));
+        .contains("not listed in .dx/build-cache/deploy-adapter.json"));
     assert!(!project.join("node_modules").exists());
 }
 
@@ -3229,10 +3229,10 @@ fn dx_build_emits_route_handler_conformance_matrix_for_app_api_routes() {
     .expect("health route handler");
     project_cli.cmd_build().expect("dx build");
 
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     assert_eq!(
         deploy["route_handler_conformance_matrix"]["path"],
-        "route-handler-conformance-matrix.json"
+        ".dx/build-cache/route-handler-conformance-matrix.json"
     );
     assert_eq!(
         deploy["route_handler_conformance_matrix"]["hosted_provider_proof"],
@@ -3240,7 +3240,7 @@ fn dx_build_emits_route_handler_conformance_matrix_for_app_api_routes() {
     );
 
     let matrix =
-        read_json_value(project.join(".dx/www/output/route-handler-conformance-matrix.json"));
+        read_json_value(project.join(".dx/www/output/.dx/build-cache/route-handler-conformance-matrix.json"));
     assert_eq!(
         matrix["schema"],
         "dx.www.deploy.route_handler_conformance_matrix"
@@ -3345,7 +3345,7 @@ fn dx_promote_signs_build_manifest_and_rejects_tampered_release() {
         .expect("promotion report text")
         .contains("ed25519-seed:"));
 
-    let deploy = read_json_value(build_dir.join("deploy-adapter.json"));
+    let deploy = read_json_value(build_dir.join(".dx/build-cache/deploy-adapter.json"));
     assert_eq!(deploy["build_manifest"]["signed"], true);
     assert_eq!(
         deploy["build_manifest"]["publisher"]["signer"],
@@ -3358,7 +3358,7 @@ fn dx_promote_signs_build_manifest_and_rejects_tampered_release() {
 
     let promotion = read_json_value(build_dir.join("build-promotion.json"));
     assert_eq!(promotion["passed"], true);
-    assert_eq!(promotion["build_manifest"]["path"], "manifest.json");
+    assert_eq!(promotion["build_manifest"]["path"], ".dx/build-cache/manifest.json");
     assert_eq!(
         promotion["publisher_identity"]["signature"],
         deploy["build_manifest"]["signature"]
@@ -3369,7 +3369,7 @@ fn dx_promote_signs_build_manifest_and_rejects_tampered_release() {
     assert!(verification.ready_for_hosted_release);
     assert!(verification.signature_verified);
 
-    fs::write(build_dir.join("manifest.json"), "{}").expect("tamper manifest");
+    fs::write(build_dir.join(".dx/build-cache/manifest.json"), "{}").expect("tamper manifest");
     let tampered_error = build_promotion::verify_build_manifest_promotion(&build_dir)
         .expect_err("tampered manifest should fail verification");
     assert!(
@@ -3420,7 +3420,7 @@ fn dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts() {
             && field["value_type"] == "number"
             && field["required"] == true));
     assert_eq!(protocol["response_schema"]["mode"], "typed-object");
-    let deploy = read_json_value(project.join(".dx/www/output/deploy-adapter.json"));
+    let deploy = read_json_value(project.join(".dx/www/output/.dx/build-cache/deploy-adapter.json"));
     let deploy_action = deploy["server_actions"]
         .as_array()
         .expect("deploy server actions")
@@ -3445,11 +3445,11 @@ fn dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts() {
     );
     assert_eq!(
         deploy_action["runtime_artifacts"]["replay_ledger"],
-        "server-action-replay-ledger.json"
+        ".dx/build-cache/server-action-replay-ledger.json"
     );
     assert_eq!(
         deploy["server_action_replay_ledger"]["path"],
-        "server-action-replay-ledger.json"
+        ".dx/build-cache/server-action-replay-ledger.json"
     );
     assert_eq!(
         deploy["server_action_replay_ledger"]["mode"],
@@ -3465,7 +3465,7 @@ fn dx_server_action_post_endpoints_run_in_dev_and_preview_with_receipts() {
         deploy["server_action_replay_ledger"]["release_ready"],
         false
     );
-    let ledger_path = project.join(".dx/www/output/server-action-replay-ledger.json");
+    let ledger_path = project.join(".dx/www/output/.dx/build-cache/server-action-replay-ledger.json");
     let initial_ledger = read_json_value(ledger_path.clone());
     assert_eq!(
         initial_ledger["schema"],
@@ -3536,7 +3536,7 @@ Content-Length: {}\r\n\
     );
     assert_eq!(
         dev_response["protocol"]["replay_ledger"],
-        "server-action-replay-ledger.json"
+        ".dx/build-cache/server-action-replay-ledger.json"
     );
     assert_eq!(dev_response["replay_ledger"]["mode"], "not-recorded");
     assert_eq!(dev_response["receipt"]["action_id"], action_id);
@@ -3850,7 +3850,7 @@ fn forge_add_write_creates_manifest_and_receipt() {
     assert!(dir.path().join("components/ui/button.tsx").exists());
     assert!(dir.path().join("components/ui/slot.tsx").exists());
     assert!(dir.path().join("lib/utils.ts").exists());
-    assert!(dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
 
@@ -3927,7 +3927,7 @@ fn forge_add_icon_search_writes_selected_icon_package() {
     assert!(dir.path().join("components/icons/search.tsx").exists());
     assert!(dir.path().join("components/icons/README.md").exists());
     assert!(dir.path().join("lib/icons.ts").exists());
-    assert!(dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("components/ui/button.tsx").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
@@ -3942,7 +3942,7 @@ fn dx_add_ui_button_writes_source_owned_package() {
     assert!(dir.path().join("components/ui/button.tsx").exists());
     assert!(dir.path().join("components/ui/slot.tsx").exists());
     assert!(dir.path().join("lib/utils.ts").exists());
-    assert!(dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
 
@@ -3972,7 +3972,7 @@ fn dx_add_ui_button_dry_run_writes_nothing() {
         .expect("dx add ui/button dry-run");
 
     assert!(!dir.path().join("components/ui/button.tsx").exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
 
@@ -3985,7 +3985,7 @@ fn dx_add_ui_button_variant_writes_isolated_package_fork() {
         .expect("dx add ui/button --variant marketing");
 
     let manifest =
-        fs::read_to_string(dir.path().join(".dx/forge/source-manifest.json")).expect("manifest");
+        fs::read_to_string(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json")).expect("manifest");
 
     assert!(dir
         .path()
@@ -4012,7 +4012,7 @@ fn dx_add_icon_search_writes_selected_source_owned_icon() {
     cli.cmd_add(&["icon", "search"])
         .expect("dx add icon search");
 
-    let manifest_path = dir.path().join(".dx/forge/source-manifest.json");
+    let manifest_path = dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json");
     let manifest = fs::read_to_string(&manifest_path).expect("manifest");
 
     assert!(dir.path().join("components/icons/search.tsx").exists());
@@ -4033,7 +4033,7 @@ fn dx_add_icon_search_dry_run_writes_nothing() {
 
     assert!(!dir.path().join("components/icons/search.tsx").exists());
     assert!(!dir.path().join("lib/icons.ts").exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
 
@@ -4045,7 +4045,7 @@ fn dx_add_auth_google_writes_source_owned_auth_package() {
     cli.cmd_add(&["auth/better-auth"])
         .expect("dx add auth/better-auth");
 
-    let manifest_path = dir.path().join(".dx/forge/source-manifest.json");
+    let manifest_path = dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json");
     let manifest = fs::read_to_string(&manifest_path).expect("manifest");
 
     assert!(dir.path().join("auth/better-auth/options.ts").exists());
@@ -4068,7 +4068,7 @@ fn dx_add_auth_google_dry_run_writes_nothing() {
         .expect("dx add auth/better-auth dry-run");
 
     assert!(!dir.path().join("auth/better-auth/options.ts").exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
 
@@ -4079,7 +4079,7 @@ fn dx_add_better_auth_alias_writes_source_owned_auth_package() {
 
     cli.cmd_add(&["better-auth"]).expect("dx add better-auth");
 
-    let manifest_path = dir.path().join(".dx/forge/source-manifest.json");
+    let manifest_path = dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json");
     let manifest = fs::read_to_string(&manifest_path).expect("manifest");
 
     assert!(dir.path().join("auth/better-auth/options.ts").exists());
@@ -4099,7 +4099,7 @@ fn dx_add_next_intl_alias_writes_source_owned_i18n_package() {
 
     cli.cmd_add(&["next-intl"]).expect("dx add next-intl");
 
-    let manifest_path = dir.path().join(".dx/forge/source-manifest.json");
+    let manifest_path = dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json");
     let manifest = fs::read_to_string(&manifest_path).expect("manifest");
 
     assert!(dir.path().join("i18n/routing.ts").exists());
@@ -4120,7 +4120,7 @@ fn dx_add_migration_static_site_writes_honest_source_owned_example() {
     cli.cmd_add(&["migration/static-site"])
         .expect("dx add migration/static-site");
 
-    let manifest_path = dir.path().join(".dx/forge/source-manifest.json");
+    let manifest_path = dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json");
     let manifest = fs::read_to_string(&manifest_path).expect("manifest");
     let readme_path = dir.path().join("migrations/static-site/README.md");
     let readme = fs::read_to_string(&readme_path).expect("migration readme");
@@ -4314,7 +4314,7 @@ fn forge_migrate_static_page_writes_source_owned_route_without_package_installs(
         .path()
         .join("migrations/static-site/generated/about/content.ts")
         .exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("sentinel").exists());
     assert!(!dir.path().join("node_modules").exists());
 
@@ -4361,7 +4361,7 @@ fn forge_migrate_static_page_writes_source_owned_route_without_package_installs(
     let source_path = dir
         .path()
         .join("migrations/static-site/generated/about/source.html");
-    let manifest_path = dir.path().join(".dx/forge/source-manifest.json");
+    let manifest_path = dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json");
 
     assert!(dir
         .path()
@@ -4555,7 +4555,7 @@ fn forge_migrate_static_page_writes_asset_manifest_with_hashes_and_gaps() {
 
     let manifest_path = dir
         .path()
-        .join("migrations/static-site/generated/landing/asset-manifest.json");
+        .join("migrations/static-site/generated/landing/asset-.dx/build-cache/manifest.json");
     assert!(manifest_path.exists());
     let manifest = read_json_value(manifest_path);
     let assets = manifest["assets"].as_array().expect("manifest assets");

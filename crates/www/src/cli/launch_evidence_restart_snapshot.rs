@@ -14,7 +14,7 @@ const SNAPSHOT_SCHEMA: &str = "dx.launch.evidence_restart_snapshot";
 const SNAPSHOT_PATH: &str = ".dx/forge/release/launch-evidence-restart-snapshot.json";
 const RESTART_SUMMARY_PATH: &str = ".dx/forge/release/launch-evidence-restart-summary.json";
 const RESTART_RECEIPT_PATH: &str = ".dx/forge/release/launch-evidence-restart-receipt.json";
-const RESTART_MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-restart-manifest.json";
+const RESTART_MANIFEST_PATH: &str = ".dx/forge/release/launch-evidence-restart-.dx/build-cache/manifest.json";
 const RESTART_BRIEF_PATH: &str = ".dx/forge/release/launch-evidence-restart-brief.md";
 
 #[derive(Debug, Serialize)]

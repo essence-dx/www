@@ -394,9 +394,9 @@ const ANDROID_MANIFEST_ENTRY: &str = "AndroidManifest.xml";
 const ANDROID_DEX_BYTECODE_ENTRY: &str = "classes.dex";
 const WWW_ASSET_MARKER_PROOF_LIMIT: usize = 128;
 const WWW_BUILD_EVIDENCE_MARKERS: &[&str] = &[
-    "manifest.json",
+    ".dx/build-cache/manifest.json",
     "source-build-manifest.json",
-    "source-build-receipt.json",
+    ".dx/build-cache/source-build-receipt.json",
 ];
 
 struct WwwAssetMarkerPlan {
@@ -440,7 +440,7 @@ fn dx_www_native_entrypoint_present(project_root: &Path) -> bool {
 }
 
 fn www_output_requires_native_entrypoint(output_root: &Path) -> bool {
-    ["app/index.html", "source-routes/root/index.html"]
+    ["app/index.html", ".dx/build-cache/source-routes/root/index.html"]
         .iter()
         .any(|relative_path| output_root.join(relative_path).is_file())
 }
@@ -740,7 +740,7 @@ mod tests {
     fn android_receipt_reports_missing_www_asset_markers() {
         let expected_www_assets = vec![
             "app/index.html".to_string(),
-            "source-routes/root/index.html".to_string(),
+            ".dx/build-cache/source-routes/root/index.html".to_string(),
             "public/mobile-companion-runtime.js".to_string(),
         ];
         let apk = tempfile::NamedTempFile::new().expect("apk");
@@ -751,7 +751,7 @@ mod tests {
             missing_expected_www_asset_markers(apk.path(), &expected_www_assets).expect("scan"),
             vec![
                 "app/index.html".to_string(),
-                "source-routes/root/index.html".to_string(),
+                ".dx/build-cache/source-routes/root/index.html".to_string(),
                 "public/mobile-companion-runtime.js".to_string(),
             ]
         );
@@ -777,14 +777,14 @@ mod tests {
         write_www_output(project.path(), "index.html");
         write_www_output(project.path(), "styles/generated.css");
         write_www_output(project.path(), "app/index.html");
-        write_www_output(project.path(), "source-routes/root/index.html");
+        write_www_output(project.path(), ".dx/build-cache/source-routes/root/index.html");
 
         assert_eq!(
             expected_www_asset_markers(project.path()),
             vec![
                 "app/index.html".to_string(),
                 "index.html".to_string(),
-                "source-routes/root/index.html".to_string(),
+                ".dx/build-cache/source-routes/root/index.html".to_string(),
                 "styles/generated.css".to_string(),
             ]
         );
@@ -794,17 +794,17 @@ mod tests {
     fn android_receipt_includes_www_build_evidence_markers() {
         let project = tempfile::tempdir().expect("tempdir");
         write_www_output(project.path(), "index.html");
-        write_www_output(project.path(), "manifest.json");
+        write_www_output(project.path(), ".dx/build-cache/manifest.json");
         write_www_output(project.path(), "source-build-manifest.json");
-        write_www_output(project.path(), "source-build-receipt.json");
+        write_www_output(project.path(), ".dx/build-cache/source-build-receipt.json");
 
         assert_eq!(
             expected_www_asset_markers(project.path()),
             vec![
                 "index.html".to_string(),
-                "manifest.json".to_string(),
+                ".dx/build-cache/manifest.json".to_string(),
                 "source-build-manifest.json".to_string(),
-                "source-build-receipt.json".to_string(),
+                ".dx/build-cache/source-build-receipt.json".to_string(),
             ]
         );
     }
@@ -826,7 +826,7 @@ mod tests {
     #[test]
     fn android_receipt_requires_loadable_www_entrypoint_not_manifest_only() {
         let manifest_only = tempfile::tempdir().expect("tempdir");
-        write_www_output(manifest_only.path(), "manifest.json");
+        write_www_output(manifest_only.path(), ".dx/build-cache/manifest.json");
 
         assert_eq!(
             expected_www_asset_markers(manifest_only.path()),
@@ -835,11 +835,11 @@ mod tests {
 
         let native_ready = tempfile::tempdir().expect("tempdir");
         write_www_output(native_ready.path(), "index.html");
-        write_www_output(native_ready.path(), "manifest.json");
+        write_www_output(native_ready.path(), ".dx/build-cache/manifest.json");
 
         assert_eq!(
             expected_www_asset_markers(native_ready.path()),
-            vec!["index.html".to_string(), "manifest.json".to_string()]
+            vec!["index.html".to_string(), ".dx/build-cache/manifest.json".to_string()]
         );
     }
 
@@ -881,13 +881,13 @@ mod tests {
     fn android_receipt_maps_source_route_www_output_to_asset_marker() {
         let project = tempfile::tempdir().expect("tempdir");
         write_www_output(project.path(), "index.html");
-        write_www_output(project.path(), "source-routes/root/index.html");
+        write_www_output(project.path(), ".dx/build-cache/source-routes/root/index.html");
 
         assert_eq!(
             expected_www_asset_markers(project.path()),
             vec![
                 "index.html".to_string(),
-                "source-routes/root/index.html".to_string(),
+                ".dx/build-cache/source-routes/root/index.html".to_string(),
             ]
         );
     }

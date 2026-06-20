@@ -196,7 +196,7 @@ test("ai/vercel-ai materializes into generated /launch without node_modules", ()
   const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
   const runtime = fs.readFileSync(path.join(dir, "public", "launch-runtime.js"), "utf8");
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
   const aiRoute = fs.readFileSync(path.join(dir, "app", "api", "ai", "chat", "route.ts"), "utf8");
   const aiBoundary = fs.readFileSync(path.join(dir, "lib", "ai", "provider-boundary.ts"), "utf8");

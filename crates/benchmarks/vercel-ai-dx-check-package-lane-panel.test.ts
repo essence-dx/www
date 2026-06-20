@@ -167,7 +167,7 @@ test("AI SDK stale-helper fixture is published through Studio source-guard runbo
   assert.equal(fixture.receipt.source_guard_runbook_fixture, runbookFixturePath);
   assert.equal(fixture.receipt.tracked_by_receipt_hash_helper, true);
   assert.equal(fixture.receipt.tracked_file_count, 7);
-  assert.equal(fixture.preview_manifest.generated_file, "public/preview-manifest.json");
+  assert.equal(fixture.preview_manifest.generated_file, "public/preview-.dx/build-cache/manifest.json");
   assert.equal(
     fixture.preview_manifest.materializer,
     "tools/launch/materialize-www-template.ts",
@@ -258,7 +258,7 @@ test("AI SDK runbook fixture is exposed from generated preview manifest", () => 
     }),
   );
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
   const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
 

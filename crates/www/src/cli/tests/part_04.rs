@@ -248,7 +248,7 @@ fn forge_release_bundle_can_optionally_include_adoption_route() {
             && route.artifacts.contains(&"forge/adoption.html".to_string())
     }));
     let manifest: DxForgeReleaseBundleManifest = serde_json::from_slice(
-        &std::fs::read(adoption_bundle_dir.join("forge-release-manifest.json")).unwrap(),
+        &std::fs::read(adoption_bundle_dir.join("forge-release-.dx/build-cache/manifest.json")).unwrap(),
     )
     .expect("adoption release manifest json");
     assert!(manifest.artifacts.iter().any(|artifact| {
@@ -820,7 +820,7 @@ fn forge_launch_temp_project_smoke_covers_current_launch_packages() {
     .expect("forge scorecard");
 
     let manifest: dx_compiler::ecosystem::DxSourceManifest = serde_json::from_slice(
-        &fs::read(dir.path().join(".dx/forge/source-manifest.json")).expect("manifest bytes"),
+        &fs::read(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json")).expect("manifest bytes"),
     )
     .expect("manifest json");
     let packages = manifest
@@ -880,7 +880,7 @@ fn forge_init_app_dry_run_reports_without_writing_project_files() {
     );
     assert!(report["planned_files"].as_array().expect("files").len() >= 4);
     assert!(!dir.path().join("dx").exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
 
@@ -920,7 +920,7 @@ fn forge_init_app_write_creates_beta_project_without_node_modules() {
         "components/ui/button.tsx",
         "components/ui/card.tsx",
         "components/ui/input.tsx",
-        ".dx/forge/source-manifest.json",
+        ".dx/forge/source-.dx/build-cache/manifest.json",
         ".dx/forge/docs/shadcn-ui-button.md",
         ".dx/forge/docs/shadcn-ui-card.md",
         ".dx/forge/docs/shadcn-ui-input.md",
@@ -938,7 +938,7 @@ fn forge_init_app_write_creates_beta_project_without_node_modules() {
         assert!(dir.path().join(path).exists(), "{path}");
     }
     let manifest: DxSourceManifest = serde_json::from_slice(
-        &fs::read(dir.path().join(".dx/forge/source-manifest.json")).expect("manifest bytes"),
+        &fs::read(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json")).expect("manifest bytes"),
     )
     .expect("manifest json");
     let package_ids = manifest
@@ -1632,7 +1632,7 @@ fn forge_provenance_markdown_is_reviewable_and_secret_free() {
     assert!(markdown.contains("shadcn/ui/button"));
     assert!(markdown.contains("dx/icon/search"));
     assert!(markdown.contains("auth/better-auth"));
-    assert!(markdown.contains("source-manifest.json"));
+    assert!(markdown.contains("source-.dx/build-cache/manifest.json"));
     assert!(markdown.contains("no `node_modules`"));
     for marker in FORGE_PUBLIC_SECRET_MARKERS {
         assert!(
@@ -2083,7 +2083,7 @@ fn forge_smoke_command_runs_launch_path() {
     assert!(scorecard_report.contains("\"score\": 100"));
     assert!(scorecard_report.contains("\"latest_forge_route_benchmark\""));
     assert!(scorecard_report.contains("\"fixture_mode\": \"forge-site\""));
-    assert!(dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(dir.path().join("public/forge.html").exists());
     assert!(dir.path().join("public/forge.claims.json").exists());
     assert!(dir.path().join("public/forge.evidence.json").exists());
@@ -2118,7 +2118,7 @@ fn forge_adoption_smoke_generates_real_project_public_routes() {
     assert_eq!(report["no_node_modules"], true);
     assert_eq!(report["route_count"], 6);
     assert!(report["score"].as_u64().expect("score") >= 90);
-    assert!(dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(
         dir.path()
             .join(".dx/forge/adoption-smoke/forge-smoke.json")
@@ -2126,7 +2126,7 @@ fn forge_adoption_smoke_generates_real_project_public_routes() {
     );
     assert!(
         dir.path()
-            .join(".dx/forge/adoption-smoke/release-bundle/forge-release-manifest.json")
+            .join(".dx/forge/adoption-smoke/release-bundle/forge-release-.dx/build-cache/manifest.json")
             .exists()
     );
     let example_route_path = dir.path().join("pages/forge-adoption.html");
@@ -2344,7 +2344,7 @@ fn forge_beta_install_bootstraps_clean_project_from_release_bundle_with_trust_ar
         ".dx/forge/beta-install/forge-release-bundle.json",
         ".dx/forge/beta-install/forge-beta-install.json",
         "public/forge/adoption.html",
-        ".dx/forge/source-manifest.json",
+        ".dx/forge/source-.dx/build-cache/manifest.json",
     ] {
         assert!(
             install_project.path().join(artifact).is_file(),
@@ -2814,7 +2814,7 @@ fn forge_launch_page_command_writes_public_route() {
     assert!(evidence.contains("auth/better-auth"));
     assert!(dir.path().join("public/forge.dxp").exists());
     assert!(!dir.path().join("public/forge.dxp.js").exists());
-    assert!(dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(dir.path().join(".dx/forge/receipts").exists());
     assert!(summary.contains("\"route\": \"/forge\""));
     assert!(summary.contains("forge.html"));
@@ -2822,7 +2822,7 @@ fn forge_launch_page_command_writes_public_route() {
     assert!(!summary.contains("forge.dxp.js"));
     assert!(summary.contains("forge.claims.json"));
     assert!(summary.contains("forge.evidence.json"));
-    assert!(summary.contains("source-manifest.json"));
+    assert!(summary.contains("source-.dx/build-cache/manifest.json"));
     assert!(summary.contains("receipts"));
     assert!(!dir.path().join("node_modules").exists());
 }
@@ -2846,7 +2846,7 @@ fn forge_launch_page_dry_run_writes_nothing() {
     assert!(!dir.path().join("public/forge.html").exists());
     assert!(!dir.path().join("public/forge.claims.json").exists());
     assert!(!dir.path().join("public/forge.evidence.json").exists());
-    assert!(!dir.path().join(".dx/forge/source-manifest.json").exists());
+    assert!(!dir.path().join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(!dir.path().join("node_modules").exists());
 }
 
@@ -3015,7 +3015,7 @@ fn forge_public_launch_checklist_documents_operator_flow() {
         "forge release-bundle --verify .\\.dx\\forge-release-bundle",
         "forge-release-bundle-adoption --include-adoption",
         "forge release-review --project .",
-        "forge-release-manifest.json",
+        "forge-release-.dx/build-cache/manifest.json",
         "hash_algorithm = blake3",
         "dx-forge-release-manifest-v1",
         "forge-public-launch-changelog.json",
@@ -3054,7 +3054,7 @@ fn forge_real_project_adoption_docs_cover_reproducible_path() {
         "--include-adoption",
         "cargo run --manifest-path .\\www\\Cargo.toml -p dx-www --bin dx-www -- forge release-trend --write-history --format markdown --fail-under 90",
         ".dx\\forge\\adoption-smoke\\forge-smoke.json",
-        ".dx\\forge\\source-manifest.json",
+        ".dx\\forge\\source-.dx/build-cache/manifest.json",
         ".dx\\forge\\receipts",
         "public\\forge.html",
         "public\\forge\\scorecard.html",
@@ -3162,7 +3162,7 @@ fn forge_public_beta_quickstart_docs_cover_onboarding_flow() {
         "dx forge package-gallery --project .\\.dx\\forge-beta-app --public-index .\\.dx\\forge-beta-app\\public",
         "dx forge publisher-key generate --out .\\.dx\\forge-publisher --signer essencefromexistence",
         "dx forge publisher-key sign --key .\\.dx\\forge-publisher\\publisher-key.private.json",
-        "dx forge release-operations --project . --release-manifest .\\.dx\\forge-release-bundle-adoption\\forge-release-manifest.json",
+        "dx forge release-operations --project . --release-manifest .\\.dx\\forge-release-bundle-adoption\\forge-release-.dx/build-cache/manifest.json",
         "dx forge publish-plan --project . --release-bundle .\\.dx\\forge-release-bundle-adoption",
         ".dx\\forge-release-bundle-adoption\\forge\\package-gallery\\index.html",
         "package_gallery",

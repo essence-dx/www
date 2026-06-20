@@ -3,9 +3,9 @@ use std::path::Path;
 const DX_WWW_OUTPUT_SENTINELS: &[&str] = &[
     "index.html",
     "app/index.html",
-    "source-routes/root/index.html",
-    "manifest.json",
-    "deploy-adapter.json",
+    ".dx/build-cache/source-routes/root/index.html",
+    ".dx/build-cache/manifest.json",
+    ".dx/build-cache/deploy-adapter.json",
 ];
 
 pub(super) fn dx_www_output_present(project_root: &Path) -> bool {
@@ -44,7 +44,7 @@ mod tests {
     #[test]
     fn detects_source_route_output() {
         let project = tempfile::tempdir().expect("tempdir");
-        write_output(project.path(), "source-routes/root/index.html");
+        write_output(project.path(), ".dx/build-cache/source-routes/root/index.html");
 
         assert!(dx_www_output_present(project.path()));
     }
@@ -52,7 +52,7 @@ mod tests {
     #[test]
     fn detects_manifest_only_output() {
         let project = tempfile::tempdir().expect("tempdir");
-        write_output(project.path(), "manifest.json");
+        write_output(project.path(), ".dx/build-cache/manifest.json");
 
         assert!(dx_www_output_present(project.path()));
     }

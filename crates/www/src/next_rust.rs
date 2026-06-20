@@ -472,7 +472,7 @@ pub const DX_TURBOPACK_CORE_GRAPH_CONCEPTS: &[DxTurbopackCoreGraphConcept] = &[
         dx_contracts: &["dx.forge.sourceGraph"],
         dx_node_kinds: &["forge-surface"],
         dx_edge_kinds: &["expects-receipt", "owns-source"],
-        dx_receipt_fields: &[".dx/forge/source-manifest.json"],
+        dx_receipt_fields: &[".dx/forge/source-.dx/build-cache/manifest.json"],
         boundary: "Forge package ownership is a DX source model; Turbopack has no authority over it",
         node_modules_required: false,
     },
@@ -590,7 +590,7 @@ mod tests {
     #[test]
     fn vendor_readme_matches_snapshot_metadata() {
         let snapshot = dx_next_rust_vendor_snapshot();
-        let readme = include_str!("../../vendor/next-rust/README.md");
+        let readme = include_str!("../../../vendor/next-rust/README.md");
         assert!(readme.contains(&format!("- Commit: `{}`", snapshot.commit)));
         assert!(readme.contains("- License file: `license.nextjs.md`"));
 

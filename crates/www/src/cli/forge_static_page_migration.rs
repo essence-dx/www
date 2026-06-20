@@ -212,7 +212,7 @@ pub(super) fn build_forge_static_page_migration_report(
         "planned"
     };
     let asset_manifest_path =
-        generated_static_page_dir(project, &model.slug).join("asset-manifest.json");
+        generated_static_page_dir(project, &model.slug).join("asset-.dx/build-cache/manifest.json");
     let asset_manifest =
         build_static_page_asset_manifest(project, &asset_manifest_path, write_state, &model.assets);
     let no_node_modules = !project.join("node_modules").exists();
@@ -672,7 +672,7 @@ fn generated_static_page_files(
         },
         GeneratedStaticPageFile {
             kind: "asset-manifest",
-            path: generated_dir.join("asset-manifest.json"),
+            path: generated_dir.join("asset-.dx/build-cache/manifest.json"),
             content: static_page_asset_manifest_json(asset_manifest)?,
         },
         GeneratedStaticPageFile {
@@ -738,7 +738,7 @@ fn static_page_preview_links() -> Vec<super::forge_static_page_preview::DxForgeS
         preview_link(
             "asset-manifest",
             "Migrated asset manifest",
-            "../asset-manifest.json",
+            "../asset-.dx/build-cache/manifest.json",
             "Resolved media, hashes, target paths, cache hints, alt-text review state, and unresolved media gaps.",
         ),
         preview_link(
@@ -1044,7 +1044,7 @@ fn generated_readme_md(model: &StaticPageModel, selected_file: &Path) -> String 
 }
 
 fn source_manifest_has_package(project: &Path, package_id: &str) -> anyhow::Result<bool> {
-    let manifest_path = project.join(".dx/forge/source-manifest.json");
+    let manifest_path = project.join(".dx/forge/source-.dx/build-cache/manifest.json");
     if !manifest_path.exists() {
         return Ok(false);
     }

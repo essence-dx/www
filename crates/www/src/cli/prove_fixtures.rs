@@ -2271,7 +2271,7 @@ fn forge_quickstart_page_source() -> String {
                     <ul class="mt-4 grid gap-3 text-sm text-neutral-300">
                         <li><code>.dx/forge/init-app/dx-check.json</code></li>
                         <li><code>.dx/forge/init-app/forge-scorecard.json</code></li>
-                        <li><code>.dx/forge/source-manifest.json</code></li>
+                        <li><code>.dx/forge/source-.dx/build-cache/manifest.json</code></li>
                         <li><code>.dx/forge/docs</code> and <code>.dx/forge/receipts</code></li>
                     </ul>
                 </article>

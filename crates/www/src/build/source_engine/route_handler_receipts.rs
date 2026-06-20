@@ -13,7 +13,7 @@ use crate::error::{DxError, DxResult};
 
 use super::graph::{SourceBuildRouteHandler, read_file, write_file};
 
-const ROUTE_HANDLER_RECEIPTS_JSON: &str = "route-handler-receipts.json";
+const ROUTE_HANDLER_RECEIPTS_JSON: &str = ".dx/build-cache/route-handler-receipts.json";
 
 const ROUTE_HANDLER_BUILD_RECEIPTS_SCHEMA: &str = "dx.next.appRouteHandlerBuildReceipts";
 const ROUTE_HANDLER_RECEIPT_SCHEMA: &str = "dx.next.appRouteHandlerReceipt";

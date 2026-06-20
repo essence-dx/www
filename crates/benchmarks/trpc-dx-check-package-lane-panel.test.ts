@@ -114,7 +114,7 @@ test("Type-Safe API package-lane row survives generated starter materialization"
   );
   const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
 
   assert.equal(result.ok, true);
@@ -402,7 +402,7 @@ test("Type-Safe API source-guard runbook fixture publishes unsupported-surface p
     fixture.preview_manifest,
     "Type-Safe API runbook fixture must describe its preview-manifest exposure",
   );
-  assert.equal(fixture.preview_manifest.generated_file, "public/preview-manifest.json");
+  assert.equal(fixture.preview_manifest.generated_file, "public/preview-.dx/build-cache/manifest.json");
   assert.equal(
     fixture.preview_manifest.materializer,
     "tools/launch/materialize-www-template.ts",

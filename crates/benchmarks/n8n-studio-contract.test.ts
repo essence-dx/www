@@ -9,7 +9,7 @@ const manifestPath = path.join(
   repoRoot,
   "integrations",
   "n8n-nodes-base",
-  "dx-node-source-manifest.json",
+  "dx-node-source-.dx/build-cache/manifest.json",
 );
 
 function readStudioFile(relativePath) {

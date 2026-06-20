@@ -65,7 +65,7 @@ pub(super) fn build_forge_hosted_registry_smoke_report(
         .join(package.language.as_segment())
         .join(&package.package_id)
         .join(&package.version)
-        .join("manifest.json");
+        .join(".dx/build-cache/manifest.json");
     let no_node_modules =
         !project.join("node_modules").exists() && !local_registry.join("node_modules").exists();
     let requires_secrets = false;
@@ -113,7 +113,7 @@ pub(super) fn build_forge_hosted_registry_smoke_report(
                 && publish.dry_run
                 && publish.remote == remote
                 && publish.package_id.as_deref() == Some(package.package_id.as_str())
-                && publish.objects.iter().any(|object| object.contains("manifest.json")),
+                && publish.objects.iter().any(|object| object.contains(".dx/build-cache/manifest.json")),
             score: if publish.dry_run && !publish.objects.is_empty() {
                 100
             } else {
@@ -128,7 +128,7 @@ pub(super) fn build_forge_hosted_registry_smoke_report(
                 && pull.dry_run
                 && pull.remote == remote
                 && pull.package_id.as_deref() == Some(package.package_id.as_str())
-                && pull.objects.iter().any(|object| object.contains("manifest.json"))
+                && pull.objects.iter().any(|object| object.contains(".dx/build-cache/manifest.json"))
                 && pull.objects.iter().any(|object| object.contains("files/")),
             score: if pull.dry_run && pull.objects.len() > package.files.len() {
                 100
@@ -232,7 +232,7 @@ fn registry_smoke_r2_object_keys(
     package: &dx_compiler::ecosystem::DxForgeRegistryPackage,
 ) -> Vec<String> {
     let manifest = format!(
-        "{prefix}/packages/{}/{}/{}/manifest.json",
+        "{prefix}/packages/{}/{}/{}/.dx/build-cache/manifest.json",
         package.language.as_segment(),
         package.package_id,
         package.version

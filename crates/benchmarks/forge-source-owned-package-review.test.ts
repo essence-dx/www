@@ -32,7 +32,7 @@ function writeReviewProject() {
   }
 
   fs.writeFileSync(
-    path.join(dir, ".dx", "forge", "source-manifest.json"),
+    path.join(dir, ".dx", "forge", "source-.dx/build-cache/manifest.json"),
     `${JSON.stringify(
       {
         version: 1,

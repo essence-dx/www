@@ -16,7 +16,7 @@ function readJson(relativePath) {
 
 test("forms/react-hook-form is promoted into the lock-backed Forge package set", () => {
   const sourceManifest = readJson(
-    "examples/template/.dx/forge/source-manifest.json",
+    "examples/template/.dx/forge/source-.dx/build-cache/manifest.json",
   );
   const lock = readJson("examples/template/.dx/forge/package-lock.json");
   const status = readJson("examples/template/.dx/forge/package-status.json");
@@ -94,7 +94,7 @@ test("forms/react-hook-form is promoted into the lock-backed Forge package set",
   );
   assert.ok(
     status.cache.manifests.includes(
-      ".dx/forge/cache/forms-react-hook-form/7.75.0-dx.0/manifest.json",
+      ".dx/forge/cache/forms-react-hook-form/7.75.0-dx.0/.dx/build-cache/manifest.json",
     ),
     "package-status cache manifests should include forms/react-hook-form",
   );

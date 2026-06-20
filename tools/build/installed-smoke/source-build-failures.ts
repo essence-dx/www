@@ -34,7 +34,7 @@ function sourceBuildFailures(report) {
   pushIf(failures, !appRouter.serverData.hasLoaderValue, "server-data.json did not materialize launch metrics");
   pushIf(failures, !appRouter.serverData.declaresNoNodeModules, "server-data.json does not declare node_modules_required=false");
   pushIf(failures, appRouter.serverData.lifecycleScriptsExecuted, "server-data.json executed lifecycle scripts");
-  pushIf(failures, !sourceBuild.manifest.present, "dx build did not write source-build-manifest.json");
+  pushIf(failures, !sourceBuild.manifest.present, "dx build did not write source-build-.dx/build-cache/manifest.json");
   if (sourceBuild.manifest.present) {
     pushIf(
       failures,
@@ -76,7 +76,7 @@ function sourceBuildFailures(report) {
   failures.push(...sourceModuleResolverFailures(sourceBuild.manifest.resolverEvidence));
   pushIf(failures, !sourceBuild.manifest.declaresNoNodeModules, "source-build manifest does not declare node_modules_required=false");
   pushIf(failures, sourceBuild.manifest.nodeModulesRequired, "source-build manifest requires node_modules");
-  pushIf(failures, !sourceBuild.receipt.present, "dx build did not write source-build-receipt.json");
+  pushIf(failures, !sourceBuild.receipt.present, "dx build did not write .dx/build-cache/source-build-receipt.json");
   if (sourceBuild.receipt.present) {
     pushIf(
       failures,

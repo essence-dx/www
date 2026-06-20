@@ -187,7 +187,7 @@ test("conversion proof maps source UI, layout, interaction, docs, dashboard, and
 });
 
 test("conversion proof records visual route audits for real upstream surfaces", () => {
-  const sourceManifest = readJson(".dx/forge/source-manifest.json");
+  const sourceManifest = readJson(".dx/forge/source-.dx/build-cache/manifest.json");
   assert.ok(Array.isArray(sourceManifest.visual_audits), "source manifest must list visual audit files");
   assert.equal(sourceManifest.visual_audits.length, 3);
 
@@ -255,7 +255,7 @@ test("conversion proof exposes one canonical route discovery manifest for DX and
   assert.ok(landingRoute.assets.length >= 1);
   assert.ok(landingRoute.dx_www_entrypoints.includes("pages/index.html"));
 
-  const sourceManifest = readJson(".dx/forge/source-manifest.json");
+  const sourceManifest = readJson(".dx/forge/source-.dx/build-cache/manifest.json");
   assert.equal(sourceManifest.route_discovery, routeDiscoveryPath);
   assert.equal(sourceManifest.route_acceptance_checklist, routeAcceptancePath);
   assert.equal(sourceManifest.rendered_proof_receipt_schema, renderedProofSchemaPath);
@@ -381,7 +381,7 @@ test("conversion proof defines the rendered-proof evidence receipt schema for ru
   assert.deepEqual(schema.source_inputs, [
     routeDiscoveryPath,
     routeAcceptancePath,
-    ".dx/forge/source-manifest.json",
+    ".dx/forge/source-.dx/build-cache/manifest.json",
   ]);
 
   for (const requiredField of [
@@ -785,7 +785,7 @@ test("conversion proof includes an honest blocked rendered-proof sample receipt"
   assert.equal(fixture.checks.provenance_review.status, "pass");
   assert.equal(fixture.provenance_snapshot.route_discovery, routeDiscoveryPath);
   assert.equal(fixture.provenance_snapshot.acceptance_checklist, routeAcceptancePath);
-  assert.equal(fixture.provenance_snapshot.source_manifest, ".dx/forge/source-manifest.json");
+  assert.equal(fixture.provenance_snapshot.source_manifest, ".dx/forge/source-.dx/build-cache/manifest.json");
   assert.equal(fixture.provenance_snapshot.visual_audit, "forge/visual-audits/shadcn-ui.json");
   assert.equal(fixture.provenance_snapshot.conversion_manifest, "forge/conversion-manifests/shadcn-ui.json");
   assert.equal(fixture.provenance_snapshot.receipt, ".dx/forge/receipts/2026-05-21-shadcn-ui-to-ui.json");
@@ -910,7 +910,7 @@ test("conversion manifests preserve source provenance, license, assets, and unsu
 });
 
 test("Forge receipts and copied assets make the conversion auditable", () => {
-  const sourceManifest = readJson(".dx/forge/source-manifest.json");
+  const sourceManifest = readJson(".dx/forge/source-.dx/build-cache/manifest.json");
   assert.equal(sourceManifest.schema, "dx.forge.source_manifest");
   assert.equal(sourceManifest.routes.length, 3);
   assert.equal(sourceManifest.status.score_out_of_100, 99);

@@ -485,7 +485,7 @@ export * from "./all";
         fs::write(&index_path, "export { Vector3 } from \"./math/vector3\";\n").expect("index");
         fs::write(&vector_path, "export class Vector3 {}\n").expect("vector");
         fs::write(
-            root.join(".dx/forge/source-manifest.json"),
+            root.join(".dx/forge/source-.dx/build-cache/manifest.json"),
             serde_json::to_vec_pretty(&json!({
                 "version": 1,
                 "packages": [{

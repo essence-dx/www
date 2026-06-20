@@ -49,7 +49,7 @@ function createState(node: WorkflowNode): N8nStudioState {
   return {
     catalog: {
       schema: "dx.n8n-studio.catalog",
-      sourceManifestPath: "integrations/n8n-nodes-base/dx-node-source-manifest.json",
+      sourceManifestPath: "integrations/n8n-nodes-base/dx-node-source-.dx/build-cache/manifest.json",
       copiedFrom: "local-dx-source",
       nodeFolderCount: 0,
       nodeFileCount: 0,

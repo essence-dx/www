@@ -184,7 +184,7 @@ test("real dx build emits black-box app artifacts for a tiny source-owned app", 
   try {
     runDxBuild(projectRoot);
 
-    const manifest = readJson(projectRoot, ".dx/build/manifest.json");
+    const manifest = readJson(projectRoot, ".dx/build/.dx/build-cache/manifest.json");
     assert.equal(manifest.app_routes_compiled, 2);
     assert.equal(manifest.server_data_routes_compiled, 2);
     assert.equal(manifest.server_data_route_manifest.source_build_routes, 2);
@@ -235,7 +235,7 @@ test("real dx build emits black-box app artifacts for a tiny source-owned app", 
     assertBuildFile(projectRoot, ".dx/build/styles/app.css.map");
     assertBuildFile(projectRoot, publicAsset.output);
 
-    const routeHandlerReceipts = readJson(projectRoot, ".dx/build/route-handler-receipts.json");
+    const routeHandlerReceipts = readJson(projectRoot, ".dx/build/.dx/build-cache/route-handler-receipts.json");
     assert.ok(
       routeHandlerReceipts.receipts.some(
         (receipt) =>
@@ -245,7 +245,7 @@ test("real dx build emits black-box app artifacts for a tiny source-owned app", 
       ),
       JSON.stringify(routeHandlerReceipts, null, 2),
     );
-    const deployAdapter = readJson(projectRoot, ".dx/build/deploy-adapter.json");
+    const deployAdapter = readJson(projectRoot, ".dx/build/.dx/build-cache/deploy-adapter.json");
     assert.deepEqual(sortedRoutes(deployAdapter.routes), ["/", "/dashboard/[team]"]);
     assert.ok(
       deployAdapter.route_handlers.some(
@@ -262,7 +262,7 @@ test("real dx build emits black-box app artifacts for a tiny source-owned app", 
     fs.rmSync(path.join(projectRoot, "app/dashboard"), { recursive: true, force: true });
     runDxBuild(projectRoot);
 
-    const rebuiltManifest = readJson(projectRoot, ".dx/build/manifest.json");
+    const rebuiltManifest = readJson(projectRoot, ".dx/build/.dx/build-cache/manifest.json");
     assert.equal(rebuiltManifest.app_routes_compiled, 1);
     assert.equal(rebuiltManifest.server_data_routes_compiled, 1);
     assert.equal(rebuiltManifest.server_data_route_manifest.source_build_routes, 1);
@@ -279,7 +279,7 @@ test("real dx build emits black-box app artifacts for a tiny source-owned app", 
     assertNoBuildFile(projectRoot, ".dx/build/source-routes/dashboard--team/server-data.json");
     assertNoBuildFile(projectRoot, ".dx/build/app/dashboard/:team/index.html");
     assertNoBuildFile(projectRoot, ".dx/build/stale-sentinel.txt");
-    const rebuiltDeployAdapter = readJson(projectRoot, ".dx/build/deploy-adapter.json");
+    const rebuiltDeployAdapter = readJson(projectRoot, ".dx/build/.dx/build-cache/deploy-adapter.json");
     assert.deepEqual(sortedRoutes(rebuiltDeployAdapter.routes), ["/"]);
     assert.ok(
       rebuiltDeployAdapter.immutable_assets.every(

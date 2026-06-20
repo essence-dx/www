@@ -270,7 +270,7 @@ test("Realtime App Database package-lane row survives generated starter material
     assert.ok(generatedLaunchPath, "expected generated launch page");
     const launch = fs.readFileSync(generatedLaunchPath, "utf8");
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
     const sourceContract = read("examples/template/dx-studio-edit-contract.ts");
     const materializerSource = read("tools/launch/materialize-www-template.ts");

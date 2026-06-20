@@ -487,7 +487,7 @@ test("materialized launch route keeps the scene dashboard workflow visible", () 
   assert.equal(receipt.workflow_id, "scene-visual-ops");
 
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
   const manifestText = JSON.stringify(manifest);
   assert.match(manifestText, /launch-runtime-scene-dashboard-workflow/);

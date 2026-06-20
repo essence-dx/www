@@ -341,7 +341,7 @@ test("Documentation System source-guard runbook fixture is package-owned and mac
     ),
   );
   assert.equal(fixture.receipt.zed_visibility, "documentation-system:receipt-hash-refresh");
-  assert.equal(fixture.preview_manifest.generated_file, "public/preview-manifest.json");
+  assert.equal(fixture.preview_manifest.generated_file, "public/preview-.dx/build-cache/manifest.json");
   assert.equal(
     fixture.preview_manifest.materializer,
     "tools/launch/materialize-www-template.ts",
@@ -394,7 +394,7 @@ test("Documentation System package-lane fixture survives generated starter mater
     );
     const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
 
     assert.equal(result.ok, true);

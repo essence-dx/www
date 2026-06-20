@@ -22,7 +22,7 @@ use super::app_router_runtime_command::{
 };
 use super::app_segment_files;
 
-const APP_ROUTE_DISCOVERY_SUMMARY_JSON: &str = "app-route-discovery.json";
+const APP_ROUTE_DISCOVERY_SUMMARY_JSON: &str = ".dx/build-cache/app-route-discovery.json";
 
 pub(super) struct DxAppRouterBuildCommandInput<'a> {
     pub(super) cwd: &'a Path,

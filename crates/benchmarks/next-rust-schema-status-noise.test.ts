@@ -45,7 +45,7 @@ test("Lane 14 schema/status noise check passes on coordinator source contracts",
   );
   assert.ok(
     DEFAULT_SCHEMA_STATUS_NOISE_FILES.includes(
-      "integrations/n8n-nodes-base/dx-node-source-manifest.json",
+      "integrations/n8n-nodes-base/dx-node-source-.dx/build-cache/manifest.json",
     ),
     "schema/status noise scan should cover the copied n8n source manifest",
   );
@@ -53,7 +53,7 @@ test("Lane 14 schema/status noise check passes on coordinator source contracts",
   assert.deepEqual(report.sideEffects, []);
   const n8nManifest = JSON.parse(
     fs.readFileSync(
-      path.join(repoRoot, "integrations", "n8n-nodes-base", "dx-node-source-manifest.json"),
+      path.join(repoRoot, "integrations", "n8n-nodes-base", "dx-node-source-.dx/build-cache/manifest.json"),
       "utf8",
     ),
   );

@@ -61,7 +61,7 @@ test("status claims with missing references fail the coherence gate", () => {
     status: "lock-backed",
     package_lock: {
       path: ".dx/forge/package-lock.json",
-      manifest_path: ".dx/forge/source-manifest.json",
+      manifest_path: ".dx/forge/source-.dx/build-cache/manifest.json",
     },
     receipts: {
       examples: [".dx/forge/receipts/packages/demo.json"],
@@ -74,7 +74,7 @@ test("status claims with missing references fail the coherence gate", () => {
 
   assert.deepEqual(missingReferencedArtifacts(status, new Set()), [
     "package_lock.path:.dx/forge/package-lock.json",
-    "package_lock.manifest_path:.dx/forge/source-manifest.json",
+    "package_lock.manifest_path:.dx/forge/source-.dx/build-cache/manifest.json",
     "remote_status.path:.dx/forge/remote-status.json",
     "remote_status.sync_plan_receipt_path:.dx/forge/receipts/remotes/sync-plan.json",
     "receipts.examples:.dx/forge/receipts/packages/demo.json",
@@ -85,7 +85,7 @@ test("status claims with missing references fail the coherence gate", () => {
       status,
       new Set([
         ".dx/forge/package-lock.json",
-        ".dx/forge/source-manifest.json",
+        ".dx/forge/source-.dx/build-cache/manifest.json",
         ".dx/forge/remote-status.json",
         ".dx/forge/receipts/remotes/sync-plan.json",
         ".dx/forge/receipts/packages/demo.json",

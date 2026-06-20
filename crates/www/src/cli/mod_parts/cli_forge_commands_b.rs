@@ -1612,12 +1612,12 @@ impl Cli {
             if let Some(parent) = path.parent() {
                 std::fs::create_dir_all(parent).map_err(|error| DxError::IoError {
                     path: Some(parent.to_path_buf()),
-                    message: error.to_string(),
+                    message: format!("{}:{}: {}", file!(), line!(), error),
                 })?;
             }
             std::fs::write(&path, rendered).map_err(|error| DxError::IoError {
                 path: Some(path.clone()),
-                message: error.to_string(),
+                message: format!("{}:{}: {}", file!(), line!(), error),
             })?;
             if !quiet {
                 println!(

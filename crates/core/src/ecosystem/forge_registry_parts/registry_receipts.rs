@@ -525,7 +525,7 @@ fn registry_object_keys(
 
 fn relative_registry_package_manifest(package: &DxForgeRegistryPackage) -> PathBuf {
     PathBuf::from(format!(
-        "packages/{}/{}/{}/manifest.json",
+        "packages/{}/{}/{}/.dx/build-cache/manifest.json",
         package.language.as_segment(),
         package.package_id,
         package.version
@@ -543,7 +543,7 @@ fn relative_registry_file(package: &DxForgeRegistryPackage, hash: &str) -> PathB
 
 fn package_manifest_key(prefix: &str, package: &DxForgeRegistryPackage) -> String {
     format!(
-        "{prefix}/packages/{}/{}/{}/manifest.json",
+        "{prefix}/packages/{}/{}/{}/.dx/build-cache/manifest.json",
         package.language.as_segment(),
         package.package_id,
         package.version

@@ -491,7 +491,7 @@ test("3D Scene System exposes hash-backed package-lane dx-check visibility", () 
   );
   assert.deepStrictEqual(materializerSurface.files, [
     previewManifestMaterializer,
-    "public/preview-manifest.json",
+    "public/preview-.dx/build-cache/manifest.json",
   ]);
   assert.strictEqual(
     materializerSurface.file_hashes[previewManifestMaterializer],

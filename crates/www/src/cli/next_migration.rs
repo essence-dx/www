@@ -206,7 +206,7 @@ pub(super) fn build_next_familiar_compatibility_evidence(
         "artifact_inputs": {
             "migration_proof": NEXT_MIGRATION_PROOF_JSON,
             "route_output_root": "app",
-            "import_resolution": "import-resolution.json"
+            "import_resolution": ".dx/build-cache/import-resolution.json"
         }
     })
 }

@@ -9,7 +9,7 @@ const templateRoot = path.join(root, "examples", "template");
 
 const packageId = "animation/motion";
 const cacheManifestPath =
-  ".dx/forge/cache/animation-motion/12.38.0-dx.12/manifest.json";
+  ".dx/forge/cache/animation-motion/12.38.0-dx.12/.dx/build-cache/manifest.json";
 const expectedFiles = [
   "motion/presets.ts",
   "motion/provider.tsx",
@@ -40,7 +40,7 @@ function readJson(relativePath: string) {
 
 test("Motion & Animation is promoted into the lock-backed Forge package set without browser-motion overclaims", () => {
   const sourceManifest = readJson(
-    "examples/template/.dx/forge/source-manifest.json",
+    "examples/template/.dx/forge/source-.dx/build-cache/manifest.json",
   );
   const lock = readJson("examples/template/.dx/forge/package-lock.json");
   const status = readJson("examples/template/.dx/forge/package-status.json");

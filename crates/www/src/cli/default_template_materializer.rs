@@ -77,7 +77,7 @@ pub(crate) fn read_default_template_source_text(source_file: &str) -> DxResult<S
             if candidate.is_file() {
                 return std::fs::read_to_string(&candidate).map_err(|e| DxError::IoError {
                     path: Some(candidate),
-                    message: e.to_string(),
+                    message: format!("{}:{}: {}", file!(), line!(), e),
                 });
             }
         }
@@ -130,18 +130,18 @@ fn write_default_template_source_file_set(
     if let Some(parent) = receipt_path.parent() {
         std::fs::create_dir_all(parent).map_err(|e| DxError::IoError {
             path: Some(parent.to_path_buf()),
-            message: e.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), e),
         })?;
     }
     std::fs::write(
         &receipt_path,
         serde_json::to_string_pretty(&receipt).map_err(|e| DxError::InternalError {
-            message: e.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), e),
         })?,
     )
     .map_err(|e| DxError::IoError {
         path: Some(receipt_path),
-        message: e.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), e),
     })?;
 
     Ok(())
@@ -161,12 +161,12 @@ fn write_template_source_file(target: &Path, content: &str) -> DxResult<()> {
     if let Some(parent) = target.parent() {
         std::fs::create_dir_all(parent).map_err(|e| DxError::IoError {
             path: Some(parent.to_path_buf()),
-            message: e.to_string(),
+            message: format!("{}:{}: {}", file!(), line!(), e),
         })?;
     }
     std::fs::write(target, content).map_err(|e| DxError::IoError {
         path: Some(target.to_path_buf()),
-        message: e.to_string(),
+        message: format!("{}:{}: {}", file!(), line!(), e),
     })
 }
 

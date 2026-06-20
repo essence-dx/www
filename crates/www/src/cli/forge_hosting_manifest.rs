@@ -2,7 +2,7 @@ use std::path::Path;
 
 use serde_json::{Value, json};
 
-pub(super) const FORGE_HOSTING_MANIFEST_JSON: &str = "forge-hosting-manifest.json";
+pub(super) const FORGE_HOSTING_MANIFEST_JSON: &str = ".dx/build-cache/forge-hosting-manifest.json";
 
 pub(super) fn write_forge_hosting_manifest(
     output_dir: &Path,
@@ -29,28 +29,28 @@ pub(super) fn write_forge_hosting_manifest(
             "metadata_path": deploy["rollback"]["metadata_path"],
             "strategy": deploy["rollback"]["strategy"],
             "previous_release_required": true,
-            "restore_order": ["immutable_assets", "manifest.json", "deploy-adapter.json"],
+            "restore_order": ["immutable_assets", ".dx/build-cache/manifest.json", ".dx/build-cache/deploy-adapter.json"],
             "immutable_asset_count": deploy["immutable_assets"].as_array().map_or(0, Vec::len),
             "inputs": [
                 {
-                    "path": "rollback.json",
+                    "path": ".dx/build-cache/rollback.json",
                     "kind": "rollback-metadata",
                     "required": true
                 },
                 {
-                    "path": "manifest.json",
+                    "path": ".dx/build-cache/manifest.json",
                     "kind": "build-manifest",
                     "required": true
                 },
                 {
-                    "path": "deploy-adapter.json",
+                    "path": ".dx/build-cache/deploy-adapter.json",
                     "kind": "deploy-contract",
                     "required": true
                 }
             ]
         },
         "signed_manifest": {
-            "path": "manifest.json",
+            "path": ".dx/build-cache/manifest.json",
             "hash": manifest_hash,
             "signed": build_manifest_signed,
             "signature_required_for_release": true,
@@ -122,9 +122,9 @@ pub(super) fn write_forge_hosting_manifest(
             "required_artifacts": required_artifacts,
             "blockers": blockers,
             "review_before_release": [
-                "Sign manifest.json with dx promote before hosted traffic.",
+                "Sign .dx/build-cache/manifest.json with dx promote before hosted traffic.",
                 "Keep Forge package files source-owned and reviewable.",
-                "Verify rollback.json against the previous build before promotion."
+                "Verify .dx/build-cache/rollback.json against the previous build before promotion."
             ]
         }
     });
@@ -160,15 +160,15 @@ fn release_gate_blockers(build_manifest_signed: bool, no_node_modules: bool) -> 
 
 fn required_release_artifacts(deploy: &Value) -> Vec<String> {
     let mut artifacts = vec![
-        "manifest.json".to_string(),
-        "deploy-adapter.json".to_string(),
+        ".dx/build-cache/manifest.json".to_string(),
+        ".dx/build-cache/deploy-adapter.json".to_string(),
         FORGE_HOSTING_MANIFEST_JSON.to_string(),
-        "rollback.json".to_string(),
-        "observability.json".to_string(),
-        "hosted-preview.json".to_string(),
-        "provider-adapter.dx-cloud.json".to_string(),
+        ".dx/build-cache/rollback.json".to_string(),
+        ".dx/build-cache/observability.json".to_string(),
+        ".dx/build-cache/hosted-preview.json".to_string(),
+        ".dx/build-cache/provider-adapter.dx-cloud.json".to_string(),
         "source-build-manifest.json".to_string(),
-        "source-build-receipt.json".to_string(),
+        ".dx/build-cache/source-build-receipt.json".to_string(),
     ];
 
     if let Some(path) = deploy["next_adapter_fixtures"]["path"].as_str() {

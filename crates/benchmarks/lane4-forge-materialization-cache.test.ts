@@ -68,7 +68,7 @@ function assertTemplatePathIsSourceOwned(filePath: string) {
 test("Database + API lane lock entries match materialized source and Forge cache bytes", () => {
   const packageLock = readJson(".dx/forge/package-lock.json");
   const packageStatus = readJson(".dx/forge/package-status.json");
-  const sourceManifest = readJson(".dx/forge/source-manifest.json");
+  const sourceManifest = readJson(".dx/forge/source-.dx/build-cache/manifest.json");
 
   assert.deepEqual(databaseApiLaneMaterializationReality.packageIds, [
     "db/drizzle-sqlite",
@@ -148,7 +148,7 @@ test("Database + API lane lock entries match materialized source and Forge cache
 test("Database + API readiness contract is promoted into the Type-Safe API Forge package", () => {
   const packageLock = readJson(".dx/forge/package-lock.json");
   const packageStatus = readJson(".dx/forge/package-status.json");
-  const sourceManifest = readJson(".dx/forge/source-manifest.json");
+  const sourceManifest = readJson(".dx/forge/source-.dx/build-cache/manifest.json");
   const apiPackageId = "api/trpc";
   const promotedFiles = [
     "lib/database-api/source-contract.ts",

@@ -51,7 +51,7 @@ pub fn emit_route_outputs(
             span: None,
         })?;
 
-        let route_dir = output_dir.join("source-routes").join(
+        let route_dir = output_dir.join(".dx/build-cache/source-routes").join(
             route_slugs
                 .remove(&source_route_key(route))
                 .unwrap_or_else(|| source_route_slug(&route.route)),

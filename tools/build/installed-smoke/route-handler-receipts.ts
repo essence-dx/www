@@ -40,7 +40,7 @@ function summarizeRouteHandlerReceipts(input, sourcePath = PRIMARY_ROUTE_HANDLER
     present: artifact.ok,
     path: input.routeHandlerReceiptsPath
       ? relativePath(input.projectRoot, input.routeHandlerReceiptsPath)
-      : ".dx/build/route-handler-receipts.json",
+      : ".dx/build/.dx/build-cache/route-handler-receipts.json",
     collectionSchema: collection.schema || null,
     collectionFormat: collection.format ?? null,
     collectionDeclaresNoNodeModules: collection.node_modules_required === false,

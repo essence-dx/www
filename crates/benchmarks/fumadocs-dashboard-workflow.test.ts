@@ -607,7 +607,7 @@ test("fumadocs dashboard receipt records the visible launch workflow", () => {
     receipt.runtime_preview_manifest.generator,
     "tools/launch/materialize-www-template.ts",
   );
-  assert.equal(receipt.runtime_preview_manifest.file, "public/preview-manifest.json");
+  assert.equal(receipt.runtime_preview_manifest.file, "public/preview-.dx/build-cache/manifest.json");
   assert.equal(receipt.runtime_preview_manifest.surface_id, "launch-runtime-docs");
   assert.ok(
     receipt.runtime_preview_manifest.interaction_selectors.includes(
@@ -910,7 +910,7 @@ test("fumadocs materializer output keeps the docs workflow visible and editable"
   assert.match(runtime, /data-dx-fumadocs-local-response/);
   assert.match(runtime, /"aria-pressed"/);
 
-  const manifest = JSON.parse(read(path.join(dir, "public", "preview-manifest.json")));
+  const manifest = JSON.parse(read(path.join(dir, "public", "preview-.dx/build-cache/manifest.json")));
   const surface = manifest.editContract.editableSurfaces.find(
     (candidate) => candidate.id === "launch-runtime-docs",
   );

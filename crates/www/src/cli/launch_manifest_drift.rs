@@ -8,7 +8,7 @@ use serde_json::Value;
 
 const REPORT_SCHEMA: &str = "dx.forge.launch_manifest_drift";
 const TEMPLATE_ID: &str = "next-familiar-www-template";
-const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-manifest.json";
+const TEMPLATE_MANIFEST_PATH: &str = ".dx/forge/template-.dx/build-cache/manifest.json";
 const READINESS_RECEIPT_PATH: &str = ".dx/forge/template-readiness/launch-route.json";
 const READINESS_BUNDLE_PATH: &str = ".dx/forge/template-readiness/launch-readiness-bundle.json";
 

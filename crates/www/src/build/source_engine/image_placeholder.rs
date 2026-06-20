@@ -128,7 +128,7 @@ fn placeholder_hash(bytes: &[u8]) -> String {
 }
 
 fn placeholder_output_path(output_dir: &Path, asset_relative: &Path, hash: &str) -> PathBuf {
-    let mut output = output_dir.join("image-placeholders").join(asset_relative);
+    let mut output = output_dir.join(".dx/build-cache/image-placeholders").join(asset_relative);
     let stem = output
         .file_stem()
         .and_then(|value| value.to_str())

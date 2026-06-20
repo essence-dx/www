@@ -82,7 +82,7 @@ function readJson(relativePath: string) {
 test("lane 5 packages are lock-backed and materialized in the launch template", () => {
   const lock = readJson("examples/template/.dx/forge/package-lock.json");
   const status = readJson("examples/template/.dx/forge/package-status.json");
-  const sourceManifest = readJson("examples/template/.dx/forge/source-manifest.json");
+  const sourceManifest = readJson("examples/template/.dx/forge/source-.dx/build-cache/manifest.json");
   const realitySource = read("examples/template/components/template-app/package-reality.ts");
   const realityPanelSource = read(
     "examples/template/components/template-app/package-reality-panel.tsx",

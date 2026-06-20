@@ -19,7 +19,7 @@ pub(super) fn cmd_rollback(cwd: &Path, args: &[String]) -> DxResult<()> {
         );
         eprintln!();
         eprintln!(
-            "Compares deploy-adapter.json, manifest.json, rollback.json, and previous immutable assets before hosted rollback."
+            "Compares .dx/build-cache/deploy-adapter.json, .dx/build-cache/manifest.json, .dx/build-cache/rollback.json, and previous immutable assets before hosted rollback."
         );
         return Ok(());
     }

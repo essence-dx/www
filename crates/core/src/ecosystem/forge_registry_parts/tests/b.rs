@@ -1813,57 +1813,57 @@
         assert!(dir.path().join("index.json").exists());
         assert!(
             dir.path()
-                .join("packages/js/shadcn/ui/button/0.1.0/manifest.json")
+                .join("packages/js/shadcn/ui/button/0.1.0/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/shadcn/ui/badge/0.1.0/manifest.json")
+                .join("packages/js/shadcn/ui/badge/0.1.0/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/shadcn/ui/label/0.1.0/manifest.json")
+                .join("packages/js/shadcn/ui/label/0.1.0/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/dx/icon/search/0.1.0/manifest.json")
+                .join("packages/js/dx/icon/search/0.1.0/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/auth/better-auth/1.6.11-dx.9/manifest.json")
+                .join("packages/js/auth/better-auth/1.6.11-dx.9/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/validation/zod/4.4.3-dx.12/manifest.json")
+                .join("packages/js/validation/zod/4.4.3-dx.12/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/forms/react-hook-form/7.75.0-dx.0/manifest.json")
+                .join("packages/js/forms/react-hook-form/7.75.0-dx.0/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/payments/stripe-js/9.6.0-dx.1/manifest.json")
+                .join("packages/js/payments/stripe-js/9.6.0-dx.1/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/content/fumadocs-next/16.8.12-dx.11/manifest.json")
+                .join("packages/js/content/fumadocs-next/16.8.12-dx.11/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/db/drizzle-sqlite/0.1.0/manifest.json")
+                .join("packages/js/db/drizzle-sqlite/0.1.0/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(
             dir.path()
-                .join("packages/js/migration/static-site/0.1.0/manifest.json")
+                .join("packages/js/migration/static-site/0.1.0/.dx/build-cache/manifest.json")
                 .exists()
         );
         assert!(report.objects.len() >= 8);
@@ -1900,7 +1900,7 @@
         assert!(
             objects
                 .iter()
-                .any(|object| object.contains("packages/js/shadcn/ui/button/0.1.0/manifest.json"))
+                .any(|object| object.contains("packages/js/shadcn/ui/button/0.1.0/.dx/build-cache/manifest.json"))
         );
         assert!(
             objects

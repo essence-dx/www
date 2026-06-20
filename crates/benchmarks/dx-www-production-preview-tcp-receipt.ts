@@ -56,7 +56,7 @@ function stringValue(value: unknown): string | null {
 }
 
 function chooseAssetProbePath(buildDir: string): string {
-  const deploy = JSON.parse(fs.readFileSync(path.join(buildDir, "deploy-adapter.json"), "utf8")) as JsonRecord;
+  const deploy = JSON.parse(fs.readFileSync(path.join(buildDir, ".dx/build-cache/deploy-adapter.json"), "utf8")) as JsonRecord;
   const assets = Array.isArray(deploy.immutable_assets) ? deploy.immutable_assets : [];
   const paths = assets
     .map((asset) => recordValue(asset).path)
@@ -312,8 +312,8 @@ async function collectLive(input: {
   const dxWwwBin = resolveProjectPath(input.dxWwwBin);
   const buildDir = resolveProjectPath(input.buildDir);
   if (!fs.existsSync(dxWwwBin)) throw new Error(`Missing dx-www binary: ${dxWwwBin}`);
-  if (!fs.existsSync(path.join(buildDir, "deploy-adapter.json"))) {
-    throw new Error(`Missing deploy-adapter.json in build dir: ${buildDir}`);
+  if (!fs.existsSync(path.join(buildDir, ".dx/build-cache/deploy-adapter.json"))) {
+    throw new Error(`Missing .dx/build-cache/deploy-adapter.json in build dir: ${buildDir}`);
   }
   const port = await freePort();
   const previewCommand = `${dxWwwBin} preview --production-contract --build-dir ${buildDir} --port ${port}`;

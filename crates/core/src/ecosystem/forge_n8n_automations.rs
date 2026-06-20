@@ -57,7 +57,7 @@ export type DxN8nAutomationBridgeMetadata = {
   upstreamVersion: "2.22.0";
   sourceMirror: "G:/WWW/inspirations/n8n";
   nodeSourceMirror: "G:\\WWW\\inspirations\\n8n\\packages\\nodes-base";
-  sourceManifest: "integrations/n8n-nodes-base/dx-node-source-manifest.json";
+  sourceManifest: "integrations/n8n-nodes-base/dx-node-source-.dx/build-cache/manifest.json";
   generatedManifestRoot: "integrations/n8n-nodes-base/generated";
   provenance: "n8n-nodes-base";
   inspectedSourceFiles: readonly string[];
@@ -139,7 +139,7 @@ export const dxN8nAutomationBridgeMetadata = {
   upstreamVersion: "2.22.0",
   sourceMirror: "G:/WWW/inspirations/n8n",
   nodeSourceMirror: "G:\\WWW\\inspirations\\n8n\\packages\\nodes-base",
-  sourceManifest: "integrations/n8n-nodes-base/dx-node-source-manifest.json",
+  sourceManifest: "integrations/n8n-nodes-base/dx-node-source-.dx/build-cache/manifest.json",
   generatedManifestRoot: "integrations/n8n-nodes-base/generated",
   provenance: "n8n-nodes-base",
   inspectedSourceFiles: [

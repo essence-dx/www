@@ -310,7 +310,7 @@ test("Validation & Schemas package-lane row survives generated starter materiali
   );
   const launch = fs.readFileSync(path.join(dir, "pages", "index.html"), "utf8");
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
 
   assert.equal(result.ok, true);

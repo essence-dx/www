@@ -143,7 +143,7 @@ pub(super) fn cmd_forge_materialize_static_assets(cwd: &Path, args: &[String]) -
     let project = project.unwrap_or_else(|| cwd.to_path_buf());
     let manifest = manifest.ok_or_else(|| {
         static_asset_materialization_error(
-            "dx forge materialize-static-assets requires --manifest <asset-manifest.json>",
+            "dx forge materialize-static-assets requires --manifest <asset-.dx/build-cache/manifest.json>",
             "manifest",
         )
     })?;
@@ -342,7 +342,7 @@ pub(super) fn build_forge_static_asset_materialization_report(
         assets,
         findings,
         next_commands: vec![
-            "dx forge materialize-static-assets --manifest <asset-manifest.json> --public-dir public --write --format markdown".to_string(),
+            "dx forge materialize-static-assets --manifest <asset-.dx/build-cache/manifest.json> --public-dir public --write --format markdown".to_string(),
             "Review unresolved media gaps before production publish.".to_string(),
             "Serve `/assets/migrated/**` with `Cache-Control: public, max-age=31536000, immutable` after fingerprint review.".to_string(),
         ],

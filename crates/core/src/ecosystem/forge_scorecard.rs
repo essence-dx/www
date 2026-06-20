@@ -52,7 +52,7 @@ const LAUNCH_PACKAGES: [&str; 32] = [
     "3d/launch-scene",
     "migration/static-site",
 ];
-const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-manifest.json";
+const SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-.dx/build-cache/manifest.json";
 const RECEIPT_DIR: &str = ".dx/forge/receipts";
 const PACKAGE_DOCS_DIR: &str = ".dx/forge/docs";
 const SCORECARD_HISTORY_DIR: &str = ".dx/forge/scorecard-history";
@@ -115,7 +115,7 @@ pub struct DxForgePackageScorecardHistoryEntry {
 pub struct DxForgeProjectScorecardEvidence {
     /// Checked project root.
     pub path: PathBuf,
-    /// Whether `.dx/forge/source-manifest.json` exists and parsed.
+    /// Whether `.dx/forge/source-.dx/build-cache/manifest.json` exists and parsed.
     pub manifest_present: bool,
     /// Source-owned packages tracked in the local manifest.
     pub manifest_package_count: u64,

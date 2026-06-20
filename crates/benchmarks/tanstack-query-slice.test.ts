@@ -191,7 +191,7 @@ test("tanstack query launch runtime proof is browser-visible without node_module
     "utf8",
   );
   const manifest = JSON.parse(
-    fs.readFileSync(path.join(projectDir, "public", "preview-manifest.json"), "utf8"),
+    fs.readFileSync(path.join(projectDir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
   );
 
   assert.equal(result.ok, true);

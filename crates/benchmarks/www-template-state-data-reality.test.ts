@@ -54,7 +54,7 @@ test("lane 3 packages are source-owned and honestly classified", async () => {
     fs.existsSync(
       path.join(
         root,
-        "examples/template/.dx/forge/cache/reactive-store/0.11.0-dx.1/manifest.json",
+        "examples/template/.dx/forge/cache/reactive-store/0.11.0-dx.1/.dx/build-cache/manifest.json",
       ),
     ),
   );

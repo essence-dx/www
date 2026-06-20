@@ -187,7 +187,7 @@ fn forge_doctor_registry_check(package_id: &str) -> DxForgeDoctorRegistryCheck {
 }
 
 fn forge_doctor_package_docs(project: &Path) -> anyhow::Result<Vec<DxForgeDoctorPackageDoc>> {
-    let manifest_path = project.join(".dx/forge/source-manifest.json");
+    let manifest_path = project.join(".dx/forge/source-.dx/build-cache/manifest.json");
     if !manifest_path.exists() {
         return Ok(Vec::new());
     }

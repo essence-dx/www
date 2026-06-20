@@ -3,7 +3,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..", "..");
 const integrationRoot = path.join(root, "integrations", "n8n-nodes-base");
-const manifestPath = path.join(integrationRoot, "dx-node-source-manifest.json");
+const manifestPath = path.join(integrationRoot, "dx-node-source-.dx/build-cache/manifest.json");
 const generatedDir = path.join(integrationRoot, "generated");
 const templateAutomationDir = path.join(root, "examples", "template", "automations");
 
@@ -401,7 +401,7 @@ function manifestSource(manifest) {
     copied_to: manifest.source.copied_to,
     package: manifest.source.package,
     license_files: manifest.source.license_files,
-    manifest: "integrations/n8n-nodes-base/dx-node-source-manifest.json",
+    manifest: "integrations/n8n-nodes-base/dx-node-source-.dx/build-cache/manifest.json",
     provenance: "n8n-nodes-base",
   };
 }

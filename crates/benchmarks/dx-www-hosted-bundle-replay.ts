@@ -164,7 +164,7 @@ function requiredValue(argv: string[], index: number, option: string): string {
 function printUsage(): void {
   process.stderr.write(
     [
-      "Usage: node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <url> --deploy-adapter <deploy-adapter.json> --provider-adapter <provider-adapter.dx-cloud.json> [--out <receipt.json>] [--hosted-provider] [--provider-id <id>]",
+      "Usage: node benchmarks/dx-www-hosted-bundle-replay.ts --base-url <url> --deploy-adapter <.dx/build-cache/deploy-adapter.json> --provider-adapter <.dx/build-cache/provider-adapter.dx-cloud.json> [--out <receipt.json>] [--hosted-provider] [--provider-id <id>]",
       "",
     ].join("\n"),
   );

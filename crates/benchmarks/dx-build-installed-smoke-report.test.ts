@@ -48,7 +48,7 @@ test("installed smoke classifies disk-full build failures before derived artifac
   assert.match(report.environmentBlocker.evidence, /os error 112/);
   assert.ok(report.failures.includes("build environment has insufficient disk space"));
   assert.equal(
-    report.failures.includes("dx build did not write .dx/build/manifest.json"),
+    report.failures.includes("dx build did not write .dx/build/.dx/build-cache/manifest.json"),
     false,
     "disk-full reports should not bury the root cause under derived artifact failures",
   );
@@ -279,10 +279,10 @@ function createReportInput(overrides = {}) {
     nextFamiliarCompatibilityEvidence: missingJson,
     zedHandoff: missingJson,
     readiness: missingJson,
-    manifestPath: path.join(buildDir, "manifest.json"),
+    manifestPath: path.join(buildDir, ".dx/build-cache/manifest.json"),
     sourceBuildManifestPath: path.join(buildDir, "source-build-manifest.json"),
-    sourceBuildReceiptPath: path.join(buildDir, "source-build-receipt.json"),
-    routeHandlerReceiptsPath: path.join(buildDir, "route-handler-receipts.json"),
+    sourceBuildReceiptPath: path.join(buildDir, ".dx/build-cache/source-build-receipt.json"),
+    routeHandlerReceiptsPath: path.join(buildDir, ".dx/build-cache/route-handler-receipts.json"),
     canonicalReceiptPath: path.join(receiptsDir, "build", "latest.json"),
     graphReceiptPath: path.join(receiptsDir, "graph", "latest.json"),
     graphConsumerSnapshotPath: path.join(receiptsDir, "graph", "consumer-snapshot.json"),
@@ -297,7 +297,7 @@ function createReportInput(overrides = {}) {
     appExecutionPath: path.join(buildDir, "app", "app-router-execution.json"),
     serverDataPath: path.join(buildDir, "app", "server-data.json"),
     serverContractsPath: path.join(buildDir, "server-contracts.json"),
-    deployAdapterPath: path.join(buildDir, "deploy-adapter.json"),
+    deployAdapterPath: path.join(buildDir, ".dx/build-cache/deploy-adapter.json"),
     zedHandoffPath: path.join(receiptsDir, "build", "zed-handoff.json"),
     readinessPath: path.join(receiptsDir, "build", "readiness.json"),
     ...overrides,

@@ -6,7 +6,7 @@ use serde_json::Value;
 use crate::error::{DxError, DxResult};
 
 const MAX_CONFIG_EXTENDS_DEPTH: usize = 8;
-const FORGE_SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-manifest.json";
+const FORGE_SOURCE_MANIFEST_PATH: &str = ".dx/forge/source-.dx/build-cache/manifest.json";
 
 pub(super) const RESOLVER_SOURCE_ADAPTER_BOUNDARY: &str = "adapter-boundary";
 pub(super) const RESOLVER_SOURCE_BASE_URL_BOUNDARY: &str = "base-url-boundary";

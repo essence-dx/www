@@ -267,7 +267,7 @@ test("3D Scene System exposes receipt hash freshness through package-status and 
   );
   assert.deepEqual(previewManifestMaterializerSurface.files, [
     previewManifestMaterializerPath,
-    "public/preview-manifest.json",
+    "public/preview-.dx/build-cache/manifest.json",
   ]);
   assert.equal(
     previewManifestMaterializerSurface.file_hashes[
@@ -483,7 +483,7 @@ test("3D Scene System receipt hash helper refreshes selected surfaces without ru
     );
     assert.deepEqual(refreshedMaterializerSurface.files, [
       previewManifestMaterializerPath,
-      "public/preview-manifest.json",
+      "public/preview-.dx/build-cache/manifest.json",
     ]);
     assert.equal(
       refreshedMaterializerSurface.file_hashes[previewManifestMaterializerPath],

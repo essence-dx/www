@@ -58,7 +58,7 @@ fn forge_launch_smoke_materializes_packages_and_passes_strict_checks() {
 
     assert!(root.join("components/ui/button.tsx").exists());
     assert!(root.join("components/icons/search.tsx").exists());
-    assert!(root.join(".dx/forge/source-manifest.json").exists());
+    assert!(root.join(".dx/forge/source-.dx/build-cache/manifest.json").exists());
     assert!(root.join(".dx/forge/docs/shadcn-ui-button.md").exists());
     assert!(root.join(".dx/forge/docs/dx-icon-search.md").exists());
     assert!(!root.join("node_modules").exists());

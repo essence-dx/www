@@ -461,7 +461,7 @@ if (process.env.DX_WRITE_OLD_NEXT_PARITY_EVIDENCE === "1") {
     JSON.stringify({ comparison_mode: "removed-runtime-parity" }, null, 2)
   );
 }
-fs.writeFileSync(path.join(process.cwd(), ".dx", "build", "deploy-adapter.json"), JSON.stringify({
+fs.writeFileSync(path.join(process.cwd(), ".dx", "build", ".dx/build-cache/deploy-adapter.json"), JSON.stringify({
   no_node_modules_required: true,
   ...(process.env.DX_OMIT_NEXT_FAMILIAR_COMPATIBILITY_EVIDENCE === "1" ? {} : {
     next_familiar_compatibility_evidence: {
@@ -482,7 +482,7 @@ fs.writeFileSync(path.join(process.cwd(), ".dx", "build", "deploy-adapter.json")
       safe_build_methods: ["GET"],
       skipped_build_methods: [],
       build_execution: "safe-requestless-receipt",
-      receipt: "route-handler-receipts.json",
+      receipt: ".dx/build-cache/route-handler-receipts.json",
       node_modules_required: false,
       runtime_boundary: {
         source_owned: true,
@@ -497,7 +497,7 @@ fs.writeFileSync(path.join(process.cwd(), ".dx", "build", "deploy-adapter.json")
       safe_build_methods: [],
       skipped_build_methods: ["POST"],
       build_execution: "skipped-build-execution",
-      receipt: "route-handler-receipts.json",
+      receipt: ".dx/build-cache/route-handler-receipts.json",
       node_modules_required: false,
       runtime_boundary: {
         source_owned: true,
@@ -526,7 +526,7 @@ const manifestServerDataRoutes = [{
   external_runtime_required: false,
   external_runtime_executed: false
 }];
-fs.writeFileSync(path.join(process.cwd(), ".dx", "build", "manifest.json"), JSON.stringify({
+fs.writeFileSync(path.join(process.cwd(), ".dx", "build", ".dx/build-cache/manifest.json"), JSON.stringify({
   source_build_css_original_rules: 3,
   source_build_css_retained_rules: 2,
   source_build_css_pruned_rules: 1,
@@ -673,7 +673,7 @@ fs.writeFileSync(path.join(process.cwd(), ".dx", "build", "source-build-manifest
   }],
   node_modules_required: false
 }, null, 2));
-fs.writeFileSync(path.join(process.cwd(), ".dx", "build", "source-build-receipt.json"), JSON.stringify(sourceBuildReceipt, null, 2));
+fs.writeFileSync(path.join(process.cwd(), ".dx", "build", ".dx/build-cache/source-build-receipt.json"), JSON.stringify(sourceBuildReceipt, null, 2));
 fs.writeFileSync(path.join(process.cwd(), ".dx", "receipts", "build", "latest.json"), JSON.stringify(sourceBuildReceipt, null, 2));
 const routeReceiptHasBadResponse = process.env.DX_BAD_ROUTE_HANDLER_RESPONSE === "1";
 const routeReceiptMissingAdapterBoundary = process.env.DX_MISSING_ROUTE_HANDLER_ADAPTER_BOUNDARY === "1";
@@ -683,7 +683,7 @@ const routeReceiptResponse = {
   header_count: routeReceiptHasBadResponse ? 0 : 1
 };
 if (process.env.DX_OMIT_ROUTE_HANDLER_RECEIPT !== "1") {
-  fs.writeFileSync(path.join(process.cwd(), ".dx", "build", "route-handler-receipts.json"), JSON.stringify({
+  fs.writeFileSync(path.join(process.cwd(), ".dx", "build", ".dx/build-cache/route-handler-receipts.json"), JSON.stringify({
     schema: process.env.DX_WRONG_ROUTE_HANDLER_COLLECTION_SCHEMA === "1"
       ? "dx.next.appRouteHandlerBuildReceipts.experimental"
       : "dx.next.appRouteHandlerBuildReceipts",
@@ -847,8 +847,8 @@ fs.writeFileSync(path.join(process.cwd(), ".dx", "receipts", "build", "readiness
   product_score: 82,
   graph: {
     route_handler_receipt_output: process.env.DX_BAD_READINESS_ROUTE_HANDLER_RECEIPT_OUTPUT === "1"
-      ? ".dx/build/stale-route-handler-receipts.json"
-      : ".dx/build/route-handler-receipts.json",
+      ? ".dx/build/stale-.dx/build-cache/route-handler-receipts.json"
+      : ".dx/build/.dx/build-cache/route-handler-receipts.json",
     route_handler_receipts_executed: process.env.DX_BAD_READINESS_ROUTE_HANDLER_RECEIPT_COUNTS === "1" ? 0 : 1,
     route_handler_receipts_skipped: process.env.DX_BAD_READINESS_ROUTE_HANDLER_RECEIPT_COUNTS === "1" ? 0 : (process.env.DX_OMIT_CHECKOUT_ROUTE_HANDLER === "1" ? 0 : 1),
     ...(process.env.DX_OMIT_READINESS_ROUTE_HANDLER_RECEIPT_RUNTIME_GUARDS === "1" ? {} : {
@@ -1062,7 +1062,7 @@ process.exit(0);
   assert.equal(report.build.readiness.sourceScore, 100);
   assert.equal(report.build.readiness.productReady, false);
   assert.equal(report.build.readiness.productScore, 82);
-  assert.equal(report.build.readiness.routeHandlerReceiptOutput, ".dx/build/route-handler-receipts.json");
+  assert.equal(report.build.readiness.routeHandlerReceiptOutput, ".dx/build/.dx/build-cache/route-handler-receipts.json");
   assert.equal(report.build.readiness.routeHandlerReceiptOutputMatchesActual, true);
   assert.equal(report.build.readiness.routeHandlerReceiptsExecuted, 1);
   assert.equal(report.build.readiness.routeHandlerReceiptsSkipped, 1);
@@ -1330,7 +1330,7 @@ process.exit(0);
   );
   assert.ok(
     missingCheckoutRouteHandlerReport.failures.includes(
-      ".dx/build/route-handler-receipts.json is missing app/api/checkout/route.ts POST skipped evidence",
+      ".dx/build/.dx/build-cache/route-handler-receipts.json is missing app/api/checkout/route.ts POST skipped evidence",
     ),
     JSON.stringify(missingCheckoutRouteHandlerReport.failures, null, 2),
   );
@@ -1373,7 +1373,7 @@ process.exit(0);
   const missingRouteReceiptReport = JSON.parse(missingRouteReceiptResult.stdout);
   assert.equal(missingRouteReceiptReport.build.sourceBuild.routeHandlerReceipt.present, false);
   assert.ok(
-    missingRouteReceiptReport.failures.includes("dx build did not write .dx/build/route-handler-receipts.json"),
+    missingRouteReceiptReport.failures.includes("dx build did not write .dx/build/.dx/build-cache/route-handler-receipts.json"),
     JSON.stringify(missingRouteReceiptReport.failures, null, 2),
   );
 
@@ -1439,7 +1439,7 @@ process.exit(0);
   );
   assert.equal(
     badReadinessRouteHandlerReceiptOutputReport.build.readiness.routeHandlerReceiptOutput,
-    ".dx/build/stale-route-handler-receipts.json",
+    ".dx/build/stale-.dx/build-cache/route-handler-receipts.json",
   );
   assert.equal(
     badReadinessRouteHandlerReceiptOutputReport.build.readiness.routeHandlerReceiptOutputMatchesActual,

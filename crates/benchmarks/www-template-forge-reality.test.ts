@@ -102,7 +102,7 @@ function listCacheArchiveManifestPaths() {
       const fullPath = path.join(directory, entry.name);
       if (entry.isDirectory()) {
         visit(fullPath);
-      } else if (entry.name === "manifest.json") {
+      } else if (entry.name === ".dx/build-cache/manifest.json") {
         manifestPaths.push(
           path.relative(path.join(root, "examples", "template"), fullPath).replace(/\\/g, "/"),
         );
@@ -123,7 +123,7 @@ function listPhysicalCacheManifestPaths() {
       const fullPath = path.join(directory, entry.name);
       if (entry.isDirectory()) {
         visit(fullPath);
-      } else if (entry.name === "manifest.json") {
+      } else if (entry.name === ".dx/build-cache/manifest.json") {
         manifestPaths.push(
           path.relative(path.join(root, "examples", "template"), fullPath).replace(/\\/g, "/"),
         );
@@ -142,7 +142,7 @@ test("Forge reality model separates lock-backed packages from real controls", as
   const reality = await import("../examples/template/components/template-app/package-reality.ts");
   const status = readJson("examples/template/.dx/forge/package-status.json");
   const lock = readJson("examples/template/.dx/forge/package-lock.json");
-  const sourceManifest = readJson("examples/template/.dx/forge/source-manifest.json");
+  const sourceManifest = readJson("examples/template/.dx/forge/source-.dx/build-cache/manifest.json");
   const realitySource = read("examples/template/components/template-app/package-reality.ts");
   const dashboardSource = read("examples/template/components/template-app/dashboard-page.tsx");
   const panelSource = read("examples/template/components/template-app/package-reality-panel.tsx");
@@ -430,7 +430,7 @@ test("materialized dashboard proves real controls without fake runtime claims", 
 
     const dashboard = fs.readFileSync(path.join(dir, "pages", "dashboard.html"), "utf8");
     const manifest = JSON.parse(
-      fs.readFileSync(path.join(dir, "public", "preview-manifest.json"), "utf8"),
+      fs.readFileSync(path.join(dir, "public", "preview-.dx/build-cache/manifest.json"), "utf8"),
     );
   const dashboardRoute = manifest.routes.find((entry: { route: string }) => entry.route === "/dashboard");
   const realControls = [
@@ -843,7 +843,7 @@ test("materialized dashboard proves real controls without fake runtime claims", 
 });
 
 test("database and api lane packages expose source-owned default-template files", () => {
-  const sourceManifest = readJson("examples/template/.dx/forge/source-manifest.json");
+  const sourceManifest = readJson("examples/template/.dx/forge/source-.dx/build-cache/manifest.json");
   const status = readJson("examples/template/.dx/forge/package-status.json");
   const routeHandler = read("examples/template/app/api/trpc/[trpc]/route.ts");
   const routeHandlerFactory = read("examples/template/lib/trpc/route-handler.ts");
@@ -932,8 +932,8 @@ test("launch auth surface reviews boundaries without faking a session", () => {
 test("checked-in preview manifests stay synced with Forge reality source", async () => {
   const reality = await import("../examples/template/components/template-app/package-reality.ts");
   const previewManifests = [
-    ".dx/template-app-browser-preview/public/preview-manifest.json",
-    "examples/template/public/preview-manifest.json",
+    ".dx/template-app-browser-preview/public/preview-.dx/build-cache/manifest.json",
+    "examples/template/public/preview-.dx/build-cache/manifest.json",
   ];
 
   for (const manifestPath of previewManifests) {

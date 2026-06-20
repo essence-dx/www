@@ -990,7 +990,7 @@ impl Cli {
         source: &str,
         request_path: &str,
     ) -> Result<Option<DxCliHttpResponse>, String> {
-        if request_path != "/api/v1/search"
+        if request_path != "/api/search"
             || !source.contains("createDxMetasearchSearchResponse")
         {
             return Ok(None);

@@ -89,15 +89,15 @@ where
     eprintln!("{}", crate::cli::utils::rainbow_text(&format!("◆ Www {} (Dx)", env!("CARGO_PKG_VERSION"))));
     
     let name_val = config.project.name.clone();
-    let local_val = style(format!("http://{}:{}", options.host, port)).cyan().to_string();
-    let project_size = crate::cli::utils::get_dir_size(cwd);
-    let size_val = crate::cli::utils::format_size(project_size);
+    let local_val = style(format!("http://{}:{}", if options.host == "0.0.0.0" { "localhost" } else { &options.host }, port)).cyan().to_string();
+    let network_ip = crate::cli::utils::get_local_ip().unwrap_or_else(|| "127.0.0.1".to_string());
+    let network_val = style(format!("http://{}:{}", network_ip, port)).cyan().to_string();
     
     crate::cli::utils::print_ascii_table(
         &[
             ("Name", &name_val),
             ("Local", &local_val),
-            ("Size", &size_val),
+            ("Network", &network_val),
         ]
     );
 

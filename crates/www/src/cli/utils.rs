@@ -150,3 +150,11 @@ pub fn print_build_summary(
     println!("{} Finalizing page optimization", style("✓").green());
     println!();
 }
+
+pub fn get_local_ip() -> Option<String> {
+    use std::net::UdpSocket;
+    let socket = UdpSocket::bind("0.0.0.0:0").ok()?;
+    socket.connect("8.8.8.8:80").ok()?;
+    let addr = socket.local_addr().ok()?;
+    Some(addr.ip().to_string())
+}

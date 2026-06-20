@@ -38,7 +38,7 @@ pub fn rainbow_text(text: &str) -> String {
     for (i, c) in text.chars().enumerate() {
         let hue = (i as f32 * 15.0) % 360.0;
         let c_num = hue / 60.0;
-        let x = (1.0 - (c_num % 2.0 - 1.0).abs());
+        let x = 1.0 - (c_num % 2.0 - 1.0).abs();
         let (r, g, b) = if c_num < 1.0 {
             (1.0, x, 0.0)
         } else if c_num < 2.0 {

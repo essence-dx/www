@@ -201,7 +201,7 @@ where
                     style(path_str).blue()
                 };
 
-                let render_time = compile_elapsed;
+                let _render_time = compile_elapsed;
                 
                 // Let's just use compile_elapsed for both, since we don't have total_time yet.
                 let display_time = crate::cli::utils::format_time(compile_elapsed);

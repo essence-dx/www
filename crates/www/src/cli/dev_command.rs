@@ -77,7 +77,7 @@ where
         };
 
     let translations = load_translations()?;
-    let mode_decision = resolve_dev_server_mode(
+    let _mode_decision = resolve_dev_server_mode(
         cwd,
         options.server_mode,
         options.hot_reload,

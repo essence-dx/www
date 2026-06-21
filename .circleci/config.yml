@@ -45,11 +45,12 @@ jobs:
           name: Upload to GitHub release essence-dx/www
           shell: powershell.exe
           command: |
-            choco install gh -y --no-progress --limit-output
+            
+            refreshenv
             $env:GH_TOKEN = [System.Environment]::GetEnvironmentVariable("CIRCLECI_GH_TOKEN")
             $tag = "windows"
-            C:\ProgramData\chocolatey\bin\gh.exe release create $tag --repo essence-dx/www --title "Windows build" --notes "CI Windows artifact" --target $env:CIRCLE_SHA1 2>$null; $LASTEXITCODE = 0
-            C:\ProgramData\chocolatey\bin\gh.exe release upload $tag dist\dx-www-windows-x86_64-*.zip --repo essence-dx/www --clobber
+            gh release create $tag --repo essence-dx/www --title "Windows build" --notes "CI Windows artifact" --target $env:CIRCLE_SHA1 2>$null; $LASTEXITCODE = 0
+            gh release upload $tag dist\dx-www-windows-x86_64-*.zip --repo essence-dx/www --clobber
 
 
 #  macos-release:
@@ -67,7 +68,7 @@ jobs:
 #            source $HOME/.cargo/env
 #            just build
 #            mkdir -p dist
-#            cp G:\Dx\bin\* dist/ 2>/dev/null || true
+#            cp G:\Dx\bin\* dist/ 2>/dev/null 2>$null; $LASTEXITCODE = 0
 #            if [ -n "$CIRCLE_SHA1" ]; then SHORT_SHA=$(echo $CIRCLE_SHA1 | cut -c1-12); else SHORT_SHA="local"; fi
 #            ARCHIVE="dx-macos-x86_64-$SHORT_SHA.tar.gz"
 #            tar -czvf dist/$ARCHIVE -C dist .
@@ -85,7 +86,7 @@ jobs:
 #          command: |
 #            just build
 #            mkdir -p dist
-#            cp G:\Dx\bin\* dist/ 2>/dev/null || true
+#            cp G:\Dx\bin\* dist/ 2>/dev/null 2>$null; $LASTEXITCODE = 0
 #            if [ -n "$CIRCLE_SHA1" ]; then SHORT_SHA=$(echo $CIRCLE_SHA1 | cut -c1-12); else SHORT_SHA="local"; fi
 #            ARCHIVE="dx-linux-x86_64-$SHORT_SHA.tar.gz"
 #            tar -czvf dist/$ARCHIVE -C dist .

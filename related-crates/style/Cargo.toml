@@ -49,6 +49,7 @@ bytemuck = "1.19.0"
 regex = "1.11.1"
 thiserror = "2.0"
 tracing = "0.1"
+libc = "0.2"
 # Perfect hash and SIMD optimizations
 phf = { version = "0.11", features = ["macros"] }
 jetscii = "0.5"

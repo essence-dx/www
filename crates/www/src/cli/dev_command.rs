@@ -153,16 +153,17 @@ where
             }
 
             let token = hot_reload.then(|| dev_project_reload_token(&route_cwd));
-            
-            let compile_start = Instant::now();
+
             let mut response = respond(&route_cwd, &request, &translations);
-            let compile_elapsed = compile_start.elapsed();
-            
+            let serve_start = Instant::now();
+
             if hot_reload || devtools {
                 response =
                     with_dev_html_injections_token(response, token.as_deref(), devtools, true);
             }
             let axum_response = dx_cli_response_to_axum(response);
+            let serve_elapsed = serve_start.elapsed();
+
             if let Some(cache_key) = cache_key {
                 if should_cache_dev_axum_response(&axum_response) {
                     if let Ok(mut cache) = response_cache.lock() {
@@ -184,7 +185,7 @@ where
             if !path_str.starts_with("/_dx/") && !path_str.contains("__no_cache") && path_str != "/favicon.ico" {
                 let size_bytes = axum_response.body.len();
                 let method = request.method.as_str();
-                
+
                 let method_colored = match method {
                     "GET" => style(method).green(),
                     "POST" => style(method).blue(),
@@ -202,24 +203,21 @@ where
                     style(path_str).blue()
                 };
 
-                let _render_time = compile_elapsed;
-                
-                // Let's just use compile_elapsed for both, since we don't have total_time yet.
-                let display_time = crate::cli::utils::format_time(compile_elapsed);
-                
+                let total_serve = crate::cli::utils::format_time(serve_elapsed);
+
                 if axum_response.status == 200 {
                     eprintln!(
                         "{} {} {} - {} - {}",
                         style("→").dim(),
                         method_colored.bold(),
                         path_colored,
-                        style(&display_time).yellow(),
+                        style(&total_serve).yellow(),
                         style(crate::cli::utils::format_size(size_bytes)).cyan()
                     );
                 } else if axum_response.status == 404 {
-                    eprintln!("{} {} {} - {} - {}", style("⨯").yellow(), method_colored.bold(), path_colored, style("404 Not Found").yellow(), style(&display_time).yellow());
+                    eprintln!("{} {} {} - {} - {}", style("⨯").yellow(), method_colored.bold(), path_colored, style("404 Not Found").yellow(), style(&total_serve).yellow());
                 } else if axum_response.status >= 500 {
-                    eprintln!("{} {} {} - {} - {}", style("⨯").red(), method_colored.bold(), path_colored, style(format!("{} Error", axum_response.status)).red(), style(&display_time).red());
+                    eprintln!("{} {} {} - {} - {}", style("⨯").red(), method_colored.bold(), path_colored, style(format!("{} Error", axum_response.status)).red(), style(&total_serve).red());
                     if let Ok(body_str) = String::from_utf8(axum_response.body.to_vec()) {
                         if let Some(start_idx) = body_str.find("<!-- DX_DEV_ERROR: ") {
                             let remaining = &body_str[start_idx + 19..];
